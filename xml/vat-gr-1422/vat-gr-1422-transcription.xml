@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Vat. gr. 1422 - Transcription</title>
+            <respStmt>
+               <resp>transcribed by</resp>
+               <persName>Sebastiano Panteghini</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>FWF Project 32988</publisher>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under the
+                  Creative Commons ShareAlike 4.0 International License</licence>
+            </availability>
+            <date>2020-07-02</date>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <settlement>Vatican</settlement>
+                  <repository>Vatican Library, Greek Manuscripts</repository>
+                  <idno facs="https://digi.vatlib.it/view/MSS_Vat.gr.1422">Vat. gr. 1422</idno>
+                  <altIdentifier>
+                     <idno type="pinakes" corresp="https://pinakes.irht.cnrs.fr/notices/cote/68053/">68053</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem n="1">
+                     <locus>fols. 1r-24v</locus>
+                     <title>Prolegomena</title>
+                  </msItem>
+                  <msItem n="2">
+                     <locus>fols. 25r-242v</locus>
+                     <title>Psalmcatena</title>
+                  </msItem>
+                  <msItem n="3">
+                     <locus>fols. 258v-259r</locus>
+                     <title>Odescatena</title>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>parchment</support>
+                        <extent>
+                           <dimensions scope="all" type="leaf"
+                              unit="mm">
+                              <height>390</height>
+                              <width>300</width>
+                           </dimensions>
+                        </extent>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>Fols. 1r-24v are written in two columns. The liniature type of fols 1r-24v is 32D2.</layout>
+                        <layout>Fols. 25r-242v are written as bordercatena. Liniature: 18 vertical lines for the bible verses; 64 vertical lines for the catena.</layout>
+                        <layout>Fols. 258v-259r contain a textcatena.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <decoDesc>
+                     <p>Contains coloured capitals and decoration.</p>
+                  </decoDesc>
+               </physDesc>
+               <history><p>Written in the 10th or 11th century.</p></history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <charDecl>
+            <glyph xml:id="sign-1">
+               <localProp name="name" value="GREEK PUNCTUATION FOUR ANGLE SIGNS"/>
+               <localProp name="entitiy" value="sign-1"/>
+               <figure>
+                  <graphic url="./images/sign-1.png"/>
+               </figure>
+            </glyph>
+            <glyph xml:id="sign-3">
+               <localProp value="GREEK PUNCTUATION THREE DOTS" name="name"/>
+               <localProp value="sign-3" name="entity"/>
+               <figure>
+                  <graphic url="./images/sign-3.png"/>
+               </figure>
+            </glyph>
+         </charDecl>
+         <editorialDecl>
+            <punctuation>
+               <p>The punctuation has been simplified. Only codepoints 0387 (hex) "GREEK ANO TELEIA", 205D (hex) "TRICOLON" and 003A (hex) "COLON" 
+                  are used in the transcription.</p>
+            </punctuation>
+            <normalization>
+               <p n="abbreviations">Common abbreviations are resolved without notice: 
+                  <list>
+                     <item xml:lang="grc"><graphic url="./images/abbreviation-1.png"/> - ἐναντί<hi rend="bold">ου</hi></item>
+                     <item xml:lang="grc"><graphic url="./images/abbreviation-2.png"/> - ψαλ<hi rend="bold">μός</hi></item>
+                     <item xml:lang="grc"><graphic url="./images/abbreviation-3.png"/> - ὑπό<hi rend="bold">θεσις</hi></item>
+                     <item xml:lang="grc"><graphic url="./images/abbreviation-4.png"/> - καὶ</item>
+                     <item xml:lang="grc"><graphic url="./images/abbreviation-5.png"/> - βασι<hi rend="bold">λιος</hi></item>
+                     <item xml:lang="grc"><graphic url="./images/abbreviation-6.png"/> - Καππα<hi rend="bold">δοκια</hi></item>
+                     <item xml:lang="grc"><graphic url="./images/abbreviation-7.png"/> - -εί-</item>
+                     <item xml:lang="grc"><graphic url="./images/abbreviation-8.png"/> - δέ</item>
+                     <item xml:lang="grc"><graphic url="./images/abbreviation-9.png"/> - ἐστι</item>
+                     <item xml:lang="grc"><graphic url="./images/abbreviation-10.png"/> - ὀργάν<hi rend="bold">ων</hi></item>
+                     <item xml:lang="grc"><graphic url="./images/abbreviation-11.png"/> - ὀρθότατ<hi rend="bold">ον</hi></item>
+                     <item xml:lang="grc"><graphic url="./images/abbreviation-12.png"/> - ζητ<hi rend="bold">ῶ</hi></item>
+                     <item xml:lang="grc"><graphic url="./images/abbreviation-13.png"/> - μεν</item>
+                     <item xml:lang="grc"><graphic url="./images/abbreviation-14.png"/> - γὰρ</item>
+                     <item xml:lang="grc"><graphic url="./images/abbreviation-15.png"/> - ση<hi rend="bold">μνὸν</hi></item>
+                     <item xml:lang="grc"><graphic url="./images/abbreviation-16.png"/> - καταβαλλόμεν<hi rend="bold">ος</hi></item>
+                     <item xml:lang="grc"><graphic url="./images/abbreviation-17.png"/> - κυρί<hi rend="fold">ως</hi></item>
+                     <item xml:lang="grc"><graphic url="./images/abbreviation-18.png"/> - περὶ</item>
+                     <item xml:lang="grc"><graphic url="./images/abbreviation-19.png"/> - κ<hi rend="bold">ατα</hi>γίνονται</item>
+                     <item xml:lang="grc"><graphic url="./images/abbreviation-20.png"/> - φ<hi rend="bold">ύσει</hi></item>
+                     <item xml:lang="grc"><graphic url="./images/abbreviation-23.png"/> - φ<hi rend="bold">ύσιν</hi></item>
+                     <item xml:lang="grc"><graphic url="./images/abbreviation-35.png"/> - φύ<hi rend="bold">σεως</hi></item>
+                     <item xml:lang="grc"><graphic url="./images/abbreviation-21.png"/> - κεκτημέν<hi rend="bold">ους</hi></item>
+                     <item xml:lang="grc"><graphic url="./images/abbreviation-22.png"/> - μακάρι<hi rend="bold">ος</hi></item>
+                     <item xml:lang="grc"><graphic url="./images/abbreviation-24.png"/> - μακαρισμ<hi rend="bold">ὸν</hi></item>
+                     <item xml:lang="grc"><graphic url="./images/abbreviation-25.png"/> - ἐπορ<hi rend="bold">εύ</hi>θη</item>
+                     <item xml:lang="grc"><graphic url="./images/abbreviation-26.png"/> - εἶπεν</item>
+                     <!-- <item xml:lang="grc"><graphic url="./images/abbreviation-27.png"/> - μακαριστὸς</item> -->
+                     <!-- <item xml:lang="grc"><graphic url="./images/abbreviation-28.png"/> - τοιούτῳ</item> -->
+                     <item xml:lang="grc"><graphic url="./images/abbreviation-29.png"/> - πορευόμ<hi rend="bold">εν</hi>οι</item>
+                     <item xml:lang="grc"><graphic url="./images/abbreviation-30.png"/> - πρὸ<hi rend="bold">ς</hi></item>
+                     <item xml:lang="grc"><graphic url="./images/abbreviation-31.png"/> - αὐτ<hi rend="bold">οῦ</hi></item>
+                     <item xml:lang="grc"><graphic url="./images/abbreviation-32.png"/> - στάν<hi rend="bold">τα</hi></item>
+                     <item xml:lang="grc"><graphic url="./images/abbreviation-33.png"/> - λοιμ<hi rend="bold">ῶν</hi></item>
+                     <item xml:lang="grc"><graphic url="./images/abbreviation-34.png"/> - τού</item>
+                     <item xml:lang="grc"><graphic url="./images/abbreviation-36.png"/> - ἡγεμονικ<hi rend="bold">ω</hi>τέρ<hi rend="bold">ου</hi></item>
+                     <item xml:lang="grc"><graphic url="./images/abbreviation-37.png"/> - φη<hi rend="bold">σὶν</hi></item>
+                     <item xml:lang="grc"><graphic url="./images/abbreviation-38.png"/> - ἑξ<hi rend="bold">ῆς</hi></item>
+                     <item xml:lang="grc"><graphic url="./images/abbreviation-39.png"/> - σ<hi rend="bold">ου</hi></item>
+                     <item xml:lang="grc"><graphic url="./images/abbreviation-40.png"/> - πτωχ<hi rend="bold">οῖς</hi></item>
+                     <item xml:lang="grc"><graphic url="./images/abbreviation-41.png"/> - ἀληθ<hi rend="bold">είᾳ</hi></item>
+                     <item xml:lang="grc"><graphic url="./images/abbreviation-42.png"/> - ἔφα<hi rend="bold">σαν</hi></item>
+                     <item xml:lang="grc"><graphic url="./images/abbreviation-43.png"/> - διδασκαλί<hi rend="bold">αν</hi></item>
+                     <item xml:lang="grc"><graphic url="./images/abbreviation-44.png"/> - οἰκεί<hi rend="bold">ας</hi></item>
+                     <item xml:lang="grc"><graphic url="./images/abbreviation-45.png"/> - ἀποστό<hi rend="bold">λους</hi></item>
+                     <item xml:lang="grc"><graphic url="./images/abbreviation-46.png"/> - φω<hi rend="bold">νὴ</hi></item>
+                     <item xml:lang="grc"><graphic url="./images/abbreviation-47.png"/> - μου</item>
+                     <item xml:lang="grc"><graphic url="./images/abbreviation-48.png"/> - ἀσεβέ<hi rend="bold">σιν</hi></item>
+                     <item xml:lang="grc"><graphic url="./images/abbreviation-49.png"/> - τέ<hi rend="bold">λος</hi></item>
+                  </list>
+               </p>
+               <p n="auszeichnungsmajuskeln">"Auszeichnungsmajuskeln" are ignored.</p>
+            </normalization>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="en">English</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change who="Sebastiano Panteghini" when="2020-07-02">Transcription of the manuscript
+            according to the pictures of the Vatican Library available on the web.</change>
+         <change who="Thomas Klampfl" when="2020-07-02">Transformation into a TEI document.</change>
+         <change who="Thomas Klampfl" when="2020-07-08">Transformation into a TEI document. - Continued.</change>
+         <change who="Thomas Klampfl" when="2020-07-09">Transformation into a TEI document. - Continued.</change>
+         <change who="Thomas Klampfl" when="2020-07-15">Transformation into a TEI document. - Continued.</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div xml:id="vat-gr-1422-1" type="transcription">
+            <pb n="25r"/>
+               <div xml:id="vat-gr-1422-1-1" type="header" rend="red ink" rendition="middle of the page">
+                  <head xml:lang="grc">
+                     <lb n="1"/>ΒίΒΛΟΣ ΨΑΛΜῶΝ
+                     <lb n="2"/>ΨΑΛΜὸΣ ΠΡῶΤΟΣ⁝
+                  </head>
+               </div>
+               <div xml:id="vat-gr-1422-1-2" type="bibletext" subtype="commented" rend="red ink" rendition="middle of the page">
+                  <quote corresp="../psalms-LXX/psalms.xml#Ps-LXX-1-1" n="Ps (LXX) 1:1" xml:lang="grc">
+                     <lb n="1"/>Μακάριος ἀνὴρ. ὃς οὐκ ἐπορεύ
+                     <lb n="2"/>θη ἐν <choice>
+                           <orig>βουλῆι</orig>
+                           <corr>βουλῇ</corr>
+                        </choice> ἀσεβῶν·
+                  </quote>
+               </div>
+               <div rendition="margin top right side" rend="red ink" xml:id="vat-gr-1422-1-3" type="note">
+                  <ab>
+                     <lb n="1"/><seg type="hypopsalmos" xml:lang="grc"><g ref="#sign-1"/> Α´ Β´ ἀλληλούϊα· </seg>
+                     <seg type="perioche" xml:lang="grc"><g ref="#sign-1"/>
+                        προτροπὴ θεοσεβείας καὶ ἀποτροπὴ τοῦ ἐναντίου<g ref="#sign-3"/></seg>
+                  </ab>
+               </div>
+               <div type="hypothesis" rendition="margin top left side" rend="red ink" xml:id="vat-gr-1422-1-4">
+                  <lb n="1"/>
+                  <head xml:lang="grc"><choice>
+                     <orig>ὑποθεσις</orig>
+                     <corr>ὑπόθεσις</corr>
+                  </choice> τοῦ α´ ψαλμοῦ·</head>
+                  <ab xml:lang="grc" rendition="main text">
+                     <lb n="1"/>Οὗτος ὁ ψαλμὸς· προτροπὴν θεοσεβείας ἔχει καὶ ἀποτροπὴν
+                        ἀσεβείας· μακαριστέον δὲ κϋρίως· τῷ πρώτως
+                     <lb n="2"/>τὸ ἀληθῶς· τοῦτο δέ ἐστι τὸ ἀγαθὸν δηλονότι τὸ θεῖον·
+                        ὄργανον ὅπερ καὶ ναύλα καλεῖται <choice>
+                           <orig>παρεβραίοις</orig>
+                           <reg>παρ᾿ ἑβραίοις</reg>
+                        </choice>· <choice>
+                           <orig>παρέλλησι</orig>
+                           <reg>παρ᾿ ἕλλησι</reg>
+                        </choice> δὲ
+                     <lb n="3"/>ψαλτήριον· ὅπερ μόνον ὀργάνων μουσικῶν ὀρθότατον εἶναι· οὐδὲν ἔχον ἐπικαμπὲς ἢ σκολιὸν· ἵνα ἡμεῖς τὰ ἄνω ζητῶ μεν<g ref="#sign-3"/>                     
+                  </ab>
+               </div>
+               <div rendition="main text" rend="red ink" xml:id="vat-gr-1422-1-5" type="commentary" subtype="commentary">
+                  <note place="right margin" rend="red ink" xml:id="vat-gr-1422-1-6" xml:lang="grc" corresp="vat-gr-1422-1">
+                     <lb n="1"/>Βασιλείου
+                     <lb n="2"/>Καππαδοκίας
+                  </note>
+                  <lb n="4"/>
+                  <q rend="red ink bold" corresp="#vat-gr-1422-1-3" xml:lang="grc">ἀλληλούϊα·</q> 
+                  <ab xml:lang="grc" xml:id="vat-gr-1422-1-7">αἰνεῖτε τὸν ὄντα ἤτοι τὸν <choice><expan>θεὸν</expan><abbr type="nomSac">θν</abbr></choice>· τὸ γὰρ ἀλληλοῦ· αἰνεῖτε τὸν ὄντα σημνὸν· τὸ δὲ <hi rend="overline">ϊα</hi>· τὸν <choice><expan>θεόν</expan><abbr type="nomSac">θν</abbr></choice>· ὡς δὲ μέλλων
+                     <lb n="5"/>πολλὰ διδάσκειν ἐπίπονα προ <gap reason="left intentionally blank" quantity="5" unit="character"/> παραμυθεῖται τῷ μακαρίῳ τέλει τὰ δυσχερῆ· ταύτην ἀσφαλῆ κρηπίδα τοῦ
+                     <lb n="6"/>λόγου καταβαλλόμενος· κυρίως μὲν οὖν μακαριστὸν τὸ ἀγαθὸν· καὶ ὁ <choice><expan>θεός</expan><abbr type="nomSac">θς</abbr></choice>· οὗ πάντα ἐφίεται· ὅπερ ἀγνοοῦντες τινὲς περὶ τὰ κοσμικὰ
+                     <lb n="7"/>καταγίνονται· ὧν οὐδέν ἐστιν ἀγαθὸν τῇ ἑαυτοῦ φύσει· ἅτε δὴ τρεπτὸν καὶ τοὺς αὐτὸ κεκτημένους ἀγαθοὺς μὴ ποιοῦν· μακάριος οὖν
+                     <lb n="8"/>ὁ τὰ ὄντως ὄντα ποθῶν· ἀνὴρ δὲ φήσας· <choice><orig>οὐκαπέκλεισε</orig><reg>οὐκ ἀπέκλεισε</reg></choice> τοῦ μακαρισμοῦ τὰς γυναῖκας· ὧν γὰρ ἡ φύσις κοινὴ· καὶ τὰ
+                     <lb n="9"/>ἔργα καὶ ὁ μισθὸς· διὰ δὲ τοῦ ἡγεμονικωτέρου τὴν κοινὴν ἐδήλωσε φύσιν· διδάσκει δὲ· καὶ πῶς ἐπιγνωσόμεθα· τὸν μακαρισμὸν
+                     <lb n="10"/>ἐπαγαγὼν· ὃς οὐκ ἐπορεύθη ἐν <choice><orig>βουλῂ</orig><corr>βουλῇ</corr></choice> ἀσεβῶν· οὐκ εἶπεν πεπόρευται· ὁ μὲν γὰρ ἐν τῷ βίῳ τυγχάνων· οὔπω μακαριστὸς· διὰ τὸ
+                     <lb n="11"/>ἄδηλον τῆς ἐκβάσεως· ὁ δὲ τῷ τοιούτῳ τέλει καθορμισθεὶς ἀσφαλῶς μακαρίζεται· πῶς οὖν μακάριοι οἱ πορευόμενοι
+                     <lb n="12"/> ἐν νόμῳ <choice><expan>κυρίου</expan><abbr type="nomSac">κυ</abbr></choice>· <choice><orig>κατὰυτὸ</orig><reg>κατ᾿αὐτὸ</reg></choice> δηλαδὴ τὸ ἔργον· ἀλλ᾿οὐχ ὁ πρὸς ἅπαξ ἢ
+                     <lb n="13"/>δεύτερον <choice><orig>φυγὸν</orig><corr>φυγῶν</corr></choice> τὸ κακὸν ἐπαινετός· <hi rend="red ink bold"><choice><orig>ἀλλως</orig><corr>ἄλλως</corr></choice> τοῦ αὐτοῦ</hi>· Μακαρι
+                     <lb n="14"/>στέον γὰρ ἀληθῶς οὐ τὸ μετέχον ἀρετῆς <gap reason="left intentionally blank" quantity="5" unit="character"/> φεύγων τὸ κακὸν· ὅν
+                     <lb n="15"/>τῳ γὰρ ἂν κυρίως ἀπέχεσθαι λέγοιντο· οὐ γὰρ καθάπαξ τὸν μὴ πο
+                     <lb n="16"/>ρευθέντα ἐν βουλῇ ἀσεβῶν· καὶ ἐν ὁδῷ ἁμαρτωλῶν μὴ στάντα
+                     <lb n="17"/>καὶ ἐπὶ καθέθραν λοιμῶν μὴ καθίσαντα μακαρίζει· ἀλλὰ τὸν τού
+                     <lb n="18"/>των ἀπεσχήμενον· <choice><orig>τῶι</orig><corr>τῷ</corr></choice> ἔχοντι τὸ θέλημα αὐτοῦ ἐν <choice><orig>τῶι</orig><corr>τῷ</corr></choice> νόμῳ <choice><expan>κυρίου</expan><abbr type="nomSac">κυ</abbr></choice>·
+                     <lb n="19"/><choice><orig>διατί</orig><reg>διὰ τί</reg></choice> οὖν μνησθεὶς ἀνδρὸς τὰς γυναῖκας παρεσιώπησεν·
+                     <lb n="20"/>ὅτι μιᾶς οὔσης τῆς φύσεως· ἀρκεῖν ἡγήσατο ἐκ τοῦ ἡγεμονικωτέρου
+                     <lb n="21"/>τὸ ὅλον ἐνδείξασθαι· μακαρίζει δὲ ἄνδρα· τὸν μὴ συντρέ
+                     <lb n="22"/>χοντα γνώμῃ ἀσεβῶν· ὡς μὴ πορευόμενον αὐτοῖς· τὰ ἐ
+                     <lb n="23"/>ναντία βουλεύεσθαι τῶν ἐκείνοις φίλων· <hi rend="red ink bold"><choice><expan>Ὡριγένους</expan><abbr>Ὡρ</abbr></choice></hi> Ἀλλὰ πῶς
+                     <lb n="24"/>ἐνἀναιρέσει κακῶν ὁ μακαρισμός· κοινὸν γὰρ καὶ τῶν ἀψύχων καὶ
+                     <lb n="25"/>τῶν ἀλόγων ἡ τῶν κακῶν ἀποχή· διὰ τοῦτο τοίνυν ἐπήγαγεν·
+                     <lb n="26"/>ἀλλ᾿ ἢ ἐν τῷ νόμῳ <choice><expan>κυρίου</expan><abbr type="nomSac">κυ</abbr></choice> τὸ θέλημα αὐτοῦ· τοῦτο γὰρ μόνου πέφυ
+                     <lb n="27"/>κε λογικοῦ· ἀλλὰ καὶ τῆς τῶν καλῶν ἀναλήψεως κατάρχῃ τῶν
+                     <lb n="28"/>κακῶν ἡ φυγή· ἔκκλινον γὰρ φησὶν ἀπὸ κακοῦ καὶ ποίησον ἀγαθόν·
+                     <lb n="29"/>ὡς γὰρ <choice><orig>ἐπικλίμακος</orig><reg>ἐπὶ κλίμακος</reg></choice> πρώτη ἀνάβασις ἡ τῆς γῆς ἀναχώρησις· οὕτως ἐπὶ τῆς κατὰ <choice><expan>θεὸν</expan><abbr type="nomSac">θν</abbr></choice> πολιτείας ἀρχὴ προκοπῆς ὁ χωρισμὸς
+                     <lb n="30"/>τοῦ κακοῦ· ἀλλὰ καὶ πᾶσα πράξεως ἀργία τῆς ἐνεργείας εὐμαρεστέρα· ὁποῖον τὸ οὐ μοιχεύσεις· οὐ πορνεύσεις καὶ τὰ ἑξῆς·
+                     <lb n="31"/>τὸ δὲ ἀγαπήσεις τὸν πλησίον σου καὶ πώλησόν σου τὰ ὑπάρχοντα· καὶ δὸς πτωχοῖς· ἐάν τις σε ἀγγαρεύσῃ μίλιον ἓν. ὕπαγον <choice><orig>μεταὐτοῦ</orig><corr>μετ᾿αὐτοῦ</corr></choice>
+                     <lb n="32"/>δύο· ψυχῆς ἤδη νεανικῆς καὶ ἀθλητῶν ἐνεργήματα· <hi rend="red ink bold">ἄλλως Ἀστερίου</hi>· Ὡς μαθητὴς δὲ τοῦ <choice><expan>χριστοῦ</expan><abbr type="nomSac">χῦ</abbr></choice> ὁ <choice><expan>δαυῒδ</expan><abbr type="nomSac">δαδ</abbr></choice> ἀπὸ μακαρισμοῦ
+                     <lb n="33"/>ἤρξατο τῆς διδασκαλίας· ἀγγέλους δὲ οὐ μακαρίζει· – ἄγγελος γὰρ ἐν βουλαῖς ἀσεβῶν οὐ πορεύεται· – ἀλλ᾿οὔτε βρέφος· – ἀνόη
+                     <lb n="34"/>τον γὰρ· – ἀλλ᾿οὐδὲ γυναῖκας· κακείνων γὰρ ἀνὴρ ἡ κατορθοῦσα γνωρίζεται· ἐπεὶ μὴ δὲ πᾶς ἀνὴρ εἰ κατὰ φύσιν τοιοῦτος· ὡς δὲ κα
+                     <lb n="35"/>κόφων ος ἄφων ος λέγεται· oὕτως ἀσεβεῖς οἱ τὸν <choice><expan>θεὸν</expan><abbr type="nomSac">θν</abbr></choice> μὴ σὺν ἀληθείᾳ σεβόμενοι· κυρίως δὲ μακάριος ὢν ὁ <choice><expan>θεός</expan><abbr type="nomSac">θς</abbr></choice>· παῦλος γάρ φησι ὁ μακάριος
+                     <lb n="36"/>καὶ μόνος δυνάστης· μετέδωκε ταύτης τῆς προσηγορίας ἡμῖν ὡς καὶ πιστὸς καλούμενος· πιστὸς γάρ φησιν ὁ <choice><expan>θεὸς</expan><abbr type="nomSac">θς</abbr></choice> <choice><orig>διοὗ</orig><corr>δι᾿οὗ</corr></choice> ἐκκλή
+                     <lb n="37"/>θητε· καὶ <choice><expan>θεὸς</expan><abbr type="nomSac">θς</abbr></choice> πιστὸς· καὶ οὐκ ἔστιν ἀδικία ἐν αὐτῷ· ὥσπερ οὖν καὶ θεοὺς κατὰ τὸ ἐγὼ εἶπα θεοὶ ἐστέ· <hi rend="red ink bold">Θεοδωρήτου</hi>·
+                     <lb n="38"/>Καὶ ἐνταῦθα ῥᾴδιον συνιδεῖν· ὡς πάλαι παρ’ ἑβραίοις τὰς ἐπιγραφὰς εὑρόντες οἱ τὰς θείας ἑρμηνευκότες γραφὰς
+                     <lb n="39"/>μετέθεσαν εἰς τὴν ἑλλάδα φωνὴν· τοῦτον γὰρ καὶ τὸν μετ’ αὐτὸν ψαλμὸν ἀνεπιγράφους εὑρόντες. ἀνεπιγράφους κατέ
+                     <lb n="40"/>λιπον· οὐ τολμήσαντες παρ’ ἑαυτῶν τι προσθεῖναι  τοῖς λογίοις τοῦ <choice><expan>πνεύματος</expan><abbr type="nomSac">πνς</abbr></choice>· τινὲς μέντοι τῶν τὰς <choice><orig>ὑποθθ</orig><corr>ὑποθέσεις</corr></choice> τῶν ψαλμῶν συγγρα
+                     <lb n="41"/>φόντων· ἠθικὴν τοῦτον ἔφασαν τὸν <choice><orig>ψαλμον</orig><corr>ψαλμὸν</corr></choice> περιέχειν διδασκαλίαν· ἐμοὶ δὲ οὐχ ἧττον δογματικὸς ἢ ἠθικὸς ἔδοξεν εἶναι· περιέχει
+                     <lb n="42"/>γὰρ οὐχ ἁμαρτωλῶν μόνον· ἀλλὰ καὶ ἀσεβῶν κατηγορίαν· καὶ παραινεῖ τοῖς θείοις λογίοις  προσέχειν διηνεκῶς· ἐξ ὧν
+                     <lb n="43"/>οὐκ ἠθικὴν μόνον· ἀλλὰ καὶ δογματικὴν ὠφέλειαν καρπούμεθα· ἁρμοδίως δὲ λίαν ὁ μέγας <choice><expan>Δαυῒδ</expan><abbr type="nomSac">Δαδ</abbr></choice> μακαρισμὸν τῆς οἰκείας
+                     <lb n="44"/>προτέθεικε συγγραφῆς τὸν ἑαυτοῦ υἱὸν ὁμοῦ καὶ δεσπότην μιμούμενος τὸν <choice><expan>σωτῆρα</expan><abbr type="nomSac">σρα</abbr></choice> λέγω <choice><expan>Χριστόν</expan><abbr type="nomSac">Χν</abbr></choice>· ὃς τῆς  πρὸς τοὺς ἱεροὺς ἀποστόλους
+                     <lb n="45"/>διδασκαλίας ἀπὸ μακαρισμῶν ἤρξατο· μακάριοι λέγων οἱ πτωχοὶ <choice><orig>τῶι</orig><corr>τῷ</corr></choice> <choice><expan>πνεύματι</expan><abbr type="nomSac">πνι</abbr></choice>· ὅτι αὐτῶν ἐστιν ἡ βασιλεία τῶν <choice><expan>οὐρανῶν</expan><abbr type="nomSac">οὐνῶν</abbr></choice>: υἱὸς  <choice><orig>θὲ</orig><corr>δὲ</corr></choice>
+                     <lb n="46"/>τοῦ <choice><expan>Δαυῒδ</expan><abbr type="nomSac">Δαδ</abbr></choice> ὁ δεσπότης <choice><expan>Χριστὸς</expan><abbr type="nomSac">Χς</abbr></choice>· ὡς <choice><expan>ἄνθρωπος</expan><abbr type="nomSac">ἄνος</abbr></choice> κατὰ τὴν τῶν ἱερῶν εὐαγγελίων φωνὴν· βίβλος γὰρ γενέσεως <choice><expan>Ἰησοῦ</expan><abbr type="nomSac">Ἰῦ</abbr></choice> <choice><expan>Χριστοῦ</expan><abbr type="nomSac">Χῦ</abbr></choice>· υἱοῦ <choice><expan>Δαυῒδ</expan><abbr type="nomSac">Δαδ</abbr></choice>· υἱοῦ
+                     <lb n="47"/>Ἀβραὰμ· ὁ <choice><expan>κύριος</expan><abbr type="nomSac">κς</abbr></choice> δὲ αὐτοῦ καὶ ποιητὴς· ὡς <choice><expan>θεός</expan><abbr type="nomSac">θς</abbr></choice>· αὐτός ἐστιν ἡ φωνὴ· εἶπεν ὁ <choice><expan>κύριος</expan><abbr type="nomSac">κς</abbr></choice> τῷ <choice><expan>κυρίῳ</expan><abbr type="nomSac">κῳ</abbr></choice> μου κάθου ἐκ δεξιῶν μου· μακαρίζει τοίνυν·
+                     <lb n="48"/>τὸν μήτε τοῖς ἀσεβέσιν ὁδοῦ κοινωνήσαντα· μήτε βεβαίαν τῶν ἁμαρτωλῶν δεξάμενον τὴν βουλὴν· – τοῦτο γὰρ δὴ στάσιν ἐκά
+                     <lb n="49"/>λεσεν· – τὸ  τὴν μόνιμον τῶν λοιμῶν φυγεῖν διαφθορὰν· τὸ δὲ μακάριος ὄνομα· θεία μὲν ὑπάρχει προσηγορία καὶ μάρτυς ὁ θεῖος
+                     <lb n="50"/>ἀπόστολος βοῶν· ὁ μακάριος καὶ μόνος δυνάστης· ὁ βασιλεὺς τῶν βασιλευόντων· καὶ <choice><expan>κύριος</expan><abbr type="nomSac">κς</abbr></choice> <choice><orig>των</orig><corr>τῶν</corr></choice> κυριευόντων· μετέδωκε δὲ καὶ ταύτης
+                     <lb n="51"/>τοῖς <choice><expan>ἀνθρώποις</expan><abbr type="nomSac">ἀνοις</abbr></choice>· ὥσπερ καὶ τῶν ἄλλων ὁ δεσπότης <add resp="Sebastiano Panteghini">Θεός</add>· καὶ γὰρ πιστὸς καλούμενος· πιστὸς γάρ φησιν  ὁ <choice><expan>θεὸς</expan><abbr type="nomSac">θς</abbr></choice> δι’ οὗ ἐκλήθητε εἰς κοινωνίαν τοῦ υἱοῦ
+                     <lb n="52"/>αὐτῆς· καὶ ὁ μακάριος Mωϋσῆς <choice><expan>θεὸς</expan><abbr type="nomSac">θς</abbr></choice>. φησὶ πιστὸς· καὶ οὐκ ἔστιν ἀδικία ἐν  αὐτῶν· ἐκάλεσεν καὶ τῶν <choice><expan>ἀνθρώπων</expan><abbr type="nomSac">ἀνων</abbr></choice> πιστοὺς τοὺς ἀναμφιβόλως
+                     <lb n="53"/>αὐτοῦ δεχομένους τοὺς λόγους· οὕτω <choice><expan>θεὸς</expan><abbr type="nomSac">θς</abbr></choice> καὶ ὢν καὶ καλούμενος μετέδωκε καὶ ταύτης τῆς κλήσεως· τοῖς <choice><expan>ἀνθρώποις</expan><abbr type="nomSac">ἀνοις</abbr></choice> ὁ μεγαλόδωρος
+                     <lb n="54"/>καὶ βοᾷ· ἐγὼ εἶπα  θεοὶ ἐστὲ καὶ υἱοὶ ὑψίστου πάντες· ὑμεῖς δὲ ὡς <choice><expan>ἄνθρωποι</expan><abbr type="nomSac">ἄνοι</abbr></choice> ἀποθνήσκετε· τὸ οὖν μακάριος ὄνομα τῆς <choice><orig>κατἀ</orig><reg>κατ’ ἀ</reg></choice>
+                     <lb n="54"/>ρετὴν τελειώσεως ὑπάρχει καρπὸς· ὥσπερ  γὰρ <add resp="Sebastiano Panteghini">καὶ</add> ἕκαστον τῶν κατὰ τὸν βίον ἐπιτηδευμάτων· εἰς τὸ τέλος ὁρᾷ· ἀθλη
+                     <lb n="55"/>τικὴ μὲν <add resp="Sebastiano Panteghini">οὖν</add> εἰς τοὺς ἐκ κοτίνου στεφάνους· στρατηγικὴ τὲ  εἰς νίκας καὶ τρόπαια· καὶ μέντοι καὶ ἰατρικὴ εἰς ὑγείαν καὶ νό
+                     <lb n="56"/>σων ἀπαλλαγὴν· καὶ ἐμπορικὴ εἰς συλλογὴν κτημάτων καὶ πλούτου περιουσίαν· οὕτως καὶ ἡ τῆς ἀρετῆς ἐπιστήμη· καρ
+                     <lb n="57"/>πὸν μὲν ἔχει καὶ τέλος τὸν θεῖον μακαρισμὸν· <choice><orig>μὴδεὶς</orig><corr>μηδεὶς</corr></choice> δὲ ἄνδρα μόνον ὁρῶν μακαριζόμενον ἐνταῦθα· ἐστερῆσθαι νομίσῃ 
+                     <lb n="58"/>τοῦδε τοῦ μακαρισμοῦ τῶν γυναικῶν τὸ γένος· οὐδὲ γὰρ ὁ δεσπότης <choice><expan>Χριστὸς</expan><abbr type="nomSac">Χς</abbr></choice>· ἀρσενικοὺς  τοὺς μακαρισμοὺς χρηματίςας·
+                     <lb n="59"/>ἀπηγόρευσε ταῖς γυναιξὶ τὴν κτῆσιν τῆς ἀρετῆς· συμπεριλαμβάνει γὰρ τοῖς ἀνδράσι καὶ τὰς γυναῖκας ὁ λόγος· κε
+                     <lb n="60"/>φαλὴ γὰρ γυναικὸς ὁ ἀνὴρ. <add resp="Sebastiano Panteghini">ᾗ</add> φησὶν ὁ θεῖος ἀπόστολος συνάπτεται δὲ τῇ κεφαλῇ τὰ μέλη τοῦ σώματος· καὶ κεφαλῆς στεφα
+                     <lb n="61"/>νουμένης, ἀγάλλεται· οὕτω καὶ πρός τινα διαλεγόμενοι· καὶ φίλην αὐτῶν κεφαλὴν ὀνομάζοντες· οὐ χωρίζομεν τῶν ἄλλων
+                     <lb n="62"/>μορίων τοῦ σώματος· ἀλλ’ ἀπὸ μέρους τὸ πᾶν προσφθεγγόμεθα· οὐχ ἁπλῶς δὲ πρῶτον ὁδοῦ· εἶτα στάσεως· εἶτα
+                     <lb n="63"/>καθέδρας ἐμνημόνευσεν· ἀλλ’ <choice><orig>εἰδῶς</orig><corr>εἰδὼς</corr></choice> ἀκριβῶς· ὡς κίνησιν μὲν πρῶτον ὁ λογισμὸς ὑπομένει· εἴτε φαῦλος εἴτε σπου 
+                  </ab> 
+               </div>
+         </div>
+      </body>
+   </text>
+</TEI>
