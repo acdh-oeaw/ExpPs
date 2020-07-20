@@ -22,7 +22,7 @@
          </publicationStmt>
          <sourceDesc>
             <msDesc>
-               <msIdentifier>
+               <msIdentifier xml:id="Vat-gr-1422">
                   <settlement>Vatican</settlement>
                   <repository>Vatican Library, Greek Manuscripts</repository>
                   <idno facs="https://digi.vatlib.it/view/MSS_Vat.gr.1422">Vat. gr. 1422</idno>
@@ -73,15 +73,21 @@
       <encodingDesc>
          <charDecl>
             <glyph xml:id="sign-1">
-               <localProp name="name" value="GREEK PUNCTUATION FOUR ANGLE SIGNS"/>
-               <localProp name="entitiy" value="sign-1"/>
+               <glyphName>GREEK PUNCTUATION FOUR ANGLE SIGNS</glyphName>
+               <charProp>
+                  <localName>entity</localName>
+                  <value>sign-1</value>
+               </charProp>
                <figure>
                   <graphic url="./images/sign-1.png"/>
                </figure>
             </glyph>
             <glyph xml:id="sign-3">
-               <localProp value="GREEK PUNCTUATION THREE DOTS" name="name"/>
-               <localProp value="sign-3" name="entity"/>
+               <glyphName>GREEK PUNCTUATION THREE DOTS</glyphName>
+               <charProp>
+                  <localName>entity</localName>
+                  <value>sign-3</value>
+               </charProp>
                <figure>
                   <graphic url="./images/sign-3.png"/>
                </figure>
