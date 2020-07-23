@@ -166,10 +166,13 @@
       <revisionDesc>
          <change who="Sebastiano Panteghini" when="2020-07-02">Transcription of the manuscript
             according to the pictures of the Vatican Library available on the web.</change>
-         <change who="Thomas Klampfl" when="2020-07-02">Transformation into a TEI document.</change>
-         <change who="Thomas Klampfl" when="2020-07-08">Transformation into a TEI document. - Continued.</change>
-         <change who="Thomas Klampfl" when="2020-07-09">Transformation into a TEI document. - Continued.</change>
-         <change who="Thomas Klampfl" when="2020-07-15">Transformation into a TEI document. - Continued.</change>
+         <change who="Thomas Klampfl" when="2020-07-02">Transformation into a TEI document (Psalm 1).</change>
+         <change who="Thomas Klampfl" when="2020-07-08">Transformation into a TEI document (Psalm 1). - Continued.</change>
+         <change who="Thomas Klampfl" when="2020-07-09">Transformation into a TEI document (Psalm 1). - Continued.</change>
+         <change who="Thomas Klampfl" when="2020-07-15">Transformation into a TEI document (Psalm 1). - Continued.</change>
+         <change who="Thomas Klampfl" when="2020-07-16">Transformation into a TEI document (Psalm 1). - Continued.</change>
+         <change who="Thomas Klampfl" when="2020-07-22">Transformation into a TEI document (Psalm 1). - Continued.</change>
+         <change who="Thomas Klampfl" when="2020-07-23">Improveming treatment of abbreviations.</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -188,7 +191,7 @@
                      <lb n="1"/>Μακάριος ἀνὴρ. ὃς οὐκ ἐπορεύ
                      <lb n="2"/>θη ἐν <choice>
                            <orig>βουλῆι</orig>
-                           <corr>βουλῇ</corr>
+                           <reg>βουλῇ</reg>
                         </choice> ἀσεβῶν·
                   </quote>
                </div>
@@ -204,7 +207,7 @@
                   <head xml:lang="grc"><choice style="with-abbreviation">
                      <orig style="abbreviation-sup-ending">ὑπο<hi rend="sup">θ<am>εσις</am></hi></orig>
                      <corr>ὑπόθεσις</corr>
-                  </choice> τοῦ α´ <choice><orig style="abbreviation-ending">ψαλ<am>μοῦ</am></orig><expan>ψαλμοῦ</expan></choice>·</head>
+                  </choice> τοῦ <hi rend="overline">α´</hi> <choice><orig style="abbreviation-ending">ψαλ<am>μοῦ</am></orig><expan>ψαλμοῦ</expan></choice>·</head>
                   <ab xml:lang="grc" rendition="main text">
                      <lb n="1"/>Οὗτος ὁ ψαλμὸς· προτροπὴν θεοσεβείας ἔχει καὶ ἀποτροπὴν
                         ἀσεβείας· μακαριστέον δὲ κϋρίως· τῷ πρώτως
@@ -229,13 +232,13 @@
                   <ab xml:lang="grc" xml:id="vat-gr-1422-1-7"><seg type="commentaryfragment" source="Basilius of Kappadokia" xml:id="vat-gr-1422-fr-1-1" corresp="#vat-gr-1422-1-9">αἰνεῖτε τὸν ὄντα ἤτοι τὸν <choice><expan>θεὸν</expan><abbr type="nomSac">θν</abbr></choice>· τὸ <choice><orig style="ending-common">γ<am>ὰρ</am></orig><expan>γὰρ</expan></choice> ἀλληλοῦ· αἰνεῖτε τὸν ὄντα <choice><orig style="abbreviation-sup-ending">ση<hi rend="sup">μ<am>νὸν</am></hi></orig><expan>σημνὸν</expan></choice>· τὸ δὲ <hi rend="overline">ϊα</hi>· τὸν <choice><expan>θεόν</expan><abbr type="nomSac">θν</abbr></choice>· ὡς δὲ μέλλων
                      <lb n="5"/>πολλὰ διδάσκειν ἐπίπονα προ <gap reason="left intentionally blank" quantity="5" unit="character"/> παραμυθεῖται τῷ μακαρίῳ τέλει τὰ δυσχερῆ· ταύτην ἀσφαλῆ κρηπίδα τοῦ
                      <lb n="6"/>λόγου <choice><orig style="abbreviation-sup-ending">καταβαλλόμεν<hi rend="sup">ο<am>ς</am></hi></orig><expan>καταβαλλόμενος</expan></choice>· <choice><orig style="ending-common">κυρί<am>ως</am></orig><expan>κυρίως</expan></choice> μὲν οὖν μακαριστὸν τὸ ἀγαθὸν· <choice><orig style="abbreviation">καὶ</orig><expan>καὶ</expan></choice> ὁ <choice><expan>θεός</expan><abbr type="nomSac">θς</abbr></choice>· οὗ πάντα ἐφίεται· ὅπερ ἀγνοοῦντες τινὲς <choice><orig style="abbreviation-sup-ending">π<hi rend="sup">ε<am>ρὶ</am></hi></orig><expan></expan></choice> τὰ κοσμικὰ
-                     <lb n="7"/>καταγίνονται· ὧν οὐδέν ἐστιν ἀγαθὸν τῇ ἑαυτοῦ φύσει· ἅτε δὴ τρεπτὸν καὶ τοὺς αὐτὸ κεκτημένους ἀγαθοὺς μὴ ποιοῦν· μακάριος οὖν
-                     <lb n="8"/>ὁ τὰ ὄντως ὄντα ποθῶν· ἀνὴρ δὲ φήσας· <choice><orig>οὐκαπέκλεισε</orig><reg>οὐκ ἀπέκλεισε</reg></choice> τοῦ μακαρισμοῦ τὰς γυναῖκας· ὧν γὰρ ἡ φύσις κοινὴ· καὶ τὰ
-                     <lb n="9"/>ἔργα καὶ ὁ μισθὸς· διὰ δὲ τοῦ ἡγεμονικωτέρου τὴν κοινὴν ἐδήλωσε φύσιν· διδάσκει δὲ· καὶ πῶς ἐπιγνωσόμεθα· τὸν μακαρισμὸν
-                     <lb n="10"/>ἐπαγαγὼν· ὃς οὐκ ἐπορεύθη ἐν <choice><orig>βουλῂ</orig><corr>βουλῇ</corr></choice> ἀσεβῶν· οὐκ εἶπεν πεπόρευται· ὁ μὲν γὰρ ἐν τῷ βίῳ τυγχάνων· οὔπω μακαριστὸς· διὰ τὸ
-                     <lb n="11"/>ἄδηλον τῆς ἐκβάσεως· ὁ δὲ τῷ τοιούτῳ τέλει καθορμισθεὶς ἀσφαλῶς μακαρίζεται· πῶς οὖν μακάριοι οἱ πορευόμενοι
-                     <lb n="12"/>ἐν νόμῳ <choice><expan>κυρίου</expan><abbr type="nomSac">κυ</abbr></choice>· <choice><orig>κατὰυτὸ</orig><reg>κατ᾿αὐτὸ</reg></choice> δηλαδὴ τὸ ἔργον· ἀλλ᾿οὐχ ὁ πρὸς ἅπαξ ἢ
-                     <lb n="13"/>δεύτερον <choice><orig>φυγὸν</orig><corr>φυγῶν</corr></choice> τὸ κακὸν ἐπαινετός·</seg> <hi rend="red ink bold"><choice><orig>ἀλλως</orig><corr>ἄλλως</corr></choice> τοῦ αὐτοῦ</hi>· <seg type="commentaryfragment" source="Basilius of Kappadokia" xml:id="vat-gr-1422-fr-1-2" corresp="#vat-gr-1422-1-9">Μακαρι
+                     <lb n="7"/><choice><orig style="abbreviation-ending">κ<am>ατα</am>γίνονται</orig><expan>καταγίνονται</expan></choice>· ὧν οὐδέν ἐστιν ἀγαθὸν τῇ ἑαυτοῦ <choice><orig style="abbreviation-sup-ending">φ<hi rend="sup">ύ<am>σει</am></hi></orig><expan>φύσει</expan></choice>· ἅτε δὴ τρεπτὸν <choice><orig style="abbreviation">καὶ</orig><expan>καὶ</expan></choice> τοὺς αὐτὸ <choice><orig style="abbreviation-ending">κεκτημέν<am>ους</am></orig><expan>κεκτημένους</expan></choice> ἀγαθοὺς μὴ ποιοῦν· <choice><orig style="abbreviation-sup-ending">μακάρι<hi rend="sup">ο<am>ς</am></hi></orig></choice> οὖν
+                     <lb n="8"/>ὁ τὰ ὄντως ὄντα ποθῶν· ἀνὴρ δὲ φήσας· <choice><orig>οὐκαπέκλεισε</orig><reg>οὐκ ἀπέκλεισε</reg></choice> τοῦ μακαρισμοῦ τὰς γυναῖκας· ὧν γὰρ ἡ φύσις κοινὴ· <choice><orig style="abbreviation">καὶ</orig><expan>καὶ</expan></choice> τὰ
+                     <lb n="9"/>ἔργα <choice><orig style="abbreviation">καὶ</orig><expan>καὶ</expan></choice> ὁ μισθὸς· διὰ δὲ τοῦ ἡγεμονικωτέρου τὴν κοινὴν ἐδήλωσε <choice><orig style="abbreviation-sup-ending">φ<hi rend="sup">ύ<am>σιν</am></hi></orig><expan>φύσιν</expan></choice>· διδάσκει <choice><orig style="abbreviation">δὲ</orig><expan>δὲ</expan></choice>· <choice><orig style="abbreviation">καὶ</orig><expan>καὶ</expan></choice> πῶς ἐπιγνωσόμεθα· τὸν <choice><orig style="ending-common">μακαρισμ<am>ὸν</am></orig><expan>μακαρισμὸν</expan></choice>
+                     <lb n="10"/>ἐπαγαγὼν· ὃς οὐκ ἐπορεύθη ἐν <choice><orig>βουλῂ</orig><corr>βουλῇ</corr></choice> ἀσεβῶν· οὐκ εἶπεν πεπόρευται· ὁ μὲν <choice><orig style="ending-common">γ<am>ὰρ</am></orig><expan>γὰρ</expan></choice> ἐν τῷ βίῳ τυγχάνων· οὔπω <choice><orig style="abbreviation-sup-ending">μακαριστ<hi rend="sup">ὸ<am>ς</am></hi></orig><expan>μακαριστὸς</expan></choice>· διὰ τὸ
+                     <lb n="11"/>ἄδηλον τῆς ἐκβάσεως· ὁ <choice><orig style="abbreviation">δὲ</orig><expan>δὲ</expan></choice> τῷ <choice><orig style="abbreviation-ending">τοιούτ<am>ῳ</am></orig><expan>τοιούτῳ</expan></choice> τέλει καθορμισθεὶς ἀσφαλῶς μακαρίζεται· πῶς οὖν μακάριοι οἱ πορευόμενοι
+                     <lb n="12"/>ἐν <choice><orig style="abbreviation-ending">νόμ<am>ῳ</am></orig><expan>νόμῳ</expan></choice> <choice><expan>κυρίου</expan><abbr type="nomSac">κυ</abbr></choice>· <choice><orig>κατὰυτὸ</orig><reg>κατ᾿αὐτὸ</reg></choice> δηλαδὴ τὸ ἔργον· ἀλλ᾿οὐχ ὁ <choice><orig style="abbreviation-sup-ending">πρ<hi rend="sup">ὸ<am>ς</am></hi></orig><expan>πρὸς</expan></choice> ἅπαξ ἢ
+                     <lb n="13"/><choice><orig style="ending-common">δεύτερ<am>ον</am></orig><expan>δεύτερον</expan></choice> <choice><orig>φυγὸν</orig><corr>φυγῶν</corr></choice> τὸ <choice><orig style="ending-common">κακ<am>ὸν</am></orig><expan>κακὸν</expan></choice> ἐπαινετός·</seg> <hi rend="red ink bold"><choice><orig>ἀλλως</orig><corr>ἄλλως</corr></choice> τοῦ αὐτοῦ</hi>· <seg type="commentaryfragment" source="Basilius of Kappadokia" xml:id="vat-gr-1422-fr-1-2" corresp="#vat-gr-1422-1-9">Μακαρι
                      <lb n="14"/>στέον γὰρ ἀληθῶς οὐ τὸ μετέχον ἀρετῆς <gap reason="left intentionally blank" quantity="5" unit="character"/> φεύγων τὸ κακὸν· ὅν
                      <lb n="15"/>τῳ γὰρ ἂν κυρίως ἀπέχεσθαι λέγοιντο· οὐ γὰρ καθάπαξ τὸν μὴ πο
                      <lb n="16"/>ρευθέντα ἐν βουλῇ ἀσεβῶν· καὶ ἐν ὁδῷ ἁμαρτωλῶν μὴ στάντα
