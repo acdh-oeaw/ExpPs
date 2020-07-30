@@ -286,6 +286,13 @@
         </div>
     </xsl:template>
     
+    <xsl:template match="tei:note[@type = 'inline']">
+        <xsl:text> [</xsl:text>
+        <xsl:value-of select="@place"/>
+        <xsl:text>] </xsl:text>
+        <xsl:apply-templates/>
+    </xsl:template>
+    
     <xsl:template match="tei:quote/tei:lb">
         <span class="line-number">
             <xsl:text>(</xsl:text>
@@ -303,7 +310,7 @@
         </span>
     </xsl:template>
     
-    <xsl:template match="tei:q[@rend = 'red ink bold']">
+    <xsl:template match="tei:quote[@rend = 'red ink bold']">
         <span class="red-ink-bold">
             <xsl:value-of select="text()"/>
         </span>
@@ -323,7 +330,7 @@
         <xsl:text>〉</xsl:text>
     </xsl:template>
     
-    <xsl:template match="tei:choice[exists(tei:reg)]">
+    <xsl:template match="tei:choice[exists(tei:reg) and not(exists(@style))]">
         <xsl:text> </xsl:text>
         <xsl:value-of select="tei:orig"/>
         <xsl:text> (</xsl:text>
@@ -331,7 +338,7 @@
         <xsl:text>)</xsl:text>
     </xsl:template>
     
-    <xsl:template match="tei:choice[exists(tei:abbr)]">
+    <xsl:template match="tei:choice[exists(tei:abbr) and not(exists(@style))]">
         <xsl:choose>
             <xsl:when test="tei:abbr/@type = 'nomSac'">
                 <span class="overline">
@@ -347,7 +354,22 @@
         <xsl:text>)</xsl:text>
     </xsl:template>
     
-    <xsl:template match="tei:choice[not(@style = 'with-abbreviation') and (tei:orig/@style = 'abbreviation' or tei:orig/@style ='ending' or tei:orig/@style = 'abbreviation-ending' or tei:orig/@style = 'abbreviation-sup-ending')]">
+    <xsl:template match="tei:choice[exists(tei:abbr) and exists(@style) and @style = 'nomina-sacra-with-abbreviation']">
+        <span class="overline">
+              <xsl:apply-templates/>
+        </span>
+        <xsl:text> (</xsl:text>
+        <xsl:value-of select="tei:expan"/>
+        <xsl:text>)</xsl:text>
+    </xsl:template>
+    
+    <xsl:template match="tei:am[ancestor::tei:choice[@style = 'nomina-sacra-with-abbreviation']]">
+        <xsl:text>(</xsl:text>
+        <xsl:value-of select="text()"/>
+        <xsl:text>)</xsl:text>
+    </xsl:template>
+    
+    <xsl:template match="tei:choice[not(@style = 'with-abbreviation') and (tei:orig/@style = 'abbreviation' or tei:orig/@style ='ending' or tei:orig/@style = 'abbreviation-ending' or tei:orig/@style = 'abbreviation-sup-ending') or tei:orig/@style = 'abbreviation-sup-ending-classical']">
         <xsl:choose>
             <xsl:when test="tei:orig[@style = 'abbreviation']">
                 <xsl:text>(</xsl:text>
@@ -366,10 +388,13 @@
             <xsl:when test="tei:orig[@style = 'ending-common']">
                 <xsl:apply-templates select="tei:orig[@style = 'ending-common']"/>
             </xsl:when>
+            <xsl:when test="tei:orig[@style = 'abbreviation-sup-ending-classical']">
+                <xsl:apply-templates select="tei:orig[@style = 'abbreviation-sup-ending-classical']"/>
+            </xsl:when>
         </xsl:choose>
     </xsl:template>
     
-    <xsl:template match="tei:choice[@style = 'with-abbreviation' and (tei:orig/@style = 'abbreviation' or tei:orig/@style ='ending' or tei:orig/@style = 'abbreviation-ending' or tei:orig/@style = 'abbreviation-sup-ending')]">
+    <xsl:template match="tei:choice[exists(@style) and @style = 'with-abbreviation' and (tei:orig/@style = 'abbreviation' or tei:orig/@style ='ending' or tei:orig/@style = 'abbreviation-ending' or tei:orig/@style = 'abbreviation-sup-ending' or tei:orig/@style = 'ending-common')]">
         <xsl:choose>
             <xsl:when test="tei:orig[@style = 'abbreviation']">
                 <xsl:text>(</xsl:text>
@@ -381,11 +406,32 @@
             </xsl:when>
             <xsl:when test="tei:orig[@style = 'abbreviation-ending']">
                 <xsl:apply-templates select="tei:orig[@style = 'abbreviation-ending']"/>
+                <xsl:text> (</xsl:text>
+                <xsl:value-of select="tei:reg/text()"/>
+                <xsl:text>)</xsl:text>
             </xsl:when>
             <xsl:when test="tei:orig[@style = 'abbreviation-sup-ending']">
                 <xsl:apply-templates select="tei:orig[@style = 'abbreviation-sup-ending']"/>
+                <xsl:if test="exists(tei:corr)">
+                    <xsl:text> 〈</xsl:text>
+                    <xsl:value-of select="tei:corr/text()"/>
+                    <xsl:text>〉</xsl:text>
+                </xsl:if>
+                <xsl:if test="exists(tei:reg)">
+                    <xsl:text> (</xsl:text>
+                    <xsl:value-of select="tei:reg/text()"/>
+                    <xsl:text>)</xsl:text>
+                </xsl:if>
+            </xsl:when>
+            <xsl:when test="tei:orig[@style = 'ending-common']">
+                <xsl:apply-templates select="tei:orig[@style = 'ending-common']"/>
                 <xsl:text> (</xsl:text>
-                <xsl:value-of select="tei:corr/text()"/>
+                <xsl:if test="exists(tei:expan)">
+                    <xsl:value-of select="tei:expan/text()"/>
+                </xsl:if>
+                <xsl:if test="exists(tei:reg)">
+                    <xsl:value-of select="tei:reg/text()"/>
+                </xsl:if>
                 <xsl:text>)</xsl:text>
             </xsl:when>
         </xsl:choose>
@@ -417,8 +463,18 @@
     
     <xsl:template match="text()[ancestor::tei:expan and not(ancestor::tei:choice[@style = 'with-abbreviation'])]"/>
     
+    <xsl:template match="tei:orig[@style = 'abbreviation-sup-ending-classical']">
+        <xsl:apply-templates/>
+    </xsl:template>
+    
     <xsl:template match="tei:orig[@style = 'abbreviation-ending']">
         <xsl:apply-templates/>
+    </xsl:template>
+    
+    <xsl:template match="tei:am[ancestor::tei:orig[@style = 'abbreviation-sup-ending-classical']]">
+        <xsl:text>〈〈</xsl:text>
+        <xsl:value-of select="text()"/>
+        <xsl:text>〉〉</xsl:text>
     </xsl:template>
     
     <xsl:template match="tei:am[parent::tei:orig[@style = 'abbreviation-ending']]">
@@ -433,7 +489,7 @@
         <xsl:apply-templates/>
     </xsl:template>
     
-    <xsl:template match="tei:hi[parent::tei:orig[@style = 'abbreviation-sup-ending']]">
+    <xsl:template match="tei:hi[parent::tei:orig[@style = 'abbreviation-sup-ending'] or parent::tei:orig[@style = 'abbreviation-sup-ending-classical']]">
         <sup>
             <xsl:apply-templates/>
         </sup>
@@ -456,9 +512,9 @@
     </xsl:template>
     
     <xsl:template match="tei:add">
-        <xsl:text>[</xsl:text>
+        <!--<xsl:text>[</xsl:text>
         <xsl:value-of select="text()"/>
-        <xsl:text>]</xsl:text>
+        <xsl:text>]</xsl:text>-->
     </xsl:template>
     
     <xsl:template match="tei:g[not(@type = 'reference')]">
@@ -507,9 +563,15 @@
             <xsl:choose>
                 <xsl:when test="exists(root()//tei:div[@type = 'bibletext']/tei:quote/tei:anchor[@xml:id = substring-after(current()/@corresp,'#')])">
                     <xsl:value-of select="root()//tei:div//tei:anchor[@xml:id = substring-after(current()/@corresp,'#')]/@n"/>
+                    <xsl:if test="exists(@prev)">
+                        <xsl:text> (continued)</xsl:text>
+                    </xsl:if>
                 </xsl:when>
                 <xsl:otherwise>
-                    <xsl:value-of select="root()//tei:q[@xml:id = substring-after(current()/@corresp,'#')]"/>
+                    <xsl:value-of select="root()//tei:quote[@xml:id = substring-after(current()/@corresp,'#')]"/>
+                    <xsl:if test="exists(@prev)">
+                        <xsl:text> (continued)</xsl:text>
+                    </xsl:if>
                 </xsl:otherwise>
             </xsl:choose>
         </li>
