@@ -102,6 +102,66 @@
                   <graphic url="./images/linking-sign-1.png"/>
                </figure>
             </glyph>
+            <glyph xml:id="linking-sign-2">
+               <glyphName>LINKING SIGN TWO</glyphName>
+               <charProp>
+                  <localName>entity</localName>
+                  <value>linking-sign-2</value>
+               </charProp>
+               <figure>
+                  <graphic url="./images/linking-sign-2.png"/>
+               </figure>
+            </glyph>
+            <glyph xml:id="linking-sign-3">
+               <glyphName>LINKING SIGN THREE</glyphName>
+               <charProp>
+                  <localName>entity</localName>
+                  <value>linking-sign-3</value>
+               </charProp>
+               <figure>
+                  <graphic url="./images/linking-sign-3.png"/>
+               </figure>
+            </glyph>
+            <glyph xml:id="linking-sign-4">
+               <glyphName>LINKING SIGN FOUR</glyphName>
+               <charProp>
+                  <localName>entity</localName>
+                  <value>linking-sign-4</value>
+               </charProp>
+               <figure>
+                  <graphic url="./images/linking-sign-4.png"/>
+               </figure>
+            </glyph>
+            <glyph xml:id="linking-sign-5">
+               <glyphName>LINKING SIGN FIVE</glyphName>
+               <charProp>
+                  <localName>entity</localName>
+                  <value>linking-sign-5</value>
+               </charProp>
+               <figure>
+                  <graphic url="./images/linking-sign-5.png"/>
+               </figure>
+            </glyph>
+            <glyph xml:id="linking-sign-6">
+               <glyphName>LINKING SIGN SIX</glyphName>
+               <charProp>
+                  <localName>entity</localName>
+                  <value>linking-sign-6</value>
+               </charProp>
+               <figure>
+                  <graphic url="./images/linking-sign-6.png"/>
+               </figure>
+            </glyph>
+            <glyph xml:id="horizontal-line-1">
+               <glyphName>HORIZONTAL LINE</glyphName>
+               <charProp>
+                  <localName>entity</localName>
+                  <value>horizontal-line-1</value>
+               </charProp>
+               <figure>
+                  <graphic url="./images/graphic-1.png"/>
+               </figure>
+            </glyph>
          </charDecl>
          <editorialDecl>
             <punctuation>
@@ -182,9 +242,11 @@
          <change who="Thomas Klampfl" when="2020-07-15">Transformation into a TEI document (Psalm 1). - Continued.</change>
          <change who="Thomas Klampfl" when="2020-07-16">Transformation into a TEI document (Psalm 1). - Continued.</change>
          <change who="Thomas Klampfl" when="2020-07-22">Transformation into a TEI document (Psalm 1). - Continued.</change>
-         <change who="Thomas Klampfl" when="2020-07-23">Improveing treatment of abbreviations.</change>
+         <change who="Thomas Klampfl" when="2020-07-23">Improve treatment of abbreviations.</change>
          <change who="Thomas Klampfl" when="2020-07-29">Introducing abbreviations and their expansion.</change>
          <change who="Thomas Klampfl" when="2020-07-30">Transformation into a TEI document (Psalm 1). - Continued.</change>
+         <change who="Thomas Klampfl" when="2020-08-05">Improve linking. Transformation into a TEI document. - Continued.</change>
+         <change who="Thomas Klampfl" when="2020-08-06">Improve stylesheet. Transformation into a TEI document. - Continued.</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -308,9 +370,9 @@
             <div xml:id="vat-gr-1422-1-10" type="bibletext" subtype="commented" rend="red ink" rendition="middle of the page">
                <quote corresp="../psalms-LXX/psalms.xml#Ps-LXX-1-1" n="Ps (LXX) 1:1" xml:lang="grc">
                   <anchor xml:id="vat-gr-1422-ps-1-1b" type="psalmtext" n="Ps (LXX) 1:1b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-1-1"/>
-                  <lb n="1"/><g ref="#sign-1"/>Kαὶ<g xml:id="vat-gr-1422-ref-1-1" type="reference" rendition="above the line">Β</g> ἐν <choice><orig>ὁδῶι</orig><reg>ὁδῷ</reg></choice> ἁμαρτωλῶν οὐκ ἔστη·
+                  <lb n="1"/><g ref="#sign-1"/>Kαὶ<g xml:id="vat-gr-1422-ref-1-1" type="reference" rendition="above the line" n="Ps 1:1b">Β</g> ἐν <choice><orig>ὁδῶι</orig><reg>ὁδῷ</reg></choice> ἁμαρτωλῶν οὐκ ἔστη·
                   <anchor xml:id="vat-gr-1422-ps-1-1c" type="psalmtext" n="Ps (LXX) 1:1c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-1-1"/>
-                  <lb n="2"/>Καὶ<g xml:id="vat-gr-1422-ref-1-2" type="reference" rendition="above the line">Γ</g> ἐπὶ καθέδραν λοιμῶν οὐκ ἐ
+                  <lb n="2"/>Καὶ<g xml:id="vat-gr-1422-ref-1-2" type="reference" rendition="above the line" n="Ps 1:1c">Γ</g> ἐπὶ καθέδραν <g ref="#linking-sign-1" type="linking" subtype="destination" xml:id="vat-gr-1422-ls-1-1"/> λοιμῶν οὐκ ἐ
                   <lb n="3"/>κάθισεν·
                </quote>
             </div>
@@ -346,7 +408,7 @@
                      <lb n="27"/>φεύγειν ὁ λόγος <choice><orig style="abbreviation-sup-ending">π<hi rend="sup">α<am>ρα</am></hi>κελεύεται</orig><expan>παρακελεύεται</expan></choice> <add resp="Sebastiano Panteghini">καὶ</add> τὰ τούτων συνέδρια·</seg> <hi rend="red ink bold">Ἀθανασίου</hi>· <seg type="commentaryfragment" corresp="#vat-gr-1422-ps-1-1a" xml:id="vat-gr-1422-fr-1-10" source="Athanasius of Alexandria">Δυνατὸν δὲ βουλὴν ἀσεβῶν εἰπεῖν τὴν σύνοδον· <add resp="Sebastiano Panteghini">καὶ</add> τὴν
                      <lb n="28"/>συνέλευσιν τῶν πονηρῶν· καὶ ἐπεὶ βλαβερὸν· τὸ τοῖς ἀθροίσμασι τῶν ἀσεβῶν παραβάλλειν· μακαρίζει· τὸν μὴδὲ
                      <lb n="29"/>κατὰ ποσὸν εἰς <add resp="Sebastiano Panteghini">τὸ</add> αὐτὸν αὐτοῖς ἐρχόμενον· τοιοῦτος ὑπῆρχεν ὁ Ἰωσὴφ ὁ ἀπὸ <choice><orig style="abbreviation-sup-ending">Ἀριμα<hi rend="sup">θ<am>ίας</am></hi></orig><expan>Ἀριμαθίας</expan></choice>· ὁ τὸ σῶμα τοῦ <choice><abbr type="nomSac">κυ</abbr><expan>κυρίου</expan></choice> καὶ <choice><abbr type="nomSac">θῦ</abbr><expan>θεοῦ</expan></choice> θάψας· εἴ
-                     <lb n="30"/>ρηται <choice><orig style="ending-common">γ<am>ὰρ</am></orig><expan>γὰρ</expan></choice> περὶ αὐτοῦ· ὡς οὐκ ἦν <choice><orig style="abbreviation-sup-ending">συγκατατιθέμεν<hi rend="sup">ο<am>ς</am></hi></orig><expan>συγκατατιθέμενος</expan></choice> τῇ βουλῇ τῶν <choice><abbr type="nomSac">ἰῦ</abbr><expan>Ἰησοῦ</expan></choice> προδοτῶν·</seg> <graphic url="./images/graphic-1.png" width="10mm"/> <hi rend="red ink bold">Ἀστερίου</hi>· <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-1-11" corresp="#vat-gr-1422-ps-1-1b" source="Asterius the Sophist"><choice><orig style="ending-common">Διδασκαλί<am>ας</am></orig><expan>Διδασκαλίας</expan></choice><g ref="#linking-sign-1"/> γὰρ ἡ κα<note type="inline" place="left margin" rend="red ink" xml:id="vat-gr-1422-1-8" xml:lang="grc" corresp="#vat-gr-1422-ps-1-1b"><hi rend="overline">Β</hi></note>
+                     <lb n="30"/>ρηται <choice><orig style="ending-common">γ<am>ὰρ</am></orig><expan>γὰρ</expan></choice> περὶ αὐτοῦ· ὡς οὐκ ἦν <choice><orig style="abbreviation-sup-ending">συγκατατιθέμεν<hi rend="sup">ο<am>ς</am></hi></orig><expan>συγκατατιθέμενος</expan></choice> τῇ βουλῇ τῶν <choice><abbr type="nomSac">ἰῦ</abbr><expan>Ἰησοῦ</expan></choice> προδοτῶν·</seg> <g ref="#horizontal-line-1"/> <hi rend="red ink bold">Ἀστερίου</hi>· <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-1-11" corresp="#vat-gr-1422-ps-1-1b" source="Asterius the Sophist"><choice><orig style="ending-common">Διδασκαλί<am>ας</am></orig><expan>Διδασκαλίας</expan></choice><g ref="#linking-sign-1" corresp="#vat-gr-1422-ls-1-1" type="linking" subtype="source"/> γὰρ ἡ κα<note type="inline" subtype="linking" place="left margin" rend="red ink" xml:id="vat-gr-1422-1-8" xml:lang="grc" corresp="#vat-gr-1422-ref-1-1"><hi rend="overline">Β</hi></note>
                      <lb n="31"/>θέδρα κατὰ τὸ ἐπὶ τῆς καθέδρας Μωσέως·</seg> <hi rend="red ink bold"><choice><orig style="abbreviation-sup-ending">ἄλλ<hi rend="sup">ω<am>ς</am></hi></orig><expan>ἄλλως</expan></choice></hi> <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-1-12" corresp="#vat-gr-1422-ps-1-1b" source="Anonymous">Τὴν ἀρχὴν τῆς προφητείας <choice><orig>τῶι</orig><reg>τῷ</reg></choice> ἐξ αὐτοῦ κατὰ σάρκα τε
                      <lb n="32"/>χθησομένῳ <choice><abbr type="nomSac">χῷ</abbr><expan>Χριστῷ</expan></choice>· ἀνατίθησιν ὁ μέγας <choice><abbr type="nomSac">δαδ</abbr><expan>Δαυΐδ</expan></choice>· διὸ ἐν πρώτοις μακαρίζει τοὺς εἰς αὐτὸν ἠλπικότας· μακαρίους δὲ
                      <lb n="33"/>καλεῖ τοὺς μὴ πορευθέντας ἐν βουλῇ ἀσεβῶν· μήτε μὴν <choice><orig style="ending-common">στάντ<am>ας</am></orig><expan>στάντας</expan></choice> ἐν <choice><orig>ὁδῶι</orig><reg>ὁδῷ</reg></choice> ἁμαρτωλῶν· μὴδὲ ἐπὶ καθέδρας κεκα
@@ -355,7 +417,81 @@
                      <lb n="36"/>μὲν τῇ πίστει τοῖς θείοις νόμοις τὸν τῆς δικαιοσύνης αὐχένα· κατάγε τὸ εἰδέναι φημὶ τὸν <choice><orig style="ending-common">τ<am>ῶν</am></orig><expan>τῶν</expan></choice> ὅλων <choice><abbr type="nomSac">θν</abbr><expan>θεὸν</expan></choice> καὶ αὐτὸν ἐλέ
                      <lb n="37"/>σθαι προσκυνεῖν· κατημεληκότας δὲ τὸ κατορθοῦν ἐθέλειν τὸ ἀρέσκον <choice><orig>αὐτῶι</orig><reg>αὐτῷ</reg></choice>· καὶ κατολισθήσαντας μὲν εἰς τὸ πα
                      <lb n="38"/>ραυτίκα τερπνὸν· καὶ ταῖς τοῦ σώματος ἡδοναῖς· καθάπέρ τισι βορβόροις ὀλοτρόπως ἐκκοιλισμένους· οὐ τῶν
-                     <lb n="39"/>μὴ πορευθέντων μᾶλλον ἐν ὁδῷ ἁμαρτωλῶν ἀποφαίνει μακάριον· ἀλλὰ τὸν μὴ ἀνεχόμενον στῆναι καὶ ἐγχρονίσαι·
+                     <lb n="39"/>μὴ πορευθέντων μᾶλλον ἐν ὁδῷ ἁμαρτωλῶν ἀποφαίνει μακάριον· ἀλλὰ τὸν μὴ ἀνεχόμενον στῆναι καὶ ἐγχρονίσαι·</seg>
+                     <lb n="40"/><note place="left margin" type="inline" rend="red ink bold" xml:id="vat-gr-1422-1-13"><hi rend="red ink bold"><choice><orig style="abbreviation-sup-ending">ἄλλ<hi rend="sup">ω<am>ς</am></hi></orig><expan>ἄλλως</expan></choice></hi></note> <seg type="commentaryfragment" corresp="#vat-gr-1422-ps-1-1b" xml:id="vat-gr-1422-fr-1-14" source="Anonymous" rendition="main text">Tὸ δὲ ἴδιον τοῦ λόγου· μακαρίζει πάντα <choice><abbr type="nomSac">ἄνον</abbr><expan>ἄνθρωπον</expan></choice>· τὸν μὴ συνεδριάζοντα ἢ συνευδοκοῦντα τοῖς κακὰ βουλευομένοις·
+                     <lb n="41"/>ἢ ἀτάκτως περιπατοῦσιν·</seg> <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-1-15" corresp="#vat-gr-1422-ps-1-1b" source="Anonymous"><hi rend="red ink bold"><choice><orig style="abbreviation-sup-ending">ἄλλ<hi rend="sup">ω<am>ς</am></hi></orig><expan>ἄλλως</expan></choice></hi>· Ὡς Λὼτ καὶ πάντες οἱ ποιοῦντες οὕτως ὡς αὐτός·</seg> <hi rend="red ink bold"><choice><orig style="abbreviation-sup-ending">Ὡριγ<hi rend="sup">ε<am>νους</am></hi></orig><expan>Ὡριγένους</expan></choice></hi>· <seg type="commentaryfragment" corresp="#vat-gr-1422-ps-1-1b" xml:id="vat-gr-1422-fr-1-16" source="Origenes"><choice><orig>Ἐι</orig><corr>Εἰ</corr></choice> καὶ τὸ μὴ ἁ
+                     <lb n="42"/>μαρτάνειν <choice><orig style="ending-common">δυσκατόρθωτ<am>ον</am></orig><expan>δυσκατόρθωτον</expan></choice> <choice><orig style="abbreviation-sup-ending">π<hi rend="sup">α<am>ρὰ</am></hi></orig><expan>παρὰ</expan></choice> <choice><abbr type="nomSac">ἀνοις</abbr><expan>ἀνθρώποις</expan></choice> εἶναι δοκεῖ· <choice><orig style="abbreviation-sup-ending">π<hi rend="sup">α<am>ρὰ</am></hi></orig><expan>παρὰ</expan></choice> μόνου γὰρ <choice><abbr type="nomSac">Ἰῦ</abbr><expan>Ἰησοῦ</expan></choice> γέγραπται· ὃς οὐκ ἔγνω ἁμαρτίαν· οὐδὲ εὑρέθη δόλος
+                     <lb n="43"/><note place="left margin" type="inline" rend="red ink" xml:id="vat-gr-1422-1-16" subtype="linking" corresp="#vat-gr-1422-ref-1-2"><hi rend="overline">Γ´</hi></note> ἐν τῷ στόματι αὐτοῦ·</seg> <g ref="#horizontal-line-1"/> <hi rend="red ink bold">Βασιλείου</hi>· <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-1-17" source="Basilius of Kappadokia" corresp="#vat-gr-1422-ps-1-1c">Ὀυχὶ τὴν ἀπὸ τοῦ ξύλου πρὸς ἁμαρτίαν μετάδοσιν νομίζειν <choice><orig style="ending-common">ἡμ<am>ᾶς</am></orig><expan>ἡμᾶς</expan></choice>
+                     <lb n="44"/>χρὴ τὴν καθέθραν· ἀλλὰ τὴν ἐδραίαν καὶ μόνιμον ἐν τῇ κρίσει τῆς κακίας διατριβὴν· ὅτι δὲ καὶ αἱ καθέδραι
+                     <lb n="45"/>διδασκαλίας εἰσὶ σύμβολα· παρίσταται ἐκ τῆς τοῦ Μωϋσέως καθέδρας· κατὰ τὸ εἰρημένον ἐκάθισαν οἱ γραμ
+                     <lb n="46"/>ματεῖς καὶ φαρισαῖοι ἐπὶ τῶν καθεδρῶν· τουτέστιν ἐπὶ τῶν διδασκαλικῶν· αἱ μὲν γὰρ αὐτῶν εἰσὶν ἐπωφελεῖς· αἱ
+                     <lb n="47"/>δὲ ἐπιβλαβεῖς· οὐ καθάπαξ μακαρίζει τῶν <choice><orig>ἐπικαθεδρῶν</orig><reg>ἐπὶ καθεδρῶν</reg></choice> μὴ καθισάντων· ἀλλὰ ταῖς τῶν λοιμῶν· ἢ
+                     <lb n="48"/>οὐ λοιμὸς ὁ κηρύσσων· μὴ κλέπτειν· κλέπτων δὲ· μὴ μοιχεύειν μοιχεύων δὲ· διὰ δὲ τὴς χρηστολογίας καὶ <choice><orig style="ending-common">εὐλογί<am>ας</am></orig><expan>εὐλογίας</expan></choice>
+                     <lb n="49"/>ἐξαπατῶν τὰς τῶν ἀκάκων ψυχὰς. τοῦτον μὲν οὖν ἀφεκτέον· ἐγγίζειν δὲ σπυδαστέον· τοῖς διδασκάλοις τῆς
+                     <lb n="50"/>ἀληθείας· οὕτω γὰρ σοφός τις ἔσται· σοφοῖς πορευόμενος·</seg> <hi rend="red ink bold"><choice><orig>ἄλλ<hi rend="sup">ω<am>ς</am></hi></orig><expan>ἄλλως</expan></choice></hi>: <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-1-18" corresp="#vat-gr-1422-ps-1-1c" source="Anonymous">Ἀκαθάρτων κακῶν οὐκ ἐνέμεινεν·</seg>
+                     <lb n="51"/><hi rend="red ink bold"><choice><orig style="abbreviation-sup-ending">ἄλλ<hi rend="sup">ω<am>ς</am></hi></orig><expan>ἄλλως</expan></choice></hi>· <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-1-19" corresp="#vat-gr-1422-ps-1-1c" source="Anonymous">Τὴν τῶν κακῶν ἐργασίαν κατὰ διάδοσιν γινομένην· τουτέστιν οὐ πεφρονηκῶς καὶ διδάξαι τὰ δι
+                     <lb n="52"/>άστροφα πολυπλόκων ἐννοιῶν· ἐπινοήσας δεινῶς εἰς ἀνατροπὴν τῶν ἀκεραιοτέρων· οὐχ εὑρετὴς
+                     <lb n="53"/>γεγονὼς τῶν κατὰ <choice><abbr type="nomSac">θῦ</abbr><expan>θεοῦ</expan></choice> διδαγμάτων· οὐχ οἷά τις λοιμὸς· τὸν τῆς δυσσεβείας θάνατον τῆς τε ἑαυτοῦ καὶ τῆς
+                     <lb n="54"/>ἑτέρων καταχέας κεφαλῆς· λοιμοὶ γὰρ οἱ τῆς ἀμωμήτου πίστεως φένακες· καὶ πάντα τὰ ὀρθὰ δια
+                     <lb n="55"/>στρέφοντες· καὶ τὸ ἐναγὲς πρὸς ἁμαρτίαν οὐ μόνον δρῶντες· ἀλλὰ καὶ ἄλλοις μεταδόντες·</seg> <g ref="#horizontal-line-1"/>
+                     <lb n="56"/><note place="left margin" type="inline" rend="red ink" xml:id="vat-gr-1422-1-17" subtype="linking" corresp="#vat-gr-1422-ref-1-3"><g ref="#linking-sign-2" corresp="#vat-gr-1422-ls-1-3" type="linking" subtype="source"/> <hi rend="overline">Δ´</hi></note> <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-1-22" corresp="#vat-gr-1422-ps-1-2a" source="Anonymous">Προσήκει δὲ οὐ μόνον τὰ προειρημένα βδελύσσεσθαι. ἀλλὰ καὶ τῷ θείῳ νόμῳ νύκτωρ τὲ καὶ μεθ’ ἡμέραν προ
+                     <lb n="57"/>σέχειν· κἀκεῖνα θέλειν· ἃ ὁ θεῖος <choice><orig style="ending-common">νόμο<am>ς</am></orig><expan>νόμος</expan></choice> ὑπαγορεύει· καὶ κατὰ τὸν ἐκείνου σκοπὸν· τὸν οἰκεῖον βίον εὐθύνειν· εἶ
+                     <lb n="58"/>τα δείκνυσι τὸν καρπὸν ἐντεῦθεν φυόμενον·</seg> <hi rend="red ink bold">Εὐσεβίου</hi>· <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-1-20" corresp="#vat-gr-1422-ps-1-2a" source="Eusebius of Caesarea"><choice><orig>Ὄυτε</orig><corr>Οὔτε</corr></choice> γὰρ ἄλλως κατορθοῦται ἀρετὴ κακῶν.
+                     <lb n="59"/>εἰ μὴ διαμελετὴς θείων φραφῶν·</seg> <hi rend="red ink bold"><choice><orig style="abbreviation-sup-ending">ἄλλ<hi rend="sup">ω<am>ς</am></hi></orig><expan>ἄλλως</expan></choice></hi> <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-1-21" corresp="#vat-gr-1422-ps-1-2a" source="Anonymous">Τὸ εὐαγγελικὸν δηλονότι δοκιμάζων τὸ εὐάρεστον τοῦ <choice><abbr type="nomSac">θῦ</abbr><expan>θεοῦ</expan></choice>· καὶ τοῦ
+                     <lb n="60"/>το ποιῶν·</seg> <g ref="#linking-sign-3" corresp="#vat-gr-1422-ls-1-4" type="linking" subtype="source"/> <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-1-23" corresp="#vat-gr-1422-ps-1-2a" source="Anonymous">Τὸ σύντονον δηλοῖ· οὐ γὰρ δεῖ ἠμελημένον· μελετᾶν· τοῦ κυρίου τὸν νόμον·</seg> <g ref="#horizontal-line-1"/>
+                     <lb n="61"/><note place="left margin" type="inline" rend="red ink" xml:id="vat-gr-1422-1-18" subtype="linking" corresp="#vat-gr-1422-ref-1-4"><hi rend="red ink bold"><choice><orig style="abbreviation-sup-ending">Εὐσε<hi rend="sup">β<am>ίου</am></hi></orig><expan>Εὐσεβίου</expan></choice></hi> <g ref="#linking-sign-2" corresp="#vat-gr-1422-ls-1-3" type="linking" subtype="source"/> <hi rend="overline">Ε´</hi></note> <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-1-24" source="Eusebius of Caesarea" corresp="#vat-gr-1422-ps-1-3a">Ὡς γὰρ τὰ ξύλα τὰ ἐστῶτα  παρὰ τοῖς ὕδασιν ἀειθαλῆ ἐστὶν. οὕτω καὶ ὁ ἀρδόμενος τῇ τῶν γραφῶν μελέτῃ
+                     <lb n="62"/>ἀναθάλλει τὸν νοῦν καὶ ὑγιῆ τὴν διάνοιαν κέκτηται· ξύλον δὲ λέγει τὸν τίμιον καὶ ζῳοποιὸν <choice><abbr type="nomSac">στρὸν</abbr><expan>σταυρὸν</expan></choice>· τοῖς ὕ
+                     <lb n="63"/>δασι τῆς κολυμβήθρας περιεχόμενον· καὶ θάλλοντα τοὺς φωτιζομένους·</seg> <hi rend="red ink bold"><choice><orig style="abbreviation-sup-ending">ἄλλ<hi rend="sup">ω<am>ς</am></hi></orig><expan>ἄλλως</expan></choice></hi>· <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-1-25" corresp="#vat-gr-1422-ps-1-3a" source="Anonymous">Μιμεῖται γὰρ ὑδάτων
+                     <lb n="64"/>ἀρδείαν τὰ τοῦ θείου <choice><abbr type="nomSac">πνς</abbr><expan>πνεύματος</expan></choice> νάματα· καὶ καθάπερ ἐκεῖνα τὰ παραφυόμενα δένδρα· τεθηλέναι ποιεῖ· οὕτω
+                  </seg>
+               </ab>
+            </div>
+            <pb n="26r"/>
+            <div xml:id="vat-gr-1422-1-14" type="bibletext" subtype="commented" rend="red ink" rendition="middle of the page">
+               <quote corresp="../psalms-LXX/psalms.xml#Ps-LXX-1-2" n="Ps (LXX) 1:2" xml:lang="grc">
+                  <anchor xml:id="vat-gr-1422-ps-1-2a" type="psalmtext" n="Ps (LXX) 1:2a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-1-2"/>
+                  <lb n="1"/><g ref="#linking-sign-2" type="linking" subtype="destination" xml:id="vat-gr-1422-ls-1-3"/> <g xml:id="vat-gr-1422-ref-1-3" type="reference" rendition="above the line" n="Ps 1:2a">Δ</g>Ἀλλ’ ἢ ἐν <choice><orig>τῶι νόμωι</orig><reg>τῷ νόμῳ</reg></choice> <choice><abbr type="nomSac">κυ</abbr><expan>κυρίου</expan></choice> τὸ θέλημα
+                  <lb n="2"/>αὐτοῦ·
+                  <anchor xml:id="vat-gr-1422-ps-1-2b" type="psalmtext" n="Ps (LXX) 1:2b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-1-2"/>
+                  <g ref="#linking-sign-3" type="linking" subtype="destination" xml:id="vat-gr-1422-ls-1-4"/> καὶ ἐν <choice><orig>τῶι νόμωι</orig><reg>τῷ νόμῷ</reg></choice> αὐτοῦ
+                  <lb n="3"/>μελετήσει ἡμέρας <choice><orig style="abbreviation">καὶ</orig><expan>καὶ</expan></choice> νυκτός·
+                  <anchor xml:id="vat-gr-1422-ps-1-3a" type="psalmtext" n="Ps (LXX) 1:3a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-1-3"/>
+                  <lb n="4"/><g ref="#linking-sign-2" type="linking" subtype="destination" xml:id="vat-gr-1422-ls-1-5"/> <g xml:id="vat-gr-1422-ref-1-4" type="reference" rendition="above the line" n="Ps 1:3a">Ε</g>Καὶ ἔσται ὡς τὸ ξύλον τὸ πεφυτευ
+                  <lb n="5"/>μένον παρὰ τὰς διεξόδους
+                  <lb n="6"/>τῶν ὑδάτων·
+                  <anchor xml:id="vat-gr-1422-ps-1-3b" type="psalmtext" n="Ps (LXX) 1:3b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-1-3"/>
+                  <lb n="7"/><choice><orig style="abbreviation-ending">Ὃ<am>ς</am></orig><expan>Ὃς</expan></choice> τὸν καρπὸν αὐτοῦ δώσει ἐν και
+                  <lb n="8"/><choice><orig>ρῶι</orig><reg>καιρῷ</reg></choice> αὐτοῦ·
+                  <anchor xml:id="vat-gr-1422-ps-1-3c" type="psalmtext" n="Ps (LXX) 1:3c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-1-3"/>
+                  <g ref="#linking-sign-4" type="linking" subtype="destination" xml:id="vat-gr-1422-ls-1-6"/> καὶ τὸ φύλλον αὐτοῦ
+                  <lb n="9"/>οὐκ  ἀπορρυήσεται· καὶ πάντα
+                  <lb n="10"/>ὅσα ἂν <choice><orig>ποιῆι</orig><reg>ποιῇ</reg></choice> κατευοδωθήσεται·
+                  <anchor xml:id="vat-gr-1422-ps-1-4a" type="psalmtext" n="Ps (LXX) 1:4a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-1-4"/>
+                  <lb n="11"/><choice><orig>Ὀυχ</orig><corr>Οὐχ</corr></choice><g xml:id="vat-gr-1422-ref-1-5" type="reference" rendition="above the line" n="Ps (LXX) 1:4a">Ϛ</g> οὕτως <g ref="#linking-sign-5" xml:id="vat-gr-1422-ls-1-7" type="linking" subtype="destination"/> οἱ ἀσεβεῖς οὐχ οὕτως· <g ref="#linking-sign-6" xml:id="vat-gr-1422-ls-1-8" type="linking" subtype="destination"/> 
+                  <anchor xml:id="vat-gr-1422-ps-1-4b" type="psalmtext" n="Ps (LXX) 1:4b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-1-4"/>ἀλ
+                  <lb n="12"/>λ’ ἢ ὡσεὶ χνοῦς ὃν <choice><orig>ἐκῥίπτει</orig><reg>ἐκρίπτει</reg></choice> ὁ ἄνε
+                  <lb n="13"/>μος ἀπὸ προσώπου τῆς γῆς·
+                  <anchor xml:id="vat-gr-1422-ps-1-5a" type="psalmtext" n="Ps (LXX) 1:5a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-1-5"/>
+                  <lb n="14"/><g xml:id="vat-gr-1422-ref-1-6" type="reference" rendition="above the line" n="Ps (LXX) 1:5a">Η</g><choice><orig>Διατοῦτο</orig><reg>διὰ τοῦτο</reg></choice> οὐκ ἀναστήσονται ἀσε
+                  <lb n="15"/>βεῖς ἐν κρίσει· 
+                  <anchor xml:id="vat-gr-1422-ps-1-5b" type="psalmtext" n="Ps (LXX) 1:5b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-1-5"/>οὐδὲ ἁμαρτωλοὶ
+                  <lb n="16"/>ἐν <choice><orig>βουλῆι</orig><reg>βουλῇ</reg></choice> δικαίων·                  
+               </quote>
+            </div>
+            <div xml:id="vat-gr-1422-1-15" type="commentary" rendition="main text" rend="red ink">
+               <note place="left margin" rend="red ink" xml:id="vat-gr-1422-1-19" xml:lang="grc" corresp="#vat-gr-1422-1-14">
+                  <lb n="1"/>τοῖς ἀγα
+                  <lb n="2"/><choice><orig style="abbreviation-ending">π<am>ῶ</am>σι</orig><expan>πῶσι</expan></choice> <choice><orig style="ending-common">τ<am>ὸν</am></orig><expan>τὸν</expan></choice> <choice><abbr type="nomSac">θν</abbr><expan>θεὸν</expan></choice> 
+                  <lb n="3"/><gap reason="illegible" quantity="3" unit="character"/>συ
+                  <lb n="4"/>νεργεῖ 
+                  <lb n="5"/>εἰς ἀγαθ<gap reason="illegible" quantity="1" unit="character"/>·
+               </note>
+               <ab xml:lang="grc" xml:id="vat-gr-1422-1-20">
+                  <lb n="1"/><seg xml:id="vat-gr-1422-fr-1-26" type="commentaryfragment" corresp="#vat-gr-1422-ps-1-3a" source="Anonymous" prev="#vat-gr-1422-fr-1-25">καὶ ταῦτα παρασκευάζει τοὺς θείους φέρειν καρποὺς· εἰκότως τοίνυν τὸν τοῖς θείοις λογίοις ἐσχολακότα· δένδροις
+                  <lb n="2"/>ἀπείκασεν ἀειθαλῆ τὰ φύλλα καὶ τὸν καρπὸν φέρουσιν εἰς καιρόν· καὶ γὰρ οἱ τῆς ἀρετῆς ἀθληταὶ· τῶν μὲν πόνων
+                  <lb n="3"/>κατὰ τὸν μέλλοντα βίον κομίσονται τοὺς καρποὺς· οἷα δέ τινα φύλλα τὴν ἀγαθὴν ἐλπίδα διηνεκῶς ἐν ἑ
+                  <lb n="4"/>αυτοῖς φέροντες, τεθήλασι καὶ ἀγάλλονται· καὶ κλέπτουσι <choice><orig>τῆι</orig><reg>τῇ</reg></choice> <choice><orig>ψυχαγωγίαι</orig><reg>ψυχαγωγίᾳ</reg></choice> τὴν τῶν πόνων βαρύτητα·</seg> <g ref="#horizontal-line-1"/>
+                  <lb n="5"/><note place="left margin" type="inline" rend="red ink" xml:id="vat-gr-1422-1-21" subtype="linking" corresp="#vat-gr-1422-ref-1-5"><hi rend="overline">Ϛ´</hi></note> <hi rend="red ink bold"><choice><orig style="abbreviation-sup-ending">Ἀθαν<hi rend="sup">α<am>σίου</am></hi></orig><expan>Ἀθανασίου</expan></choice></hi> <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-1-27" source="Athanasius of Alexandria" corresp="#vat-gr-1422-ps-1-4a">Καρπὸν τοῦ ξύλου νοήσεις· τὴν ὀρθὴν πίστιν· φύλλον δὲ αὐτοῦ τὴν πλήρωσιν τῶν ἐντολῶν·</seg> <hi rend="red ink bold"><choice><orig style="abbreviation-sup-ending">Θεοδ<hi rend="sup">ω<am>ρήτου</am></hi></orig><expan>Θεοδωρήτου</expan></choice></hi> <seg type="commentaryfragment" source="Theodoretus" xml:id="vat-gr-1422-fr-1-28" corresp="#vat-gr-1422-ps-1-4a">Ἐκεῖνοι γάρ <choice><orig style="abbreviation-sup-ending">φ<hi rend="sup">η<am>σιν</am></hi></orig><expan>φησιν</expan></choice> 
                   </seg>
                </ab>
             </div>

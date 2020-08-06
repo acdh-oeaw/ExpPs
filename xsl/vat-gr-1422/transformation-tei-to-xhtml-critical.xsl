@@ -289,6 +289,15 @@
     <xsl:template match="tei:note[@type = 'inline']">
         <xsl:text> [</xsl:text>
         <xsl:value-of select="@place"/>
+        <xsl:if test="exists(@subtype) and @subtype = 'linking'">
+            <xsl:text> - linking to </xsl:text>
+            <a>
+                <xsl:attribute name="href">
+                    <xsl:value-of select="@corresp"/>
+                </xsl:attribute>
+                <xsl:value-of select="root()//tei:g[@xml:id = substring-after(current()/@corresp,'#')]/@n"/>
+            </a>
+        </xsl:if>
         <xsl:text>] </xsl:text>
         <xsl:apply-templates/>
     </xsl:template>
@@ -517,7 +526,7 @@
         <xsl:text>]</xsl:text>-->
     </xsl:template>
     
-    <xsl:template match="tei:g[not(@type = 'reference')]">
+    <xsl:template match="tei:g[not(@type = 'reference') and not(@type = 'linking')]">
         <span class="glyph-in-text">
             <xsl:text> |</xsl:text>
             <xsl:value-of select="root()/tei:TEI/tei:teiHeader/tei:encodingDesc/tei:charDecl/tei:glyph[@xml:id = substring-after(current()/@ref,'#')]/tei:glyphName/text()"/>
@@ -526,11 +535,42 @@
     </xsl:template>
     
     <xsl:template match="tei:g[@type = 'reference']">
+        <a>
+            <xsl:attribute name="id">
+                <xsl:value-of select="@xml:id"/>
+            </xsl:attribute>
+        </a>
         <sup>
             <span class="reference">
                 <xsl:value-of select="text()"/>
             </span>
         </sup>
+    </xsl:template>
+    
+    <xsl:template match="tei:g[@type = 'linking' and @subtype = 'destination']">
+        <a>
+            <xsl:attribute name="id">
+                <xsl:value-of select="@xml:id"/>
+            </xsl:attribute>
+        </a>
+        <span class="glyph-in-text">
+            <xsl:text> |</xsl:text>
+            <xsl:value-of select="root()/tei:TEI/tei:teiHeader/tei:encodingDesc/tei:charDecl/tei:glyph[@xml:id = substring-after(current()/@ref,'#')]/tei:glyphName/text()"/>
+            <xsl:text>| </xsl:text>
+        </span>
+    </xsl:template>
+    
+    <xsl:template match="tei:g[@type = 'linking' and @subtype = 'source']">
+            <span class="glyph-in-text">
+                <xsl:text> |</xsl:text>
+                <a>
+                    <xsl:attribute name="href">
+                        <xsl:value-of select="@corresp"/>
+                    </xsl:attribute>
+                    <xsl:value-of select="root()/tei:TEI/tei:teiHeader/tei:encodingDesc/tei:charDecl/tei:glyph[@xml:id = substring-after(current()/@ref,'#')]/tei:glyphName/text()"/>
+                </a>
+                <xsl:text>| </xsl:text>
+            </span>
     </xsl:template>
     
     <xsl:template match="tei:anchor[@type = 'psalmtext']">
@@ -547,6 +587,11 @@
                 <xsl:value-of select="@xml:id"/>
             </xsl:attribute>
         </a>
+        <xsl:if test="exists(@rendition)">
+            <xsl:text>[</xsl:text>
+            <xsl:value-of select="@rendition"/>
+            <xsl:text>] </xsl:text>
+        </xsl:if>
         <xsl:apply-templates/>
     </xsl:template>
     
