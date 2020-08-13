@@ -99,6 +99,12 @@
                 <xsl:value-of select="tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:history/tei:p/text()"/>
             </p>
         </p>
+        <div class="bibliography">
+            <p>
+                <xsl:value-of select="tei:fileDesc/tei:sourceDesc/tei:listBibl/tei:head"/>
+            </p>
+            <xsl:apply-templates select="tei:fileDesc/tei:sourceDesc/tei:listBibl/tei:biblStruct"/>
+        </div>
         <div class="used-glyphs">
             <xsl:text>The following glyphs are marked in the transcription:</xsl:text>
             <xsl:apply-templates select="tei:encodingDesc/tei:charDecl/tei:glyph"/>
@@ -165,6 +171,56 @@
         </span>-->
     </xsl:template>
     
+    <xsl:template match="tei:biblStruct">
+        <p class="bibliographic-item">
+            <xsl:if test="exists(tei:analytic)">
+                <span class="smallCaps">
+                    <xsl:value-of select="tei:analytic/tei:editor/tei:surname"/>
+                    <xsl:text>, </xsl:text>
+                    <xsl:value-of select="tei:analytic/tei:editor/tei:forename"/>
+                </span>
+                <xsl:text>, </xsl:text>
+                <xsl:value-of select="tei:analytic/tei:title"/>
+                <xsl:text>, in: </xsl:text>
+            </xsl:if>
+            <xsl:for-each select="tei:monogr/tei:editor">
+                <span class="smallCaps">
+                    <xsl:value-of select="tei:surname"/>
+                    <xsl:text>, </xsl:text>
+                    <xsl:value-of select="tei:forename"/>
+                </span>
+                <xsl:if test="number() != last()">
+                    <xsl:text>, </xsl:text>
+                </xsl:if>
+            </xsl:for-each>
+            <xsl:value-of select="tei:monogr/tei:title"/>
+            <xsl:if test="exists(tei:monogr/tei:imprint/tei:biblScope[@unit = 'volume'])">
+                <xsl:text>. </xsl:text>
+                <xsl:value-of select="tei:monogr/tei:imprint/tei:biblScope[@unit = 'volume']"/>
+            </xsl:if>
+            <xsl:text>, </xsl:text>
+            <xsl:value-of select="tei:monogr/tei:imprint/tei:pubPlace"/>
+            <xsl:text> </xsl:text>
+            <xsl:value-of select="tei:monogr/tei:imprint/tei:date"/>
+            <xsl:if test="exists(tei:monogr/tei:imprint/tei:biblScope[@unit = 'page'])">
+                <xsl:text>, </xsl:text>
+                <xsl:value-of select="tei:monogr/tei:imprint/tei:biblScope[@unit = 'page']"/>
+            </xsl:if>
+            <xsl:if test="empty(tei:series)">
+                <xsl:text>.</xsl:text>
+            </xsl:if>
+            <xsl:if test="exists(tei:series)">
+                <xsl:text> (= </xsl:text>
+                <xsl:value-of select="tei:series"/>
+                <xsl:text>).</xsl:text>
+            </xsl:if>
+            <xsl:if test="exists(tei:note[@type = 'reprint'])">
+                <xsl:text> Reprint in: </xsl:text>
+                <xsl:value-of select="tei:note[@type = 'reprint']"/>
+            </xsl:if>
+        </p>
+    </xsl:template>
+    
     <xsl:template match="tei:p[@n = 'auszeichnungsmajuskeln']">
         <p class="editorial-declaration-normalization-paragraph">
             <xsl:value-of select="text()"/>
@@ -180,6 +236,18 @@
             <p class="table-of-contents">Occuring authors:</p>
             <ul>
                 <xsl:apply-templates select="//tei:seg[@type = 'commentaryfragment']" mode="toc"/>
+            </ul>
+        </div>
+        <div class="authors-of-commentaries">
+            <p class="table-of-contents">Quotations:</p>
+            <ul>
+                <xsl:apply-templates select="//tei:seg[@type = 'quotation-patristic']" mode="fons"/>
+            </ul>
+        </div>
+        <div class="authors-of-commentaries">
+            <p class="table-of-contents">Biblical quotations:</p>
+            <ul>
+                <xsl:apply-templates select="//tei:seg[@type = 'quotation-biblical']" mode="fons-bibl"/>
             </ul>
         </div>
     </xsl:template>
@@ -259,7 +327,7 @@
         </div>
     </xsl:template>
     
-    <xsl:template match="tei:ab/tei:seg[@type != 'commentaryfragment']">
+    <xsl:template match="tei:ab/tei:seg[@type != 'commentaryfragment' and @type != 'quotation-patristic']">
         <xsl:text>[</xsl:text>
         <xsl:value-of select="@type"/>
         <xsl:text>]</xsl:text>
@@ -583,7 +651,7 @@
     
     <xsl:template match="tei:seg[@type = 'commentaryfragment']">
         <a>
-            <xsl:attribute name="id" >
+            <xsl:attribute name="id">
                 <xsl:value-of select="@xml:id"/>
             </xsl:attribute>
         </a>
@@ -593,6 +661,36 @@
             <xsl:text>] </xsl:text>
         </xsl:if>
         <xsl:apply-templates/>
+    </xsl:template>
+    
+    <xsl:template match="tei:seg[@type = 'quotation-patristic']">
+        <a>
+            <xsl:attribute name="id">
+                <xsl:value-of select="@xml:id"/>
+            </xsl:attribute>
+        </a>
+        <span class="quotation-patristic-author">
+            <xsl:apply-templates/>
+        </span>
+        <xsl:text> [</xsl:text>
+        <xsl:value-of select="@source"/>
+        <xsl:text> - </xsl:text>
+        <xsl:value-of select="@subtype"/>
+        <xsl:text>]</xsl:text>
+    </xsl:template>
+    
+    <xsl:template match="tei:seg[@type = 'quotation-biblical']">
+        <a>
+            <xsl:attribute name="id">
+                <xsl:value-of select="@xml:id"/>
+            </xsl:attribute>
+        </a>
+        <span class="quotation-biblical">
+            <xsl:apply-templates/>
+        </span>
+        <xsl:text> [</xsl:text>
+        <xsl:value-of select="@source"/>
+        <xsl:text>]</xsl:text>
     </xsl:template>
     
     <xsl:template match="tei:seg[@type = 'commentaryfragment']" mode="toc">
@@ -621,6 +719,31 @@
             </xsl:choose>
         </li>
     </xsl:template>
+    
+    <xsl:template match="tei:seg[@type = 'quotation-patristic']" mode="fons">
+        <li class="list-of-authors">
+            <a>
+                <xsl:attribute name="href">
+                    <xsl:text>#</xsl:text>
+                    <xsl:value-of select="@xml:id"/>
+                </xsl:attribute>
+                <xsl:value-of select="@source"/>
+            </a>
+        </li>
+    </xsl:template>
+    
+    <xsl:template match="tei:seg[@type = 'quotation-biblical']" mode="fons-bibl">
+        <li class="list-of-authors">
+            <a>
+                <xsl:attribute name="href">
+                    <xsl:text>#</xsl:text>
+                    <xsl:value-of select="@xml:id"/>
+                </xsl:attribute>
+                <xsl:value-of select="@source"/>
+            </a>
+        </li>
+    </xsl:template>
+
     
     <xsl:template match="tei:hi[@rend = 'overline']">
         <span class="overline">

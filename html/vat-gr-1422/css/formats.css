@@ -19,10 +19,13 @@ div.editorial-declaration-normalization { font-size: 12pt; margin-left: 20pt; }
 p.abbreviations { margin-left: 20pt; }
 span.abbreviations-text { margin-left: 10pt; }
 div#main-content-body { font-size: 12pt; border: black 1pt solid; border-radius: 2em; margin: 20pt; padding: 10pt; }
-span.line-number { margin-left: 10pt; margin-right: 10pt; font-style: italic; }
+span.line-number { margin-left: 10pt; margin-right: 10pt; font-style: italic; background-color: white; }
 div.header { font-size: 18pt; font-weight: bold; }
 div.quotation { font-size: 16pt; }
 div.commentary { font-size: 14pt; margin-left: 20pt; margin-top: 0pt; margin-bottom: 0pt; padding: 0pt; }
+div.bibliography { font-size: 12pt; margin-left: 20pt; }
+p.bibliographic-item { margin-left: 40pt; }
+span.smallCaps { font-variant: small-caps; }
 p.quotation-links { margin-left: 100pt; }
 p.quotation-links a:link { color: black; text-decoration: underline; }
 p.quotation-links a:hover { color: black; text-decoration: underline; }
@@ -54,3 +57,5 @@ div.main-text-commentary a:link { color: black; text-decoration: underline; }
 div.main-text-commentary a:hover { color: black; text-decoration: underline; }
 div.main-text-commentary a:active { color: black; text-decoration: underline; }
 div.main-text-commentary a:visited { color: black; text-decoration: underline; }
+span.quotation-patristic-author { background-color : #dce3f5; }
+span.quotation-biblical { background-color: #b2c5f7; }
