@@ -19,7 +19,7 @@ div.editorial-declaration-normalization { font-size: 12pt; margin-left: 20pt; }
 p.abbreviations { margin-left: 20pt; }
 span.abbreviations-text { margin-left: 10pt; }
 div#main-content-body { font-size: 12pt; border: black 1pt solid; border-radius: 2em; margin: 20pt; padding: 10pt; }
-span.line-number { margin-left: 10pt; margin-right: 10pt; font-style: italic; background-color: white; }
+span.line-number { margin-right: 10pt; font-style: italic; background-color: white; }
 div.header { font-size: 18pt; font-weight: bold; }
 div.quotation { font-size: 16pt; }
 div.commentary { font-size: 14pt; margin-left: 20pt; margin-top: 0pt; margin-bottom: 0pt; padding: 0pt; }
@@ -41,13 +41,15 @@ p.manuscript-physical-description-content { margin-left: 30pt; font-size: 12pt; 
 ul.manuscript-physical-description-content { margin-left: 30pt; font-size: 12pt; }
 span.text-main-bold { font-weight: bold; }
 span.text-main-normal { font-size: 12pt; font-weight: normal; }
-div.quotation { margin-top: 10pt; }
+div.quotation { margin-top: 10pt; margin-left: 20pt; }
 p.manuscript-content-rendition { font-size: 12pt; font-weight: normal; margin-left: 10pt; margin-bottom: 0pt; padding-bottom: 0pt; }
 div.main-text-commentary { margin-left: 40pt; margin-top: 20pt; }
 div.note-in-commentary { margin-left: 80pt; margin-top: 20pt; }
 span.red-ink-bold { font-weight: bold; }
 span.overline { text-decoration: overline; }
-p.psalmnumber { font-size: 10pt; margin-left: 30pt; margin-bottom: 0pt; padding-bottom: 0pt; }
+div.psalmnumber { font-size: 10pt; margin-left: 30pt; margin-top: 10pt; }
+div.bibleverse { font-size: 14pt; }
+div.linebreak { display: block; margin: 5pt; }
 span.reference { font-size: 10pt; color: blue; }
 li.list-of-authors a:link { color:black; text-decoration: underline; }
 li.list-of-authors a:hover { color:black; text-decoration: underline; }
@@ -57,5 +59,5 @@ div.main-text-commentary a:link { color: black; text-decoration: underline; }
 div.main-text-commentary a:hover { color: black; text-decoration: underline; }
 div.main-text-commentary a:active { color: black; text-decoration: underline; }
 div.main-text-commentary a:visited { color: black; text-decoration: underline; }
-span.quotation-patristic-author { background-color : #dce3f5; }
+span.quotation-patristic-author { background-color : white; }
 span.quotation-biblical { background-color: #b2c5f7; }

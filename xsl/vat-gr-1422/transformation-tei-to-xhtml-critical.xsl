@@ -311,6 +311,8 @@
         <p class="manuscript-content-rendition">
             <xsl:text>[</xsl:text>
             <xsl:value-of select="@rendition"/>
+            <xsl:text>] [</xsl:text>
+            <xsl:value-of select="@type"/>
             <xsl:text>]</xsl:text>
         </p>
         <xsl:apply-templates/>
@@ -370,16 +372,14 @@
         <xsl:apply-templates/>
     </xsl:template>
     
-    <xsl:template match="tei:quote/tei:lb">
-        <span class="line-number">
-            <xsl:text>(</xsl:text>
-            <xsl:value-of select="@n"/>
-            <xsl:text>) </xsl:text>
-        </span>
+    <xsl:template match="tei:quote[@type = 'bibletext']">
+        <div class="bibleverse">
+            <xsl:apply-templates/>
+        </div>
     </xsl:template>
     
     <xsl:template match="tei:lb">
-        <br></br>
+        <div class="linebreak"/>
         <span class="line-number">
             <xsl:text>(</xsl:text>
             <xsl:value-of select="@n"/>
@@ -408,7 +408,9 @@
     </xsl:template>
     
     <xsl:template match="tei:choice[exists(tei:reg) and not(exists(@style))]">
-        <xsl:text> </xsl:text>
+        <xsl:if test="not(tei:orig/@style = 'punctuation')">
+            <xsl:text> </xsl:text>
+        </xsl:if>
         <xsl:value-of select="tei:orig"/>
         <xsl:text> (</xsl:text>
         <xsl:value-of select="tei:reg"/>
@@ -422,14 +424,27 @@
                     <xsl:value-of select="tei:abbr"/>
                 </span>
             </xsl:when>
+            <xsl:when test="tei:abbr/@type = 'compression'">
+                <xsl:apply-templates/>
+            </xsl:when>
             <xsl:otherwise>
                 <xsl:value-of select="tei:abbr"/>
             </xsl:otherwise>
         </xsl:choose>
-        <xsl:text> (</xsl:text>
-        <xsl:value-of select="tei:expan"/>
+        <xsl:if test="not(tei:abbr/@type = 'compression')">
+            <xsl:text> (</xsl:text>
+            <xsl:value-of select="tei:expan"/>
+            <xsl:text>)</xsl:text>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template match="tei:am[parent::tei:abbr[@type = 'compression']]">
+        <xsl:text>(</xsl:text>
+        <xsl:value-of select="text()"/>
         <xsl:text>)</xsl:text>
     </xsl:template>
+    
+    <xsl:template match="tei:expan[preceding-sibling::tei:abbr[@type = 'compression']]"/>    
     
     <xsl:template match="tei:choice[exists(tei:abbr) and exists(@style) and @style = 'nomina-sacra-with-abbreviation']">
         <span class="overline">
@@ -464,6 +479,9 @@
             </xsl:when>
             <xsl:when test="tei:orig[@style = 'ending-common']">
                 <xsl:apply-templates select="tei:orig[@style = 'ending-common']"/>
+            </xsl:when>
+            <xsl:when test="tei:orig[@style = 'commpression-ending-common']">
+                <xsl:apply-templates select="tei:orig[@style = 'commpression-ending-common']"/>
             </xsl:when>
             <xsl:when test="tei:orig[@style = 'abbreviation-sup-ending-classical']">
                 <xsl:apply-templates select="tei:orig[@style = 'abbreviation-sup-ending-classical']"/>
@@ -500,6 +518,12 @@
                     <xsl:text>)</xsl:text>
                 </xsl:if>
             </xsl:when>
+            <xsl:when test="tei:orig[@style = 'ending-common'] and exists(tei:corr)">
+                <xsl:apply-templates select="tei:orig[@style = 'ending-common']"/>
+                <xsl:text> 〈</xsl:text>
+                <xsl:value-of select="tei:corr/text()"/>
+                <xsl:text>〉</xsl:text>
+            </xsl:when>
             <xsl:when test="tei:orig[@style = 'ending-common']">
                 <xsl:apply-templates select="tei:orig[@style = 'ending-common']"/>
                 <xsl:text> (</xsl:text>
@@ -528,7 +552,17 @@
         <xsl:apply-templates/>
     </xsl:template>
     
+    <xsl:template match="tei:orig[@style = 'commpression-ending-common']">
+        <xsl:apply-templates/>
+    </xsl:template>
+    
     <xsl:template match="tei:am[parent::tei:orig[@style = 'ending-common']]">
+        <xsl:text>(</xsl:text>
+        <xsl:value-of select="text()"/>
+        <xsl:text>)</xsl:text>
+    </xsl:template>
+    
+    <xsl:template match="tei:am[parent::tei:orig[@style = 'commpression-ending-common']]">
         <xsl:text>(</xsl:text>
         <xsl:value-of select="text()"/>
         <xsl:text>)</xsl:text>
@@ -589,9 +623,11 @@
     </xsl:template>
     
     <xsl:template match="tei:add">
-        <!--<xsl:text>[</xsl:text>
-        <xsl:value-of select="text()"/>
-        <xsl:text>]</xsl:text>-->
+        <xsl:if test="@type = 'correction'">
+            <xsl:text>[</xsl:text>
+            <xsl:value-of select="text()"/>
+            <xsl:text>]</xsl:text>
+        </xsl:if>
     </xsl:template>
     
     <xsl:template match="tei:g[not(@type = 'reference') and not(@type = 'linking')]">
@@ -642,11 +678,11 @@
     </xsl:template>
     
     <xsl:template match="tei:anchor[@type = 'psalmtext']">
-        <p class="psalmnumber">
+        <div class="psalmnumber">
             <xsl:text>[</xsl:text>
             <xsl:value-of select="@n"/>
             <xsl:text>]</xsl:text>
-        </p>
+        </div>
     </xsl:template>
     
     <xsl:template match="tei:seg[@type = 'commentaryfragment']">
@@ -672,7 +708,7 @@
         <span class="quotation-patristic-author">
             <xsl:apply-templates/>
         </span>
-        <xsl:text> [</xsl:text>
+        <xsl:text> [= </xsl:text>
         <xsl:value-of select="@source"/>
         <xsl:text> - </xsl:text>
         <xsl:value-of select="@subtype"/>
@@ -749,6 +785,11 @@
         <span class="overline">
             <xsl:value-of select="text()"/>
         </span>
+    </xsl:template>
+    
+    <xsl:template match="tei:hi[@rend = 'ekthesis']">
+        <xsl:value-of select="text()"/>
+        <!--<xsl:text>⸃</xsl:text>-->
     </xsl:template>
     
 </xsl:stylesheet>
