@@ -241,13 +241,13 @@
         <div class="authors-of-commentaries">
             <p class="table-of-contents">Quotations:</p>
             <ul>
-                <xsl:apply-templates select="//tei:seg[@type = 'quotation-patristic']" mode="fons"/>
+                <xsl:apply-templates select="//tei:quote[@type = 'patristic']" mode="fons"/>
             </ul>
         </div>
         <div class="authors-of-commentaries">
             <p class="table-of-contents">Biblical quotations:</p>
             <ul>
-                <xsl:apply-templates select="//tei:seg[@type = 'quotation-biblical']" mode="fons-bibl"/>
+                <xsl:apply-templates select="//tei:quote[@type = 'biblical']" mode="fons-bibl"/>
             </ul>
         </div>
     </xsl:template>
@@ -329,7 +329,7 @@
         </div>
     </xsl:template>
     
-    <xsl:template match="tei:ab/tei:seg[@type != 'commentaryfragment' and @type != 'quotation-patristic']">
+    <xsl:template match="tei:ab/tei:seg[@type != 'commentaryfragment']">
         <xsl:text>[</xsl:text>
         <xsl:value-of select="@type"/>
         <xsl:text>]</xsl:text>
@@ -399,22 +399,160 @@
         </span>
     </xsl:template>
     
-    <xsl:template match="tei:choice[exists(tei:corr) and not(exists(tei:orig/@style))]">
-        <xsl:text> </xsl:text>
+    <xsl:template match="tei:choice[exists(tei:corr) and not(exists(tei:orig/@style)) and not(exists(tei:orig/tei:abbr))]">
+        <xsl:text></xsl:text>
         <xsl:value-of select="tei:orig"/>
         <xsl:text> 〈</xsl:text>
         <xsl:value-of select="tei:corr"/>
         <xsl:text>〉</xsl:text>
     </xsl:template>
     
-    <xsl:template match="tei:choice[exists(tei:reg) and not(exists(@style))]">
-        <xsl:if test="not(tei:orig/@style = 'punctuation')">
+    <xsl:template match="tei:choice[exists(tei:reg) and not(exists(@style)) and not(exists(tei:orig/tei:abbr))]">
+        <!--<xsl:if test="not(tei:orig/@style = 'punctuation')">
             <xsl:text> </xsl:text>
-        </xsl:if>
+        </xsl:if>-->
         <xsl:value-of select="tei:orig"/>
         <xsl:text> (</xsl:text>
         <xsl:value-of select="tei:reg"/>
         <xsl:text>)</xsl:text>
+    </xsl:template>
+    
+    <xsl:template match="tei:choice[exists(tei:orig/tei:abbr) and tei:orig/tei:abbr/@type = 'ligature']">
+        <xsl:apply-templates select="tei:orig/tei:abbr[@type = 'ligature']"/>
+    </xsl:template>
+    
+    <xsl:template match="tei:abbr[@type = 'ligature']">
+        <xsl:apply-templates/>
+    </xsl:template>
+    
+    <xsl:template match="tei:am[ancestor::tei:abbr[@type = 'ligature']]">
+        <xsl:text>〈〈</xsl:text>
+        <xsl:value-of select="text()"/>
+        <xsl:text>〉〉</xsl:text>
+    </xsl:template>
+    
+    <xsl:template match="tei:choice[exists(tei:orig/tei:abbr) and tei:orig/tei:abbr/@type = 'tachygraphic']">
+        <xsl:apply-templates select="tei:orig/tei:abbr[@type = 'tachygraphic']"/>
+        <xsl:if test="exists(tei:corr)">
+            <xsl:text> 〈</xsl:text>
+            <xsl:value-of select="tei:corr/text()"/>
+            <xsl:text>〉</xsl:text>
+        </xsl:if>
+        <xsl:if test="exists(tei:reg[@type = 'correction'])">
+            <xsl:text> (</xsl:text>
+            <xsl:value-of select="tei:reg[@type = 'correction']/text()"/>
+            <xsl:text>)</xsl:text>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template match="tei:abbr[@type = 'tachygraphic']">
+        <xsl:apply-templates/>
+    </xsl:template>
+    
+    <xsl:template match="tei:am[ancestor::tei:abbr[@type = 'tachygraphic']]">
+        <xsl:text>(</xsl:text>
+        <xsl:value-of select="text()"/>
+        <xsl:text>)</xsl:text>
+    </xsl:template>
+    
+    <xsl:template match="tei:choice[exists(tei:orig/tei:abbr) and tei:orig/tei:abbr/@type = 'compression-tachygraphic']">
+        <xsl:apply-templates select="tei:orig/tei:abbr[@type = 'compression-tachygraphic']"/>
+        <xsl:if test="exists(tei:corr)">
+            <xsl:text> 〈</xsl:text>
+            <xsl:value-of select="tei:corr/text()"/>
+            <xsl:text>〉</xsl:text>
+        </xsl:if>
+        <xsl:if test="exists(tei:reg[@type = 'correction'])">
+            <xsl:text> (</xsl:text>
+            <xsl:value-of select="tei:reg[@type = 'correction']/text()"/>
+            <xsl:text>)</xsl:text>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template match="tei:abbr[@type = 'compression-tachygraphic']">
+        <xsl:apply-templates/>
+    </xsl:template>
+    
+    <xsl:template match="tei:am[ancestor::tei:abbr[@type = 'compression-tachygraphic']]">
+        <xsl:text>(</xsl:text>
+        <xsl:value-of select="text()"/>
+        <xsl:text>)</xsl:text>
+    </xsl:template>
+    
+    <xsl:template match="tei:choice[exists(tei:orig/tei:abbr) and (tei:orig/tei:abbr/@type = 'suspension')]">
+        <xsl:apply-templates select="tei:orig/tei:abbr[@type = 'suspension']"/>
+        <xsl:if test="exists(tei:corr)">
+            <xsl:text> 〈</xsl:text>
+            <xsl:value-of select="tei:corr/text()"/>
+            <xsl:text>〉</xsl:text>
+        </xsl:if>
+        <xsl:if test="exists(tei:reg[@type = 'correction'])">
+            <xsl:text> (</xsl:text>
+            <xsl:value-of select="tei:reg[@type = 'correction']/text()"/>
+            <xsl:text>)</xsl:text>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template match="tei:abbr[@type = 'suspension']">
+        <xsl:apply-templates/>
+    </xsl:template>
+    
+    <xsl:template match="tei:am[ancestor::tei:abbr[@type = 'suspension']]">
+        <xsl:if test="not(exists(parent::tei:hi))">
+            <sup>
+                <xsl:text>(</xsl:text>
+                <xsl:value-of select="text()"/>
+                <xsl:text>)</xsl:text>
+            </sup>
+        </xsl:if>
+        <xsl:if test="exists(parent::tei:hi)">
+            <xsl:text>(</xsl:text>
+            <xsl:value-of select="text()"/>
+            <xsl:text>)</xsl:text>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template match="tei:hi[parent::tei:abbr[@type = 'suspension']]">
+        <sup>
+            <xsl:apply-templates/>
+        </sup>
+    </xsl:template>
+    
+    <xsl:template match="tei:choice[exists(tei:orig/tei:abbr) and (tei:orig/tei:abbr/@type = 'compression-suspension')]">
+        <xsl:apply-templates select="tei:orig/tei:abbr[@type = 'compression-suspension']"/>
+        <xsl:if test="exists(tei:corr)">
+            <xsl:text> 〈</xsl:text>
+            <xsl:value-of select="tei:corr/text()"/>
+            <xsl:text>〉</xsl:text>
+        </xsl:if>
+        <xsl:if test="exists(tei:reg[@type = 'correction'])">
+            <xsl:text> (</xsl:text>
+            <xsl:value-of select="tei:reg[@type = 'correction']/text()"/>
+            <xsl:text>)</xsl:text>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template match="tei:abbr[@type = 'compression-suspension']">
+        <xsl:apply-templates/>
+    </xsl:template>
+    
+    <xsl:template match="tei:am[ancestor::tei:abbr[@type = 'compression-suspension']]">
+        <xsl:if test="not(exists(parent::tei:hi))">
+                <xsl:text>(</xsl:text>
+                <xsl:value-of select="text()"/>
+                <xsl:text>)</xsl:text>
+        </xsl:if>
+        <xsl:if test="exists(parent::tei:hi)">
+            <xsl:text>(</xsl:text>
+            <xsl:value-of select="text()"/>
+            <xsl:text>)</xsl:text>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template match="tei:hi[parent::tei:abbr[@type = 'compression-suspension']]">
+        <sup>
+            <xsl:apply-templates/>
+        </sup>
     </xsl:template>
     
     <xsl:template match="tei:choice[exists(tei:abbr) and not(exists(@style))]">
@@ -468,9 +606,9 @@
                 <xsl:value-of select="tei:orig/text()"/>
                 <xsl:text>)</xsl:text>
             </xsl:when>
-            <xsl:when test="tei:orig[@style = 'ending']">
+            <!--<xsl:when test="tei:orig[@style = 'ending']">
                 <xsl:apply-templates select="tei:orig[@style = 'ending']"/>
-            </xsl:when>
+            </xsl:when>-->
             <xsl:when test="tei:orig[@style = 'abbreviation-ending']">
                 <xsl:apply-templates select="tei:orig[@style = 'abbreviation-ending']"/>
             </xsl:when>
@@ -489,80 +627,7 @@
         </xsl:choose>
     </xsl:template>
     
-    <xsl:template match="tei:choice[exists(@style) and @style = 'with-abbreviation' and (tei:orig/@style = 'abbreviation' or tei:orig/@style ='ending' or tei:orig/@style = 'abbreviation-ending' or tei:orig/@style = 'abbreviation-sup-ending' or tei:orig/@style = 'ending-common')]">
-        <xsl:choose>
-            <xsl:when test="tei:orig[@style = 'abbreviation']">
-                <xsl:text>(</xsl:text>
-                <xsl:value-of select="tei:orig/text()"/>
-                <xsl:text>)</xsl:text>
-            </xsl:when>
-            <xsl:when test="tei:orig[@style = 'ending']">
-                <xsl:apply-templates select="tei:orig[@style = 'ending']"/>
-            </xsl:when>
-            <xsl:when test="tei:orig[@style = 'abbreviation-ending']">
-                <xsl:apply-templates select="tei:orig[@style = 'abbreviation-ending']"/>
-                <xsl:text> (</xsl:text>
-                <xsl:value-of select="tei:reg/text()"/>
-                <xsl:text>)</xsl:text>
-            </xsl:when>
-            <xsl:when test="tei:orig[@style = 'abbreviation-sup-ending']">
-                <xsl:apply-templates select="tei:orig[@style = 'abbreviation-sup-ending']"/>
-                <xsl:if test="exists(tei:corr)">
-                    <xsl:text> 〈</xsl:text>
-                    <xsl:value-of select="tei:corr/text()"/>
-                    <xsl:text>〉</xsl:text>
-                </xsl:if>
-                <xsl:if test="exists(tei:reg)">
-                    <xsl:text> (</xsl:text>
-                    <xsl:value-of select="tei:reg/text()"/>
-                    <xsl:text>)</xsl:text>
-                </xsl:if>
-            </xsl:when>
-            <xsl:when test="tei:orig[@style = 'ending-common'] and exists(tei:corr)">
-                <xsl:apply-templates select="tei:orig[@style = 'ending-common']"/>
-                <xsl:text> 〈</xsl:text>
-                <xsl:value-of select="tei:corr/text()"/>
-                <xsl:text>〉</xsl:text>
-            </xsl:when>
-            <xsl:when test="tei:orig[@style = 'ending-common']">
-                <xsl:apply-templates select="tei:orig[@style = 'ending-common']"/>
-                <xsl:text> (</xsl:text>
-                <xsl:if test="exists(tei:expan)">
-                    <xsl:value-of select="tei:expan/text()"/>
-                </xsl:if>
-                <xsl:if test="exists(tei:reg)">
-                    <xsl:value-of select="tei:reg/text()"/>
-                </xsl:if>
-                <xsl:text>)</xsl:text>
-            </xsl:when>
-        </xsl:choose>
-    </xsl:template>
-    
-    <xsl:template match="tei:orig[@style = 'ending']">
-        <xsl:apply-templates/>
-    </xsl:template>
-    
-    <xsl:template match="tei:am[parent::tei:orig[@style = 'ending']]">
-        <xsl:text>〈〈</xsl:text>
-        <xsl:value-of select="text()"/>
-        <xsl:text>〉〉</xsl:text>
-    </xsl:template>
-    
-    <xsl:template match="tei:orig[@style = 'ending-common']">
-        <xsl:apply-templates/>
-    </xsl:template>
-    
-    <xsl:template match="tei:orig[@style = 'commpression-ending-common']">
-        <xsl:apply-templates/>
-    </xsl:template>
-    
     <xsl:template match="tei:am[parent::tei:orig[@style = 'ending-common']]">
-        <xsl:text>(</xsl:text>
-        <xsl:value-of select="text()"/>
-        <xsl:text>)</xsl:text>
-    </xsl:template>
-    
-    <xsl:template match="tei:am[parent::tei:orig[@style = 'commpression-ending-common']]">
         <xsl:text>(</xsl:text>
         <xsl:value-of select="text()"/>
         <xsl:text>)</xsl:text>
@@ -574,18 +639,8 @@
     
     <xsl:template match="text()[ancestor::tei:expan and not(ancestor::tei:choice[@style = 'with-abbreviation'])]"/>
     
-    <xsl:template match="tei:orig[@style = 'abbreviation-sup-ending-classical']">
-        <xsl:apply-templates/>
-    </xsl:template>
-    
     <xsl:template match="tei:orig[@style = 'abbreviation-ending']">
         <xsl:apply-templates/>
-    </xsl:template>
-    
-    <xsl:template match="tei:am[ancestor::tei:orig[@style = 'abbreviation-sup-ending-classical']]">
-        <xsl:text>〈〈</xsl:text>
-        <xsl:value-of select="text()"/>
-        <xsl:text>〉〉</xsl:text>
     </xsl:template>
     
     <xsl:template match="tei:am[parent::tei:orig[@style = 'abbreviation-ending']]">
@@ -598,18 +653,6 @@
     
     <xsl:template match="tei:orig[@style = 'abbreviation-sup-ending']">
         <xsl:apply-templates/>
-    </xsl:template>
-    
-    <xsl:template match="tei:hi[parent::tei:orig[@style = 'abbreviation-sup-ending'] or parent::tei:orig[@style = 'abbreviation-sup-ending-classical']]">
-        <sup>
-            <xsl:apply-templates/>
-        </sup>
-    </xsl:template>
-    
-    <xsl:template match="tei:am[ancestor-or-self::tei:orig[@style = 'abbreviation-sup-ending']]">
-        <xsl:text>(</xsl:text>
-        <xsl:value-of select="text()"/>
-        <xsl:text>)</xsl:text>
     </xsl:template>
     
     <xsl:template match="tei:gap">
@@ -699,7 +742,7 @@
         <xsl:apply-templates/>
     </xsl:template>
     
-    <xsl:template match="tei:seg[@type = 'quotation-patristic']">
+    <xsl:template match="tei:quote[@type = 'patristic']">
         <a>
             <xsl:attribute name="id">
                 <xsl:value-of select="@xml:id"/>
@@ -715,7 +758,7 @@
         <xsl:text>]</xsl:text>
     </xsl:template>
     
-    <xsl:template match="tei:seg[@type = 'quotation-biblical']">
+    <xsl:template match="tei:quote[@type = 'biblical']">
         <a>
             <xsl:attribute name="id">
                 <xsl:value-of select="@xml:id"/>
@@ -756,7 +799,7 @@
         </li>
     </xsl:template>
     
-    <xsl:template match="tei:seg[@type = 'quotation-patristic']" mode="fons">
+    <xsl:template match="tei:quote[@type = 'patristic']" mode="fons">
         <li class="list-of-authors">
             <a>
                 <xsl:attribute name="href">
@@ -768,7 +811,7 @@
         </li>
     </xsl:template>
     
-    <xsl:template match="tei:seg[@type = 'quotation-biblical']" mode="fons-bibl">
+    <xsl:template match="tei:quote[@type = 'biblical']" mode="fons-bibl">
         <li class="list-of-authors">
             <a>
                 <xsl:attribute name="href">
