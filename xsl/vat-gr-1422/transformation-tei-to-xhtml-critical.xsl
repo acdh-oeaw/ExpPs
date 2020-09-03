@@ -359,7 +359,7 @@
     <xsl:template match="tei:note[@type = 'inline']">
         <xsl:text> [</xsl:text>
         <xsl:value-of select="@place"/>
-        <xsl:if test="exists(@subtype) and @subtype = 'linking'">
+        <!--<xsl:if test="exists(@subtype) and @subtype = 'linking'">
             <xsl:text> - linking to </xsl:text>
             <a>
                 <xsl:attribute name="href">
@@ -367,7 +367,7 @@
                 </xsl:attribute>
                 <xsl:value-of select="root()//tei:g[@xml:id = substring-after(current()/@corresp,'#')]/@n"/>
             </a>
-        </xsl:if>
+        </xsl:if>-->
         <xsl:text>] </xsl:text>
         <xsl:apply-templates/>
     </xsl:template>
@@ -734,7 +734,7 @@
                 <xsl:value-of select="@xml:id"/>
             </xsl:attribute>
         </a>
-        <xsl:if test="exists(@rendition)">
+        <xsl:if test="exists(@rendition) and (local-name(preceding-sibling::*[1]) = 'note')">
             <xsl:text>[</xsl:text>
             <xsl:value-of select="@rendition"/>
             <xsl:text>] </xsl:text>
@@ -755,6 +755,9 @@
         <xsl:value-of select="@source"/>
         <xsl:text> - </xsl:text>
         <xsl:value-of select="@subtype"/>
+        <xsl:if test="exists(@prev)">
+            <xsl:text> (continued)</xsl:text>
+        </xsl:if>
         <xsl:text>]</xsl:text>
     </xsl:template>
     
@@ -808,6 +811,9 @@
                 </xsl:attribute>
                 <xsl:value-of select="@source"/>
             </a>
+            <xsl:if test="exists(@prev)">
+                <xsl:text> (continued)</xsl:text>
+            </xsl:if>
         </li>
     </xsl:template>
     
@@ -824,15 +830,32 @@
     </xsl:template>
 
     
-    <xsl:template match="tei:hi[@rend = 'overline']">
+    <xsl:template match="tei:hi[@rend = 'overline' and not(exists(child::tei:g))]">
         <span class="overline">
             <xsl:value-of select="text()"/>
         </span>
     </xsl:template>
     
+    <xsl:template match="tei:hi[@rend = 'overline' and exists(child::tei:g)]">
+        <xsl:if test="tei:g[@type = 'linking']">
+            <a>
+                <xsl:attribute name="href">
+                    <xsl:value-of select="tei:g/@corresp"/>
+                </xsl:attribute>
+                <span class="overline">
+                    <xsl:value-of select="tei:g/text()"/>
+                </span>
+            </a>
+        </xsl:if>
+        <xsl:if test="not(tei:g[@type = 'linking'])">
+            <span class="overline">
+                <xsl:value-of select="tei:g/text()"/>
+            </span>
+        </xsl:if>
+    </xsl:template>
+    
     <xsl:template match="tei:hi[@rend = 'ekthesis']">
         <xsl:value-of select="text()"/>
-        <!--<xsl:text>⸃</xsl:text>-->
     </xsl:template>
     
 </xsl:stylesheet>
