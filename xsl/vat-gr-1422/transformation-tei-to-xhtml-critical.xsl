@@ -286,7 +286,15 @@
                 <xsl:value-of select="@type"/>
                 <xsl:text>]</xsl:text>
             </span>
-            <xsl:apply-templates select="tei:quote"/>
+            <!--<xsl:apply-templates select="tei:quote"/>
+            <xsl:apply-templates select="tei:ab[@type = 'unknown']"/>-->
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+    
+    <xsl:template match="tei:ab[@type = 'hexaplaric']">
+        <div class="bibleverse">
+            <xsl:apply-templates/>
         </div>
     </xsl:template>
     
@@ -329,10 +337,17 @@
         </div>
     </xsl:template>
     
-    <xsl:template match="tei:ab/tei:seg[@type != 'commentaryfragment']">
+    <xsl:template match="tei:ab/tei:seg[@type != 'commentaryfragment' and @type != 'hexaplaric']">
         <xsl:text>[</xsl:text>
         <xsl:value-of select="@type"/>
         <xsl:text>]</xsl:text>
+        <xsl:apply-templates/>
+    </xsl:template>
+    
+    <xsl:template match="tei:seg[@type = 'hexaplaric']">
+        <xsl:text>[</xsl:text>
+        <xsl:value-of select="@rendition"/>
+        <xsl:text> - hexaplaric variant] </xsl:text>
         <xsl:apply-templates/>
     </xsl:template>
     
@@ -347,7 +362,7 @@
         </div>
     </xsl:template>
     
-    <xsl:template match="tei:note[parent::tei:div[@type = 'commentary']]">
+    <xsl:template match="tei:note[parent::tei:div[@type = 'commentary'] and @type != 'inline']">
         <div class="note-in-commentary">
             <xsl:text>[</xsl:text>
             <xsl:value-of select="@place"/>
@@ -359,15 +374,6 @@
     <xsl:template match="tei:note[@type = 'inline']">
         <xsl:text> [</xsl:text>
         <xsl:value-of select="@place"/>
-        <!--<xsl:if test="exists(@subtype) and @subtype = 'linking'">
-            <xsl:text> - linking to </xsl:text>
-            <a>
-                <xsl:attribute name="href">
-                    <xsl:value-of select="@corresp"/>
-                </xsl:attribute>
-                <xsl:value-of select="root()//tei:g[@xml:id = substring-after(current()/@corresp,'#')]/@n"/>
-            </a>
-        </xsl:if>-->
         <xsl:text>] </xsl:text>
         <xsl:apply-templates/>
     </xsl:template>
@@ -830,9 +836,15 @@
     </xsl:template>
 
     
-    <xsl:template match="tei:hi[@rend = 'overline' and not(exists(child::tei:g))]">
+    <xsl:template match="tei:hi[@rend = 'overline' and not(exists(child::tei:g)) and not(exists(child::tei:choice))]">
         <span class="overline">
             <xsl:value-of select="text()"/>
+        </span>
+    </xsl:template>
+    
+    <xsl:template match="tei:hi[@rend = 'overline' and exists(child::tei:choice)]">
+        <span class="overline">
+            <xsl:apply-templates/>
         </span>
     </xsl:template>
     
