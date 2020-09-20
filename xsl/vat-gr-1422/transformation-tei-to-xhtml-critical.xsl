@@ -413,10 +413,7 @@
         <xsl:text>〉</xsl:text>
     </xsl:template>
     
-    <xsl:template match="tei:choice[exists(tei:reg) and not(exists(@style)) and not(exists(tei:orig/tei:abbr))]">
-        <!--<xsl:if test="not(tei:orig/@style = 'punctuation')">
-            <xsl:text> </xsl:text>
-        </xsl:if>-->
+    <xsl:template match="tei:choice[exists(tei:reg[@type = 'correction']) and not(exists(tei:orig/tei:abbr)) and not(exists(tei:reg/tei:hi/tei:g))]">
         <xsl:value-of select="tei:orig"/>
         <xsl:text> (</xsl:text>
         <xsl:value-of select="tei:reg"/>
@@ -497,6 +494,13 @@
             <xsl:value-of select="tei:reg[@type = 'correction']/text()"/>
             <xsl:text>)</xsl:text>
         </xsl:if>
+    </xsl:template>
+    
+    <xsl:template match="tei:choice[exists(tei:orig) and exists(tei:reg[@type = 'correction']) and exists(tei:reg/tei:hi/tei:g)]">
+        <xsl:apply-templates select="tei:orig/tei:hi"/>
+        <xsl:text> (</xsl:text>
+            <xsl:apply-templates select="tei:reg/tei:hi"/>
+        <xsl:text>)</xsl:text>
     </xsl:template>
     
     <xsl:template match="tei:abbr[@type = 'suspension']">
