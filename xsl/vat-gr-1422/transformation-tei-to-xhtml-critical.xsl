@@ -874,4 +874,15 @@
         <xsl:value-of select="text()"/>
     </xsl:template>
     
+    <xsl:template match="tei:sic">
+        <xsl:value-of select="text()"/>
+        <xsl:text> (sic!)</xsl:text>
+    </xsl:template>
+    
+    <xsl:template match="tei:del">
+        <xsl:text>{</xsl:text>
+        <xsl:value-of select="text()"/>
+        <xsl:text>}</xsl:text>
+    </xsl:template>
+    
 </xsl:stylesheet>
