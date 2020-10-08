@@ -414,10 +414,20 @@
     </xsl:template>
     
     <xsl:template match="tei:choice[exists(tei:reg[@type = 'correction']) and not(exists(tei:orig/tei:abbr)) and not(exists(tei:reg/tei:hi/tei:g))]">
-        <xsl:value-of select="tei:orig"/>
+        <xsl:apply-templates select="tei:orig"/>
         <xsl:text> (</xsl:text>
         <xsl:value-of select="tei:reg"/>
         <xsl:text>)</xsl:text>
+    </xsl:template>
+    
+    <xsl:template match="tei:orig">
+        <xsl:apply-templates/>
+    </xsl:template>
+    
+    <xsl:template match="tei:surplus">
+        <xsl:text>{</xsl:text>
+        <xsl:value-of select="text()"/>
+        <xsl:text>}</xsl:text>
     </xsl:template>
     
     <xsl:template match="tei:choice[exists(tei:orig/tei:abbr) and tei:orig/tei:abbr/@type = 'ligature']">
@@ -581,7 +591,14 @@
         </xsl:choose>
         <xsl:if test="not(tei:abbr/@type = 'compression')">
             <xsl:text> (</xsl:text>
-            <xsl:value-of select="tei:expan"/>
+            <xsl:if test="exists(tei:expan/tei:unclear)">
+                <span class="unclear">
+                    <xsl:value-of select="tei:expan/tei:unclear/text()"/>
+                </span>
+            </xsl:if>
+            <xsl:if test="not(exists(tei:expan/tei:unclear))">
+                <xsl:value-of select="tei:expan"/>
+            </xsl:if>
             <xsl:text>)</xsl:text>
         </xsl:if>
     </xsl:template>
@@ -678,9 +695,17 @@
     <xsl:template match="tei:add">
         <xsl:if test="@type = 'correction'">
             <xsl:text>[</xsl:text>
-            <xsl:value-of select="text()"/>
+            <xsl:value-of select="text()"/>        
             <xsl:text>]</xsl:text>
         </xsl:if>
+    </xsl:template>
+    
+    <xsl:template match="tei:supplied">
+        <xsl:text>[</xsl:text>
+        <span class="addition-underline">
+            <xsl:value-of select="text()"/>
+        </span>
+        <xsl:text>]</xsl:text>
     </xsl:template>
     
     <xsl:template match="tei:g[not(@type = 'reference') and not(@type = 'linking')]">
@@ -763,8 +788,10 @@
         </span>
         <xsl:text> [= </xsl:text>
         <xsl:value-of select="@source"/>
-        <xsl:text> - </xsl:text>
-        <xsl:value-of select="@subtype"/>
+        <xsl:if test="exists(@subtype)">
+            <xsl:text> - </xsl:text>
+            <xsl:value-of select="@subtype"/>
+        </xsl:if>
         <xsl:if test="exists(@prev)">
             <xsl:text> (continued)</xsl:text>
         </xsl:if>
@@ -883,6 +910,12 @@
         <xsl:text>{</xsl:text>
         <xsl:value-of select="text()"/>
         <xsl:text>}</xsl:text>
+    </xsl:template>
+    
+    <xsl:template match="tei:unclear">
+        <span class="unclear">
+            <xsl:apply-templates/>
+        </span>
     </xsl:template>
     
 </xsl:stylesheet>
