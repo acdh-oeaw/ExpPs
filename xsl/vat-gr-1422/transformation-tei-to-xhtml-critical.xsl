@@ -337,7 +337,7 @@
         </div>
     </xsl:template>
     
-    <xsl:template match="tei:ab/tei:seg[@type != 'commentaryfragment' and @type != 'hexaplaric']">
+    <xsl:template match="tei:ab/tei:seg[@type != 'commentaryfragment' and @type != 'hexaplaric' and @type != 'glosse']">
         <xsl:text>[</xsl:text>
         <xsl:value-of select="@type"/>
         <xsl:text>]</xsl:text>
@@ -347,7 +347,7 @@
     <xsl:template match="tei:seg[@type = 'hexaplaric']">
         <xsl:text>[</xsl:text>
         <xsl:value-of select="@rendition"/>
-        <xsl:text> - hexaplaric variant] </xsl:text>
+        <xsl:text>] [hexaplaric variant] </xsl:text>
         <xsl:apply-templates/>
     </xsl:template>
     
@@ -703,7 +703,7 @@
     <xsl:template match="tei:supplied">
         <xsl:text>[</xsl:text>
         <span class="addition-underline">
-            <xsl:value-of select="text()"/>
+            <xsl:apply-templates/>
         </span>
         <xsl:text>]</xsl:text>
     </xsl:template>
@@ -777,6 +777,27 @@
         <xsl:apply-templates/>
     </xsl:template>
     
+    <xsl:template match="tei:seg[@type = 'glosse']">
+        <xsl:if test="exists(@rendition) and ((local-name(preceding-sibling::*[1]) = 'note') or ancestor::tei:div[@type = 'glossai'])">
+            <xsl:text>[</xsl:text>
+            <xsl:value-of select="@rendition"/>
+            <xsl:text>] </xsl:text>
+            <xsl:text>[</xsl:text>
+            <xsl:value-of select="parent::tei:ab/parent::tei:div/@type"/>
+            <xsl:text>] </xsl:text>
+        </xsl:if>
+        <xsl:apply-templates/>
+    </xsl:template>
+    
+    <!--<xsl:template match="tei:seg[@type = 'hexaplaric']">
+        <xsl:if test="exists(@rendition) and (local-name(preceding-sibling::*[1]) = 'note')">
+            <xsl:text>[</xsl:text>
+            <xsl:value-of select="@rendition"/>
+            <xsl:text>] </xsl:text>
+        </xsl:if>
+        <xsl:apply-templates/>
+    </xsl:template>-->
+    
     <xsl:template match="tei:quote[@type = 'patristic']">
         <a>
             <xsl:attribute name="id">
@@ -828,6 +849,9 @@
                     <xsl:if test="exists(@prev)">
                         <xsl:text> (continued)</xsl:text>
                     </xsl:if>
+                </xsl:when>
+                <xsl:when test="exists(root()//tei:div[@type = 'header']/tei:head[@type = 'title']/tei:anchor[@xml:id = substring-after(current()/@corresp,'#')])">
+                    <xsl:value-of select="root()//tei:div//tei:anchor[@xml:id = substring-after(current()/@corresp,'#')]/@n"/>
                 </xsl:when>
                 <xsl:otherwise>
                     <xsl:value-of select="root()//tei:quote[@xml:id = substring-after(current()/@corresp,'#')]"/>
@@ -890,6 +914,13 @@
                 </span>
             </a>
         </xsl:if>
+        <xsl:if test="tei:g[@type = 'reference' and @subtype = 'destination']">
+            <a>
+                <xsl:attribute name="id">
+                    <xsl:value-of select="tei:g/@xml:id"/>
+                </xsl:attribute>
+            </a>
+        </xsl:if>
         <xsl:if test="not(tei:g[@type = 'linking'])">
             <span class="overline">
                 <xsl:value-of select="tei:g/text()"/>
@@ -897,7 +928,7 @@
         </xsl:if>
     </xsl:template>
     
-    <xsl:template match="tei:hi[@rend = 'ekthesis']">
+    <xsl:template match="tei:hi[(@rend = 'ekthesis') or (@rend = 'ekthesis-majuscule')]">
         <xsl:value-of select="text()"/>
     </xsl:template>
     
@@ -918,4 +949,22 @@
         </span>
     </xsl:template>
     
+    <xsl:template match="tei:span[@type = 'wrapper-for-position']">
+        <xsl:text>[</xsl:text>
+        <xsl:value-of select="@rendition"/>
+        <xsl:text>] </xsl:text>
+        <xsl:apply-templates/>
+    </xsl:template>
+    
+    <xsl:template match="tei:abbr[@type = 'bibleversion']">
+        <xsl:apply-templates/>
+        <xsl:text> [</xsl:text>
+        <xsl:value-of select="@source"/>
+        <xsl:text>]</xsl:text>
+    </xsl:template>
+    
+    <xsl:template match="tei:hi[@rend = 'superscript']">
+        <xsl:apply-templates/>
+    </xsl:template>
+      
 </xsl:stylesheet>

@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Vat. gr. 754 - Transcription</title>
+         <respStmt>
+            <resp>transcribed by</resp>
+            <persName>Sebastiano Panteghini</persName>
+         </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>FWF Project 32988</publisher>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under the
+                  Creative Commons ShareAlike 4.0 International License</licence>
+            </availability>
+            <date>2020-10-14</date>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier xml:id="vat-gr-754">
+                  <settlement>Vatican</settlement>
+                  <repository>Vatican Library, Greek Manuscripts</repository>
+                  <idno facs="https://digi.vatlib.it/view/MSS_Vat.gr.754">Vat. gr. 754</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+         <sourceDesc>
+            <listPerson>
+               <head>Authors</head>
+               <person xml:id="person-1" role="author"><persName>Asterius</persName><bibl corresp="#bibliography-title-1">Asterius, fr.</bibl></person>
+               <person xml:id="person-2" role="author"><persName>Athanasius</persName><bibl corresp="#bibliography-title-2">Athanasius, schol.</bibl></person>
+               <person xml:id="person-3" role="author"><persName>Basilius Caesariensis</persName><bibl corresp="#bibliography-title-4">Basilius Caesariensis, hom.</bibl></person>
+               <person xml:id="person-4" role="author"><persName>Cyrillus Alexandrinus</persName><bibl corresp="#bibliography-title-5">Cyrillus Alexandrinus</bibl></person>
+               <person xml:id="person-5" role="author"><persName>Diodorus Tarsensis</persName><bibl corresp="#bibliography-title-6">Diodorus Tarsensis, comm.</bibl></person>
+               <person xml:id="person-6" role="author"><persName>Didymus Caecus</persName><bibl corresp="#bibliography-title-7">Didymus Caecus, fr.</bibl></person>
+               <person xml:id="person-7" role="author"><persName>Eusebius</persName><bibl corresp="#bibliography-title-8">Eusebius, perioche</bibl></person>
+               <person xml:id="person-8" role="author" sameAs="#person-7"><persName>Eusebius</persName><bibl corresp="#bibliography-title-9">Eusebius, fr.</bibl></person>
+               <person xml:id="person-9" role="author"><persName>Unknown</persName><bibl corresp="#bibliography-title-10">fons ignotus (ed. Dorival IV)</bibl></person>
+               <person xml:id="person-10" role="author"><persName>Hesychius Hierosolomitanus</persName><bibl corresp="#bibliography-title-11">Hesychius Hierosolomitanus, schol.</bibl></person>
+               <person xml:id="person-11" role="author" sameAs="#person-10"><persName>Hesychius Hierosolomitanus</persName><bibl corresp="#bibliography-title-12">Hesychius Hierosolomitanus, comm. brevis</bibl></person>
+               <person xml:id="person-12" role="author" sameAs="#person-10"><persName>Hesychius Hierosolomitanus</persName><bibl corresp="#bibliography-title-13">Hesychius Hierosolomitanus, comm. magnus </bibl></person>
+               <person xml:id="person-13" role="author"><persName>Origenes</persName><bibl corresp="#bibliography-title-14">Origenes</bibl></person>
+               <person xml:id="person-14" role="author" sameAs="#person-13"><persName>Origenes</persName><bibl corresp="#bibliography-title-15">Origenes (Analecta Sacra II, Ps 1–25)</bibl></person>
+               <person xml:id="person-15" role="author" sameAs="#person-13"><persName>Origenes</persName><bibl corresp="#bibliography-title-16">Origenes (Analecta Sacra III, Ps 26–150)</bibl></person>
+               <person xml:id="person-16" role="author"><persName>Theodoretus Cyrrensis</persName><bibl corresp="#bibliography-title-17">Theodoretus Cyrrensis, comm.</bibl></person>
+               <person xml:id="person-17" role="author"><persName>Eusebius</persName><bibl corresp="#bibliography-title-9">Eusebius, fr (ed. Villani)</bibl></person>
+               <person xml:id="person-18" role="author"><persName>Unknown</persName></person>
+               <person xml:id="person-19" role="author"><persName>Unknown</persName><bibl>fons ignotus (Analecta Sacra II)</bibl></person>
+               <person xml:id="person-20" role="author"><persName>Gregor of Nazianz</persName></person>
+            </listPerson>
+         </sourceDesc>
+      </fileDesc>
+     <encodingDesc>
+        <charDecl>
+           <glyph xml:id="linking-sign-1">
+              <glyphName>LINKING SIGN 1</glyphName>
+              <charProp>
+                 <localName>entity</localName>
+                 <value>linking-sign-1</value>
+              </charProp>
+              <figure>
+                 <graphic url="./images/linking-sign-1.png"/>
+              </figure>
+           </glyph>
+           <glyph xml:id="linking-sign-2">
+              <glyphName>LINKING SIGN 2</glyphName>
+              <charProp>
+                 <localName>entity</localName>
+                 <value>linking-sign-2</value>
+              </charProp>
+              <figure>
+                 <graphic url="./images/linking-sign-2.png"/>
+              </figure>
+           </glyph>
+           <glyph xml:id="linking-sign-3">
+              <glyphName>LINKING SIGN 3</glyphName>
+              <charProp>
+                 <localName>entity</localName>
+                 <value>linking-sign-3</value>
+              </charProp>
+              <figure>
+                 <graphic url="./images/linking-sign-3.png"/>
+              </figure>
+           </glyph>
+           <glyph xml:id="linking-sign-4">
+              <glyphName>LINKING SIGN 4</glyphName>
+              <charProp>
+                 <localName>entity</localName>
+                 <value>linking-sign-4</value>
+              </charProp>
+              <figure>
+                 <graphic url="./images/linking-sign-4.png"/>
+              </figure>
+           </glyph>
+           <glyph xml:id="linking-sign-5">
+              <glyphName>LINKING SIGN 5</glyphName>
+              <charProp>
+                 <localName>entity</localName>
+                 <value>linking-sign-5</value>
+              </charProp>
+              <figure>
+                 <graphic url="./images/linking-sign-5.png"/>
+              </figure>
+           </glyph>
+           <glyph xml:id="linking-sign-6">
+              <glyphName>LINKING SIGN 6</glyphName>
+              <charProp>
+                 <localName>entity</localName>
+                 <value>linking-sign-6</value>
+              </charProp>
+              <figure>
+                 <graphic url="./images/linking-sign-6.png"/>
+              </figure>
+           </glyph>
+           <glyph xml:id="linking-sign-7">
+              <glyphName>LINKING SIGN 7</glyphName>
+              <charProp>
+                 <localName>entity</localName>
+                 <value>linking-sign-7</value>
+              </charProp>
+              <figure>
+                 <graphic url="./images/linking-sign-7.png"/>
+              </figure>
+           </glyph>
+           <glyph xml:id="linking-sign-8">
+              <glyphName>LINKING SIGN 8</glyphName>
+              <charProp>
+                 <localName>entity</localName>
+                 <value>linking-sign-8</value>
+              </charProp>
+              <figure>
+                 <graphic url="./images/linking-sign-8.png"/>
+              </figure>
+           </glyph>
+           <glyph xml:id="linking-sign-9">
+              <glyphName>LINKING SIGN 9</glyphName>
+              <charProp>
+                 <localName>entity</localName>
+                 <value>linking-sign-9</value>
+              </charProp>
+              <figure>
+                 <graphic url="./images/linking-sign-9.png"/>
+              </figure>
+           </glyph>
+           <glyph xml:id="linking-sign-10">
+              <glyphName>LINKING SIGN 10</glyphName>
+              <charProp>
+                 <localName>entity</localName>
+                 <value>linking-sign-10</value>
+              </charProp>
+              <figure>
+                 <graphic url="./images/linking-sign-10.png"/>
+              </figure>
+           </glyph>
+           <glyph xml:id="linking-sign-11">
+              <glyphName>LINKING SIGN 11</glyphName>
+              <charProp>
+                 <localName>entity</localName>
+                 <value>linking-sign-11</value>
+              </charProp>
+              <figure>
+                 <graphic url="./images/linking-sign-11.png"/>
+              </figure>
+           </glyph>
+        </charDecl>
+     </encodingDesc>
+     <revisionDesc>
+        <change who="Sebastiano Panteghini" when="2020-10-14">Transcription of the manuscript
+           according to the pictures of the Vatican Library.</change>
+        <change who="Thomas Klampfl" when="2020-10-14">Transformation into a TEI document (Psalm 1).</change>
+        <change who="Thomas Klampfl" when="2020-10-15">Transformation into a TEI document (Psalm 1) - continued.</change>
+     </revisionDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <div xml:id="vat-gr-754-1" type="transcription">
+            <pb n="37r"/>
+            <div xml:id="vat-gr-754-1-1" type="header" rend="auszeichnungsmajuskeln" rendition="middle column">
+               <head xml:lang="grc" type="title">
+                  <lb n="1"/><note xml:id="vat-gr-754-1-2" type="inline" place="left margin of middle column"><hi rend="overline"><g xml:id="vat-gr-754-ref-1-1" type="reference" subtype="destination" rendition="on the line">Α</g></hi></note> <span type="wrapper-for-position" rendition="middle column">ΨΑΛΤήΡΙΟΝ ⁘</span> <g ref="#linking-sign-1" xml:id="vat-gr-754-ls-1-1" type="linking" subtype="destination"/>
+                  <lb n="2"/>ἈΛΛΗΛΟύΙΑ ⁘ <g ref="#linking-sign-2" type="linking" subtype="destination" xml:id="vat-gr-754-ls-1-2"/>
+               </head>
+            </div>
+            <div xml:id="vat-gr-754-1-3" type="bibletext" subtype="commented" rend="black ink" rendition="middle column">
+               <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-1-1" n="Ps (LXX) 1,1" xml:lang="grc">
+                  <anchor xml:id="vat-gr-754-ps-1-1a" type="psalmtext" n="Ps (LXX) 1,1a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-1-1"/>
+                  <lb n="3"/><hi rend="ekthesis-majuscule">Μ</hi>ακάριος <g xml:id="vat-gr-754-ls-1-3" ref="#linking-sign-3" type="linking" subtype="destination"/> <g xml:id="vat-gr-754-ls-1-4" ref="#linking-sign-4" type="linking" subtype="destination"/> ἀνὴρ ὃς
+                  <lb n="4"/>οὐκ ἐπορεύθη ἐν βου
+                  <lb n="5"/><choice><orig>λῆ</orig><reg type="correction">λῇ</reg></choice> ἀσεβῶν: <g ref="#linking-sign-5" xml:id="vat-gr-754-ls-1-5" type="linking" subtype="destination"/> –
+                  <anchor xml:id="vat-gr-754-ps-1-1b" type="psalmtext" n="Ps (LXX) 1,1b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-1-1"/>   
+                  <lb n="6"/><hi rend="ekthesis">κ</hi>αὶ ἐν <choice><orig>ὁδῶ</orig><reg type="correction">ὁδῷ</reg></choice> ἁμαρτωλῶν
+                  <lb n="7"/>οὐκ ἔστη: –
+                  <anchor xml:id="vat-gr-754-ps-1-1c" type="psalmtext" n="Ps (LXX) 1,1c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-1-1"/>
+                  <lb n="8"/><g ref="#linking-sign-6" xml:id="vat-gr-754-ls-1-6" type="linking" subtype="destination"/> <hi rend="ekthesis">κ</hi>αὶ ἐπὶ καθέδραν <g ref="#linking-sign-7" type="linking" subtype="destination" xml:id="vat-gr-754-ls-1-7"/> λοιμῶν,
+                  <lb n="9"/><choice><orig>οὐκεκάθισεν</orig><reg type="correction">οὐκ ἐκάθισεν</reg></choice>: –
+                  <anchor xml:id="vat-gr-754-ps-1-2a" type="psalmtext" n="Ps (LXX) 1,2a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-1-2"/>
+                  <lb n="10"/><note xml:id="vat-gr-754-1-4" type="inline" place="left margin of middle column"><hi rend="overline"><g xml:id="vat-gr-754-ref-1-3" type="reference" subtype="destination" rendition="on the line">Β</g></hi></note> <span type="wrapper-for-position" rendition="middle column"><choice><orig><hi rend="ekthesis">α</hi>λλ᾿</orig><corr>ἀλλ᾿</corr></choice></span> ἢ ἐν <choice><orig>τω νόμω</orig><reg type="correction">τῷ νόμῳ</reg></choice> <choice><abbr type="nomSac">κυ</abbr><expan>κυρίου</expan></choice> τὸ θέ
+                  <lb n="11"/>λημα αὐτοῦ: –
+                  <anchor xml:id="vat-gr-754-ps-1-2b" type="psalmtext" n="Ps (LXX) 1,2b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-1-2"/>
+                  <lb n="12"/><note xml:id="vat-gr-754-1-5" type="inline" place="left margin of middle column"><hi rend="overline"><g xml:id="vat-gr-754-ref-1-4" type="reference" subtype="destination" rendition="on the line">Γ</g></hi></note> <span type="wrapper-for-position" rendition="middle column"><hi rend="ekthesis">κ</hi>αὶ</span> <g ref="#linking-sign-8" type="linking" subtype="destination" xml:id="vat-gr-754-ls-1-8"/> ἐν <choice><orig>τω νόμω</orig><reg type="correction">τῷ νόμῳ</reg></choice> <g ref="#linking-sign-9" type="linking" subtype="destination" xml:id="vat-gr-754-ls-1-9"/> αὐτοῦ με
+                  <lb n="13"/>λετήσει <g ref="#linking-sign-10" type="linking" subtype="destination" xml:id="vat-gr-754-ls-1-10"/> ἡμέρας καὶ νυκτός:
+                  <anchor xml:id="vat-gr-754-ps-1-3" type="psalmtext" n="Ps (LXX) 1,3a" corresp="../psalms-LXX/psalmx.xml#Ps-LXX-1-3"/>
+                  <lb n="14"/><note xml:id="vat-gr-754-1-6" type="inline" place="left margin of middle column"><hi rend="overline"><g xml:id="vat-gr-754-ref-1-5" type="reference" subtype="destination" rendition="on the line">Δ</g></hi></note> <span type="wrapper-for-position" rendition="middle column"><hi rend="ekthesis">κ</hi>αὶ</span> ἔσται <g ref="#linking-sign-11" type="linking" subtype="destination" xml:id="vat-gr-754-ls-1-11"/> ὡς τὸ ξύλον τὸ
+                  <lb n="15"/>πεφυτευμένον παρὰ τὰς
+               </quote>
+            </div>
+            <div xml:id="vat-gr-754-1-7" type="glossai" rend="majuscule letters" rendition="left column">
+               <ab xml:id="vat-gr-754-1-10" xml:lang="grc">
+                  <lb n="1"/><note xml:id="vat-gr-754-1-8" type="inline" place="left margin of left column"><g ref="#linking-sign-1" type="linking" subtype="source" corresp="#vat-gr-754-ls-1-1"/></note> <seg type="glosse" xml:id="vat-gr-754-glosse-1-1" rendition="left column" source="Anonymous" corresp="#vat-gr-754-1-1"><quote xml:id="vat-gr-754-quot-1-1" type="patristic" subtype="quotation-abbreviated" source="fons ignotus (ed. Dorival IV 366)" corresp="#person-9">ὄργανον ὅ
+                  <lb n="2"/>περ καὶ νά
+                  <lb n="3"/>βλα καλεῖται·</quote></seg>
+                  <lb n="4"/><note xml:id="vat-gr-754-1-9" type="inline" place="left margin of left column"><g ref="#linking-sign-2" type="linking" subtype="source" corresp="#vat-gr-754-ls-1-2"/></note> <seg type="glosse" xml:id="vat-gr-754-glosse-1-2" rendition="left column" source="Anonymous" corresp="#vat-gr-754-1-1"><quote xml:id="vat-gr-754-quot-1-2" type="patristic" subtype="quotation" source="fons ignotus; cf. fr. 3 Dorival (IV 367)" corresp="#person-9"><hi rend="ekthesis">α</hi>ἰνεῖτε τὸν 
+                  <lb n="5"/>ὄντα ἤτοι 
+                  <lb n="6"/>τὸν <choice><abbr type="nomSac">κν</abbr><expan>κύριον</expan></choice>· ἢ
+                  <lb n="7"/>αἶνος <choice><abbr type="nomSac">θυ</abbr><expan>θεοῦ</expan></choice>:</quote></seg>
+               </ab>
+            </div>
+            <div xml:id="vat-gr-754-1-11" type="hexaplaric" rend="majuscule letters" rendition="left column">
+               <ab xml:id="vat-gr-754-1-12" xml:lang="grc">
+                  <lb n="8"/><note xml:id="vat-gr-754-1-13" type="inline" place="left margin of left column"><g ref="#linking-sign-4" type="linking" subtype="source" corresp="#vat-gr-754-ls-1-4"/></note> <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-1-1" rendition="left column" source="Aquila, Septuaginta" corresp="#vat-gr-754-ps-1-1a"><abbr source="Aquila" type="bibleversion"><hi rend="overline">Α</hi></abbr> <abbr source="Septuaginta" type="bibleversion">οἱ <hi rend="overline">ο</hi></abbr>
+                  <lb n="9"/>ὁμοίως·</seg>
+                  <lb n="10"/><seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-1-2" rendition="left column" source="Anonymous" corresp="#vat-gr-754-ps-1-1a"><hi rend="ekthesis">Ἄ</hi>μεμπτος
+                  <lb n="11"/>ὁ <choice><abbr type="nomSac">ἄνος</abbr><expan>ἄνθρωπος</expan></choice> ὃς
+                  <lb n="12"/>οὐ περιεπά
+                  <lb n="13"/>τησεν ἐν συ
+                  <lb n="14"/><choice><orig>νεδρίω</orig><reg type="correction">νεδρίῳ</reg></choice>
+                  <lb n="15"/>παρανόμων·</seg>
+                  <lb n="16"/><seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-1-3" rendition="left column" source="Quinta, Sexta" corresp="#vat-gr-754-ps-1-1a"><abbr type="bibleversion" source="Quinta"><hi rend="overline">Ε</hi></abbr> <abbr type="bibleversion" source="Sexta"><hi rend="overline">S</hi></abbr>
+                  <lb n="17"/><hi rend="ekthesis">Τ</hi>έλειος ὁ νεώτε
+                  <lb n="18"/>ρος ὃς οὐκ ἀπῆλ
+                  <lb n="19"/>θεν ἐν <choice><orig>βουλῆ</orig><reg type="correction">βουλῇ</reg></choice>
+                  <lb n="20"/>ἀλλοτρίων·</seg>
+                  <lb n="21"/><note xml:id="vat-gr-754-1-14" type="inline" place="left margin of left column"><g ref="#linking-sign-7" type="linking" subtype="source" corresp="#vat-gr-754-ls-1-7"/></note><seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-1-4" source="Aquila" corresp="#vat-gr-754-ps-1-1c" rendition="left column"><abbr type="bibleversion" source="Aquila"><hi rend="overline">Α</hi></abbr>
+                  <lb n="22"/><choice><orig><abbr type="tachygraphic"><hi rend="ekthesis">κ</hi><am>αὶ</am></abbr></orig><reg>καὶ</reg></choice> ἐν <choice><orig>καθέδρα</orig><reg type="correction">καθέδρᾳ</reg></choice>
+                  <lb n="23"/><choice><orig><abbr type="tachygraphic">χλευαστ<am>ῶν</am></abbr></orig><reg>χλευαστῶν</reg></choice>, οὔ·</seg>
+                  <lb n="24"/><seg type="hexaplaric" rendition="left column" source="Symmachus" xml:id="vat-gr-754-hexaplaric-1-5" corresp="#vat-gr-754-ps-1-1c"><abbr type="bibleversion" source="Symmachus"><hi rend="overline">Ϲ</hi></abbr>
+                  <lb n="25"/><choice><orig><abbr type="tachygraphic"><hi rend="ekthesis">κ</hi><am>αὶ</am></abbr></orig><reg>καὶ</reg></choice> ἐν <choice><orig>καθέδρα</orig><reg type="correction">καθέδρᾳ</reg></choice>
+                  <lb n="26"/>ἐπιθετῶν, οὐ
+                  <lb n="27"/>κεκοινώνησεν·</seg>
+                  <lb n="28"/><seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-1-6" source="Quinta, Sexta" rendition="left column" corresp="#vat-gr-754-ps-1-1c"><abbr type="bibleversion" source="Quinta"><hi rend="overline">Ε</hi></abbr> <abbr type="bibleversion" source="Sexta"><hi rend="overline">S</hi></abbr>
+                  <lb n="29"/><choice><orig><abbr type="tachygraphic"><hi rend="ekthesis">κ</hi><am>αὶ</am></abbr></orig><reg>καὶ</reg></choice> ἐπὶ <choice><orig>καθέδρα</orig><reg type="correction">καθέδρᾳ</reg></choice>
+                  <lb n="30"/>παρανόμων,
+                  <lb n="31"/><choice><orig>οὐχευρέθη</orig><reg type="correction">οὐχ εὑρέθη</reg></choice>·</seg> 
+               </ab>
+            </div>
+            <div xml:id="vat-gr-754-1-15" rendition="right column" rend="minuscule letters" type="glossai">
+               <ab xml:lang="grc" xml:id="vat-gr-754-1-16">
+                  <lb n="1"/><seg type="glosse" xml:id="vat-gr-754-glosse-1-3" source="Anonymous" rendition="right column" corresp="#vat-gr-754-ps-1-1a"><hi rend="superscript"><g ref="#linking-sign-3" type="linking" subtype="source" corresp="#vat-gr-754-ls-1-3"></g></hi> <quote xml:id="vat-gr-754-quot-1-3" type="patristic" subtype="quotation" source="Basilius, hom. in Ps 1 (PG 29, 216 B5–7 in Ps 1,1a)" corresp="#person-3"><hi rend="ekthesis">Ἔ</hi>στι μὲν οὖν κυρίως <unclear reason="damage">κ</unclear><supplied>α</supplied>ὶ
+                  <lb n="2"/>πρώτως μακαρι
+                  <lb n="3"/>στὸν. τὸ ἀληθῶς ἀγα
+                  <lb n="4"/>θόν· τοῦτο δέ ἐστιν
+                  <lb n="5"/>ὁ <choice><abbr type="nomSac">θς</abbr><expan>θεός</expan></choice>: –</quote></seg>
+                  <lb n="6"/><note xml:id="vat-gr-754-1-17" type="inline" place="left margin of right column"><g ref="#linking-sign-3" type="linking" subtype="source" corresp="#vat-gr-754-ls-1-3"/></note><seg type="glosse" xml:id="vat-gr-754-glosse-1-8" rendition="right column" corresp="#vat-gr-754-ps-1-1a" source="Anonymous"><quote xml:id="vat-gr-754-quot-1-4" type="patristic" source="fons ignotus in Ps 1,1a; Suda, s.v. Μακάριος (Μ nr. 55 Adler) et alibi" corresp="#person-18"><hi rend="ekthesis">Ὁ</hi> ἐν ἀγαθοῖς πάντο
+                  <lb n="7"/>τε ὤν: –</quote></seg>
+                  <lb n="8"/><seg type="glosse" xml:id="vat-gr-754-glosse-1-4" source="Anonymous" rendition="right column" corresp="#vat-gr-754-ps-1-1a"><hi rend="superscript"><g ref="#linking-sign-5" type="linking" subtype="source" corresp="#vat-gr-754-ls-1-5"/></hi><quote xml:id="vat-gr-754-quot-1-5" source="fons ignotus in Ps 1,1a (in ἀσεβῶν; Analecta Sacra II 445, 23)" type="patristic" subtype="quotation" corresp="#person-19"><hi rend="ekthesis">Τ</hi>ῶν τὸν <choice><abbr type="nomSac">θν</abbr><expan>θεòν</expan></choice> ἀγνoούντων: –</quote></seg>
+                  <lb n="9"/><note xml:id="vat-gr-754-1-18" type="inline" place="left margin of right column"><g ref="#linking-sign-6" type="linking" subtype="source" corresp="#vat-gr-754-ls-1-6"/></note><seg type="glosse" xml:id="vat-gr-754-glosse-1-5" source="Anonymous" rendition="right column" corresp="#vat-gr-754-ps-1-1c"><quote xml:id="vat-gr-754-quot-1-6" source="fons ignotus in Ps 1,1c (Analecta Sacra II 445, 24–25)" type="patristic" subtype="quotation" corresp="#person-19"><hi rend="ekthesis">Τ</hi>ὴν τῶν κακῶν ἐργα
+                  <lb n="10"/>σίαν <choice><orig>καταδιάδο</orig><reg type="correction">κατὰ διάδο</reg></choice>
+                  <lb n="11"/>σιν γινομένην: –</quote></seg>
+                  <lb n="12"/><note xml:id="vat-gr-754-1-19" type="inline" place="left margin of right column"><g ref="#linking-sign-6" type="linking" subtype="source" corresp="#vat-gr-754-ls-1-6"/></note><seg type="glosse" xml:id="vat-gr-754-glosse-1-6" source="Anonymous" rendition="right column" corresp="#vat-gr-754-ps-1-1c"><quote xml:id="vat-gr-754-quot-1-7" type="patristic" source="fons ignotus in Ps 1,1c (in λοιμῶν)" corresp="#person-18"><hi rend="ekthesis">ἀ</hi>καθάρτων: –</quote></seg>
+                  <lb n="13"/><note xml:id="vat-gr-754-1-20" type="inline" place="left margin of right column"><g ref="#linking-sign-6" type="linking" subtype="source" corresp="#vat-gr-754-ls-1-6"/></note><seg type="glosse" xml:id="vat-gr-754-glosse-1-7" source="Anonymous" rendition="right column" corresp="#vat-gr-754-ps-1-1c"><quote xml:id="vat-gr-754-quot-1-8" type="patristic" source="fons ignotus in Ps 1,1c (in οὐκ ἐκάθισεν)" corresp="#person-18"><hi rend="ekthesis">ο</hi>ὐκ ἐνέμεινεν: –</quote></seg>
+               </ab>
+            </div>
+            <div xml:id="vat-gr-754-1-21" rendition="bottom of right column" rend="majuscule letters" type="hexaplaric">
+               <ab xml:lang="grc" xml:id="vat-gr-754-1-22">
+                  <lb n="14"/><note xml:id="vat-gr-754-1-23" type="inline" place="left margin of right column"><g ref="#linking-sign-9" type="linking" subtype="source" corresp="#vat-gr-754-ls-1-9"/></note><seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-1-7" rendition="right column" source="Aquila, Symmachus, Quinta, Sexta" corresp="#vat-gr-754-ps-1-2b"><abbr type="bibleversion" source="Aquila"><hi rend="overline">Α</hi></abbr> <abbr type="bibleversion" source="Symmachus"><hi rend="overline">Ϲ</hi></abbr> <abbr type="bibleversion" source="Quinta"><hi rend="overline">Ε</hi></abbr> <abbr type="bibleversion" source="Sexta"><hi rend="overline">S</hi></abbr>
+                  <lb n="15"/>ἐν <choice><orig>νόμω</orig><reg type="correction">νόμῳ</reg></choice> <choice><abbr type="nomSac">κυ</abbr><expan>κυρίου</expan></choice>· φθέγξε
+                  <lb n="16"/>ται ἡμέρευσιν <choice><orig><abbr type="tachygraphic">κ<am>αὶ</am></abbr></orig><reg>καὶ</reg></choice> νύκτα·</seg>
+                  <lb n="17"/><note xml:id="vat-gr-754-1-24" type="inline" place="left margin of right column"><g ref="#linking-sign-10" type="linking" subtype="source" corresp="#vat-gr-754-ls-1-10"/></note><seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-1-8" rendition="right column" source="Aquila" corresp="#vat-gr-754-ps-1-2b"><abbr type="bibleversion" source="Aquila"><hi rend="overline">Α</hi></abbr>
+                  <lb n="18"/>βουλεύματα αὐτοῦ·</seg>
+                  <lb n="19"/><seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-1-9" source="Aquila" rendition="right column" corresp="#vat-gr-754-ps-1-2b"><abbr type="bibleversion" source="Aquila"><hi rend="overline">Α</hi></abbr> λαλήσει· <abbr type="bibleversion" source="Aquila"><hi rend="superscript"><hi rend="overline">Α</hi></hi></abbr> <abbr type="bibleversion" source="Symmachus"><hi rend="superscript"><hi rend="overline">Ϲ</hi></hi></abbr> φθέγξεται·
+                  <lb n="20"/><abbr type="bibleversion" source="Aquila"><hi rend="overline">Α</hi></abbr> <choice><orig>ἐπιδιεξόδους</orig><reg type="correction">ἐπὶ διεξόδους</reg></choice>·</seg>
+                  <lb n="21"/><note xml:id="vat-gr-754-1-25" type="inline" place="left margin of right column"><abbr type="bibleversion" source="Symmachus"><hi rend="overline">Ϲ</hi></abbr></note> <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-1-10" source="Symmachus" rendition="right column" corresp="#vat-gr-754-ps-3a">εἰς τὰς διεξόδους·</seg>
+               </ab>               
+            </div>
+            <div xml:id="vat-gr-754-1-26" rendition="bottom of middle column" rend="majuscule letters" type="hexaplaric">
+               <ab xml:lang="grc" xml:id="vat-gr-754-1-27">
+                  <lb n="1"/><seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-1-11" rendition="bottom of middle column" source="Aquila" corresp="#vat-gr-754-ps-1-3a"><abbr type="bibleversion" source="Aquila"><supplied resp="Sebastiano Panteghini" ana="Text restored from parallel copy. Field II 87."><hi rend="overline">Α</hi></supplied></abbr> <g ref="#linking-sign-11" type="linking" subtype="source" corresp="#vat-gr-754-ls-1-11"/> <choice><orig><abbr type="tachygraphic">κ<am>αὶ</am></abbr></orig><reg>καὶ</reg></choice> ἔσται ὡς τὸ ξύλον μεταπεφυτευμένον·</seg>
+               </ab>
+            </div>
+            <div xml:id="vat-gr-754-1-28" rendition="top of the page" rend="minuscule letters" type="commentary">
+               <ab xml:id="vat-gr-754-1-29" xml:lang="grc">
+                  <lb n="1"/><seg type="commentaryfragment" xml:id="vat-gr-754-fr-1-1" source="Anonymous" rendition="top of the page" corresp="#vat-gr-754-ps-1"><quote xml:id="vat-gr-754-quot-1-9" type="patristic" subtype="quotation" source="Basilius, hom. in Ps 48 (PG 29, 436 C3–5)" corresp="#person-3"><hi rend="majuscule">Ψ</hi>αλτήριόν ἐστιν ὄργανον μουσικὸν ἐναρμονίους τοὺς φθόγγους πρὸς τὴν  
+                  <lb n="2"/>ἐκ τῆς φωνῆς <choice><orig>μελωδίαν</orig><reg type="correction">μελῳδίαν</reg></choice> ἀποδίδον: –</quote></seg>
+               </ab>
+            </div>
+            <div xml:id="vat-gr-754-1-31" rendition="top of the page" rend="minuscule letters" type="hypothesis">
+               <ab xml:id="vat-gr-754-1-32" xml:lang="grc" rendition="main text" type="hypothesis">
+                  <lb n="3"/><note xml:id="vat-gr-754-1-30" type="inline" place="left margin"><hi rend="overline"><g type="linking" subtype="source" corresp="#vat-gr-754-ref-1-1">Α</g></hi></note> <seg type="commentaryfragment" source="Anonymous" xml:id="vat-gr-754-fr-1-2" corresp="#vat-gr-754-ps-1" rendition="top of the page"><quote xml:id="vat-gr-754-quot-1-10" type="patristic" subtype="quotation" source="Athanasius, schol. in Ps 1" corresp="#person-2"><hi rend="ekthesis">Τ</hi>ὴν ἀρχὴν τῆς προφητείας <choice><orig>τῶ</orig><reg type="correction">τῷ</reg></choice> <choice><orig>ἐξαυτοῦ</orig><reg type="correction">ἐξ αὐτοῦ</reg></choice> <choice><orig>κατασάρκα</orig><reg type="correction">κατὰ σάρκα</reg></choice> <choice><orig>τεχθησομένω</orig><reg type="correction">τεχθησομένῳ</reg></choice> <choice><abbr type="nomSac">χω</abbr><expan>Χριστῷ</expan></choice> ἀνατίθησιν
+                  <lb n="4"/>ὁ <choice><abbr type="nomSac">δαδ</abbr><expan>Δαυΐδ</expan></choice>· διὸ ἐν πρώτοις μακαρίζει τοὺς εἰς αὐτὸν ἠλπικότας• μακαρίους δὲ 
+                  <lb n="5"/>καλεὶ. τοὺς μὴ πορευθέντας ἐν <choice><orig>βουλῆ</orig><reg type="correction">βουλῇ</reg></choice> ἀσεβῶν· μήτε μὴν στάντας ἐν <choice><orig>ὁδῶ</orig><reg type="correction">ὁδῷ</reg></choice> ἁμαρτωλῶν·
+                  <lb n="6"/>μήτε <choice><orig>ἐπικαθέδραν</orig><reg type="correction">ἐπὶ καθέδραν</reg></choice> λοιμῶν καθεστηκότας· τρία γὰρ ἦν τάγματα παρὰ ἰουδαί
+                  <lb n="7"/>οις κατὰ τοῦ <choice><abbr type="nomSac">σρς</abbr><expan>σωτῆρος</expan></choice> ἐπαναστάντα· γραμματεὶς· φαρισαῖοι· καὶ νομικοί· οἳ καὶ 
+                  <lb n="8"/>κληθεῖεν εἰκότως. ἀσεβεῖς. καὶ ἁμαρτωλοὶ. καὶ λοιμοί: –</quote></seg>
+               </ab>
+            </div>
+            <div xml:id="vat-gr-754-1-33" rendition="bottom of the page" rend="minuscule letters" type="commentary">
+               <ab xml:id="vat-gr-754-1-34" xml:lang="grc">
+                  <lb n="1"/><note xml:id="vat-gr-754-1-35" type="inline" place="left margin"><hi rend="overline"><g type="linking" subtype="source" corresp="#vat-gr-754-ref-1-3">B</g></hi></note> <seg type="commentaryfragment" xml:id="vat-gr-754-fr-1-3" source="Anonymous" corresp="#vat-gr-754-ps-1-2a" rendition="bottom of the page"><quote xml:id="vat-gr-754-quot-1-11" type="patristic" subtype="quotation" source="Athanasius, schol. in Ps 1,2a" corresp="#person-2"><choice><orig><hi rend="ekthesis">Τ</hi>ῶ εὐαγγελικῶ</orig><reg type="correction">Τῷ εὐαγγελικῷ</reg></choice> <choice><orig>δηλονὅτι</orig><reg type="correction">δηλονότι</reg></choice>: –</quote></seg>
+                  <lb n="2"/><note xml:id="vat-gr-754-1-36" type="inline" place="left margin"><hi rend="overline"><g type="linking" subtype="source" corresp="#vat-gr-754-ref-1-4">Γ</g></hi></note> <seg type="commentaryfragment" xml:id="vat-gr-754-fr-1-4" source="Anonymous" corresp="#vat-gr-754-ps-1-2b" rendition="bottom of the page"><quote xml:id="vat-gr-754-quot-1-12" source="Athanasius, schol. in Ps 1,2b" type="patristic" subtype="quotation" corresp="#person-2"><hi rend="ekthesis">Τ</hi>ὸ σύντονον δηλοῖ· οὐ γὰρ ἠμελημένως δεῖ
+                  <lb n="3"/>μελετᾶν τοῦ <choice><abbr type="nomSac">κυ</abbr><expan>κυρίου</expan></choice> τὸν νόμον: –</quote></seg>
+                  <lb n="4"/><note xml:id="vat-gr-754-1-37" type="inline" place="left margin"><hi rend="overline"><g type="linking" subtype="source" corresp="#vat-gr-754-ref-1-5">Δ</g></hi></note> <seg type="commentaryfragment" xml:id="vat-gr-754-fr-1-5" source="Anonymous" corresp="#vat-gr-754-ps-1-3" rendition="bottom of the page"><quote xml:id="vat-gr-754-quot-1-13" type="patristic" subtype="quotation" source="Athanasius, schol. in Ps 1,3a" corresp="#person-2"><hi rend="ekthesis">Ξ</hi>ύλον ὁ <choice><abbr type="nomSac">χς</abbr><expan>Χριστὸς</expan></choice> ἀναγέγραπται ἐν <choice><orig>τῆ</orig><reg type="correction">τῇ</reg></choice> θε<unclear reason="damage">ο</unclear>πνεύ
+                  <lb n="5"/><choice><orig>στω γραφῆ</orig><reg type="correction">στῳ γραφῇ</reg></choice>. κατὰ τὸ εἰρημένον. πᾶσι το<unclear reason="damage">ῖς</unclear> <unclear reason="damage">ἀν</unclear>τεχομένοις αὐτῆς· λέγει
+                  <lb n="6"/>οὖν ὅτι οἱ πιστεύσαντες <choice><abbr type="nomSac">χω</abbr><expan>Χριστῷ</expan></choice>. σῶμα αὐτοῦ ἔσοντ<unclear reason="damage">αι</unclear>· <choice><orig>μετασχηματήσει</orig><corr>μετασχηματίσει</corr></choice>
+                  <lb n="7"/>γὰρ τὸ <choice><orig>σωμα</orig><corr>σῶμα</corr></choice> τῆς ταπεινώσεως ἡμῶν πρὸς τὸ γενέσθαι σύμ<unclear reason="damage">μορ</unclear>φον
+                  <lb n="8"/><choice><orig>τῶ</orig><reg type="correction">τῷ</reg></choice> σώματι τῆς δόξης αὐτοῦ· διεξόδους δὲ ὑδάτων. τὰ<unclear reason="damage">ς</unclear> <unclear reason="damage">θ</unclear>εί<unclear reason="damage">α</unclear>ς
+                  <lb n="9"/>γραφάς· ἐν αἷς <unclear reason="damage">ἁ</unclear>πανταχοῦ ἔστιν ε<unclear reason="damage">ὑ</unclear>ρεῖν <choice><abbr type="nomSac">χν</abbr><expan>Χριστὸν</expan></choice> κηρυ<unclear reason="damage">σσ</unclear>όμε<unclear reason="damage">νον</unclear>: –</quote></seg>
+                  <lb n="10"/><note xml:id="vat-gr-754-1-38" type="inline" place="left margin"><g ref="#linking-sign-8" type="linking" subtype="source" corresp="#vat-gr-754-ls-1-8"/></note> <seg type="commentaryfragment" xml:id="vat-gr-754-fr-1-6" source="Anonymous" corresp="#vat-gr-754-ps-1-2b" rendition="bottom of the page" next="#vat-gr-754-fr-1-7"><quote xml:id="vat-gr-754-quot-1-14" type="patristic" subtype="quotation" source="Theodoretus, comm. in Ps 1,2" corresp="#person-16" next="#vat-gr-754-quot-1-15"><hi rend="ekthesis">Π</hi>ροσήκει δὲ. οὐ μό<unclear reason="damage">ν</unclear>ον τὰ προειρημέ<unclear reason="damage">να</unclear> <unclear reason="damage">β</unclear>δελύξασ<unclear reason="damage">θα</unclear><supplied reason="illegible" quantity="2" unit="character">ι·</supplied> <unclear reason="damage">ἀλλὰ</unclear> <unclear reason="damage">καὶ</unclear> <choice><orig><unclear reason="damage">τῶ θείω</unclear></orig><reg type="correction">τῷ θείῳ</reg></choice> <unclear reason="damage">νό</unclear></quote></seg> <note xml:id="vat-gr-754-1-39" place="right margin" type="inline">θείῳ νό</note>
+                  <lb n="11"/><seg type="commentaryfragment" xml:id="vat-gr-754-fr-1-7" rendition="bottom of the page" source="Anonymous" prev="#vat-gr-754-fr-1-6" corresp="#vat-gr-754-ps-1-2b"><quote xml:id="vat-gr-754-quot-1-15" prev="vat-gr-754-quot-1-14" type="patristic" subtype="quotation" source="Theodoretus, comm. in Ps 1,2" corresp="#person-16"><choice><orig>μω</orig><reg type="correction">μῳ</reg></choice> νύκτωρ καὶ μεθημέραν πρ<unclear reason="damage">οσ</unclear>έχειν· κακεῖνα <unclear reason="damage">θέλειν</unclear> <unclear reason="damage">ἃ</unclear> <unclear reason="damage">ὁ</unclear> <unclear reason="damage">θ</unclear>εῖος <unclear reason="damage">ν</unclear>όμος
+                  <lb n="12"/>προαγορεύει· καὶ κατὰ τὸν ἐ<unclear reason="damage">κείνου</unclear> <unclear reason="damage">σ</unclear>κοπὸν. τὸν οἰκεῖ<unclear reason="damage">ον</unclear> <unclear reason="damage">βίο</unclear>ν εὐ<unclear reason="damage">θύν</unclear>ειν·
+                  <lb n="13"/>οὕτως γὰρ <choice><orig><abbr type="tachygraphic">κ<am>αὶ</am></abbr></orig><reg>καὶ</reg></choice> ὁ τῶν ὅλων <choice><abbr type="nomSac">θς</abbr><expan>θεὸς</expan></choice> <choice><orig>δ<unclear reason="damage">ι</unclear>αμωϋ<unclear reason="damage">σέως</unclear></orig><reg type="correction">διὰ Μωϋσέως</reg></choice> <unclear reason="damage">ἐνομοθ</unclear>έτησε <unclear reason="damage">λ</unclear>έγων· <quote type="biblical" xml:id="vat-gr-754-quot-bibl-1-1" source="Deut 6,6-8" next="vat-gr-754-quot-bibl-1-2">καὶ εἶ
+                  <lb n="14"/>ναι τὰ ῥήματα τοῦ νόμου τούτου διαπαντὸς ἐν <choice><orig>τῶ</orig><reg type="correction">τῷ</reg></choice> στόματί σου· <choice><orig><abbr type="tachygraphic">κ<am>αὶ</am></abbr></orig><reg>καὶ</reg></choice> με</quote></quote></seg>                  
+               </ab>
+            </div>
+         </div>
+      </body>
+  </text>
+</TEI>
