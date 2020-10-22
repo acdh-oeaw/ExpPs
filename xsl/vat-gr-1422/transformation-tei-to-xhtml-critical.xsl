@@ -783,7 +783,8 @@
             <xsl:value-of select="@rendition"/>
             <xsl:text>] </xsl:text>
             <xsl:text>[</xsl:text>
-            <xsl:value-of select="parent::tei:ab/parent::tei:div/@type"/>
+            <!--<xsl:value-of select="parent::tei:ab/parent::tei:div/@type"/>-->
+            <xsl:value-of select="@type"/>
             <xsl:text>] </xsl:text>
         </xsl:if>
         <xsl:apply-templates/>
@@ -830,6 +831,9 @@
         </span>
         <xsl:text> [</xsl:text>
         <xsl:value-of select="@source"/>
+        <xsl:if test="exists(@prev)">
+            <xsl:text> (continued)</xsl:text>
+        </xsl:if>
         <xsl:text>]</xsl:text>
     </xsl:template>
     
@@ -887,6 +891,9 @@
                 </xsl:attribute>
                 <xsl:value-of select="@source"/>
             </a>
+            <xsl:if test="exists(@prev)">
+                <xsl:text> (continued)</xsl:text>
+            </xsl:if>
         </li>
     </xsl:template>
 
@@ -965,6 +972,32 @@
     
     <xsl:template match="tei:hi[@rend = 'superscript']">
         <xsl:apply-templates/>
+    </xsl:template>
+      
+    <xsl:template match="tei:hi[@rend = 'majuscules']">
+        <span class="red-ink-bold">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+    
+    <xsl:template match="tei:hi[@rend = 'tall']">
+        <xsl:apply-templates/>
+    </xsl:template>
+    
+    <xsl:template match="tei:add[@type = 'second-hand']">
+        <xsl:apply-templates/>
+        <xsl:text> (</xsl:text>
+            <xsl:value-of select="@hand"/>
+        <xsl:text>)</xsl:text>
+    </xsl:template>
+      
+    <xsl:template match="tei:subst">
+        <xsl:value-of select="tei:del/text()"/>
+        <xsl:text> [</xsl:text>
+            <xsl:value-of select="tei:add/text()"/>
+        <xsl:text> </xsl:text>
+            <xsl:value-of select="tei:add/@hand"/>
+        <xsl:text>]</xsl:text>
     </xsl:template>
       
 </xsl:stylesheet>
