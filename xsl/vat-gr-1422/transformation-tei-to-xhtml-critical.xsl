@@ -722,11 +722,16 @@
                 <xsl:value-of select="@xml:id"/>
             </xsl:attribute>
         </a>
+        <xsl:if test="not(exists(@rend)) and @rend != 'on the line'">
         <sup>
             <span class="reference">
                 <xsl:value-of select="text()"/>
             </span>
         </sup>
+        </xsl:if>
+        <xsl:if test="exists(@rend) and @rend = 'on the line'">
+            <xsl:value-of select="text()"/>
+        </xsl:if>
     </xsl:template>
     
     <xsl:template match="tei:g[@type = 'linking' and @subtype = 'destination']">
