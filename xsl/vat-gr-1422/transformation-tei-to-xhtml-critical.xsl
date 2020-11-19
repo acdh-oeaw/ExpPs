@@ -750,12 +750,17 @@
     <xsl:template match="tei:g[@type = 'linking' and @subtype = 'source']">
             <span class="glyph-in-text">
                 <xsl:text> |</xsl:text>
+                <xsl:if test="exists(@corresp)">
                 <a>
                     <xsl:attribute name="href">
                         <xsl:value-of select="@corresp"/>
                     </xsl:attribute>
                     <xsl:value-of select="root()/tei:TEI/tei:teiHeader/tei:encodingDesc/tei:charDecl/tei:glyph[@xml:id = substring-after(current()/@ref,'#')]/tei:glyphName/text()"/>
                 </a>
+                </xsl:if>
+                <xsl:if test="not(exists(@corresp))">
+                    <xsl:value-of select="root()/tei:TEI/tei:teiHeader/tei:encodingDesc/tei:charDecl/tei:glyph[@xml:id = substring-after(current()/@ref,'#')]/tei:glyphName/text()"/>
+                </xsl:if>
                 <xsl:text>| </xsl:text>
             </span>
     </xsl:template>
