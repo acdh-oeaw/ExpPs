@@ -6,7 +6,7 @@
     version="2.0">
     
     <xsl:output encoding="UTF-8" method="text" indent="no"/>
-    <xsl:strip-space elements="*"/>
+    <!--<xsl:strip-space elements="*"/>-->
     
     <xsl:template match="tei:TEI">
         <xsl:text>\documentclass[11pt,a4paper]{article}
@@ -115,7 +115,20 @@
     </xsl:template>
     
     <xsl:template match="text()">
-        <xsl:value-of select="replace(.,'&#10;                     ','')"/>
+        <xsl:choose>
+            <xsl:when test="contains(.,'                     ')">
+                <xsl:value-of select="replace(.,'&#10;                     ','')"/>
+            </xsl:when>
+            <xsl:when test="contains(.,'                  ')">
+                <xsl:value-of select="replace(.,'&#10;                  ','')"/>
+            </xsl:when>
+            <xsl:when test="contains(.,' ')">
+                <xsl:value-of select="."/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="."/>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     
 </xsl:stylesheet>
