@@ -48,7 +48,7 @@
         </p>
         <p class="link-to-facsimiles">
             <xsl:text>The facsimiles of the manuscript are available: </xsl:text>
-            <a>
+            <a target="_blank">
                 <xsl:attribute name="href">
                     <xsl:value-of select="tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:idno/@facs"/>
                 </xsl:attribute>
@@ -57,7 +57,7 @@
         </p>
         <p class="link-to-facsimiles">
             <xsl:text>The pinakes identifier of the manuscript is: </xsl:text>
-            <a>
+            <a target="_blank">
                 <xsl:attribute name="href">
                     <xsl:value-of select="tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:altIdentifier/tei:idno[@type='pinakes']/@corresp"/>
                 </xsl:attribute>
@@ -70,7 +70,7 @@
                 <xsl:apply-templates select="tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msContents"/>
             </ul>
         </p>
-        <p class="manuscript-physical-description">
+        <div class="manuscript-physical-description">
             <xsl:text>Physical description of the manuscript: </xsl:text>
             <p class="manuscript-physical-description-content">
                 <xsl:text>Form: </xsl:text>
@@ -88,9 +88,30 @@
                 <xsl:text> </xsl:text>
                 <xsl:value-of select="tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:physDesc/tei:objectDesc/tei:supportDesc/tei:extent/tei:dimensions/@unit"/>
             </p>
+            <p class="manuscript-physical-description-content">Layout of the pages:</p>
+            <img class="layout-description-image">
+                <xsl:attribute name="src">
+                    <xsl:value-of select="tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:physDesc/tei:objectDesc/tei:layoutDesc/tei:layout/tei:graphic/@url"/>
+                </xsl:attribute>
+            </img>
             <ul class="manuscript-physical-description-content">
-                <xsl:apply-templates select="tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:physDesc/tei:objectDesc/tei:layoutDesc/tei:layout"/>
+                <xsl:apply-templates select="tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:physDesc/tei:objectDesc/tei:layoutDesc/tei:layout/tei:p[not(exists(@xml:id))]"/>
             </ul>
+            <p class="manuscript-physical-description-content">
+                <xsl:text>Scripts:</xsl:text>
+            </p>
+            <ul class="manuscript-physical-description-content">
+                <xsl:for-each select="tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:physDesc/tei:scriptDesc/tei:p">
+                    <li>
+                        <xsl:value-of select="text()"/>
+                    </li>
+                </xsl:for-each>
+            </ul>
+            <xsl:for-each select="tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:physDesc/tei:additions/tei:p">
+                <p class="manuscript-physical-description-content">
+                    <xsl:value-of select="text()"/>
+                </p>
+            </xsl:for-each>
             <p class="manuscript-physical-description-content">
                 <xsl:text>Decoration: </xsl:text>
                 <xsl:value-of select="tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:physDesc/tei:decoDesc/tei:p/text()"/>
@@ -98,7 +119,7 @@
             <p class="manuscript-physical-description-content">
                 <xsl:value-of select="tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:history/tei:p/text()"/>
             </p>
-        </p>
+        </div>
         <div class="bibliography">
             <p>
                 <xsl:value-of select="tei:fileDesc/tei:sourceDesc/tei:listBibl/tei:head"/>
@@ -122,7 +143,7 @@
         </li>
     </xsl:template>
     
-    <xsl:template match="tei:layout">
+    <xsl:template match="tei:layout/tei:p[not(exists(@xml:id))]">
         <li>
             <xsl:value-of select="text()"/>
         </li>
@@ -268,7 +289,45 @@
         <div class="header">
             <span class="text-main-normal">
                 <xsl:text>[</xsl:text>
-                <xsl:value-of select="parent::tei:div/@rendition"/>
+                <xsl:if test="parent::tei:div/@rendition = '#middle-column'">
+                    <xsl:text>middle column</xsl:text>
+                </xsl:if>
+                <xsl:if test="parent::tei:div/@rendition = '#left-column'">
+                    <xsl:text>left column</xsl:text>
+                </xsl:if>
+                <xsl:if test="parent::tei:div/@rendition = '#right-column'">
+                    <xsl:text>right column</xsl:text>
+                </xsl:if>
+                <xsl:if test="parent::tei:div/@rendition = '#top-of-the-page'">
+                    <xsl:text>top of the page</xsl:text>
+                </xsl:if>
+                <xsl:if test="parent::tei:div/@rendition = '#bottom-of-the-page'">
+                    <xsl:text>bottom of the page</xsl:text>
+                </xsl:if>
+                <xsl:if test="parent::tei:div/@rendition = '#left-margin-of-left-column'">
+                    <xsl:text>left margin of left column</xsl:text>
+                </xsl:if>
+                <xsl:if test="parent::tei:div/@rendition = '#left-margin-of-middle-column'">
+                    <xsl:text>left margin of middle column</xsl:text>
+                </xsl:if>
+                <xsl:if test="parent::tei:div/@rendition = '#left-margin-of-right-column'">
+                    <xsl:text>left margin of right column</xsl:text>
+                </xsl:if>
+                <xsl:if test="parent::tei:div/@rendition = '#bottom-of-right-column'">
+                    <xsl:text>bottom of right column</xsl:text>
+                </xsl:if>
+                <xsl:if test="parent::tei:div/@rendition = '#bottom-of-middle-column'">
+                    <xsl:text>bottom of middle column</xsl:text>
+                </xsl:if>
+                <xsl:if test="parent::tei:div/@rendition = '#right-margin-of-middle-column'">
+                    <xsl:text>right margin of middle column</xsl:text>
+                </xsl:if>
+                <xsl:if test="parent::tei:div/@rendition = '#left-margin'">
+                    <xsl:text>left margin</xsl:text>
+                </xsl:if>
+                <xsl:if test="parent::tei:div/@rendition = '#top-margin'">
+                    <xsl:text>top margin</xsl:text>
+                </xsl:if>
                 <xsl:text>] [</xsl:text>
                 <xsl:value-of select="parent::tei:div/@type"/>
                 <xsl:text>]</xsl:text>
@@ -281,7 +340,45 @@
         <div class="quotation">
             <span class="text-main-normal">
                 <xsl:text>[</xsl:text>
-                <xsl:value-of select="@rendition"/>
+                <xsl:if test="@rendition = '#middle-column'">
+                    <xsl:text>middle column</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#left-column'">
+                    <xsl:text>left column</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#right-column'">
+                    <xsl:text>right column</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#top-of-the-page'">
+                    <xsl:text>top of the page</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#bottom-of-the-page'">
+                    <xsl:text>bottom of the page</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#left-margin-of-left-column'">
+                    <xsl:text>left margin of left column</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#left-margin-of-middle-column'">
+                    <xsl:text>left margin of middle column</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#left-margin-of-right-column'">
+                    <xsl:text>left margin of right column</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#bottom-of-right-column'">
+                    <xsl:text>bottom of right column</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#bottom-of-middle-column'">
+                    <xsl:text>bottom of middle column</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#right-margin-of-middle-column'">
+                    <xsl:text>right margin of middle column</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#left-margin'">
+                    <xsl:text>left margin</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#top-margin'">
+                    <xsl:text>top margin</xsl:text>
+                </xsl:if>
                 <xsl:text>] [</xsl:text>
                 <xsl:value-of select="@type"/>
                 <xsl:text>]</xsl:text>
@@ -302,7 +399,45 @@
         <div class="manuscript-content">
             <span class="text-main-normal">
                 <xsl:text>[</xsl:text>
-                <xsl:value-of select="@rendition"/>
+                <xsl:if test="@rendition = '#middle-column'">
+                    <xsl:text>middle column</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#left-column'">
+                    <xsl:text>left column</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#right-column'">
+                    <xsl:text>right column</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#top-of-the-page'">
+                    <xsl:text>top of the page</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#bottom-of-the-page'">
+                    <xsl:text>bottom of the page</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#left-margin-of-left-column'">
+                    <xsl:text>left margin of left column</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#left-margin-of-middle-column'">
+                    <xsl:text>left margin of middle column</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#left-margin-of-right-column'">
+                    <xsl:text>left margin of right column</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#bottom-of-right-column'">
+                    <xsl:text>bottom of right column</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#bottom-of-middle-column'">
+                    <xsl:text>bottom of middle column</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#right-margin-of-middle-column'">
+                    <xsl:text>right margin of middle column</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#left-margin'">
+                    <xsl:text>left margin</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#top-margin'">
+                    <xsl:text>top margin</xsl:text>
+                </xsl:if>
                 <xsl:text>] [</xsl:text>
                 <xsl:value-of select="@type"/>
                 <xsl:text>]</xsl:text>
@@ -318,7 +453,45 @@
     <xsl:template match="tei:ab[parent::tei:div[@type = 'hypothesis']]">
         <p class="manuscript-content-rendition">
             <xsl:text>[</xsl:text>
-            <xsl:value-of select="@rendition"/>
+            <xsl:if test="@rendition = '#middle-column'">
+                <xsl:text>middle column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#left-column'">
+                <xsl:text>left column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#right-column'">
+                <xsl:text>right column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#top-of-the-page'">
+                <xsl:text>top of the page</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#bottom-of-the-page'">
+                <xsl:text>bottom of the page</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#left-margin-of-left-column'">
+                <xsl:text>left margin of left column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#left-margin-of-middle-column'">
+                <xsl:text>left margin of middle column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#left-margin-of-right-column'">
+                <xsl:text>left margin of right column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#bottom-of-right-column'">
+                <xsl:text>bottom of right column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#bottom-of-middle-column'">
+                <xsl:text>bottom of middle column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#right-margin-of-middle-column'">
+                <xsl:text>right margin of middle column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#left-margin'">
+                <xsl:text>left margin</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#top-margin'">
+                <xsl:text>top margin</xsl:text>
+            </xsl:if>
             <xsl:text>] [</xsl:text>
             <xsl:value-of select="@type"/>
             <xsl:text>]</xsl:text>
@@ -330,7 +503,45 @@
         <div class="manuscript-content">
             <span class="text-main-normal">
                 <xsl:text>[</xsl:text>
-                <xsl:value-of select="@rendition"/>
+                <xsl:if test="@rendition = '#middle-column'">
+                    <xsl:text>middle column</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#left-column'">
+                    <xsl:text>left column</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#right-column'">
+                    <xsl:text>right column</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#top-of-the-page'">
+                    <xsl:text>top of the page</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#bottom-of-the-page'">
+                    <xsl:text>bottom of the page</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#left-margin-of-left-column'">
+                    <xsl:text>left margin of left column</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#left-margin-of-middle-column'">
+                    <xsl:text>left margin of middle column</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#left-margin-of-right-column'">
+                    <xsl:text>left margin of right column</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#bottom-of-right-column'">
+                    <xsl:text>bottom of right column</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#bottom-of-middle-column'">
+                    <xsl:text>bottom of middle column</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#right-margin-of-middle-column'">
+                    <xsl:text>right margin of middle column</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#left-margin'">
+                    <xsl:text>left margin</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#top-margin'">
+                    <xsl:text>top margin</xsl:text>
+                </xsl:if>
                 <xsl:text>]</xsl:text>
             </span>
             <xsl:apply-templates/>
@@ -346,7 +557,45 @@
     
     <xsl:template match="tei:seg[@type = 'hexaplaric']">
         <xsl:text>[</xsl:text>
-        <xsl:value-of select="@rendition"/>
+        <xsl:if test="@rendition = '#middle-column'">
+            <xsl:text>middle column</xsl:text>
+        </xsl:if>
+        <xsl:if test="@rendition = '#left-column'">
+            <xsl:text>left column</xsl:text>
+        </xsl:if>
+        <xsl:if test="@rendition = '#right-column'">
+            <xsl:text>right column</xsl:text>
+        </xsl:if>
+        <xsl:if test="@rendition = '#top-of-the-page'">
+            <xsl:text>top of the page</xsl:text>
+        </xsl:if>
+        <xsl:if test="@rendition = '#bottom-of-the-page'">
+            <xsl:text>bottom of the page</xsl:text>
+        </xsl:if>
+        <xsl:if test="@rendition = '#left-margin-of-left-column'">
+            <xsl:text>left margin of left column</xsl:text>
+        </xsl:if>
+        <xsl:if test="@rendition = '#left-margin-of-middle-column'">
+            <xsl:text>left margin of middle column</xsl:text>
+        </xsl:if>
+        <xsl:if test="@rendition = '#left-margin-of-right-column'">
+            <xsl:text>left margin of right column</xsl:text>
+        </xsl:if>
+        <xsl:if test="@rendition = '#bottom-of-right-column'">
+            <xsl:text>bottom of right column</xsl:text>
+        </xsl:if>
+        <xsl:if test="@rendition = '#bottom-of-middle-column'">
+            <xsl:text>bottom of middle column</xsl:text>
+        </xsl:if>
+        <xsl:if test="@rendition = '#right-margin-of-middle-column'">
+            <xsl:text>right margin of middle column</xsl:text>
+        </xsl:if>
+        <xsl:if test="@rendition = '#left-margin'">
+            <xsl:text>left margin</xsl:text>
+        </xsl:if>
+        <xsl:if test="@rendition = '#top-margin'">
+            <xsl:text>top margin</xsl:text>
+        </xsl:if>
         <xsl:text>] [hexaplaric variant] </xsl:text>
         <xsl:apply-templates/>
     </xsl:template>
@@ -354,7 +603,45 @@
     <xsl:template match="tei:div[@type = 'commentary']">
         <div class="main-text-commentary">
             <xsl:text>[</xsl:text>
-            <xsl:value-of select="@rendition"/>
+            <xsl:if test="@rendition = '#middle-column'">
+                <xsl:text>middle column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#left-column'">
+                <xsl:text>left column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#right-column'">
+                <xsl:text>right column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#top-of-the-page'">
+                <xsl:text>top of the page</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#bottom-of-the-page'">
+                <xsl:text>bottom of the page</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#left-margin-of-left-column'">
+                <xsl:text>left margin of left column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#left-margin-of-middle-column'">
+                <xsl:text>left margin of middle column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#left-margin-of-right-column'">
+                <xsl:text>left margin of right column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#bottom-of-right-column'">
+                <xsl:text>bottom of right column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#bottom-of-middle-column'">
+                <xsl:text>bottom of middle column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#right-margin-of-middle-column'">
+                <xsl:text>right margin of middle column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#left-margin'">
+                <xsl:text>left margin</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#top-margin'">
+                <xsl:text>top margin</xsl:text>
+            </xsl:if>
             <xsl:text>] [</xsl:text>
             <xsl:value-of select="@type"/>
             <xsl:text>]</xsl:text>
@@ -781,7 +1068,45 @@
         </a>
         <xsl:if test="exists(@rendition) and (local-name(preceding-sibling::*[1]) = 'note')">
             <xsl:text>[</xsl:text>
-            <xsl:value-of select="@rendition"/>
+            <xsl:if test="@rendition = '#middle-column'">
+                <xsl:text>middle column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#left-column'">
+                <xsl:text>left column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#right-column'">
+                <xsl:text>right column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#top-of-the-page'">
+                <xsl:text>top of the page</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#bottom-of-the-page'">
+                <xsl:text>bottom of the page</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#left-margin-of-left-column'">
+                <xsl:text>left margin of left column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#left-margin-of-middle-column'">
+                <xsl:text>left margin of middle column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#left-margin-of-right-column'">
+                <xsl:text>left margin of right column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#bottom-of-right-column'">
+                <xsl:text>bottom of right column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#bottom-of-middle-column'">
+                <xsl:text>bottom of middle column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#right-margin-of-middle-column'">
+                <xsl:text>right margin of middle column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#left-margin'">
+                <xsl:text>left margin</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#top-margin'">
+                <xsl:text>top margin</xsl:text>
+            </xsl:if>
             <xsl:text>] </xsl:text>
         </xsl:if>
         <xsl:apply-templates/>
@@ -790,7 +1115,45 @@
     <xsl:template match="tei:seg[@type = 'glosse']">
         <xsl:if test="exists(@rendition) and ((local-name(preceding-sibling::*[1]) = 'note') or ancestor::tei:div[@type = 'glossai'])">
             <xsl:text>[</xsl:text>
-            <xsl:value-of select="@rendition"/>
+            <xsl:if test="@rendition = '#middle-column'">
+                <xsl:text>middle column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#left-column'">
+                <xsl:text>left column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#right-column'">
+                <xsl:text>right column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#top-of-the-page'">
+                <xsl:text>top of the page</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#bottom-of-the-page'">
+                <xsl:text>bottom of the page</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#left-margin-of-left-column'">
+                <xsl:text>left margin of left column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#left-margin-of-middle-column'">
+                <xsl:text>left margin of middle column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#left-margin-of-right-column'">
+                <xsl:text>left margin of right column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#bottom-of-right-column'">
+                <xsl:text>bottom of right column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#bottom-of-middle-column'">
+                <xsl:text>bottom of middle column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#right-margin-of-middle-column'">
+                <xsl:text>right margin of middle column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#left-margin'">
+                <xsl:text>left margin</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#top-margin'">
+                <xsl:text>top margin</xsl:text>
+            </xsl:if>
             <xsl:text>] </xsl:text>
             <xsl:text>[</xsl:text>
             <!--<xsl:value-of select="parent::tei:ab/parent::tei:div/@type"/>-->
@@ -966,9 +1329,17 @@
         </span>
     </xsl:template>
     
-    <xsl:template match="tei:span[@type = 'wrapper-for-position']">
+    <xsl:template match="tei:milestone[@unit = 'innerline']">
         <xsl:text>[</xsl:text>
-        <xsl:value-of select="@rendition"/>
+        <xsl:if test="@rendition = '#middle-column'">
+            <xsl:text>middle column</xsl:text>
+        </xsl:if>
+        <xsl:if test="@rendition = '#left-column'">
+            <xsl:text>left column</xsl:text>
+        </xsl:if>
+        <xsl:if test="@rendition = '#right-column'">
+            <xsl:text>right column</xsl:text>
+        </xsl:if>
         <xsl:text>] </xsl:text>
         <xsl:apply-templates/>
     </xsl:template>
