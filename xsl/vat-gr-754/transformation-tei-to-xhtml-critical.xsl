@@ -1355,7 +1355,7 @@
         <xsl:apply-templates/>
     </xsl:template>
       
-    <xsl:template match="tei:hi[@rend = 'majuscules']">
+    <xsl:template match="tei:hi[@rend = 'majuscule']">
         <span class="red-ink-bold">
             <xsl:apply-templates/>
         </span>

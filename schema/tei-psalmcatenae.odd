@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Encoding Critical Editions for the Project: Ps.-Athanasios - Expositiones in Psalmos</title>
+        <funder>FWF - Project 32988</funder>
+        <author xml:id="TK">Thomas Klampfl</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Version 0.1. Last updated on 2021-02-26.</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Austrian Centre for Digital Humanities</publisher>
+        <date>2021</date>
+        <availability>
+          <licence target="https://www.gnu.org/licenses/agpl.html">Distributed under a GNU Affero General Public License.</licence>
+          <p>This program is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</p>
+          <p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more details.</p>
+          <p>You should have received a copy of the GNU Affero General Public License along with this program. If not, see
+            <ptr target="https://www.gnu.org/licenses/"/>.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <p>born digital</p>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <change who="#TK" when="2021-02-26">Rework of the Patristic Text Archive ODD for the project Expositiones in Psalmos</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div xml:id="elemente">
+        <head>Dokumentation des Schemas</head>
+        <schemaSpec ident="tei-psalmcatenae" prefix="tei_" start="TEI" xml:lang="en">
+          <!-- MODULES USED BY THE PTA SCHEMA -->
+          <moduleRef key="core" except="binaryObject email headItem headLabel measureGrp media meeting postBox postCode q rs textLang"/>
+          <moduleRef key="tei"/>
+          <moduleRef
+            key="header"
+            except="abstract appInfo application catDesc catRef category classCode hyphenation namespace rendition samplingDecl schemaRef styleDefDecl tagUsage tagsDecl xenoData"/>
+          <moduleRef
+            key="textstructure"
+            except="argument byline closer dateline div1 div2 div3 div4 div5 div6 div7 docAuthor docDate docEdition docImprint docTitle epigraph floatingText imprimatur opener postscript salute signed titlePage titlePart trailer"/>
+          <moduleRef key="transcr" except="fw line listTranspose metamark mod redo restore secl sourceDoc transpose undo"/>
+          <moduleRef key="analysis" except="cl interp interpGrp span spanGrp"/>
+          <moduleRef key="certainty"/>
+          <moduleRef key="gaiji" except="char charName mapping unicodeName"/>
+          <moduleRef key="linking" except="alt altGrp joinGrp link linkGrp timeline when"/>
+          <moduleRef key="msdescription" except="accMat adminInfo depth dim heraldry musicNotation objectType seal sealDesc stamp summary typeDesc typeNote"/>
+          <moduleRef
+            key="namesdates"
+            except="affiliation age bloc climate district education faith langKnowledge langKnown listNym listObject listOrg listRelation nameLink nationality nym occupation offset org population region residence sex socecStatus state terrain trait"/>
+          <moduleRef key="textcrit" except="wit"/>
+          <moduleRef key="figures" except="cell formula notatedMusic row table"/>
+          <!-- CHANGED ELEMENT SPECS -->
+          <elementSpec ident="add" module="core" mode="change">
+            <attList>
+              <!-- constraining values of add/@place -->
+              <attDef ident="place" mode="change">
+                <valList type="closed">
+                  <valItem ident="above"/>
+                  <valItem ident="inline"/>
+                  <valItem ident="margin"/>
+                </valList>
+              </attDef>
+              <attDef ident="ana" mode="delete"/>
+              <attDef ident="atLeast" mode="delete"/>
+              <attDef ident="atMost" mode="delete"/>
+              <attDef ident="cause" mode="delete"/>
+              <attDef ident="cert" mode="delete"/>
+              <attDef ident="change" mode="delete"/>
+              <attDef ident="confidence" mode="delete"/>
+              <attDef ident="copyOf" mode="delete"/>
+              <attDef ident="corresp" mode="delete"/>
+              <attDef ident="evidence" mode="delete"/>
+              <attDef ident="exclude" mode="delete"/>
+              <attDef ident="extent" mode="delete"/>
+              <attDef ident="facs" mode="delete"/>
+              <attDef ident="instant" mode="delete"/>
+              <attDef ident="max" mode="delete"/>
+              <attDef ident="min" mode="delete"/>
+              <attDef ident="n" mode="delete"/>
+              <attDef ident="next" mode="delete"/>
+              <attDef ident="precision" mode="delete"/>
+              <attDef ident="prev" mode="delete"/>
+              <attDef ident="quantity" mode="delete"/>
+              <attDef ident="rend" mode="delete"/>
+              <attDef ident="rendition" mode="delete"/>
+              <attDef ident="sameAs" mode="delete"/>
+              <attDef ident="scope" mode="delete"/>
+              <attDef ident="seq" mode="delete"/>
+              <attDef ident="source" mode="delete"/>
+              <attDef ident="status" mode="delete"/>
+              <attDef ident="style" mode="delete"/>
+              <attDef ident="subtype" mode="delete"/>
+              <attDef ident="synch" mode="delete"/>
+              <attDef ident="unit" mode="delete"/>
+              <attDef ident="xml:base" mode="delete"/>
+              <attDef ident="xml:lang" mode="delete"/>
+              <attDef ident="xml:space" mode="delete"/>
+            </attList>
+          </elementSpec>
+          <!-- constraining values of div/@type -->
+          <elementSpec ident="div" mode="change" module="textstructure">
+            <attList>
+              <attDef ident="type" mode="replace" usage="req">
+                <valList type="closed">
+                  <valItem ident="header">
+                    <desc>Headers of psalms</desc>
+                  </valItem>
+                  <valItem ident="bibletext">
+                    <desc>Section of bibletext</desc>
+                  </valItem>
+                  <valItem ident="transcription">
+                    <desc>to contain the transcription of a text in a manuscript</desc>
+                  </valItem>
+                  <valItem ident="hypopsalmos">
+                    <desc>Short invocation in manuscripts of the Psalms (n="hypopsalmos")</desc>
+                  </valItem>
+                  <valItem ident="hypothesis">
+                    <desc>Short introduction to a Psalm in manuscripts of the Psalms (n="hypothesis")</desc>
+                  </valItem>
+                  <valItem ident="perioche">
+                    <desc>Short summary of a Psalm (by Eusebius of Caesarea) in manuscripts of the Psalms (n="perioche")</desc>
+                  </valItem>
+                  <valItem ident="note">
+                    <desc>Extended notes in the margins</desc>
+                  </valItem>
+                  <valItem ident="glossai">
+                    <desc>Glosses in the text</desc>
+                  </valItem>
+                  <valItem ident="hexaplaric">
+                    <desc>Hexaplaric variants</desc>
+                  </valItem>
+                  <valItem ident="commentary">
+                    <desc>Commentary of a bibletext</desc>
+                  </valItem>
+                </valList>
+              </attDef>
+              <attDef ident="subtype" mode="change">
+                <desc>for the description of the text structure</desc>
+                <valList type="closed" mode="replace">
+                  <valItem ident="commented">
+                    <desc>Biblical verses or text, which is commented on (comment in @subtype=commentary)</desc>
+                  </valItem>
+                  <valItem ident="commentary">
+                    <desc>Exegesis of a Biblical verse or a commentary to a text</desc>
+                  </valItem>
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          
+          <elementSpec ident="quote" mode="change" module="core">
+            <attList>
+              <attDef ident="type" mode="replace" usage="req">
+                <valList type="closed">
+                  <valItem ident="bibletext">
+                    <desc>Quotation of a commented text</desc>
+                  </valItem>
+                  <valItem ident="patristic">
+                    <desc>Quotation of a patristic author</desc>
+                  </valItem>
+                  <valItem ident="biblical">
+                    <desc>Quotation of a bible text</desc>
+                  </valItem>
+                  <valItem ident="heading">
+                    <desc>Heading of bible text, e.g. Halleluja</desc>
+                  </valItem>
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          
+          <elementSpec ident="seg" mode="change" module="linking">
+            <attList>
+              <attDef ident="type" mode="replace" usage="req">
+                <valList type="closed">
+                  <valItem ident="commentaryfragment">
+                    <desc>Segment containing a commentaryfragment</desc>
+                  </valItem>
+                  <valItem ident="hexaplaric">
+                    <desc>Segment containing a hexaplaric variant</desc>
+                  </valItem>
+                  <valItem ident="glosse">
+                    <desc>Segment containing a glosse</desc>
+                  </valItem>
+                  <valItem ident="hypopsalmos">
+                    <desc>Short invocation in manuscripts of the Psalms (n="hypopsalmos")</desc>
+                  </valItem>
+                  <valItem ident="hypothesis">
+                    <desc>Short introduction to a Psalm in manuscripts of the Psalms (n="hypothesis")</desc>
+                  </valItem>
+                  <valItem ident="perioche">
+                    <desc>Short summary of a Psalm (by Eusebius of Caesarea) in manuscripts of the Psalms (n="perioche")</desc>
+                  </valItem>
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          
+          <elementSpec ident="gap" module="core" mode="change">
+            <!-- testing for <gap> with both quantity/extent, no unit, or contained in supplied -->
+            <constraintSpec ident="gap" scheme="isoschematron">
+              <constraint>
+                <sch:rule context="tei:gap">
+                  <sch:report test="@quantity and @extent">gap may have @quantity (a figure) or @extent (a descriptive text value) but not both</sch:report>
+                  <sch:report test="@quantity and not(@unit)">If gap has @quantity then @unit is required</sch:report>
+                  <sch:report test="not(@reason='ellipsis') and ancestor::tei:supplied[not(@reason='undefined')]">gap may not appear within supplied text</sch:report>
+                </sch:rule>
+              </constraint>
+            </constraintSpec>
+            <!-- constraining values of gap/@reason -->
+            <attList>
+              <attDef ident="reason" mode="replace" usage="req">
+                <valList type="closed">
+                  <valItem ident="damage">
+                    <desc>Physical damage</desc>
+                  </valItem>
+                  <valItem ident="erased">
+                    <desc>Erased text</desc>
+                  </valItem>
+                  <valItem ident="fenestra">
+                    <desc>Free space inmidst of text, left blank by the scribe</desc>
+                  </valItem>
+                  <valItem ident="illegible">
+                    <desc>Traces of text remains on the surface but cannot be interpreted</desc>
+                  </valItem>
+                  <valItem ident="missing">
+                    <desc>Editor thinks that there is text missing, even if there are no physical traces in a manuscript</desc>
+                  </valItem>
+                </valList>
+              </attDef>
+              <!-- removing gap/@dur (not needed in PTA) -->
+              <attDef ident="dur" mode="delete"/>
+            </attList>
+          </elementSpec>
+          <!-- suggesting but not constraining values of hi/@rend -->
+          <elementSpec ident="hi" module="core" mode="change">
+            <attList>
+              <attDef ident="rend" mode="replace" usage="rec">
+                <valList type="semi">
+                  <valItem ident="initial">
+                    <desc>Initial</desc>
+                  </valItem>
+                  <valItem ident="tall">
+                    <desc>large letters</desc>
+                  </valItem>
+                  <valItem ident="ekthesis">
+                    <desc>Ekthesis</desc>
+                  </valItem>
+                  <valItem ident="majuscule">
+                    <desc>in uppercase/capitals</desc>
+                  </valItem>
+                  <valItem ident="ekthesis-majuscule">
+                    <desc>Ekthesis in majuscule letters</desc>
+                  </valItem>
+		              <valItem ident="rubricated">
+                    <desc>is rubricated</desc>
+                  </valItem>
+                  <valItem ident="overline">
+                    <desc>Line over a letter</desc>
+                  </valItem>
+                  <valItem ident="underline">
+                    <desc>Line under a letter</desc>
+                  </valItem>
+		              <valItem ident="subscript">
+                    <desc>rendition as subscript</desc>
+                  </valItem>
+		              <valItem ident="superscript">
+                    <desc>rendition as superscript</desc>
+                  </valItem>
+                  <valItem ident="red ink">
+                    <desc>rendition as red ink</desc>
+                  </valItem>
+                  <valItem ident="red ink bold">
+                    <desc>rendition as red ink bold</desc>
+                  </valItem>
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          <elementSpec ident="lb" mode="change" module="core">
+            <!-- offer value "no" for lb/@break -->
+            <attList>
+              <attDef ident="break" mode="replace" usage="opt">
+                <datatype>
+                  <rng:ref name="data.enumerated"/>
+                </datatype>
+                <valList type="semi">
+                  <valItem ident="no">
+                    <desc>this linebreak should not be taken as a word-break, i.e. word would be hyphenated in a printed text</desc>
+                  </valItem>
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          <elementSpec ident="note" module="core" mode="change">
+            <attList>
+              <!-- constraining values of note/@place -->
+              <attDef ident="place" mode="replace" usage="opt">
+                <valList type="closed">
+                  <valItem ident="main text">
+                    <desc>in the main textflow</desc>
+                  </valItem>
+                  <valItem ident="top of the page">
+                    <desc>On top of page (without further specification)</desc>
+                  </valItem>
+                  <valItem ident="bottom of the page">
+                    <desc>On bottom of page (without further specification)</desc>
+                  </valItem>
+                  <valItem ident="left margin">
+                    <desc>On the left margin</desc>
+                  </valItem>
+                  <valItem ident="right margin">
+                    <desc>On the right margin</desc>
+                  </valItem>
+                  <valItem ident="left margin of left column">
+                    <desc>On the left margin of the left column</desc>
+                  </valItem>
+                  <valItem ident="left margin of middle column">
+                    <desc>In the left margin of the middle column</desc>
+                  </valItem>
+                  <valItem ident="left margin of right column">
+                    <desc>On the left margin of right column</desc>
+                  </valItem>
+                  <valItem ident="right margin of left column">
+                    <desc>On the right margin of the left column</desc>
+                  </valItem>
+                  <valItem ident="right margin of middle column">
+                    <desc>In the right margin of the middle column</desc>
+                  </valItem>
+                  <valItem ident="right margin of right column">
+                    <desc>On the right margin of right column</desc>
+                  </valItem>
+                </valList>
+              </attDef>
+              <attDef ident="ana" mode="delete"/>
+              <attDef ident="rendition" mode="delete"/>
+            </attList>
+          </elementSpec>
+          <!-- suggested attribute values for origDate/@evidence -->
+          <elementSpec ident="origDate" module="msdescription" mode="change">
+            <attList>
+              <attDef ident="evidence" mode="replace" usage="opt">
+                <datatype maxOccurs="6">
+                  <rng:ref name="data.word"/>
+                </datatype>
+                <valList type="semi">
+                  <valItem ident="lettering">
+                    <desc>Text dated palaeographically</desc>
+                  </valItem>
+                  <valItem ident="nomenclature">
+                    <desc>Text dated by nomenclature or onomastics</desc>
+                  </valItem>
+                  <valItem ident="prosopography">
+                    <desc>Text dated by known persons named or implied within it</desc>
+                  </valItem>
+                  <valItem ident="reign">
+                    <desc>Text dated by the reign of an emperor or other ruler</desc>
+                  </valItem>
+                  <valItem ident="titulature">
+                    <desc>Text dated by the use of official titles</desc>
+                  </valItem>
+                  <valItem ident="internal-date">
+                    <desc>Text dated by explicit internal date</desc>
+                  </valItem>
+                  <valItem ident="context">
+                    <desc>Archaeological, epigraphic, iconographic or other context of the text support</desc>
+                  </valItem>
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          <elementSpec ident="space" module="transcr" mode="change">
+            <!-- testing for <space> with both quantity/extent or no unit -->
+            <constraintSpec ident="space" scheme="isoschematron">
+              <constraint>
+                <sch:rule context="tei:space">
+                  <sch:report test="@quantity and @extent">space may have @quantity (a figure) or @extent (a descriptive text value) but not both</sch:report>
+                  <sch:report test="@quantity and not(@unit)">If space has @quantity then @unit is required</sch:report>
+                </sch:rule>
+              </constraint>
+            </constraintSpec>
+          </elementSpec>
+          <!-- modifying <unclear> because in EpiDoc it should not contain anything but text and <g/> -->
+          <elementSpec ident="unclear" module="core" mode="change">
+            <desc>Character that cannot be identified unambiguously outside of its context. May contain character data and
+              <gi>g</gi>
+              only.</desc>
+            <content>
+              <rng:ref name="macro.xtext"/>
+            </content>
+          </elementSpec>
+          <!-- CHANGING ATTRIBUTE CLASSES -->
+          <classSpec type="atts" ident="att.dimensions" mode="change">
+            <attList>
+              <attDef ident="precision" mode="replace">
+                <valList type="closed">
+                  <valItem ident="low"/>
+                  <valItem ident="medium"/>
+                  <valItem ident="high"/>
+                </valList>
+              </attDef>
+              <attDef ident="unit" mode="change">
+                <valList type="semi" mode="replace">
+                  <valItem ident="character"/>
+                  <valItem ident="line"/>
+                  <valItem ident="metre"/>
+                  <valItem ident="cm"/>
+                  <valItem ident="mm"/>
+                </valList>
+              </attDef>
+              <attDef ident="extent" mode="change">
+                <valList type="semi" mode="replace">
+                  <valItem ident="unknown"/>
+                </valList>
+              </attDef>
+            </attList>
+          </classSpec>
+          <classSpec type="atts" ident="att.responsibility" mode="change">
+            <attList>
+              <attDef ident="cert" mode="replace">
+                <valList type="closed">
+                  <valItem ident="low"/>
+                  <valItem ident="high"/>
+                </valList>
+              </attDef>
+            </attList>
+          </classSpec>
+          <elementSpec ident="app" module="textcrit" mode="change">
+            <!-- Changing attribute list: only @type is allowed -->
+            <attList>
+              <attDef ident="ana" mode="delete"/>
+              <attDef ident="resp" mode="delete"/>
+              <attDef ident="source" mode="delete"/>
+              <attDef ident="type" mode="change" usage="req">
+                <valList type="closed" mode="replace">
+                  <valItem ident="textcritical">
+                    <desc>for textcritical apparatus</desc>
+                  </valItem>
+                  <valItem ident="witnesses">
+                    <desc>for indication of witnesses (especially for the indication of change of witnesses in the text)</desc>
+                  </valItem>
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          <elementSpec ident="lem" module="textcrit" mode="change">
+            <!-- Changing attribute list: only @cause is allowed -->
+            <attList>
+              <attDef ident="cause" mode="change">
+                <valList type="closed" mode="replace">
+                  <valItem ident="conjecture">
+                    <desc>variant is a conjecture (sc. /coniecit/)</desc>
+                  </valItem>
+                  <valItem ident="correction">
+                    <desc>variant is a correction of an error (for example spelling error), not as far reaching as a conjecture (sc. /correxit/)</desc>
+                  </valItem>
+                  <valItem ident="proposition">
+                    <desc>variant is a proposition of a conjecture (sc. /proposuit/ oder /dubitanter/)</desc>
+                  </valItem>
+                  <valItem ident="deletion">
+                    <desc>variant is a deletion (by an editor or a scribe in contrast to an omission)</desc>
+                  </valItem>
+                  <valItem ident="addition">
+                    <desc>variant is an addition</desc>
+                  </valItem>
+                </valList>
+              </attDef>
+              <attDef ident="ana" mode="delete"/>
+              <attDef ident="type" mode="delete"/>
+              <attDef ident="cert" mode="delete"/>
+              <attDef ident="change" mode="delete"/>
+              <attDef ident="exclude" mode="delete"/>
+              <attDef ident="rendition" mode="delete"/>
+              <attDef ident="require" mode="delete"/>
+              <attDef ident="select" mode="delete"/>
+              <attDef ident="style" mode="delete"/>
+              <attDef ident="synch" mode="delete"/>
+              <attDef ident="resp" mode="change">
+                <desc>indicates the one responsible (editor, not in a printed edition)</desc>
+              </attDef>
+              <attDef ident="source" mode="change">
+                <desc>indicates the source of a variant (an earlier edition)</desc>
+              </attDef>
+              <attDef ident="wit" mode="change">
+                <desc>indicates the witness (manuscript)</desc>
+              </attDef>
+            </attList>
+          </elementSpec>
+          <elementSpec ident="rdg" module="textcrit" mode="change">
+            <attList>
+              <attDef ident="cause" mode="change">
+                <valList type="closed" mode="replace">
+                  <valItem ident="addition">
+                    <desc>cause for variant is an addition</desc>
+                  </valItem>
+                  <valItem ident="deletion">
+                    <desc>cause for variant is a deletion</desc>
+                  </valItem>
+                  <valItem ident="omission">
+                    <desc>cause for variant is an omission</desc>
+                  </valItem>
+                  <valItem ident="illegible">
+                    <desc>text is illegible</desc>
+                  </valItem>
+                  <valItem ident="transposition">
+                    <desc>cause for variant is a transposition</desc>
+                  </valItem>
+                  <valItem ident="correction">
+                    <desc>cause for variant is a correction (of a small error in the manuscript tradition)</desc>
+                  </valItem>
+                  <valItem ident="conjecture">
+                    <desc>cause for variant is a conjecture</desc>
+                  </valItem>
+                  <valItem ident="proposition">
+                    <desc>proposes a conjecture (sc. /proposuit/ or /dubitanter/)</desc>
+                  </valItem>
+                  <valItem ident="lacunam_indicavit">
+                    <desc>conjecture of a gap</desc>
+                  </valItem>
+                </valList>
+              </attDef>
+              <attDef ident="type" mode="change">
+                <valList type="closed" mode="replace">
+                  <valItem ident="orthographic">
+                    <desc>marks a variant which is only orthographic (for example because of itacism)</desc>
+                  </valItem>
+                  <valItem ident="homoiarkton">
+                    <desc>marks a variant which is probably caused by homoiarkton</desc>
+                  </valItem>
+                  <valItem ident="homoioteleuton">
+                    <desc>marks a variant which is probably caused by homoioteleuton</desc>
+                  </valItem>
+                  <valItem ident="dittography">
+                    <desc>marks a variant which is probably caused by dittography</desc>
+                  </valItem>
+                </valList>
+              </attDef>
+              <attDef ident="style" mode="change">
+                <valList type="closed" mode="replace">
+                  <valItem ident="supralinear">
+                    <desc>above the line</desc>
+                  </valItem>
+                  <valItem ident="marginal">
+                    <desc>in the margin</desc>
+                  </valItem>
+                  <valItem ident="inline">
+                    <desc>inline</desc>
+                  </valItem>
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          <elementSpec ident="cb" module="core" mode="change">
+            <attList>
+              <attDef ident="break" mode="change">
+                <valList type="closed" mode="replace">
+                  <valItem ident="no"/>
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          <elementSpec ident="pb" module="core" mode="change">
+            <attList>
+              <attDef ident="break" mode="change">
+                <valList type="closed" mode="replace">
+                  <valItem ident="no"/>
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          <elementSpec ident="del" module="core" mode="change">
+            <attList>
+              <attDef ident="rend" mode="change">
+                <valList type="closed" mode="replace">
+		  <valItem ident="unmarked">
+		    <desc>text to be replaced is not marked explicitly</desc>
+		  </valItem>
+		  <valItem ident="marker">
+		    <desc>text to be replaced is marked only (by an dotted obelus or sim.)</desc>
+		  </valItem>
+                  <valItem ident="erasure"/>
+                  <valItem ident="strikethrough"/>
+                  <valItem ident="overwrite"/>
+                  <valItem ident="expunction"/>
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          <elementSpec ident="abbr" module="core" mode="change">
+            <attList>
+              <attDef ident="type" mode="change" usage="req">
+                <valList type="closed" mode="replace">
+                  <valItem ident="siglum">
+                    <desc>classifies abbreviation as siglum</desc>
+		              </valItem>
+                  <valItem ident="nomSac">
+                    <desc>classifies an abbreviation as nomen sacrum</desc>
+		              </valItem>
+                  <valItem ident="ligature">
+                    <desc>classifies an abbreviation as ligature</desc>
+                  </valItem>
+                  <valItem ident="tachygraphic">
+                    <desc>classifies an abbreviation as tachygraphic</desc>
+                  </valItem>
+                  <valItem ident="suspension">
+                    <desc>classifies an abbreviation as suspension</desc>
+                  </valItem>
+                  <valItem ident="bibleversion">
+                    <desc>for abbreviations of translators in the hexapla</desc>
+                  </valItem>
+                  <valItem ident="common">
+                    <desc>for common abbreviations like kai or de</desc>
+                  </valItem>
+                  <valItem ident="compression-suspension">
+                    <desc>combination of compression and suspension</desc>
+                  </valItem>
+                  <valItem ident="compression">
+                    <desc>classifies an abbreviation as compression</desc>
+                  </valItem>
+                  <valItem ident="compression-tachygraphic">
+                    <desc>classifies an abbreviation as compression and tachygraphic</desc>
+                  </valItem>
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+	  <elementSpec ident="msIdentifier" module="msdescription" mode="change">
+            <attList>
+              <attDef ident="xml:id" mode="change" usage="req">
+		<desc>needs an id to be used by CollateX</desc>
+              </attDef>
+            </attList>
+          </elementSpec>
+        </schemaSpec>
+      </div>
+    </body>
+  </text>
+</TEI>
