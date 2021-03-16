@@ -64,6 +64,9 @@
             <xsl:value-of select="@source"/>
             <xsl:text> / </xsl:text>
             <xsl:value-of select="./tei:quote[@type = 'patristic']/@source"/>
+            <xsl:text> (\textit{</xsl:text>
+            <xsl:value-of select="@xml:id"/>
+            <xsl:text>})</xsl:text>
         <xsl:text>:} </xsl:text>
         <xsl:if test="exists(@prev)">
             <xsl:text>... </xsl:text>
