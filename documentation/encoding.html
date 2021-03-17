@@ -21,6 +21,7 @@
 				<ol>
 					<li><a href="#glyphs">Defining Glyphs</a></li>
 					<li><a href="#layout">Defining the Layout</a></li>
+					<li><a href="#hands">List of Hands</a></li>
 					<li><a href="#authors">List of Authors</a></li>
 				</ol>
 			<li><a href="#macrostructure">Macrostructure</a></li>
@@ -39,6 +40,8 @@
 				<li><a href="#ekthesis">Ekthesis</a></li>
 				<li><a href="#regularization">Regularization</a></li>
 				<li><a href="#abbreviations">Abbreviations</a></li>
+				<li><a href="#deletions">Deleted Text</a></li>
+				<li><a href="#corrections">Corrected Text</a></li>
 			</ol>
 			<li><a href="#hints">Hints</a></li>
 		</ol>
@@ -109,6 +112,19 @@
 			</code></pre>
 			<h4>Notes</h4>
 			<p>At the moment not physical persons are distinguished but authors of specific editions. This seems to be appropriate because it is necessary for example to identify <i>Anonymous</i> as author of so far unknown fragments and <i>Anonymous</i> as author of the fragments published by Dorival.</p>
+			
+			<h3 id="hands">List of Hands</h3>
+			
+			In the <kbd>physDesc</kbd> of the document header a <i>description of hands</i> can be added:
+			
+			<pre><code class="language-xml" style="font-size:120%">
+&lt;handDesc hands="3"&gt;
+    &lt;handnote xml:id="scr1"&gt;First scribe&lt;/handnote&gt;
+    &lt;handnote xml:id="scr2"&gt;Second scribe&lt;/handnote&gt;
+    &lt;handnote xml:id="corr1"&gt;First corrector&lt;/handnote&gt;
+    &lt;handnote xml:id="corr2"&gt;Second corrector&lt;/handnote&gt;
+&lt;/handDesc&gt;
+			</code></pre>
 			
 		<h2 id="macrostructure">Macrostructure</h2>
 			<h3 id="divisions">Divisions</h3>
@@ -366,6 +382,28 @@
                 <li><i>compression-suspension</i> - combination of compression and suspension</li>
 				<li><i>compression-tachygraphic</i> - classifies an abbreviation as compression and tachygraphic</li>
 			</ul></p>
+			
+			<h3 id="deletions">Deleted Text</h3>
+			
+			<pre><code class="language-xml" style="font-size:120%">
+κατ&lt;del rend="strikethrough" hand="#m1"&gt;ὰ&lt;/del&gt;
+			</code></pre>
+			<p>Allowed values for <kbd>rend</kbd> are:
+				<ul>
+					<li><i>unmarked</i> - text to be replaced is not marked explicitly (in conjunction with a correction).</li>
+					<li><i>marker</i> - text to be replaced is marked only by an dotted obelus or sim. (in conjunction with a correction).</li>
+					<li><i>erasure</i></li>
+					<li><i>strikethrough</i></li>
+					<li><i>overwrite</i></li>
+					<li><i>expunction</i></li>
+				</ul>
+			</p>
+			
+			<h3 id="corrections">Corrected Text</h3>
+			
+			<pre><code class="language-xml" style="font-size:120%">
+
+			</code></pre>
 			
 		<h2 id="hints">Hints</h2>
 		<p>For easier understanding and work the values of the <kbd>xml:id</kbd> attributes should follow this rules:
