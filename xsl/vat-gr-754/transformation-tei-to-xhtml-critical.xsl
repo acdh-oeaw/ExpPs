@@ -819,11 +819,11 @@
         </xsl:if>
     </xsl:template>
     
-    <xsl:template match="tei:hi[parent::tei:abbr[@type = 'suspension']]">
+    <!--<xsl:template match="tei:hi[parent::tei:abbr[@type = 'suspension']]">
         <sup>
             <xsl:apply-templates/>
         </sup>
-    </xsl:template>
+    </xsl:template>-->
     
     <xsl:template match="tei:choice[exists(tei:orig/tei:abbr) and (tei:orig/tei:abbr/@type = 'compression-suspension')]">
         <xsl:apply-templates select="tei:orig/tei:abbr[@type = 'compression-suspension']"/>
@@ -856,11 +856,11 @@
         </xsl:if>
     </xsl:template>
     
-    <xsl:template match="tei:hi[parent::tei:abbr[@type = 'compression-suspension']]">
+    <!--<xsl:template match="tei:hi[parent::tei:abbr[@type = 'compression-suspension']]">
         <sup>
             <xsl:apply-templates/>
         </sup>
-    </xsl:template>
+    </xsl:template>-->
     
     <xsl:template match="tei:choice[exists(tei:abbr) and not(exists(@style))]">
         <xsl:choose>
@@ -1221,7 +1221,7 @@
             </a>
             <xsl:text> on </xsl:text>
             <xsl:choose>
-                <xsl:when test="exists(root()//tei:div[@type = 'bibletext']/tei:quote/tei:anchor[@xml:id = substring-after(current()/@corresp,'#')])">
+                <xsl:when test="exists(root()//tei:div[@type = 'bibletext']//tei:quote/tei:anchor[@xml:id = substring-after(current()/@corresp,'#')])">
                     <xsl:value-of select="root()//tei:div//tei:anchor[@xml:id = substring-after(current()/@corresp,'#')]/@n"/>
                     <xsl:if test="exists(@prev)">
                         <xsl:text> (continued)</xsl:text>
@@ -1352,7 +1352,9 @@
     </xsl:template>
     
     <xsl:template match="tei:hi[@rend = 'superscript']">
-        <xsl:apply-templates/>
+        <sup>
+            <xsl:apply-templates/>
+        </sup>
     </xsl:template>
       
     <xsl:template match="tei:hi[@rend = 'majuscule']">
@@ -1366,8 +1368,15 @@
     </xsl:template>
     
     <xsl:template match="tei:add[@type = 'second-hand']">
-        <xsl:apply-templates/>
-        <xsl:text> (</xsl:text>
+        <xsl:if test="@place = 'above'">
+            <xsl:text>\</xsl:text>
+            <xsl:apply-templates/>
+            <xsl:text>/</xsl:text>
+        </xsl:if>
+        <xsl:if test="@place = 'left margin'">
+            <xsl:apply-templates/>
+        </xsl:if>
+        <xsl:text>(</xsl:text>
             <xsl:value-of select="@hand"/>
         <xsl:text>)</xsl:text>
     </xsl:template>
