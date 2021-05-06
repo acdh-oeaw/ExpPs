@@ -289,10 +289,10 @@
     </xsl:template>
     
     <xsl:template match="tei:quote[@type = 'patristic']">
-        <b>
-            <xsl:text> - </xsl:text>
+        <p><b>
             <xsl:value-of select="@source"/>
         </b>
+        </p>
         <p>
             <xsl:apply-templates select="child::node()"/>
         </p>
