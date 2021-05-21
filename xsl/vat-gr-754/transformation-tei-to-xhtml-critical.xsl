@@ -596,6 +596,9 @@
         <xsl:if test="@rendition = '#top-margin'">
             <xsl:text>top margin</xsl:text>
         </xsl:if>
+        <xsl:if test="@rendition = '#bottom-margin'">
+            <xsl:text>bottom margin</xsl:text>
+        </xsl:if>
         <xsl:text>] [hexaplaric variant] </xsl:text>
         <xsl:apply-templates/>
     </xsl:template>
