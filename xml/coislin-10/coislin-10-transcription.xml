@@ -16,7 +16,7 @@
                <licence target="https://creativecommons.org/licenses/by/4.0/">Available under the
                   Creative Commons Attribution 4.0 International (CC BY 4.0)</licence>
             </availability>
-            <date>2021-03-16</date>
+            <date>2021-09-06</date>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -24,17 +24,16 @@
                   <country>France</country>
                   <settlement>Paris</settlement>
                   <repository>Bibliothèque Nationale de France (BNF), Greek Manuscripts</repository>
-                  <idno facs="https://gallica.bnf.fr/ark:/12148/btv1b525131059/f1.item">Par. gr.
-                     166</idno>
+                  <idno facs="https://gallica.bnf.fr/ark:/12148/btv1b52513084s/f736.item">Coislin 10</idno>
                   <altIdentifier>
-                     <idno type="pinakes" corresp="https://pinakes.irht.cnrs.fr/notices/cote/49734/"
-                        >49734</idno>
+                     <idno type="pinakes" corresp="https://pinakes.irht.cnrs.fr/notices/cote/49152/"
+                        >49152</idno>
                   </altIdentifier>
                </msIdentifier>
                <msContents>
                   <msItem n="1">
                      <locus>fols. 1-218</locus>
-                     <title>Catena in Psalmos et Cantica</title>
+                     <title>Catena in Psalmos</title>
                   </msItem>
                </msContents>
                <physDesc>
@@ -43,12 +42,12 @@
                         <support>parchment</support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout>Fols. 1-218 contain a textcatena.</layout>
+                        <layout>Fols. 1-355 contain a textcatena.</layout>
                      </layoutDesc>
                   </objectDesc>
                </physDesc>
                <history>
-                  <p>Written in the 14th century.</p>
+                  <p>Written in the 10th century.</p>
                </history>
             </msDesc>
             <listPerson>
@@ -279,6 +278,8 @@
                            type="psalmtext" n="Ps (LXX) 7,18b"
                            corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-18"/> καὶ ψαλῶ τῷ ὀνόματι
                         κυρίου τοῦ ὑψίστου. </quote>
+               <div type="commentary" subtype="commentary" xml:id="coislin-10-1-4">
+                  <ab xml:id="coislni-10-1-2" xml:lang="grc">
                <pb n="1r"/>
                      <!-- Ps 7 comm -->
                      <seg type="commentaryfragment" xml:id="coslin-10-fr-7-1"
@@ -1594,7 +1595,6 @@
                      corresp="#coslin-10-ps-10-7" source="Theodoretus">
                      <quote type="patristic" xml:id="coslin-10-quot-10-10" corresp="#person-16"
                         source="Theodoretus, comm. in Ps 10,6a–b1"/>
-                  </seg>
                   </seg>
                </ab>
             </div>
