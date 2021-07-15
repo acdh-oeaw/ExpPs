@@ -1343,6 +1343,9 @@
         <xsl:if test="@rendition = '#right-column'">
             <xsl:text>right column</xsl:text>
         </xsl:if>
+        <xsl:if test="@rendition = '#bottom-of-the-page'">
+            <xsl:text>bottom of the page</xsl:text>
+        </xsl:if>
         <xsl:text>] </xsl:text>
         <xsl:apply-templates/>
     </xsl:template>
