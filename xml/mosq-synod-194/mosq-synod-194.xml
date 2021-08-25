@@ -43,6 +43,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout>Fols. 8r-255v contain a bordercatena.</layout>
+                        <!-- Der Bibeltext besteht aus selbständigen Zeilen. Verweiszeichen nur neben den exaplarischen Varianten (aber meistens nicht nebem dem Bibeltext). Kommentarfragmente werden generell nicht verlinkt, sondern durch ein "halblemma" eingeführt. Eine Verseile kann in zwei halblemmata geteilt werden. Die orthographische Qualität ist sehr gut. -->
                      </layoutDesc>
                   </objectDesc>
                </physDesc>
@@ -106,11 +107,11 @@
                </person>
                <person xml:id="person-14" role="author" sameAs="#person-13">
                   <persName>Origenes</persName>
-                  <bibl>Origenes (Analecta Sacra II, Ps 1–25)</bibl>
+                  <bibl>Origenes (Analecta sacra II, Ps 1–25)</bibl>
                </person>
                <person xml:id="person-15" role="author" sameAs="#person-13">
                   <persName>Origenes</persName>
-                  <bibl>Origenes (Analecta Sacra III, Ps 26–150)</bibl>
+                  <bibl>Origenes (Analecta sacra III, Ps 26–150)</bibl>
                </person>
                <person xml:id="person-16" role="author">
                   <persName>Theodoretus Cyrrensis</persName>
@@ -213,6 +214,10 @@
                   <persName>Eusebius</persName>
                   <bibl>Eusebius, fr. in Ps. 100–150 (PG 23/Risch)</bibl>
                </person>
+               <person xml:id="person-42" role="author">
+                  <persName>(Ps-)Hippolytus</persName>
+                  <bibl>(Ps-)Hippolytus, fr. (Achelis)</bibl>
+               </person>
             </listPerson>
          </sourceDesc>
       </fileDesc>
@@ -308,7 +313,8 @@
                      corresp="../psalms-LXX/psalms.xml#Ps-LXX-1-6"/> καὶ ὁδὸς ἀσεβῶν ἀπολεῖται.
                </quote>
             </div>
-            <!-- Pointers to identical fragments in other documents. @type = identical | with-variations | abbreviated | expanded -->
+            <!-- Pointers to identical fragments in other documents. @type = identical | with-variations | abbreviated | expanded &lt; &gt;-->
+            <!-- spitze Klammern: &lt; &gt;  Mese: · -->
             <div type="commentary" subtype="commentary" xml:id="mosq-syn-194-1-4">
                <ab xml:id="mosq-syn-194-1-2" xml:lang="grc">
                   <pb n="8r"/>
@@ -336,28 +342,269 @@
                   </seg>
                   <seg type="glosse" xml:id="mosq-syn-194-fr-1-4" corresp="#mosq-syn-194-ps-1"
                      source="Anonymous">
-                     <quote type="patristic" subtype="paraphrase-abbreviated"
-                        xml:id="mosq-syn-194-quot-1-4" corresp="#person-40"
-                        source="Origenes, cath. in Ps. 6 (in ψαλτήριον; 20,20–22,1 Risch)"/>
+                     <quote type="patristic" subtype="with-variations"
+                        xml:id="mosq-syn-194-quot-1-4" corresp="#person-42 person-7"
+                        source="Ps-Hippolytus, fr. 17 (145,20–21 Achelis) - Eusebius, fr. in Ps 104 (PG 23,1296 C2. C9); cf. fr. 3 Dorival (IV 367); Hesychius, lex. s.v. ἀλληλούϊα (Α nr. 3135 Latte) et alibi"/>
+                     <ref target="vat-gr-754:vat-gr-754-glosse-1-2" type="identical">Vat. gr.
+                        754</ref>
+                     <!-- αἰνεῖτε τὸν ὄντα (Ps-)Hippolytus; αἰνεῖτε τὸν κύριον Eus., Ps 104 (PG 23,1296 C2);  αἰνεῖτε τὸν ὄντα, ἤγουν τὸν κύριον Hes., lexicon; αἴνος θεοῦ Eus., Ps 104 (PG 23,1296 C9) -->
                   </seg>
-                  <ref target="vat-gr-754:vat-gr-754-fr-1-XXX" type="identical">Vat. gr. 754</ref>
-                  <seg type="glosse" xml:id="mosq-syn-194-fr-1-5" corresp="#mosq-syn-194-ps-1"
+                  <seg type="hexaplaric" xml:id="mosq-syn-194-fr-1-5"
+                     corresp="#mosq-syn-194-ps-1-1a" source="Aquila, Septuaginta">
+                     <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-1-5"
+                        source="Aquila, Septuaginta (Ps 1,&lt;1a&gt;)"/>
+                     <ref target="vat-gr-754:vat-gr-754-hexaplaric-1-1" type="identical">Vat. gr.
+                        754</ref>
+                  </seg>
+                  <!-- gibt es eine fehlerhafte Verbindung der vorausgehenden hexaplarischen Variant mit dem Ps 1,2b (Zeichen γ)? Wenn ja, auch die darauf folgenden Fragmente sind ipso facto falsch angebunden -->
+                  <seg type="hexaplaric" xml:id="mosq-syn-194-fr-1-6"
+                     corresp="#mosq-syn-194-ps-1-1a" source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-1-6"
+                        source="Anonymus (Ps 1,&lt;1a&gt;)"/>
+                     <ref target="vat-gr-754:vat-gr-754-hexaplaric-1-2" type="identical">Vat. gr.
+                        754</ref>
+                  </seg><!-- ἄμεπτος (Textverderbnis) Mosq.; ἄμεπτος Vat. gr. 754 -->
+                  <seg type="hexaplaric" xml:id="mosq-syn-194-fr-1-7"
+                     corresp="#mosq-syn-194-ps-1-1a" source="Quinta, Sexta">
+                     <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-1-7"
+                        source="Quinta, Sexta (Ps 1,&lt;1a&gt;)"/>
+                     <ref target="vat-gr-754:vat-gr-754-hexaplaric-1-3" type="identical">Vat. gr.
+                        754</ref>
+                  </seg>
+                  <seg type="glosse" xml:id="mosq-syn-194-fr-1-8" corresp="#mosq-syn-194-ps-1-1a"
                      source="Anonymous">
-                     <quote type="patristic" subtype="paraphrase/quotation"
-                        xml:id="mosq-syn-194-quot-1-5" corresp="#person-18 person-7"
-                        source="fons ignotus; cf. fr. 3 Dorival (IV 367); Hesychius, lex. s.v. ἀλληλούϊα (Α nr. 3135 Latte) - Eusebius, fr. in Ps 104 (PG 23,1296 C9) et alibi"/>
-                     <ref target="vat-gr-754:vat-gr-754-fr-1-XXX" type="identical">Vat. gr.
-                        754</ref><!-- Hippolytus die fons von dem auch Eusebius abhängt? αἰνεῖτε τὸν ὄντα apud Hippolytus, fr. in Ps. (Achelis); αἰνεῖτε τὸν κύριον etiam apud Eus., Ps 104; beide Ausdrücke apud Hes., lexicon-->
+                     <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-1-8"
+                        corresp="#person-18"
+                        source="fons ignotus in Ps 1,&lt;1a&gt;; Suda s.v. Μακάριος (Μ nr. 55 Adler) et alibi"/>
+                     <ref target="vat-gr-754:vat-gr-754-glosse-1-8" type="identical">Vat. gr.
+                        754</ref>
                   </seg>
-                  <seg type="hexaplaric" xml:id="mosq-syn-194-fr-1-6" corresp="#mosq-syn-194-ps-1"
-                     source="Aquila - Septuaginta">
-                     <quote type="patristic" xml:id="mosq-syn-194-quot-1-6" corresp="#person-XXX"
-                        source="Aquila - Septuaginta (Ps 1,1a)"/>
+                  <seg type="glosse" xml:id="mosq-syn-194-fr-1-9" corresp="#mosq-syn-194-ps-1-1a"
+                     source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-1-9"
+                        corresp="#person-19"
+                        source="fons ignotus in Ps 1,&lt;1a&gt; (in ἀσεβῶν; Analecta sacra II 445,23)"/>
+                     <ref target="vat-gr-754:vat-gr-754-glosse-1-4" type="identical">Vat. gr.
+                        754</ref>
+                  </seg><!-- ὁ τὸν (Textverderbnis) Mosq.; τῶν Vat. gr. 754 -->
+                  <seg type="hexaplaric" xml:id="mosq-syn-194-fr-1-10"
+                     corresp="#mosq-syn-194-ps-1-1c" source="Aquila">
+                     <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-1-10"
+                        source="Aquila (Ps 1,&lt;1c&gt;)"/>
+                     <ref target="vat-gr-754:vat-gr-754-hexaplaric-1-4" type="identical">Vat. gr.
+                        754</ref>
+                  </seg><!-- 2 Textverderbnisse gegenüber Vat. gr. 754 -->
+                  <seg type="hexaplaric" xml:id="mosq-syn-194-fr-1-11"
+                     corresp="#mosq-syn-194-ps-1-1c" source="Symmachus">
+                     <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-1-11"
+                        source="Symmachus (Ps 1,&lt;1c&gt;)"/>
+                     <ref target="vat-gr-754:vat-gr-754-hexaplaric-1-5" type="identical">Vat. gr.
+                        754</ref>
+                  </seg><!-- ἐπιθέτων Mosq.; ἐπιθετῶν  Vat. gr. 754 -->
+                  <seg type="hexaplaric" xml:id="mosq-syn-194-fr-1-12"
+                     corresp="#mosq-syn-194-ps-1-1c" source="Quinta, Sexta">
+                     <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-1-12"
+                        source="Quinta, Sexta (Ps 1,&lt;1c&gt;)"/>
+                     <ref target="vat-gr-754:vat-gr-754-hexaplaric-1-6" type="identical">Vat. gr.
+                        754</ref>
+                  </seg><!-- καθέδραν (Τextverderbnis?) Mosq.; καθέδρα Vat. gr. 754 -->
+                  <seg type="glosse" xml:id="mosq-syn-194-fr-1-13" corresp="#mosq-syn-194-ps-1-1c"
+                     source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-1-13"
+                        corresp="#person-19"
+                        source="fons ignotus in Ps 1,&lt;1c&gt; (Analecta sacra II 445,24–25)"/>
+                     <ref target="vat-gr-754:vat-gr-754-glosse-1-5" type="identical">Vat. gr.
+                        754</ref>
+                  </seg>
+                  <seg type="glosse" xml:id="mosq-syn-194-fr-1-14" corresp="#mosq-syn-194-ps-1-1c"
+                     source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-1-14"
+                        corresp="#person-18" source="fons ignotus in Ps 1,&lt;1c&gt; (in λοιμῶν)"/>
+                     <ref target="vat-gr-754:vat-gr-754-glosse-1-6" type="identical">Vat. gr.
+                        754</ref>
+                  </seg>
+                  <seg type="glosse" xml:id="mosq-syn-194-fr-1-15" corresp="#mosq-syn-194-ps-1-1c"
+                     source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-1-15"
+                        corresp="#person-18"
+                        source="fons ignotus in Ps 1,&lt;1c&gt; (in οὐκ ἐκάθισεν)"/>
+                     <ref target="vat-gr-754:vat-gr-754-glosse-1-7" type="identical">Vat. gr.
+                        754</ref>
+                  </seg><!-- ἔνειμεν (Τextverderbnis) Mosq.; ἐνέμεινεν Vat. gr. 754 -->
+                  <seg type="hexaplaric" xml:id="mosq-syn-194-fr-1-16"
+                     corresp="#mosq-syn-194-ps-1-2b" source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-1-16"
+                        source="Aquila, Symmachus, Quinta, Sexta (Ps 1,2b)"/>
+                     <ref target="vat-gr-754:vat-gr-754-hexaplaric-1-7" type="identical">Vat. gr.
+                        754</ref>
+                  </seg>
+                  <seg type="hexaplaric" xml:id="mosq-syn-194-fr-1-17"
+                     corresp="#mosq-syn-194-ps-1-2b" source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-1-17"
+                        source="Aquila (Ps 1,&lt;2b&gt;)"/>
+                     <ref target="vat-gr-754:vat-gr-754-hexaplaric-1-8" type="identical">Vat. gr.
+                        754</ref>
+                  </seg><!-- βουλεύματος (Τextverderbnis) Mosq.; βουλεύματα Vat. gr. 754 -->
+                  <seg type="hexaplaric" xml:id="mosq-syn-194-fr-1-18"
+                     corresp="#mosq-syn-194-ps-1-2b" source="Aquila">
+                     <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-1-18"
+                        source="Aquila (Ps 1,&lt;2b&gt;)"/>
+                     <ref target="vat-gr-754:vat-gr-754-hexaplaric-1-9" type="identical">Vat. gr.
+                        754</ref>
+                  </seg>
+                  <seg type="hexaplaric" xml:id="mosq-syn-194-fr-1-19"
+                     corresp="#mosq-syn-194-ps-1-2b" source="Symmachus">
+                     <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-1-19"
+                        source="Symmachus (Ps 1,&lt;2b&gt;)"/>
+                     <ref target="vat-gr-754:vat-gr-754-hexaplaric-1-9" type="identical">Vat. gr.
+                        754</ref>
+                  </seg>
+                  <seg type="hexaplaric" xml:id="mosq-syn-194-fr-1-20"
+                     corresp="#mosq-syn-194-ps-1-3a" source="Aquila">
+                     <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-1-20"
+                        source="Aquila (Ps 1,&lt;3a&gt;)"/>
+                     <ref target="vat-gr-754:vat-gr-754-hexaplaric-1-9" type="identical">Vat. gr.
+                        754</ref>
+                  </seg><!-- vor dieser exaplarischer Variant eine Art γ -->
+                  <!-- sollte jede der letzen drei exaplarischen Varianten in der Transkription von Vat. gr. 754 ein eigenes xml.id erhalten? -->
+                  <seg type="hexaplaric" xml:id="mosq-syn-194-fr-1-21"
+                     corresp="#mosq-syn-194-ps-1-3a" source="Symmachus">
+                     <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-1-21"
+                        source="Symmachus (Ps 1,&lt;3a&gt;)"/>
+                     <ref target="vat-gr-754:vat-gr-754-hexaplaric-1-10" type="identical">Vat. gr.
+                        754</ref>
+                  </seg>
+                  <seg type="hexaplaric" xml:id="mosq-syn-194-fr-1-22"
+                     corresp="#mosq-syn-194-ps-1-3a" source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-1-22"
+                        source="Aquila (Ps 1,&lt;3a&gt;)"/>
+                     <ref target="vat-gr-754:vat-gr-754-hexaplaric-1-11" type="identical">Vat. gr.
+                        754</ref>
+                  </seg>
+                  <seg type="hexaplaric" xml:id="mosq-syn-194-fr-1-23"
+                     corresp="#mosq-syn-194-ps-1-3b" source="Aquila, Symmachus">
+                     <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-1-23"
+                        source="Aquila, Symmachus (Ps 1,3b)"/>
+                     <ref target="vat-gr-754:vat-gr-754-hexaplaric-1-12" type="identical">Vat. gr.
+                        754</ref>
+                  </seg>
+                  <!-- Abschlussbemerkung zu glossai und exaplarische Varianten auf dieser Seite: Εxplarische Varianten weisen oft Textverderbnisse auf. Das Verweisystem funktioniert nicht: Zeichen fehlen oder werden am Bibeltext nicht wiederholt; nur in einem Fall ist das linking an beiden Orten richtigerweise vorhanden.  Es gibt auch zwei Zeichen dessen Funktion nicht identifiziert werden konnte: Εiner Art γ (zu Aquila, Ps 1,1a) und eine Art δ (zu Ps 1,3a). Keine Verbesserung von Vat. gr. 754 konnte festgestellt werden. -->
+                  <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-1-24"
+                     corresp="#mosq-syn-194-ps-1" source="Anonymous">
+                     <quote type="patristic" subtype="paraphrase-abbreviated"
+                        xml:id="mosq-syn-194-quot-1-24" corresp="#person-40"
+                        source="Origenes, cath. 6 (in ψαλτήριον; 20,20–22,1 Risch)"/>
+                  </seg>
+                  <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-1-25"
+                     corresp="#mosq-syn-194-ps-1" source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-1-25"
+                        corresp="#person-3" source="Basilius, hom. in Ps. 48 (PG 29,436 C3–5)"/>
+                     <ref target="vat-gr-754:vat-gr-754-fr-1-1" type="identical">Vat. gr. 754</ref>
+                  </seg>
+                  <seg type="hypothesis" xml:id="mosq-syn-194-fr-1-26" corresp="#mosq-syn-194-ps-1"
+                     source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-1-26"
+                        corresp="#person-2" source="Athanasius, schol. in Ps 1">Τὴν ἀρχὴν τῆς
+                        προφητείας τῷ ἐξ αὐτοῦ κατασάρκα τεχθησομένῳ Χριστῷ ἀνατίθησιν ὁ Δαυΐδ· διὸ
+                        ἐν πρώτοις μακαρίζει τοὺς εἰς αὐτὸν ἠλπικότας· μακαρίους δὲ καλεῖ, τοὺς μὴ
+                        πορευθέντας ἐν βουλῇ ἀσεβῶν· μήτε μὴν στάντας ἐν ὀδῷ ἁμαρτωλῶν<subst>
+                           <del rend="unmarked">·•</del>
+                           <add place="above">·</add>
+                        </subst> μήτε ἐπικαθέδραν λοιμῶν καθεστηκότας· τρία<del rend="erasure">
+                           <unclear>ς</unclear></del><del rend="erasure"><gap reason="illegible"
+                              quantity="1"/></del> γὰρ ἦν τάγματα παραϊοὐδαίοις κατὰ τοῦ σωτῆρος
+                        ἐπαναστάντα· γραμματεῖς· φαρισαῖοι. καὶ νομικοί· οἳ καὶ κληθεῖεν εἰκότως,
+                        ἀσεβεῖς καὶ ἁμαρτωλοὶ καὶ λοιμοί·</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-1-2" type="identical">Vat. gr. 754</ref>
+                  </seg><!-- kein Verweiszeichen -->
+                  <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-1-27"
+                     corresp="#mosq-syn-194-ps-1-1a" source="Anonymous">
+                     <quote type="patristic" subtype="quotation/paraphrase-abbreviated"
+                        xml:id="mosq-syn-194-quot-1-27" corresp="#person-3"
+                        source="Basilius, hom. in Ps. 1 (PG 29,216 B5–7.11–12 C1–7.11–12 D1–3; 217 A3–7; in Ps 1,&lt;1a1&gt; 1a)"
+                     />
+                  </seg><!-- kein Verweiszeichen -->
+                  <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-1-28"
+                     corresp="#mosq-syn-194-ps-1-1a" source="Origenes">
+                     <quote type="patristic" subtype="paraphrase-abbreviated"
+                        xml:id="mosq-syn-194-quot-1-28" corresp="#person-3"
+                        source="Basilius, hom. in Ps. 1 (PG 29,217 B9–C5; 217 D5–220 A11; in Ps 1,&lt;1a1&gt; 1a"/>
+                     <ref target="vat-gr-1422:XXX" type="XXX">Vat. gr. 1422</ref>
+                  </seg><!-- kein Verweiszeichen -->
+                  <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-1-29"
+                     corresp="#mosq-syn-194-ps-1-1a" source="Asterius">
+                     <quote type="patristic" subtype="paraphrase-abbreviated"
+                        xml:id="mosq-syn-194-quot-1-29" corresp="#person-1"
+                        source="Asterius, fr. 1 in Ps 1,&lt;1a1&gt; 1a (249 Richard)"/>
+                     <ref target="vat-gr-1422:XXX" type="XXX">Vat. gr. 1422</ref>
+                  </seg><!-- kein Verweiszeichen -->
+                  <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-1-30"
+                     corresp="#mosq-syn-194-ps-1-1a" source="Maximus">
+                     <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-1-30"
+                        corresp="#person-18" source="fons ignotus in Ps 1,1a2">βουλὴ ἀσεβῶν (ἐστὶν)
+                        ἡ παρὰ τὸν λόγον τῆς φυσικῆς δυνάμεως χρῆσις:•</quote>
+                  </seg><!-- lemma Ἐν βουλῇ ἀσεβῶν:• vor dem fr. Welche Bedeutung hat das Α vor dem Autorenname? -->
+                  <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-1-31"
+                     corresp="#mosq-syn-194-ps-1-1b" source="Eusebius">
+                     <quote type="patristic" subtype="paraphrase-abbreviated"
+                        xml:id="mosq-syn-194-quot-1-31" corresp="#person-17"
+                        source="Eusebius, fr. 3 in Ps 1,(1b1) 1b–c (Villani)"/>
+                  </seg><!-- lemma Ἐν ὁδῷ ἁμαρτωλῶν:• vor dem fr. Diese Paraphrase ist in der PG 23,76 ediert; es ist eine kondensierende Paraphrase, die alle Begriffe des Bezugstextes wiedergibt. Welche Bedeutung hat das B vor dem Autorenname? -->
+                  <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-1-32"
+                     corresp="#mosq-syn-194-ps-1-1b" source="Didymus">
+                     <quote type="patristic" subtype="paraphrase" xml:id="mosq-syn-194-quot-1-32"
+                        corresp="#person-6" source="Didymus, fr. 2 in Ps 1,(1b1) 1 (XXX Mühlenberg)"
+                     />
+                  </seg><!-- Nur ein syntagma kondensiert und ein Verbum substituiert wurden; der Rest ist wörtlich -->
+                  <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-1-33"
+                     corresp="#mosq-syn-194-ps-1-2b" source="Eusebius">
+                     <quote type="patristic" subtype="paraphrase-abbreviated"
+                        xml:id="mosq-syn-194-quot-1-33" corresp="#person-17"
+                        source="Eusebius, fr. 4 in Ps 1,(2b1) 2 (Villani)"/>
+                  </seg><!-- wenige Auslassungen -->
+                  <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-1-34"
+                     corresp="#mosq-syn-194-ps-1-2b" source="lost">
+                     <quote type="patristic" subtype="paraphrase-abbreviated"
+                        xml:id="mosq-syn-194-quot-1-34" corresp="#person-13"
+                        source="Origenes, fr. in Ps 1,(2b2) 2 (PG 12,1088 A8–C9)"/>
+                  </seg><!-- μελετᾶ δὲ τὸν
+                  νόμον ἡμέρας καὶ νυκτὸς ὁ καὶ πράττων ... συνεχῶς διὰ τῶν καθηκόντων
+                  ἁπάντων· εἰτε γὰρ ἐσθίητε εἰτε πίνητε κατὰ τὸν ἀπόστολον· πάντα εἰς δόξαν
+                  θεοῦ ὁ τοιοῦτος ποιεῖ· καὶ καθὰ πάλιν φη(σίν)· ἀδιαλείπτως ὁ τοιοῦτος
+                  προσεύχετο· δι᾿ ὧν γὰρ πράττει καθηκόντων διὰ παντὸς κράζει πρὸς κύριον· ὁ
+                  τέλειος οὖν πάντα κατὰ λόγον ποιῶν εὐχὴν ἔχει τὴν πράξιν· κατὰ δὲ νόμον
+                  ἀναγωγῆς, ἠ ἀπερίπαστος ἡμῶν κατάστασιν ἡμέρα λέγοιτ᾿ ἀν· νύξ δὲ ἡ περίστατον διὰ τὸ σκυθρωπόν· ἀναγκαία δὲ καθ᾿ἑκάτερον καιρὸν ἡ τοῦ νόμου μελέτη· Eindeutig PA; Transkription fehlerhaft! -->
+                  <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-1-35"
+                     corresp="#mosq-syn-194-ps-1-2b" source="lost">
+                     <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-1-35"
+                        corresp="#person-16"
+                        source="Theodoretus, comm. in Ps 1,(2b2) 2 (PG 80,869 B3–14)"/>
+                     <ref target="vat-gr-754:vat-gr-754-fr-1-6" type="identical">Vat. gr. 754</ref>
+                  </seg><!-- Theod. muss der Typus XIX-tradition enstammen; vollkommene Übereinstimmung -->
+                  <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-1-36"
+                     corresp="#mosq-syn-194-ps-1-3a" source="Athanasius">
+                     <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-1-36"
+                        corresp="#person-2" source="Athanasius, schol. in Ps 1,(3a1) 3a">ξύλον ὁ
+                        Χριστὸς ἀναγέγραπται ἐν τῇ θεοπνεύστῳ γραφῇ κατὰ τὸ εἰρημένον· ξύλον ζωῆς
+                        (ἐστι) πᾶσιν τοῖς ἀντεχομένοις αὐτῆς· λέγει οὖν· ὅτι οἱ πιστεύοντες τῷ
+                        Χριστῷ· σῶμα αὐτοῦ ἔσονται· μετασχηματίσει γὰρ τὸ σῶμα τῆς ταπεινώσεως ἡμῶν·
+                        σύμμορφον τῷ σώματι τῆς δόξης αὐτοῦ·</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-1-5" type="identical">Vat. gr. 754</ref>
+                  </seg><!-- πρὸς τὸ γενέσθαι ausgelassen bzw. abgekürzt. Welche Bedeutung hat das Δ vor dem Autorenname?-->
+                  <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-1-37"
+                     corresp="#mosq-syn-194-ps-1-3a" source="Athanasius">
+                     <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-1-37"
+                        corresp="#person-2" source="Athanasius, schol. in Ps 1,(3a2) 3a"><gap
+                           reason="illegible" quantity="43" unit="character"/>οῦ<gap
+                           reason="illegible" quantity="13" unit="character"/><supplied
+                           reason="illegible">κ</supplied>η<supplied reason="illegible"
+                           >ρυσσ</supplied><unclear reason="damage">όμ</unclear>ενον: –</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-1-5" type="identical?">Vat. gr. 754</ref>
                   </seg>
                   <pb n="8v"/>
-                  <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-1-4"
+                  <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-1-38"
                      corresp="#mosq-syn-194-ps-1-5a" source="Athanasius">
-                     <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-1-4"
+                     <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-1-38"
                         corresp="#person-2" source="Athanasius, schol. in Ps 1,5a">ἄνεμον δὲ νοήσεις
                         τὴν ἀπειλὴν τοῦ θεοῦ τὴν λέγουσαν· πορεύεσθαι ἀπεμοῦ οἱ κατηραμένοι εἰς τὸ
                         πῦρ τὸ αἰῶνιον· ο<unclear reason="faded ink">ἱ</unclear> τ<unclear
@@ -368,21 +615,21 @@
                      <ref target="vat-gr-754:vat-gr-754-fr-1-14" type="abbreviated">Vat. gr.
                         754</ref>
                   </seg>
-                  <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-1-5"
+                  <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-1-39"
                      corresp="#mosq-syn-194-ps-1-5a" source="Didymus">
                      <quote type="patristic" subtype="paraphrase-abbreviated"
-                        xml:id="mosq-syn-194-quot-1-5" corresp="#person-6"
+                        xml:id="mosq-syn-194-quot-1-39" corresp="#person-6"
                         source="Didymus, fr. 6 in Ps 1,5 (XXX Mühlenberg)"/>
                   </seg>
-                  <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-1-7"
+                  <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-1-40"
                      corresp="#mosq-syn-194-ps-1" source="Anonymous">
-                     <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-1-7"
+                     <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-1-40"
                         corresp="#person-3" source="Basilius, hom. in Ps. 48 (PG 29,436 C3–5)"/>
                      <ref target="vat-gr-754:vat-gr-754-fr-1-1" type="identical">Vat. gr. 754</ref>
                   </seg>
-                  <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-1-8"
+                  <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-1-41"
                      corresp="#mosq-syn-194-ps-1" source="Anonymous">
-                     <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-1-8"
+                     <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-1-41"
                         corresp="#person-2" source="Athanasius, schol. in Ps 1">Τὴν ἀρχὴν τῆς
                         προφητείας τῷ ἐξ αὐτοῦ τεχθησομένῳ Χριστῷ ἀνατίθησιν ὁ Δαυΐδ. διὸ ἐν πρώτοις
                         μακαρίζει τοὺς εἰς αὐτὸν ἠλπικότας·</quote>
@@ -1566,9 +1813,9 @@
                         corresp="#mosq-syn-194-ps-7-1" source="Anonymous">
                         <quote type="patristic" xml:id="mosq-syn-194-quot-7-1"
                            corresp="#person-2 #person-18"
-                           source="Athanasius, schol. in Ps 7,1 - fons ignotus in Ps 7,1 (ineditum?)">Ἐν ταῖς
-                           βασιλείαις ὁ Χουσὶ ἀρχιέταιρος μὲν <surplus>μὲν</surplus> τοῦ Δαυῒδ· υἱὸς
-                           δὲ Ἀρχ<subst hand="#m1">
+                           source="Athanasius, schol. in Ps 7,1 - fons ignotus in Ps 7,1 (ineditum?)"
+                           >Ἐν ταῖς βασιλείαις ὁ Χουσὶ ἀρχιέταιρος μὲν <surplus>μὲν</surplus> τοῦ
+                           Δαυῒδ· υἱὸς δὲ Ἀρχ<subst hand="#m1">
                               <del rend="overwrite" cert="medium">ὶ</del>
                               <add place="inline">εὶ</add>
                            </subst> ἰστόρηται· ἐνταῦθα Ἰεμενεί· ὃς καὶ ἀποστέλλεται παρὰ τοῦ Δαυῒδ
@@ -1634,8 +1881,9 @@
                      </seg>
                      <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-7-ΧΧΧ"
                         corresp="#mosq-syn-194-ps-7-9a" source="Anonymous">
-                        <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-7-ΧΧxx" corresp="#person-16"
-                           source="Theodoretus, comm. in Ps 7,{9b} 9a (PG 80,909 B12–14)"></quote>
+                        <quote type="patristic" subtype="quotation"
+                           xml:id="mosq-syn-194-quot-7-ΧΧxx" corresp="#person-16"
+                           source="Theodoretus, comm. in Ps 7,{9b} 9a (PG 80,909 B12–14)"/>
                         <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="identical">Vat. gr.
                            754</ref>
                      </seg>
@@ -1700,42 +1948,26 @@
                      <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-7-19"
                         corresp="#mosq-syn-194-ps-7-15b" source="Anonymous">
                         <quote type="patristic" xml:id="mosq-syn-194-quot-7-19" corresp="#person-2"
-                           source="Athanasius, schol. in Ps 7,{15b} 15a">ὁ ἐχθρὸς τῆς ἡμετέρας
-                           ζωῆς: –</quote>
+                           source="Athanasius, schol. in Ps 7,{15b} 15a">ὁ ἐχθρὸς τῆς ἡμετέρας ζωῆς:
+                           –</quote>
                         <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="identical">Vat. gr.
                            754</ref>
                      </seg>
                      <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-7-20"
                         corresp="#mosq-syn-194-ps-7-16a" source="Anonymous">
                         <quote type="patristic" xml:id="mosq-syn-194-quot-7-20" corresp="#person-2"
-                           source="Athanasius, schol. in Ps 7,16a">θάνατον γὰρ κατασκευάσας κατὰ τοῦ σωτῆρος Χριστοῦ θανάτῳ παραδέδοται·</quote>
+                           source="Athanasius, schol. in Ps 7,16a">θάνατον γὰρ κατασκευάσας κατὰ τοῦ
+                           σωτῆρος Χριστοῦ θανάτῳ παραδέδοται·</quote>
                         <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="identical">Vat. gr.
                            754</ref>
                      </seg>
                      <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-7-21"
                         corresp="#mosq-syn-194-ps-7-15b" source="Anonymous">
                         <quote type="patristic" xml:id="mosq-syn-194-quot-7-21" corresp="#person-2"
-                           source="Athanasius, schol. in Ps 7,15b">τουτέστι βεβούληται καὶ
-                           εἰς ἔργον ἐξήγαγε τὰ σκέμματα<supplied>·</supplied></quote>
+                           source="Athanasius, schol. in Ps 7,15b">τουτέστι βεβούληται καὶ εἰς ἔργον
+                           ἐξήγαγε τὰ σκέμματα<supplied>·</supplied></quote>
                         <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="identical">Vat. gr.
                            754</ref>
-                     </seg>
-                     <!-- Folgende Fragmente bis zur neuen Seite aus Par. gr. 166 -->
-                     <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-7-21"
-                        corresp="#mosq-syn-194-ps-7-16a" source="Anonymous">
-                        <quote type="patristic" xml:id="mosq-syn-194-quot-7-21" corresp="#person-2"
-                           source="Athanasius, schol. in Ps 7,16a">θάνατον γὰρ κατασκευᾶσας κατὰ τοῦ
-                           σωτῆρος Χριστοῦ, θανάτῳ παραδίδοται·</quote>
-                        <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="identical">Vat. gr.
-                           754</ref>
-                     </seg>
-                     <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-7-22"
-                        corresp="#mosq-syn-194-ps-7-17b" source="Theodoretus">
-                        <quote type="patristic" xml:id="mosq-syn-194-quot-7-22"
-                           corresp="#person-18 #person-23"
-                           source="fons ignotus in Ps 7,17b - Evagrius, schol. in Ps 7,17b"/>
-                        <ref target="vat-gr-754:vat-gr-754-fr-7-XXX vat-gr-754:vat-gr-754-fr-7-XXX"
-                           type="identical">Vat. gr. 754</ref>
                      </seg>
                      <!-- ps 8 bible --><quote type="bibletext"
                         corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-1" n="Ps (LXX) 8,1"
