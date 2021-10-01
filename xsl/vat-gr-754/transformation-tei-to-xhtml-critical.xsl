@@ -4,7 +4,7 @@
     xmlns:tei="http://www.tei-c.org/ns/1.0"
     exclude-result-prefixes="xs"
     version="2.0">
-    <xsl:output method="xhtml"/>
+    <xsl:output method="xhtml" encoding="UTF-8"/>
     
     <xsl:template match="tei:TEI">
         <html>
@@ -1352,9 +1352,11 @@
     
     <xsl:template match="tei:abbr[@type = 'bibleversion']">
         <xsl:apply-templates/>
-        <xsl:text> [</xsl:text>
-        <xsl:value-of select="@source"/>
-        <xsl:text>]</xsl:text>
+        <xsl:if test="exists(@source)">
+            <xsl:text> [</xsl:text>
+            <xsl:value-of select="@source"/>
+            <xsl:text>]</xsl:text>
+        </xsl:if>
     </xsl:template>
     
     <xsl:template match="tei:hi[@rend = 'superscript']">
