@@ -33,6 +33,7 @@
         <xsl:text>\textbf{</xsl:text>
         <xsl:value-of select="tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:idno/text()"/>
         <xsl:text>}</xsl:text>
+        <xsl:text>\par\vspace{5mm} Athanasius only</xsl:text>
         <xsl:text>\end{center}</xsl:text>
     </xsl:template>
     
@@ -41,15 +42,15 @@
     </xsl:template>
     
     <xsl:template match="tei:div[@type='transcription']">
-        <xsl:apply-templates select="tei:div[@type = 'commentary']"/>
+        <xsl:apply-templates select="tei:div"/>
     </xsl:template>
     
-    <xsl:template match="tei:div[@type = 'commentary']">
+    <xsl:template match="tei:div">
         <xsl:apply-templates select="tei:ab"/>
     </xsl:template>
 
     <xsl:template match="tei:ab">
-        <xsl:apply-templates select="tei:seg[@type = 'commentaryfragment']"/>
+        <xsl:apply-templates select="tei:seg[@type = 'commentaryfragment' and @source = '(Athanasius)']"/>
     </xsl:template>
 
     <xsl:template match="tei:seg[@type = 'commentaryfragment']">
