@@ -1,0 +1,1290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/tei-psalmcatenae.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Par. gr. 164 - Transcription</title>
+                <respStmt>
+                    <resp>transcribed by</resp>
+                    <persName>Maria-Lucia Goiana</persName>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>FWF Project 32988</publisher>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">Available under the Creative Commons Attribution 4.0 International (CC BY 4.0)</licence>
+                </availability>
+                <date>2021-10-01</date>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier xml:id="par-gr-164">
+                        <settlement>Paris</settlement>
+                        <repository>Bibliothèque nationale de France. Département des Manuscrits</repository>
+                        <idno facs="https://gallica.bnf.fr/ark:/12148/btv1b550060713">Par. gr. 164</idno>
+                        <altIdentifier>
+                            <idno type="pinakes" corresp="https://pinakes.irht.cnrs.fr/notices/cote/49732/">49732</idno>
+                        </altIdentifier>
+                        <altIdentifier>
+                            <idno type="Diktyon">49732</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem n="1">
+                            <locus>fols. 7r-179v</locus>
+                            <title>in Ps. 1—151: Theodoretus, hexaplaric variants, ExpPs</title>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc form="codex">
+                            <supportDesc material="perg">
+                                <support>parchment</support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout>
+                                    <p>199 folios. Layout: two columns.</p>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <scriptDesc>
+                            <p>The hexaplaric variants, glossai, commentary fragments and the advisory sentences at the top of the pages are written in majuscule.</p>
+                            <p>Red ink, at times combined with golden ink, is used for sigla of the authors, the symbol-letters for hexaplaric variants; verse initials; liturgical indications; psalm numbers, linking signs, initials of hypotheseis, and advisory sentences at the top of the pages. For the rest, the codex is written in brown ink, but there are also later rewritings of (faded) letters/ words/ verses in black ink.</p>
+                        </scriptDesc>
+                    </physDesc>
+                    <history><p>Anno 1070. Antioch.</p></history>
+                </msDesc>
+            </sourceDesc>
+            <sourceDesc>
+                <listPerson>
+                    <head>Authors</head>
+                    <person xml:id="person-1" role="author"><persName>Asterius</persName><bibl corresp="#bibliography-title-1">Asterius, fr.</bibl></person>
+                    <person xml:id="person-2" role="author"><persName>Athanasius</persName><bibl corresp="#bibliography-title-2">Athanasius, schol.</bibl></person>
+                    <person xml:id="person-3" role="author"><persName>Basilius Caesariensis</persName><bibl corresp="#bibliography-title-4">Basilius Caesariensis, hom.</bibl></person>
+                    <person xml:id="person-4" role="author"><persName>Cyrillus Alexandrinus</persName><bibl corresp="#bibliography-title-5">Cyrillus Alexandrinus</bibl></person>
+                    <person xml:id="person-5" role="author"><persName>Diodorus Tarsensis</persName><bibl corresp="#bibliography-title-6">Diodorus Tarsensis, comm.</bibl></person>
+                    <person xml:id="person-27" role="author" sameAs="#person-5"><persName>Diodorus Tarsensis</persName><bibl>Diodorus Tarsensis, fragm. (Olivier)</bibl></person>
+                    <person xml:id="person-6" role="author"><persName>Didymus Caecus</persName><bibl corresp="#bibliography-title-7">Didymus Caecus, fr.</bibl></person>
+                    <person xml:id="person-7" role="author"><persName>Eusebius</persName><bibl corresp="#bibliography-title-8">Eusebius, perioche</bibl></person>
+                    <person xml:id="person-8" role="author" sameAs="#person-7"><persName>Eusebius</persName><bibl corresp="#bibliography-title-9">Eusebius, fr.</bibl></person>
+                    <person xml:id="person-9" role="author"><persName>Unknown</persName><bibl corresp="#bibliography-title-10">fons ignotus (ed. Dorival IV)</bibl></person>
+                    <person xml:id="person-10" role="author"><persName>Hesychius Hierosolomitanus</persName><bibl corresp="#bibliography-title-11">Hesychius Hierosolomitanus, schol.</bibl></person>
+                    <person xml:id="person-11" role="author" sameAs="#person-10"><persName>Hesychius Hierosolomitanus</persName><bibl corresp="#bibliography-title-12">Hesychius Hierosolomitanus, comm. brevis</bibl></person>
+                    <person xml:id="person-12" role="author" sameAs="#person-10"><persName>Hesychius Hierosolomitanus</persName><bibl corresp="#bibliography-title-13">Hesychius Hierosolomitanus, comm. magnus </bibl></person>
+                    <person xml:id="person-13" role="author"><persName>Origenes</persName><bibl corresp="#bibliography-title-14">Origenes</bibl></person>
+                    <person xml:id="person-14" role="author" sameAs="#person-13"><persName>Origenes</persName><bibl corresp="#bibliography-title-15">Origenes (Analecta Sacra II, Ps 1–25)</bibl></person>
+                    <person xml:id="person-15" role="author" sameAs="#person-13"><persName>Origenes</persName><bibl corresp="#bibliography-title-16">Origenes (Analecta Sacra III, Ps 26–150)</bibl></person>
+                    <person xml:id="person-26" role="author" sameAs="#person-13"><persName>Origenes</persName><bibl>Origenes, fragm. (Cadiou)</bibl></person>
+                    <person xml:id="person-16" role="author"><persName>Theodoretus Cyrrensis</persName><bibl corresp="#bibliography-title-17">Theodoretus Cyrrensis, comm.</bibl></person>
+                    <person xml:id="person-17" role="author"><persName>Eusebius</persName><bibl corresp="#bibliography-title-9">Eusebius, fr (ed. Villani)</bibl></person>
+                    <person xml:id="person-18" role="author"><persName>Unknown</persName></person>
+                    <person xml:id="person-19" role="author"><persName>Unknown</persName><bibl>fons ignotus (Analecta Sacra II)</bibl></person>
+                    <person xml:id="person-20" role="author"><persName>Gregor of Nazianz</persName></person>
+                    <person xml:id="person-21" role="author"><persName>Evagrius</persName><bibl>Evagrius, schol.</bibl></person>
+                    <person xml:id="person-22" role="author"><persName>Theodorus</persName><bibl>Theodorus, fr.</bibl></person>
+                    <person xml:id="person-23" role="author"><persName>Origenes</persName><bibl>Origenes, def. (Risch)</bibl></person>
+                    <person xml:id="person-24" role="author"><persName>Gregorius of Nyssa</persName><bibl>Gregorius Nyss., Ps. inscr. (McDonough)</bibl></person>
+                    <person xml:id="person-25" role="author"><persName>Gregorius of Nyssa</persName><bibl>Gregorius Nyss., beat. (Callahan)</bibl></person>
+                </listPerson>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc><p>The goal of this transcription is to produce a readable version of the commentaryfragments. Therefore other material contained in the manuscript is ignored.</p></projectDesc>
+            <editorialDecl>
+                <normalization><p>The transcription has been silently normalized in all respects.</p></normalization>
+            </editorialDecl>
+        </encodingDesc>
+        <revisionDesc>
+            <change who="Maria-Lucia Goiana" when="2021-10-15">Transcription of the manuscript according to the pictures.</change>
+            <change who="Thomas Klampfl" when="2021-10-15">Transformation into a TEI document.</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="bibletext" subtype="commented">
+            <ab xml:lang="grc">
+               <quote type="bibletext" xml:id="par-gr-164-ps-1-1" n="Ps (LXX) 1,1" corresp="../psalms-LXX/psalms.xml#Ps-LXX-1-1">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-1-1a" n="Ps (LXX) 1,1a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-1-1"/>       
+                     Μακάριος ἀνήρ, ὃς οὐκ ἐπορεύθη ἐν βουλῇ ἀσεβῶν
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-1-1b" n="Ps (LXX) 1,1b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-1-1"/>
+                     καὶ ἐν ὁδῷ ἁμαρτωλῶν οὐκ ἔστη
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-1-1c" n="Ps (LXX) 1,1c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-1-1"/>
+                     καὶ ἐπὶ καθέδραν λοιμῶν οὐκ ἐκάθισεν,
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-1-2" n="Ps (LXX) 1,2" corresp="../psalms-LXX/psalms.xml#Ps-LXX-1-2">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-1-2a" n="Ps (LXX) 1,2a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-1-2"/>
+                     ἀλλ᾽ ἢ ἐν τῷ νόμῳ κυρίου τὸ θέλημα αὐτοῦ,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-1-2b" n="Ps (LXX) 1,2b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-1-2"/>
+                     καὶ ἐν τῷ νόμῳ αὐτοῦ μελετήσει ἡμέρας καὶ νυκτός.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-1-3" n="Ps (LXX) 1,3" corresp="../psalms-LXX/psalms.xml#Ps-LXX-1-3">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-1-3a" n="Ps (LXX) 1,3a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-1-3"/>
+                     καὶ ἔσται ὡς τὸ ξύλον τὸ πεφυτευμένον παρὰ τὰς διεξόδους τῶν ὑδάτων,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-1-3b" n="Ps (LXX) 1,3b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-1-3"/>
+                     ὃ τὸν καρπὸν αὐτοῦ δώσει ἐν καιρῷ αὐτοῦ
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-1-3c" n="Ps (LXX) 1,3c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-1-3"/>
+                     καὶ τὸ φύλλον αὐτοῦ οὐκ ἀπορρυήσεται·
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-1-3d" n="Ps (LXX) 1,3d" corresp="../psalms-LXX/psalms.xml#Ps-LXX-1-3"/>
+                     καὶ πάντα, ὅσα ἂν ποιῇ, κατευοδωθήσεται.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-1-4" n="Ps (LXX) 1,4" corresp="../psalms-LXX/psalms.xml#Ps-LXX-1-4">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-1-4a" n="Ps (LXX) 1,4a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-1-4"/>
+                     οὐχ οὕτως οἱ ἀσεβεῖς, οὐχ οὕτως,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-1-4b" n="Ps (LXX) 1,4b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-1-4"/>
+                     ἀλλ᾽ ἢ ὡς ὁ χνοῦς, ὃν ἐκριπτεῖ ὁ ἄνεμος ἀπὸ προσώπου τῆς γῆς.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-1-5" n="Ps (LXX) 1,5" corresp="../psalms-LXX/psalms.xml#Ps-LXX-1-5">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-1-5a" n="Ps (LXX) 1,5a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-1-5"/>
+                     διὰ τοῦτο οὐκ ἀναστήσονται ἀσεβεῖς ἐν κρίσει
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-1-5b" n="Ps (LXX) 1,5b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-1-5"/>
+                     οὐδὲ ἁμαρτωλοὶ ἐν βουλῇ δικαίων·
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-1-6" n="Ps (LXX) 1,6" corresp="../psalms-LXX/psalms.xml#Ps-LXX-1-6">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-1-6a" n="Ps (LXX) 1,6a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-1-6"/>
+                     ὅτι γινώσκει κύριος ὁδὸν δικαίων,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-1-6b" n="Ps (LXX) 1,6b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-1-6"/>
+                     καὶ ὁδὸς ἀσεβῶν ἀπολεῖται.
+               </quote>
+            </ab>
+         </div>
+         <!-- Psalm 2 -->
+         <div type="bibletext" subtype="commented">
+            <ab xml:lang="grc">
+               <quote type="bibletext" xml:id="par-gr-164-ps-2-1" n="Ps (LXX) 2,1" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-1">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-2-1a" n="Ps (LXX) 2,1a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-1"/>
+                     ῞Ινα τί ἐφρύαξαν ἔθνη
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-2-1b" n="Ps (LXX) 2,1b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-1"/>
+                     καὶ λαοὶ ἐμελέτησαν κενά;
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-2-2" n="Ps (LXX) 2,2" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-2">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-2-2a" n="Ps (LXX) 2,2a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-2"/>
+                     παρέστησαν οἱ βασιλεῖς τῆς γῆς,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-2-2b" n="Ps (LXX) 2,2b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-2"/>
+                     καὶ οἱ ἄρχοντες συνήχθησαν ἐπὶ τὸ αὐτὸ
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-2-2c" n="Ps (LXX) 2,2c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-2"/>
+                     κατὰ τοῦ κυρίου καὶ κατὰ τοῦ χριστοῦ αὐτοῦ
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-2-2d" n="Ps (LXX) 2,2d" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-2"/>
+                     διάψαλμα
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-2-3" n="Ps (LXX) 2,3" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-3">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-2-3a" n="Ps (LXX) 2,3a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-3"/>
+                     Διαρρήξωμεν τοὺς δεσμοὺς αὐτῶν
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-2-3b" n="Ps (LXX) 2,3b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-3"/>
+                     καὶ ἀπορρίψωμεν ἀφ᾽ ἡμῶν τὸν ζυγὸν αὐτῶν.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-2-4" n="Ps (LXX) 2,4" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-4">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-2-4a" n="Ps (LXX) 2,4a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-4"/>
+                     ὁ κατοικῶν ἐν οὐρανοῖς ἐκγελάσεται αὐτούς,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-2-4b" n="Ps (LXX) 2,4b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-4"/>
+                     καὶ ὁ κύριος ἐκμυκτηριεῖ αὐτούς.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-2-5" n="Ps (LXX) 2,5" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-5">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-2-5a" n="Ps (LXX) 2,5a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-5"/>
+                     τότε λαλήσει πρὸς αὐτοὺς ἐν ὀργῇ αὐτοῦ
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-2-5b" n="Ps (LXX) 2,5b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-5"/>
+                     καὶ ἐν τῷ θυμῷ αὐτοῦ ταράξει αὐτούς
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-2-6" n="Ps (LXX) 2,6" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-6">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-2-6a" n="Ps (LXX) 2,6a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-6"/>
+                     ᾿Εγὼ δὲ κατεστάθην βασιλεὺς ὑπ᾽ αὐτοῦ
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-2-6b" n="Ps (LXX) 2,6b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-6"/>
+                     ἐπὶ Σιων ὄρος τὸ ἅγιον αὐτοῦ
+               </quote>               
+               <quote type="bibletext" xml:id="par-gr-164-ps-2-7" n="Ps (LXX) 2,7" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-7">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-2-7a" n="Ps (LXX) 2,7a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-7"/>
+                     διαγγέλλων τὸ πρόσταγμα κυρίου
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-2-7b" n="Ps (LXX) 2,7b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-7"/>
+                     Κύριος εἶπεν πρός με Υἱός μου εἶ σύ, ἐγὼ σήμερον γεγέννηκά σε·
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-2-8" n="Ps (LXX) 2,8" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-8">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-2-8a" n="Ps (LXX) 2,8a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-8"/>
+                     αἴτησαι παρ᾽ ἐμοῦ, καὶ δώσω σοι ἔθνη τὴν κληρονομίαν σου
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-2-8b" n="Ps (LXX) 2,8b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-8"/>
+                     καὶ τὴν κατάσχεσίν σου τὰ πέρατα τῆς γῆς·
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-2-9" n="Ps (LXX) 2,9" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-9">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-2-9a" n="Ps (LXX) 2,9a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-9"/>
+                     ποιμανεῖς αὐτοὺς ἐν ῥάβδῳ σιδηρᾷ,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-2-9b" n="Ps (LXX) 2,9b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-9"/>
+                     ὡς σκεῦος κεραμέως συντρίψεις αὐτούς.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-2-10" n="Ps (LXX) 2,10" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-10">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-2-10a" n="Ps (LXX) 2,10a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-10"/>
+                     καὶ νῦν, βασιλεῖς, σύνετε·
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-2-10b" n="Ps (LXX) 2,10b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-10"/>
+                     παιδεύθητε, πάντες οἱ κρίνοντες τὴν γῆν.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-2-11" n="Ps (LXX) 2,11" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-11">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-2-11a" n="Ps (LXX) 2,11a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-11"/>
+                     δουλεύσατε τῷ κυρίῳ ἐν φόβῳ
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-2-11b" n="Ps (LXX) 2,11b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-11"/>
+                     καὶ ἀγαλλιᾶσθε αὐτῷ ἐν τρόμῳ.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-2-12" n="Ps (LXX) 2,12" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-12">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-2-12a" n="Ps (LXX) 2,12a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-12"/>
+                     δράξασθε παιδείας, μήποτε ὀργισθῇ κύριος
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-2-12b" n="Ps (LXX) 2,12b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-12"/>
+                     καὶ ἀπολεῖσθε ἐξ ὁδοῦ δικαίας.
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-2-12c" n="Ps (LXX) 2,12c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-12"/>
+                     ὅταν ἐκκαυθῇ ἐν τάχει ὁ θυμὸς αὐτοῦ,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-2-12d" n="Ps (LXX) 2,12d" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-12"/>
+                     μακάριοι πάντες οἱ πεποιθότες ἐπ᾽ αὐτῷ.
+               </quote>
+            </ab>
+         </div>
+         <div type="commentary" subtype="commentary" xml:id="par-gr-164-2-1">
+             <ab xml:lang="grc" xml:id="par-gr-164-2-2">
+                 <pb n="7v"/>
+                 <seg type="commentaryfragment" xml:id="par-gr-164-fr-2-1" source="Theodoretus" corresp="#par-gr-164-ps-2-1a">
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-164-quot-2-1" source="Theodoretus, comm. in Ps 2 (in titulum; PG 80, 873 B12–C3)" corresp="#person-16">
+                     Ἐν τῇ μνήμῃ τῶν ἀσεβῶν τὸν πρῶτον συμπεράνας ψαλμὸν  ἐκ ταύτης πάλιν τοῦ δευτέρου τὴν ἀρχὴν ἐποιήσατο διδάσκων·
+                     ὅτι τὸ προειρημένον τῶν δυσσεβῶν τέλος· καὶ τοὺς κατὰ τοῦ σωτῆρος [λυττήσαντας] βασιλεῖς τε καὶ ἄρχοντας· καὶ ἰουδαίους καὶ ἐθνικοὺς ὑποδέξεται:
+                     </quote>
+                 </seg>
+                 <seg type="commentaryfragment" xml:id="par-gr-164-fr-2-2" source="Athanasius" corresp="#par-gr-164-ps-2-3b">
+                     <quote type="patristic" subtype="unknown" xml:id="par-gr-164-quot-2-2" source="Athanasius, schol. in Ps 2,3b" corresp="#person-2">
+                     Τὴν βαρύτητα τοῦ νόμου:
+                     </quote>
+                 </seg>
+             </ab>
+         </div>
+         <!-- Psalm 3 -->
+         <div type="bibletext" subtype="commented">
+            <ab xml:lang="grc">
+               <quote type="bibletext" xml:id="par-gr-164-ps-3-1" n="Ps (LXX) 3,1" corresp="../psalms-LXX/psalms.xml#Ps-LXX-3-1">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-3-1a" n="Ps (LXX) 3,1a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-3-1"/>
+                     Ψαλμὸς τῷ Δαυιδ, ὁπότε ἀπεδίδρασκεν ἀπὸ προσώπου Αβεσσαλωμ τοῦ υἱοῦ αὐτοῦ.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-3-2" n="Ps (LXX) 3,2" corresp="../psalms-LXX/psalms.xml#Ps-LXX-3-2">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-3-2a" n="Ps (LXX) 3,2a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-3-2"/>
+                     Κύριε, τί ἐπληθύνθησαν οἱ θλίβοντές με;
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-3-2b" n="Ps (LXX) 3,2b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-3-2"/>
+                     πολλοὶ ἐπανίστανται ἐπ᾽ ἐμέ·
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-3-3" n="Ps (LXX) 3,3" corresp="../psalms-LXX/psalms.xml#Ps-LXX-3-3">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-3-3a" n="Ps (LXX) 3,3a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-3-3"/>
+                     πολλοὶ λέγουσιν τῇ ψυχῇ μου
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-3-3b" n="Ps (LXX) 3,3b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-3-3"/>
+                     Οὐκ ἔστιν σωτηρία αὐτῷ ἐν τῷ θεῷ αὐτοῦ.
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-3-3c" n="Ps (LXX) 3,3c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-3-3"/>
+                     διάψαλμα.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-3-4" n="Ps (LXX) 3,4" corresp="../psalms-LXX/psalms.xml#Ps-LXX-3-4">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-3-4a" n="Ps (LXX) 3,4a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-3-4"/>
+                     σὺ δέ, κύριε, ἀντιλήμπτωρ μου εἶ,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-3-4b" n="Ps (LXX) 3,4b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-3-4"/>
+                     δόξα μου καὶ ὑψῶν τὴν κεφαλήν μου.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-3-5" n="Ps (LXX) 3,5" corresp="../psalms-LXX/psalms.xml#Ps-LXX-3-5">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-3-5a" n="Ps (LXX) 3,5a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-3-5"/>
+                     φωνῇ μου πρὸς κύριον ἐκέκραξα,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-3-5b" n="Ps (LXX) 3,5b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-3-5"/>
+                     καὶ ἐπήκουσέν μου ἐξ ὄρους ἁγίου αὐτοῦ.
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-3-5c" n="Ps (LXX) 3,5c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-3-5"/>
+                     διάψαλμα.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-3-6" n="Ps (LXX) 3,6" corresp="../psalms-LXX/psalms.xml#Ps-LXX-3-6">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-3-6a" n="Ps (LXX) 3,6a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-3-6"/>
+                     ἐγὼ ἐκοιμήθην καὶ ὕπνωσα·
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-3-6b" n="Ps (LXX) 3,6b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-3-6"/>
+                     ἐξηγέρθην, ὅτι κύριος ἀντιλήμψεταί μου.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-3-7" n="Ps (LXX) 3,7" corresp="../psalms-LXX/psalms.xml#Ps-LXX-3-7">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-3-7a" n="Ps (LXX) 3,7a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-3-7"/>
+                     οὐ φοβηθήσομαι ἀπὸ μυριάδων λαοῦ
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-3-7b" n="Ps (LXX) 3,7b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-3-7"/>
+                     τῶν κύκλῳ συνεπιτιθεμένων μοι.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-3-8" n="Ps (LXX) 3,8" corresp="../psalms-LXX/psalms.xml#Ps-LXX-3-8">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-3-8a" n="Ps (LXX) 3,8a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-3-8"/>
+                     ἀνάστα, κύριε, σῶσόν με, ὁ θεός μου,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-3-8b" n="Ps (LXX) 3,8b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-3-8"/>
+                     ὅτι σὺ ἐπάταξας πάντας τοὺς ἐχθραίνοντάς μοι ματαίως,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-3-8c" n="Ps (LXX) 3,8c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-3-8"/>
+                     ὀδόντας ἁμαρτωλῶν συνέτριψας.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-3-9" n="Ps (LXX) 3,9" corresp="../psalms-LXX/psalms.xml#Ps-LXX-3-9">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-3-9a" n="Ps (LXX) 3,9a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-3-9"/>
+                     τοῦ κυρίου ἡ σωτηρία,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-3-9b" n="Ps (LXX) 3,9b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-3-9"/>
+                     καὶ ἐπὶ τὸν λαόν σου ἡ εὐλογία σου.
+               </quote>
+            </ab>
+         </div>
+            <div type="commentary" subtype="commentary" xml:id="par-gr-164-3-1">
+                <ab xml:lang="grc" xml:id="par-gr-164-3-2">
+                    <pb n="8v"/>
+                    <seg type="commentaryfragment" xml:id="par-gr-164-fr-2-3" source="Anonymous" corresp="#par-gr-164-ps-2-12a">
+                        <quote type="patristic" subtype="unknown" xml:id="par-gr-164-quot-2-3" source="fons ignotus in Ps 2,12a; cf. Hesychius, lex. s.v.  (Δ 2321 Latte)" corresp="#person-18">
+                        ἐπιλάβεσθε τῆς ἐπιστήμης·
+                        </quote>
+                    </seg>
+                    <seg type="commentaryfragment" xml:id="par-gr-164-fr-3-1" source="Theodoretus" corresp="#par-gr-164-ps-3-1a">
+                        <quote type="patristic" subtype="quotation" xml:id="par-gr-164-quot-3-1" source="Theodoretus, comm. in Ps 3,1 (PG 80, 884 C10–885 A2)" corresp="#person-16">
+                        Δήλη μέντοι τοῖς ἐμμελεστέροις ἡ ἱστορία· τῶν δὲ ῥαθυμοτέρων εἵνεκα· ταύτην συντόμως ἐρῶ· μετὰ τὴν διπλὴν ἐκείνην παρανομίαν ὁ μέγας Δαυῒδ πολλαῖς καὶ παντοδαπαῖς περιέπεσεν συμφοραῖς· 
+                        οὐ γὰρ μόνον τὰ ἔθνη πρὸς μάχην ἐκινήθη καὶ πόλεμον· ἀλλὰ καὶ αὐτὸς ὁ οἶκος· τὴν στάσιν ἐδέξατο· καὶ παρανομίαν παρανομία διεδέχετο· 
+                        τὴν τοῦ Ἀμνὼν ἀκολασίαν· ἡ τοῦ Ἀβεσσαλὼμ μιαιφονία:
+                        </quote>
+                    </seg>
+                    <seg type="commentaryfragment" xml:id="par-gr-164-fr-3-2" source="Athanasius" corresp="#par-gr-164-ps-3-2a">
+                        <quote type="patristic" subtype="unknown" xml:id="par-gr-164-quot-3-2" source="Athanasius, schol. in Ps 3,2a" corresp="#person-2">
+                            ἀντὶ τοῦ σφόδρα
+                        </quote>
+                    </seg>
+                    <seg type="commentaryfragment" xml:id="par-gr-164-fr-3-3" source="Origenes" corresp="#par-gr-164-ps-3-5c">
+                        <quote type="patristic" subtype="unknown" xml:id="par-gr-164-quot-3-3" source="Origenes, fragm. in Ps 2,2a (διάψαλμα) (Cadiou 72)" corresp="#person-26">
+                        μουσικοῦ μέλους ἢ ῥυθμοῦ τρόπης γενομένης· ἢ διανοίας καὶ δυνάμεως λόγου ἐναλλαγῆς:
+                        </quote>
+                    </seg>
+                </ab>
+            </div>
+         <!-- Psalm 4 -->
+         <div type="bibletext" subtype="commented">
+            <ab xml:lang="grc">
+               <quote type="bibletext" xml:id="par-gr-164-ps-4-1" n="Ps (LXX) 4,1" corresp="../psalms-LXX/psalms.xml#Ps-LXX-4-1">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-4-1a" n="Ps (LXX) 4,1a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-4-1"/>
+                     Εἰς τὸ τέλος, ἐν ψαλμοῖς· ᾠδὴ τῷ Δαυιδ.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-4-2" n="Ps (LXX) 4,2" corresp="../psalms-LXX/psalms.xml#Ps-LXX-4-2">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-4-2a" n="Ps (LXX) 4,2a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-4-2"/>
+                     ᾿Εν τῷ ἐπικαλεῖσθαί με εἰσήκουσέν μου ὁ θεὸς τῆς δικαιοσύνης μου·
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-4-2b" n="Ps (LXX) 4,2b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-4-2"/>
+                     ἐν θλίψει ἐπλάτυνάς μοι·
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-4-2c" n="Ps (LXX) 4,2v" corresp="../psalms-LXX/psalms.xml#Ps-LXX-4-2"/>
+                     οἰκτίρησόν με καὶ εἰσάκουσον τῆς προσευχῆς μου.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-4-3" n="Ps (LXX) 4,3" corresp="../psalms-LXX/psalms.xml#Ps-LXX-4-3">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-4-3a" n="Ps (LXX) 4,3a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-4-3"/>
+                     υἱοὶ ἀνθρώπων, ἕως πότε βαρυκάρδιοι;
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-4-3b" n="Ps (LXX) 4,3b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-4-3"/>
+                     ἵνα τί ἀγαπᾶτε ματαιότητα καὶ ζητεῖτε ψεῦδος;
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-4-3c" n="Ps (LXX) 4,3c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-4-3"/>
+                     διάψαλμα.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-4-4" n="Ps (LXX) 4,4" corresp="../psalms-LXX/psalms.xml#Ps-LXX-4-4">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-4-4a" n="Ps (LXX) 4,4a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-4-4"/>
+                     καὶ γνῶτε ὅτι ἐθαυμάστωσεν κύριος τὸν ὅσιον αὐτοῦ·
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-4-4b" n="Ps (LXX) 4,4b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-4-4"/>
+                     κύριος εἰσακούσεταί μου ἐν τῷ κεκραγέναι με πρὸς αὐτόν.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-4-5" n="Ps (LXX) 4,5" corresp="../psalms-LXX/psalms.xml#Ps-LXX-4-5">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-4-5a" n="Ps (LXX) 4,5a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-4-5"/>
+                     ὀργίζεσθε καὶ μὴ ἁμαρτάνετε
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-4-5b" n="Ps (LXX) 4,5b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-4-5"/>
+                     λέγετε ἐν ταῖς καρδίαις ὑμῶν
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-4-5c" n="Ps (LXX) 4,5c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-4-5"/>
+                     καὶ ἐπὶ ταῖς κοίταις ὑμῶν κατανύγητε.
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-4-5d" n="Ps (LXX) 4,5d" corresp="../psalms-LXX/psalms.xml#Ps-LXX-4-5"/>
+                     διάψαλμα.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-4-6" n="Ps (LXX) 4,6" corresp="../psalms-LXX/psalms.xml#Ps-LXX-4-6">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-4-6a" n="Ps (LXX) 4,6a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-4-6"/>
+                     θύσατε θυσίαν δικαιοσύνης
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-4-6b" n="Ps (LXX) 4,6b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-4-6"/>
+                     καὶ ἐλπίσατε ἐπὶ κύριον.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-4-7" n="Ps (LXX) 4,7" corresp="../psalms-LXX/psalms.xml#Ps-LXX-4-7">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-4-7a" n="Ps (LXX) 4,7a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-4-7"/>
+                     πολλοὶ λέγουσιν Τίς δείξει ἡμῖν τὰ ἀγαθά;
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-4-7b" n="Ps (LXX) 4,7b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-4-7"/>
+                     ἐσημειώθη ἐφ᾽ ἡμᾶς τὸ φῶς τοῦ προσώπου σου, κύριε.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-4-8" n="Ps (LXX) 4,8" corresp="../psalms-LXX/psalms.xml#Ps-LXX-4-8">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-4-8a" n="Ps (LXX) 4,8a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-4-8"/>
+                     8ἔδωκας εὐφροσύνην εἰς τὴν καρδίαν μου·
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-4-8b" n="Ps (LXX) 4,8b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-4-8"/>
+                     ἀπὸ καιροῦ σίτου καὶ οἴνου καὶ ἐλαίου αὐτῶν ἐπληθύνθησαν.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-4-9" n="Ps (LXX) 4,9" corresp="../psalms-LXX/psalms.xml#Ps-LXX-4-9">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-4-9a" n="Ps (LXX) 4,9a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-4-9"/>
+                     ἐν εἰρήνῃ ἐπὶ τὸ αὐτὸ κοιμηθήσομαι καὶ ὑπνώσω,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-4-9b" n="Ps (LXX) 4,9b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-4-9"/>
+                     ὅτι σύ, κύριε, κατὰ μόνας ἐπ᾽ ἐλπίδι κατῴκισάς με.
+               </quote>
+            </ab>
+         </div>
+         <div type="commentary" subtype="commentary" xml:id="par-gr-164-4-1">
+             <ab xml:lang="grc" xml:id="par-gr-164-4-2">
+                 <pb n="9r"/>
+                 <seg type="commentaryfragment" xml:id="par-gr-164-fr-4-1" source="Theodoretus" corresp="#par-gr-164-ps-4-1a">
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-164-quot-4-1" source="Theodoretus, comm. in Ps 4,1 (PG 80, 888 C7–12)" corresp="#person-16">
+                        Ἀντὶ τοῦ εἰς τὸ τέλος ὁ μὲν Ἀκύλας καὶ ὁ Θεοδοτίων τῶ νικοποιτῷ νικοποιῷ ἡρμήνευσαν· ὁ δὲ Σύμμαχος·
+                        ἐπινίκιος · σημαίνει δὲ τὸ μὲν εἰς τὸ τέλος ὅτι μακροῖς ὕστερον χρόνοις πληρωθήσεται τὰ προφητευόμενα· προηγόρευσεν δὲ ἐν τῷ τέλει τοῦ ψαλμοῦ τὴν ἐκ νεκρῶν ἀνάστασιν·
+                     </quote>
+                 </seg>
+                 <pb n="9v"/>
+                 <seg type="commentaryfragment" xml:id="par-gr-164-fr-4-2" source="Theodoretus" corresp="#par-gr-164-ps-4-6a">
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-164-quot-4-2" source="Theodoretus, comm. in Ps 4,8 (PG 80, 893 B8–13)" corresp="#person-16">
+                        Ἔστιν τὸ νόημα μεθυπέρβατον· πολλοὶ λέγουσι τίς δείξει ἡμῖν τὰ ἀγαθὰ· ἐ ἀπὸ καρποῦ σίτου καὶ οἴνου καὶ ἐλαίου αὐτοῦ ἐπληθύνθησαν· καίτοι φησὶν οἱ ταῦτα λέγοντες τῶν παντοδαπῶν καρπῶν τῆς ἀπολαύ ουσιν: –
+                     </quote>
+                 </seg>
+             </ab>
+         </div>
+         <!-- Psalm 5 -->
+         <div type="bibletext" subtype="commented">
+            <ab xml:lang="grc">
+               <quote type="bibletext" xml:id="par-gr-164-ps-5-1" n="Ps (LXX) 5,1" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-1">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-5-1a" n="Ps (LXX) 5,1a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-1"/>
+                     Εἰς τὸ τέλος, ὑπὲρ τῆς κληρονομούσης· ψαλμὸς τῷ Δαυιδ.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-5-2" n="Ps (LXX) 5,2" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-2">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-5-2a" n="Ps (LXX) 5,2a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-2"/>
+                     Τὰ ῥήματά μου ἐνώτισαι, κύριε,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-5-2b" n="Ps (LXX) 5,2b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-2"/>
+                     σύνες τῆς κραυγῆς μου·
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-5-3" n="Ps (LXX) 5,3" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-3">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-5-3a" n="Ps (LXX) 5,3a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-3"/>
+                     πρόσχες τῇ φωνῇ τῆς δεήσεώς μου,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-5-3b" n="Ps (LXX) 5,3b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-3"/>
+                     ὁ βασιλεύς μου καὶ ὁ θεός μου.
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-5-3c" n="Ps (LXX) 5,3c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-3"/>
+                     ὅτι πρὸς σὲ προσεύξομαι, κύριε·
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-5-4" n="Ps (LXX) 5,4" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-4">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-5-4a" n="Ps (LXX) 5,4a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-4"/>
+                     τὸ πρωὶ εἰσακούσῃ τῆς φωνῆς μου,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-5-4b" n="Ps (LXX) 5,4b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-4"/>
+                     τὸ πρωὶ παραστήσομαί σοι καὶ ἐπόψομαι.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-5-5" n="Ps (LXX) 5,5" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-5">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-5-5a" n="Ps (LXX) 5,5a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-5"/>
+                     ὅτι οὐχὶ θεὸς θέλων ἀνομίαν σὺ εἶ,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-5-5b" n="Ps (LXX) 5,5b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-5"/>
+                     οὐδὲ παροικήσει σοι πονηρευόμενος·
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-5-6" n="Ps (LXX) 5,6" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-6">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-5-6a" n="Ps (LXX) 5,6a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-6"/>
+                     οὐ διαμενοῦσιν παράνομοι κατέναντι τῶν ὀφθαλμῶν σου,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-5-6b" n="Ps (LXX) 5,6b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-6"/>
+                     ἐμίσησας πάντας τοὺς ἐργαζομένους τὴν ἀνομίαν.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-5-7" n="Ps (LXX) 5,7" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-7">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-5-7a" n="Ps (LXX) 5,7a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-7"/>
+                     ἀπολεῖς πάντας τοὺς λαλοῦντας τὸ ψεῦδος·
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-5-7b" n="Ps (LXX) 5,7b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-7"/>
+                     ἄνδρα αἱμάτων καὶ δόλιον βδελύσσεται κύριος.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-5-8" n="Ps (LXX) 5,8" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-8">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-5-8a" n="Ps (LXX) 5,8a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-8"/>
+                     ἐγὼ δὲ ἐν τῷ πλήθει τοῦ ἐλέους σου εἰσελεύσομαι εἰς τὸν οἶκόν σου,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-5-8b" n="Ps (LXX) 5,8b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-8"/>
+                     προσκυνήσω πρὸς ναὸν ἅγιόν σου ἐν φόβῳ σου.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-5-9" n="Ps (LXX) 5,9" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-9">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-5-9a" n="Ps (LXX) 5,9a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-9"/>
+                     κύριε, ὁδήγησόν με ἐν τῇ δικαιοσύνῃ σου ἕνεκα τῶν ἐχθρῶν μου,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-5-9b" n="Ps (LXX) 5,9b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-9"/>
+                     κατεύθυνον ἐνώπιόν μου τὴν ὁδόν σου.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-5-10" n="Ps (LXX) 5,10" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-10">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-5-10a" n="Ps (LXX) 5,10a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-10"/>
+                     ὅτι οὐκ ἔστιν ἐν τῷ στόματι αὐτῶν ἀλήθεια,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-5-10b" n="Ps (LXX) 5,10b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-10"/>
+                     ἡ καρδία αὐτῶν ματαία·
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-5-10c" n="Ps (LXX) 5,10c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-10"/>
+                     τάφος ἀνεῳγμένος ὁ λάρυγξ αὐτῶν,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-5-10d" n="Ps (LXX) 5,10d" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-10"/>
+                     ταῖς γλώσσαις αὐτῶν ἐδολιοῦσαν.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-5-11" n="Ps (LXX) 5,11" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-11">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-5-11a" n="Ps (LXX) 5,11a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-11"/>
+                     κρῖνον αὐτούς, ὁ θεός·
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-5-11b" n="Ps (LXX) 5,11b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-11"/>
+                     ἀποπεσάτωσαν ἀπὸ τῶν διαβουλίων αὐτῶν·
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-5-11c" n="Ps (LXX) 5,11c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-11"/>
+                     κατὰ τὸ πλῆθος τῶν ἀσεβειῶν αὐτῶν ἔξωσον αὐτούς,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-5-11d" n="Ps (LXX) 5,11d" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-11"/>
+                     ὅτι παρεπίκρανάν σε, κύριε.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-5-12" n="Ps (LXX) 5,12" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-12">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-5-12a" n="Ps (LXX) 5,12a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-12"/>
+                     καὶ εὐφρανθήτωσαν πάντες οἱ ἐλπίζοντες ἐπὶ σέ·
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-5-12b" n="Ps (LXX) 5,12b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-12"/>
+                     εἰς αἰῶνα ἀγαλλιάσονται, καὶ κατασκηνώσεις ἐν αὐτοῖς,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-5-12c" n="Ps (LXX) 5,12c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-12"/>
+                     καὶ καυχήσονται ἐν σοὶ πάντες οἱ ἀγαπῶντες τὸ ὄνομά σου.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-5-13" n="Ps (LXX) 5,13" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-13">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-5-13a" n="Ps (LXX) 5,13a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-13"/>
+                     ὅτι σὺ εὐλογήσεις δίκαιον·
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-5-13b" n="Ps (LXX) 5,13b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-13"/>
+                     κύριε, ὡς ὅπλῳ εὐδοκίας ἐστεφάνωσας ἡμᾶς.
+               </quote>
+            </ab>
+         </div>
+            <div type="commentary" subtype="commentary" xml:id="par-gr-164-5-1">
+                <ab xml:lang="grc" xml:id="par-gr-164-5-2">   
+                    <seg type="commentaryfragment" xml:id="par-gr-164-fr-5-1" source="Theodoretus" corresp="#par-gr-164-ps-5-1a">
+                        <quote type="patristic" subtype="quotation" xml:id="par-gr-164-quot-5-1" source="Theodoretus, comm. in Ps 5,1 (PG 80, 896 Α3–7)" corresp="#person-16">
+                            Οὕτω δὲ καὶ οἱ λοιποὶ τὴν ἐπιγραφὴν ἡρμηνεύκασιν · δῆλον τοίνυν ὡς κληρονόμον ὁ θεῖος ἀποκαλεῖ λόγος κοινῶς μὲν τὴν τοῦ θεοῦ ἐκκλησίαν· ἰδίως δὲ. τὴν εὐσεβείᾳ συζῶσαν ψυχήν·
+                        </quote>
+                    </seg>
+                    <seg type="commentaryfragment" xml:id="par-gr-164-fr-5-2" source="Cyrillus" corresp="#par-gr-164-ps-5-2b">
+                        <quote type="patristic" subtype="unknown" xml:id="par-gr-164-quot-5-2" source="Cyrillus, fr. in Ps 5,2b (PG 69, 741 A15–B2)" corresp="#person-4">
+                            Τὸ σύνες· ἀντὶ τοῦ ἐξέτασον καὶ βασάνισον τῆς ἐμῆς κραυγῆς τὸν σκοπόν· 
+                        </quote>
+                    </seg>
+                    <pb n="10r"/>
+                    <seg type="commentaryfragment" xml:id="par-gr-164-fr-5-3" source="Theodoretus" corresp="#par-gr-164-ps-5-9b">
+                        <quote type="patristic" subtype="quotation" xml:id="par-gr-164-quot-5-3" source="Theodoretus, comm. in Ps 5,9 (PG 80, 897 C10–12)" corresp="#person-16">
+                            Ἔνια τῶν ἀντιγράφων ἐνώπιόν μου τὴν ὁδόν σου ἔχει· ἑκάτερα δὲ τῆς εὐσεβοῦς ἔχεται διανοίας·
+                        </quote>
+                    </seg>
+                    <seg type="commentaryfragment" xml:id="par-gr-164-fr-5-4" source="Diodorus" corresp="#par-gr-164-ps-5-11a">
+                        <quote type="patristic" subtype="unknown" xml:id="par-gr-164-quot-5-4" source="cf. Diodorus Tarsensis, fragm. in Ps 5,11a (Olivier)" corresp="#person-27">
+                            τὸ κρῖνον ἐπειδὴ ... τὸ κατάκρινον πρὸς τ..τὸν κ... συντάσσεται πτῶσιν ἐπι.. δὲ ... καὶ τοῦτο καθ’ ὅλης τῆς γραφῆς εὑρήσεις:
+                        </quote>
+                    </seg>
+                </ab>
+            </div>
+         <!-- Psalm 6 -->
+         <div type="bibletext" subtype="commented">
+            <ab xml:lang="grc">
+               <quote type="bibletext" xml:id="par-gr-164-ps-6-1" n="Ps (LXX) 6,1" corresp="../psalms-LXX/psalms.xml#Ps-LXX-6-1">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-6-1a" n="Ps (LXX) 6,1a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-6-1"/>
+                     Εἰς τὸ τέλος, ἐν ὕμνοις, ὑπὲρ τῆς ὀγδόης· ψαλμὸς τῷ Δαυιδ.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-6-2" n="Ps (LXX) 6,2" corresp="../psalms-LXX/psalms.xml#Ps-LXX-6-2">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-6-2a" n="Ps (LXX) 6,2a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-6-2"/>
+                     Κύριε, μὴ τῷ θυμῷ σου ἐλέγξῃς με
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-6-2b" n="Ps (LXX) 6,2b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-6-2"/>
+                     μηδὲ τῇ ὀργῇ σου παιδεύσῃς με.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-6-3" n="Ps (LXX) 6,3" corresp="../psalms-LXX/psalms.xml#Ps-LXX-6-3">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-6-3a" n="Ps (LXX) 6,3a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-6-3"/>
+                     ἐλέησόν με, κύριε, ὅτι ἀσθενής εἰμι·
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-6-3b" n="Ps (LXX) 6,3b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-6-3"/>
+                     ἴασαί με, κύριε, ὅτι ἐταράχθη τὰ ὀστᾶ μου,
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-6-4" n="Ps (LXX) 6,4" corresp="../psalms-LXX/psalms.xml#Ps-LXX-6-4">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-6-4a" n="Ps (LXX) 6,4a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-6-4"/>
+                     καὶ ἡ ψυχή μου ἐταράχθη σφόδρα·
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-6-4b" n="Ps (LXX) 6,4b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-6-4"/>
+                     καὶ σύ, κύριε, ἕως πότε;
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-6-5" n="Ps (LXX) 6,5" corresp="../psalms-LXX/psalms.xml#Ps-LXX-6-5">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-6-5a" n="Ps (LXX) 6,5a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-6-5"/>
+                     ἐπίστρεψον, κύριε, ῥῦσαι τὴν ψυχήν μου,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-6-5b" n="Ps (LXX) 6,5b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-6-5"/>
+                     σῶσόν με ἕνεκεν τοῦ ἐλέους σου.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-6-6" n="Ps (LXX) 6,6" corresp="../psalms-LXX/psalms.xml#Ps-LXX-6-6">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-6-6a" n="Ps (LXX) 6,6a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-6-6"/>
+                     ὅτι οὐκ ἔστιν ἐν τῷ θανάτῳ ὁ μνημονεύων σου·
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-6-6b" n="Ps (LXX) 6,6b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-6-6"/>
+                     ἐν δὲ τῷ ᾅδῃ τίς ἐξομολογήσεταί σοι;
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-6-7" n="Ps (LXX) 6,7" corresp="../psalms-LXX/psalms.xml#Ps-LXX-6-7">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-6-7a" n="Ps (LXX) 6,7a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-6-7"/>
+                     ἐκοπίασα ἐν τῷ στεναγμῷ μου,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-6-7b" n="Ps (LXX) 6,7b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-6-7"/>
+                     λούσω καθ᾽ ἑκάστην νύκτα τὴν κλίνην μου,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-6-7c" n="Ps (LXX) 6,7c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-6-7"/>
+                     ἐν δάκρυσίν μου τὴν στρωμνήν μου βρέξω.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-6-8" n="Ps (LXX) 6,8" corresp="../psalms-LXX/psalms.xml#Ps-LXX-6-8">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-6-8a" n="Ps (LXX) 6,8a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-6-8"/>
+                     ἐταράχθη ἀπὸ θυμοῦ ὁ ὀφθαλμός μου,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-6-8b" n="Ps (LXX) 6,8b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-6-8"/>
+                     ἐπαλαιώθην ἐν πᾶσιν τοῖς ἐχθροῖς μου.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-6-9" n="Ps (LXX) 6,9" corresp="../psalms-LXX/psalms.xml#Ps-LXX-6-9">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-6-9a" n="Ps (LXX) 6,9a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-6-9"/>
+                     ἀπόστητε ἀπ᾽ ἐμοῦ, πάντες οἱ ἐργαζόμενοι τὴν ἀνομίαν,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-6-9b" n="Ps (LXX) 6,9b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-6-9"/>
+                     ὅτι εἰσήκουσεν κύριος τῆς φωνῆς τοῦ κλαυθμοῦ μου·
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-6-10" n="Ps (LXX) 6,10" corresp="../psalms-LXX/psalms.xml#Ps-LXX-6-10">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-6-10a" n="Ps (LXX) 6,10a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-6-10"/>
+                     εἰσήκουσεν κύριος τῆς δεήσεώς μου,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-6-10b" n="Ps (LXX) 6,10b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-6-10"/>
+                     κύριος τὴν προσευχήν μου προσεδέξατο.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-6-11" n="Ps (LXX) 6,11" corresp="../psalms-LXX/psalms.xml#Ps-LXX-6-11">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-6-11a" n="Ps (LXX) 6,11a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-6-11"/>
+                     αἰσχυνθείησαν καὶ ταραχθείησαν σφόδρα πάντες οἱ ἐχθροί μου,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-6-11b" n="Ps (LXX) 6,11b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-6-11"/>
+                     ἀποστραφείησαν καὶ καταισχυνθείησαν σφόδρα διὰ τάχους.
+               </quote>
+            </ab>
+         </div>
+         <div type="commentary" subtype="commentary" xml:id="par-gr-164-6-1">
+             <ab xml:lang="grc" xml:id="par-gr-164-6-2">
+                 <pb n="10v"/>
+                 <seg type="commentaryfragment" xml:id="par-gr-164-fr-6-1" source="Theodoretus" corresp="#par-gr-164-ps-6-1a">
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-164-quot-6-1" source="Theodoretus, comm. in Ps 6,1 (PG 80, 901 B2–9)" corresp="#person-16">
+                         Ὀγδόην τὴν μέλλουσαν κατάστασιν· ὁ προφητικὸς λόγος καλεῖ· ἐπειδὴ γὰρ ὁ παρὼν βίος διὰ τῶν ζ τῆς ἑβδομάδος ἡμερῶν ἀνακυκλοῦται·
+                         ἀπὸ γὰρ τῆς πρώτης ὁ χρόνος ἀρχόμενος. καὶ λήγων εἰς τὴν ἑβδόμην· πάλιν εἰς τὴν πρώτην ἐπάννεισιν· καὶ οὕτως εἰς τὴν ἑβδόμην χωρεῖ·
+                         εἰκότως τὸν ἔξω τοῦ ἑβδοματικοῦ ἀριθμοῦ αἰῶνα· ὀγδόην ὁ θεῖος προηγόρευσεν λόγος: –
+                     </quote>
+                 </seg>
+                 <seg type="commentaryfragment" xml:id="par-gr-164-fr-6-2" source="Theodoretus" corresp="#par-gr-164-ps-6-3b">
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-164-quot-6-2" source="Theodoretus, comm. in Ps 6,4 (PG 80, 904 A9–13)" corresp="#person-16">
+                        Ὀστᾶ ἐνταῦθα τοὺς λογισμοὺς ὀνομάζει· ἐπειδὴ γὰρ τὰ ὀστᾶ στεγανωτέραν ἔχει τὴν φύσιν καὶ αὐτὰ φέρει τὸ σῶμα· 
+                        τροπικῶς τοὺς λογισμοὺς. δι’ ὧν τὸ ζῶον ἰθύνεται ὀστᾶ προηγόρευσεν: –
+                     </quote>
+                 </seg>
+             </ab>
+         </div>
+         <!-- Psalm 7 -->
+         <div type="bibletext" subtype="commented">
+            <ab xml:lang="grc">
+               <quote type="bibletext" xml:id="par-gr-164-ps-7-1" n="Ps (LXX) 7,1" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-1">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-7-1a" n="Ps (LXX) 7,1a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-1"/>
+                     Ψαλμὸς τῷ Δαυιδ, ὃν ᾖσεν τῷ κυρίῳ ὑπὲρ τῶν λόγων Χουσι υἱοῦ Ιεμενι.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-7-2" n="Ps (LXX) 7,2" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-2">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-7-2a" n="Ps (LXX) 7,2a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-2"/>
+                     Κύριε ὁ θεός μου, ἐπὶ σοὶ ἤλπισα·
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-7-2b" n="Ps (LXX) 7,2b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-2"/>
+                     σῶσόν με ἐκ πάντων τῶν διωκόντων με καὶ ῥῦσαί με,
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-7-3" n="Ps (LXX) 7,3" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-3">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-7-3a" n="Ps (LXX) 7,3a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-3"/>
+                     μήποτε ἁρπάσῃ ὡς λέων τὴν ψυχήν μου
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-7-3b" n="Ps (LXX) 7,3b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-3"/>
+                     μὴ ὄντος λυτρουμένου μηδὲ σῴζοντος.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-7-4" n="Ps (LXX) 7,4" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-4">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-7-4a" n="Ps (LXX) 7,4a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-4"/>
+                     κύριε ὁ θεός μου, εἰ ἐποίησα τοῦτο,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-7-4b" n="Ps (LXX) 7,4b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-4"/>
+                     εἰ ἔστιν ἀδικία ἐν χερσίν μου,
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-7-5" n="Ps (LXX) 7,5" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-5">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-7-5a" n="Ps (LXX) 7,5a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-5"/>
+                     εἰ ἀνταπέδωκα τοῖς ἀνταποδιδοῦσίν μοι κακά,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-7-5b" n="Ps (LXX) 7,5b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-5"/>
+                     ἀποπέσοιν ἄρα ἀπὸ τῶν ἐχθρῶν μου κενός,
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-7-6" n="Ps (LXX) 7,6" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-6">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-7-6a" n="Ps (LXX) 7,6a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-6"/>
+                     καταδιώξαι ἄρα ὁ ἐχθρὸς τὴν ψυχήν μου καὶ καταλάβοι
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-7-6b" n="Ps (LXX) 7,6b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-6"/>
+                     καὶ καταπατήσαι εἰς γῆν τὴν ζωήν μου
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-7-6c" n="Ps (LXX) 7,6c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-6"/>
+                     καὶ τὴν δόξαν μου εἰς χοῦν κατασκηνώσαι.
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-7-6d" n="Ps (LXX) 7,6d" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-6"/>
+                     διάψαλμα.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-7-7" n="Ps (LXX) 7,7" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-7">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-7-7a" n="Ps (LXX) 7,7a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-7"/>
+                     ἀνάστηθι, κύριε, ἐν ὀργῇ σου,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-7-7b" n="Ps (LXX) 7,7b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-7"/>
+                     ὑψώθητι ἐν τοῖς πέρασι τῶν ἐχθρῶν μου·
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-7-7c" n="Ps (LXX) 7,7c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-7"/>
+                     ἐξεγέρθητι, κύριε ὁ θεός μου, ἐν προστάγματι, ᾧ ἐνετείλω,
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-7-8" n="Ps (LXX) 7,8" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-8">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-7-8a" n="Ps (LXX) 7,8a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-8"/>
+                     καὶ συναγωγὴ λαῶν κυκλώσει σε,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-7-8b" n="Ps (LXX) 7,8b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-8"/>
+                     καὶ ὑπὲρ ταύτης εἰς ὕψος ἐπίστρεψον.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-7-9" n="Ps (LXX) 7,9" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-9">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-7-9a" n="Ps (LXX) 7,9a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-9"/>
+                     κύριος κρινεῖ λαούς·
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-7-9b" n="Ps (LXX) 7,9b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-9"/>
+                     κρῖνόν με, κύριε, κατὰ τὴν δικαιοσύνην μου
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-7-9c" n="Ps (LXX) 7,9c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-9"/>
+                     καὶ κατὰ τὴν ἀκακίαν μου ἐπ᾽ ἐμοί.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-7-10" n="Ps (LXX) 7,10" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-10">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-7-10a" n="Ps (LXX) 7,10a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-10"/>
+                     συντελεσθήτω δὴ πονηρία ἁμαρτωλῶν,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-7-10b" n="Ps (LXX) 7,10b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-10"/>
+                     καὶ κατευθυνεῖς δίκαιον·
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-7-10c" n="Ps (LXX) 7,10c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-10"/>
+                     ἐτάζων καρδίας καὶ νεφροὺς ὁ θεός.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-7-11" n="Ps (LXX) 7,11" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-11">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-7-11a" n="Ps (LXX) 7,11a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-11"/>
+                     δικαία ἡ βοήθειά μου παρὰ τοῦ θεοῦ
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-7-11b" n="Ps (LXX) 7,11b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-11"/>
+                     τοῦ σῴζοντος τοὺς εὐθεῖς τῇ καρδίᾳ.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-7-12" n="Ps (LXX) 7,12" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-12">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-7-12a" n="Ps (LXX) 7,12a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-12"/>
+                     ὁ θεὸς κριτὴς δίκαιος καὶ ἰσχυρὸς καὶ μακρόθυμος
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-7-12b" n="Ps (LXX) 7,12b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-12"/>
+                     μὴ ὀργὴν ἐπάγων καθ᾽ ἑκάστην ἡμέραν.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-7-13" n="Ps (LXX) 7,13" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-13">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-7-13a" n="Ps (LXX) 7,13a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-13"/>
+                     ἐὰν μὴ ἐπιστραφῆτε, τὴν ῥομφαίαν αὐτοῦ στιλβώσει·
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-7-13b" n="Ps (LXX) 7,13b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-13"/>
+                     τὸ τόξον αὐτοῦ ἐνέτεινεν καὶ ἡτοίμασεν αὐτὸ
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-7-14" n="Ps (LXX) 7,14" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-14">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-7-14a" n="Ps (LXX) 7,14a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-14"/>
+                     καὶ ἐν αὐτῷ ἡτοίμασεν σκεύη θανάτου,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-7-14b" n="Ps (LXX) 7,14b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-14"/>
+                     τὰ βέλη αὐτοῦ τοῖς καιομένοις ἐξειργάσατο.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-7-15" n="Ps (LXX) 7,15" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-15">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-7-15a" n="Ps (LXX) 7,15a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-15"/>
+                     ἰδοὺ ὠδίνησεν ἀδικίαν,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-7-15b" n="Ps (LXX) 7,15b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-15"/>
+                     συνέλαβεν πόνον καὶ ἔτεκεν ἀνομίαν·
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-7-16" n="Ps (LXX) 7,16" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-16">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-7-16a" n="Ps (LXX) 7,16a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-16"/>
+                     λάκκον ὤρυξεν καὶ ἀνέσκαψεν αὐτὸν
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-7-16b" n="Ps (LXX) 7,16b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-16"/>
+                     καὶ ἐμπεσεῖται εἰς βόθρον, ὃν εἰργάσατο·
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-7-17" n="Ps (LXX) 7,17" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-17">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-7-17a" n="Ps (LXX) 7,17a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-17"/>
+                     ἐπιστρέψει ὁ πόνος αὐτοῦ εἰς κεφαλὴν αὐτοῦ,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-7-17b" n="Ps (LXX) 7,17b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-17"/>
+                     καὶ ἐπὶ κορυφὴν αὐτοῦ ἡ ἀδικία αὐτοῦ καταβήσεται.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-7-18" n="Ps (LXX) 7,18" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-18">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-7-18a" n="Ps (LXX) 7,18a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-18"/>
+                     ἐξομολογήσομαι κυρίῳ κατὰ τὴν δικαιοσύνην αὐτοῦ
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-7-18b" n="Ps (LXX) 7,18b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-18"/>
+                     καὶ ψαλῶ τῷ ὀνόματι κυρίου τοῦ ὑψίστου.
+               </quote>
+            </ab>
+         </div>
+            <div type="commentary" subtype="commentary" xml:id="par-gr-164-7-1">
+                <ab xml:lang="grc" xml:id="par-gr-164-7-2">
+                    <pb n="11r"/>
+                    <seg type="commentaryfragment" xml:id="par-gr-164-fr-7-1" source="Theodoretus" corresp="#par-gr-164-ps-7-1a">
+                        <quote type="patristic" subtype="quotation" xml:id="par-gr-164-quot-7-1" source="Theodoretus, comm. in Ps 7,1 (PG 80, 908 A7–13)" corresp="#person-16">
+                            Τοῦτον τοίνυν τὸν ψαλμὸν οἷόν τινα ὕμνον καὶ προσευχὴν τῷ σωτῆρι προσφέρει θεῷ· 
+                            προστίθησι δὲ καὶ διδασκαλίαν· τοὺς μὲν ὑπό τινων ἀδικουμένους· εἰς τὸν θεὸν ἔχειν τὰς ἐλπίδας προτρέπων· 
+                            καὶ τὴν ἐκεῖθεν ἀναμένειν ῥοπὴν· τοὺς δὲ ἀδικοῦντας δεδιττόμενος τῇ τοῦ θεοῦ δικαίας κρίσεως μνήμῃ·
+                        </quote>
+                    </seg>
+                    <pb n="11v"/>
+                    <seg type="commentaryfragment" xml:id="par-gr-164-fr-7-2" source="Basilius" corresp="#par-gr-164-ps-7-2b">
+                        <quote type="patristic" subtype="quotation-abbreviated" xml:id="par-gr-164-quot-7-2" source="Basilius, hom. in Ps 7,2 (PG 29, 232 B10–13; 232 D2–233 A2)" corresp="#person-3">
+                            Τίς οὖν ἡ διαφορὰ τοῦ σώζεσθαι [καὶ τοῦ ῥύεσθαι]; ὅτι τῆς σωτηρίας μὲν κυρίως οἱ ἀσθενοῦντες χρήζουσιν· 
+                            τοῦ ῥύεσθαι δὲ· οἱ ἐν τῇ αἰχμαλωσίᾳ κατεχόμενοι• εὔχεται οὖν· περί τε τῆς ἐνταῦθα ζωῆς καὶ τῆς μελλούσης· 
+                            σῶσον γάρ με φησὶ ἐνταῦθα ἀπὸ τῶν διωκόντων με. ῥῦσαι. δέ με ἐκεῖ ἐν τῷ καιρῷ τῆς ἐρευνήσεως:
+                        </quote>
+                    </seg>
+                    <seg type="commentaryfragment" xml:id="par-gr-164-fr-7-3" source="Asterius" corresp="#par-gr-164-ps-7-3a">
+                        <quote type="patristic" subtype="quotation" xml:id="par-gr-164-quot-7-3" source="Asterius, fr. 7 in Ps 7,3 (257, 14–15 Richard)" corresp="#person-1">
+                            Λέοντα κατὰ μὲν τὴν ἱστορίαν  φασὶ τὸν Ἀβεσαλώμ· κατὰ δὲ θεωρίαν τὸν διάβολον:
+                        </quote>
+                    </seg>
+                    <seg type="commentaryfragment" xml:id="par-gr-164-fr-7-4" source="Basilius" corresp="#par-gr-164-ps-7-7c">
+                        <quote type="patristic" subtype="quotation" xml:id="par-gr-164-quot-7-4" source="Basilius, hom. in Ps 7,7c (PG 29, 236 C13–D5)" corresp="#person-3">
+                            Πρόσταγμα δὲ ἦν· τίμα τὸν πατέρα καὶ τὴν μητέρα παρὰ θεοῦ δεδόμενον· ὅπερ παρέβη ὁ υἱὸς αὐτοῦ. διὸ παρακαλεῖ εἰς ἐκείνου αὐτoῦ ἐπανόρθωσιν. καὶ σωφρονισμὸν τῶν πολλῶν· 
+                            μὴ μακροθυμεῖν τὸν θεὸν· ἀλλ’ ἐγερθῆναι ἐν ὀργῇ· καὶ διαναστάντα ἐκδικῆσαι τὴν ἰδίαν ἐντολήν· 
+                            οὐ γὰρ ἐμὲ φησὶν ἐκδικήσεις· ἀλλὰ τὸ πρόσταγμα τὸ σὸν καταφρονηθὲν:
+                        </quote>
+                    </seg>
+                    <pb n="12r"/>
+                    <seg type="commentaryfragment" xml:id="par-gr-164-fr-7-5" source="Basilius" corresp="#par-gr-164-ps-7-9b">
+                        <quote type="patristic" subtype="quotation" xml:id="par-gr-164-quot-7-5" source="Basilius, hom. in Ps 7,9b (PG 29, 241 A11–12)" corresp="#person-3">
+                            τουτέστι τὴν ἐφικτὴν τοῖς ἀνθρώποις καὶ δυνατὴν τοῖς ἐν σαρκὶ ζῶσιν:
+                        </quote>
+                    </seg>
+                    <seg type="commentaryfragment" xml:id="par-gr-164-fr-7-6" source="Theodoretus" corresp="#par-gr-164-ps-7-10c">
+                        <quote type="patristic" subtype="quotation" xml:id="par-gr-164-quot-7-6" source="Theodoretus, comm. in Ps 7,11 (PG 80, 912 A2–6)" corresp="#person-16">
+                            Νεφροὺς ἐνταῦθα τοὺς λογισμοὺς ὀνομάζει· ἐπειδὴ γὰρ τὰς ὑπογαστρίους ὀρέξεις· 
+                            οἱ νεφροὶ διεγείρουσιν· ἐντεῦθεν δὲ λοιπὸν κινοῦνται τῆς ἐπιθυμίας οἱ λογισμοὶ· νεφροὺς τροπικῶς τοὺς λογισμοὺς προηγόρευσεν·
+                        </quote>
+                    </seg>
+                    <seg type="commentaryfragment" xml:id="par-gr-164-fr-7-7" source="Theodoretus" corresp="#par-gr-164-ps-7-14b">
+                        <quote type="patristic" subtype="quotation" xml:id="par-gr-164-quot-7-7" source="Theodoretus, comm. in Ps 7,13–14 (PG 80, 912 C1–5)" corresp="#person-16">
+                            οἱ γὰρ τὴν εὔπρηστον τῆς ἁμαρτίας ὕλην δεξάμενοι καὶ ξύλα καὶ χόρτον καὶ καλάμην οἰκοδομήσαντες. φησὶν ὁ θεῖος ἀπόστολος· τοῖς πυρφόροις τούτοις βληθήσονται βέλεσιν·
+                        </quote>
+                    </seg>
+                    <pb n="12v"/>
+                    <seg type="commentaryfragment" xml:id="par-gr-164-fr-7-8" source="Theodoretus" corresp="#par-gr-164-ps-7-15a">
+                        <quote type="patristic" subtype="quotation" xml:id="par-gr-164-quot-7-8" source="Theodoretus, comm. in Ps 7,15 (PG 80, 912 C6–7)" corresp="#person-16">
+                            Ὁ Ἀχιτόφελ τὴν πονηρὰν ἐκείνην εἰσηγησάμενος γνώμην·
+                        </quote>
+                    </seg>
+                </ab>
+            </div>
+         <!-- Psalm 8 -->
+         <div type="bibletext" subtype="commented">
+            <ab xml:lang="grc">
+               <quote type="bibletext" xml:id="par-gr-164-ps-8-1" n="Ps (LXX) 8,1" corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-1">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-8-1a" n="Ps (LXX) 8,1a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-1"/>
+                     Εἰς τὸ τέλος, ὑπὲρ τῶν ληνῶν· ψαλμὸς τῷ Δαυιδ.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-8-2" n="Ps (LXX) 8,2" corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-2">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-8-2a" n="Ps (LXX) 8,2a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-2"/>
+                     Κύριε ὁ κύριος ἡμῶν, ὡς θαυμαστὸν τὸ ὄνομά σου ἐν πάσῃ τῇ γῇ,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-8-2b" n="Ps (LXX) 8,2b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-2"/>
+                     ὅτι ἐπήρθη ἡ μεγαλοπρέπειά σου ὑπεράνω τῶν οὐρανῶν.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-8-3" n="Ps (LXX) 8,3" corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-3">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-8-3a" n="Ps (LXX) 8,3a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-3"/>
+                     ἐκ στόματος νηπίων καὶ θηλαζόντων κατηρτίσω αἶνον
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-8-3b" n="Ps (LXX) 8,3b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-3"/>
+                     ἕνεκα τῶν ἐχθρῶν σου
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-8-3c" n="Ps (LXX) 8,3c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-3"/>
+                     τοῦ καταλῦσαι ἐχθρὸν καὶ ἐκδικητήν.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-8-4" n="Ps (LXX) 8,4" corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-4">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-8-4a" n="Ps (LXX) 8,4a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-4"/>
+                     ὅτι ὄψομαι τοὺς οὐρανούς, ἔργα τῶν δακτύλων σου,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-8-4b" n="Ps (LXX) 8,4b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-4"/>
+                     σελήνην καὶ ἀστέρας, ἃ σὺ ἐθεμελίωσας.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-8-5" n="Ps (LXX) 8,5" corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-5">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-8-5a" n="Ps (LXX) 8,5a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-5"/>
+                     τί ἐστιν ἄνθρωπος, ὅτι μιμνῄσκῃ αὐτοῦ,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-8-5b" n="Ps (LXX) 8,5b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-5"/>
+                     ἢ υἱὸς ἀνθρώπου, ὅτι ἐπισκέπτῃ αὐτόν;
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-8-6" n="Ps (LXX) 8,6" corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-6">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-8-6a" n="Ps (LXX) 8,6a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-6"/>
+                     ἠλάττωσας αὐτὸν βραχύ τι παρ᾽ ἀγγέλους,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-8-6b" n="Ps (LXX) 8,6b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-6"/>
+                     δόξῃ καὶ τιμῇ ἐστεφάνωσας αὐτόν·
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-8-7" n="Ps (LXX) 8,7" corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-7">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-8-7a" n="Ps (LXX) 8,7a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-7"/>
+                     καὶ κατέστησας αὐτὸν ἐπὶ τὰ ἔργα τῶν χειρῶν σου,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-8-7b" n="Ps (LXX) 8,7b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-7"/>
+                     πάντα ὑπέταξας ὑποκάτω τῶν ποδῶν αὐτοῦ,
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-8-8" n="Ps (LXX) 8,8" corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-8">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-8-8a" n="Ps (LXX) 8,8a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-8"/>
+                     πρόβατα καὶ βόας πάσας,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-8-8b" n="Ps (LXX) 8,8b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-8"/>
+                     ἔτι δὲ καὶ τὰ κτήνη τοῦ πεδίου,
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-8-9" n="Ps (LXX) 8,9" corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-9">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-8-9a" n="Ps (LXX) 8,9a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-9"/>
+                     τὰ πετεινὰ τοῦ οὐρανοῦ καὶ τοὺς ἰχθύας τῆς θαλάσσης,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-8-9b" n="Ps (LXX) 8,9b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-9"/>
+                     τὰ διαπορευόμενα τρίβους θαλασσῶν.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-8-10" n="Ps (LXX) 8,10" corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-10">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-8-10a" n="Ps (LXX) 8,10a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-10"/>
+                     κύριε ὁ κύριος ἡμῶν, ὡς θαυμαστὸν τὸ ὄνομά σου ἐν πάσῃ τῇ γῇ.
+               </quote>
+            </ab>
+         </div>
+            <div type="commentary" subtype="commentary" xml:id="par-gr-164-8-1">
+                <ab xml:id="par-gr-164-8-2" xml:lang="grc">
+                    <seg type="commentaryfragment" xml:id="par-gr-164-fr-8-1" source="Theodoretus" corresp="#par-gr-164-ps-8-1a">
+                        <quote type="patristic" subtype="quotation" xml:id="par-gr-164-quot-8-1" source="Theodoretus, comm. in Ps 8,1 (PG 80, 913 A6–14)" corresp="#person-16">
+                            Ἰστέον δὲ ὅτι ἐν ἑκάστῳ ψαλμῷ ἐν ᾧ ὁῖοντο εἰς τὸ τέλος τεθείκασιν· ὁ μὲν Ἀκύλας· καὶ ὁ Θεοδοτίων· 
+                            τῷ νικοποιῷ ἡρμήνευσαν· ὁ δὲ Σύμμαχος ἐπινίκιον· καὶ οὗτος· τοιγαροῦν ὁ ψαλμὸς ἐπινίκιος τῷ νικοποιῷ προσφέρεται θεῷ· 
+                            τῷ τὸν ἐχθρὸν καὶ ἐκδικητὴν διάβολον καταλύσαντι· καὶ τοὺς ἀνθρώπους εἰς τέλος τῆς ἐκείνου τυραννίδος ἐλευθερώσαντι· Ληνοὺς δὲ τὰς ἐκκλησίας προσαγορεύει·
+                        </quote>
+                    </seg>
+                    <seg type="commentaryfragment" xml:id="par-gr-164-fr-8-2" source="Athanasius" corresp="#par-gr-164-ps-8-3c">
+                        <quote type="patristic" subtype="quotation" xml:id="par-gr-164-quot-8-2" source="Athanasius, schol. in Ps 8,3c" corresp="#person-2">
+                            τὸν διάβολον δηλονότι· ἐπειδὴ [μετὰ τὸ ἀναγκάσαι πληρῶσαι τὴν ἁμαρτίαν] καὶ τιμωρεῖται τοὺς [ἁμαρτάνον]τας τὸ μέγεθος αὐτοῖς τοῦ ἁμαρτήματος· ἐν ὀφθαλμοῖς παριστῶν·
+                        </quote>
+                    </seg>
+                    <pb n="13r"/>
+                    <seg type="commentaryfragment" xml:id="par-gr-164-fr-8-3" source="Athanasius" corresp="#par-gr-164-ps-8-6a">
+                        <quote type="patristic" subtype="quotation" xml:id="par-gr-164-quot-8-3" source="Athanasius, schol. in Ps 8,5—6a" corresp="#person-2">
+                            Ταῦτα τοῦ ἀποστόλου σαφῶς ἐπὶ τὸν σωτῆρα ἡμῶν ἐξειληφότος· ἀρκεῖσθαι τῇ ἐκδόσει χρή:
+                        </quote>
+                    </seg>
+                </ab>
+            </div>
+         <!-- Psalm 9 -->
+         <div type="bibletext" subtype="commented">
+            <ab xml:lang="grc">
+               <quote type="bibletext" xml:id="par-gr-164-ps-9-1" n="Ps (LXX) 9,1" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-1">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-1a" n="Ps (LXX) 9,1a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-1"/>
+                     Εἰς τὸ τέλος, ὑπὲρ τῶν κρυφίων τοῦ υἱοῦ· ψαλμὸς τῷ Δαυιδ.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-9-2" n="Ps (LXX) 9,2" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-2">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-2a" n="Ps (LXX) 9,2a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-2"/>
+                     ᾿Εξομολογήσομαί σοι, κύριε, ἐν ὅλῃ καρδίᾳ μου,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-2b" n="Ps (LXX) 9,2b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-2"/>
+                     διηγήσομαι πάντα τὰ θαυμάσιά σου·
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-9-3" n="Ps (LXX) 9,3" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-3">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-3a" n="Ps (LXX) 9,3a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-3"/>
+                     εὐφρανθήσομαι καὶ ἀγαλλιάσομαι ἐν σοί,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-3b" n="Ps (LXX) 9,3b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-3"/>
+                     ψαλῶ τῷ ὀνόματί σου, ὕψιστε.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-9-4" n="Ps (LXX) 9,4" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-4">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-4a" n="Ps (LXX) 9,4a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-4"/>
+                     ἐν τῷ ἀποστραφῆναι τὸν ἐχθρόν μου εἰς τὰ ὀπίσω
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-4b" n="Ps (LXX) 9,4b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-4"/>
+                     ἀσθενήσουσιν καὶ ἀπολοῦνται ἀπὸ προσώπου σου,
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-9-5" n="Ps (LXX) 9,5" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-5">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-5a" n="Ps (LXX) 9,5a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-5"/>
+                     ὅτι ἐποίησας τὴν κρίσιν μου καὶ τὴν δίκην μου,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-5b" n="Ps (LXX) 9,5b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-5"/>
+                     ἐκάθισας ἐπὶ θρόνου, ὁ κρίνων δικαιοσύνην.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-9-6" n="Ps (LXX) 9,6" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-6">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-6a" n="Ps (LXX) 9,6a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-6"/>
+                     ἐπετίμησας ἔθνεσιν, καὶ ἀπώλετο ὁ ἀσεβής,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-6b" n="Ps (LXX) 9,6b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-6"/>
+                     τὸ ὄνομα αὐτῶν ἐξήλειψας εἰς τὸν αἰῶνα καὶ εἰς τὸν αἰῶνα τοῦ αἰῶνος·
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-9-7" n="Ps (LXX) 9,7" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-7">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-7a" n="Ps (LXX) 9,7a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-7"/>
+                     τοῦ ἐχθροῦ ἐξέλιπον αἱ ῥομφαῖαι εἰς τέλος, καὶ πόλεις καθεῖλες,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-7b" n="Ps (LXX) 9,7b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-7"/>
+                     ἀπώλετο τὸ μνημόσυνον αὐτῶν μετ᾽ ἤχους.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-9-8" n="Ps (LXX) 9,8" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-8">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-8a" n="Ps (LXX) 9,8a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-8"/>
+                     καὶ ὁ κύριος εἰς τὸν αἰῶνα μένει,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-8b" n="Ps (LXX) 9,8b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-8"/>
+                     ἡτοίμασεν ἐν κρίσει τὸν θρόνον αὐτοῦ,
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-9-9" n="Ps (LXX) 9,9" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-9">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-9a" n="Ps (LXX) 9,9a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-9"/>
+                     καὶ αὐτὸς κρινεῖ τὴν οἰκουμένην ἐν δικαιοσύνῃ,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-9b" n="Ps (LXX) 9,9b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-9"/>
+                     κρινεῖ λαοὺς ἐν εὐθύτητι.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-9-10" n="Ps (LXX) 9,10" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-10">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-10a" n="Ps (LXX) 9,10a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-10"/>
+                     καὶ ἐγένετο κύριος καταφυγὴ τῷ πένητι,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-10b" n="Ps (LXX) 9,10b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-10"/>
+                     βοηθὸς ἐν εὐκαιρίαις ἐν θλίψει·
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-9-11" n="Ps (LXX) 9,11" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-11">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-11a" n="Ps (LXX) 9,11a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-11"/>
+                     καὶ ἐλπισάτωσαν ἐπὶ σὲ οἱ γινώσκοντες τὸ ὄνομά σου,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-11b" n="Ps (LXX) 9,11b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-11"/>
+                     ὅτι οὐκ ἐγκατέλιπες τοὺς ἐκζητοῦντάς σε, κύριε.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-9-12" n="Ps (LXX) 9,12" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-12">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-12a" n="Ps (LXX) 9,12a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-12"/>
+                     ψάλατε τῷ κυρίῳ τῷ κατοικοῦντι ἐν Σιων,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-12b" n="Ps (LXX) 9,12b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-12"/>
+                     ἀναγγείλατε ἐν τοῖς ἔθνεσιν τὰ ἐπιτηδεύματα αὐτοῦ,
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-9-13" n="Ps (LXX) 9,13" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-13">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-13a" n="Ps (LXX) 9,13a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-13"/>
+                     ὅτι ἐκζητῶν τὰ αἵματα αὐτῶν ἐμνήσθη,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-13b" n="Ps (LXX) 9,13b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-13"/>
+                     οὐκ ἐπελάθετο τῆς κραυγῆς τῶν πενήτων.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-9-14" n="Ps (LXX) 9,14" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-14">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-14a" n="Ps (LXX) 9,14a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-14"/>
+                     ἐλέησόν με, κύριε, ἰδὲ τὴν ταπείνωσίν μου ἐκ τῶν ἐχθρῶν μου,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-14b" n="Ps (LXX) 9,14b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-14"/>
+                     ὁ ὑψῶν με ἐκ τῶν πυλῶν τοῦ θανάτου,
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-9-15" n="Ps (LXX) 9,15" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-15">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-15a" n="Ps (LXX) 9,15a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-15"/>
+                     ὅπως ἂν ἐξαγγείλω πάσας τὰς αἰνέσεις σου
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-15b" n="Ps (LXX) 9,15b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-15"/>
+                     ἐν ταῖς πύλαις τῆς θυγατρὸς Σιων·
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-15c" n="Ps (LXX) 9,15c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-15"/>
+                     ἀγαλλιάσομαι ἐπὶ τῷ σωτηρίῳ σου.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-9-16" n="Ps (LXX) 9,16" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-16">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-16a" n="Ps (LXX) 9,16a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-16"/>
+                     ἐνεπάγησαν ἔθνη ἐν διαφθορᾷ, ᾗ ἐποίησαν,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-16b" n="Ps (LXX) 9,16b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-16"/>
+                     ἐν παγίδι ταύτῃ, ᾗ ἔκρυψαν, συνελήμφθη ὁ ποὺς αὐτῶν·
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-9-17" n="Ps (LXX) 9,17" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-17">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-17a" n="Ps (LXX) 9,17a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-17"/>
+                     γινώσκεται κύριος κρίματα ποιῶν,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-17b" n="Ps (LXX) 9,17b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-17"/>
+                     ἐν τοῖς ἔργοις τῶν χειρῶν αὐτοῦ συνελήμφθη ὁ ἁμαρτωλός. ᾠδὴ διαψάλματος.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-9-18" n="Ps (LXX) 9,18" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-18">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-18a" n="Ps (LXX) 9,18a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-18"/>
+                     ἀποστραφήτωσαν οἱ ἁμαρτωλοὶ εἰς τὸν ᾅδην,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-18b" n="Ps (LXX) 9,18b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-18"/>
+                     πάντα τὰ ἔθνη τὰ ἐπιλανθανόμενα τοῦ θεοῦ·
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-9-19" n="Ps (LXX) 9,19" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-19">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-19a" n="Ps (LXX) 9,19a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-19"/>
+                     ὅτι οὐκ εἰς τέλος ἐπιλησθήσεται ὁ πτωχός,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-19b" n="Ps (LXX) 9,19b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-19"/>
+                     ἡ ὑπομονὴ τῶν πενήτων οὐκ ἀπολεῖται εἰς τὸν αἰῶνα.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-9-20" n="Ps (LXX) 9,20" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-20">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-20a" n="Ps (LXX) 9,20a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-20"/>
+                     ἀνάστηθι, κύριε, μὴ κραταιούσθω ἄνθρωπος,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-20b" n="Ps (LXX) 9,20b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-20"/>
+                     κριθήτωσαν ἔθνη ἐνώπιόν σου·
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-9-21" n="Ps (LXX) 9,21" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-21">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-21a" n="Ps (LXX) 9,21a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-21"/>
+                     κατάστησον, κύριε, νομοθέτην ἐπ᾽ αὐτούς,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-21b" n="Ps (LXX) 9,21b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-21"/>
+                     γνώτωσαν ἔθνη ὅτι ἄνθρωποί εἰσιν.
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-21c" n="Ps (LXX) 9,21c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-21"/>
+                     διάψαλμα.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-9-22" n="Ps (LXX) 9,22" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-22">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-22a" n="Ps (LXX) 9,22a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-22"/>
+                     ἵνα τί, κύριε, ἀφέστηκας μακρόθεν,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-22b" n="Ps (LXX) 9,22b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-22"/>
+                     ὑπερορᾷς ἐν εὐκαιρίαις ἐν θλίψει;
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-9-23" n="Ps (LXX) 9,23" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-23">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-23a" n="Ps (LXX) 9,23a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-23"/>
+                     ἐν τῷ ὑπερηφανεύεσθαι τὸν ἀσεβῆ ἐμπυρίζεται ὁ πτωχός,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-23b" n="Ps (LXX) 9,23b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-23"/>
+                     συλλαμβάνονται ἐν διαβουλίοις, οἷς διαλογίζονται.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-9-24" n="Ps (LXX) 9,24" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-24">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-24a" n="Ps (LXX) 9,24a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-24"/>
+                     ὅτι ἐπαινεῖται ὁ ἁμαρτωλὸς ἐν ταῖς ἐπιθυμίαις τῆς ψυχῆς αὐτοῦ,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-24b" n="Ps (LXX) 9,24b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-24"/>
+                     καὶ ὁ ἀδικῶν ἐνευλογεῖται·
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-9-25" n="Ps (LXX) 9,25" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-25">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-25a" n="Ps (LXX) 9,25a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-25"/>
+                     παρώξυνεν τὸν κύριον ὁ ἁμαρτωλός
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-25b" n="Ps (LXX) 9,25b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-25"/>
+                     Κατὰ τὸ πλῆθος τῆς ὀργῆς αὐτοῦ οὐκ ἐκζητήσει·
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-25c" n="Ps (LXX) 9,25c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-25"/>
+                     οὐκ ἔστιν ὁ θεὸς ἐνώπιον αὐτοῦ.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-9-26" n="Ps (LXX) 9,26" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-26">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-26a" n="Ps (LXX) 9,26a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-26"/>
+                     βεβηλοῦνται αἱ ὁδοὶ αὐτοῦ ἐν παντὶ καιρῷ,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-26b" n="Ps (LXX) 9,26b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-26"/>
+                     ἀνταναιρεῖται τὰ κρίματά σου ἀπὸ προσώπου αὐτοῦ,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-26c" n="Ps (LXX) 9,26c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-26"/>
+                     πάντων τῶν ἐχθρῶν αὐτοῦ κατακυριεύσει·
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-9-27" n="Ps (LXX) 9,27" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-27">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-27a" n="Ps (LXX) 9,27a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-27"/>
+                     εἶπεν γὰρ ἐν καρδίᾳ αὐτοῦ Οὐ μὴ σαλευθῶ,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-27b" n="Ps (LXX) 9,27b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-27"/>
+                     ἀπὸ γενεᾶς εἰς γενεὰν ἄνευ κακοῦ.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-9-28" n="Ps (LXX) 9,28" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-28">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-28a" n="Ps (LXX) 9,28a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-28"/>
+                     οὗ ἀρᾶς τὸ στόμα αὐτοῦ γέμει καὶ πικρίας καὶ δόλου,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-28b" n="Ps (LXX) 9,28b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-28"/>
+                     ὑπὸ τὴν γλῶσσαν αὐτοῦ κόπος καὶ πόνος.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-9-29" n="Ps (LXX) 9,29" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-29">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-29a" n="Ps (LXX) 9,29a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-29"/>
+                     ἐγκάθηται ἐνέδρᾳ μετὰ πλουσίων
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-29b" n="Ps (LXX) 9,29b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-29"/>
+                     ἐν ἀποκρύφοις ἀποκτεῖναι ἀθῷον,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-29c" n="Ps (LXX) 9,29c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-29"/>
+                     οἱ ὀφθαλμοὶ αὐτοῦ εἰς τὸν πένητα ἀποβλέπουσιν·
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-9-30" n="Ps (LXX) 9,30" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-30">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-30a" n="Ps (LXX) 9,30a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-30"/>
+                     ἐνεδρεύει ἐν ἀποκρύφῳ ὡς λέων ἐν τῇ μάνδρᾳ αὐτοῦ,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-30b" n="Ps (LXX) 9,30b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-30"/>
+                     ἐνεδρεύει τοῦ ἁρπάσαι πτωχόν,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-30c" n="Ps (LXX) 9,30c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-30"/>
+                     ἁρπάσαι πτωχὸν ἐν τῷ ἑλκύσαι αὐτόν·
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-9-31" n="Ps (LXX) 9,31" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-31">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-31a" n="Ps (LXX) 9,31a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-31"/>
+                     ἐν τῇ παγίδι αὐτοῦ ταπεινώσει αὐτόν,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-31b" n="Ps (LXX) 9,31b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-31"/>
+                     κύψει καὶ πεσεῖται ἐν τῷ αὐτὸν κατακυριεῦσαι τῶν πενήτων.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-9-32" n="Ps (LXX) 9,32" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-32">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-32a" n="Ps (LXX) 9,32a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-32"/>
+                     εἶπεν γὰρ ἐν καρδίᾳ αὐτοῦ ᾿Επιλέλησται ὁ θεός,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-32b" n="Ps (LXX) 9,32b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-32"/>
+                     ἀπέστρεψεν τὸ πρόσωπον αὐτοῦ τοῦ μὴ βλέπειν εἰς τέλος.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-9-33" n="Ps (LXX) 9,33" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-33">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-33a" n="Ps (LXX) 9,33a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-33"/>
+                     ἀνάστηθι, κύριε ὁ θεός, ὑψωθήτω ἡ χείρ σου,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-33b" n="Ps (LXX) 9,33b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-33"/>
+                     μὴ ἐπιλάθῃ τῶν πενήτων·
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-9-34" n="Ps (LXX) 9,34" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-34">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-34a" n="Ps (LXX) 9,34a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-34"/>
+                     ἕνεκεν τίνος παρώξυνεν ὁ ἀσεβὴς τὸν θεόν;
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-34b" n="Ps (LXX) 9,34b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-34"/>
+                     εἶπεν γὰρ ἐν καρδίᾳ αὐτοῦ Οὐκ ἐκζητήσει.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-9-35" n="Ps (LXX) 9,35" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-35">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-35a" n="Ps (LXX) 9,35a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-35"/>
+                     βλέπεις, ὅτι σὺ πόνον καὶ θυμὸν κατανοεῖς
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-35b" n="Ps (LXX) 9,35b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-35"/>
+                     τοῦ παραδοῦναι αὐτοὺς εἰς χεῖράς σου·
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-35c" n="Ps (LXX) 9,35c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-35"/>
+                     σοὶ οὖν ἐγκαταλέλειπται ὁ πτωχός,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-35d" n="Ps (LXX) 9,35d" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-35"/>
+                     ὀρφανῷ σὺ ἦσθα βοηθῶν.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-9-36" n="Ps (LXX) 9,36" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-36">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-36a" n="Ps (LXX) 9,36a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-36"/>
+                     σύντριψον τὸν βραχίονα τοῦ ἁμαρτωλοῦ καὶ πονηροῦ,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-36b" n="Ps (LXX) 9,36b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-36"/>
+                     ζητηθήσεται ἡ ἁμαρτία αὐτοῦ, καὶ οὐ μὴ εὑρεθῇ δι᾽ αὐτήν·
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-9-37" n="Ps (LXX) 9,37" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-37">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-37a" n="Ps (LXX) 9,37a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-37"/>
+                     βασιλεύσει κύριος εἰς τὸν αἰῶνα καὶ εἰς τὸν αἰῶνα τοῦ αἰῶνος,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-37b" n="Ps (LXX) 9,37b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-37"/>
+                     ἀπολεῖσθε, ἔθνη, ἐκ τῆς γῆς αὐτοῦ.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-9-38" n="Ps (LXX) 9,38" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-38">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-38a" n="Ps (LXX) 9,38a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-38"/>
+                     τὴν ἐπιθυμίαν τῶν πενήτων εἰσήκουσεν κύριος,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-38b" n="Ps (LXX) 9,38b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-38"/>
+                     τὴν ἑτοιμασίαν τῆς καρδίας αὐτῶν προσέσχεν τὸ οὖς σου
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-9-39" n="Ps (LXX) 9,39" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-39">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-39a" n="Ps (LXX) 9,39a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-39"/>
+                     κρῖναι ὀρφανῷ καὶ ταπεινῷ,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-9-39b" n="Ps (LXX) 9,39b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-39"/>
+                     ἵνα μὴ προσθῇ ἔτι τοῦ μεγαλαυχεῖν ἄνθρωπος ἐπὶ τῆς γῆς.
+               </quote>
+            </ab>
+         </div>
+            <div type="commentary" subtype="commentary" xml:id="par-gr-164-9-1">
+                <ab xml:id="par-gr-164-9-2" xml:lang="grc">
+                    <seg type="commentaryfragment" xml:id="par-gr-164-fr-9-1" source="Theodoretus" corresp="#par-gr-164-ps-9-1a">
+                        <quote type="patristic" subtype="quotation" xml:id="par-gr-164-quot-9-1" source="Theodoretus, comm. in Ps 9,1 (PG 80, 920 B10—C4)" corresp="#person-16">
+                            Ὁ μὲν Σύμμαχος ἐπινίκιος περὶ τοῦ θανάτου υἱοῦ· ὁ δὲ Ἀκύλας τῷ νικοποιῷ· νεανιότητος τοῦ υἱοῦ· 
+                            συμφώνως τοίνυν· ἅπαντες τοῦ υἱοῦ μνημονεύσαντες διδάσκουσιν ἡμᾶς [ὡς] προφητείαν καὶ αὐτὸς ὁ ψαλμὸς περιέχει τῆς κατὰ τοῦ θαν[ά]του νίκης [...] τοῦ δεσπότου Χριστοῦ:
+                        </quote>
+                    </seg>
+                    <pb n="13v"/>
+                    <seg type="commentaryfragment" xml:id="par-gr-164-fr-9-2" source="Theodoretus" corresp="#par-gr-164-ps-9-3b">
+                        <quote type="patristic" subtype="quotation" xml:id="par-gr-164-quot-9-2" source="Theodoretus, comm. in Ps 9,4 (PG 80, 921 C4—6)" corresp="#person-16">
+                            Συμμάχου· Ἄισω τῷ ὀνόματί σου ὕψιστε· ἀνατραπέντων τῶν ἐχθρῶν μου εἰς τὰ ὀπίσω· προσκοψάντων καὶ ἀπολλομένων ἐκ προσώπου σου· 
+                        </quote>
+                    </seg>
+                    <seg type="commentaryfragment" xml:id="par-gr-164-fr-9-3" source="Anonymous" corresp="#par-gr-164-ps-9-7b">
+                        <quote type="patristic" subtype="unknown" xml:id="par-gr-164-quot-9-3" source="fons ignotus in Ps 9,7b" corresp="#person-18">
+                            Σημείωσαι· ὅτι τοῦ μετ᾽ ἤχους ἀπὸ οὐδετέρου ὀνόματος ἔχει τὴν κλίσιν. ὡς τεῖχος τείχους· κλίνεται δὲ καὶ ἀρσενικῶς καθὼς ἐνταῦθα κεῖται·
+                        </quote>
+                    </seg>
+                    <pb n="14r"/>
+                    <seg type="commentaryfragment" xml:id="par-gr-164-fr-9-4" source="Theodoretus" corresp="#par-gr-164-ps-9-12b">
+                        <quote type="patristic" subtype="quotation" xml:id="par-gr-164-quot-9-4" source="Theodoretus, comm. in Ps 9,12 (PG 80, 928 A1—3)" corresp="#person-16">
+                            Τὰ ἐπιτηδεύματα ὁ Σύμμαχος· μηχανὰς εἶπεν· ὁ δὲ Ἀκύλας ἐναλλαγὰς· τῷ ὄντι γὰρ ἐναλλαγὴ μεγίστη τῶν πραγμάτων ἐγένετο·
+                        </quote>
+                    </seg>
+                    <pb n="14v"/>
+                    <seg type="commentaryfragment" xml:id="par-gr-164-fr-9-5" source="Theodoretus" corresp="#par-gr-164-ps-9-17a">
+                        <quote type="patristic" subtype="quotation" xml:id="par-gr-164-quot-9-5" source="Theodoretus, comm. in Ps 9,17 (PG 80, 929 A14)" corresp="#person-16">
+                            Tουτέστιν σοφῶς καὶ δικαίως οἰκονομῶν· 
+                        </quote>
+                    </seg>
+                    <pb n="15r"/>
+                    <seg type="commentaryfragment" xml:id="par-gr-164-fr-9-6" source="Theodoretus" corresp="#par-gr-164-ps-9-24a">
+                        <quote type="patristic" subtype="quotation" xml:id="par-gr-164-quot-9-6" source="Theodoretus, comm. in Ps 10,3 (PG 80, 932 B14—15)" corresp="#person-16">
+                            Μύρια γὰρ παράνομα δρῶντες. καὶ ἐπαίνους τοὺς παρὰ τῶν κολάκων καρποῦνται·
+                        </quote>
+                    </seg>
+                    <seg type="commentaryfragment" xml:id="par-gr-164-fr-9-7" source="Anonymous" corresp="#par-gr-164-ps-9-25b">
+                        <quote type="patristic" subtype="quotation" xml:id="par-gr-164-quot-9-7" source="fons ignotus in Ps 9,25b" corresp="#person-18">
+                            Ἕτεροι ἐρωτηματικῶς ἀναγινώσκουσιν τὸ οὐκ ἐκζητήσει· θ
+                        </quote>
+                    </seg>
+                    <seg type="commentaryfragment" xml:id="par-gr-164-fr-9-8" source="Anonymous" corresp="#par-gr-164-ps-9-25b">
+                        <quote type="patristic" subtype="quotation" xml:id="par-gr-164-quot-9-8" source="Theodoretus, comm. in Ps 10,4 (PG 80, 932 C1—3)" corresp="#person-16">
+                            κατὰ τὸ πλῆθος τ[ῆς] ὀργῆς αὐτοῦ· ἐνταῦθα ὑποστικτέον· εἶτα ἐπενεκτέον οὐκ ἐκζητήσει·
+                        </quote>
+                    </seg>
+                    <pb n="15v"/>
+                    <seg type="commentaryfragment" xml:id="par-gr-164-fr-9-9" source="Tarasius" corresp="#par-gr-164-ps-9-34a">
+                        <quote type="patristic" subtype="unknown" xml:id="par-gr-164-quot-9-9" source="fons ignotus in Ps 9,34a" corresp="#person-18">
+                            Ἕνεκεν τίνος παρώργισεν ὁ ἀσεβὴς τὸν θεὸν· ἐπειδὴ ταῦτα [...] τὰ προειρημένα λογύδρια· τῶν ἀσεβῶν εἰσὶ ληρωδήματα· 
+                            βλέπεις ὅτι πόνος καὶ θυμός εἰσιν· ἀλλὰ σὺ ὁ θεὸς παραδώσεις αὐτοὺς εἰς χεῖράς σου· 
+                            τὴν ἀξίαν αὐτοῖς εἰσπραττόμενος ποινήν·
+                        </quote>
+                    </seg>
+                    <pb n="16r"/>
+                    <seg type="commentaryfragment" xml:id="par-gr-164-fr-9-10" source="Theodoretus" corresp="#par-gr-164-ps-9-36b">
+                        <quote type="patristic" subtype="quotation" xml:id="par-gr-164-quot-9-10" source="Theodoretus, comm. in Ps 10,15 (PG 80, 936 C7–10)" corresp="#person-16">
+                            Τοῦτο σαφέστερον ὁ Σύμμαχος εἶπεν· ἐκζητηθήσεται ἡ ἀσέβεια αὐτοῦ. ἵνα μὴ εὑρεθῇ αὐτός· ἐκείνης γὰρ ζητουμένης αὐτὸς ἀπόλλυται:
+                        </quote>
+                    </seg>
+                </ab>
+            </div>
+         <!-- Psalm 10 -->
+         <div type="bibletext" subtype="commented">
+            <ab xml:lang="grc">
+               <quote type="bibletext" xml:id="par-gr-164-ps-10-1" n="Ps (LXX) 10,1" corresp="../psalms-LXX/psalms.xml#Ps-LXX-10-1">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-10-1a" n="Ps (LXX) 10,1a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-10-1"/>
+                     Εἰς τὸ τέλος· ψαλμὸς τῷ Δαυιδ.
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-10-1b" n="Ps (LXX) 10,1b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-10-1"/>
+                     ᾿Επὶ τῷ κυρίῳ πέποιθα· πᾶς ἐρεῖτε τῇ ψυχῇ μου
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-10-1c" n="Ps (LXX) 10,1c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-10-1"/>
+                     Μεταναστεύου ἐπὶ τὰ ὄρη ὡς στρουθίον;
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-10-2" n="Ps (LXX) 10,2" corresp="../psalms-LXX/psalms.xml#Ps-LXX-10-2">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-10-2a" n="Ps (LXX) 10,2a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-10-2"/>
+                     ὅτι ἰδοὺ οἱ ἁμαρτωλοὶ ἐνέτειναν τόξον,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-10-2b" n="Ps (LXX) 10,2b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-10-2"/>
+                     ἡτοίμασαν βέλη εἰς φαρέτραν
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-10-2c" n="Ps (LXX) 10,2c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-10-2"/>
+                     τοῦ κατατοξεῦσαι ἐν σκοτομήνῃ τοὺς εὐθεῖς τῇ καρδίᾳ.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-10-3" n="Ps (LXX) 10,3" corresp="../psalms-LXX/psalms.xml#Ps-LXX-10-3">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-10-3a" n="Ps (LXX) 10,3a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-10-3"/>
+                     ὅτι ἃ κατηρτίσω, καθεῖλον·
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-10-3b" n="Ps (LXX) 10,3b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-10-3"/>
+                     ὁ δὲ δίκαιος τί ἐποίησεν;
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-10-4" n="Ps (LXX) 10,4" corresp="../psalms-LXX/psalms.xml#Ps-LXX-10-4">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-10-4a" n="Ps (LXX) 10,4a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-10-4"/>
+                     κύριος ἐν ναῷ ἁγίῳ αὐτοῦ·
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-10-4b" n="Ps (LXX) 10,4b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-10-4"/>
+                     κύριος, ἐν οὐρανῷ ὁ θρόνος αὐτοῦ.
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-10-4c" n="Ps (LXX) 10,4c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-10-4"/>
+                     οἱ ὀφθαλμοὶ αὐτοῦ εἰς τὸν πένητα ἀποβλέπουσιν,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-10-4d" n="Ps (LXX) 10,4d" corresp="../psalms-LXX/psalms.xml#Ps-LXX-10-4"/>
+                     τὰ βλέφαρα αὐτοῦ ἐξετάζει τοὺς υἱοὺς τῶν ἀνθρώπων.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-10-5" n="Ps (LXX) 10,5" corresp="../psalms-LXX/psalms.xml#Ps-LXX-10-5">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-10-5a" n="Ps (LXX) 10,5a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-10-5"/>
+                     κύριος ἐξετάζει τὸν δίκαιον καὶ τὸν ἀσεβῆ,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-10-5b" n="Ps (LXX) 10,5b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-10-5"/>
+                     ὁ δὲ ἀγαπῶν ἀδικίαν μισεῖ τὴν ἑαυτοῦ ψυχήν.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-10-6" n="Ps (LXX) 10,6" corresp="../psalms-LXX/psalms.xml#Ps-LXX-10-6">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-10-6a" n="Ps (LXX) 10,6a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-10-6"/>
+                     ἐπιβρέξει ἐπὶ ἁμαρτωλοὺς παγίδας,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-10-6b" n="Ps (LXX) 10,6b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-10-6"/>
+                     πῦρ καὶ θεῖον καὶ πνεῦμα καταιγίδος ἡ μερὶς τοῦ ποτηρίου αὐτῶν.
+               </quote>
+               <quote type="bibletext" xml:id="par-gr-164-ps-10-7" n="Ps (LXX) 10,7" corresp="../psalms-LXX/psalms.xml#Ps-LXX-10-7">
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-10-7a" n="Ps (LXX) 10,7a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-10-7"/>
+                     ὅτι δίκαιος κύριος καὶ δικαιοσύνας ἠγάπησεν,
+                  <anchor type="psalmtext" xml:id="par-gr-164-ps-10-7b" n="Ps (LXX) 10,7b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-10-7"/>
+                     εὐθύτητα εἶδεν τὸ πρόσωπον αὐτοῦ.
+               </quote>
+            </ab>
+         </div>
+            <div type="commentary" subtype="commentary" xml:id="par-gr-164-10-1">
+                <ab xml:lang="grc" xml:id="par-gr-164-10-2">
+                    <seg type="commentaryfragment" xml:id="par-gr-164-fr-10-1" source="Theodoretus" corresp="#par-gr-164-ps-10-1a">
+                        <quote type="patristic" subtype="quotation" xml:id="par-gr-164-quot-10-1" source="Theodoretus, comm. in Ps 10,1 (PG 80, 937 C1—5)" corresp="#person-16">
+                            Τοῦτον τὸν ψαλμὸν ὑπὸ τοῦ Σαοὺλ διωκόμενος ὁ θειότατος Δαυῒδ εἴρηκεν πρὸς τοὺς παραινοῦντας αὐτῷ φυγῇ τὴν σωτηρίαν πορίσασθαι· 
+                            ἁρμόττει δὲ παντὶ ἀδικουμένῳ· καὶ τὴν εἰς θεὸν ἐλπίδα κεκτημένῳ·
+                        </quote>
+                    </seg>
+                    <pb n="16v"/>
+                    <seg type="commentaryfragment" xml:id="par-gr-164-fr-10-2" source="Anonymous" corresp="#par-gr-164-ps-10-2c">
+                        <quote type="patristic" subtype="unknown" xml:id="par-gr-164-quot-10-2" source="fons ignotus in Ps 10,2c" corresp="#person-18">
+                            ἐν ἀσελήνῳ νυκτί·
+                        </quote>
+                    </seg>
+                    <seg type="commentaryfragment" xml:id="par-gr-164-fr-10-3" source="Didymus" corresp="#par-gr-164-ps-10-6b">
+                        <quote type="patristic" subtype="quotation" xml:id="par-gr-164-quot-10-3" source="Didymus, fr. 75 in Ps 10,6b (Ι 164, 30–32 Mühlenberg)" corresp="#person-6">
+                            δηλοῖ τὸ πῦρ τὴν διὰ καύσεως ἀπειλὴν· τὸ δὲ θεῖον τὴν διεγείρουσαν ὅτι μᾶλλον τὸ πῦρ πρὸς τούτοις τὸ πνεῦμα τῆς καταιγίδος· πειρασμοῦ τινος συστροφὴν δηλοῖ·
+                        </quote>
+                    </seg>
+                    <seg type="commentaryfragment" xml:id="par-gr-164-fr-10-4" source="Theodoretus" corresp="#par-gr-164-ps-10-6b">
+                        <quote type="patristic" subtype="quotation" xml:id="par-gr-164-quot-10-4" source="Theodoretus, comm. in Ps 10,7 (PG 80, 941 A3—4)" corresp="#person-16">
+                            Ποτήριον ἐνταῦθα τὴν τιμωρίαν ὀνομάζει·
+                        </quote>
+                    </seg>
+                </ab>
+            </div>
+        </body>
+    </text>
+</TEI>
