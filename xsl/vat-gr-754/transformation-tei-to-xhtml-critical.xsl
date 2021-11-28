@@ -1381,11 +1381,13 @@
             <xsl:apply-templates/>
             <xsl:text>/</xsl:text>
         </xsl:if>
-        <xsl:if test="@place = 'left margin'">
+        <xsl:if test="@place = 'left margin' or @place = 'right margin'">
             <xsl:apply-templates/>
         </xsl:if>
         <xsl:text>(</xsl:text>
-            <xsl:value-of select="@hand"/>
+        <xsl:value-of select="@hand"/>
+        <xsl:text> - </xsl:text>
+        <xsl:value-of select="@place"/>
         <xsl:text>)</xsl:text>
     </xsl:template>
       
