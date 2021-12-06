@@ -117,9 +117,9 @@
                   <persName>Theodoretus Cyrrensis</persName>
                   <bibl>Theodoretus Cyrrensis, comm.</bibl>
                </person>
-               <person xml:id="person-XXX" role="author">
-                  <persName>XXX</persName>
-                  <bibl>XXX</bibl>
+               <person xml:id="person-17" role="author" sameAs="#person-6">
+                  <persName>Didymus</persName>
+                  <bibl>fragmentum ineditum (om. Mühlenberg)</bibl>
                </person>
                <person xml:id="person-18" role="author">
                   <persName>Unknown</persName>
@@ -656,7 +656,7 @@
                   <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-1-42"
                      corresp="#mosq-syn-194-ps-1-3d" source="Didymus">
                      <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-1-42"
-                        corresp="#person-18"
+                        corresp="#person-17"
                         source="Didymus(?), fr. in Ps 1,&lt;3d&gt; (om. Mühlenberg); cf. PG 27,61 B8–12"
                         >Ὁ δὲ τοιοῦτος κατευοδοῦται· τοῖς γὰρ ἀγαπῶσι τὸν θεὸν, πάντα συνεργεῖ εἰς
                         τὸ ἀγαθόν· <del rend="strikethrough"><gap reason="illegible" quantity="1"
@@ -720,9 +720,8 @@
                   </seg><!-- Verweizeichen am Bibeltext nicht wiederholt -->
                   <seg type="glosse" xml:id="mosq-syn-194-fr-1-49" corresp="#mosq-syn-194-ps-1-4b"
                      source="Anonymous">
-                     <quote type="patristic" subtype="with-variations"
-                        xml:id="mosq-syn-194-quot-1-49" corresp="#person-18"
-                        source="fons ignotus in Ps 1,4b"/>
+                     <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-1-49"
+                        corresp="#person-18" source="fons ignotus in Ps 1,4b"/>
                      <ref target="vat-gr-754:vat-gr-754-glosse-1-9" type="identical">Vat. gr.
                         754</ref>
                   </seg>
@@ -742,8 +741,8 @@
                   </seg><!-- kurze Auslassungen; ein Paar Begriffe befinden sich nicht im Editionstext. Der zweite davon dürfte aus Didymus entlehnt worden sein -->
                   <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-1-52"
                      corresp="#mosq-syn-194-ps-1-4" source="Eusebius">
-                     <quote type="patristic" subtype="with-variations"
-                        xml:id="mosq-syn-194-quot-1-52" corresp="#person-6"
+                     <quote type="patristic" subtype="adapted" xml:id="mosq-syn-194-quot-1-52"
+                        corresp="#person-6"
                         source="Didymus, fr. 5 in Ps 1,&lt;4&gt; (123,4–7 Mühlenberg)"/>
                   </seg>
                   <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-1-53"
@@ -789,9 +788,9 @@
                         source="Origenes, fr. 9 in Ps 1,&lt;6&gt; (162,28–163,4 Goffinet)"/>
                      <ref target="vat-gr-754:vat-gr-754-fr-1-18" type="identical">Vat. gr. 754</ref>
                   </seg>
-                  <!-- Ps 2 bibletext --><quote type="bibletext"
-                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-1" n="Ps (LXX) 2,1" xml:lang="grc"
-                     xml:id="mosq-syn-194-ps-2-1">
+                  <!-- Ps 2 bibletext -->
+                  <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-1"
+                     n="Ps (LXX) 2,1" xml:lang="grc" xml:id="mosq-syn-194-ps-2-1">
                      <anchor xml:id="mosq-syn-194-ps-2-1a" type="psalmtext" n="Ps (LXX) 2,1a"
                         corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-1"/> Ἵνα τί ἐφρύαξαν ἔθνη <anchor
                         xml:id="mosq-syn-194-ps-2-1b" type="psalmtext" n="Ps (LXX) 2,1b"
@@ -888,7 +887,8 @@
                         n="Ps (LXX) 2,12d" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-12"/> μακάριοι
                      πάντες οἱ πεποιθότες ἐπ’ αὐτῷ. </quote>
                   <pb n="9r"/>
-                  <!-- Ps 2 commentary --><seg type="hexaplaric" xml:id="mosq-syn-194-fr-2-1"
+                  <!-- Ps 2 commentary -->
+                  <seg type="hexaplaric" xml:id="mosq-syn-194-fr-2-1"
                      corresp="#mosq-syn-194-ps-2-1a" source="Anonymous">
                      <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-2-1"
                         source="Aquila (Ps 2,&lt;1a&gt;) - Symmachus (Ps 2,&lt;1a&gt;)"/>
@@ -1212,10 +1212,10 @@
                      <quote type="patristic" subtype="paraphraseXXX" xml:id="mosq-syn-194-quot-2-43"
                         corresp="#person-8" source="Eusebius, fr. 10 in Ps 2,&lt;9&gt; (Villani)"/>
                   </seg><!-- beginnt ποιμανῆς τοὺς; nur noch subtype anzugeben. Ab Οὐχ ὥστε ἀπολέσαι Theodorus -->
-                  <!-- Ps 3 bibletext --><quote type="bibletext"
-                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-3-1" n="Ps (LXX) 3,1" xml:lang="grc"
-                     xml:id="mosq-syn-194-ps-3-1"> Ψαλμὸς τῷ Δαυιδ, ὁπότε ἀπεδίδρασκεν ἀπὸ προσώπου
-                     Αβεσσαλωμ τοῦ υἱοῦ αὐτοῦ. </quote>
+                  <!-- Ps 3 bibletext -->
+                  <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-3-1"
+                     n="Ps (LXX) 3,1" xml:lang="grc" xml:id="mosq-syn-194-ps-3-1"> Ψαλμὸς τῷ Δαυιδ,
+                     ὁπότε ἀπεδίδρασκεν ἀπὸ προσώπου Αβεσσαλωμ τοῦ υἱοῦ αὐτοῦ. </quote>
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-3-2"
                      n="Ps (LXX) 3,2" xml:lang="grc" xml:id="mosq-syn-194-ps-3-2">
                      <anchor xml:id="mosq-syn-194-ps-3-2a" type="psalmtext" n="Ps (LXX) 3,2a"
@@ -1941,87 +1941,145 @@
                         n="Ps (LXX) 7,18b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-18"/> καὶ ψαλῶ
                      τῷ ὀνόματι κυρίου τοῦ ὑψίστου. </quote>
                   <!-- Ps 7 commentary -->
-                  <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-7-1"
-                     corresp="#mosq-syn-194-ps-7-" source="quotation-expanded">
-                     <quote type="patristic" subtype="" xml:id="mosq-syn-194-quot-7-1"
-                        corresp="#person-2" source="Athanasius, schol. in Ps 7,">Ἐν ταῖς βασιλείαις
-                        ὁ Χουσὶ ἀρχιέταιρος μὲν μὲν τοῦ Δαυῒδ∙ υἱὸς δὲ Ἀρχεὶ ἰστόρηται∙ ἐνταῦθα
-                        Ἰεμενεί· ὃς καὶ ἀποστέλλεται παρὰ τοῦ Δαυῒδ πρὸς Ἀβεσαλὼμ ἐπὶ τῷ ἀντιπράξαι
-                        τὸ Ἀχιτόφελ βουλὰς εἰσηγουμένῳ κατὰ τοῦ Δαυΐδ· ὃς καὶ ἀπελθὼν καὶ προδοσίαν
-                        ὑποκρινόμενος βουλῆς προστεθείσης παρὰ τῷ Ἀβεσαλὼμ∙ αὐτῷ τε τῷ Χουσὶ καὶ
-                        τῷ Ἀχιτόφελ· καὶ τοῦ μὲν κελεύοντος ἐπιδιώκειν τοῦ Ἀχιτόφελ∙ τοῦ δὲ μὴ τοῦ
-                        Χουσὶ∙ – οὐ γὰρ δεὶ ἀνδρὶ ἀπράκτως φησὶν ἐπιέναι ἐπισταμένῳ τὰ πολέμια∙ –
-                        καὶ τούτῳ τῷ λόγῳ διασώσας τὸν Δαυῒδ∙ ὡς ἂν μὴ ὑπὸ ἀνθρωπίνης ἐπικουρίας
-                        σωζόμενος∙ τῷ θεῷ τὴν ὑπὲρ τούτου χαριστήριον ὠδὴν ἀναπέμπει∙ τὸ πᾶν ἐκείνῃ
-                        τῇ χάριτι ἀνατιθεὶς, ἀνθρώπων δὲ οὐδενί· μήποτε τοίνυν ἐπείπερ ὑπὲρ τοῦ
-                        Δαυῒδ ἠνδραγάθησε πρὸσποιήσει φιλίας προσχωρήσας τῷ Ἀβεσαλὼμ∙ καὶ τὴν τοῦ
-                        Ἀχιτόφελ διασκεδάσας βουλὴν εἰσηγουμένου χωρὶς μελλήσεως ἀπαρασκεύῳ τῷ Δαυῒδ
-                        ἐπιθέσθαι πι‐ θανωτέρας αὐτοὺς ἐμποιήσας διατριβὰς. πρὸς τὸ δοῦ‐ ναι καιρὸν
-                        τῷ Δαυῒδ συλλέξασθαι τὰς δυνάμεις· ὅπως ἐπάγει φησὶν κύριος ἐπὶ Ἀβεσαλὼμ τὰ
-                        κακὰ πάντα· καὶ τῷ Δαυῒδ ἐδήλου διὰ Σαδὼκ καὶ Ἀβιάθαρ τῶν ἰε‐ ρέων σπεύδειν
-                        ἐπὶ τὴν διάβασιν: –</quote>
+                  <pb n="15v"/>
+                  <seg type="hypothesis" xml:id="mosq-syn-194-fr-7-1" corresp="#mosq-syn-194-ps-7-1"
+                     source="Anonymous">
+                     <quote type="patristic" subtype="quotation-expanded"
+                        xml:id="mosq-syn-194-quot-7-1" corresp="#person-2"
+                        source="Athanasius, schol. in Ps 7,1">Ἐν ταῖς βασιλείαις ὁ Χουσὶ ἀρχιέταιρος
+                        μὲν <surplus>μὲν</surplus> τοῦ Δαυῒδ· υἱὸς δὲ Ἀρχεὶ ἰστόρηται· ἐνταῦθα
+                        Ἰεμενεί· ὃς καὶ ἀποστέλλεται παρὰ τοῦ Δαυῒδ πρὸς Ἀβεσαλὼμ ἐπὶ <supplied
+                           reason="poor-image">τῷ</supplied> ἀντιπράξαι τὸ Ἀχιτόφελ βουλὰς
+                        εἰσηγουμένῳ κατὰ τοῦ Δαυΐδ· ὃς καὶ ἀπελθὼν καὶ προδοσίαν ὑποκρινόμεν<unclear
+                           reason="poor-image">ο</unclear><supplied reason="poor-image"
+                           >ς·</supplied> βουλῆς προστεθείσης παρὰ τῶι Ἀβεσαλὼμ· αὐτῶι τε τῶι Χουσὶ
+                        καὶ τῷ Ἀχιτόφελ· καὶ τοῦ μὲν κελεύοντος ἐπιδι<unclear reason="poor-image"
+                           >ώ</unclear><supplied reason="poor-image">κειν</supplied> τοῦ Ἀχιτόφελ·
+                        τοῦ δὲ μὴ τοῦ Χουσὶ· – οὐ γὰρ δεὶ ἀνδρὶ ἀπράκτως φη(σὶν) ἐπιέναι ἐπισταμένῳ
+                        τὰ πολέμια· – καὶ τούτῳ <supplied reason="poor-image">τῷ</supplied>λόγωι
+                        διασώσας τὸν Δαυῒδ· ὡς ἂν μὴ ὑπὸ ἀνθρωπίνης ἐπικουρίας σωζόμενος· τῶι θεῶι
+                        τὴν ὑπὲρ τούτου χαριστή<supplied reason="poor-image">ριον</supplied> ὠδὴν
+                        ἀναπέμπει· τὸ πᾶν ἐκείνῃ τῇ χάριτι ἀνατιθεὶς, ἀνθρώπων δὲ οὐδενί· μήποτε
+                        τοίνυν ἐπείπερ ὑπὲρ τοῦ Δαυῒδ ἠνδραγάθησε πρὸσποιήσει φιλίας προσχωρήσας τῶι
+                        Ἀβεσαλὼμ· καὶ τὴν τοῦ Ἀχιτόφελ διασκεδάσας βουλὴν εἰσηγουμένου χωρὶς
+                        μελλήσεως ἀπαρασκεύῳ τῶι Δαυῒδ ἐπιθέσθαι πι θανωτέρας αὐτοὺς ἐμποιήσας
+                        διατριβὰς. πρὸς τὸ δοῦναι καιρὸν τῷ Δαυῒδ συλλέξασθαι τὰς δυνάμεις· ὅπως
+                        ἐπάγει φη(σὶν) κύριος ἐπὶ Ἀβεσαλὼμ τὰ κακὰ πάντα· καὶ τῷ Δαυῒδ ἐδήλου διὰ
+                        Σαδὼκ καὶ Ἀβιάθαρ τῶν ἰερέων σπεύδειν ἐπὶ τὴν διάβασιν:–</quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="expanded">Vat. gr. 754</ref>
                   </seg>
                   <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-7-2"
-                     corresp="#mosq-syn-194-ps-7-" source="quotation-expanded">
-                     <quote type="patristic" subtype="" xml:id="mosq-syn-194-quot-7-2"
-                        corresp="#person-2" source="Athanasius, schol. in Ps 7,">τὸ αμνησίκακον
-                        προβάλλεται ἐκκαλούμενος διαυτοῦ εἰς ἔλεον τὸν θεόν:</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="expanded">Vat. gr. 754</ref>
+                     corresp="#mosq-syn-194-ps-7-2a" source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-7-2"
+                        corresp="#person-2" source="Athanasius, schol. in Ps 7,&lt;2a–b1&gt;">ἐπειδὴ
+                        ἀνθρώπωι φη(σὶ) περὶ τῆς σωτηρίας οὐ θαρῶι· εἰ καὶ τοῦ Χουσὶ οἱ λόγοι καλοὶ.
+                        σῶσόν με καὶ ἐκ τῶν παρόντων μὲν ἐχθρῶν· μάλιστα δὲ ἀπὸ τοῦ ἐφεδρεύοντος
+                        νοητοῦ λέοντος τῆν ἡμετέραν ψυχήν: –</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="identical">Vat. gr.
+                        754</ref>
                   </seg>
+                  <pb n="16r"/>
                   <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-7-3"
-                     corresp="#mosq-syn-194-ps-7-" source="quotation-expanded">
-                     <quote type="patristic" subtype="" xml:id="mosq-syn-194-quot-7-3"
-                        corresp="#person-2" source="Athanasius, schol. in Ps 7,">σαφῶς περὶ τῆς
-                        θεοφανείας τοῦ σωτῆρος διὰ τῶν παρόντων εὐἀγγελίζεται:</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="expanded">Vat. gr. 754</ref>
+                     corresp="#mosq-syn-194-ps-7-5a" source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-7-3"
+                        corresp="#person-2" source="Athanasius, schol. in Ps 7,5a">τὸ αμνησίκακον
+                        προβάλλεται ἐκκαλούμενος διαυτοῦ εἰς ἔλεον τὸν θεόν:</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="identical">Vat. gr.
+                        754</ref>
                   </seg>
                   <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-7-4"
-                     corresp="#mosq-syn-194-ps-7-" source="quotation-expanded">
-                     <quote type="patristic" subtype="" xml:id="mosq-syn-194-quot-7-4"
-                        corresp="#person-2" source="Athanasius, schol. in Ps 7,">ὁ ἐχθρὸς τῆς
-                        ἡμετέρας ζωῆς: –</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="expanded">Vat. gr. 754</ref>
+                     corresp="#mosq-syn-194-ps-7-6a" source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-7-4"
+                        corresp="#person-2" source="Athanasius, schol. in Ps 7,&lt;6a&gt;">... ὃ
+                        λέγει τοιοῦτόν (ἐστιν) εἰ καὶ τὸ καὶ τὸ ἐποίησα, μὴ ἐλευθερωθείην τῆς
+                        ἁμαρτίας προτοῦ θανάτου: –</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="identical">Vat. gr.
+                        754</ref>
                   </seg>
+                  <pb n="16v"/><!-- zwischen den Zeilen des Bibeltextes, nach Ath., Theodoretus, ?, Evagrius; im inneren Rand, nach einer hex. Variant, Evagrius -->
                   <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-7-5"
-                     corresp="#mosq-syn-194-ps-7-" source="quotation-expanded">
-                     <quote type="patristic" subtype="" xml:id="mosq-syn-194-quot-7-5"
-                        corresp="#person-2" source="Athanasius, schol. in Ps 7,">τουτέστι βεβούληται
-                        καὶ εἰς ἔργον ἐξήγαγε τὰ σκέμματα·</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="expanded">Vat. gr. 754</ref>
+                     corresp="#mosq-syn-194-ps-7-7c" source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-7-5"
+                        corresp="#person-2" source="Athanasius, schol. in Ps 7,7c1">σαφῶς περὶ τῆς
+                        θεοφανείας τοῦ σωτῆρος διὰ τῶν παρόντων εὐἀγγελίζεται:</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="identical">Vat. gr.
+                        754</ref>
                   </seg>
                   <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-7-6"
-                     corresp="#mosq-syn-194-ps-7-" source="quotation-expanded">
-                     <quote type="patristic" subtype="" xml:id="mosq-syn-194-quot-7-6"
-                        corresp="#person-2" source="Athanasius, schol. in Ps 7,">θάνατον γὰρ
-                        κατασκευάσας κατὰ τοῦ σωτῆρος Χριστοῦ θανάτῳ παραδέδοται·</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="expanded">Vat. gr. 754</ref>
+                     corresp="#mosq-syn-194-ps-7-7b" source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-7-6"
+                        corresp="#person-2" source="Athanasius, schol. in Ps 7,&lt;7b&gt;"
+                        >τουτ(έστιν) ἐν τοῖς κραταιοῖς τῶν ἐχθρῶν σου· π<unclear reason="damage"
+                           >έ</unclear>ρατα γὰρ τὰ ἄκρα δηλοῖ:</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="identical">Vat. gr.
+                        754</ref>
                   </seg>
                   <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-7-7"
-                     corresp="#mosq-syn-194-ps-7-" source="quotation-expanded">
-                     <quote type="patristic" subtype="" xml:id="mosq-syn-194-quot-7-7"
-                        corresp="#person-2" source="Athanasius, schol. in Ps 7,"></quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="expanded">Vat. gr. 754</ref>
+                     corresp="#mosq-syn-194-ps-7-7c" source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-7-7"
+                        corresp="#person-2" source="Athanasius, schol. in Ps 7,&lt;7c2&gt;">ἄνοθεν
+                        γὰρ διὰ τῶν πατρ<unclear reason="damage">ι</unclear>ἀρχῶν ταύτ<unclear
+                           reason="damage">ην</unclear> ἡμῖν τὴν σωτηρίαν ὑπέσχετο:·</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="identical">Vat. gr.
+                        754</ref>
                   </seg>
                   <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-7-8"
-                     corresp="#mosq-syn-194-ps-7-" source="quotation-expanded">
-                     <quote type="patristic" subtype="" xml:id="mosq-syn-194-quot-7-8"
-                        corresp="#person-2" source="Athanasius, schol. in Ps 7,"/>
-                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="expanded">Vat. gr. 754</ref>
-                  </seg>
+                     corresp="#mosq-syn-194-ps-7-8b" source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-7-8"
+                        corresp="#person-2" source="Athanasius, schol. in Ps 7,8b">Ταύτης μὲν τῆς
+                        συναγωγῆς δῆλονὅτι· τὸ δὲ εἰς ὕψος· ἢ τὸν τίμιον αἰνίττεται σταυρὸν, εἰς ὃν
+                        ἀνήνεγκεν ἡμῶν τὰς ἁμαρτίας· ἢ τῶν εἰς ὕψος ἀναφοίτησιν· ἐπορεύθη γὰρ
+                        ἐμφανισθῆναι τῷ προσώπῳ τοῦ σωτῆρος ὑπὲρ ἡμῶν: –</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="with-variants">Vat. gr.
+                        754</ref>
+                  </seg><!-- Varianten vorhanden -->
                   <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-7-9"
-                     corresp="#mosq-syn-194-ps-7-" source="quotation-expanded">
-                     <quote type="patristic" subtype="" xml:id="mosq-syn-194-quot-7-9"
-                        corresp="#person-2" source="Athanasius, schol. in Ps 7,"/>
-                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="expanded">Vat. gr. 754</ref>
+                     corresp="#mosq-syn-194-ps-7-9b" source="Anonymous">
+                     <quote type="patristic" subtype="quotation"
+                        xml:id="mosq-syn-194-quot-7-9
+                        " corresp="#person-2"
+                        source="Athanasius, schol. in Ps 7,&lt;9b&gt;">ἀξιοῖ πάλιν ἀπὸ τῶν ὄντων
+                        ἐχθρῶν σωθῆναι ἀφ᾿ ὧν ἔπραξαν τὸν ἔλεον ἐγκαλούμενος:</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="identical">Vat. gr.
+                        754</ref>
                   </seg>
+                  <!-- f.17r: im inneren Rand 2 schol. des Evagrius; kein Athanasius gefunden -->
+                  <pb n="17v"/>
                   <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-7-10"
-                     corresp="#mosq-syn-194-ps-7-" source="quotation-expanded">
-                     <quote type="patristic" subtype="" xml:id="mosq-syn-194-quot-7-10"
-                        corresp="#person-2" source="Athanasius, schol. in Ps 7,"/>
+                     corresp="#mosq-syn-194-ps-7-15b" source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-7-10"
+                        corresp="#person-2" source="Athanasius, schol. in Ps 7,{15b} 15a">ὁ ἐχθρὸς
+                        τῆς ἡμετέρας ζωῆς: –</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="identical">Vat. gr.
+                        754</ref>
+                  </seg>
+                  <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-7-11"
+                     corresp="#mosq-syn-194-ps-7-16a" source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-7-11"
+                        corresp="#person-2" source="Athanasius, schol. in Ps 7,16a">θάνατον γὰρ κατασκευ<subst>
+                           <del rend="unmarked">ᾶ</del>
+                           <add place="inline">ά</add>
+                        </subst>σας κατὰ τοῦ σωτῆρος Χριστοῦ θανάτῳ παραδέδοται·</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="identical">Vat. gr.
+                        754</ref>
+                  </seg>
+                  <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-7-12"
+                     corresp="#mosq-syn-194-ps-7-15b" source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-7-12"
+                        corresp="#person-2" source="Athanasius, schol. in Ps 7,&lt;15b&gt;"
+                        >τουτ(έστι) βεβούληται καὶ εἰς ἔργον ἐξήγαγε τὰ σκέμματα<supplied
+                           resp="Panteghini">·</supplied></quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="identical">Vat. gr.
+                        754</ref>
+                  </seg>
+                  <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-7-13"
+                     corresp="#mosq-syn-194-ps-7-14b" source="Anonymous">
+                     <quote type="patristic" subtype="quotation-expanded"
+                        xml:id="mosq-syn-194-quot-7-13" corresp="#person-2"
+                        source="Athanasius, schol. in Ps 7,&lt;14b&gt;">εἰς τὸ καίων βέλη μὲν τὴν
+                        τιμωρίαν καιομένοις δὲ τοῖς ἀξίοις πυρὸς· ...</quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="expanded">Vat. gr. 754</ref>
                   </seg>
-                  <!-- ps 8 bibletext -->
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-1"
                      n="Ps (LXX) 8,1" xml:lang="grc" xml:id="mosq-syn-194-ps-8-1"> Εἰς τὸ τέλος,
                      ὑπὲρ τῶν ληνῶν· ψαλμὸς τῷ Δαυιδ. </quote>
@@ -2859,19 +2917,35 @@
                         754</ref>
                   </seg>
                   <pb n="24r"/><!-- im inneren Rand 1 fons ignotus -->
-                  <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-10-"
-                     corresp="#mosq-syn-194-ps-10-" source="">
-                     <quote type="patristic" subtype="" xml:id="mosq-syn-194-quot-10-"
-                        corresp="#person-2" source="Athanasius, schol. in Ps 10,"/>
-                     <ref target="vat-gr-754:vat-gr-754-fr-10-XXX" type="">Vat. gr. 754</ref>
+                  <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-10-4"
+                     corresp="#mosq-syn-194-ps-10-1b" source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-10-4"
+                        corresp="#person-2" source="Athanasius, schol. in Ps 10,1b">... πῶς μοι
+                        ἐρεῖτε φη(σὶ) φεύγειν ἐπὶ τὰ ὄρη στρουθίου δίκην πεποιθότι <add
+                           place="overstrike">ἐπὶ τῷ</add> θεῷ:</quote><!-- funktionierendes linking vorhanden -->
+                     <ref target="vat-gr-754:vat-gr-754-fr-10-XXX" type="identical">Vat. gr.
+                        754</ref>
                   </seg>
-                  <!-- MUSTER -->
-                  <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-10-"
-                     corresp="#mosq-syn-194-ps-10-" source="">
-                     <quote type="patristic" subtype="" xml:id="mosq-syn-194-quot-10-"
-                        corresp="#person-2" source="Athanasius, schol. in Ps 10,"/>
-                     <ref target="vat-gr-754:vat-gr-754-fr-10-XXX" type="">Vat. gr. 754</ref>
-                  </seg><!-- --> Μήση· Doppelpunkt: – &lt;&gt; </ab>
+                  <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-10-5"
+                     corresp="#mosq-syn-194-ps-10-4a" source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-10-5"
+                        corresp="#person-2" source="Athanasius, schol. in Ps 10,(4a–b) 3b">Εἰ καὶ
+                           <add place="above">οἱ</add> ἐχθροὶ φη(σὶ) τὰ τοιᾶδε ἔδρασαν· ἀλλ’ ὁ
+                        κύριος ὁ ναὸν ἔχον τὸν οὐρανὸν· ἐξέτασιν τῶν δικαίων καὶ τῶν ἀσεβῶν
+                        ποιούμενος· τοῖς μὲν` ἀπονέμει τὰ ἀγαθὰ· τοὺς δὲ τοῖς αἰωνίοις παραπέμπει
+                        κολάσεσιν: –</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-10-XXX" type="identical">Vat. gr.
+                        754</ref>
+                  </seg>
+                  <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-10-6"
+                     corresp="#mosq-syn-194-ps-10-4d" source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-10-6"
+                        corresp="#person-2" source="Athanasius, schol. in Ps 10,(4c-5a) 4d">Βλέφαρα
+                        δὲ τὴν κρητικὴν αὐτοῦ πρόνοιαν· καὶ τῶν πραγμάτων ἐξεταστικήν: –</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-10-XXX" type="identical">Vat. gr.
+                        754</ref>
+                  </seg>
+               </ab>
             </div>
          </div>
       </body>
