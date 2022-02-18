@@ -28,7 +28,7 @@
     
     <xsl:template match="tei:teiHeader">
         <xsl:text>\begin{center}</xsl:text>
-        <xsl:text>\Large Psalmtexts \normalsize\par\vspace{10mm}</xsl:text>
+        <xsl:text>\Large Hexaplaric variants \normalsize\par\vspace{10mm}</xsl:text>
         <xsl:text> from Manuscript\par\vspace{5mm}</xsl:text>
         <xsl:text>\textbf{</xsl:text>
         <xsl:value-of select="tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:idno/text()"/>
@@ -49,24 +49,23 @@
     </xsl:template>
 
     <xsl:template match="tei:quote[@type = 'bibletext']">
-        <xsl:text>\pdfbookmark[0]{</xsl:text>
-            <xsl:value-of select="@n"/>
-        <xsl:text>}{</xsl:text>
-            <xsl:value-of select="@xml:id"/>
-        <xsl:text>}</xsl:text>
+        <xsl:variable name="anchors" as="xs:string*">
+            <xsl:for-each select="child::tei:anchor[@type = 'psalmtext']">
+                <xsl:sequence select="@xml:id"/>
+            </xsl:for-each>
+        </xsl:variable>
+        <xsl:apply-templates select="root()//tei:seg[(@type = 'hexaplaric') and ($anchors = substring-after(@corresp,'#'))]"/>
+    </xsl:template>
+    
+    <xsl:template match="tei:seg[@type = 'hexaplaric']">
         <xsl:text>\textbf{</xsl:text>
-            <xsl:value-of select="@n"/>
+        <xsl:value-of select="@xml:id"/>
         <xsl:text>:} </xsl:text>
-        <xsl:if test="exists(@prev)">
-            <xsl:text>... </xsl:text>
-        </xsl:if>
-        <xsl:text>\foreignlanguage{greek}{</xsl:text>
-            <xsl:apply-templates select="child::node()"/>
-        <xsl:text>}</xsl:text>
-        <xsl:if test="exists(@next)">
-            <xsl:text> ...</xsl:text>
-        </xsl:if>
-        <xsl:text>\par\vspace{3mm}</xsl:text>
+        <xsl:text>Zuschreibung: </xsl:text>
+        <xsl:value-of select="@source"/>
+        <xsl:text> \foreignlanguage{greek}{</xsl:text>
+        <xsl:apply-templates select="child::node()"/>
+        <xsl:text>}\par\vspace{3mm}</xsl:text>
     </xsl:template>
     
     <xsl:template match="tei:note"/>
@@ -100,6 +99,15 @@
         <xsl:if test="exists(tei:orig) and not(exists(tei:orig/tei:abbr)) and exists(tei:corr)">
             <xsl:value-of select="tei:corr/text()"/>
         </xsl:if>
+    </xsl:template>
+    
+    <xsl:template match="tei:abbr[@type = 'bibleversion']">
+        <xsl:apply-templates select="child::node()"/>
+    </xsl:template>
+    
+    <xsl:template match="tei:hi[parent::tei:abbr[@type = 'bibleversion']]">
+        <xsl:apply-templates select="child::node()"/>
+        <xsl:text> </xsl:text>
     </xsl:template>
     
     <xsl:template match="tei:hi">
@@ -136,9 +144,6 @@
             </xsl:when>
             <xsl:when test="contains(.,'&#10;               ')">
                 <xsl:value-of select="replace(.,'&#10;               ','')"/>
-            </xsl:when>
-            <xsl:when test="contains(.,' ')">
-                <xsl:value-of select="."/>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:value-of select="."/>
