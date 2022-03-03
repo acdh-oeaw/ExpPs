@@ -6,12 +6,76 @@
   <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Title</title>
+            <title>Coislin 12 - Transcription</title>
+            <respStmt>
+               <resp>transcribed by</resp>
+               <persName>Maria Lucia Goiana</persName>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
-            <p>Publication Information</p>
+            <publisher>FWF Project 32988</publisher>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">Available under the Creative Commons Attribution 4.0 International (CC BY 4.0)</licence>
+            </availability>
+            <date>2022-03-03</date>
          </publicationStmt>
          <sourceDesc>
+            <msDesc>
+               <msIdentifier xml:id="coislin-12">
+                  <settlement>Paris</settlement>
+                  <repository>France, Paris Bibliothèque nationale de France (BNF)</repository>
+                  <idno facs="https://gallica.bnf.fr/ark:/12148/btv1b110045613?rk=751076;4">Coisl. 012</idno>
+                  <altIdentifier>
+                     <idno type="pinakes" corresp="https://pinakes.irht.cnrs.fr/notices/cote/49154/">49154</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem n="1">
+                     <locus>fols. 1v-4</locus>
+                     <title>Eusebius Caesariensis, Commentarii in Psalmos</title>
+                  </msItem>
+                  <msItem n="2">
+                     <locus>fols. 4v-8</locus>
+                     <title>Michael Psellus, De Inscriptionibus Psalmorum (poe. 1)</title>
+                  </msItem>
+                  <msItem n="3">
+                     <locus>8</locus>
+                     <title>Medica, Remedia uaria</title>
+                  </msItem>
+                  <msItem n="4">
+                     <locus>9</locus>
+                     <title>Liturgica, Varia</title>
+                  </msItem>
+                  <msItem n="5">
+                     <locus>10-326v</locus>
+                     <title>Catenae, In Psalmos (Iohannes Chrysostomus, Theodorus Mopsuestenus, Athanasius Alexandrinus, Basilius Caesariensis)</title>
+                  </msItem>
+                  <msItem n="6">
+                     <locus>327r-327v</locus>
+                     <title>Iohannes Damascenus, Passio S. Artemii</title>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>paper</support>
+                        <extent>
+                           <dimensions scope="all" type="leaf"
+                              unit="mm">
+                              <height>302</height>
+                              <width>200</width>
+                           </dimensions>
+                        </extent>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <p>327 folios.</p>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+               </physDesc>
+               <history><p>Written in the 13th century.</p></history>
+            </msDesc>
             <listPerson>
                <person xml:id="person-2" role="author">
                   <persName>Athanasius</persName>
@@ -20,6 +84,11 @@
             </listPerson>
          </sourceDesc>
       </fileDesc>
+     <encodingDesc>
+        <editorialDecl>
+           <normalization><p>The transcription simplified the text in all respects.</p></normalization>
+        </editorialDecl>
+     </encodingDesc>
   </teiHeader>
   <text>
       <body>
