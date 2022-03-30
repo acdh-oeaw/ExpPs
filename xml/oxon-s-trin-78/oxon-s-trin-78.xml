@@ -19,8 +19,10 @@
             <date>2021-XX-XX</date>
          </publicationStmt>
          <sourceDesc>
+            <!-- die orthographysche Korrektheit ist sehr hoch. Die Einteilung der Verszeilen in Versen ist oft kongruent mit Septuaginta-Rahlfs (gemäß dem ekklesiastes?). Die Anbindung der Materialien ist meistens auch korrekt. Autorennemen sehr zuverlässig. Auffällig ist dabei der Wechsel zwischen Zählung durch Buchstaben und Verweiszeichen (diese letzte meistens für die Glossen in Anwendung?). Mittels Zahlen werden die ExpPs durchgezählt, aber auch Fragmente anderer Autoren. Vom Interesse ist es auch, dass die ExpPs gelegentlich mittels Verweiszeichen angebunden werden. Sie werden, so der Eindruck, als Glossen behandelt. Deutet die Anwendung unterschiedlicher Systeme der Anbindung auf zwei katenarische Traditionen hin, die hier vereint wurden? Zudem hat eine zweite Hand Exp des Athanasius ergänzt. Erwähnt sei die Tatsache, dass zu Ps 9,36b eine längere Fassung des comm. magnus bezeugt wird als dies in Paris. gr. 654 der Fall ist. Ergo bitet auch dieser Zeuge nich den vollständigen Kommentar des Hesychius? Blitzartig gibt es bemerkenswerte Übereinstimmungen mit Bodl. Auct. D 4 1 -->
+            <!-- laut Coxe (vol 2 in collegiis) sind am Anfang die Psalterkommentatoren auf 4 Seiten abgebildet  -->
             <msDesc>
-               <msIdentifier xml:id="mosq-synod-194">
+               <msIdentifier xml:id="oxon-s-trin-78">
                   <country>XXX</country>
                   <settlement>XXX</settlement>
                   <repository>XXX</repository>
@@ -333,17 +335,173 @@
                      n="Ps (LXX) 1,6b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-1-6"/> καὶ ὁδὸς
                   ἀσεβῶν ἀπολεῖται. </quote>
             </div>
-            <!-- Pointers to identical fragments in other documents. @type = identical | with-variations | abbreviated | expanded &lt; &gt;-->
+            <!-- Pointers to identical fragments in other documents. @type = identical | with-variant / with-variants | with-variation / with-variations | abbreviated | expanded -->
             <div type="commentary" subtype="commentary" xml:id="oxon-s-trin-78-1-4">
                <ab xml:id="oxon-s-trin-78-1-2" xml:lang="grc">
                   <!-- Ps 1 commentary -->
-                  <!-- MUSTER -->
-                  <seg type="commentaryfragment" xml:id="bodl-auct-d4-1-fr-2-XX"
-                     corresp="#bodl-auct-d4-1-ps-2-XX" source="XXX">
-                     <quote type="patristic" subtype="XXX" xml:id="ambr-m47-sup-quot-2-XX"
-                        corresp="#person-XX" source="XXX"/>
-                     <ref target="vat-gr-754:vat-gr-754-fr-1-XX" type="XXX">Vat. gr. 754</ref>
+                  <!-- glosse/Basilius zu Mακάριος -->
+                  <!-- glosse/Basilius zu ἀλληλουΐα und ψαλτήριον (Origenes, schol.) -->
+                  <!-- glosse/Basilius (?) zu Mακάριος -->
+                  <!-- glosse zu ἀσεβῶν: τῶν τὸν θεὸν ἀγνοούντων -->
+                  <!-- glosse zu ἐν ὁδῷ: ἐν ἔργοις etc, -->
+                  <!-- glosse zu οὐκ ἔστη: οὐκ ἔπρα[ττεν?] -->
+                  <!-- glosse zu λοιμῶν: ἀκαθάρτων κακῶν [?] -->
+                  <!-- glosse zu οὐκ ἐκάθισεν: τὴν τῶν κακῶν ἐργασίαν κατὰ διάδοσιν γενομένην (falsch angebunden?) -->
+                  <!-- glosse zu λοιμῶν: ἀκαθάρτων κακῶν [?] -->
+                  <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-1-1"
+                     corresp="#oxon-s-trin-78-ps-1-2b" source="Anonymous">
+                     <num type="ordinal" xml:lang="grc" value="7">Ζ´</num>
+                     <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-1-1"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 1,2b"><unclear
+                           reason="faded-ink">Τὸ</unclear>
+                        <supplied reason="illegible">σύ</supplied><unclear reason="faded-ink"
+                           >ντο</unclear><supplied reason="illegible">νον δηλοῖ·</supplied>
+                        <unclear reason="faded-ink">ο</unclear><supplied reason="illegible"
+                           >ὐ</supplied>
+                        <unclear reason="faded-ink">γὰρ ἠμ</unclear><supplied reason="illegible"
+                           >ελημέ</supplied><unclear reason="faded-ink">νως δ</unclear><supplied
+                           reason="illegible">εῖ μελε</supplied>τ<unclear reason="faded-ink"
+                           >ᾶν</unclear>
+                        <supplied reason="illegible">τὸν νό</supplied><unclear reason="faded-ink"
+                           >μ</unclear><supplied reason="illegible">ον τοῦ</supplied>
+                        <supplied reason="illegible" cert="high">κυρίου:?</supplied>
+                     </quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-1-4" type="with-variant">Vat. gr.
+                        754</ref>
                   </seg>
+                  <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-1-2"
+                     corresp="#oxon-s-trin-78-ps-1-3a" source="Anonymous">
+                     <num type="ordinal" xml:lang="grc" value="8">Η´</num>
+                     <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-1-2"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 1,3a">Ξ<unclear
+                           reason="faded-ink">ύλο</unclear><supplied reason="illegible">ν</supplied>
+                        ὁ <unclear reason="faded-ink">Χ</unclear>ριστὸ<supplied reason="illegible"
+                           >ς</supplied>
+                        <supplied reason="illegible" cert="high">ἀναγέ</supplied><unclear
+                           reason="faded-ink">γρ</unclear><supplied reason="illegible"
+                           >α</supplied><unclear reason="faded-ink">π</unclear><supplied
+                           reason="illegible">τ</supplied><unclear reason="faded-ink"
+                           >α</unclear><supplied reason="illegible">ι ἐν τῆ γραφῆ κατὰ τὸ</supplied>
+                        <unclear reason="faded-ink">εἰρη</unclear><supplied reason="illegible"
+                           >μένον</supplied>
+                        <unclear reason="faded-ink">ξ</unclear><supplied reason="illegible"
+                           >ύ</supplied><unclear reason="faded-ink">λον ζωῆς</unclear>
+                        <supplied reason="illegible">ἐστι</supplied>
+                        <supplied reason="illegible" cert="high">πᾶσιν</supplied>
+                        <unclear reason="faded-ink">ἀ</unclear><supplied reason="illegible"
+                           >ν</supplied><unclear reason="faded-ink">τ</unclear><supplied
+                           reason="illegible">ε</supplied><unclear reason="faded-ink"
+                           >χ</unclear><supplied reason="illegible">ομένοις</supplied>
+                        <supplied reason="illegible" cert="high">ταύτης:</supplied>
+                     </quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-1-5" type="with-variants">Vat. gr.
+                        754</ref>
+                  </seg>
+                  <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-1-9"
+                     corresp="#oxon-s-trin-78-ps-1" source="Athanasius (?)">
+                     <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-1-9"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 1"><unclear
+                           reason="faded-ink">Τὴν</unclear> ἀρχὴ<unclear reason="faded-ink"
+                           >ν</unclear> τῆς <unclear reason="faded-ink">προ</unclear>φ<unclear
+                           reason="faded-ink">η</unclear><unclear reason="faded-ink"/>τείας
+                           τῶ<unclear reason="faded-ink">ι</unclear> ἐ<unclear reason="faded-ink"
+                           >ξ</unclear>
+                        <supplied reason="illegible">αὐτοῦ</supplied>
+                        <unclear reason="faded-ink">τεχθησο</unclear><supplied reason="illegible"
+                           >μένω</supplied>
+                        <supplied reason="illegible" cert="high">ἀνατίθησιν</supplied>
+                        <supplied reason="illegible">ὁ</supplied>
+                        <unclear reason="faded-ink">Δαυῒδ</unclear> διὸ <unclear reason="faded-ink"
+                           >ἐν</unclear>
+                        <supplied reason="ilegible">π</supplied><unclear reason="faded-ink"
+                           >ρώτ</unclear><supplied reason="illegible">ο</supplied>ι<unclear
+                           reason="faded-ink">ς</unclear> μακαρίζει <unclear reason="faded-ink">τοὺς
+                           εἰ</unclear><supplied reason="illegible">ς αὐτὸν</supplied>
+                        <unclear reason="faded-ink">ἠ</unclear><supplied reason="illegible"
+                           cert="high">λπικότας· μακαρίους δὲ καλεὶ</supplied>
+                        <unclear reason="faded-ink">τ</unclear><supplied reason="illegible"
+                           >οὺ</supplied><unclear reason="faded-ink">ς μὴ</unclear>τε <unclear
+                           reason="faded-ink">πο</unclear>ρ<supplied reason="illegible"
+                           >ε</supplied><unclear reason="faded-ink">υ</unclear><supplied
+                           reason="illegible">θέντ</supplied><unclear reason="faded-ink">ας
+                           ἐν</unclear>
+                        <supplied reason="illegible">βου</supplied><unclear reason="faded-ink">λῆ
+                           ἀ</unclear><supplied reason="illegible">σεβῶν·</supplied>
+                        <unclear reason="faded-ink">μ</unclear><supplied reason="illegible"
+                           >ή</supplied><unclear reason="faded-ink">τ</unclear>ε <supplied
+                           reason="faded-ink">μ</supplied>ὴν στ<unclear reason="faded-ink"
+                           >άν</unclear><supplied reason="illegible">τας </supplied>
+                        <supplied reason="illegible" cert="high">ἐν ὁδῶ</supplied>
+                        <supplied reason="illegible">ἁμαρτωλῶν∙</supplied>
+                        <unclear reason="faded-ink">μήτε</unclear> ἐπὶ κα<unclear reason="faded-ink"
+                           >θ</unclear><supplied reason="illegible">έ</supplied><unclear
+                           reason="faded-ink">δραν κ</unclear><supplied reason="illegible"
+                           >α</supplied><unclear reason="faded-ink">θε</unclear><supplied
+                           reason="illegible" cert="high">στηκότας</supplied>
+                        <unclear reason="faded-ink">λο</unclear><supplied reason="illegible"
+                           >ιμῶν·</supplied>
+                     </quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-1-2" type="abbreviated-with-variants"
+                        >Vat. gr. 754</ref><note type="attribution"><foreign xml:lang="grc"
+                              ><supplied reason="illegible">Ἀ</supplied><unclear reason="faded-ink"
+                              >θ</unclear>(ανασίου)</foreign></note>
+                  </seg>
+                  <pb n="5v"/>
+                  <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-1-4"
+                     corresp="#oxon-s-trin-78-ps-1-3b" source="Anonymous">
+                     <num type="ordinal" xml:lang="grc" value="10">Ι´</num>
+                     <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-1-4"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 1,3b"><unclear
+                           reason="faded-ink">τὴ</unclear>ν <unclear reason="faded-ink"
+                           >πλ</unclear><supplied reason="illegible">ή</supplied>
+                        <unclear reason="faded-ink">ρ</unclear><supplied reason="illegible"
+                           >ω</supplied><unclear reason="faded-ink">σι</unclear>ν τῶ<unclear
+                           reason="faded-ink">ν</unclear> ἐ<unclear reason="faded-ink"
+                           >ν</unclear>τολ<supplied reason="margin-cut"/>ῶν]:</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-1-9" type="abbreviated">Vat. gr.
+                        754</ref><!-- es scheint mir, dass die exp. auch vor dem Abschneiden des oberen Randes nicht vollständig war -->
+                  </seg>
+                  <!-- glosse κατὰ καιρὸν ἴδιον -->
+                  <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-1-5"
+                     corresp="#oxon-s-trin-78-ps-1-3d" source="Anonymous">
+                     <num type="ordinal" xml:lang="grc" value="11">ΙA´</num>
+                     <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-1-5"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 1,3d">οὐ γάρ ἐστι πρᾶξις
+                        τῶν κατὰ θεὸν γινομένων ἀνωφελής: –</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-1-10" type="identical">Vat. gr. 754</ref>
+                  </seg>
+                  <seg type="hexaplaric" xml:id="oxon-s-trin-78-fr-1-6"
+                     corresp="#oxon-s-trin-78-ps-1-3d" source="S(ymmachus)">
+                     <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-1-6"
+                        source="Symmachus (Ps 1,3d); om. Field (sed cf. Dorival II 144)"
+                           >κατορθ<unclear reason="faded-ink">ώσε</unclear>ι: –</quote><note
+                        type="attribution"><foreign xml:lang="grc">Ϲ</foreign></note>
+                  </seg>
+                  <seg type="hexaplaric" xml:id="oxon-s-trin-78-fr-1-7"
+                     corresp="#oxon-s-trin-78-ps-1-3d" source="A(quila)">
+                     <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-1-7"
+                        source="Aquila (Ps 1,3d); om. Field (sed cf. Dorival II 144)"
+                        >κατευθυνθήσεται: –</quote><note type="attribution"><foreign xml:lang="grc"
+                           >αʹ</foreign></note>
+                  </seg>
+                  <!-- glosse κονιορτός -->
+                  <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-1-8"
+                     corresp="#oxon-s-trin-78-ps-1-5a" source="Anonymous">
+                     <num type="ordinal" xml:lang="grc" value="12">ΙB´</num>
+                     <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-1-8"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 1,5a">διὰ τοῦτο μὲν
+                           δ<supplied reason="illegible">ι</supplied>ὰ τὸ μὴ ἔ<supplied
+                           reason="lacuna">χει</supplied><unclear reason="damage">ν</unclear> ῥίζαν·
+                           <supplied reason="lacuna" cert="high">ἀλλ’</supplied><supplied
+                           reason="lacuna"> ὁμ</supplied>οίους εἶναι χοῒ γῆς ὑπὸ ἀνέμου ῥιπιζομένω·
+                        ἄνεμον δὲ νοήσεις τ<unclear reason="faded-ink">ὴν</unclear> ἀπειλὴν
+                           τ<supplied reason="illegible">οῦ</supplied> θεοῦ τὴν λ<unclear
+                           reason="faded-ink">έγου</unclear>σαν· πορεύεσθε ἀπ’ ἐμοῦ οἱ κατη<unclear
+                           reason="faded-ik">ρα</unclear>μένοι εἰς τὸ πῦρ τὸ αἰώνιον: –</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-1-14" type="identical">Vat. gr. 754</ref>
+                  </seg>
+                  <!-- Didymus -->
+                  <!-- glosse ἐν ὁδῶ δικαίων -->
                   <!-- Ps 2 bibletext -->
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-1"
                      n="Ps (LXX) 2,1" xml:lang="grc" xml:id="oxon-s-trin-78-ps-2-1">
@@ -443,6 +601,15 @@
                         n="Ps (LXX) 2,12d" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-12"/> μακάριοι
                      πάντες οἱ πεποιθότες ἐπ’ αὐτῷ. </quote>
                   <!-- Ps 2 commentary -->
+                  <!-- MESE· --><!-- Spitzenklammern: &lt;&gt; -->
+                  <!-- MUSTER: 
+                  <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-1-XX"
+                     corresp="#oxon-s-trin-78-ps-1-XX" source="Anonymous">
+                     <num type="ordinal" xml:lang="grc" value="0">XX</num>
+                     <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-1-XX"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 1,"></quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-1-XX" type="XXX">Vat. gr. 754</ref>
+                  </seg> -->
                   <!-- Ps 3 bibletext -->
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-3-1"
                      n="Ps (LXX) 3,1" xml:lang="grc" xml:id="oxon-s-trin-78-ps-3-1"> Ψαλμὸς τῷ
@@ -763,30 +930,22 @@
                   <!-- Basilius, hom. 2,8 in hex. (36,16 Amand de Mendieta – Rudberg; in Gen 1,5) in Ps 6,1 -->
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-6-1"
                      corresp="#oxon-s-trin-78-ps-6-2" source="Anonymous">
+                     <num type="ordinal" xml:lang="grc" value="49">ΜΘ´</num>
                      <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-6-1"
                         corresp="#person-2" source="Athanasius, exp. in Ps 6,2">οὐ τὸν ἔλεγχον
                         παραιτεῖται. ἀλλὰ τὸ μετὰ σφοδροῦ <unclear reason="faded-ink"
-                        >θυμ</unclear>οῦ[·] οὐδὲ τὴν παιδ<unclear reason="faded-ink"
-                           >εί</unclear>[αν]<unclear reason="faded-ink">,</unclear> ἀλλὰ τὴν με[τ’]
-                           <unclear reason="faded-ink">ὀργῆ</unclear>[ς]<unclear reason="faded-ink"
-                           >:</unclear></quote>
+                           >θυμ</unclear>οῦ<supplied reason="illegible">·</supplied> οὐδὲ τὴν
+                           παιδ<unclear reason="faded-ink">εί</unclear><supplied reason="illegible"
+                           >αν</supplied><unclear reason="faded-ink">,</unclear> ἀλλὰ τὴν
+                           με<supplied reason="illegible">τ’</supplied>
+                        <unclear reason="faded-ink">ὀργῆ</unclear><supplied reason="illegible"
+                           >ς</supplied><unclear reason="faded-ink">:</unclear></quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-6-10" type="with-variant">Vat. gr.
-                        754</ref><note type="attribution"><foreign xml:lang="grc"
-                        >ΜΘ´</foreign></note>
+                        754</ref>
                   </seg>
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-6-2"
-                     corresp="#oxon-s-trin-78-ps-6-3a" source="Anonymous">
-                     <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-6-2"
-                        corresp="#person-2" source="Athanasius, exp. in Ps 6,&lt;3a&gt; (add. S2)"
-                        >πᾶσα γὰρ ψυχὴ οὐ πρότερον εἰς ἁμαρτίαν πίπτει. πρὶν τῆς ἰσχύος
-                        ἐνδῶ:</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-6-11" type="identical">Vat. gr.
-                        754</ref><note type="attribution"><foreign xml:lang="grc"/>β´</note>
-                  </seg><!-- diese exp. ist von S2 und ist nicht (?) angebunden -->
-                  <!-- 2 scholia Hesychius Antonelli, add. S2 -->
-                  <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-6-3"
                      corresp="#oxon-s-trin-78-ps-6-3b" source="Anonymous">
-                     <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-6-3"
+                     <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-6-2"
                         corresp="#person-2" source="Athanasius, exp. in Ps 6,3b"><unclear
                            reason="faded-ink">αἱ</unclear> τῆς ψυχ<unclear reason="faded-ink"
                            >ῆς</unclear> δ<unclear reason="faded-ink">η</unclear>λ<unclear
@@ -795,17 +954,26 @@
                      <ref target="vat-gr-754:vat-gr-754-fr-6-12" type="identical">Vat. gr.
                         754</ref><note type="attribution"><foreign xml:lang="grc">Ν</foreign></note>
                   </seg>
+                  <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-6-3"
+                     corresp="#oxon-s-trin-78-ps-6-3a" source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-6-3"
+                        corresp="#person-2"
+                        source="Athanasius, exp. in Ps 6,&lt;3a&gt; (add. S2 in imo marg.)">πᾶσα γὰρ
+                        ψυχὴ οὐ πρότερον εἰς ἁμαρτίαν πίπτει. πρὶν τῆς ἰσχύος ἐνδῶ:</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-6-11" type="identical">Vat. gr. 754</ref>
+                  </seg><!-- diese exp. ist nicht (?) angebunden -->
+                  <!-- 2 scholia Hesychius Antonelli, add. S2 -->
                   <pb n="11v"/>
                   <!-- Theodoretus -->
                   <!-- glosse πάνυ -->
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-6-4"
                      corresp="#oxon-s-trin-78-ps-6-4b" source="Anonymous">
+                     <num type="ordinal" xml:lang="grc" value="51">ΝΑ´</num>
                      <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-6-4"
                         corresp="#person-2" source="Athanasius, exp. in Ps 6,4b">τῆς πολυχρονίου
                         μετανοίας τὸ ῥῆμα παρατατικόν: </quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-6-14" type="with-variant">Vat. gr.
-                        754</ref><note type="attribution"><foreign xml:lang="grc"
-                        >ΝΑ´</foreign></note>
+                        754</ref>
                   </seg>
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-6-5"
                      corresp="#oxon-s-trin-78-ps-6-5a" source="Anonymous">
@@ -819,59 +987,60 @@
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-6-6"
                      corresp="#oxon-s-trin-78-ps-6-5b" source="Anonymous">
                      <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-6-6"
-                        corresp="#person-XX" source="Athanasius, exp. in Ps 6,5b">ἅπαντα γὰρ τῶι τῆς
+                        corresp="#person-2" source="Athanasius, exp. in Ps 6,5b">ἅπαντα γὰρ τῶι τῆς
                         σωτηρίας ἐλέωι ἀναθετέον τῶ θεῶ:</quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-6-16" type="with-variants">Vat. gr.
-                        754</ref>
-                  </seg><!-- diese exp. wird nicht mitgezählt, sondern mittels Verweiszeichen angebunden -->
+                        754</ref><note>
+                        <g type="linking">S</g></note>
+                  </seg>
                   <!-- Basilius, hom. Spir. 16,40 (XXX,35–37 Pruche; in Ps 6,6) in Ps 6,6; auch dieses fr. wird nicht mitgezählt, sondern mittels Verweiszeichen angebunden -->
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-6-7"
                      corresp="#oxon-s-trin-78-ps-6-7b" source="Anonymous">
+                     <num type="ordinal" xml:lang="grc" value="53">ΝΓ´</num>
                      <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-6-7"
                         corresp="#person-2" source="Athanasius, exp. in Ps 6,7b–c"><unclear
                            reason="faded-ink">ἀντ</unclear>ὶ μιᾶς φησὶ νυκτὸς καθ’ ἣ<unclear
                            reason="faded-ink">ν</unclear> τὴν <unclear reason="faded-ink"
                            >ἁ</unclear>μ<unclear reason="faded-ink">αρτ</unclear>ίαν ἐποίη<unclear
                            reason="faded-ink">σα· πολλ</unclear>ὰς διετέ<unclear reason="faded-ink"
-                           >λ</unclear>[εσα] <unclear reason="faded-ink">νύ</unclear>κτας·
-                           δάκ<unclear reason="faded-ink">ρ</unclear>[υσ]<unclear reason="faded-ink"
-                           >ι βρ</unclear>έχων τὴν <unclear reason="faded-ink">στρωμ</unclear>νήν
-                        μου:</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-6-19" type="identical">Vat. gr.
-                        754</ref><note type="attribution"><foreign xml:lang="grc"
-                        >ΝΓ´</foreign></note>
+                           >λ</unclear><supplied reason="illegible">εσα</supplied>
+                        <unclear reason="faded-ink">νύ</unclear>κτας· δάκ<unclear reason="faded-ink"
+                           >ρ</unclear>[υσ]<unclear reason="faded-ink">ι βρ</unclear>έχων τὴν
+                           <unclear reason="faded-ink">στρωμ</unclear>νήν μου:</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-6-19" type="identical">Vat. gr. 754</ref>
                   </seg>
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-6-8"
                      corresp="#oxon-s-trin-78-ps-6-8a" source="Anonymous">
+                     <num type="ordinal" xml:lang="grc" value="54">ΝΔ´</num>
                      <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-6-8"
                         corresp="#person-2" source="Athanasius, exp. in Ps 6,8a"><unclear
-                           reason="faded-ink">τ</unclear>[ὸ]<unclear reason="faded-ink">ν
-                           ν</unclear>[οῦ]<unclear reason="faded-ink">ν</unclear> φη(σὶν) οὗτος γάρ
-                        ἐστι τῆς ψυχῆς ὀφθαλμός:</quote>
+                           reason="faded-ink">τ</unclear><supplied reason="illegible"
+                           >ὸ</supplied><unclear reason="faded-ink">ν ν</unclear><supplied
+                           reason="illegible">οῦ</supplied>
+                        <unclear reason="faded-ink">ν</unclear> φη(σὶν) οὗτος γάρ ἐστι τῆς ψυχῆς
+                        ὀφθαλμός:</quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-6-20" type="with-variant">Vat. gr.
-                        754</ref><note type="attribution"><foreign xml:lang="grc"
-                        >ΝΔ´</foreign></note>
-                  </seg><!-- 2 scholia Hesychius Antonelli, add. S2 -->
+                        754</ref>
+                  </seg><!-- 2 scholia des Hesychius Antonelli, add. S2 -->
                   <pb n="12r"/>
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-6-9"
                      corresp="#oxon-s-trin-78-ps-6-8b" source="Anonymous">
+                     <num type="ordinal" xml:lang="grc" value="55">ΝΕ´</num>
                      <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-6-9"
                         corresp="#person-2" source="Athanasius, exp. in Ps 6,8b">τὸν χρόν<unclear
                            reason="faded-ink">ο</unclear>ν τῆς κακοπαθείας δηλοῖ:</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-6-26" type="identical">Vat. gr.
-                        754</ref><note type="attribution"><foreign xml:lang="grc"
-                        >ΝΕ´</foreign></note>
+                     <ref target="vat-gr-754:vat-gr-754-fr-6-26" type="identical">Vat. gr. 754</ref>
                   </seg>
                   <!-- 1 schol. Hesychius Antonelli, add. S2 -->
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-6-10"
                      corresp="#oxon-s-trin-78-ps-6-9" source="Anonymous">
+                     <num type="ordinal" xml:lang="grc" value="56">ΝϚ´</num>
                      <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-6-10"
                         corresp="#person-2" source="Athanasius, exp. in Ps 6,9a">ὡς ἤδη
                         εἰσακουσθεὶς, μακρὸν κατὰ τῶν ἐχθ<unclear reason="faded-ink">ρ</unclear>ῶν
                         συναίρει λόγον: </quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-6-30" type="with-variant">Vat. gr.
-                        754</ref><note type="attribution"><foreign xml:lang="grc"
-                        >ΝϚ´</foreign></note>
+                        754</ref>
                   </seg>
                   <pb n="12v"/>
                   <!-- Ps 7 bibletext -->
@@ -1085,14 +1254,14 @@
                   <!-- glosse λίαν -->
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-8-1"
                      corresp="#oxon-s-trin-78-ps-8-3a" source="Anonymous">
+                     <num type="ordinal" xml:lang="grc" value="73">ΟΓ´</num>
                      <quote type="patristic" subtype="quotation-unknown"
                         xml:id="oxon-s-trin-78-quot-8-1" corresp="#person-2"
-                        source="Athanasius, schol. in Ps 8,3a; cf. Eusebius, d.e. 9,18,5 (442,32–33 Heikel)"
+                        source="Athanasius, exp. in Ps 8,3a; cf. Eusebius, d.e. 9,18,5 (442,32–33 Heikel)"
                         >τῶν κατὰ θεὸν νηπιαζόντων τῆ κακία· τὸ ὡς ἀννὰ κραζόντων ὅπέρ ἐστι σῶσον
                         δή: – [Ps 117,25a]</quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-8-XX" type="abbreviated-with-variations"
-                        >Vat. gr. 754</ref><note type="attribution"><foreign xml:lang="grc"
-                           >ΟΓ´</foreign></note>
+                        >Vat. gr. 754</ref>
                   </seg>
                   <!-- Ιohannes Chrys., exp. in Ps. 8 (PG 55,109, l. 33–38) in Ps 8,(3b-c) 3c  -->
                   <!-- glosse ἐτελείωσας, bei Suda -->
@@ -1100,7 +1269,7 @@
                      corresp="#oxon-s-trin-78-ps-8-2a" source="Athanasius">
                      <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-8-2"
                         corresp="#person-2"
-                        source="Athanasius, exp. in Ps 8,&lt;2a&gt; (add. S2 in imo marg.)"
+                        source="Athanasius, exp. in Ps 8,&lt;2a&gt; (add. S2 in imo marg.; om. typus XIX sed ed. Montfaucon)"
                         >ἐκπλήττεται τὴν εἰς ἀνθρώπους δοθεῖσαν γνῶσιν· τοῦ ὀνόματος τοῦ θεοῦ· οὐκ
                         ἔτι γὰρ μόνοις τοῖς ἐν τῆ ἰουδαία γνωστὸς ὁ θεός: </quote><note
                         type="attribution"><foreign xml:lang="grc">Ἀθ(αν)α(σίου)</foreign></note>
@@ -1121,20 +1290,20 @@
                   <pb n="15r"/>
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-8-4"
                      corresp="#oxon-s-trin-78-ps-8-4" source="Anonymous">
+                     <num type="ordinal" xml:lang="grc" value="75">ΟΕ´</num>
                      <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-8-4"
-                        corresp="#person-2" source="Athanasius, schol. in Ps 8,4a">ἐκεῖνοι μὲν
+                        corresp="#person-2" source="Athanasius, exp. in Ps 8,4a">ἐκεῖνοι μὲν
                         ἀγανακτοῦσι τῶν νηπίων καταρτιζόντων αἶνον· ἐγὼ δὲ τὸ οὕτω καὶ περικαλλὲς
                         τοὺς οὐρανοὺς φημὶ μικρόν τι ἔργον τῆς σῆς δημιουργίας θεωρῶν·</quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-8-XX" type="with-variants">Vat. gr.
-                        754</ref><note type="attribution"><foreign xml:lang="grc"
-                        >ΟΕ´</foreign></note>
+                        754</ref>
                   </seg>
                   <!-- fons ignotus in Ps 8,(5b) 6a = Auct. D.4.1 (bodl-auct-d-4-1-fr-8-14) -->
                   <!-- Ioannes Chrys.,  exp. in Ps. 9 (PG 55,117) -->
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-8-5"
                      corresp="#oxon-s-trin-78-ps-8-8a" source="Anonymous">
                      <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-8-5"
-                        corresp="#person-2" source="Athanasius, schol. in Ps 8,8a">τοὺς ἐξ
+                        corresp="#person-2" source="Athanasius, exp. in Ps 8,8a">τοὺς ἐξ
                            ἰσρα<unclear reason="faded-ink">ὴ</unclear>λ πιστεύσα<unclear
                            reason="faded-ink">ν</unclear>τας αἰνίττεται:</quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-8-XX" type="identical">Vat. gr.
@@ -1157,21 +1326,12 @@
                      corresp="#oxon-s-trin-78-ps-8-8b" source="Anonymous">
                      <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-8-7"
                         corresp="#person-2"
-                        source="Athanasius, schol. in Ps 8,8b (add S2 in imo marg.)">διὰ τούτων τὰ
+                        source="Athanasius, exp. in Ps 8,8b (add S2 in imo marg.)">διὰ τούτων τὰ
                            <unclear reason="damage">ἔ</unclear>θν<unclear reason="damage"
                            >η</unclear> δηλοῖ:</quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-8-XX" type="identical">Vat. gr. 754</ref>
                   </seg>
                   <pb n="15v"/>
-                  <!-- MESE·  --><!-- Spitzenklammern: &lt;&gt; -->
-                  <!-- MUSTER: 
-                  <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-8-XX"
-                     corresp="#oxon-s-trin-78-ps-8-XX" source="XXX">
-                     <quote type="patristic" subtype="XXX" xml:id="oxon-s-trin-78-quot-8-XX"
-                        corresp="#person-XX" source="XXX"/>
-                     <ref target="vat-gr-754:vat-gr-754-fr-8-XX" type="XXX">Vat. gr. 754</ref><note
-                        type="attribution"><foreign xml:lang="grc">ἐρμηνεία</foreign></note>
-                  </seg> -->
                   <!-- Ps 9 bibletext -->
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-1"
                      n="Ps (LXX) 9,1" xml:lang="grc" xml:id="oxon-s-trin-78-ps-9-1"> Εἰς τὸ τέλος,
@@ -1476,6 +1636,353 @@
                         corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-39"/> ἵνα μὴ προσθῇ ἔτι τοῦ
                      μεγαλαυχεῖν ἄνθρωπος ἐπὶ τῆς γῆς. </quote>
                   <!-- Ps 9 commentary -->
+                  <!-- Symmachus, ex Theodoreto -->
+                  <pb n="16r"/>
+                  <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-9-1"
+                     corresp="#oxon-s-trin-78-ps-9-4" source="Anonymous">
+                     <num type="ordinal" xml:lang="grc" value="79">Oθ´</num>
+                     <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-9-1"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 9,4a; 9,4b">ἐπὶ τίσιν
+                        ἐξομολόγησιν δηλοῖ· ἐχθρὸν δὲ αὐτοῦ τὸν θά<unclear reason="damage"
+                           >ν</unclear>α<unclear reason="damage">τ</unclear><supplied
+                           reason="margin-cut">ον</supplied>
+                        <unclear reason="margin-cut">εἶ</unclear><supplied reason="margin-cut"
+                           >ν</supplied>αι φη(σὶ) τὸν καὶ εἰς τὰ ὀπίσω ἀποστρεφόμενον τουτέστιν εἰς
+                        τὸ μὴ εἶναι· ἐπειδἂν ἀποστραφῆ εἰς τὰ ὀπίσω ὁ θάνατος, τότε δὴ καὶ πᾶσα
+                        δύναμις ἀντικειμένη καταργηθήσεται· εἰ γὰρ ἔσχατος ἐχθρὸς καταργεῖται ὁ
+                        θάνατος δηλονότι· προαναιρεθεισῶν τῶν ἀντικειμένων δυνάμεων: –</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-9-XX" type="with-variants">Vat. gr.
+                        754</ref>
+                     <ref target="vat-gr-754:vat-gr-754-fr-9-XX" type="with-variant">Vat. gr.
+                        754</ref>
+                  </seg>
+                  <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-9-2"
+                     corresp="#oxon-s-trin-78-ps-9-5a" source="Anonymous">
+                     <num type="ordinal" xml:lang="grc" value="80">Π´</num>
+                     <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-9-2"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 9,5a">τὴν αἰτίαν τῆς
+                           εὐχαριστί<unclear reason="faded-ink">α</unclear>ς ἀποδίδωσιν:</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-9-XX" type="with-variant">Vat. gr.
+                        754</ref>
+                  </seg>
+                  <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-9-3"
+                     corresp="#oxon-s-trin-78-ps-9-5b" source="Anonymous">
+                     <num type="ordinal" xml:lang="grc" value="81">ΠA´</num>
+                     <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-9-3"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 9,5b; 9,6a1; 9,7a1">τὸ
+                        ἐκάθισας τὴν εἰς τὸ κρίνειν ἐπισκοπὴν δηλοῖ τ<unclear reason="faded-ink"
+                           >οῦ</unclear> θεοῦ: τοὺς νοητοὺς ἐχθροὺς δηλονότι<unclear
+                           reason="faded-ink">:</unclear> ῥομφαίας τοῦ εχθρ<unclear
+                           reason="faded-ink">οῦ</unclear> τὰς ἀντικειμένα<unclear
+                           reason="faded-ink">ς</unclear> δυνάμεις δηλοῖ· δι’ ὧν ἐστιν ἰσχυρ<unclear
+                           reason="faded-ink">ό</unclear>ς: –</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-9-XX" type="identical">Vat. gr.
+                        754</ref><ref target="vat-gr-754:vat-gr-754-fr-9-XX" type="identical">Vat.
+                        gr. 754</ref><ref target="vat-gr-754:vat-gr-754-fr-9-XX"
+                        type="with-variants">Vat. gr. 754</ref>
+                  </seg>
+                  <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-9-4"
+                     corresp="#oxon-s-trin-78-ps-9-7a" source="Anonymous">
+                     <num type="ordinal" xml:lang="grc" value="82">ΠΒ´</num>
+                     <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-9-4"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 9,7a2">καὶ ποίας
+                           τα<unclear reason="faded-ink">ύτας</unclear> ἢ περὶ ὧν ἀλλαχο<unclear
+                           reason="faded-ink">ῦ</unclear> λ<unclear reason="faded-ink"
+                        >έ</unclear>γεται· ὅτι <unclear reason="fade-ink">ἔ</unclear><supplied
+                           reason="illegible">θη</supplied>κ<unclear reason="faded-ink">α</unclear>ς
+                        πόλεις <unclear reason="faded-ink">εἰ</unclear><supplied reason="illegible"
+                           >ς</supplied>
+                        <unclear reason="faded-ink">χῶμ</unclear><supplied reason="illegible"
+                           >α</supplied> πόλεις ὀχυρὰς τοῦ πεσεῖν αὐτῶν τὰ θεμελια· [Is 25,2]
+                           αὗτα<unclear reason="faded-ink">ι</unclear> δέ εἰσι πά<unclear
+                           reason="faded-ink">λιν αἱ</unclear> ἀντικείμεναι δυνάμεις· αἳ ὥσπερ
+                        πόλεις ὀχυραὶ τετειχι<unclear reason="faded-ink">σμέναι·</unclear> τοὺς ὑπ᾿
+                        αὐτῶν ἁλόντας τῆ ἀπάτη συλλαβόντες ἔσχο<unclear reason="faded-ink">ν:
+                           –</unclear></quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-9-XX" type="with-variants">Vat. gr.
+                        754</ref>
+                  </seg>
+                  <pb n="16v"/>
+                  <!-- fons ignotus in Ps 9,7b (ineditum?) = Auct. D. 4. 1 -->
+                  <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-9-5"
+                     corresp="#oxon-s-trin-78-ps-9-10a" source="Anonymous">
+                     <num type="ordinal" xml:lang="grc" value="84">ΠΔ´</num>
+                     <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-9-5"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 9,10a">τῶ πτωχῶ τῶ
+                        πνεύματι λαῶ φησί<supplied resp="Panteghini">·</supplied></quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-9-XX" type="identical">Vat. gr. 754</ref>
+                  </seg>
+                  <pb n="17r"/>
+                  <!-- Theodoretus = Origenes?  -->
+                  <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-9-6"
+                     corresp="#oxon-s-trin-78-ps-9-12a" source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-9-6"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 9,12a"><supplied
+                           reason="inner-margin">τ</supplied>ῆ ἐπου<supplied reason="inner-margin"
+                           >ρα</supplied>νίω <supplied reason="inner-margin">δη</supplied>λονότι:
+                        –</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-9-XX" type="with-variant">Vat. gr.
+                        754</ref><note><g type="linking">S</g></note>
+                  </seg>
+                  <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-9-7"
+                     corresp="#oxon-s-trin-78-ps-9-12b" source="Anonymous">
+                     <num type="ordinal" xml:lang="grc" value="86">ΠϚ´</num>
+                     <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-9-7"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 9,12b">ταῦτα ὡς πρὸς τοὺς
+                        ἀποστόλους καὶ τοὺς τῶν εὐαγγελίων κήρυκας φη(σὶν)· τίνα δὲ τὰ ἐπιτηδεύματα
+                        διὰ τῶν ἑξῆς σημαίνει:</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-9-XX" type="identical">Vat. gr. 754</ref>
+                  </seg>
+                  <!-- Theodoretus  -->
+                  <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-9-8"
+                     corresp="#oxon-s-trin-78-ps-9-13a" source="Anonymous">
+                     <num type="ordinal" xml:lang="grc" value="88">ΠΗ´</num>
+                     <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-9-8"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 9,13a">τὰ αἵμα<unclear
+                           reason="faded-ink">τ</unclear>α φ<unclear reason="faded-ink"
+                        >η</unclear>(σὶ) τὰ ὑπὲρ αὐτοῦ ἐκκεχυμένα ἐκδικ<unclear reason="faded-ink"
+                           >ίας ἀ</unclear>ξιώσει: </quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-9-XX" type="abbreviated-with-variants"
+                        >Vat. gr. 754</ref>
+                  </seg>
+                  <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-9-9"
+                     corresp="#oxon-s-trin-78-ps-9-13b" source="Anonymous">
+                     <num type="ordinal" xml:lang="grc" value="89">ΠΘ´</num>
+                     <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-9-9"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 9,13b">πένητας πάλιν,
+                           τοὺ<unclear reason="faded-ink">ς</unclear> δι’ <unclear
+                           reason="faded-ink">αὐτ</unclear>ὸ<unclear reason="faded-ink">ν</unclear>
+                           πτωχεύ<unclear reason="faded-ink">σαντ</unclear><supplied
+                           reason="illegible">α</supplied><unclear reason="faded-ink">ς
+                           φ</unclear><supplied reason="illegible">η</supplied><unclear
+                           reason="faded-ink">σί</unclear><supplied reason="illegible">·</supplied>
+                        οἳ καὶ <unclear reason="faded-ink">διὰ παντὸ</unclear><supplied
+                           reason="illegible">ς</supplied> τὰς πρὸ<unclear reason="faded-ink">ς
+                           αὐ</unclear><supplied reason="illegible">τὸ</supplied>ν ἱκετείας
+                        ἐποιοῦντο ἐκδίκησιν· τῆς κα<unclear reason="faded-ink">τ’ αὐ</unclear>τῶν
+                           γ<unclear reason="faded-ink">εν</unclear>ομένης <unclear
+                           reason="faded-ink">ἀ</unclear>δι<supplied reason="illegible"
+                           >κ</supplied><unclear reason="faded-ink">ίας</unclear> παρὰ τῶν δαιμόνων.
+                        αἰτοῦντες: –</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-9-XX" type="with-variants">Vat. gr.
+                        754</ref>
+                  </seg>
+                  <pb n="17v"/>
+                  <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-9-10"
+                     corresp="#oxon-s-trin-78-ps-9-16a" source="Anonymous">
+                     <num type="ordinal" xml:lang="grc" value="90">Ҁ´</num>
+                     <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-9-10"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 9,16">ταῦτα φη(σὶ)
+                        πεπόνθασιν, ἃ τοῖς ἁγίοις ἐξήρτυσαν: </quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-9-XX" type="identical">Vat. gr. 754</ref>
+                  </seg>
+                  <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-9-11"
+                     corresp="#oxon-s-trin-78-ps-9-17" source="Anonymous">
+                     <num type="ordinal" xml:lang="grc" value="91">ҀΑ´</num>
+                     <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-9-11"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 9,17">κρίμα γάρ φη(σιν)
+                        δίκαιον, τὸ τοὺς κατασκευάσαντας ἀνθρώπω θάνατον ἐν αὐτῶ περιληφθῆναι: </quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-9-XX" type="with-variant">Vat. gr.
+                        754</ref>
+                  </seg>
+                  <!-- Theodoretus -->
+                  <!-- glosse -->
+                  <!-- Hesychius, comm. brevis in diapsalma -->
+                  <!-- Hesychius, comm. brevis -->
+                  <!-- Hesychius, comm. brevis -->
+                  <!-- glosse -->
+                  <pb n="18r"/>
+                  <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-9-12"
+                     corresp="#oxon-s-trin-78-ps-9-20a" source="Anonymous">
+                     <num type="ordinal" xml:lang="grc" value="93">ҀΓ´</num>
+                     <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-9-12"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 9,20a">ἐπιλάμψειν τοῖς
+                        ἐπὶ τῆς γῆς εὔχεται τὸν μονογε<unclear reason="faded-ink">νῆ</unclear>· ὅπως
+                        ὁ ὑψηλόφρων ἐκεῖνος διάβολος· ὃν καὶ ἄνθρωπον ἐπὶ τοῦ παρόντος καλεῖ,
+                        ἐπιπλεῖον μὴ ἐπαίρειν τὴν ὀφρύν: </quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-9-XX" type="with-variants">Vat. gr.
+                        754</ref>
+                  </seg>
+                  <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-9-13"
+                     corresp="#oxon-s-trin-78-ps-9-20b" source="Anonymous">
+                     <num type="ordinal" xml:lang="grc" value="94">ҀΔ´</num>
+                     <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-9-13"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 9,20b">τὴν ἐπισωτηρία
+                        γενομένην κρίσιν τῶν ἐθνῶν γενέσθαι εὔχεται: –</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-9-XX" type="with-variant">Vat. gr.
+                        754</ref>
+                  </seg>
+                  <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-9-14"
+                     corresp="#oxon-s-trin-78-ps-9-21a" source="Anonymous">
+                     <num type="ordinal" xml:lang="grc" value="95">ҀΕ´</num>
+                     <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-9-14"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 9,21a">καὶ τίς ὁ
+                        νομοθέτης, ἢ ὁ τὸν τῆς καινῆς διαθήκης νόμον ἡμῖν εἰσηγησάμενος, τὸ
+                        εὐαγγέλιον: –</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-9-XX" type="identical">Vat. gr. 754</ref>
+                  </seg>
+                  <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-9-15"
+                     corresp="#oxon-s-trin-78-ps-9-23a" source="Anonymous">
+                     <num type="ordinal" xml:lang="grc" value="96">ҀϚ´</num>
+                     <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-9-15"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 9,23a">ἡ ὑπεροψία φη(σὶ)
+                        τοῦ πονηροῦ, πύρωσις τῶ πτωχῶ σου γίνεται λ<unclear reason="faded-ink"
+                           >αῶ</unclear><supplied reason="illegible">:</supplied></quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-9-XX" type="XXX">Vat. gr. 754</ref>
+                  </seg>
+                  <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-9-16"
+                     corresp="#oxon-s-trin-78-ps-9-24" source="Anonymous">
+                     <num type="ordinal" xml:lang="grc" value="97">ҀΖ´</num>
+                     <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-9-16"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 9,24">τοιαύτη φη(σὶ)
+                        γέγονεν ἡ ἀνεξικακί<unclear reason="faded-ink">α</unclear> διὰ τὸ
+                           ἀτιμωρ<unclear reason="faded-ink">ήτους</unclear> μένειν τοὺς ἀσεβεῖς ὡς
+                        καὶ λοιπὸ<unclear reason="faded-ink">ν πα</unclear>ρά τινων τῶν <unclear
+                           reason="faded-ink">ἀν</unclear>οητο<unclear reason="faded-ink"
+                           >τέρων</unclear> ἀπὸ δὲ τῶν <unclear reason="faded-ink">αὐτῶν
+                           ν</unclear><supplied reason="illegible">ο</supplied>μίζε<unclear
+                           reason="faded-ink">σθαι</unclear> τ<unclear reason="faded-ink"
+                           >ὸν</unclear>
+                        <supplied reason="illegible">βίον:</supplied></quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-9-XX" type="with-variants">Vat. gr.
+                        754</ref>
+                  </seg>
+                  <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-9-17"
+                     corresp="#oxon-s-trin-78-ps-9-23b" source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-9-17"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 9,23b">ἀντὶ τοῦ
+                           συλληφθ<unclear reason="faded-ink">ήσονται</unclear><supplied
+                           reason="illegible">: –</supplied>
+                     </quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-9-XX" type="abbreviated">Vat. gr.
+                        754</ref><note><g type="linking">S</g></note>
+                  </seg>
+                  <!-- Theodoretus  -->
+                  <pb n="18v"/>
+                  <!-- glosse -->
+                  <!-- glosse -->
+                  <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-9-18"
+                     corresp="#oxon-s-trin-78-ps-9-26c" source="Anonymous">
+                     <num type="ordinal" xml:lang="grc" value="98">ҀΗ´</num>
+                     <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-9-18"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 9,26c">ὅμοιον τὸ τὴν
+                        οἰκουμένην ὅλην καταλήψομαι τῆ χειρί μου: [Is 10,14]</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-9-XX" type="abbreviated">Vat. gr.
+                        754</ref>
+                  </seg>
+                  <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-9-19"
+                     corresp="#oxon-s-trin-78-ps-9-27" source="Anonymous">
+                     <num type="ordinal" xml:lang="grc" value="99">ҀΘ´</num>
+                     <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-9-19"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 9,(27) 29a">παράνομον
+                        φη(σὶ) ἕξιν τὴν εὐημερίαν λελόγισται· διὸ καὶ πικρίας δόλου τὸ στόμα
+                        πεπλήρωται· καὶ μὴν καὶ ἐνεδρεύει εἰς πτωχοὺς πρὸς τὸ ἀποκτεῖναι διὰ τῶν
+                        παγίδων· τὸ δὲ μετὰ πλουσίων, τί ἂν ἕτερον νοηθῆ. ἢ τῶν πλουτούντων ἐν
+                        κακοῖς· οὗ γὰρ διὰ τῶν διαβόλων· κατὰ τῶν πτωχῶν τῶι πνεύματι συμπράττουσιν:
+                        –</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-9-XX" type="with-variants">Vat. gr.
+                        754</ref>
+                  </seg><!-- wurde hier exakter angeknüpft als im Vat. gr. 754? -->
+                  <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-9-20"
+                     corresp="#oxon-s-trin-78-ps-9-27a" source="Anonymous">
+                     <num type="ordinal" xml:lang="grc" value="100">ρ´</num>
+                     <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-9-20"
+                        corresp="#person-2"
+                        source="Athanasius, exp. (?) in Ps 9,27a (non habet typus XIX sed ed. Montfaucon)"
+                           ><unclear reason="faded-ink">ἀ</unclear>ντὶ τοῦ οὐ μὴ σφ⟦.⟧άλω, οὐ μὴ
+                        περιτραπήσομαι: –</quote>
+                  </seg><!-- glosse und explarische Variante gleichzeig -->
+                  <pb n="19r"/>
+                  <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-9-21"
+                     corresp="#oxon-s-trin-78-ps-9-28a" source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-9-21"
+                        corresp="#person-2"
+                        source="Athanasius, exp. (?) in Ps 9,28a = Hesychius, lex. s.v. οὗ ἀρᾶς γέμει (Ο nr. 1534 Latte)"
+                        >οὗτινος κατάρας πλήρης:</quote>
+                     <ref target="bodl-auct-d-4-1:bodl-auct-d-4-1-fr-9-44" type="with-variants"
+                        >Bodl. Auct. D 4 1</ref><note><g type="linking">S</g></note>
+                  </seg>
+                  <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-9-22"
+                     corresp="#oxon-s-trin-78-ps-9-29a" source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-9-22"
+                        corresp="#person-2" source="Athanasius, exp. (?) in Ps 9,29a">ἐ<add
+                           place="overstrike">ν</add>κρύπτεται μετὰ δόλου:</quote>
+                     <ref target="ambr-m-47-sup:ambr-m-47-sup-fr-9-45" type="abbreviated">Ambros. M
+                        47 sup.</ref><ref target="bodl-auct-d-4-1:bodl-auct-d-4-1-fr-9-48"
+                        type="abbreviated-with-variant">Bodl. Auct. D 4 1</ref><note><g
+                           type="linking">÷</g></note>
+                  </seg>
+                  <!-- 3 scholia des Hesychius Jagic -->
+                  <pb n="19v"/>
+                  <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-9-23"
+                     corresp="#oxon-s-trin-78-ps-9-32" source="Anonymous">
+                     <num type="ordinal" xml:lang="grc" value="1">Α´</num>
+                     <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-9-23"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 9,32">τοῦτο αἴτιον καὶ
+                        τοῦ ἐπαρθῆναι καὶ τοῦ πεσεῖν αὐτόν: </quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-9-XX" type="identical">Vat. gr. 754</ref>
+                  </seg>
+                  <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-9-24"
+                     corresp="#oxon-s-trin-78-ps-9-33a" source="Anonymous">
+                     <num type="ordinal" xml:lang="grc" value="2">B´</num>
+                     <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-9-24"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 9,33a">εὔχεται τὴν ἀνοχὴν
+                        θεοῦ καὶ χρηστότητα κινῆσαι: </quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-9-XX" type="with-variants">Vat. gr.
+                        754</ref>
+                  </seg>
+                  <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-9-25"
+                     corresp="#oxon-s-trin-78-ps-9-33b" source="Anonymous">
+                     <num type="ordinal" xml:lang="grc" value="3">Γ´</num>
+                     <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-9-25"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 9,33b">μὴ ὑψουμένης γὰρ
+                        ἐπὶ τιμωρία τῶν ἀσεβῶν τῆς χειρὸς τοῦ θεοῦ, προπετέστεροι γίνονται:</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-9-XX" type="with-variant">Vat. gr.
+                        754</ref>
+                  </seg>
+                  <!-- Tarasius = Bodl. Auct. D 4 1 -->
+                  <pb n="20r"/>
+                  <!-- Hesychius, comm. magnus = Bodl. Auct. D 4 1-->
+                  <!-- Theodoretus -->
+                  <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-9-26"
+                     corresp="#oxon-s-trin-78-ps-9-36b" source="Hesychius">
+                     <num type="ordinal" xml:lang="grc" value="5">Ε´</num>
+                     <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-9-26"
+                        corresp="#person-12"
+                        source="Hesychius, comm. magnus in Ps 9,36b; διὰ – αὐτήν (= PG 27,92 B1–3) non habet Paris. gr. 654 (f. 116v)"
+                        >διὰ ταύτην μὲν τὴν ἁμαρτίαν· τὸ δὲ ὅλον οὕτως· ἐ<unclear reason="faded-ink"
+                           >ὰν</unclear> φ<supplied reason="margin-cut">η(σὶν)</supplied>
+                        <unclear reason="margin-cut">ἐκ</unclear>ζητήσης τὴν πονηρίαν τοῦ πονηροῦ,
+                        οὐ μὴ εὑρεθῆ· τουτέστιν ἀπολεῖται ὁ ἁμαρτωλὸς δι᾿ αὐτήν· ποῦ ἡ τοῦ Ἰούδα
+                        φιλαργυρία· [Mt 26,15 parr.] ποῦ ἡ τῆς αἰγυπτίας πορνεία· [cf. Ez 23] ποῦ ἡ
+                        τοῦ φαραὼ ὑπερηφανία· [cf. e.g. Ex 5,2] μετὰ τοῦ καρποῦ καὶ ἡ ῤίζα ἀπόλωλε: </quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-9-XX" type="expanded-with-variant">Vat.
+                        gr. 754</ref><note type="attribution"><foreign xml:lang="grc"><supplied
+                              reason="inner-margin"
+                     >Ἡσυ</supplied>χίου</foreign></note><!-- Vian hat den ersten Teil getilgt (PG 27), aber in seiner Liste nicht referenziert -->
+                  </seg>
+                  <!-- Theodoretus -->
+                  <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-9-27"
+                     corresp="#oxon-s-trin-78-ps-9-37a" source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-9-27"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 9,37a; 9,37b">ἐν τῶι
+                        μέλλοντι καὶ νέω αἰῶνι<supplied reason="illegible">·</supplied> ἐν γὰρ τῆ
+                        βασιλεία <unclear reason="faded-ink">α</unclear>ὐτοῦ βληθήσονται εἰς
+                           τ<unclear reason="faded-ink">ὸ</unclear> πῦρ τὸ αἰώνιο<unclear
+                           reason="faded-ink">ν: –</unclear> [cf. Mt 18,8]:</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-9-XX" type="identical">Vat. gr.
+                           754</ref><note><g type="linking">÷</g></note>
+                  </seg>
+                  <pb n="20v"/>
+                  <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-9-28"
+                     corresp="#oxon-s-trin-78-ps-9-38" source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-9-28"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 9,38a">αὕτη γὰρ ἦν ἡ
+                        ἐπιθυμία· καὶ οὗτος ὁ πόθος τῶν μελλόντων ἀξιωθῆναι ἀγαθῶν: </quote><note><g
+                           type="linking">S</g></note>
+                     <ref target="vat-gr-754:vat-gr-754-fr-9-XX" type="with-variants">Vat. gr.
+                        754</ref>
+                  </seg>
                   <!-- Ps 10 bibletext -->
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-10-1"
                      n="Ps (LXX) 10,1" xml:lang="grc" xml:id="oxon-s-trin-78-ps-10-1">
@@ -1537,6 +2044,48 @@
                         n="Ps (LXX) 10,7b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-10-7"/> εὐθύτητα
                      εἶδεν τὸ πρόσωπον αὐτοῦ. </quote>
                   <!-- Ps 10 commentary -->
+                  <!-- Theodoretus, Hypothesis -->
+                  <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-10-1"
+                     corresp="#oxon-s-trin-78-ps-10-1b" source="Anonymous">
+                     <num type="ordinal" xml:lang="grc" value="8">Η´</num>
+                     <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-10-1"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 10,1b">τί μοι ἐρεῖτε
+                        φη(σὶ) φεύγειν ἐπὶ τὰ ὄρη ὡς στρουθίον· καίτοι πεποιθότι ἐπὶ τῶ θεῶ:
+                        –</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-10-XX" type="with-variants">Vat. gr.
+                        754</ref>
+                  </seg>
+                  <!-- 2 Glossen -->
+                  <pb n="21r"/>
+                  <!-- Glosse ἐτελείωσας -->
+                  <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-10-2"
+                     corresp="#oxon-s-trin-78-ps-10-3a" source="Anonymous">
+                     <num type="ordinal" xml:lang="grc" value="1">Α´</num>
+                     <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-10-2"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 10,3a">κατήγαγον φη(σὶ)
+                        τὸν ἄνθρωπον εἰς φθορὰν, καίτοι εἰς ἀφθαρσίαν κατηρτισμένον: –</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-10-XX" type="with-variants">Vat. gr.
+                        754</ref>
+                  </seg>
+                  <!-- Glosse κατέβαλον -->
+                  <!-- Glosse fons ignotus in Ps 10,4c (PG 27,93 C1; cf. PG 69,793 B9–10) -->
+                  <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-10-3"
+                     corresp="#oxon-s-trin-78-ps-10-4c" source="Anonymous">
+                     <num type="ordinal" xml:lang="grc" value="2">Β´</num>
+                     <quote type="patristic" subtype="quotation/quotation"
+                        xml:id="oxon-s-trin-78-quot-10-3" corresp="#person-2"
+                        source="Athanasius, exp. in Ps 10,4c; 10,4d">ὀφθαλμοὺς τὴν εὐεργετικὴν
+                        ἐπισκοπὴν δηλοῖ· βλέφαρα δὲ τὴν κριτικ<unclear reason="faded-ink"
+                           >ὴ</unclear>ν αὐτοῦ πρό<unclear reason="faded-ink"
+                        >νοι</unclear>αν:</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-10-XX" type="identical">Vat. gr.
+                        754</ref>
+                     <ref target="vat-gr-754:vat-gr-754-fr-10-XX" type="abbreviated">Vat. gr.
+                        754</ref>
+                  </seg>
+                  <!-- Didymus -->
+                  <!-- Glosse -->
+                  <!-- Theodoretus -->
                </ab>
             </div>
          </div>
