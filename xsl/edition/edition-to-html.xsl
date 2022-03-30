@@ -43,14 +43,39 @@ version="2.0">
                 </p>
                 <p class="publisher">FWF Project 32988</p>
                 <p class="license">Available under the Creative Commons Attribution 4.0 International (CC BY 4.0)</p>
-                <p class="date">2022-03-03</p>
+                <p class="date">2022-03-30</p>
             </div>
             <div id="main-content-body">
                 <div class="header-centered">Text, Übersetzung, Kommentar</div>
+                <div class="list-of-witnesses">
+                    <p>Liste der Textzeugen:</p>
+                    <xsl:apply-templates select="root()/tei:TEI/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:listWit"/>
+                </div>
                 <xsl:apply-templates select="child::node()"/>
             </div>
         </div>
     </body>
+</xsl:template>
+
+<xsl:template match="tei:listWit">
+    <table>
+        <thead>
+            <tr>
+                <td>Handschrift</td>
+                <td>Abkürzung</td>
+            </tr>
+        </thead>
+        <tbody>
+            <xsl:apply-templates select="tei:witness"/>
+        </tbody>
+    </table>
+</xsl:template>
+
+<xsl:template match="tei:witness">
+    <tr>
+        <td><xsl:value-of select="./text()"/></td>
+        <td style="text-align:right;"><i><xsl:value-of select="@xml:id"/></i></td>
+    </tr>
 </xsl:template>
 
 <xsl:template match="tei:div[@type = 'psalm']">
@@ -125,11 +150,9 @@ version="2.0">
 <xsl:template match="tei:app[@type = 'fragment']">
     <p>
         <xsl:text>– </xsl:text>
-        <xsl:value-of select="tei:rdg/text()"/>
-        <xsl:text> </xsl:text>
-        <xsl:for-each select="tei:wit">
-            <xsl:value-of select="./text()"/>
-            <xsl:if test="position() != last()"><xsl:text>, </xsl:text></xsl:if>
+        <xsl:for-each select="tokenize(tei:rdg/@wit,' ')">
+            <i><xsl:value-of select="substring-after(.,'#')"/></i>
+            <xsl:if test="position() != last()"><xsl:text> </xsl:text></xsl:if>
         </xsl:for-each>
     </p>
 </xsl:template>
@@ -137,12 +160,17 @@ version="2.0">
 <xsl:template match="tei:app[@type = 'text']">
     <xsl:text>– </xsl:text>
     <xsl:apply-templates select="tei:lem"/>
-    <xsl:text>] </xsl:text>
+    <xsl:text> </xsl:text>
+    <xsl:for-each select="tokenize(tei:lem/@wit,' ')">
+        <i><xsl:value-of select="substring-after(.,'#')"/></i>
+        <xsl:if test="position() != last()"><xsl:text> </xsl:text></xsl:if>
+    </xsl:for-each>
+    <xsl:text> | </xsl:text>
     <xsl:for-each select="tei:rdg">
         <xsl:apply-templates select="tei:foreign | text()"/>
         <xsl:text> </xsl:text>
-        <xsl:for-each select="following-sibling::tei:wit">
-            <xsl:value-of select="text()"/>
+        <xsl:for-each select="tokenize(./@wit,' ')">
+            <i><xsl:value-of select="substring-after(.,'#')"/></i>
             <xsl:if test="position() != last()">
                 <xsl:text> </xsl:text>
             </xsl:if>
