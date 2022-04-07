@@ -88,7 +88,9 @@ version="2.0">
 </xsl:template>
 
 <xsl:template match="tei:div[@type = 'psalmverse']">
+    <div class="psalm">
     <xsl:apply-templates select="tei:div[@type = 'text']"/>
+    </div>
 </xsl:template>
 
 <xsl:template match="tei:div[@type = 'text']">
@@ -96,7 +98,6 @@ version="2.0">
 </xsl:template>
 
 <xsl:template match="tei:quote[@type = 'psalmtext' and parent::tei:div[@xml:lang = 'grc']]">
-    <xsl:for-each select=".">
         <div class="row">
             <div class="col-md-2">
                 <xsl:if test="exists(@n)">
@@ -110,7 +111,6 @@ version="2.0">
                 <xsl:apply-templates select="parent::tei:div/parent::tei:div/tei:div[@type = 'translation']/tei:quote[current()/@xml:id = substring-after(@corresp,'#')]"/>
             </div>
         </div>
-    </xsl:for-each>
 </xsl:template>
 
 <xsl:template match="tei:quote[@type = 'psalmtext' and parent::tei:div[@xml:lang = 'de']]">
@@ -158,14 +158,14 @@ version="2.0">
 </xsl:template>
 
 <xsl:template match="tei:app[@type = 'text']">
-    <xsl:text>– </xsl:text>
+    <!-- <xsl:text>– </xsl:text> -->
     <xsl:apply-templates select="tei:lem"/>
     <xsl:text> </xsl:text>
     <xsl:for-each select="tokenize(tei:lem/@wit,' ')">
         <i><xsl:value-of select="substring-after(.,'#')"/></i>
         <xsl:if test="position() != last()"><xsl:text> </xsl:text></xsl:if>
     </xsl:for-each>
-    <xsl:text> | </xsl:text>
+    <xsl:text>] </xsl:text>
     <xsl:for-each select="tei:rdg">
         <xsl:apply-templates select="tei:foreign | text()"/>
         <xsl:text> </xsl:text>
@@ -175,7 +175,9 @@ version="2.0">
                 <xsl:text> </xsl:text>
             </xsl:if>
         </xsl:for-each>
+        <xsl:if test="position() != last()"><xsl:text> - </xsl:text></xsl:if>
     </xsl:for-each>
+    <xsl:if test="position() != last()"><xsl:text> | </xsl:text></xsl:if>
 </xsl:template>
 
 <xsl:template match="tei:lem">
@@ -184,6 +186,10 @@ version="2.0">
     
 <xsl:template match="tei:foreign[@xml:lang = 'grc']">
     <xsl:value-of select="./text()"/>
+</xsl:template>
+
+<xsl:template match="tei:note[@type = 'textual-commentary']">
+    <p><xsl:apply-templates select="child::node()"/></p>
 </xsl:template>
 
 </xsl:stylesheet>
