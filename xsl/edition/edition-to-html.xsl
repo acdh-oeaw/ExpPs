@@ -96,8 +96,31 @@ version="2.0">
 <xsl:template match="tei:div[@type = 'text']">
     <xsl:apply-templates select="child::node()"/>
 </xsl:template>
+    
+<xsl:template match="tei:div[@type = 'psalmtext']">
+    <div class="body-psalmtext">
+        <xsl:apply-templates select="child::node()"/>
+    </div>
+</xsl:template>
+    
+<xsl:template match="tei:div[@type = 'commentary']">
+    <div class="body-commentary">
+        <xsl:apply-templates select="child::node()"/>
+    </div>
+</xsl:template>
 
-<xsl:template match="tei:quote[@type = 'psalmtext' and parent::tei:div[@xml:lang = 'grc']]">
+<xsl:template match="tei:div[@type = 'textcritic']">
+    <div class="body-textcritic">
+        <xsl:apply-templates select="tei:app[@type = 'fragment']"/>
+        <xsl:for-each select="tei:app[@type = 'text']">
+            <xsl:apply-templates select="."/>
+            <xsl:if test="position() != last()"><xsl:text> | </xsl:text></xsl:if>
+        </xsl:for-each>
+        <xsl:apply-templates select="tei:note[@type = 'textual-commentary']"/>
+    </div>
+</xsl:template>
+
+<xsl:template match="tei:quote[@type = 'psalmtext' and parent::tei:div[@type = 'psalmtext']/parent::tei:div[@xml:lang = 'grc']]">
         <div class="row">
             <div class="col-md-2">
                 <xsl:if test="exists(@n)">
@@ -108,7 +131,7 @@ version="2.0">
             </div>
             <div class="col-md-5"><xsl:value-of select="text()"/></div>
             <div class="col-md-5">
-                <xsl:apply-templates select="parent::tei:div/parent::tei:div/tei:div[@type = 'translation']/tei:quote[current()/@xml:id = substring-after(@corresp,'#')]"/>
+                <xsl:apply-templates select="parent::tei:div/parent::tei:div/parent::tei:div/tei:div[@type = 'translation']/tei:quote[current()/@xml:id = substring-after(@corresp,'#')]"/>
             </div>
         </div>
 </xsl:template>
@@ -122,7 +145,7 @@ version="2.0">
     <xsl:value-of select="text()"/>
 </xsl:template>
 
-<xsl:template match="tei:p[parent::tei:div[@xml:lang = 'grc']]">
+<xsl:template match="tei:p[parent::tei:div[@type = 'commentary']/parent::tei:div[@xml:lang = 'grc']]">
     <div class="row">
         <div class="col-md-2">
             <b>
@@ -138,7 +161,7 @@ version="2.0">
             <xsl:value-of select="text()"/>
         </div>
         <div class="col-md-5 large-latin-text">
-            <xsl:apply-templates select="parent::tei:div/parent::tei:div/tei:div[@type = 'translation']/tei:p[current()/@xml:id = substring-after(@corresp,'#')]"/>
+            <xsl:apply-templates select="parent::tei:div/parent::tei:div/parent::tei:div/tei:div[@type = 'translation']/tei:p[current()/@xml:id = substring-after(@corresp,'#')]"/>
         </div>
     </div>
 </xsl:template>
@@ -158,7 +181,6 @@ version="2.0">
 </xsl:template>
 
 <xsl:template match="tei:app[@type = 'text']">
-    <!-- <xsl:text>– </xsl:text> -->
     <xsl:apply-templates select="tei:lem"/>
     <xsl:text> </xsl:text>
     <xsl:for-each select="tokenize(tei:lem/@wit,' ')">
@@ -166,7 +188,9 @@ version="2.0">
         <xsl:if test="position() != last()"><xsl:text> </xsl:text></xsl:if>
     </xsl:for-each>
     <xsl:text>] </xsl:text>
+    <xsl:variable name="number-of-readings" select="count(tei:rdg)"/>
     <xsl:for-each select="tei:rdg">
+        <xsl:variable name="outer-loop" select="position()"/>
         <xsl:apply-templates select="tei:foreign | text()"/>
         <xsl:text> </xsl:text>
         <xsl:for-each select="tokenize(./@wit,' ')">
@@ -175,9 +199,8 @@ version="2.0">
                 <xsl:text> </xsl:text>
             </xsl:if>
         </xsl:for-each>
-        <xsl:if test="position() != last()"><xsl:text> - </xsl:text></xsl:if>
+        <xsl:if test="$outer-loop != $number-of-readings"><xsl:text> - </xsl:text></xsl:if>
     </xsl:for-each>
-    <xsl:if test="position() != last()"><xsl:text> | </xsl:text></xsl:if>
 </xsl:template>
 
 <xsl:template match="tei:lem">
