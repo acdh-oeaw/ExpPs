@@ -129,8 +129,8 @@ version="2.0">
                     <xsl:text>) </xsl:text>
                 </xsl:if>
             </div>
-            <div class="col-md-5"><xsl:value-of select="text()"/></div>
-            <div class="col-md-5">
+            <div class="col-md-5 greek-psalmtext"><xsl:value-of select="text()"/></div>
+            <div class="col-md-5 latin-psalmtext">
                 <xsl:apply-templates select="parent::tei:div/parent::tei:div/parent::tei:div/tei:div[@type = 'translation']/tei:quote[current()/@xml:id = substring-after(@corresp,'#')]"/>
             </div>
         </div>
