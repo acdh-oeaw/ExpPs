@@ -2,7 +2,7 @@
 <?xml-model href="../../schema/tei-psalmcatenae.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
-      <!-- Ps 6 wurde zur Gänze gelesen; bei den anderen wurden die expositiones mittels Namen der Autoren gesucht -->
+      <!-- Ps 6 wurde zur Gänze gelesen; bei den anderen wurden die expositiones mittels Autorennamen gesucht -->
       <!-- fr. des Athanasius und Hesychius, comm. magnus wurden nachträglich verlinkt; ein dafür verwendetes Verweiszeichen ist nicht rot und scheint von zweiter Hand hinzugefügt worden zu sein. Dieses Zeichen scheint zu bedeuten, dass das betreffende fr. unter dem vorausgehenden, roten Verweiszeichen subsumiert werden muss. Auffällig ist es auch, dass Athanasius und Hesychius gepaart hernagezogen werden -->
       <!-- Theodoretus kann auch als Theodorus angegeben werden; deutet die Schwankung in der Benennung auf unterschiedliche Quellen? -->
       <fileDesc>
@@ -60,7 +60,7 @@
                </person>
                <person xml:id="person-2" role="author">
                   <persName>Athanasius</persName>
-                  <bibl>Athanasius, schol.</bibl>
+                  <bibl>Athanasius, exp.</bibl>
                </person>
                <person xml:id="person-3" role="author">
                   <persName>Basilius Caesariensis</persName>
@@ -124,6 +124,7 @@
                </person>
                <person xml:id="person-18" role="author">
                   <persName>Unknown</persName>
+                  <bibl>fons ignotus</bibl>
                </person>
                <person xml:id="person-19" role="author">
                   <persName>Unknown</persName>
@@ -219,13 +220,25 @@
                   <persName>(Ps-)Hippolytus</persName>
                   <bibl>(Ps-)Hippolytus, fr. (Achelis)</bibl>
                </person>
-               <person xml:id="person-43" role="author" sameAs="#person-13">
-                  <persName>Origenes</persName>
-                  <bibl>Origenes, fr. (Devreesse)</bibl>
-               </person>
-               <person xml:id="person-44" role="author" sameAs="#person-4">
+               <person xml:id="person-43" role="author" sameAs="#person-4">
                   <persName>Cyrillus</persName>
                   <bibl>Cyrillus, thes.</bibl>
+               </person>
+               <person xml:id="person-44" role="author">
+                  <persName>Tarasius Const.</persName>
+                  <bibl>Tarasius Const., fr. (ineditum?)</bibl>
+               </person>
+               <person xml:id="person-45" role="author" sameAs="#person-3">
+                  <persName>Basilius</persName>
+                  <bibl>Basilius, hom. 2 in hex. (ed. Amand de Mendieta – Rudberg)</bibl>
+               </person>
+               <person xml:id="person-46" role="author" sameAs="#person-3">
+                  <persName>Basilius</persName>
+                  <bibl>Basilius, hom. Spir. (ed. Pruche)</bibl>
+               </person>
+               <person xml:id="person-47" role="author">
+                  <persName>unidentified fragment (illegible)</persName>
+                  <bibl/>
                </person>
             </listPerson>
          </sourceDesc>
@@ -326,7 +339,39 @@
             <!-- Pointers to identical fragments in other documents. @type = identical | with-variations | abbreviated | expanded &lt; &gt;-->
             <div type="commentary" subtype="commentary" xml:id="par-gr-139-1-4">
                <ab xml:id="par-gr-139-1-2" xml:lang="grc">
+                  <pb n="8v"/>
                   <!-- Ps 1 commentary -->
+                  <!-- Mitte, vor Athanasius: Hesychius, comm. magnus -->
+                  <note type="lemma">Ps 1,1c</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-1-1"
+                     corresp="#par-gr-139-78-ps-1-1c" source="Athanasius">
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-139-quot-1-1"
+                        corresp="#person-2"
+                        source="Athanasius, exp. (?) in Ps 1,1c = Asterius, fr. 2 in Ps 1,1 (249 Richard)"
+                        >Διὰ τῆς καθέδρας τὴν διδασκαλίαν δηλοὶ ὡς φησὶν ἐπὶ τῆς Μωσέως καθέδρας
+                        καθέδρα [cf. Mt 23,2] τοίνυν λοιμῶν ἡ διδασκαλία τῶν παρανόμων·</quote>
+                     <note type="attribution"><foreign xml:lang="grc">Ἀθανασίου</foreign></note>
+                  </seg>
+                  <!-- Mitte, nach Athanasius: Hesychius, comm. magnus -->
+                  <pb n="9r"/>
+                  <note type="lemma">Ps 1,3a</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-1-2"
+                     corresp="#par-gr-139-78-ps-1-3a" source="Athanasius">
+                     <quote type="patristic" subtype="quotation-expanded-abbreviated"
+                        xml:id="par-gr-139-quot-1-2" corresp="#person-2"
+                        source="Athanasius, exp. in Ps 1,3a">Ἐξομολογήσεως ἤτοι παραβολῆς ξύλον ὁ
+                        Χριστὸς ἀναγέγραπται ἐν τῆ θεοπνεύστω γραφὴ κατὰ τὸ εἰρημένον ξύλον ζωῆς
+                        ἐστιν πᾶσιν τοῖς ἀντεχομένοις αὐτῆς [Prov 3,18a] λέγει οὖν ὅτι οἱ
+                        πιστεύοντες εἰς Χριστὸν σώμα αὐτοῦ ἔσονται· μετασχηματίσει γὰρ τὸ σῶμα τῆς
+                        ταπεινώσεως ἡμῶν σύμορφον τῶ σώματι τῆς δόξης αὐτοῦ· διεξόδους δὲ ὑδάτων τὰς
+                        θεῖας φησὶ γραφὰς ἐν αἷς ἀπανταχοῦ κύριον ἐστιν εὐρεῖν κηρυττόμενον·</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-1-5"
+                        type="expanded-abbreviated-with-variants">Vat. gr. 754</ref><note
+                        type="attribution"><foreign xml:lang="grc">Αθ(ανασίου)</foreign></note>
+                  </seg>
+                  <!-- letztes fr.: Hesychius, comm. magnus -->
+                  <pb n="9v"/>
+                  <!-- unten: Hesychius, comm. magnus -->
                   <!-- Ps 2 bibletext -->
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-1"
                      n="Ps (LXX) 2,1" xml:lang="grc" xml:id="par-gr-139-ps-2-1">
@@ -425,7 +470,103 @@
                      θυμὸς αὐτοῦ, <anchor xml:id="par-gr-139-ps-2-12d" type="psalmtext"
                         n="Ps (LXX) 2,12d" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-12"/> μακάριοι
                      πάντες οἱ πεποιθότες ἐπ’ αὐτῷ. </quote>
+                  <pb n="10r"/>
                   <!-- Ps 2 commentary -->
+                  <note type="lemma">Ps 2,1a</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-2-1"
+                     corresp="#par-gr-139-78-ps-2-1a" source="Athanasius">
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-139-quot-2-1"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 2,1a">Φρύαγμα τὸ ἄλογον
+                        φρόνημα ἀπὸ κοινοῦ δὲ τὸ ϊνα τι ϊνα ῆι καὶ διατί οἱ λαοὶ ἐμελέτησαν κενὰ πῶς
+                        γὰρ οὐ κενὴ γέγονεν αὐτοῖς ἡ μελέτη· μη δεξαμένοις τὸν σωτῆρα τοῦ
+                        γένους·</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-2-2" type="with-variants">Vat. gr.
+                        754</ref><note type="attribution"><foreign xml:lang="grc"
+                           >Αθαν(ασίου)</foreign></note>
+                  </seg>
+                  <note type="lemma">Ps 2,&lt;2c&gt;</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-2-2"
+                     corresp="#par-gr-139-78-ps-2-2c" source="Athanasius">
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-139-quot-2-2"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 2,2c">Ἡ γὰρ εἰς τὸν
+                        Χριστὸν ἐπιβουλὴ καὶ εἰς αὐτ<unclear reason="faded-ink">ὸν</unclear>
+                        ἀνατρέχει τὸν πατέρα εἰ γὰρ ὁ πατὴρ ἐν τῶ υἱῶ καὶ ὁ υἱὸς ἐν τῶ πατρὶ πῶς οὐ
+                        καὶ μια ἡ εἰς αὐτοὺς ὕβρις γένοιτ’ <subst hand="unknown">
+                           <del rend="unmarked">ἂ</del>
+                           <add place="inline">ἄ</add>
+                        </subst>ν: –</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-2-12" type="with-variants">Vat. gr.
+                        754</ref><note type="attribution"><foreign xml:lang="grc"
+                           >Ἀθαν(ασίου)</foreign></note>
+                  </seg>
+                  <pb n="10v"/>
+                  <note type="lemma">Ps 2,3</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-2-3"
+                     corresp="#par-gr-139-78-ps-2-3" source="Athanasius">
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-139-quot-2-3"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 2,3a">Λείπει τὸ λέγοντες.
+                        ἵνα ἠ ἡ διάνοια αὕτη. συνῆσαν κατὰ τοῦ κυρίου καὶ κατὰ τοῦ Χριστοῦ λέγοντες
+                        διαρρήξωμεν τοὺς δεσμοὺς αὐτῶν λειπε<add place="above">ι</add> τε ἴσως τῆς
+                        ἱερᾶς γεν<supplied reason="illegible">έσ</supplied>θαι σαγήνης περὶ ῆς
+                        γέγραπται ὁμοία ἐστὶν ἡ βασιλεία τῶν οὐρανῶν σαγήνη: [Mt 13,47]</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-2-13" type="with-variants-and-variation"
+                        >Vat. gr. 754</ref><note type="attribution"><foreign xml:lang="grc"
+                           >Ἀθανα(σίου)</foreign></note>
+                  </seg>
+                  <!-- nach Athanasius, unten: Hesychius, comm. magnus -->
+                  <note type="lemma">Ps 2,5</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-2-4"
+                     corresp="#par-gr-139-78-ps-2-5" source="Athanasius">
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-139-quot-2-4"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 2,5">Τότε πότε ἢ ὅτε
+                        ἔλεγεν διαρρήξωμεν τοὺς δεσμοὺς αὐτῶν. τί δε ἐστιν τὰ ἐν ὀργῆ. παρ’ αὐτοῦ
+                        λαληθέντα. τὸ οὐα<subst hand="unknown">
+                           <del rend="unmarked">ί</del>
+                           <add place="inline">ὶ</add>
+                        </subst> ὑμῖν γραμματεῖς καὶ φαρισαιοι [Mt 23,13 et seq.] ὅτι ἀρθήσεται ἀφ’
+                        ὑμῶν ἡ βασιλεία τοῦ θεοῦ [Mt 21,43] καὶ τὸ καὶ ὑμιν τοῖς νομικοῖς οὐαί: [Lc
+                        11,46]</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-2-16" type="with-variants">Vat. gr.
+                        754</ref><note type="attribution"><foreign xml:lang="grc"
+                           >Ἀθανα(σίου)</foreign></note>
+                  </seg>
+                  <!-- letztes fr.: Hesychius, comm. magnus -->
+                  <pb n="11r"/>
+                  <!-- ein langes, unidentifiziertes fr.; Autorenname besteht aus einem A -->
+                  <note type="lemma">Ps 2,6b</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-2-5"
+                     corresp="#par-gr-139-78-ps-2-6b" source="Athanasius">
+                     <quote type="patristic" subtype="quotation/quotation-adapted"
+                        xml:id="par-gr-139-quot-2-5" corresp="#person-2"
+                        source="Athanasius, exp. in Ps 2,6a; 2,6b">Ὡς ἀποβληθέντος τοῦ ἐξ ἰσραὴλ
+                        λαοῦ τὴν εἰς τὰ ἔθνη γενομένην αὐτ<add place="above">οῦ</add>
+                        <del rend="erasure" hand="unknown"><gap reason="illegible" quantity="2"
+                              unit="character"/></del> πίστιν αὐτοῖς διηγεῖται / σιὼν δὲ τὴν
+                        ἐκκλησίαν δηλοῖ: </quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-2-26" type="identical">Vat. gr.
+                        754</ref><ref target="vat-gr-754:vat-gr-754-fr-2-29" type="with-variant"
+                        >Vat. gr. 754</ref><note type="attribution"><foreign xml:lang="grc"
+                           >Ἀθανασίου</foreign></note>
+                  </seg>
+                  <pb n="11v"/>
+                  <!-- unten: 2 Hesychius, comm. magnus -->
+                  <pb n="12r"/>
+                  <pb n="12v"/>
+                  <pb n="13r"/>
+                  <!-- vor Athanasius, oben: Hesychius, comm. magnus -->
+                  <note type="lemma">Ps 2,12a–b</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-2-6"
+                     corresp="#par-gr-139-78-ps-2-12a" source="Athanasius">
+                     <quote type="patristic" subtype="quotation/quotation-expanded"
+                        xml:id="par-gr-139-quot-2-6" corresp="#person-2"
+                        source="Athanasius, exp. in Ps 2,12a; 2,12b">Τῆς εὐαγγελικης δηλονὅτι / ὁδοῦ
+                        δε δικαίας τοῦ εἰρηκότος ἐγώ εἰμι ἡ οδος: [Ioh 14,6]</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-2-48" type="identical">Vat. gr.
+                        754</ref><ref target="vat-gr-754:vat-gr-754-fr-3-2" type="expanded">Vat. gr.
+                        754</ref><note type="attribution"><foreign xml:lang="grc"
+                           >Ἀθαν(ασίου)</foreign></note>
+                  </seg><!-- die zweite exp. wurde erweitert auf Grund dessen, dass der betreffende Bibeltext auf der vorigen Seite untergebracht ist -->
+                  <!-- oben, letztes fr.: Hesychius, comm. magnus -->
                   <!-- Ps 3 bibletext -->
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-3-1"
                      n="Ps (LXX) 3,1" xml:lang="grc" xml:id="par-gr-139-ps-3-1"> Ψαλμὸς τῷ Δαυιδ,
@@ -492,6 +633,29 @@
                         <anchor xml:id="par-gr-139-ps-3-9b" type="psalmtext" n="Ps (LXX) 3,9b"
                         corresp="../psalms-LXX/psalms.xml#Ps-LXX-3-9"/> καὶ ἐπὶ τὸν λαόν σου ἡ
                      εὐλογία σου. </quote>
+                  <!-- Ps 3 commentary -->
+                  <pb n="13v"/>
+                  <!-- Mitte: Hesychius, comm. magnus -->
+                  <!-- unten: Hesychius, comm. magnus -->
+                  <pb n="14r"/>
+                  <!-- Mitte: Hesychius, comm. magnus -->
+                  <pb n="14v"/>
+                  <note type="lemma">Ps 3,9</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-3-1"
+                     corresp="#par-gr-139-78-ps-3-9" source="Athanasius">
+                     <quote type="patristic" subtype="quotation-expanded"
+                        xml:id="par-gr-139-quot-3-1" corresp="#person-2"
+                        source="Athanasius, exp. in Ps 3,9">Σῶσόν με φησὶν κύριε εὔχομαι δὲ καὶ
+                        τοῦτο εἰς πάντα ἐξενεχθῆναι τὸν λαὸν· ἰστέον δὲ ὡς ἅπας ὁ ψαλμὸς ἀναφορὰν
+                        ἔχει εἰς τὴν ἀνθρωπότητα ἁμαρτοῦσαν μὲν καὶ διαὐτὸ τοῦτο παραδεδομένην ἐν
+                        τοῖς νοητοῖς ἐχθροῖς βοῶσαν δὲ ἐν θλίψει καὶ ἐπακουσθεισαν παρὰ τοῦ θεοῦ καὶ
+                        μὴν καὶ σωθεισαν διὰ τοῦ ἀναστῆναι αὐτὸν ἐκ νεκρῶν δηλονὅτι καὶ πατάξαι τοὺς
+                        ἐχθραίνοντας ἡμιν δαίμονας αὐτὸς γὰρ ὁ τὰς μύλας τῶν λεόντων συνθλάσας
+                        κύριος [Ps 57,7b] καὶ αὐτοῦ ἐστιν ἤτοι παρ’ αὐτοῦ ἡ σωτηρία: –</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-3-25" type="expanded-with-variants">Vat.
+                        gr. 754</ref><note type="attribution"><foreign xml:lang="grc"
+                           >Aθανασ(ίου)</foreign></note>
+                  </seg>
                   <!-- Ps 4 bibletext -->
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-4-1"
                      n="Ps (LXX) 4,1" xml:lang="grc" xml:id="par-gr-139-ps-4-1"> Εἰς τὸ τέλος, ἐν
@@ -556,7 +720,90 @@
                      κοιμηθήσομαι καὶ ὑπνώσω, <anchor xml:id="par-gr-139-ps-4-9b" type="psalmtext"
                         n="Ps (LXX) 4,9b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-4-9"/> ὅτι σύ,
                      κύριε, κατὰ μόνας ἐπ’ ἐλπίδι κατῴκισάς με. </quote>
+                  <pb n="15r"/>
                   <!-- Ps 4 commentary -->
+                  <!-- letztes fr.: Hesychius, comm. magnus -->
+                  <pb n="15v"/>
+                  <!-- Mitte: Hesychius, comm. magnus -->
+                  <note type="lemma">Ps 4,2b</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-4-1"
+                     corresp="#par-gr-139-78-ps-4-2b" source="Athanasius">
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-139-quot-4-1"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 4,2b">Οὐ μόνον φησιν τῶν
+                        περιστάσεων ἐξήγαγε<subst hand="corr">
+                           <del rend="unmarked">ν</del>
+                           <add place="inline">ς.</add>
+                        </subst> ἀλλὰ καὶ εἰς ευρυχωρίαν πολλὴν στῆ<del rend="erasure"
+                           hand="unknown"><gap reason="illegible" quantity="1" unit="character"
+                           /></del>ναι παρεσκεύασας: </quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-4-11" type="with-variant">Vat. gr.
+                        754</ref><note type="attribution"><foreign xml:lang="grc"
+                           >Ἀθανασ(ί)ου</foreign></note>
+                  </seg>
+                  <!-- vorletztes fr.: Hesychius, comm. magnus -->
+                  <pb n="16r"/>
+                  <note type="lemma">Ps 4,2c</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-4-2"
+                     corresp="#par-gr-139-78-ps-4-2c" source="Athanasius">
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-139-quot-4-2"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 4,2c">Ἐπειδὴ εἰσηκούσθι
+                        ἔφη ἐκ τῆς δικαιοσύνης αὐτοῦ τούτου χάριν ἐπιτοὺς οἰκτιρμοὺς ἀνατρέχει τοῦ
+                        θεοῦ: </quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-4-15" type="abbreviated-with-variant"
+                        >Vat. gr. 754</ref><note type="attribution"><foreign xml:lang="grc"
+                           >Aθαν(ασίου)</foreign></note>
+                  </seg>
+                  <!-- oben: Hesychius, comm. magnus -->
+                  <note type="lemma">Ps 4,3</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-4-3"
+                     corresp="#par-gr-139-78-ps-4-3" source="Athanasius">
+                     <quote type="patristic" subtype="quotation-expanded"
+                        xml:id="par-gr-139-quot-4-3" corresp="#person-2"
+                        source="Athanasius, exp. in Ps 4,3">Ὡς πρὸς τοὺς πιστεύσαντας τοῦ πλήθους
+                        τοῦ στρατοῦ ελειν τὸν δίκαιον αὐτὰ εἴρηται· αὕτη δε φησὶν ἡ ἐλπὶς ματαια καὶ
+                        ψευδεῖς ἐστιν: </quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-4-16" type="expanded-with-variants">Vat.
+                        gr. 754</ref><note type="attribution"><foreign xml:lang="grc"
+                           >Ἀθανασίου</foreign></note>
+                  </seg>
+                  <!-- letztes fr.: Hesychius, comm. magnus -->
+                  <pb n="16v"/>
+                  <note type="lemma">Ps 4,4</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-4-4"
+                     corresp="#par-gr-139-78-ps-4-4" source="Athanasius">
+                     <quote type="patristic" subtype="quotation-expanded"
+                        xml:id="par-gr-139-quot-4-4" corresp="#person-2"
+                        source="Athanasius, exp. in Ps 4,4b">Χρόνος ἀντιχρόνου εἴληπται ἀντιτοῦ
+                        εἰσήκουσεν γὰρ ἔφη τὸ εἰσακούσεται ῥῆμα:</quote><ref
+                        target="vat-gr-754:vat-gr-754-fr-4-23" type="expanded-with-variant">Vat. gr.
+                        754</ref>
+                     <note type="attribution"><foreign xml:lang="grc">Ἀθανασίου</foreign></note>
+                  </seg>
+                  <pb n="17r"/>
+                  <note type="lemma">Ps 4,7a</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-4-5"
+                     corresp="#par-gr-139-78-ps-4-7a" source="Athanasius">
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-139-quot-4-5"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 4,7a">Ταυτα τῶν περὶ τὰς
+                        διοικήσεις τοῦ θεοῦ ὁλιγωρούντων τὰ ῥήματα: </quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-4-28" type="identical">Vat. gr.
+                        754</ref><note type="attribution"><foreign xml:lang="grc"
+                           >Ἀθανα(σίου)</foreign></note>
+                  </seg>
+                  <pb n="17v"/>
+                  <!-- Mitte oben, nach Theodoretus: ein anonymes fr. des Hesychius, comm. magnus? davor ein anderer anonymus (Origenes?) -->
+                  <note type="lemma">Ps 4,8b</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-4-6"
+                     corresp="#par-gr-139-78-ps-4-8b" source="Athanasius">
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-139-quot-4-6"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 4,8b">Ἐν τούτοις
+                        εὐθηνοῦντες οἱ περὶ τὴν γὴν ἐπτοημένοι ἐνόμισαν τὰ όντως ἀγαθὰ ἔχειν: </quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-4-37" type="identical">Vat. gr.
+                        754</ref><note type="attribution"><foreign xml:lang="grc"
+                           >Ἀθαν(ασίου)</foreign></note>
+                  </seg>
+                  <pb n="18r"/>
+                  <!-- Mitte: 2 Hesychius, comm. magnus -->
                   <!-- Ps 5 bibletext -->
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-1"
                      n="Ps (LXX) 5,1" xml:lang="grc" xml:id="par-gr-139-ps-5-1"> Εἰς τὸ τέλος, ὑπὲρ
@@ -660,6 +907,36 @@
                         corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-13"/> κύριε, ὡς ὅπλῳ εὐδοκίας
                      ἐστεφάνωσας ἡμᾶς. </quote>
                   <!-- Ps 5 commentary -->
+                  <!-- f. 18r, letztes fr.: Hesychius, comm. magnus -->
+                  <pb n="18v"/>
+                  <!-- letztes fr.: Hesychius, comm. magnus -->
+                  <pb n="19r"/>
+                  <!-- Mitte, oben.: Hesychius, comm. magnus -->
+                  <pb n="19v"/>
+                  <!-- unten: Hesychius, comm. magnus -->
+                  <note type="lemma">Ps 5,10a–b</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-5-1"
+                     corresp="#par-gr-139-78-ps-5-10a" source="Athanasius">
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-139-quot-5-1"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 5,10a–b">Τῶν σοφῶν τοῦ
+                        αἰῶνος τούτου καὶ ἡ τῶν αἱρετικῶν. οὖτοι γὰρ ἀληθείας λόγους οὐκ ΐσασιν: </quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-5-37" type="with-variant">Vat. gr.
+                        754</ref><note type="attribution"><foreign xml:lang="grc"
+                           >Aθ(ανασίου)</foreign></note>
+                  </seg>
+                  <!-- unten: Hesychius, comm. magnus -->
+                  <!-- letztes fr.: Hesychius, comm. magnus -->
+                  <pb n="20r"/>
+                  <note type="lemma">Ps 5,13b</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-5-2"
+                     corresp="#par-gr-139-78-ps-5-13b" source="Athanasius">
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-139-quot-5-2"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 5,13b">Στέφανον φησὶν
+                        ἡμῖν τῶν πόνων χαρίση τὸ τέλος· τοῦτω καθάπερ ὅπλω τινὶ περιφράττων ἡμᾶς: </quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-5-48" type="with-variants">Vat. gr.
+                        754</ref><note type="attribution"><foreign xml:lang="grc"
+                           >Αθαν(ασίου)</foreign></note>
+                  </seg>
                   <!-- Ps 6 bibletext -->
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-6-1"
                      n="Ps (LXX) 6,1" xml:lang="grc" xml:id="par-gr-139-ps-6-1"> Εἰς τὸ τέλος, ἐν
@@ -1076,12 +1353,13 @@
                   <note type="lemma">8,3</note>
                   <seg type="commentaryfragment" xml:id="par-gr-139-fr-8-2"
                      corresp="#par-gr-139-78-ps-8-3" source="Athanasius">
-                     <quote type="patristic" subtype="quotation" xml:id="par-gr-139-quot-8-2"
-                        corresp="#person-2" source="Athanasius, exp. in Ps 8,3c">Tὸν διάβολον
-                        δηλονὅτι ἐπ<add place="above">ε</add>ιδὴ μετὰ τὸ ἀναγκάσαι πληρῶσαι τὴν
-                        ἁμαρτίαν. καὶ τιμωρεῖται τοὺς ἁμαρτάνοντας. τὸ μέγεθος αὐτοῖς τοῦ
-                        ἁμαρτίματος ἐν ὀφθαλμοῖς παριστῶν. ἢ τὸν λαὸν τῶν ἰουδαίων ἐχθρὸν μὲν τῆς
-                        ἀληθείας ἐκδικητὴν δὲ. τῶ δοκεῖν ἐκδικεῖν. τὸν νόμον: – </quote>
+                     <quote type="patristic" subtype="quotation-expanded"
+                        xml:id="par-gr-139-quot-8-2" corresp="#person-2"
+                        source="Athanasius, exp. in Ps 8,3c">Tὸν διάβολον δηλονὅτι ἐπ<add
+                           place="above">ε</add>ιδὴ μετὰ τὸ ἀναγκάσαι πληρῶσαι τὴν ἁμαρτίαν. καὶ
+                        τιμωρεῖται τοὺς ἁμαρτάνοντας. τὸ μέγεθος αὐτοῖς τοῦ ἁμαρτίματος ἐν ὀφθαλμοῖς
+                        παριστῶν. ἢ τὸν λαὸν τῶν ἰουδαίων ἐχθρὸν μὲν τῆς ἀληθείας ἐκδικητὴν δὲ. τῶ
+                        δοκεῖν ἐκδικεῖν. τὸν νόμον: – </quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-8-XX" type="expanded">Vat. gr.
                         754</ref><note type="attribution"><foreign xml:lang="grc"
                            >Ἀθανασίου:</foreign></note>
@@ -1093,9 +1371,10 @@
                   <note type="lemma">8,7b–9</note>
                   <seg type="commentaryfragment" xml:id="par-gr-139-fr-8-3"
                      corresp="#par-gr-139-78-ps-8-7b" source="Athanasius">
-                     <quote type="patristic" subtype="quotation" xml:id="par-gr-139-quot-8-3"
-                        corresp="#person-2" source="Athanasius, exp. in Ps 8,8a">Πρόβατα καὶ βόας
-                        τοὺς <!-- τοὺς: -o- et -ὺ- ex corr.? --> ἐξ ϊσραὴλ πιστεύοντας αἰνίττεται: </quote>
+                     <quote type="patristic" subtype="quotation-expanded"
+                        xml:id="par-gr-139-quot-8-3" corresp="#person-2"
+                        source="Athanasius, exp. in Ps 8,8a">Πρόβατα καὶ βόας τοὺς
+                        <!-- τοὺς: -o- et -ὺ- ex corr.? --> ἐξ ϊσραὴλ πιστεύοντας αἰνίττεται: </quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-8-XX" type="expanded-with-variant">Vat.
                         gr. 754</ref><note type="attribution"><foreign xml:lang="grc"
                            >Ἀθ(ανασίου)</foreign></note><!-- Athanasius nach Hesychius -->
@@ -1112,11 +1391,12 @@
                   </seg>
                   <seg type="commentaryfragment" xml:id="par-gr-139-fr-8-5"
                      corresp="#par-gr-139-78-ps-8-7b" source="Athanasius">
-                     <quote type="patristic" subtype="quotation" xml:id="par-gr-139-quot-8-5"
-                        corresp="#person-2" source="Athanasius, exp. in Ps 8,8b; 8,9a">Διὰ τοῦ κτήνη
-                        τοῦ πεδίου. διὰ τούτων τὰ ἔθνη δηλοὶ / πετεινα δὲ οὐρανοῦ καὶ τὰ λοιπὰ
-                        ἰχθύας μὲν τῆς θαλάσσης καὶ πετεινα οὐρανοῦ τοὺς ἐπηρμένους κατὰ τὸν βίον
-                        καὶ τὰ ὑψηλὰ φρονοῦντας τοὺς ἀλογωτάτους: </quote>
+                     <quote type="patristic" subtype="quotation-expanded"
+                        xml:id="par-gr-139-quot-8-5" corresp="#person-2"
+                        source="Athanasius, exp. in Ps 8,8b; 8,9a">Διὰ τοῦ κτήνη τοῦ πεδίου. διὰ
+                        τούτων τὰ ἔθνη δηλοὶ / πετεινα δὲ οὐρανοῦ καὶ τὰ λοιπὰ ἰχθύας μὲν τῆς
+                        θαλάσσης καὶ πετεινα οὐρανοῦ τοὺς ἐπηρμένους κατὰ τὸν βίον καὶ τὰ ὑψηλὰ
+                        φρονοῦντας τοὺς ἀλογωτάτους: </quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-8-XX" type="expanded">Vat. gr.
                         754</ref><ref target="vat-gr-754:vat-gr-754-fr-8-XX" type="expanded">Vat.
                         gr. 754</ref><note type="attribution"><foreign xml:lang="grc"
@@ -1468,11 +1748,12 @@
                   <note type="lemma">Ps 9,5</note>
                   <seg type="commentaryfragment" xml:id="par-gr-139-fr-9-3"
                      corresp="#par-gr-139-78-ps-9-5" source="Athanasius">
-                     <quote type="patristic" subtype="quotation" xml:id="par-gr-139-quot-9-3"
-                        corresp="#person-2" source="Athanasius, exp. in Ps 9,5a; 9,5b">Τὸ μὲν ὅτι
-                        ἐποίησας τὴν κρίσιν μου καὶ τὴν δίκην μου. τὴν αἰτ<del rend="expunction"
-                           >ε</del>ίαν τῆς εὐχαριστίας ἀποδίδωσι<del rend="expunction">ν</del>· / τὸ
-                        δὲ ἐκάθισας ἐπι θρόνου. τὴν εἰς τὸ κρίνειν ἐπισκοπὴν δηλοῖ τοῦ θεοῦ: </quote>
+                     <quote type="patristic" subtype="quotation-expanded"
+                        xml:id="par-gr-139-quot-9-3" corresp="#person-2"
+                        source="Athanasius, exp. in Ps 9,5a; 9,5b">Τὸ μὲν ὅτι ἐποίησας τὴν κρίσιν
+                        μου καὶ τὴν δίκην μου. τὴν αἰτ<del rend="expunction">ε</del>ίαν τῆς
+                        εὐχαριστίας ἀποδίδωσι<del rend="expunction">ν</del>· / τὸ δὲ ἐκάθισας ἐπι
+                        θρόνου. τὴν εἰς τὸ κρίνειν ἐπισκοπὴν δηλοῖ τοῦ θεοῦ: </quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-9-XX" type="expanded-with-variant">Vat.
                         gr. 754</ref><ref target="vat-gr-754:vat-gr-754-fr-9-XX"
                         type="expanded-with-variant">Vat. gr. 754</ref><note type="attribution"
@@ -1585,8 +1866,9 @@
                         λογισμοὺς κατανοεῖς καὶ σὺ εἶ ὁ ἐτάζων καρδίας καὶ νεφρούς [Ps 7,10c] καὶ
                         ταῦτα ἐφορῶν μακροθυμεῖς εἰδὼς ὅτι ὑποτὰς χεῖράς σου πάντες τυγχάνουσι καὶ
                         οὐκ ἔστι ποῦ ἐκτὸς οὐδενὶ διαδρᾶναι: </quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-9-XX" type="with-variants">Vat. gr. 754</ref><note
-                        type="attribution"><foreign xml:lang="grc">Ἀθ(ανασίου)</foreign></note>
+                     <ref target="vat-gr-754:vat-gr-754-fr-9-XX" type="with-variants">Vat. gr.
+                        754</ref><note type="attribution"><foreign xml:lang="grc"
+                           >Ἀθ(ανασίου)</foreign></note>
                   </seg>
                   <pb n="32r"/>
                   <note type="lemma">Ps 9,36b</note>
@@ -1612,15 +1894,6 @@
                   </seg>
                   <!-- Nach Athanasius, Mitte: Hesychius, comm. magnus? -->
                   <!-- unten: Hesychius, comm. magnus? -->
-                  <!-- MESE· --><!-- Spitzenklammern: &lt;&gt; -->
-                  <!-- MUSTER: 
-                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-9-XX"
-                     corresp="#par-gr-139-78-ps-9-XX" source="Athanasius">
-                     <quote type="patristic" subtype="quotation" xml:id="par-gr-139-quot-9-XX"
-                        corresp="#person-2" source="Athanasius, exp. in Ps 9,"></quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-9-XX" type="XXX">Vat. gr. 754</ref><note
-                        type="attribution"><foreign xml:lang="grc">Ἀθαν(ασίου)</foreign></note>
-                  </seg> -->
                   <!-- Ps 10 bibletext -->
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-10-1"
                      n="Ps (LXX) 10,1" xml:lang="grc" xml:id="par-gr-139-ps-10-1">
