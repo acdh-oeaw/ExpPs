@@ -4,7 +4,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>XXX - Transcription</title>
+            <title>Flor. Med. Laurent. Plut. 6. 3 - Transcription</title>
             <respStmt>
                <resp>transcribed by</resp>
                <persName>Sebastiano Panteghini</persName>
@@ -323,18 +323,21 @@
             <!-- Pointers to identical fragments in other documents. @type = identical | with-variations | abbreviated | expanded &lt; &gt;-->
             <div type="commentary" subtype="commentary" xml:id="plut-6-3-1-4">
                <ab xml:id="plut-6-3-1-2" xml:lang="grc">
-                  <!-- Ps 1 commentary -->
                   <pb n="40r"/><!-- am inneren Rand unten stand wahrscheinlich kein Athanasius. Es gibts eine Rand- bzw. Hauptkatene. Theodoretus und Athanasius stehen entweder zwischen dem Bibeltext und der Hauptkatene oder zwischen den Zeilen des Bibeltextes -->
+                  <!-- Ps 1 commentary -->
+                  <note type="lemma">Ps 1,3b</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-1-1"
-                     corresp="#plut-6-3-ps-1-XXX" source="Athanasius">
+                     corresp="#plut-6-3-ps-1-3b" source="Athanasius">
                      <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-1-1"
                         corresp="#person-2" source="Athanasius, schol. in Ps 1,3b">καρπὸν τοῦ ξύλου
                         νοήσεις· τὴν ὀρθὴν πίστιν· φύλλον δὲ αὐτοῦ· τὴν πλήρωσιν τῶν
                         ἐντολῶν:</quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-1-9" type="identical">Vat. gr. 754</ref>
+                     <note type="attribution"><foreign xml:lang="grc">Ἀθα(νασίου)</foreign></note>
                   </seg>
+                  <note type="lemma">Ps 1,3a</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-1-2"
-                     corresp="#plut-6-3-ps-1-XXX" source="ἄλλως">
+                     corresp="#plut-6-3-ps-1-3a" source="Anonymous">
                      <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-1-2"
                         corresp="#person-2" source="Athanasius, schol. in Ps 1,3a">ξ<unclear
                            reason="faded-ink">ύ</unclear>λον ὁ Χριστὸς <unclear reason="faded-ink"
@@ -348,7 +351,8 @@
                            reason="illegible">νοις</unclear> αὐ<unclear reason="faded-ink"
                            >τῆς:</unclear></quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-1-5" type="abbreviated">Vat. gr.
-                        754</ref>
+                        754</ref><note type="attribution"><foreign xml:lang="grc"
+                        >ἄλλως</foreign></note>
                   </seg>
                   <!-- Ps 2 bibletext -->
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-1"
@@ -447,12 +451,13 @@
                      πεποιθότες ἐπ’ αὐτῷ. </quote>
                   <!-- Ps 2 commentary -->
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-2-1"
-                     corresp="#plut-6-3-ps-2-XXX" source="ἄλλως">
+                     corresp="#plut-6-3-ps-2-XXX" source="Anonymous">
                      <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-2-1"
                         corresp="#person-2" source="Athanasius, schol. in Ps 2,1">φρύαγμα (ἐστι) τὸ
                         ἀλόγιστον φρόνημα:</quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-2-2" type="abbreviated">Vat. gr.
-                        754</ref>
+                        754</ref><note type="attribution"><foreign xml:lang="grc"
+                        >ἄλλως</foreign></note>
                   </seg>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-2-2"
                      corresp="#plut-6-3-ps-2-3a" source="Athanasius">
@@ -661,20 +666,18 @@
                         n="Ps (LXX) 4,9b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-4-9"/> ὅτι σύ,
                      κύριε, κατὰ μόνας ἐπ’ ἐλπίδι κατῴκισάς με. </quote>
                   <!-- Ps 4 commentary -->
-                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-4-XXX"
-                     corresp="#plut-6-3-ps-4-XXX" source="">
-                     <quote type="patristic" subtype="" xml:id="plut-6-3-quot-4-XXX"
-                        corresp="#person-2" source="Athanasius, schol. in Ps 4,XXX"/>
-                     <ref target="vat-gr-754:vat-gr-754-fr-4-XXX" type="">Vat. gr. 754</ref>
-                  </seg>
-                  <!-- Muster -->
-                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-4-XXX"
-                     corresp="#plut-6-3-ps-4-XXX" source="">
-                     <quote type="patristic" subtype="" xml:id="plut-6-3-quot-4-XXX"
-                        corresp="#person-2" source="Athanasius, schol. in Ps 4,XXX"/>
-                     <ref target="vat-gr-754:vat-gr-754-fr-4-XXX" type="">Vat. gr. 754</ref>
-                  </seg>
-                  <!-- Mese · Spitzenklammer -->
+                  <!-- MUSTER MUSTER: 
+                     Hesychius, schol. nr. XX in Ps 10,XX (Antonelli; PG 27,685)
+                     Hesychius, comm. brevis in Ps 10,XX (16 Jagić)
+                     ἐν ἄλλω: – 
+                  MESE:  ·  Bullet:  •  Spitzenklammern:  &lt;XX&gt;
+                  <note type="lemma">Ps 10,XX</note>  
+                     <seg type="commentaryfragment" xml:id="plut-5-30-fr-10-XX"
+                     corresp="#plut-5-30-ps-10-XX" source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-10-XX"
+                        corresp="#person-XX" source="XXX"></quote>
+                     <note type="attribution"><foreign xml:lang="grc">ἐν ἄλλω: –</foreign></note>
+                  </seg>  <ref target="vat-gr-754:vat-gr-754-fr-10-XX" type="XXX">Vat. gr. 754</ref> -->
                   <!-- Ps 4 bibletext -->
                   <!-- Ps 5 bibletext -->
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-1"
