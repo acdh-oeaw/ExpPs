@@ -52,7 +52,7 @@
    <!-- Oxon. Coll. S. Trin. 78: Psalm 1 und 6 -->
    <!-- Mediolan. Ambros. M 47 sup.: Ps 1–6 -->
    <!-- Paris. gr. 166-167: Ps 1-6 -->
-   <!-- Ps. 1 in: V1(erledigt) P1(erledigt) = typus XIX ; O(erledigt) M(erledigt) = typus IV; B1(erledigt) B2(erledigt) N1(Kontrolle) A1(erledigt) L1(erledigt) = codices varii; P6(erledigt) Z(erledigt) N2(kein Athanasius) = typus III; A2(Kontrolle) V4(Kontrolle) = typus XIV; V5(erledigt) P7(erledigt) = typus XV; L2(erledigt) = typus XVI -->
+   <!-- Ps. 1: typus XIX: V1(erledigt) C (lost) G (lost) P1(erledigt); typus IV = O(erledigt) M(erledigt); codices varii: B1(erledigt) P2(erledigt) B2(erledigt) N1(erledigt) P3(kein Athanasius) P4 (lost) A1(erledigt) P5(lost) L1(erledigt); typus III = P6(erledigt) Z(erledigt) N2(kein Athanasius); typus XIV: A2(erledigt) V4(erledigt); typus XV = V5(erledigt) P7(erledigt) P8(lost); typus XVI = L2(erledigt) A2() -->
    <text>
       <body>
          <div n="1" type="psalm">
@@ -62,6 +62,7 @@
                      <quote xml:id="edition-ps-1-0" type="psalmtext" subtype="heading">ΨΑΛΜΟΣ
                         Α´</quote>
                   </div>
+                  <!-- exp 1 -->
                   <div type="commentary">
                      <p xml:id="edition-1-0-1" n="1" ana="hypothesis">Τὴν ἀρχὴν τῆς προφητείας τῷ ἐξ
                         αὐτοῦ κατὰ σάρκα τεχθησομένῳ Χριστῷ ἀνατίθησιν ὁ Δαυΐδ· διὸ ἐν πρώτοις
@@ -83,7 +84,6 @@
                         <wit>Vat. Ottob. gr. 398</wit>
                         <wit>Vat. gr. 1422</wit>
                         <wit>Paris. gr. 146</wit>
-
                         <wit>Oxon. Bodl. Auct. D. 4. 1</wit>
                         <wit>Oxon. Coll. S. Trin. 78</wit>
                      </app>
@@ -210,10 +210,11 @@
                      <quote xml:id="edition-ps-1-2a" type="psalmtext" n="2a">ἀλλ᾽ ἢ ἐν τῷ νόμῳ
                         κυρίου τὸ θέλημα αὐτοῦ,</quote>
                   </div>
+                  <!-- exp 2 -->
                   <div type="commentary">
                      <p xml:id="edition-1-2-1" n="2">Τῷ εὐαγγελικῷ δηλονότι: –</p>
                   </div>
-                  <!-- Vat. gr. 1747 hat eine Paraphrase davon -->
+                  <!-- Vat. gr. 1747 hat möglicherweise eine Paraphrase davon -->
                   <div type="textcritic">
                      <app type="fragment">
                         <rdg wit="#V1 #M #O #P1 #A1">txt</rdg>
@@ -228,6 +229,7 @@
                      <quote xml:id="edition-ps-1-2b" type="psalmtext" n="2b">καὶ ἐν τῷ νόμῳ αὐτοῦ
                         μελετήσει ἡμέρας καὶ νυκτός.</quote>
                   </div>
+                  <!-- exp 3 -->
                   <div type="commentary">
                      <p xml:id="edition-1-2-2" n="3">Τὸ σύντονον δηλοῖ· οὐ γὰρ ἠμελημένως δεῖ
                         μελετᾶν τοῦ κυρίου τὸν νόμον: –</p>
@@ -287,7 +289,7 @@
                      <quote xml:id="edition-ps-1-3a" type="psalmtext" n="3a">καὶ ἔσται ὡς τὸ ξύλον
                         τὸ πεφυτευμένον παρὰ τὰς διεξόδους τῶν ὑδάτων,</quote>
                   </div>
-                  <!-- exp. 4 -->
+                  <!-- exp 4 -->
                   <div type="commentary">
                      <p xml:id="edition-1-3-1" n="4">Ξύλον ὁ Χριστὸς ἀναγέγραπται ἐν τῇ θεοπνεύστῳ
                         γραφῇ· κατὰ τὸ εἰρημένον· ξύλον ζωῆς ἐστιν πᾶσι τοῖς ἀντεχομένοις αὐτῆς·
@@ -332,8 +334,8 @@
                         <wit>Oxon. Bodl. Auct. D. 4. 1</wit>
                      </app>
                      <app type="text">
-                        <lem wit="#V1 #P1 #M #O #P6 #Z"><foreign xml:lang="grc">κατὰ – κηρυσσόμενον:
-                              –</foreign></lem>
+                        <lem wit="#V1 #P1 #M #O #P6 #Z"><foreign xml:lang="grc">κατὰ –
+                              κηρυσσόμενον</foreign></lem>
                         <rdg wit="#B1">om.</rdg>
                         <wit>Oxon. Bodl. Auct. D. 4. 1</wit>
                      </app>
@@ -354,8 +356,8 @@
                      </app>
                      <!-- αὐτου L1 -->
                      <app type="text">
-                        <lem wit="#V1 #P1 #P6 #Z"><foreign xml:lang="grc">λέγει – κηρυσσόμενον:
-                              –</foreign></lem>
+                        <lem wit="#V1 #P1 #P6 #Z"><foreign xml:lang="grc">λέγει –
+                              κηρυσσόμενον</foreign></lem>
                         <rdg wit="#B2 #L2">om.</rdg>
                         <wit>Oxon. Coll. S. Trin. 78</wit>
                      </app>
@@ -413,7 +415,7 @@
                      <app type="text">
                         <lem wit="#V1 #P1"><foreign xml:lang="grc">διεξόδους – κηρυσσόμενον:
                               –</foreign></lem>
-                        <rdg wit="#M">nequeunt legi</rdg>
+                        <rdg wit="#M">non leg.</rdg>
                         <wit>Mosq. Synod. 194</wit>
                         <rdg wit="#L1">om.</rdg>
                         <wit>Flor. Med. Laurent. Plut. 5. 30</wit>
@@ -451,7 +453,7 @@
                      <quote xml:id="edition-ps-1-3c" type="psalmtext" n="3c">καὶ τὸ φύλλον αὐτοῦ οὐκ
                         ἀπορρυήσεται·</quote>
                   </div>
-                  <!-- exp. 5 -->
+                  <!-- exp 5 -->
                   <div type="commentary">
                      <p xml:id="edition-1-3-3" n="5">Καρπὸν τοῦ ξύλου νοήσεις. τὴν ὀρθὴν πίστιν·
                         φύλλα δὲ αὐτοῦ. τὴν πλήρωσιν τῶν ἐντολῶν: –</p>
@@ -504,7 +506,7 @@
                      <quote xml:id="edition-ps-1-3d" type="psalmtext" n="3d">καὶ πάντα, ὅσα ἂν ποιῇ,
                         κατευοδωθήσεται.</quote>
                   </div>
-                  <!-- exp. 6 -->
+                  <!-- exp 6 -->
                   <div type="commentary">
                      <p xml:id="edition-1-3-4" n="6">Οὐ γάρ ἐστι πρᾶξις τῶν κατὰ θεὸν γινομένων
                         ἀνωφελής: –</p>
@@ -571,13 +573,14 @@
                      <quote xml:id="edition-ps-1-4b" type="psalmtext" n="4b">ἀλλ᾽ ἢ ὡς ὁ χνοῦς, ὃν
                         ἐκριπτεῖ ὁ ἄνεμος ἀπὸ προσώπου τῆς γῆς.</quote>
                   </div>
+                  <!-- exp 7 -->
                   <div type="commentary">
                      <p xml:id="edition-1-4-2-1" n="7a">Ἄλλα γὰρ περὶ αὐτῶν ἐβουλεύσατο· τοῖς μὲν
                         δικαίοις. τὴν βασιλείαν ἀποδίδωσιν. τοῖς δὲ ἁμαρτωλοῖς ἐρεῖ ἀποστραφήτωσαν
                         οἱ ἁμαρτωλοὶ εἰς τὸν ᾅδην: –</p>
                   </div>
-                  <!-- βασίλεαν Ο -->
-                  <!-- ἀποδίδωσι V5 P7 -->
+                  <!-- βασιλείαν V1 : βασίλεαν Ο -->
+                  <!-- ἀποδίδωσιν V1 : ἀποδίδωσι V5 P7 -->
                   <!-- typus XV besitzt einen vorausgehenden Teil aus einem fons ignotus -->
                   <div type="textcritic">
                      <app type="fragment">
@@ -652,7 +655,7 @@
                      <quote xml:id="edition-ps-1-5b" type="psalmtext" n="5b">οὐδὲ ἁμαρτωλοὶ ἐν βουλῇ
                         δικαίων·</quote>
                   </div>
-                  <!-- exp. 8 -->
+                  <!-- exp 8 -->
                   <div type="commentary">
                      <p xml:id="edition-1-5-2" n="8">Διὰ τοῦτο μὲν. διὰ τὸ μὴ ἔχειν ῥίζαν. ἀλλ’
                         ὁμοίους εἶναι χοῒ γῆς ὑπὸ ἀνέμου ῥιπιζομένῳ· ἄνεμον δὲ νοήσεις. τὴν ἀπειλὴν
@@ -660,6 +663,7 @@
                         αἰώνιον· οἳ τὴν τοιαύτην ἀκούσαντες φωνὴν. καταπεσοῦνται δικαίως· οὐ γὰρ
                         ἐστήκασιν εἰς Χριστὸν, ὅς ἐστι τῶν πιστευόντων. στήριγμα καὶ θεμέλιος: –</p>
                   </div>
+                  <!-- Achtung: type XV hat am Ende einen Zusatz! -->
                   <!-- ὅς ἐστιν L1 : ὅς ἐστὶ V5 : ὅς ἐστι P7 -->
                   <div type="textcritic">
                      <app type="fragment">
@@ -734,15 +738,17 @@
                      <app type="text">
                         <lem wit="#V1 #P1 #B2 #V5 #P7"><foreign xml:lang="grc"
                            >πορεύεσθε</foreign></lem>
-                        <rdg wit="#M #O"><foreign xml:lang="grc">πορεύεσθαι</foreign></rdg>
+                        <rdg wit="#M #O #N1"><foreign xml:lang="grc">πορεύεσθαι</foreign></rdg>
                         <wit>Mosq. Synod. 194</wit>
                         <wit>Vat. Ottob. gr. 398</wit>
+                        <wit>Athen. B.N. 8</wit>
                      </app>
                      <app type="text">
                         <lem wit="#V1 #P1 #M #O #V5 #P7"><foreign xml:lang="grc">οἳ τὴν –
                               θεμέλιος</foreign></lem>
-                        <rdg wit="#B2">om.</rdg>
+                        <rdg wit="#B2 #N1">om.</rdg>
                         <wit>Oxon. Coll. S. Trin. 78</wit>
+                        <wit>Athen. B.N. 8</wit>
                      </app>
                      <app type="text">
                         <lem wit="#V1 #P1"><foreign xml:lang="grc">οἳ</foreign></lem>
@@ -783,7 +789,6 @@
                         <rdg wit="#P7"><foreign xml:lang="grc">θεμέλιον</foreign></rdg>
                         <wit>Paris. gr. 146</wit>
                      </app>
-                     <!-- Achtung: type XV hat am Ende einen Zusatz! -->
                   </div>
                </div>
                <div xml:lang="de" type="translation">
@@ -805,7 +810,7 @@
                      <quote xml:id="edition-ps-1-6a" type="psalmtext" n="6a">ὅτι γινώσκει κύριος
                         ὁδὸν δικαίων,</quote>
                   </div>
-                  <!-- exp. 9 -->
+                  <!-- exp 9 -->
                   <div type="commentary">
                      <p xml:id="edition-1-6-1" n="9">Τὸ γινώσκει. ἀντὶ τοῦ τιμᾷ κατὰ τὸ εἰρημένον
                         ὑπὸ θεοῦ πρὸς Μωϋσῆν γινώσκω σε παρὰ πάντας καὶ εὗρες χάριν παρ᾿ ἐμοί:</p>
@@ -884,6 +889,9 @@
                </div>
             </div>
          </div>
+         <!-- Ps 2: typus XIX: V1(erledigt) C (lost) G () P1(erledigt); typus IV = O() M(erledigt); codices varii: B1(erledigt bis Ps 2) P2(lost) B2(nicht geliefert) N1(nicht geliefert) P3(nicht vorhanden) P4 (lost) A1(erledigt) P5(lost) L1(erledigt); typus III = P6(erledigt) Z(erledigt) N2(kein Athanasius; ab 11r); typus XIV: A2() V4(); typus XV = V5(erledigt) P7(erledigt; ab f. 28r; einen schnellen Überblick nicht betätigt) P8(lost); typus XVI = L2(erledigt) A2() -->
+         <!-- Dubium B1: ὑπερηφανεύσαντο, ἐμεγαλοφρόνησαν· -->
+         <!-- Dubium B1: Τὴν βαρύτητα τοῦ νόμου λέγει· -->
          <div n="2" type="psalm">
             <div n="2.0" type="psalmverse">
                <div xml:lang="grc" type="text">
@@ -891,23 +899,27 @@
                      <quote xml:id="edition-ps-2-0" type="psalmtext" subtype="heading">ΨΑΛΜΟΣ
                         Β´</quote>
                   </div>
+                  <!-- exp 11 -->
                   <div type="commentary">
                      <p xml:id="edition-2-0" n="11" ana="hypothesis">Ἐν τῷ πρώτῳ ψαλμῷ ἀσεβεῖς καὶ
                         ἁμαρτωλοὺς καὶ λοιμοὺς ἀποφηνάμενος τοὺς ἄρχοντας τοῦ ἰουδαίων ἔθνους, ἐν
                         τούτῳ πάλιν δείκνυσι τὰς πράξεις διὰ τῶν τοιούτων ὀνομάτων ὧν γεγόνασι
                         μέτοχοι: –</p>
+                     <!-- δείκνυσι M : δείκνυσιν O -->
+                     <!-- ἔθνους: -υ- supra lin. add. O -->
+                     <!-- γεγόνασι M : γεγόνασιν O -->
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #M #P1">txt</rdg>
+                        <rdg wit="#V1 #P1 #M #O">txt</rdg>
                         <wit>Vat. gr. 754</wit>
-                        <wit>Mosq. Synod. 194</wit>
                         <wit>Paris. gr. 166-167</wit>
+                        <wit>Mosq. Synod. 194</wit>
+                        <wit>Vat. Ottob. gr. 398</wit>
                      </app>
                      <app type="text">
                         <lem wit="#V1"><foreign xml:lang="grc">ἀσεβεῖς καὶ</foreign></lem>
-                        <rdg wit="#M #P1"><foreign xml:lang="grc">ἀσεβεῖς τὲ καὶ</foreign></rdg>
-                        <wit>Mosq. Synod. 194</wit>
+                        <rdg wit="#P1"><foreign xml:lang="grc">ἀσεβεῖς τὲ καὶ</foreign></rdg>
                         <wit>Paris. gr. 166-167</wit>
                      </app>
                   </div>
@@ -928,47 +940,70 @@
                      <quote xml:id="edition-ps-2-1b" type="psalmtext" n="1b">καὶ λαοὶ ἐμελέτησαν
                         κενά;</quote>
                   </div>
+                  <!-- exp 12 -->
+                  <!-- Ἀθανασίου Ζ -->
                   <div type="commentary">
                      <p xml:id="edition-2-1-1" n="12">Φρύαγμά ἐστιν, τὸ ἀλόγιστον φρόνημα· ἀπὸ
-                        κοινοῦ τὸ ἵνα τί· ἵνα τί καὶ δια τί οἱ λαοὶ ἐμελέτησαν κενά; πῶς γὰρ οὐ κενὴ
+                        κοινοῦ τὸ ἵνα τί· ἵνα τί καὶ διὰ τί οἱ λαοὶ ἐμελέτησαν κενά; πῶς γὰρ οὐ κενὴ
                         γέγονεν αὐτοῖς ἡ μελέτη, μὴ δεξαμένοις τὸν σωτῆρα τοῦ γένους;</p>
                   </div>
+                  <!-- in V5 L2 ist diese exp. in zwei getrennten Teilen vorhanden -->
+                  <!-- Φρύαγμά ἐστιν V1 : Φρύαγμά ἐστι P7 : φρύαγμα ἐστὶν B1 : φρύαγμα ἐστὶ V5 : φρύαγμα (ἐστὶ) L2 -->
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #M #P1 #V5 #B1 #A1">txt</rdg>
+                        <rdg wit="#V1 #P1 #M #O #B1 #A1 #P6 #Z #V5 #P7 #L2">txt</rdg>
                         <wit>Vat. gr. 754</wit>
-                        <wit>Mosq. Synod. 194</wit>
                         <wit>Paris. gr. 166-167</wit>
-                        <wit>Vat. gr. 1422</wit>
+                        <wit>Mosq. Synod. 194</wit>
+                        <wit>Vat. Ottob. gr. 398</wit>
                         <wit>Oxon. Bodl. Auct. D. 4. 1</wit>
                         <wit>Mediolan. Ambros. M 47 sup.</wit>
+                        <wit>Paris. gr. 139</wit>
+                        <wit>Venet. Marc. gr. Z. 17</wit>
+                        <wit>Vat. gr. 1422</wit>
+                        <wit>Paris. gr. 146</wit>
+                        <wit>Flor. Med. Laurent. Plut. 6. 3</wit>
                      </app>
                      <app type="text">
-                        <lem wit="#V1 #V5 #B1 #A1"><foreign xml:lang="grc">Φρύαγμά ...
-                              φρόνημα·</foreign></lem>
-                        <rdg wit="#M #P1">om.</rdg>
-                        <wit>Mosq. Synod. 194</wit>
+                        <lem wit="#V1 #V5 #B1 #A1"><foreign xml:lang="grc">Φρύαγμά ἐστιν, τὸ
+                              ἀλόγιστον φρόνημα</foreign></lem>
+                        <rdg wit="#P1">om.</rdg>
                         <wit>Paris. gr. 166-167</wit>
+                        <rdg wit="#P6 #Z"><foreign xml:lang="grc">Φρύαγμα τὸ ἄλογον
+                              φρόνημα</foreign></rdg>
+                        <wit>Par. gr. 139</wit>
+                        <wit>Venet. Marc. gr. Z. 17</wit>
                      </app>
                      <app type="text">
-                        <lem wit="#V1 #M #P1 #V5"><foreign xml:lang="grc">ἀπὸ ...
-                           κενά</foreign></lem>
+                        <lem wit="#V1 #M #P1 #V5"><foreign xml:lang="grc">ἀπὸ – κενά</foreign></lem>
                         <rdg wit="#A1">om.</rdg>
                         <wit>Mediolan. Ambros. M 47 sup.</wit>
                      </app>
                      <app type="text">
-                        <lem wit="#V1 #M #P1 #V5"><foreign xml:lang="grc">ἀπὸ ...
+                        <lem wit="#V1 #M #P1 #V5"><foreign xml:lang="grc">ἀπὸ —
                            γένους</foreign></lem>
                         <rdg wit="#B1">om.</rdg>
                         <wit>Oxon. Bodl. Auct. D. 4. 1</wit>
                      </app>
                      <app type="text">
-                        <lem wit="#V1"><foreign xml:lang="grc">ἵνα τί καὶ δια τί</foreign></lem>
-                        <rdg wit="#M #P1 #V5"><foreign xml:lang="grc">τουτέστιν διὰ
+                        <lem><foreign xml:lang="grc">ἀπὸ κοινοῦ</foreign></lem>
+                        <rdg wit="#P6 #Z"><foreign xml:lang="grc">ἀπὸ κοινοῦ δὲ</foreign></rdg>
+                        <wit>Paris. gr. 139</wit>
+                        <wit>Venet. Marc. gr. Z. 17</wit>
+                     </app>
+                     <app type="text">
+                        <lem wit="#V1"><foreign xml:lang="grc">ἵνα τί καὶ διὰ τί</foreign></lem>
+                        <rdg wit="#P1 #V5 #L2"><foreign xml:lang="grc">τουτέστιν διὰ
                            τί</foreign></rdg>
-                        <wit>Mosq. Synod. 194</wit>
                         <wit>Paris. gr. 166-167</wit>
                         <wit>Vat. gr. 1422</wit>
+                        <wit>Flor. Med. Laurent. Plut. 6. 3</wit>
+                        <rdg wit="#O">ἵνα τί ἵνα τί καὶ διὰ τί</rdg>
+                        <!-- ἵνα τί M -->
+                        <rdg wit="#P6 #Z">ϊνα ῆι καὶ διατί </rdg>
+                        <wit>Paris. gr. 139</wit>
+                        <wit>Venet. Marc. gr. Z. 17</wit>
+                        <!-- ἵνα ἦι καὶ διατί Ζ -->
                      </app>
                      <app type="text">
                         <lem wit="#V1 #M #P1 #V5"><foreign xml:lang="grc">πῶς γὰρ οὐ</foreign></lem>
@@ -980,11 +1015,16 @@
                         <rdg wit="#V5"><foreign xml:lang="grc">οὐκ ἐνὶ αὐτοῖς
                            γέγονεν</foreign></rdg>
                         <wit>Vat. gr. 1422</wit>
+                        <rdg wit="#P7">οὐ κενὴ αὐτοῖς γέγονεν (-ε-1 ex ἐ-)</rdg>
+                        <wit>Paris. gr. 146</wit>
+                        <rdg wit="#L2">οὐ κενὴ αὐτοῖς γέγονεν</rdg>
+                        <wit>Flor. Med. Laurent. Plut. 6. 3</wit>
                      </app>
                      <app type="text">
                         <lem wit="#V1 #M #P1 #A1"><foreign xml:lang="grc">δεξαμένοις</foreign></lem>
-                        <rdg wit="#V5"><foreign xml:lang="grc">δεξαμένη</foreign></rdg>
+                        <rdg wit="#V5 #L2"><foreign xml:lang="grc">δεξαμένη</foreign></rdg>
                         <wit>Vat. gr. 1422</wit>
+                        <wit>Flor. Med. Laurent. Plut. 6. 3</wit>
                      </app>
                      <app type="text">
                         <lem wit="#V1 #M #P1 #V5"><foreign xml:lang="grc">τοῦ γένους</foreign></lem>
@@ -1010,32 +1050,44 @@
                      <quote xml:id="edition-ps-2-2a" type="psalmtext" n="2a">παρέστησαν οἱ βασιλεῖς
                         τῆς γῆς,</quote>
                   </div>
+                  <!-- exp 13 -->
                   <div type="commentary">
                      <p xml:id="edition-2-2-1" n="13">Ἡρώδης τε καὶ Πόντιος Πιλᾶτος: –</p>
                   </div>
+                  <!--  V1 Πιλᾶτος : B1 Πιλάτος -->
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #M #P1 #A1">txt</rdg>
+                        <rdg wit="#V1 #P1 #M #O #B1 #A1">txt</rdg>
                         <wit>Vat. gr. 754</wit>
-                        <wit>Mosq. Synod. 194</wit>
                         <wit>Paris. gr. 166-167</wit>
+                        <wit>Mosq. Synod. 194</wit>
+                        <wit>Vat. Ottob. gr. 398</wit>
+                        <wit>Oxon. Bodl. Auct. D. 4. 1.</wit>
                         <wit>Mediolan. Ambros. M 47 sup.</wit>
+                     </app>
+                     <app type="text">
+                        <lem>τε καὶ</lem>
+                        <rdg wit="#B1">καὶ</rdg>
+                        <wit>Oxon. Bodl. Auct. D. 4. 1.</wit>
                      </app>
                   </div>
                   <div type="psalmtext">
                      <quote xml:id="edition-ps-2-2b" type="psalmtext" n="2b">καὶ οἱ ἄρχοντες
                         συνήχθησαν ἐπὶ τὸ αὐτὸ</quote>
                   </div>
+                  <!-- exp 14 -->
                   <div type="commentary">
                      <p xml:id="edition-2-2-2" n="14">Τὰ προλεχθέντα τάγματα· γραμματεῖς καὶ
                         φαρισαῖοι καὶ νομικοί: –</p>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #M #P1 #A1">txt</rdg>
+                        <rdg wit="#V1 #P1 #M #L1 #A1">txt</rdg>
                         <wit>Vat. gr. 754</wit>
-                        <wit>Mosq. Synod. 194</wit>
                         <wit>Paris. gr. 166-167</wit>
+                        <wit>Mosq. Synod. 194</wit>
+                        <wit>Flor. Med. Laurent. Plut. 5. 30</wit>
+                        <wit>Mediolan. Ambros. M 47 sup.</wit>
                      </app>
                      <app type="text">
                         <lem wit="#V1 #M #P1"><foreign xml:lang="grc">Τὰ ... νομικοί</foreign></lem>
@@ -1048,38 +1100,62 @@
                      <quote xml:id="edition-ps-2-2c" type="psalmtext" n="2c">κατὰ τοῦ κυρίου καὶ
                         κατὰ τοῦ χριστοῦ αὐτοῦ</quote>
                   </div>
+                  <!-- exp 15 -->
                   <div type="commentary">
                      <p xml:id="edition-2-2-3" n="15">Ἡ γὰρ εἰς τὸν Χριστὸν ἐπιβουλὴ, καὶ εἰς αὐτὸν
                         ἀνατρέχει τὸν πατέρα· εἰ γὰρ ὁ πατὴρ ἐν τῷ υἱῷ καὶ ὁ υἱὸς ἐν τῷ πατρὶ, πῶς
                         οὐκ ἂν μία τίς ἡ εἰς αὐτοὺς ὕβρις γένοιτ’ ἄν;</p>
                   </div>
+                  <!-- ἡ εἰς: ἡ supra lin. add. Z -->
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #M #P1 #V5 #A1">txt</rdg>
+                        <rdg wit="#V1 #P1 #M #L1 #A1 #P6 #Z #V5 #P7 #L2">txt</rdg>
                         <wit>Vat. gr. 754</wit>
-                        <wit>Mosq. Synod. 194</wit>
                         <wit>Paris. gr. 166-167</wit>
-                        <wit>Vat. gr. 1422</wit>
+                        <wit>Mosq. Synod. 194</wit>
+                        <wit>Flor. Med. Laurent. Plut. 5. 30</wit>
                         <wit>Mediolan. Ambros. M 47 sup.</wit>
-                     </app>
-                     <app type="text">
-                        <lem wit="#V1 #M #P1 #V5">-</lem>
-                        <rdg wit="#A1">add. vor dem Text <foreign xml:lang="grc">Κατὰ τοῦ κυρίου·
-                              τοῦ πατρὸς λέγει·</foreign></rdg>
-                     </app>
-                     <app type="text">
-                        <lem wit="#V1 #M #P1 #A1"><foreign xml:lang="grc">πῶς οὐκ ἂν μία
-                              τίς</foreign></lem>
-                        <rdg wit="#V5"><foreign xml:lang="grc">πῶς οὐ καὶ μία</foreign></rdg>
+                        <wit>Paris. gr. 139</wit>
+                        <wit>Venet. Marc. gr. Z. 17</wit>
                         <wit>Vat. gr. 1422</wit>
+                        <wit>Paris. gr. 146</wit>
+                        <wit>Flor. Med. Laurent. Plut. 6. 3</wit>
+                     </app>
+                     <app type="text">
+                        <lem wit="#V1 #M #P1 #V5">Ἡ γὰρ</lem>
+                        <rdg wit="#A1"><foreign xml:lang="grc">Κατὰ τοῦ κυρίου· τοῦ πατρὸς
+                              λέγει·</foreign> ante <foreign xml:lang="grc">ἡ γὰρ</foreign> add.
+                        </rdg>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">Ἡ γὰρ – τὸν πατέρα·</foreign></lem>
+                        <rdg wit="#L1"><foreign xml:lang="grc"/>om.</rdg>
+                        <wit>Flor. Med. Laurent. Plut. 5. 30</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">εἰ γὰρ – τῷ πατρὶ</foreign></lem>
+                        <rdg wit="#L1"><foreign xml:lang="grc">εἰ γὰρ καὶ ὁ υἱὸς ἐν τῶ
+                              πατρὶ</foreign></rdg>
+                     </app>
+                     <app type="text">
+                        <lem wit="#V1 #P1 #M #A1"><foreign xml:lang="grc">πῶς οὐκ ἂν μία
+                              τίς</foreign></lem>
+                        <rdg wit="#L1"><foreign xml:lang="grc">πῶς οὐχὶ καὶ μία τις</foreign></rdg>
+                        <rdg wit="#P6 #Z #V5 #P7"><foreign xml:lang="grc">πῶς οὐ καὶ
+                           μία</foreign></rdg>
+                        <wit>Paris. gr. 139</wit>
+                        <wit>Venet. Marc. gr. Z. 17</wit>
+                        <wit>Vat. gr. 1422</wit>
+                        <wit>Paris. gr. 146</wit>
+                        <rdg wit="#L2"><foreign xml:lang="grc">πῶς [οὐ]χὶ μία</foreign></rdg>
+                        <wit>Flor. Med. Laurent. Plut. 6. 3</wit>
                      </app>
                      <app type="text">
                         <lem wit="#V1 #A1"><foreign xml:lang="grc">γένοιτ’ ἄν</foreign></lem>
                         <rdg wit="#M #P1"><foreign xml:lang="grc">γένητᾶν</foreign></rdg>
                         <wit>Mosq. Synod. 194</wit>
                         <wit>Paris. gr. 166-167</wit>
-                        <rdg wit="#V5"><foreign xml:lang="grc">γένοιτο</foreign></rdg>
-                        <wit>Vat. gr. 1422</wit>
+                        <!--  γένοιτἂν V5 non leg. : γένοιτἂν P7  -->
                      </app>
                   </div>
                   <div type="psalmtext">
@@ -1108,65 +1184,121 @@
                      <quote xml:id="edition-ps-2-3a" type="psalmtext" n="3a">Διαρρήξωμεν τοὺς
                         δεσμοὺς αὐτῶν</quote>
                   </div>
+                  <!-- exp 16 -->
                   <div type="commentary">
                      <p xml:id="edition-2-3-1" n="16">Λείπει τὸ λέγοντες· ἵνα ᾖ ἡ διάνοια αὕτη·
                         συνήχθησαν κατὰ τοῦ κυρίου καὶ κατὰ τοῦ Χριστοῦ λέγοντες· διαρρήξωμεν τοὺς
                         δεσμοὺς αὐτοῦ· οὐ γὰρ ἤθελον εἴσω τῆς ἱερᾶς γενέσθαι σαγήνης περὶ ἧς
                         γέγραπται· ὁμοία ἐστὶν ἡ βασιλεία τῶν οὐρανῶν σαγήνῃ: –</p>
+                     <!-- P7 am Ende von f. 26v -->
+                     <!-- Λείπει τὸ: τὸ ex τω Ο -->
+                     <!-- in O ist diese exp von der Umgebung nicht getrennt -->
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #M #P1 #V5 #A1">txt</rdg>
+                        <rdg wit="#V1 #P1 #M #O #A1 #P6 #Z #V5 #P7 #L2">txt</rdg>
                         <wit>Vat. gr. 754</wit>
-                        <wit>Mosq. Synod. 194</wit>
                         <wit>Paris. gr. 166-167</wit>
-                        <wit>Vat. gr. 1422</wit>
+                        <wit>Mosq. Synod. 194</wit>
+                        <wit>Vat. Ottob. gr. 398</wit>
                         <wit>Mediolan. Ambros. M 47 sup.</wit>
+                        <wit>Paris. gr. 139</wit>
+                        <wit>Venet. Marc. gr. Z. 17</wit>
+                        <wit>Vat. gr. 1422</wit>
+                        <wit>Paris. gr. 146</wit>
+                        <wit>Flor. Med. Laurent. Plut. 6. 3</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">Λείπει – αὐτοῦ</foreign></lem>
+                        <rdg wit="#L2">om.</rdg>
+                        <wit>Flor. Med. Laurent. Plut. 6. 3</wit>
                      </app>
                      <app type="text">
                         <lem wit="#V1"><foreign xml:lang="grc">τοῦ Χριστοῦ</foreign></lem>
-                        <rdg wit="#M #P1 #A1"><foreign xml:lang="grc">τοῦ Χριστοῦ
+                        <rdg wit="#P1 #M #A1"><foreign xml:lang="grc">τοῦ Χριστοῦ
                            αὐτοῦ</foreign></rdg>
-                        <wit>Mosq. Synod. 194</wit>
                         <wit>Paris. gr. 166-167</wit>
+                        <wit>Mosq. Synod. 194</wit>
                         <wit>Mediolan. Ambros. M 47 sup.</wit>
+                        <!-- αὐτοῦ non habet O -->
                      </app>
                      <app type="text">
                         <lem wit="#V1 #M #P1 #A1"><foreign xml:lang="grc">Λείπει ...
                               αὐτοῦ·</foreign></lem>
-                        <rdg wit="#V5"><foreign xml:lang="grc">Kατὰ γὰρ τοῦ κυρίου
+                        <rdg wit="#V5 #P7"><foreign xml:lang="grc">Kατὰ γὰρ τοῦ κυρίου
                               γέγοναν·</foreign></rdg>
                         <wit>Vat. gr. 1422</wit>
+                        <wit>Paris. gr. 146</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">συνήχθησαν</foreign></lem>
+                        <rdg wit="#P6">συνῆσαν</rdg>
+                        <wit>Paris. gr. 139</wit>
+                        <!-- συνήχθησαν Z -->
                      </app>
                      <app type="text">
                         <lem wit="#V1 #M #P1 #V5"><foreign xml:lang="grc">τοὺς δεσμοὺς
                               αὐτοῦ</foreign></lem>
-                        <rdg wit="#A1"><foreign xml:lang="grc">τοῦς δεσμοὺς αὐτῶν</foreign></rdg>
+                        <rdg wit="#A1 #P6"><foreign xml:lang="grc">τοῦς δεσμοὺς
+                           αὐτῶν</foreign></rdg>
                         <wit>Mediolan. Ambros. M 47 sup.</wit>
+                        <wit>Paris. gr. 139</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">οὐ γὰρ ἤθελον εἴσω</foreign></lem>
+                        <wit>Paris. gr. 139</wit>
+                        <rdg wit="#P6"><foreign xml:lang="grc">λειπει τε ἴσως (-ι2 </foreign>supra
+                           lin. add.)</rdg>
+                        <rdg wit="#Z"><foreign xml:lang="grc">λείπειται εἴσω</foreign></rdg>
+                        <wit>Venet. Marc. gr. Z. 17</wit>
                      </app>
                      <app type="text">
                         <lem wit="#V1 #M #P1 #A1"><foreign xml:lang="grc">γενέσθαι
                            σαγήνης</foreign></lem>
-                        <rdg wit="#V5"><foreign xml:lang="grc">σαγήνης γενέσθαι</foreign></rdg>
+                        <rdg wit="#V5 #P7 #L2"><foreign xml:lang="grc">σαγήνης (σαγίνης P7)
+                              γενέσθαι</foreign></rdg>
                         <wit>Vat. gr. 1422</wit>
+                        <wit>Paris. gr. 146</wit>
+                        <wit>Flor. Med. Laurent. Plut. 6. 3</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">ὁμοία</foreign></lem>
+                        <rdg wit="#O"><foreign xml:lang="grc">ὁμοίον</foreign></rdg>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">σαγήνῃ</foreign></lem>
+                        <rdg wit="#L2">post <foreign xml:lang="grc">σαγήνη·</foreign> habet <foreign
+                              xml:lang="grc">ταύτη τὸ καὶ θηρίοις ἑκόντες νοητοῖς γεγόνασι
+                              παρανάλωμα·</foreign></rdg>
+                        <wit>Flor. Med. Laurent. Plut. 6. 3</wit>
                      </app>
                   </div>
                   <div type="psalmtext">
                      <quote xml:id="edition-ps-2-3b" type="psalmtext" n="3b">καὶ ἀπορρίψωμεν ἀφ᾽
                         ἡμῶν τὸν ζυγὸν αὐτῶν.</quote>
                   </div>
+                  <!-- exp 17 -->
                   <div type="commentary">
                      <p xml:id="edition-2-3-2" n="17">Περὶ οὗ εἴρηκε ὁ γὰρ ζυγός μου χρηστός ἐστιν:
                         –</p>
                   </div>
+                  <!-- diese exp bildet eine Einheit mit der voraugehenden in V5 P7-->
+                  <!-- εἴρηκε V1 : εἴρηκεν L1 -->
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #M #P1 #V5 #A1">txt</rdg>
+                        <rdg wit="#V1 #P1 #M #A1 #V5 #L2">txt</rdg>
                         <wit>Vat. gr. 754</wit>
-                        <wit>Mosq. Synod. 194</wit>
                         <wit>Paris. gr. 166-167</wit>
-                        <wit>Vat. gr. 1422</wit>
+                        <wit>Mosq. Synod. 194</wit>
+                        <wit>Flor. Med. Laurent. Plut. 5. 30</wit>
                         <wit>Mediolan. Ambros. M 47 sup.</wit>
+                        <wit>Vat. gr. 1422</wit>
+                        <wit>Flor. Med. Laurent. Plut. 6. 3</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">Περὶ οὗ εἴρηκε</foreign></lem>
+                        <rdg wit="#L2">γέγραπται ἐν εὐγγελίοις</rdg>
+                        <wit>Flor. Med. Laurent. Plut. 6. 3</wit>
                      </app>
                      <app type="text">
                         <lem wit="#V1 #M #P1 #A1"><foreign xml:lang="grc">περὶ</foreign></lem>
@@ -1208,20 +1340,25 @@
                      <quote xml:id="edition-ps-2-4a" type="psalmtext" n="4a">ὁ κατοικῶν ἐν οὐρανοῖς
                         ἐκγελάσεται αὐτούς,</quote>
                   </div>
+                  <!-- exp 18 -->
                   <div type="commentary">
                      <p xml:id="edition-2-4-1" n="18">Ὡς ἀνόητα βουλευσαμένους: –</p>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #M #P1 #A1">txt</rdg>
+                        <rdg wit="#V1 #P1 #M #O #L1 #A1">txt</rdg>
                         <wit>Vat. gr. 754</wit>
-                        <wit>Mosq. Synod. 194</wit>
                         <wit>Paris. gr. 166-167</wit>
+                        <wit>Mosq. Synod. 194</wit>
+                        <wit>Vat. Ottob. gr. 398</wit>
+                        <wit>Flor. Med. Laurent. Plut. 5. 30</wit>
                         <wit>Mediolan. Ambros. M 47 sup.</wit>
                      </app>
                      <app type="text">
                         <lem wit="#V1 #M #P1"><foreign xml:lang="grc">ἀνόητα
                               βουλευσαμένους</foreign></lem>
+                        <rdg wit="#M #O"><foreign xml:lang="grc">ἀνόητα
+                           βουλευσαμένοις</foreign></rdg>
                         <rdg wit="#A1"><foreign xml:lang="grc">ἀνόητα δηλονὄτι
                               βουλευσαμένους</foreign></rdg>
                         <wit>Mediolan. Ambros. M 47 sup.</wit>
@@ -1231,15 +1368,17 @@
                      <quote xml:id="edition-ps-2-4b" type="psalmtext" n="4b">καὶ ὁ κύριος
                         ἐκμυκτηριεῖ αὐτούς.</quote>
                   </div>
+                  <!-- exp 19 -->
                   <div type="commentary">
                      <p xml:id="edition-2-4-2" n="19">Ἀντὶ τοῦ μισήσει καὶ ἀποστραφήσεται: –</p>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #M #P1 #A1">txt</rdg>
+                        <rdg wit="#V1 #P1 #M #L1 #A1">txt</rdg>
                         <wit>Vat. gr. 754</wit>
-                        <wit>Mosq. Synod. 194</wit>
                         <wit>Paris. gr. 166-167</wit>
+                        <wit>Mosq. Synod. 194</wit>
+                        <wit>Flor. Med. Laurent. Plut. 5. 30</wit>
                         <wit>Mediolan. Ambros. M 47 sup.</wit>
                      </app>
                      <app type="text">
@@ -1269,20 +1408,38 @@
                      <quote xml:id="edition-ps-2-5b" type="psalmtext" n="5b">καὶ ἐν τῷ θυμῷ αὐτοῦ
                         ταράξει αὐτούς</quote>
                   </div>
+                  <!-- exp 20 -->
                   <div type="commentary">
                      <p xml:id="edition-2-5-1" n="20">Τότε πότε, ἢ ὅτε ἔλεγον· διαρρήξωμεν τοὺς
                         δεσμοὺς αὐτῶν; τί δέ ἐστι, τὰ ἐν ὀργῇ παρ’ αὐτοῦ λαληθέντα; οὐαὶ ὑμεῖς
                         γραμματεῖς καὶ φαρισαῖοι· ὅτι ἀρθήσεται ἀφ’ ὑμῶν ἡ βασιλεία τοῦ θεοῦ· καὶ
-                        ὑμῖν τοῖς νομικοῖς οὐαί: –</p>
+                        ὑμῖν τοῖς νομικοῖς, οὐαί: –</p>
                   </div>
+                  <!-- τί δέ ἐστι V1 : τί δε ἐστιν P6 : τί δέ ἐστι Z -->
+                  <!-- ἢ ὅτε V1 : εἰ ὅτε B1 -->
+                  <!-- τί δέ ἐστι V1 : τί δε ἐστιν B1 -->
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #M #P1 #V5 #A1">txt</rdg>
+                        <rdg wit="#V1 #P1 #M #B1 #L1 #A1 #P6 #Z #V5 #P7">txt</rdg>
                         <wit>Vat. gr. 754</wit>
-                        <wit>Mosq. Synod. 194</wit>
                         <wit>Paris. gr. 166-167</wit>
-                        <wit>Vat. gr. 1422</wit>
+                        <wit>Mosq. Synod. 194</wit>
+                        <wit>Oxon. Bodl. Auct. D. 4. 1.</wit>
+                        <wit>Flor. Med. Laurent. Plut. 5. 30</wit>
                         <wit>Mediolan. Ambros. M 47 sup.</wit>
+                        <wit>Paris. gr. 139</wit>
+                        <wit>Venet. Marc. gr. Z. 17</wit>
+                        <wit>Vat. gr. 1422</wit>
+                        <wit>Paris. gr. 146</wit>
+                     </app>
+
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">ἢ ὅτε ἔλεγον</foreign></lem>
+                        <rdg wit="#B1 #P6 #Z">ἢ ὅτε ἔλεγεν (-ε Z)</rdg>
+                        <wit>Oxon. Bodl. Auct. D. 4. 1.</wit>
+                        <wit>Paris. gr. 139</wit>
+                        <wit>Venet. Marc. gr. Z. 17</wit>
+                        <rdg wit="#L1">ὅτι ἔλεγον</rdg>
                      </app>
                      <app type="text">
                         <lem wit="#V1 #M #P1 #V5"><foreign xml:lang="grc">τοὺς δεσμοὺς
@@ -1302,23 +1459,35 @@
                      </app>
                      <app type="text">
                         <lem wit="#V1"><foreign xml:lang="grc">λαληθέντα; οὐαὶ ὑμεῖς</foreign></lem>
-                        <rdg wit="#M #P1 #V5 #A1"><foreign xml:lang="grc">λαληθέντα, ἢ τὸ, οὐαὶ
+                        <rdg wit="#P1 #M #B1 #A1 #V5"><foreign xml:lang="grc">λαληθέντα, ἢ τὸ, οὐαὶ
                               ὑμῖν</foreign></rdg>
-                        <wit>Mosq. Synod. 194</wit>
+                        <!-- λαληθέντα· εἰ τὸ οὐαὶ ὑμῖν B1 -->
                         <wit>Paris. gr. 166-167</wit>
-                        <wit>Vat. gr. 1422</wit>
+                        <wit>Mosq. Synod. 194</wit>
                         <wit>Mediolan. Ambros. M 47 sup.</wit>
+                        <wit>Vat. gr. 1422</wit>
+                        <rdg wit="#L1 #P6 #Z"><foreign xml:lang="grc">λαληθέντα· τὸ οὐαὶ (-ὶ ex ί-
+                              P6) ὑμῖν</foreign></rdg>
+                        <wit>Paris. gr. 139</wit>
+                        <wit>Venet. Marc. gr. Z. 17</wit>
+                        <wit>Flor. Med. Laurent. Plut. 5. 30</wit>
                      </app>
                      <app type="text">
-                        <lem wit="#V1 #M #P1 #A1"><foreign xml:lang="grc">φαρισαῖοι</foreign></lem>
-                        <rdg wit="#V5"><foreign xml:lang="grc">φαρισαῖοι ὑποκριταὶ</foreign></rdg>
+                        <lem wit="#V1 #M #P1 #A1"><foreign xml:lang="grc">γραμματεῖς καὶ
+                              φαρισαῖοι</foreign></lem>
+                        <rdg wit="#B1">φαρισαῖοι καὶ γραμματεῖς</rdg>
+                        <wit>Oxon. Bodl. Auct. D. 4. 1.</wit>
+                        <rdg wit="#V5"><foreign xml:lang="grc">γραμματεῖς καὶ φαρισαῖοι
+                              ὑποκριταὶ</foreign></rdg>
                         <wit>Vat. gr. 1422</wit>
                      </app>
                      <app type="text">
                         <lem wit="#V1 #V5 #A1"><foreign xml:lang="grc">ὅτι ἀρθήσεται</foreign></lem>
-                        <rdg wit="#M #P1"><foreign xml:lang="grc">καὶ τὸ, ἀρθήσεται</foreign></rdg>
-                        <wit>Mosq. Synod. 194</wit>
+                        <rdg wit="#B2">καὶ ἀρθήσεται</rdg>
+                        <wit>Oxon. Bodl. Auct. D. 4. 1.</wit>
+                        <rdg wit="#P1 #M"><foreign xml:lang="grc">καὶ τὸ, ἀρθήσεται</foreign></rdg>
                         <wit>Paris. gr. 166-167</wit>
+                        <wit>Mosq. Synod. 194</wit>
                      </app>
                      <app type="text">
                         <lem wit="#V1 #V5"><foreign xml:lang="grc">ἡ βασιλεία τοῦ
@@ -1329,21 +1498,33 @@
                         <wit>Mediolan. Ambros. M 47 sup.</wit>
                      </app>
                      <app type="text">
-                        <lem wit="#V1 #M #P1"><foreign xml:lang="grc">τοῦ θεοῦ·</foreign></lem>
-                        <rdg wit="#V5"><foreign xml:lang="grc">τοῦ θεοῦ· καὶ δοθήσεται ἔθνει
-                              ποιοῦντι τοὺς καρποὺς αὐτῆς∙</foreign></rdg>
+                        <lem><foreign xml:lang="grc">τοῦ θεοῦ – οὐαί</foreign></lem>
+                        <rdg wit="#B1">om.</rdg>
+                        <wit>Oxon. Bodl. Auct. D. 4. 1.</wit>
+                     </app>
+                     <app type="text">
+                        <lem wit="#V1 #M #P1"><foreign xml:lang="grc">τοῦ θεοῦ</foreign></lem>
+                        <rdg wit="#V5 #P7"><foreign xml:lang="grc">τοῦ θεοῦ· καὶ δοθήσεται ἔθνη (-η
+                              in -ει correctum P7) ποιοῦντι τοὺς καρποὺς αὐτῆς∙</foreign></rdg>
                         <wit>Vat. gr. 1422</wit>
+                        <wit>Paris. gr. 146</wit>
                      </app>
                      <app type="text">
                         <lem wit="#V1"><foreign xml:lang="grc">καὶ ὑμῖν τοῖς νομικοῖς
                            οὐαί</foreign></lem>
-                        <rdg wit="#M #P1"><foreign xml:lang="grc">τὸ αὐτὸ καὶ ὑμῖν οὐαὶ τοῖς
+                        <rdg wit="#P1 #M"><foreign xml:lang="grc">τὸ αὐτὸ καὶ ὑμῖν οὐαὶ τοῖς
                               νομικοῖς</foreign></rdg>
-                        <wit>Mosq. Synod. 194</wit>
                         <wit>Paris. gr. 166-167</wit>
+                        <wit>Mosq. Synod. 194</wit>
+                        <rdg wit="#L1"><foreign xml:lang="grc">καίτοι· καὶ ὑμῖν τοῖς νομικοῖς τὸ
+                              οὐαί </foreign>(-ί in -ῖ corr. man. sec.)</rdg>
+                        <wit>Flor. Med. Laurent. Plut. 5. 30</wit>
                         <rdg wit="#V5"><foreign xml:lang="grc">καὶ τό τε ὑμῖν τοῖς νομικοῖς
                               οὐαί</foreign></rdg>
                         <wit>Vat. gr. 1422</wit>
+                        <rdg wit="#P6"><foreign xml:lang="grc">καὶ τὸ καὶ ὑμιν τοῖς νομικοῖς
+                              οὐαί</foreign></rdg>
+                        <wit>Paris. gr. 139</wit>
                         <rdg wit="#A1"><foreign xml:lang="grc">καὶ πάλιν· καὶ ὑμῖν οὐαὶ τοὶς
                               νομικοῖς:</foreign></rdg>
                         <wit>Mediolan. Ambros. M 47 sup.</wit>
@@ -1368,22 +1549,47 @@
                      <quote xml:id="edition-ps-2-6a" type="psalmtext" n="6a">᾿Εγὼ δὲ κατεστάθην
                         βασιλεὺς ὑπ᾽ αὐτοῦ</quote>
                   </div>
+                  <!-- exp 21 -->
                   <div type="commentary">
                      <p xml:id="edition-2-6-1" n="21">Ὡς ἀποβληθέντος τοῦ ἐξ ἰσραὴλ λαοῦ τὴν εἰς τὰ
                         ἔθνη γενομένην αὐτοῦ πίστιν αὐτοῖς διηγεῖται: –</p>
                   </div>
+                  <!-- αὐτοῦ: -οῦ supra lin. addidit P6 -->
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #M #P1 #V5 #A1">txt</rdg>
+                        <rdg wit="#V1 #P1 #M #L1 #P6 #Z #V5 #P7 #A1">txt</rdg>
                         <wit>Vat. gr. 754</wit>
-                        <wit>Mosq. Synod. 194</wit>
                         <wit>Paris. gr. 166-167</wit>
+                        <wit>Mosq. Synod. 194</wit>
+                        <wit>Flor. Med. Laurent. Plut. 5. 30</wit>
+                        <wit>Paris. gr. 139</wit>
+                        <wit>Venet. Marc. gr. Z. 17</wit>
                         <wit>Vat. gr. 1422</wit>
+                        <wit>Paris. gr. 146</wit>
+                        <wit>Mediolan. Ambros. M 47 sup.</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">ἀποβληθέντος</foreign></lem>
+                        <rdg wit="#L1">αποκλιθέντος<foreign xml:lang="grc"/></rdg>
+                        <wit>Flor. Med. Laurent. Plut. 5. 30</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">τὴν εἰς τὰ ἔθνη γενομένην</foreign></lem>
+                        <rdg wit="#P7"><foreign xml:lang="grc">τὴς εἰς τὰ ἔθνη γενομένης (vel
+                              -ν)</foreign></rdg>
+                        <!-- τὴν εἰς τὰ ἔθνη γενομένην V5 -->
                      </app>
                      <app type="text">
                         <lem wit="#V1 #M #P1 #V5"><foreign xml:lang="grc">γενομένην</foreign></lem>
                         <rdg wit="#A1"><foreign xml:lang="grc">γεναμένην</foreign></rdg>
                         <wit>Mediolan. Ambros. M 47 sup.</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">αὐτοῦ</foreign></lem>
+                        <rdg wit="#P6"><foreign xml:lang="grc">αὐτ** </foreign></rdg>
+                        <rdg wit="#Z"><foreign xml:lang="grc">αὐτὰ</foreign></rdg>
+                        <wit>Par. gr. 139</wit>
+                        <wit>Venet. Marc. gr. Z. 17</wit>
                      </app>
                      <app type="text">
                         <lem wit="#V1 #M #P1 #V5"><foreign xml:lang="grc">πίστιν αὐτοῖς
@@ -1393,31 +1599,43 @@
                         <wit>Mediolan. Ambros. M 47 sup.</wit>
                      </app>
                      <app type="text">
-                        <lem wit="#V1 #V5"><foreign xml:lang="grc">αὐτοῖς</foreign></lem>
-                        <rdg wit="#M #P1"><foreign xml:lang="grc">οὕτω</foreign></rdg>
-                        <wit>Mosq. Synod. 194</wit>
-                        <wit>Paris. gr. 1422</wit>
+                        <lem wit="#V1 #M #P1"><foreign xml:lang="grc">πίστιν αὐτοῖς</foreign></lem>
+                        <rdg wit="#V5 #P7"><foreign xml:lang="grc">αὐτοῖς πίστιν</foreign></rdg>
+                        <wit>Vat. gr. 1422</wit>
+                        <wit>Vat. gr. 146</wit>
                      </app>
                      <app type="text">
-                        <lem wit="#V1 #M #P1"><foreign xml:lang="grc">πίστιν αὐτοῖς</foreign></lem>
-                        <rdg wit="#V5"><foreign xml:lang="grc">αὐτοῖς πίστιν</foreign></rdg>
-                        <wit>Vat. gr. 1422</wit>
+                        <lem wit="#V1 #V5"><foreign xml:lang="grc">αὐτοῖς</foreign></lem>
+                        <rdg wit="#P1 #M #L1"><foreign xml:lang="grc">οὕτω (-ς </foreign>L1)</rdg>
+                        <wit>Paris. gr. 166–167</wit>
+                        <wit>Mosq. Synod. 194</wit>
+                        <wit>Flor. Med. Laurent. Plut. 5. 30</wit>
                      </app>
                   </div>
                   <div type="psalmtext">
                      <quote xml:id="edition-ps-2-6b" type="psalmtext" n="6b">ἐπὶ Σιων ὄρος τὸ ἅγιον
                         αὐτοῦ</quote>
                   </div>
+                  <!-- exp 22 -->
                   <div type="commentary">
                      <p xml:id="edition-2-6-2" n="22">Σιὼν τὴν ἐκκλησίαν δηλοῖ: –</p>
                   </div>
+                  <!-- eine Einheit mit der vorigen exp. P6 Z -->
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #M #P1 #A1">txt</rdg>
+                        <rdg wit="#V1 #P1 #M #P6 #Z #A1">txt</rdg>
                         <wit>Vat. gr. 754</wit>
-                        <wit>Mosq. Synod. 194</wit>
                         <wit>Paris. gr. 166-167</wit>
+                        <wit>Mosq. Synod. 194</wit>
+                        <wit>Paris. gr. 139</wit>
+                        <wit>Venet. Marc. gr. Z. 17</wit>
                         <wit>Mediolan. Ambros. M 47 sup.</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">Σιὼν</foreign></lem>
+                        <rdg wit="#P6 #Z"><foreign xml:lang="grc">σιὼν δὲ</foreign></rdg>
+                        <wit>Paris. gr. 139</wit>
+                        <wit>Venet. Marc. gr. Z. 17</wit>
                      </app>
                   </div>
                </div>
@@ -1437,23 +1655,29 @@
                      <quote xml:id="edition-ps-2-7a" type="psalmtext" n="7a">διαγγέλλων τὸ πρόσταγμα
                         κυρίου</quote>
                   </div>
+                  <!-- exp 23a -->
                   <div type="commentary">
                      <p xml:id="edition-2-7-1-1" n="23a">Τὴν γνῶσιν τοῦ μόνου θεοῦ. καὶ τὴν ἐντολὴν
                         τοῦ κυρίου: –</p>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #V5">txt</rdg>
+                        <rdg wit="#V1 #M #O #V5 #L2">txt</rdg>
                         <wit>Vat. gr. 754</wit>
+                        <wit>Mosq. Synod. 194</wit>
+                        <wit>Vat. Ottob. gr. 398</wit>
                         <wit>Vat. gr. 1422</wit>
+                        <wit>Flor. Med. Laurent. Plut. 6. 3</wit>
                      </app>
                      <app type="text">
-                        <lem wit="#V1"><foreign xml:lang="grc">μόνου θεοῦ</foreign></lem>
-                        <rdg wit="#V5"><foreign xml:lang="grc">μονογενοῦς υἱοῦ τοῦ
-                           θεοῦ</foreign></rdg>
+                        <lem wit="#V1"><foreign xml:lang="grc">τοῦ μόνου θεοῦ</foreign></lem>
+                        <rdg wit="#V5 #L2"><foreign xml:lang="grc">τοῦ μονογενοῦς υἱοῦ τοῦ
+                              θεοῦ</foreign></rdg>
                         <wit>Vat. gr. 1422</wit>
+                        <wit>Flor. Med. Laurent. Plut. 6. 3</wit>
                      </app>
                   </div>
+                  <!-- exp 23b -->
                   <div type="commentary">
                      <p xml:id="edition-2-7-1-2" n="23b">Τουτέστιν ἐξαγγέλλων τὴν γνῶσιν τοῦ μόνου
                         θεοῦ· καὶ τοῦ ἀποσταλέντος Ἰησοῦ: –</p>
@@ -1468,35 +1692,42 @@
                      <quote xml:id="edition-ps-2-7b" type="psalmtext" n="7b">Κύριος εἶπεν πρός με
                         Υἱός μου εἶ σύ, ἐγὼ σήμερον γεγέννηκά σε·</quote>
                   </div>
+                  <!-- exp 24a -->
                   <div type="commentary">
                      <p xml:id="edition-2-7-2-1" n="24a">Ὅρα πῶς τὴν κατασάρκα γέννησιν τοῦ
                         μονογενοῦς οἰκειοῦται ὁ πατὴρ: –</p>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #M #P1 #V5 #A1">txt</rdg>
+                        <rdg wit="#V1 #P1 #M #A1 #V5 #P7 #L2">txt</rdg>
                         <wit>Vat. gr. 754</wit>
-                        <wit>Mosq. Synod. 194</wit>
                         <wit>Paris. gr. 166-167</wit>
-                        <wit>Vat. gr. 1422</wit>
+                        <wit>Mosq. Synod. 194</wit>
                         <wit>Mediolan. Ambros. M 47 sup.</wit>
+                        <wit>Vat. gr. 1422</wit>
+                        <wit>Paris. gr. 146</wit>
+                        <wit>Flor. Med. Laurent. Plut. 6. 3</wit>
+                        <!-- von wo typus 4 -->
                      </app>
                      <app type="text">
-                        <lem wit="#V1 #M #P1 #V5"><foreign xml:lang="grc">Ὅρα</foreign></lem>
+                        <lem wit="#V1 #P1 #M #V5"><foreign xml:lang="grc">Ὅρα</foreign></lem>
                         <rdg wit="#A1"><foreign xml:lang="grc">Ὁρᾶς</foreign></rdg>
                         <wit>Mediolan. Ambros. M 47 sup.</wit>
                      </app>
                      <app type="text">
                         <lem wit="#V1 #M #P1 #A1"><foreign xml:lang="grc">μονογενοῦς</foreign></lem>
-                        <rdg wit="#V5"><foreign xml:lang="grc">μονογενοῦς υἱοῦ</foreign></rdg>
+                        <rdg wit="#V5 #P7"><foreign xml:lang="grc">μονογενοῦς υἱοῦ</foreign></rdg>
+                        <rdg wit="#L2">μονογενοῦς [υἱοῦ]</rdg>
+                        <wit>Flor. Med. Laurent. Plut. 6. 3</wit>
                      </app>
-                     <!--<app type="text">
+                     <!-- <app type="text">
                      <lem wit="#V1 #V5">-</lem>
                      <rdg wit="#M #P1">add. <foreign xml:lang="grc">τουτέστιν νοήσατε∙ πρὸς μετάνοιαν ἐπιστράφητε·</foreign></rdg>
                      <wit>Mosq. Synod. 194</wit>
                      <wit>Paris. gr. 166-167</wit>
-                  </app>-->
+                  </app> -->
                   </div>
+                  <!-- exp 24b -->
                   <div type="commentary">
                      <p xml:id="edition-2-7-2-2" n="24b">Kατὰ τὸ ἀνθρώπινον λέγει</p>
                   </div>
@@ -1546,6 +1777,7 @@
                      <quote xml:id="edition-ps-2-9b" type="psalmtext" n="9b">ὡς σκεῦος κεραμέως
                         συντρίψεις αὐτούς.</quote>
                   </div>
+                  <!-- exp 25 -->
                   <div type="commentary">
                      <p xml:id="edition-2-9-1" n="25">Τὴν τῶν ῥωμαίων ἀρχὴν δηλοῖ: –</p>
                   </div>
@@ -1588,6 +1820,7 @@
                      <quote xml:id="edition-ps-2-11b" type="psalmtext" n="11b">καὶ ἀγαλλιᾶσθε αὐτῷ
                         ἐν τρόμῳ.</quote>
                   </div>
+                  <!-- exp 26a -->
                   <div type="commentary">
                      <p xml:id="edition-2-11-1-1" n="26a">Προτροπὴ εἰς μετάνοιαν: –</p>
                   </div>
@@ -1600,6 +1833,7 @@
                      <note type="textual-commentary">Vat. gr. 1422 fügt nach diesem Fragment einen
                         weiteren Text an, der PG 12, 1113 C8–10 ähnlich ist.</note>
                   </div>
+                  <!-- exp 26b -->
                   <div type="commentary">
                      <p xml:id="edition-2-11-1-2" n="26b">Ἐπὶ μετάνοιαν προτρεπόμενος ταῦτα λέγει ὡς
                         δῆλον ἐκ τῶν ἐξῆς: –</p>
@@ -1610,6 +1844,7 @@
                         <wit>Mediolan. Ambros. M 47 sup.</wit>
                      </app>
                   </div>
+                  <!-- exp 27 -->
                   <div type="commentary">
                      <p xml:id="edition-2-11-2" n="27">Καὶ γὰρ ὁ ἀρετῆς ἐπιμελούμενος, οὗτος
                         δουλεύει τῷ κυρίῳ ἐν φόβῳ· ποιῶν τὰς ἐντολὰς αὐτοῦ καὶ δεδοικὼς, μή τι
@@ -1645,25 +1880,36 @@
                      <quote xml:id="edition-ps-2-12a" type="psalmtext" n="12a">δράξασθε παιδείας,
                         μήποτε ὀργισθῇ κύριος</quote>
                   </div>
+                  <!-- exp 28a -->
                   <div type="commentary">
                      <p xml:id="edition-2-12-1-1" n="28a">Τῆς εὐαγγελικῆς δηλονότι: –</p>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #M #P1 #V5">txt</rdg>
+                        <rdg wit="#V1 #P1 #M #O #P6 #Z #V5 #P7 #L2">txt</rdg>
                         <wit>Vat. gr. 754</wit>
-                        <wit>Mosq. Synod. 194</wit>
                         <wit>Paris. gr. 166-167</wit>
+                        <wit>Mosq. Synod. 194</wit>
+                        <wit>Vat. Ottob. gr. 398</wit>
+                        <wit>Paris. gr. 139</wit>
+                        <wit>Venet. Marc. gr. Z. 17</wit>
                         <wit>Vat. gr. 1422</wit>
+                        <wit>Paris. gr. 146</wit>
+                        <wit>Flor. Med. Laurent. Plut. 6. 3</wit>
                      </app>
                      <app type="text">
-                        <lem wit="#V1 #V5">-</lem>
-                        <rdg wit="#M #P1">add. nach dem Text <foreign xml:lang="grc"
-                              >νομοθεσίας</foreign></rdg>
-                        <wit>Mosq. Synod. 194</wit>
+                        <lem><foreign xml:lang="grc">Τῆς εὐαγγελικῆς</foreign></lem>
+                        <rdg wit="#M #O">τῆς ἀγγελικῆς</rdg>
+                        <!-- αγγελικῆς O -->
+                     </app>
+                     <app type="text">
+                        <lem wit="#V1 #V5">δηλονότι</lem>
+                        <rdg wit="#P1"><foreign xml:lang="grc">δηλονότι
+                           νομοθεσίας</foreign></rdg>
                         <wit>Paris. gr. 166-167</wit>
                      </app>
                   </div>
+                  <!-- exp 28b -->
                   <div type="commentary">
                      <p xml:id="edition-2-12-1-2" n="28b">Ἐπικρατήσατε φησὶ τῆς εὐαγγελικῆς
                         παιδείας· ἵνα μὴ ἔξω τοῦ λέγοντος ἐγώ εἰμι ἡ ὁδὸς γένησθε: –</p>
@@ -1678,22 +1924,35 @@
                      <quote xml:id="edition-ps-2-12b" type="psalmtext" n="12b">καὶ ἀπολεῖσθε ἐξ ὁδοῦ
                         δικαίας.</quote>
                   </div>
+                  <!-- exp 29 -->
                   <div type="commentary">
                      <p xml:id="edition-2-12-2" n="29">Τοῦ εἰρηκότος ἐγὼ εἰμί: –</p>
                   </div>
+                  <!-- eine Einheit mit der vorausgehenden exp P6 Z -->
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #M #P1">txt</rdg>
+                        <rdg wit="#V1 #P1 #M #P6 #Z">txt</rdg>
                         <wit>Vat. gr. 754</wit>
-                        <wit>Mosq. Synod. 194</wit>
                         <wit>Paris. gr. 166-167</wit>
+                        <wit>Mosq. Synod. 194</wit>
+                        <wit>Paris. gr. 139</wit>
+                        <wit>Venet. Marc. gr. Z. 17</wit>
                      </app>
                      <app type="text">
-                        <lem wit="#V1">-</lem>
-                        <rdg wit="#M #P1">add. nach dem Text <foreign xml:lang="grc">ἡ
-                              ὁδός</foreign></rdg>
-                        <wit>Mosq. Synod 194</wit>
+                        <lem><foreign xml:lang="grc">Τοῦ</foreign></lem>
+                        <rdg wit="#P6 #Z"><foreign xml:lang="grc">ὁδοῦ δε δικαίας </foreign>ante
+                              <foreign xml:lang="grc">τοῦ</foreign> habent</rdg>
+                        <wit>Paris. gr. 139</wit>
+                        <wit>Venet. Marc. gr. Z. 17</wit>
+                     </app>
+                     <app type="text">
+                        <lem wit="#V1">εἰμί</lem>
+                        <rdg wit="#P1 #M #P6 #Z">post εἰμί habent <foreign xml:lang="grc">ἡ ὁδός·
+                           </foreign></rdg>
                         <wit>Paris. gr. 166-167</wit>
+                        <wit>Mosq. Synod 194</wit>
+                        <wit>Paris. gr. 139</wit>
+                        <wit>Venet. Marc. gr. Z. 17</wit>
                      </app>
                   </div>
                   <div type="psalmtext">
@@ -1702,6 +1961,7 @@
                      <quote xml:id="edition-ps-2-12d" type="psalmtext" n="12d">μακάριοι πάντες οἱ
                         πεποιθότες ἐπ᾽ αὐτῷ.</quote>
                   </div>
+                  <!-- exp 30 -->
                   <div type="commentary">
                      <p xml:id="edition-2-12-3" n="30">Ἐνταῦθα καὶ τοὺς ἐκ ταραχώσεως πῶς πειρασμοῖς
                         περιπεσόντας καὶ μὴ ἀπελπίσαντας, μακαρίζει: –</p>
