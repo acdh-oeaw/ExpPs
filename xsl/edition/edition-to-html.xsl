@@ -125,6 +125,8 @@ version="2.0">
             <div class="col-md-2">
                 <xsl:if test="exists(@n)">
                     <xsl:text>(</xsl:text>
+                    <xsl:value-of select="substring-before(./parent::tei:div[@type = 'psalmtext']/parent::tei:div[@type = 'text']/parent::tei:div[@type = 'psalmverse']/@n,'.')"/>
+                    <xsl:text>,</xsl:text>
                     <xsl:value-of select="@n"/>
                     <xsl:text>) </xsl:text>
                 </xsl:if>
@@ -181,7 +183,9 @@ version="2.0">
 </xsl:template>
 
 <xsl:template match="tei:app[@type = 'text']">
+    <b>
     <xsl:apply-templates select="tei:lem"/>
+    </b>
     <xsl:text> </xsl:text>
     <xsl:for-each select="tokenize(tei:lem/@wit,' ')">
         <i><xsl:value-of select="substring-after(.,'#')"/></i>
