@@ -7,7 +7,8 @@
             <title>Oxon. Bodl. Auct. D. 4. 1 - Transcription</title>
             <respStmt>
                <resp>transcribed by</resp>
-               <persName>Sebastiano Panteghini</persName>
+               <persName>Maria-Lucia Goiana (Ps 2–5; 7) and Sebastiano Panteghini (Ps 1; 6;
+                  8–10)</persName>
             </respStmt>
          </titleStmt>
          <publicationStmt>
@@ -279,6 +280,7 @@
             further usage.</change>
       </revisionDesc>
    </teiHeader>
+   <!-- noch hinzufügen: Folienzählung Ps 2–5, Ps 2 letze Fragmente, Ps 5 -->
    <text>
       <body>
          <div type="transcription" xml:id="bodl-auct-d-4-1-1-1">
@@ -655,6 +657,7 @@
                      θυμὸς αὐτοῦ, <anchor xml:id="bodl-auct-d-4-1-ps-2-12d" type="psalmtext"
                         n="Ps (LXX) 2,12d" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-12"/> μακάριοι
                      πάντες οἱ πεποιθότες ἐπ’ αὐτῷ. </quote>
+                  <pb n="40r"/>
                   <!-- Ps 2 commentary -->
                   <note type="lemma">Ps 2,1</note>
                   <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-2-1"
@@ -734,16 +737,6 @@
                         corresp="#person-18" source="fons ignotus in Ps 2,10a">νοήσατε, ἐπίγνωτε
                      </quote>
                   </seg>
-                  <!-- MUSTER -->
-                  <!-- MESE:  ·  Spitzenklammern:  &lt;XX&gt; -->
-                  <!--  <note type="lemma">Ps X,XX</note>  
-                     <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-2-XX"
-                     corresp="#bodl-auct-d-4-1-ps-2-XX" source="XXX">
-                     <quote type="patristic" subtype="XXX" xml:id="bodl-auct-d-4-1-quot-2-XX"
-                        corresp="#person-XX" source="XXX"></quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-2-XX" type="XXX">Vat. gr. 754</ref>
-                     <note type="attribution"><foreign xml:lang="grc">Ἀθανασίου</foreign></note>
-                  </seg> -->
                   <!-- Ps 3 bibletext -->
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-3-1"
                      n="Ps (LXX) 3,1" xml:lang="grc" xml:id="bodl-auct-d-4-1-ps-3-1"> Ψαλμὸς τῷ
@@ -810,6 +803,35 @@
                         <anchor xml:id="bodl-auct-d-4-1-ps-3-9b" type="psalmtext" n="Ps (LXX) 3,9b"
                         corresp="../psalms-LXX/psalms.xml#Ps-LXX-3-9"/> καὶ ἐπὶ τὸν λαόν σου ἡ
                      εὐλογία σου. </quote>
+                  <!-- ps 3 commentary --> 
+                  <note type="lemma">Ps 3,2a</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-3-1"
+                     corresp="#bodl-auct-d-4-1-ps-3-2a" source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-3-1"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 3,2a; in marg.">
+                        <supplied reason="margin-cut">Τ</supplied>ὸ τί <unclear reason="faded"
+                           >ἀ</unclear>ντὶ τοῦ <supplied reason="margin-cut">σ</supplied>φόδρα
+                           <supplied reason="margin-cut">κ</supplied>εῖται· </quote><ref
+                        target="vat-gr-754:vat-gr-754-fr-3-3" type="identical">Vat. gr. 754</ref>
+                  </seg>
+                  <note type="lemma">Ps 3,4a</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-3-2"
+                     corresp="#bodl-auct-d-4-1-ps-3-4a" source="Hesychius">
+                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-3-2"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 3,4a">διδάσκει ὁ λόγος.
+                        ὡς ἐν ταῖς περιστάσεσιν οὐκ᾿ ἄλλω. ἠ θεῶ μόνω προσιέναι δή· </quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-3-15" type="identical">Vat. gr. 754</ref>
+                     <note type="attribution"><foreign xml:lang="grc">ἐρμηνεία
+                        Ἡσυχιου·</foreign></note>
+                  </seg>
+                  <note type="lemma">Ps 3,6–7a</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-3-3"
+                     corresp="#bodl-auct-d-4-1-ps-3-6" source="Anonymous">
+                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-3-3"
+                        corresp="#person-18" source="fons ignotus in Ps 3,7a (ineditum?)">τῶν
+                        πειρασμῶν τῶν ἐπερχομένων· </quote>
+                     <note type="attribution"><foreign xml:lang="grc">ἐρμην(εία)</foreign></note>
+                  </seg>
                   <!-- Ps 4 bibletext -->
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-4-1"
                      n="Ps (LXX) 4,1" xml:lang="grc" xml:id="bodl-auct-d-4-1-ps-4-1"> Εἰς τὸ τέλος,
@@ -877,6 +899,36 @@
                         corresp="../psalms-LXX/psalms.xml#Ps-LXX-4-9"/> ὅτι σύ, κύριε, κατὰ μόνας
                      ἐπ’ ἐλπίδι κατῴκισάς με. </quote>
                   <!-- Ps 4 commentary -->
+                  <note type="lemma">Ps 4,1</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-4-1"
+                     corresp="#bodl-auct-d-4-1-ps-4-1" source="Hesychius">
+                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-4-1"
+                        corresp="#person-11 #person-2"
+                        source="Hesychius, comm. brevis in Ps 4,1 (4 Jagić) - Athanasius, exp. in Ps 4,1"
+                        >... τοῦτον δὲ τὸν ψαλμὸν μετὰ τὸ νικῆσαι τὸν πόλεμον ἀνατίθησει τῶι θῶι τῶι
+                        νικοποιῶι· ⁘</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-4-5" type="with-variants">Vat. gr.
+                        754</ref>
+                     <note type="attribution"><foreign xml:lang="grc">ἀλλη ερμηνεία
+                           Ἡσυχίου·</foreign></note>
+                  </seg>
+                  <note type="lemma">Ps 4,5a</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-4-2"
+                     corresp="#bodl-auct-d-4-1-ps-4-5a" source="Anonymous">
+                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-4-2"
+                        corresp="#person-18" source="fons ignotus in Ps 4,5a (inedium?)">τοῦτέστιν·
+                        μὴ τὴν ὀργὴν ἐκπεραίνεται·</quote>
+                     <note type="attribution"><foreign xml:lang="grc">ερμην(εία)</foreign></note>
+                  </seg>
+                  <!-- MUSTER -->
+                  <!-- MESE:  ·  Spitzenklammern:  &lt;XX&gt; -->
+                  <!--  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-4-1"
+                     corresp="#bodl-auct-d-4-1-ps-4-XX" source="XXX">
+                     <quote type="patristic" subtype="XXX" xml:id="bodl-auct-d-4-1-quot-4-1"
+                        corresp="#person-2" source="XXX"></quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-4-XX" type="XXX">Vat. gr. 754</ref>
+                     <note type="attribution"><foreign xml:lang="grc">Ἀθανασίου</foreign></note>
+                  </seg> -->
                   <!-- Ps 5 bibletext -->
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-1"
                      n="Ps (LXX) 5,1" xml:lang="grc" xml:id="bodl-auct-d-4-1-ps-5-1"> Εἰς τὸ τέλος,
