@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../schema/tei-psalmcatenae.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <!-- Glossen noch dazuzuzufügen -->
+   <!-- Autorennamen auf Griechisch noch dazuzufügen -->
+   <!-- Textlage der expositiones wurde differenziert -->
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -375,9 +378,10 @@
             <div type="bibletext" subtype="commented" xml:id="coislin-10-8-1"
                rend="minuscule letters">
                <ab xml:id="coislin-10-8-2" xml:lang="grc">
-                  <!-- Ps 8 bible --><quote type="bibletext"
-                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-1" n="Ps (LXX) 8,1" xml:lang="grc"
-                     xml:id="coslin-10-ps-8-1"> Εἰς τὸ τέλος, ὑπὲρ τῶν ληνῶν· ψαλμὸς τῷ Δαυιδ. </quote>
+                  <!-- Ps 8 bibletext -->
+                  <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-1"
+                     n="Ps (LXX) 8,1" xml:lang="grc" xml:id="coslin-10-ps-8-1"> Εἰς τὸ τέλος, ὑπὲρ
+                     τῶν ληνῶν· ψαλμὸς τῷ Δαυιδ. </quote>
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-2"
                      n="Ps (LXX) 8,2" xml:lang="grc" xml:id="coslin-10-ps-8-2">
                      <anchor xml:id="coslin-10-ps-8-2a" type="psalmtext" n="Ps (LXX) 8,2a"
@@ -441,16 +445,18 @@
                      n="Ps (LXX) 8,10" xml:lang="grc" xml:id="coslin-10-ps-8-10"> κύριε ὁ κύριος
                      ἡμῶν, ὡς θαυμαστὸν τὸ ὄνομά σου ἐν πάσῃ τῇ γῇ. </quote>
                   <!-- 2 glosses -->
-                  <!-- Ps 8 comm -->
+                  <!-- Ps 8 commentary -->
                   <pb n="1v"/>
-                  <seg type="commentaryfragment" xml:id="coslin-10-fr-8-1"
-                     corresp="#coslin-10-ps-8-1" source="(Athanasius)">
+                  <note type="lemma">Ps 8,1</note>
+                  <seg type="hypothesis" xml:id="coslin-10-fr-8-1" corresp="#coslin-10-ps-8-1"
+                     source="(Athanasius)">
+                     <num type="ordinal" xml:lang="grc" value="1">A´</num>
                      <quote type="patristic" xml:id="coslin-10-quot-8-1" corresp="#person-2"
-                        source="Athanasius, schol. in Ps 8,1">Πάλαι μὲν ἐν τῇ νομικῇ λατρείᾳ. ἓν ἦν
-                        προλήνιον· τὸ θυσιαστήριον δηλονότι τῷ ἐν τῷ νεῷ· μετὰ δὲ τὴν τῶν ἐθνῶν
+                        source="Athanasius, schol. in Ps 8,1">Πάλαι μὲν ἐν τῆ νομικῆ λατρεία. ἓν ἦν
+                        προλήνιον· τὸ θυσιαστήριον δηλονότι τῶ ἐν τῶ νεῶ· μετὰ δὲ τὴν τῶν ἐθνῶν
                         κλῆσιν. πολλαὶ ληνοί· αὗται δὲ ἂν εἶεν. αἱ ἐκκλησίαι· αἱ τοὺς τῶν
-                        κατορθούντων ἐν θεοσεβείᾳ. δεχόμεναι καρπούς: –</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-8-XXX" type="identical">Vat. gr.
+                        κατορθούντων ἐν θεοσεβεία. δεχόμεναι καρπούς: –</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-8-XXX" type="with-variants">Vat. gr.
                         754</ref>
                   </seg>
                   <seg type="commentaryfragment" xml:id="coslin-10-fr-8-2"
@@ -460,21 +466,28 @@
                      <ref target="vat-gr-754:vat-gr-754-fr-8-XXX" type="identical">Vat. gr.
                         754</ref>
                   </seg>
-                  <!-- glosse 3 --><!-- hyp. des Theodoretus ausgelassen -->
+                  <!-- glosse 3 -->
+                  <!-- hyp. des Theodoretus ausgelassen -->
+                  <note type="lemma">Ps 8,3a</note>
                   <seg type="commentaryfragment" xml:id="coslin-10-fr-8-3"
                      corresp="#coslin-10-ps-8-3a" source="(Athanasius)">
+                     <num type="ordinal" xml:lang="grc" value="2">Β´</num>
                      <quote type="patristic" xml:id="coslin-10-quot-8-3" corresp="#person-2"
-                        source="Athanasius, schol. in Ps 8,3a">Tῶν κατὰ θεὸν νηπιαζόντων τῇ κακίᾳ·
-                        τοῦτο δὲ σαφῶς καὶ ἐν τοῖς εὐαγγελίοις ἀναγέγραπται· εἰρηκὼς ὁ σωτῆρ· ὅτε
+                        source="Athanasius, schol. in Ps 8,3a">Tῶν κατὰ θεὸν νηπιαζόντων τῆ κακία·
+                        τοῦτο δὲ σαφῶς καὶ ἐν τοῖς εὐαγγελίοις ἀναγέγραπται· εἰρηκὼς ὁ σωτῆρ ὅτε
                         τοὺς παῖδας οἱ φαρισαῖοι ἐπεστόμιζον εὐλογοῦντας αὐτ<unclear reason="damage"
-                           >όν</unclear>: – </quote>
+                           >όν: –</unclear></quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-8-XXX" type="identical">Vat. gr.
                         754</ref>
                   </seg>
+                  <note type="lemma">Ps 8,3b</note>
                   <seg type="commentaryfragment" xml:id="coslin-10-fr-8-4"
                      corresp="#coslin-10-ps-8-3b" source="(Athanasius)">
+                     <num type="ordinal" xml:lang="grc" value="3">Γ´</num>
                      <quote type="patristic" xml:id="coslin-10-quot-8-4" corresp="#person-2"
-                        source="Athanasius, schol. in Ps 8,3b">Ἠ τῶν νοητῶν. ἠ τῶν αἰσθητῶν· </quote>
+                        source="Athanasius, schol. in Ps 8,3b">Ἠ τῶν νοητῶν. ἠ τῶν αἰσθητῶν<unclear
+                           reason="damage">: –</unclear>
+                     </quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-8-XXX" type="identical">Vat. gr.
                         754</ref>
                   </seg>
@@ -485,8 +498,10 @@
                      <ref target="vat-gr-754:vat-gr-754-fr-8-XXX" type="identical">Vat. gr.
                         754</ref>
                   </seg>
+                  <note type="lemma">Ps 8,3c</note>
                   <seg type="commentaryfragment" xml:id="coslin-10-fr-8-6"
                      corresp="#coslin-10-ps-8-3c" source="(Athanasius)">
+                     <num type="ordinal" xml:lang="grc" value="4">Δ´</num>
                      <quote type="patristic" xml:id="coslin-10-quot-8-6" corresp="#person-2"
                         source="Athanasius, schol. in Ps 8,3c">Tὸν διάβολον δηλονότι· ἐπειδὴ μετὰ τὸ
                         ἀναγκάσαι πληρώσαι τὴν ἁμαρτίαν. καὶ τιμωρεῖται τοὺς ἁμαρτάνοντας· τὸ
@@ -502,15 +517,19 @@
                         754</ref>
                   </seg>
                   <pb n="2r"/>
+                  <note type="lemma">Ps 8,4</note>
                   <seg type="commentaryfragment" xml:id="coslin-10-fr-8-8"
-                     corresp="#coslin-10-ps-8-4a" source="(Athanasius)">
+                     corresp="#coslin-10-ps-8-4" source="(Athanasius)">
+                     <num type="ordinal" xml:lang="grc" value="5">Ε´</num>
                      <quote type="patristic" xml:id="coslin-10-quot-8-8" corresp="#person-2"
                         source="Athanasius, schol. in Ps 8,4a">Ἐκεῖνοι μὲν ἀγαν<unclear
                            reason="damage">ακ</unclear><supplied reason="illegible"
-                           >τοῦσ</supplied><unclear reason="damage">ι</unclear>. τῶν νηπίων
-                        καταρτιζόντων αἶνον· ἐγὼ δὲ τῶ οὕτω μέγα καὶ περικαλλὲς τοὺς οὐρανοὺς φημὶ.
-                        μικρὸν τί ἔργον τῆς σῆς δημιουργίας θεωρῶ: –</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-8-XXX" type="identical">Vat. gr.
+                           >τ</supplied><supplied reason="illegible" cert="medium"
+                           >ῶ</supplied><supplied reason="illegible">σιν</supplied><unclear
+                           reason="damage">. τ</unclear>ῶν νηπίων καταρτιζόντων αἶνον· ἐγὼ δὲ τῶ
+                        οὕτω μέγα καὶ περικαλλὲς τοὺς οὐρανοὺς φημὶ. μικρὸν τί ἔργον τῆς σῆς
+                        δημιουργίας θεωρῶ: –</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-8-XXX" type="with-variant">Vat. gr.
                         754</ref>
                   </seg>
                   <seg type="commentaryfragment" xml:id="coslin-10-fr-8-9"
@@ -526,12 +545,13 @@
                         source="Gregorius Naz., or. 28,5"/>
                      <ref target="vat-gr-754:vat-gr-754-fr-8-XXX" type="identical">Vat. gr.
                         754</ref>
-                  </seg>
+                  </seg><note type="lemma">Ps 8,5–7a</note>
                   <seg type="commentaryfragment" xml:id="coslin-10-fr-8-11"
-                     corresp="#coslin-10-ps-8-5a" source="(Athanasius)">
+                     corresp="#coslin-10-ps-8-5" source="(Athanasius)">
+                     <num type="ordinal" xml:lang="grc" value="5">Ϛ´</num>
                      <quote type="patristic" xml:id="coslin-10-quot-8-11" corresp="#person-2"
                         source="Athanasius, schol. in Ps 8,5a">Ταῦτα τοῦ Παύλου σαφῶς ἐπὶ τὸν σωτῆρα
-                        ἡμῶν ἐξειληφότος. ἀρκεῖσθαι τῇ ἐκδόσει χρή: –</quote>
+                        ἡμῶν ἐξειληφότος. ἀρκεῖσθαι τῆ ἐκδόσει χρή: –</quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-8-XXX" type="identical">Vat. gr.
                         754</ref>
                   </seg>
@@ -542,35 +562,43 @@
                      <ref target="vat-gr-754:vat-gr-754-fr-8-XXX" type="identical">Vat. gr.
                         754</ref>
                   </seg>
+                  <note type="lemma">Ps 8,8a</note>
                   <seg type="commentaryfragment" xml:id="coslin-10-fr-8-13"
-                     corresp="#coslin-10-ps-8-8b" source="(Athanasius)">
+                     corresp="#coslin-10-ps-8-8a" source="(Athanasius)"><num type="ordinal"
+                        xml:lang="grc" value="7">Z´</num>
                      <quote type="patristic" xml:id="coslin-10-quot-8-13" corresp="#person-2"
-                        source="Athanasius, schol. in Ps 8,8a">τοὺς ἐξ ἰσραὴλ πιστεύσαντας
+                        source="Athanasius, schol. in Ps 8,8a">τοὺς ἐξ ισραὴλ πιστεύσαντας
                         αἰνίττεται: –</quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-8-XXX" type="identical">Vat. gr.
                         754</ref>
                   </seg>
+                  <note type="lemma">Ps 8,8b</note>
                   <seg type="commentaryfragment" xml:id="coslin-10-fr-8-14"
-                     corresp="#coslin-10-ps-8-8b" source="(Athanasius)">
+                     corresp="#coslin-10-ps-8-8b" source="(Athanasius)"><num type="ordinal"
+                        xml:lang="grc" value="8">Η´</num>
                      <quote type="patristic" xml:id="coslin-10-quot-8-14" corresp="#person-2"
                         source="Athanasius, schol. in Ps 8,8b">διὰ τούτων τὰ ἔθνη δηλοῖ: –</quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-8-XXX" type="identical">Vat. gr.
                         754</ref>
                   </seg>
                   <pb n="3r"/>
+                  <note type="lemma">Ps 8,9</note>
                   <seg type="commentaryfragment" xml:id="coslin-10-fr-8-15"
-                     corresp="#coslin-10-ps-8-9a" source="(Athanasius)">
+                     corresp="#coslin-10-ps-8-9" source="(Athanasius)"><num type="ordinal"
+                        xml:lang="grc" value="9">Θ´</num>
                      <quote type="patristic" xml:id="coslin-10-quot-8-15" corresp="#person-2"
-                        source="Athanasius, schol. in Ps 8,9a">Τοὺς ἐπῃρμένους κατὰ τὸν βίον καὶ τὰ
+                        source="Athanasius, schol. in Ps 8,9a">Τοὺς ἐπηρμένους κατὰ τὸν βίον καὶ τὰ
                         ὑψηλὰ φρονοῦντας τοὺς ἀλογωτάτους: –</quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-8-XXX" type="identical">Vat. gr.
                         754</ref>
                   </seg>
+                  <note type="lemma">Ps 8,10</note>
                   <seg type="commentaryfragment" xml:id="coslin-10-fr-8-16"
-                     corresp="#coslin-10-ps-8-10" source="(Athanasius)">
+                     corresp="#coslin-10-ps-8-10" source="(Athanasius)"><num type="ordinal"
+                        xml:lang="grc" value="10">Ι´</num>
                      <quote type="patristic" xml:id="coslin-10-quot-8-16" corresp="#person-2"
                         source="Athanasius, schol. in Ps 8,10">ἀναδιπλασιάζει τὸ θαῦμα·
-                        ἐκπληττόμενος ὡς ἔφην ἐπὶ τῇ γενομένῃ τῶν ἀνθρώπων θεογνωσίᾳ: –</quote>
+                        ἐκπληττόμενος ὡς ἔφην ἐπὶ τῆ γενομένη τῶν ἀνθρώπων θεο_γνωσία: –</quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-8-XXX" type="identical">Vat. gr.
                         754</ref>
                   </seg>
