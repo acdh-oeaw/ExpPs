@@ -22,7 +22,22 @@ declare
     %rest:GET
     %rest:path('/psalmcatenae-server/commentaryfragments')
     %rest:produces('application/hal+json')
-function commentaryfragments:get-list-of-commentaryfragments(){};
+function commentaryfragments:get-list-of-commentaryfragments(){
+  let $origin := try { request:header("Origin") } catch basex:http {'urn:local'}
+  let $path := "/psalmcatenae-manuscripts"
+  let $commentaryfragments-result-fragment := for $commentaryfragment in collection($path)//tei:seg[@type = 'commentaryfragment'] return "{ '_links' : { 'self' : { 'href' : '/psalmcatenae-server/commentaryfragments/" || $commentaryfragment/@xml:id || "'}}, 'attribution' : '" || $commentaryfragment/@source ||"', 'author-critical' : '" || $commentaryfragment/child::tei:quote[@type = 'patristic']/@source || "'}"
+  let $commentaryfragments-as-json-result-fragment := string-join($commentaryfragments-result-fragment,',')
+  let $commentaryfragments-as-json := """{ '_links' : { 'self' : { 'href' : '/psalmcatenae-server/commentaryfragments' }}, '_embedded' : 'commentaryfragments' : [" || $commentaryfragments-as-json-result-fragment || "]}"""
+    return
+  (<rest:response>
+    <output:serialization-parameters>
+        <output:media-type value="application/hal+json"/>
+    </output:serialization-parameters>
+    <http:response status="200" message="OK">
+      <http:header name="Access-Control-Allow-Origin" value="{$origin}"/>
+    </http:response>
+  </rest:response>,``[`{$commentaryfragments-as-json}`]``)
+};
 
 (:~
  : Returns a particular commentaryfragment
@@ -31,7 +46,37 @@ declare
     %rest:GET
     %rest:path('/psalmcatenae-server/commentaryfragments/{$commentaryfragment-id}')
     %rest:produces('application/hal+json')
-function commentaryfragments:get-commentaryfragment($commentaryfragment-id as xs:string){};
+function commentaryfragments:get-commentaryfragment($commentaryfragment-id as xs:string){
+  let $origin := try { request:header("Origin") } catch basex:http {'urn:local'}
+  let $path := "/psalmcatenae-manuscripts"
+  let $corresp := for $cf-referencing in collection($path)//tei:seg[@type = 'commentaryfragment'] 
+    where $cf-referencing/@xml:id = $commentaryfragment-id
+    return substring-after($cf-referencing/@corresp,'#')
+  let $corresponding-psalm-anchor := for $anchor in collection($path)//tei:anchor[@type = 'psalmtext']
+    where $anchor/@xml:id = $corresp
+    return $anchor/@xml:id
+  let $corresponding-psalm := for $psalm in collection($path)//tei:quote[@type = 'bibletext']
+    where $psalm/child::tei:anchor/@xml:id = $corresponding-psalm-anchor
+    return $psalm/@xml:id
+  let $previous-commentaryfragment := for $actual-commentaryfragment in collection($path)//tei:seg[@type = 'commentaryfragment']
+    where $actual-commentaryfragment/@xml:id = $commentaryfragment-id
+    return if (not(empty($actual-commentaryfragment/@prev))) then " 'prev' : { 'href' : '/psalmcatenae-server/commentaryfragments/" || substring-after($actual-commentaryfragment/@prev,'#') else ()
+  let $next-commentaryfragment := for $actual-commentaryfragment in doc($path)//tei:seg[@type = 'commentaryfragment']
+    where $actual-commentaryfragment/@xml:id = $commentaryfragment-id
+    return if (not(empty($actual-commentaryfragment/@next))) then " 'next' : { 'href' : '/psalmcatenae-server/commentaryfragments/" || substring-after($actual-commentaryfragment/@next,'#') else ()
+  let $commentaryfragment-as-json := for $cf in collection($path)//tei:seg[@type = 'commentaryfragment']
+    where $cf/@xml:id = $commentaryfragment-id
+    return """{ '_links' : { 'self' : { 'href' : '/psalmcatenae-server/commentaryfragments/" || $commentaryfragment-id || "'}, 'psalm' : { 'href' : '/psalmcatenae-server/psalmtexts/" || $corresponding-psalm || "'}," || $previous-commentaryfragment || "'}," || $next-commentaryfragment || "}}, '_embedded' : " || xslt:transform-text($cf,'seg-to-json.xsl') || " }"""
+  return
+  (<rest:response>
+    <output:serialization-parameters>
+        <output:media-type value="application/hal+json"/>
+    </output:serialization-parameters>
+    <http:response status="200" message="OK">
+      <http:header name="Access-Control-Allow-Origin" value="{$origin}"/>
+    </http:response>
+  </rest:response>,``[`{$commentaryfragment-as-json}`]``)
+};
 
 (:~
  : Returns a list of available commentaryfragments from a given transcribed manuscript 
