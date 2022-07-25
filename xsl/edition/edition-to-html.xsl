@@ -43,7 +43,7 @@ version="2.0">
                 </p>
                 <p class="publisher">FWF Project 32988</p>
                 <p class="license">Available under the Creative Commons Attribution 4.0 International (CC BY 4.0)</p>
-                <p class="date">2022-03-30</p>
+                <p class="date">2022-07-24</p>
             </div>
             <div id="main-content-body">
                 <div class="header-centered">Text, Übersetzung, Kommentar</div>
@@ -103,22 +103,37 @@ version="2.0">
     </div>
 </xsl:template>
     
-<xsl:template match="tei:div[@type = 'commentary']">
+<xsl:template match="tei:div[@type = 'commentary' and not(exists(@rend))]">
     <div class="body-commentary">
         <xsl:apply-templates select="child::node()"/>
     </div>
 </xsl:template>
+    
+<xsl:template match="tei:div[@type = 'commentary' and @rend = 'hide']"/>
 
-<xsl:template match="tei:div[@type = 'textcritic']">
+<xsl:template match="tei:div[@type = 'textcritic' and not(exists(@rend))]">
     <div class="body-textcritic">
         <xsl:apply-templates select="tei:app[@type = 'fragment']"/>
+        <xsl:apply-templates select="tei:note[@type = 'textual-commentary']"/>
         <xsl:for-each select="tei:app[@type = 'text']">
             <xsl:apply-templates select="."/>
-            <xsl:if test="position() != last()"><xsl:text> | </xsl:text></xsl:if>
+            <xsl:if test="position() != last()"><xsl:text> || </xsl:text></xsl:if>
         </xsl:for-each>
-        <xsl:apply-templates select="tei:note[@type = 'textual-commentary']"/>
     </div>
 </xsl:template>
+    
+<xsl:template match="tei:div[@type = 'textcritic' and @rend = 'hide']"/>
+    
+    <xsl:template match="tei:div[@type = 'textcritic']" mode="apparatus-of-parallel-entry">
+        <div class="body-textcritic">
+            <xsl:apply-templates select="tei:app[@type = 'fragment']"/>
+            <xsl:apply-templates select="tei:note[@type = 'textual-commentary']"/>
+            <xsl:for-each select="tei:app[@type = 'text']">
+                <xsl:apply-templates select="."/>
+                <xsl:if test="position() != last()"><xsl:text> || </xsl:text></xsl:if>
+            </xsl:for-each>
+        </div>
+    </xsl:template>
 
 <xsl:template match="tei:quote[@type = 'psalmtext' and parent::tei:div[@type = 'psalmtext']/parent::tei:div[@xml:lang = 'grc']]">
         <div class="row">
@@ -153,18 +168,51 @@ version="2.0">
             <b>
                 <xsl:text>Expositio </xsl:text>
                 <xsl:value-of select="@n"/>
-                <xsl:text>: </xsl:text>
+                <xsl:if test="exists(parent::tei:div[@type = 'commentary']/@subtype)">
+                    <xsl:text> (</xsl:text>
+                    <xsl:value-of select="parent::tei:div[@type = 'commentary']/@subtype"/>
+                    <xsl:text>)</xsl:text>
+                </xsl:if>
+                <xsl:text>:</xsl:text>
             </b>
             <xsl:if test="exists(@ana) and @ana = 'hypothesis'">
-                <xsl:text>Hypothesis</xsl:text>
+                <xsl:text> Hypothesis</xsl:text>
             </xsl:if>
         </div>
-        <div class="col-md-5 large-greek-text">
-            <xsl:value-of select="text()"/>
-        </div>
-        <div class="col-md-5 large-latin-text">
-            <xsl:apply-templates select="parent::tei:div/parent::tei:div/parent::tei:div/tei:div[@type = 'translation']/tei:p[current()/@xml:id = substring-after(@corresp,'#')]"/>
-        </div>
+        <xsl:if test="exists(parent::tei:div[@type = 'commentary']/@rend) and (parent::tei:div[@type = 'commentary']/@rend = 'parallel')">
+            <div class="col-md-5 large-greek-text">
+                <xsl:value-of select="text()"/>
+            </div>
+            <div class="col-md-5 large-greek-text">
+                <xsl:value-of select="parent::tei:div[@type = 'commentary']/parent::tei:div[@type = 'text']/tei:div[@type = 'commentary']/tei:p[@xml:id = substring-after(current()/@next,'#')]/text()"/>
+            </div>
+            <div class="col-md-2"/>
+            <div class="col-md-5 large-latin-text">
+                <xsl:apply-templates select="parent::tei:div/parent::tei:div/parent::tei:div/tei:div[@type = 'translation']/tei:p[current()/@xml:id = substring-after(@corresp,'#')]"/>
+            </div>
+            <div class="col-md-5 large-latin-text">
+                <xsl:variable name="xml-id-of-translation">
+                    <xsl:value-of select="parent::tei:div[@type = 'commentary']/parent::tei:div[@type = 'text']/tei:div[@type = 'commentary']/tei:p[@xml:id = substring-after(current()/@next,'#')]/@xml:id"/>
+                </xsl:variable>
+                <xsl:apply-templates select="//tei:p[@corresp = concat('#',$xml-id-of-translation)]"/>
+            </div>
+            <div class="col-md-2"/>
+            <div class="col-md-5">
+                <xsl:apply-templates select="parent::tei:div[@type = 'commentary']/following-sibling::tei:div[@type = 'textcritic'][1]" mode="apparatus-of-parallel-entry"/>
+            </div>
+            <div class="col-md-5">
+                <xsl:apply-templates select="parent::tei:div[@type = 'commentary']/parent::tei:div[@type = 'text']/tei:div[@type = 'commentary']/tei:p[@xml:id = substring-after(current()/@next,'#')]/parent::tei:div[@type = 'commentary']/following-sibling::tei:div[@type = 'textcritic'][1]" mode="apparatus-of-parallel-entry"/>
+            </div>
+            <div class="col-md-12" style="border-bottom: 1pt solid black; margin-bottom: 10pt;"/>
+        </xsl:if>
+        <xsl:if test="not(exists(parent::tei:div[@type = 'commentary']/@rend))">
+            <div class="col-md-5 large-greek-text">
+                <xsl:value-of select="text()"/>
+            </div>
+            <div class="col-md-5 large-latin-text">
+                <xsl:apply-templates select="parent::tei:div/parent::tei:div/parent::tei:div/tei:div[@type = 'translation']/tei:p[current()/@xml:id = substring-after(@corresp,'#')]"/>
+            </div>
+        </xsl:if>
     </div>
 </xsl:template>
 
@@ -203,7 +251,7 @@ version="2.0">
                 <xsl:text> </xsl:text>
             </xsl:if>
         </xsl:for-each>
-        <xsl:if test="$outer-loop != $number-of-readings"><xsl:text> - </xsl:text></xsl:if>
+        <xsl:if test="$outer-loop != $number-of-readings"><xsl:text> | </xsl:text></xsl:if>
     </xsl:for-each>
 </xsl:template>
 
