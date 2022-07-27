@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../schema/tei-psalmcatenae.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <!-- Ps 8 inklusiv: die Position der ExpPs wird angegeben-->
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -1320,16 +1321,6 @@
                         754</ref>
                      <note type="attribution"><foreign xml:lang="grc">Ἀθα(νασίου)</foreign></note>
                   </seg>
-                  <!-- oben: Aquila und Symmachus = Field -->
-                  <!-- MESE:  ·  Bullet:  •  Spitzenklammern:  &lt;XX&gt;
-                  <note type="lemma">Ps 7,XX</note>  
-                     <seg type="commentaryfragment" xml:id="plut-6-3-fr-7-XX"
-                     corresp="#plut-6-3-ps-7-XX" source="XXX">
-                     <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-7-XX"
-                        corresp="#person-2" source="Athanasius, exp. in Ps 7,XX"></quote>
-                        <ref target="vat-gr-754:vat-gr-754-fr-7-XX" type="XXX">Vat. gr. 754</ref>
-                     <note type="attribution"><foreign xml:lang="grc">Ἀθα(νασίου)</foreign></note>
-                  </seg>   -->
                   <!-- ps 8 bibletext -->
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-1"
                      n="Ps (LXX) 8,1" xml:lang="grc" xml:id="plut-6-3-ps-8-1"> Εἰς τὸ τέλος, ὑπὲρ
@@ -1396,7 +1387,137 @@
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-10"
                      n="Ps (LXX) 8,10" xml:lang="grc" xml:id="plut-6-3-ps-8-10"> κύριε ὁ κύριος
                      ἡμῶν, ὡς θαυμαστὸν τὸ ὄνομά σου ἐν πάσῃ τῇ γῇ. </quote>
+                  <pb n="47r"/>
                   <!-- ps 8 commentary -->
+                  <note type="textual-commentary"><p>Expositiones in Psalmos at the bottom of the
+                        page (from source 2?)</p></note>
+                  <note type="lemma">Ps 8,3a–b</note>
+                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-8-1"
+                     corresp="#plut-6-3-ps-8-3a" source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-8-1"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 8,3a">τῶν κατὰ θεὸν
+                        νηπιαζόντων τῆ κακία· ταῦτα δὲ σαφῶς καὶ ἐν τοῖς εὐαγγελίοις ἀναγέγραπται·
+                        ὅτι τοὺς <unclear reason="faded-ink">παῖδας</unclear>
+                        <supplied reason="illegible">οἱ</supplied>
+                        <unclear reason="faded-ink">φ</unclear><supplied reason="illegible"
+                           >α</supplied><unclear reason="faded-ink">ρ</unclear><supplied
+                           reason="illegible">ι</supplied><unclear reason="faded-ink"
+                           >σ</unclear><supplied reason="illegible">α</supplied><unclear
+                           reason="faded-ink">ῖ</unclear><supplied reason="illegible">οι</supplied>
+                        <unclear reason="faded-ink">ἐ</unclear><supplied reason="illegible"
+                           >πεστ</supplied><unclear reason="faded-ink">όμι</unclear>ζον
+                           εὐλογ<unclear reason="faded-ink">οῦ</unclear>ντ<subst hand="corr">
+                           <del rend="erasure">ες</del>
+                           <add place="above">ας</add>
+                        </subst> αὐτόν:</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-8-XX" type="with-variants">Vat. gr.
+                        754</ref>
+                     <note type="attribution"><foreign xml:lang="grc"
+                     >ἄλλω(ς):</foreign></note></seg>
+                  <note type="lemma">Ps 8,2b</note>
+                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-8-2"
+                     corresp="#plut-6-3-ps-8-2b" source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-8-2"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 8,2"><unclear
+                           reason="faded-inl">ἐκ</unclear><supplied reason="illegible"
+                           >π</supplied><unclear reason="faded-ink">λήττ</unclear><supplied
+                           reason="illegible">εται τ</supplied><unclear reason="faded-ink"
+                           >ὴν</unclear> εἰ<supplied reason="illegible">ς</supplied>
+                        <unclear reason="faded-ink">ἀ</unclear>νθρώπ<unclear reason="faded-ink"
+                           >ου</unclear>ς <unclear reason="faded-ink">γν</unclear>ῶσιν δοθ<supplied
+                           reason="illegible">εῖσαν τοῦ</supplied> ὀνόματος τοῦ θεοῦ· οὐκ (ἔστιν)
+                        γὰρ μόνοις τοῖς ἐν τῆ ἰουδαῖα γνωστὸς ὁ θεός:</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-8-XX" type="with-variants">Vat. gr.
+                        754</ref>
+                  </seg>
+                  <pb n="47v"/>
+                  <note type="textual-commentary"><p>Expositio at the biblical text (from source
+                        2?)</p></note>
+                  <note type="lemma">Ps 8,9</note>
+                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-8-3" corresp="#plut-6-3-ps-8-9"
+                     source="Origenes">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-8-3"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 8,9a">τοὺς ἐπηρμένους
+                        κατὰ τὸν βίον· καὶ τοὺς ὑψηλὰ φρονοῦντας:</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-8-XX" type="abbreviated-with-variant"
+                        >Vat. gr. 754</ref>
+                     <note type="attribution"><foreign xml:lang="grc">ὠρ(ι)γ(ένους)</foreign></note>
+                  </seg>
+                  <note type="textual-commentary"><p>Expositio at the top of the page (from source
+                        1?)</p></note>
+                  <note type="lemma">Ps 8,3c</note>
+                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-8-4"
+                     corresp="#plut-6-3-ps-8-3c" source="Athanasius">
+                     <quote type="patristic" subtype="quotation-expanded" xml:id="plut-6-3-quot-8-4"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 8,3c">ἐχθρὸν καὶ
+                        ἐκδικητὴν· τὸν διάβολον φη(σὶν)· ἐπειδὴ μετὰ τὸ ἀναγκάσαι πληρῶσαι τὴν
+                        ἁμαρτίαν. τιμωρεῖται τοὺς ἁμαρτάνοντας· τὸ μέγεθος αὐτοῖς τοῦ ἁμαρτήματος ἐν
+                        ὀφθαλμοῖς παριστῶν ⁘</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-8-XX" type="expanded-with-variants">Vat.
+                        gr. 754</ref>
+                     <note type="attribution"><foreign xml:lang="grc">Ἀθα(νασίου):</foreign></note>
+                  </seg><note type="textual-commentary"><p>Expositio at the bottom of the page (from
+                        source 1?)</p></note>
+                  <note type="textual-commentary"><p>Expositio at the bottom of the page (from
+                        source 1?)</p></note>
+                  <note type="lemma">Ps 8,8a</note>
+                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-8-5"
+                     corresp="#plut-6-3-ps-8-8a" source="Athanasius">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-8-5"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 8,8a">πρόβατα καὶ βόας.
+                        τοὺς ἐξ ἰσραὴλ πιστεύοντας αἰνίττεται ⁘</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-8-XX" type="expanded-with-variant">Vat.
+                        gr. 754</ref>
+                     <note type="attribution"><foreign xml:lang="grc">Ἀθα(νασίου):</foreign></note>
+                  </seg>
+                  <note type="textual-commentary"><p>Expositio at the bottom of the page (from
+                        source 1)</p></note>
+                  <note type="lemma">Ps 8,8a</note>
+                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-8-6"
+                     corresp="#plut-6-3-ps-8-8a" source="Athanasius">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-8-6"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 8,5-7b">ταῦτα τοῦ Παύλου
+                        σαφῶς ἐπὶ τὸν σωτῆρα ἡμῶν ἐξειληφότος, ἀρκεῖσθαι τῆι ἐκδόσει χρή ⁘</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-8-XX" type="identical">Vat. gr. 754</ref>
+                     <note type="attribution"><foreign xml:lang="grc">τοῦ αὐτοῦ:</foreign></note>
+                  </seg>
+                  <note type="textual-commentary"><p>Expositio at the bottom of the page (from
+                        source 2)</p></note>
+                  <note type="lemma">Ps 8,5a</note>
+                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-8-7"
+                     corresp="#plut-6-3-ps-8-5a" source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-8-7"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 8,5–7b">τ<unclear
+                           reason="faded-ink">αῦ</unclear>τα τοῦ Πα<unclear reason="faded-ink"
+                           >ύ</unclear>λου σαφῶς ἐξειληφότος· ἀρκεῖσθαι τῆ ἐκδόσει χρή:</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-8-XX" type="XXX">Vat. gr. 754</ref>
+                  </seg>
+                  <pb n="48r"/>
+                  <note type="textual-commentary"><p>Expositio at the top of the page (from source
+                        2?)</p></note>
+                  <note type="lemma">Ps 8,10</note>
+                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-8-8"
+                     corresp="#plut-6-3-ps-8-10" source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-8-8"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 8,10">ἀναδι<unclear
+                           reason="faded-ink">πλα</unclear><supplied reason="illegible"
+                           >σιάζε</supplied><unclear reason="faded-ink">ι τὸ θ</unclear><supplied
+                           reason="illegible">α</supplied>ῦμα· ἐκπληττόμενος ἐπὶ τῆ γε<unclear
+                           reason="faded-ink">ν</unclear>ομέν<unclear reason="faded-ink">η</unclear>
+                        τῶν ἀνθρώπων θεογνωσία:</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-8-XX" type="with-variant">Vat. gr.
+                        754</ref>
+                  </seg>
+                  <!-- oben: Aquila und Symmachus = Field -->
+                  <!-- MESE:  ·  Bullet:  •  Spitzenklammern:  &lt;XX&gt;
+                  <note type="lemma">Ps 8,XX</note>  
+                     <seg type="commentaryfragment" xml:id="plut-6-3-fr-8-XX"
+                     corresp="#plut-6-3-ps-8-XX" source="XXX">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-8-XX"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 8,XX"></quote>
+                        <ref target="vat-gr-754:vat-gr-754-fr-8-XX" type="XXX">Vat. gr. 754</ref>
+                     <note type="attribution"><foreign xml:lang="grc">Ἀθα(νασίου)</foreign></note>
+                  </seg>   -->
                   <!-- Ps 9 bibletext -->
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-1"
                      n="Ps (LXX) 9,1" xml:lang="grc" xml:id="plut-6-3-ps-9-1"> Εἰς τὸ τέλος, ὑπὲρ
