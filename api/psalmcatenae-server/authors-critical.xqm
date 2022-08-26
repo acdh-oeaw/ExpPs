@@ -43,9 +43,9 @@ function authors-critical:get-authors-critical-of-manuscript($manuscript-name as
     case 'vat-gr-1422' return 'vat-gr-1422-transcription.xml'
     default return error(xs:QName('response-codes:_404'),'Wrong manuscript name in path')
     let $path := "/psalmcatenae-manuscripts/" || ``[`{$manuscript}`]``
-    let $author-critical-result-fragment := for $commentaryfragment in doc($path)//tei:seg[@type = 'commentaryfragment'] return "{ '_links' : { 'self' : { 'href' : '/psalmcatenae-server/manuscripts/" || $manuscript-name || "/authors-critical' }, 'commentaryfragment' : { 'href' : '/psalmcatenae-server/manuscripts/" || $manuscript-name || "/commentaryfragments/" || $commentaryfragment/@xml:id || "'}},  'author-critical' : '" || $commentaryfragment/child::tei:quote[@type = 'patristic']/@source || "'}"
+    let $author-critical-result-fragment := for $commentaryfragment in doc($path)//tei:seg[@type = 'commentaryfragment'] return "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/manuscripts/" || $manuscript-name || "/authors-critical"" }, ""commentaryfragment"" : { ""href"" : ""/psalmcatenae-server/manuscripts/" || $manuscript-name || "/commentaryfragments/" || $commentaryfragment/@xml:id || """}}, ""author-critical"" : """ || $commentaryfragment/child::tei:quote[@type = 'patristic']/@source || """}"
     let $authors-critical-as-json-result-fragment := string-join($author-critical-result-fragment,',')
-    let $authors-critical-as-json := """{ '_links' : { 'self' : { 'href' : '/psalmcatenae-server/manuscripts/" || $manuscript-name || "/authors-critical' }}, '_embedded' : 'authors-critical' : [" || $authors-critical-as-json-result-fragment || "]}"""
+    let $authors-critical-as-json := "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/manuscripts/" || $manuscript-name || "/authors-critical"" }}, ""_embedded"" : { ""authors-critical"" : [" || $authors-critical-as-json-result-fragment || "]}}"
     return
   (<rest:response>
     <output:serialization-parameters>
@@ -85,9 +85,9 @@ function authors-critical:get-authors-critical-distinct-of-manuscript($manuscrip
     case 'vat-gr-1422' return 'vat-gr-1422-transcription.xml'
     default return error(xs:QName('response-codes:_404'),'Wrong manuscript name in path')
     let $path := "/psalmcatenae-manuscripts/" || ``[`{$manuscript}`]``
-    let $author-critical-result-fragment := for $author-critical in distinct-values(doc($path)//tei:seg[@type = 'commentaryfragment']/child::tei:quote[@type = 'patristic']/@source) return "{ '_links' : { 'self' : { 'href' : '/psalmcatenae-server/manuscripts/" || $manuscript-name || "/authors-critical-distinct' }}, 'author-critical' : '" || $author-critical || "'}"
+    let $author-critical-result-fragment := for $author-critical in distinct-values(doc($path)//tei:seg[@type = 'commentaryfragment']/child::tei:quote[@type = 'patristic']/@source) return "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/manuscripts/" || $manuscript-name || "/authors-critical-distinct"" }}, ""author-critical"" : """ || $author-critical || """}"
     let $authors-critical-as-json-result-fragment := string-join($author-critical-result-fragment,',')
-    let $authors-as-json := """{ '_links' : { 'self' : { 'href' : '/psalmcatenae-server/manuscripts/" || $manuscript-name || "/authors-critical-distinct' }}, '_embedded' : 'authors' : [" || $authors-critical-as-json-result-fragment || "]}"""
+    let $authors-as-json := "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/manuscripts/" || $manuscript-name || "/authors-critical-distinct"" }}, ""_embedded"" : { ""authors"" : [" || $authors-critical-as-json-result-fragment || "]}}"
     return
   (<rest:response>
     <output:serialization-parameters>

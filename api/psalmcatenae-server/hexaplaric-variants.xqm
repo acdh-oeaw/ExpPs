@@ -25,9 +25,9 @@ declare
 function hexaplaric-variants:get-list-of-hexaplaric-variants(){
   let $origin := try { request:header("Origin") } catch basex:http {'urn:local'}
   let $path := "/psalmcatenae-manuscripts"
-  let $hexaplaric-variant-result-fragment := for $hexaplaric-variant in doc($path)//tei:seg[@type = 'hexaplaric'] return "{ '_links' : { 'self' : { 'href' : '/psalmcatenae-server/hexaplaric-variants/" || $hexaplaric-variant/@xml:id || "'}}, 'attribution' : '" || $hexaplaric-variant/@source || "'}"
+  let $hexaplaric-variant-result-fragment := for $hexaplaric-variant in collection($path)//tei:seg[@type = 'hexaplaric'] return "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/hexaplaric-variants/" || $hexaplaric-variant/@xml:id || """}}, ""attribution"" : """ || $hexaplaric-variant/@source || """}"
     let $hexaplaric-variants-as-json-result-fragment := string-join($hexaplaric-variant-result-fragment,',')
-    let $hexaplaric-variants-as-json := """{ '_links' : { 'self' : { 'href' : '/psalmcatenae-server/hexaplaric-variants' }}, '_embedded' : 'hexaplaric-variants' : [" || $hexaplaric-variants-as-json-result-fragment || "]}"""
+    let $hexaplaric-variants-as-json := "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/hexaplaric-variants"" }}, ""_embedded"" : { ""hexaplaric-variants"" : [" || $hexaplaric-variants-as-json-result-fragment || "]}}"
     return
   (<rest:response>
     <output:serialization-parameters>
@@ -46,7 +46,31 @@ declare
     %rest:GET
     %rest:path('/psalmcatenae-server/hexaplaric-variants/{$hexaplaric-variant-id}')
     %rest:produces('application/hal+json')
-function hexaplaric-variants:get-hexaplaric-variant($hexaplaric-variant-id as xs:string){};
+function hexaplaric-variants:get-hexaplaric-variant($hexaplaric-variant-id as xs:string){
+  let $origin := try { request:header("Origin") } catch basex:http {'urn:local'}
+  let $path := "/psalmcatenae-manuscripts"
+  let $corresp := for $hv-referencing in collection($path)//tei:seg[@type = 'hexaplaric'] 
+    where $hv-referencing/@xml:id = $hexaplaric-variant-id
+    return substring-after($hv-referencing/@corresp,'#')
+  let $corresponding-psalm-anchor := for $anchor in collection($path)//tei:anchor[@type = 'psalmtext']
+    where $anchor/@xml:id = $corresp
+    return $anchor/@xml:id
+  let $corresponding-psalm := for $psalm in collection($path)//tei:quote[@type = 'bibletext']
+    where $psalm/child::tei:anchor/@xml:id = $corresponding-psalm-anchor
+    return $psalm/@xml:id
+  let $hexaplaric-variant-as-json := for $hv in collection($path)//tei:seg[@type = 'hexaplaric']
+    where $hv/@xml:id = $hexaplaric-variant-id
+    return "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/hexaplaric-variants/" || $hexaplaric-variant-id || """}, ""psalm"" : { ""href"" : ""/psalmcatenae-server/psalmtexts/" || $corresponding-psalm || """}}, ""_embedded"" : " || xslt:transform-text($hv,'hexaplaric-variant-seg-to-json.xsl') || "}"
+  return
+  (<rest:response>
+    <output:serialization-parameters>
+        <output:media-type value="application/hal+json"/>
+    </output:serialization-parameters>
+    <http:response status="200" message="OK">
+      <http:header name="Access-Control-Allow-Origin" value="{$origin}"/>
+    </http:response>
+  </rest:response>,``[`{$hexaplaric-variant-as-json}`]``)
+};
 
 (:~
  : Returns a list of available hexaplaric variants from a given transcribed manuscript 
@@ -76,9 +100,9 @@ function hexaplaric-variants:get-list-of-hexaplaric-variants-from-manuscript($ma
     case 'vat-gr-1422' return 'vat-gr-1422-transcription.xml'
     default return error(xs:QName('response-codes:_404'),'Wrong manuscript name in path')
     let $path := "/psalmcatenae-manuscripts/" || ``[`{$manuscript}`]``
-    let $hexaplaric-variant-result-fragment := for $hexaplaric-variant in doc($path)//tei:seg[@type = 'hexaplaric'] return "{ '_links' : { 'self' : { 'href' : '/psalmcatenae-server/manuscripts/" || $manuscript-name || "/hexaplaric-variants/" || $hexaplaric-variant/@xml:id || "'}}, 'attribution' : '" || $hexaplaric-variant/@source || "'}"
+    let $hexaplaric-variant-result-fragment := for $hexaplaric-variant in doc($path)//tei:seg[@type = 'hexaplaric'] return "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/manuscripts/" || $manuscript-name || "/hexaplaric-variants/" || $hexaplaric-variant/@xml:id || """}}, ""attribution"" : """ || $hexaplaric-variant/@source || """}"
     let $hexaplaric-variants-as-json-result-fragment := string-join($hexaplaric-variant-result-fragment,',')
-    let $hexaplaric-variants-as-json := """{ '_links' : { 'self' : { 'href' : '/psalmcatenae-server/manuscripts/" || $manuscript-name || "/hexaplaric-variants' }}, '_embedded' : 'hexaplaric-variants' : [" || $hexaplaric-variants-as-json-result-fragment || "]}"""
+    let $hexaplaric-variants-as-json := "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/manuscripts/" || $manuscript-name || "/hexaplaric-variants"" }}, ""_embedded"" : { ""hexaplaric-variants"" : [" || $hexaplaric-variants-as-json-result-fragment || "]}}"
     return
   (<rest:response>
     <output:serialization-parameters>
@@ -129,7 +153,7 @@ function hexaplaric-variants:get-hexaplaric-variant-from-manuscript($manuscript-
     return $psalm/@xml:id
   let $hexaplaric-variant-as-json := for $hv in doc($path)//tei:seg[@type = 'hexaplaric']
     where $hv/@xml:id = $hexaplaric-variant-id
-    return """{ '_links' : { 'self' : { 'href' : '/psalmcatenae-server/manuscripts/" || $manuscript-name || "/hexaplaric-variant/" || $hexaplaric-variant-id || "'}, 'psalm' : { 'href' : '/psalmcatenae-server/manuscripts/" || $manuscript-name || "/psalmtexts/" || $corresponding-psalm || "'}}, '_embedded' : " || xslt:transform-text($hv,'hexaplaric-variant-seg-to-json.xsl') || " }"""
+    return "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/manuscripts/" || $manuscript-name || "/hexaplaric-variant/" || $hexaplaric-variant-id || """}, ""psalm"" : { ""href"" : ""/psalmcatenae-server/manuscripts/" || $manuscript-name || "/psalmtexts/" || $corresponding-psalm || """}}, ""_embedded"" : " || xslt:transform-text($hv,'hexaplaric-variant-seg-to-json.xsl') || " }"
   return
   (<rest:response>
     <output:serialization-parameters>

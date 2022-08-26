@@ -25,9 +25,9 @@ declare
 function glosses:get-list-of-glosses(){
   let $origin := try { request:header("Origin") } catch basex:http {'urn:local'}
   let $path := "/psalmcatenae-manuscripts"
-  let $glosses-result-fragment := for $gloss in collection($path)//tei:seg[@type = 'glosse'] return "{ '_links' : { 'self' : { 'href' : '/psalmcatenae-server/glosses/" || $gloss/@xml:id || "'}}, 'attribution' : '" || $gloss/@source ||"', 'author-critical' : '" || $gloss/child::tei:quote/@source || "'}"
+  let $glosses-result-fragment := for $gloss in collection($path)//tei:seg[@type = 'glosse'] return "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/glosses/" || $gloss/@xml:id || """}}, ""attribution"" : """ || $gloss/@source ||""", ""author-critical"" : """ || $gloss/child::tei:quote/@source || """}"
   let $glosses-as-json-result-fragment := string-join($glosses-result-fragment,',')
-  let $glosses-as-json := """{ '_links' : { 'self' : { 'href' : '/psalmcatenae-server/glosses' }}, '_embedded' : 'glosses' : [" || $glosses-as-json-result-fragment || "]}"""
+  let $glosses-as-json := "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/glosses"" }}, ""_embedded"" : { ""glosses"" : [" || $glosses-as-json-result-fragment || "]}}"
     return
   (<rest:response>
     <output:serialization-parameters>
@@ -60,7 +60,7 @@ function glosses:get-gloss($gloss-id as xs:string){
     return $psalm/@xml:id
   let $gloss-as-json := for $g in collection($path)//tei:seg[@type = 'glosse']
     where $g/@xml:id = $gloss-id
-    return """{ '_links' : { 'self' : { 'href' : '/psalmcatenae-server/glosses/" || $gloss-id || "'}, 'psalm' : { 'href' : '/psalmcatenae-server/psalmtexts/" || $corresponding-psalm || "'}}, '_embedded' : " || xslt:transform-text($g,'glosse-seg-to-json.xsl') || "}"""
+    return "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/glosses/" || $gloss-id || """}, ""psalm"" : { ""href"" : ""/psalmcatenae-server/psalmtexts/" || $corresponding-psalm || """}}, ""_embedded"" : " || xslt:transform-text($g,'glosse-seg-to-json.xsl') || "}"
   return
   (<rest:response>
     <output:serialization-parameters>
@@ -100,9 +100,9 @@ function glosses:get-list-of-glosses-from-manuscript($manuscript-name as xs:stri
     case 'vat-gr-1422' return 'vat-gr-1422-transcription.xml'
     default return error(xs:QName('response-codes:_404'),'Wrong manuscript name in path')
     let $path := "/psalmcatenae-manuscripts/" || ``[`{$manuscript}`]``
-    let $glosses-result-fragment := for $gloss in doc($path)//tei:seg[@type = 'glosse'] return "{ '_links' : { 'self' : { 'href' : '/psalmcatenae-server/manuscripts/" || $manuscript-name || "/glosses/" || $gloss/@xml:id || "'}}, 'attribution' : '" || $gloss/@source ||"', 'author-critical' : '" || $gloss/child::tei:quote/@source || "'}"
+    let $glosses-result-fragment := for $gloss in doc($path)//tei:seg[@type = 'glosse'] return "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/manuscripts/" || $manuscript-name || "/glosses/" || $gloss/@xml:id || """}}, ""attribution"" : """ || $gloss/@source ||""", ""author-critical"" : """ || $gloss/child::tei:quote/@source || """}"
     let $glosses-as-json-result-fragment := string-join($glosses-result-fragment,',')
-    let $glosses-as-json := """{ '_links' : { 'self' : { 'href' : '/psalmcatenae-server/manuscripts/" || $manuscript-name || "/glosses' }}, '_embedded' : 'glosses' : [" || $glosses-as-json-result-fragment || "]}"""
+    let $glosses-as-json := "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/manuscripts/" || $manuscript-name || "/glosses"" }}, ""_embedded"" : { ""glosses"" : [" || $glosses-as-json-result-fragment || "]}}"
     return
   (<rest:response>
     <output:serialization-parameters>
@@ -153,7 +153,7 @@ function glosses:get-gloss-from-manuscript($manuscript-name as xs:string,$gloss-
     return $psalm/@xml:id
   let $gloss-as-json := for $g in doc($path)//tei:seg[@type = 'glosse']
     where $g/@xml:id = $gloss-id
-    return """{ '_links' : { 'self' : { 'href' : '/psalmcatenae-server/" || $manuscript-name || "/glosses/" || $gloss-id || "'}, 'psalm' : { 'href' : '/psalmcatenae-server/" || $manuscript-name || "/psalmtexts/" || $corresponding-psalm || "'}}, '_embedded' : " || xslt:transform-text($g,'glosse-seg-to-json.xsl') || "}"""
+    return "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/" || $manuscript-name || "/glosses/" || $gloss-id || """}, ""psalm"" : { ""href"" : ""/psalmcatenae-server/" || $manuscript-name || "/psalmtexts/" || $corresponding-psalm || """}}, ""_embedded"" : " || xslt:transform-text($g,'glosse-seg-to-json.xsl') || "}"
   return
   (<rest:response>
     <output:serialization-parameters>

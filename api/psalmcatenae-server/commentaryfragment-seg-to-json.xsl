@@ -7,16 +7,16 @@
     <xsl:output omit-xml-declaration="yes"/>
     
     <xsl:template match="tei:seg">
-    <xsl:text>{ 'commentaryfragment' : {</xsl:text>
-    <xsl:text>'id' : '</xsl:text>
+    <xsl:text>{ "commentaryfragment" : {</xsl:text>
+    <xsl:text>"id" : "</xsl:text>
     <xsl:value-of select="@xml:id"/>
-    <xsl:text>', 'attribution' : '</xsl:text>
+    <xsl:text>", "attribution" : "</xsl:text>
     <xsl:value-of select="@source"/>
-    <xsl:text>', 'source' : '</xsl:text>
+    <xsl:text>", "source" : "</xsl:text>
     <xsl:value-of select="child::tei:quote/@source"/>
-    <xsl:text>', 'text' : '</xsl:text>
+    <xsl:text>", "text" : "</xsl:text>
     <xsl:apply-templates select="child::tei:quote"/>
-    <xsl:text>'</xsl:text>
+    <xsl:text>"</xsl:text>
     <xsl:text>}}</xsl:text>
     </xsl:template>
     

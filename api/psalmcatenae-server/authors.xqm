@@ -43,9 +43,9 @@ function authors:get-authors-of-manuscript($manuscript-name as xs:string){
     case 'vat-gr-1422' return 'vat-gr-1422-transcription.xml'
     default return error(xs:QName('response-codes:_404'),'Wrong manuscript name in path')
     let $path := "/psalmcatenae-manuscripts/" || ``[`{$manuscript}`]``
-    let $author-result-fragment := for $commentaryfragment in doc($path)//tei:seg[@type = 'commentaryfragment'] return "{ '_links' : { 'self' : { 'href' : '/psalmcatenae-server/manuscripts/" || $manuscript-name || "/authors' }, 'commentaryfragment' : { 'href' : '/psalmcatenae-server/manuscripts/" || $manuscript-name || "/commentaryfragments/" || $commentaryfragment/@xml:id || "'}},  'author' : '" || $commentaryfragment/@source || "'}"
+    let $author-result-fragment := for $commentaryfragment in doc($path)//tei:seg[@type = 'commentaryfragment'] return "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/manuscripts/" || $manuscript-name || "/authors"" }, ""commentaryfragment"" : { ""href"" : ""/psalmcatenae-server/manuscripts/" || $manuscript-name || "/commentaryfragments/" || $commentaryfragment/@xml:id || """}}, ""author"" : """ || $commentaryfragment/@source || """}"
     let $authors-as-json-result-fragment := string-join($author-result-fragment,',')
-    let $authors-as-json := """{ '_links' : { 'self' : { 'href' : '/psalmcatenae-server/manuscripts/" || $manuscript-name || "/authors' }}, '_embedded' : 'authors' : [" || $authors-as-json-result-fragment || "]}"""
+    let $authors-as-json := "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/manuscripts/" || $manuscript-name || "/authors"" }}, ""_embedded"" : { ""authors"" : [" || $authors-as-json-result-fragment || "]}}"
     return
   (<rest:response>
     <output:serialization-parameters>
@@ -85,9 +85,9 @@ function authors:get-authors-distinct-of-manuscript($manuscript-name as xs:strin
     case 'vat-gr-1422' return 'vat-gr-1422-transcription.xml'
     default return error(xs:QName('response-codes:_404'),'Wrong manuscript name in path')
     let $path := "/psalmcatenae-manuscripts/" || ``[`{$manuscript}`]``
-    let $author-result-fragment := for $author in distinct-values(doc($path)//tei:seg[@type = 'commentaryfragment']/@source) return "{ '_links' : { 'self' : { 'href' : '/psalmcatenae-server/manuscripts/" || $manuscript-name || "/authors-distinct' }}, 'author' : '" || $author || "'}"
+    let $author-result-fragment := for $author in distinct-values(doc($path)//tei:seg[@type = 'commentaryfragment']/@source) return "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/manuscripts/" || $manuscript-name || "/authors-distinct"" }}, ""author"" : """ || $author || """}"
     let $authors-as-json-result-fragment := string-join($author-result-fragment,',')
-    let $authors-as-json := """{ '_links' : { 'self' : { 'href' : '/psalmcatenae-server/manuscripts/" || $manuscript-name || "/authors-distinct' }}, '_embedded' : 'authors' : [" || $authors-as-json-result-fragment || "]}"""
+    let $authors-as-json := "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/manuscripts/" || $manuscript-name || "/authors-distinct"" }}, ""_embedded"" : { ""authors"" : [" || $authors-as-json-result-fragment || "]}}"
     return
   (<rest:response>
     <output:serialization-parameters>

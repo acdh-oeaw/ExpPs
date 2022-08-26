@@ -7,14 +7,14 @@
     <xsl:output omit-xml-declaration="yes"/>
     
     <xsl:template match="tei:seg">
-    <xsl:text>{ 'hexaplaric-variant' : {</xsl:text>
-    <xsl:text>'id' : '</xsl:text>
+    <xsl:text>{ "hexaplaric-variant" : {</xsl:text>
+    <xsl:text>"id" : "</xsl:text>
     <xsl:value-of select="@xml:id"/>
-    <xsl:text>', 'attribution' : '</xsl:text>
+    <xsl:text>", "attribution" : "</xsl:text>
     <xsl:value-of select="@source"/>
-    <xsl:text>', 'text' : '</xsl:text>
+    <xsl:text>", "text" : "</xsl:text>
     <xsl:apply-templates select="child::node()"/>
-    <xsl:text>'</xsl:text>
+    <xsl:text>"</xsl:text>
     <xsl:text>}}</xsl:text>
     </xsl:template>
     

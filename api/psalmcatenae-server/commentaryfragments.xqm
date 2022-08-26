@@ -25,9 +25,9 @@ declare
 function commentaryfragments:get-list-of-commentaryfragments(){
   let $origin := try { request:header("Origin") } catch basex:http {'urn:local'}
   let $path := "/psalmcatenae-manuscripts"
-  let $commentaryfragments-result-fragment := for $commentaryfragment in collection($path)//tei:seg[@type = 'commentaryfragment'] return "{ '_links' : { 'self' : { 'href' : '/psalmcatenae-server/commentaryfragments/" || $commentaryfragment/@xml:id || "'}}, 'attribution' : '" || $commentaryfragment/@source ||"', 'author-critical' : '" || $commentaryfragment/child::tei:quote[@type = 'patristic']/@source || "'}"
+  let $commentaryfragments-result-fragment := for $commentaryfragment in collection($path)//tei:seg[@type = 'commentaryfragment'] return "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/commentaryfragments/" || $commentaryfragment/@xml:id || """}}, ""attribution"" : """ || $commentaryfragment/@source ||""", ""author-critical"" : """ || $commentaryfragment/child::tei:quote[@type = 'patristic']/@source || """}"
   let $commentaryfragments-as-json-result-fragment := string-join($commentaryfragments-result-fragment,',')
-  let $commentaryfragments-as-json := """{ '_links' : { 'self' : { 'href' : '/psalmcatenae-server/commentaryfragments' }}, '_embedded' : 'commentaryfragments' : [" || $commentaryfragments-as-json-result-fragment || "]}"""
+  let $commentaryfragments-as-json := "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/commentaryfragments"" }}, ""_embedded"" : { ""commentaryfragments"" : [" || $commentaryfragments-as-json-result-fragment || "]}}"
     return
   (<rest:response>
     <output:serialization-parameters>
@@ -60,13 +60,13 @@ function commentaryfragments:get-commentaryfragment($commentaryfragment-id as xs
     return $psalm/@xml:id
   let $previous-commentaryfragment := for $actual-commentaryfragment in collection($path)//tei:seg[@type = 'commentaryfragment']
     where $actual-commentaryfragment/@xml:id = $commentaryfragment-id
-    return if (not(empty($actual-commentaryfragment/@prev))) then " 'prev' : { 'href' : '/psalmcatenae-server/commentaryfragments/" || substring-after($actual-commentaryfragment/@prev,'#') else ()
-  let $next-commentaryfragment := for $actual-commentaryfragment in doc($path)//tei:seg[@type = 'commentaryfragment']
+    return if (not(empty($actual-commentaryfragment/@prev))) then ", ""prev"" : { ""href"" : ""/psalmcatenae-server/commentaryfragments/" || substring-after($actual-commentaryfragment/@prev,'#') || """ }," else ()
+  let $next-commentaryfragment := for $actual-commentaryfragment in collection($path)//tei:seg[@type = 'commentaryfragment']
     where $actual-commentaryfragment/@xml:id = $commentaryfragment-id
-    return if (not(empty($actual-commentaryfragment/@next))) then " 'next' : { 'href' : '/psalmcatenae-server/commentaryfragments/" || substring-after($actual-commentaryfragment/@next,'#') else ()
+    return if (not(empty($actual-commentaryfragment/@next))) then ", ""next"" : { ""href"" : ""/psalmcatenae-server/commentaryfragments/" || substring-after($actual-commentaryfragment/@next,'#') || """ }," else ()
   let $commentaryfragment-as-json := for $cf in collection($path)//tei:seg[@type = 'commentaryfragment']
     where $cf/@xml:id = $commentaryfragment-id
-    return """{ '_links' : { 'self' : { 'href' : '/psalmcatenae-server/commentaryfragments/" || $commentaryfragment-id || "'}, 'psalm' : { 'href' : '/psalmcatenae-server/psalmtexts/" || $corresponding-psalm || "'}," || $previous-commentaryfragment || "'}," || $next-commentaryfragment || "}}, '_embedded' : " || xslt:transform-text($cf,'commentaryfragment-seg-to-json.xsl') || " }"""
+    return "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/commentaryfragments/" || $commentaryfragment-id || """}, ""psalm"" : { ""href"" : ""/psalmcatenae-server/psalmtexts/" || $corresponding-psalm || """}" || $previous-commentaryfragment || $next-commentaryfragment || "}, ""_embedded"" : " || xslt:transform-text($cf,'commentaryfragment-seg-to-json.xsl') || " }"
   return
   (<rest:response>
     <output:serialization-parameters>
@@ -108,9 +108,9 @@ function commentaryfragments:get-list-of-commentaryfragments-from-manuscript($ma
     case 'vat-gr-1422' return 'vat-gr-1422-transcription.xml'
     default return error(xs:QName('response-codes:_404'),'Wrong manuscript name in path')
     let $path := "/psalmcatenae-manuscripts/" || ``[`{$manuscript}`]``
-    let $commentaryfragments-result-fragment := for $commentaryfragment in doc($path)//tei:seg[@type = 'commentaryfragment'] return "{ '_links' : { 'self' : { 'href' : '/psalmcatenae-server/manuscripts/" || $manuscript-name || "/commentaryfragments/" || $commentaryfragment/@xml:id || "'}}, 'attribution' : '" || $commentaryfragment/@source ||"', 'author-critical' : '" || $commentaryfragment/child::tei:quote[@type = 'patristic']/@source || "'}"
+    let $commentaryfragments-result-fragment := for $commentaryfragment in doc($path)//tei:seg[@type = 'commentaryfragment'] return "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/manuscripts/" || $manuscript-name || "/commentaryfragments/" || $commentaryfragment/@xml:id || """}}, ""attribution"" : """ || $commentaryfragment/@source ||""", ""author-critical"" : """ || $commentaryfragment/child::tei:quote[@type = 'patristic']/@source || """}"
     let $commentaryfragments-as-json-result-fragment := string-join($commentaryfragments-result-fragment,',')
-    let $commentaryfragments-as-json := """{ '_links' : { 'self' : { 'href' : '/psalmcatenae-server/manuscripts/" || $manuscript-name || "/commentaryfragments' }}, '_embedded' : 'commentaryfragments' : [" || $commentaryfragments-as-json-result-fragment || "]}"""
+    let $commentaryfragments-as-json := "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/manuscripts/" || $manuscript-name || "/commentaryfragments"" }}, ""_embedded"" : { ""commentaryfragments"" : [" || $commentaryfragments-as-json-result-fragment || "]}}"
     return
   (<rest:response>
     <output:serialization-parameters>
@@ -162,13 +162,13 @@ function commentaryfragments:get-commentaryfragment-from-manuscript($manuscript-
     return $psalm/@xml:id
   let $previous-commentaryfragment := for $actual-commentaryfragment in doc($path)//tei:seg[@type = 'commentaryfragment']
     where $actual-commentaryfragment/@xml:id = $commentaryfragment-id
-    return if (not(empty($actual-commentaryfragment/@prev))) then " 'prev' : { 'href' : '/psalmcatenae-server/'" || $manuscript-name || "/commentaryfragments/" || substring-after($actual-commentaryfragment/@prev,'#') else ()
+    return if (not(empty($actual-commentaryfragment/@prev))) then ", ""prev"" : { ""href"" : ""/psalmcatenae-server/" || $manuscript-name || "/commentaryfragments/" || substring-after($actual-commentaryfragment/@prev,'#') || """}" else ()
   let $next-commentaryfragment := for $actual-commentaryfragment in doc($path)//tei:seg[@type = 'commentaryfragment']
     where $actual-commentaryfragment/@xml:id = $commentaryfragment-id
-    return if (not(empty($actual-commentaryfragment/@next))) then " 'next' : { 'href' : '/psalmcatenae-server/'" || $manuscript-name || "/commentaryfragments/" || substring-after($actual-commentaryfragment/@next,'#') else ()
+    return if (not(empty($actual-commentaryfragment/@next))) then ", ""next"" : { ""href"" : ""/psalmcatenae-server/" || $manuscript-name || "/commentaryfragments/" || substring-after($actual-commentaryfragment/@next,'#') || """}" else ()
   let $commentaryfragment-as-json := for $cf in doc($path)//tei:seg[@type = 'commentaryfragment']
     where $cf/@xml:id = $commentaryfragment-id
-    return """{ '_links' : { 'self' : { 'href' : '/psalmcatenae-server/" || $manuscript-name || "/commentaryfragments/" || $commentaryfragment-id || "'}, 'psalm' : { 'href' : '/psalmcatenae-server/" || $manuscript-name || "/psalmtexts/" || $corresponding-psalm || "'}," || $previous-commentaryfragment || "'}," || $next-commentaryfragment || "}}, '_embedded' : " || xslt:transform-text($cf,'commentaryfragment-seg-to-json.xsl') || " }"""
+    return "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/" || $manuscript-name || "/commentaryfragments/" || $commentaryfragment-id || """}, ""psalm"" : { ""href"" : ""/psalmcatenae-server/" || $manuscript-name || "/psalmtexts/" || $corresponding-psalm || """}" || $previous-commentaryfragment || "}" || $next-commentaryfragment || ", ""_embedded"" : " || xslt:transform-text($cf,'commentaryfragment-seg-to-json.xsl') || " }"
   return
   (<rest:response>
     <output:serialization-parameters>
