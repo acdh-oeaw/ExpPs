@@ -15,10 +15,11 @@ else
   ./basexhttp &
   popd
 fi
-cd deployment
 fi
 
-if [ "$local_username"x = x -o "$local_password"x = x ]; then echo Missing credentials for local BaseX; exit 1; fi
+cd deployment
+
+if [ "$local_username"x = x -o "$local_password"x = x ]; then echo Missing credentials for local BaseX; local_username=admin; local_password=admin; fi
 #------ Settings ---------------------
 export USERNAME=$local_username
 export PASSWORD=$local_password

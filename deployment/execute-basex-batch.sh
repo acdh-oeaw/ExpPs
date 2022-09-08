@@ -30,9 +30,9 @@ fi
 else
 if [[ "$BATCHFILE" == *.xql ]]; then
    echo "executing XQuery script $BATCHFILE"
-   exec ../../../bin/basexclient -U$USERNAME -P$PASSWORD "RUN ../$BATCHFILE" 
+   exec basexclient -U$USERNAME -P$PASSWORD "RUN ../$BATCHFILE" 
 else
   echo "executing BaseX script $BATCHFILE"
-  exec ../../../bin/basexclient -U$USERNAME -P$PASSWORD -c "RUN ../$BATCHFILE.bxs"
+  exec basexclient -U$USERNAME -P$PASSWORD -c "RUN ../$BATCHFILE.bxs"
 fi
 fi
