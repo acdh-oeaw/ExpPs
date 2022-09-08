@@ -2,6 +2,13 @@
   "name": "psalmcatenae-server",
   "version": "1.0.0",
   "description": "Tests for baseX server for psalmcatenae",
+  "engines": {
+    "node": "16.x",
+    "npm": "8.x",
+    "jvm": "11",
+    "basex": "9.7.3",
+    "saxon": "11.3"
+  },
   "main": "test.js",
   "scripts": {
     "test": "mocha test.js"
