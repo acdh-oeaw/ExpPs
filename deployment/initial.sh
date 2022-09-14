@@ -15,6 +15,7 @@ else
   ./basexhttp &
   popd
 fi
+curl --connect-timeout 5 --max-time 10 --retry 3 --retry-delay 0 --retry-max-time 40 --retry-connrefused 0 -s -D - "http://localhost:8984" -o /dev/null | head -n1 | grep -q '\([23]0[0-9]\)'
 fi
 
 cd deployment
