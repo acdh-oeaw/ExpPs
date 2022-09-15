@@ -28,5 +28,5 @@ export PASSWORD=$local_password
 
 # Eventuell Git-Version in die Daten und/oder die Website schreiben
 
-sed -i "s~webapp/ExpPs/~${BUILD_DIR:-webapp/ExpPs}/~g" deploy-expps-content.bxs
-./execute-basex-batch.sh ${BUILD_DIR:-webapp/ExpPs}/deployment/deploy-expps-content
+sed -i "s~../webapp/ExpPs/~${BUILD_DIR:-../webapp/ExpPs}/~g" deploy-expps-content.bxs
+./execute-basex-batch.sh ${BUILD_DIR:-../webapp/ExpPs}/deployment/deploy-expps-content $1
