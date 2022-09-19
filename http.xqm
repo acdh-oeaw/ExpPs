@@ -55,9 +55,15 @@ function _:file($file as xs:string) as item()+ {
 };
 
 declare
-  %rest:path("expps/js/{$file=.+}")
+  %rest:path("expps/fundament/js/{$file=.+}")
 function _:bower_components-file($file as xs:string) as item()+ {
-  _:file('js/'||$file)
+  _:file('fundament/js/'||$file)
+};
+
+declare
+  %rest:path("expps/manuscripts/{$file=.+}")
+function _:manuscripts-file($file as xs:string) as item()+ {
+  _:file('manuscripts/'||$file)
 };
 
 declare
@@ -73,22 +79,22 @@ function _:pdf-file($file as xs:string) as item()+ {
 };
 
 declare
-  %rest:path("expps/css/{$file=.+}")
+  %rest:path("expps/fundament/css/{$file=.+}")
 function _:css-file($file as xs:string) as item()+ {
-  _:file('css/'||$file)
+  _:file('fundament/css/'||$file)
 };
 
 declare
-  %rest:path("expps/vendor/{$file=.+}")
+  %rest:path("expps/fundament/vendor/jquery/{$file=.+}")
 function _:vendor-file($file as xs:string) as item()+ {
-  _:file('vendor/'||$file)
+  _:file('fundament/vendor/jquery/'||$file)
 };
 
 
 declare
-  %rest:path("expps/images/{$file=.+}")
+  %rest:path("expps/fundament/images/{$file=.+}")
 function _:images-file($file as xs:string) as item()+ {
-  _:file('images/'||$file)
+  _:file('fundament/images/'||$file)
 };
 
 declare
