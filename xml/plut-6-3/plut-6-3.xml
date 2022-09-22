@@ -17,22 +17,22 @@
                <licence target="https://creativecommons.org/licenses/by/4.0/">Available under the
                   Creative Commons Attribution 4.0 International (CC BY 4.0)</licence>
             </availability>
-            <date>2021-XX-XX</date>
+            <date>2022-09-21</date>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
-               <msIdentifier xml:id="mosq-synod-194">
-                  <country>XXX</country>
-                  <settlement>XXX</settlement>
-                  <repository>XXX</repository>
-                  <idno facs="XXX"/>
+               <msIdentifier xml:id="plut-6-3">
+                  <country>Italy</country>
+                  <settlement>Firenze</settlement>
+                  <repository>Biblioteca Medicea Laurenziana</repository>
+                  <idno facs="http://mss.bmlonline.it/s.aspx?Id=AWOHzHpBI1A4r7GxMB-P#/book">IT:FI0100_Plutei_06.03</idno>
                   <altIdentifier>
-                     <idno type="pinakes" corresp="XXX">XXX</idno>
+                     <idno type="pinakes" corresp="https://pinakes.irht.cnrs.fr/notices/cote/15990/">15990</idno>
                   </altIdentifier>
                </msIdentifier>
                <msContents>
                   <msItem n="1">
-                     <locus>XXX</locus>
+                     <locus>40r-263v</locus>
                      <title>Catena in Psalmos et Cantica</title>
                   </msItem>
                </msContents>
@@ -42,12 +42,12 @@
                         <support>parchment</support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout>XXX</layout>
+                        <layout>Bordercatena</layout>
                      </layoutDesc>
                   </objectDesc>
                </physDesc>
                <history>
-                  <p>Written in the XXX century.</p>
+                  <p>Written in the 11th century.</p>
                </history>
             </msDesc>
             <listPerson>
@@ -270,6 +270,7 @@
       <body>
          <div type="transcription" xml:id="plut-6-3-1-1">
             <div xml:id="plut-6-3-1-3" type="bibletext" subtype="commented">
+               <ab xml:lang="grc">
                <!-- Ps 1 bibletext -->
                <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-1-1"
                   n="Ps (LXX) 1,1" xml:lang="grc" xml:id="plut-6-3-ps-1-1">
@@ -320,11 +321,13 @@
                   δικαίων, <anchor xml:id="plut-6-3-ps-1-6b" type="psalmtext" n="Ps (LXX) 1,6b"
                      corresp="../psalms-LXX/psalms.xml#Ps-LXX-1-6"/> καὶ ὁδὸς ἀσεβῶν ἀπολεῖται.
                </quote>
+               </ab>
             </div>
+            <pb n="40r" facs="http://mss.bmlonline.it/s.aspx?Id=AWOHzHpBI1A4r7GxMB-P#/oro/85"/>
             <!-- Pointers to identical fragments in other documents. @type = identical | with-variations | abbreviated | expanded &lt; &gt;-->
             <div type="commentary" subtype="commentary" xml:id="plut-6-3-1-4">
                <ab xml:id="plut-6-3-1-2" xml:lang="grc">
-                  <pb n="40r"/><!-- am inneren Rand unten stand wahrscheinlich kein Athanasius. Es gibts eine Rand- bzw. Hauptkatene. Theodoretus und Athanasius stehen entweder zwischen dem Bibeltext und der Hauptkatene oder zwischen den Zeilen des Bibeltextes -->
+                  <!-- am inneren Rand unten stand wahrscheinlich kein Athanasius. Es gibts eine Rand- bzw. Hauptkatene. Theodoretus und Athanasius stehen entweder zwischen dem Bibeltext und der Hauptkatene oder zwischen den Zeilen des Bibeltextes -->
                   <!-- Ps 1 commentary -->
                   <note type="lemma">Ps 1,3b</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-1-1"
@@ -355,7 +358,11 @@
                         754</ref><note type="attribution"><foreign xml:lang="grc"
                         >ἄλλως</foreign></note>
                   </seg>
+               </ab>
+            </div>
                   <!-- Ps 2 bibletext -->
+            <div type="bibletext" subtype="commented">
+               <ab xml:lang="grc">
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-1"
                      n="Ps (LXX) 2,1" xml:lang="grc" xml:id="plut-6-3-ps-2-1">
                      <anchor xml:id="plut-6-3-ps-2-1a" type="psalmtext" n="Ps (LXX) 2,1a"
@@ -450,6 +457,10 @@
                         type="psalmtext" n="Ps (LXX) 2,12d"
                         corresp="../psalms-LXX/psalms.xml#Ps-LXX-2-12"/> μακάριοι πάντες οἱ
                      πεποιθότες ἐπ’ αὐτῷ. </quote>
+               </ab>
+            </div>
+            <div type="commentary" subtype="commentary">
+               <ab xml:lang="grc">
                   <!-- Ps 2 commentary -->
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-2-1"
                      corresp="#plut-6-3-ps-2-XXX" source="Anonymous">
@@ -487,7 +498,11 @@
                      <ref target="vat-gr-754:vat-gr-754-fr-2-2" type="abbreviated-with-variants"
                         >Vat. gr. 754</ref><!-- Asterius im Rest der Zeile  -->
                   </seg>
-                  <pb n="41r"/><!-- um den Bibeltext: 2 Hesychius Antonelli (Vat. gr. 1422) + Athanasius + Antonelli (Vat. gr. 1422) -->
+               </ab>
+            </div>
+            <pb n="41r" facs="http://mss.bmlonline.it/s.aspx?Id=AWOHzHpBI1A4r7GxMB-P#/oro/87"/><!-- um den Bibeltext: 2 Hesychius Antonelli (Vat. gr. 1422) + Athanasius + Antonelli (Vat. gr. 1422) -->
+            <div type="commentary" subtype="commentary">
+               <ab xml:lang="grc">
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-2-4"
                      corresp="#plut-6-3-ps-2-7a" source="Anonymous">
                      <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-2-4"
@@ -524,7 +539,11 @@
                            reason="faded-ink">ται ὁ πατήρ:</unclear></quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-2-31" type="identical">Vat. gr. 754</ref>
                   </seg>
-                  <pb n="41v"/>
+               </ab>
+            </div>
+            <pb n="41v" facs="http://mss.bmlonline.it/s.aspx?Id=AWOHzHpBI1A4r7GxMB-P#/oro/88"/>
+            <div type="commentary" subtype="commentary">
+               <ab xml:lang="grc">
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-2-8"
                      corresp="#plut-6-3-ps-2-12" source="Anonymous">
                      <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-2-8"
@@ -532,7 +551,11 @@
                         δηλονότι:</quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-2-48" type="identical">Vat. gr. 754</ref>
                   </seg><!-- "scholia-Katene": 1 Hesychius Antonelli + 1 Athanasius  -->
+               </ab>
+            </div>
                   <!-- Ps 3 bibletext -->
+            <div type="bibletext" subtype="commented">
+               <ab xml:lang="grc">
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-3-1"
                      n="Ps (LXX) 3,1" xml:lang="grc" xml:id="plut-6-3-ps-3-1"> Ψαλμὸς τῷ Δαυιδ,
                      ὁπότε ἀπεδίδρασκεν ἀπὸ προσώπου Αβεσσαλωμ τοῦ υἱοῦ αὐτοῦ. </quote>
@@ -596,8 +619,12 @@
                         <anchor xml:id="plut-6-3-ps-3-9b" type="psalmtext" n="Ps (LXX) 3,9b"
                         corresp="../psalms-LXX/psalms.xml#Ps-LXX-3-9"/> καὶ ἐπὶ τὸν λαόν σου ἡ
                      εὐλογία σου. </quote>
+               </ab>
+            </div>
                   <!-- ps 3 commentary -->
                   <!-- expositiones at the biblical text -->
+            <div type="commentary" subtype="commentary">
+               <ab xml:lang="grc">
                   <note type="lemma">Ps 3,2</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-3-1" corresp="#plut-6-3-ps-3-2"
                      source="Athanasius">
@@ -617,7 +644,11 @@
                         754</ref>
                      <note type="attribution"><foreign xml:lang="grc">ἄλλω(ς):</foreign></note>
                   </seg>
+               </ab>
+            </div>
                   <!-- ps 4 bibletext -->
+            <div type="bibletext" subtype="commented">
+               <ab xml:lang="grc">
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-4-1"
                      n="Ps (LXX) 4,1" xml:lang="grc" xml:id="plut-6-3-ps-4-1"> Εἰς τὸ τέλος, ἐν
                      ψαλμοῖς· ᾠδὴ τῷ Δαυιδ. </quote>
@@ -681,7 +712,11 @@
                      κοιμηθήσομαι καὶ ὑπνώσω, <anchor xml:id="plut-6-3-ps-4-9b" type="psalmtext"
                         n="Ps (LXX) 4,9b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-4-9"/> ὅτι σύ,
                      κύριε, κατὰ μόνας ἐπ’ ἐλπίδι κατῴκισάς με. </quote>
-                  <pb n="42v"/>
+               </ab>
+            </div>
+            <pb n="42v" facs="http://mss.bmlonline.it/s.aspx?Id=AWOHzHpBI1A4r7GxMB-P#/oro/90"/>
+            <div type="commentary" subtype="commentary">
+               <ab xml:lang="grc">
                   <!-- oben: Aquila und Symmachus = Field -->
                   <!-- Ps 4 commentary -->
                   <note type="lemma">Ps 4,&lt;2c&gt;</note>
@@ -721,7 +756,10 @@
                      <ref target="vat-gr-754:vat-gr-754-fr-4-24" type="XXX">Vat. gr. 754</ref>
                      <note type="attribution"><foreign xml:lang="grc">Ἀθα(νασίου)</foreign></note>
                   </seg>
-                  <pb n="43r"/>
+               </ab>
+            </div>
+            <div type="bibletext" subtype="commented">
+               <ab xml:lang="grc">
                   <!-- Ps 5 bibletext -->
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-1"
                      n="Ps (LXX) 5,1" xml:lang="grc" xml:id="plut-6-3-ps-5-1"> Εἰς τὸ τέλος, ὑπὲρ
@@ -822,7 +860,11 @@
                         <anchor xml:id="plut-6-3-ps-5-13b" type="psalmtext" n="Ps (LXX) 5,13b"
                         corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-13"/> κύριε, ὡς ὅπλῳ εὐδοκίας
                      ἐστεφάνωσας ἡμᾶς. </quote>
-                  <pb n="43v"/>
+               </ab>
+            </div>
+            <pb n="43v" facs="http://mss.bmlonline.it/s.aspx?Id=AWOHzHpBI1A4r7GxMB-P#/oro/92"/>
+            <div type="commentary" subtype="commentary">
+               <ab xml:lang="grc">
                   <!-- Ps 5 commentary -->
                   <note type="lemma">Ps 5,3c–4</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-5-1"
@@ -853,7 +895,11 @@
                      <note type="attribution"><foreign xml:lang="grc">τοῦ
                         Χρυ(σοστόμου)</foreign></note>
                   </seg>
-                  <pb n="44r"/>
+               </ab>
+            </div>
+            <pb n="44r" facs="http://mss.bmlonline.it/s.aspx?Id=AWOHzHpBI1A4r7GxMB-P#/oro/93"/>
+            <div type="commentary" subtype="commentary">
+               <ab xml:lang="grc">
                   <note type="lemma">Ps 5,11b</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-5-4"
                      corresp="#plut-6-3-ps-5-11b" source="Anonymous">
@@ -891,7 +937,11 @@
                         754</ref>
                      <note type="attribution"><foreign xml:lang="grc">ἄλλω(ς):</foreign></note>
                   </seg>
-                  <pb n="44v"/>
+               </ab>
+            </div>
+            <pb n="44v" facs="http://mss.bmlonline.it/s.aspx?Id=AWOHzHpBI1A4r7GxMB-P#/oro/94"/>
+            <div type="commentary" subtype="commentary">
+               <ab xml:lang="grc">
                   <note type="lemma">Ps 5,13</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-5-7"
                      corresp="#plut-6-3-ps-5-13b" source="Anonymous">
@@ -901,7 +951,11 @@
                      <ref target="vat-gr-754:vat-gr-754-fr-5-48" type="with-variants">Vat. gr.
                         754</ref>
                   </seg>
+               </ab>
+            </div>
                   <!-- Ps 6 bibletext -->
+            <div type="bibletext" subtype="commented">
+               <ab xml:lang="grc">
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-6-1"
                      n="Ps (LXX) 6,1" xml:lang="grc" xml:id="plut-6-3-ps-6-1"> Εἰς τὸ τέλος, ἐν
                      ὕμνοις, ὑπὲρ τῆς ὀγδόης· ψαλμὸς τῷ Δαυιδ. </quote>
@@ -977,7 +1031,11 @@
                         type="psalmtext" n="Ps (LXX) 6,11b"
                         corresp="../psalms-LXX/psalms.xml#Ps-LXX-6-11"/> ἀποστραφείησαν καὶ
                      καταισχυνθείησαν σφόδρα διὰ τάχους. </quote>
-                  <pb n="44v"/>
+               </ab>
+            </div>
+            <pb n="44v" facs="http://mss.bmlonline.it/s.aspx?Id=AWOHzHpBI1A4r7GxMB-P#/oro/94"/>
+            <div type="commentary" subtype="commentary">
+               <ab xml:lang="grc">
                   <!-- Ps 6 commentary -->
                   <note type="lemma">Ps 6,3b</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-6-1"
@@ -1007,7 +1065,11 @@
                      <ref target="vat-gr-754:vat-gr-754-fr-6-15" type="with-variants">Vat. gr.
                         754</ref>
                   </seg>
-                  <pb n="45r"/>
+               </ab>
+            </div>
+            <pb n="45r" facs="http://mss.bmlonline.it/s.aspx?Id=AWOHzHpBI1A4r7GxMB-P#/oro/95"/>
+            <div type="commentary" subtype="commentary">
+               <ab xml:lang="grc">
                   <note type="lemma">Ps 6,5b</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-6-4"
                      corresp="#plut-6-3-ps-6-5b" source="Athanasius">
@@ -1058,7 +1120,11 @@
                      <note type="attribution"><foreign xml:lang="grc">ἄλλω(ς):
                            Ἀθα(νασίου):</foreign></note>
                   </seg>
+               </ab>
+            </div>
                   <!-- Ps 7 bibletext -->
+            <div type="bibletext" subtype="commented">
+               <ab xml:lang="grc">
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-1"
                      n="Ps (LXX) 7,1" xml:lang="grc" xml:id="plut-6-3-ps-7-1"> Ψαλμὸς τῷ Δαυιδ, ὃν
                      ᾖσεν τῷ κυρίῳ ὑπὲρ τῶν λόγων Χουσι υἱοῦ Ιεμενι. </quote>
@@ -1191,8 +1257,12 @@
                      τὴν δικαιοσύνην αὐτοῦ <anchor xml:id="plut-6-3-ps-7-18b" type="psalmtext"
                         n="Ps (LXX) 7,18b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-18"/> καὶ ψαλῶ
                      τῷ ὀνόματι κυρίου τοῦ ὑψίστου. </quote>
-                  <pb n="45v"/>
+               </ab>
+            </div>
+            <pb n="45v" facs="http://mss.bmlonline.it/s.aspx?Id=AWOHzHpBI1A4r7GxMB-P#/oro/96"/>
                   <!-- Ps 7 commentary -->
+            <div type="commentary" subtype="commentary">
+               <ab xml:lang="grc">
                   <note type="lemma">Ps 7,2a–b1</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-7-1"
                      corresp="#plut-6-3-ps-7-2a" source="Athanasius">
@@ -1217,7 +1287,11 @@
                         ἔλεον τὸν θεόν:</quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-7-XX" type="identical">Vat. gr. 754</ref>
                   </seg>
-                  <pb n="46r"/>
+               </ab>
+            </div>
+            <pb n="46r" facs="http://mss.bmlonline.it/s.aspx?Id=AWOHzHpBI1A4r7GxMB-P#/oro/97"/>
+            <div type="commentary" subtype="commentary">
+               <ab xml:lang="grc">
                   <note type="lemma">Ps 7,5b</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-7-3"
                      corresp="#plut-6-3-ps-7-5b" source="Anonymous">
@@ -1277,7 +1351,11 @@
                      <ref target="vat-gr-754:vat-gr-754-fr-7-XX" type="with-variant">Vat. gr.
                         754</ref>
                   </seg>
-                  <pb n="46v"/>
+               </ab>
+            </div>
+            <pb n="46v" facs="http://mss.bmlonline.it/s.aspx?Id=AWOHzHpBI1A4r7GxMB-P#/oro/98"/>
+            <div type="commentary" subtype="commentary">
+               <ab xml:lang="grc">
                   <note type="lemma">Ps 7,10c</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-7-9"
                      corresp="#plut-6-3-ps-7-10c" source="Athanasius">
@@ -1321,7 +1399,11 @@
                         754</ref>
                      <note type="attribution"><foreign xml:lang="grc">Ἀθα(νασίου)</foreign></note>
                   </seg>
+               </ab>
+            </div>
                   <!-- ps 8 bibletext -->
+            <div type="bibletext" subtype="commented">
+               <ab xml:lang="grc">
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-1"
                      n="Ps (LXX) 8,1" xml:lang="grc" xml:id="plut-6-3-ps-8-1"> Εἰς τὸ τέλος, ὑπὲρ
                      τῶν ληνῶν· ψαλμὸς τῷ Δαυιδ. </quote>
@@ -1387,8 +1469,12 @@
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-10"
                      n="Ps (LXX) 8,10" xml:lang="grc" xml:id="plut-6-3-ps-8-10"> κύριε ὁ κύριος
                      ἡμῶν, ὡς θαυμαστὸν τὸ ὄνομά σου ἐν πάσῃ τῇ γῇ. </quote>
-                  <pb n="47r"/>
+               </ab>
+            </div>
+            <pb n="47r" facs="http://mss.bmlonline.it/s.aspx?Id=AWOHzHpBI1A4r7GxMB-P#/oro/99"/>
                   <!-- ps 8 commentary -->
+            <div type="commentary" subtype="commentary">
+               <ab xml:lang="grc">
                   <note type="textual-commentary"><p>Expositiones in Psalmos at the bottom of the
                         page (from source 2?)</p></note>
                   <note type="lemma">Ps 8,3a–b</note>
@@ -1430,7 +1516,11 @@
                      <ref target="vat-gr-754:vat-gr-754-fr-8-XX" type="with-variants">Vat. gr.
                         754</ref>
                   </seg>
-                  <pb n="47v"/>
+               </ab>
+            </div>
+            <pb n="47v" facs="http://mss.bmlonline.it/s.aspx?Id=AWOHzHpBI1A4r7GxMB-P#/oro/100"/>
+            <div type="commentary" subtype="commentary">
+               <ab xml:lang="grc">
                   <note type="textual-commentary"><p>Expositio at the biblical text (from source
                         2?)</p></note>
                   <note type="lemma">Ps 8,9</note>
@@ -1492,7 +1582,11 @@
                            >ύ</unclear>λου σαφῶς ἐξειληφότος· ἀρκεῖσθαι τῆ ἐκδόσει χρή:</quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-8-XX" type="XXX">Vat. gr. 754</ref>
                   </seg>
-                  <pb n="48r"/>
+               </ab>
+            </div>
+            <pb n="48r" facs="http://mss.bmlonline.it/s.aspx?Id=AWOHzHpBI1A4r7GxMB-P#/oro/101"/>
+            <div type="commentary" subtype="commentary">
+               <ab xml:lang="grc">
                   <note type="textual-commentary"><p>Expositio at the top of the page (from source
                         2?)</p></note>
                   <note type="lemma">Ps 8,10</note>
@@ -1508,7 +1602,11 @@
                      <ref target="vat-gr-754:vat-gr-754-fr-8-XX" type="with-variant">Vat. gr.
                         754</ref>
                   </seg>
+               </ab>
+            </div>
                   <!-- Ps 9 bibletext -->
+            <div type="bibletext" subtype="commented">
+               <ab xml:lang="grc">
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-1"
                      n="Ps (LXX) 9,1" xml:lang="grc" xml:id="plut-6-3-ps-9-1"> Εἰς τὸ τέλος, ὑπὲρ
                      τῶν κρυφίων τοῦ υἱοῦ· ψαλμὸς τῷ Δαυιδ. </quote>
@@ -1803,8 +1901,12 @@
                         <anchor xml:id="plut-6-3-ps-9-39b" type="psalmtext" n="Ps (LXX) 9,39b"
                         corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-39"/> ἵνα μὴ προσθῇ ἔτι τοῦ
                      μεγαλαυχεῖν ἄνθρωπος ἐπὶ τῆς γῆς. </quote>
+               </ab>
+            </div>
                   <!-- Ps 9 commentary -->
                   <!-- Ps 10 bibletext -->
+            <div type="bibletext" subtype="commented">
+               <ab xml:lang="grc">
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-10-1"
                      n="Ps (LXX) 10,1" xml:lang="grc" xml:id="plut-6-3-ps-10-1">
                      <anchor xml:id="plut-6-3-ps-10-1a" type="psalmtext" n="Ps (LXX) 10,1a"
@@ -1861,7 +1963,11 @@
                      δικαιοσύνας ἠγάπησεν, <anchor xml:id="plut-6-3-ps-10-7b" type="psalmtext"
                         n="Ps (LXX) 10,7b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-10-7"/> εὐθύτητα
                      εἶδεν τὸ πρόσωπον αὐτοῦ. </quote>
-                  <pb n="51v"/>
+               </ab>
+            </div>
+            <pb n="51v" facs="http://mss.bmlonline.it/s.aspx?Id=AWOHzHpBI1A4r7GxMB-P#/oro/108"/>
+            <div type="commentary" subtype="commentary">
+               <ab xml:lang="grc">
                   <!-- Ps 10 commentary -->
                   <note type="textual-commentary"><p>Expositio in Psalmos at the bottom of the page
                         (from source 1)</p></note>
@@ -1898,7 +2004,7 @@
                         type="with-variants/expanded-with-variants">Vat. gr. 754</ref>
                      <note type="attribution"><foreign xml:lang="grc">ἄλλω(ς):</foreign></note>
                   </seg>
-                  <pb n="52r"/>
+                  <!-- pb n="52r" -->
                   <!-- oben: Aquila und Symmachus = Field -->
                   <!-- MESE:  ·  Bullet:  •  Spitzenklammern:  &lt;XX&gt;
                   <note type="lemma">Ps 10,XX</note>  
