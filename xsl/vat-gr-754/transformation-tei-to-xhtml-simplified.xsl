@@ -14,6 +14,8 @@
                     <xsl:value-of select="tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/>
                 </title>
                 <link rel="stylesheet" href="./css/formats.css"/>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"/>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/js/all.min.js" integrity="sha512-LW9+kKj/cBGHqnI4ok24dUWNR/e8sUD8RLzak1mNw5Ja2JYCmTXJTF5VpgFSw+VoBfpMvPScCo2DnKTIUjrzYw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
             </head>
             <body>
                 <div id="main-content">
@@ -35,12 +37,14 @@
         <p class="title">
             <xsl:text>Simplified - Commentaryfragments and Hexaplaric Variants</xsl:text>
         </p>
-        <p class="responsibility">
-            <xsl:value-of select="tei:fileDesc/tei:titleStmt/tei:respStmt/tei:resp"/>
-        </p>
-        <p class="author">
-            <xsl:value-of select="tei:fileDesc/tei:titleStmt/tei:respStmt/tei:persName"/>
-        </p>
+        <xsl:for-each select="tei:fileDesc/tei:titleStmt/tei:respStmt">
+            <p class="responsibility">
+                <xsl:value-of select="./tei:resp"/>
+            </p>
+            <p class="author">
+                <xsl:value-of select="./tei:persName"/>
+            </p>
+        </xsl:for-each>
         <p class="publisher">
             <xsl:value-of select="tei:fileDesc/tei:publicationStmt/tei:publisher"/>
         </p>
@@ -64,7 +68,13 @@
         <p class="page-number">
             <xsl:text>(</xsl:text>
             <xsl:value-of select="@n"/>
-            <xsl:text>)</xsl:text>
+            <xsl:text>) </xsl:text>
+            
+            <xsl:element name="a">
+                <xsl:attribute name="href" select="@facs"/>
+                <xsl:attribute name="target" select="'_blank'"/>
+                <i class="fas fa-image" style="transform: translate(0%,10%);"/>
+            </xsl:element>
         </p>
     </xsl:template>
     
