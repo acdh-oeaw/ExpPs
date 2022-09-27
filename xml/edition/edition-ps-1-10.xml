@@ -7916,8 +7916,8 @@
                         <wit>Mosq. Synod. 194</wit>
                         <wit>Vat. Ottob. gr. 398</wit>
                         <wit>Mediolan. Ambros. M 47 sup.</wit>
-                        <wit>Paris. gr. 139</wit>
                         <wit>Paris. Coislin 12</wit>
+                        <wit>Paris. gr. 139</wit>
                         <wit>Venet. Marc. gr. Z. 17</wit>
                         <wit>Athen. B.N. 45</wit>
                         <wit>Mediolan. Ambros. B 106 sup.</wit>
@@ -7977,7 +7977,7 @@
             </div>
             <!-- ps 9: -->
             <!-- typus XIX: V1(erledigt) C(erledigt; f. 1r) G() P1(erledigt) -->
-            <!-- typus IV: M(; f. 17v) O(; Ansicht der fr. um den Bibeltext; f. 49r) -->
+            <!-- typus IV: M(erledigt; f. 19r) O(; Ansicht der fr. um den Bibeltext; f. 49r) -->
             <!-- codices varii: B1(erledigt) P2(lost) B2(erledigt; f. 9v) N1() P3(kein Athanasius) P4(lost) A1(erledigt) P5(erledigt; f. 22r) L1(erledigt) -->
             <!-- typus III: P6(erledigt; f. 27v) Z(erledigt; kursorische Ansicht; f. 20v) N2(erledigt; kursorische Ansicht; f. 75r) -->
             <!-- typus XIV: A2(erledigt; schnelle Lektüre; f. 31r) V4(erledigt; schnelle Lektüre; f. 10v) -->
@@ -8000,23 +8000,35 @@
                         ἐξομολογήσομαί σοι κύριε: –</p>
                      <!--  ἀπέκρυψεν V5 : ἀπέκρυψε P7 = V1 -->
                   </div>
-                  <!-- typus III: dortige Version parallel darzustellen und miteinander zu vergleichen -->
+                  <!-- typus III: Paris. gr. 139 muss mit den anderen Zeugen noch verglicehn werden -->
                   <note type="textual-commentary"><p>P6 Z N2: diese hyp. wird fälschlicherweise
                         Eusebius zugeschrieben. Stattdessen wird in dieser Katene das fr., das
                         darauffolgt, Athanasius zugeschrieben. Dieses ist die Paraphrase des
                         Eusebius (fr. 1 in Ps 9,1a–2b [Villani]).</p></note>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #P1 #A1 #P5 #A2 #V4 #V5 #P7">txt</rdg>
+                        <rdg wit="#V1 #C #P1 #M #O #A1 #P5 #P6 #Z #N2 #A2 #V4 #V5 #P7">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Paris. Coislin 10</wit>
                         <wit>Paris. gr. 166-167</wit>
+                        <wit>Mosq. Synod. 194</wit>
+                        <wit>Vat. Ottob. gr. 398</wit>
                         <wit>Mediolan. Ambros. M 47 sup.</wit>
                         <wit>Paris. Coislin 12</wit>
+                        <wit>Paris. gr. 139</wit>
+                        <wit>Venet. Marc. gr. Z. 17</wit>
+                        <wit>Athen. B.N. 45</wit>
                         <wit>Mediolan. Ambros. B 106 sup.</wit>
                         <wit>Vat. gr. 1747</wit>
                         <wit>Vat. gr. 1422</wit>
                         <wit>Paris. gr. 146</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">Διὰ – δηλοῖ</foreign></lem>
+                        <rdg wit="#P6 #Z #N2">om.</rdg>
+                        <wit>Paris. gr. 139</wit>
+                        <wit>Venet. Marc. gr. Z. 17</wit>
+                        <wit>Athen. B.N. 45</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">Διὰ </foreign></lem>
@@ -8034,12 +8046,23 @@
                         <rdg wit="#A1"><foreign xml:lang="grc">αὐτ[ὸς?]</foreign></rdg>
                         <wit>Mediolan. Ambros. M 47 sup.</wit>
                         <!-- A1: diese Lesung zu überprüfen -->
-                        <wit wit="#P5 #A2 #V4 #V5 #P7"><foreign xml:lang="grc">αὐτοῦ</foreign></wit>
+                        <rdg wit="#P5 #A2 #P6 #Z #N2 #V4 #V5 #P7"><foreign xml:lang="grc"
+                              >αὐτοῦ</foreign></rdg>
                         <wit>Paris. Coislin 12</wit>
+                        <wit>Paris. gr. 139</wit>
+                        <wit>Venet. Marc. gr. Z. 17</wit>
+                        <wit>Athen. B.N. 45</wit>
                         <wit>Mediolan. Ambros. B 106 sup.</wit>
                         <wit>Vat. gr. 1747</wit>
                         <wit>Vat. gr. 1422</wit>
                         <wit>Paris. gr. 146</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">πραττόμενα</foreign></lem>
+                        <rdg wit="#P6 #Z #N2">πεπραγμένα</rdg>
+                        <wit>Paris. gr. 139</wit>
+                        <wit>Venet. Marc. gr. Z. 17</wit>
+                        <wit>Athen. B.N. 45</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">ἥ τε</foreign></lem>
@@ -8065,6 +8088,14 @@
                         <wit>Mediolan. Ambros. M 47 sup.</wit>
                      </app>
                      <app type="text">
+                        <lem><foreign xml:lang="grc">πάντα κρυφίως αὐτῷ πέπρακται</foreign></lem>
+                        <rdg wit="#P6 #Z #N2"><foreign xml:lang="grc">αὐτῷ πάντα κρυφίως
+                              πέπρακται</foreign></rdg>
+                        <wit>Paris. gr. 139</wit>
+                        <wit>Venet. Marc. gr. Z. 17</wit>
+                        <wit>Athen. B.N. 45</wit>
+                     </app>
+                     <app type="text">
                         <lem><foreign xml:lang="grc">καὶ τοὺς ἄρχοντας</foreign></lem>
                         <rdg wit="#V4"><foreign xml:lang="grc">τοῖς ἄρχουσι</foreign></rdg>
                         <wit>Vat. gr. 1747</wit>
@@ -8087,6 +8118,26 @@
                         <wit>Vat. gr. 1747</wit>
                         <wit>Vat. gr. 1422</wit>
                         <wit>Paris. gr. 146</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">ὁ προφήτης – κύριε</foreign></lem>
+                        <rdg wit="#P6 #Z #N2"><foreign xml:lang="grc">ὁ προφήτις λέγει:
+                           –</foreign></rdg>
+                        <wit>Paris. gr. 139</wit>
+                        <wit>Venet. Marc. gr. Z. 17</wit>
+                        <wit>Athen. B.N. 45</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">ἐκ προσώπου </foreign></lem>
+                        <rdg wit="#M #O">ὡς ἐκ προσώπου </rdg>
+                        <wit>Mosq. Synod. 194</wit>
+                        <wit>Vat. Ottob. gr. 398</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">τῆς ἀνθρωπότητος</foreign></lem>
+                        <rdg wit="#M"><foreign xml:lang="grc">τῆς ἐνανθρωπότητος </foreign></rdg>
+                        <wit>Mosq. Synod. 194</wit>
+                        <!-- τῆς ἀνθρωπότητος O = V1 -->
                      </app>
                   </div>
                </div>
@@ -8217,10 +8268,12 @@
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #P1 #B1 #B2 #L1 #A1 #P5 #P6 #Z #N2 #V5 #P7">txt</rdg>
+                        <rdg wit="#V1 #C #P1 #M #O #B1 #B2 #L1 #A1 #P5 #P6 #Z #N2 #V5 #P7">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Paris. Coislin 10</wit>
                         <wit>Paris. gr. 166-167</wit>
+                        <wit>Mosq. Synod. 194</wit>
+                        <wit>Vat. Ottob. gr. 398</wit>
                         <wit>Oxon. Bodl. Auct. D. 4. 1.</wit>
                         <wit>Oxon. Coll. S. Trin. 78</wit>
                         <wit>Flor. Med. Laurent. Plut. 5. 30</wit>
@@ -8531,14 +8584,16 @@
                   <note type="textual-commentary"><p>V4: der letzte Teil der exp. ist mit Hesychius
                         ersetzt (comm. brevis in Ps 9,7a1; 9,7a2 [12,7–9.11–12 Jagić]); der von den
                         zwei Texten geteilter Begriff δυνάμεις bietete einen Anknüpfungspunkt. A2:
-                        nur die abgekürzte exp. ist zu finden; danach ist keinen Auszug aus
-                        Hesychius. V5 P7: nach Hesychius folgt hierin der abschliessende Teil der
-                        exp.</p></note>
+                        nur die abgekürzte exp. ist zu finden; danach ist kein Auszug aus Hesychius.
+                        V5 P7: nach Hesychius folgt hierin der abschliessende Teil der
+                     exp.</p></note>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #B2 #A1 #P5 #A2 #V4 #V5 #P7">txt</rdg>
+                        <rdg wit="#V1 #C #M #O #B2 #A1 #P5 #A2 #V4 #V5 #P7">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Paris. Coislin 10</wit>
+                        <wit>Mosq. Synod. 194</wit>
+                        <wit>Vat. Ottob. gr. 398</wit>
                         <wit>Oxon. Coll. S. Trin. 78</wit>
                         <wit>Mediolan. Ambros. M 47 sup.</wit>
                         <wit>Paris. Coislin 12</wit>
@@ -8559,6 +8614,12 @@
                               συλλαβοῦσαι ἔσχον: –</foreign></rdg>
                         <!-- τὰς ἀντικειμένας φη(σὶ) δυνάμεις V5 : τὰς ἀντικειμένας φησὶν δυνάμεις P7 -->
                         <!-- ἀλόντας V5 P7* : ἁλόντας P7corr -->
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">Καὶ ποίας </foreign></lem>
+                        <rdg wit="#M #O"><foreign xml:lang="grc">πόλεις δὲ ποίας </foreign></rdg>
+                        <wit>Mosq. Synod. 194</wit>
+                        <wit>Vat. Ottob. gr. 398</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">ἢ ταύτας</foreign></lem>
@@ -8592,6 +8653,12 @@
                               –</foreign></rdg>
                         <wit>Mediolan. Ambros. B.106 sup.</wit>
                         <wit>Vat. gr. 1747</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">αὗται δέ</foreign></lem>
+                        <rdg wit="#M"><foreign xml:lang="grc">αὗται γὰρ </foreign></rdg>
+                        <wit>Mosq. Synod. 194</wit>
+                        <!-- αὗται δέ O = V1 -->
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">εἰσιν πάλιν</foreign></lem>
@@ -8731,12 +8798,15 @@
                   <div type="commentary">
                      <p xml:id="edition-9-10-1" n="120">Τῷ πτωχῷ τῷ πνεύματι λαῷ φησίν: –</p>
                   </div>
+                  <!-- M O: diese exp. und die folgende eine Einheit -->
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #P1 #B1 #B2 #P5 #A2 #V4">txt</rdg>
+                        <rdg wit="#V1 #C #P1 #M #O #B1 #B2 #P5 #A2 #V4">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Paris. Coislin 10</wit>
                         <wit>Paris. gr. 166-167</wit>
+                        <wit>Mosq. Synod. 194</wit>
+                        <wit>Vat. Ottob. gr. 398</wit>
                         <wit>Oxon. Bodl. Auct. D. 4. 1.</wit>
                         <wit>Oxon. Coll. S. Trin. 78</wit>
                         <wit>Paris. Coislin 12</wit>
@@ -8768,10 +8838,13 @@
                   <!-- Z: diese exp. bildet mit dem darauffolgenden fr. aus Theodoretus eine Einheit. P6 (f. 22r) trennt diese und schreibt das zweite fr. dem Theodoretus zu. N2 (f. 81v) hat die Zuweisung ohne Text beibehalten -->
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #P1 #A1 #P5 #P6 #Z #A2 #V4 #V5a #P7a #V5b #P7b">txt</rdg>
+                        <rdg wit="#V1 #C #P1 #M #O #A1 #P5 #P6 #Z #A2 #V4 #V5a #P7a #V5b #P7b"
+                           >txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Paris. Coislin 10</wit>
                         <wit>Paris. gr. 166-167</wit>
+                        <wit>Mosq. Synod. 194</wit>
+                        <wit>Vat. Ottob. gr. 398</wit>
                         <wit>Mediolan. Ambros. M 47 sup.</wit>
                         <wit>Paris. Coislin 12</wit>
                         <wit>Paris. gr. 139</wit>
@@ -8784,8 +8857,10 @@
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">Ὡς τὸ</foreign></lem>
-                        <rdg wit="#P1"><foreign xml:lang="grc">Ὡς τῷ</foreign></rdg>
+                        <rdg wit="#P1 #M"><foreign xml:lang="grc">Ὡς τῷ</foreign></rdg>
                         <wit>Paris. gr. 166-167</wit>
+                        <wit>Mosq. Synod. 194</wit>
+                        <!-- Ὡς τὸ O = V1 -->
                         <rdg wit="#P6 #Z #A2 #V4"><foreign xml:lang="grc">Ὡς</foreign></rdg>
                         <wit>Paris. gr. 139</wit>
                         <wit>Venet. Marc. gr. Z. 17</wit>
@@ -9895,8 +9970,8 @@
                         <lem><foreign xml:lang="grc">Παρώξυνε — οὐκ ἐκζητήσει;</foreign></lem>
                         <rdg wit="#V5 #P7"><foreign xml:lang="grc">Παρώξυνε μὲν χλευάζων τοὺς περὶ
                               προνοίας· καὶ τῆς κρίσεως αὐτοῦ λόγους· τοῦτο δὲ συνάπτεται τῶ [τὸ
-                              V5m.sec.] κατὰ τὸ πλῆθος τῆς ὀργῆς αὐτοῦ. οὐκ ἐκζητήσει· ἵνα ᾖ τὸ ὅλον·
-                              αὐτὸς παρώξυνε φησὶ τὸν κύριον ὁ ἁμαρτωλὸς· πλῆθος ὀργῆς αὐτοῦ
+                              V5m.sec.] κατὰ τὸ πλῆθος τῆς ὀργῆς αὐτοῦ. οὐκ ἐκζητήσει· ἵνα ᾖ τὸ
+                              ὅλον· αὐτὸς παρώξυνε φησὶ τὸν κύριον ὁ ἁμαρτωλὸς· πλῆθος ὀργῆς αὐτοῦ
                               θησαυρίζων· τὸ γὰρ αὐτοῦ· ἐπὶ τοῦ παροξύναντος ληπτέον· εἶτα τὸ
                               ἐπιφερόμενον τούτο* τὸ οὐκ ἐκζητήσει καθ᾿ ὑποστιγμὴν ἀναγνωστέον· ἵνα
                               ᾖ τὸ νοούμενον οὕτως· ἄρα ἦν [ἆρ᾿ οὖν P7 corr.] ὁ μὲν` παροξύνει τὸν
