@@ -114,11 +114,11 @@ version="2.0">
 <xsl:template match="tei:div[@type = 'textcritic' and not(exists(@rend))]">
     <div class="body-textcritic">
         <xsl:apply-templates select="tei:app[@type = 'fragment']"/>
-        <xsl:apply-templates select="tei:note[@type = 'textual-commentary']"/>
         <xsl:for-each select="tei:app[@type = 'text']">
             <xsl:apply-templates select="."/>
             <xsl:if test="position() != last()"><xsl:text> || </xsl:text></xsl:if>
         </xsl:for-each>
+        <xsl:apply-templates select="tei:note[@type = 'textual-commentary']"/>
     </div>
 </xsl:template>
     
@@ -234,7 +234,9 @@ version="2.0">
     <b>
     <xsl:apply-templates select="tei:lem"/>
     </b>
-    <xsl:text> </xsl:text>
+    <xsl:if test="exists(tei:lem/@wit)">
+        <xsl:text> </xsl:text>
+    </xsl:if>
     <xsl:for-each select="tokenize(tei:lem/@wit,' ')">
         <i><xsl:value-of select="substring-after(.,'#')"/></i>
         <xsl:if test="position() != last()"><xsl:text> </xsl:text></xsl:if>
@@ -251,6 +253,10 @@ version="2.0">
                 <xsl:text> </xsl:text>
             </xsl:if>
         </xsl:for-each>
+        <xsl:if test="exists(./child::tei:note[@type = 'in-readings'])">
+            <xsl:text> </xsl:text>
+            <xsl:value-of select="./tei:note[@type = 'in-readings']/text()"/>
+        </xsl:if>
         <xsl:if test="$outer-loop != $number-of-readings"><xsl:text> | </xsl:text></xsl:if>
     </xsl:for-each>
 </xsl:template>
@@ -260,11 +266,23 @@ version="2.0">
 </xsl:template>
     
 <xsl:template match="tei:foreign[@xml:lang = 'grc']">
-    <xsl:value-of select="./text()"/>
+    <xsl:apply-templates select="child::node()"/>
 </xsl:template>
 
 <xsl:template match="tei:note[@type = 'textual-commentary']">
-    <p><xsl:apply-templates select="child::node()"/></p>
+    <p style="margin-top: 10pt;"><xsl:apply-templates select="child::node()"/></p>
+</xsl:template>
+
+<xsl:template match="tei:hi[@rend = 'italic']">
+    <span style="font-style: italic;">
+        <xsl:apply-templates select="child::node()"/>
+    </span>
+</xsl:template>
+    
+<xsl:template match="tei:hi[@rend = 'sup']">
+    <sup>
+        <xsl:value-of select="text()"/>
+    </sup>
 </xsl:template>
 
 </xsl:stylesheet>
