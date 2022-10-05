@@ -10044,7 +10044,7 @@
                   <!-- πάρα τισι V4 : παρά τισι A2 = V1-->
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #P1 #M #O #B1 #B2 #P5 #A2 #V4 #V5 #P7 #L2 #A3">txt</rdg>
+                        <rdg wit="#V1 #C #P1 #M #O #B1 #B2 #P5 #A2 #V4 #V5 #P7 #L2">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Paris. Coislin 10</wit>
                         <wit>Paris. gr. 166-167</wit>
@@ -10126,6 +10126,11 @@
                         <wit>Paris. gr. 146</wit>
                         <!-- L2 A3?: αὐτῶν = V1 -->
                      </app>
+                     <note type="textual-commentary"><p>A3: die Exp. wurde ausgelassen.
+                           Möglicherweise stand diese in der Vorlage für sich alleine oberhalb des
+                           Bibeltextes (wie in L2). Diese Stellung könnte das Versehen induziert
+                           haben.</p></note>
+                     <!-- A3: der betreffende Vers ist kommentiert auf f. 13v (Buchstabe D), aber der Bibeltext ist auf f. 14r. Wenn diese exp. in den Fluss des Kommentars hätte übernehmen werden sollen, dann auf f. 13v (sie die Position in L2) -->
                   </div>
                </div>
                <div xml:lang="de" type="translation">
@@ -11042,6 +11047,7 @@
                         <wit>Paris. gr. 146</wit>
                         <wit>Flor. Med. Laurent. Plut. 6. 3</wit>
                         <wit>Mediolan. Ambros. C 98 sup.</wit>
+                        <!-- A3: f. 14v, unten -->
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">Εὔχεται</foreign></lem>
@@ -11123,13 +11129,14 @@
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">ἐπὶ τιμωρίᾳ</foreign></lem>
-                        <rdg wit="#V4 #V5 #P7 #L2 #A3"><foreign xml:lang="grc">ἐπὶ τῇ
-                              μωρίᾳ</foreign></rdg>
+                        <rdg wit="#V4 #V5 #P7 #L2"><foreign xml:lang="grc">ἐπὶ τῇ
+                           μωρίᾳ</foreign></rdg>
                         <wit>Vat. gr. 1747</wit>
                         <!-- ἐπιτιμωρία A2 = V1 -->
                         <wit>Vat. gr. 1422</wit>
                         <wit>Paris. gr. 146</wit>
                         <wit>Flor. Med. Laurent. Plut. 6. 3</wit>
+                        <rdg wit="#A3"><foreign xml:lang="">ἐπιτιμωρία</foreign> (ut vid.)</rdg>
                         <wit>Mediolan. Ambros. C 98 sup.</wit>
                      </app>
                      <app type="text">
@@ -11178,10 +11185,8 @@
                         ἀλλὰ καὶ τοὺς πόνους τῶν ἀνθρώπων· καὶ τοὺς θυμοὺς καὶ τοὺς παροργισμοὺς
                         οἶδας ἀκριβῶς, ἐπειδὴ πάντων τοὺς λογισμοὺς κατανοεῖς, καὶ σὺ εἶ ὁ ἐτάζων
                         καρδίας καὶ νεφρούς· καὶ ταῦτα πάντα ἐφορῶν μακροθυμεῖς, εἰδὼς ὅτι ὑπὸ τὰς
-                        σὰς χεῖρας οἱ πάντες τυγχάνουσι· καὶ οὐκ ἔστιν ποῦ οὐδενὶ ἐκτὸς διαδρᾶναι:
-                        –</p>
-                     <!-- ὁ ἑτάζων V5 : ὁ ἐτάζων P7 = V1 -->
-                     <!-- ἀνιώντων P6 N2 : ἀνιόντων Z = V1 -->
+                        σὰς χεῖρας οἱ πάντες τυγχάνουσι· καὶ οὐκ ἔστιν ποῦ οὐδενὶ ἐκτὸς διαδρᾶναι: – <!-- ὁ ἑτάζων V5 : ὁ ἐτάζων P7 = V1 -->
+                        <!-- ἀνιώντων P6 N2 : ἀνιόντων Z = V1 --></p>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
@@ -11212,16 +11217,17 @@
                      <app type="text">
                         <lem><foreign xml:lang="grc">Σὺ φησὶν ὦ κύριε πάντα
                            γινώσκεις</foreign></lem>
-                        <rdg wit="#A2 #V4"><foreign xml:lang="grc">Σὺ κύριε φησὶν πάντα
+                        <rdg wit="#A2 #V4 #A3"><foreign xml:lang="grc">Σὺ κύριε φησὶ(ν) πάντα
                               γινώσκεις</foreign></rdg>
+                        <!-- A3: φη(σὶ) -->
                         <wit>Mediolan. Ambros. B 106 sup.</wit>
                         <wit>Vat. gr. 1747</wit>
-                        <rdg wit="#V5 #P7 #L2 #A3"><foreign xml:lang="grc">Σὺ κύριε πάντα φησὶ
+                        <wit>Mediolan. Ambros. C 98 sup.</wit>
+                        <rdg wit="#V5 #P7 #L2"><foreign xml:lang="grc">Σὺ κύριε πάντα φησὶ
                               γινώσκεις</foreign></rdg>
                         <wit>Vat. gr. 1422</wit>
                         <wit>Paris. gr. 146</wit>
                         <wit>Flor. Med. Laurent. Plut. 6. 3</wit>
-                        <wit>Mediolan. Ambros. C 98 sup.</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">λογισμοῖς</foreign></lem>
@@ -11350,17 +11356,20 @@
                         <wit>Paris. gr. 146</wit>
                         <wit>Flor. Med. Laurent. Plut. 6. 3</wit>
                         <wit>Mediolan. Ambros. C 98 sup.</wit>
+                        <!-- A3: f. 15r, oben unten -->
                      </app>
                      <app type="text">
-                        <lem><foreign xml:lang="grc">Τουτέστιν</foreign></lem>
+                        <lem><foreign xml:lang="grc">Τουτέστιν – βοήθειαν</foreign></lem>
                         <rdg wit="#V5 #P7 #L2 #A3"><foreign xml:lang="grc">Εἰς τὴν σὴν βοήθειαν
-                              ἐφορᾷ·</foreign> ante <foreign xml:lang="grc"> τουτέστιν</foreign>
-                           add.</rdg>
+                              ἐφορᾶ· (ἐφορῶ A3) τουτέστι τὴν παρὰ σοῦ μένει (μέν A3* | μενῶ A3c)
+                              βοήθειαν: –</foreign></rdg>
+                        <!-- A3: μενῶ Korrektur in scribendo -->
                         <wit>Vat. gr. 1422</wit>
                         <wit>Paris. gr. 146</wit>
                         <wit>Flor. Med. Laurent. Plut. 6. 3</wit>
                         <wit>Mediolan. Ambros. C 98 sup.</wit>
                      </app>
+                     <!-- nach oben zu ziehen! -->
                      <app type="text">
                         <lem><foreign xml:lang="grc">παρὰ σοῦ περιμένειν</foreign></lem>
                         <rdg wit="#P1a"><foreign xml:lang="grc">παρὰ σοὶ περιμένειν</foreign></rdg>
@@ -11465,6 +11474,7 @@
                         <wit>Paris. gr. 146</wit>
                         <wit>Flor. Med. Laurent. Plut. 6. 3</wit>
                         <wit>Mediolan. Ambros. C 98 sup.</wit>
+                        <!-- A3: f. 15r, unten oben -->
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">Δι’ αὐτὴν – οὕτως</foreign></lem>
@@ -11477,6 +11487,8 @@
                               εὑρεθῆ·</foreign></rdg>
                         <wit>Vat. gr. 1422</wit>
                         <wit>Paris. gr. 146</wit>
+                        <wit>Flor. Med. Laurent. Plut. 6. 3</wit>
+                        <wit>Mediolan. Ambros. C 98 sup.</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">Δι’ αὐτὴν</foreign></lem>
@@ -11489,16 +11501,21 @@
                         <lem><foreign xml:lang="grc">ἐκζητήσει</foreign></lem>
                         <rdg wit="#C"><foreign xml:lang="grc">ἐκζητήση</foreign></rdg>
                         <wit>Paris. Coislin 10</wit>
-                        <rdg wit="#B1"><foreign xml:lang="grc">ἐκζητήσεις </foreign></rdg>
+                        <rdg wit="#B1"><foreign xml:lang="grc">ἐκζητήσεις</foreign></rdg>
                         <wit>Oxon. Bodl. Auct. D. 4. 1.</wit>
-                        <rdg wit="#A1 #P5 #Z #N2 #V5 #P7"><foreign xml:lang="grc">ἐκζητήσης
+                        <rdg wit="#A1 #P5 #Z #N2 #V5 #P7 #L2"><foreign xml:lang="grc">ἐκζητήσης
                            </foreign></rdg>
                         <wit>Mediolan. Ambros. M 47 sup.</wit>
                         <wit>Paris. Coislin 12</wit>
                         <wit>Venet. Marc. gr. Z. 17</wit>
                         <wit>Athen. B.N. 45</wit>
                         <wit>Vat. gr. 1422</wit>
+                        <!-- V5: f. 40r -->
                         <wit>Paris. gr. 146</wit>
+                        <wit>Flor. Med. Laurent. Plut. 6. 3</wit>
+                        <rdg wit="#A3"><foreign xml:lang="grc">ἐκζητ<hi rend="sup"
+                           >ή</hi></foreign></rdg>
+                        <wit>Mediolan. Ambros. C 98 sup.</wit>
                         <rdg wit="#P6"><foreign xml:lang="grc">ἐκζητήσις</foreign></rdg>
                         <wit>Paris. gr. 139</wit>
                      </app>
@@ -11543,6 +11560,7 @@
                         <wit>Paris. gr. 146</wit>
                         <wit>Flor. Med. Laurent. Plut. 6. 3</wit>
                         <wit>Mediolan. Ambros. C 98 sup.</wit>
+                        <!-- A3: f. 15v, Mitte Mitte -->
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">καὶ νέῳ αἰῶνι</foreign></lem>
