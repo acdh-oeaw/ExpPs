@@ -224,7 +224,17 @@ version="2.0">
     <p>
         <xsl:text>– </xsl:text>
         <xsl:for-each select="tokenize(tei:rdg/@wit,' ')">
-            <i><xsl:value-of select="substring-after(.,'#')"/></i>
+            <i>
+                <xsl:analyze-string select="substring-after(.,'#')" regex="(V1|C|P1|G|O|M|B1|P2|B2|N1|P3|A1|P4|P5|P6|P7|P8|L1|Z|V2|V3|V4|V5|A2|A3|N2|L2)(.*)">
+                    <xsl:matching-substring>
+                        <xsl:value-of select="regex-group(1)"/>
+                        <sup>
+                            <xsl:value-of select="regex-group(2)"/>
+                        </sup>
+                    </xsl:matching-substring>
+                </xsl:analyze-string>
+                <!-- <xsl:value-of select="substring-after(.,'#')"/> -->
+            </i>
             <xsl:if test="position() != last()"><xsl:text> </xsl:text></xsl:if>
         </xsl:for-each>
     </p>
@@ -238,7 +248,16 @@ version="2.0">
         <xsl:text> </xsl:text>
     </xsl:if>
     <xsl:for-each select="tokenize(tei:lem/@wit,' ')">
-        <i><xsl:value-of select="substring-after(.,'#')"/></i>
+        <i>
+            <xsl:analyze-string select="substring-after(.,'#')" regex="(V1|C|P1|G|O|M|B1|P2|B2|N1|P3|A1|P4|P5|P6|P7|P8|L1|Z|V2|V3|V4|V5|A2|A3|N2|L2)(.*)">
+                <xsl:matching-substring>
+                    <xsl:value-of select="regex-group(1)"/>
+                    <sup>
+                        <xsl:value-of select="regex-group(2)"/>
+                    </sup>
+                </xsl:matching-substring>
+            </xsl:analyze-string>
+        </i>
         <xsl:if test="position() != last()"><xsl:text> </xsl:text></xsl:if>
     </xsl:for-each>
     <xsl:text>] </xsl:text>
@@ -248,7 +267,16 @@ version="2.0">
         <xsl:apply-templates select="tei:foreign | text()"/>
         <xsl:text> </xsl:text>
         <xsl:for-each select="tokenize(./@wit,' ')">
-            <i><xsl:value-of select="substring-after(.,'#')"/></i>
+            <i>
+                <xsl:analyze-string select="substring-after(.,'#')" regex="(V1|C|P1|G|O|M|B1|P2|B2|N1|P3|A1|P4|P5|P6|P7|P8|L1|Z|V2|V3|V4|V5|A2|A3|N2|L2)(.*)">
+                    <xsl:matching-substring>
+                        <xsl:value-of select="regex-group(1)"/>
+                        <sup>
+                            <xsl:value-of select="regex-group(2)"/>
+                        </sup>
+                    </xsl:matching-substring>
+                </xsl:analyze-string>
+            </i>
             <xsl:if test="position() != last()">
                 <xsl:text> </xsl:text>
             </xsl:if>
