@@ -11,6 +11,8 @@
     <title>Expositiones in Psalmos</title>
     <link rel="stylesheet" id="fundament-styles"  href="./fundament/css/fundament.min.css" type="text/css"/>
 	<link rel="stylesheet" href="./fundament/css/custom.css" type="text/css"/>
+	<script type="text/javascript" src="./fundament/js/search.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 	<link rel="icon" type="image/png" href="./favicon.png"/>
   </head>
   <body class="home">
@@ -75,38 +77,10 @@
                     <h1 class="entry-title">Search</h1>
                   </header><!-- .entry-header -->
                   <div class="entry-content" style="background-color: white;">
-                    <form style="padding: 20pt;">
+                    <form style="padding: 20pt;" id="search-form">
 						<div class="form-group row">
 							<div class="col">
-								<select class="form-control" id="name-of-manuscript-select">
-									<option>Vat. gr. 754</option>
-									<option>Paris. Coislin 10</option>
-									<option>Paris. gr. 166-167</option>
-									<option>Genuensis Urbanus 3</option>
-									<option>Vat. Ottob. gr. 398</option>
-									<option>Mosq. Synod. 194</option>
-									<option>Oxon. Bodl. Auct. D. 4. 1.</option>
-									<option>Paris. Coislin 187</option>
-									<option>Oxon. Coll. S. Trin. 78</option>
-									<option>Athen. B.N. 8</option>
-									<option>Paris. gr. 164</option>
-									<option>Mediolan. Ambros. M. 47 sup.</option>
-									<option>Paris. gr. 165</option>
-									<option>Flor. Med. Laurent. Plut. 5. 30</option>
-									<option>Paris. Coislin. 12</option>
-									<option>Paris. gr. 139</option>
-									<option>Venet. Marc. gr. Z. 17</option>
-									<option>Athen. B.N. 45</option>
-									<option>Vat. gr. 1677-1678</option>
-									<option>Vat. gr. 1682-1683</option>
-									<option>Mediolan. Ambros. B. 106 sup.</option>
-									<option>Vat. gr. 1747</option>
-									<option>Vat. gr. 1422</option>
-									<option>Paris. gr. 146</option>
-									<option>Paris. Suppl. gr. 1157</option>
-									<option>Flor. Med. Laurent. Plut. 6. 3</option>
-									<option>Mediolan. Ambros. C 98 sup.</option>
-								</select>
+								<select class="form-control" id="name-of-manuscript-select"></select>
 							</div>
 							<div class="col">
 							<div class="form-check" style="padding-left: 50pt;">
@@ -128,8 +102,8 @@
 							</div>
 							<div class="col form-group">
 							<div>
-								<label for="input-author" style="padding-top: 2pt;">Author</label>
-								<input type="text" class="form-control" placeholder="Author" id="input-author"/>
+								<label for="input-attribution" style="padding-top: 2pt;">Attribution</label>
+								<input type="text" class="form-control" placeholder="Attribution" id="input-attribution"/>
 								<label for="input-author-critical" style="padding-top: 4pt;">Author Critical</label>
 								<input type="text" class="form-control" placeholder="Author Critical" id="input-author-critical"/>
 								<label for="psalmverse" style="padding-top: 4pt;">Psalmverse</label>
@@ -138,12 +112,14 @@
 							<div class="row" style="padding-top: 30pt;">
 								<div class="col-8"></div>
 								<div class="col-4">
-									<button type="button" class="btn btn-outline-warning">Submit</button>
+									<button type="button" class="btn btn-outline-warning" id="search-submit">Submit</button>
 								</div>
 							</div>
 							</div>
 						</div>
 					</form>
+					<div id="search-result-messages"></div>
+					<div id="search-result-content"/></div>
                   </div><!-- .entry-content -->
                 </article>
               </main><!-- #main -->
