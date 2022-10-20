@@ -52,7 +52,7 @@
     
     <xsl:template match="tei:supplied">
       <xsl:text>〈</xsl:text>
-      <xsl:value-of select="text()"/>
+      <xsl:apply-templates select="child::node()"/>
       <xsl:text>〉</xsl:text>
     </xsl:template>
     
