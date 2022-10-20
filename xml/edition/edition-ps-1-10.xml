@@ -2,22 +2,15 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!-- Beispiel für textuellen Kommentar und für exegetischen Kommentar
-               <note type="textual-commentary">
-                  <p>Dieses Fragment findet sich nur in Ambr. M. 47 sup, und kann deshalb nicht mit Sicherheit ...</p>
-               </note>
-               <note type="exegetical-commentary">
-                  <p>Dieses Fragment geht auf Origenes zurück.</p>   
-               </note> -->
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
-      <!-- Struktur von Ps 1 = Synopse; die weiteren Psalmen sind zu überprüfen -->
+      <!-- Struktur von Ps 1–2 = Synopse; die weiteren Psalmen sind zu überprüfen -->
       <!-- Typus III, XV, XVI: jeder Leithandschrift wurden schnell gelesen, bei den Schwesternhandschriften nur incipit und explicit jedes Fragments -->
-      <!-- typus IV: M: der gesamte Inhalt wurde schnell gelesen. O: nur die fr. um den Bibeltext wurden gelesen -->
+      <!-- Typus IV: M: der gesamte Inhalt wurde schnell gelesen. O: nur die fr. um den Bibeltext wurden gelesen -->
       <!-- Typus XIV (MGoiana): A2 V4: Ps 3–6, 9–10 überprüft. V4: Ps 1-2 auf übersehene Fragmente zu durchsuchen -->
       <!-- Ps 8-10: B2 und B1 wechseln die Stellung -->
-      <!-- P1: Verknüpfung zum Bibeltext nicht überprüft -->
-      <!-- M B1 B2 L1 A1 Typus III: Verknüpfung zum Bibeltext überprüft -->
+      <!-- Philogischer Kommentar: ab Ps 2 muss noch systematisiert werden anhand der "List of contents" -->
+      <!-- Suchbegriffe: exp X; parallele Darstellung; Trennungslinie -->
       <fileDesc>
          <titleStmt>
             <title>(Ps.)-Athanasius, Expositiones in Psalmos</title>
@@ -32,7 +25,7 @@
                <witness xml:id="V1">Vat. gr. 754</witness>
                <witness xml:id="C">Paris. Coislin 10</witness>
                <witness xml:id="P1">Paris. gr. 166-167</witness>
-               <witness xml:id="G">Genuensis Urbanus 3</witness>
+               <witness xml:id="G">Genuensis Bibl. Franzon. Urban. 3</witness>
                <witness xml:id="O">Vat. Ottob. gr. 398</witness>
                <witness xml:id="M">Mosq. Synod. 194</witness>
                <witness xml:id="B1">Oxon. Bodl. Auct. D. 4. 1.</witness>
@@ -68,6 +61,8 @@
    <!-- typus XIV: A2(erledigt) V4(erledigt; durch Goiana) -->
    <!-- typus XV: V5(erledigt) P7(Expositiones nur anhand der Leithandschrift gesucht) P8(lost) -->
    <!-- typus XVI: L2(erledigt) A3(lost/kein Athanasius) -->
+   <!-- P1: Verknüpfung der Expositiones zum Bibeltext nicht analysiert -->
+   <!-- M B1 B2 L1 A1 Typus III: Verknüpfung der Expositiones zum Bibeltext analysiert -->
    <text>
       <body>
          <div n="1" type="psalm">
@@ -192,17 +187,18 @@
                            graphisch akzentuierte Zäsur: Der Anfangsbuchstabe von Τρία ist Majuskel
                            und gefärbt. Damit wird der Eindruck erweckt, dass mit Τρία – λοιμοί
                            nicht die Hypothesis endet, sondern mit der ersten Erklärung begonnen
-                           wird, nähmlich von Ps 1,1. Der Hypothesis in B2 fehlt diese
-                           historisierende Allegorese. V5 P7 L2 A3: Die Exp. stammt aus
-                           selbständiger Tradition: Weder Typus III noch Typus XIV beinhalten sie,
-                           so dass in diesem Fall eine Abhängigkeit ausgeschlossen werden kann.
-                           Außerdem besitzt sie Varianten, die mit keinem anderen Zeuge geteilt
-                           werden. Bemerkenswert ist auch Ihre Stellung: Sie geht nicht als
-                           Hypothesis den exegetischen Fragmenten voraus, sondern sie wird
-                           nachgestellt. Unmittelbar vor ihr stehen Exp. 2 (Dubium in Ps 1,1a) und
-                           eine abweichenden Fassung von Exp. 3 (Dubium in Ps 1,1c). Auch dieses
-                           letzte Fragment ist falsch am Platz, so dass V5 eine ad hoc Verlinkung
-                           mit Ps 1,1c herstellt.</p></note>
+                           wird, nähmlich von Ps 1,1. Es ist eben diese historisierende Allegorese,
+                           die in der Hypothesis von B2 fehlt. V5 P7 L2 A3: Exp. 1 muss aus
+                           selbständiger Tradition stammen: Weder Typus III noch Typus XIV
+                           beinhalten sie, so dass in diesem Fall ein Abhängigkeitsverhältnis zu
+                           diesen Katenen ausgeschlossen werden kann. Außerdem besitzt sie
+                           Varianten, die mit keinem anderen Zeuge geteilt werden. Bemerkenswert ist
+                           auch ihre Stellung: Als Hypothesis geht sie nicht den exegetischen
+                           Fragmenten voraus, sondern sie befindet sich inmitten von diesen.
+                           Unmittelbar vor ihr stehen Exp. 2 (Dubium in Ps 1,1a) und eine
+                           abweichende Fassung von Exp. 3 (Dubium in Ps 1,1c). Auch dieses letzte
+                           Fragment ist falsch am Platz, so dass V5 eine ad hoc Verlinkung mit Ps
+                           1,1c herstellt.</p></note>
                      <!-- <note type="textual-commentary">
                         <p>B2 ist nur mehr schwer leserlich: Τὴν ἀρχὴν τῆς προφητείας τῶι ἐξ [αὐτοῦ]
                            τεχθησο[μένω] [ἀνατίθησιν?] [ὁ] Δαυῒδ διὸ ἐν [π]ρώτ[ο]ις μακαρίζει τοὺς
@@ -279,26 +275,25 @@
                      </app>
                      <note type="textual-commentary"><p>P6 Z: Im Bezug auf Ps 1 werden lediglich
                            zwei Erklärungen aus "Athanasius" herangezogen, nähmlich Exp. 3 und Exp.
-                           6#. Trotz der großen Sorgfalt dieser Handschriften im Hinblick auf
+                           6. Trotz der großen Sorgfalt dieser Handschriften im Hinblick auf
                            Autorennamen kann in diesem Fall eine fehlerhafte Zuweisung vorliegen.
                            Denn im Codex Oxon. Bodl. Barocc. 235 (s. IX<hi rend="sup">ex.</hi>; f.
                            14r) der Catena Palestinensis wird "Asterius der Arianer" als Autor
                            dieser Erklärung angeführt (= Asterius, fr. 2 in Ps 1,1 [249 Richard]).
                            Ein ähnliches Fragment – eine verkürzende Paraphrase? – wird auch in V5
                            P7 Asterius zugeschrieben (jeweils auf f. 25v). Möglicherweise in einer
-                           Vorlage von P6 Z ging Exp. 2 voraus, so dass der Name "Athanasius" jenen
-                           des "Asterius" beseitigen konnte (siehe Kommentar zur Exp. 1). Etwas
-                           ungeschickt wirkt die Nebeneinanderstellung von δηλοῖ (i.e. David?) und
-                           ὡς φησὶν (i.e. Iesus?), was auf eine Bearbeitung hindeuten kann. Der Text
-                           der Exp. 2 bei Montfaucon weicht von der Textlage von P6 und Paris. gr.
-                           148 (f. 4r) ab: Möglicherweise hatte er eine andere Vorlage zur
-                           Verfügung. L1: Athanasius wird eine Erklärung zugeschrieben, welche aus
-                           zwei Glossen besteht: Τὴν τῶν κακῶν ἐργασίαν κατὰ διάδοσιν γινομένην /
-                           ἀκαθάρτων κακῶν (in Ps 1,1c). Die erste fokusiert den Begriff ἐπὶ
-                           καθέδραν (≅ Analecta sacra II 445,24–25); die zweite glossiert λοιμῶν.
-                           Beide finden sich fast identisch aber getrennt in V1, nähmlich innerhalb
-                           der für die Glossen und hexaplarische Varianten vorgesehenen Kolumne (f.
-                           37r).</p></note>
+                           Vorstufe von P6 Z ging Exp. 2 voraus, so dass der Name "Athanasius" jenen
+                           des "Asterius" beseitigen konnte (siehe zu Exp. 1). Etwas ungeschickt
+                           wirkt die Nebeneinanderstellung von δηλοῖ (i.e. David?) und ὡς φησὶν
+                           (i.e. Iesus?), was auf eine Bearbeitung hindeuten kann. Exp. 2 bei
+                           Montfaucon weist ein Paar Varianten vor, die in P6 und Paris. gr. 148 (f.
+                           4r) nicht zu finden sind. L1: Athanasius wird eine Erklärung
+                           zugeschrieben, welche aus zwei Glossen besteht: Τὴν τῶν κακῶν ἐργασίαν
+                           κατὰ διάδοσιν γινομένην / ἀκαθάρτων κακῶν (in Ps 1,1c). Die erste
+                           fokusiert den Begriff ἐπὶ καθέδραν (≅ Analecta sacra II 445,24–25); die
+                           zweite glossiert λοιμῶν. Beide finden sich fast identisch aber getrennt
+                           in V1, nähmlich innerhalb der für die Glossen und hexaplarische Varianten
+                           vorgesehenen Kolumne (f. 37r).</p></note>
                   </div>
                </div>
                <div xml:lang="de" type="translation">
@@ -308,16 +303,16 @@
                      Zusammenkunft, das Zusammentreffen zu nennen. Und weil zu den Versammlungen der
                      Gottlosen dazuzustoßen schädlich ist, preist er selig jenen, der nicht im
                      Geringsten an denselben Ort wie diese geht. Ein solcher war Josef von Arimatäa,
-                     derjenige, der den Leib des Herrn und Gottes begraben hatte. (cf. Mt
-                     27,57–60parr.) Denn über ihn wurde gesagt, dass er dem Rat der Verräter Jesus
-                     nicht mitzustimmen wollte. (Lc 23,51)</p>
+                     derjenige, der den Leib des Herrn und Gottes begraben hatte. [cf. Mt
+                     27,57–60parr.] Denn über ihn wurde gesagt, dass er dem Rat der Verräter Jesus
+                     nicht mitzustimmen wollte. [cf. Lc 23,51]</p>
                   <quote corresp="#edition-ps-1-1b" type="psalmtext" n="1b">und auf den Weg der
                      Sünder nicht trat</quote>
                   <quote corresp="#edition-ps-1-1c" type="psalmtext" n="1c">und auf den Stuhl der
                      Verseuchten sich nicht setzte,</quote>
                   <p corresp="#edition-1-1-1c" n="3"> Durch "Stuhl" deutet er auf die Lehre, auf die
                      gleiche Weise wie er sagt "auf den Lehrstuhl des Moses". Der Stuhl der
-                     Verseuchten ist also die Lehre der Gesetzwidrigen. (cf. Mt 23,2)</p>
+                     Verseuchten ist also die Lehre der Gesetzwidrigen. [cf. Mt 23,2]</p>
                </div>
             </div>
             <div n="1.2" type="psalmverse">
@@ -349,8 +344,8 @@
                      </app>
                      <!-- <note type="textual-commentary"><p>V4 (f. 1r) scheint eine modifizierte Fassung
                            der Exp. 4# zu besitzen: Ν[ό]μῳ, τουτέστι τῷ εὐαγγελι[κῷ: –].</p></note> -->
-                     <note type="textual-commentary">M O: Exp. in Gestalt einer Glosse zwischen den
-                        Stichoi des Psalmtextes.</note>
+                     <note type="textual-commentary">M O: Exp. 4 liegt zwischen den
+                        Psalmzeilen.</note>
                   </div>
                   <div type="psalmtext">
                      <quote xml:id="edition-ps-1-2b" type="psalmtext" n="2b">καὶ ἐν τῷ νόμῳ αὐτοῦ
@@ -394,10 +389,9 @@
                         <rdg wit="#A1"><foreign xml:lang="grc">τὸν νόμον τοῦ θεοῦ</foreign></rdg>
                         <wit>Mediolan. Ambros. M. 47 sup.</wit>
                      </app>
-                     <note type="textual-commentary">M O: Exp. in Gestalt einer glossierenden
-                        Bemerkung zwischen den Stichoi des Psalmtextes. V5: Die Exp., die sich in
-                        der lemmatischen Einheit zu Ps 1,2 befindet, wird mittels Obelos mit Ps 1,2b
-                        verlinkt.</note>
+                     <note type="textual-commentary">M O: Exp. 5 liegt zwischen den Psalmzeilen. V5:
+                        Innerhalb der Gruppe der Fragmente zu Ps 1,2 wird Exp. 5 präziser mit Ps
+                        1,2b verlinkt (mittels Obelos).</note>
                      <!-- <note type="textual-commentary">
                         <p>B2 ist nur mehr schwer leserlich.</p>
                      </note> -->
@@ -537,8 +531,7 @@
                      <app type="text">
                         <lem><foreign xml:lang="grc">σύμμορφον</foreign></lem>
                         <rdg wit="#V1 #P1"><foreign xml:lang="grc">πρὸς τὸ γενέσθαι</foreign> (cf.
-                           Phil 3,21var.) ante<foreign xml:lang="grc"> σύμμορφον</foreign>
-                           add.</rdg>
+                           Phil 3,21var) ante<foreign xml:lang="grc"> σύμμορφον</foreign> add.</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Paris. gr. 166-167</wit>
                      </app>
@@ -586,17 +579,17 @@
                         <wit>Vat. Ottob. gr. 398</wit>
                      </app>
                      <note type="textual-commentary">
-                        <p><!-- B2 ist nur mehr sehr schwer leserlich. -->A1 P6 Z: In beiden Katenen
-                           wird einleitend behauptet, dass die im Psalmtext verwendeten Bilder durch
-                           ein Gleichnis auszulegen sind. Bei P6 Z muss eine Textkorruption
-                           vorliegen (ἐξομολογήσεως aus ἐξ ὁμοιώσεως). Die Exp. liegt in A1 in Form
-                           einer abgekürzten Paraphrase vor; die Auslegung von "Holz", "Baum" als
-                           ein im alten Testament zu findendes Bild für Christus wurde zur Gänze
-                           ausgelassen. P1: Ein ausgedehnter leere Raum ist vor διεξόδους δὲ ὑδάτων;
-                           dadurch wird signalisiert, dass die Fortsetzung der Exegese sich nur mit
-                           dem zweiten Teil des Stichos befasst. M O: Die Exp. ist zweiteilig: Der
-                           erste Teil wird eingeleitet durch das Halblemma καὶ ἔσται ὡς τὸ ξύλον;
-                           der zweite Teil durch παρὰ τὰς διεξόδους.</p>
+                        <p><!-- B2 ist nur mehr sehr schwer leserlich. -->A1 P6 Z: In beiden
+                           Fassungen von Exp. 6 wird einleitend behauptet, dass die im Psalmtext
+                           verwendeten Bilder durch ein Gleichnis auszulegen sind. Bei P6 Z muss
+                           eine Textkorruption vorliegen (ἐξομολογήσεως aus ἐξ ὁμοιώσεως). Die Exp.
+                           liegt in A1 in Form einer abgekürzten Paraphrase vor; die Auslegung von
+                           "Holz", "Baum" als ein im alten Testament zu findendes Bild für Christus
+                           wurde zur Gänze ausgelassen. P1: Ein ausgedehnter leere Raum ist vor
+                           διεξόδους δὲ ὑδάτων; dadurch wird signalisiert, dass die Fortsetzung der
+                           Exegese sich nur mit dem zweiten Halbvers befasst. M O: Die Exp. ist
+                           zweiteilig: Der erste Teil wird eingeleitet durch das Halblemma καὶ ἔσται
+                           ὡς τὸ ξύλον; der zweite Teil durch παρὰ τὰς διεξόδους.</p>
                      </note>
                   </div>
                   <div type="psalmtext">
@@ -659,21 +652,21 @@
                         <wit>Flor. Med. Laurent. Plut. 5. 30</wit>
                         <!-- Rom 8,28: γὰρ wurde hineingefügt -->
                      </app>
-                     <note type="textual-commentary"><p>M O: Exp. in Gestalt einer glossierenden
-                           Bemerkung zwischen den Stichoi des Psalmtextes. L1: In Abweichung vom
-                           Rest der Überlieferung ist die Exp. zweiteilig: Καρπὸν – πίστιν folgt
-                           nach Ps 1,3b; Φύλλα – ἐντολῶν nach Ps 1,3c. Der zweite Teil ist durch
-                           zwei Zusätze erweitert. Erstens durch eine Glosse, die aus einer
-                           hexaplarischen Variante gewonnen wurde (Aquila). Diese findet sich auch
-                           in anderen Handschriften wie V1 (f. 37v), B2 (f. 5v). Ob es sich um eine
-                           Glosse oder hexaplarische Variante handelt war der Schreiber von V1
-                           möglicherweise unsicher: Die erste Buchstaben zeichnet er als Majuskeln
-                           (wie für hexaplarische Varianten vorgesehen); die folgenden als Minuskeln
-                           (wie für Glossen vorgesehen). Der zweite fremde Körper in der Exp. von L1
-                           ist eine Auslegung von Ps 1,3, die durch ein Bibelzitat untermauert wird.
-                           Dieses Bielzitat findet sich auch in V5 (f. 26r) in Form einer Marginalie
-                           neben Ps 1,3d–4a. L2: Exp. in Gestalt einer glossierenden Bemerkung
-                           zwischen den Bibelversen (mit Zuweisung an Athanasius).</p></note>
+                     <note type="textual-commentary"><p>M O: Exp. 7 ist zwischen den Psalmzeilen zu
+                           finden. L1: In Abweichung von der restlichen Überlieferung ist Exp. 7
+                           zweiteilig: Καρπὸν – πίστιν folgt nach Ps 1,3b; Φύλλα – ἐντολῶν nach Ps
+                           1,3c. Der zweite Teil ist durch zwei Zusätze erweitert. Erstens durch
+                           eine Glosse, die aus einer hexaplarischen Variante gewonnen wurde
+                           (Aquila). Diese findet sich auch in anderen Handschriften wie V1 (f.
+                           37v), B2 (f. 5v). Ob es sich um eine Glosse oder hexaplarische Variante
+                           handelt, war der Schreiber von V1 möglicherweise unsicher: Die erste
+                           Buchstaben zeichnet er als Majuskeln (wie für hexaplarische Varianten
+                           vorgesehen); die folgenden als Minuskeln (wie für Glossen vorgesehen).
+                           Der zweite fremde Körper in der Exp. von L1 ist eine Auslegung von Ps
+                           1,3, die durch ein Bibelzitat untermauert wird. Dieses Bielzitat findet
+                           sich auch in V5 (f. 26r) in Form einer Marginalie neben Ps 1,3d–4a. L2:
+                           Exp. 7 ist zwischen den Psalmversen zu finden (mit Zuweisung an
+                           Athanasius).</p></note>
                   </div>
                   <div type="psalmtext">
                      <quote xml:id="edition-ps-1-3d" type="psalmtext" n="3d">καὶ πάντα, ὅσα ἂν ποιῇ,
@@ -712,8 +705,8 @@
                         <rdg wit="#N1">om.</rdg>
                         <wit>Athen. B.N. 8</wit>
                      </app> -->
-                     <note type="textual-commentary"><p>V5 P7: V5 verlinkt mit Ps 1,4. P7 begeht
-                           diesen Fehler nicht.</p></note>
+                     <note type="textual-commentary"><p>V5 P7: V5 verlinkt Exp. 8 mit Ps 1,4. P7
+                           begeht diesen Fehler nicht.</p></note>
                   </div>
                </div>
                <div xml:lang="de" type="translation">
@@ -721,11 +714,11 @@
                      sein, der an den Wasserbächen gepflanzt ist,</quote>
                   <p corresp="#edition-1-3-1" n="4">Als ein Baum ist Christus in der von Gott
                      inspirierten Schrift aufgeschrieben, gemäß der Aussage: "Ein Baum des Lebens
-                     ist sie allen, die sie festhalten." (Prov 3,18) Er sagt also, dass die, welche
+                     ist sie allen, die sie festhalten." [Prov 3,18] Er sagt also, dass die, welche
                      an Christus glauben, sein Leib sein werden; denn er wird den Leib unserer
                      Niedrigkeit zu einer Gestalt umgestalten, die seiner Herrlichkeit gleich ist.
-                     [Phil 3,21] Wasserbäche aber (nennt er) die göttlichen Schriften; in diesen
-                     überall kann gefunden werden, dass Christus verkündigt wird.</p>
+                     [cf. Phil 3,21var] Wasserbäche aber (nennt er) die göttlichen Schriften; in
+                     diesen überall kann gefunden werden, dass Christus verkündigt wird.</p>
                   <quote corresp="#edition-ps-1-3b" type="psalmtext" n="3b">der seine Frucht zu
                      seiner Zeit geben wird</quote>
                   <quote corresp="#edition-ps-1-3c" type="psalmtext" n="3c">und dessen Laub nicht
@@ -798,7 +791,7 @@
                         <wit>Vat. Ottob. gr. 398</wit>
                      </app> -->
                      <note type="textual-commentary"><p>M O: Theodoretus (comm. in Ps 1,4a [PG
-                           80,872 B12–14 sub Ps 1,5]) ohne Trennung in Einheit mit der Exp. Die zwei
+                           80,872 B12–14 sub Ps 1,5]) ohne Trennung in Einheit mit Exp. 9b. Die zwei
                            Fragmente hatten bereits in V1 aufeinander aber getrennt
                         gefolgt.</p></note>
                   </div>
@@ -995,19 +988,19 @@
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">θεμέλιος</foreign></lem>
-                        <rdg wit="#P1 #V5 #P7">post<foreign xml:lang="grc"> θεμέλιος·</foreign>
-                              add.<foreign xml:lang="grc"> τὸ γὰρ (γὰρ</foreign> om.<hi
+                        <rdg wit="#P1 #V5 #P7">post <foreign xml:lang="grc">θεμέλιος· </foreign>
+                              add.<foreign xml:lang="grc">τὸ γὰρ (γὰρ </foreign>om. <hi
                               rend="italic">V5 P7</hi>)<foreign> εἰς κρίσιν φησὶν οὐκ εἰς ἐρώτησιν
-                              θεοῦ (θεοῦ</foreign> om.<hi rend="italic"> V5 P7</hi>): –<note
+                              θεοῦ (θεοῦ</foreign> om. <hi rend="italic">V5 P7</hi>): –<note
                               type="in-readings">(Origenes, schol. [?] in Ps 1,5a; cf. Analecta
                               Sacra II [446,23–24], Ps-Evagrius, fr. 9 [278 Rondeau – Géhin –
                               Cassin])</note></rdg>
                         <wit>Vat. gr. 1422</wit>
                         <wit>Paris. gr. 146</wit>
                      </app>
-                     <note type="textual-commentary"><p>M O: Exp. in der inneren Kolumne. V5 P7:
-                           Nicht nur Exp. 9a, sondern auch Exp. 10 wird mit Ps 1,5 verlinkt. P1 V5
-                           P7: Die Exp. endet mit einer Aussage, die ursprünglich selbständig
+                     <note type="textual-commentary"><p>M O: Exp. 10 liegt in der inneren Kolumne.
+                           V5 P7: Nicht nur Exp. 9a, sondern auch Exp. 10 wird mit Ps 1,5 verlinkt.
+                           P1 V5 P7: Exp. 10 endet mit einer Aussage, die ursprünglich selbständig
                            gewesen ist. Diese wird in der Überlieferung Origenes zugeschrieben, z.B.
                            in V1 (f. 37v). Obgleich unter dem Namen des Origenes laufende
                            Erklärungen in vielen Fällen auf Evagrius zurückgehen, behandeln die
@@ -1028,7 +1021,7 @@
                   <p corresp="#edition-1-5-2" n="8">Deshalb nämlich, weil sie keine Wurzel haben,
                      sondern weil sie Erdenstaub ähnlich sind, der vom Wind aufgeweht wird. Unter
                      dem Wind wirst du die Drohung Gottes verstehen, welche sagt: "Geht von mir, ihr
-                     Verfluchte, in das ewige Feuer!" (Mt 25,41) Die diese Stimme hören, werden mit
+                     Verfluchte, in das ewige Feuer!" [Mt 25,41] Die diese Stimme hören, werden mit
                      Recht niederfallen. Denn sie stehen nicht in Christus, welcher die Stütze und
                      das Fundament der Gläubigen ist.</p>
                </div>
@@ -1334,15 +1327,15 @@
                         <rdg wit="#A1"><foreign xml:lang="grc">τοῦ βροτίου γένους</foreign></rdg>
                         <wit>Mediolan. Ambros. M 47 sup.</wit>
                      </app>
-                     <note type="textual-commentary"><p>L2: Exp. 14# ist in zwei Erklärungen
-                           geteilt: Φρύαγμά – φρόνημα (in Ps 2,1a) und ἀπὸ κοινοῦ – τοῦ γένους (in
-                           Ps 2,1b). Zusammen mit Hesychius (Antonelli) und einer Glosse wurde die
-                           erste Erklärung (ἄλλως) unter dem Psalmtext abgesondert niedergeschrieben
-                           (Q2). Diese Reihe von anonymen Kommentierungen in Ps 2,1 setzt sich dann
-                           fort am Ende der Seite mit Hesychius (Jagić) und der zweiten Erklärung
-                           aus Exp. 14#. Somit steht Exp. 17# (Q1) vor Exp. 14#. V5 P7 A3: Wie in
-                           der ursprünglichen Vorlage der Fall gewesen sein muss, steht auch hier
-                           Exp. 17# vor der zweiten Erklärung aus Exp. 14#.</p></note>
+                     <note type="textual-commentary"><p>L2: Exp. 14 ist in zwei Erklärungen geteilt:
+                           Φρύαγμά – φρόνημα (in Ps 2,1a) und ἀπὸ κοινοῦ – τοῦ γένους (in Ps 2,1b).
+                           Zusammen mit Hesychius (Antonelli) und einer Glosse wurde die erste
+                           Erklärung (ἄλλως) unter dem Psalmtext abgesondert niedergeschrieben (Q2).
+                           Diese Reihe von anonymen Kommentierungen in Ps 2,1 setzt sich dann fort
+                           am Ende der Seite mit Hesychius (Jagić) und der zweiten Erklärung aus
+                           Exp. 14. Somit steht Exp. 17 (Q1) vor Exp. 14. V5 P7 A3: Wie in der
+                           ursprünglichen Vorlage der Fall gewesen sein muss, steht auch hier Exp.
+                           17 vor der zweiten Erklärung aus Exp. 14.</p></note>
                   </div>
                </div>
                <div xml:lang="de" type="translation">
@@ -1410,11 +1403,11 @@
                               φαρισαίους καὶ νομικοὺς λέγει: –</foreign></rdg>
                         <wit>Mediolan. Ambros. M 47 sup.</wit>
                      </app>
-                     <note type="textual-commentary"><p>A1: Exp. 16# wurde umgestaltet. Grund dafür
-                           ist das Fehlen der Hypotheseis zu Ps 1 und 2 (= Exp. 1 und 13#) in dieser
-                           Katene. In diesen Expositiones ist die Rede von drei Klassen (τὰ
-                           προλεχθέντα τάγματα), in denen die Anführer der Iuden eingeteilt werden
-                           können.</p></note>
+                     <note type="textual-commentary"><p>A1: Exp. 16 wurde umgestaltet. Grund dafür
+                           war das Fehlen der Hypotheseis zu Ps 1 und 2 (= Exp. 1 und 13) in dieser
+                           Katene. In diesen letzten ist die Rede von drei Klassen (τὰ προλεχθέντα
+                           τάγματα), in die die Anführer der Iuden eingeteilt werden
+                        können.</p></note>
                   </div>
                   <div type="psalmtext">
                      <quote xml:id="edition-ps-2-2c" type="psalmtext" n="2c">κατὰ τοῦ κυρίου καὶ
@@ -1526,7 +1519,8 @@
                         <rdg wit="#P7"><foreign xml:lang="grc">γένοιτἂν</foreign> (sic)</rdg>
                         <wit>Paris. gr. 146</wit>
                      </app>
-                     <note type="textual-commentary"><p>M O: Exp. in der inneren Kolumne.</p></note>
+                     <note type="textual-commentary"><p>M O: Exp. 17 liegt in der inneren
+                           Kolumne.</p></note>
                   </div>
                   <div type="psalmtext">
                      <quote xml:id="edition-ps-2-2d" type="psalmtext" n="2d">διάψαλμα</quote>
@@ -1645,20 +1639,20 @@
                         <wit>Flor. Med. Laurent. Plut. 6. 3</wit>
                         <!-- V5 P7 A3: Zusatz nicht vorhanden -->
                      </app>
-                     <note type="textual-commentary"><p>L2: Die abgekürzte Exp. 18# ist umgeben von
+                     <note type="textual-commentary"><p>L2: Die abgekürzte Exp. 18 ist umgeben von
                            Erklärungen aus Hesychius (Antonelli und Jagić) zu Ps 2,3. Diese Gruppe
-                           folgt unmittelbar nach der Kommentierung von Ps 2,1 (Q2; siehe oben Exp.
-                           14#). Darin weist die Textlage von Exp. 18# Merkmale vor, die sie von den
-                           anderen Mitglieder der Familie# absondern: a) Sie bildet eine Einheit mit
+                           folgt unmittelbar nach der Kommentierung von Ps 2,1 (Q2; siehe zu Exp.
+                           14). Darin weist die Textlage von Exp. 18 Merkmale vor, die sie von den
+                           anderen Mitglieder der Familie absondern: a) Sie bildet eine Einheit mit
                            dem vorausgehenden Hesychius (comm. brevis in Ps 2,3 [2 Jagić]); b) Sie
                            enthält keinen Anfangssatz (Kατὰ γὰρ τοῦ κυρίου γέγοναν), sehr wohl aber
                            eine konsistente Erweiterung am Ende. V5 P7 A3: Der soeben erwähnte
                            Anfangssatz ersetzt den ersten Teil von Exp. 18. Dieser könnte
-                           zusammengestellt worden sein, um ein Problem in Bezug auf die Lesbarkeit
-                           der ursprünglichen Vorlage umzugehen. Das Verhalten von L2 in diesem Fall
-                           – nicht typisch für dieses präzise Manuskript – scheint diese Annahme zu
-                           stützen. Die Zusammenlegung von Hesychius und Athanasius ist jedoch
-                           vermieden worden.</p></note>
+                           zusammengestellt worden sein, um ein Problem in Bezug auf die
+                           Verständlichkeit der Familienvorlage umzugehen. Das Verhalten von L2 in
+                           diesem Fall – nicht typisch für dieses präzise Manuskript – scheint diese
+                           Annahme zu stützen. Seine Zusammenlegung von Hesychius und Athanasius ist
+                           jedoch in den verwandten Handschriften vermieden worden.</p></note>
                      <!-- L2: diese ist die Reihenfolge auf f. 40v-41r: -->
                   </div>
                   <div type="psalmtext">
@@ -1813,7 +1807,7 @@
                      <!-- ἢ ὅτε V1 : εἰ ὅτε B1 -->
                      <!-- τί δέ ἐστι V1 : τί δε ἐστιν B1 -->
                      <!-- M O: Exp. in Einheit mit der Umgebung -->
-                     <!-- V5 P7: parallel darzustellen? -->
+                     <!-- V5 P7: parallele Darstellung? -->
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
@@ -2024,10 +2018,9 @@
                         <rdg wit="#L1"><foreign xml:lang="grc">οὕτως</foreign></rdg>
                         <wit>Flor. Med. Laurent. Plut. 5. 30</wit>
                      </app>
-                     <note type="textual-commentary"><p>O: Exp. in Gestalt einer glossierenden
-                           Bemerkung zwischen den Stichoi des Psalmtextes. Das graphische
-                           Erscheinungsbild legt nahe, dass die Exp. zusammen mit dem Psalmtext
-                           abgeschrieben wurde. M hat diese weggelassen.</p></note>
+                     <note type="textual-commentary"><p>O: Exp. 23 liegt zwischen den Psalmzeilen.
+                           Das graphische Erscheinungsbild legt nahe, dass diese zusammen mit dem
+                           Psalmtext abgeschrieben wurde. M hat Exp. 23 weggelassen.</p></note>
                   </div>
                   <div type="psalmtext">
                      <quote xml:id="edition-ps-2-6b" type="psalmtext" n="6b">ἐπὶ σιὼν ὄρος τὸ ἅγιον
@@ -2056,9 +2049,8 @@
                         <wit>Paris. gr. 139</wit>
                         <wit>Venet. Marc. gr. Z. 17</wit>
                      </app>
-                     <note type="textual-commentary"><p>O: Exp. in Gestalt einer glossierenden
-                           Bemerkung zwischen den Stichoi des Psalmtextes. M hat diese
-                           weggelassen.</p></note>
+                     <note type="textual-commentary"><p>O: Exp. 24 liegt zwischen den Psalmzeilen. M
+                           hat diese weggelassen.</p></note>
                   </div>
                </div>
                <div xml:lang="de" type="translation">
@@ -2127,7 +2119,8 @@
                         <wit>Mosq. Synod. 194</wit>
                         <wit>Vat. Ottob. gr. 398</wit>
                      </app>
-                     <note type="textual-commentary"><p>M O: Exp. in der inneren Kolumne.</p></note>
+                     <note type="textual-commentary"><p>M O: Exp. 25 liegt in der inneren
+                           Kolumne.</p></note>
                      <!-- <note type="textual-commentary"><p>A3: Die Exp. ist kaum lesbar: [.........]
                            [τοῦ μονογε?]νοῦς υἱοῦ [τοῦ θεοῦ?] [.............] τοῦ κ[υρίου:
                         –]</p></note> -->
@@ -2221,6 +2214,7 @@
             <div n="2.8" type="psalmverse">
                <div xml:lang="grc" type="text">
                   <div type="psalmtext">
+                     <!-- Trennungslinie: Ps 2,8 getrennt vom Ps 2,9 -->
                      <quote xml:id="edition-ps-2-8a" type="psalmtext" n="8a">αἴτησαι παρ᾽ ἐμοῦ, καὶ
                         δώσω σοι ἔθνη τὴν κληρονομίαν σου</quote>
                      <quote xml:id="edition-ps-2-8b" type="psalmtext" n="8b">καὶ τὴν κατάσχεσίν σου
@@ -2237,6 +2231,7 @@
             <div n="2.9" type="psalmverse">
                <div xml:lang="grc" type="text">
                   <div type="psalmtext">
+                     <!-- weiße Trennung: zwischen Ps 2,10 und Ps 2,11 kann man sie belassen! -->
                      <quote xml:id="edition-ps-2-9a" type="psalmtext" n="9a">ποιμανεῖς αὐτοὺς ἐν
                         ῥάβδῳ σιδηρᾷ,</quote>
                      <quote xml:id="edition-ps-2-9b" type="psalmtext" n="9b">ὡς σκεῦος κεραμέως
@@ -2301,20 +2296,20 @@
                         <lem><foreign xml:lang="grc">μετάνοιαν</foreign></lem>
                         <rdg wit="#V5 #P7">post<foreign xml:lang="grc"> μετάνοιαν·</foreign>
                               add.<foreign xml:lang="grc"> βασιλέας δὲ αὐτοὺς καλεῖ· εἰς ὅπερ εἶχον
-                              ἀξίωμα ἀνατρέχει&lt;ν&gt; πείθων· ἐλέχθη γὰρ πρὸς αὐτοὺς τοὺς
-                              ὑπακούοντας θεῷ· ὑμεῖς δὲ ἔσεσθέ μοι βασίλειον ἱεράτευμα· ἔθνος ἅγιον·
-                              [Ex 19,6] οὗ ἐξέπεσαν διὰ τὴν εἰς τὸν μονογενενῆ δυσσέβειαν:
-                              –</foreign><note type="in-readings"> (fons ignotus in Ps 2,10 [cf. PG
-                              12,1113 C8–10])</note></rdg>
+                              ἀξίωμα ἀνατρέχει〈ν〉 πείθων· ἐλέχθη γὰρ πρὸς αὐτοὺς τοὺς ὑπακούοντας
+                              θεῷ· ὑμεῖς δὲ ἔσεσθέ μοι βασίλειον ἱεράτευμα· ἔθνος ἅγιον· [Ex 19,6]
+                              οὗ ἐξέπεσαν διὰ τὴν εἰς τὸν μονογενενῆ δυσσέβειαν: –</foreign><note
+                              type="in-readings"> (fons ignotus in Ps 2,10 [cf. PG 12,1113
+                              C8–10])</note></rdg>
                         <!-- Barocci 235 (f. 31r–35r), Vind. Theol. gr. 8 (f. 3v–4r), Cadiou: nichts vergleichbares gefunden -->
                      </app>
-                     <note type="textual-commentary">V5 P7: Es findet sich hier ein anonymes
-                        Fragment unsicheren Ursprungs, dessen Anfang mit Exp. 28# übereinstimmt.
-                        Weniger als die Hälfte dieses Fragments wurde in der PG 12 gedruckt.
-                        Angesichts seiner Kürze könnte man ein scholion des Origenes vermuten (oder
-                        des Evagrius?). Es ist denkbar, dass die Exp. sich mit diesem Text vereint
-                        hat. Es ist jedoch nicht völlig auszuschließen, dass Typus XV ihre Quelle
-                        aufbewahrt hat.</note>
+                     <note type="textual-commentary">V5 P7: Es liegt ein anonymes Fragment
+                        unsicheren Ursprungs, dessen Anfang mit Exp. 28 übereinstimmt. Ein
+                        ähnliches, aber kürzeres Fragment wurde in der PG 12 gedruckt. Angesichts
+                        seiner Kürze könnte man ein scholion des Origenes vermuten (oder des
+                        Evagrius?). Es ist denkbar, dass Exp. 28 sich mit diesem Text vereint hat.
+                        Es ist jedoch nicht völlig auszuschließen, dass andere
+                        Abhängigkeitsverhältnisse vorliegen.</note>
                   </div>
                   <!-- exp 28b -->
                   <div type="commentary" rend="hide">

@@ -127,11 +127,11 @@ version="2.0">
     <xsl:template match="tei:div[@type = 'textcritic']" mode="apparatus-of-parallel-entry">
         <div class="body-textcritic">
             <xsl:apply-templates select="tei:app[@type = 'fragment']"/>
-            <xsl:apply-templates select="tei:note[@type = 'textual-commentary']"/>
             <xsl:for-each select="tei:app[@type = 'text']">
                 <xsl:apply-templates select="."/>
                 <xsl:if test="position() != last()"><xsl:text> || </xsl:text></xsl:if>
             </xsl:for-each>
+            <xsl:apply-templates select="tei:note[@type = 'textual-commentary']"/>
         </div>
     </xsl:template>
 
@@ -260,11 +260,13 @@ version="2.0">
         </i>
         <xsl:if test="position() != last()"><xsl:text> </xsl:text></xsl:if>
     </xsl:for-each>
-    <xsl:text>] </xsl:text>
+    <xsl:if test="exists(tei:lem)">
+        <xsl:text>] </xsl:text>
+    </xsl:if>
     <xsl:variable name="number-of-readings" select="count(tei:rdg)"/>
     <xsl:for-each select="tei:rdg">
         <xsl:variable name="outer-loop" select="position()"/>
-        <xsl:apply-templates select="tei:foreign | text()"/>
+        <xsl:apply-templates select="tei:foreign | text() | tei:hi"/>
         <xsl:text> </xsl:text>
         <xsl:for-each select="tokenize(./@wit,' ')">
             <i>
