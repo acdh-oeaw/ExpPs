@@ -41,7 +41,7 @@ module.exports = function(baseURI){
 				expect(response).to.have.status(200);
 				return chakram.wait();
 			});
-            it('Should response with a list of hexaplaric variants of a particular manuscript',function(){
+            xit('Should response with a list of hexaplaric variants of a particular manuscript',function(){
 				var response = request('get', baseURI + '/manuscripts/vat-gr-754/hexaplaric-variants', {
 					'headers': {"Accept":"application/hal+json",
 								"Content-Type":"application/json"},
