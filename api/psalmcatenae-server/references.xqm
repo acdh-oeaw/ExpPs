@@ -43,7 +43,7 @@ function references:get-references-of-manuscript($manuscript-name as xs:string){
     let $path := "/psalmcatenae-manuscripts/" || ``[`{$manuscript}`]``
     let $anchors-of-commentaryfragments := for $commentaryfragment in doc($path)//tei:seg[@type = 'commentaryfragment'] return substring-after($commentaryfragment/@corresp,'#')
     let $anchors-with-commentaryfragments := for $anchor in doc($path)//tei:quote[@type = 'bibletext']/tei:anchor[@type = 'psalmtext'] where $anchor/@xml:id = $anchors-of-commentaryfragments return $anchor/@xml:id
-    let $psalmtexts-with-commentaryfragments := for $psalmtext in doc($path)//tei:quote[@type = 'bibletext'] where $psalmtext/tei:anchor[@type = 'psalmtext']/@xml:id = $anchors-with-commentaryfragments return "{ ""psalmverse "" : """ || $psalmtext/@n || "}"
+    let $psalmtexts-with-commentaryfragments := for $psalmtext in doc($path)//tei:quote[@type = 'bibletext'] where $psalmtext/tei:anchor[@type = 'psalmtext']/@xml:id = $anchors-with-commentaryfragments return "{ ""id"" : """ || $psalmtext/@xml:id || """, ""psalmverse"" : """ || $psalmtext/@n || """}"
     let $psalmtexts-with-commentaryfragments-json-fragment := string-join($psalmtexts-with-commentaryfragments,',')
     let $references-as-json := "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/manuscripts/" || $manuscript-name || "/references"" }}, ""_embedded"" : { ""references"" : [" || $psalmtexts-with-commentaryfragments-json-fragment || "]}}"
     return
