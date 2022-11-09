@@ -20,6 +20,9 @@
     
     <xsl:template match="tei:choice">
       <xsl:apply-templates select="child::node()"/>
+      <xsl:if test="starts-with(following-sibling::text()[1],' ')">
+        <xsl:text> </xsl:text>
+      </xsl:if>
     </xsl:template>
     
     <xsl:template match="tei:orig"/>
@@ -29,6 +32,10 @@
     </xsl:template>
     
     <xsl:template match="tei:abbr[@type = 'nomSac']"/>
+    
+    <xsl:template match="tei:abbr[@type = 'bibleversion']">
+      <xsl:apply-templates select="child::node()"/>
+    </xsl:template>
     
     <xsl:template match="tei:expan">
       <xsl:value-of select="text()"/>
