@@ -25,7 +25,7 @@ module.exports = function(baseURI){
 								"Content-Type":"application/json"},
 					'time': true
 					});
-				expect(response).to.have.json({ "_links" : { "self" : { "href" : "/psalmcatenae-server/hexaplaric-variants/vat-gr-754-hexaplaric-1-2"}, "psalm" : { "href" : "/psalmcatenae-server/psalmtexts/vat-gr-754-ps-1-1"}}, "_embedded" : { "hexaplaric-variant" : {"id" : "vat-gr-754-hexaplaric-1-2", "attribution" : "Anonymus (Ps 1,1a)", "text" : "Ἄμεμπτος ὁ ἄνθρωποςὃς οὐ περιεπάτησεν ἐν συνεδρίῳ παρανόμων·"}}});
+				expect(response).to.have.json({ "_links" : { "self" : { "href" : "/psalmcatenae-server/hexaplaric-variants/vat-gr-754-hexaplaric-1-2"}, "psalm" : { "href" : "/psalmcatenae-server/psalmtexts/vat-gr-754-ps-1-1"}}, "_embedded" : { "hexaplaric-variant" : {"id" : "vat-gr-754-hexaplaric-1-2", "attribution" : "Anonymus (Ps 1,1a)", "text" : "Ἄμεμπτος ὁ ἄνθρωπος ὃς οὐ περιεπάτησεν ἐν συνεδρίῳ παρανόμων·"}}});
 				return chakram.wait();
 			});
         });
@@ -56,7 +56,7 @@ module.exports = function(baseURI){
 								"Content-Type":"application/json"},
 					'time': true
 					});
-				expect(response).to.have.json({ "_links" : { "self" : { "href" : "/psalmcatenae-server/manuscripts/vat-gr-754/hexaplaric-variant/vat-gr-754-hexaplaric-1-2"}, "psalm" : { "href" : "/psalmcatenae-server/manuscripts/vat-gr-754/psalmtexts/vat-gr-754-ps-1-1"}}, "_embedded" : { "hexaplaric-variant" : {"id" : "vat-gr-754-hexaplaric-1-2", "attribution" : "Anonymus (Ps 1,1a)", "text" : "Ἄμεμπτος ὁ ἄνθρωποςὃς οὐ περιεπάτησεν ἐν συνεδρίῳ παρανόμων·"}} })
+				expect(response).to.have.json({ "_links" : { "self" : { "href" : "/psalmcatenae-server/manuscripts/vat-gr-754/hexaplaric-variant/vat-gr-754-hexaplaric-1-2"}, "psalm" : { "href" : "/psalmcatenae-server/manuscripts/vat-gr-754/psalmtexts/vat-gr-754-ps-1-1"}}, "_embedded" : { "hexaplaric-variant" : {"id" : "vat-gr-754-hexaplaric-1-2", "attribution" : "Anonymus (Ps 1,1a)", "text" : "Ἄμεμπτος ὁ ἄνθρωπος ὃς οὐ περιεπάτησεν ἐν συνεδρίῳ παρανόμων·"}} })
                 return chakram.wait();
 			});
         });

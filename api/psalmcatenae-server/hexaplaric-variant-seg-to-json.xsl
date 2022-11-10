@@ -42,7 +42,7 @@
     </xsl:template>
     
     <xsl:template match="tei:hi">
-      <xsl:value-of select="text()"/>
+      <xsl:apply-templates select="child::node()"/>
     </xsl:template>
     
     <xsl:template match="tei:lb[@break and @break = 'no']"/>
