@@ -285,7 +285,7 @@ version="2.0">
         </xsl:for-each>
         <xsl:if test="exists(./child::tei:note[@type = 'in-readings'])">
             <xsl:text> </xsl:text>
-            <xsl:value-of select="./tei:note[@type = 'in-readings']/text()"/>
+            <xsl:apply-templates select="./tei:note[@type = 'in-readings']"/>
         </xsl:if>
         <xsl:if test="$outer-loop != $number-of-readings"><xsl:text> | </xsl:text></xsl:if>
     </xsl:for-each>
