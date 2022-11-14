@@ -76,7 +76,7 @@
                     <div class="entry-top-thumbnail"><img src="./fundament/images/picture_3.png" alt=""></div>
                     <h1 class="entry-title">Search</h1>
                   </header><!-- .entry-header -->
-                  <div class="entry-content" style="background-color: white;">
+                  <div class="entry-content" style="background-color: white; padding-bottom: 10pt;">
                     <form style="padding: 20pt;" id="search-form">
 						<div class="form-group row">
 							<div class="col">
@@ -102,12 +102,16 @@
 							</div>
 							<div class="col form-group">
 							<div>
+								<div>
+									<input class="form-check-input" type="checkbox" name="form-radio" id="input-selected" value="refine"/>
+									<label class="form-check-label" for="input-selected">Refine Your Search</label>
+								</div>
 								<label for="input-attribution" style="padding-top: 2pt;">Attribution</label>
-								<input type="text" class="form-control" placeholder="Attribution" id="input-attribution"/>
+								<select class="form-control" id="input-attribution"><option>Attribution</option></select>
 								<label for="input-author-critical" style="padding-top: 4pt;">Author Critical</label>
-								<input type="text" class="form-control" placeholder="Author Critical" id="input-author-critical"/>
+								<select class="form-control" id="input-author-critical"><option>Author Critical</option></select>
 								<label for="psalmverse" style="padding-top: 4pt;">Psalmverse</label>
-								<input type="text" class="form-control" placeholder="Psalmverse" id="psalmverse"/>
+								<select class="form-control" id="psalmverse"><option>Psalmverse</option></select>
 							</div>
 							<div class="row" style="padding-top: 30pt;">
 								<div class="col-8"></div>

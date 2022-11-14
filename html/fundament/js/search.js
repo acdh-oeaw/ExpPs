@@ -83,6 +83,16 @@ function jsonClient(){
 				namesOfManuscriptsAndPath.set(nameOfManuscript,pathOfManuscript);
 			}
 			configurationObject.manuscriptPaths = namesOfManuscriptsAndPath;
+			let commentaryfragmentRadio = document.getElementById("commentaryfragment-radio");
+			commentaryfragmentRadio.checked = true;
+			let refineSearchCheckbox = document.getElementById("input-selected");
+			refineSearchCheckbox.checked = false;
+			let attributionField = document.getElementById("input-attribution");
+			let authorCriticalField = document.getElementById("input-author-critical");
+			let psalmverseField = document.getElementById("psalmverse");
+			attributionField.disabled = true;
+			authorCriticalField.disabled = true;
+			psalmverseField.disabled = true;
 		}
 	}
 	
@@ -253,11 +263,37 @@ function jsonClient(){
 		let glossesSelected = document.getElementById("gloss-radio").checked;
 		let hexaplaricVariantsSelected = document.getElementById("hexaplaric-variant-radio").checked;
 		let psalmtextsSelected = document.getElementById("psalmtext-radio").checked;
+		let inputSelected = document.getElementById("input-selected").checked;
 		let manuscriptPath = configurationObject.manuscriptPaths.get(selectedManuscript);
 		let url = configurationObject.baseUrl + "/manuscripts/" + manuscriptPath;
 		if (commentaryfragmentsSelected === true){
 			configurationObject.object = "commentaryfragments";
 			url = url + "/commentaryfragments";
+			if (inputSelected === true){
+				url = url + "/search";
+				let attributionFieldValue = document.getElementById("input-attribution").value;
+				let authorCriticalFieldValue = document.getElementById("input-author-critical").value;
+				let psalmverseFieldValue = document.getElementById("psalmverse").value;
+				if (attributionFieldValue != "empty"){
+					url = url + "?author=" + attributionFieldValue;
+				}
+				if (authorCriticalFieldValue != "empty"){
+					if (attributionFieldValue === "empty"){
+						url = url + "?author-critical=" + authorCriticalFieldValue;
+					}
+					else{
+						url = url + "&author-critical=" + authorCriticalFieldValue;
+					}
+				}
+				if (psalmverseFieldValue != "empty"){
+					if (attributionFieldValue === "empty" && authorCriticalFieldValue === "empty"){
+						url = url + "?reference=" + psalmverseFieldValue;
+					}
+					else{
+						url = url + "&reference=" + psalmverseFieldValue;
+					}
+				}
+			}
 		}
 		if (glossesSelected === true){
 			configurationObject.object = "glosses";
@@ -275,39 +311,152 @@ function jsonClient(){
 	});
 	
 	$("#gloss-radio").change(function(){
-		let attributionField = document.getElementById("input-attribution");
-		attributionField.disabled = true;
-		let authorCriticalField = document.getElementById("input-author-critical");
-		authorCriticalField.disabled = true;
-		let psalmverseField = document.getElementById("psalmverse");
-		psalmverseField.disabled = true;
+		let inputSelected = document.getElementById("input-selected").checked;
+		if (inputSelected === true){
+			let attributionField = document.getElementById("input-attribution");
+			attributionField.disabled = true;
+			let authorCriticalField = document.getElementById("input-author-critical");
+			authorCriticalField.disabled = true;
+			let psalmverseField = document.getElementById("psalmverse");
+			psalmverseField.disabled = true;
+		}
 	});
 	
 	$("#commentaryfragment-radio").change(function(){
-		let attributionField = document.getElementById("input-attribution");
-		attributionField.disabled = false;
-		let authorCriticalField = document.getElementById("input-author-critical");
-		authorCriticalField.disabled = false;
-		let psalmverseField = document.getElementById("psalmverse");
-		psalmverseField.disabled = false;
+		let inputSelected = document.getElementById("input-selected").checked;
+		if (inputSelected === true){
+			let attributionField = document.getElementById("input-attribution");
+			attributionField.disabled = false;
+			let authorCriticalField = document.getElementById("input-author-critical");
+			authorCriticalField.disabled = false;
+			let psalmverseField = document.getElementById("psalmverse");
+			psalmverseField.disabled = false;
+		}
 	});
 	
 	$("#hexaplaric-variant-radio").change(function(){
-		let attributionField = document.getElementById("input-attribution");
-		attributionField.disabled = true;
-		let authorCriticalField = document.getElementById("input-author-critical");
-		authorCriticalField.disabled = true;
-		let psalmverseField = document.getElementById("psalmverse");
-		psalmverseField.disabled = false;
+		let inputSelected = document.getElementById("input-selected").checked;
+		if (inputSelected === true){
+			let attributionField = document.getElementById("input-attribution");
+			attributionField.disabled = true;
+			let authorCriticalField = document.getElementById("input-author-critical");
+			authorCriticalField.disabled = true;
+			let psalmverseField = document.getElementById("psalmverse");
+			psalmverseField.disabled = false;
+		}
 	});
 	
 	$("#psalmtext-radio").change(function(){
+		let inputSelected = document.getElementById("input-selected").checked;
+		if (inputSelected === true){
+			let attributionField = document.getElementById("input-attribution");
+			attributionField.disabled = true;
+			let authorCriticalField = document.getElementById("input-author-critical");
+			authorCriticalField.disabled = true;
+			let psalmverseField = document.getElementById("psalmverse");
+			psalmverseField.disabled = false;
+		}
+	});
+	
+	$("#input-selected").change(function(){
+		let inputSelected = document.getElementById("input-selected").checked;
 		let attributionField = document.getElementById("input-attribution");
-		attributionField.disabled = true;
 		let authorCriticalField = document.getElementById("input-author-critical");
-		authorCriticalField.disabled = true;
 		let psalmverseField = document.getElementById("psalmverse");
-		psalmverseField.disabled = false;
+		if (inputSelected === false){
+			let attributionField = document.getElementById("input-attribution");
+			let authorCriticalField = document.getElementById("input-author-critical");
+			let psalmverseField = document.getElementById("psalmverse");
+			$("#input-attribution").empty();
+			$("#input-author-critical").empty();
+			$("#psalmverse").empty();
+			attributionField.disabled = true;
+			authorCriticalField.disabled = true;
+			psalmverseField.disabled = true;
+		}
+		if (inputSelected === true){
+			let commentaryfragmentRadioChecked = document.getElementById("commentaryfragment-radio").checked;
+			let glossesRadioChecked = document.getElementById("gloss-radio").checked;
+			let hexaplaricVariantRadioChecked = document.getElementById("hexaplaric-variant-radio").checked;
+			let psalmtextRadioChecked = document.getElementById("psalmtext-radio").checked;
+			if (commentaryfragmentRadioChecked === true){
+				attributionField.disabled = false;
+				authorCriticalField.disabled = false;
+				psalmverseField.disabled = false;
+				let selectedManuscript = document.getElementById("name-of-manuscript-select").selectedOptions[0].value;
+				let manuscriptPath = configurationObject.manuscriptPaths.get(selectedManuscript);
+				let url = configurationObject.baseUrl + "/manuscripts/" + manuscriptPath;
+				let urlAttribution = url + "/authors-distinct";
+				axios({
+					method: "get",
+					url: urlAttribution,
+					responseType: configurationObject.acceptMimeType
+				})
+				.then(function (response){
+					let authorsDistinct = JSON.parse(response.data);
+					$("#input-attribution").empty();
+					$("#input-attribution").append($("<option value='empty'>empty</option>"));
+					for (let n = 0; n < authorsDistinct._embedded.authors.length; n++){
+						let nameOfAuthor = authorsDistinct._embedded.authors[n]["author"];
+						let optionAttributionAsText = "<option value='" + nameOfAuthor + "'>" + nameOfAuthor + "</option>";
+						let optionAttributionAsObject = $(optionAttributionAsText);
+						$("#input-attribution").append(optionAttributionAsObject);
+					}
+				})
+				.catch(function (error) { console.log(error); });
+				let urlAuthorCritical = url + "/authors-critical-distinct";
+				axios({
+					method: "get",
+					url: urlAuthorCritical,
+					responseType: configurationObject.acceptMimeType
+				})
+				.then(function (response){
+					let authorsCriticalDistinct = JSON.parse(response.data);
+					$("#input-author-critical").empty();
+					$("#input-author-critical").append($("<option value='empty'>empty</option>"));
+					for (let n = 0; n < authorsCriticalDistinct._embedded.authors.length; n++){
+						let nameOfAuthorCritical = authorsCriticalDistinct._embedded.authors[n]["author-critical"];
+						let optionAuthorCriticalAsText = "<option value='" + nameOfAuthorCritical + "'>" + nameOfAuthorCritical + "</option>";
+						let optionAuthorCriticalAsObject = $(optionAuthorCriticalAsText);
+						$("#input-author-critical").append(optionAuthorCriticalAsObject);
+					}
+				})
+				.catch(function(error){ console.log(error); });
+				let urlReference = url + "/references";
+				axios({
+					method: "get",
+					url: urlReference,
+					responseType: configurationObject.acceptMimeType
+				})
+				.then(function (response){
+					let references = JSON.parse(response.data);
+					$("#psalmverse").empty();
+					$("#psalmverse").append($("<option value='empty'>empty</option>"));
+					for (let n = 0; n < references._embedded.references.length; n++){
+						let reference = references._embedded.references[n]["psalmverse"];
+						let optionReferenceAsText = "<option value='" + reference + "'>" + reference + "</option>";
+						let optionReferenceAsObject = $(optionReferenceAsText);
+						$("#psalmverse").append(optionReferenceAsObject);
+					}
+				})
+				.catch(function(error){ console.log(error); });
+			}
+			if (glossesRadioChecked === true){
+				attributionField.disabled = true;
+				authorCriticalField.disabled = true;
+				psalmverseField.disabled = true;
+			}
+			if (hexaplaricVariantRadioChecked === true){
+				attributionField.disabled = true;
+				authorCriticalField.disabled = true;
+				psalmverseField.disabled = false;
+			}
+			if (psalmtextRadioChecked === true){
+				attributionField.disabled = true;
+				authorCriticalField.disabled = true;
+				psalmverseField.disabled = false;
+			}
+		}
 	});
 	
 	var that = {};
