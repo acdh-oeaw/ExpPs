@@ -423,7 +423,7 @@ function jsonClient(){
 					let nameOfPsalm = referencesOfHexaplaricVariants._embedded.references[n]["psalmverse"];
 					let optionAttributionAsText = "<option value='" + nameOfPsalm + "'>" + nameOfPsalm + "</option>";
 					let optionAttributionAsObject = $(optionAttributionAsText);
-					$("#input-attribution").append(optionAttributionAsObject);
+					$("#psalmverse").append(optionAttributionAsObject);
 				}
 			})
 			.catch(function (error) { console.log(error); });
@@ -537,6 +537,27 @@ function jsonClient(){
 				attributionField.disabled = true;
 				authorCriticalField.disabled = true;
 				psalmverseField.disabled = false;
+				let selectedManuscript = document.getElementById("name-of-manuscript-select").selectedOptions[0].value;
+				let manuscriptPath = configurationObject.manuscriptPaths.get(selectedManuscript);
+				let url = configurationObject.baseUrl + "/manuscripts/" + manuscriptPath;
+				let urlReferences = url + "/hexaplaric-variants/references";
+				axios({
+					method: "get",
+					url: urlReferences,
+					responseType: configurationObject.acceptMimeType
+				})
+				.then(function (response){
+					let referencesOfHexaplaricVariants = JSON.parse(response.data);
+					$("#psalmverse").empty();
+					$("#psalmverse").append($("<option value='empty'>empty</option>"));
+					for (let n = 0; n < referencesOfHexaplaricVariants._embedded.references.length; n++){
+						let nameOfPsalm = referencesOfHexaplaricVariants._embedded.references[n]["psalmverse"];
+						let optionAttributionAsText = "<option value='" + nameOfPsalm + "'>" + nameOfPsalm + "</option>";
+						let optionAttributionAsObject = $(optionAttributionAsText);
+						$("#psalmverse").append(optionAttributionAsObject);
+					}
+				})
+				.catch(function (error) { console.log(error); });
 			}
 			if (psalmtextRadioChecked === true){
 				attributionField.disabled = true;
