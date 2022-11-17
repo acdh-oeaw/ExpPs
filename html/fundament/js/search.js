@@ -335,62 +335,62 @@ function jsonClient(){
 			let psalmverseField = document.getElementById("psalmverse");
 			psalmverseField.disabled = false;
 			let selectedManuscript = document.getElementById("name-of-manuscript-select").selectedOptions[0].value;
-				let manuscriptPath = configurationObject.manuscriptPaths.get(selectedManuscript);
-				let url = configurationObject.baseUrl + "/manuscripts/" + manuscriptPath;
-				let urlAttribution = url + "/authors-distinct";
-				axios({
-					method: "get",
-					url: urlAttribution,
-					responseType: configurationObject.acceptMimeType
-				})
-				.then(function (response){
-					let authorsDistinct = JSON.parse(response.data);
-					$("#input-attribution").empty();
-					$("#input-attribution").append($("<option value='empty'>empty</option>"));
-					for (let n = 0; n < authorsDistinct._embedded.authors.length; n++){
-						let nameOfAuthor = authorsDistinct._embedded.authors[n]["author"];
-						let optionAttributionAsText = "<option value='" + nameOfAuthor + "'>" + nameOfAuthor + "</option>";
-						let optionAttributionAsObject = $(optionAttributionAsText);
-						$("#input-attribution").append(optionAttributionAsObject);
-					}
-				})
-				.catch(function (error) { console.log(error); });
-				let urlAuthorCritical = url + "/authors-critical-distinct";
-				axios({
-					method: "get",
-					url: urlAuthorCritical,
-					responseType: configurationObject.acceptMimeType
-				})
-				.then(function (response){
-					let authorsCriticalDistinct = JSON.parse(response.data);
-					$("#input-author-critical").empty();
-					$("#input-author-critical").append($("<option value='empty'>empty</option>"));
-					for (let n = 0; n < authorsCriticalDistinct._embedded.authors.length; n++){
-						let nameOfAuthorCritical = authorsCriticalDistinct._embedded.authors[n]["author-critical"];
-						let optionAuthorCriticalAsText = "<option value='" + nameOfAuthorCritical + "'>" + nameOfAuthorCritical + "</option>";
-						let optionAuthorCriticalAsObject = $(optionAuthorCriticalAsText);
-						$("#input-author-critical").append(optionAuthorCriticalAsObject);
-					}
-				})
-				.catch(function(error){ console.log(error); });
-				let urlReference = url + "/references";
-				axios({
-					method: "get",
-					url: urlReference,
-					responseType: configurationObject.acceptMimeType
-				})
-				.then(function (response){
-					let references = JSON.parse(response.data);
-					$("#psalmverse").empty();
-					$("#psalmverse").append($("<option value='empty'>empty</option>"));
-					for (let n = 0; n < references._embedded.references.length; n++){
-						let reference = references._embedded.references[n]["psalmverse"];
-						let optionReferenceAsText = "<option value='" + reference + "'>" + reference + "</option>";
-						let optionReferenceAsObject = $(optionReferenceAsText);
-						$("#psalmverse").append(optionReferenceAsObject);
-					}
-				})
-				.catch(function(error){ console.log(error); });
+			let manuscriptPath = configurationObject.manuscriptPaths.get(selectedManuscript);
+			let url = configurationObject.baseUrl + "/manuscripts/" + manuscriptPath;
+			let urlAttribution = url + "/authors-distinct";
+			axios({
+				method: "get",
+				url: urlAttribution,
+				responseType: configurationObject.acceptMimeType
+			})
+			.then(function (response){
+				let authorsDistinct = JSON.parse(response.data);
+				$("#input-attribution").empty();
+				$("#input-attribution").append($("<option value='empty'>empty</option>"));
+				for (let n = 0; n < authorsDistinct._embedded.authors.length; n++){
+					let nameOfAuthor = authorsDistinct._embedded.authors[n]["author"];
+					let optionAttributionAsText = "<option value='" + nameOfAuthor + "'>" + nameOfAuthor + "</option>";
+					let optionAttributionAsObject = $(optionAttributionAsText);
+					$("#input-attribution").append(optionAttributionAsObject);
+				}
+			})
+			.catch(function (error) { console.log(error); });
+			let urlAuthorCritical = url + "/authors-critical-distinct";
+			axios({
+			method: "get",
+				url: urlAuthorCritical,
+				responseType: configurationObject.acceptMimeType
+			})
+			.then(function (response){
+				let authorsCriticalDistinct = JSON.parse(response.data);
+				$("#input-author-critical").empty();
+				$("#input-author-critical").append($("<option value='empty'>empty</option>"));
+				for (let n = 0; n < authorsCriticalDistinct._embedded.authors.length; n++){
+					let nameOfAuthorCritical = authorsCriticalDistinct._embedded.authors[n]["author-critical"];
+					let optionAuthorCriticalAsText = "<option value='" + nameOfAuthorCritical + "'>" + nameOfAuthorCritical + "</option>";
+					let optionAuthorCriticalAsObject = $(optionAuthorCriticalAsText);
+					$("#input-author-critical").append(optionAuthorCriticalAsObject);
+				}
+			})
+			.catch(function(error){ console.log(error); });
+			let urlReference = url + "/references";
+			axios({
+				method: "get",
+				url: urlReference,
+				responseType: configurationObject.acceptMimeType
+			})
+			.then(function (response){
+				let references = JSON.parse(response.data);
+				$("#psalmverse").empty();
+				$("#psalmverse").append($("<option value='empty'>empty</option>"));
+				for (let n = 0; n < references._embedded.references.length; n++){
+					let reference = references._embedded.references[n]["psalmverse"];
+					let optionReferenceAsText = "<option value='" + reference + "'>" + reference + "</option>";
+					let optionReferenceAsObject = $(optionReferenceAsText);
+					$("#psalmverse").append(optionReferenceAsObject);
+				}
+			})
+			.catch(function(error){ console.log(error); });
 		}
 	});
 	
@@ -406,6 +406,27 @@ function jsonClient(){
 			authorCriticalField.disabled = true;
 			let psalmverseField = document.getElementById("psalmverse");
 			psalmverseField.disabled = false;
+			let selectedManuscript = document.getElementById("name-of-manuscript-select").selectedOptions[0].value;
+			let manuscriptPath = configurationObject.manuscriptPaths.get(selectedManuscript);
+			let url = configurationObject.baseUrl + "/manuscripts/" + manuscriptPath;
+			let urlReferences = url + "/hexaplaric-variants/references";
+			axios({
+				method: "get",
+				url: urlReferences,
+				responseType: configurationObject.acceptMimeType
+			})
+			.then(function (response){
+				let referencesOfHexaplaricVariants = JSON.parse(response.data);
+				$("#psalmverse").empty();
+				$("#psalmverse").append($("<option value='empty'>empty</option>"));
+				for (let n = 0; n < referencesOfHexaplaricVariants._embedded.references.length; n++){
+					let nameOfPsalm = referencesOfHexaplaricVariants._embedded.references[n]["psalmverse"];
+					let optionAttributionAsText = "<option value='" + nameOfPsalm + "'>" + nameOfPsalm + "</option>";
+					let optionAttributionAsObject = $(optionAttributionAsText);
+					$("#input-attribution").append(optionAttributionAsObject);
+				}
+			})
+			.catch(function (error) { console.log(error); });
 		}
 	});
 	
