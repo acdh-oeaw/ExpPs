@@ -17,7 +17,7 @@ module.exports = function(baseURI){
 				expect(response).to.have.status(200);
 				return chakram.wait();
 			});
-			it('Should response with list of critical assigned authors', async function(){
+			xit('Should response with list of critical assigned authors', async function(){
 				var response = await request('get', baseURI + '/manuscripts/vat-gr-754/authors-critical', {
 					'headers': {"Accept":"application/hal+json",
 								"Content-Type":"application/json"},
@@ -38,7 +38,7 @@ module.exports = function(baseURI){
 				expect(response).to.have.status(200);
 				return chakram.wait();
 			});
-			it('Should response with list of distinct critical assigned authors', async function(){
+			xit('Should response with list of distinct critical assigned authors', async function(){
 				var response = await request('get', baseURI + '/manuscripts/vat-gr-754/authors-critical-distinct', {
 					'headers': {"Accept":"application/hal+json",
 								"Content-Type":"application/json"},

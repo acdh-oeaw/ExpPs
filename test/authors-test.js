@@ -17,7 +17,7 @@ module.exports = function(baseURI){
 				expect(response).to.have.status(200);
 				return chakram.wait();
 			});
-			it('Should response with list of authors', function(){
+			xit('Should response with list of authors', function(){
 				var response = request('get', baseURI + '/manuscripts/vat-gr-754/authors', {
 					'headers': {"Accept":"application/hal+json",
 								"Content-Type":"application/json"},
@@ -39,7 +39,7 @@ module.exports = function(baseURI){
 				expect(response).to.have.status(200);
 				return chakram.wait();
 			});
-            it('Should response with list of distinct authors', function(){
+            xit('Should response with list of distinct authors', function(){
 				var response = request('get', baseURI + '/manuscripts/vat-gr-754/authors-distinct', {
 					'headers': {"Accept":"application/hal+json",
 								"Content-Type":"application/json"},
