@@ -90,7 +90,7 @@
                </person>
                <person xml:id="person-10" role="author">
                   <persName>Hesychius Hierosolomytanus</persName>
-                  <bibl>Hesychius Hierosolomytanus, schol.</bibl>
+                  <bibl>Hesychius Hierosolomytanus, schol. (Antonelli)</bibl>
                </person>
                <person xml:id="person-11" role="author" sameAs="#person-10">
                   <persName>Hesychius Hierosolomytanus</persName>
@@ -235,8 +235,16 @@
                   <bibl>Basilius, hom. Spir. (ed. Pruche)</bibl>
                </person>
                <person xml:id="person-47" role="author">
-                  <persName>unidentified fragment (illegible)</persName>
+                  <persName>fons indeterminatus (illegible)</persName>
                   <bibl/>
+               </person>
+               <person xml:id="person-48" role="author">
+                  <persName>fr. deperditum (quod fort. in catena olim erat)</persName>
+                  <bibl/>
+               </person>
+               <person xml:id="person-49" role="author" sameAs="#person-3">
+                  <persName>Basilius</persName>
+                  <bibl>Quod deus non est auctor malorum 1 (PG 31)</bibl>
                </person>
             </listPerson>
          </sourceDesc>
@@ -444,8 +452,9 @@
                         <unclear>ἑτέροις·</unclear></quote><ref
                         target="vat-gr-754:vat-gr-754-glosse-1-6" type="with-variant">Vat. gr.
                         754</ref><ref target="vat-gr-1422:vat-gr-1422-quot-1-4" type="identical"
-                        >Vat. gr. 1422</ref><ref target="plut-5-30:plut-5-30-fr-1-9" type="with-variants"></ref><note
-                        type="attribution"><foreign xml:lang="grc">[ἐρμην(εία)?]</foreign></note>
+                        >Vat. gr. 1422</ref><ref target="plut-5-30:plut-5-30-fr-1-9"
+                        type="with-variants"/><note type="attribution"><foreign xml:lang="grc"
+                           >[ἐρμην(εία)?]</foreign></note>
                   </seg>
                   <seg type="glosse" xml:id="bodl-auct-d-4-1-fr-1-12"
                      corresp="#bodl-auct-d-4-1-ps-1-1c" source="Anonymous (?)">
@@ -658,48 +667,136 @@
                      πάντες οἱ πεποιθότες ἐπ’ αὐτῷ. </quote>
                   <pb n="40r"/>
                   <!-- Ps 2 commentary -->
+                  <note type="lemma">Ps 2</note>
+                  <seg type="hypothesis" xml:id="bodl-auct-d-4-1-fr-2-1"
+                     corresp="#bodl-auct-d-4-1-ps-2" source="Theodoretus">
+                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-2-1"
+                        corresp="#person-18"
+                        source="fons ignotus in Ps 2 (ἀνεπίγραφος παρ᾿ ἑβραίοις; ineditum?)"
+                        >ἀνεπίγραφος φησὶν· ἄγνωστος. ἄδηλος. ἀπρόσδεκτος. πὰρ ἑβραίοις. διὰ τὸ εἰς
+                        Χριστὸν εἰρῆσθαι· καὶ μὴ ἔχειν τινὸς ἑτέρου ὀνομασίαν· ἀπὸ γὰρ᾿ Δαυῒδ᾿ εἰς
+                        Χριστὸν εἴρηται·</quote>
+                     <note type="attribution"><foreign xml:lang="grc">ἐρμηνεία
+                        Θεοδωρίτου</foreign></note>
+                  </seg>
+                  <note type="lemma">Ps 2</note>
+                  <seg type="hypothesis" xml:id="bodl-auct-d-4-1-fr-2-2"
+                     corresp="#bodl-auct-d-4-1-ps-2" source="Eusebius">
+                     <quote type="patristic" subtype="paraphrase-abbreviated"
+                        xml:id="bodl-auct-d-4-1-quot-2-2" corresp="#person-5"
+                        source="Diodorus Tars., prol. in Psalmos (?) (6 Olivier 107–108; 114–116; 120–121); in marg."/>
+                     <note type="attribution"><foreign xml:lang="grc"><unclear reason="faded-ink"
+                              >ἐρμ</unclear>[ηνεία] Εὐσεβή[ου]</foreign></note>
+                  </seg>
                   <note type="lemma">Ps 2,1</note>
-                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-2-1"
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-2-3"
                      corresp="#bodl-auct-d-4-1-ps-2-1" source="Theodoretus">
-                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-2-1"
-                        corresp="#person-2" source="Athanasius, exp. in Ps 2,1">φρύαγμα ἐστὶν. τὸ
-                        ἀλόγιστον φρόνημα· </quote>
+                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-2-3"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 2,1 (φρύαγμα)">φρύαγμα
+                        ἐστὶν. τὸ ἀλόγιστον φρόνημα·</quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-2-2" type="abbreviated">Vat. gr.
                         754</ref><note type="attribution"><foreign xml:lang="grc">ἐρμηνεία
                            Θεοδωρίτου</foreign></note>
                   </seg>
-                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-2-2"
+                  <note type="lemma">Ps 2,1</note>
+                  <seg type="glosse" xml:id="bodl-auct-d-4-1-fr-2-4"
+                     corresp="#bodl-auct-d-4-1-ps-2-1" source="Hesychius">
+                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-2-4"
+                        corresp="#person-18"
+                        source="fons ignotus in Ps 2,1b (φρύαγμα); in textu (ineditum?)"
+                        >ἐφυσιώθησαν· μέγα επήρθησαν·</quote>
+                     <note type="attribution"><foreign xml:lang="grc">ἐρμη(νεία) Ἡσυχίου
+                        ⁘</foreign></note>
+                  </seg>
+                  <note type="lemma">Ps 2,1</note>
+                  <seg type="glosse" xml:id="bodl-auct-d-4-1-fr-2-5"
                      corresp="#bodl-auct-d-4-1-ps-2-1" source="Athanasius">
-                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-2-2"
-                        corresp="#person-2" source="Athanasius, exp. (?) in Ps 2,1">ϋπερηφανεύσαντο.
-                           ἐμεγαλοφρόνησ<unclear reason="faded-ink">α</unclear>ν· </quote>
+                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-2-5"
+                        corresp="#person-2" source="fons ignotus in Ps 2,1b (φρύαγμα); in textu"
+                        >ϋπερηφανεύσαντο. ἐμεγαλοφρόνησ<unclear reason="faded-ink">α</unclear>ν· </quote>
                      <note type="attribution"><foreign xml:lang="grc">Ἀθανασιου ⁘</foreign></note>
                   </seg>
+                  <note type="lemma">Ps 2,1</note>
+                  <seg type="glosse" xml:id="bodl-auct-d-4-1-fr-2-6"
+                     corresp="#bodl-auct-d-4-1-ps-2-1" source="Anonymous">
+                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-2-6"
+                        corresp="#person-47"
+                        source="unidentified fragment in Ps 2,1b (κενά); in marg.">ἀ[....?]</quote>
+                  </seg>
                   <note type="lemma">Ps 2,2a</note>
-                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-2-3"
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-2-7"
                      corresp="#bodl-auct-d-4-1-ps-2-2a" source="Anonymous">
-                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-2-3"
-                        corresp="#person-2" source="Athanasius, exp. in Ps 2,2a">Ἡρώδης καὶ Πόντιος
-                        Πιλάτος·</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-2-5" type="with-variants">Vat. gr.
+                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-2-7"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 2,2a (οἱ βασιλεῖς)"
+                        >Ἡρώδης καὶ Πόντιος Πιλάτος·</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-2-5" type="with-variant">Vat. gr.
                         754</ref>
                      <note type="attribution"><foreign xml:lang="grc">ἐρμηνεια·</foreign></note>
                   </seg>
+                  <note type="lemma">Ps 2,2b–c</note>
+                  <seg type="hypothesis" xml:id="bodl-auct-d-4-1-fr-2-8"
+                     corresp="#bodl-auct-d-4-1-ps-2-2b" source="Athanasius">
+                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-2-8"
+                        corresp="#person-2"
+                        source="Theodoretus, comm. in Ps 2 (PG 80,873 B12–C4) (οἱ ἄρχοντες)"/>
+                     <note type="attribution"><foreign xml:lang="grc">σχόλιον. εἰς τὸ δεύτερον
+                           ψαλμὸν τοῦ ἁγίου Ἀθανασίου·</foreign></note>
+                  </seg>
+                  <note type="lemma">Ps 2,2b–c</note>
+                  <seg type="glosse" xml:id="bodl-auct-d-4-1-fr-2-9"
+                     corresp="#bodl-auct-d-4-1-ps-2-2b" source="Anonymous (?)">
+                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-2-9"
+                        corresp="#person-48"
+                        source="fr. deperditum in Ps 2,2c; erat in marg. (ut vid.)"/><note
+                        type="textual-commentary"><p>Of this gloss only the letter above the lemma
+                           remains. It stood probably in the margin but can no longer be read at
+                           all.</p></note>
+                  </seg>
+                  <note type="lemma">Ps 2,3a</note>
+                  <seg type="glosse" xml:id="bodl-auct-d-4-1-fr-2-10"
+                     corresp="#bodl-auct-d-4-1-ps-2-3a" source="Anonymous">
+                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-2-10"
+                        corresp="#person-18"
+                        source="fons ignotus in Ps 2,3a (διαρρήξωμεν); in textu; cf. Suda, s.v. διαρρήξωμεν (Δ nr. 730 Adler)"
+                        >διακώψωμεν τὰ συνθέματα. τ<unclear reason="faded-ink">ὰς</unclear>
+                        <unclear reason="faded-ink">ἀνόδ</unclear><supplied reason="illegible"
+                           >ους·</supplied></quote>
+                  </seg>
                   <note type="lemma">Ps 2,3b</note>
-                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-2-4"
+                  <seg type="glosse" xml:id="bodl-auct-d-4-1-fr-2-11"
                      corresp="#bodl-auct-d-4-1-ps-2-3b" source="Anonymous">
-                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-2-4"
-                        corresp="#person-2" source="Athanasius, exp. (?) in Ps 2,3b">τὴν βαρύτητα
-                        τοῦ νόμου λέγει·</quote>
+                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-2-11"
+                        corresp="#person-18" source="fons ignotus in Ps 2,3b (τὸν ζυγὸν); in textu"
+                        >τὴν βαρύτητα τοῦ νόμου λέγει·</quote>
                      <ref target="vat-gr-754:vat-gr-754-glosse-2-2" type="with-variant">Vat. gr.
                         754</ref>
                   </seg>
-                  <note type="lemma">Ps 2,5a</note>
-                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-2-5"
-                     corresp="#bodl-auct-d-4-1-ps-2-5a" source="Hesychius">
-                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-2-5"
+                  <note type="lemma">Ps 2,4–5a</note>
+                  <seg type="glosse" xml:id="bodl-auct-d-4-1-fr-2-12"
+                     corresp="#bodl-auct-d-4-1-ps-2-4" source="Anonymous (?)">
+                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-2-12"
+                        corresp="#person-48"
+                        source="fr. deperditum in Ps 2,4a (ἐκγελάσεται); erat in marg. (ut vid.)"
+                        /><note type="textual-commentary"><p>Of this gloss only the letter above the
+                           lemma remains. It stood probably in the margin but can no longer be read
+                           at all.</p></note>
+                  </seg>
+                  <note type="lemma">Ps 2,4–5a</note>
+                  <seg type="glosse" xml:id="bodl-auct-d-4-1-fr-2-13"
+                     corresp="#bodl-auct-d-4-1-ps-2-4" source="Anonymous">
+                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-2-13"
+                        corresp="#person-18"
+                        source="fons ignotus in Ps 2,4b (ἐκμυκτηριεῖ); in marg.; cf. Suda, s.v. ἐκμυκτηριεῖ (Ε nr. 509 Adler)"
+                           >β<unclear reason="faded-ink">δ</unclear><supplied reason="illegible"
+                           >ελ</supplied><supplied reason="illegible" cert="high"
+                           >λύσσεται·</supplied></quote>
+                  </seg>
+                  <note type="lemma">Ps 2,4–5a</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-2-14"
+                     corresp="#bodl-auct-d-4-1-ps-2-4" source="Hesychius">
+                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-2-14"
                         corresp="#person-2" source="Athanasius, exp. in Ps 2,5a">τότε πότε. εἰ ὅτε
-                        ἔλεγεν διαρρίξωμεν τοὺς δεσμοὺς αὐτῶν· τί δε ἐστιν τὰ ἐν ὀργῆι παρ’ αὐτοῦ
+                        ἔλεγεν διαρρίξωμεν τοὺς δεσμοὺς αὐτῶν· τί δε ἐστιν. τὰ ἐν ὀργῆι πὰρ’ αὐτοῦ
                         λαληθέντα· εἰ τὸ οὐαὶ ὑμῖν φαρισαῖοι καὶ γραμματεῖς· καὶ ἀρθήσεται ἀφ’ ὑμῶν
                         ἡ βασιλεία· </quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-2-16" type="with-variants">Vat. gr.
@@ -708,33 +805,135 @@
                         Ησυχιου</foreign></note>
                   </seg>
                   <pb n="40v"/>
+                  <note type="lemma">Ps 2,4–5a</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-2-15"
+                     corresp="#bodl-auct-d-4-1-ps-2-4" source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-2-15"
+                        corresp="#person-10"
+                        source="Hesychius, schol. nr. 9; 10 in Ps 2,5a; 2,5b (Antonelli; PG 27,653)"/>
+                     <note type="attribution"><foreign xml:lang="grc">[ἄλλ]<unclear
+                              reason="faded-ink">ο</unclear>(ς)</foreign></note>
+                  </seg>
                   <note type="lemma">Ps 2,5b</note>
-                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-2-6"
-                     corresp="#bodl-auct-d-4-1-ps-2-5a" source="Hesychius">
-                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-2-6"
-                        corresp="#person-9" source="fons ignotus in Ps 2,5b">τὴν ῥωμαϊκὴν στρατιὰν
-                        λέγει· ⁘</quote>
-                     <note type="attribution"><foreign xml:lang="grc">ερμηνεια
-                        Ησυχιου</foreign></note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-2-16"
+                     corresp="#bodl-auct-d-4-1-ps-2-5b" source="Hesychius">
+                     <quote type="patristic" subtype="paraphrase-abbreviated"
+                        xml:id="bodl-auct-d-4-1-quot-2-16" corresp="#person-16"
+                        source="Theodoretus (?), comm. in Ps 2,5 (PG 80,877 B7–8)">τὴν ῥωμαϊκὴν
+                        στρατιὰν λέγει· ⁘</quote>
+                     <note type="attribution"><foreign xml:lang="grc">[ερμηνεια]
+                        Ησυχιου·</foreign></note>
+                  </seg>
+                  <note type="lemma">Ps 2,6a</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-2-17"
+                     corresp="#bodl-auct-d-4-1-ps-2-6a" source="Theodoretus">
+                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-2-17"
+                        corresp="#person-2" source="fons ignotus in Ps 2,6a (ineditum?)">ἐγὼ φησὶν ὁ
+                        Χριστὸς ὁ τὸν νόμον δοῦς τῶι Μωϋσῆι. καὶ μετὰ σαρκὸς παρὰ τοῦ ἐμοῦ ἐμφύτου
+                        πατρὸς κατεστάθην ἐπὶ τὴν ὑψήλιον γῆν βασιλεύς·</quote>
+                     <note type="attribution"><foreign xml:lang="grc">ερ<unclear reason="faded-ink"
+                              >μηνεια</unclear> Θ[ε]οδωρί (sic)</foreign></note>
                   </seg>
                   <note type="lemma">Ps 2,6b</note>
-                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-2-7"
-                     corresp="#bodl-auct-d-4-1-ps-2-5a" source="Theodoretus">
-                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-2-7"
-                        corresp="#person-18" source="fons ignotus in Ps 2,6b (ineditum?)">ἐπὶ τὴν
-                        ἐκκλησίαν φησὶν· ὄρος ἅγιον ὁ ἐξ ἐθνῶν λαός. τὸ βασίλειον ἱεράτευμα. τὸ
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-2-18"
+                     corresp="#bodl-auct-d-4-1-ps-2-6b" source="Theodoretus">
+                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-2-18"
+                        corresp="#person-18" source="fons ignotus in Ps 2,6b (Σιὼν; ineditum?)">ἐπὶ
+                        τὴν ἐκκλησίαν φησὶν· ὄρος ἅγιον ὁ ἐξ´ ἐθνῶν λαὸς. τὸ βασίλειον ἱεράτευμα. τὸ
                         ἅγιον ἔθνος. ὃ ἡγίασεν ὁ δεσπότης. κατὰ τὴν σάρκα καὶ τῆς κατὰ τὸν θάνατον
-                        οἰκονομίας ὁ μονογενὴς τοῦ θεοῦ υἱὸς καὶ θεός· </quote>
-                     <note type="attribution"><foreign xml:lang="grc">ἑρμηνεία
-                        Θεοδωρίτου</foreign></note>
+                        οἰκονομίας ὁ μονογενὴς τοῦ θεοῦ υἱὸς καὶ θεός·</quote>
+                     <note type="attribution"><foreign xml:lang="grc">ἑρμ<unclear reason="faded-ink"
+                              >η</unclear>ν<unclear reason="faded-ink">ε</unclear>[ί]<unclear
+                              reason="faded-ink">α</unclear> Θεο<unclear reason="faded-ink"
+                              >δ</unclear>[ω]<unclear reason="faded-ink">ρ</unclear>[ίτ]<unclear
+                              reason="faded-ink">ου</unclear></foreign></note>
                   </seg>
-                  <!-- Gegenkollation der folgenden fragmente zu Ps 2 steht aus -->
-                  <note type="lemma">Ps 2,10a</note>
-                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-2-8"
-                     corresp="#bodl-auct-d-4-1-ps-2-5a" source="Theodoretus">
-                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-2-8"
-                        corresp="#person-18" source="fons ignotus in Ps 2,10a">νοήσατε, ἐπίγνωτε
-                     </quote>
+                  <note type="lemma">Ps 2,7a–b</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-2-19"
+                     corresp="#bodl-auct-d-4-1-ps-2-7a" source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-2-19"
+                        corresp="#person-10"
+                        source="Hesychius, schol. nr. 13–14 in Ps 2,7a–b (Antonelli; PG 27,656)"
+                        ><!-- ἐκ τῶν οὐρανῶν ἀκουστὴν ἐποίησεν τὴν φωνὴν αὐτοῦ ὁ πατὴρ ἐν τῶι ϊορδάνη πρός με
+                        σύ εἶ ὁ υἱός μου ὁ ἀγαπητός· --></quote>
+                     <note type="attribution"><foreign xml:lang="grc">[ἐρμηνεία]</foreign></note>
+                  </seg>
+                  <note type="lemma">Ps 2,7c–9a</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-2-20"
+                     corresp="#bodl-auct-d-4-1-ps-2-7c" source="illegible">
+                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-2-20"
+                        corresp="#person-26"
+                        source="Hieronymus, fr. in Ps 2,9a (ἐν ῥάβδῳ; cf. PG 27,68 B1—4)"/>
+                     <ref target="vat-gr-754:vat-gr-754-fr-2-42" type="with-variants">Vat. gr.
+                        754</ref>
+                     <ref target="plut-5-30:plut-5-30-fr-2-38" type="abbreviated-with-variations">
+                        Flor. Med. Laurent. Plut. 5. 30</ref>
+                     <note type="attribution"><foreign xml:lang="grc">[ἐρμηνεία?]
+                           [..........]υ</foreign></note>
+                  </seg>
+                  <note type="lemma">Ps 2,9b–10a</note>
+                  <seg type="glosse" xml:id="bodl-auct-d-4-1-fr-2-21"
+                     corresp="#bodl-auct-d-4-1-ps-2-9b" source="Anonymous (?)">
+                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-2-21"
+                        corresp="#person-18"
+                        source="fons ignotus in Ps 2,10a (σύνετε); cf. Hesychius, lex. s.v. σύνετε (Σ nr. 2554 Hansen); cf. etiam PG 27,68 B7"
+                        >νωήσατε. ἐπίγνωτε·</quote>
+                     <note type="attribution"><foreign xml:lang="grc">[ἐρμηνεία?]</foreign></note>
+                  </seg>
+                  <pb n="41r"/>
+                  <note type="lemma">Ps 2,10b–12a</note>
+                  <seg type="glosse" xml:id="bodl-auct-d-4-1-fr-2-22"
+                     corresp="#bodl-auct-d-4-1-ps-2-10b" source="Theodoretus">
+                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-2-22"
+                        corresp="#person-18"
+                        source="fons ignotus in Ps 2,12a (δράξασθε); cf. Hesychius, lex. s.v. δράξασθε (Δ nr. 2321 Hansen)"
+                        >ἐπιλάβεσθαι τῆς ἐπιστίμης·</quote>
+                     <note type="attribution"><foreign xml:lang="grc"><unclear reason="faded-ink"
+                              >ἐ</unclear>ρμην(εία) Θ[ε]<unclear reason="faded-ink"
+                           >οδωρ</unclear>(ίτου)</foreign></note>
+                  </seg>
+                  <note type="lemma">Ps 2,10b–12a</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-2-23"
+                     corresp="#bodl-auct-d-4-1-ps-2-10b" source="Anonymous">
+                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-2-23"
+                        corresp="#person-18" source="fons ignotus in Ps 2,12a (δράξασθε); in marg."
+                           ><supplied reason="illegible">τ</supplied>οῦ ν<unclear reason="faded-ink"
+                           >όμ</unclear><supplied reason="margin-cut" cert="high">ου</supplied>
+                        [?]νεου <supplied reason="illegible">τ</supplied><supplied
+                           reason="illegible" cert="medium">ὴν</supplied> [?]δας <supplied
+                           reason="illegible" cert="medium">βαλ</supplied>[?] φη<unclear
+                           reason="faded-ink">σ</unclear><supplied reason="margin-cut" cert="high"
+                           >ί·</supplied></quote>
+                  </seg>
+                  <note type="lemma">Ps 2,12b–c</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-2-24"
+                     corresp="#bodl-auct-d-4-1-ps-2-12b" source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-2-24"
+                        corresp="#person-10"
+                        source="Hesychius, schol. nr. 27 in Ps 2,12c (Antonelli; PG 27,656)"/>
+                     <note type="attribution"><foreign xml:lang="grc"><unclear reason="faded-ink"
+                              >ἐ</unclear>ρ[μ]<unclear reason="faded-ink"
+                           >ην</unclear>(εία)</foreign></note>
+                  </seg>
+                  <note type="lemma">Ps 2,12d</note>
+                  <seg type="glosse" xml:id="bodl-auct-d-4-1-fr-2-25"
+                     corresp="#bodl-auct-d-4-1-ps-2-12d" source="Anonymous">
+                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-2-25"
+                        corresp="#person-18"
+                        source="fons ignotus in Ps 2,12d (μακάριοι); cf. Suda, s.v. Μακάριος (Μ nr. 55 Adler) et alibi"
+                        >οἱ ἐν ἀγαθοῖς πάντοτε ὄντες ⁘</quote>
+                     <ref target="vat-gr-754:vat-gr-754-glosse-1-8" type="with-variants">Vat. gr.
+                        754</ref>
+                     <note type="attribution"><foreign xml:lang="grc"><unclear reason="faded-ink"
+                              >ερ</unclear>[μηνεία]</foreign></note>
+                  </seg>
+                  <note type="lemma">Ps 2,12d</note>
+                  <seg type="glosse" xml:id="bodl-auct-d-4-1-fr-2-26"
+                     corresp="#bodl-auct-d-4-1-ps-2-12d" source="Anonymous">
+                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-2-26"
+                        corresp="#person-18" source="fons ignotus in Ps 2,12d (οἱ πεποιθότες)">οἱ
+                           ἐλ<supplied reason="illegible" cert="high">πίζοντες·</supplied> οἱ
+                           πι<supplied reason="illegible" cert="high">στευόντες·</supplied></quote>
                   </seg>
                   <!-- Ps 3 bibletext -->
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-3-1"
@@ -803,33 +1002,149 @@
                         corresp="../psalms-LXX/psalms.xml#Ps-LXX-3-9"/> καὶ ἐπὶ τὸν λαόν σου ἡ
                      εὐλογία σου. </quote>
                   <!-- ps 3 commentary -->
-                  <note type="lemma">Ps 3,2a</note>
-                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-3-1"
-                     corresp="#bodl-auct-d-4-1-ps-3-2a" source="Anonymous">
+                  <note type="lemma">Ps 3,1</note>
+                  <seg type="hypothesis" xml:id="bodl-auct-d-4-1-fr-3-1"
+                     corresp="#bodl-auct-d-4-1-ps-3-1" source="Theodoretus">
                      <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-3-1"
-                        corresp="#person-2" source="Athanasius, exp. in Ps 3,2a; in marg.">
+                        corresp="#person-16"
+                        source="Theodoretus, comm. in Ps 3,1 (PG 80,884 C11–885 A2)"/>
+                     <ref target="vat-gr-754:vat-gr-754-3-9" type="abbreviated-with-variants">Vat.
+                        gr. 754</ref>
+                     <note type="attribution"><foreign xml:lang="grc">[ἐρμηνεία] [Θεο]<unclear
+                              reason="faded-ink">δωρί</unclear>[του]</foreign></note>
+                  </seg>
+                  <note type="lemma">Ps 3,1</note>
+                  <seg type="hypothesis" xml:id="bodl-auct-d-4-1-fr-3-2"
+                     corresp="#bodl-auct-d-4-1-ps-3-1" source="Hesychius">
+                     <quote type="patristic" subtype="quotation-abbreviated"
+                        xml:id="bodl-auct-d-4-1-quot-3-2" corresp="#person-10"
+                        source="Hesychius, hyp. in Ps 3,1 (Antonelli; PG 27,657–658)"/>
+                     <note type="attribution"><foreign xml:lang="grc">[ἑτέ]ρ[α] [ἐρμηνεία ἡ?]
+                              [Ἡσυ]<unclear reason="faded-ink">χίο</unclear>[υ]</foreign></note>
+                  </seg>
+                  <pb n="41v"/>
+                  <note type="lemma">Ps 3,2</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-3-3"
+                     corresp="#bodl-auct-d-4-1-ps-3-2a" source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-3-3"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 3,2a (τί); in marg.">
                         <supplied reason="margin-cut">Τ</supplied>ὸ τί <unclear reason="faded"
                            >ἀ</unclear>ντὶ τοῦ <supplied reason="margin-cut">σ</supplied>φόδρα
                            <supplied reason="margin-cut">κ</supplied>εῖται· </quote><ref
                         target="vat-gr-754:vat-gr-754-fr-3-3" type="identical">Vat. gr. 754</ref>
                   </seg>
+                  <note type="lemma">Ps 3,2</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-3-4"
+                     corresp="#bodl-auct-d-4-1-ps-3-2" source="Anonymous">
+                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-3-4"
+                        corresp="#person-18"
+                        source="fons ignotus in Ps 3,2 (οἱ θλίβοντές με/ἐπανίστανται; ineditum?)"
+                        >νοηταῖον οὖν φησὶν· θλίβοντας καὶ ἐπανισταμένους. τοὺς τε φαύλους
+                        λογισμοὺς. καὶ τοὺς ἐναγεὶς καὶ ἐπαράτους δαίμονας. </quote>
+                     <note type="attribution"><foreign xml:lang="grc">ἐρμην(εία)</foreign></note>
+                  </seg>
+                  <note type="lemma">Ps 3,3</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-3-5"
+                     corresp="#bodl-auct-d-4-1-ps-3-3" source="Theodoretus">
+                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-3-5"
+                        corresp="#person-18"
+                        source="fons ignotus in Ps 3,3 (λέγουσιν τῇ ψυχῇ μου; ineditum?)">τους
+                        λογισμοὺς φησὶν. τοὺς ἀποστασιᾶσαι ἀπὸ θεοῦ τὴν ψυχὴν· ὅτ᾿ ἂν ἐν θλίψεσι
+                        γένηται συμβουλεύοντας ⁘</quote>
+                     <note type="attribution"><foreign xml:lang="grc">ερμηνεια
+                        Θεοδωρίτου</foreign></note>
+                  </seg>
+                  <note type="lemma">Ps 3,3</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-3-6"
+                     corresp="#bodl-auct-d-4-1-ps-3-3" source="Hesychius">
+                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-3-6"
+                        corresp="#person-10"
+                        source="Hesychius, schol. nr. 3; 4 in Ps 3,3a; 3,3b (λέγουσιν τῇ ψυχῇ μου; Antonelli; PG 27,657)"
+                        ><!-- Οἱ δαίμονες πρὸς τὴν ψυχὴν λέγουσιν· οὐ δύναταί σε ῥύσασθαι ὁ θεὸς ἐκ τῶν
+                        ἐπιθυμιῶν ἡμῶν· --></quote>
+                     <note type="attribution"><foreign xml:lang="grc">ἄλλη ἐρμην(εία)
+                           Ἡσυχίου·</foreign></note>
+                  </seg>
                   <note type="lemma">Ps 3,4a</note>
-                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-3-2"
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-3-7"
                      corresp="#bodl-auct-d-4-1-ps-3-4a" source="Hesychius">
-                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-3-2"
-                        corresp="#person-2" source="Athanasius, exp. in Ps 3,4a">διδάσκει ὁ λόγος.
-                        ὡς ἐν ταῖς περιστάσεσιν οὐκ᾿ ἄλλω. ἠ θεῶ μόνω προσιέναι δή· </quote>
+                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-3-7"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 3,4a (ἀντιλήμπτωρ)"
+                        >διδάσκει ὁ λόγος. ὡς ἐν ταῖς περιστάσεσιν οὐκ᾿ ἄλλω. ἠ θεῶ μόνω προσιέναι
+                        δή·</quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-3-15" type="identical">Vat. gr. 754</ref>
                      <note type="attribution"><foreign xml:lang="grc">ἐρμηνεία
                         Ἡσυχιου·</foreign></note>
                   </seg>
+                  <note type="lemma">Ps 3,4a</note>
+                  <seg type="glosse" xml:id="bodl-auct-d-4-1-fr-3-8"
+                     corresp="#bodl-auct-d-4-1-ps-3-4a" source="Anonymous">
+                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-3-8"
+                        corresp="#person-18" source="fons ignotus Ps 3,4a (ἀντιλήμπτωρ); in marg."
+                           ><gap reason="illegible" quantity="4" unit="character"/>ευς <gap
+                           reason="illegible" quantity="4" unit="character"/>ρος</quote>
+                  </seg>
+                  <note type="lemma">Ps 3,4b</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-3-9"
+                     corresp="#bodl-auct-d-4-1-ps-3-4b" source="Anonymous">
+                     <quote type="patristic" subtype="quotation-expanded"
+                        xml:id="bodl-auct-d-4-1-quot-3-9" corresp="#person-10"
+                        source="Hesychius, schol. nr. 6 in Ps 3,4b (δόξα μου; Antonelli; PG 27,657)"/>
+                     <note type="attribution"><foreign xml:lang="grc">ἐρμ(ηνεία)</foreign></note>
+                  </seg>
+                  <note type="lemma">Ps 3,5</note>
+                  <seg type="glosse" xml:id="bodl-auct-d-4-1-fr-3-10"
+                     corresp="#bodl-auct-d-4-1-ps-3-5" source="Anonymous">
+                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-3-10"
+                        corresp="#person-18" source="fons ignotus Ps 3,5b (ἐξ ὄρους); in marg."
+                           ><supplied reason="illegible" cert="medium">ἐκ</supplied>
+                        <supplied reason="illegible">οὐρα</supplied><unclear reason="faded-ink"
+                           >νοῦ</unclear></quote>
+                  </seg>
+                  <note type="lemma">Ps 3,5</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-3-10-1"
+                     corresp="#bodl-auct-d-4-1-ps-3-5" source="Anonymous">
+                     <quote type="patristic" subtype="quotation"
+                        xml:id="bodl-auct-d-4-1-quot-3-10-1" corresp="#person-28"
+                        source="Origenes, schol. in Ps 3,5c (διάψαλμα; 72 Cadiou)"/>
+                     <ref target="vat-gr-754:vat-gr-754-fr-3-21" type="with-variant">Vat. gr.
+                        754</ref>
+                     <note type="attribution"><foreign xml:lang="grc">ἐρμηνεία·</foreign></note>
+                  </seg>
                   <note type="lemma">Ps 3,6–7a</note>
-                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-3-3"
+                  <seg type="glosse" xml:id="bodl-auct-d-4-1-fr-3-11"
                      corresp="#bodl-auct-d-4-1-ps-3-6" source="Anonymous">
-                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-3-3"
-                        corresp="#person-18" source="fons ignotus in Ps 3,7a (ineditum?)">τῶν
-                        πειρασμῶν τῶν ἐπερχομένων· </quote>
+                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-3-11"
+                        corresp="#person-18"
+                        source="fons ignotus in Ps 3,6b (ἀντιλήμψεταί μου); in marg."><supplied
+                           reason="illegible" cert="medium">ἀντι</supplied><supplied
+                           reason="illegible">βοηθή</supplied>σει μου | <gap reason="illegible"
+                           quantity="6" unit="character"/><unclear reason="faded-ink"
+                           >ετ</unclear><supplied reason="illegible">αι</supplied>
+                        <unclear reason="faded-ink">μ</unclear>ου | <supplied reason="illegible"
+                           cert="medium">ἀντιδέξ</supplied><supplied reason="illegible"
+                           >εται</supplied>
+                        <unclear reason="faded-ink">μ</unclear>ου·</quote>
+                  </seg>
+                  <note type="lemma">Ps 3,6–7a</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-3-12"
+                     corresp="#bodl-auct-d-4-1-ps-3-6" source="Anonymous">
+                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-3-12"
+                        corresp="#person-18"
+                        source="fons ignotus in Ps 3,7a (ἀπὸ μυριάδων; ineditum?)">τῶν πειρασμῶν τῶν
+                        ἐπερχομένων· </quote>
                      <note type="attribution"><foreign xml:lang="grc">ἐρμην(εία)</foreign></note>
+                  </seg>
+                  <note type="lemma">Ps 3,7b</note>
+                  <seg type="glosse" xml:id="bodl-auct-d-4-1-fr-3-13"
+                     corresp="#bodl-auct-d-4-1-ps-3-7b" source="Anonymous">
+                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-3-13"
+                        corresp="#person-18"
+                        source="fons ignotus in Ps 3,7b (συνεπιτιθεμένων); in textu; cf. Hesychius, lex. s.v. συνεπιτιθεμένων (Σ nr. 2524 Hansen)"
+                        >συνεδρευόντων συνεπεγειρομένων·</quote>
+                     <ref target="vat-gr-754:vat-gr-754-glosse-3-1" type="expanded">Vat. gr.
+                        754</ref>
+                     <note type="attribution"><foreign xml:lang="grc">ἐρμ(ηνεία)</foreign></note>
                   </seg>
                   <!-- Ps 4 bibletext -->
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-4-1"
@@ -898,11 +1213,23 @@
                         corresp="../psalms-LXX/psalms.xml#Ps-LXX-4-9"/> ὅτι σύ, κύριε, κατὰ μόνας
                      ἐπ’ ἐλπίδι κατῴκισάς με. </quote>
                   <!-- Ps 4 commentary -->
+                  <pb n="42r"/>
                   <note type="lemma">Ps 4,1</note>
-                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-4-1"
+                  <seg type="hypothesis" xml:id="bodl-auct-d-4-1-fr-4-1"
+                     corresp="#bodl-auct-d-4-1-ps-4-1" source="Theodoretus">
+                     <quote type="patristic" subtype="quotation-adapted"
+                        xml:id="bodl-auct-d-4-1-quot-4-1" corresp="#person-16"
+                        source="Theodoretus, comm. in Ps 4,1 (PG 80,888 C8–13)"/>
+                     <ref target="vat-gr-754:vat-gr-754-fr-4-8" type="abbreviated-with-variants"
+                        >Vat. gr. 754</ref>
+                     <note type="attribution"><foreign xml:lang="grc">ἐρμηνεία
+                        Θεοδωρίτου·</foreign></note>
+                  </seg>
+                  <note type="lemma">Ps 4,1</note>
+                  <seg type="hypothesis" xml:id="bodl-auct-d-4-1-fr-4-2"
                      corresp="#bodl-auct-d-4-1-ps-4-1" source="Hesychius">
-                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-4-1"
-                        corresp="#person-11 #person-2"
+                     <quote type="patristic" subtype="quotation/quotation"
+                        xml:id="bodl-auct-d-4-1-quot-4-2" corresp="#person-11 #person-2"
                         source="Hesychius, comm. brevis in Ps 4,1 (4 Jagić) - Athanasius, exp. in Ps 4,1"
                         >... τοῦτον δὲ τὸν ψαλμὸν μετὰ τὸ νικῆσαι τὸν πόλεμον ἀνατίθησει τῶι θῶι τῶι
                         νικοποιῶι· ⁘</quote>
@@ -911,13 +1238,110 @@
                      <note type="attribution"><foreign xml:lang="grc">ἀλλη ερμηνεία
                            Ἡσυχίου·</foreign></note>
                   </seg>
-                  <note type="lemma">Ps 4,5a</note>
-                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-4-2"
+                  <note type="lemma">Ps 4,1</note>
+                  <seg type="hypothesis" xml:id="bodl-auct-d-4-1-fr-4-3"
+                     corresp="#bodl-auct-d-4-1-ps-4-1" source="Anonymous">
+                     <quote type="patristic" subtype="paraphrase-abbreviated"
+                        xml:id="bodl-auct-d-4-1-quot-4-3" corresp="#person-8"
+                        source="Eusebius (?), comm. in Ps 4,1 (fr. 2 Villani)"/>
+                     <note type="attribution"><foreign xml:lang="grc">αλλ(η)
+                        ἐρμ(ενεία)</foreign></note>
+                     <!-- auch bei Theodoretus ist eine vergleichbare Stelle (unmittelbar nach dem obigen Auszug). Die Ähnlichkeit mit Euseb. ist aber stärker -->
+                  </seg>
+                  <note type="lemma">Ps 4,2a</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-4-4"
+                     corresp="#bodl-auct-d-4-1-ps-4-2a" source="Basileius">
+                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-4-4"
+                        corresp="#person-49"
+                        source="Basilius, Quod deus non est auctor malorum 1 (ἐπικαλεῖσθαί με; PG 31,329 A14–B3; in Ps 4,2a)"/>
+                     <note type="attribution"><foreign xml:lang="grc">ε<unclear reason="faded-ink"
+                              >ρμ</unclear>ηνεια του ἀγιου Βασιλείου·</foreign></note>
+                  </seg>
+                  <note type="lemma">Ps 4,2b–3a</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-4-5"
+                     corresp="#bodl-auct-d-4-1-ps-4-2b" source="Anonymous">
+                     <quote type="patristic" subtype="quotation-expanded"
+                        xml:id="bodl-auct-d-4-1-quot-4-5" corresp="#person-18"
+                        source="Hesychius (?), schol. nr. 4 in Ps 4,3a (βαρυκάρδιοι; Antonelli; PG 27,660)"
+                        >λιθο_κάρδιοι τῆι ψυχῆι καὶ τῶι νῶι·</quote>
+                     <note type="attribution"><foreign xml:lang="grc">ερμην(εία)</foreign></note>
+                  </seg>
+                  <note type="lemma">Ps 4,3b–4a</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-4-6"
+                     corresp="#bodl-auct-d-4-1-ps-4-3b" source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-4-6"
+                        corresp="#person-10"
+                        source="Hesychius, schol. nr. 6 in Ps 4,4a (γνῶτε; Antonelli; PG 27,660)"/>
+                     <note type="attribution"><foreign xml:lang="grc">ἐρμην(εία)</foreign></note>
+                  </seg>
+                  <note type="lemma">Ps 4,3b–4a</note>
+                  <seg type="glosse" xml:id="bodl-auct-d-4-1-fr-4-7"
+                     corresp="#bodl-auct-d-4-1-ps-4-3b" source="Anonymous">
+                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-4-7"
+                        corresp="#person-18" source="fons ignotus in Ps 4,4a (τὸν ὅσιον); in marg."
+                           ><supplied reason="illegible" cert="high">ἅγιον</supplied></quote>
+                  </seg>
+                  <note type="lemma">Ps 4,4b–5a</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-4-8"
                      corresp="#bodl-auct-d-4-1-ps-4-5a" source="Anonymous">
-                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-4-2"
+                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-4-8"
                         corresp="#person-18" source="fons ignotus in Ps 4,5a (ineditum?)">τοῦτέστιν·
                         μὴ τὴν ὀργὴν ἐκπεραίνεται·</quote>
                      <note type="attribution"><foreign xml:lang="grc">ερμην(εία)</foreign></note>
+                  </seg>
+                  <note type="lemma">Ps 4,5b–c</note>
+                  <seg type="glosse" xml:id="bodl-auct-d-4-1-fr-4-9"
+                     corresp="#bodl-auct-d-4-1-ps-4-5b" source="Anonymous">
+                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-4-9"
+                        corresp="#person-18"
+                        source="fons ignotus in Ps 4,5c (κατανύγητε); in marg.; cf. Hesychius, lex. s.v. κατανύγητε (K nr. 1304 Latte)"
+                           >ἡσυχ<unclear reason="faded-ink">ά</unclear><supplied reason="illegible"
+                           cert="high">σατε</supplied> | λυπ<unclear reason="faded-ink"
+                           >ή</unclear><supplied reason="illegible" cert="high">θητε</supplied> |
+                           ἀγαθ<gap reason="illegible" quantity="4" unit="character"/></quote>
+                  </seg>
+                  <pb n="42v"/>
+                  <note type="lemma">Ps 4,6–7a</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-4-10"
+                     corresp="#bodl-auct-d-4-1-ps-4-6" source="Hesychius">
+                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-4-11"
+                        corresp="#person-18"
+                        source="fons ignotus in Ps 4,6 (θυσίαν; ineditum?); in sup. marg. add. S"
+                        >θυσίαν δικαιοσύνης φησὶν· τὴν πρὸς τὸν ἡμαρτηκώτα πλησίον
+                        συμπάθειαν·</quote>
+                     <note type="attribution"><foreign xml:lang="grc"><unclear reason="faded-ink"
+                              >Ἡσυ</unclear>[χ]ίου</foreign></note>
+                  </seg>
+                  <note type="lemma">Ps 4,6–7a</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-4-12"
+                     corresp="#bodl-auct-d-4-1-ps-4-6" source="Theodoretus">
+                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-4-12"
+                        corresp="#person-16"
+                        source="Theodoretus, comm. in Ps 4,8b (λέγουσιν; PG 80,893 B8–13)"
+                        ><!-- ἔστιν τὸ νόημα μεθ᾿ ὑπέρβατον· πολλοὶ λέγουσιν τίς δείξει ἡμῖν τὰ ἀγαθὰ· ἀπὸ καρποῦ
+                        σίτου σίτου καὶ οἴνου καὶ ἐλαίου αὐτῶν ἐπληθύνθησαν· καὶ αὐτοὶ φησὶν οἱ
+                        ταῦτα λέγοντες. τῶν παντο_δαπῶν τῆς γῆς καρπῶν ἀπολαύσουσιν· --></quote>
+                     <note type="attribution"><foreign xml:lang="grc"><unclear reason="faded-ink"
+                              >ἐ</unclear>ρμηνεία Θεοδωρίτου·</foreign></note>
+                  </seg>
+                  <note type="lemma">Ps 4,7b</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-4-13"
+                     corresp="#bodl-auct-d-4-1-ps-4-7b" source="Gregorius of Nyssa">
+                     <quote type="patristic" subtype="quotation-adapted/quotation"
+                        xml:id="bodl-auct-d-4-1-quot-4-13" corresp="#person-32 #person-2"
+                        source="Gregorius Nyss., Ps. inscr. I 4 (35, l. 20–23 McDonough) in Ps 4,7 - Athanasius, exp. in Ps 4,7b–8a"
+                        >... τὸ φῶς τοῦ κυρίου ὁ Χριστός ἐστιν· ὃς καὶ ἔδειξεν ἡμῖν τὰ ὄντως ἀγαθά·
+                        δι᾿ ἃ καὶ τὴν νοητὴν εὐφροσύνην ἐσχήκαμεν. τὴν εἰς νοῦν καὶ καρδίαν·
+                        ⁘</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-4-33" type="abbreviated-with-variants"
+                        >Vat. gr. 754</ref>
+                     <ref target="vat-gr-754:vat-gr-754-fr-4-31" type="with-variants">Vat. gr.
+                        754</ref>
+                     <note type="attribution"><foreign xml:lang="grc">ἐρμηνε<unclear
+                              reason="faded-ink">ία</unclear> [τ]<unclear reason="faded-ink"
+                              >ου</unclear> α<unclear reason="faded-ink">γ</unclear>ιου <unclear
+                              reason="faded-ink">Γ</unclear>[ρ]<unclear reason="faded-ink"
+                              >η</unclear>γορίου Νύσης</foreign></note>
                   </seg>
                   <!-- Ps 5 bibletext -->
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-1"
@@ -1025,51 +1449,182 @@
                      ὡς ὅπλῳ εὐδοκίας ἐστεφάνωσας ἡμᾶς. </quote>
                   <pb n="43r"/>
                   <!-- Ps 5 commentary -->
-                  <note type="lemma">Ps 5,3b–c</note>
-                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-5-1"
-                     corresp="#bodl-auct-d-4-1-ps-5-3b" source="Anonymous">
+                  <note type="lemma">Ps 5,1</note>
+                  <seg type="hypothesis" xml:id="bodl-auct-d-4-1-fr-5-1"
+                     corresp="#bodl-auct-d-4-1-ps-5-1" source="Thedoretus">
                      <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-5-1"
-                        corresp="#person-2" source="Athanasius, exp. in Ps 5,4a">ἐν ἀναπαύσει φησὶν
-                        τοῦ νοητοῦ γενάμενος φωτὸς προσεύξομαί σοι· διὸ καὶ εἰσακουσθῆναι πιστεύω· </quote>
+                        corresp="#person-16" source="Theodoretus, comm. in Ps 5,1 (PG 80,896 A3–7)"/>
+                     <note type="attribution"><foreign xml:lang="grc">ἐρ[μηνεία
+                           Θεοδ][ωρήτου(?)]</foreign></note>
+                  </seg>
+                  <note type="lemma">Ps 5,1</note>
+                  <seg type="hypothesis" xml:id="bodl-auct-d-4-1-fr-5-2"
+                     corresp="#bodl-auct-d-4-1-ps-5-1" source="Hesychius">
+                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-5-2"
+                        corresp="#person-11" source="Hesychius, comm. brevis in Ps 5,1 (5 Jagić)"/>
+                     <ref target="vat-gr-754:vat-gr-754-fr-5-3" type="with-variants">Vat. gr.
+                        754</ref>
+                     <note type="attribution"><foreign xml:lang="grc">ἑτέρα [ἐ]<unclear
+                              reason="faded-ink">ρ</unclear>[μην](εία) <unclear reason="faded-ink"
+                              >Ἡ</unclear>[συχίου·]</foreign></note>
+                  </seg>
+                  <note type="lemma">Ps 5,1</note>
+                  <seg type="hypothesis" xml:id="bodl-auct-d-4-1-fr-5-3"
+                     corresp="#bodl-auct-d-4-1-ps-5-1" source="Anonymous">
+                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-5-3"
+                        corresp="#person-18" source="fons ignotus in Ps 5,1 (ineditum?)">Τὴν ἐν
+                        τέλει. ἡγ᾿ οὖν ἐν τῶι ἑβδόμωι αἰώνι· κληρονομούσης τὸν κύριον. φησὶν τῆς
+                        ἐκκλησίας·</quote><note type="attribution"><foreign xml:lang="grc">ἀ[λλη
+                              ἐρμ]<unclear reason="faded-ink">ην</unclear>(εία)</foreign></note>
+                  </seg>
+                  <pb n="43r"/>
+                  <note type="lemma">Ps 5,2a</note>
+                  <seg type="hypothesis" xml:id="bodl-auct-d-4-1-fr-5-4"
+                     corresp="#bodl-auct-d-4-1-ps-5-1" source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-5-4"
+                        corresp="#person-7"
+                        source="Eusebius, Perioche in Ps 5 (128 Bandt) in Ps 5,2a (Τὰ ῥήματά μου); in marg. sup. add. S"
+                     />
+                  </seg>
+                  <note type="lemma">Ps 5,2a</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-5-5"
+                     corresp="#bodl-auct-d-4-1-ps-5-2a" source="Hesychius">
+                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-5-5"
+                        corresp="#person-16"
+                        source="Theodoretus, comm. in Ps 5,2–3b (ἐνώτισαι; PG 80,896 C9–11)"/>
+                     <note type="attribution"><foreign xml:lang="grc">ερμ(ενείας)
+                        Ἡσυχιου</foreign></note>
+                  </seg>
+                  <note type="lemma">Ps 5,2b–3a</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-5-6"
+                     corresp="#bodl-auct-d-4-1-ps-5-2b" source="Cyrillus">
+                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-5-6"
+                        corresp="#person-4"
+                        source="Cyrillus, fr. in Ps 5,2b (σύνες; PG 69,741 A15–B2)"/>
+                     <note type="attribution"><foreign xml:lang="grc">ἐρμηνεία τοῦ ἁγίου
+                           Κυρίλλου·</foreign></note>
+                  </seg>
+                  <note type="lemma">Ps 5,2b–3a</note>
+                  <seg type="glosse" xml:id="bodl-auct-d-4-1-fr-5-7"
+                     corresp="#bodl-auct-d-4-1-ps-5-2b" source="Anonymous">
+                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-5-7"
+                        corresp="#person-18" source="fons ignotus in Ps 5,3a (σύνες)">ἐ<unclear
+                           reason="faded-ink">π</unclear><supplied reason="illegible" cert="medium"
+                           >άκουσον</supplied></quote>
+                  </seg>
+                  <note type="lemma">Ps 5,2b–3a</note>
+                  <seg type="glosse" xml:id="bodl-auct-d-4-1-fr-5-8"
+                     corresp="#bodl-auct-d-4-1-ps-5-2b" source="Anonymous">
+                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-5-8"
+                        corresp="#person-47" source="fons ignotus in Ps 5,3a (πρόσχες)">[?] |
+                           <unclear reason="faded-ink">ἄ</unclear>[?]</quote>
+                  </seg>
+                  <note type="lemma">Ps 5,3b–c</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-5-9"
+                     corresp="#bodl-auct-d-4-1-ps-5-3b" source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-5-9"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 5,4a (προσεύξομαι)">ἐν
+                        ἀναπαύσει φησὶν τοῦ νοητοῦ γενάμενος φωτὸς προσεύξομαί σοι· διὸ καὶ
+                        εἰσακουσθῆναι πιστεύω·</quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-5-10" type="with-variants">Vat. gr.
                         754</ref>
                      <note type="attribution"><foreign xml:lang="grc">ἐρμηνεία</foreign></note>
                   </seg>
                   <note type="lemma">Ps 5,4a</note>
-                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-5-2"
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-5-10"
                      corresp="#bodl-auct-d-4-1-ps-5-4a" source="Hesychius">
-                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-5-2"
-                        corresp="#person-2" source="Athanasius, exp. in Ps 5,4b">μέγα ἁγνείας
-                        καύχημα. τῶι ἐκ κοίτης αὐτῆς παρίστασθαι τῶι θεῶι· καὶ φθάνειν εὐχαριστεῖα
-                        τὸν ἥλιον·</quote>
+                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-5-10"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 5,4b (τὸ πρωὶ)">μέγα
+                        ἁγνείας καύχημα. τῶι ἐκ κοίτης αὐτῆς παρίστασθαι τῶι θεῶι· καὶ φθάνειν
+                        εὐχαριστεῖα τὸν ἥλιον·</quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-5-11" type="abbreviated-with-variants"
                         >Vat. gr. 754</ref>
                      <note type="attribution"><foreign xml:lang="grc">ἐρμηνεία
                         Ἡσυχιου·</foreign></note>
                   </seg>
+                  <note type="lemma">Ps 5,4b–7a</note>
+                  <seg type="glosse" xml:id="bodl-auct-d-4-1-fr-5-11"
+                     corresp="#bodl-auct-d-4-1-ps-5-4b" source="Anonymous (?)">
+                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-5-11"
+                        corresp="#person-48"
+                        source="fons ignotus in Ps 5,4b (ἐπόψομαι); erat in marg. (ut vid.)"/>
+                  </seg>
+                  <note type="lemma">Ps 5,4b–7a</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-5-12"
+                     corresp="#bodl-auct-d-4-1-ps-5-4b" source="Hesychius">
+                     <quote type="patristic" subtype="quotation-abbreviated"
+                        xml:id="bodl-auct-d-4-1-quot-5-12" corresp="#person-23"
+                        source="Evagrius, schol. nr. γ´ in Ps 5,7a (τοὺς λαλοῦντας; 296, l. 1–5 Rondeau – Géhin – Cassin)"/>
+                     <ref target="vat-gr-754:vat-gr-754-fr-5-24" type="abbreviated-with-variants"
+                        >Vat. gr. 754</ref>
+                     <note type="attribution"><foreign xml:lang="grc"/></note>
+                  </seg>
                   <note type="lemma">Ps 5,7b</note>
-                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-5-3"
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-5-13"
                      corresp="#bodl-auct-d-4-1-ps-5-7b" source="Anonymous">
-                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-5-3"
-                        corresp="#person-18" source="fons ignotus in Ps 5,7b (ineditum?)">τὸν Κάϊν
-                        λέγει καὶ τοὺς κατ’ αὐτὸν· </quote>
-                     <note type="attribution"><foreign xml:lang="grc">ἐρμην(εία)·</foreign></note>
+                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-5-13"
+                        corresp="#person-18" source="fons ignotus in Ps 5,7b (ἄνδρα?; ineditum?)"
+                        >τὸν Κάϊν λέγει καὶ τοὺς κατ’ αὐτόν· </quote>
+                     <note type="attribution"><foreign xml:lang="grc">[ἐρ]<unclear
+                              reason="faded-ink">μ</unclear>[η]ν(εία)·</foreign></note>
+                  </seg>
+                  <seg type="glosse" xml:id="bodl-auct-d-4-1-fr-5-14"
+                     corresp="#bodl-auct-d-4-1-ps-5-7b" source="Anonymous (?)">
+                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-5-14"
+                        corresp="#person-48"
+                        source="fons ignotus in Ps 5,7b (αἱμάτων?); fort. erat in marg."/>
+                  </seg>
+                  <note type="lemma">Ps 5,7b</note>
+                  <seg type="glosse" xml:id="bodl-auct-d-4-1-fr-5-15"
+                     corresp="#bodl-auct-d-4-1-ps-5-7b" source="Anonymous (?)">
+                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-5-15"
+                        corresp="#person-47" source="fons ignotus in Ps 5,7b (βδελύσσεται?)">[?]
+                           <supplied reason="illegible" cert="medium">ἀπ</supplied>[?] |
+                           [?]<supplied reason="illegible" cert="medium">φε</supplied>[?]</quote>
                   </seg>
                   <note type="lemma">Ps 5,8a</note>
-                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-5-4"
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-5-16"
                      corresp="#bodl-auct-d-4-1-ps-5-8a" source="Anonymous">
-                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-5-4"
-                        corresp="#person-2" source="Athanasius, exp. in Ps 5,8">εἰς τὴν ἐπουράνιον
-                        ἱερουσαλήμ·</quote>
+                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-5-16"
+                        corresp="#person-10 #person-2"
+                        source="Hesychius, schol. nr. 15 in Ps 5,8b (Antonelli; PG 27,664) potius quam Athanasius, exp. in Ps 5,8"
+                        >εἰς τὴν ἐπουράνιον ἱερουσαλήμ·</quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-5-21" type="abbreviated-with-variant"
                         >Vat. gr. 754</ref>
-                     <note type="attribution"><foreign xml:lang="grc">ἐρμην(εία)·</foreign></note>
+                     <note type="attribution"><foreign xml:lang="grc">ἐρμην<unclear
+                              reason="faded-ink">εί</unclear>α·</foreign></note>
+                  </seg>
+                  <note type="lemma">Ps 5,8b–9</note>
+                  <seg type="glosse" xml:id="bodl-auct-d-4-1-fr-5-17"
+                     corresp="#bodl-auct-d-4-1-ps-5-8b" source="Anonymous (?)">
+                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-5-17"
+                        corresp="#person-47" source="fons ignotus in Ps 5,9a (τῶν ἐχθρῶν)"
+                           >τῶ<unclear reason="faded-ink">ν</unclear> | [?]<unclear
+                           reason="faded-ink">νω</unclear>[ν]</quote>
+                  </seg>
+                  <note type="lemma">Ps 5,8b–9</note>
+                  <seg type="glosse" xml:id="bodl-auct-d-4-1-fr-5-18"
+                     corresp="#bodl-auct-d-4-1-ps-5-8b" source="Anonymous">
+                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-5-18"
+                        corresp="#person-47" source="fons ignotus in Ps 5,9a (κατεύθυνον)"><supplied
+                           reason="illegible" cert="medium">ὀρ</supplied>[?] | <supplied
+                           reason="illegible">ε</supplied><unclear reason="faded-ink"
+                        >ὐ</unclear>[?]</quote>
+                  </seg>
+                  <note type="lemma">Ps 5,8b–9</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-5-19"
+                     corresp="#bodl-auct-d-4-1-ps-5-8b" source="Theodoretus">
+                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-5-19"
+                        corresp="#person-16"
+                        source="Theodoretus, comm. in Ps 5,9 (ἐνώπιόν σου; PG 80,897 C10–12)"/>
+                     <note type="attribution"><foreign xml:lang="grc"><unclear reason="faded-ink"
+                              >Θε</unclear>[οδωρ]ί[του]</foreign></note>
                   </seg>
                   <pb n="43v"/>
                   <note type="lemma">Ps 5,10a</note>
-                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-5-5"
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-5-20"
                      corresp="#bodl-auct-d-4-1-ps-5-10a" source="Anonymous">
-                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-5-5"
+                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-5-20"
                         corresp="#person-2" source="Athanasius, exp. in Ps 5,10">τῶν σοφῶν τοῦ
                         αἰώνος τούτου· ἥτοι τῶν αἱρετικῶν· οὗτοι γὰρ᾿ ἀληθείας λόγους οὐκ᾿ ΐσασιν·
                         ⁘</quote>
@@ -1077,16 +1632,99 @@
                         754</ref>
                      <note type="attribution"><foreign xml:lang="grc">ἐρμην(εία)</foreign></note>
                   </seg>
+                  <note type="lemma">Ps 5,10b–11a</note>
+                  <seg type="glosse" xml:id="bodl-auct-d-4-1-fr-5-21"
+                     corresp="#bodl-auct-d-4-1-ps-5-10b" source="Anonymous (?)">
+                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-5-22"
+                        corresp="#person-18" source="fons ignotus in Ps 5,10b (ματαία); in marg."
+                           ><supplied reason="illegible" cert="high">κακί</supplied><unclear
+                           reason="faded-ink">στ</unclear>η | <gap reason="illegible" quantity="4"
+                           unit="character"/><supplied reason="illegible" cert="medium"
+                        >α</supplied>ινής.</quote>
+                  </seg>
+                  <note type="lemma">Ps 5,10b–11a</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-5-23"
+                     corresp="#bodl-auct-d-4-1-ps-5-10b" source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-5-23"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 5,10c–d; in marg."
+                           ><supplied reason="margin-cut">τὰ</supplied>
+                        <unclear reason="faded-ink">ν</unclear>εκρὰ | <supplied reason="margin-cut"
+                           >ἐρ</supplied><supplied reason="illegible">ε</supplied><unclear
+                           reason="faded-ink">υ</unclear>γόμε|<supplied reason="margin-cut"
+                           >ν</supplied><supplied reason="illegible">οι</supplied>
+                        <unclear reason="faded-ink">ῥή</unclear>ματα</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-5-40" type="with-variant">Vat. gr.
+                        754</ref>
+                  </seg>
+                  <note type="lemma">Ps 5,10b–11a</note>
+                  <seg type="glosse" xml:id="bodl-auct-d-4-1-fr-5-24"
+                     corresp="#bodl-auct-d-4-1-ps-5-10b" source="Anonymous">
+                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-5-24"
+                        corresp="#person-18"
+                        source="fons ignotus in Ps 5,10d (ταῖς γλώσσαις); in marg."><gap
+                           reason="illegible" quantity="4" unit="character"/>
+                        <supplied reason="illegible">κ</supplied>ατα|<supplied reason="margin-cut"
+                           >λ</supplied>αλοῦσιν</quote>
+                  </seg>
+                  <note type="lemma">Ps 5,10b–11a</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-5-25"
+                     corresp="#bodl-auct-d-4-1-ps-5-10b" source="Hesychius">
+                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-5-25"
+                        corresp="#person-18" source="fons ignotus in Ps 5,11a (κρῖνον)">τὸ κρῖνον.
+                        ἐπιδ᾿ ἂν δηλοὶ τὸ κατάκρινον. πρὸς αἰτιατικὴν συντάσσεται πτῶσιν· ἐπὶ δ᾿ ἂν
+                        δὲ τὸ δίκασον. προσδοτικήν· καὶ τοῦτο καθ᾿ ὅλης τῆς γραφῆς εὑρήσεις·
+                        ⁘</quote>
+                     <note type="attribution"><foreign xml:lang="grc">ἐρμηνεια
+                        Ησυχιου·</foreign></note>
+                  </seg>
+                  <note type="lemma">Ps 5,11b</note>
+                  <seg type="glosse" xml:id="bodl-auct-d-4-1-fr-5-26"
+                     corresp="#bodl-auct-d-4-1-ps-5-11b" source="Anonymous">
+                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-5-26"
+                        corresp="#person-18"
+                        source="fons ignotus in Ps 5,11b
+                        (ἀποπεσάτωσαν); in textu; cf. Euthymius Zig., comm. in Psalt. (PG 128,105 A10)"
+                        >ἀστοχησάτωσαν· ἀμυρισάτωσαν·</quote>
+                     <note type="attribution"><foreign xml:lang="grc">ἐρμ(ηνεία)</foreign></note>
+                  </seg>
+                  <note type="lemma">Ps 5,11b</note>
+                  <seg type="glosse" xml:id="bodl-auct-d-4-1-fr-5-27"
+                     corresp="#bodl-auct-d-4-1-ps-5-11b" source="Anonymous">
+                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-5-27"
+                        corresp="#person-18"
+                        source="fons ignotus in Ps 5,11b (τῶν διαβουλίων); in marg.">[?]<unclear
+                           reason="faded-ink">ψε</unclear>ων</quote>
+                  </seg>
+                  <note type="lemma">Ps 5,11c</note>
+                  <seg type="glosse" xml:id="bodl-auct-d-4-1-fr-5-28"
+                     corresp="#bodl-auct-d-4-1-ps-5-11c" source="Anonymous">
+                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-5-28"
+                        corresp="#person-18"
+                        source="fons ignotus in Ps 5,11c (ἔξωσον); in textu; cf. Hesychius, lex. s.v. ἔξωσον (Ε nr. 4012 Latte)"
+                        >ἄπωσαι· ἔκβαλον αὐτούς·</quote>
+                     <note type="attribution"><foreign xml:lang="grc">ἐρμην(εία)</foreign></note>
+                  </seg>
                   <note type="lemma">Ps 5,11d</note>
-                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-5-6"
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-5-29"
                      corresp="#bodl-auct-d-4-1-ps-5-11d" source="Anonymous">
-                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-5-6"
-                        corresp="#person-2" source="Athanasius, exp. in Ps 5,11c–d">Οἱ γὰρ διώκοντες
+                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-5-29"
+                        corresp="#person-2"
+                        source="Athanasius, exp. in Ps 5,11c–d (παρεπίκρανάν σε)">Οἱ γὰρ διώκοντες
                         τὴν φιλο_θέως κατορθουμένην ψυχήν· σὲ ἐμπαραπικραίνουσιν θεομαχοῦντες σαφῶς·
                         ⁘</quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-5-43" type="with-variants">Vat. gr.
                         754</ref>
                      <note type="attribution"><foreign xml:lang="grc">ἐρμην(εία)</foreign></note>
+                  </seg>
+                  <note type="lemma">Ps 5,11d</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-5-30"
+                     corresp="#bodl-auct-d-4-1-ps-5-11d" source="Anonymous (?)">
+                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-5-30"
+                        corresp="#person-47"
+                        source="fons ignotus in Ps 5,11d (παρεπίκρανάν σε); in marg.">[?] |
+                           [?]<supplied reason="illegible" cert="high">νει</supplied> | [?]<supplied
+                           reason="illegible" cert="medium">α</supplied><supplied reason="illegible"
+                           cert="high">ν</supplied></quote>
                   </seg>
                   <!-- Ps 6 bibletext -->
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-6-1"
@@ -1437,33 +2075,185 @@
                      τοῦ ὑψίστου. </quote>
                   <pb n="45r"/>
                   <!-- Ps 7 commentary -->
+                  <!-- MUSTER -->
+                  <!-- MESE:  ·  Spitzenklammern:  &lt;XX&gt; -->
+                  <!--  <note type="lemma">Ps 7</note>
+                     <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-7-ΧΧΧ"
+                     corresp="#bodl-auct-d-4-1-ps-5-XX" source="XXX">
+                     <quote type="patristic" subtype="XXX" xml:id="bodl-auct-d-4-1-quot-7-ΧΧΧ"
+                        corresp="#person-XXX" source=""></quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-7-XX" type="XXX">Vat. gr. 754</ref>
+                     <note type="attribution"><foreign xml:lang="grc"></foreign></note>
+                  </seg> -->
                   <note type="lemma">Ps 7,1</note>
                   <seg type="hypothesis" xml:id="bodl-auct-d-4-1-fr-7-1"
+                     corresp="#bodl-auct-d-4-1-ps-5-1" source="Theodoretus">
+                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-7-1"
+                        corresp="#person-16" source="Theodoretus, comm. in Ps 7,1 (PG 80,908 Α7–13)"/>
+                     <ref target="vat-gr-754:vat-gr-754-fr-7-3" type="abbreviated-with-variants"
+                        >Vat. gr. 754</ref>
+                     <note type="attribution">[ἐρμη]<unclear reason="faded-ink">ν</unclear>εια
+                           <unclear reason="faded">Θε</unclear>ο<unclear reason="faded"
+                           >δ</unclear>[ω]<unclear reason="faded">ρίτο</unclear>υ·<foreign
+                           xml:lang="grc"/></note>
+                  </seg>
+                  <note type="lemma">Ps 7,1</note>
+                  <seg type="hypothesis" xml:id="bodl-auct-d-4-1-fr-7-2"
                      corresp="#bodl-auct-d-4-1-ps-7-1" source="Athanasius">
                      <quote type="patristic" subtype="quotation-paraphrase-abbreviated"
-                        xml:id="bodl-auct-d-4-1-quot-7-1" corresp="#person-2"
+                        xml:id="bodl-auct-d-4-1-quot-7-2" corresp="#person-2"
                         source="Athanasius, exp. in Ps 7,1">Ἀρχιέτερος <add place="overstrike"
                            >τοῦ</add> Δαυῒδ᾿ <subst hand="corr">
                            <del rend="erasure" cert="medium">τοῦ</del>
                            <add place="inline">ὁ</add>
                         </subst> Χουσὶ· ὃς καὶ ἀποστέλλεται παρὰ τοῦ Δαυῒδ᾿ πρὸς Ἀβεσσαλὼμ᾿· πρὸς τὸ
-                        ἀντι_παρατάξασθαι τῶι Ἀχιττόφελ᾿· βουλὰς εἰσηγουμένω κατὰ τοῦ Δαυΐδ᾿· ὃς καὶ
+                        ἀντιπαρατάξασθαι τῶι Ἀχιττόφελ᾿· βουλὰς εἰσηγουμένω κατὰ τοῦ Δαυΐδ᾿· ὃς καὶ
                         ἀπελθῶν καὶ προδοσίαν ὑποκρινόμενος. βουλῆς προτεθήσης κατὰ τοῦ Ἀβεσσαλὼμ᾿·
-                        αὐτῶι τε τῶι Χουσὶ καὶ τῶι Ἀχιττόφελ᾿· – καὶ τοῦ μὲν Ἀχιττόφελ᾿ κελεύοντος
-                        ἐπιδιώκειν· τοῦ δὲ μή· – ὥστε διασώσασθαι τὸν Δαυΐδ᾿· ἀκήκοεν τὰ πεπραγμένα
-                        ὁ Δαυΐδ᾿· ὡς ἂν μὴ ὑπο ἀνθρωπίνης ἐπικουρίας σεσωσμένος. τῶι θεῶι τὴν ϋπὲρ
+                        αὐτῶι τε τῶι Χουσὶ καὶ τῶι Ἀχιττόφελ᾿· καὶ τοῦ μὲν Ἀχιττόφελ᾿ κελεύοντος
+                        ἐπιδιώκειν· τοῦ δὲ μή· ὥστε διασώσασθαι τὸν Δαυΐδ᾿· ἀκήκοεν τὰ πεπραγμένα ὁ
+                        Δαυΐδ᾿· ὡς ἂν μὴ ὑπο ἀνθρωπίνης ἐπικουρίας σεσωσμένος. τῶι θεῶι τὴν ϋπὲρ
                         τούτων χαριστήριον ἀναπέμπει ὠδήν· τῶι πὰν ἐκείνη τῆι χάριτι ἀνατεθεὶς·
                         ἀνθρώπω δὲ οὐδέν· ⁘</quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-7-XX" type="abbreviated-with-variations"
                         >Vat. gr. 754</ref>
-                     <note type="attribution"><foreign xml:lang="grc">ἑτέρα ἑρμηνεία του ἁγιου
+                     <note type="attribution"><foreign xml:lang="grc">ἑτέρα ἑρμηνεία τοῦ ἁγιου
                            Ἀθανασίου·</foreign></note>
                   </seg>
                   <pb n="46r"/>
+                  <note type="lemma">Ps 7,2</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-7-3"
+                     corresp="#bodl-auct-d-4-1-ps-5-2" source="Basilius">
+                     <quote type="patristic" subtype="quotation-abbreviated"
+                        xml:id="bodl-auct-d-4-1-quot-7-3" corresp="#person-3"
+                        source="Basilius, hom. in Ps. 7 (ῥῦσαί με; PG 29,232 B10–13; 232 D2–233 A2) in Ps 7,2"/>
+                     <note type="attribution"><foreign xml:lang="grc">ἐρμηνεία τοῦ ἁγίου
+                           Βασιλείου·</foreign></note>
+                  </seg>
+                  <note type="lemma">Ps 7,3a</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-7-4"
+                     corresp="#bodl-auct-d-4-1-ps-5-3a" source="Asterius">
+                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-7-4"
+                        corresp="#person-1"
+                        source="Asterius, fr. 7 in Ps 7,3 (ὡς λέων; 257,14–15 Richard)"/>
+                     <note type="attribution"><foreign xml:lang="grc">ἐρ<unclear reason="faded"
+                              >μ</unclear>ην<unclear reason="faded">εί</unclear><supplied
+                              reason="illegible">α</supplied>
+                           <unclear reason="faded">Ἀσ</unclear><supplied reason="illegible"
+                              >τ</supplied><unclear reason="faded">ε</unclear>ριου·</foreign></note>
+                  </seg>
+                  <note type="lemma">Ps 7,3b–5a</note>
+                  <seg type="glosse" xml:id="bodl-auct-d-4-1-fr-7-5"
+                     corresp="#bodl-auct-d-4-1-ps-5-3b" source="Anonymous">
+                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-7-5"
+                        corresp="#person-18"
+                        source="fons ignotus in Ps 7,4b (ἀδικία; ἐν χερσίν μου)">ἁρπαγῆ<unclear
+                           reason="faded">ι</unclear>
+                        <supplied reason="illegible" cert="medium">τινί</supplied></quote>
+                  </seg>
+                  <note type="lemma">Ps 7,3b–5a</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-7-6"
+                     corresp="#bodl-auct-d-4-1-ps-7-3b" source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-7-6"
+                        corresp="#person-10"
+                        source="Hesychius, schol. nr. 7 in Ps 7,5a (ἀνταπέδωκα; Antonelli; PG 27,669)"/>
+                     <note type="attribution"><foreign xml:lang="grc">ἐρμη<unclear reason="faded"
+                              >ν</unclear>(εία)</foreign></note>
+                  </seg>
+                  <pb n="45v"/>
+                  <note type="lemma">Ps 7,5b–7</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-7-7"
+                     corresp="#bodl-auct-d-4-1-ps-5-5b" source="Basilius">
+                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-7-7"
+                        corresp="#person-3"
+                        source="Basilius, hom. in Ps. 7 (ἐν προστάγματι; PG 29,236 C13–D5) in Ps 7,7c"/>
+                     <note type="attribution"><foreign xml:lang="grc"/></note>
+                  </seg>
+                  <note type="lemma">Ps 7,8a</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-7-8"
+                     corresp="#bodl-auct-d-4-1-ps-5-8a" source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-7-8"
+                        corresp="#person-10"
+                        source="Hesychius, schol. nr. 15 in Ps 7,8a (συναγωγὴ; Antonelli; PG 27,669 D1"/>
+                     <note type="attribution"><foreign xml:lang="grc">ἐρμην(εία)</foreign></note>
+                  </seg>
+                  <note type="lemma">Ps 7,8b</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-7-9"
+                     corresp="#bodl-auct-d-4-1-ps-5-8b" source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-7-9"
+                        corresp="#person-10"
+                        source="Hesychius, schol. nr. 16 in Ps 7,8b (εἰς ὕψος; Antonelli; PG 27,669"/>
+                     <note type="attribution"><foreign xml:lang="grc">ἐρμην(εία)</foreign></note>
+                  </seg>
+                  <note type="lemma">Ps 7,9a–b</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-7-10"
+                     corresp="#bodl-auct-d-4-1-ps-5-9" source="Basilius">
+                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-7-10"
+                        corresp="#person-3"
+                        source="Basilius, hom. in Ps. 7 (κατὰ τὴν δικαιοσύνην; PG 29,241 A10–12) in Ps 7,9b"/>
+                     <note type="attribution"><foreign xml:lang="grc">ἐρμηνεια τοῦ ἁγιου
+                           Βασιλείου·</foreign></note>
+                  </seg>
+                  <note type="lemma">Ps 7,9c–10b</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-7-11"
+                     corresp="#bodl-auct-d-4-1-ps-5-9c" source="Anonymous">
+                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-7-11"
+                        corresp="#person-18"
+                        source="fons ignotus in Ps 7,10a–b (συντελεσθήτω; ineditum?)">ἀπρακτησάτω
+                        καὶ ἀφανισθήτω τοῦ σατὰν καὶ τῶν δαιμόνων. ἠ <unclear reason="damage"
+                           >πρ</unclear>ὸς ἁμαρτίαν κακουργία καὶ δυστροπία· καὶ κατορ<unclear
+                           reason="damage">θώ</unclear>σει καὶ κατευθυνεῖ δίκαιος τὴν ὁδὸν
+                           αὐτ<unclear reason="damage">ο</unclear>ῦ· ⁘</quote>
+                     <note type="attribution"><foreign xml:lang="grc">ἐρμην(εία)</foreign></note>
+                  </seg>
+                  <note type="lemma">Ps 7,9c–10b</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-7-12"
+                     corresp="#bodl-auct-d-4-1-ps-5-9c" source="Unidentified">
+                     <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-7-12"
+                        corresp="#person-47"
+                        source="fons indeterminatus in Ps 7,10b (κατευθυνεῖς); in marg.">
+                           [?]<supplied reason="illegible" cert="medium">ς</supplied> | <gap
+                           reason="illegible" quantity="6" unit="character"/><supplied
+                           reason="illegible">τι</supplied><unclear reason="faded">ων</unclear> |
+                           <gap reason="illegible" quantity="4" unit="character"/><supplied
+                           reason="illegible" cert="medium">βει</supplied><gap reason="illegible"
+                           quantity="1" unit="character"/>ς· | <gap reason="illegible" quantity="5"
+                           unit="character"/><unclear reason="faded">θ</unclear>υνεῖ | <supplied
+                           reason="illegible" cert="high">δικα</supplied>ίως</quote><note
+                        type="attribution"><foreign xml:lang="grc">lost (?)</foreign></note>
+                  </seg>
+                  <note type="lemma">Ps 7,10c</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-7-13"
+                     corresp="#bodl-auct-d-4-1-ps-5-10c" source="Theodoretus">
+                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-7-13"
+                        corresp="#person-16"
+                        source="Theodoretus, comm. in Ps 7,10c (νεφροὺς; PG 80,912 A2–6)"/>
+                     <note type="attribution"><foreign xml:lang="grc">ἐρμηνεία Θεοδωρ<unclear
+                              reason="faded">ίτ</unclear>ου·</foreign></note>
+                  </seg>
+                  <note type="lemma">Ps 7,10c: ἐτάζων καρδίας καὶ νεφροὺς ὁ θεὸς δικαίως·</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-7-14"
+                     corresp="#bodl-auct-d-4-1-ps-5-10c"><!-- hexaplaric --> <!-- new findings -->
+                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-7-14"
+                        source="Aquila (?), Symmachus, Quinta, Sexta, Β´ (?) (in ὁ θεὸς δικαίως; sed ὁ θεός. δικαία Ps (LXX) 7,10c–11a) δικαία"
+                           ><supplied reason="illegible" cert="high">Α´</supplied> Ϲ´ Ε´ S´
+                           Β´<supplied reason="illegible">δ</supplied><unclear reason="faded"
+                           >ίκ</unclear>αιος</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-7-XX" type="XXX">Vat. gr. 754</ref>
+                  </seg>
+                  <note type="lemma">Ps 7,10c: ἐτάζων καρδίας καὶ νεφροὺς ὁ θεὸς δικαίως·</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-7-15"
+                     corresp="#bodl-auct-d-4-1-ps-5-10c"><!-- hexaplaric --> <!-- new findings -->
+                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-7-15"
+                        source="Septuaginta, Theodotion (in ὁ θεὸς δικαίως; sed ὁ θεός. δικαία Ps (LXX) 7,10c–11a">
+                        <unclear reason="faded">Ο´</unclear> Θ´ <unclear reason="faded-ink"
+                           >δικ</unclear>αία</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-7-XX" type="XXX">Vat. gr. 754</ref>
+                  </seg>
+                  <pb n="46r"/>
                   <note type="lemma">Ps 7,11–12a</note>
-                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-7-2"
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-7-16"
                      corresp="#bodl-auct-d-4-1-ps-7-11" source="Hesychius">
-                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-7-2"
+                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-7-16"
                         corresp="#person-2" source="Athanasius, exp. in Ps 7,12">σαφῶς διὰ τῶν
                         τοιούτων παρίστησιν τὸ μακρόθυμον τοῦ θεοῦ. ἀναβολὴν μὲν ἔχων τῆς ἡμετέρας
                         κολάσεως μνήμην παντελῶς συγνώμην·</quote>
@@ -1473,24 +2263,15 @@
                         Ησυχιου·</foreign></note>
                   </seg>
                   <note type="lemma">Ps 7,16b</note>
-                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-7-3"
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-7-17"
                      corresp="#bodl-auct-d-4-1-ps-7-16b" source="Anonymous">
-                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-7-3"
+                     <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-7-17"
                         corresp="#person-2" source="Athanasius, exp. in Ps 7,16a">θάνατον γὰρ
                         κατασκευάσας κατὰ τοῦ σωτῆρος ἡμῶν Ἰησοῦ Χριστοῦ. θανάτω παρεδώθη· </quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-7-XX" type="with-variants">Vat. gr.
                         754</ref>
                      <note type="attribution"><foreign xml:lang="grc">ἐρμην(εία) </foreign></note>
                   </seg>
-                  <!-- MUSTER -->
-                  <!-- MESE:  ·  Spitzenklammern:  &lt;XX&gt; -->
-                  <!--  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-7-1"
-                     corresp="#bodl-auct-d-4-1-ps-7-XX" source="XXX">
-                     <quote type="patristic" subtype="XXX" xml:id="bodl-auct-d-4-1-quot-7-1"
-                        corresp="#person-2" source="Athanasius, exp. in Ps 7,"></quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-7-XX" type="XXX">Vat. gr. 754</ref>
-                     <note type="attribution"><foreign xml:lang="grc">Ἀθανασίου</foreign></note>
-                  </seg> -->
                   <!-- ps 8 bibletext -->
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-1"
                      n="Ps (LXX) 8,1" xml:lang="grc" xml:id="bodl-auct-d-4-1-ps-8-1"> Εἰς τὸ τέλος,
