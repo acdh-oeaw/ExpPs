@@ -346,7 +346,7 @@
         </div>
     </xsl:template>
     
-    <xsl:template match="tei:div[@type = 'bibletext']">
+    <xsl:template match="tei:div[@type = 'bibletext' and not(exists(@change))]">
         <div class="quotation">
             <span class="text-main-normal">
                 <xsl:text>[</xsl:text>
@@ -613,7 +613,7 @@
         <xsl:apply-templates/>
     </xsl:template>
     
-    <xsl:template match="tei:div[@type = 'commentary']">
+    <xsl:template match="tei:div[@type = 'commentary' and not(exists(@change))]">
         <div class="main-text-commentary">
             <xsl:text>[</xsl:text>
             <xsl:if test="@rendition = '#middle-column'">
@@ -659,6 +659,197 @@
             <xsl:value-of select="@type"/>
             <xsl:text>]</xsl:text>
             <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+    
+    <xsl:template match="tei:div[(@type = 'commentary' or @type = 'hexaplaric') and exists(@change) and (@change = 'commentaryfragments-only')]">
+        <div class="main-text-commentary">
+            <xsl:text>[</xsl:text>
+            <xsl:if test="@rendition = '#middle-column'">
+                <xsl:text>middle column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#left-column'">
+                <xsl:text>left column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#right-column'">
+                <xsl:text>right column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#top-of-the-page'">
+                <xsl:text>top of the page</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#bottom-of-the-page'">
+                <xsl:text>bottom of the page</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#left-margin-of-left-column'">
+                <xsl:text>left margin of left column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#left-margin-of-middle-column'">
+                <xsl:text>left margin of middle column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#left-margin-of-right-column'">
+                <xsl:text>left margin of right column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#bottom-of-right-column'">
+                <xsl:text>bottom of right column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#bottom-of-middle-column'">
+                <xsl:text>bottom of middle column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#right-margin-of-middle-column'">
+                <xsl:text>right margin of middle column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#left-margin'">
+                <xsl:text>left margin</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#top-margin'">
+                <xsl:text>top margin</xsl:text>
+            </xsl:if>
+            <xsl:text>] [</xsl:text>
+            <xsl:value-of select="@type"/>
+            <xsl:text>]</xsl:text>
+            <xsl:apply-templates select="tei:ab/tei:seg" mode="commentaryfragments-only"/>
+        </div>
+    </xsl:template>
+    
+    <xsl:template match="tei:seg[@type = 'commentaryfragment' or @type = 'hypothesis']" mode="commentaryfragments-only">
+        <xsl:element name="div">
+            <xsl:attribute name="class" select="'commentaryfragment'"/>
+            <a>
+                <xsl:attribute name="id">
+                    <xsl:value-of select="@xml:id"/>
+                </xsl:attribute>
+            </a>
+            <xsl:element name="p">
+                <xsl:attribute name="class" select="'paragraph-in-commentaryfragment'"/>
+                <xsl:element name="b">
+                    <xsl:value-of select="@source"/>
+                </xsl:element>
+                    <xsl:text> - </xsl:text>
+                <xsl:element name="b">
+                    <xsl:value-of select="child::tei:quote[@type = 'patristic']/@source"/>
+                </xsl:element>
+            </xsl:element>
+            <xsl:element name="p">
+                <xsl:attribute name="class" select="'paragraph-in-commentaryfragment'"/>
+                <xsl:apply-templates select="child::tei:quote[@type = 'patristic']/child::node()"/>
+            </xsl:element>
+            <xsl:element name="p">
+                <xsl:attribute name="class" select="'pargraph-in-commentaryfragment'"/>
+                <xsl:text>Lemma: </xsl:text>
+                <xsl:value-of select="preceding-sibling::tei:note[@type = 'lemma'][1]/text()"/>
+            </xsl:element>
+            <xsl:if test="exists(child::tei:note[@type = 'attribution'])">
+                <xsl:element name="p">
+                    <xsl:attribute name="class" select="'paragraph-in-commentaryfragment'"/>
+                    <xsl:text>Attribution: </xsl:text>
+                    <xsl:apply-templates select="child::tei:note[@type = 'attribution']/child::node()"/>
+                </xsl:element>
+            </xsl:if>
+        </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="tei:seg[@type = 'hexaplaric']" mode="commentaryfragments-only">
+        <xsl:element name="div">
+            <xsl:attribute name="class" select="'hexaplaric-variant'"/>
+            <a>
+                <xsl:attribute name="id">
+                    <xsl:value-of select="@xml:id"/>
+                </xsl:attribute>
+            </a>
+            <xsl:element name="p">
+                <xsl:attribute name="class" select="'paragraph-in-hexaplaric-variant'"/>
+                <xsl:element name="b">
+                    <xsl:value-of select="@source"/>
+                </xsl:element>
+            </xsl:element>
+            <xsl:element name="p">
+                <xsl:attribute name="class" select="'paragraph-in-hexaplaric-variant'"/>
+                <xsl:apply-templates select="child::node()"/>
+            </xsl:element>
+            <xsl:element name="p">
+                <xsl:attribute name="class" select="'pargraph-in-hexaplaric-variant'"/>
+                <xsl:text>Lemma: </xsl:text>
+                <xsl:value-of select="preceding-sibling::tei:note[@type = 'lemma'][1]/text()"/>
+            </xsl:element>
+        </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="tei:seg[@type = 'glosse']" mode="commentaryfragments-only">
+        <xsl:element name="div">
+            <xsl:attribute name="class" select="'glosse-commentaryfragments-only'"/>
+            <a>
+                <xsl:attribute name="id">
+                    <xsl:value-of select="@xml:id"/>
+                </xsl:attribute>
+            </a>
+            <xsl:element name="p">
+                <xsl:attribute name="class" select="'paragraph-in-glosse'"/>
+                <xsl:element name="b">
+                    <xsl:value-of select="@source"/>
+                </xsl:element>
+            </xsl:element>
+            <xsl:element name="p">
+                <xsl:attribute name="class" select="'paragraph-in-glosse'"/>
+                <xsl:apply-templates select="child::node()"/>
+            </xsl:element>
+        </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="tei:div[(@type = 'bibletext') and exists(@change) and (@change = 'commentaryfragments-only')]">
+        <div class="main-text-commentary">
+            <xsl:text>[</xsl:text>
+            <xsl:if test="@rendition = '#middle-column'">
+                <xsl:text>middle column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#left-column'">
+                <xsl:text>left column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#right-column'">
+                <xsl:text>right column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#top-of-the-page'">
+                <xsl:text>top of the page</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#bottom-of-the-page'">
+                <xsl:text>bottom of the page</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#left-margin-of-left-column'">
+                <xsl:text>left margin of left column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#left-margin-of-middle-column'">
+                <xsl:text>left margin of middle column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#left-margin-of-right-column'">
+                <xsl:text>left margin of right column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#bottom-of-right-column'">
+                <xsl:text>bottom of right column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#bottom-of-middle-column'">
+                <xsl:text>bottom of middle column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#right-margin-of-middle-column'">
+                <xsl:text>right margin of middle column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#left-margin'">
+                <xsl:text>left margin</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#top-margin'">
+                <xsl:text>top margin</xsl:text>
+            </xsl:if>
+            <xsl:text>] [</xsl:text>
+            <xsl:value-of select="@type"/>
+            <xsl:text>]</xsl:text>
+            <xsl:apply-templates select="tei:ab/tei:quote" mode="commentaryfragments-only"/>
+        </div>
+    </xsl:template>
+    
+    <xsl:template match="tei:quote[@type = 'bibletext']" mode="commentaryfragments-only">
+        <div class="bibleverse-commentaryfragments-only">
+            <xsl:value-of select="@n"/>
+            <div class="bibletext">
+                <xsl:apply-templates select="child::node()"/>
+            </div>
         </div>
     </xsl:template>
     
