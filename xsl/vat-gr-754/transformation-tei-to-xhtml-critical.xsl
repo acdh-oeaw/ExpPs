@@ -787,10 +787,14 @@
                 <xsl:element name="b">
                     <xsl:value-of select="@source"/>
                 </xsl:element>
+                <xsl:text> - </xsl:text>
+                <xsl:element name="b">
+                    <xsl:value-of select="child::tei:quote[@type = 'patristic']/@source"/>
+                </xsl:element>
             </xsl:element>
             <xsl:element name="p">
                 <xsl:attribute name="class" select="'paragraph-in-glosse'"/>
-                <xsl:apply-templates select="child::node()"/>
+                <xsl:apply-templates select="child::tei:quote/child::node()"/>
             </xsl:element>
         </xsl:element>
     </xsl:template>

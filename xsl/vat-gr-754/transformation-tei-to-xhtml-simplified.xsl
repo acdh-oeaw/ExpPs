@@ -93,7 +93,9 @@
     <xsl:template match="tei:seg[@type = 'hexaplaric']">
         <div class="manuscript-content">
             <xsl:text>Hexaplaric variant - </xsl:text>
-            <xsl:value-of select="@source"/>
+            <xsl:element name="b">
+                <xsl:value-of select="@source"/>
+            </xsl:element>
             <xsl:text>: </xsl:text>
             <xsl:apply-templates select="child::node()"/>
         </div>
@@ -104,7 +106,9 @@
     <xsl:template match="tei:seg[@type = 'commentaryfragment']">
         <div class="manuscript-content">
             <xsl:text>Commentaryfragment - </xsl:text>
-            <xsl:value-of select="child::tei:quote/@source"/>
+            <xsl:element name="b">
+                <xsl:value-of select="child::tei:quote/@source"/>
+            </xsl:element>
             <xsl:if test="exists(@prev)">
                 <xsl:text> (continued)</xsl:text>
             </xsl:if>
@@ -122,7 +126,9 @@
     <xsl:template match="tei:seg[@type = 'hypothesis']">
         <div class="manuscript-content">
             <xsl:text>Hypothesis - </xsl:text>
-            <xsl:value-of select="child::tei:quote/@source"/>
+            <xsl:element name="b">
+                <xsl:value-of select="child::tei:quote/@source"/>
+            </xsl:element>
             <xsl:if test="exists(@prev)">
                 <xsl:text> (continued)</xsl:text>
             </xsl:if>
@@ -138,6 +144,8 @@
     </xsl:template>
     
     <xsl:template match="tei:seg[@type = 'glosse']"/>
+    
+    <xsl:template match="tei:note[@type = 'attribution']"/>
     
     <xsl:template match="tei:choice">
         <xsl:if test="exists(tei:abbr[@type = 'nomSac'])">
