@@ -54,7 +54,7 @@
             <xsl:value-of select="concat(tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:settlement/text(),', ',tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:repository/text(),', ',tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:idno/text())"/>
         </p>
         <p class="link-to-facsimiles">
-            <xsl:text>The facsimiles of the manuscript are not available online.</xsl:text>
+            <xsl:text>Facsimiles of the manuscript are not available online.</xsl:text>
         </p>
         <p class="link-to-facsimiles">
             <xsl:text>The pinakes identifier of the manuscript is: </xsl:text>
@@ -241,83 +241,115 @@
     </xsl:template>
     
     <xsl:template match="tei:body">
-        <xsl:apply-templates select="//tei:seg[@type = 'commentaryfragment' or 'glosse' or 'hexaplaric' or 'hypothesis']"/>
-        <!--<xsl:apply-templates select="tei:div[@type = 'transcription']"/>
-        <xsl:apply-templates select="tei:div[@type = 'bibletext']"/>
-        <xsl:apply-templates select="tei:div[@type = 'hypothesis']"/>
-        <xsl:apply-templates select="tei:div[@type = 'commentary']"/>
-        <div class="authors-of-commentaries">
-            <p class="table-of-contents">Occuring authors:</p>
-            <ul>
-                <xsl:apply-templates select="//tei:seg[@type = 'commentaryfragment']" mode="toc"/>
-            </ul>
-        </div>
-        <div class="authors-of-commentaries">
-            <p class="table-of-contents">Quotations:</p>
-            <ul>
-                <xsl:apply-templates select="//tei:quote[@type = 'patristic']" mode="fons"/>
-            </ul>
-        </div>
-        <div class="authors-of-commentaries">
-            <p class="table-of-contents">Biblical quotations:</p>
-            <ul>
-                <xsl:apply-templates select="//tei:quote[@type = 'biblical']" mode="fons-bibl"/>
-            </ul>
-        </div>-->
+        <xsl:apply-templates select="//tei:seg[@type = 'commentaryfragment' or 'glosse' or 'hexaplaric' or 'hypothesis'] | //tei:pb"/>
     </xsl:template>
     
-    <xsl:template match="tei:seg[@type = 'commentaryfragment']">
-        <div class="quotation">
-            <xsl:text>Commentaryfragment: </xsl:text>
-            <b>
-                <xsl:value-of select="@source"/>
-            </b>
-            <xsl:apply-templates select="tei:quote[@type = 'patristic']"/>
-            <xsl:apply-templates select="tei:ref"/>
-        </div>
+    <xsl:template match="tei:seg[@type = 'commentaryfragment' or @type = 'hypothesis']">
+        <xsl:element name="div">
+            <xsl:attribute name="class" select="'commentaryfragment'"/>
+            <a>
+                <xsl:attribute name="id">
+                    <xsl:value-of select="@xml:id"/>
+                </xsl:attribute>
+            </a>
+            <xsl:element name="p">
+                <xsl:attribute name="class" select="'paragraph-in-commentaryfragment'"/>
+                <xsl:if test="@type = 'commentaryfragment'">
+                    <xsl:text>Commentaryfragment: </xsl:text>
+                </xsl:if>
+                <xsl:if test="@type = 'hypothesis'">
+                    <xsl:text>Hypothesis: </xsl:text>
+                </xsl:if>
+                <xsl:element name="b">
+                    <xsl:value-of select="@source"/>
+                </xsl:element>
+                <xsl:text> - </xsl:text>
+                <xsl:element name="b">
+                    <xsl:value-of select="child::tei:quote[@type = 'patristic']/@source"/>
+                </xsl:element>
+            </xsl:element>
+            <xsl:element name="p">
+                <xsl:attribute name="class" select="'paragraph-in-commentaryfragment'"/>
+                <xsl:apply-templates select="child::tei:quote[@type = 'patristic']/child::node()"/>
+            </xsl:element>
+            <xsl:element name="p">
+                <xsl:attribute name="class" select="'paragraph-in-commentaryfragment'"/>
+                <xsl:text>Lemma: </xsl:text>
+                <xsl:value-of select="preceding-sibling::tei:note[@type = 'lemma'][1]/text()"/>
+            </xsl:element>
+            <xsl:if test="exists(child::tei:note[@type = 'attribution'])">
+                <xsl:element name="p">
+                    <xsl:attribute name="class" select="'paragraph-in-commentaryfragment'"/>
+                    <xsl:text>Attribution: </xsl:text>
+                    <xsl:apply-templates select="child::tei:note[@type = 'attribution']/child::node()"/>
+                </xsl:element>
+            </xsl:if>
+        </xsl:element>
     </xsl:template>
     
     <xsl:template match="tei:seg[@type = 'glosse']">
-        <div class="quotation">
-            <xsl:text>Gloss: </xsl:text>
-            <b>
-                <xsl:value-of select="@source"/>
-            </b>
-            <xsl:apply-templates select="tei:quote[@type = 'patristic']"/>
-            <xsl:apply-templates select="tei:ref"/>
-        </div>
+        <xsl:element name="div">
+            <xsl:attribute name="class" select="'glosse-commentaryfragments-only'"/>
+            <a>
+                <xsl:attribute name="id">
+                    <xsl:value-of select="@xml:id"/>
+                </xsl:attribute>
+            </a>
+            <xsl:element name="p">
+                <xsl:attribute name="class" select="'paragraph-in-glosse'"/>
+                <xsl:text>Glosse: </xsl:text>
+                <xsl:element name="b">
+                    <xsl:value-of select="@source"/>
+                </xsl:element>
+                <xsl:text> - </xsl:text>
+                <xsl:element name="b">
+                    <xsl:value-of select="child::tei:quote[@type = 'patristic']/@source"/>
+                </xsl:element>
+            </xsl:element>
+            <xsl:element name="p">
+                <xsl:attribute name="class" select="'paragraph-in-commentaryfragment'"/>
+                <xsl:text>Lemma: </xsl:text>
+                <xsl:value-of select="preceding-sibling::tei:note[@type = 'lemma'][1]/text()"/>
+            </xsl:element>
+            <xsl:element name="p">
+                <xsl:attribute name="class" select="'paragraph-in-glosse'"/>
+                <xsl:apply-templates select="child::tei:quote/child::node()"/>
+            </xsl:element>
+            <xsl:if test="exists(child::tei:note[@type = 'attribution'])">
+                <xsl:element name="p">
+                    <xsl:attribute name="class" select="'paragraph-in-commentaryfragment'"/>
+                    <xsl:text>Attribution: </xsl:text>
+                    <xsl:apply-templates select="child::tei:note[@type = 'attribution']/child::node()"/>
+                </xsl:element>
+            </xsl:if>
+        </xsl:element>
     </xsl:template>
     
     <xsl:template match="tei:seg[@type = 'hexaplaric']">
-        <div class="quotation">
-            <xsl:text>Hexaplaric variant: </xsl:text>
-            <b>
-                <xsl:value-of select="@source"/>
-            </b>
-            <xsl:apply-templates select="tei:quote[@type = 'patristic']"/>
-            <xsl:apply-templates select="tei:ref"/>
-        </div>
-    </xsl:template>
-    
-    <xsl:template match="tei:seg[@type = 'hypothesis']">
-        <div class="quotation">
-            <xsl:text>Hypothesis: </xsl:text>
-            <b>
-                <xsl:value-of select="@source"/>
-            </b>
-            <xsl:apply-templates select="tei:quote[@type = 'patristic']"/>
-            <xsl:apply-templates select="tei:ref"/>
-        </div>
-    </xsl:template>
-    
-    <xsl:template match="tei:quote[@type = 'patristic']">
-        <p><b>
-            <xsl:value-of select="@source"/>
-        </b>
-        </p>
-        <p>
-            <xsl:apply-templates select="child::node()"/>
-        </p>
+        <xsl:element name="div">
+            <xsl:attribute name="class" select="'hexaplaric-variant'"/>
+            <a>
+                <xsl:attribute name="id">
+                    <xsl:value-of select="@xml:id"/>
+                </xsl:attribute>
+            </a>
+            <xsl:element name="p">
+                <xsl:attribute name="class" select="'paragraph-in-hexaplaric-variant'"/>
+                <xsl:text>Hexaplaric variant: </xsl:text>
+                <xsl:element name="b">
+                    <xsl:value-of select="@source"/>
+                </xsl:element>
+            </xsl:element>
+            <xsl:element name="p">
+                <xsl:attribute name="class" select="'paragraph-in-hexaplaric-variant'"/>
+                <xsl:apply-templates select="child::node()"/>
+            </xsl:element>
+            <xsl:element name="p">
+                <xsl:attribute name="class" select="'pargraph-in-hexaplaric-variant'"/>
+                <xsl:text>Lemma: </xsl:text>
+                <xsl:value-of select="preceding-sibling::tei:note[@type = 'lemma'][1]/text()"/>
+            </xsl:element>
+        </xsl:element>
     </xsl:template>
     
     <xsl:template match="tei:ref">
@@ -336,10 +368,6 @@
             </xsl:element>
         </p>
     </xsl:template>
-    
-    <!--<xsl:template match="tei:div[@type = 'transcription']">
-        <xsl:apply-templates/>
-    </xsl:template>-->
     
     <xsl:template match="tei:pb">
         <p class="page-number">
@@ -447,8 +475,6 @@
                 <xsl:value-of select="@type"/>
                 <xsl:text>]</xsl:text>
             </span>
-            <!--<xsl:apply-templates select="tei:quote"/>
-            <xsl:apply-templates select="tei:ab[@type = 'unknown']"/>-->
             <xsl:apply-templates/>
         </div>
     </xsl:template>
@@ -611,58 +637,6 @@
             <xsl:apply-templates/>
         </div>
     </xsl:template>
-    
-    <!--<xsl:template match="tei:ab/tei:seg[@type != 'commentaryfragment' and @type != 'hexaplaric' and @type != 'glosse']">
-        <xsl:text>[</xsl:text>
-        <xsl:value-of select="@type"/>
-        <xsl:text>]</xsl:text>
-        <xsl:apply-templates/>
-    </xsl:template>-->
-    
-    <!--<xsl:template match="tei:seg[@type = 'hexaplaric']">
-        <xsl:text>[</xsl:text>
-        <xsl:if test="@rendition = '#middle-column'">
-            <xsl:text>middle column</xsl:text>
-        </xsl:if>
-        <xsl:if test="@rendition = '#left-column'">
-            <xsl:text>left column</xsl:text>
-        </xsl:if>
-        <xsl:if test="@rendition = '#right-column'">
-            <xsl:text>right column</xsl:text>
-        </xsl:if>
-        <xsl:if test="@rendition = '#top-of-the-page'">
-            <xsl:text>top of the page</xsl:text>
-        </xsl:if>
-        <xsl:if test="@rendition = '#bottom-of-the-page'">
-            <xsl:text>bottom of the page</xsl:text>
-        </xsl:if>
-        <xsl:if test="@rendition = '#left-margin-of-left-column'">
-            <xsl:text>left margin of left column</xsl:text>
-        </xsl:if>
-        <xsl:if test="@rendition = '#left-margin-of-middle-column'">
-            <xsl:text>left margin of middle column</xsl:text>
-        </xsl:if>
-        <xsl:if test="@rendition = '#left-margin-of-right-column'">
-            <xsl:text>left margin of right column</xsl:text>
-        </xsl:if>
-        <xsl:if test="@rendition = '#bottom-of-right-column'">
-            <xsl:text>bottom of right column</xsl:text>
-        </xsl:if>
-        <xsl:if test="@rendition = '#bottom-of-middle-column'">
-            <xsl:text>bottom of middle column</xsl:text>
-        </xsl:if>
-        <xsl:if test="@rendition = '#right-margin-of-middle-column'">
-            <xsl:text>right margin of middle column</xsl:text>
-        </xsl:if>
-        <xsl:if test="@rendition = '#left-margin'">
-            <xsl:text>left margin</xsl:text>
-        </xsl:if>
-        <xsl:if test="@rendition = '#top-margin'">
-            <xsl:text>top margin</xsl:text>
-        </xsl:if>
-        <xsl:text>] [hexaplaric variant] </xsl:text>
-        <xsl:apply-templates/>
-    </xsl:template>-->
     
     <xsl:template match="tei:div[@type = 'commentary']">
         <div class="main-text-commentary">
