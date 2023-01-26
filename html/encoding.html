@@ -31,11 +31,14 @@
 				<li><a href="#segments">Segments</a></li>
 				<li><a href="#quotes">Quotes</a></li>
 				<li><a href="#anchors">Anchors</a></li>
+				<li><a href="#examples">Examples</a></li>
 			</ol>
 			<li><a href="#microstructure">Microstructure</a></li>
 			<ol>
 				<li><a href="#pagebreaks">Page Breaks</a></li>
 				<li><a href="#linebreaks">Line Breaks</a></li>
+				<li><a href="#uncertain-readability">Uncertain Readability</a></li>
+				<li><a href="#gaps">Gaps</a></li>
 				<li><a href="#ekthesis">Ekthesis</a></li>
 				<li><a href="#regularization">Regularization</a></li>
 				<li><a href="#abbreviations">Abbreviations</a></li>
@@ -214,6 +217,45 @@
 			<p>The <i>anchor</i> element is only used for the markup of subdivisions in verses of the psalmtext.</p>
 			<p>The <kbd>corresp</kbd> attribute is a pointer to the text of the psalm in another file which contains the LXX text according to Rahlfs.</p>
 			<p>The value of the <kbd>n</kbd> attribute appears in the list of commentaryfragments at the end of the diplomatic <i>html</i> version.</p>
+		
+			<h3 id="examples">Examples</h3>
+			<h4>Commentaryfragments</h4>
+			
+			<pre><code class="language-xml" style="font-size:120%">
+&lt;seg type="commentaryfragment" xml:id="vat-gr-754-fr-9-83" rendition="#right-column" 
+        source="(Athanasius)" corresp="#vat-gr-754-ps-9-26c"&gt;
+   &lt;quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-9-86" 
+             source="Athanasius, schol. in Ps 9,26c" corresp="#person-2"&gt;Ὅμοιον ... νοσσιάν:&lt;/quote&gt;
+&lt;/seg&gt;
+			</code></pre>
+			<p>The value of the <kbd>corresp</kbd> attribute on the <kbd>seg</kbd> element is a pointer to an <kbd>anchor</kbd> element of the bibletext.</p>
+			<p>The <kbd>subtype</kbd> attribute on the <kbd>quote</kbd> element designates the relation of the text of the manuscript to the text of available editions.</p>
+			<p>Suggested values are:</p>
+			<ul>
+				<li><i>quotation</i></li>
+				<li><i>quotation-abbreviated</i></li>
+				<li><i>paraphrase</i></li>
+				<li><i>paraphrase-abbreviated</i></li>
+				<li><i>unknown</i></li>
+			</ul>
+			
+			<h4>Hexaplaric Variants</h4>
+			
+			<pre><code class="language-xml" style="font-size:120%">
+&lt;seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-10-13" rendition="#right-column" 
+        source="Aquila, Theodotion (Ps 11,1)" corresp="#vat-gr-754-ps-11-1a"&gt;A Θ τῷ νικοποιῷ·&lt;/seg&gt;
+			</code></pre>
+			<p>Please note that the <kbd>seg</kbd> of hexaplaric variants does not contain a <kbd>quote</kbd>.</p>
+			
+			<h4>Glosses</h4>
+			
+			<pre><code class="language-xml" style="font-size:120%">
+&lt;seg type="glosse" xml:id="vat-gr-754-glosse-10-4" rendition="#right-column" 
+        source="Anonymous" corresp="#vat-gr-754-ps-10-3a"&gt;
+    &lt;quote type="patristic" subtype="unknown" xml:id="vat-gr-754-quot-10-13" 
+	          source="fons ignotus; in Ps 10,3a?" corresp="#person-18"&gt;κατέβαλεν·&lt;/quote&gt;
+&lt;/seg&gt;
+			</code></pre>
 			
 		<h2 id="microstructure">Microstructure</h2>
 			<h3 id="pagebreaks">Page Breaks</h3>
@@ -254,6 +296,16 @@
 					<li><i>red ink</i></li>
 					<li><i>red ink bold</i></li>
 				</ul></p>
+				
+			<h3 id="uncertain-readability">Uncertain Readability</h3>
+			<pre><code class="language-xml" style="font-size:120%">
+... το&lt;unclear reason="damage"&gt;ῖς&lt;/unclear&gt; ...
+			</code></pre>
+			
+			<h3 id="gaps">Gaps</h3>
+			<pre><code class="language-xml" style="font-size:120%">
+... &lt;gap unit="character" quantity="2" reason="erased"/&gt; ...
+			</code></pre>
 			
 			<h3 id="regularization">Regularization</h3>
 			<p>There are two types of <i>regularization</i>: One for normal regularization without attribute <kbd>type</kbd> on <kbd>reg</kbd> and one with value <kbd>correction</kbd> for <i>little errors</i>.</p>
