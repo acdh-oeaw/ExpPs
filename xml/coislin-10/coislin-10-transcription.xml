@@ -3,10 +3,12 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <!-- faciendum: Glossen noch zu erfassen -->
    <!-- faciendum: Autorennamen auf Griechisch erfasst: Ps 7 erledigt -->
-   <!-- faciendum: Verknüpfungen mit Vat. gr. 754: Ps 7 erledigt -->
+   <!-- faciendum: Verknüpfungen mit Vat. gr. 754: Ps 7 erledigt: Ps 8 nicht -->
    <!-- faciendum: Bibliographie im Einklang mit Vat. gr. 754 zu bringen -->
    <!-- Textkritik: Textlage der Expositiones: Abweichungen berücksichtigt -->
-   <!-- Korrekturen: in die Vat. gr. 754-Datei zu übernehmen -->
+   <!-- Korrekturen: Quellenverweise: in die Vat. gr. 754-Datei zu integrieren -->
+   <!-- vat-gr-754-gloss-7-1: in Ps 8 -->
+   <!-- vat-gr-754-gloss-7-2: in Ps 8 -->
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -248,7 +250,7 @@
    <text>
       <body>
          <div type="transcription" xml:id="coislin-10-1-1">
-            <!-- ps 1 bibletext -->
+            <!-- ps 7 bibletext -->
             <div xml:id="coislin-10-1-3" type="bibletext" subtype="commented">
                <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-14"
                   n="Ps (LXX) 7,14" xml:lang="grc" xml:id="coislin-10-ps-7-14">
@@ -333,7 +335,7 @@
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-7-5"
                      corresp="#coislin-10-ps-7-15b" source="Eusebius">
                      <quote type="patristic" xml:id="coislin-10-quot-7-5" corresp="#person-30"
-                        source="Origenes, schol. (?) in Ps 7,15b (cf. PG 12,1181 B9–C3)"/><!-- Textkritik: Abweichungen am Ende -->
+                        source="Origenes, schol. (?) in Ps 7,15b (cf. PG 12,1181 B9–C3); in marg."/><!-- Textkritik: Abweichungen am Ende -->
                      <ref target="vat-gr-754:vat-gr-754-fr-7-60" type="with-variant">Vat. gr.
                         754</ref><note type="attribution"><foreign xml:lang=""
                         >Ευσ(εβίου)</foreign></note>
@@ -384,11 +386,10 @@
                   </seg>
                </ab>
             </div>
-            <!-- Psalm 8 text and commentary -->
             <div type="bibletext" subtype="commented" xml:id="coislin-10-8-1"
                rend="minuscule letters">
                <ab xml:id="coislin-10-8-2" xml:lang="grc">
-                  <!-- Ps 8 bibletext -->
+                  <!-- ps 8 bibletext -->
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-1"
                      n="Ps (LXX) 8,1" xml:lang="grc" xml:id="coislin-10-ps-8-1"> Εἰς τὸ τέλος, ὑπὲρ
                      τῶν ληνῶν· ψαλμὸς τῷ Δαυιδ. </quote>
@@ -456,16 +457,31 @@
                      ἡμῶν, ὡς θαυμαστὸν τὸ ὄνομά σου ἐν πάσῃ τῇ γῇ. </quote>
                </ab>
             </div>
-            <!-- 2 glosses -->
-            <!-- Ps 8 commentary -->
-            <pb n="1v" facs="https://gallica.bnf.fr/ark:/12148/btv1b52513084s/f14.item"/>
+            <!-- ps 8 commentary -->
             <div type="commentary" subtype="commentary" xml:id="coislin-10-2-1">
                <ab xml:lang="grc" xml:id="coislin-10-2-2">
-                  <note type="lemma">Ps 8,1</note>
+                  <note type="lemma">Ps 8,1–2 (ληνῶν)</note>
+                  <seg type="glosse" xml:id="coislin-10-glosse-8-1" corresp="#coislin-10-ps-8-1"
+                     source="Anonymous">
+                     <quote type="patristic" xml:id="coislin-10-quot-8-1" corresp="#person-18"
+                        source="fons ignotus in Ps 8,1; in marg.">θυσιαστηρίων·</quote>
+                     <ref target="vat-gr-754:vat-gr-754-gloss-7-1" type="identical">Vat. gr.
+                        754</ref>
+                  </seg>
+                  <note type="lemma">Ps 8,1–2 (ὡς)</note>
+                  <seg type="glosse" xml:id="coislin-10-glosse-8-2" corresp="#coislin-10-ps-8-1"
+                     source="Anonymous">
+                     <quote type="patristic" xml:id="coislin-10-quot-8-2" corresp="#person-18"
+                        source="fons ignotus in Ps 8,2a; in marg.">αντὶ τοῦ σφόδρα·</quote>
+                     <ref target="vat-gr-754:vat-gr-754-gloss-7-1" type="identical">Vat. gr.
+                        754</ref>
+                  </seg>
+                  <pb n="1v" facs="https://gallica.bnf.fr/ark:/12148/btv1b52513084s/f14.item"/>
+                  <note type="lemma">Ps 8,1–2</note>
                   <seg type="hypothesis" xml:id="coislin-10-fr-8-1" corresp="#coislin-10-ps-8-1"
                      source="(Athanasius)" copyOf="#edition:edition-8-1-1">
                      <num type="ordinal" xml:lang="grc" value="1">A´</num>
-                     <quote type="patristic" xml:id="coislin-10-quot-8-1" corresp="#person-2"
+                     <quote type="patristic" xml:id="coislin-10-quot-8-1-1" corresp="#person-2"
                         source="Athanasius, exp. in Ps 8,1">Πάλαι μὲν ἐν τῆ νομικῆ λατρεία. ἓν ἦν
                         προλήνιον· τὸ θυσιαστήριον δηλονότι τῶ ἐν τῶ νεῶ· μετὰ δὲ τὴν τῶν ἐθνῶν
                         κλῆσιν. πολλαὶ ληνοί· αὗται δὲ ἂν εἶεν. αἱ ἐκκλησίαι· αἱ τοὺς τῶν
@@ -473,15 +489,23 @@
                      <ref target="vat-gr-754:vat-gr-754-fr-8-XXX" type="with-variants">Vat. gr.
                         754</ref>
                   </seg>
+                  <note type="lemma">Ps 8,1–2 (ψαλμὸς)</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-8-2"
                      corresp="#coislin-10-ps-8-1" source="Origenes">
-                     <quote type="patristic" xml:id="coislin-10-quot-8-2" corresp="#person-13"
-                        source="Origenes (?), fr. in Ps 8,1"/>
+                     <quote type="patristic" xml:id="coislin-10-quot-8-2-1" corresp="#person-13"
+                        source="Evagrius, schol. nr. + in Ps 8,1 (318 Rondeau – Géhin – Cassin)"/><!-- PG: Zeilenzählung richtig -->
                      <ref target="vat-gr-754:vat-gr-754-fr-8-XXX" type="identical">Vat. gr.
-                        754</ref>
+                        754</ref><note type="attribution"><foreign xml:lang="grc"
+                           >ὠριγεν(ου)</foreign></note>
                   </seg>
-                  <!-- glosse 3 -->
-                  <!-- hyp. des Theodoretus ausgelassen -->
+                  <!-- Theodoretus: hyp.: ausgelassen -->
+                  <note type="lemma">Ps 8,3a (αἶνον)</note>
+                  <seg type="glosse" xml:id="coislin-10-glosse-8-3" corresp="#coislin-10-ps-8-1"
+                     source="Anonymous">
+                     <quote type="patristic" xml:id="coislin-10-quot-8-3-1" corresp="#person-18"
+                        source="fons ignotus in Ps 8,3a; in textu; cf. Suda s.v. Αἶνος (Αι nr. 230 Adler)"
+                        >ἔπαινον ὕμνον δόξα: –</quote>
+                  </seg>
                   <note type="lemma">Ps 8,3a</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-8-3"
                      corresp="#coislin-10-ps-8-3a" source="(Athanasius)"
@@ -507,13 +531,14 @@
                      <ref target="vat-gr-754:vat-gr-754-fr-8-XXX" type="identical">Vat. gr.
                         754</ref>
                   </seg>
+                  <note type="lemma">Ps 8,3b (τῶν ἐχθρῶν)</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-8-5"
-                     corresp="#coislin-10-ps-8-3b" source="Iohannes">
+                     corresp="#coislin-10-ps-8-3b" source="Iohannes Chrysostomus">
                      <quote type="patristic" xml:id="coislin-10-quot-8-5" corresp="#person-29"
-                        source="Iohannes Chrys., exp. in Ps. 8"/>
+                        source=" Ιohannes Chrys., exp. in Ps. 8 (PG 55,109, l. 33–38) in Ps 8,3c; cf. PG 27,81 B2–7"/>
                      <ref target="vat-gr-754:vat-gr-754-fr-8-XXX" type="identical">Vat. gr.
-                        754</ref>
-                  </seg>
+                        754</ref><note type="attribution"><foreign xml:lang="grc"
+                           >Ιω(άννου)</foreign></note></seg>
                   <note type="lemma">Ps 8,3c</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-8-6"
                      corresp="#coislin-10-ps-8-3c" source="(Athanasius)"
@@ -526,12 +551,15 @@
                      <ref target="vat-gr-754:vat-gr-754-fr-8-XXX" type="identical">Vat. gr.
                         754</ref>
                   </seg>
+                  <pb n="1v–2r"/>
+                  <note type="lemma">Ps 8,3c (ἐκδικητήν)</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-8-7"
                      corresp="#coislin-10-ps-8-3c" source="Gregorius of Nyssa">
                      <quote type="patristic" xml:id="coislin-10-quot-8-7" corresp="#person-32"
-                        source="Gregorius Nyss., Ps. inscr. II 11"/>
-                     <ref target="vat-gr-754:vat-gr-754-fr-8-XXX" type="identical">Vat. gr.
-                        754</ref>
+                        source="Gregorius Nyss., Ps. inscr. II 11 (122,18–19; 122,23–123,13 McDonough)"/>
+                     <ref target="vat-gr-754:vat-gr-754-fr-8-XXX" type="with-variant">Vat. gr.
+                        754</ref><note type="attribution"><foreign xml:lang="grc">Γρ(ηγορί)ου
+                           Νυ(σσης)</foreign></note>
                   </seg>
                </ab>
             </div>
@@ -540,7 +568,7 @@
                <ab xml:lang="grc" xml:id="coislin-10-2-4">
                   <note type="lemma">Ps 8,4</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-8-8"
-                     corresp="#coislin-10-ps-8-4" source="(Athanasius)"
+                     corresp="#coislin-10-ps-8-4a" source="(Athanasius)"
                      copyOf="#edition:edition-8-4-1-1">
                      <num type="ordinal" xml:lang="grc" value="5">Ε´</num>
                      <quote type="patristic" xml:id="coislin-10-quot-8-8" corresp="#person-2"
@@ -554,36 +582,48 @@
                      <ref target="vat-gr-754:vat-gr-754-fr-8-XXX" type="with-variant">Vat. gr.
                         754</ref>
                   </seg>
+                  <note type="lemma">Ps 8,4 (ὅτι)</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-8-9"
-                     corresp="#coislin-10-ps-8-4" source="Gregorius of Nazianz">
+                     corresp="#coislin-10-ps-8-4a" source="Gregorius of Nazianz">
                      <quote type="patristic" xml:id="coislin-10-quot-8-9" corresp="#person-20"
-                        source="Gregorius Naz., or. 20"/>
-                     <ref target="vat-gr-754:vat-gr-754-fr-8-XXX" type="identical">Vat. gr.
-                        754</ref>
+                        source="Gregorius Naz., or. 20 (PG 35,1077 C12–1080 A4)"/>
+                     <ref target="vat-gr-754:vat-gr-754-fr-8-XXX" type="with-variant">Vat. gr.
+                        754</ref><note type="attribution">Γρ(ηγορί)ου Θεολ(όγου)<foreign
+                           xml:lang="grc"/></note>
                   </seg>
+                  <note type="lemma">Ps 8,4 (ὄψομαι)</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-8-10"
-                     corresp="#coislin-10-ps-8-4" source="Gregorius of Nazianz">
+                     corresp="#coislin-10-ps-8-4a" source="Gregorius of Nazianz">
                      <quote type="patristic" xml:id="coislin-10-quot-8-10" corresp="#person-33"
-                        source="Gregorius Naz., or. 28,5"/>
-                     <ref target="vat-gr-754:vat-gr-754-fr-8-XXX" type="identical">Vat. gr.
-                        754</ref>
-                  </seg><note type="lemma">Ps 8,5–7a</note>
+                        source="Gregorius Naz., or. 28,5 (108,1–110,10 Gallay – Jourjon)"/>
+                     <ref target="vat-gr-754:vat-gr-754-fr-8-XXX" type="with-variant">Vat. gr.
+                        754</ref><note type="attribution">τοῦ αὐτοῦ: –<foreign xml:lang="grc"
+                        /></note>
+                  </seg>
+               </ab>
+            </div>
+            <pb n="2v" facs="https://gallica.bnf.fr/ark:/12148/btv1b52513084s/f16.item"/>
+            <div type="commentary" subtype="commentary" xml:id="coislin-10-2-3-1">
+               <ab xml:lang="grc" xml:id="coislin-10-2-4-1">
+                  <note type="lemma">Ps 8,5–7a</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-8-11"
-                     corresp="#coislin-10-ps-8-5" source="(Athanasius)"
+                     corresp="#coislin-10-ps-8-5a" source="(Athanasius)"
                      copyOf="#edition:edition-8-7-1-1">
-                     <num type="ordinal" xml:lang="grc" value="5">Ϛ´</num>
+                     <num type="ordinal" xml:lang="grc" value="6">Ϛ´</num>
                      <quote type="patristic" xml:id="coislin-10-quot-8-11" corresp="#person-2"
                         source="Athanasius, exp. in Ps 8,5a">Ταῦτα τοῦ Παύλου σαφῶς ἐπὶ τὸν σωτῆρα
                         ἡμῶν ἐξειληφότος. ἀρκεῖσθαι τῆ ἐκδόσει χρή: –</quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-8-XXX" type="identical">Vat. gr.
                         754</ref>
                   </seg>
+                  <note type="lemma">Ps 8,7b</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-8-12"
                      corresp="#coislin-10-ps-8-7b" source="Gregorius of Nyssa">
                      <quote type="patristic" xml:id="coislin-10-quot-8-12" corresp="#person-34"
-                        source="Gregorius Nyss., or. dom. 5"/>
-                     <ref target="vat-gr-754:vat-gr-754-fr-8-XXX" type="identical">Vat. gr.
-                        754</ref>
+                        source="Gregorius Nyss., or. dom. 5 (70,12–71,8 Callahan)"/>
+                     <ref target="vat-gr-754:vat-gr-754-fr-8-XXX" type="with-variants">Vat. gr.
+                        754</ref><note type="attribution"><foreign xml:lang="grc">Γρηγοριου
+                           Νύσσης·</foreign></note>
                   </seg>
                   <note type="lemma">Ps 8,8a</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-8-13"
@@ -624,7 +664,7 @@
                   </seg>
                   <note type="lemma">Ps 8,10</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-8-16"
-                     corresp="#coislin-10-ps-8-10" source="(Athanasius)"
+                     corresp="#coislin-10-ps-8-10a" source="(Athanasius)"
                      copyOf="#edition:edition-8-10-1"><num type="ordinal" xml:lang="grc" value="10"
                         >Ι´</num>
                      <quote type="patristic" xml:id="coislin-10-quot-8-16" corresp="#person-2"
@@ -635,13 +675,13 @@
                   </seg>
                </ab>
             </div>
+            <!-- ps 9 bibletext -->
             <div type="bibletext" subtype="commented" xml:id="coislin-10-9-1"
                rend="minuscule letters">
                <ab xml:id="coislin-10-9-2" xml:lang="grc">
-                  <!-- Ps 9 bible --><quote type="bibletext"
-                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-1" n="Ps (LXX) 9,1" xml:lang="grc"
-                     xml:id="coislin-10-ps-9-1"> Εἰς τὸ τέλος, ὑπὲρ τῶν κρυφίων τοῦ υἱοῦ· ψαλμὸς τῷ
-                     Δαυιδ. </quote>
+                  <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-1"
+                     n="Ps (LXX) 9,1" xml:lang="grc" xml:id="coislin-10-ps-9-1"> Εἰς τὸ τέλος, ὑπὲρ
+                     τῶν κρυφίων τοῦ υἱοῦ· ψαλμὸς τῷ Δαυιδ. </quote>
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-9-2"
                      n="Ps (LXX) 9,2" xml:lang="grc" xml:id="coislin-10-ps-9-2">
                      <anchor xml:id="coislin-10-ps-9-2a" type="psalmtext" n="Ps (LXX) 9,2a"
@@ -941,8 +981,8 @@
             <div type="commentary" subtype="commentary" xml:id="coislin-10-9-3"
                rend="minuscule letters">
                <ab xml:id="coislin-10-9-4" xml:lang="grc">
-                  <!-- Ps 9 commentary -->
-                  <note type="lemma">Ps 9,1</note>
+                  <!-- ps 9 commentary -->
+                  <note type="lemma">Ps 9,1–3</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-9-1"
                      corresp="#coislin-10-ps-9-1" source="(Athanasius)"
                      copyOf="#edition:edition-9-1-1"><num type="ordinal" xml:lang="grc" value="1"
@@ -961,12 +1001,14 @@
                      <ref target="vat-gr-754:vat-gr-754-fr-9-XXX" type="identical">Vat. gr.
                         754</ref>
                   </seg>
+                  <note type="lemma">Ps 9,1–3 (ὑπὲρ τῶν κρυφίων)</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-9-2"
                      corresp="#coislin-10-ps-9-1" source="Gregorius of Nyssa">
                      <quote type="patristic" xml:id="coislin-10-quot-9-2" corresp="#person-32"
-                        source="Gregorius Nyss., Ps. inscr. II 11"/>
+                        source="Gregorius Nyss., Ps. inscr. II 11 ()"/>
                      <ref target="vat-gr-754:vat-gr-754-fr-9-XXX" type="identical">Vat. gr.
-                        754</ref>
+                        754</ref><note type="attribution"><foreign xml:lang="grc">Γρ(ηγορί)ου
+                           Νυσ(σης)</foreign></note>
                   </seg>
                   <!-- Theodoretus ausgelassen -->
                   <note type="lemma">Ps 9,4a</note>
@@ -1044,7 +1086,7 @@
                   </seg>
                   <note type="lemma">Ps 9,7a1</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-9-9"
-                     corresp="#coislin-10-ps-9-7a1" source="(Athanasius)"
+                     corresp="#coislin-10-ps-9-7a" source="(Athanasius)"
                      copyOf="#edition:edition-9-7-1-1"><num type="ordinal" xml:lang="grc" value="8"
                         >Η´</num>
                      <quote type="patristic" xml:id="coislin-10-quot-9-9" corresp="#person-2"
@@ -1053,16 +1095,18 @@
                      <ref target="vat-gr-754:vat-gr-754-fr-9-XXX" type="identical">Vat. gr.
                         754</ref>
                   </seg>
+                  <note type="lemma">Ps 9,7a1 (τοῦ ἐχθροῦ)</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-9-10"
-                     corresp="#coislin-10-ps-9-7a1" source="Eusebius">
+                     corresp="#coislin-10-ps-9-7a" source="Eusebius">
                      <quote type="patristic" xml:id="coislin-10-quot-9-10" corresp="#person-30"
-                        source="Origenes (?), fr. in Ps 9,7a1"/>
+                        source="Origenes, schol. (?) in Ps 9,7a1 (ineditum?)"/>
                      <ref target="vat-gr-754:vat-gr-754-fr-9-XXX" type="identical">Vat. gr.
-                        754</ref>
+                        754</ref><note type="attribution"><foreign xml:lang="grc"
+                           >Εὐσ(εβίου)</foreign></note>
                   </seg>
                   <note type="lemma">Ps 9,7a2</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-9-11"
-                     corresp="#coislin-10-ps-9-7a2" source="(Athanasius)"
+                     corresp="#coislin-10-ps-9-7a" source="(Athanasius)"
                      copyOf="#edition:edition-9-7-1-2"><num type="ordinal" xml:lang="grc" value="9"
                         >Θ´</num>
                      <quote type="patristic" xml:id="coislin-10-quot-9-11" corresp="#person-2"
@@ -1073,12 +1117,14 @@
                      <ref target="vat-gr-754:vat-gr-754-fr-9-XXX" type="with-variant">Vat. gr.
                         754</ref>
                   </seg>
+                  <note type="lemma">Ps 9,7a2 (καὶ πόλεις)</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-9-12"
-                     corresp="#coislin-10-ps-9-7a2" source="Eusebius">
+                     corresp="#coislin-10-ps-9-7a" source="Eusebius">
                      <quote type="patristic" xml:id="coislin-10-quot-9-12" corresp="#person-30"
-                        source="Origenes (?), fr. in Ps 9,7a2"/>
+                        source="Origenes, schol. (?) in Ps 9,7a2 (ineditum?)"/>
                      <ref target="vat-gr-754:vat-gr-754-fr-9-XXX" type="identical">Vat. gr.
-                        754</ref>
+                        754</ref><note type="attribution"><foreign xml:lang="grc"
+                           >Εὐσ(εβίου)</foreign></note>
                   </seg>
                   <note type="lemma">Ps 9,7b</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-9-13"
@@ -1091,49 +1137,56 @@
                      <ref target="vat-gr-754:vat-gr-754-fr-9-XXX" type="identical">Vat. gr.
                         754</ref>
                   </seg>
+                  <note type="lemma">Ps 9,7b (ἀπώλετο)</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-9-14"
                      corresp="#coislin-10-ps-9-7b" source="Eusebius">
                      <quote type="patristic" xml:id="coislin-10-quot-9-14" corresp="#person-30"
-                        source="Origenes (?), fr. in Ps 9,7b"/>
+                        source="Origenes, schol. (?) in Ps 9,7b (ineditum?)"/>
                      <ref target="vat-gr-754:vat-gr-754-fr-9-XXX" type="identical">Vat. gr.
-                        754</ref>
+                        754</ref><note type="attribution"><foreign xml:lang="grc"
+                           >Ευσ(εβίου)</foreign></note>
                   </seg>
+                  <note type="lemma">Ps 9,7b (ἀπώλετο)</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-9-15"
                      corresp="#coislin-10-ps-9-7b" source="Gregorius of Nyssa">
                      <quote type="patristic" xml:id="coislin-10-quot-9-15" corresp="#person-35"
-                        source="hom. 5 in Eccl. 2,16"/>
+                        source="hom. 5 in Eccl. 2,16 (365,13–19 Alexander; in Ps 9,7b)"/>
                      <ref target="vat-gr-754:vat-gr-754-fr-9-XXX" type="identical">Vat. gr.
-                        754</ref>
+                        754</ref><note type="attribution"><foreign xml:lang="grc">Γρ(ηγορί)ου
+                           Νυσ(σης)</foreign></note>
                   </seg>
                </ab>
             </div>
             <pb n="4r" facs="https://gallica.bnf.fr/ark:/12148/btv1b52513084s/f19.item"/>
             <div type="commentary" subtype="commentary" xml:id="coislin-10-2-9">
                <ab xml:lang="grc" xml:id="coislin-10-2-10">
-                  <!-- vorausgehendes Theodoretus ausgelassen -->
-                  <note type="lemma">Ps 9,8</note>
+                  <!-- Theodoretus ausgelassen -->
+                  <note type="lemma">Ps 9,8 (ἡτοίμασεν)</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-9-16"
-                     corresp="#coislin-10-ps-9-8b" source="Theodoretus">
+                     corresp="#coislin-10-ps-9-8" source="Theodoretus">
                      <quote type="patristic" xml:id="coislin-10-quot-9-16" corresp="#person-16"
-                        source="Theodoretus, comm. in Ps 9,8b–9a"/>
-                     <ref target="vat-gr-754:vat-gr-754-fr-9-XXX" type="identical">Vat. gr.
-                        754</ref>
+                        source="Theodoretus, comm. in Ps 9,8b–9a (PG 80,925 B1–5)"/>
+                     <ref target="vat-gr-754:vat-gr-754-fr-9-XXX" type="with-variant">Vat. gr.
+                        754</ref><note type="attribution"><foreign xml:lang="grc"
+                           >Θεοδ(ωρήτου)</foreign></note>
                   </seg>
-                  <note type="lemma">Ps 9,9a</note>
+                  <note type="lemma">Ps 9,9a (καὶ αὐτὸς)</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-9-17"
                      corresp="#coislin-10-ps-9-9a" source="Eusebius">
                      <quote type="patristic" xml:id="coislin-10-quot-9-17" corresp="#person-31"
-                        source="Origenes (?), fr. in Ps 9,9a"/>
+                        source="Origenes, schol. (?) in Ps 9,9a (PG 23,132 C10–13)"/><!-- Textkritik: PG: das gleiche Fragment mit einigen Varianten -->
                      <ref target="vat-gr-754:vat-gr-754-fr-9-XXX" type="identical">Vat. gr.
-                        754</ref>
+                        754</ref><note type="attribution"><foreign xml:lang="grc"
+                           >Ευσ(εβίου)</foreign></note>
                   </seg>
-                  <note type="lemma">Ps 9,9b</note>
+                  <note type="lemma">Ps 9,9b (κρινεῖ)</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-9-18"
                      corresp="#coislin-10-ps-9-9b" source="Eusebius">
                      <quote type="patristic" xml:id="coislin-10-quot-9-18" corresp="#person-31"
-                        source="Origenes (?), fr. in Ps 9,9b"/>
+                        source="Origenes, schol. (?) in Ps 9,9b (PG 23,132 C14–D6; cf. PG 17,105 C6–10)"/><!-- Textkritik: PG 23: das fr. ist beinahe gleich -->
                      <ref target="vat-gr-754:vat-gr-754-fr-9-XXX" type="identical">Vat. gr.
-                        754</ref>
+                        754</ref><note type="attribution"><foreign xml:lang="grc">του
+                           αυτ(οῦ)</foreign></note>
                   </seg>
                   <note type="lemma">Ps 9,10a</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-9-19"
@@ -1157,13 +1210,14 @@
                      <ref target="vat-gr-754:vat-gr-754-fr-9-XXX" type="identical">Vat. gr.
                         754</ref>
                   </seg>
-                  <note type="lemma">Ps 9,11b</note>
+                  <note type="lemma">Ps 9,11b (ὅτι)</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-9-21"
                      corresp="#coislin-10-ps-9-11b" source="Eusebius">
-                     <quote type="patristic" xml:id="coislin-10-quot-9-21" corresp="#person-13"
-                        source="Origenes (?), fr. in Ps 9,11b"/>
+                     <quote type="patristic" xml:id="coislin-10-quot-9-21" corresp="#person-30"
+                        source="Origenes, schol. (?) in Ps 9,11b (PG 12,1189 A6–8)"/><!-- Textkritik: PG 23: das fr. ist beinahe gleich -->
                      <ref target="vat-gr-754:vat-gr-754-fr-9-XXX" type="identical">Vat. gr.
-                        754</ref>
+                        754</ref><note type="attribution"><foreign xml:lang="grc"
+                           >Ευσ(εβίου)</foreign></note>
                   </seg>
                   <note type="lemma">Ps 9,12a</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-9-22"
@@ -1171,16 +1225,19 @@
                      copyOf="#edition:edition-9-12-1"><num type="ordinal" xml:lang="grc" value="13"
                         >ΙΓ´</num>
                      <quote type="patristic" xml:id="coislin-10-quot-9-22" corresp="#person-2"
-                        source="Athanasius, exp. in Ps 9,12a">Tῆ ἐπουρανίω φησίν: –</quote>
+                        source="Athanasius, exp. in Ps 9,12a; in marg.">Tῆ ἐπουρανίω φησίν:
+                        –</quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-9-XXX" type="identical">Vat. gr.
                         754</ref>
                   </seg>
+                  <note type="lemma">Ps 9,12a (ἐν σιών)</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-9-23"
                      corresp="#coislin-10-ps-9-12a" source="Theodoretus">
                      <quote type="patristic" xml:id="coislin-10-quot-9-23" corresp="#person-16"
-                        source="Theodoretus, comm. in Ps 9,12a"/>
+                        source="Theodoretus, comm. in Ps 9,12a (PG 80,925 C13–D2)"/>
                      <ref target="vat-gr-754:vat-gr-754-fr-9-XXX" type="identical">Vat. gr.
-                        754</ref>
+                        754</ref><note type="attribution"><foreign xml:lang="grc"
+                           >Θεοδ(ωρήτου)</foreign></note>
                   </seg>
                   <note type="lemma">Ps 9,12b</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-9-24"
@@ -1194,13 +1251,21 @@
                      <ref target="vat-gr-754:vat-gr-754-fr-9-XXX" type="identical">Vat. gr.
                         754</ref>
                   </seg>
+                  <pb n="4r–v"/>
+                  <note type="lemma">Ps 9,12b (ἐπιτηδεύματα)</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-9-25"
                      corresp="#coislin-10-ps-9-12b" source="Theodoretus">
                      <quote type="patristic" xml:id="coislin-10-quot-9-25" corresp="#person-16"
-                        source="Theodoretus, comm. in Ps 9,12b"/>
-                     <ref target="vat-gr-754:vat-gr-754-fr-9-XXX" type="identical">Vat. gr.
-                        754</ref>
+                        source="Theodoretus, comm. in Ps 9,12b (PG 80,928 A1–13)"/>
+                     <ref target="vat-gr-754:vat-gr-754-fr-9-XXX" type="with-variant">Vat. gr.
+                        754</ref><note type="attribution"><foreign xml:lang="grc"
+                           >Θεοδ(ωρήτου)</foreign></note>
                   </seg>
+               </ab>
+            </div>
+            <pb n="4v" facs="https://gallica.bnf.fr/ark:/12148/btv1b52513084s/f20.item"/>
+            <div type="commentary" subtype="commentary" xml:id="coislin-10-2-9-1">
+               <ab xml:lang="grc" xml:id="coislin-10-2-10-1">
                   <note type="lemma">Ps 9,13a</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-9-26"
                      corresp="#coislin-10-ps-9-13a" source="(Athanasius)"
@@ -1212,13 +1277,16 @@
                      <ref target="vat-gr-754:vat-gr-754-fr-9-XXX" type="identical">Vat. gr.
                         754</ref>
                   </seg>
+                  <note type="lemma">Ps 9,13a (ὅτι)</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-9-27"
                      corresp="#coislin-10-ps-9-13a" source="Hesychius">
                      <quote type="patristic" xml:id="coislin-10-quot-9-27" corresp="#person-11"
-                        source="Hesychius, comm. brevis in Ps 9,13a"/>
+                        source="Hesychius, comm. brevis in Ps 9,13a (12 Jagić)"/>
                      <ref target="vat-gr-754:vat-gr-754-fr-9-XXX" type="identical">Vat. gr.
-                        754</ref>
+                        754</ref><note type="attribution"><foreign xml:lang="grc"
+                           >Ἡσυχ(ίου)</foreign></note>
                   </seg>
+                  <!-- ab hier -->
                   <note type="lemma">Ps 9,13b</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-9-28"
                      corresp="#coislin-10-ps-9-13b" source="(Athanasius)"
@@ -1269,11 +1337,6 @@
                         source="Origenes (?), fr. in Ps 9,14b–15b"/>
                      <ref target="vat-gr-754:vat-gr-754-fr-9-XXX" type="expanded">Vat. gr. 754</ref>
                   </seg>
-               </ab>
-            </div>
-            <pb n="4v" facs="https://gallica.bnf.fr/ark:/12148/btv1b52513084s/f20.item"/>
-            <div type="commentary" subtype="commentary" xml:id="coislin-10-2-11">
-               <ab xml:lang="grc" xml:id="coislin-10-2-12">
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-9-35"
                      corresp="#coislin-10-ps-9-14b" source="Origenes">
                      <quote type="patristic" xml:id="coislin-10-quot-9-35" corresp="#person-23"

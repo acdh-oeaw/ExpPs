@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../schema/tei-psalmcatenae.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-   <!-- faciendum: Kontrolle des Seitenwechsels -->
    <!-- faciendum: Kontrolle der Verknüpfungen mit Vat. gr. 754 -->
    <!-- faciendum: Berichtigung der Bibliographie nach dem Muster im Vat. gr. 754-->
+   <!-- vat-gr-754-gloss-7-1: in Ps 8 -->
+   <!-- vat-gr-754-gloss-7-2: in Ps 8 -->
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -567,7 +568,7 @@
                   </seg>
                </ab>
             </div>
-            <pb n="39r-v"/>
+            <pb n="39r–v"/>
             <div type="commentary" subtype="commentary">
                <ab xml:lang="grc">
                   <note type="lemma">Ps 1,1</note>
@@ -582,7 +583,7 @@
                            Δαυΐδ<unclear>· διὸ ἐ[ν] πρώτ</unclear>[ο]<unclear>ι</unclear>[ς]
                            <unclear>μ</unclear>[ακαρίζ]<unclear>ει το</unclear>ὺς εἰς
                            α<unclear>ὐ</unclear>τὸν ἠλ<unclear>πικότα</unclear>ς· [μακαρίου]ς δὲ·
-                           καλ<unclear>εῖ</unclear> το<unclear>ὺ</unclear>ς μὴ τί πορευθέντας ἐν
+                           καλ<unclear>εῖ</unclear> || το<unclear>ὺ</unclear>ς μὴ τί πορευθέντας ἐν
                         βουλῆ ἀσεβῶν· μήτε μὴν στάντας ἐν ὁδῶ ἁμαρτωλῶν∙ μήτε ἐπικαθέδραν
                            κ<unclear>ε</unclear>καθικότας λοιμῶν• Τρία γὰρ ἦν τάγματα παρὰ ϊουδαίοις
                         κατὰ τοῦ σωτῆρος ἐπαναστάντα· γραμματεῖς καὶ φαρισαίοι καὶ νομικοί· οἳ καὶ
@@ -1635,11 +1636,6 @@
                         ἐκκλησίας·</quote><note type="attribution"><foreign xml:lang="grc">ἀ[λλη
                               ἐρμ]<unclear reason="faded-ink">ην</unclear>(εία)</foreign></note>
                   </seg>
-               </ab>
-            </div>
-            <pb n="43r"/>
-            <div type="commentary" subtype="commentary">
-               <ab xml:lang="grc">
                   <note type="lemma">Ps 5,2a (Τὰ ῥήματά μου)</note>
                   <seg type="perioche" xml:id="bodl-auct-d-4-1-perioche-5-4"
                      corresp="#bodl-auct-d-4-1-ps-5-2a" source="Anonymous">
@@ -2002,10 +1998,10 @@
                      corresp="#bodl-auct-d-4-1-ps-6-1a" source="Anonymous">
                      <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-6-2"
                         corresp="#person-2" source="Athanasius, exp. in Ps 6,1">Καί τις, ἂν, ἣ ἡ
-                        ὀγδόη· ἡ τοῦ Χριστοῦ ἀναστάσιμος ἡμέρα· καθὴν τῶν ἡμετέρων κόπων ἀποληψόμεθα
-                        τοὺς καρποὺς. τῶν ἐχθρῶν δηλαδὴ ἀποστρεφομένων εἰς τὰ ὀπίσω μεταισχύνης
-                        δῆλονὅτι καὶ ταραχής. ἄδει δὲ τὸν ψαλμὸν. ὡς μακρὸν χρόνον ἔχων ἐν τῆι
-                        μετανοία· ἣν ϋπὲρ τῆς ἁμαρτίας προσέφερεν· ⁘</quote>
+                        ὀγδόη· ἡ τοῦ Χριστοῦ ἀναστάσιμος || ἡμέρα· καθὴν τῶν ἡμετέρων κόπων
+                        ἀποληψόμεθα τοὺς καρποὺς. τῶν ἐχθρῶν δηλαδὴ ἀποστρεφομένων εἰς τὰ ὀπίσω
+                        μεταισχύνης δῆλονὅτι καὶ ταραχής. ἄδει δὲ τὸν ψαλμὸν. ὡς μακρὸν χρόνον ἔχων
+                        ἐν τῆι μετανοία· ἣν ϋπὲρ τῆς ἁμαρτίας προσέφερεν· ⁘</quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-6-2" type="with-variants">Vat. gr.
                         754</ref>
                   </seg>
@@ -2293,7 +2289,7 @@
                      τοῦ ὑψίστου.</quote>
                </ab>
             </div>
-            <pb n="45r"/>
+            <pb n="44v–45r"/>
             <div type="commentary" subtype="commentary">
                <ab xml:lang="grc">
                   <!-- Ps 7 commentary -->
@@ -2309,6 +2305,7 @@
                            >δ</unclear>[ω]<unclear reason="faded">ρίτο</unclear>υ·<foreign
                            xml:lang="grc"/></note>
                   </seg>
+                  <pb n="45r"/>
                   <note type="lemma">Ps 7,1</note>
                   <seg type="hypothesis" xml:id="bodl-auct-d-4-1-fr-7-2"
                      corresp="#bodl-auct-d-4-1-ps-7-1a" source="Athanasius">
@@ -2331,11 +2328,6 @@
                      <note type="attribution"><foreign xml:lang="grc">ἑτέρα ἑρμηνεία τοῦ ἁγιου
                            Ἀθανασίου·</foreign></note>
                   </seg>
-               </ab>
-            </div>
-            <pb n="46r"/>
-            <div type="commentary" subtype="commentary">
-               <ab xml:lang="grc">
                   <note type="lemma">Ps 7,2 (ῥῦσαί με)</note>
                   <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-7-3"
                      corresp="#bodl-auct-d-4-1-ps-7-2a" source="Basilius">
@@ -2384,8 +2376,9 @@
                      <quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-7-7"
                         corresp="#person-3"
                         source="Basilius, hom. in Ps. 7 (PG 29,236 C13–D5) in Ps 7,7c"/>
-                     <note type="attribution"><foreign xml:lang="grc"
-                     /></note><!-- Korrektur: Attribution -->
+                     <note type="attribution"><foreign xml:lang="grc">ἐρμην<unclear reason="faded"
+                              >εία</unclear>τοῦ ἁγίου
+                     Βασιλείου·</foreign></note><!-- Korrektur: Attribution -->
                   </seg>
                   <note type="lemma">Ps 7,8a (συναγωγὴ)</note>
                   <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-7-8"
@@ -2423,7 +2416,7 @@
                         ὁδὸν αὐτ<unclear reason="damage">ο</unclear>ῦ· ⁘</quote>
                      <note type="attribution"><foreign xml:lang="grc">ἐρμην(εία)</foreign></note>
                   </seg>
-                  <!-- Muster fons indeterminatus -->
+                  <!-- Muster: fons indeterminatus -->
                   <note type="lemma">Ps 7,9c–10b (κατευθυνεῖς)</note>
                   <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-7-12"
                      corresp="#bodl-auct-d-4-1-ps-7-9c" source="Unidentified">
@@ -2640,7 +2633,7 @@
                      κύριος ἡμῶν, ὡς θαυμαστὸν τὸ ὄνομά σου ἐν πάσῃ τῇ γῇ.</quote>
                </ab>
             </div>
-            <pb n="47r"/>
+            <pb n="46v"/>
             <div type="commentary" subtype="commentary">
                <ab xml:lang="grc">
                   <!-- ps 8 commentary -->
@@ -2741,7 +2734,7 @@
                      corresp="#bodl-auct-d-4-1-ps-8-2b" source="Anonymous">
                      <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-8-9"
                         corresp="#person-18"
-                        source="fons ignotus in Ps 8,3a (αἶνον); in marg.; cf. Suda s.v. Αἶνος (Αι nr. 230 Adler)"
+                        source="fons ignotus in Ps 8,3a; in marg.; cf. Suda s.v. Αἶνος (Αι nr. 230 Adler)"
                            ><unclear reason="damage">ἔπαιν</unclear>[ον] | ϋμ<unclear
                            reason="damage">ν</unclear>[ον] | δό[ξα]</quote>
                   </seg>
@@ -3495,7 +3488,7 @@
                   </seg>
                </ab>
             </div>
-            <pb n="49r-v"/>
+            <pb n="49r–v"/>
             <div type="commentary" subtype="commentary">
                <ab xml:lang="grc">
                   <note type="lemma">Ps 9,24a (ἐπαινεῖται)</note>
@@ -3754,7 +3747,7 @@
                      <quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-9-60"
                         corresp="#person-44"
                         source="Tarasius Const. (?), fr. in Ps 9,34–35b (ineditum?); cf. Theodoretus, comm. in Ps 9,35a–b (PG 80,936 B8–12 sub Ps 10,14)"
-                        >ἐπειδὴ ταῦτα τὰ προειρημένα λογύδρια τῶν ἀσεβῶν εἰσὶ ληρωδήματα· βλέπεις
+                        >ἐπειδὴ ταῦτα τὰ προειρημένα λογύδρια τῶν ἀσεβῶν || εἰσὶ ληρωδήματα· βλέπεις
                         ὅτι πόνος καὶ θυμός εἰσιν· ἀλλὰ σὺ ὁ θεὸς. παραδώσεις αὐτοὺς εἰς χεῖράς σου·
                         τὴν ἀξίαν αὐτῶν εἰσπραττόμενος ποινήν· ⁘ </quote>
                      <note type="attribution"><foreign xml:lang="grc">ἐρμηνεια των Δ´
@@ -3893,6 +3886,7 @@
             </div>
             <div type="commentary" subtype="commentary">
                <ab xml:lang="grc">
+                  <pb n="50v–51r"/>
                   <!-- Ps 10 commentary -->
                   <note type="lemma">Ps 10,1a</note>
                   <seg type="hypothesis" xml:id="bodl-auct-d-4-1-fr-10-1"
