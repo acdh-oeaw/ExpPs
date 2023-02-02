@@ -53,6 +53,10 @@ version="2.0">
                 </div>
                 <xsl:apply-templates select="child::node()"/>
             </div>
+            <div class="for-witness-visible" id="window-for-witnesses-1">Text</div>
+            <div class="for-witness-visible" id="window-for-witnesses-2">Text</div>
+            <div class="for-witness-visible" id="window-for-witnesses-3">Text</div>
+            <div class="for-witness-visible" id="window-for-witnesses-4">Text</div>
         </div>
     </body>
 </xsl:template>
