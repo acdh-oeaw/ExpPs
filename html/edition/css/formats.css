@@ -77,5 +77,11 @@ div.list-of-witnesses { margin-left: 40pt; margin-top: 10pt; margin-bottom: 10pt
 div.psalm { margin-bottom: 30pt; margin-top: 30pt; }
 div.body-psalmtext { font-size: 16pt; }
 div.body-textcritic { border-bottom: 1pt solid black; margin-bottom: 10pt; }
+div.body-links { margin-bottom: 10pt; }
 div.for-witness-hidden { display: none; }
-div.for-witness-visible { display: block; position: sticky; bottom: 10pt; border: 1pt solid black; margin: 20pt; width: 300pt; height: 100pt; background-color: white; }
+#div-around-witnesses { display: block; bottom: 10pt; }
+div.for-witness-visible { display: block; border: 1pt solid black; margin: 20pt; width: 20%; height: auto; background-color: white; float: left; padding: 10pt; }
+#close-button-1 { float: right; }
+#close-button-2 { float: right; }
+#close-button-3 { float: right; }
+#close-button-4 { float: right; }

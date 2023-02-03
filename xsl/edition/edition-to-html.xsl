@@ -24,6 +24,7 @@ version="2.0">
         </title>
         <link rel="stylesheet" href="./css/formats.css" type="text/css"></link>
         <link rel="stylesheet" id="fundament-styles"  href="../fundament/css/fundament.min.css" type="text/css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" type="text/css"/>
     </head>
 </xsl:template>
 
@@ -53,11 +54,29 @@ version="2.0">
                 </div>
                 <xsl:apply-templates select="child::node()"/>
             </div>
-            <div class="for-witness-visible" id="window-for-witnesses-1">Text</div>
-            <div class="for-witness-visible" id="window-for-witnesses-2">Text</div>
-            <div class="for-witness-visible" id="window-for-witnesses-3">Text</div>
-            <div class="for-witness-visible" id="window-for-witnesses-4">Text</div>
+            <div id="div-around-witnesses" class="fixed-bottom">
+                <div class="for-witness-hidden" id="window-for-witnesses-1">
+                    <button type="button" class="btn btn-light" id="close-button-1">Close</button>
+                    <p id="paragraph-for-witness-1">Text 1</p>
+                </div>
+                <div class="for-witness-hidden" id="window-for-witnesses-2">
+                    <button type="button" class="btn btn-light" id="close-button-2">Close</button>
+                    <p id="paragraph-for-witness-2">Text 2</p>
+                </div>
+                <div class="for-witness-hidden" id="window-for-witnesses-3">
+                    <button type="button" class="btn btn-light" id="close-button-3">Close</button>
+                    <p id="paragraph-for-witness-3">Text 3</p>
+                </div>
+                <div class="for-witness-hidden" id="window-for-witnesses-4">
+                    <button type="button" class="btn btn-light" id="close-button-4">Close</button>
+                    <p id="paragraph-for-witness-4">Text 4</p>
+                </div>
+            </div>
         </div>
+        <script type="text/javascript" src="../fundament/vendor/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="../fundament/js/fundament.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script type="text/javascript" src="../fundament/js/edition.js"></script>
     </body>
 </xsl:template>
 
@@ -109,8 +128,135 @@ version="2.0">
     
 <xsl:template match="tei:div[@type = 'commentary' and not(exists(@rend))]">
     <div class="body-commentary">
-        <xsl:apply-templates select="child::node()"/>
+        <xsl:apply-templates select="child::node() except (tei:div[@type = 'links'])"/>
     </div>
+</xsl:template>
+    
+<xsl:template match="tei:div[@type = 'links']">
+    <div class="body-links">
+        <xsl:apply-templates select="child::tei:p/child::tei:listRef/child::tei:ref"/>
+    </div>
+</xsl:template>
+    
+<xsl:template match="tei:ref">
+    <xsl:text>→ </xsl:text>
+    <a class="link-to-witness">
+        <xsl:attribute name="href">
+            <xsl:if test="starts-with(./@target,'#vat-gr-754')">
+                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/vat-gr-754/commentaryfragments/</xsl:text>
+                <xsl:value-of select="substring-after(./@target,'#vat-gr-754:')"/>
+            </xsl:if>
+            <xsl:if test="starts-with(./@target,'#ambr-b-106-sup')">
+                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/ambr-b-106-sup/commentaryfragments/</xsl:text>
+                <xsl:value-of select="substring-after(./@target,'#ambr-b-106-sup:')"/>
+            </xsl:if>
+            <xsl:if test="starts-with(./@target,'#ambr-m-47-sup')">
+                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/ambr-m-47-sup/commentaryfragments/</xsl:text>
+                <xsl:value-of select="substring-after(./@target,'#ambr-m-47-sup:')"/>
+            </xsl:if>
+            <xsl:if test="starts-with(./@target,'#athen-b-n-8')">
+                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/athen-b-n-8/commentaryfragments/</xsl:text>
+                <xsl:value-of select="substring-after(./@target,'#athen-b-n-8:')"/>
+            </xsl:if>
+            <xsl:if test="starts-with(./@target,'#bodl-auct-d-4-1')">
+                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/bodl-auct-d-4-1/commentaryfragments/</xsl:text>
+                <xsl:value-of select="substring-after(./@target,'#bodl-auct-d-4-1:')"/>
+            </xsl:if>
+            <xsl:if test="starts-with(./@target,'#coislin-10')">
+                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/coislin-10/commentaryfragments/</xsl:text>
+                <xsl:value-of select="substring-after(./@target,'#coislin-10:')"/>
+            </xsl:if>
+            <xsl:if test="starts-with(./@target,'#coislin-12')">
+                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/coislin-12/commentaryfragments/</xsl:text>
+                <xsl:value-of select="substring-after(./@target,'#coislin-12:')"/>
+            </xsl:if>
+            <xsl:if test="starts-with(./@target,'#franzon-3')">
+                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/franzon-3/commentaryfragments/</xsl:text>
+                <xsl:value-of select="substring-after(./@target,'#franzon-3:')"/>
+            </xsl:if>
+            <xsl:if test="starts-with(./@target,'#mosq-syn-194')">
+                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/mosq-syn-194/commentaryfragments/</xsl:text>
+                <xsl:value-of select="substring-after(./@target,'#mosq-syn-194:')"/>
+            </xsl:if>
+            <xsl:if test="starts-with(./@target,'#oxon-s-trin-78')">
+                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/oxon-s-trin-78/commentaryfragments/</xsl:text>
+                <xsl:value-of select="substring-after(./@target,'#oxon-s-trin-78:')"/>
+            </xsl:if>
+            <xsl:if test="starts-with(./@target,'#par-gr-139')">
+                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/par-gr-139/commentaryfragments/</xsl:text>
+                <xsl:value-of select="substring-after(./@target,'#par-gr-139:')"/>
+            </xsl:if>
+            <xsl:if test="starts-with(./@target,'#par-gr-164')">
+                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/par-gr-164/commentaryfragments/</xsl:text>
+                <xsl:value-of select="substring-after(./@target,'#par-gr-164:')"/>
+            </xsl:if>
+            <xsl:if test="starts-with(./@target,'#par-gr-166')">
+                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/par-gr-166/commentaryfragments/</xsl:text>
+                <xsl:value-of select="substring-after(./@target,'#par-gr-166:')"/>
+            </xsl:if>
+            <xsl:if test="starts-with(./@target,'#plut-5-30')">
+                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/plut-5-30/commentaryfragments/</xsl:text>
+                <xsl:value-of select="substring-after(./@target,'#plut-5-30:')"/>
+            </xsl:if>
+            <xsl:if test="starts-with(./@target,'#plut-6-3')">
+                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/plut-6-3/commentaryfragments/</xsl:text>
+                <xsl:value-of select="substring-after(./@target,'#plut-6-3:')"/>
+            </xsl:if>
+            <xsl:if test="starts-with(./@target,'#vat-gr-1422')">
+                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/vat-gr-1422/commentaryfragments/</xsl:text>
+                <xsl:value-of select="substring-after(./@target,'#vat-gr-1422:')"/>
+            </xsl:if>
+        </xsl:attribute>
+        <xsl:if test="starts-with(./@target,'#vat-gr-754')">
+            <xsl:text>Vat. gr. 754</xsl:text>
+        </xsl:if>
+        <xsl:if test="starts-with(./@target,'#ambr-b-106-sup')">
+            <xsl:text>Ambr. B. 106 sup.</xsl:text>
+        </xsl:if>
+        <xsl:if test="starts-with(./@target,'#ambr-m-47-sup')">
+            <xsl:text>Ambr. M. 47 sup.</xsl:text>
+        </xsl:if>
+        <xsl:if test="starts-with(./@target,'#athen-b-n-8')">
+            <xsl:text>Athen B.N. 8</xsl:text>
+        </xsl:if>
+        <xsl:if test="starts-with(./@target,'#bodl-auct-d-4-1')">
+            <xsl:text>Bodl. Auct. D. 4.1</xsl:text>
+        </xsl:if>
+        <xsl:if test="starts-with(./@target,'#coislin-10')">
+            <xsl:text>Coislin 10</xsl:text>
+        </xsl:if>
+        <xsl:if test="starts-with(./@target,'#coislin-12')">
+            <xsl:text>Coislin 12</xsl:text>
+        </xsl:if>
+        <xsl:if test="starts-with(./@target,'#franzon-3')">
+            <xsl:text>Franzon. 3</xsl:text>
+        </xsl:if>
+        <xsl:if test="starts-with(./@target,'#mosq-syn-194')">
+            <xsl:text>Mosq. Syn. 194</xsl:text>
+        </xsl:if>
+        <xsl:if test="starts-with(./@target,'#oxon-s-trin-78')">
+            <xsl:text>Oxon. S. Trin. 78</xsl:text>
+        </xsl:if>
+        <xsl:if test="starts-with(./@target,'#par-gr-139')">
+            <xsl:text>Par. gr. 139</xsl:text>
+        </xsl:if>
+        <xsl:if test="starts-with(./@target,'#par-gr-164')">
+            <xsl:text>Par. gr. 164</xsl:text>
+        </xsl:if>
+        <xsl:if test="starts-with(./@target,'#par-gr-166')">
+            <xsl:text>Par.gr. 166</xsl:text>
+        </xsl:if>
+        <xsl:if test="starts-with(./@target,'#plut-5-30')">
+            <xsl:text>Plut. 5.30</xsl:text>
+        </xsl:if>
+        <xsl:if test="starts-with(./@target,'#plut-6-3')">
+            <xsl:text>Plut. 6.3</xsl:text>
+        </xsl:if>
+        <xsl:if test="starts-with(./@target,'#vat-gr-1422')">
+            <xsl:text>Vat. gr. 1422</xsl:text>
+        </xsl:if>
+    </a>
+    <xsl:text> </xsl:text>
 </xsl:template>
     
 <xsl:template match="tei:div[@type = 'commentary' and @rend = 'hide']"/>
@@ -118,6 +264,7 @@ version="2.0">
 <xsl:template match="tei:div[@type = 'textcritic' and not(exists(@rend))]">
     <div class="body-textcritic">
         <xsl:apply-templates select="tei:app[@type = 'fragment']"/>
+        <xsl:apply-templates select="preceding-sibling::tei:div[@type = 'commentary'][1]/child::tei:div[@type = 'links']"/>
         <xsl:for-each select="tei:app[@type = 'text']">
             <xsl:apply-templates select="."/>
             <xsl:if test="position() != last()"><xsl:text> || </xsl:text></xsl:if>
