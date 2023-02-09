@@ -24,8 +24,11 @@
       <xsl:apply-templates select="child::node()"/>
     </xsl:template>
     
-    <xsl:template match="tei:choice">
+     <xsl:template match="tei:choice">
       <xsl:apply-templates select="child::node()"/>
+      <xsl:if test="starts-with(following-sibling::text()[1],' ')">
+        <xsl:text> </xsl:text>
+      </xsl:if>
     </xsl:template>
     
     <xsl:template match="tei:orig"/>
@@ -54,12 +57,18 @@
       <xsl:text>[</xsl:text>
       <xsl:apply-templates select="child::node()"/>
       <xsl:text>]</xsl:text>
+      <xsl:if test="starts-with(following-sibling::text()[1],' ') or starts-with(following-sibling::text()[1],'&#xA;')">
+        <xsl:text> </xsl:text>
+      </xsl:if>
     </xsl:template>
     
     <xsl:template match="tei:supplied">
       <xsl:text>〈</xsl:text>
       <xsl:apply-templates select="child::node()"/>
       <xsl:text>〉</xsl:text>
+      <xsl:if test="starts-with(following-sibling::text()[1],' ') or starts-with(following-sibling::text()[1],'&#xA;')">
+        <xsl:text> </xsl:text>
+      </xsl:if>
     </xsl:template>
     
     <xsl:template match="tei:quote[@type = 'biblical']">
@@ -72,7 +81,7 @@
     <xsl:template match="text()">
       <xsl:choose>
         <xsl:when test="contains(.,'&#xA;')">
-          <xsl:value-of select="translate(.,'&#xA;','')"/>
+          <xsl:value-of select="normalize-space(translate(.,'&#xA;',''))"/>
         </xsl:when>
         <xsl:when test="not(contains(.,'&#xA;'))">
           <xsl:value-of select="."/>
