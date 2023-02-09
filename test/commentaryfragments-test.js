@@ -25,7 +25,7 @@ module.exports = function(baseURI){
 								"Content-Type":"application/json"},
 					'time': true
 					});
-				expect(response).to.have.json({ "_links" : { "self" : { "href" : "/psalmcatenae-server/commentaryfragments/vat-gr-754-fr-1-1"}, "psalm" : { "href" : "/psalmcatenae-server/psalmtexts/"}}, "_embedded" : { "commentaryfragment" : {"id" : "vat-gr-754-fr-1-1", "attribution" : "Anonymous", "source" : "Basilius, hom. in Ps 48 (PG 29, 436 C3–5)", "text" : "Ψαλτήριόν ἐστιν ὄργανον μουσικὸν ἐναρμονίους τοὺς φθόγγους πρὸς τὴν ἐκ τῆς φωνῆς μελῳδίαν ἀποδίδον: –"}} });
+				expect(response).to.have.json({ "_links" : { "self" : { "href" : "/psalmcatenae-server/commentaryfragments/vat-gr-754-fr-1-1"}, "psalm" : { "href" : "/psalmcatenae-server/psalmtexts/"}}, "_embedded" : { "commentaryfragment" : {"id" : "vat-gr-754-fr-1-1", "attribution" : "Anonymous", "source" : "Basilius, hom. in Ps 48 (PG 29, 436 C3–5)", "text" : "Ψαλτήριόν ἐστιν ὄργανον μουσικὸν ἐναρμονίους τοὺς φθόγγους πρὸς τὴν                     ἐκ τῆς φωνῆς μελῳδίαν ἀποδίδον: –"}} });
 				return chakram.wait();
 			});
         });
@@ -56,7 +56,7 @@ module.exports = function(baseURI){
 								"Content-Type":"application/json"},
 					'time': true
 					});
-				expect(response).to.have.json({ "_links" : { "self" : { "href" : "/psalmcatenae-server/vat-gr-754/commentaryfragments/vat-gr-754-fr-1-5"}, "psalm" : { "href" : "/psalmcatenae-server/vat-gr-754/psalmtexts/vat-gr-754-ps-1-3-1"}}, "_embedded" : { "commentaryfragment" : {"id" : "vat-gr-754-fr-1-5", "attribution" : "(Athanasius)", "source" : "Athanasius, schol. in Ps 1,3a", "text" : "Ξύλον ὁ Χριστὸς ἀναγέγραπται ἐν τῇ θε[ο]πνεύστῳ γραφῇ. κατὰ τὸ εἰρημένον. πᾶσι το[ῖς] [ἀν]τεχομένοις αὐτῆς· λέγει οὖν ὅτι οἱ πιστεύσαντες Χριστῷ. σῶμα αὐτοῦ ἔσοντ[αι]· μετασχηματίσει γὰρ τὸ σῶμα τῆς ταπεινώσεως ἡμῶν πρὸς τὸ γενέσθαι σύμ[μορ]φον τῷ σώματι τῆς δόξης αὐτοῦ· διεξόδους δὲ ὑδάτων. τὰ[ς] [θ]εί[α]ς γραφάς· ἐν αἷς [ἁ]πανταχοῦ ἔστιν ε[ὑ]ρεῖν Χριστὸν κηρυ[σσ]όμε[νον]: –"}} })
+				expect(response).to.have.json({ "_links" : { "self" : { "href" : "/psalmcatenae-server/vat-gr-754/commentaryfragments/vat-gr-754-fr-1-5"}, "psalm" : { "href" : "/psalmcatenae-server/vat-gr-754/psalmtexts/vat-gr-754-ps-1-3-1"}}, "_embedded" : { "commentaryfragment" : {"id" : "vat-gr-754-fr-1-5", "attribution" : "(Athanasius)", "source" : "Athanasius, schol. in Ps 1,3a", "text" : "Ξύλον ὁ Χριστὸς ἀναγέγραπται ἐν τῇ θε[ο]πνεύ                  στῳ γραφῇ. κατὰ τὸ εἰρημένον. πᾶσι το[ῖς] [ἀν]τεχομένοις αὐτῆς· λέγει                   οὖν ὅτι οἱ πιστεύσαντες Χριστῷ. σῶμα αὐτοῦ ἔσοντ[αι]· μετασχηματίσει                   γὰρ τὸ σῶμα τῆς ταπεινώσεως ἡμῶν πρὸς τὸ γενέσθαι σύμ[μορ]φον                   τῷ σώματι τῆς δόξης αὐτοῦ· διεξόδους δὲ ὑδάτων. τὰ[ς] [θ]εί[α]ς                   γραφάς· ἐν αἷς [ἁ]πανταχοῦ ἔστιν ε[ὑ]ρεῖν Χριστὸν κηρυ[σσ]όμε[νον]: –"}} })
                 return chakram.wait();
 			});
         });
