@@ -31,17 +31,17 @@
     <xsl:template match="tei:orig"/>
     
     <xsl:template match="tei:reg[@type = 'correction']">
-      <xsl:value-of select="text()"/>
+      <xsl:apply-templates select="child::node()"/>
     </xsl:template>
     
     <xsl:template match="tei:abbr[@type = 'nomSac']"/>
     
     <xsl:template match="tei:expan">
-      <xsl:value-of select="text()"/>
+      <xsl:apply-templates select="child::node()"/>
     </xsl:template>
     
     <xsl:template match="tei:hi">
-      <xsl:value-of select="text()"/>
+      <xsl:apply-templates select="child::node()"/>
     </xsl:template>
     
     <xsl:template match="tei:lb[@break and @break = 'no']"/>
@@ -52,13 +52,13 @@
     
     <xsl:template match="tei:unclear">
       <xsl:text>[</xsl:text>
-      <xsl:value-of select="text()"/>
+      <xsl:apply-templates select="child::node()"/>
       <xsl:text>]</xsl:text>
     </xsl:template>
     
     <xsl:template match="tei:supplied">
       <xsl:text>〈</xsl:text>
-      <xsl:value-of select="text()"/>
+      <xsl:apply-templates select="child::node()"/>
       <xsl:text>〉</xsl:text>
     </xsl:template>
     
@@ -72,7 +72,7 @@
     <xsl:template match="text()">
       <xsl:choose>
         <xsl:when test="contains(.,'&#xA;')">
-          <xsl:value-of select="normalize-space(translate(.,'&#xA;',''))"/>
+          <xsl:value-of select="translate(.,'&#xA;','')"/>
         </xsl:when>
         <xsl:when test="not(contains(.,'&#xA;'))">
           <xsl:value-of select="."/>
