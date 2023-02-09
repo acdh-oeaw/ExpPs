@@ -407,7 +407,7 @@
                         754</ref>
                   </seg>
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-1-9"
-                     corresp="#oxon-s-trin-78-ps-1" source="Athanasius (?)">
+                     corresp="#oxon-s-trin-78-ps-1-1a" source="Athanasius (?)">
                      <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-1-9"
                         corresp="#person-2" source="Athanasius, exp. in Ps 1"><unclear
                            reason="faded-ink">Τὴν</unclear> ἀρχὴ<unclear reason="faded-ink"
@@ -612,7 +612,7 @@
                   <!-- Ps 2 commentary -->
                   <note type="lemma">Ps 2,1</note>
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-2-1"
-                     corresp="#oxon-s-trin-78-ps-2-1" source="Anonymous">
+                     corresp="#oxon-s-trin-78-ps-2-1a" source="Anonymous">
                      <num type="ordinal" xml:lang="grc" value="15">ΙΕ´</num>
                      <quote type="patristic" subtype="quotation-expanded"
                         xml:id="oxon-s-trin-78-quot-2-1" corresp="#person-18 #person-2"
@@ -628,7 +628,7 @@
                   </seg>
                   <note type="lemma">Ps 2,2</note>
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-2-2"
-                     corresp="#oxon-s-trin-78-ps-2-2" source="Anonymous">
+                     corresp="#oxon-s-trin-78-ps-2-2a" source="Anonymous">
                      <num type="ordinal" xml:lang="grc" value="16">ΙϚ´</num>
                      <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-2-2"
                         corresp="#person-2" source="Athanasius, exp. in Ps 2,2a">Ἡρώδης καὶ
@@ -824,7 +824,7 @@
                   <pb n="7v"/>
                   <note type="lemma">Ps 3,3</note>
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-3-2"
-                     corresp="#oxon-s-trin-78-ps-3-3" source="Anonymous">
+                     corresp="#oxon-s-trin-78-ps-3-3a" source="Anonymous">
                      <num type="ordinal" xml:lang="grc" value="28">ΚΗ´</num>
                      <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-3-2"
                         corresp="#person-18" source="fons ignotus in Ps 3,3 (ineditum?)">τοὺς
@@ -833,7 +833,7 @@
                   </seg>
                   <note type="lemma">Ps 3,6</note>
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-3-3"
-                     corresp="#oxon-s-trin-78-ps-3-6" source="Anonymous">
+                     corresp="#oxon-s-trin-78-ps-3-6a" source="Anonymous">
                      <num type="ordinal" xml:lang="grc" value="29">ΚΘ´</num>
                      <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-3-3"
                         corresp="#person-2" source="Athanasius, exp. in Ps 3,6a">τὸν περὶ τὸν νοῦν
@@ -865,8 +865,9 @@
                   </seg><!-- in der Liste von Devreesse ausgelassen -->
                   <!-- Ps 4 bibletext -->
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-4-1"
-                     n="Ps (LXX) 4,1" xml:lang="grc" xml:id="oxon-s-trin-78-ps-4-1"> Εἰς τὸ τέλος,
-                     ἐν ψαλμοῖς· ᾠδὴ τῷ Δαυιδ. </quote>
+                     n="Ps (LXX) 4,1" xml:lang="grc" xml:id="oxon-s-trin-78-ps-4-1">
+                     <anchor type="psalmtext" xml:id="oxon-s-trin-78-ps-4-1a" n="Ps (LXX) 4,1a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-4-1"/>
+                     Εἰς τὸ τέλος, ἐν ψαλμοῖς· ᾠδὴ τῷ Δαυιδ.</quote>
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-4-2"
                      n="Ps (LXX) 4,2" xml:lang="grc" xml:id="oxon-s-trin-78-ps-4-2">
                      <anchor xml:id="oxon-s-trin-78-ps-4-2a" type="psalmtext" n="Ps (LXX) 4,2a"
@@ -933,7 +934,7 @@
                   <!-- Ps 4 commentary -->
                   <note type="lemma">Ps 4,1</note>
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-4-1"
-                     corresp="#oxon-s-trin-78-ps-4-1" source="Anonymous">
+                     corresp="#oxon-s-trin-78-ps-4-1a" source="Anonymous">
                      <num type="ordinal" xml:lang="grc" value="32">ΛB´</num>
                      <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-4-1"
                         corresp="#person-2" source="Athanasius, exp. in Ps 4,1">τοῦτον τὸν <unclear
@@ -990,9 +991,11 @@
                   </seg>
                   <!-- Ps 5 bibletext -->
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-1"
-                     n="Ps (LXX) 5,1" xml:lang="grc" xml:id="oxon-s-trin-78-ps-5-1"> Εἰς τὸ τέλος,
-                     ὑπὲρ τῆς κληρονομούσης· ψαλμὸς τῷ Δαυιδ. <anchor
-                        xml:id="oxon-s-trin-78-ps-5-2a" type="psalmtext" n="Ps (LXX) 5,2a"
+                     n="Ps (LXX) 5,1" xml:lang="grc" xml:id="oxon-s-trin-78-ps-5-1">
+                     <anchor type="psalmtext" xml:id="oxon-s-trin-78-ps-5-1a" n="Ps (LXX) 5,1a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-1"/>
+                     Εἰς τὸ τέλος, ὑπὲρ τῆς κληρονομούσης· ψαλμὸς τῷ Δαυιδ.</quote>
+                  <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-2" n="Ps (LXX) 5,2" xml:lang="grc" xml:id="oxon-s-trin-78-ps-5-2">
+                  <anchor xml:id="oxon-s-trin-78-ps-5-2a" type="psalmtext" n="Ps (LXX) 5,2a"
                         corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-2"/> Τὰ ῥήματά μου ἐνώτισαι,
                      κύριε, <anchor xml:id="oxon-s-trin-78-ps-5-2b" type="psalmtext"
                         n="Ps (LXX) 5,2b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-5-2"/> σύνες τῆς
@@ -1094,7 +1097,7 @@
                   <!-- Ps 5 commentary -->
                   <note type="lemma">Ps 5,1</note>
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-5-1"
-                     corresp="#oxon-s-trin-78-ps-5-1" source="Anonymous">
+                     corresp="#oxon-s-trin-78-ps-5-1a" source="Anonymous">
                      <num type="ordinal" xml:lang="grc" value="40">Μ´</num>
                      <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-5-1"
                         corresp="#person-2" source="Athanasius, exp. in Ps 5,1">ἡ κληρονομοῦσα ἐστὶν
@@ -1107,7 +1110,7 @@
                   <pb n="9v"/>
                   <note type="lemma">Ps 5,&lt;1&gt;</note>
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-5-2"
-                     corresp="#oxon-s-trin-78-ps-5-1" source="Anonymous">
+                     corresp="#oxon-s-trin-78-ps-5-1a" source="Anonymous">
                      <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-5-2"
                         corresp="#person-2"
                         source="Athanasius, exp. in Ps 5,1; add. S2 (in marg. sup.)">⁘ <unclear
@@ -1153,7 +1156,7 @@
                   </seg>
                   <note type="lemma">Ps 5,5–&lt;7&gt;</note>
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-5-5"
-                     corresp="#oxon-s-trin-78-ps-5-5" source="Anonymous">
+                     corresp="#oxon-s-trin-78-ps-5-5a" source="Anonymous">
                      <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-5-5"
                         corresp="#person-2"
                         source="Athanasius, exp. in Ps 5,5–7; add. S2 (in imo marg.)"><unclear
@@ -1183,7 +1186,7 @@
                   <pb n="10r"/>
                   <note type="lemma">Ps 5,8</note>
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-5-6"
-                     corresp="#oxon-s-trin-78-ps-5-8" source="Anonymous">
+                     corresp="#oxon-s-trin-78-ps-5-8a" source="Anonymous">
                      <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-5-6"
                         corresp="#person-2" source="Athanasius, exp. in Ps 5,8">τὴν ἐπουράνιον
                         ἱερουσαλὴμ τὴν τῶν πρωτοτόκων μητέρα: </quote>
@@ -1192,7 +1195,7 @@
                   </seg>
                   <note type="lemma">Ps 5,9a2–b</note>
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-5-7"
-                     corresp="#oxon-s-trin-78-ps-5-9" source="Anonymous">
+                     corresp="#oxon-s-trin-78-ps-5-9a" source="Anonymous">
                      <num type="ordinal" xml:lang="grc" value="43">ΜΓ´</num>
                      <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-5-7"
                         corresp="#person-2" source="Athanasius, exp. in Ps 5,9a2–b">τῶν
@@ -1309,7 +1312,7 @@
                   <!-- Gregorius Nyss., beat. -->
                   <!-- Basilius, hom. 2,8 in hex. (36,16 Amand de Mendieta – Rudberg; in Gen 1,5) in Ps 6,1 -->
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-6-1"
-                     corresp="#oxon-s-trin-78-ps-6-2" source="Anonymous">
+                     corresp="#oxon-s-trin-78-ps-6-2a" source="Anonymous">
                      <num type="ordinal" xml:lang="grc" value="49">ΜΘ´</num>
                      <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-6-1"
                         corresp="#person-2" source="Athanasius, exp. in Ps 6,2">οὐ τὸν ἔλεγχον
@@ -1413,7 +1416,7 @@
                   </seg>
                   <!-- 1 schol. Hesychius Antonelli, add. S2 -->
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-6-10"
-                     corresp="#oxon-s-trin-78-ps-6-9" source="Anonymous">
+                     corresp="#oxon-s-trin-78-ps-6-9a" source="Anonymous">
                      <num type="ordinal" xml:lang="grc" value="56">ΝϚ´</num>
                      <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-6-10"
                         corresp="#person-2" source="Athanasius, exp. in Ps 6,9a">ὡς ἤδη
@@ -1564,7 +1567,7 @@
                   <!-- Ps 7 commentary -->
                   <note type="lemma">Ps 7,&lt;6&gt;</note>
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-7-1"
-                     corresp="#oxon-s-trin-78-ps-7-6" source="Anonymous">
+                     corresp="#oxon-s-trin-78-ps-7-6a" source="Anonymous">
                      <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-7-1"
                         corresp="#person-2" source="Athanasius, exp. in Ps 7,6">ὃ <unclear
                            reason="faded-ink">λ</unclear>έγ<unclear reason="faded-ink"/>ει τοιοῦτόν
@@ -1690,7 +1693,7 @@
                   </seg>
                   <note type="lemma">Ps 7,12</note>
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-7-8"
-                     corresp="#oxon-s-trin-78-ps-7-12" source="Anonymous">
+                     corresp="#oxon-s-trin-78-ps-7-12a" source="Anonymous">
                      <num type="ordinal" xml:lang="grc" value="66">Ξ<supplied reason="illegible"
                            >Ϛ´</supplied></num>
                      <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-7-8"
@@ -1745,8 +1748,9 @@
                   </seg> -->
                   <!-- ps 8 bibletext -->
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-1"
-                     n="Ps (LXX) 8,1" xml:lang="grc" xml:id="oxon-s-trin-78-ps-8-1"> Εἰς τὸ τέλος,
-                     ὑπὲρ τῶν ληνῶν· ψαλμὸς τῷ Δαυιδ. </quote>
+                     n="Ps (LXX) 8,1" xml:lang="grc" xml:id="oxon-s-trin-78-ps-8-1">
+                     <anchor type="psalmtext" xml:id="oxon-s-trin-78-ps-8-1a" n="Ps (LXX) 8,1a" corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-1"/>
+                     Εἰς τὸ τέλος, ὑπὲρ τῶν ληνῶν· ψαλμὸς τῷ Δαυιδ. </quote>
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-2"
                      n="Ps (LXX) 8,2" xml:lang="grc" xml:id="oxon-s-trin-78-ps-8-2">
                      <anchor xml:id="oxon-s-trin-78-ps-8-2a" type="psalmtext" n="Ps (LXX) 8,2a"
@@ -1838,7 +1842,7 @@
                   </seg>
                   <!-- 1 schol. Hesychius Antonelli -->
                   <seg type="hypothesis" xml:id="oxon-s-trin-78-fr-8-3"
-                     corresp="#oxon-s-trin-78-ps-8-1" source="Anonymous">
+                     corresp="#oxon-s-trin-78-ps-8-1a" source="Anonymous">
                      <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-8-3"
                         corresp="#person-2"
                         source="Athanasius, exp. in Ps 8,&lt;1&gt; (add. S2 in imo marg.)">πολλοὶ
@@ -1851,7 +1855,7 @@
                   </seg>
                   <pb n="15r"/>
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-8-4"
-                     corresp="#oxon-s-trin-78-ps-8-4" source="Anonymous">
+                     corresp="#oxon-s-trin-78-ps-8-4a" source="Anonymous">
                      <num type="ordinal" xml:lang="grc" value="75">ΟΕ´</num>
                      <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-8-4"
                         corresp="#person-2" source="Athanasius, exp. in Ps 8,4a">ἐκεῖνοι μὲν
@@ -1872,7 +1876,7 @@
                         754</ref><note type="attribution"><foreign xml:lang="grc">S</foreign></note>
                   </seg><!-- da wird keine Zahl angebracht, sondern ein Verweiszeichen -->
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-8-6"
-                     corresp="#oxon-s-trin-78-ps-8-5" source="Anonymous">
+                     corresp="#oxon-s-trin-78-ps-8-5a" source="Anonymous">
                      <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-8-6"
                         corresp="#person-2"
                         source="Athanasius, exp. in Ps 8,&lt;5–7b&gt; (add S2 in marg. sup.)">ταῦτα
@@ -2201,7 +2205,7 @@
                   <!-- Symmachus, ex Theodoreto -->
                   <pb n="16r"/>
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-9-1"
-                     corresp="#oxon-s-trin-78-ps-9-4" source="Anonymous">
+                     corresp="#oxon-s-trin-78-ps-9-4a" source="Anonymous">
                      <num type="ordinal" xml:lang="grc" value="79">Oθ´</num>
                      <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-9-1"
                         corresp="#person-2" source="Athanasius, exp. in Ps 9,4a; 9,4b">ἐπὶ τίσιν
@@ -2339,7 +2343,7 @@
                      <ref target="vat-gr-754:vat-gr-754-fr-9-XX" type="identical">Vat. gr. 754</ref>
                   </seg>
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-9-11"
-                     corresp="#oxon-s-trin-78-ps-9-17" source="Anonymous">
+                     corresp="#oxon-s-trin-78-ps-9-17a" source="Anonymous">
                      <num type="ordinal" xml:lang="grc" value="91">ҀΑ´</num>
                      <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-9-11"
                         corresp="#person-2" source="Athanasius, exp. in Ps 9,17">κρίμα γάρ φη(σιν)
@@ -2393,7 +2397,7 @@
                      <ref target="vat-gr-754:vat-gr-754-fr-9-XX" type="XXX">Vat. gr. 754</ref>
                   </seg>
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-9-16"
-                     corresp="#oxon-s-trin-78-ps-9-24" source="Anonymous">
+                     corresp="#oxon-s-trin-78-ps-9-24a" source="Anonymous">
                      <num type="ordinal" xml:lang="grc" value="97">ҀΖ´</num>
                      <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-9-16"
                         corresp="#person-2" source="Athanasius, exp. in Ps 9,24">τοιαύτη φη(σὶ)
@@ -2433,7 +2437,7 @@
                         754</ref>
                   </seg>
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-9-19"
-                     corresp="#oxon-s-trin-78-ps-9-27" source="Anonymous">
+                     corresp="#oxon-s-trin-78-ps-9-27a" source="Anonymous">
                      <num type="ordinal" xml:lang="grc" value="99">ҀΘ´</num>
                      <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-9-19"
                         corresp="#person-2" source="Athanasius, exp. in Ps 9,(27) 29a">παράνομον
@@ -2477,7 +2481,7 @@
                   <!-- 3 scholia des Hesychius Jagic -->
                   <pb n="19v"/>
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-9-23"
-                     corresp="#oxon-s-trin-78-ps-9-32" source="Anonymous">
+                     corresp="#oxon-s-trin-78-ps-9-32a" source="Anonymous">
                      <num type="ordinal" xml:lang="grc" value="1">Α´</num>
                      <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-9-23"
                         corresp="#person-2" source="Athanasius, exp. in Ps 9,32">τοῦτο αἴτιον καὶ
@@ -2537,7 +2541,7 @@
                   </seg>
                   <pb n="20v"/>
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-9-28"
-                     corresp="#oxon-s-trin-78-ps-9-38" source="Anonymous">
+                     corresp="#oxon-s-trin-78-ps-9-38a" source="Anonymous">
                      <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-9-28"
                         corresp="#person-2" source="Athanasius, exp. in Ps 9,38a">αὕτη γὰρ ἦν ἡ
                         ἐπιθυμία· καὶ οὗτος ὁ πόθος τῶν μελλόντων ἀξιωθῆναι ἀγαθῶν: </quote><note><g
@@ -2634,7 +2638,7 @@
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-10-3"
                      corresp="#oxon-s-trin-78-ps-10-4c" source="Anonymous">
                      <num type="ordinal" xml:lang="grc" value="2">Β´</num>
-                     <quote type="patristic" subtype="quotation/quotation"
+                     <quote type="patristic" subtype="quotation"
                         xml:id="oxon-s-trin-78-quot-10-3" corresp="#person-2"
                         source="Athanasius, exp. in Ps 10,4c; 10,4d">ὀφθαλμοὺς τὴν εὐεργετικὴν
                         ἐπισκοπὴν δηλοῖ· βλέφαρα δὲ τὴν κριτικ<unclear reason="faded-ink"
