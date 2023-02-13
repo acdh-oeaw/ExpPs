@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../schema/tei-psalmcatenae.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-   <!-- Ps 1-2: numerals und lemmas hinzuzufügen -->
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Ambrosiana B 106 Sup - Transcription</title>
+            <title>Mediol. Ambros. B 106 sup. (= CPG C27; Rahlfs 113) - Transcription of
+               (Ps)-Athanasius, Expositiones in Psalmos, and of the Unpublished Fragments.</title>
+            <title type="subtitle">List of Contents (Ps 1-2).</title>
             <respStmt>
-               <resp>transcribed by</resp>
-               <persName>Maria Goiana</persName>
+               <resp>Transcrisption of the Expositiones and list of contents by</resp>
+               <persName>Maria-Lucia Goiana</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Reviewed by</resp>
+               <persName>Sebastiano Panteghini</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Encoded by</resp>
+               <persName>Thomas Klampfl</persName>
             </respStmt>
          </titleStmt>
          <publicationStmt>
@@ -23,8 +32,9 @@
             <msDesc>
                <msIdentifier xml:id="ambr-b-106-sup">
                   <settlement>Milano</settlement>
-                  <repository>Biblioteca Ambrosiana</repository>
-                  <idno facs="http://213.21.172.25/0b02da828008b523">Ambrosian. B 106 sup.</idno>
+                  <repository>Veneranda Biblioteca Ambrosiana</repository>
+                  <idno facs="http://213.21.172.25/0b02da828008b523">B 106 sup. (= 127 Martini –
+                     Bassi)</idno>
                   <altIdentifier>
                      <idno type="pinakes" corresp="https://pinakes.irht.cnrs.fr/notices/cote/42350/"
                         >42350</idno>
@@ -35,9 +45,24 @@
                </msIdentifier>
                <msContents>
                   <msItem n="1">
-                     <locus>ff. 24r–241r</locus>
-                     <title>Psalm Catena (in Ps 1–150)</title>
-                     <note>Catena type XIV (primary catena [?]) = CPG IV C27</note>
+                     <!-- faciendum: ab hier Beschreibung ergänzen -->
+                     <locus>f. 24r–241r</locus>
+                     <title>Catena in Psalmos 1–150</title>
+                     <note>Catena type XIV (primary catena [?])</note>
+                     <note>Contents of the Psalm Catena: ExpPs, Evagrius, Hesychius “Jagić”,
+                        Theodoretus</note>
+                  </msItem>
+                  <msItem n="2">
+                     <locus>f. 241–241r</locus>
+                     <title>Catena in Psalmos 1–150</title>
+                     <note>Catena type XIV (primary catena [?])</note>
+                     <note>Contents of the Psalm Catena: ExpPs, Evagrius, Hesychius “Jagić”,
+                        Theodoretus</note>
+                  </msItem>
+                  <msItem n="3">
+                     <locus>f. 24r–241r</locus>
+                     <title>Catena in Psalmos 1–150</title>
+                     <note>Catena type XIV (primary catena [?])</note>
                      <note>Contents of the Psalm Catena: ExpPs, Evagrius, Hesychius “Jagić”,
                         Theodoretus</note>
                   </msItem>
@@ -47,7 +72,7 @@
                      <supportDesc material="perg">
                         <support>parchment</support>
                         <extent>
-                           <note>255 ff. but numbered 2–256</note>
+                           <note>255 folia but numbered 2–256</note>
                            <dimensions scope="all" type="leaf" unit="mm">
                               <height>240</height>
                               <width>178</width>
@@ -58,7 +83,7 @@
                </physDesc>
                <history>
                   <p>Origin of the manuscript: Constantinople, scriptorium of Ephrem (?)</p>
-                  <p>Written in the 10th century (ca. 966).</p>
+                  <p>Written in the 10th century (ca. 966–967).</p>
                </history>
             </msDesc>
             <listPerson>
@@ -688,10 +713,10 @@
                   <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-2-12"
                      corresp="#ambr-b-106-sup-ps-2-6a" source="Anonymous">
                      <num type="ordinal" xml:lang="grc" value="26">ΚϚ´</num>
-                     <quote type="patristic" subtype="quotation/paraphrase"
+                     <quote type="patristic" subtype="quotation/paraphrase-abbreviated"
                         xml:id="ambr-b-106-sup-quot-2-12" corresp="#person-35"
-                        source="Cyrillus, fr. in Ps 2,6 (PG 69,720 C9–11) - Idem, comm. in epist. ad Heb. (365,19–26 Pusey), cat. in epist. ad Heb. (Cramer VII 121,14–21)"
-                     /><!-- faciendum: Der zweite Teil des Zitats stammt auch aus dem Kommentar des Cyrillus  -->
+                        source="Cyrillus, fr. in Ps 2,6a (PG 69,720 C9–11) - Idem, fr. in Ps 2,7b–c; cf. PG 69,721 B4–C3 = Cyrillus, fr. in Heb. (365,17–30 Pusey; CPG 5209) = catena in Heb. (Cramer VII 121,13–21)"
+                     />
                   </seg>
                   <note type="lemma">Ps 2,6b (σιὼν)</note>
                   <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-2-13"
@@ -839,7 +864,7 @@
                      εὐλογία σου. </quote>
                </ab>
             </div>
-            <!-- ps 3 commentary -->
+            <!-- Ps 3 commentary -->
             <div type="commentary" subtype="commentary" xml:id="ambr-b-106-sup-3-3">
                <ab xml:lang="grc" xml:id="ambr-b-106-sup-3-4">
                   <note type="lemma">Ps 3,2a (τί)</note>
@@ -865,6 +890,8 @@
                      <ref target="vat-gr-754:vat-gr-754-fr-3-12" type="with-variants">Vat. gr.
                         754</ref>
                   </seg>
+                  <pb n="26r"
+                     facs="http://213.21.172.25/iiif/2/public%26SEP0b02da828008b523%26SEP057_B106sup_c.26r.jp2/full/full/0/default.jpg"/>
                   <note type="lemma">Ps 3,6 (ἐκοιμήθην)</note>
                   <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-3-3"
                      corresp="#ambr-b-106-sup-ps-3-6a" source="Anonymous">
@@ -877,7 +904,7 @@
                   </seg>
                </ab>
             </div>
-            <!-- ps 4 bibletext -->
+            <!-- Ps 4 bibletext -->
             <div type="bibletext" subtype="commented" xml:id="ambr-b-106-sup-4-1">
                <ab xml:lang="grc" xml:id="ambr-b-106-sup-4-2">
                   <quote type="bibletext" xml:id="ambr-b-106-sup-ps-4-1" n="Ps (LXX) 4,1"
@@ -1092,7 +1119,7 @@
             </div>
             <pb n="27v"
                facs="http://213.21.172.25/iiif/2/public%26SEP0b02da828008b523%26SEP060_B106sup_c.27v.jp2/full/full/0/default.jpg"/>
-            <!-- ps 5 commentary -->
+            <!-- Ps 5 commentary -->
             <div type="commentary" subtype="commentary" xml:id="ambr-b-106-sup-5-3">
                <ab xml:lang="grc" xml:id="ambr-b-106-sup-5-4">
                   <note type="lemma">Ps 5,5–6</note>
@@ -1604,6 +1631,8 @@
                            reason="illegible">οῖς</supplied> παριστῶν: –</quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-8-12" type="identical">Vat. gr. 754</ref>
                   </seg>
+                  <pb n="31r"
+                     facs="http://213.21.172.25/iiif/2/public%26SEP0b02da828008b523%26SEP067_B106sup_c.31r.jp2/full/full/0/default.jpg"/>
                   <note type="lemma">Ps 8,7b–8a (πάντα)</note>
                   <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-8-5"
                      corresp="#ambr-b-106-sup-ps-8-7b" source="Athanasius">
@@ -2009,7 +2038,8 @@
                         </note>
                      </note>
                   </seg>
-                  <pb n="31v"/>
+                  <pb n="31v"
+                     facs="http://213.21.172.25/iiif/2/public%26SEP0b02da828008b523%26SEP068_B106sup_c.31v.jp2/full/full/0/default.jpg"/>
                   <note type="lemma">Ps 9,5a (ἐποίησας)</note>
                   <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-9-2"
                      corresp="#ambr-b-106-sup-ps-9-5a" source="Anonymous">
@@ -2083,7 +2113,8 @@
                         <foreign xml:lang="grc">Aθ(ανασίου)</foreign>
                      </note>
                   </seg>
-                  <pb n="32r"/>
+                  <pb n="32r"
+                     facs="http://213.21.172.25/iiif/2/public%26SEP0b02da828008b523%26SEP069_B106sup_c.32r.jp2/full/full/0/default.jpg"/>
                   <note type="lemma">Ps 9,10a (τῷ πένητι)</note>
                   <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-9-8"
                      corresp="#ambr-b-106-sup-ps-9-10a" source="Anonymous">
@@ -2135,7 +2166,8 @@
                               reason="faded-ink">θ</unclear>(ανασίου)</foreign>
                      </note>
                   </seg>
-                  <pb n="32v"/>
+                  <pb n="32v"
+                     facs="http://213.21.172.25/iiif/2/public%26SEP0b02da828008b523%26SEP070_B106sup_c.32v.jp2/full/full/0/default.jpg"/>
                   <note type="lemma">Ps 9,16b (ἐν παγίδι)</note>
                   <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-9-12"
                      corresp="#ambr-b-106-sup-ps-9-16b" source="Athanasius">
@@ -2189,7 +2221,8 @@
                         <foreign xml:lang="grc">τ(οῦ) αὐτ(οῦ)·</foreign>
                      </note>
                   </seg>
-                  <pb n="33r"/>
+                  <pb n="33r"
+                     facs="http://213.21.172.25/iiif/2/public%26SEP0b02da828008b523%26SEP071_B106sup_c.33r.jp2/full/full/0/default.jpg"/>
                   <note type="lemma">Ps 9,22 (ἵνα τί)</note>
                   <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-9-16"
                      corresp="#ambr-b-106-sup-ps-9-22a" source="Athanasius">
@@ -2263,7 +2296,8 @@
                         <foreign xml:lang="grc">Ἀθ(ανασίου)</foreign>
                      </note>
                   </seg>
-                  <pb n="33v"/>
+                  <pb n="33v"
+                     facs="http://213.21.172.25/iiif/2/public%26SEP0b02da828008b523%26SEP072_B106sup_c.33v.jp2/full/full/0/default.jpg"/>
                   <note type="lemma">Ps 9,29a (ἐγκάθηται)</note>
                   <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-9-21"
                      corresp="#ambr-b-106-sup-ps-9-29a" source="Anonymous">
@@ -2298,7 +2332,8 @@
                               reason="illegible">θ</supplied>(ανασίου)</foreign>
                      </note>
                   </seg>
-                  <pb n="34r"/>
+                  <pb n="34r"
+                     facs="http://213.21.172.25/iiif/2/public%26SEP0b02da828008b523%26SEP073_B106sup_c.34r.jp2/full/full/0/default.jpg"/>
                   <note type="lemma">Ps 9,32 (εἶπεν)</note>
                   <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-9-23"
                      corresp="#ambr-b-106-sup-ps-9-32" source="Athanasius">
@@ -2384,7 +2419,8 @@
                      <ref target="vat-gr-754:vat-gr-754-fr-9-116" type="with-variant">Vat. gr.
                         754</ref>
                   </seg>
-                  <pb n="34v"/>
+                  <pb n="34v"
+                     facs="http://213.21.172.25/iiif/2/public%26SEP0b02da828008b523%26SEP074_B106sup_c.34v.jp2/full/full/0/default.jpg"/>
                   <note type="lemma">Ps 9,39b (μεγαλαυχεῖν)</note>
                   <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-9-29"
                      corresp="#ambr-b-106-sup-ps-9-39b" source="Anonymous">
@@ -2392,8 +2428,8 @@
                         corresp="#person-2" source="Athanasius, exp. in Ps 9,39">Ὅτ᾽ ἂν φη(σὶ) τὴν
                         ἐκδίκησιν ποιήσηι τῶν πτωχῶν. τότε οὐκ ἔτι προσθήσει τοῦ μεγαλαυχεῖν
                         ἄνθρωπος: –</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-9-132" type="ΧΧΧ">Vat. gr. 754</ref><note
-                        type="textual-commentary">
+                     <ref target="vat-gr-754:vat-gr-754-fr-9-132" type="with-variant">Vat. gr.
+                        754</ref><note type="textual-commentary">
                         <p>This Expositio is linked by a sign.</p>
                      </note>
                   </seg>
@@ -2464,7 +2500,7 @@
                </ab>
             </div>
             <pb n="34v"
-               facs="http://213.21.172.25/iiif/2/public%26SEP0b02da828008b523%26SEP074_B106sup_c.34v.jp2/full/full/0/default.jpg"/>
+               facs="http://213.21.172.25/iiif/2/public%26SEP0b02da828008b523%26SEP075_B106sup_c.35r.jp2/full/full/0/default.jpg"/>
             <!-- Ps 10 commentary -->
             <div type="commentary" subtype="commentary" xml:id="ambr-b-106-sup-10-5">
                <ab xml:lang="grc" xml:id="ambr-b-106-sup-10-6">

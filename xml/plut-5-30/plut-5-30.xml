@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- XML-Kodierung: <div> und <ab> müßen umgebaut werden -->
+<!-- faciendum: XML-Inhalte: Ps 6 und Ps 7 noch zu ergänzen! -->
+<!-- faciendum: tei-Header -->
+<!-- faciendum: Verweise auf Autoren in @corresp zu berichtigen -->
+<!-- Textkritik: L1: vollständig gelesen -->
 <?xml-model href="../../schema/tei-psalmcatenae.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
@@ -337,11 +342,9 @@
                </ab>
             </div>
             <pb n="14r" facs="http://mss.bmlonline.it/s.aspx?Id=AWOIRjkiI1A4r7GxMC13#/oro/35"/>
-            <!-- Pointers to identical fragments in other documents. @type = identical | with-variations | abbreviated | expanded &lt; &gt;-->
             <div type="commentary" subtype="commentary" xml:id="plut-5-30-1-4">
                <ab xml:id="plut-5-30-1-2" xml:lang="grc">
                   <!-- Ps 1 commentary -->
-                  <note type="lemma">Ps 1</note>
                   <seg type="glosse" xml:id="plut-5-30-fr-1-1" corresp="#plut-5-30-ps-1"
                      source="Anonymous">
                      <quote type="patristic" subtype="unknown" xml:id="plut-5-30-quot-1-1"
@@ -461,6 +464,7 @@
                      <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-1-13"
                         corresp="#person-11" source="Hesychius, comm. brevis in Ps 1,3a (1 Jagić)"/>
                   </seg>
+                  <pb n="14v–15r"/>
                   <seg type="commentaryfragment" xml:id="plut-5-30-fr-1-14"
                      corresp="#plut-5-30-ps-1-3a" source="Athanasius">
                      <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-1-14"
@@ -472,7 +476,7 @@
                            <del rend="overwrite">ά</del>
                            <add place="above">ᾶ</add>
                         </subst>σι τοῖς ἀντεχομένοις αὐτου· [Prov 3,18a] λέγει οὖν ὅτι οἱ
-                        πιστεύοντες Χριστῶ, σῶμα αὐτοῦ ἔσονται· μετὰσχηματίσει γαρ τὸ σ<subst
+                        πιστεύ||οντες Χριστῶ, σῶμα αὐτοῦ ἔσονται· μετὰσχηματίσει γαρ τὸ σ<subst
                            hand="C1">
                            <del rend="overwrite">ώ</del>
                            <add place="above">ῶ</add>
@@ -603,6 +607,7 @@
                         corresp="#person-10"
                         source="Hesychius, schol. nr. 13 in Ps 1,6a (Antonelli; PG 27,652)"/>
                   </seg>
+                  <pb n="15v–16r"/>
                   <note type="lemma">Ps 1,6b</note>
                   <seg type="commentaryfragment" xml:id="plut-5-30-fr-1-29"
                      corresp="#plut-5-30-ps-1-6b" source="Anonymous">
@@ -727,14 +732,13 @@
             <div type="commentary" subtype="commentary">
                <ab xml:lang="grc">
                   <!-- Ps 2 commentary -->
-                  <note type="lemma">Ps 2</note>
-                  <seg type="hypothesis" xml:id="plut-5-30-fr-2-1" corresp="#plut-5-30-ps-2-1"
+                  <seg type="hypothesis" xml:id="plut-5-30-fr-2-1" corresp="#plut-5-30-ps-2-1a"
                      source="Anonymous">
                      <quote type="patristic" subtype="quotation-adapted" xml:id="plut-5-30-quot-2-1"
                         corresp="#person-10"
                         source="Hesychius, hyp. in Ps 2 (Antonelli; PG 27,653–654)"/>
                   </seg>
-                  <seg type="hypothesis" xml:id="plut-5-30-fr-2-2" corresp="#plut-5-30-ps-2-1"
+                  <seg type="hypothesis" xml:id="plut-5-30-fr-2-2" corresp="#plut-5-30-ps-2-1a"
                      source="Anonymous">
                      <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-2-2"
                         corresp="#person-11" source="Hesychius, comm. brevis in Ps 2,1 (2 Jagić)"/>
@@ -777,6 +781,7 @@
                         corresp="#person-10"
                         source="Hesychius, schol. nr. 4 in Ps 2,2b–c (Antonelli; PG 27,653)"/>
                   </seg>
+                  <note type="lemma">Ps 2,2b</note>
                   <seg type="commentaryfragment" xml:id="plut-5-30-fr-2-8"
                      corresp="#plut-5-30-ps-2-2b" source="Athanasius">
                      <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-2-8"
@@ -801,12 +806,11 @@
                         >Vat. gr. 754</ref>
                      <note type="attribution"><foreign xml:lang="grc">Αθ(ανασίου)</foreign></note>
                   </seg>
-                  <note type="lemma">Ps 2,2d</note>
+                  <note type="lemma">Ps 2,2d (διάψαλμα)</note>
                   <seg type="commentaryfragment" xml:id="plut-5-30-fr-2-11"
                      corresp="#plut-5-30-ps-2-2d" source="Anonymous">
                      <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-2-11"
-                        corresp="#person-28"
-                        source="Origenes, schol. in Ps 2,2d (διάψαλμα; 72 Cadiou)"/>
+                        corresp="#person-28" source="Origenes, schol. in Ps 2,2d (72 Cadiou)"/>
                      <ref target="vat-gr-754:vat-gr-754-fr-3-21" type="identical">Vat. gr. 754</ref>
                   </seg>
                   <note type="lemma">Ps 2,3a</note>
@@ -929,12 +933,14 @@
                      <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-2-24"
                         corresp="#person-11" source="Hesychius, comm. brevis in Ps 2,6a (2 Jagić)"/>
                   </seg>
+                  <pb n="17r–v"/>
+                  <note type="lemma">Ps 2,6a</note>
                   <seg type="commentaryfragment" xml:id="plut-5-30-fr-2-25"
                      corresp="#plut-5-30-ps-2-6a" source="Anonymous">
                      <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-2-25"
                         corresp="#person-18" source="fons ignotus in Ps 2,6a (ineditum?)">κατέστη
                         βασιλεὺς· ὡς μὲν θεὸς ἤδη καὶ πρότερον· ὡς δὲ ἄνθρωπος ἐν χρόνω
-                           <sic>κυρανούμενος</sic>· καὶ τούτου χάριν ἐπήγαγεν: </quote>
+                           <sic>κυρανούμενος</sic>· καὶ || τούτου χάριν ἐπήγαγεν: </quote>
                      <note type="attribution"><foreign xml:lang="grc">ἐν ἄλλω:</foreign></note>
                   </seg>
                </ab>
@@ -1056,12 +1062,14 @@
                         corresp="#person-11" source="Hesychius, comm. brevis in Ps 2,8b (2 Jagić)"/>
                      <note type="attribution"><foreign xml:lang="grc">ἐν ἄλλω: –</foreign></note>
                   </seg>
+                  <pb n="18r–v"/>
                   <note type="lemma">Ps 2,9a</note>
                   <seg type="commentaryfragment" xml:id="plut-5-30-fr-2-38"
                      corresp="#plut-5-30-ps-2-9a" source="Anonymous">
                      <quote type="patristic" subtype="unknown" xml:id="plut-5-30-quot-2-38"
-                        corresp="#person-18" source="fons igotus in Ps 2,9a (ineditum?)">ἐν ἐξουσία
-                           <subst hand="C1">
+                        corresp="#person-18"
+                        source="fons igotus in Ps 2,9a (ineditum?); cf. Hieronymus, fr. in Ps 2,9a (Epitome?)"
+                        >ἐν ἐξουσία <subst hand="C1">
                            <del rend="unmarked">ϊ</del>
                            <add place="above">ἰ</add>
                         </subst>σχυρ<subst hand="C1">
@@ -1074,7 +1082,7 @@
                            μ<subst hand="C1">
                            <del rend="unmarked">η</del>
                            <add place="above">ὴ</add>
-                        </subst>δὲν τούτου· δοκεῖ παρὰ τοῖς ἀνθρώποις ὑπάρχειν <subst hand="C1">
+                        </subst>δὲν τούτου· δοκεῖ || παρὰ τοῖς ἀνθρώποις ὑπάρχειν <subst hand="C1">
                            <del rend="unmarked">ϊ</del>
                            <add place="above">ἰ</add>
                         </subst>σχυρότερον· τινὲς δὲ καὶ τὴν τ<subst hand="C1">
@@ -1083,7 +1091,7 @@
                         </subst>ν ῥωμαίων βασιλείαν νομίζουσι λέγεσθαι, ἢν ἐν τοῖς ὀνείροις ὁ Δανιὴλ
                         πόδας σιδηροὺς προσηγόρευσεν· πόδας· ὡς βασιλείαν ἐσχάτην· σιδηροὺς δὲ. ὡς
                         ϊσχυρὰν καὶ ὑποτακτικὴν ἁπάντων τυγχάνουσαν</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-2-XX" type="XXX">Vat. gr. 754</ref>
+                     <ref target="vat-gr-754:vat-gr-754-fr-2-43" type="original">Vat. gr. 754</ref>
                   </seg>
                </ab>
             </div>
@@ -1131,6 +1139,7 @@
                         corresp="#person-11" source="Hesychius, comm. brevis in Ps 2,11a (3 Jagić)"
                      />
                   </seg>
+                  <pb n="18v–19r"/>
                   <note type="lemma">Ps 2,11b</note>
                   <seg type="commentaryfragment" xml:id="plut-5-30-fr-2-45"
                      corresp="#plut-5-30-ps-2-11b" source="Anonymous">
@@ -1139,6 +1148,8 @@
                         source="Hesychius, schol. nr. 22; 23 in Ps 2,11a; 2,11b (Antonelli; PG 27,656)"
                      />
                   </seg>
+                  <pb n="19r" facs="http://mss.bmlonline.it/s.aspx?Id=AWOIRjkiI1A4r7GxMC13#/oro/45"/>
+                  <note type="lemma">Ps 2,11b</note>
                   <seg type="commentaryfragment" xml:id="plut-5-30-fr-2-46"
                      corresp="#plut-5-30-ps-2-11b" source="Anonymous">
                      <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-2-46"
@@ -1253,6 +1264,7 @@
             </div>
             <div type="commentary" subtype="commentary">
                <ab xml:lang="grc">
+                  <pb n="19r–v"/>
                   <!-- Ps 3 commentary -->
                   <note type="lemma">Ps 3,1</note>
                   <seg type="hypothesis" xml:id="plut-5-30-fr-3-1" corresp="#plut-5-30-ps-3-1"
@@ -1261,6 +1273,7 @@
                         corresp="#person-10"
                         source="Hesychius, hyp. in Ps 3,1 (Antonelli; PG 27,657–658)"/>
                   </seg>
+                  <pb n="19v" facs="http://mss.bmlonline.it/s.aspx?Id=AWOIRjkiI1A4r7GxMC13#/oro/45"/>
                   <seg type="hypothesis" xml:id="plut-5-30-fr-3-2" corresp="#plut-5-30-ps-3-1"
                      source="Anonymous">
                      <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-3-2"
@@ -1369,7 +1382,7 @@
                   </seg>
                </ab>
             </div>
-            <pb n="21v" facs="http://mss.bmlonline.it/s.aspx?Id=AWOIRjkiI1A4r7GxMC13#/oro/50"/>
+            <pb n="20v" facs="http://mss.bmlonline.it/s.aspx?Id=AWOIRjkiI1A4r7GxMC13#/oro/48"/>
             <div type="commentary" subtype="commentary">
                <ab xml:lang="grc">
                   <note type="lemma">Ps 3,7</note>
@@ -1540,6 +1553,7 @@
                         corresp="#person-10"
                         source="Hesychius, schol. nr. 4 in Ps 4,3a (Antonelli; PG 27,660)"/>
                   </seg>
+                  <pb n="21r–v"/>
                   <seg type="commentaryfragment" xml:id="plut-5-30-fr-4-7"
                      corresp="#plut-5-30-ps-4-3a" source="Anonymous">
                      <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-4-7"
@@ -1597,6 +1611,7 @@
                      <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-4-14"
                         corresp="#person-11" source="Hesychius, comm. brevis in Ps 4,5a (5 Jagić)"/>
                   </seg>
+                  <pb n="21v–22r"/>
                   <note type="lemma">Ps 4,5b–c</note>
                   <seg type="commentaryfragment" xml:id="plut-5-30-fr-4-15"
                      corresp="#plut-5-30-ps-4-5b" source="Anonymous">
@@ -2444,17 +2459,18 @@
                      ἡμῶν, ὡς θαυμαστὸν τὸ ὄνομά σου ἐν πάσῃ τῇ γῇ. </quote>
                </ab>
             </div>
-            <pb n="30r" facs="http://mss.bmlonline.it/s.aspx?Id=AWOIRjkiI1A4r7GxMC13#/oro/67"/>
+            <pb n="30r–v"/>
             <div type="commentary" subtype="commentary">
                <ab xml:lang="grc">
-                  <!-- ps 8 commentary -->
+                  <!-- Ps 8 commentary -->
                   <note type="lemma">Ps 8,1</note>
-                  <seg type="commentaryfragment" xml:id="plut-5-30-fr-8-1"
-                     corresp="#plut-5-30-ps-8-1" source="Anonymous">
+                  <seg type="hypothesis" xml:id="plut-5-30-fr-8-1" corresp="#plut-5-30-ps-8-1"
+                     source="Anonymous">
                      <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-8-1"
                         corresp="#person-10"
                         source="Hesychius, hyp. in Ps 8,1 (Antonelli; PG 27,673–674)"/>
                   </seg>
+                  <pb n="30v" facs="http://mss.bmlonline.it/s.aspx?Id=AWOIRjkiI1A4r7GxMC13#/oro/68"/>
                   <seg type="commentaryfragment" xml:id="plut-5-30-fr-8-2"
                      corresp="#plut-5-30-ps-8-1" source="Anonymous">
                      <quote type="patristic" subtype="quotation-expanded"
@@ -3103,7 +3119,7 @@
                         δύναμις ἀντικειμένη καταργηθήσεται· εἰ γὰρ ἔσχατος ἐχθρὸς καταργεῖται ὁ
                         θάνατος δηλονότι προαναιρεθ<add place="overstrike" hand="C1">ει</add>σῶν τῶν
                         ἀντικειμένων δυνάμεων: –</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-9-XX" type="with-variant">Vat. gr.
+                     <ref target="vat-gr-754:vat-gr-754-fr-9-9" type="with-variant">Vat. gr.
                         754</ref>
                      <note type="attribution"><foreign xml:lang="grc">Ἀθανάσιος:</foreign></note>
                   </seg>
@@ -3149,6 +3165,7 @@
                         corresp="#person-11" source=" Hesychius, comm. brevis in Ps 9,8b (12 Jagić)"
                      />
                   </seg>
+                  <pb n="33r–v"/>
                   <note type="lemma">Ps 9,9a</note>
                   <seg type="commentaryfragment" xml:id="plut-5-30-fr-9-26"
                      corresp="#plut-5-30-ps-9-9a" source="Anonymous">
@@ -3192,10 +3209,11 @@
                      corresp="#plut-5-30-ps-9-10b" source="Athanasius">
                      <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-9-31"
                         corresp="#person-2" source="Athanasius, exp. in Ps 9,10b">ὅμοιον τῶ καιρῶ
-                        δεκτῶ ἐπήκουσά σου: – [Is 49,8]</quote>
+                        δεκτῶ ἐπήκουσά σου: – [Is 49,8]</quote><ref
+                        target="vat-gr-754:vat-gr-754-fr-9-17" type="with-variant">Vat. gr.
+                        754</ref>
                      <note type="attribution"><foreign xml:lang="grc">Ἀθανασιου·</foreign></note>
-                  </seg>
-                  <note type="lemma">Ps 9,11a</note>
+                  </seg><note type="lemma">Ps 9,11a</note>
                   <seg type="commentaryfragment" xml:id="plut-5-30-fr-9-32"
                      corresp="#plut-5-30-ps-9-11a" source="Anonymous">
                      <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-9-32"
@@ -3235,6 +3253,7 @@
                         corresp="#person-10"
                         source="Hesychius, schol. nr. 22 in Ps 9,12b (Antonelli; PG 27,677)"/>
                   </seg>
+                  <pb n="33v–34r"/>
                   <seg type="commentaryfragment" xml:id="plut-5-30-fr-9-38"
                      corresp="#plut-5-30-ps-9-12b" source="Anonymous">
                      <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-9-38"
@@ -3375,6 +3394,7 @@
                         corresp="#person-11" source="Hesychius, comm. brevis in Ps 9,18a (13 Jagić)"
                      />
                   </seg>
+                  <pb n="34v–35r"/>
                   <note type="lemma">Ps 9,18b</note>
                   <seg type="commentaryfragment" xml:id="plut-5-30-fr-9-57"
                      corresp="#plut-5-30-ps-9-18b" source="Anonymous">
@@ -3432,7 +3452,7 @@
                         corresp="#person-2" source="Athanasius, exp. in Ps 9,20a">Ἐπίλαμψιν τοῖς
                         ἐπιτῆς γῆς εὔχεται τὸν μονογενῆ· ὅπως ὁ ϋψηλόφρων ἐκεῖνος διαβολος ὃς καὶ
                         ἀνθρώπους ἐπὶ τοῦ παρόντος καλεῖ, ἐπιπλείω μη ἐπαίρειται: –</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-9-XX" type="with-variants">Vat. gr.
+                     <ref target="vat-gr-754:vat-gr-754-fr-9-63" type="with-variants">Vat. gr.
                         754</ref>
                      <note type="attribution"><foreign xml:lang="grc">Ἀθανασίου:</foreign></note>
                   </seg>
@@ -3473,9 +3493,9 @@
                   </seg>
                </ab>
             </div>
-            <pb n="35v" facs="http://mss.bmlonline.it/s.aspx?Id=AWOIRjkiI1A4r7GxMC13#/oro/78"/>
             <div type="commentary" subtype="commentary">
                <ab xml:lang="grc">
+                  <pb n="35r–v"/>
                   <seg type="commentaryfragment" xml:id="plut-5-30-fr-9-70"
                      corresp="#plut-5-30-ps-9-21b" source="Anonymous">
                      <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-9-70"
@@ -3483,6 +3503,7 @@
                         source="Hesychius, comm. brevis in Ps 9,21 (13,8–10 Jagić)"/>
                      <note type="attribution"><foreign xml:lang="grc">ἐν ἄλλω: –</foreign></note>
                   </seg>
+                  <pb n="35v" facs="http://mss.bmlonline.it/s.aspx?Id=AWOIRjkiI1A4r7GxMC13#/oro/78"/>
                   <note type="lemma">Ps 9,22a</note>
                   <seg type="commentaryfragment" xml:id="plut-5-30-fr-9-71"
                      corresp="#plut-5-30-ps-9-22a" source="Anonymous">
@@ -3542,6 +3563,7 @@
                         corresp="#person-11" source="Hesychius, comm. brevis in Ps 9,24a (13 Jagić)"
                      />
                   </seg>
+                  <pb n="35v–36r"/>
                   <note type="lemma">Ps 9,24b</note>
                   <seg type="commentaryfragment" xml:id="plut-5-30-fr-9-80"
                      corresp="#plut-5-30-ps-9-24b" source="Anonymous">
@@ -3601,7 +3623,7 @@
                      <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-9-87"
                         corresp="#person-2" source="Athanasius, exp. in Ps 9,26a">Ἀρχῆς πάσης
                         πονηρᾶς πράξεως, το μη λογίζεσθαι κριτὴν τὸν θεόν: –</quote><ref
-                        target="vat-gr-754:vat-gr-754-fr-9-XX" type="with-variant">Vat. gr.
+                        target="vat-gr-754:vat-gr-754-fr-9-78" type="with-variant">Vat. gr.
                         754</ref>
                      <note type="attribution"><foreign xml:lang="grc">Ἀθανασίου: –</foreign></note>
                   </seg>
@@ -3623,7 +3645,7 @@
                      <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-9-90"
                         corresp="#person-2" source="Athanasius, exp. in Ps 9,26b">Ὁ γὰρ μη
                         επιστάμενος ὅτι ἐστιν θεὸς, οὐδὲ ὅτι κριτής ἐστιν οἶδεν: –</quote><ref
-                        target="vat-gr-754:vat-gr-754-fr-9-XX" type="identical">Vat. gr. 754</ref>
+                        target="vat-gr-754:vat-gr-754-fr-9-79" type="identical">Vat. gr. 754</ref>
                      <note type="attribution"><foreign xml:lang="grc">Ἀθανασίου</foreign></note>
                   </seg>
                   <note type="lemma">Ps 9,26c</note>
@@ -3633,6 +3655,7 @@
                         corresp="#person-10"
                         source="Hesychius, schol. nr. 53 in Ps 9,26c (Antonelli; PG 27,681)"/>
                   </seg>
+                  <pb n="36r–v"/>
                   <seg type="commentaryfragment" xml:id="plut-5-30-fr-9-92"
                      corresp="#plut-5-30-ps-9-26c" source="Anonymous">
                      <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-9-92"
@@ -3780,6 +3803,7 @@
                         source="Hesychius, schol. nr. 60–62; 63–64 in Ps 9,30; 9,31 (Antonelli; PG 27,681)"
                      />
                   </seg>
+                  <pb n="37r–v"/>
                   <seg type="commentaryfragment" xml:id="plut-5-30-fr-9-111"
                      corresp="#plut-5-30-ps-9-31b" source="Anonymous">
                      <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-9-111"
@@ -3922,6 +3946,7 @@
                         source="Hesychius, schol. nr. 75–76 in Ps 9,36b–37a (Antonelli; PG 27,684)"
                      />
                   </seg>
+                  <pb n="38r–v"/>
                   <seg type="commentaryfragment" xml:id="plut-5-30-fr-9-130"
                      corresp="#plut-5-30-ps-9-36b" source="Anonymous">
                      <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-9-130"
@@ -3997,7 +4022,7 @@
                         ἐκδίκησιν τῶν πτωχῶν ποιήσει, τότε οὐκέτι προσθήσει τοῦ μεγαλαυχεῖν
                            ἄνθρωπος<del rend="erasure"><gap reason="illegible" quantity="1"
                               unit="character"/></del>: –</quote><ref
-                        target="vat-gr-754:vat-gr-754-fr-9-XX" type="with-variant">Vat. gr.
+                        target="vat-gr-754:vat-gr-754-fr-9-132" type="with-variant">Vat. gr.
                         754</ref>
                      <note type="attribution"><foreign xml:lang="grc">Ἀθανάσιος</foreign></note>
                   </seg>
@@ -4008,6 +4033,7 @@
                         corresp="#person-10"
                         source="Hesychius, schol. nr. 81 in Ps 9,39b (Antonelli; PG 27,684)"/>
                   </seg>
+                  <pb n="38v–39r"/>
                   <seg type="commentaryfragment" xml:id="plut-5-30-fr-9-141"
                      corresp="#plut-5-30-ps-9-39b" source="Anonymous">
                      <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-9-141"
@@ -4129,6 +4155,7 @@
                         corresp="#person-11" source="Hesychius, comm. brevis in Ps 10,2a (16 Jagić)"
                      />
                   </seg>
+                  <pb n="39r–v"/>
                   <note type="lemma">Ps 10,2b</note>
                   <seg type="commentaryfragment" xml:id="plut-5-30-fr-10-8"
                      corresp="#plut-5-30-ps-10-2b" source="Anonymous">
@@ -4199,7 +4226,7 @@
                            <del rend="overwrite">οῖ</del>
                            <add place="above">αῖ</add>
                         </subst>αῖς αἰωνίοις παραπέμπει κολάσεσιν: </quote><ref
-                        target="vat-gr-754:vat-gr-754-fr-10-XX" type="with-variants">Vat. gr.
+                        target="vat-gr-754:vat-gr-754-fr-10-11" type="with-variants">Vat. gr.
                         754</ref>
                      <note type="attribution"><foreign xml:lang="grc">Ἀθανασίου: –</foreign></note>
                   </seg>
@@ -4207,10 +4234,10 @@
                      corresp="#plut-5-30-ps-10-3b" source="Anonymous">
                      <quote type="patristic" subtype="quotation-abbreviated/quotation-abbreviated"
                         xml:id="plut-5-30-quot-10-17" corresp="#person-2"
-                        source="Athanasius, exp. in Ps 10,4c; 10,4d">Ὀφθαλμοὺς δὲ τὴν εὐεργετικὴν
-                        αὐτοῦ πρόνοιαν, καὶ τῶν πραγματων τὴν ἐξέτασιν: –</quote><ref
-                        target="vat-gr-754:vat-gr-754-fr-10-XX" type="abbreviated-with-variant">Vat.
-                        gr. 754</ref><ref target="vat-gr-754:vat-gr-754-fr-10-XX"
+                        source="Athanasius, exp. in Ps 10,4c et in Ps 10,4d">Ὀφθαλμοὺς δὲ τὴν
+                        εὐεργετικὴν αὐτοῦ πρόνοιαν, καὶ τῶν πραγματων τὴν ἐξέτασιν: –</quote><ref
+                        target="vat-gr-754:vat-gr-754-fr-10-14" type="abbreviated-with-variant">Vat.
+                        gr. 754</ref><ref target="vat-gr-754:vat-gr-754-fr-10-19"
                         type="abbreviated-with-variants">Vat. gr. 754</ref>
                   </seg>
                   <seg type="commentaryfragment" xml:id="plut-5-30-fr-10-18"
@@ -4221,7 +4248,7 @@
                         >Βλέφαρα δὲ τὴν κριτικὴν αὐτοῦ ἐπισκοπὴν δηλο<subst hand="corr">
                            <del rend="overwrite">ί</del>
                            <add place="above">ῖ</add>
-                        </subst>: –</quote><ref target="vat-gr-754:vat-gr-754-fr-10-XX"
+                        </subst>: –</quote><ref target="vat-gr-754:vat-gr-754-fr-10-19"
                         type="abbreviated-with-variations">Vat. gr. 754</ref>
                   </seg>
                   <note type="lemma">Ps 10,4a</note>
@@ -4305,6 +4332,7 @@
                         corresp="#person-10"
                         source="Hesychius, schol. nr. 13–15 in Ps 10,5b–6 (Antonelli; PG 27,685)"/>
                   </seg>
+                  <pb n="40r–v"/>
                   <seg type="commentaryfragment" xml:id="plut-5-30-fr-10-30"
                      corresp="#plut-5-30-ps-10-6b" source="Anonymous">
                      <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-10-30"
