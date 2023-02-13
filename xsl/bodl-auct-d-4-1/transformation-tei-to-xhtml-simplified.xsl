@@ -253,7 +253,7 @@
                 </xsl:attribute>
             </a>
             <xsl:element name="p">
-                <xsl:attribute name="class" select="'paragraph-in-commentaryfragment'"/>
+                <xsl:attribute name="class" select="'paragraph-in-commentaryfragment-header'"/>
                 <xsl:if test="@type = 'commentaryfragment'">
                     <xsl:text>Commentaryfragment: </xsl:text>
                 </xsl:if>
@@ -270,12 +270,12 @@
             </xsl:element>
             <xsl:element name="p">
                 <xsl:attribute name="class" select="'paragraph-in-commentaryfragment'"/>
-                <xsl:apply-templates select="child::tei:quote[@type = 'patristic']/child::node()"/>
+                <xsl:text>Lemma: </xsl:text>
+                <xsl:value-of select="preceding-sibling::tei:note[@type = 'lemma'][1]/text()"/>
             </xsl:element>
             <xsl:element name="p">
                 <xsl:attribute name="class" select="'paragraph-in-commentaryfragment'"/>
-                <xsl:text>Lemma: </xsl:text>
-                <xsl:value-of select="preceding-sibling::tei:note[@type = 'lemma'][1]/text()"/>
+                <xsl:apply-templates select="child::tei:quote[@type = 'patristic']/child::node()"/>
             </xsl:element>
             <xsl:if test="exists(child::tei:note[@type = 'attribution'])">
                 <xsl:element name="p">
@@ -283,6 +283,11 @@
                     <xsl:text>Attribution: </xsl:text>
                     <xsl:apply-templates select="child::tei:note[@type = 'attribution']/child::node()"/>
                 </xsl:element>
+            </xsl:if>
+            <xsl:if test="exists(child::tei:ref)">
+                <p class="paragraph-in-commentaryfragment">
+                    <xsl:apply-templates select="child::tei:ref"/>
+                </p>
             </xsl:if>
         </xsl:element>
     </xsl:template>
@@ -312,7 +317,7 @@
                 <xsl:value-of select="preceding-sibling::tei:note[@type = 'lemma'][1]/text()"/>
             </xsl:element>
             <xsl:element name="p">
-                <xsl:attribute name="class" select="'paragraph-in-glosse'"/>
+                <xsl:attribute name="class" select="'paragraph-in-commentaryfragment'"/>
                 <xsl:apply-templates select="child::tei:quote/child::node()"/>
             </xsl:element>
             <xsl:if test="exists(child::tei:note[@type = 'attribution'])">
@@ -321,6 +326,11 @@
                     <xsl:text>Attribution: </xsl:text>
                     <xsl:apply-templates select="child::tei:note[@type = 'attribution']/child::node()"/>
                 </xsl:element>
+            </xsl:if>
+            <xsl:if test="exists(child::tei:ref)">
+                <p class="paragraph-in-commentaryfragment">
+                    <xsl:apply-templates select="child::tei:ref"/>
+                </p>
             </xsl:if>
         </xsl:element>
     </xsl:template>
@@ -334,7 +344,7 @@
                 </xsl:attribute>
             </a>
             <xsl:element name="p">
-                <xsl:attribute name="class" select="'paragraph-in-hexaplaric-variant'"/>
+                <xsl:attribute name="class" select="'paragraph-in-hexaplaric-variant-header'"/>
                 <xsl:text>Hexaplaric variant: </xsl:text>
                 <xsl:element name="b">
                     <xsl:value-of select="@source"/>
@@ -345,28 +355,36 @@
                 <xsl:apply-templates select="child::node()"/>
             </xsl:element>
             <xsl:element name="p">
-                <xsl:attribute name="class" select="'pargraph-in-hexaplaric-variant'"/>
+                <xsl:attribute name="class" select="'paragraph-in-hexaplaric-variant'"/>
                 <xsl:text>Lemma: </xsl:text>
                 <xsl:value-of select="preceding-sibling::tei:note[@type = 'lemma'][1]/text()"/>
             </xsl:element>
+            <xsl:if test="exists(child::tei:ref)">
+                <p class="paragraph-in-hexaplaric-variant">
+                    <xsl:apply-templates select="child::tei:ref"/>
+                </p>
+            </xsl:if>
         </xsl:element>
     </xsl:template>
     
     <xsl:template match="tei:ref">
-        <p>
-            <xsl:element name="a">
-                <xsl:attribute name="href">
-                    <xsl:if test="starts-with(@target,'vat-gr-754:')">
-                        <xsl:value-of select="concat('../vat-gr-754/vat-gr-754-transcription-critical.html#',substring-after(@target,'vat-gr-754:'))"/>
-                    </xsl:if>
-                    <xsl:if test="starts-with(@target,'vat-gr-1422:')">
-                        <xsl:value-of select="concat('../vat-gr-1422/vat-gr-1422-transcription-critical.html#',substring-after(@target,'vat-gr-1422:'))"/>
-                    </xsl:if>
-                </xsl:attribute>
-                <xsl:attribute name="target"><xsl:text>_blank</xsl:text></xsl:attribute>
-                <xsl:value-of select="text()"/>
-            </xsl:element>
-        </p>
+        <xsl:text>→ </xsl:text>
+        <xsl:element name="a">
+            <xsl:attribute name="href">
+                <xsl:if test="starts-with(@target,'vat-gr-754:')">
+                    <xsl:value-of select="concat('vat_gr_754.html#',substring-after(@target,'vat-gr-754:'))"/>
+                </xsl:if>
+                <xsl:if test="starts-with(@target,'vat-gr-1422:')">
+                    <xsl:value-of select="concat('vat_gr_1422.html#',substring-after(@target,'vat-gr-1422:'))"/>
+                </xsl:if>
+                <xsl:if test="starts-with(@target,'ambr-m-47-sup')">
+                    <xsl:value-of select="concat('ambr_m_47_sup.html#',substring-after(@target,'ambr-m-47-sup:'))"/>
+                </xsl:if>
+            </xsl:attribute>
+            <xsl:attribute name="target"><xsl:text>_blank</xsl:text></xsl:attribute>
+            <xsl:value-of select="text()"/>
+        </xsl:element>
+        <xsl:text> </xsl:text>
     </xsl:template>
     
     <xsl:template match="tei:pb">
