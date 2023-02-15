@@ -60,7 +60,7 @@
                </person>
                <person xml:id="person-2" role="author">
                   <persName>Athanasius</persName>
-                  <bibl>Athanasius, schol.</bibl>
+                  <bibl>Athanasius, exp.</bibl>
                </person>
                <person xml:id="person-3" role="author">
                   <persName>Basilius Caesariensis</persName>
@@ -327,26 +327,15 @@
                </ab>
             </div>
             <pb n="40r" facs="http://mss.bmlonline.it/s.aspx?Id=AWOHzHpBI1A4r7GxMB-P#/oro/85"/>
-            <!-- Pointers to identical fragments in other documents. @type = identical | with-variations | abbreviated | expanded &lt; &gt;-->
             <div type="commentary" subtype="commentary" xml:id="plut-6-3-1-4">
                <ab xml:id="plut-6-3-1-2" xml:lang="grc">
-                  <!-- am inneren Rand unten stand wahrscheinlich kein Athanasius. Es gibts eine Rand- bzw. Hauptkatene. Theodoretus und Athanasius stehen entweder zwischen dem Bibeltext und der Hauptkatene oder zwischen den Zeilen des Bibeltextes -->
+                  <!-- Textkritik: innerer Rand (unten): Text kaum lesbar: so gut wie sicher ist dieser keine eine Expositio gewesen -->
                   <!-- Ps 1 commentary -->
-                  <note type="lemma">Ps 1,3b</note>
+                  <note type="lemma">Ps 1,3a (ut vid.)</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-1-1"
-                     corresp="#plut-6-3-ps-1-3b" source="Athanasius">
-                     <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-1-1"
-                        corresp="#person-2" source="Athanasius, schol. in Ps 1,3b">καρπὸν τοῦ ξύλου
-                        νοήσεις· τὴν ὀρθὴν πίστιν· φύλλον δὲ αὐτοῦ· τὴν πλήρωσιν τῶν
-                        ἐντολῶν:</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-1-9" type="identical">Vat. gr. 754</ref>
-                     <note type="attribution"><foreign xml:lang="grc">Ἀθα(νασίου)</foreign></note>
-                  </seg>
-                  <note type="lemma">Ps 1,3a</note>
-                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-1-2"
                      corresp="#plut-6-3-ps-1-3a" source="Anonymous">
-                     <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-1-2"
-                        corresp="#person-2" source="Athanasius, schol. in Ps 1,3a">ξ<unclear
+                     <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-1-1"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 1,3a">ξ<unclear
                            reason="faded-ink">ύ</unclear>λον ὁ Χριστὸς <unclear reason="faded-ink"
                            >ἀ</unclear>ν<unclear reason="faded-ink">α</unclear>γ<unclear
                            reason="faded-ink">έ</unclear>γραπται ἐν τῆ θε<unclear reason="faded-ink"
@@ -358,8 +347,21 @@
                            reason="illegible">νοις</unclear> αὐ<unclear reason="faded-ink"
                            >τῆς:</unclear></quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-1-5" type="abbreviated">Vat. gr.
-                        754</ref><note type="attribution"><foreign xml:lang="grc"
-                        >ἄλλως</foreign></note>
+                        754</ref><note type="attribution"><foreign xml:lang="grc">ἄλλω(ς)
+                           [⁘]</foreign></note>
+                     <!-- Position: unter dem Bibeltext-->
+                  </seg>
+                  <note type="lemma">Ps 1,3b</note>
+                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-1-2"
+                     corresp="#plut-6-3-ps-1-3b" source="Athanasius">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-1-2"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 1,3b">καρπὸν τοῦ ξύλου
+                        νοήσεις· τὴν ὀρθὴν πίστιν· φύλλον δὲ αὐτοῦ· τὴν πλήρωσιν τῶν
+                        ἐντολῶν:</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-1-9" type="identical">Vat. gr. 754</ref>
+                     <note type="attribution"><foreign xml:lang="grc"
+                        >Ἀθα(νασίου):</foreign></note><note type="textual-commentary"><p>This
+                           Expositio lies between the lines of the Psalm.</p></note>
                   </seg>
                </ab>
             </div>
@@ -465,19 +467,22 @@
             <div type="commentary" subtype="commentary">
                <ab xml:lang="grc">
                   <!-- Ps 2 commentary -->
+                  <note type="lemma">Ps 2,1 (ut vid.)</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-2-1"
-                     corresp="#plut-6-3-ps-2-XXX" source="Anonymous">
+                     corresp="#plut-6-3-ps-2-1a" source="Anonymous">
                      <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-2-1"
-                        corresp="#person-2" source="Athanasius, schol. in Ps 2,1">φρύαγμα (ἐστὶ) τὸ
+                        corresp="#person-2" source="Athanasius, exp. in Ps 2,1">φρύαγμα (ἐστὶ) τὸ
                         ἀλόγιστον φρόνημα:</quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-2-2" type="abbreviated">Vat. gr.
                         754</ref><note type="attribution"><foreign xml:lang="grc"
-                        >ἄλλως</foreign></note>
+                        >ἄλλω(ς):</foreign></note><note type="textual-commentary"><p>This Expositio
+                           lies under the column of the Psalm text.</p></note>
                   </seg>
+                  <note type="lemma">Ps 2,3 (sic)</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-2-2"
                      corresp="#plut-6-3-ps-2-3a" source="Athanasius">
                      <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-2-2"
-                        corresp="#person-2" source="Athanasius, schol. in Ps 2,{3a} 2c">ἡ γὰρ
+                        corresp="#person-2" source="Athanasius, exp. in Ps 2,2c">ἡ γὰρ
                            <unclear reason="faded-ink">εἰς τὸν</unclear> Χριστὸν ἐπιβουλὴ καὶ
                            εἰ<unclear reason="faded-ink">ς</unclear> αὐτὸν ἀνατρέχ<unclear
                            reason="faded-ink">ει τὸν</unclear> πατέρα· εἰ γὰρ ὁ πατὴρ ἐν τῶ υἱῶι καὶ
@@ -485,12 +490,14 @@
                            reason="illegible">οὐ</supplied>χὶ <add place="above">καὶ</add> μία ἡ εἰς
                         αὐτοὺς ὕβρις γένοιτ’ ἄν:</quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-2-12" type="with-variants">Vat. gr.
-                        754</ref>
+                        754</ref><note type="attribution"><foreign xml:lang="grc"
+                           >Ἀθα(νασίου):</foreign></note>
                   </seg>
+                  <!-- ab hier -->
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-2-3" corresp="#plut-6-3-ps-2-1"
                      source="Anonymous">
                      <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-2-3"
-                        corresp="#person-2" source="Athanasius, schol. in Ps 2,1">ἀπὸ κοινοῦ τὸ ἵνα
+                        corresp="#person-2" source="Athanasius, exp. in Ps 2,1">ἀπὸ κοινοῦ τὸ ἵνα
                         τί· τουτ(έστιν) δια<unclear reason="faded-ink">τί οἱ</unclear> λαοὶ
                         ἐμελέτησαν κεν<unclear reason="faded-ink">ὰ·</unclear> πῶς γὰρ οὐ κενὴ
                            α<unclear reason="faded-ink">ὐτοῖς</unclear> γ<unclear reason="faded-ink"
@@ -510,7 +517,7 @@
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-2-4"
                      corresp="#plut-6-3-ps-2-7a" source="Anonymous">
                      <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-2-4"
-                        corresp="#person-2" source="Athanasius, schol. in Ps 2,7a">τὴν γνῶσ<unclear
+                        corresp="#person-2" source="Athanasius, exp. in Ps 2,7a">τὴν γνῶσ<unclear
                            reason="faded-ink">ιν</unclear> τοῦ μονογενοῦς υἱοῦ τοῦ θεοῦ καὶ τὴν
                         ἐντολὴν τοῦ κυρίου·</quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-2-30" type="with-variants">Vat. gr.
@@ -519,7 +526,7 @@
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-2-5" corresp="#plut-6-3-ps-2-3"
                      source="Anonymous">
                      <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-2-5"
-                        corresp="#person-2" source="Athanasius, schol. in Ps 2,3a">... οὐ γὰρ ἤθελον
+                        corresp="#person-2" source="Athanasius, exp. in Ps 2,3a">... οὐ γὰρ ἤθελον
                         εἴσω τῆς ἱερᾶς σαγήνης γενέσθαι· περὶ ἧς γέγραπται· ὁμοία ἐστὶν ἡ βασιλεία
                         τῶν οὐρανῶν σαγήνη· ταύτη τὸ καὶ θηρίοις ἑκόντες νοητοῖς γεγόνασι
                         παρανάλωμα·</quote>
@@ -529,7 +536,7 @@
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-2-6" corresp="#plut-6-3-ps-2-3"
                      source="Anonymous">
                      <quote type="patristic" subtype="paraphrase" xml:id="plut-6-3-quot-2-6"
-                        corresp="#person-2" source="Athanasius, schol. in Ps 2,3b">γέγραπται ἐν
+                        corresp="#person-2" source="Athanasius, exp. in Ps 2,3b">γέγραπται ἐν
                         εὐγγελίοις· ὁ γὰρ ζυγός μου χρηστός ἐστιν:</quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-2-14" type="with-variations">Vat. gr.
                         754</ref>
@@ -537,7 +544,7 @@
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-2-7"
                      corresp="#plut-6-3-ps-2-7b" source="Anonymous">
                      <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-2-7"
-                        corresp="#person-2" source="Athanasius, schol. in Ps 2,7b">ὅρα πῶς τὴν κατὰ
+                        corresp="#person-2" source="Athanasius, exp. in Ps 2,7b">ὅρα πῶς τὴν κατὰ
                            σάρκ<supplied reason="illegible">α</supplied> γέννησιν τοῦ μονογενοῦς
                            <supplied reason="illegible" cert="high">υἱοῦ</supplied> οἰκειοῦ<unclear
                            reason="faded-ink">ται ὁ πατήρ:</unclear></quote>
@@ -551,7 +558,7 @@
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-2-8"
                      corresp="#plut-6-3-ps-2-12" source="Anonymous">
                      <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-2-8"
-                        corresp="#person-2" source="Athanasius, schol. in Ps 2,12a">τῆς εὐαγγελικῆς
+                        corresp="#person-2" source="Athanasius, exp. in Ps 2,12a">τῆς εὐαγγελικῆς
                         δηλονότι:</quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-2-48" type="identical">Vat. gr. 754</ref>
                   </seg><!-- "scholia-Katene": 1 Hesychius Antonelli + 1 Athanasius  -->
@@ -625,7 +632,7 @@
                      εὐλογία σου. </quote>
                </ab>
             </div>
-            <!-- ps 3 commentary -->
+            <!-- Ps 3 commentary -->
             <!-- expositiones at the biblical text -->
             <div type="commentary" subtype="commentary">
                <ab xml:lang="grc">
@@ -633,7 +640,7 @@
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-3-1" corresp="#plut-6-3-ps-3-2"
                      source="Athanasius">
                      <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-3-1"
-                        corresp="#person-2" source="Athanasius, schol. in Ps 3,2a">τὸ τί ἀντὶ τοῦ
+                        corresp="#person-2" source="Athanasius, exp. in Ps 3,2a">τὸ τί ἀντὶ τοῦ
                         σφόδρα κεῖται:</quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-3-3" type="identical">Vat. gr. 754</ref>
                      <note type="attribution"><foreign xml:lang="grc">Ἀθα(νασίου):</foreign></note>
