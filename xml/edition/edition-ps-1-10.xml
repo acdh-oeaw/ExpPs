@@ -2,7 +2,7 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!-- Suchbegriffe: exp 2 / Ps 2: / faciendum / parallele Darstellung / unentschieden / Trennungslinie --> 
+<!-- Suchbegriffe: exp 2 / Ps 2: / faciendum / parallele Darstellung / unentschieden / Trennungslinie / Position (in der Handschrift) --> 
 <!-- Suchbegriffe: Textkritik / Parallelstelle / Kommentar / Übersetzung / Alternative / SD (= Septuaginta-Deutsch) / Syrisch -->
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
@@ -10,11 +10,11 @@
       <!-- Frau Heil hat ab exp. 149 zu korrigieren -->
       <!-- Ps 1–7: die Struktur der Edition wurde mit der Synopse verglichen -->
       <!-- Ps 1-3: die Septuaginta-Deutsch wurde verglichen -->
-      <!-- Typus III, XV, XVI: die Leithandschrift wurden gelesen; bei den Schwesternhandschriften nur incipit und explicit jedes Fragments -->
-      <!-- Typus IV: M: der gesamte Inhalt wurde gelesen. O: nur die Fragmente um den Bibeltext wurden gelesen -->
-      <!-- Typus XIV: A2 V4: Ps 3–6, 9–10 überprüft. V4: Ps 1-2 auf übersehene Fragmente zu durchsuchen -->
-      <!-- Ps 8-10: B2 und B1 wechseln die Stellung -->
-      <!-- philogischer Kommentar: ab Ps 2 muss noch systematisiert werden anhand der "Lists of contents" -->
+      <!-- Typus III, XV, XVI: die Leithandschrift wurden gelesen: Schwesternhandschriften: incipit und explicit jedes Fragments gelesen -->
+      <!-- Typus IV: M: Handschrift vollständig gelesen: O: nur die Fragmente um den Bibeltext wurden gelesen -->
+      <!-- Typus XIV: A2 V4: Ps 3–6, 9–10 durchgelesen: V4: Ps 1-2 auf übersehene Fragmente durchzulesen -->
+      <!-- Kommentar: ab Ps 2 muss noch systematisiert werden anhand der "Lists of contents" -->
+      <!-- L2: Kommentar: Position der Expositiones angegeben: A3: mit L2 zu vergleichen -->
       <!-- Links: Vat. gr. 754: bis einschließlich Psalm 6, Coislin 10: vollständig -->
       <fileDesc>
          <titleStmt>
@@ -7679,10 +7679,10 @@
                            eine Verbindung mit Ps 7,10c hergestellt. L2<hi rend="sup">a</hi>: Die
                            Expositio liegt unterhalb der Kolumne des Psalmtextes (anonym). Dieser
                            Zustand macht eine Abstammung aus der unbekannten katenarischen Tradition
-                           wahrscheinlich. L2<hi rend="sup">b</hi>: Die
-                        Expositio wurde am oberen Rand hinzugefügt (Athanasius).A3<hi rend="sup">b</hi>: Die Doublette ist beseitigt
-                           zugunsten der Expositio mit Zuschreibung. Die Tilgung könnte bereits in
-                           der unmittelbaren Vorlage durchgeführt worden sein.</p></note>
+                           wahrscheinlich. L2<hi rend="sup">b</hi>: Die Expositio wurde am oberen
+                           Rand hinzugefügt (Athanasius). A3<hi rend="sup">b</hi>: Die Doublette ist
+                           beseitigt zugunsten der Expositio mit Zuschreibung. Die Tilgung könnte
+                           bereits in der unmittelbaren Vorlage durchgeführt worden sein.</p></note>
                   </div>
                </div>
                <div xml:lang="de" type="translation">
@@ -8043,8 +8043,9 @@
                         <wit>Flor. Med. Laurent. Plut. 6. 3</wit>
                         <wit>Mediolan. Ambros. C 98 sup.</wit>
                      </app>
-                     <note type="textual-commentary"><p>C: exp. 96 in Ps 7,16–17a. M O: Siehe zu exp.
-                           95. L2: exp. 96 liegt unterhalb der Kolumne des Bibeltextes.</p></note>
+                     <note type="textual-commentary"><p>C: exp. 96 in Ps 7,16–17a. M O: Siehe zu
+                           exp. 95. L2: exp. 96 liegt unterhalb der Kolumne des
+                        Bibeltextes.</p></note>
                   </div>
                </div>
                <div xml:lang="de" type="translation">
@@ -9803,8 +9804,8 @@
                      <app type="text">
                         <lem><foreign xml:lang="grc">Τὴν αἰτίαν</foreign></lem>
                         <rdg wit="#P6 #Z #N2"><foreign xml:lang="grc">Τὸ μὲν ὅτι ἐποίησας τὴν κρίσιν
-                              μου καὶ τὴν δίκην μου</foreign> ante<foreign xml:lang="grc">τὴν
-                              αἰτίαν</foreign> (cf. Ps 9,5a)</rdg>
+                           μου καὶ τὴν δίκην μου</foreign> (cf. Ps 9,5a) ante<foreign xml:lang="grc"> τὴν
+                              αἰτίαν</foreign> add.</rdg>
                         <wit>Paris. gr. 139</wit>
                         <wit>Venet. Marc. gr. Z. 17</wit>
                         <wit>Athen. B.N. 45</wit>
