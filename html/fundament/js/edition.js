@@ -20,6 +20,8 @@ $("#close-button-3").click(function() {
 	if($("#window-for-witnesses-4").hasClass("for-witness-visible")){
 		let textOfParagraphOfWindowFour = $("#paragraph-for-witness-4").text();
 		$("#paragraph-for-witness-3").text(textOfParagraphOfWindowFour);
+		let textOfHeaderOfWindowFour = $("#paragraph-for-witness-4-header").text();
+		$("#paragraph-for-witness-3-header").text(textOfHeaderOfWindowFour);
 		configurationObject.windowThreeUrlOfFragment = configurationObject.windowFourUrlOfFragment;
 		$("#window-for-witnesses-4").removeClass("for-witness-visible").addClass("for-witness-hidden");
 		configurationObject.windowFourHasText = false;
@@ -40,6 +42,10 @@ $("#close-button-2").click(function() {
 		configurationObject.windowTwoUrlOfFragment = configurationObject.windowThreeUrlOfFragment;
 		$("#paragraph-for-witness-3").text(textOfParagraphOfWindowFour);
 		configurationObject.windowThreeUrlOfFragment = configurationObject.windowFourUrlOfFragment;
+		let textOfHeaderOfWindowFour = $("#paragraph-for-witness-4-header").text();
+		let textOfHeaderOfWindowThree = $("#paragraph-for-witness-3-header").text();
+		$("#paragraph-for-witness-2-header").text(textOfHeaderOfWindowThree);
+		$("#paragraph-for-witness-3-header").text(textOfHeaderOfWindowFour);
 		$("#window-for-witnesses-4").removeClass("for-witness-visible").addClass("for-witness-hidden");
 		configurationObject.windowFourHasText = false;
 		configurationObject.windowFourUrlOfFragment = '';
@@ -47,6 +53,8 @@ $("#close-button-2").click(function() {
 		if($("#window-for-witnesses-3").hasClass("for-witness-visible")){
 			let textOfParagraphOfWindowThree = $("#paragraph-for-witness-3").text();
 			$("#paragraph-for-witness-2").text(textOfParagraphOfWindowThree);
+			let textOfHeaderOfWindowThree = $("#paragraph-for-witness-3-header").text();
+			$("#paragraph-for-witness-2-header").text(textOfHeaderOfWindowThree);
 			configurationObject.windowTwoUrlOfFragment = configurationObject.windowThreeUrlOfFragment;
 			$("#window-for-witnesses-3").removeClass("for-witness-visible").addClass("for-witness-hidden");
 			configurationObject.windowThreeHasText = false;
@@ -63,11 +71,17 @@ $("#close-button-1").click(function() {
 		let textOfParagraphOfWindowFour = $("#paragraph-for-witness-4").text();
 		let textOfParagraphOfWindowThree = $("#paragraph-for-witness-3").text();
 		let textOfParagraphOfWindowTwo = $("#paragraph-for-witness-2").text();
+		let textOfHeaderOfWindowFour = $("#paragraph-for-witness-4-header").text();
+		let textOfHeaderOfWindowThree = $("#paragraph-for-witness-3-header").text();
+		let textOfHeaderOfWindowTwo = $("#paragraph-for-witness-2-header").text();
 		$("#paragraph-for-witness-1").text(textOfParagraphOfWindowTwo);
+		$("#paragraph-for-witness-1-header").text(textOfHeaderOfWindowTwo);
 		configurationObject.windowOneUrlOfFragment = configurationObject.windowTwoUrlOfFragment;
 		$("#paragraph-for-witness-2").text(textOfParagraphOfWindowThree);
+		$("#paragraph-for-witness-2-header").text(textOfHeaderOfWindowThree);
 		configurationObject.windowTwoUrlOfFragment = configurationObject.windowThreeUrlOfFragment;
 		$("#paragraph-for-witness-3").text(textOfParagraphOfWindowFour);
+		$("#paragraph-for-witness-3-header").text(textOfHeaderOfWindowFour);
 		configurationObject.windowThreeUrlOfFragment = configurationObject.windowFourUrlOfFragment;
 		$("#window-for-witnesses-4").removeClass("for-witness-visible").addClass("for-witness-hidden");
 		configurationObject.windowFourHasText = false;
@@ -76,9 +90,13 @@ $("#close-button-1").click(function() {
 		if($("#window-for-witnesses-3").hasClass("for-witness-visible")){
 			let textOfParagraphOfWindowThree = $("#paragraph-for-witness-3").text();
 			let textOfParagraphOfWindowTwo = $("#paragraph-for-witness-2").text();
+			let textOfHeaderOfWindowThree = $("#paragraph-for-witness-3-header").text();
+			let textOfHeaderOfWindowTwo = $("#paragraph-for-witness-2-header").text();
 			$("#paragraph-for-witness-1").text(textOfParagraphOfWindowTwo);
+			$("#paragraph-for-witness-1-header").text(textOfHeaderOfWindowTwo);
 			configurationObject.windowOneUrlOfFragment = configurationObject.windowTwoUrlOfFragment;
 			$("#paragraph-for-witness-2").text(textOfParagraphOfWindowThree);
+			$("#paragraph-for-witness-2-header").text(textOfHeaderOfWindowThree);
 			configurationObject.windowTwoUrlOfFragment = configurationObject.windowThreeUrlOfFragment;
 			$("#window-for-witnesses-3").removeClass("for-witness-visible").addClass("for-witness-hidden");
 			configurationObject.windowThreeHasText = false;
@@ -86,7 +104,9 @@ $("#close-button-1").click(function() {
 		} else 
 			if($("#window-for-witnesses-2").hasClass("for-witness-visible")){
 				let textOfParagraphOfWindowTwo = $("#paragraph-for-witness-2").text();
+				let textOfHeaderOfWindowTwo = $("#paragraph-for-witness-2-header").text();
 				$("#paragraph-for-witness-1").text(textOfParagraphOfWindowTwo);
+				$("#paragraph-for-witness-1-header").text(textOfHeaderOfWindowTwo);
 				configurationObject.windowOneUrlOfFragment = configurationObject.windowTwoUrlOfFragment;
 				$("#window-for-witnesses-2").removeClass("for-witness-visible").addClass("for-witness-hidden");
 				configurationObject.windowTwoHasText = false;
@@ -114,11 +134,17 @@ $(".link-to-witness").click(function(event) {
 				let textOfParagraphOfWindowFour = $("#paragraph-for-witness-4").text();
 				let textOfParagraphOfWindowThree = $("#paragraph-for-witness-3").text();
 				let textOfParagraphOfWindowTwo = $("#paragraph-for-witness-2").text();
+				let textOfHeaderOfWindowFour = $("#paragraph-for-witness-4-header").text();
+				let textOfHeaderOfWindowThree = $("#paragraph-for-witness-3-header").text();
+				let textOfHeaderOfWindowTwo = $("#paragraph-for-witness-2-header").text();
 				$("#paragraph-for-witness-1").text(textOfParagraphOfWindowTwo);
+				$("#paragraph-for-witness-1-header").text(textOfHeaderOfWindowTwo);
 				configurationObject.windowOneUrlOfFragment = configurationObject.windowTwoUrlOfFragment;
 				$("#paragraph-for-witness-2").text(textOfParagraphOfWindowThree);
+				$("#paragraph-for-witness-2-header").text(textOfHeaderOfWindowThree);
 				configurationObject.windowTwoUrlOfFragment = configurationObject.windowThreeUrlOfFragment;
 				$("#paragraph-for-witness-3").text(textOfParagraphOfWindowFour);
+				$("#paragraph-for-witness-3-header").text(textOfHeaderOfWindowFour);
 				configurationObject.windowThreeUrlOfFragment = configurationObject.windowFourUrlOfFragment;
 				$("#paragraph-for-witness-4").text(commentaryfragmentText);
 				configurationObject.windowFourUrlOfFragment = link;

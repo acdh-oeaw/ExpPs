@@ -57,18 +57,22 @@ version="2.0">
             <div id="div-around-witnesses" class="fixed-bottom">
                 <div class="for-witness-hidden" id="window-for-witnesses-1">
                     <button type="button" class="btn btn-light" id="close-button-1">Close</button>
+                    <p id="paragraph-for-witness-1-header">Header 1</p>
                     <p id="paragraph-for-witness-1">Text 1</p>
                 </div>
                 <div class="for-witness-hidden" id="window-for-witnesses-2">
                     <button type="button" class="btn btn-light" id="close-button-2">Close</button>
+                    <p id="paragraph-for-witness-2-header">Header 2</p>
                     <p id="paragraph-for-witness-2">Text 2</p>
                 </div>
                 <div class="for-witness-hidden" id="window-for-witnesses-3">
                     <button type="button" class="btn btn-light" id="close-button-3">Close</button>
+                    <p id="paragraph-for-witness-3-header">Header 3</p>
                     <p id="paragraph-for-witness-3">Text 3</p>
                 </div>
                 <div class="for-witness-hidden" id="window-for-witnesses-4">
                     <button type="button" class="btn btn-light" id="close-button-4">Close</button>
+                    <p id="paragraph-for-witness-4-header">Header 4</p>
                     <p id="paragraph-for-witness-4">Text 4</p>
                 </div>
             </div>
@@ -208,52 +212,52 @@ version="2.0">
             </xsl:if>
         </xsl:attribute>
         <xsl:if test="starts-with(./@target,'#vat-gr-754')">
-            <xsl:text>Vat. gr. 754</xsl:text>
+            <xsl:text>V1</xsl:text>
         </xsl:if>
         <xsl:if test="starts-with(./@target,'#ambr-b-106-sup')">
-            <xsl:text>Ambr. B. 106 sup.</xsl:text>
+            <xsl:text>A2</xsl:text>
         </xsl:if>
         <xsl:if test="starts-with(./@target,'#ambr-m-47-sup')">
-            <xsl:text>Ambr. M. 47 sup.</xsl:text>
+            <xsl:text>A1</xsl:text>
         </xsl:if>
         <xsl:if test="starts-with(./@target,'#athen-b-n-8')">
-            <xsl:text>Athen B.N. 8</xsl:text>
+            <xsl:text>N1</xsl:text>
         </xsl:if>
         <xsl:if test="starts-with(./@target,'#bodl-auct-d-4-1')">
-            <xsl:text>Bodl. Auct. D. 4.1</xsl:text>
+            <xsl:text>B1</xsl:text>
         </xsl:if>
         <xsl:if test="starts-with(./@target,'#coislin-10')">
-            <xsl:text>Coislin 10</xsl:text>
+            <xsl:text>C</xsl:text>
         </xsl:if>
         <xsl:if test="starts-with(./@target,'#coislin-12')">
-            <xsl:text>Coislin 12</xsl:text>
+            <xsl:text>P5</xsl:text>
         </xsl:if>
         <xsl:if test="starts-with(./@target,'#franzon-3')">
-            <xsl:text>Franzon. 3</xsl:text>
+            <xsl:text>G</xsl:text>
         </xsl:if>
         <xsl:if test="starts-with(./@target,'#mosq-syn-194')">
-            <xsl:text>Mosq. Syn. 194</xsl:text>
+            <xsl:text>M</xsl:text>
         </xsl:if>
         <xsl:if test="starts-with(./@target,'#oxon-s-trin-78')">
-            <xsl:text>Oxon. S. Trin. 78</xsl:text>
+            <xsl:text>B2</xsl:text>
         </xsl:if>
         <xsl:if test="starts-with(./@target,'#par-gr-139')">
-            <xsl:text>Par. gr. 139</xsl:text>
+            <xsl:text>P6</xsl:text>
         </xsl:if>
         <xsl:if test="starts-with(./@target,'#par-gr-164')">
-            <xsl:text>Par. gr. 164</xsl:text>
+            <xsl:text>P7</xsl:text>
         </xsl:if>
         <xsl:if test="starts-with(./@target,'#par-gr-166')">
-            <xsl:text>Par.gr. 166</xsl:text>
+            <xsl:text>P1</xsl:text>
         </xsl:if>
         <xsl:if test="starts-with(./@target,'#plut-5-30')">
-            <xsl:text>Plut. 5.30</xsl:text>
+            <xsl:text>L1</xsl:text>
         </xsl:if>
         <xsl:if test="starts-with(./@target,'#plut-6-3')">
-            <xsl:text>Plut. 6.3</xsl:text>
+            <xsl:text>L2</xsl:text>
         </xsl:if>
         <xsl:if test="starts-with(./@target,'#vat-gr-1422')">
-            <xsl:text>Vat. gr. 1422</xsl:text>
+            <xsl:text>V5</xsl:text>
         </xsl:if>
     </a>
     <xsl:text> </xsl:text>
