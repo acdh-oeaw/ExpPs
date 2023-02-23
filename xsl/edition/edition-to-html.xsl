@@ -75,6 +75,7 @@ version="2.0">
                     <p id="paragraph-for-witness-4-header">Header 4</p>
                     <p id="paragraph-for-witness-4">Text 4</p>
                 </div>
+                <div class="for-links-of-witnesses" id="window-for-links-of-witnesses"/>
             </div>
         </div>
         <script type="text/javascript" src="../fundament/vendor/jquery/jquery.min.js"></script>

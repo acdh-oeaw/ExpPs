@@ -174,6 +174,19 @@ $(".link-to-witness").click(function(event) {
 						}
 		});
 	}
+	let linkObject = event.target;
+	$("#window-for-links-of-witnesses").empty();
+	let linksOfParticularFragment = $(linkObject).siblings();
+	let paragraphForFirstLink = $("<p>→ </p>");
+	let linkObjectClone = $(linkObject).clone()
+	let paragraphWithFirstLink = $(paragraphForFirstLink).append(linkObjectClone);
+	$("#window-for-links-of-witnesses").append(paragraphWithFirstLink);
+	$(linksOfParticularFragment).each(function(){
+		let paragraph = $("<p>→ </p>");
+		let actualLinkObject = $(this).clone();
+		let paragraphWithLink = $(paragraph).append(actualLinkObject);
+		$("#window-for-links-of-witnesses").append(paragraphWithLink);
+	});
 });
 
 	var that = {};
