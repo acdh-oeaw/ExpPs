@@ -154,7 +154,7 @@ function handleClickOnLinksForWitnessesWithoutNavigation(event){
 		.then(function (response) {
 			let commentaryfragment = JSON.parse(response.data);
 			let commentaryfragmentText = commentaryfragment._embedded.commentaryfragment.text;
-			let commentaryfragmentManuscriptName = commentaryfragment._links.manuscript.manuscript-identifier;
+			let commentaryfragmentManuscriptName = commentaryfragment._links.manuscript["manuscript-identifier"];
 			if (configurationObject.windowFourHasText === true){
 				let textOfParagraphOfWindowFour = $("#paragraph-for-witness-4").text();
 				let textOfParagraphOfWindowThree = $("#paragraph-for-witness-3").text();
