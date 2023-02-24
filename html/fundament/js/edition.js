@@ -115,10 +115,34 @@ $("#close-button-1").click(function() {
 			$("#window-for-witnesses-1").removeClass("for-witness-visible").addClass("for-witness-hidden");
 			configurationObject.windowOneHasText = false;
 			configurationObject.windowOneUrlOfFragment = '';
+			$("#window-for-links-of-witnesses").empty();
+			$("#window-for-links-of-witnesses").removeClass("for-links-of-witnesses").addClass("for-links-of-witnesses-hidden");
 		}
 });
 
-$(".link-to-witness").click(function(event) {	
+$(".link-to-witness").click(handleClickOnLinksForWitnesses);
+
+function handleClickOnLinksForWitnesses(event) {
+	handleClickOnLinksForWitnessesWithoutNavigation(event);
+	
+	let linkObject = event.target;
+	$("#window-for-links-of-witnesses").empty();
+	let linksOfParticularFragment = $(linkObject).siblings();
+	let paragraphForFirstLink = $("<p>→ </p>");
+	let linkObjectClone = $(linkObject).clone()
+	let paragraphWithFirstLink = $(paragraphForFirstLink).append(linkObjectClone);
+	$("#window-for-links-of-witnesses").append(paragraphWithFirstLink);
+	$(linksOfParticularFragment).each(function(){
+		let paragraph = $("<p>→ </p>");
+		let actualLinkObject = $(this).clone();
+		let paragraphWithLink = $(paragraph).append(actualLinkObject);
+		$("#window-for-links-of-witnesses").append(paragraphWithLink);
+	});
+	$("#window-for-links-of-witnesses").removeClass("for-links-of-witnesses-hidden").addClass("for-links-of-witnesses");
+	$("#window-for-links-of-witnesses p .link-to-witness").click(handleClickOnLinksForWitnessesWithoutNavigation);
+};
+
+function handleClickOnLinksForWitnessesWithoutNavigation(event){
 	event.preventDefault();
 	let link = event.target.href;
 	if (!((configurationObject.windowOneUrlOfFragment === link) || (configurationObject.windowTwoUrlOfFragment === link) || (configurationObject.windowThreeUrlOfFragment === link) || (configurationObject.windowFourUrlOfFragment === link))){
@@ -130,6 +154,7 @@ $(".link-to-witness").click(function(event) {
 		.then(function (response) {
 			let commentaryfragment = JSON.parse(response.data);
 			let commentaryfragmentText = commentaryfragment._embedded.commentaryfragment.text;
+			let commentaryfragmentManuscriptName = commentaryfragment._links.manuscript.manuscript-identifier;
 			if (configurationObject.windowFourHasText === true){
 				let textOfParagraphOfWindowFour = $("#paragraph-for-witness-4").text();
 				let textOfParagraphOfWindowThree = $("#paragraph-for-witness-3").text();
@@ -147,47 +172,39 @@ $(".link-to-witness").click(function(event) {
 				$("#paragraph-for-witness-3-header").text(textOfHeaderOfWindowFour);
 				configurationObject.windowThreeUrlOfFragment = configurationObject.windowFourUrlOfFragment;
 				$("#paragraph-for-witness-4").text(commentaryfragmentText);
+				$("#paragraph-for-witness-4-header").text(commentaryfragmentManuscriptName);
 				configurationObject.windowFourUrlOfFragment = link;
 			} else
 				if (configurationObject.windowThreeHasText === true){
 					$("#paragraph-for-witness-4").text(commentaryfragmentText);
+					$("#paragraph-for-witness-4-header").text(commentaryfragmentManuscriptName);
 					configurationObject.windowFourHasText = true;
 					configurationObject.windowFourUrlOfFragment = link;
 					$("#window-for-witnesses-4").removeClass("for-witness-hidden").addClass("for-witness-visible");
 				} else
 					if (configurationObject.windowTwoHasText === true){
 						$("#paragraph-for-witness-3").text(commentaryfragmentText);
+						$("#paragraph-for-witness-3-header").text(commentaryfragmentManuscriptName);
 						configurationObject.windowThreeHasText = true;
 						configurationObject.windowThreeUrlOfFragment = link;
 						$("#window-for-witnesses-3").removeClass("for-witness-hidden").addClass("for-witness-visible");
 					} else
 						if (configurationObject.windowOneHasText === true){
 							$("#paragraph-for-witness-2").text(commentaryfragmentText);
+							$("#paragraph-for-witness-2-header").text(commentaryfragmentManuscriptName);
 							configurationObject.windowTwoHasText = true;
 							configurationObject.windowTwoUrlOfFragment = link;
 							$("#window-for-witnesses-2").removeClass("for-witness-hidden").addClass("for-witness-visible");
 						} else {
 								$("#paragraph-for-witness-1").text(commentaryfragmentText);
+								$("#paragraph-for-witness-1-header").text(commentaryfragmentManuscriptName);
 								configurationObject.windowOneHasText = true;
 								configurationObject.windowOneUrlOfFragment = link;
 								$("#window-for-witnesses-1").removeClass("for-witness-hidden").addClass("for-witness-visible");
 						}
 		});
 	}
-	let linkObject = event.target;
-	$("#window-for-links-of-witnesses").empty();
-	let linksOfParticularFragment = $(linkObject).siblings();
-	let paragraphForFirstLink = $("<p>→ </p>");
-	let linkObjectClone = $(linkObject).clone()
-	let paragraphWithFirstLink = $(paragraphForFirstLink).append(linkObjectClone);
-	$("#window-for-links-of-witnesses").append(paragraphWithFirstLink);
-	$(linksOfParticularFragment).each(function(){
-		let paragraph = $("<p>→ </p>");
-		let actualLinkObject = $(this).clone();
-		let paragraphWithLink = $(paragraph).append(actualLinkObject);
-		$("#window-for-links-of-witnesses").append(paragraphWithLink);
-	});
-});
+};
 
 	var that = {};
 	return that;
