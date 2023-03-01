@@ -2,8 +2,8 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!-- Suchbegriffe: exp 2 / Ps 2: / faciendum / parallele Darstellung / unentschieden / Trennungslinie / Position (in der Handschrift) --> 
-<!-- Suchbegriffe: Textkritik / Quellenkritik / Kommentar / Übersetzung / Alternative / SD (= Septuaginta-Deutsch) / Syrisch -->
+<!-- Suchbegriffe: exp 2: Ps 2: faciendum: parallele Darstellung: unentschieden: Trennungslinie: Position (in einer Handschrift: --> 
+<!-- Suchbegriffe: Katene: Textkritik:  Quellenkritik: Kommentar: Übersetzung: Alternative: SD (= Septuaginta-Deutsch): Syrisch: -->
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <!-- Expositiones revidiert bis zum Ende -->
@@ -2448,6 +2448,7 @@
                      </app>
                      <note type="textual-commentary"><p>Syrische Übersetzung (Epitome): Eine
                            inhaltliche Parallele ist zu finden.</p></note>
+                     <!-- faciendum: Quellenkritik: P1 hat Hieronymus und Athanasius zusammengeflickt -->
                   </div>
                </div>
                <div xml:lang="de" type="translation">
@@ -5530,10 +5531,9 @@
                      <app type="text">
                         <lem><foreign xml:lang="grc">τὴν φίλα τῷ θεῷ πράττουσαν
                            ψυχὴν</foreign></lem>
-                        <rdg wit="#P1"><foreign xml:lang="grc">τὴν φιλοκατορθουμένην
-                           ψυχὴν</foreign></rdg>
                         <wit>Paris. gr. 166-167</wit>
-                        <rdg wit="#B1">τὴν φιλοθέως κατορθουμένην ψυχὴν</rdg>
+                        <rdg wit="#P1 #B1">τὴν φιλοθέως κατορθουμένην ψυχὴν</rdg>
+                        <wit>Paris. gr. 166-167</wit>
                         <wit>Oxon. Bodl. Auct. D. 4. 1.</wit>
                         <rdg wit="#A2 #V4"><foreign xml:lang="grc">τῆι φιλα θεῶι κατορθούσηι
                               ψυχῆι</foreign></rdg>
@@ -5718,11 +5718,6 @@
                         <wit>Paris. gr. 146</wit>
                         <wit>Flor. Med. Laurent. Plut. 6. 3</wit>
                         <wit>Mediolan. Ambros. C 98 sup.</wit>
-                     </app>
-                     <app type="text">
-                        <lem><foreign xml:lang="grc">ὅπλῳ</foreign></lem>
-                        <rdg wit="#P1"><foreign xml:lang="grc">ὅπλα</foreign></rdg>
-                        <wit>Paris. gr. 166-167</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">περιφράττων</foreign></lem>
