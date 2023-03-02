@@ -44,7 +44,7 @@ version="2.0">
                 </p>
                 <p class="publisher">FWF Project 32988</p>
                 <p class="license">Available under the Creative Commons Attribution 4.0 International (CC BY 4.0)</p>
-                <p class="date">2022-07-24</p>
+                <p class="date">2023-03-02</p>
             </div>
             <div id="main-content-body">
                 <div class="header-centered">Text, Übersetzung, Kommentar</div>
@@ -321,6 +321,9 @@ version="2.0">
 <xsl:template match="tei:p[parent::tei:div[@type = 'commentary']/parent::tei:div[@xml:lang = 'grc']]">
     <div class="row">
         <div class="col-md-2">
+            <xsl:element name="a">
+                <xsl:attribute name="id" select="@xml:id"/>
+            </xsl:element>
             <b>
                 <xsl:text>Expositio </xsl:text>
                 <xsl:value-of select="@n"/>

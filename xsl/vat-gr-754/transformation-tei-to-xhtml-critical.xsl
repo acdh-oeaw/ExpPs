@@ -48,7 +48,7 @@
             <xsl:value-of select="tei:fileDesc/tei:publicationStmt/tei:availability"/>
         </p>
         <p class="date">
-            <xsl:value-of select="tei:fileDesc/tei:publicationStmt/tei:date"/>
+            <xsl:value-of select="'2023-03-02'"/>
         </p>
         <p class="link-to-facsimiles">
             <xsl:text>The facsimiles of the manuscript are available: </xsl:text>
@@ -728,6 +728,17 @@
                 <xsl:element name="b">
                     <xsl:value-of select="child::tei:quote[@type = 'patristic']/@source"/>
                 </xsl:element>
+                <xsl:if test="exists(self::tei:seg/@copyOf)">
+                    <xsl:text> (→ </xsl:text>
+                    <xsl:element name="a">
+                        <xsl:attribute name="href">
+                            <xsl:text>../edition/edition_ps_1-10.html#</xsl:text>
+                            <xsl:value-of select="substring-after(self::tei:seg/@copyOf,'#edition:')"/>
+                        </xsl:attribute>
+                        <xsl:text>Edition</xsl:text>
+                    </xsl:element>
+                    <xsl:text>)</xsl:text>
+                </xsl:if>
             </xsl:element>
             <xsl:element name="p">
                 <xsl:attribute name="class" select="'paragraph-in-commentaryfragment'"/>
@@ -1397,6 +1408,17 @@
         </xsl:if>
         <xsl:if test="exists(@prev)">
             <xsl:text> (continued)</xsl:text>
+        </xsl:if>
+        <xsl:if test="exists(parent::tei:seg/@copyOf)">
+            <xsl:text> (→ </xsl:text>
+                <xsl:element name="a">
+                    <xsl:attribute name="href">
+                        <xsl:text>../edition/edition_ps_1-10.html#</xsl:text>
+                        <xsl:value-of select="substring-after(parent::tei:seg[@type = 'commentaryfragment' or @type = 'hypothesis']/@copyOf,'#edition:')"/>
+                    </xsl:attribute>
+                    <xsl:text>Edition</xsl:text>
+                </xsl:element>
+            <xsl:text>)</xsl:text>
         </xsl:if>
         <xsl:text>]</xsl:text>
     </xsl:template>
