@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../schema/tei-psalmcatenae.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <!-- Katene: zwischen 8r und 9r ist ein Blatt ausgefallen -->
+<!-- faciendum: Textkritik: feinere Kollation -->
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -1720,130 +1721,142 @@
                      <quote type="patristic" subtype="quotation" xml:id="par-gr-166-quot-6-2"
                         corresp="#person-2" source="Athanasius, exp. in Ps 6,2">οὐ τὸν ἔλεγχον
                         παραιτεῖται, ἀλλὰ τὸν μετὰ θυμοῦ· οὐδὲ τὴν παιδείαν, ἀλλὰ τὴν μετ’ ὀργῆς· </quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-6-10" type="identical">Vat. gr.
-                        754</ref>
+                     <ref target="vat-gr-754:vat-gr-754-fr-6-10" type="identical">Vat. gr. 754</ref>
                   </seg>
+                  <note type="lemma">Ps 6,3a</note>
                   <seg type="commentaryfragment" xml:id="par-gr-166-fr-6-3"
                      corresp="#par-gr-166-ps-6-3a" source="Anonymous">
-                     <quote type="patristic" xml:id="par-gr-166-quot-6-3" corresp="#person-2"
+                     <quote type="patristic" subtype="quotation" corresp="#person-2"
                         source="Athanasius, exp. in Ps 6,3a">πάσα γὰρ ψυχὴ, οὐ πρότερον εἰς ἁμαρτίαν
-                        πίπτει, πρὶν τῆς ἰσχῦος ἐνδῷ· </quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-6-XXX" type="identical">Vat. gr.
-                        754</ref>
+                        πίπτει, πρὶν τῆς ἰσχῦος ἐνδῶ· </quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-6-11" type="identical">Vat. gr. 754</ref>
                   </seg>
                </ab>
             </div>
             <pb n="11v" facs="https://gallica.bnf.fr/ark:/12148/btv1b525131059/f30.item"/>
             <div type="commentary" subtype="commentary">
                <ab xml:lang="grc">
+                  <note type="lemma">Ps 6,3b–4a</note>
                   <seg type="commentaryfragment" xml:id="par-gr-166-fr-6-4"
                      corresp="#par-gr-166-ps-6-3b" source="Theodoretus">
-                     <quote type="patristic" xml:id="par-gr-166-quot-6-4" corresp="#person-2"
-                        source="Athanasius, exp. in Ps 6,3b">ὀστᾶ φησὶν, νοῦς· διάνοια· σάρξ· αἱ τῆς
-                        ψυχῆς δηλονότι δυνάμεις· </quote>. <ref
-                        target="vat-gr-754:vat-gr-754-fr-6-XXX vat-gr-754:vat-gr-754-fr-6-XXX"
-                        type="expanded">Vat. gr. 754</ref>
+                     <quote type="patristic" subtype="paraphrase-abbreviated/quotation"
+                        xml:id="par-gr-166-quot-6-4" corresp="#person-2"
+                        source="Theodoretus, comm. (?) in Ps 6,3b–4a (PG 80,904 A9–13 sub Ps 6,4) - Athanasius, exp. in Ps 6,3b–4a"
+                        >ὀστᾶ φησὶν, νοῦς· διάνοια· σάρξ· / αἱ τῆς ψυχῆς δηλονότι δυνάμεις·
+                     </quote>. <ref target="vat-gr-754:vat-gr-754-fr-6-13"
+                        type="abbreviated-with-variations">Vat. gr. 754</ref><ref
+                        target="vat-gr-754:vat-gr-754-fr-6-12" type="identical">Vat. gr.
+                        754</ref><note type="attribution"><foreign xml:lang="grc"
+                           >Θεοδ(ω)ρ(ήτου)</foreign></note>
                   </seg>
+                  <note type="lemma">Ps 6,4b</note>
                   <seg type="commentaryfragment" xml:id="par-gr-166-fr-6-5"
                      corresp="#par-gr-166-ps-6-4b" source="Athanasius">
-                     <quote type="patristic" xml:id="par-gr-166-quot-6-5" corresp="#person-2"
-                        source="Athanasius, exp. in Ps 6,4b">τῆς πολυχρόνου μετανοίας τὸ ῥῆμα
-                        παραστατικόν·</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-6-XXX" type="identical">Vat. gr.
-                        754</ref>
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-166-quot-6-5"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 6,4b">τῆς πολυχρόνου
+                        μετανοίας τὸ ῥῆμα παραστατικόν·</quote><note type="attribution"><foreign
+                           xml:lang="grc">Ἀθ(α)ν(α)σ(ίου)</foreign></note>
+                     <ref target="vat-gr-754:vat-gr-754-fr-6-14" type="identical">Vat. gr. 754</ref>
                   </seg>
+                  <note type="lemma">Ps 6,5a</note>
                   <seg type="commentaryfragment" xml:id="par-gr-166-fr-6-6"
                      corresp="#par-gr-166-ps-6-5a" source="Anonymous">
-                     <quote type="patristic" xml:id="par-gr-166-quot-6-6" corresp="#person-2"
+                     <quote type="patristic" subtype="quotation" corresp="#person-2"
                         source="Athanasius, exp. in Ps 6,5a">ὡς ἀπεστραμμένου αὐτοῦ δηλονότι διὰ τὴν
                         ἁμαρτίαν·</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-6-XXX" type="identical">Vat. gr.
-                        754</ref>
+                     <ref target="vat-gr-754:vat-gr-754-fr-6-15" type="identical">Vat. gr. 754</ref>
                   </seg>
+                  <note type="lemma">Ps 6,5b</note>
                   <seg type="commentaryfragment" xml:id="par-gr-166-fr-6-7"
                      corresp="#par-gr-166-ps-6-5b" source="Anonymous">
-                     <quote type="patristic" xml:id="par-gr-166-quot-6-7" corresp="#person-2"
+                     <quote type="patristic" subtype="quotation" corresp="#person-2"
                         source="Athanasius, exp. in Ps 6,5b">ἅπαν γὰρ τὸ τῆς σωτηρίας ἡμ<add
-                           place="overstrike" hand="#m1">ῶ</add>ν, τῷ ἐλέῳ ἀναθετ<subst hand="#m1">
+                           place="overstrike">ῶ</add>ν, τῶ ἐλέω ἀναθετ<subst>
                            <del rend="overwrite" cert="medium">ε</del>
                            <add place="inline">α</add>
-                        </subst>ῖον τ<subst hand="#m1">
+                        </subst>ῖον τ<subst>
                            <del rend="overwrite">ῶ</del>
                            <add place="inline">οῦ</add>
                         </subst> θε<subst>
                            <del rend="erasure">ῶ</del>
                            <add place="inline">οῦ</add>
                         </subst>·</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-6-XXX" type="identical">Vat. gr.
-                        754</ref>
+                     <ref target="vat-gr-754:vat-gr-754-fr-6-16" type="identical">Vat. gr. 754</ref>
                   </seg>
+                  <note type="lemma">Ps 6,6</note>
                   <seg type="commentaryfragment" xml:id="par-gr-166-fr-6-8"
                      corresp="#par-gr-166-ps-6-6a" source="Anonymous">
-                     <quote type="patristic" xml:id="par-gr-166-quot-6-8" corresp="#person-2"
-                        source="Athanasius, exp. in Ps 6,6a">ἐπειδὴ μακρός μοι γέγονε φησὶν ὁ τῆς
-                        μετανοίας καιρὸς, δέδοικα μὴ φθάσει τὸν παρὰ σοῦ ἔλεον ὁ θάνατος· ἐν ᾧ τὰ
-                        τῆς ἐξομολογήσεως οὐκ ἔστιν· τούτου χάριν ἐπιταχύναι τὸν ἔλεον αἰτῶ·</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-6-XXX" type="identical">Vat. gr.
-                        754</ref>
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-166-quot-6-8"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 6,6a">ἐπειδὴ μακρός μοι
+                        γέγονε φησὶν ὁ τῆς μετανοίας καιρὸς, δέδοικα μὴ φθάσει τὸν παρασοῦ ἔλεον ὁ
+                        θάνατος· ἐν ὧ τὰ τῆς ἐξομολογήσεως οὐκέστιν· τούτου χάριν ἐπιταχύναι τὸν
+                        ἔλεον αἰτῶ·</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-6-17" type="identical">Vat. gr. 754</ref>
                   </seg>
+                  <note type="lemma">Ps 6,7a</note>
                   <seg type="commentaryfragment" xml:id="par-gr-166-fr-6-9"
                      corresp="#par-gr-166-ps-6-7a" source="Anonymous">
                      <quote type="patristic" subtype="paraphrase-abbreviated"
                         xml:id="par-gr-166-quot-6-9" corresp="#person-29"
-                        source="Iohannes Chrys., exp. in Ps. 6 (cf. PG 55,76 in Ps 6,7)"/>
+                        source="Iohannes Chrys., exp. in Ps. 6 (cf. PG 55,76, l. 34–48; in Ps 6,7) in Ps 6,7a - non habet Vat. gr. 754"
+                     /><!-- faciendum: Quellenkritik: Zitat exakter abgränzen -->
                   </seg>
                </ab>
             </div>
             <pb n="12r" facs="https://gallica.bnf.fr/ark:/12148/btv1b525131059/f31.item"/>
             <div type="commentary" subtype="commentary">
                <ab xml:lang="grc">
+                  <note type="lemma">Ps 6,7b</note>
                   <seg type="commentaryfragment" xml:id="par-gr-166-fr-6-10"
                      corresp="#par-gr-166-ps-6-7b" source="Anonymous">
-                     <quote type="patristic" xml:id="par-gr-166-quot-6-10" corresp="#person-2"
-                        source="Athanasius, exp. in Ps 6,7b">ἀντὶ μιᾶς φησὶ νυκτὸς, καθ’ ἣν τὴν
-                        ἁμαρτίαν ἐποίησα πολλὰς διετέλεσα νύκτας δάκρυσι βρέχων τὴν στρομνήν
-                        μου·</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-6-XXX" type="identical">Vat. gr.
-                        754</ref>
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-166-quot-6-10"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 6,7b–c">ἀντὶ μιᾶς φη(σὶ)
+                        νυκτὸς, καθἣν τὴν ἁμαρτίαν ἐποί<unclear reason="faded">η</unclear>σα<unclear
+                           reason="faded">,</unclear> πολλὰς διετέλεσα νύκτας δάκρυσι βρέχων τὴν
+                        στρομνήν μου·</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-6-19" type="identical">Vat. gr. 754</ref>
                   </seg>
+                  <note type="lemma">Ps 6,7c–8a</note>
                   <seg type="commentaryfragment" xml:id="par-gr-166-fr-6-11"
-                     corresp="#par-gr-166-ps-6-8a" source="Anonymous">
-                     <quote type="patristic" xml:id="par-gr-166-quot-6-11"
-                        corresp="#person-18 #person-2"
-                        source="fons ignotus in Ps 6,8a - Athanasius, exp. in Ps 6,8a">ἐφλέγμανεν
-                        ἀπὸ δακρύων μου ὁ <sic>ὁφθαλμός</sic> μου· ὀφθαλμὸν δὲ τὸν νοῦν λέγει·
+                     corresp="#par-gr-166-ps-6-7c" source="Anonymous">
+                     <quote type="patristic" subtype="unknown/paraphrase-expanded"
+                        xml:id="par-gr-166-quot-6-11" corresp="#person-18 #person-2"
+                        source="fons ignotus in Ps 6,8a (ineditum?); non habet Vat. gr. 754 - Athanasius, exp. in Ps 6,8a"
+                        >ἐφλέγμανεν ἀπὸ δακρύων μου ὁ ὁφθαλμός μου· / ὀφθαλμὸν δὲ τὸν νοῦν λέγει·
                         ἐπειδὴ ὁ ὀφθαλμὸς τῆς ψυχῆς ἐστὶν, ὁ νοῦς·</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-6-XXX" type="expanded-with-variations"
+                     <ref target="vat-gr-754:vat-gr-754-fr-6-20" type="expanded-with-variations"
                         >Vat. gr. 754</ref>
                   </seg>
+                  <note type="lemma">Ps 6,8b</note>
                   <seg type="commentaryfragment" xml:id="par-gr-166-fr-6-12"
                      corresp="#par-gr-166-ps-6-8b" source="Anonymous">
-                     <quote type="patristic" xml:id="par-gr-166-quot-6-12" corresp="#person-2"
+                     <quote type="patristic" subtype="quotation" corresp="#person-2"
                         source="Athanasius, exp. in Ps 6,8b">ἐνταῦθα τὸν χρόνον δηλοῖ τῆς
                         κακοπαθείας·</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-6-XXX" type="identical">Vat. gr.
-                        754</ref>
+                     <ref target="vat-gr-754:vat-gr-754-fr-6-26" type="identical">Vat. gr. 754</ref>
                   </seg>
                </ab>
             </div>
             <pb n="12v" facs="https://gallica.bnf.fr/ark:/12148/btv1b525131059/f32.item"/>
             <div type="commentary" subtype="commentary">
                <ab xml:lang="grc">
+                  <note type="lemma">Ps 6,9–11</note>
                   <seg type="commentaryfragment" xml:id="par-gr-166-fr-6-13"
-                     corresp="#par-gr-166-ps-6-9a" source="Δο(?)">
-                     <quote type="patristic" subtype="paraphrase" xml:id="par-gr-166-quot-6-13"
-                        corresp="#person-2 #person-29"
-                        source="Athanasius, exp. in Ps 6,9a - Iohannes Chrys., exp. in Ps. 6 (cf. PG 55,78 in Ps 6,9–10)"
-                        >ὡς ἤδη εἰσακουσθεὶς, μακρὸν κατὰ τῶν ἐχθρῶν συνείρει λόγον· ...</quote>
+                     corresp="#par-gr-166-ps-6-9a" source="Anonymous">
+                     <quote type="patristic" subtype="quotation/paraphrase-abbreviated"
+                        xml:id="par-gr-166-quot-6-13" corresp="#person-2 #person-28"
+                        source="Athanasius, exp. in Ps 6,9–11 - Iohannes Chrys., exp. in Ps. 6 (= PG 27,77 C1–4; cf. PG 55,78, l. 36–47; in Ps 6,9–10); non habet Vat. gr. 754 – fons ignotus in Ps 6,9–10 (= PG 27,77 C4–7); non habet Vat. gr. 754"
+                        >ὡς ἤδη εἰσακουσθεὶς, μακρὸν κατὰ τῶν ἐχθρῶν συνείρει λόγον·
+                     ...</quote><!-- faciendum: Quellenkritik: Zitat exakter abgränzen -->
                   </seg>
-                  <!-- 7 --><quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-1"
+                  <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-1"
                      n="Ps (LXX) 7,1" xml:lang="grc" xml:id="par-gr-166-ps-7-1"> Ψαλμὸς τῷ Δαυιδ, ὃν
                      ᾖσεν τῷ κυρίῳ ὑπὲρ τῶν λόγων Χουσι υἱοῦ Ιεμενι. </quote>
                </ab>
             </div>
+            <!-- Ps 7 bibletext -->
             <div type="bibletext" subtype="commented" xml:id="par-gr-166-7-1">
                <ab xml:id="par-gr-166-7-2" xml:lang="grc">
-                  <pb n="13r"/>
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-2"
                      n="Ps (LXX) 7,2" xml:lang="grc" xml:id="par-gr-166-ps-7-2">
                      <anchor xml:id="par-gr-166-ps-7-2a" type="psalmtext" n="Ps (LXX) 2,2a"
@@ -1858,13 +1871,11 @@
                      ψυχήν μου <anchor xml:id="par-gr-166-ps-7-3b" type="psalmtext"
                         n="Ps (LXX) 7,3b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-3"/> μὴ ὄντος
                      λυτρουμένου μηδὲ σῴζοντος. </quote>
-                  <pb n="13v"/>
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-4"
                      n="Ps (LXX) 7,4" xml:lang="grc" xml:id="par-gr-166-ps-7-4">
                      <anchor xml:id="par-gr-166-ps-7-4a" type="psalmtext" n="Ps (LXX) 7,4a"
                         corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-4"/> κύριε ὁ θεός μου, εἰ ἐποίησα
-                     τοῦτο, <pb n="14r"/>
-                     <anchor xml:id="par-gr-166-ps-7-4b" type="psalmtext" n="Ps (LXX) 7,4b"
+                     τοῦτο, <anchor xml:id="par-gr-166-ps-7-4b" type="psalmtext" n="Ps (LXX) 7,4b"
                         corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-4"/> εἰ ἔστιν ἀδικία ἐν χερσίν
                      μου, </quote>
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-5"
@@ -1883,9 +1894,8 @@
                      καταπατήσαι εἰς γῆν τὴν ζωήν μου <anchor xml:id="par-gr-166-ps-7-6c"
                         type="psalmtext" n="Ps (LXX) 7,6c"
                         corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-6"/> καὶ τὴν δόξαν μου εἰς χοῦν
-                     κατασκηνώσαι. <pb n="14r"/>
-                     <anchor xml:id="par-gr-166-ps-7-6d" type="psalmtext" n="Ps (LXX) 7,6d"
-                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-6"/> διάψαλμα. </quote>
+                     κατασκηνώσαι. <anchor xml:id="par-gr-166-ps-7-6d" type="psalmtext"
+                        n="Ps (LXX) 7,6d" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-6"/> διάψαλμα. </quote>
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-7"
                      n="Ps (LXX) 7,7" xml:lang="grc" xml:id="par-gr-166-ps-7-7">
                      <anchor xml:id="par-gr-166-ps-7-7a" type="psalmtext" n="Ps (LXX) 7,7a"
@@ -1917,10 +1927,9 @@
                         corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-10"/> συντελεσθήτω δὴ πονηρία
                      ἁμαρτωλῶν, <anchor xml:id="par-gr-166-ps-7-10b" type="psalmtext"
                         n="Ps (LXX) 7,10b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-10"/> καὶ
-                     κατευθυνεῖς δίκαιον· <pb n="14v"/>
-                     <anchor xml:id="par-gr-166-ps-7-10c" type="psalmtext" n="Ps (LXX) 7,10c"
-                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-10"/> ἐτάζων καρδίας καὶ νεφροὺς
-                     ὁ θεός. </quote>
+                     κατευθυνεῖς δίκαιον· <anchor xml:id="par-gr-166-ps-7-10c" type="psalmtext"
+                        n="Ps (LXX) 7,10c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-10"/> ἐτάζων
+                     καρδίας καὶ νεφροὺς ὁ θεός. </quote>
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-11"
                      n="Ps (LXX) 7,11" xml:lang="grc" xml:id="par-gr-166-ps-7-11">
                      <anchor xml:id="par-gr-166-ps-7-11a" type="psalmtext" n="Ps (LXX) 7,11a"
@@ -1932,18 +1941,16 @@
                      n="Ps (LXX) 7,12" xml:lang="grc" xml:id="par-gr-166-ps-7-12">
                      <anchor xml:id="par-gr-166-ps-7-12a" type="psalmtext" n="Ps (LXX) 7,12a"
                         corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-12"/> ὁ θεὸς κριτὴς δίκαιος καὶ
-                     ἰσχυρὸς καὶ μακρόθυμος <pb n="5v"/>
-                     <anchor xml:id="par-gr-166-ps-7-12b" type="psalmtext" n="Ps (LXX) 7,12b"
-                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-12"/> μὴ ὀργὴν ἐπάγων καθ’
-                     ἑκάστην ἡμέραν. </quote>
+                     ἰσχυρὸς καὶ μακρόθυμος <anchor xml:id="par-gr-166-ps-7-12b" type="psalmtext"
+                        n="Ps (LXX) 7,12b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-12"/> μὴ ὀργὴν
+                     ἐπάγων καθ’ ἑκάστην ἡμέραν. </quote>
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-13"
                      n="Ps (LXX) 7,13" xml:lang="grc" xml:id="par-gr-166-ps-7-13">
                      <anchor xml:id="par-gr-166-ps-7-13a" type="psalmtext" n="Ps (LXX) 7,13a"
                         corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-13"/> ἐὰν μὴ ἐπιστραφῆτε, τὴν
-                     ῥομφαίαν αὐτοῦ στιλβώσει· <pb n="5v"/>
-                     <anchor xml:id="par-gr-166-ps-7-13b" type="psalmtext" n="Ps (LXX) 7,13b"
-                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-13"/> τὸ τόξον αὐτοῦ ἐνέτεινεν
-                     καὶ ἡτοί<pb n="15r"/>μασεν αὐτὸ </quote>
+                     ῥομφαίαν αὐτοῦ στιλβώσει· <anchor xml:id="par-gr-166-ps-7-13b" type="psalmtext"
+                        n="Ps (LXX) 7,13b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-13"/> τὸ τόξον
+                     αὐτοῦ ἐνέτεινεν καὶ ἡτοίμασεν αὐτὸ </quote>
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-14"
                      n="Ps (LXX) 7,14" xml:lang="grc" xml:id="par-gr-166-ps-7-14">
                      <anchor xml:id="par-gr-166-ps-7-14a" type="psalmtext" n="Ps (LXX) 7,14a"
@@ -1972,7 +1979,6 @@
                      εἰς κεφαλὴν αὐτοῦ, <anchor xml:id="par-gr-166-ps-7-17b" type="psalmtext"
                         n="Ps (LXX) 7,17b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-17"/> καὶ ἐπὶ
                      κορυφὴν αὐτοῦ ἡ ἀδικία αὐτοῦ καταβήσεται. </quote>
-                  <pb n="15v"/>
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-7-18"
                      n="Ps (LXX) 7,18" xml:lang="grc" xml:id="par-gr-166-ps-7-18">
                      <anchor xml:id="par-gr-166-ps-7-18a" type="psalmtext" n="Ps (LXX) 7,18a"
@@ -1982,229 +1988,254 @@
                      τῷ ὀνόματι κυρίου τοῦ ὑψίστου. </quote>
                </ab>
             </div>
+            <!-- Ps 7 commentary -->
             <div type="commentary" subtype="commentary" xml:id="par-gr-166-7-3">
                <ab xml:id="par-gr-166-7-4" xml:lang="grc">
-                  <!-- 7-hyp. -->
-                  <seg type="commentaryfragment" xml:id="par-gr-166-fr-7-1"
-                     corresp="#par-gr-166-ps-7-1" source="Athanasius">
-                     <quote type="patristic" xml:id="par-gr-166-quot-7-1" corresp="#person-2"
-                        source="Athanasius, exp. in Ps 7,1">Ἀρχιέτερος τοῦ Δαυῒδ ὁ Χουσί· ὃς
-                        ἀποστέλλεται παρὰ τοῦ Δαυῒδ πρὸς Ἀβεσαλώμ ἐπὶ τὸ ἀντιπράξαι τῷ Ἀχιτώφελ·
-                        βουλᾶς εἰσηγουμένῳ κατὰ τοῦ Δαυΐδ· ὃς καὶ ἀπελθὼν, καὶ προδοσίαν
-                        ὑποκρινάμενος· βουλῆς προστεθήσεις παρὰ τοῦ Ἀβεσαλὼμ, αὐτῷ τὲ τῷ Χουσὶ· καὶ
-                        τῷ Ἀχιτώφελ· καὶ τοῦ μὲν` κελεύοντος ἐπιδιώκειν τοῦ Ἀχιτώφελ· τοῦ δὲ`, μὴ`
-                        τοῦ Χουσί· οὐ γὰρ δῆ ἀπράκτως φησὶν ἐπιέναι ἀνδρὶ ἐπισταμένῳ || τὰ πολέμια·
-                        καὶ τούτῳ τῷ λόγῳ διασώσαντος τὸν Δαυΐδ· ὡς ἂν μὴ ἀνθρωπίνης ἐπικουρίας
-                        σωζόμενος, τῷ θεῷ τὴν ὑπὲρ τούτων εὐχαριστήριον ὠδὴν ἀναπέμπει· τὸ πᾶν
-                        ἐκείνῃ τῇ χάριτι ἀνατιθεὶς· ἀνθρώπων δὲ οὐδενί·</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="identical">Vat. gr.
-                        754</ref>
+                  <pb n="12v–13r"/>
+                  <note type="lemma">Ps 7,1</note>
+                  <seg type="hypothesis" xml:id="par-gr-166-fr-7-1" corresp="#par-gr-166-ps-7-1a"
+                     source="Athanasius">
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-166-quot-7-1"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 7,1">Ἀρχιέτερος τοῦ Δαυῒδ
+                        ὁ Χουσί· ὃς ἀποστέλλεται παρὰ τοῦ Δαυῒδ πρὸς Ἀβεσαλώμ ἐπι τὸ ἀντιπράξαι τῶ
+                        Ἀχιτώφελ· βουλᾶς εἰσηγουμένω κατὰ τοῦ Δαυΐδ· ὃς καὶ ἀπελθὼν, καὶ προδοσίαν
+                        ὑπὸκρινάμενος· βουλῆς προὸστεθήσεις παρὰ τοῦ Ἀβεσαλὼμ, αὐτῶ τὲ τῶ Χουσὶ· καὶ
+                        τῶ Ἀχιτώφελ· καὶ τοῦ μὲν` κελεύοντος ἐπιδιώκειν τοῦ Ἀχιτώφελ· τοῦ δὲ`, μὴ`
+                        τοῦ Χουσί· οὐ γὰρ δῆ ἀπράκτως φη(σὶν) ἐπιέναι ἀνδρὶ ἐπισταμένω || τὰ
+                        πολέμια· καὶ τούτω τῶ λόγω διὰσώσαντος τὸν Δαυΐδ· ὡς ἂν μὴ ἀνθρωπίνης
+                        ἐπικουρίας σωζόμενος, τῶ θεῶ τὴν ὑπὲρ τούτων εὐχαριστήριον ὠδὴν ἀναπέμπει·
+                        τὸ πᾶν ἐκείνη τῆ χάριτι ἀνατιθεὶς· ἀνθρώπων δὲ οὐδενί·</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-7-1" type="identical">Vat. gr.
+                        754</ref><note type="attribution"><foreign xml:lang="grc"
+                           >Ἀθ(α)ν(α)σ(ίου)</foreign></note>
                   </seg>
                </ab>
             </div>
             <pb n="13r" facs="https://gallica.bnf.fr/ark:/12148/btv1b525131059/f33.item"/>
             <div type="commentary" subtype="commentary">
                <ab xml:lang="grc">
+                  <note type="lemma">Ps 7,2a–b1</note>
                   <seg type="commentaryfragment" xml:id="par-gr-166-fr-7-2"
                      corresp="#par-gr-166-ps-7-2a" source="Athanasius">
-                     <quote type="patristic" xml:id="par-gr-166-quot-7-2" corresp="#person-2"
-                        source="Athanasius, exp. in Ps 7,2a">ἐπειδὴ ἀνθρώπῳ φησὶν περὶ σωτηρίας οὐ
+                     <quote type="patristic" subtype="quotation" corresp="#person-2"
+                        source="Athanasius, exp. in Ps 7,2–3">ἐπειδὴ ἀνθρώπω φησὶν περὶ σωτηρίας οὐ
                         θαρρῶ, εἰ καὶ τοῦ Χουσὶ οἱ λόγοι καλοῖ· σῶσον με καὶ ἐκ τῶν παρόντων μὲν
-                        ἐχθρῶν· μάλιστα δὲ ἀπὸ τοῦ ἐφεδρεύοντος νοητοῦ λέοντος τῇ ἡμετέρᾳ
+                        ἐχθρῶν· μάλιστα δὲ ἀπὸ τοῦ ἐφεδρεύοντος νοητοῦ λέοντος τῆ ἡμετέρα
                         ψυχή·</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="identical">Vat. gr.
-                        754</ref>
+                     <ref target="vat-gr-754:vat-gr-754-fr-7-10" type="identical">Vat. gr.
+                        754</ref><note type="attribution"><foreign xml:lang="grc"
+                           >Ἀθ(α)ν(α)σ(ίου)</foreign></note>
                   </seg>
+                  <pb n="13r–v"/>
+                  <note type="lemma">Ps 7,2b2–3</note>
                   <seg type="commentaryfragment" xml:id="par-gr-166-fr-7-3"
-                     corresp="#par-gr-166-ps-7-2" source="Basilius">
-                     <quote type="patristic" xml:id="par-gr-166-quot-7-3" corresp="#person-3"
-                        source="Basilius, hom. in Ps. 7"/>
-                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="identical">Vat. gr.
-                        754</ref>
+                     corresp="#par-gr-166-ps-7-2b" source="Basilius">
+                     <quote type="patristic" subtype="quotation-abbreviated" corresp="#person-3"
+                        source="Basilius, hom. in Ps. 7 (PG 29,232 B10–13; 232 D2–233 A2; in Ps 7,2) in Ps 7,2b2–3"/>
+                     <ref target="vat-gr-754:vat-gr-754-fr-7-11" type="identical">Vat. gr.
+                        754</ref><note type="attribution"><foreign xml:lang="grc">τοῦ ἁγ(ίου)
+                           Β(ασι)λ(είου)</foreign></note>
                   </seg>
                </ab>
             </div>
             <pb n="13v" facs="https://gallica.bnf.fr/ark:/12148/btv1b525131059/f34.item"/>
             <div type="commentary" subtype="commentary">
                <ab xml:lang="grc">
+                  <note type="lemma">Ps 7,4–5a</note>
                   <seg type="commentaryfragment" xml:id="par-gr-166-fr-7-4"
                      corresp="#par-gr-166-ps-7-5a" source="Athanasius">
-                     <quote type="patristic" xml:id="par-gr-166-quot-7-4" corresp="#person-2"
-                        source="Athanasius, exp. in Ps 7,5a">τὸ ἀμνησίκακον προβάλλεται·
-                        ἐκκαλούμενος δι’ αὐτοῦ εἰς ἔλεον τὸν θεόν·</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="identical">Vat. gr.
-                        754</ref>
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-166-quot-7-4"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 7,4–5">τὸ ἀμνησίκακον
+                        προβάλλεται· ἐκκαλούμενος δι’ αὐτοῦ εἰς ἔλεον τὸν θεόν·</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-7-9" type="identical">Vat. gr.
+                        754</ref><note type="attribution"><foreign xml:lang="grc"
+                           >Ἀθ(α)ν(α)σ(ίου)</foreign></note>
                   </seg>
+                  <note type="lemma">Ps 7,5b</note>
                   <seg type="commentaryfragment" xml:id="par-gr-166-fr-7-5"
                      corresp="#par-gr-166-ps-7-5b" source="Anonymous">
-                     <quote type="patristic" xml:id="par-gr-166-quot-7-5" corresp="#person-13"
-                        source="Origenes (?), fr. in Ps 7,5b"/>
-                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="identical">Vat. gr.
-                        754</ref>
+                     <quote type="patristic" xml:id="par-gr-166-quot-7-5" corresp="#person-32"
+                        source="Origenes, schol. (?) in Ps 7,5b (PG 12,1180 A10–13 = PG 27,80 A4–6)"/>
+                     <ref target="vat-gr-754:vat-gr-754-fr-7-18" type="identical">Vat. gr. 754</ref>
                   </seg>
+                  <note type="lemma">Ps 7,6a</note>
                   <seg type="commentaryfragment" xml:id="par-gr-166-fr-7-6"
                      corresp="#par-gr-166-ps-7-6a" source="Anonymous">
-                     <quote type="patristic" xml:id="par-gr-166-quot-7-6" corresp="#person-2"
-                        source="Athanasius, exp. in Ps 7,6a">ὃ λέγει τοιοῦτόν ἐστὶν· εἰ καὶ τὸ, καὶ
-                        τὸ, ἐποίησα, μὴ ἐλευθερωθείην τῆς ἁμαρτίας πρὸ τοῦ θανάτου·</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="abbreviated">Vat. gr.
-                        754</ref>
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-166-quot-7-6"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 7,6">ὃ λέγει τοιοῦτόν
+                        ἐστὶν· εἰ καὶ τὸ, καὶ τὸ, ἐποίησα, μὴ ἐλευθερωθείην τῆς ἁμαρτίας προ τοῦ
+                        θανάτου·</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-7-19" type="identical">Vat. gr. 754</ref>
                   </seg>
+                  <pb n="13v–14r"/>
+                  <note type="lemma">Ps 7,6b–c</note>
                   <seg type="commentaryfragment" xml:id="par-gr-166-fr-7-7"
                      corresp="#par-gr-166-ps-7-6b" source="Eusebius">
-                     <quote type="patristic" xml:id="par-gr-166-quot-7-7" corresp="#person-13"
-                        source="Origenes (?), fr. in Ps 7,6b–c"/>
-                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="identical">Vat. gr.
-                        754</ref>
-                  </seg>
+                     <quote type="patristic" xml:id="par-gr-166-quot-7-7" corresp="#person-32"
+                        source="Origenes, schol. (?) in Ps 7,6b–c (PG 12,1180 B10–15 = PG 23,124 B12–C2)"/>
+                     <ref target="vat-gr-754:vat-gr-754-fr-7-22" type="identical">Vat. gr. 754</ref>
+                  </seg><note type="attribution"><foreign xml:lang="grc"
+                     >Εὐσ(ε)β(ίου)</foreign></note>
                </ab>
             </div>
             <pb n="14r" facs="https://gallica.bnf.fr/ark:/12148/btv1b525131059/f35.item"/>
             <div type="commentary" subtype="commentary">
                <ab xml:lang="grc">
+                  <note type="lemma">Ps 7,7a–b</note>
                   <seg type="commentaryfragment" xml:id="par-gr-166-fr-7-8"
-                     corresp="#par-gr-166-ps-7-7b" source="Athanasius">
-                     <quote type="patristic" xml:id="par-gr-166-quot-7-8" corresp="#person-2"
-                        source="Athanasius, exp. in Ps 7,7b">τοῦτέστιν, ἐν τοῖς κραταιοῖς τῶν ἐχθρῶν
-                        μου· πέρατα γὰρ, τὰ ἄκρα δηλοῖ·</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="identical">Vat. gr.
-                        754</ref>
+                     corresp="#par-gr-166-ps-7-7a" source="Athanasius">
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-166-quot-7-8"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 7,7b">τοῦτέστιν, ἐν τοῖς
+                        κραταιοῖς τῶν ἐχθρῶν μου· πέρατα γὰρ, τὰ ἄκρα δηλοῖ·</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-7-17" type="identical">Vat. gr.
+                        754</ref><note type="attribution"><foreign xml:lang="grc"
+                           >Ἀθ(α)ν(α)σ(ίου)</foreign></note>
                   </seg>
+                  <note type="lemma">Ps 7,7c</note>
                   <seg type="commentaryfragment" xml:id="par-gr-166-fr-7-9"
                      corresp="#par-gr-166-ps-7-7c" source="Anonymous">
-                     <quote type="patristic" xml:id="par-gr-166-quot-7-9" corresp="#person-2"
-                        source="Athanasius, exp. in Ps 7,7c1">σαφῶς περὶ τῆς θεοφανείας τοῦ σωτῆρος
-                        διὰ τῶν παρόντων εὐαγγελίζεται·</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="identical">Vat. gr.
-                        754</ref>
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-166-quot-7-9"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 7,7c1">σαφῶς περὶ τῆς
+                        θεοφανείας τοῦ σωτῆρος διὰ τῶν παρόντων εὐαγγελίζεται·</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-7-23" type="identical">Vat. gr. 754</ref>
                   </seg>
+                  <note type="lemma">Ps 7,8a</note>
                   <seg type="commentaryfragment" xml:id="par-gr-166-fr-7-10"
                      corresp="#par-gr-166-ps-7-8a" source="Anonymous">
-                     <quote type="patristic" xml:id="par-gr-166-quot-7-10" corresp="#person-2"
-                        source="Athanasius, exp. in Ps 7,8a">σαφῶς διὰ τῶν παρόντων τῆς ἐκκλησίας,
-                        τὴν εἰς αὐτὸν πίστιν δηλοῖ·</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="identical">Vat. gr.
-                        754</ref>
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-166-quot-7-10"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 7,8a">σαφῶς διὰ τῶν
+                        παρόντων τῆς ἐκκλησίας, τὴν εἰς αὐτὸν πίστιν δηλοῖ·</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-7-26" type="identical">Vat. gr. 754</ref>
                   </seg>
+                  <note type="lemma">Ps 7,8b–9a</note>
                   <seg type="commentaryfragment" xml:id="par-gr-166-fr-7-11"
                      corresp="#par-gr-166-ps-7-8b" source="Anonymous">
-                     <quote type="patristic" xml:id="par-gr-166-quot-7-11" corresp="#person-2"
-                        source="Athanasius, exp. in Ps 7,8b">ταύτης μὲν τῆς συναγωγῆς δηλονότι· τὸ
-                        δὲ εἰς ὕψος, ἢ τὸν τίμιον αἱνίττεται σταυρὸν, εἰς ὃν ἀνήνεγκεν ἡμῶν τὰς
-                        ἁμαρτίας, ἢ τὴν εἰς οὐρανοὺς ἀναφοίτησιν· ἐπορεύθη γὰρ ἐμφανισθῆναι τῷ
-                        προσώπῳ τοῦ πατρὸς ὑπὲρ ἡμῶν·</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="identical">Vat. gr.
-                        754</ref>
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-166-quot-7-11"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 7,8b–9a">ταύτης μὲν τῆς
+                        συναγωγῆς δηλονότι· τὸ δὲ εἰς ὕψος, ἢ τὸν τίμιον αἱνίττεται σταυρὸν, εἰς ὃν
+                        ἀνήνεγκεν ἡμῶν τὰς ἁμαρτίας, ἢ τὴν εἰς οὐρανοὺς ἀναφοίτησιν· ἐπορεύθη γὰρ
+                        ἐμφανισθῆναι τῶ προσώπω τοῦ πατρὸς ὑπὲρ ἡμῶν·</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-7-27" type="identical">Vat. gr. 754</ref>
                   </seg>
+                  <note type="lemma">Ps 7,9b–c</note>
                   <seg type="commentaryfragment" xml:id="par-gr-166-fr-7-12"
                      corresp="#par-gr-166-ps-7-9b" source="Anonymous">
-                     <quote type="patristic" xml:id="par-gr-166-quot-7-12" corresp="#person-2"
+                     <quote type="patristic" subtype="quotation" corresp="#person-2"
                         source="Athanasius, exp. in Ps 7,9b">ἀξιοῖ πάλιν ἀπὸ τῶν ὄντων ἐχθρῶν,
-                        σωθῆναι· ἀφ’ ὧν ἔπραξαν τὸν ἔλεον ἐκκαλούμενος·</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="identical">Vat. gr.
-                        754</ref>
+                        σωθῆναι· ἀφ ὧν ἔπραξαν τὸν ἔλεον ἐκκαλούμενος·</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-7-31" type="identical">Vat. gr. 754</ref>
                   </seg>
                </ab>
             </div>
             <pb n="14v" facs="https://gallica.bnf.fr/ark:/12148/btv1b525131059/f36.item"/>
             <div type="commentary" subtype="commentary">
                <ab xml:lang="grc">
+                  <note type="lemma">Ps 7,10a–b</note>
                   <seg type="commentaryfragment" xml:id="par-gr-166-fr-7-13"
                      corresp="#par-gr-166-ps-7-10a" source="Anonymous">
-                     <quote type="patristic" xml:id="par-gr-166-quot-7-13" corresp="#person-13"
-                        source="Origenes (?), fr. in Ps 7,10a"/>
-                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="identical">Vat. gr.
-                        754</ref>
+                     <quote type="patristic" subtype="quotation" corresp="#person-32"
+                        source="Origenes, schol. (?) in Ps 7,10a (PG 12,1181 A4–6)"/>
+                     <ref target="vat-gr-754:vat-gr-754-fr-7-34" type="identical">Vat. gr.
+                        754</ref><note type="attribution"><foreign xml:lang="grc"
+                           >Εὐσ(ε)β(ίου)</foreign></note>
                   </seg>
+                  <note type="lemma">Ps 7,10c–11</note>
                   <seg type="commentaryfragment" xml:id="par-gr-166-fr-7-14"
                      corresp="#par-gr-166-ps-7-10c" source="Athanasius">
-                     <quote type="patristic" xml:id="par-gr-166-quot-7-14" corresp="#person-2"
-                        source="Athanasius, exp. in Ps 7,10c">ἐπειδὴ οἶδας φησὶν τῆς ἡμετέρας
-                        καρδίας τὰ κινήματα, τούτου χάριν τὴν βοήθειαν ἐξαιτῶ·</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="identical">Vat. gr.
-                        754</ref>
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-166-quot-7-14"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 7,10c–11">ἐπειδὴ οἶδας
+                        φησὶν τῆς ἡμετέρας καρδίας τὰ κινήματα, τούτου χάριν τὴν βοήθειαν
+                        ἐξαιτῶ·</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-7-35" type="identical">Vat. gr.
+                        754</ref><note type="attribution"><foreign xml:lang="grc"
+                           >Ἀθ(α)ν(α)σ(ίου)</foreign></note>
                   </seg>
+                  <note type="lemma">Ps 7,12</note>
                   <seg type="commentaryfragment" xml:id="par-gr-166-fr-7-15"
                      corresp="#par-gr-166-ps-7-12a" source="Anonymous">
                      <quote type="patristic" xml:id="par-gr-166-quot-7-15" corresp="#person-2"
-                        source="Athanasius, exp. in Ps 7,12a">σαφῶς διὰ τῶν τοιούτων, παρίστησι τὸ
+                        source="Athanasius, exp. in Ps 7,12–14">σαφῶς διὰ τῶν τοιούτων, παρίστησι τὸ
                         μακρόθυμον τοῦ θεοῦ· ἀναβολὴν μὲν ἔχοντος τῆς ἡμετέρας κολάσεως· οὐ μὴν
                         παντελεῖ συγγνώμην·</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="identical">Vat. gr.
-                        754</ref>
+                     <ref target="vat-gr-754:vat-gr-754-fr-7-36" type="identical">Vat. gr. 754</ref>
                   </seg>
+                  <note type="lemma">Ps 7,12</note>
                   <seg type="commentaryfragment" xml:id="par-gr-166-fr-7-16"
                      corresp="#par-gr-166-ps-7-13a" source="Eusebius">
-                     <quote type="patristic" xml:id="par-gr-166-quot-7-16" corresp="#person-13"
-                        source="Origenes (?), fr. in Ps 7,13–17"/>
-                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="identical">Vat. gr.
-                        754</ref>
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-166-quot-7-16"
+                        corresp="#person-32"
+                        source="Origenes, schol. (?) in Ps 7,13–17 (PG 12,1181 A8–10; cf. PG 23,125 B3–5)"/>
+                     <ref target="vat-gr-754:vat-gr-754-fr-7-37" type="identical">Vat. gr.
+                        754</ref><note type="attribution"><foreign xml:lang="grc"
+                           >Εὐσ(ε)β(ίου)</foreign></note>
                   </seg>
                </ab>
             </div>
             <pb n="15r" facs="https://gallica.bnf.fr/ark:/12148/btv1b525131059/f37.item"/>
             <div type="commentary" subtype="commentary">
                <ab xml:lang="grc">
+                  <note type="lemma">Ps 7,13–14a</note>
                   <seg type="commentaryfragment" xml:id="par-gr-166-fr-7-17"
-                     corresp="#par-gr-166-ps-7-14a" source="Anonymous">
-                     <quote type="patristic" xml:id="par-gr-166-quot-7-17" corresp="#person-13"
-                        source="Origenes (?), fr. in Ps 7,14a"/>
-                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="identical">Vat. gr.
-                        754</ref>
+                     corresp="#par-gr-166-ps-7-13a" source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-166-quot-7-17"
+                        corresp="#person-32"
+                        source="Origenes, schol. (?) in Ps 7,14a (PG 12,1181 A11–15)"/>
+                     <ref target="vat-gr-754:vat-gr-754-fr-7-44" type="identical">Vat. gr. 754</ref>
                   </seg>
+                  <note type="lemma">Ps 7,14b</note>
                   <seg type="commentaryfragment" xml:id="par-gr-166-fr-7-18"
                      corresp="#par-gr-166-ps-7-14b" source="Athanasius">
-                     <quote type="patristic" xml:id="par-gr-166-quot-7-18" corresp="#person-2"
-                        source="Athanasius, exp. in Ps 7,14b">βέλη μὲν τὴν τιμωρίαν· καιομένοις δὲ,
-                        τοῖς ἀξίοις πυρός·</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="identical">Vat. gr.
-                        754</ref>
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-166-quot-7-18"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 7,14b">βέλη μὲν τὴν
+                        τιμωρίαν· καιομένοις δὲ, τοῖς ἀξίοις πυρός·</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-7-45" type="identical">Vat. gr.
+                        754</ref><note type="attribution"><foreign xml:lang="grc"
+                           >Ἀθ(α)ν(α)σ(ίου)</foreign></note>
                   </seg>
+                  <note type="lemma">Ps 7,15a</note>
                   <seg type="commentaryfragment" xml:id="par-gr-166-fr-7-19"
                      corresp="#par-gr-166-ps-7-15a" source="Anonymous">
-                     <quote type="patristic" xml:id="par-gr-166-quot-7-19" corresp="#person-2"
-                        source="Athanasius, exp. in Ps 7,15a">ὁ ἐχθρὸς τῆς ἡμετέρας ζωῆς·</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="identical">Vat. gr.
-                        754</ref>
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-166-quot-7-19"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 7,15a">ὁ ἐχθρὸς τῆς
+                        ἡμετέρας ζωῆς·</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-7-58" type="identical">Vat. gr. 754</ref>
                   </seg>
+                  <note type="lemma">Ps 7,15b</note>
                   <seg type="commentaryfragment" xml:id="par-gr-166-fr-7-20"
                      corresp="#par-gr-166-ps-7-15b" source="Anonymous">
-                     <quote type="patristic" xml:id="par-gr-166-quot-7-20" corresp="#person-2"
-                        source="Athanasius, exp. in Ps 7,15b">τουτέστιν, καὶ βεβούλευται, καὶ εἰς
-                        ἔργον ἐξήγαγε τὰ σκέμματα·</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="identical">Vat. gr.
-                        754</ref>
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-166-quot-7-20"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 7,15b">τουτέστιν, καὶ
+                        βεβούλευται, καὶ εἰς ἔργον ἐξήγαγε τὰ σκέμματα·</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-7-59" type="identical">Vat. gr. 754</ref>
                   </seg>
+                  <note type="lemma">Ps 7,16a</note>
                   <seg type="commentaryfragment" xml:id="par-gr-166-fr-7-21"
                      corresp="#par-gr-166-ps-7-16a" source="Anonymous">
-                     <quote type="patristic" xml:id="par-gr-166-quot-7-21" corresp="#person-2"
-                        source="Athanasius, exp. in Ps 7,16a">θάνατον γὰρ κατασκευᾶσας κατὰ τοῦ
-                        σωτῆρος Χριστοῦ, θανάτῳ παραδίδοται·</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="identical">Vat. gr.
-                        754</ref>
-                  </seg>
-               </ab>
-            </div>
-            <pb n="15v" facs="https://gallica.bnf.fr/ark:/12148/btv1b525131059/f38.item"/>
-            <div type="commentary" subtype="commentary">
-               <ab xml:lang="grc">
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-166-quot-7-21"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 7,16–17a">θάνατον γὰρ
+                        κατὰσκευᾶσας κατὰ τοῦ σωτῆρος Χριστοῦ, θανάτω παραδιδοται·</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-7-61" type="identical">Vat. gr.
+                     754</ref></seg>
+                  <pb n="15r–v"/>
+                  <note type="lemma">Ps 7,16b–17</note>
                   <seg type="commentaryfragment" xml:id="par-gr-166-fr-7-22"
-                     corresp="#par-gr-166-ps-7-17b" source="Theodoretus">
-                     <quote type="patristic" xml:id="par-gr-166-quot-7-22"
-                        corresp="#person-18 #person-23"
-                        source="fons ignotus in Ps 7,17b - Evagrius, schol. in Ps 7,17b"/>
-                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX vat-gr-754:vat-gr-754-fr-7-XXX"
-                        type="identical">Vat. gr. 754</ref>
+                     corresp="#par-gr-166-ps-7-16b" source="Theodoretus">
+                     <quote type="patristic" subtype="quotation/" xml:id="par-gr-166-quot-7-22"
+                        corresp="#person-13 #person-21"
+                        source="Origenes (?), fr. in Ps 7,17b (PG 12,1181 C13–D5) - Evagrius, schol. nr. ι´ in Ps 7,17 (316 Rondeau – Géhin – Cassin)"/>
+                     <ref target="vat-gr-754:vat-gr-754-fr-7-65" type="identical">Vat. gr.
+                        754</ref><ref target="vat-gr-754:vat-gr-754-fr-7-" type="identical">Vat. gr.
+                        754</ref><note type="attribution"><foreign xml:lang="grc"
+                           >Θεοδ(ω)ρ(ήτου)</foreign></note>
                   </seg>
                </ab>
             </div>
+            <!-- Ps 8 bibletext -->
             <div type="bibletext" subtype="commented" xml:id="par-gr-166-8-1">
                <ab xml:id="par-gr-166-8-2" xml:lang="grc">
-                  <!-- ps 8 bibletext -->
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-1"
                      n="Ps (LXX) 8,1" xml:lang="grc" xml:id="par-gr-166-ps-8-1"> Εἰς τὸ τέλος, ὑπὲρ
                      τῶν ληνῶν· ψαλμὸς τῷ Δαυιδ. </quote>
-                  <pb n="13r"/>
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-2"
                      n="Ps (LXX) 8,2" xml:lang="grc" xml:id="par-gr-166-ps-8-2">
                      <anchor xml:id="par-gr-166-ps-8-2a" type="psalmtext" n="Ps (LXX) 8,2a"
@@ -2213,7 +2244,6 @@
                         type="psalmtext" n="Ps (LXX) 8,2b"
                         corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-2"/> ὅτι ἐπήρθη ἡ μεγαλοπρέπειά
                      σου ὑπεράνω τῶν οὐρανῶν. </quote>
-                  <pb n="16r"/>
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-3"
                      n="Ps (LXX) 8,3" xml:lang="grc" xml:id="par-gr-166-ps-8-3">
                      <anchor xml:id="par-gr-166-ps-8-3a" type="psalmtext" n="Ps (LXX) 8,3a"
@@ -2227,10 +2257,9 @@
                      n="Ps (LXX) 8,4" xml:lang="grc" xml:id="par-gr-166-ps-8-4">
                      <anchor xml:id="par-gr-166-ps-8-4a" type="psalmtext" n="Ps (LXX) 8,4a"
                         corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-4"/> ὅτι ὄψομαι τοὺς οὐρανούς,
-                     ἔργα τῶν δακτύλων σου, <pb n="16v"/>
-                     <anchor xml:id="par-gr-166-ps-8-4b" type="psalmtext" n="Ps (LXX) 8,4b"
-                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-4"/> σελήνην καὶ ἀστέρας, ἃ σὺ
-                     ἐθεμελίωσας. </quote>
+                     ἔργα τῶν δακτύλων σου, <anchor xml:id="par-gr-166-ps-8-4b" type="psalmtext"
+                        n="Ps (LXX) 8,4b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-4"/> σελήνην
+                     καὶ ἀστέρας, ἃ σὺ ἐθεμελίωσας. </quote>
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-5"
                      n="Ps (LXX) 8,5" xml:lang="grc" xml:id="par-gr-166-ps-8-5">
                      <anchor xml:id="par-gr-166-ps-8-5a" type="psalmtext" n="Ps (LXX) 8,5a"
@@ -2265,120 +2294,133 @@
                         corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-9"/> τὰ πετεινὰ τοῦ οὐρανοῦ καὶ
                      τοὺς ἰχθύας τῆς θαλάσσης, <anchor xml:id="par-gr-166-ps-8-9b" type="psalmtext"
                         n="Ps (LXX) 8,9b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-9"/> τὰ
-                     διαπορευόμενα τρίβους θαλασσῶν. <pb n="17r"/>
-                  </quote>
+                     διαπορευόμενα τρίβους θαλασσῶν. </quote>
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-8-10"
                      n="Ps (LXX) 8,10" xml:lang="grc" xml:id="par-gr-166-ps-8-10"> κύριε ὁ κύριος
                      ἡμῶν, ὡς θαυμαστὸν τὸ ὄνομά σου ἐν πάσῃ τῇ γῇ. </quote>
                </ab>
             </div>
+            <pb n="15v" facs="https://gallica.bnf.fr/ark:/12148/btv1b525131059/f38.item"/>
+            <!-- Ps 8 commentary -->
             <div type="commentary" subtype="commentary" xml:id="par-gr-166-8-3">
                <ab xml:id="par-gr-166-8-4" xml:lang="grc">
-                  <!-- ps 8 commentary -->
-                  <seg type="commentaryfragment" xml:id="par-gr-166-fr-8-1"
-                     corresp="#par-gr-166-ps-8-1" source="Athanasius">
-                     <quote type="patristic" xml:id="par-gr-166-quot-8-1" corresp="#person-2"
-                        source="Athanasius, exp. in Ps 8,1">Πάλαι μὲν ἐν τῇ νομικῇ λατρείᾳ, ἓν ἦν
-                        προλήνιον· τὸ θυσιαστήριον δηλονότι, τῷ ἐν τῷ ναῷ· μετὰ δὲ τὴν τῶν ἐθνῶν
-                        κλῆσιν, πολλοὶ ληνοῖ· αὗται δὲ ἂν εἴεν, αἱ ἐκκλησίαι· αἱ τοὺς τῶν
-                        κατορθούντων ἐν θεοσεβείᾳ δεχόμεναι καρπούς<supplied>·</supplied></quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="identical">Vat. gr.
-                        754</ref>
+                  <note type="lemma">Ps 8,1</note>
+                  <seg type="hypothesis" xml:id="par-gr-166-fr-8-1" corresp="#par-gr-166-ps-8-1a"
+                     source="Athanasius">
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-166-quot-8-1"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 8,1">Πάλαι μὲν ἐν τῆ
+                        νομικῆ λατρεία, ἓν ἦν προλήνιον· τὸ θυσιαστήριον δηλονότι, τῶ ἐν τῶ ναῶ·
+                        μετὰ δὲ τὴν τῶν ἐθνῶν κλῆσιν, πολλοὶ ληνοῖ· αὗται δὲ ἂν εἴεν, αἱ ἐκκλησίαι·
+                        αἱ τοὺς τῶν κατορθούντων ἐν θεοσεβεία δεχόμεναι καρπούς<supplied
+                           reason="om." resp="Panteghini">·</supplied></quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-7-67" type="identical">Vat. gr.
+                        754</ref><note type="attribution"><foreign xml:lang="grc"
+                           >Ἀθ(α)ν(α)σ(ίου)</foreign></note>
                   </seg>
+                  <pb n="15v–16r"/>
+                  <note type="lemma">Ps 8,2</note>
                   <seg type="commentaryfragment" xml:id="par-gr-166-fr-8-2"
-                     corresp="#par-gr-166-ps-8-2a" source="Anonymous">
-                     <!-- Athanasius? --><quote type="patristic" subtype="identical"
-                        xml:id="par-gr-166-quot-8-2" corresp="#person-4"
-                        source="Cyrillus (?), fr. in Ps 8,2a (PG 69,757 B6–9)"/>
+                     corresp="#par-gr-166-ps-8-2a" source="Anonymous"><quote type="patristic"
+                        subtype="identical" xml:id="par-gr-166-quot-8-2" corresp="#person-2"
+                        source="Athanasius, exp. in ps 8,2">ἐκπλήττεται τὴν εἰς ἀνθρώπους δοθεῖσαν
+                        || γνῶσιν τοῦ ὀνόματος τοῦ θεοῦ· οὐκ ἔτι γὰρ μόνοις τοῖς ἐν τῆ ἰουδαία
+                        γνωστὸς ὁ θεός·</quote>
                   </seg>
                </ab>
             </div>
             <pb n="16r" facs="https://gallica.bnf.fr/ark:/12148/btv1b525131059/f39.item"/>
             <div type="commentary" subtype="commentary">
                <ab xml:lang="grc">
+                  <note type="lemma">Ps 8,3a</note>
                   <seg type="commentaryfragment" xml:id="par-gr-166-fr-8-3"
                      corresp="#par-gr-166-ps-8-3a" source="Anonymous">
-                     <quote type="patristic" xml:id="par-gr-166-quot-8-3" corresp="#person-2"
-                        source="Athanasius, exp. in Ps 8,3a">τῶν κατὰ θεὸν νηπιαζόντων τῇ κακίᾳ·
-                        τοῦτο δὲ καὶ ἐν τοῖς εὐαγγελίοις σαφῶς ἀναγέγραπται· εἰρηκῶς ὁ σωτῆρ· ὅτε
-                        τοὺς παῖδας οἱ φαρισαῖοι ἐπεστόμιζον εὐλογοῦντας αὐτόν·</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="identical">Vat. gr.
-                        754</ref>
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-166-quot-8-3"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 8,3a">τῶν κατὰ θεὸν
+                        νηπιαζόντων τῆ κακία· τοῦτο δὲ καὶ ἐν τοῖς εὐαγγελίοις σαφῶς ἀναγέγραπται·
+                        εἰρηκῶς ὁ σωτῆρ· ὅτε τοὺς παῖδας οἱ φαρισαῖοι ἐπεστόμιζον εὐλογοῦντας
+                        αὐτόν·</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-8-4" type="identical">Vat. gr. 754</ref>
                   </seg>
+                  <note type="lemma">Ps 8,3b–c</note>
                   <seg type="commentaryfragment" xml:id="par-gr-166-fr-8-4"
-                     corresp="#par-gr-166-ps-8-3c" source="Anonymous">
-                     <quote type="patristic" subtype="quotation" xml:id="par-gr-166-quot-8-4"
-                        corresp="#person-18 #person-29"
-                        source="fons ignotus in Ps 8,3c - Iohannes Chrys., exp. in Ps. 8 (PG 55,109 in Ps 8,3c)"
-                        >ἢ τῶν αἰσθητῶν ἢ τῶν νοητῶν· ἢ τὸν λαὸν τὸν ἰουδαϊκὸν· ...</quote>
+                     corresp="#par-gr-166-ps-8-3b" source="Anonymous">
+                     <quote type="patristic" subtype="quotation/quotation-adapted"
+                        xml:id="par-gr-166-quot-8-4" corresp="#person-18 #person-29"
+                        source="Athanasius, exp. in Ps 8,3b - Ιohannes Chrys., exp. in Ps. 8 (cf. PG 55,109, l. 33–38) in Ps 8,3c = PG 27,81 B2–7"
+                        >ἢ τῶν αἰσθητῶν ἢ τῶν νοητῶν· / ἢ τὸν λαὸν τὸν ἰουδαϊκὸν· ...</quote><ref
+                        target="vat-gr-754:vat-gr-754-fr-8-5" type="identical">Vat. gr.
+                        754</ref><ref target="vat-gr-754:vat-gr-754-fr-8-6" type="identical">Vat.
+                        gr. 754</ref>
                   </seg>
+                  <note type="lemma">Ps 8,3b–c</note>
                   <seg type="commentaryfragment" xml:id="par-gr-166-fr-8-5"
-                     corresp="#par-gr-166-ps-8-3c" source="Anonymous">
-                     <quote type="patristic" xml:id="par-gr-166-quot-8-5" corresp="#person-2"
-                        source="Athanasius, exp. in Ps 8,3c">ἐκδικητὴν, τὸν διάβολον δηλονότι·
-                        ἐπειδὴ μετὰ τὸ ἀναγκᾶσαι πληρῶσαι τὴν ἁμαρτίαν, καὶ τιμωρεῖται τοὺς
-                        ἁμαρτάνοντας· τὸ μέγεθος αὐτοῖς τοῦ ἁμαρτήματος ἐν ὀφθαλμοῖς
+                     corresp="#par-gr-166-ps-8-3b" source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-166-quot-8-5"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 8,3c">ἐκδικητὴν, τὸν
+                        διάβολον δηλονότι· ἐπειδὴ μετὰ τὸ ἀναγκᾶσαι πληρῶσαι τὴν ἁμαρτίαν, καὶ
+                        τιμωρεῖται τοὺς ἁμαρτάνοντας· τὸ μέγεθος αὐτοῖς τοῦ ἁμαρτήματος ἐν ὀφθαλμοῖς
                         παριστῶν·</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="identical">Vat. gr.
-                        754</ref>
+                     <ref target="vat-gr-754:vat-gr-754-fr-8-12" type="identical">Vat. gr. 754</ref>
                   </seg>
                </ab>
             </div>
             <pb n="16v" facs="https://gallica.bnf.fr/ark:/12148/btv1b525131059/f40.item"/>
             <div type="commentary" subtype="commentary">
                <ab xml:lang="grc">
+                  <note type="lemma">Ps 8,4</note>
                   <seg type="commentaryfragment" xml:id="par-gr-166-fr-8-6"
                      corresp="#par-gr-166-ps-8-4a" source="Anonymous">
-                     <quote type="patristic" xml:id="par-gr-166-quot-8-6" corresp="#person-2"
-                        source="Athanasius, exp. in Ps 8,4a">ἐκεῖνοι μὲν ἀγανακτοῦσι, τῶν νηπίων
-                        καταρτιζόντων αἶνον· ἐγὼ δὲ τὸ οὕτω μέγα καὶ περὶκαλλαῖς· τοὺς οὐρανοὺς
-                        φημὶ, μικρόν τι ἔργον τῆς σῆς δημιουργίας θεορῶ·</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="identical">Vat. gr.
-                        754</ref>
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-166-quot-8-6"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 8,4">ἐκεῖνοι μὲν
+                        ἀγανακτοῦσι, τῶν νηπίων καταρτιζόντων αἶνον· ἐγὼ δὲ τὸ οὕτω μέγα καὶ
+                        περὶκαλλαῖς· τοὺς οὐρανοὺς φημὶ, μικρόν τι ἔργον τῆς σῆς δημιουργίας
+                        θεορῶ·</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-8-13" type="identical">Vat. gr. 754</ref>
                   </seg>
+                  <note type="lemma">Ps 8,5–7a</note>
                   <seg type="commentaryfragment" xml:id="par-gr-166-fr-8-7"
                      corresp="#par-gr-166-ps-8-5a" source="Anonymous">
-                     <quote type="patristic" xml:id="par-gr-166-quot-8-7" corresp="#person-2"
-                        source="Athanasius, exp. in Ps 8,5a">ταῦτα τοῦ Παύλου σαφῶς ἐπὶ τὸν σωτῆρα
-                        ἡμῶν ἐξειληφότος· ἀρκεῖσθαι τῇ ἐκδόσει χρῆ·</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="identical">Vat. gr.
-                        754</ref>
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-166-quot-8-7"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 8,5–7">ταῦτα τοῦ Παύλου
+                        σαφῶς ἐπὶ τὸν σωτῆρα ἡμῶν ἐξειληφότος· ἀρκεῖσθαι τῆ ἐκδόσει χρῆ·</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-8-16" type="identical">Vat. gr. 754</ref>
                   </seg>
+                  <note type="lemma">Ps 8,7b–8a</note>
                   <seg type="commentaryfragment" xml:id="par-gr-166-fr-8-8"
-                     corresp="#par-gr-166-ps-8-8a" source="Anonymous">
-                     <quote type="patristic" xml:id="par-gr-166-quot-8-8" corresp="#person-2"
-                        source="Athanasius, exp. in Ps 8,8a">τοὺς ἐξ ἰσραὴλ πιστεύσαντας
-                        αἰνίττεται·</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="identical">Vat. gr.
-                        754</ref>
+                     corresp="#par-gr-166-ps-8-7b" source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-166-quot-8-8"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 8,8a">τοὺς ἐξ ἰσραὴλ
+                        πιστεύσαντας αἰνίττεται·</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-8-17" type="identical">Vat. gr. 754</ref>
                   </seg>
+                  <note type="lemma">Ps 8,8b</note>
                   <seg type="commentaryfragment" xml:id="par-gr-166-fr-8-9"
                      corresp="#par-gr-166-ps-8-8b" source="Anonymous">
-                     <quote type="patristic" xml:id="par-gr-166-quot-8-9" corresp="#person-2"
-                        source="Athanasius, exp. in Ps 8,8b">διὰ τούτων τὰ ἔθνη δηλοί·</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="identical">Vat. gr.
-                        754</ref>
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-166-quot-8-9"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 8,8b">διὰ τούτων τὰ ἔθνη
+                        δηλοί·</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-8-21" type="identical">Vat. gr. 754</ref>
                   </seg>
+                  <note type="lemma">Ps 8,9</note>
                   <seg type="commentaryfragment" xml:id="par-gr-166-fr-8-10"
                      corresp="#par-gr-166-ps-8-9a" source="Anonymous">
                      <quote type="patristic" xml:id="par-gr-166-quot-8-10" corresp="#person-2"
-                        source="Athanasius, exp. in Ps 8,9a">τοὺς ἐπῃρμένους κατὰ τὸν βίον καὶ τὰ
+                        source="Athanasius, exp. in Ps 8,9">τοὺς ἐπηρμένους κατὰ τὸν βίον καὶ τὰ
                         ὑψηλὰ φρονοῦντας· τοὺς ἀλογοτάτους·</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="identical">Vat. gr.
-                        754</ref>
+                     <ref target="vat-gr-754:vat-gr-754-fr-8-22" type="identical">Vat. gr. 754</ref>
                   </seg>
                </ab>
             </div>
             <pb n="17r" facs="https://gallica.bnf.fr/ark:/12148/btv1b525131059/f41.item"/>
             <div type="commentary" subtype="commentary">
                <ab xml:lang="grc">
+                  <note type="lemma">Ps 8,10</note>
                   <seg type="commentaryfragment" xml:id="par-gr-166-fr-8-11"
                      corresp="#par-gr-166-ps-8-10" source="Anonymous">
                      <quote type="patristic" xml:id="par-gr-166-quot-8-11" corresp="#person-2"
                         source="Athanasius, exp. in Ps 8,10">ἀναδιπλασιάζει τὸ θαῦμα ἐκπληττόμενος
-                        ὡς ἔφην· ἐπὶ τῇ γενομένῃ τῶν ἀνθρώπων θεογνωσίᾳ:</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-7-XXX" type="identical">Vat. gr.
-                        754</ref>
+                        ὡς ἔφην· ἐπὶ τῆ γενομένη τῶν ἀνθρώπων θεογνωσία:</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-8-23" type="identical">Vat. gr. 754</ref>
                   </seg>
                </ab>
             </div>
