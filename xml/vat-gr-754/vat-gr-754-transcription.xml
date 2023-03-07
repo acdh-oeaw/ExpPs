@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../schema/tei-psalmcatenae.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <!-- to be done: hexaplarische Varianten nicht von Anfang an fett markiert -->
-<!-- to be done: ab Ps 7: die gleiche Transformation wie bei den List of Contents anwenden (Trennungslinie zwischen den Kommentarfragmenten, Lemma-Eintrag am Anfang etc.) -->
+<!-- to be done: ab Ps 7: die gleiche Transformation wie bei den Lists of Contents anwenden (Trennungslinie zwischen den Kommentarfragmenten, Lemma-Eintrag am Anfang etc.) -->
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -1299,7 +1299,7 @@
                            ><g ref="#linking-sign-3" type="linking" subtype="source"
                            corresp="#vat-gr-754-ls-1-3"/></hi>
                      <quote xml:id="vat-gr-754-quot-1-3" type="patristic" subtype="quotation"
-                        source="Basilius, hom. in Ps. 1 (PG 29,216 B5–7; in Ps 1,1a)"
+                        source="Basilius, hom. in Ps. 1 (PG 29,216 B5–7) in Ps 1,1a"
                         corresp="#person-3"><hi rend="ekthesis">Ἔ</hi>στι μὲν οὖν κυρίως <unclear
                            reason="damage">κ</unclear><supplied>α</supplied>ὶ <lb n="2"/>πρώτως
                         μακαρι <lb n="3"/>στὸν. τὸ ἀληθῶς ἀγα <lb n="4"/>θόν· τοῦτο δέ ἐστιν <lb
@@ -1314,7 +1314,7 @@
                      corresp="#vat-gr-754-ps-1-1a" source="Anonymous"><quote
                         xml:id="vat-gr-754-quot-1-4" type="patristic"
                         subtype="paraphrase-abbreviated"
-                        source="Basilius, hom. in Ps. 1 (?) (cf. PG 29,216 B10–C12; in Ps 1,1a); cf. Suda s.v. Μακάριος (Μ nr. 55 Adler) et alibi"
+                        source="Basilius, hom. in Ps. 1 (?) (cf. PG 29,216 B10–C12) in Ps 1,1a; cf. Suda s.v. Μακάριος (Μ nr. 55 Adler) et alibi"
                         corresp="#person-3"><hi rend="ekthesis">Ὁ</hi> ἐν ἀγαθοῖς πάντο <lb n="7"
                         />τε ὤν: –</quote></seg>
                   <lb n="8"/><seg type="glosse" xml:id="vat-gr-754-glosse-1-4" source="Anonymous"
@@ -1436,7 +1436,7 @@
                   <lb n="1"/><seg type="commentaryfragment" xml:id="vat-gr-754-fr-1-1"
                      source="Anonymous" rendition="#top-of-the-page" corresp="#vat-gr-754-ps-1"
                         ><quote xml:id="vat-gr-754-quot-1-9" type="patristic" subtype="quotation"
-                        source="Basilius, hom. in Ps. 48 (PG 29,436 C3–5; in Ps 48,5)"
+                        source="Basilius, hom. in Ps. 48 (PG 29,436 C3–5) in Ps 48,5"
                         corresp="#person-3"><hi rend="majuscule">Ψ</hi>αλτήριόν ἐστιν ὄργανον
                         μουσικὸν ἐναρμονίους τοὺς φθόγγους πρὸς τὴν <lb n="2"/>ἐκ τῆς φωνῆς <choice>
                            <orig>μελωδίαν</orig>
@@ -2624,7 +2624,7 @@
                      next="#vat-gr-754-fr-2-4" rendition="#top-of-the-page"
                      source="Gregorius of Nyssa" corresp="#vat-gr-754-ps-2-1-1"><quote
                         type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-2-5"
-                        source="Gregorius Nyss., Ps. inscr. VIII (92,15–24 McDonough; in Ps 2,7) in Ps 2,1"
+                        source="Gregorius Nyss., Ps. inscr. VIII (92,15–24 McDonough) in Ps 2,7"
                         next="#vat-gr-754-quot-2-6"><hi rend="ekthesis">Ἀ</hi>λλ’ ἐπειδὴ τὸ <choice>
                            <orig>μηδεῖν</orig>
                            <reg type="correction">μὴ δεῖν</reg>
@@ -2650,7 +2650,7 @@
                      corresp="#vat-gr-754-ps-2-1-1" source="Gregorius of Nyssa"><quote
                         xml:id="vat-gr-754-quot-2-6" prev="#vat-gr-754-quot-2-5" type="patristic"
                         subtype="quotation"
-                        source="Gregorius Nyss., Ps. inscr. VIII (92,15–24 McDonough; in Ps 2,7); φρυάξαντο – ἔθνη non habet McD."
+                        source="Gregorius Nyss., Ps. inscr. VIII (92,15–24 McDonough) in Ps 2,7; φρυάξαντο – ἔθνη non habet McD."
                         >σήμερον μὲν γεννηθέν <lb n="2" break="no"/>τος <choice>
                            <orig>διημᾶς</orig>
                            <reg type="correction">δι’ ἡμᾶς</reg>
@@ -3977,8 +3977,9 @@
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-2-44" source="Origenes"
                      rendition="#left-column" corresp="#vat-gr-754-ps-2-10b"><quote type="patristic"
                         subtype="quotation" xml:id="vat-gr-754-quot-2-45"
-                        source="Origenes, fr. in Ps 2,12a–b (PG 12,1116 C1–3)" corresp="#person-32"
-                           ><hi rend="ekthesis">Τ</hi>ὴν μὲν προκο <lb n="6" break="no"/>πὴν. <choice>
+                        source="Origenes (?), fr. in Ps 2,10b (= PG 27,68 B9–11; PG 12,1116 C1–3)"
+                        corresp="#person-13"><hi rend="ekthesis">Τ</hi>ὴν μὲν προκο <lb n="6"
+                           break="no"/>πὴν. <choice>
                            <orig>διατοῦ</orig>
                            <reg type="correction">διὰ τοῦ</reg>
                         </choice>
@@ -5168,7 +5169,7 @@
                      rendition="#bottom-of-the-page" source="Anonymous"
                      corresp="#vat-gr-754-ps-3-5b"><quote xml:id="vat-gr-754-quot-3-17"
                         type="patristic" subtype="quotation"
-                        source="Didymus, fr. 12 in Ps 3,5 (126 Mühlenberg) Ὄρος – θεοῦ non habet M."
+                        source="Didymus, fr. 12 in Ps 3,5 (126 Mühlenberg); Ὄρος – θεοῦ non habet M."
                         corresp="#person-6"><hi rend="tall">Ὄ</hi>ρος ἅγιον <choice>
                            <abbr type="nomSac">θυ</abbr>
                            <expan>θεοῦ</expan>
@@ -5260,7 +5261,7 @@
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-3-21" source="Anonymous"
                      rendition="#bottom-of-the-page" corresp="#vat-gr-754-ps-3-5c"><quote
                         xml:id="vat-gr-754-quot-3-21" type="patristic" subtype="quotation"
-                        source="Origenes, schol. in Ps 2,2d (διάψαλμα; 72 Cadiou) in Ps 3,5c"
+                        source="Origenes, schol. in Ps 2,2d (72 Cadiou)"
                         corresp="#person-14"><hi rend="ekthesis">Μ</hi>ουσικοῦ μέλους <choice>
                            <orig>ἠ ρυθμοῦ</orig>
                            <reg type="correction">ἢ ῥυθμοῦ</reg>
@@ -6125,7 +6126,7 @@
                      rendition="#bottom-of-the-page" source="Gregorius of Nyssa"
                      corresp="#vat-gr-754-ps-4-3a"><quote type="patristic" subtype="quotation"
                         xml:id="vat-gr-754-quot-4-18"
-                        source="Gregorius Nyss., Ps. inscr. I 4 (34,27–35,19 McDonough; in Ps 4,3 et seq.; καὶ μεθ᾿ ἕτερα - sed alia non habet McD.) in Ps 4,3"
+                        source="Gregorius Nyss., Ps. inscr. I 4 (34,27–35,19 McDonough; καὶ μεθ᾿ ἕτερα - sed alia non habet McD.) in Ps 4,3 et seq."
                         corresp="#person-24"><hi rend="ekthesis">K</hi>αὶ τοῦτο <choice>
                            <orig>οὐκεξάλλων</orig>
                            <reg type="correction">οὐκ ἐξ ἄλλων</reg>
@@ -6256,7 +6257,7 @@
                      rendition="#bottom-of-the-page" source="Gregorius of Nazianz"
                      corresp="#vat-gr-754-ps-4-3a"><quote xml:id="vat-gr-754-quot-4-19"
                         type="patristic" subtype="quotation"
-                        source="Gregorius Naz., or. 14,21 (PG 35,885 A2–8; in Ps 4,3.8) in Ps 4,3"
+                        source="Gregorius Naz., or. 14,21 (PG 35,885 A2–8) in Ps 4,3.8"
                         corresp="#person-20"><hi rend="ekthesis">Τ</hi>οῖς <choice>
                            <orig>δε</orig>
                            <reg type="correction">δὲ</reg>
@@ -7796,7 +7797,7 @@
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-5-16"
                      rendition="#bottom-of-the-page" source="Eusebius" corresp="#vat-gr-754-ps-5-6b"
                         ><quote type="patristic" subtype="quotation"
-                        source="Origenes, fr. in Ps 5,6b–7a (PG 12,1169 A14–B6 = PG 27,73 C13–D5 = PG 69,741 C4–11) = schol. (?)"
+                           source="Origenes, fr. in Ps 5,6b–7a (= PG 27,73 C13–D5; PG 12,1169 A14–B6; PG 69,741 C4–11) = schol. (?)"
                         corresp="#person-32" xml:id="vat-gr-754-quot-5-16"><hi rend="ekthesis"
                            >Τ</hi>οὺς μὲν ἐν <choice>
                            <orig>τῆ πολιτεία</orig>
@@ -8221,7 +8222,7 @@
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-5-22"
                      rendition="#top-of-the-page" source="Origenes" corresp="#vat-gr-754-ps-5-8a"
                         ><quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-5-22"
-                        source="Origenes, fr. in Ps 5,8 (PG 12,1169 C13–D1 = PG 27,76 A4–7 = PG 39,1172 A15–B2)"
+                           source="Origenes, fr. in Ps 5,8 (= PG 27,76 A4–7; PG 12,1169 C13–D1; PG 39,1172 A15–B2)"
                         corresp="#person-13"><hi rend="ekthesis">Ν</hi>αὸς <choice>
                            <abbr type="nomSac">θυ</abbr>
                            <expan>θεοῦ</expan>
@@ -9725,7 +9726,7 @@
                      corresp="#vat-gr-754-ps-6-1a"><quote type="patristic"
                         subtype="quotation-abbreviated" xml:id="vat-gr-754-quot-6-6"
                         next="#vat-gr-754-quot-6-7"
-                        source="Gregorius Nyss., beat. 8 (161,18–19; 161,23–162,3 Callahan; in Ps 6,1 et Mt 5,10) in Ps 6,1"
+                        source="Gregorius Nyss., beat. 8 (161,18–19; 161,23–162,3 Callahan) in Ps 6,1 et Mt 5,10"
                         corresp="#person-25"><hi rend="majuscule"><choice>
                               <orig><abbr type="tachygraphic">Τ<am>οῦ</am></abbr></orig>
                               <reg>Τοῦ</reg>
@@ -9765,7 +9766,7 @@
                      prev="#vat-gr-754-fr-6-6" source="Gregor of Nyssa" rendition="#left-column"
                      corresp="#vat-gr-754-ps-6-1a"><quote type="patristic" subtype="quotation"
                         xml:id="vat-gr-754-quot-6-7" prev="#vat-gr-754-quot-6-6"
-                        source="Gregorius Nyss., beat. 8 (161,18–19; 161,23–162,3 Callahan; in Ps 6,1 et Mt 5,10) in Ps 6,1"
+                        source="Gregorius Nyss., beat. 8 (161,18–19; 161,23–162,3 Callahan) in Ps 6,1 et Mt 5,10"
                         corresp="#person-25">ἀποκατάστασιν ἔχει· <lb n="2"/>τ<supplied
                            resp="Sebastiano Panteghini">ῶ</supplied>ν εἰς δουλείαν μὲν <lb n="3"
                         />ἐκπεσόντων· <choice>
@@ -10700,7 +10701,8 @@
                      corresp="#vat-gr-754-ls-7-2"/>
                   <lb n="12"/><seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-6-18"
                      rendition="#right-column" source="Anonymus (Ps 7,1)"
-                     corresp="#vat-gr-754-ps-7-1b"><hi rend="majuscule">αἰθίοπος·</hi></seg>
+                     corresp="#vat-gr-754-ps-7-1b"><hi rend="majuscule"
+                  >αἰθίοπος·</hi></seg><!-- Quellenkritik: Field: in der Fußnote -->
                </ab>
             </div>
             <div type="commentary" subtype="commentary" xml:id="vat-gr-754-6-86"
@@ -11076,10 +11078,9 @@
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-7-1" rendition="#left-column"
                      corresp="#vat-gr-754-ps-7-5a" source="Aquila (Ps 7,5a)">A εἰ ἀνήρπασα τοὺς
                      θλίβοντάς με ματαίως·</seg>
-                  <note type="lemma">Ps 7,5a (ἀνταπέδωκα; or linking neglected?)</note>
+                  <note type="lemma">Ps 7,5a (ἀνταπέδωκα); or linking omitted?</note>
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-7-2" rendition="#left-column"
-                     corresp="#vat-gr-754-ps-7-5a"
-                     source="Theodotion (Ps 7,5b); in Ps 7,5a (?) Vat. gr. 754">Θ ἀποπέσοιμι ἀπὸ
+                     corresp="#vat-gr-754-ps-7-5a" source="Theodotion (Ps 7,5b)">Θ ἀποπέσοιμι ἀπὸ
                      τῶν·</seg>
                </ab>
             </div>
@@ -11123,7 +11124,7 @@
                      corresp="#vat-gr-754-ps-7-3a">
                      <quote type="patristic" subtype="quotation-abbreviated"
                         xml:id="vat-gr-754-quot-7-11"
-                        source="Basilius, hom. in Ps. 7 (PG 29,232 B10–13; 232 D2–233 A2; in Ps 7,2) in Ps 7,3a"
+                        source="Basilius, hom. in Ps. 7 (PG 29,232 B10–13; 232 D2–233 A2) in Ps 7,2"
                         corresp="#person-3">Τίς οὖν ἡ διαφορὰ τοῦ σώζεσθαι καὶ τοῦ ῥύεσθαι; ὅτι τῆς
                         σωτηρίας μὲν κυρίως. οἱ ἀσθενοῦντες χρῄζουσιν· τοῦ ῥύεσθαι δὲ. οἱ ἐν τῇ
                         αἰχμαλωσίᾳ κατεχόμενοι· εὔχεται οὖν περὶ τῆς ἐνταῦθα ζωῆς καὶ περὶ τῆς
@@ -11225,14 +11226,13 @@
                         corresp="#person-21">Χοϊκὸς ἀντὶ ἐπουρανίου γενοίμην: –</quote>
                      <note type="attribution">γ´ ωριγε(νους)</note>
                   </seg>
-                  <note type="lemma">Ps 7,7c1 (καὶ ἐξεγέρθητι - sic)</note>
+                  <note type="lemma">Ps 7,7c1 (καὶ ἐξεγέρθητι) sic</note>
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-7-10"
-                     rendition="#left-column"
-                     source="Symmachus, Aquila (Ps 7,7b); in Ps 7,7c1 Vat. gr. 754 (errate)"
+                     rendition="#left-column" source="Symmachus, Aquila (Ps 7,7b)"
                      corresp="#vat-gr-754-ps-7-7c">Ϲ ἐν χόλῳ· A ἐν ἀνυπερθεσίαις:</seg>
                   <note type="lemma">Ps 7,6d (διάψαλμα)</note>
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-7-11"
-                     rendition="#left-column" source="Aquila (Ps 7,6d - διάψαλμα)"
+                     rendition="#left-column" source="Aquila (Ps 7,6d)"
                      corresp="#vat-gr-754-ps-7-6c">ἑβραϊστὶ σέλ· | Ἀκύλας· ἀεί</seg>
                   <note type="lemma">Ps 7,7b</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-7-16" source="Origenes"
@@ -11265,7 +11265,7 @@
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-7-18"
                      rendition="#top-of-the-page" source="Eusebius" corresp="#vat-gr-754-ps-7-5b">
                      <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-7-18"
-                        source="Origenes, schol. (?) in Ps 7,5b (PG 12,1180 A10–13 = PG 27,80 A4–6)"
+                        source="Origenes, schol. (?) in Ps 7,5b (= PG 27,80 A4–6; PG 12,1180 A10–13)"
                         corresp="#person-32">Ὁ μὲν δίκαιος νικήσας. πλήρης ἀπὸ τῶν ἐχθρῶν ἐξέρχεται·
                         ὁ δὲ φαῦλος. ὡς νικηθεὶς. ἀποπίπτει αὐτῶν κενὸς. καὶ οὐδὲν ἔχων πληρώματος:
                         –</quote>
@@ -11315,7 +11315,7 @@
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-7-22"
                      rendition="#left-column" source="Eusebius" corresp="#vat-gr-754-ps-7-6b">
                      <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-7-22"
-                        source="Origenes, schol. (?) in Ps 7,6b–c (PG 12,1180 B10–15 = PG 23,124 B12–C2)"
+                        source="Origenes, schol. (?) in Ps 7,6b–c (PG 12,1180 B10–15; PG 23,124 B12–C2)"
                         corresp="#person-32">Ἡ ζωὴ τοῦ ἔτι τὴν εἰκόνα τοῦ χοϊκοῦ φοροῦντος.
                         καταπεπάτηται ὑπὸ τοῦ ἐχθροῦ εἰς γῆν· οὕτως δὲ κἂν δοξάζεσθαί ποτε δοκῇ.
                         κατεσκήνωσεν αὐτοῦ ἡ δόξα εἰς χοῦν· ὡς τῶν τοιούτων διὰ δόξαν· καὶ τὸν παρ’
@@ -11445,15 +11445,15 @@
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-7-15"
                      source="Symmachus = LXX (Ps 7,9b)" corresp="#vat-gr-754-ps-7-9b">Ϲ ὁμοίως τοῖς
                      Ο´</seg>
-                  <note type="lemma">Ps 7,10a (πονηρία - sic)</note>
+                  <note type="lemma">Ps 7,10a (πονηρία) sic</note>
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-7-16"
-                     source="Symmachus (Ps 7,9c); in Ps 7,10a Vat. gr. 754 (errate)"
-                     corresp="#vat-gr-754-ps-7-10a">Ϲ ἁπλότητά μου τὴν ἐπ᾿ ἐμοί: –</seg>
-                  <note type="lemma">Ps 7,10a (ἁμαρτωλῶν - sic)</note>
+                     source="Symmachus (Ps 7,9c)" corresp="#vat-gr-754-ps-7-10a">Ϲ ἁπλότητά μου τὴν
+                     ἐπ᾿ ἐμοί: –</seg>
+                  <note type="lemma">Ps 7,10a (ἁμαρτωλῶν) sic</note>
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-7-17"
                      source="Aquila (Ps 7,10a); non habet Field" corresp="#vat-gr-754-ps-7-10a">A
                      κακόν·</seg>
-                  <note type="lemma">Ps 7,10a (ἁμαρτωλῶν - sic)</note>
+                  <note type="lemma">Ps 7,10a (ἁμαρτωλῶν) sic</note>
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-7-18"
                      source="Symmachus (Ps 7,10a)" corresp="#vat-gr-754-ps-7-10a">Ϲ κάκωσις·</seg>
                   <note type="lemma">Ps 7,10a</note>
@@ -11465,9 +11465,9 @@
                         κατευθύνει τὴν ὁδὸν αὐτοῦ μηκέτι πολεμούμενος ὑπ’ αὐτῶν:</quote>
                      <note type="attribution">ε´ ωρ(ι)γε(νους)</note>
                   </seg>
-                  <note type="lemma">Ps 7,9b (κρῖνόν με - sic)</note>
+                  <note type="lemma">Ps 7,9b (κρῖνόν με) sic</note>
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-7-19"
-                     source="Aquila, Symmachus, Quinta, Sexta (Ps 7,10b); in Ps 7,9b Vat. gr. 754 (errate)"
+                     source="Aquila, Symmachus, Quinta, Sexta (Ps 7,10b)"
                      corresp="#vat-gr-754-ps-7-9b">A Ϲ Ε´ S´ καὶ κατευθύνει δίκαιος:</seg><ref
                      target="bodl-auct-d-4-1:bodl-auct-d-4-1-hexaplaric-7-14" type="expanded">Oxon.
                      Auct. D. 4. 1</ref><!-- to be done: ref. sichtbar machen -->
@@ -11574,7 +11574,7 @@
                      rendition="#bottom-of-the-page" source="Anonymous"
                      corresp="#vat-gr-754-ps-7-13a">
                      <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-7-37"
-                        source="Origenes, schol. (?) in Ps 7,13–17 (PG 12,1181 A8–10; cf. PG 23,125 B3–5); sub auctore Eusebio (pro Origene?) Paris. gr. 166–167 (f. 14v)"
+                        source="Origenes, schol. (?) in Ps 7,13–17 (PG 12,1181 A8–10); cf. PG 23,125 B3–5 - sub auctore Eusebio (pro Origene?) Paris. gr. 166–167 (f. 14v)"
                         corresp="#person-13"> Μήποτε παρασεσιωπημένως ταῦτα περὶ τοῦ διαβόλου
                         λέγεται· οὗτοι γὰρ πρὸς τούτοις καὶ ὠδίνησαν ἀδικίαν. καὶ τὰ ἑξῆς ὀργὴ
                         τυγχάνων: –</quote>
@@ -11659,8 +11659,8 @@
                   </seg>
                   <note type="lemma">linking not completed</note>
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-7-22"
-                     source="Symmachus (Ps 7,14b); linking not completetd Vat. gr. 754"
-                     rendition="#right-column" corresp="#vat-gr-754-ps-7-14b">Ϲ εἰς τὸ καίειν:</seg>
+                     source="Symmachus (Ps 7,14b)" rendition="#right-column"
+                     corresp="#vat-gr-754-ps-7-14b">Ϲ εἰς τὸ καίειν:</seg>
                   <note type="lemma">Ps 7,15b (ἀνομίαν)</note>
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-7-23"
                      source="Aquila (Ps 7,15b)" rendition="#right-column"
@@ -11694,7 +11694,7 @@
                   </seg>
                   <note type="lemma">Ps 7,16b (εἰς βόθρον)</note>
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-7-24"
-                     rendition="#right-column" source="Aquila (Ps 7,16b)"
+                     rendition="#right-column" source="〈Aquila〉 (Ps 7,16b)"
                      corresp="#vat-gr-754-ps-7-16b">ἐν διαφθορᾷ ἣν·</seg>
                   <note type="lemma">Ps 7,17b (ἀδικία αὐτοῦ)</note>
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-7-25"
@@ -11730,8 +11730,8 @@
                   <note type="lemma">Ps 7,14b</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-7-55"
                      rendition="#top-of-the-page" source="Anonymous" corresp="#vat-gr-754-ps-7-14b">
-                     <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-7-55"
-                        source="Origenes (?), fr. in Ps 7,14b (PG 12,1181 A15–17)"
+                     <quote type="patristic" subtype="unknown" xml:id="vat-gr-754-quot-7-55"
+                        source="Origenes, schol. (?) in Ps 7,14b (cf. PG 12,1181 A15–17); sub auctore Eusebio (pro Origene?) Paris. Coislin 10 (f. 1r)"
                         corresp="#person-13">Ταῦτά ἐστι τὰ πεπυρωμένα βέλη τοῦ πονηροῦ· ἃ
                         ἐξειργάσατο τοῖς καιομένοις καὶ πυρουμένοις ὑπὸ παθῶν: –</quote>
                   </seg>
@@ -11816,7 +11816,7 @@
                      corresp="#vat-gr-754-ps-7-16a">
                      <quote type="patristic" subtype="quotation-expanded"
                         xml:id="vat-gr-754-quot-7-62"
-                        source="Origenes, schol. (?) in Ps 7,16 (PG 12,1181 C12–13) ὁ γὰρ – ὤρυξεν non habet PG"
+                        source="Origenes, schol. (?) in Ps 7,16 (cf. PG 12,1181 C12–13); ὁ γὰρ – ὤρυξεν non habet PG"
                         corresp="#person-32">Μήποτε ὁ λάκκος χωρίον τί κολάσεως ἐστιν· εἰς ὃν
                         προνοίᾳ θεοῦ αὐτὸς ὁ ὀρύξας ἐμπεσεῖται· ὁ γὰρ ὀρύσσων βόθρον. ἐμπεσεῖται εἰς
                         αὐτόν: τὸ αὐτὸ μέντοι. γε καὶ λάκκος ἐστὶν καὶ βόθρος· λάκκος μὲν. τῇ
@@ -11927,7 +11927,7 @@
                   <note type="lemma">Ps 8,1</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-8-1"
                      rendition="#right-column" source="Origenes" corresp="#vat-gr-754-ps-8-1a">
-                     <quote type="patristic" subtype="unknown" xml:id="vat-gr-754-quot-8-1"
+                     <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-8-1"
                         source="Evagrius, schol. + in Ps 8,1 (318 Rondeau – Géhin – Cassin)"
                         corresp="#person-13">Ληνοὶ εἰσὶν φύσεις λογικαὶ τοὺς ἐκ τῆς πνευματικῆς
                         ἀμπέλου καρποὺς ὑποδεξάμεναι: –</quote>
@@ -12134,7 +12134,7 @@
                      corresp="#vat-gr-754-ps-8-3c">
                      <quote type="patristic" subtype="quotation-adapted-and-abbreviated"
                         xml:id="vat-gr-754-quot-8-14"
-                        source="Gregorius Nyss., Ps. inscr. II 11 (122,18–19; 122,23–123,13 McDonough - in Ps 8) in Ps 8,3c"
+                        source="Gregorius Nyss., Ps. inscr. II 11 (122,18–19; 122,23–123,13 McDonough) in Ps 8"
                         corresp="#person-24">Ὥσπερ τοίνυν κατὰ τὴν πρώτην ἐκ τοῦ Ἀβεσσαλὼμ φυγὴν·
                         νικητὴς γίνεται διὰ τοῦ καταλῦσαι τὸν ἐχθρὸν ἅμα καὶ ἐκδικητήν· ὃς διὰ τοῦτο
                         καὶ ἐχθρὸς καὶ ἐκδικητὴς ὀνομάζεται· ὅτι αὐτὰ τὰ πρὸς ἁμαρτίαν αὐτοῦ
@@ -12158,15 +12158,15 @@
                      rendition="#bottom-of-the-page" source="Gregorius of Nazianz"
                      corresp="#vat-gr-754-ps-8-4a">
                      <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-8-15"
-                        source="Gregorius Naz., or. 20 (PG 35,1077 C12–1080 A4)"
-                        corresp="#person-35">Τίς οὐρανοῦ περιφορά; τίς ἀστέρων κίνησις· ἢ τάξις. ἢ
+                        source="Gregorius Naz., or. 20,11 (80,10–17 Mossay – Lafontaine) in Ps 8,4a"
+                        corresp="#person-36">Τίς οὐρανοῦ περιφορά; τίς ἀστέρων κίνησις· ἢ τάξις. ἢ
                         μέτρα. ἢ σύνοδος. ἢ ἀπόστασις. τίνες δὲ ὅροι θαλάσσης; πόθεν δὲ ἀνέμων
                         ῥεύματα· ἢ ὡρῶν περιτροπαί· ἢ ὄμβρων ἐπιχύσεις; εἰ τούτων οὐδὲν κατενόησας ὦ
                         ἄνθρωπε. κατανοήσεις δὲ ἴσως ποτὲ ὅτ᾿ ἂν ἀπολάβῃς τὸ τέλειον· ὄψομαι γὰρ
                         τοὺς οὐρανοὺς ἔργα τῶν δακτύλων σου· ὡς ὑπονοεῖσθαι τὰ νῦν ὁρώμενα μὴ εἶναι
                         τὴν ἀλήθειαν. ἀλλὰ τῆς ἀληθείας ἰνδάλματα: –</quote>
                      <note type="attribution">Γρη(γορίου) τ(οῦ) θεολ(όγου)</note>
-                  </seg><!-- faciendum: Quellenkritik: Zitat nach SC-->
+                  </seg>
                </ab>
             </div>
             <pb n="49r" facs="https://digi.vatlib.it/view/MSS_Vat.gr.754/48"/>
@@ -12209,10 +12209,10 @@
             <div type="commentary" subtype="commentary" xml:id="vat-gr-754-8-9"
                rendition="#left-column" rend="minuscule letters" change="commentaryfragments-only">
                <ab xml:lang="grc">
-                  <note type="lemma">Ps 8,6a</note>
+                  <note type="lemma">Ps 8,6a (βραχύ τι)</note>
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-8-1" rendition="#left column"
-                     source="Aquila (Ps 8,6a); Symmachus (Ps 8,6a) - aliter Field"
-                     corresp="#vat-gr-754-ps-8-6a">A ὀλίγον παρὰ θεόν· / Ϲ βραχύ τι θεοῦ:</seg>
+                     source="Aquila (Ps 8,6a); Symmachus (Ps 8,6a)" corresp="#vat-gr-754-ps-8-6a">A
+                     ὀλίγον παρὰ θεόν· / Ϲ βραχύ τι θεοῦ:</seg>
                   <note type="lemma">Ps 8,5a</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-8-16"
                      rendition="#left-column" source="(Athanasius)" corresp="#vat-gr-754-ps-8-5a">
@@ -12241,7 +12241,7 @@
                      corresp="#vat-gr-754-ps-8-4a">
                      <quote type="patristic" subtype="quotation-adapted-and-abbreviated"
                         xml:id="vat-gr-754-quot-8-18"
-                        source="Gregorius Naz., or. 28,5 (108,1–110,10 Gallay – Jourjon; in 1Cor 2,9 et Ps 8,4) in Ps 8,4a"
+                        source="Gregorius Naz., or. 28,5 (108,1–110,10 Gallay – Jourjon) in 1Cor 2,9 et Ps 8,4"
                         corresp="#person-20">Tὸ δὲ ἡμέτερον ἐν ἀπορίᾳ· οὐχὶ ἡ εἰρήνη τοῦ θεοῦ μόνη ἡ
                         ὑπερέχουσα πάντα νοῦν καὶ κατάληψιν· οὐδὲ ὅσα τοῖς δικαίοις ἐστὶν ἐν
                         ἐπαγγελίαις ἀποκείμενα· τὰ μήτε ὀφθαλμοῖς ὁρατά· μήτε ὠσὶν ἀκουστά· μήτε
@@ -12262,7 +12262,7 @@
                      source="Gregorius of Nyssa" corresp="#vat-gr-754-ps-8-7a">
                      <quote type="patristic" subtype="quotation-expanded"
                         xml:id="vat-gr-754-quot-8-19" next="#vat-gr-754-quot-8-20"
-                        source="Gregorius Nyss., or. dom. 5 (70,12–71,8 Callahan; in Ps 8,7b–9a et Ps 146,9a et Ps 103,14b) in Ps 8,7a"
+                        source="Gregorius Nyss., or. dom. 5 (70,12–71,8 Callahan) in Ps 8,7b–9a et Ps 146,9a et Ps 103,14b"
                         corresp="#person-24">Ἀληθῶς γὰρ ὁβολός εἰσιν εὐτελεῖς τε καὶ εὐαρίθμητοι
                         πρὸς μυριάδας ταλάντων παρατιθέμενοι. τὰ τῶν ἀδελφῶν ἡμῶν εἰς ἡμᾶς ὀφλήματα.
                         συγκρίσει τῶν ἡμετέρων πρὸς τὸν θεὸν ὀφλημάτων· ζημία πάντως ἐστὶν ἢ ὕβρεως
@@ -12283,7 +12283,7 @@
                      source="Gregorius of Nyssa" corresp="#vat-gr-754-ps-8-7a">
                      <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-8-20"
                         prev="#vat-gr-754-quot-8-19"
-                        source="Gregorius Nyss., or. dom. 5 (70,12–71,8 Callahan; in Ps 8,7b–9a et Ps 146,9a et Ps 103,14b) in Ps 8,7a"
+                        source="Gregorius Nyss., or. dom. 5 (70,12–71,8 Callahan) in Ps 8,7b–9a et Ps 146,9a et Ps 103,14b"
                         corresp="#person-24">αν ἐπιζητεῖς· καὶ οὐ λογίζει· εἰ μὲν πρὸς οἰκέτην ὁ
                         θυμὸς φλεγμαίνοι: ὅτι οὐ φύσις ἀλλὰ δυναστεία πρὸς δουλείαν τε καὶ κυριότητα
                         τὸ ἀνθρώπινον ἔσχισε· τῷ γὰρ ἀνθρώπῳ δουλεύειν ὁ τοῦ παντὸς οἰκονόμος. τὴν
@@ -12546,7 +12546,7 @@
                      next="#vat-gr-754-fr-9-8" rendition="#top-of-the-page" source="(Athanasius)"
                      corresp="#vat-gr-754-ps-9-4a">
                      <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-9-7"
-                        next="#vat-gr-754-quot-9-8" source="Athanasius, exp. in Ps 9,4a"
+                        next="#vat-gr-754-quot-9-8" source="Athanasius, exp. in Ps 9,2–4a"
                         corresp="#person-2">Ἐπὶ τίσιν ἡ ἐξομολόγησις δηλοῖ· ἐχθρὸν δὲ αὐτοῦ τὸν
                         θάνατον δηλοῖ φησὶ τὸν καὶ εἰς τὰ ὀ</quote>
                      <note type="attribution">Ρ</note>
@@ -12695,7 +12695,7 @@
                   <note type="lemma">linking not completed (i.e. ῥομφαῖαι)</note>
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-9-7"
                      rendition="#right-column"
-                     source="Symmachus, Quinta (?), Sexta, Theodotion (?) (Ps 9,7a) - non habet Field"
+                     source="Symmachus, Quinta (?), Sexta, Theodotion (?) (Ps 9,7a); non habet Field"
                      corresp="#vat-gr-754-ps-9-7a">Ϲ ἐρείπια· οἱ λοιποὶ σὺν αὐτοῖς: –</seg>
                   <note type="lemma">Ps 9,8b (ἡτοίμασεν)</note>
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-9-8"
@@ -12738,7 +12738,7 @@
                      rendition="#top-of-the-page" source="(Athanasius)"
                      corresp="#vat-gr-754-ps-9-7a">
                      <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-9-19"
-                        source="Athanasius, exp. in Ps 9,7a" corresp="#person-2">Ῥομφαίας τοῦ
+                        source="Athanasius, exp. in Ps 9,7a1" corresp="#person-2">Ῥομφαίας τοῦ
                         διαβόλου. τὰς ἀντικειμένας δυνάμεις φησὶ δι’ ὧν ἦν ἰσχυρός: –</quote>
                      <note type="attribution">S</note>
                   </seg>
@@ -13085,7 +13085,7 @@
                      rendition="#bottom-of-the-page" source="(Athanasius)"
                      corresp="#vat-gr-754-ps-9-14b">
                      <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-9-45"
-                        source="Athanasius, exp. in Ps 9,14–15" corresp="#person-2">Διὰ τοῦτο φησὶν
+                        source="Athanasius, exp. in Ps 9,14b–15" corresp="#person-2">Διὰ τοῦτο φησὶν
                         ἐγείρεις ἐκ τῆς ταπεινώσεως. ἵνα ἐν τῇ ἐπουρανίῳ. συγχορεύσωμεν σιών:
                         –</quote>
                      <note type="attribution">ΙS</note>
@@ -13105,8 +13105,8 @@
                      rendition="#bottom-of-the-page" source="Anonymous"
                      corresp="#vat-gr-754-ps-9-14b">
                      <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-9-47"
-                        source="Origenes, schol. (?) in Ps 9,14b–15b (PG 12,1189 C3–8); sub auctore Eusebio (pro Origene?) Paris. Coislin 10 (f. 4v)"
-                        corresp="#person-13">Πύλαι θανάτου. αἱ πρὸς θάνατον ἁμαρτίαι· ἀφ’ ὧν ὑψοῦται
+                        source="Origenes, schol. (?) in Ps 9,14b–15b (PG 12,1189 C3–8); sub auctore Eusebio (pro Origene?) Paris. Coislin 10 (f. 4v) et Paris. gr. 166–167 (f. 19r)"
+                        corresp="#person-32">Πύλαι θανάτου. αἱ πρὸς θάνατον ἁμαρτίαι· ἀφ’ ὧν ὑψοῦται
                         ὁ μηδὲ λογισάμενος αὐτὰς ἁμαρτεῖν· ὃς καὶ μόνος δύναται ἐξαγγεῖλαι πάσας τὰς
                         αἰνέσεις τοῦ κυρίου ἐν ταῖς πύλαις τῆς θυγατρὸς σιὼν. ταῖς ἀρεταῖς:
                         –</quote>
@@ -13246,9 +13246,9 @@
                   <note type="lemma">Ps 9,17a</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-9-56"
                      rendition="#top-of-the-page" source="Eusebius" corresp="#vat-gr-754-ps-9-17a">
-                     <quote type="patristic" subtype="quotation" xml:id=" vat-gr-754-quot-9-56"
-                        source="Origenes, schol. (?) in Ps 9,17a (PG 27,88 A1–3; cf. PG 12,1189 C14–D2)"
-                        corresp="#person-13">Τάχα ἐπεὶ καὶ οἷς τὸ κρίμα γίνεται. γνώσονται τὸν
+                     <quote type="patristic" subtype="unknown" xml:id=" vat-gr-754-quot-9-56"
+                        source="Origenes, schol. (?) in Ps 9,17a (= PG 27,88 A1–3; cf. PG 12,1189 C14–D2)"
+                        corresp="#person-32">Τάχα ἐπεὶ καὶ οἷς τὸ κρίμα γίνεται. γνώσονται τὸν
                         κρίνοντα ἐν καιρῷ κρίσεως: –</quote>
                      <note type="attribution"/>
                   </seg>
@@ -13324,8 +13324,9 @@
                      rendition="#bottom-of-the-page" source="Anonymous"
                      corresp="#vat-gr-754-ps-9-18b">
                      <quote type="patristic" subtype="unknown" xml:id="vat-gr-754-quot-9-61"
-                        source="Origenes, schol. (?) in Ps 9,18b (ineditum?)" corresp="#person-34"
-                        >Εἰ ἐπιλανθάνονται. ἐμέμνηντο καὶ ᾔδεισάν ποτε αὐτόν: –</quote>
+                        source="Origenes, schol. (?) in Ps 9,18b (ineditum?); sub auctore Eusebio (pro Origene?) Paris. Coislin 10 (f. 5v)"
+                        corresp="#person-34">Εἰ ἐπιλανθάνονται. ἐμέμνηντο καὶ ᾔδεισάν ποτε αὐτόν:
+                        –</quote>
                      <note type="attribution">Εὐσε(βίου)</note>
                   </seg>
                </ab>
@@ -13513,9 +13514,9 @@
                   <note type="lemma">Ps 9,22b (sic)</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-9-72"
                      rendition="#bottom-of-the-page" source="Anonymous"
-                     corresp="#vat-gr-754-ps-9-22b"><!-- faciendum: Quellenkritik: neue Edition -->
+                     corresp="#vat-gr-754-ps-9-22b">
                      <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-9-72"
-                        source="Gregorius Naz., or. 22,7 (PG 35,1140 A15–B12) in Ps 9,22a"
+                        source="Gregorius Naz., or. 22,7 (234,14–236,2 Mossay – Lafontaine) in Ps 9,22a"
                         corresp="#person-20">Ἵνα τί κύριε ἀφέστηκας μακρόθεν; καὶ πῶς ἀποστρέφῃ εἰς
                         τέλος; καὶ πότε ἐπισκοπὴν ἡμῶν ποιήσεις. καὶ ποῦ προβήσεται ταῦτα καὶ
                         στήσεται; δέδοικα μὴ καπνὸς ᾖ τοῦ προσδοκωμένου πυρὸς τὰ παρόντα· μὴ τούτοις
@@ -13570,20 +13571,20 @@
             <div type="hexaplaric" subtype="commentary" xml:id="vat-gr-754-9-33"
                rendition="#right-column" rend="capital letters" change="commentaryfragments-only">
                <ab xml:lang="grc">
-                  <note type="lemma">Ps 9,24b-25a</note>
+                  <note type="lemma">Ps 9,24b-25a (ἀδικῶν)</note>
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-9-20"
                      rendition="#right-column" source="Aquila (Ps 9,24b–25a)"
                      corresp="#vat-gr-754-ps-9-24b">A καὶ πλεονέκτης εὐλογήσας διέσυρεν
                      κύριον:</seg>
-                  <note type="lemma">Ps 9,24b-25a</note>
+                  <note type="lemma">Ps 9,24b-25a (ἀδικῶν)</note>
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-9-21"
                      rendition="#right-column" source="Symmachus (Ps 9,24b–25a)"
-                     corresp="#vat-gr-754-ps-9-24b">Ϲ καὶ πλεονέκτης εὐλογήσας π[]αρώέξυνεν
+                     corresp="#vat-gr-754-ps-9-24b">Ϲ καὶ πλεονέκτης εὐλογήσας <sic>παρώέξυνεν</sic>
                      κύριον:</seg>
-                  <note type="lemma">Ps 9,24b-25a</note>
+                  <note type="lemma">Ps 9,24b-25a (ἀδικῶν)</note>
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-9-22"
-                     rendition="#right-column" source="Theodotion (Ps 9,24b–25a)"
-                     corresp="#vat-gr-754-ps-9-24b">Θ ὁμοίως τοῖς Ο</seg>
+                     rendition="#right-column" source="Theodotion = LXX (Ps 9,24b–25a)"
+                     corresp="#vat-gr-754-ps-9-24b">Θ ὁμοίως τοῖς Ο´</seg>
                </ab>
             </div>
             <div type="commentary" subtype="commentary" xml:id="vat-gr-754-9-34"
@@ -13605,7 +13606,7 @@
                      rendition="#top-of-the-page" source="(Athanasius)"
                      corresp="#vat-gr-754-ps-9-24a">
                      <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-9-74"
-                        source="Athanasius, exp. in Ps 9,24a" corresp="#person-2">Τοσαύτη σου φησὶ
+                        source="Athanasius, exp. in Ps 9,24" corresp="#person-2">Τοσαύτη σου φησὶ
                         γέγονεν ἡ ἀνεξικακία. ὡς καὶ διὰ τὸ ἀτιμωρήτους μένειν τοὺς ἀσεβεῖς. λοιπὸν
                         καὶ παρά τισι τῶν ἀνοητοτέρων. ἀποδεκτὸν αὐτῶν εἶναι τὸν βίον: –</quote>
                      <note type="attribution">ΚS</note>
@@ -13668,13 +13669,13 @@
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-9-80"
                      rendition="#left-column" source="(Evagrius)" corresp="#vat-gr-754-ps-9-26c">
                      <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-9-80"
-                        source="Evagrius, schol. β in Ps 9,26c" corresp="#person-2">Ἢ τάχα τὸ
-                        βούλημα αὐτοῦ τίθησιν ἡ θεία γραφὴ. ὅπερ ἐπὶ πέρας ἀγαγεῖν τῶν οὐκ
-                        ἐνδεχομένων ἐστίν· εἴ γε διελογίσαντο βουλὰς ἃς οὐ μὴ δύνονται στῆσαι· καὶ
-                        γὰρ ἐν τῷ ἰὼβ ψευδόμενος ὁ διάβολος φησίν· περιελθὼν τὴν γῆν καὶ
-                        ἐμπεριπατήσας τὴν ὑπ’ οὐρανὸν πάρειμι· μηδὲν πείσας τὸν ἰὼβ. ἄτοπον
-                        πεπραχέναι: –</quote>
-                     <note type="attribution">ιβ</note>
+                        source="Evagrius, schol. nr. ιβ´ (explanatio secunda) in Ps 9,26c (330 Rondeau – Géhin – Cassin)"
+                        corresp="#person-21">Ἢ τάχα τὸ βούλημα αὐτοῦ τίθησιν ἡ θεία γραφὴ. ὅπερ ἐπὶ
+                        πέρας ἀγαγεῖν τῶν οὐκ ἐνδεχομένων ἐστίν· εἴ γε διελογίσαντο βουλὰς ἃς οὐ μὴ
+                        δύνονται στῆσαι· καὶ γὰρ ἐν τῷ ἰὼβ ψευδόμενος ὁ διάβολος φησίν· περιελθὼν
+                        τὴν γῆν καὶ ἐμπεριπατήσας τὴν ὑπ’ οὐρανὸν πάρειμι· μηδὲν πείσας τὸν ἰὼβ.
+                        ἄτοπον πεπραχέναι: –</quote>
+                     <note type="attribution">ιβ´</note>
                   </seg>
                </ab>
             </div>
@@ -13685,30 +13686,31 @@
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-9-81"
                      rendition="#right-column" source="(Evagrius)" corresp="#vat-gr-754-ps-9-26a">
                      <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-9-81"
-                        source="Evagrius, schol. in Ps 9,26a" corresp="#person-21">Ὁ μὲν δίκαιος
-                        εὐλογεῖ τὸν κύριον. ἐν παντὶ καιρῷ· ὁ δὲ ἁμαρτωλὸς βεβηλοῖ τὰς ὁδοὺς αὐτοῦ
-                        ἐν παντὶ καιρῷ:</quote>
+                        source="Evagrius, schol. nr. ια´ in Ps 9,26a (328 Rondeau – Géhin – Cassin)"
+                        corresp="#person-21">Ὁ μὲν δίκαιος εὐλογεῖ τὸν κύριον. ἐν παντὶ καιρῷ· ὁ δὲ
+                        ἁμαρτωλὸς βεβηλοῖ τὰς ὁδοὺς αὐτοῦ ἐν παντὶ καιρῷ:</quote>
                      <note type="attribution">ια´</note>
                   </seg>
-                  <note type="lemma">Ps 9,26a</note>
+                  <note type="lemma">Ps 9,26a (βεβηλοῦνται)</note>
                   <seg type="glosse" xml:id="vat-gr-754-glosse-9-1" rendition="#right-column"
                      source="Anonymous" corresp="#vat-gr-754-ps-9-26a">
-                     <quote type="patristic" subtype="unknown" xml:id="vat-gr-754-quot-9-82"
+                     <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-9-82"
                         source="fons ignotus in Ps 9,26a; cf. Suda s.v. Βέβηλος τόπος (Β nr. 218 Adler) et alibi"
-                        corresp="#person-18">μαίνονται·</quote>
+                        corresp="#person-18">μ<supplied reason="om." resp="Panteghini"
+                        >ι</supplied>αίνονται·</quote>
                   </seg>
-                  <note type="lemma">Ps 9,26b</note>
+                  <note type="lemma">Ps 9,26b (ἀνταναιρεῖται)</note>
                   <seg type="glosse" xml:id="vat-gr-754-glosse-9-2" rendition="#right-column"
                      source="Anonymous" corresp="#vat-gr-754-ps-9-26b">
                      <quote type="patristic" subtype="unknown" xml:id="vat-gr-754-quot-9-83"
                         source="fons ignotus in Ps 9,26b" corresp="#person-18">ἀφανίζεται·</quote>
                   </seg>
-                  <note type="lemma">Ps 9,26b</note>
+                  <note type="lemma">Ps 9,26b (ἀνταναιρεῖται)</note>
                   <seg type="glosse" xml:id="vat-gr-754-glosse-9-3" rendition="#right-column"
                      source="Anonymous" corresp="#vat-gr-754-ps-9-26b">
                      <quote type="patristic" subtype="unknown" xml:id="vat-gr-754-quot-9-84"
-                        source="fons ignotus in Ps 9,26b; cf. PG 55 (136,26)" corresp="#person-18"
-                        >ἀντὶ τοῦ ἦρται ἡ κρίσις:</quote>
+                        source="fons ignotus in Ps 9,26b; cf. Field  II 100 (Ἄλλος) et PG 55 (136,26)"
+                        corresp="#person-18">ἀντὶ τοῦ ἦρται ἡ κρίσις:</quote>
                   </seg>
                   <note type="lemma">Ps 9,26c</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-9-82"
@@ -13732,7 +13734,8 @@
                      next="#vat-gr-754-fr-9-85" rendition="#right-column" source="(Evagrius)"
                      corresp="#vat-gr-754-ps-9-26c">
                      <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-9-87"
-                        next="#vat-gr-754-quot-9-88" source="Evagrius, schol. α in Ps 9,26c"
+                        next="#vat-gr-754-quot-9-88"
+                        source="Evagrius, schol. nr. ιβ´ (explanatio prima) in Ps 9,26c (328–330 Rondeau – Géhin – Cassin)"
                         corresp="#person-21">Οὐ πάντων τῶν ἐχθρῶν αὐτοῦ κατακυριεύει ὁ σατανᾶς·
                         πάντες δὲ οἱ δίκαιοι ἐχθροὶ αὐτοῦ εἰσὶ. πάντων ἄρα τῶν δικαίων κατακυριεύει
                         ὁ σατανᾶς· οὐκ ἐν παντὶ δηλονότι κατακυριεύει πράγματι. ἀλλ’ ἔν τινι· μόνος
@@ -13750,9 +13753,10 @@
                      prev="#vat-gr-754-fr-9-84" rendition="#bottom-of-the-page" source="(Evagrius)"
                      corresp="#vat-gr-754-ps-9-26c">
                      <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-9-88"
-                        prev="#vat-gr-754-quot-9-87" source="Evagrius, schol. α in Ps 9,26c"
-                        corresp="#person-21"> τίαν οὐκ ἐποίησεν· κ(αὶ) οὐχ εὑρέθη δόλος ἐν τῶREGτῷ
-                        στόματι αὐτοῦ: –</quote>
+                        prev="#vat-gr-754-quot-9-87"
+                        source="Evagrius, schol. nr. ιβ´ (explanatio prima) in Ps 9,26c (328–330 Rondeau – Géhin – Cassin)"
+                        corresp="#person-21"> τίαν οὐκ ἐποίησεν· καὶ οὐχ εὑρέθη δόλος ἐν τῷ στόματι
+                        αὐτοῦ: –</quote>
                      <note type="attribution">ιβ´</note>
                   </seg>
                   <note type="lemma">Ps 9,26c</note>
@@ -13761,12 +13765,12 @@
                      corresp="#vat-gr-754-ps-9-26c">
                      <quote type="patristic" subtype="unknown" xml:id="vat-gr-754-quot-9-89"
                         next="#vat-gr-754-quot-9-90"
-                        source="fons ignotus in Ps 9,26c (PG 27,89 A12–B9; cf. PG 12,1192 D6–1193 A6)"
-                        corresp="#person-18">Τῶν πειρασμῶν οἱ μὲν προσάγονται τῇ ψυχῇ. οἱ δὲ τῷ
+                        source="Evagrius, schol. nr. ιβ´ (ἄλλο 1 = explanatio tertia) in Ps 9,26c (330–332 Rondeau – Géhin – Cassin) = PG 27,89 A12–B9"
+                        corresp="#person-13">Τῶν πειρασμῶν οἱ μὲν προσάγονται τῇ ψυχῇ. οἱ δὲ τῷ
                         σώματι. οἱ δὲ τοῖς πέριξ τοῦ σώματος· καὶ οἱ μὲν τῇ ψυχῇ προσαγόμενοι.
                         λογισμοὶ ἀκάθαρτοι λέγονται. ἁμαρτίας γεννῶντες. καὶ δόγματα ψευδῆ· οἱ δὲ τῷ
                         σώματι προσφερόμενοι. πληγῶν καὶ στρεβλώσεων καὶ διω</quote>
-                     <note type="attribution">ἄλλο: –</note>
+                     <note type="attribution">ἄλλο: –</note><!-- cf. PG 12,1192 D6–1193 A6) -->
                   </seg>
                </ab>
             </div>
@@ -13781,8 +13785,8 @@
                      corresp="#vat-gr-754-ps-9-26c">
                      <quote type="patristic" subtype="unknown" xml:id="vat-gr-754-quot-9-90"
                         prev="#vat-gr-754-quot-9-89"
-                        source="fons ignotus in Ps 9,26c (PG 27,89 A12–B9; cf. PG 12,1192 D6–1193 A6)"
-                        corresp="#person-18">γμῶν καὶ φυλακῶν καὶ θανάτων αἴτιοι γίνονται• οἱ δὲ τῶν
+                        source="Evagrius, schol. nr. ιβ´ (ἄλλο 1 = explanatio tertia) in Ps 9,26c (330–332 Rondeau – Géhin – Cassin) = PG 27,89 A12–B9"
+                        corresp="#person-13">γμῶν καὶ φυλακῶν καὶ θανάτων αἴτιοι γίνονται• οἱ δὲ τῶν
                         πέριξ τοῦ σώματος πειρασμοὶ. περιέχουσι ζημίας χρημάτων καὶ κτημάτων. καὶ
                         ἀποβολὰς τέκνων. καὶ γυναικῶν ἀφαιρέσεις• δῆλον οὖν ἐστιν ἐκ τούτων. ὅτι
                         πάντως διά τινος τῶν κατειλεγμένων πειρασμῶν. ἐκυρίευσε παντὸς δικαίου ὁ
@@ -13793,16 +13797,16 @@
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-9-88"
                      rendition="#top-of-the-page" source="Anonymous" corresp="#vat-gr-754-ps-9-26c">
                      <quote type="patristic" subtype="unknown" xml:id="vat-gr-754-quot-9-91"
-                        source="fons ignotus in Ps 9,26c (PG 12,1193 Β4–C1)" corresp="#person-18">Εἰ
-                        οἱ προκόπτοντες κατὰ μείωσιν τῆς κακίας προκόπτουσι. δίκαιοι δὲ λέγονται καὶ
-                        οἱ τελείαν ἕξιν τῆς δικαιοσύνης κτησάμενοι· καὶ οἱ ἀνεμποδίστως
-                        προκόπτοντες· δίκαιος γάρ φησιν ἑαυτοῦ κατήγορος ἐν πρωτολογίᾳ· καὶ εἰ
-                        δίκαιος. πῶς κατήγορος; εἰ δὲ κατήγορος. πάντως οὐ τέλειος δίκαιος· καὶ
-                        γνώριζε δικαίῳ. καὶ προσθήσει τοῦ δέχεσθαι· καλῶς οὖν λέγεται ὁ διάβολος.
-                        πάντων τῶν ἐχθρῶν αὐτοῦ κατακυριεύειν· οὐ τῶν τελείων δηλονότι ἐχθρῶν. ἀλλὰ
-                        τῶν σπευδόντων ἐπὶ τὴν τελειότητα· εἰ γὰρ μὴ ἦν μῖσος πρὸς τὸν σατανᾶν
-                        ἀτελὲς καὶ τέλειο. οὐκ ἂν ἔλεγεν ὁ Δαυῒδ τέλειον μῖσος ἐμίσουν αὐτοὺς εἰς
-                        ἐχθροὺς ἐγένοντό μοι: –</quote>
+                        source="Evagrius, schol. nr. ιβ´ (ἄλλο 2 = explanatio quarta) in Ps 9,26c (332 Rondeau – Géhin – Cassin)"
+                        corresp="#person-18">Εἰ οἱ προκόπτοντες κατὰ μείωσιν τῆς κακίας προκόπτουσι.
+                        δίκαιοι δὲ λέγονται καὶ οἱ τελείαν ἕξιν τῆς δικαιοσύνης κτησάμενοι· καὶ οἱ
+                        ἀνεμποδίστως προκόπτοντες· δίκαιος γάρ φησιν ἑαυτοῦ κατήγορος ἐν πρωτολογίᾳ·
+                        καὶ εἰ δίκαιος. πῶς κατήγορος; εἰ δὲ κατήγορος. πάντως οὐ τέλειος δίκαιος·
+                        καὶ γνώριζε δικαίῳ. καὶ προσθήσει τοῦ δέχεσθαι· καλῶς οὖν λέγεται ὁ
+                        διάβολος. πάντων τῶν ἐχθρῶν αὐτοῦ κατακυριεύειν· οὐ τῶν τελείων δηλονότι
+                        ἐχθρῶν. ἀλλὰ τῶν σπευδόντων ἐπὶ τὴν τελειότητα· εἰ γὰρ μὴ ἦν μῖσος πρὸς τὸν
+                        σατανᾶν ἀτελὲς καὶ τέλειο. οὐκ ἂν ἔλεγεν ὁ Δαυῒδ τέλειον μῖσος ἐμίσουν
+                        αὐτοὺς εἰς ἐχθροὺς ἐγένοντό μοι: –</quote>
                      <note type="attribution">ἄλλο: –</note>
                   </seg>
                </ab>
@@ -13836,29 +13840,29 @@
             <div type="hexaplaric" subtype="commentary" xml:id="vat-gr-754-9-40"
                rendition="#left-column" rend="capital letters" change="commentaryfragments-only">
                <ab xml:lang="grc">
-                  <note type="lemma">Ps 9,27b</note>
+                  <note type="lemma">Ps 9,27b (γενεᾶς)</note>
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-9-23"
                      rendition="#left-column" source="Symmachus (Ps 9,27b)"
                      corresp="#vat-gr-754-ps-9-27a">Ϲ οὐ γὰρ ἔσομαι ἐν κακώσει:</seg>
-                  <note type="lemma">Ps 9,29a</note>
+                  <note type="lemma">Ps 9,29a (ἐνέδρᾳ)</note>
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-9-24"
                      rendition="#left-column" source="Symmachus (Ps 9,29a)"
                      corresp="#vat-gr-754-ps-9-29a">Ϲ παρὰ τὰς αὐλάς:</seg>
-                  <note type="lemma">Ps 9,29a</note>
+                  <note type="lemma">Ps 9,29a (ἐνέδρᾳ)</note>
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-9-25"
                      rendition="#left-column" source="Aquila (Ps 9,29a)"
                      corresp="#vat-gr-754-ps-9-29a">A ἐνέδρᾳ αὐλῶν·</seg>
-                  <note type="lemma">Ps 9,29a</note>
+                  <note type="lemma">Ps 9,29a (ἐνέδρᾳ)</note>
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-9-26"
-                     rendition="#left-column" source="Theodotion (Ps 9,29a)"
-                     corresp="#vat-gr-754-ps-9-29a">Θ ὁμοίως τοῖς Ο</seg>
-                  <note type="lemma">Ps 9,27a</note>
+                     rendition="#left-column" source="Theodotion = LXX (Ps 9,29a)"
+                     corresp="#vat-gr-754-ps-9-29a">Θ ὁμοίως τοῖς Ο´</seg>
+                  <note type="lemma">Ps 9,27a (σαλευθῶ)</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-9-89"
                      rendition="#left-column" source="Anonymous" corresp="#vat-gr-754-ps-9-27a">
                      <quote type="patristic" subtype="unknown" xml:id="vat-gr-754-quot-9-92"
-                        source="fons ignotus in Ps 9,27 (PG 27,89 A1–3)" corresp="#person-18">Ἀντὶ
-                        τοῦ οὐ μὴ σφάλω οὐ μὴ περιτραπήσομαι εἰς γενεὰν. οὐ γὰρ ἔσομαι ἐν κακώσει:
-                        –</quote>
+                        source="Athanasius, exp. (?) in Ps 9,27 (= PG 27,89 A1–3); cf. Symmachus (Ps 9,27)"
+                        corresp="#person-2">Ἀντὶ τοῦ οὐ μὴ σφάλω οὐ μὴ περιτραπήσομαι εἰς γενεὰν. οὐ
+                        γὰρ ἔσομαι ἐν κακώσει: –</quote>
                   </seg>
                </ab>
             </div>
@@ -13882,11 +13886,11 @@
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-9-91"
                      rendition="#bottom-of-the-page" source="Anonymous"
                      corresp="#vat-gr-754-ps-9-28a">
-                     <quote type="patristic" subtype="unknown" xml:id="vat-gr-754-quot-9-94"
-                        source="Origenes (?), fr. in Ps 9,28a (PG 23,136 C3–5; cf. PG 12,1193 C5–8)"
-                        corresp="#person-13">Τῶν ἑτεροδόξων, τὸ στόμα[.] ἀρᾶς γέμει κακολογούντων
-                        τὸν δημιουργὸν. καὶ τῶν λοιδόρων. [...]πικρίας δὲ τῶν θυμικῶν· δόλου τῶν
-                        δολίων: –</quote>
+                     <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-9-94"
+                        source="Origenes, schol. (?) in Ps 9,28a (PG 23,136 C3–5); cf. PG 12,1193 C5–8 - sub auctore Eusebio (pro Origene?) Paris. Coislin 10 (f. 6v) et Paris. gr. 166–167 (f. 21v)"
+                        corresp="#person-38 #person-32">Τῶν ἑτεροδόξων, τὸ στόμα[.] ἀρᾶς γέμει
+                        κακολογούντων τὸν δημιουργὸν. καὶ τῶν λοιδόρων. [...]πικρίας δὲ τῶν θυμικῶν·
+                        δόλου τῶν δολίων: –</quote>
                   </seg>
                   <note type="lemma">Ps 9,28a</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-9-92"
@@ -13913,10 +13917,10 @@
                      rendition="#bottom-of-the-page" source="(Athanasius)"
                      corresp="#vat-gr-754-ps-9-29a">
                      <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-9-97"
-                        source="Athanasius, exp. in Ps 9,29a" corresp="#person-2">Παράμονον ἕξειν
-                        φησὶ τὴν εὐημερίαν λελόγισται· διὸ καὶ πικρίας καὶ δόλου τὸ στόμα
-                        πεπλήρωται· καὶ μὴν καὶ ἐνεδρεύει πτωχοὺς. πρὸς τὸ ἀποκτεῖναι διὰ τῶν ἰδίων
-                        παγίδων: τὸ δὲ μετὰ πλουσίων· τι ἂν ἕτερον νοηθῇ, ἢ τῶν πλουτούντων ἐν
+                        source="Athanasius, exp. in Ps 9,28 et in Ps 9,29" corresp="#person-2"
+                        >Παράμονον ἕξειν φησὶ τὴν εὐημερίαν λελόγισται· διὸ καὶ πικρίας καὶ δόλου τὸ
+                        στόμα πεπλήρωται· καὶ μὴν καὶ ἐνεδρεύει πτωχοὺς. πρὸς τὸ ἀποκτεῖναι διὰ τῶν
+                        ἰδίων παγίδων: τὸ δὲ μετὰ πλουσίων· τι ἂν ἕτερον νοηθῇ, ἢ τῶν πλουτούντων ἐν
                         κακοῖς; οὗτοι γὰρ τῷ διαβόλῳ κατὰ τῶν πτωχῶν τῷ πνεύματι συμπράττουσιν:
                         –</quote>
                      <note type="attribution">ΛΒ</note>
@@ -13936,13 +13940,13 @@
                      rendition="#bottom-of-the-page" source="(Evagrius)"
                      corresp="#vat-gr-754-ps-9-29a">
                      <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-9-99"
-                        source="Evagrius, schol. in Ps 9,29a" corresp="#person-21">Ἐν μὲν τοῖς
-                        ἔχουσι πλοῦτον κακίας καὶ ἀγνωσίας. ὁ διάβολος ἐγκαθέζεται· ἐν δὲ τοῖς
-                        κεκτημένοις τὴν ἀρετὴν καὶ τὴν γνῶσιν. αἱ ἅγιαι δυνάμεις ἐναναπαύ ονται· ὧν
-                        σύμβολά ἐστι τὰ πετεινὰ τοῦ οὐρανοῦ τὰ κατασκηνοῦντα ἐν τοῖς κλάδοις τοῦ
-                        νάπυος· ὅπερ σημαίνει τὴν ὑπάρχουσαν ἐν ἡμῖν κατὰ δύναμιν βασιλείαν τῶν
-                        οὐρανῶν: –</quote>
-                     <note type="attribution">ιγ</note>
+                        source="Evagrius, schol. nr. ιγ´ in Ps 9,29a (334 Rondeau – Géhin – Cassin)"
+                        corresp="#person-21">Ἐν μὲν τοῖς ἔχουσι πλοῦτον κακίας καὶ ἀγνωσίας. ὁ
+                        διάβολος ἐγκαθέζεται· ἐν δὲ τοῖς κεκτημένοις τὴν ἀρετὴν καὶ τὴν γνῶσιν. αἱ
+                        ἅγιαι δυνάμεις ἐναναπαύ ονται· ὧν σύμβολά ἐστι τὰ πετεινὰ τοῦ οὐρανοῦ τὰ
+                        κατασκηνοῦντα ἐν τοῖς κλάδοις τοῦ νάπυος· ὅπερ σημαίνει τὴν ὑπάρχουσαν ἐν
+                        ἡμῖν κατὰ δύναμιν βασιλείαν τῶν οὐρανῶν: –</quote>
+                     <note type="attribution">ιγ´</note>
                   </seg>
                </ab>
             </div>
@@ -13993,7 +13997,7 @@
             <div type="hexaplaric" subtype="commentary" xml:id="vat-gr-754-9-43"
                rendition="#right-column" rend="minuscule letters" change="commentaryfragments-only">
                <ab xml:lang="grc">
-                  <note type="lemma">Ps 9,29c</note>
+                  <note type="lemma">Ps 9,29c (πένητα)</note>
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-9-27"
                      rendition="#right-column" source="Symmachus (Ps 9,29c)"
                      corresp="#vat-gr-754-ps-9-29c">Ϲ εἰς τοὺς ἀσθενεῖς σου·</seg>
@@ -14001,25 +14005,26 @@
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-9-97"
                      rendition="#right-column" source="(Evagrius)" corresp="#vat-gr-754-ps-9-30c">
                      <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-9-100"
-                        source="Evagrius, schol. α in Ps 9,30c" corresp="#person-21">Χρηστέον τούτῳ
-                        τῷ ῥητῷ πρὸς τοὺς πλουσίους</quote>
+                        source="Evagrius, schol. nr. ιδ´ in Ps 9,30 (336 Rondeau – Géhin – Cassin)"
+                        corresp="#person-21">Χρηστέον τούτῳ τῷ ῥητῷ πρὸς τοὺς πλουσίους</quote>
                      <note type="attribution">ιδ´</note>
                   </seg>
                   <note type="lemma">Ps 9,30c</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-9-98"
                      rendition="#right-column" source="Anonymous" corresp="#vat-gr-754-ps-9-30c">
                      <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-9-101"
-                        source="Evagrius, schol. β in Ps 9,30c" corresp="#person-21">Ἕλκει μὲν διὰ
-                        τοῦ λογισμοῦ. ἁρπάζει δὲ διὰ τῆς κατ’ ἐνέργειαν ἁμαρτίας:</quote>
+                        source="Evagrius, schol. nr. ιδ´ (ἄλλο) in Ps 9,30 (336 Rondeau – Géhin – Cassin)"
+                        corresp="#person-21">Ἕλκει μὲν διὰ τοῦ λογισμοῦ. ἁρπάζει δὲ διὰ τῆς κατ’
+                        ἐνέργειαν ἁμαρτίας:</quote>
                      <note type="attribution">ἄλλο·</note>
                   </seg>
-                  <note type="lemma">Ps 9,32a</note>
+                  <note type="lemma">Ps 9,32a (ἐπιλέλησται)</note>
                   <seg type="glosse" xml:id="vat-gr-754-glosse-9-4" rendition="#right-column"
                      source="Anonymous" corresp="#vat-gr-754-ps-9-32a">
                      <quote type="patristic" subtype="unknown" xml:id="vat-gr-754-quot-9-102"
                         source="fons ignotus in Ps 9,30c" corresp="#person-18">ἐπελάθετο·</quote>
                   </seg>
-                  <note type="lemma">Ps 9,33a</note>
+                  <note type="lemma">linking not completed</note>
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-9-28"
                      rendition="#right-column" source="Aquila, Symmachus (Ps 9,33a)"
                      corresp="#vat-gr-754-ps-9-33a">A Ϲ ἀνάστηθι κύριε ἰσχυρέ:</seg>
@@ -14027,8 +14032,9 @@
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-9-99"
                      rendition="#right-column" source="(Evagrius)" corresp="#vat-gr-754-ps-9-33b">
                      <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-9-103"
-                        source="Evagrius, schol. in Ps 9,33a" corresp="#person-21">εἰ ἐπελάθετο τῶν
-                        πενήτων ὁ κύριος. ᾔδει τοὺς πένητας ὁ κύριος:</quote>
+                        source="Evagrius, schol. nr. ιε´ in Ps 9,33a (336 Rondeau – Géhin – Cassin)"
+                        corresp="#person-21">εἰ ἐπελάθετο τῶν πενήτων ὁ κύριος. ᾔδει τοὺς πένητας ὁ
+                        κύριος:</quote>
                      <note type="attribution">ιε´</note>
                   </seg>
                </ab>
@@ -14115,8 +14121,8 @@
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-9-107"
                      rendition="#left-column" source="(Athanasius)" corresp="#vat-gr-754-ps-9-33b">
                      <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-9-111"
-                        source="Athanasius, exp. in Ps 9,33b" corresp="#person-2">Μὴ ὑψουμένης γὰρ
-                        ἐπὶ τιμωρίᾳ τῶν δυσσεβῶν τῆς χειρὸς τοῦ θεοῦ. προπετέστεροι γίνονται:
+                        source="Athanasius, exp. in Ps 9,33b–34" corresp="#person-2">Μὴ ὑψουμένης
+                        γὰρ ἐπὶ τιμωρίᾳ τῶν δυσσεβῶν τῆς χειρὸς τοῦ θεοῦ. προπετέστεροι γίνονται:
                         –</quote>
                      <note type="attribution">ΛS</note>
                   </seg>
@@ -14172,41 +14178,43 @@
                   <note type="lemma">Ps 9,34b</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-9-109"
                      rendition="#left-column" source="Anonymous" corresp="#vat-gr-754-ps-9-34b">
-                     <quote type="patristic" subtype="unknown" xml:id="vat-gr-754-quot-9-113"
-                        source="fons ignotus in Ps 9,34b" corresp="#person-18">Ἀλλὰ κἂν μυριάκις
-                        ἐκεῖνος ταῦτα λογίσηται. σὺ βλέπεις· οὕτω γὰρ νοητέον: –</quote>
+                     <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-9-113"
+                        source="Origenes (?), fr. in Ps 9,34b (Analecta sacra II 464,3–4)"
+                        corresp="#person-14">Ἀλλὰ κἂν μυριάκις ἐκεῖνος ταῦτα λογίσηται. σὺ βλέπεις·
+                        οὕτω γὰρ νοητέον: –</quote>
                   </seg>
-                  <note type="lemma">Ps 9,35a</note>
+                  <note type="lemma">Ps 9,35a (βλέπεις)</note>
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-9-29"
                      rendition="#left-column" source="Aquila (Ps 9,35a)"
                      corresp="#vat-gr-754-ps-9-35a">A ἴδες ὅτι σὺ πόνον καὶ παροργισμὸν
                      ἐπιβλέπεις:</seg>
-                  <note type="lemma">Ps 9,35a</note>
+                  <note type="lemma">Ps 9,35a (βλέπεις)</note>
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-9-30"
                      rendition="#left-column" source="Symmachus (Ps 9,35a)"
                      corresp="#vat-gr-754-ps-9-35a">Ϲ ὁρᾶς ὅτι σὺ μόχθον καὶ παροργισμὸν
                      ὑποπτεύεις:</seg>
-                  <note type="lemma">Ps 9,35a</note>
+                  <note type="lemma">Ps 9,35a (βλέπεις)</note>
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-9-31"
-                     rendition="#left-column" source="Theodotion (Ps 9,35a)"
-                     corresp="#vat-gr-754-ps-9-35a">Θ ὁμοίως τοῖς Ο</seg>
-                  <note type="lemma">Ps 9,35c</note>
+                     rendition="#left-column" source="Theodotion = LXX (Ps 9,35a)"
+                     corresp="#vat-gr-754-ps-9-35a">Θ ὁμοίως τοῖς Ο´</seg>
+                  <note type="lemma">Ps 9,35c (ἐγκαταλέλειπται)</note>
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-9-32"
                      rendition="#left-column" source="Aquila (Ps 9,35c)"
                      corresp="#vat-gr-754-ps-9-35c">A ἐπὶ σὲ καταλείπει·</seg>
-                  <note type="lemma">Ps 9,35c</note>
+                  <note type="lemma">Ps 9,35c (ἐγκαταλέλειπται)</note>
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-9-33"
                      rendition="#left-column" source="Symmachus (Ps 9,35c)"
                      corresp="#vat-gr-754-ps-9-35c">Ϲ σοὶ ἐγκαταλείπει:</seg>
-                  <note type="lemma">Ps 9,35c</note>
+                  <note type="lemma">Ps 9,35c (ἐγκαταλέλειπται)</note>
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-9-34"
                      rendition="#left-column" source="Theodotion (Ps 9,35c)"
                      corresp="#vat-gr-754-ps-9-35c">Θ ἐπὶ σὲ καταλείπετε: –</seg>
-                  <note type="lemma">Ps 9,35d</note>
+                  <note type="lemma">Ps 9,35d (βοηθῶν)</note>
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-9-35"
                      rendition="#left-column"
                      source="Septuaginta, Aquila, Theodotion, Quinta, Sexta (Ps 9,35d)"
-                     corresp="#vat-gr-754-ps-9-35d">O A Θ E S θῶν·</seg>
+                     corresp="#vat-gr-754-ps-9-35d">O´ A Θ E´ S´ <supplied reason="om."
+                        resp="Panteghini">βοη</supplied>θῶν·</seg>
                </ab>
             </div>
             <div type="commentary" subtype="commentary" xml:id="vat-gr-754-9-48"
@@ -14227,13 +14235,13 @@
                         ἐκτὸς διαδρᾶναι: –</quote>
                      <note type="attribution">ΛΖ</note>
                   </seg>
-                  <note type="lemma">Ps 9,35a</note>
+                  <note type="lemma">Ps 9,35a</note><!-- faciendum: Quellenkritik: Zitat zu überprüfen -->
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-9-111"
                      next="#vat-gr-754-fr-9-112" rendition="#top-of-the-page" source="Hadrianus"
                      corresp="#vat-gr-754-ps-9-35a">
                      <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-9-115"
                         next="#vat-gr-754-quot-9-116"
-                        source="Hadrianus Mon., fr. 2 in Ps 9,35a; 291 (Martens)"
+                        source="Hadrianus Mon., fr. 2 in Ps 9,35a (291–292 Martens)"
                         corresp="#person-30">Κατὰ ἀντιστροφὴν. ὅτι βλέπεις σὺ πόνον καὶ θυμὸν
                         κατανοεῖς· ἐνίοτε δὲ καὶ διὰ μακροτέρου τὴν ἀντιστροφὴν ποιεῖται. ὡς τὸ ἐν
                         τοῖς περιλοίποις σου ἑτοιμά</quote>
@@ -14269,8 +14277,9 @@
                      rendition="#bottom-of-the-page" source="(Evagrius)"
                      corresp="#vat-gr-754-ps-9-35a">
                      <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-9-117"
-                        source="Evagrius, schol. in Ps 9,35a" corresp="#person-21">Πόνους καὶ θυμοὺς
-                        ὁ σατανᾶς ἐργαζόμενος. παραδίδωσι τὰς ψυχὰς. εἰς κόλασιν τῷ κριτῇ: –</quote>
+                        source="Evagrius, schol. nr. ις´ in Ps 9,35a (336 Rondeau – Géhin – Cassin)"
+                        corresp="#person-21">Πόνους καὶ θυμοὺς ὁ σατανᾶς ἐργαζόμενος. παραδίδωσι τὰς
+                        ψυχὰς. εἰς κόλασιν τῷ κριτῇ: –</quote>
                      <note type="attribution">ις´</note>
                   </seg>
                   <note type="lemma">Ps 9,35b</note>
@@ -14287,9 +14296,9 @@
                      rendition="#bottom-of-the-page" source="(Evagrius)"
                      corresp="#vat-gr-754-ps-9-35d">
                      <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-9-119"
-                        source="Evagrius, schol. in Ps 9,35d" corresp="#person-21">Ὀρφανός ἐστιν. ὁ
-                        ἀποβαλὼν τὸν πονηρὸν πατέρα· ὑμεῖς γὰρ φησὶν ὁ σωτὴρ ἐκ τοῦ πατρὸς ὑμῶν τοῦ
-                        διαβόλου ἐστέ: –</quote>
+                        source="Evagrius, schol. nr. ιζ´ in Ps 9,35d (338 Rondeau – Géhin – Cassin)"
+                        corresp="#person-21">Ὀρφανός ἐστιν. ὁ ἀποβαλὼν τὸν πονηρὸν πατέρα· ὑμεῖς γὰρ
+                        φησὶν ὁ σωτὴρ ἐκ τοῦ πατρὸς ὑμῶν τοῦ διαβόλου ἐστέ: –</quote>
                      <note type="attribution">ιζ´</note>
                   </seg>
                   <note type="lemma">Ps 9,36a</note>
@@ -14306,17 +14315,17 @@
                      rendition="#bottom-of-the-page" source="(Evagrius)"
                      corresp="#vat-gr-754-ps-9-36a">
                      <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-9-121"
-                        source="Evagrius, schol. in Ps 9,36a" corresp="#person-21">Εἰ ἡ συντριβὴ τοῦ
-                        βραχίονος ἀφανίζει τὰς ἁμαρτίας· τὸ δὲ ἀπαλλαγῆναι τῶν ἁμαρτιῶν εὐεργεσία
-                        ἐστιν. τὸ συντριβῆναι τινὸς τὸν βραχίονα. εὐεργεσία ἐστίν· οὕτω γὰρ ἐγὼ
-                        πείθομαι κολάζειν θεόν· βραχίονα δὲ εἶπεν. τὴν πονηρὰ κατεργασαμένην ψυχήν:
-                        –</quote>
+                        source="Evagrius, schol. nr. ιη´ in Ps 9,36a (338 Rondeau – Géhin – Cassin)"
+                        corresp="#person-21">Εἰ ἡ συντριβὴ τοῦ βραχίονος ἀφανίζει τὰς ἁμαρτίας· τὸ
+                        δὲ ἀπαλλαγῆναι τῶν ἁμαρτιῶν εὐεργεσία ἐστιν. τὸ συντριβῆναι τινὸς τὸν
+                        βραχίονα. εὐεργεσία ἐστίν· οὕτω γὰρ ἐγὼ πείθομαι κολάζειν θεόν· βραχίονα δὲ
+                        εἶπεν. τὴν πονηρὰ κατεργασαμένην ψυχήν: –</quote>
                      <note type="attribution">ιη´</note>
                   </seg>
                   <note type="lemma">Ps 9,35c</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-9-118"
                      rendition="#bottom-of-the-page" source="Gregorius of Nazianz"
-                     corresp="#vat-gr-754-ps-9-35c">
+                     corresp="#vat-gr-754-ps-9-35c"><!-- Edition: nicht in SC -->
                      <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-9-122"
                         source="Gregorius Naz., or. 14,27–28 (PG 35,893 C12–896 A10)"
                         corresp="#person-20">Μὴ παρίδῃς. μὴ παραδράμῃς τὸν ἀδελφὸν. μὴ ἀποστραφῇς ὡς
@@ -14369,16 +14378,16 @@
             <div type="commentary" subtype="commentary" xml:id="vat-gr-754-9-52"
                rendition="#right-column" rend="minuscule letters" change="commentaryfragments-only">
                <ab xml:lang="grc">
-                  <note type="lemma">Ps 9,36b</note>
+                  <note type="lemma">Ps 9,36b (sic)</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-9-119"
                      rendition="#right-column" source="(Evagrius)" corresp="#vat-gr-754-ps-9-36b">
                      <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-9-123"
-                        source="Evagrius, schol. in Ps 9,{36b} 36a" corresp="#person-21">Ἁμαρτωλός
-                        ἐστιν. ὁ ἐξ ἡδυπαθείας καὶ ἀκολασίας ἁμαρτάνων· πονηρὸς δὲ ὁ ἑκουσίως
-                        κακοποιητικός:</quote>
+                        source="Evagrius, schol. nr. ιθ´ in Ps 9,36a (340 Rondeau – Géhin – Cassin)"
+                        corresp="#person-21">Ἁμαρτωλός ἐστιν. ὁ ἐξ ἡδυπαθείας καὶ ἀκολασίας
+                        ἁμαρτάνων· πονηρὸς δὲ ὁ ἑκουσίως κακοποιητικός:</quote>
                      <note type="attribution">ιθ´</note>
                   </seg>
-                  <note type="lemma">Ps 9,36b</note>
+                  <note type="lemma">Ps 9,36b (linking not completed)</note>
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-9-36"
                      rendition="#right-column" source="Theodotion (Ps 9,36b)"
                      corresp="#vat-gr-754-ps-9-36b">Θ ἐκζητηθησέτω ἡ ἀσέβεια αὐτοῦ. ἵνα μὴ εὑρεθῇ:
@@ -14387,18 +14396,18 @@
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-9-120"
                      rendition="#right-column" source="(Evagrius)" corresp="#vat-gr-754-ps-9-37b">
                      <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-9-124"
-                        source="Evagrius, schol. in Ps 9,37b" corresp="#person-21">Γῆ κυρίου ἡ
-                        θεωρία τῶν γεγονότων αἰώνων ἢ γενησομένων ἐστὶν, ἥ καὶ βασιλείαν κυρίου
-                        εἶναι φαμέν:</quote>
+                        source="Evagrius, schol. nr. κα´ in Ps 9,37b (342 Rondeau – Géhin – Cassin)"
+                        corresp="#person-21">Γῆ κυρίου ἡ θεωρία τῶν γεγονότων αἰώνων ἢ γενησομένων
+                        ἐστὶν, ἥ καὶ βασιλείαν κυρίου εἶναι φαμέν:</quote>
                      <note type="attribution">κα´</note>
                   </seg>
                   <note type="lemma">Ps 9,38a</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-9-121"
                      rendition="#right-column" source="(Evagrius)" corresp="#vat-gr-754-ps-9-38a">
                      <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-9-125"
-                        source="Evagrius, schol. in Ps 9,38a" corresp="#person-21">Tὸ τηνικαῦτα
-                        ἐπακούει τῆς ἐπιθυμίας ὁ κύριος. ὁπηνίκα ἂν τὸ ἐπιθυμητὸν παράσχῃ τῇ
-                        ἐπιθυμησάσῃ ψυχῇ: –</quote>
+                        source="Evagrius, schol. nr. κβ´ in Ps 9,38a (342 Rondeau – Géhin – Cassin)"
+                        corresp="#person-21">Tὸ τηνικαῦτα ἐπακούει τῆς ἐπιθυμίας ὁ κύριος. ὁπηνίκα
+                        ἂν τὸ ἐπιθυμητὸν παράσχῃ τῇ ἐπιθυμησάσῃ ψυχῇ: –</quote>
                      <note type="attribution">κβ´</note>
                   </seg>
                </ab>
@@ -14420,9 +14429,9 @@
                   <note type="lemma">Ps 9,36b</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-9-123"
                      rendition="#top-of-the-page" source="Eusebius" corresp="#vat-gr-754-ps-9-36b">
-                     <quote type="patristic" subtype="unknown" xml:id="vat-gr-754-quot-9-127"
-                        source="Origenes (?), fr. in Ps 9,36b (PG 12,1196 B4–8)"
-                        corresp="#person-13">Ἤτοι ζητουμένης τῆς ἁμαρτίας τοῦ ἁμαρτωλοῦ καὶ πονηροῦ.
+                     <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-9-127"
+                        source="Origenes, schol. (?) in Ps 9,36b (PG 12,1196 B4–8)"
+                        corresp="#person-32">Ἤτοι ζητουμένης τῆς ἁμαρτίας τοῦ ἁμαρτωλοῦ καὶ πονηροῦ.
                         αὐτὸς οὐχ εὑρεθήσεται· ὅλος γενόμενος ἁμαρτία καὶ πονηρία. ἢ ἔσται ὅτε
                         ζητηθήσεται αὐτοῦ ἡ ἁμαρτία καὶ οὐχ εὑρεθήσεται. τò κεκαθάρθαι αὐτόν:
                         –</quote>
@@ -14474,11 +14483,12 @@
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-9-128"
                      rendition="#left-column" source="(Evagrius)" corresp="#vat-gr-754-ps-9-37a">
                      <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-9-132"
-                        source="Evagrius, schol. in Ps 9,37a" corresp="#person-21">Δεῖ γὰρ τὸν
-                        κύριον βασιλεύειν διὰ τῶν αἰώνων. ἄχρις οὗ θῇ πάντας τοὺς ἐχθροὺς ὑπὸ τοὺς
-                        πόδας αὐτοῦ· ἡ γὰρ βασιλεία αὐτοῦ ἐστὶν ἡ θεωρία πάντων τῶν γεγονότων καὶ
-                        γενησομένων αἰώνων· δι᾿ ἧς θεωρίας. καὶ οἱ ἐχθροὶ φίλοι γίνονται:</quote>
-                     <note type="attribution">κ</note>
+                        source="Evagrius, schol. nr. κ´ in Ps 9,37a (340 Rondeau – Géhin – Cassin)"
+                        corresp="#person-21">Δεῖ γὰρ τὸν κύριον βασιλεύειν διὰ τῶν αἰώνων. ἄχρις οὗ
+                        θῇ πάντας τοὺς ἐχθροὺς ὑπὸ τοὺς πόδας αὐτοῦ· ἡ γὰρ βασιλεία αὐτοῦ ἐστὶν ἡ
+                        θεωρία πάντων τῶν γεγονότων καὶ γενησομένων αἰώνων· δι᾿ ἧς θεωρίας. καὶ οἱ
+                        ἐχθροὶ φίλοι γίνονται:</quote>
+                     <note type="attribution">κ´</note>
                   </seg>
                </ab>
             </div>
@@ -14518,7 +14528,7 @@
                      rendition="#bottom-of-the-page" source="(Athanasius)"
                      corresp="#vat-gr-754-ps-9-39a">
                      <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-9-136"
-                        source="Athanasius, exp. in Ps 9,39a" corresp="#person-2">Ὅταν φησὶν τὴν
+                        source="Athanasius, exp. in Ps 9,39" corresp="#person-2">Ὅταν φησὶν τὴν
                         ἐκδίκησιν τῶν πτωχῶν ποιήσῃ. τότε οὐκ ἔτι προσθήσει τοῦ μεγαλαυχεῖν
                         ἄνθρωπος: –</quote>
                      <note type="attribution">ΜΕ</note>
@@ -14528,7 +14538,7 @@
                      rendition="#bottom-of-the-page" source="Gregorius of Nyssa"
                      corresp="#vat-gr-754-ps-9-39b">
                      <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-9-137"
-                        source="Gregorius Nyss., Ps. inscr. II 11 (123,20–124,7 McDonough)"
+                        source="Gregorius Nyss., Ps. inscr. II 11 (123,20–124,7 McDonough) in Ps 9,39 et in Ps 10,1"
                         corresp="#person-24">Ἵνα γὰρ μὴ προσθῇ ἔτι τοῦ μεγαλαυχεῖν ἄνθρωπος ἐπὶ τῆς
                         γῆς. τότε διὰ τῆς ἀκολούθου σοι προσγινομένης νίκης τελεώτερον τὴν εἰς τὸν
                         θεὸν πεποίθησιν ἔχων. λέγεις· ἐπὶ τῷ κυρίῳ πέποιθα· ἐν τῇ ἐφεξῆς νίκῃ πάλιν
@@ -14588,68 +14598,70 @@
                      ἀποβλέπουσιν:</quote>
                </ab>
             </div>
+            <!-- Ps 10 commentary -->
             <div type="hexaplaric" subtype="commentary" xml:id="vat-gr-754-10-2"
                rendition="#left-column" rend="capital letters" change="commentaryfragments-only">
                <ab xml:lang="grc">
-                  <note type="lemma">Ps 10,1c</note>
+                  <note type="lemma">Ps 10,1c (μεταναστεύου)</note>
                   <seg type="glosse" xml:id="vat-gr-754-glosse-10-1" rendition="#left-column"
                      source="Anonymous" corresp="#vat-gr-754-ps-10-1c">
                      <quote type="patristic" subtype="unknown" xml:id="vat-gr-754-quot-10-1"
-                        source="fons ignotus in Ps 10,1c (PG 27,93 A4–5); cf. Photius, lex. s.v. μεταναστεύου (M nr. 324 Theodoridis) et alibi"
+                        source="fons ignotus in Ps 10,1c (= PG 27,93 A4–5); cf. Photius, lex. s.v. μεταναστεύου (M nr. 324 Theodoridis) et alibi"
                         corresp="#person-18">μετοίκει· μετέρχου φεῦγε:</quote>
                   </seg>
-                  <note type="lemma">Ps 10,2b</note>
+                  <note type="lemma">Ps 10,2b (ἡτοίμασαν)</note>
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-10-1"
                      rendition="#left-column" source="Aquila, Symmachus (Ps 10,2b)"
                      corresp="#vat-gr-754-ps-10-2b">A Ϲ ἥδρασαν βέλος αὐτῶν ἐπὶ τὴν νευράν:</seg>
-                  <note type="lemma">Ps 10,2c</note>
+                  <note type="lemma">Ps 10,2c (κατατοξεῦσαι)</note>
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-10-2"
                      rendition="#left-column" source="Sexta (Ps 10,2c)"
-                     corresp="#vat-gr-754-ps-10-2c">ἡ S εἰς τὸ ἐπιδείξαι τὸ σκότος εἰς φῶς:</seg>
-                  <note type="lemma">Ps 10,2c</note>
+                     corresp="#vat-gr-754-ps-10-2c">ἡ S´ εἰς τὸ ἐπιδείξαι τὸ σκότος εἰς φῶς:</seg>
+                  <note type="lemma">Ps 10,2c (κατατοξεῦσαι)</note>
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-10-3"
                      rendition="#left-column" source="Symmachus (Ps 10,2c)"
                      corresp="#vat-gr-754-ps-10-2c">Ϲ ὡς ἐν ζόφῳ:</seg>
-                  <note type="lemma">Ps 10,2c</note>
+                  <note type="lemma">Ps 10,2c (κατατοξεῦσαι)</note>
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-10-4"
-                     rendition="#left-column" source="Theodotion (Ps 10,2c) om. Field"
-                     corresp="#vat-gr-754-ps-10-2c">Θ ὁμοίως τοῖς Ο</seg>
-                  <note type="lemma">Ps 10,3a</note>
+                     rendition="#left-column" source="Theodotion = LXX (Ps 10,2c)"
+                     corresp="#vat-gr-754-ps-10-2c">Θ ὁμοίως τοῖς Ο´</seg>
+                  <note type="lemma">Ps 10,3a (κατηρτίσω)</note>
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-10-5"
                      rendition="#left-column" source="Sexta (Ps 10,3a)"
-                     corresp="#vat-gr-754-ps-10-3a">ἡ S ὅτι αἱ διαδοχαί:</seg>
-                  <note type="lemma">Ps 10,3a</note>
+                     corresp="#vat-gr-754-ps-10-3a">ἡ S´ ὅτι αἱ διαδοχαί:</seg>
+                  <note type="lemma">Ps 10,3a (κατηρτίσω)</note>
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-10-6"
                      rendition="#left-column" source="Aquila (Ps 10,3a)"
                      corresp="#vat-gr-754-ps-10-3a">A ὅτι οἱ θεμέλιοι καθαιρεθήσονται·</seg>
-                  <note type="lemma">Ps 10,3a</note>
+                  <note type="lemma">Ps 10,3a (κατηρτίσω)</note>
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-10-7"
                      rendition="#left-column" source="Symmachus (Ps 10,3a)"
                      corresp="#vat-gr-754-ps-10-3a">Ϲ ὅτι οἱ θεσμοὶ κατελύθησαν:</seg>
-                  <note type="lemma">Ps 10,3b</note>
+                  <note type="lemma">Ps 10,3b (δίκαιος)</note>
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-10-8"
                      rendition="#left-column" source="Aquila (Ps 10,3b)"
                      corresp="#vat-gr-754-ps-10-3b">A δίκαιος τί κατειργάσατο:</seg>
-                  <note type="lemma">Ps 10,3b</note>
+                  <note type="lemma">Ps 10,3b (δίκαιος)</note>
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-10-9"
                      rendition="#left-column" source="Symmachus (Ps 10,3b)"
                      corresp="#vat-gr-754-ps-10-3b">Ϲ δίκαιος τί ἔδρασεν:</seg>
-                  <note type="lemma">Ps 10,3b</note>
+                  <note type="lemma">Ps 10,3b (δίκαιος)</note>
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-10-10"
-                     rendition="#left-column" source="Theodotion? (Ps 10,3b); om. Field"
-                     corresp="#vat-gr-754-ps-10-3b">ὁμοίως τοῖς Ο</seg>
+                     rendition="#left-column"
+                     source="〈Theodotion〉 = LXX (Ps 10,3b); non habet Field"
+                     corresp="#vat-gr-754-ps-10-3b">ὁμοίως τοῖς Ο´·</seg>
                   <note type="lemma">Ps 10,4c</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-10-1"
                      rendition="#left-column" source="Anonymous" corresp="#vat-gr-754-ps-10-4c">
                      <quote type="patristic" subtype="unknown" xml:id="vat-gr-754-quot-10-2"
-                        source="fons ignotus in hex. (Ps 10,4c)" corresp="#person-18">τὸ εἰς τὸν
-                        πένητα ἐν τῇ σελίδι τῶν Ο ἔκειτο μόνον ἀμφιβόλως: –</quote>
+                        source="schol. in hexapla (Ps 10,4c)" corresp="#person-18">τὸ εἰς τὸν πένητα
+                        ἐν τῇ σελίδι τῶν Ο´ ἔκειτο μόνον ἀμφιβόλως: –</quote>
                   </seg>
-                  <note type="lemma">Ps 10,4c</note>
+                  <note type="lemma">Ps 10,4c (τὸν πένητα)</note>
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-10-11"
                      rendition="#left-column" source="Theodotion (Ps 10,4c)"
                      corresp="#vat-gr-754-ps-10-4c">Θ ἐπιβλέπουσιν·</seg>
-                  <note type="lemma">Ps 10,4c</note>
+                  <note type="lemma">Ps 10,4c (τὸν πένητα)</note>
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-10-12"
                      rendition="#left-column" source="Aquila (Ps 10,4c)"
                      corresp="#vat-gr-754-ps-10-4c">A ὁραματίζονται·</seg>
@@ -14686,7 +14698,7 @@
                      rendition="#top-of-the-page" source="(Athanasius)"
                      corresp="#vat-gr-754-ps-10-1b">
                      <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-10-5"
-                        source="Athanasius, exp. in Ps 10,1b" corresp="#person-2">Πῶς μοι ἐρεῖτε
+                        source="Athanasius, exp. in Ps 10,1b–c" corresp="#person-2">Πῶς μοι ἐρεῖτε
                         φησὶ φεύγειν ἐπὶ τὰ ὄρη. δίκην στρουθίου καίτοι πεποιθότι ἐπὶ τῷ
                         θεῷ;</quote>
                      <note type="attribution">ΜZ</note>
@@ -14696,7 +14708,7 @@
                      next="#vat-gr-754-fr-10-6" rendition="#top-of-the-page" source="(Athanasius)"
                      corresp="#vat-gr-754-ps-10-2a">
                      <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-10-6"
-                        next="#vat-gr-754-quot-10-7" source="Athanasius, exp. in Ps 10,2a"
+                        next="#vat-gr-754-quot-10-7" source="Athanasius, exp. in Ps 10,2a–b"
                         corresp="#person-2">Τούτοις τοῖς λόγοις εἰς φυγὴν ἠρέθιζον φάσκοντες· εἰ μὴ
                         φύ</quote>
                      <note type="attribution">ΜH·</note>
@@ -14711,7 +14723,7 @@
                      prev="#vat-gr-754-fr-10-5" rendition="#right-column" source="(Athanasius)"
                      corresp="#vat-gr-754-ps-10-2a">
                      <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-10-7"
-                        prev="#vat-gr-754-quot-10-6" source="Athanasius, exp. in Ps 10,2a"
+                        prev="#vat-gr-754-quot-10-6" source="Athanasius, exp. in Ps 10,2"
                         corresp="#person-2"> γοι. κατατοξεύειν αὐτὸν τοὺς ἁμαρτωλούς: –</quote>
                      <note type="attribution">ΜH·</note>
                   </seg>
@@ -14719,8 +14731,8 @@
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-10-7"
                      rendition="#right-column" source="(Evagrius)" corresp="#vat-gr-754-ps-10-2a">
                      <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-10-8"
-                        source="Evagrius, schol. in Ps 10,2a" corresp="#person-21">Τόξον ἐστὶν
-                        ἀκάθαρτος νοῦς: –</quote>
+                        source="Evagrius, schol. nr. α´ in Ps 10,2a (342 Rondeau – Géhin – Cassin)"
+                        corresp="#person-21">Τόξον ἐστὶν ἀκάθαρτος νοῦς: –</quote>
                      <note type="attribution">α´</note>
                   </seg>
                   <note type="lemma">Ps 10,2c</note>
@@ -14735,37 +14747,38 @@
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-10-9"
                      rendition="#right-column" source="(Evagrius)" corresp="#vat-gr-754-ps-10-2b">
                      <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-10-10"
-                        source="Evagrius, schol. in Ps 10,2b" corresp="#person-21">Βέλος ἐστὶ
-                        λογισμὸς ἐμπαθής· φαρέτρα δὲ. ἕξις χειρίστη λογισμῶν ἀκαθάρτων πεπληρωμένη:
-                        –</quote>
+                        source="Evagrius, schol. nr. β´ in Ps 10,2b (344 Rondeau – Géhin – Cassin)"
+                        corresp="#person-21">Βέλος ἐστὶ λογισμὸς ἐμπαθής· φαρέτρα δὲ. ἕξις χειρίστη
+                        λογισμῶν ἀκαθάρτων πεπληρωμένη: –</quote>
                      <note type="attribution">β´</note>
                   </seg>
-                  <note type="lemma">Ps 10,2b</note>
+                  <note type="lemma">Ps 10,2b (φαρέτραν)</note>
                   <seg type="glosse" xml:id="vat-gr-754-glosse-10-2" rendition="#right-column"
                      source="Anonymous" corresp="#vat-gr-754-ps-10-2b">
                      <quote type="patristic" subtype="unknown" xml:id="vat-gr-754-quot-10-11"
                         source="fons ignotus in Ps 10,2b; cf. Photius, lex. s.v. φαρέτρα (Φ nr. 59 Theodoridis) et alibi"
                         corresp="#person-18">εἰς βελοθήκην: –</quote>
                   </seg>
-                  <note type="lemma">Ps 10,2c</note>
+                  <note type="lemma">Ps 10,2c (σκοτομήνῃ)</note>
                   <seg type="glosse" xml:id="vat-gr-754-glosse-10-3" rendition="#right-column"
                      source="Anonymous" corresp="#vat-gr-754-ps-10-2c">
                      <quote type="patristic" subtype="unknown" xml:id="vat-gr-754-quot-10-12"
                         source="fons ignotus in Ps 10,2c; cf. e.g. Diodorus, comm. in Ps 10,2b–c (64,25 Olivier)"
                         corresp="#person-18">ἀσέληνος νύξ·</quote>
                   </seg>
-                  <note type="lemma">Ps 10,3a</note>
+                  <note type="lemma">incorrect linking (i.e. καθεῖλον)</note>
                   <seg type="glosse" xml:id="vat-gr-754-glosse-10-4" rendition="#right-column"
                      source="Anonymous" corresp="#vat-gr-754-ps-10-3a">
                      <quote type="patristic" subtype="unknown" xml:id="vat-gr-754-quot-10-13"
-                        source="fons ignotus; in Ps 10,3a?" corresp="#person-18">κατέβαλεν·</quote>
+                        source="fons ignotus in Ps 10,3a" corresp="#person-18">κατέβαλεν·</quote>
                   </seg>
-                  <note type="lemma">Ps 10,4c</note>
-                  <seg type="glosse" xml:id="vat-gr-754-glosse-10-5" rendition="#right-column"
-                     source="Anonymous" corresp="#vat-gr-754-ps-10-4c">
-                     <quote type="patristic" subtype="unknown" xml:id="vat-gr-754-quot-10-14"
-                        source="fons ignotus in Ps 10,4c (PG 27,93 C1; cf. PG 69,793 B9–10)"
-                        corresp="#person-18">Τὸ ἀλάθητον τοῦ θεοῦ σημαίνει: –</quote>
+                  <note type="lemma">Ps 10,4c (τὸν πένητα)</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-10-9-1"
+                     rendition="#right-column" source="Anonymous" corresp="#vat-gr-754-ps-10-4c">
+                     <quote type="patristic" subtype="unknown" xml:id="vat-gr-754-quote-10-9-1"
+                        source="fons ignotus in Ps 10,4c (= PG 27,93 B14; cf. PG 69,793 B9–10)"
+                        corresp="#person-18">Τὸ ἀλάθητον τοῦ θεοῦ σημαίνει:
+                     –</quote><!-- nota bene: eine glosse wurde in commentaryfragment umkodiert -->
                   </seg>
                   <note type="lemma">Ps 10,3a</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-10-10"
@@ -14780,7 +14793,7 @@
                      next="#vat-gr-754-fr-10-12" rendition="#right-column" source="(Athanasius)"
                      corresp="#vat-gr-754-ps-10-3b">
                      <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-10-16"
-                        next="#vat-gr-754-quot-10-17" source="Athanasius, exp. in Ps  10,3b"
+                        next="#vat-gr-754-quot-10-17" source="Athanasius, exp. in Ps 10,3b–4"
                         corresp="#person-2">Εἰ καὶ οἱ ἐχθροί φησι τὰ τοιάδε ἔδρασαν. ἀλλ’ ὁ κύριος ὁ
                         ναὸν ἔχων τὸν οὐρανὸν· ἐξέτασιν τῶν δικαίων καὶ τῶν ἀσεβῶν ποιούμενος· τοῖς
                         μὲν ἀπονέμει τὰ ἀγαθὰ. τοὺς</quote>
@@ -14792,7 +14805,7 @@
                rendition="#bottom-of-the-page" rend="minuscule letters"
                change="commentaryfragments-only">
                <ab xml:lang="grc">
-                  <note type="lemma">Ps 10,3b</note>
+                  <note type="lemma">Ps 10,3b–4</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-10-12"
                      prev="#vat-gr-754-fr-10-11" rendition="#bottom-of-the-page"
                      source="(Athanasius)" corresp="#vat-gr-754-ps-10-3b">
@@ -14806,8 +14819,8 @@
                      rendition="#bottom-of-the-page" source="(Evagrius)"
                      corresp="#vat-gr-754-ps-10-2c">
                      <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-10-18"
-                        source="Evagrius, schol. in Ps 10,2c" corresp="#person-21">Σκοτόμηνά ἐστι,
-                        ἄγνοια ψυχῆς: –</quote>
+                        source="Evagrius, schol. nr. γ´ in Ps 10,2c (344 Rondeau – Géhin – Cassin)"
+                        corresp="#person-21">Σκοτόμηνά ἐστι, ἄγνοια ψυχῆς: –</quote>
                      <note type="attribution">γ´</note>
                   </seg>
                   <note type="lemma">Ps 10,4c</note>
@@ -14824,10 +14837,11 @@
                      rendition="#bottom-of-the-page" source="(Evagrius)"
                      corresp="#vat-gr-754-ps-10-4c">
                      <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-10-20"
-                        source="Evagrius, schol. in Ps 10,4c" corresp="#person-21">Εἰ οἱ ὀφθαλμοὶ
-                        κυρίου εἰς τὸν πένητα ἀποβλέπουσιν. γενόμεθα πένητες. ἵνα οἱ ὀφθαλμοὶ κυρίου
-                        εἰς ἡμᾶς ἐπιβλέπουσιν· εἰ δὲ οἱ πλούσιοι οὐκ εἰσὶ πένητες. οἱ ὀφθαλμοὶ
-                        κυρίου εἰς τοὺς πλουσίους οὐκ ἀποβλέπουσιν:</quote>
+                        source="Evagrius, schol. nr. δ´ in Ps 10,4c (344 Rondeau – Géhin – Cassin)"
+                        corresp="#person-21">Εἰ οἱ ὀφθαλμοὶ κυρίου εἰς τὸν πένητα ἀποβλέπουσιν.
+                        γενόμεθα πένητες. ἵνα οἱ ὀφθαλμοὶ κυρίου εἰς ἡμᾶς ἐπιβλέπουσιν· εἰ δὲ οἱ
+                        πλούσιοι οὐκ εἰσὶ πένητες. οἱ ὀφθαλμοὶ κυρίου εἰς τοὺς πλουσίους οὐκ
+                        ἀποβλέπουσιν:</quote>
                      <note type="attribution">δ´</note>
                   </seg>
                   <note type="lemma">Ps 10,4a</note>
@@ -14836,12 +14850,13 @@
                      corresp="#vat-gr-754-ps-10-4a">
                      <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-10-21"
                         next="#vat-gr-754-quot-10-22"
-                        source="Anastasius Sin., hexaem. II 4,3 (56–58)" corresp="#person-31">Σὺ δὲ
-                        ὅτ᾿ ἄν ἀκούσῃς ἐν οὐρανοῖς εἶναι καὶ κατοικεῖν τὸν θεὸν ἐκ τῆς ἱερᾶς γραφῆς.
-                        ἢ ἐνδότερον εἶναι τοῦ καταπετάσματος. μὴ περιορισμούς τινας καὶ τοπικὰς
-                        οἰκήσεις καὶ μεταβάσεις καὶ ἀναβάσεις καὶ ἐξελεύσεις νοήσεις· πτωχοπρεπεῖ
-                        γὰρ οὔσῃ τῇ ἡμετέρᾳ φύσει· καθὰ χωρεῖ ἀκοῦσαι. διαλέγεται αὐτῇ τὸ πνεῦμα τὸ
-                        ἅγιον· καὶ μάρτυς τοῦ λόγου. ἡ μωσαϊκὴ</quote>
+                        source="Anastasius Sin., hexaem. II 4,3 (56,176–58,186 Kuehn – Baggarly)"
+                        corresp="#person-31">Σὺ δὲ ὅτ᾿ ἄν ἀκούσῃς ἐν οὐρανοῖς εἶναι καὶ κατοικεῖν
+                        τὸν θεὸν ἐκ τῆς ἱερᾶς γραφῆς. ἢ ἐνδότερον εἶναι τοῦ καταπετάσματος. μὴ
+                        περιορισμούς τινας καὶ τοπικὰς οἰκήσεις καὶ μεταβάσεις καὶ ἀναβάσεις καὶ
+                        ἐξελεύσεις νοήσεις· πτωχοπρεπεῖ γὰρ οὔσῃ τῇ ἡμετέρᾳ φύσει· καθὰ χωρεῖ
+                        ἀκοῦσαι. διαλέγεται αὐτῇ τὸ πνεῦμα τὸ ἅγιον· καὶ μάρτυς τοῦ λόγου. ἡ
+                        μωσαϊκὴ</quote>
                   </seg>
                </ab>
             </div>
@@ -14856,12 +14871,12 @@
                      corresp="#vat-gr-754-ps-10-4a">
                      <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-10-22"
                         prev="#vat-gr-754-quot-10-21"
-                        source="Anastasius Sin., hexaem. II 4,3 (56–58)" corresp="#person-31"
-                        >συγγραφή· παχέα τινα καὶ ἀνάξια θεοῦ τοῦ ἀπεριγράπτου περιέχουσα ῥήματα·
-                        ἅτινα. οὐ Μωσῆς ἐξέθετο οἴκοθεν, ἀλλ’ ὁ θεὸς δι’ ἁγίων αὐτοῦ ἐν ὄρει τῷ
-                        σιναίῳ ταῦτα ἐπὶ τῆς σκηνῆς ὑηγόρευσεν· ὅθεν ὡς ἀγγέλου ταῦτα λαλήσαντος.
-                        οὐδὲ τέθεικεν ὅλως τὸ ὄνομα ἐν τῇ ἀπογραφῇ αὐτῆς ὁ Μωϋσῆς. καθὼς οἱ λοιποὶ
-                        προφῆται βίβλοις τῶν οἰκείων προφητειῶν: –</quote>
+                        source="Anastasius Sin., hexaem. II 4,3 (56,176–58,186 Kuehn – Baggarly)"
+                        corresp="#person-31">συγγραφή· παχέα τινα καὶ ἀνάξια θεοῦ τοῦ ἀπεριγράπτου
+                        περιέχουσα ῥήματα· ἅτινα. οὐ Μωσῆς ἐξέθετο οἴκοθεν, ἀλλ’ ὁ θεὸς δι’ ἁγίων
+                        αὐτοῦ ἐν ὄρει τῷ σιναίῳ ταῦτα ἐπὶ τῆς σκηνῆς ὑηγόρευσεν· ὅθεν ὡς ἀγγέλου
+                        ταῦτα λαλήσαντος. οὐδὲ τέθεικεν ὅλως τὸ ὄνομα ἐν τῇ ἀπογραφῇ αὐτῆς ὁ Μωϋσῆς.
+                        καθὼς οἱ λοιποὶ προφῆται βίβλοις τῶν οἰκείων προφητειῶν: –</quote>
                   </seg>
                </ab>
             </div>
@@ -14911,30 +14926,31 @@
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-10-18"
                      rendition="#right-column" source="(Evagrius)" corresp="#vat-gr-754-ps-10-6b">
                      <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-10-23"
-                        source="Evagrius, schol. in Ps 10,6b" corresp="#person-21">Ποτήριον νῦν. τὴν
-                        κόλασιν ὀνομάζει· ἐν ᾧ κακίας καὶ ἀγνοίας. ἐγκέκραται πόμα: –</quote>
+                        source="Evagrius, schol. nr. ς´ in Ps 10,6b (346 Rondeau – Géhin – Cassin)"
+                        corresp="#person-21">Ποτήριον νῦν. τὴν κόλασιν ὀνομάζει· ἐν ᾧ κακίας καὶ
+                        ἀγνοίας. ἐγκέκραται πόμα: –</quote>
                      <note type="attribution">ς´</note>
                   </seg>
-                  <note type="lemma">Ps 10,6b</note>
+                  <note type="lemma">Ps 10,6b (καταιγίδος )</note>
                   <seg type="glosse" xml:id="vat-gr-754-glosse-10-6" rendition="#right-column"
                      source="Anonymous" corresp="#vat-gr-754-ps-10-6b">
-                     <quote type="patristic" subtype="unknown" xml:id="vat-gr-754-quot-10-24"
+                     <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-10-24"
                         source="fons ignotus in Ps 10,6b; cf. Photius, lex. s.v. Αἰγίς (Α nr. 510 Theodoridis) et alibi"
                         corresp="#person-18">συστροφὴ ἀνέμου·</quote>
                   </seg>
-                  <note type="lemma">Ps 11,1</note>
+                  <note type="lemma">Ps 10,6b</note>
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-10-13"
+                     rendition="#middle-column"
+                     source="Septuaginta (Ps 10,6b – καταιγίδος); non habet Field"
+                     corresp="#vat-gr-754-ps-10-6b">οἱ Ο καταιγίδα·</seg>
+                  <note type="lemma">linking not completed</note>
+                  <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-11-1"
                      rendition="#right-column" source="Aquila, Theodotion (Ps 11,1)"
                      corresp="#vat-gr-754-ps-11-1a">A Θ τῷ νικοποιῷ·</seg>
-                  <note type="lemma">Ps 11,1</note>
-                  <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-10-14"
+                  <note type="lemma">linking not completed</note>
+                  <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-11-2"
                      rendition="#right-column" source="Symmachus (Ps 11,1)"
                      corresp="#vat-gr-754-ps-11-1a">Ϲ ἐπινίκιος</seg>
-                  <note type="lemma">Ps 10,6b</note>
-                  <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-10-15"
-                     rendition="#middle-column"
-                     source="Septuaginta (Ps 10,6b – καταιγίδος); om. Field"
-                     corresp="#vat-gr-754-ps-10-6b">οἱ Ο καταιγίδα·</seg>
                </ab>
             </div>
             <div type="commentary" subtype="commentary" xml:id="vat-gr-754-10-9"
@@ -14981,9 +14997,9 @@
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-10-22"
                      rendition="#left-column" source="(Evagrius)" corresp="#vat-gr-754-ps-10-5b">
                      <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-10-28"
-                        source="Evagrius, schol. in Ps 10,5b" corresp="#person-21">Εἰ ὁ ἀγαπῶν τὴν
-                        ἀδικίαν μισεῖ τὴν ἑαυτοῦ ψυχὴν. μισῶν δηλονότι τὴν ἀδικίαν. ἀγαπᾷ τὴν ἑαυτοῦ
-                        ψυχήν:</quote>
+                        source="Evagrius, schol. nr. ε´ in Ps 10,5b (346 Rondeau – Géhin – Cassin)"
+                        corresp="#person-21">Εἰ ὁ ἀγαπῶν τὴν ἀδικίαν μισεῖ τὴν ἑαυτοῦ ψυχὴν. μισῶν
+                        δηλονότι τὴν ἀδικίαν. ἀγαπᾷ τὴν ἑαυτοῦ ψυχήν:</quote>
                      <note type="attribution">ε´</note>
                   </seg>
                   <note type="lemma">Ps 10,7a</note>
@@ -14996,20 +15012,21 @@
                         χρώμενος. ἰθύνει τὰ σύμπαντα: –</quote>
                      <note type="attribution">Θεοδ(ωρήτου)</note>
                   </seg>
-                  <note type="lemma">Ps 10,7b</note>
+                  <note type="lemma">Ps 10,7b (sic)</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-10-24"
                      rendition="#left-column" source="(Evagrius)" corresp="#vat-gr-754-ps-10-7b">
                      <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-10-30"
-                        source="Evagrius, schol. in Ps 10,(7b) 7" corresp="#person-21">Δικαιοσύνης
-                        νῦν λέγει τοὺς δικαίους ἀπὸ τῆς ἕξεως αὐτοὺς ὀνομάζων· τοιοῦτόν ἐστιν καὶ τὸ
-                        ἡ ἀγάπη οὐ περπερεύεται· ἀντὶ τοῦ ὁ ἔχων τὴν ἀγάπην:</quote>
+                        source="Evagrius, schol. nr. ζ´ in Ps 10,7a (346 Rondeau – Géhin – Cassin)"
+                        corresp="#person-21">Δικαιοσύνης νῦν λέγει τοὺς δικαίους ἀπὸ τῆς ἕξεως
+                        αὐτοὺς ὀνομάζων· τοιοῦτόν ἐστιν καὶ τὸ ἡ ἀγάπη οὐ περπερεύεται· ἀντὶ τοῦ ὁ
+                        ἔχων τὴν ἀγάπην:</quote>
                      <note type="attribution">ζ´</note>
                   </seg>
                   <note type="lemma">Ps 10,6b</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-10-25"
                      rendition="#left-column" source="Theodoretus" corresp="#vat-gr-754-ps-10-6b">
                      <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-10-31"
-                        source="Theodoretus, comm. in Ps 10,(6b) 6a–b1 (PG 80,940 D2–941 A1 sub Ps 10,7)"
+                        source="Theodoretus, comm. in Ps 10,6a–b1 (PG 80,940 D2–941 A1 sub Ps 10,7)"
                         corresp="#person-16">Ἀπὸ τῶν ἤδη περὶ τὰ σόδομα γινομένων σχηματίζει τὰς
                         τιμωρίας. καὶ γὰρ εἰς ἐκείνας τὰς πόλεις ἔβρεξε κύριος παρὰ κυρίου πῦρ καὶ
                         θεῖον ἐκ τοῦ οὐρανοῦ· ταῦτα τοίνυν κἂν ἠπείλησεν. οὐχ ὡς ταῦτα πάντως
