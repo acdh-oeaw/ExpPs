@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../schema/tei-psalmcatenae.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-   <!-- faciendum: Kontrolle der Verknüpfungen mit Vat. gr. 754 -->
-   <!-- faciendum: Berichtigung der Bibliographie nach dem Muster im Vat. gr. 754-->
+   <!-- faciendum: Bibliographie nach dem Muster von Vat. gr. 754-->
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Oxon. Bodl. Auct. D. 4. 1 (= CPG C14; Rahlfs 13) - List of Contents.</title>
-            <title type="subtitle">Transcription of (Ps)-Athanasius, Expositiones in Psalmos, and of
-               the Unpublished Fragments.</title>
+            <title>Oxon. Bodl. Auct. D. 4. 1 (Rahlfs 13; CPG C14) - Catena type I (primary
+               catena)</title>
+            <title type="subtitle">List of Contents, Transcription of (Ps)-Athanasius, Expositiones
+               in Psalmos, and of the Unpublished Fragments (Ps 1–10)</title>
             <respStmt>
-               <resp>Athanasius transcribed by</resp>
+               <resp>(Ps)-Athanasius transcribed by</resp>
                <persName>Maria-Lucia Goiana (Ps 2–5; 7) and Sebastiano Panteghini (Ps 1; 6;
                   8–10)</persName>
             </respStmt>
             <respStmt>
-               <resp>List of contents and transcription of the unpublished fragments by</resp>
+               <resp>List of Contents and Transcription of the Unpublished Fragments by</resp>
                <persName>Sebastiano Panteghini</persName>
             </respStmt>
             <respStmt>
@@ -59,7 +59,7 @@
                   </msItem>
                   <msItem n="4">
                      <locus>f. 39r–299v</locus>
-                     <title>catena in Psalmos 1–150</title>
+                     <title>catena in Psalmos 1–150 (broad catena or "Textkatene")</title>
                   </msItem>
                   <msItem n="5">
                      <locus>f. 300r–v</locus>
@@ -67,7 +67,7 @@
                   </msItem>
                   <msItem n="5">
                      <locus>f. 301r–314r</locus>
-                     <title>catena in Odas 14</title>
+                     <title>catena in Odas 14 (broad catena or "Textkatene")</title>
                   </msItem>
                   <msItem n="6">
                      <locus>f. 314v–315r</locus>
@@ -90,28 +90,28 @@
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout><p>318 ff., 34 lines per page (full page).</p></layout>
+                        <layout><p>318 ff., 34 lines per page.</p></layout>
                      </layoutDesc>
                   </objectDesc>
                   <scriptDesc>
                      <p>Majuscule letters: biblical text, attributions, stichometric notes.</p>
-                     <p>Minuscule letters (bouletée): prolegomena, commentary fragments, biblical
-                        and hexaplaric variants, glosses.</p>
+                     <p>Minuscule letters (bouletée): prolegomena, commentary fragments, hexaplaric
+                        variants, glosses.</p>
                   </scriptDesc>
                   <decoDesc>
-                     <p>Decoration: f. 39r.</p>
+                     <p>f. 39r.</p>
                   </decoDesc>
                   <additions>
-                     <p>The fragments in the Psalm catena are linked to the biblical verses mainly
-                        through letters. This is one of Dorival’s chaînes-scholies (vol. II 84–115),
-                        many of which complete a series of scholia from one author with a second
-                        series (from another author) or with excerpts selected from multiple authors
-                        (vol. II 1–5, 235–36). Its main interest lies in explaining selected terms
-                        in the biblical text, making use of short passages taken from commentators
-                        and a large number of glosses. The original text of the commentators is
-                        almost never paraphrased but frequently affected by corruptions; the
-                        attributions are often wrong. This seems to indicate that this catenary
-                        tradition was frequently reproduced.</p>
+                     <p>This is one of Dorival’s chaînes-scholies (vol. II 84–115), many of which
+                        complete a series of scholia from one author with a second series (from
+                        another author) or with excerpts selected from multiple authors (vol. II
+                        1–5, 235–36). The fragments are linked to the Psalm verses mainly by means
+                        of letters. The main interest lies in explaining selected terms in the
+                        biblical text, making use of short passages taken from commentators and a
+                        large number of glosses. The original text of the commentators is almost
+                        never paraphrased but frequently affected by corruptions; the attributions
+                        are often wrong. This seems to indicate that this catenary tradition was
+                        frequently reproduced.</p>
                   </additions>
                </physDesc>
                <history>
@@ -332,10 +332,11 @@
                   unambiguous. It makes use of the three dots inherited from ancient interpunctive
                   theory: high dot or τελεία στιγμή (·) at the end of the sentence; middle dot or
                   μέση στιγμή (·) between clauses (κῶλα); low dot or ὐποστιγμή (.) before the part
-                  that gives fulfillment to the sentence. Codepoints 0387 (hex) "GREEK ANO TELEIA",
-                  00B7 (hex) "MIDDLE DOT", 002E (hex) "FULL STOP", 002C (hex) "COMMA", 2022 (hex)
-                  "BULLET", 2058 (hex) "FOUR DOT PUNCTUATION", <!-- 205D (hex) "TRICOLON"  --> and
-                  003A (hex) "COLON" are used in the transcription.</p>
+                  that gives fulfillment to the sentence. Manuscript practice may deviate from these
+                  rules. The following Codepoints are used in the transcription: 0387 (hex) "GREEK
+                  ANO TELEIA", 00B7 (hex) "MIDDLE DOT", 002E (hex) "FULL STOP", 002C (hex) "COMMA",
+                  2022 (hex) "BULLET", 2058 (hex) "FOUR DOT PUNCTUATION",
+                  <!-- 205D (hex) "TRICOLON"  --> and 003A (hex) "COLON".</p>
             </punctuation>
          </editorialDecl>
          <listPrefixDef>
@@ -364,7 +365,6 @@
             further usage.</change>
       </revisionDesc>
    </teiHeader>
-   <!-- noch hinzufügen: Folienzählung Ps 2–5, Ps 2 letze Fragmente, Ps 5 -->
    <text>
       <body>
          <div type="transcription" xml:id="bodl-auct-d-4-1-1-1">
@@ -424,7 +424,6 @@
                      ἀσεβῶν ἀπολεῖται.</quote>
                </ab>
             </div>
-            <!-- Pointers to identical fragments in other documents. @type = identical | with-variations | abbreviated | expanded &lt; &gt;-->
             <pb n="39r"/>
             <div type="commentary" subtype="commentary" xml:id="bodl-auct-d-4-1-1-4">
                <ab xml:id="bodl-auct-d-4-1-1-2" xml:lang="grc">

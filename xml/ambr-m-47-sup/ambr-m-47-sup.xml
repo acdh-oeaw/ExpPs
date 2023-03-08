@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../schema/tei-psalmcatenae.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-   <!-- faciendum: Lemma: Ps 1–7 ergänzt -->
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Mediol. Ambros. M 47 sup. (Martini – Bassi 513; CPG C40.11) -
-               Transcription</title>
+            <title>Mediol. Ambros. M 47 sup. (CPG C40.11; Rahlfs 1096) - Codices varii (primary catena?)</title>
+            <title type="subtitle">List of Contents, Transcription of (Ps)-Athanasius, Expositiones
+               in Psalmos, and of the Unpublished Fragments (Ps 1–10)</title>
             <respStmt>
                <resp>transcribed by</resp>
-               <persName>Maria-Lucia Goiana (Ps 1–10) and Sebastiano Panteghini (Ps 1–10)</persName>
+               <persName>Maria-Lucia Goiana and Sebastiano Panteghini</persName>
             </respStmt>
          </titleStmt>
          <publicationStmt>
@@ -26,7 +26,8 @@
                   <country>Italy</country>
                   <settlement>Milano</settlement>
                   <repository>Veneranda Bibliotheca Ambrosiana</repository>
-                  <idno facs="http://213.21.172.25/0b02da82800bb2df">Ambr. M. 47 sup.</idno>
+                  <idno facs="http://213.21.172.25/0b02da82800bb2df">M 47 sup. (Martini – Bassi
+                     513)</idno>
                   <altIdentifier>
                      <idno type="pinakes" corresp="https://pinakes.irht.cnrs.fr/notices/cote/42987/"
                         >42987</idno>
@@ -34,22 +35,39 @@
                </msIdentifier>
                <msContents>
                   <msItem n="1">
-                     <locus>f. IIIv—IVr</locus>
-                     <title>Miniatures (Christ, David, authors of commentaries on the
-                        psalms)</title>
+                     <locus>f. IIIv</locus>
+                     <title>Miniatures: Christ, David, holy authors of Psalm commentaries
+                        (Athanasius of Alexandrien, Basil of Caesarea, Methodius of Olympus [bishop
+                        of Patara in Lycia], and Theodoret of Cyrrhus)</title>
                   </msItem>
                   <msItem n="2">
-                     <locus>fols. 1r–3v</locus>
-                     <title>Argumentum in Psalmos (CPG 2238), explanation of the terms ψαλτήριον and
-                        ἀλληλούϊα, Excerptum in Psalmos (ineditum?)</title>
+                     <locus>f. IVr</locus>
+                     <title>other authors of Psalm commentaries (unidentifiable due to
+                        damage)</title>
                   </msItem>
                   <msItem n="3">
-                     <locus>fols. 4r–285v</locus>
-                     <title>Psalmcatena</title>
+                     <locus>f. 1r–3v</locus>
+                     <title>Argumentum Athanasii in Psalmos (CPG 2238)</title>
                   </msItem>
-                  <msItem n="3">
+                  <msItem n="4">
+                     <locus>f. 3r</locus>
+                     <title>explanationes in ψαλτήριον et ἀλληλούϊα</title>
+                  </msItem>
+                  <msItem n="4">
+                     <locus>f. 3v</locus>
+                     <title>Methodius (?), Excerptum in Psalmos (ineditum?)</title>
+                  </msItem>
+                  <msItem n="5">
+                     <locus>f. 4r–285v</locus>
+                     <title>Catena in Psalmos (broad catena or "Textkatene")</title>
+                  </msItem>
+                  <msItem n="6">
+                     <locus>f. 285v</locus>
+                     <title>Ps 151</title>
+                  </msItem>
+                  <msItem n="7">
                      <locus>fols. 286r–307v</locus>
-                     <title>Odescatena</title>
+                     <title>Catena in Odas (marginal catena)</title>
                   </msItem>
                </msContents>
                <physDesc>
@@ -64,13 +82,29 @@
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout><p>The psalmacatena is a full-page catena. The odescatena is a
-                              marginal catena.</p></layout>
+                        <layout><p>307 ff., 24–25 lines per page.</p></layout>
                      </layoutDesc>
                   </objectDesc>
+                  <scriptDesc>
+                     <p>The manuscript was written by three hands: S1 (f. 1r-8v); S2 (f. 9r-25v); S3
+                        (f. 19r; 26r-155r); f. 155v is blank; S2 (f. 156r-180r); S3 (f.
+                        180v-307v).</p>
+                     <p>From f. 9r onward, a corrector (C) is active. He has either repainted faded
+                        letters or added spiritus, accents, punctuation, hyphen, and even tremata.
+                        He also corrected orthographic errors and attributed anonymous fragments to
+                        Theodoret of Cyrrhus.</p>
+                     <!-- Minuscule archaising (S1), Minuscule bouletée (S2), and cursive (S3) -->
+                  </scriptDesc>
+                  <decoDesc>
+                     <p>ektheseis and initials in red ink.</p>
+                  </decoDesc>
+                  <additions>
+                     <p/>
+                  </additions>
                </physDesc>
                <history>
-                  <p>Written in the 13th (f.1r–8v) and 10th century (f. 9r–307v).</p>
+                  <p>Written in the second half of the 13th (f.1r–8v) and in the 10th century (f.
+                     9r–307v). Dating by Georgi Parpulov.</p>
                </history>
             </msDesc>
             <listPerson>
@@ -199,15 +233,20 @@
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <punctuation>
-               <p>The punctuation has been simplified. Only codepoints 0387 (hex) "GREEK ANO
-                  TELEIA", 00B7 (hex) "MIDDLE DOT", 2022 (hex) "BULLET", 205D (hex) "TRICOLON" and
-                  003A (hex) "COLON" are used in the transcription.</p>
-            </punctuation>
             <normalization>
-               <p>The text is silently simplified in all respects. Only semantically relevant
-                  information like additions or deletions are mentioned.</p>
+               <p>The transcription of the fragments is diplomatic.</p>
             </normalization>
+            <punctuation>
+               <p>The punctuation faithfully reproduces that of the manuscript, where it is
+                  unambiguous. It makes use of the three dots inherited from ancient interpunctive
+                  theory: high dot or τελεία στιγμή (·) at the end of the sentence; middle dot or
+                  μέση στιγμή (·) between clauses (κῶλα); low dot or ὐποστιγμή (.) before the part
+                  that gives fulfillment to the sentence. Manuscript practice may deviate from these
+                  rules. The following Codepoints are used in the transcription: 0387 (hex) "GREEK
+                  ANO TELEIA", 00B7 (hex) "MIDDLE DOT", 002E (hex) "FULL STOP", 002C (hex) "COMMA",
+                  2022 (hex) "BULLET", 2058 (hex) "FOUR DOT PUNCTUATION",
+                  <!-- 205D (hex) "TRICOLON"  --> and 003A (hex) "COLON".</p>
+            </punctuation>
          </editorialDecl>
          <listPrefixDef>
             <prefixDef ident="vat-gr-1422" matchPattern="([a-z\-]+)"
@@ -1675,8 +1714,8 @@
                      corresp="#ambr-m-47-sup-ps-5-9a" source="Anonymous">
                      <quote type="patristic" subtype="quotation" xml:id="ambr-m-47-sup-quot-5-9"
                         corresp="#person-2" source="Athanasius, exp. in Ps 5,9a2–9b">Τῶν νοητῶν
-                        δηλονότι[·] [* δηλονότι C1 δηλον_ότι] πολλοὶ γὰρ οἱ ἐπιβουλεύοντες τῆ
-                        θεοφηλεῖ [* θεοφηλεῖ corr θεοφιλεῖ (?) C1 θεο_φιλεῖ] ψυχῆ⟦.⟧
+                        δηλονότι[·] [* δηλονότι C δηλον_ότι] πολλοὶ γὰρ οἱ ἐπιβουλεύοντες τῆ
+                        θεοφηλεῖ [* θεοφηλεῖ corr θεοφιλεῖ (?) C θεο_φιλεῖ] ψυχῆ⟦.⟧
                            <unclear>τ</unclear>ῆ κατὰ θ(εὸ)ν αὐτῆς προκοπῆ δια[β]ασκαίνοντες ⁘ </quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-5-26" type="identical">Vat. gr. 754</ref>
                   </seg>
@@ -1686,19 +1725,19 @@
                      <quote type="patristic" subtype="quotation" xml:id="ambr-m-47-sup-quot-5-10"
                         corresp="#person-2" source="Athanasius, exp. in Ps 5,10">Τῶ(ν) σο⟦.⟧φῶν τοῦ
                         αἰῶνος τούτου· ἢ κ<unclear>α</unclear>ὶ <unclear>τῶ(ν)</unclear>] αἱρετικῶν·
-                        οὖτοι γὰρ ἀληθείας λόγους οὐκ εἴσασι⟦<unclear>ν</unclear>⟧ [* εἴσασιν C1
+                        οὖτοι γὰρ ἀληθείας λόγους οὐκ εἴσασι⟦<unclear>ν</unclear>⟧ [* εἴσασιν C
                         ἴσασι] ⁘ </quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-5-37" type="identical">Vat. gr. 754</ref>
                   </seg>
                   <note type="lemma">Ps 10c–11a</note>
                   <seg type="commentaryfragment" xml:id="ambr-m-47-sup-fr-5-11"
-                     corresp="#ambr-m-47-sup-ps-5-10c" source="Theodoretus (add. C1)">
+                     corresp="#ambr-m-47-sup-ps-5-10c" source="Theodoretus (add. C)">
                      <quote type="patristic" subtype="quotation" xml:id="ambr-m-47-sup-quot-5-11"
                         corresp="#person-20"
                         source="Theodoretus, comm. in Ps 5,10c (PG 80,900 B2–6 sub Ps 10,11)"/>
                      <ref target="vat-gr-754:vat-gr-754-fr-5-41" type="abbreviated">Vat. gr.
                         754</ref><note type="attribution"><foreign xml:lang="grc"
-                           >Θεοδωρίτ(ου)</foreign>; add. C1 (ut. vid.)</note>
+                           >Θεοδωρίτ(ου)</foreign>; add. C (ut. vid.)</note>
                   </seg>
                </ab>
             </div>
@@ -1712,8 +1751,8 @@
                      <quote type="patristic" subtype="unknown/quotation-expanded"
                         xml:id="ambr-m-47-sup-quot-5-12" corresp="#person-2"
                         source="Athanasius, exp. (?) in Ps 5,12a (ineditum?) - Idem, exp. in Ps 5,12b"
-                        >Ὅσω φησὶ πλεονάζουσιν εἰς τὸ ἐμποδίζειν τῆ ψυχῆ [* τῆ ψυχῆ C1 τῇ ψυχῇ] μου
-                        εἰς τὴν κατὰ θ(εὸ)ν ὡφέλειαν. [* ὡφέλειαν C1 ὠφέλειαν] τοσούτω ποίησον
+                        >Ὅσω φησὶ πλεονάζουσιν εἰς τὸ ἐμποδίζειν τῆ ψυχῆ [* τῆ ψυχῆ C τῇ ψυχῇ] μου
+                        εἰς τὴν κατὰ θ(εὸ)ν ὡφέλειαν. [* ὡφέλειαν C ὠφέλειαν] τοσούτω ποίησον
                         αὐτοὺς ἐκπεσεῖν τῶν ἐπιβουλῶν· οὕτω γὰρ ἂν τούτου γενομένου· εὐφρανθήτωσαν
                         πάντες οἱ ἐλπίζοντες ἐπὶ σοί. καὶ ναός σου γενήσονται· / αὐτὸς γὰρ ὁ
                         Χ(ριστὸ)ς τότε ἐλεύσεται καὶ ὁ π(ατ)ὴρ. καὶ μονὴν ποιήσωνται [* ποιήσωνται
@@ -2192,7 +2231,7 @@
                            <unclear>Ἀ</unclear>χ<unclear>ι</unclear>[τ]<unclear>ό</unclear>φελ·
                            ὃ<unclear>ς</unclear> καὶ ἀπελθῶν· καὶ προδ<unclear>η</unclear>σίαν
                         ὑποκρινάμενος. βουλῆς προτεθείσης παρὰ τοῦ Ἀβεσσαλὼμ αὐτῶ τὲ τῶ Ἀχιτόφελ·
-                        καὶ τοῦ μὲν κελεύοντος ἐπιδιώκειν. Ἀχιτόφελ οὕτως. [* οὕτως C1 οὗτος (?)]
+                        καὶ τοῦ μὲν κελεύοντος ἐπιδιώκειν. Ἀχιτόφελ οὕτως. [* οὕτως C οὗτος (?)]
                         τοῦ δὲ μή. τοῦ Χουσὶ· – οὐ γὰρ δεῖ φησὶν ἀφρα«κ»της ἐπιεῖναι
                            ἀνδρ<unclear>ὶ</unclear> ἐπισταμένω τὰ πολέμια· – καὶ τούτω τῶ λόγω
                            διασώ<unclear>σ</unclear>αντος τὸν Δ(αυΐ)δ· ἐπ[ει]δ[ὴ] ἀκήκοεν τὰ
@@ -2229,7 +2268,7 @@
                         corresp="#person-2" source="Athanasius, exp. in Ps 7,2a">Ἐπειδή φησιν
                         ἀν(θρώπ)ω τὰ περὶ τῆς σ(ωτη)ρίας οὐ θαρρῶ. εἰ καὶ τοῦ Χουσὶ οἱ λόγοι καλοὶ,
                         σῶσόν με καὶ ἐκ τῶν παρόντων μοῦ ἐχθρῶν· μάλιστα δὲ ἀπὸ τοῦ ἐφεδρεύοντος τῆ
-                        ἡμετέρα ψυχὴ⟦.⟧ [* ψυχὴ C1 ψυχῆ] νοητοῦ: = </quote>
+                        ἡμετέρα ψυχὴ⟦.⟧ [* ψυχὴ C ψυχῆ] νοητοῦ: = </quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-7-10" type="with-variants">Vat. gr.
                         754</ref>
                   </seg>
@@ -2382,7 +2421,7 @@
                         xml:id="ambr-m-47-sup-quot-7-15" corresp="#person-20 #person-9"
                         source="Theodoretus, comm. in Ps 7,9b–c (cf. PG 80,909 C8–10) - fons ignotus in Ps 7,10 (ineditum?)"
                            >Οὔ<unclear>τ</unclear>ε <unclear>γ</unclear>ὰρ τὸν Ἀβεσσαλὼμ ἡδίκηκά [*
-                        ἡδίκηκά C1 ἠδίκηκά] τι οὔτε τὸν Ἀχιτόφελ· οὔτέ τινα μετ’ αὐτῶν· / ἀλλὰ πέρας
+                        ἡδίκηκά C ἠδίκηκά] τι οὔτε τὸν Ἀχιτόφελ· οὔτέ τινα μετ’ αὐτῶν· / ἀλλὰ πέρας
                         κολάσεως λαβέτω ἡ πονηρία· καὶ οὕτως κατευθυνεῖς δίκαιον ἐν τῆ τῶν
                            καλ<unclear>ῶ</unclear>ν ἐργασία·</quote><ref
                         target="vat-gr-754:vat-gr-754-fr-7-32" type="abbreviated-with-variations"
@@ -2437,7 +2476,7 @@
                         ἐπιστραφῆτε καὶ τὰ ἑξῆς· / καὶ τὸ παρ<unclear>ὰ τ</unclear>ῶ
                            <unclear>Ἡ</unclear>σαΐα· ἐὰν θέλητε καὶ εἰσακούσητέ μου. τὰ
                            <unclear>ἀ</unclear>γ<unclear>α</unclear>θὰ τῆς γῆς φάγεσθαι· [* φάγεσθαι
-                        C1 φάγεσθε] ἐὰν δὲ μὴ θέλητ<unclear>ε.</unclear> μὴ δὲ εἰσακούσητέ μου.
+                        C φάγεσθε] ἐὰν δὲ μὴ θέλητ<unclear>ε.</unclear> μὴ δὲ εἰσακούσητέ μου.
                         μάχαιρα ὑμᾶς κατέδεται· τὸ γὰρ στόμα κ(υρίο)υ ἐλάλησε ταῦτα [Ιs 1,19–20]
                         ⁘</quote>
                   </seg>
@@ -2662,10 +2701,10 @@
                         corresp="#person-2"
                         source="Athanasius, exp. in Ps 8,3c = Cyrillus, fr. in Ps 8,3c (PG 69,757 D1–4)"
                         >τὸν διάβολον ὅτι ἐπ«ει»δὴ μετὰ τὸ ἀναγκάσαι πληρῶσαι τὴν
-                           ἀμαρ<unclear>τίαν</unclear> [* ἀμαρτίαν C1 ἁμαρτίαν] [ἔτι?] καὶ
+                           ἀμαρ<unclear>τίαν</unclear> [* ἀμαρτίαν C ἁμαρτίαν] [ἔτι?] καὶ
                         τιμωρεῖται τοὺς
                            ἀ<unclear>μα</unclear>ρ<unclear>τ</unclear>[ό]<unclear>ν</unclear>τας. [*
-                        ἀμαρτόντας (?) C1 ἁμαρτόντας] τὸ μέγεθος αὐτοῖς <unclear>τοῦ</unclear>
+                        ἀμαρτόντας (?) C ἁμαρτόντας] τὸ μέγεθος αὐτοῖς <unclear>τοῦ</unclear>
                            ἁ<unclear>μαρ</unclear>τήματος ἐν ὀφθαλμοῖς
                            <unclear>παρι</unclear>[στ]<unclear>ῶν</unclear>[·]</quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-8-12" type="with-variants">Vat. gr.
@@ -2723,7 +2762,7 @@
                      corresp="#ambr-m-47-sup-ps-8-8a" source="Anonymous">
                      <quote type="patristic" subtype="quotation" xml:id="ambr-m-47-sup-quot-8-12"
                         corresp="#person-2" source="Athanasius, exp. in Ps 8,8a">Τοὺς ἐξ ϊ(σρα)ὴλ [*
-                        ϊὴλ C1᾿ϊὴλ] πιστεύσαντας αἰνίττεται: =</quote>
+                        ϊὴλ C᾿ϊὴλ] πιστεύσαντας αἰνίττεται: =</quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-8-17" type="identical">Vat. gr. 754</ref>
                   </seg>
                   <note type="lemma">Ps 8,8b</note>
@@ -3270,7 +3309,7 @@
                      corresp="#ambr-m-47-sup-ps-9-7a" source="Anonymous">
                      <quote type="patristic" subtype="quotation" xml:id="ambr-m-47-sup-quot-9-9"
                         corresp="#person-2" source="Athanasius, exp. in Ps 9,7a1">Ῥομφαίας ἐχθροῦ.
-                        τὰς ἀντικειμένας δυνάμεις δηλοῖ. δι’ ὧν ἐστιν ϊσχυρὸς [* ϊσχυρὸς C1
+                        τὰς ἀντικειμένας δυνάμεις δηλοῖ. δι’ ὧν ἐστιν ϊσχυρὸς [* ϊσχυρὸς C
                         ᾿ϊσχυρὸς] ὁ σατανᾶς·</quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-9-19" type="with-variants">Vat. gr.
                         754</ref>
@@ -3475,9 +3514,9 @@
                      corresp="#ambr-m-47-sup-ps-9-18a" source="Anonymous">
                      <quote type="patristic" subtype="unknown" xml:id="ambr-m-47-sup-quot-9-25"
                         corresp="#person-2" source="Anastasius, exp. (?) in Ps 9,18a (ineditum?)"
-                        >Ἁμαρτωλοὺς ἐνταῦθα. τοὺς ἀσεβεῖς λέγει· εἴ τις γὰρ ἀσεβὴς [* ἀσεβὴς C1
-                        ἀσεβὴς,] καὶ ἀμαρτωλός· [* ἀμαρτωλός C1 ἁμαρτωλός] οὐκ εἴ τις δὲ ἀμαρτωλὸς
-                        [* ἀμαρτωλὸς C1 ἁμαρτωλός,] καὶ ἀσεβής·</quote>
+                        >Ἁμαρτωλοὺς ἐνταῦθα. τοὺς ἀσεβεῖς λέγει· εἴ τις γὰρ ἀσεβὴς [* ἀσεβὴς C
+                        ἀσεβὴς,] καὶ ἀμαρτωλός· [* ἀμαρτωλός C ἁμαρτωλός] οὐκ εἴ τις δὲ ἀμαρτωλὸς
+                        [* ἀμαρτωλὸς C ἁμαρτωλός,] καὶ ἀσεβής·</quote>
                   </seg>
                   <note type="lemma">Ps 9,18–19</note>
                   <seg type="commentaryfragment" xml:id="ambr-m-47-sup-fr-9-26"
@@ -3950,7 +3989,7 @@
                      <quote type="patristic" subtype="quotation-expanded"
                         xml:id="ambr-m-47-sup-quot-9-59" corresp="#person-2"
                         source="Athanasius, exp. in Ps 9,38a">Τῶν πτωχῶν τῶ πν(εύματ)ι· αὕτη γὰρ ἦν
-                        αὐτῶν ἡ ἐπιθυμία· τῶ [* τῶ C1 τὸ,] τῶν μελλόντων ἀξιωθῆναι ἀγαθῶν: =</quote>
+                        αὐτῶν ἡ ἐπιθυμία· τῶ [* τῶ C τὸ,] τῶν μελλόντων ἀξιωθῆναι ἀγαθῶν: =</quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-9-130" type="expanded-abbreviated">Vat.
                         gr. 754</ref>
                   </seg>
@@ -3970,7 +4009,7 @@
                      <quote type="patristic" subtype="quotation" xml:id="ambr-m-47-sup-quot-9-61"
                         corresp="#person-XX" source="Athanasius, exp. in Ps 9,39">Ὅταν φησὶν
                         ἐκδί[κησιν] <unclear>τ</unclear>ῶ πτωχῶ ποιήσης. τότ<unclear>ε
-                        ο</unclear>ὐκέτη [* οὐκέτη C1 οὐκέτϊ] προσθήσει τοῦ μεγαλαυχεῖν
+                        ο</unclear>ὐκέτη [* οὐκέτη C οὐκέτϊ] προσθήσει τοῦ μεγαλαυχεῖν
                            ἄν(θρωπ)<unclear>ος</unclear> [ὁ]
                            ἁμ<unclear>α</unclear>ρτ<unclear>ω</unclear>λό<unclear>ς:
                         –</unclear></quote>
@@ -4062,7 +4101,7 @@
                            <unclear>ψ</unclear>υ<unclear>χ</unclear>[ῆ μου] ποιῆσαι· ἀποκρίνεται
                            π<unclear>ά</unclear>λιν· μετανα||στεύου ἐπὶ τὰ ὄρη. ἀναπτερώσας
                            <unclear>ἑ</unclear>αυτὸν ὡ<supplied resp="Panteghini">ς</supplied>
-                           στρου<unclear>θ</unclear>ε<unclear>ῖ</unclear>ον· [* στρουθεῖον C1
+                           στρου<unclear>θ</unclear>ε<unclear>ῖ</unclear>ον· [* στρουθεῖον C
                         στρουθίον] ὁτι ἐὰν ἐπὶ γῆς τὸν νοῦν ἔχ<unclear>ει</unclear>ς· ἰδοὺ οἱ
                         δαίμονες· τὰ τῶν παθῶν ἐντεῖνουσι τόξ<unclear>α</unclear>· ἐξ ὧν τὰ βέλη τῶν
                         λογισμῶν πέμπουσιν: –</quote>
@@ -4130,12 +4169,12 @@
                         >Ὅ[τι σ]<unclear>ὺ μὲν</unclear> ἀν<unclear>ή</unclear>γαγες εἰς βασιλέα·
                         καὶ αὐτοὶ. [σπο]<unclear>υδ</unclear>άζουσι καθελεῖν με· ἐγὼ δὲ ὁ
                            δικαι<unclear>ω</unclear>[σ]<unclear>θ</unclear>ῆναι παρὰ σοῦ ζητῶν· λέγω
-                        ἐν ἑαυτῶ· || / ὅτι καὶ οἱ ἐχθροῖ [* ἐχθροῖ C1 ἐχθροὶ] φησὶ τὰ τοιάδε
+                        ἐν ἑαυτῶ· || / ὅτι καὶ οἱ ἐχθροῖ [* ἐχθροῖ C ἐχθροὶ] φησὶ τὰ τοιάδε
                         ἐπιτηδεύουσι κατ᾿ ἐμοῦ· ἀλλὰ κ(ύριο)ς· ὁ ναὸν ἔχων τὸν οὐ(ραν)ὸν· ἐξετάσιν
                         τῶν δικαίων (καὶ) τ<unclear>ῶ</unclear>ν ἀσεβ<unclear>ῶν</unclear>
                         ποιούμενος· τοῖς μὲν ἀπονέμει τὰ ἀγαθά· τοῖς δὲ, ταῖς αἰωνί[αι]ς παραπέμπει
                         κολάσεσιν· / οὑκ ἀρετὴν \δὲ/ ἑαυτῶ μαρτυρῶν ὀ Δ(αυΐ)δ, τοῦτο λέγει· ἀλλ᾿
-                        ϊδὼς [* ϊδὼς C1 εἰδὼς] ὅτι πρὸς βλάβειν [* βλάβειν C1 βλάβην (?)] τοῦ Σαοὺλ·
+                        ϊδὼς [* ϊδὼς C εἰδὼς] ὅτι πρὸς βλάβειν [* βλάβειν C βλάβην (?)] τοῦ Σαοὺλ·
                         οὐδέποτε <unclear>ἠ</unclear>ργάσατό τι: –</quote>
                      <ref target="vat-gr-754:vat-gr-754-fr-10-11" type="with-variants">Vat. gr.
                         754</ref>
@@ -4167,8 +4206,8 @@
                      <quote type="patristic" subtype="unknown" xml:id="ambr-m-47-sup-quot-10-8"
                         corresp="#person-2" source="Athanasius, exp. (?) in Ps 10,6 (ineditum?)"
                            >Παραδίδοτ⟦<unclear>ε</unclear>⟧ γὰρ τῶ αἰωνίω πυρὶ ὅτε
-                           ἑπὶβρέξ<unclear>η</unclear> [* ἑπὶβρέξη C1 ἑπὶβρέξει] ἐπὶ ἁμαρτωλοὺς
-                        παγίδα· πὺρ [* πὺρ C1 πῦρ] καὶ θεῖον· ἅπερ ἐστὶν ἡτοιμασμένα·</quote>
+                           ἑπὶβρέξ<unclear>η</unclear> [* ἑπὶβρέξη C ἑπὶβρέξει] ἐπὶ ἁμαρτωλοὺς
+                        παγίδα· πὺρ [* πὺρ C πῦρ] καὶ θεῖον· ἅπερ ἐστὶν ἡτοιμασμένα·</quote>
                   </seg>
                   <note type="lemma">Ps 10,5b–6</note>
                   <seg type="commentaryfragment" xml:id="ambr-m-47-sup-fr-10-9"

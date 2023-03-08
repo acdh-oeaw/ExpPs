@@ -3,15 +3,23 @@
 <?xml-model href="../../schema/tei-psalmcatenae.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-   <!-- teiHeader zu vervollständigen -->
-   <!-- der Rest ist erledigt -->
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Coislin 12 - Transcription</title>
+            <title>Paris. Coislin 12 (CPG C40.17; Rahlfs 1717) - Codices varii (primary catena)</title>
+            <title type="subtitle">Transcription of (Ps)-Athanasius, Expositiones in Psalmos (Ps
+               7,9–10)</title>
             <respStmt>
-               <resp>transcribed by</resp>
-               <persName>Maria Lucia Goiana</persName>
+               <resp>by</resp>
+               <persName>Maria-Lucia Goiana</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Reviewed by</resp>
+               <persName>Sebastiano Panteghini</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Encoded by</resp>
+               <persName>Thomas Klampfl</persName>
             </respStmt>
          </titleStmt>
          <publicationStmt>
@@ -36,35 +44,42 @@
                </msIdentifier>
                <msContents>
                   <msItem n="1">
-                     <locus>fols. 1v-4</locus>
-                     <title>Eusebius Caesariensis, Commentarii in Psalmos</title>
+                     <locus>f. 1r–3v</locus>
+                     <title>Eusebiana in Psalmos</title>
                   </msItem>
                   <msItem n="2">
-                     <locus>fols. 4v-8</locus>
-                     <title>Michael Psellus, De Inscriptionibus Psalmorum (poe. 1)</title>
+                     <locus>f. 3v</locus>
+                     <title>Hypothesis in Canticum</title>
                   </msItem>
                   <msItem n="3">
-                     <locus>8</locus>
-                     <title>Medica, Remedia uaria</title>
+                     <locus>f. 4r-8r</locus>
+                     <title>Michael Psellus, De Inscriptionibus Psalmorum (poema 1)</title>
                   </msItem>
                   <msItem n="4">
-                     <locus>9</locus>
-                     <title>Liturgica, Varia</title>
+                     <locus>f. 8v</locus>
+                     <title>blank</title>
                   </msItem>
                   <msItem n="5">
-                     <locus>10-326v</locus>
-                     <title>Catenae, In Psalmos (Iohannes Chrysostomus, Theodorus Mopsuestenus,
-                        Athanasius Alexandrinus, Basilius Caesariensis)</title>
+                     <locus>f. 9r</locus>
+                     <title>medica, remedia varia</title>
                   </msItem>
                   <msItem n="6">
-                     <locus>327r-327v</locus>
+                     <locus>f. 9v</locus>
+                     <title>liturgica</title>
+                  </msItem>
+                  <msItem n="7">
+                     <locus>f. 10r–326v</locus>
+                     <title>Catena in Psalmos 7,9–72,10 (broad catena or "Textkatene").</title>
+                  </msItem>
+                  <msItem n="8">
+                     <locus>f. 327r–327v</locus>
                      <title>Iohannes Damascenus, Passio S. Artemii</title>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="paper">
-                        <support>paper</support>
+                        <support>paper (f. 10r–326v)</support>
                         <extent>
                            <dimensions scope="all" type="leaf" unit="mm">
                               <height>302</height>
@@ -74,13 +89,25 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout>
-                           <p>327 folios.</p>
+                           <p>327 ff, ca. 30 lines per page.</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
+                  <scriptDesc>
+                     <p>Minuscule informal.</p>
+                  </scriptDesc>
+                  <decoDesc>
+                     <p>absent.</p>
+                  </decoDesc>
+                  <additions>
+                     <p>In addition to the Expositiones, this catena uses only the Psalm
+                        commentaries of three other authors: Basil of Caesarea, John Chrysostom, and
+                        Theodor of Mopsuestia. Lemmas mostly consist of only the first words of the
+                        quoted verse.</p>
+                  </additions>
                </physDesc>
                <history>
-                  <p>Written in the 13th century.</p>
+                  <p>Written in the early 12th century (f. 10r–326v).</p>
                </history>
             </msDesc>
             <listPerson>
@@ -94,8 +121,24 @@
       <encodingDesc>
          <editorialDecl>
             <normalization>
-               <p>The transcription simplified the text in all respects.</p>
+               <p>The transcription of the fragments is semi-diplomatic: orthographic peculiarities
+                  of the manuscript are not normalized; the resolution of abbreviations is not
+                  indicated by round brackets. An exception is made for tachygraphic (ἐστί) or
+                  (ἐστίν) and for φη(σίν) or φη(σίν) abbreviated by suspension. Phenomena related to
+                  the writing process like additions, deletions, substitutions, or corrections are
+                  documented.</p>
             </normalization>
+            <punctuation>
+               <p>The punctuation faithfully reproduces that of the manuscript, where it is
+                  unambiguous. It makes use of the three dots inherited from ancient interpunctive
+                  theory: high dot or τελεία στιγμή (·) at the end of the sentence; middle dot or
+                  μέση στιγμή (·) between clauses (κῶλα); low dot or ὐποστιγμή (.) before the part
+                  that gives fulfillment to the sentence. Manuscript practice may deviate from these
+                  rules. The following Codepoints are used in the transcription: 0387 (hex) "GREEK
+                  ANO TELEIA", 00B7 (hex) "MIDDLE DOT", 002E (hex) "FULL STOP", 002C (hex) "COMMA",
+                  2022 (hex) "BULLET", 2058 (hex) "FOUR DOT PUNCTUATION",
+                  <!-- 205D (hex) "TRICOLON"  --> and 003A (hex) "COLON".</p>
+            </punctuation>
          </editorialDecl>
       </encodingDesc>
    </teiHeader>
