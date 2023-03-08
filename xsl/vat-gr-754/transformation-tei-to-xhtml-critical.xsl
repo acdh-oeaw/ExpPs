@@ -1189,13 +1189,30 @@
     </xsl:template>
     
     <xsl:template match="tei:gap">
-        <xsl:text>[... (</xsl:text>
-        <xsl:value-of select="@quantity"/>
-        <xsl:text> </xsl:text>
-        <xsl:value-of select="@unit"/>
-        <xsl:text>(s) </xsl:text>
-        <xsl:value-of select="@reason"/>
-        <xsl:text>)]</xsl:text>
+        <xsl:choose>
+            <xsl:when test="exists(@unit) and (starts-with(@unit,'char')) and (@reason != 'fenestra')">
+                <xsl:text>[</xsl:text>
+                <xsl:for-each select="1 to @quantity"><xsl:text>.</xsl:text></xsl:for-each>
+                <xsl:text>]</xsl:text>
+            </xsl:when>
+            <xsl:when test="exists(@reason) and (@reason = 'fenestra')">
+                <xsl:text>[</xsl:text>
+                <xsl:value-of select="@quantity"/>
+                <xsl:text> </xsl:text>
+                <xsl:value-of select="@unit"/>
+                <xsl:text>(s) left intentionally blank</xsl:text>
+                <xsl:text>]</xsl:text>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:text>[... (</xsl:text>
+                <xsl:value-of select="@quantity"/>
+                <xsl:text> </xsl:text>
+                <xsl:value-of select="@unit"/>
+                <xsl:text>(s) </xsl:text>
+                <xsl:value-of select="@reason"/>
+                <xsl:text>)]</xsl:text>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     
     <xsl:template match="tei:add">
@@ -1208,9 +1225,10 @@
     
     <xsl:template match="tei:supplied">
         <xsl:text>[</xsl:text>
-        <span class="addition-underline">
-            <xsl:apply-templates/>
-        </span>
+            <xsl:apply-templates select="child::node()"/>
+            <xsl:if test="exists(@cert)">
+                <xsl:text> (?)</xsl:text>
+            </xsl:if>
         <xsl:text>]</xsl:text>
     </xsl:template>
     
