@@ -610,6 +610,11 @@
             <xsl:text>bottom margin</xsl:text>
         </xsl:if>
         <xsl:text>] [hexaplaric variant] </xsl:text>
+        <a>
+            <xsl:attribute name="id">
+                <xsl:value-of select="@xml:id"/>
+            </xsl:attribute>
+        </a>
         <xsl:apply-templates/>
     </xsl:template>
     
@@ -721,6 +726,12 @@
             </a>
             <xsl:element name="p">
                 <xsl:attribute name="class" select="'paragraph-in-commentaryfragment'"/>
+                <xsl:if test="@type = 'commentaryfragment'">
+                    <xsl:text>Commentaryfragment: </xsl:text>
+                </xsl:if>
+                <xsl:if test="@type = 'hypothesis'">
+                    <xsl:text>Hypothesis: </xsl:text>
+                </xsl:if>
                 <xsl:element name="b">
                     <xsl:value-of select="@source"/>
                 </xsl:element>
@@ -745,7 +756,7 @@
                 <xsl:apply-templates select="child::tei:quote[@type = 'patristic']/child::node()"/>
             </xsl:element>
             <xsl:element name="p">
-                <xsl:attribute name="class" select="'pargraph-in-commentaryfragment'"/>
+                <xsl:attribute name="class" select="'paragraph-in-commentaryfragment'"/>
                 <xsl:text>Lemma: </xsl:text>
                 <xsl:value-of select="preceding-sibling::tei:note[@type = 'lemma'][1]/text()"/>
             </xsl:element>
@@ -769,6 +780,7 @@
             </a>
             <xsl:element name="p">
                 <xsl:attribute name="class" select="'paragraph-in-hexaplaric-variant'"/>
+                <xsl:text>Hexaplaric variant: </xsl:text>
                 <xsl:element name="b">
                     <xsl:value-of select="@source"/>
                 </xsl:element>
@@ -778,7 +790,7 @@
                 <xsl:apply-templates select="child::node()"/>
             </xsl:element>
             <xsl:element name="p">
-                <xsl:attribute name="class" select="'pargraph-in-hexaplaric-variant'"/>
+                <xsl:attribute name="class" select="'paragraph-in-hexaplaric-variant'"/>
                 <xsl:text>Lemma: </xsl:text>
                 <xsl:value-of select="preceding-sibling::tei:note[@type = 'lemma'][1]/text()"/>
             </xsl:element>
@@ -795,6 +807,7 @@
             </a>
             <xsl:element name="p">
                 <xsl:attribute name="class" select="'paragraph-in-glosse'"/>
+                <xsl:text>Glosse: </xsl:text>
                 <xsl:element name="b">
                     <xsl:value-of select="@source"/>
                 </xsl:element>
@@ -1224,12 +1237,21 @@
     </xsl:template>
     
     <xsl:template match="tei:supplied">
-        <xsl:text>[</xsl:text>
-            <xsl:apply-templates select="child::node()"/>
-            <xsl:if test="exists(@cert)">
-                <xsl:text> (?)</xsl:text>
-            </xsl:if>
-        <xsl:text>]</xsl:text>
+        <xsl:choose>
+            <xsl:when test="exists(@resp)">
+                <xsl:text>〈</xsl:text>
+                <xsl:apply-templates select="child::node()"/>
+                <xsl:text>〉</xsl:text>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:text>[</xsl:text>
+                <xsl:apply-templates select="child::node()"/>
+                <xsl:if test="exists(@cert)">
+                    <xsl:text> (?)</xsl:text>
+                </xsl:if>
+                <xsl:text>]</xsl:text>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     
     <xsl:template match="tei:g[not(@type = 'reference') and not(@type = 'linking')]">
@@ -1397,6 +1419,11 @@
             <xsl:value-of select="@type"/>
             <xsl:text>] </xsl:text>
         </xsl:if>
+        <a>
+            <xsl:attribute name="id">
+                <xsl:value-of select="@xml:id"/>
+            </xsl:attribute>
+        </a>
         <xsl:apply-templates/>
     </xsl:template>
     
@@ -1566,9 +1593,9 @@
     </xsl:template>
     
     <xsl:template match="tei:del">
-        <xsl:text>{</xsl:text>
-        <xsl:value-of select="text()"/>
-        <xsl:text>}</xsl:text>
+        <xsl:text>⟦</xsl:text>
+        <xsl:apply-templates select="child::node()"/>
+        <xsl:text>⟧</xsl:text>
     </xsl:template>
     
     <xsl:template match="tei:unclear">
@@ -1621,27 +1648,50 @@
     </xsl:template>
     
     <xsl:template match="tei:add[@type = 'second-hand']">
-        <xsl:if test="@place = 'above'">
-            <xsl:text>\</xsl:text>
-            <xsl:apply-templates/>
-            <xsl:text>/</xsl:text>
-        </xsl:if>
-        <xsl:if test="@place = 'left margin' or @place = 'right margin'">
-            <xsl:apply-templates/>
-        </xsl:if>
-        <xsl:text>(</xsl:text>
-        <xsl:value-of select="@hand"/>
-        <xsl:text> - </xsl:text>
-        <xsl:value-of select="@place"/>
-        <xsl:text>)</xsl:text>
+        <xsl:choose>
+            <xsl:when test="@place = 'above'">
+                <xsl:text>\</xsl:text>
+                <xsl:apply-templates/>
+                <xsl:text>/</xsl:text>
+            </xsl:when>
+            <xsl:when test="@place = 'below'">
+                <xsl:text>/</xsl:text>
+                <xsl:apply-templates select="child::node()"/>
+                <xsl:text>\</xsl:text>
+            </xsl:when>
+            <xsl:when test="@place = 'overstrike'">
+                <xsl:text>《</xsl:text>
+                <xsl:apply-templates select="child::node()"/>
+                <xsl:text>》</xsl:text>
+            </xsl:when>
+            <xsl:when test="@place = 'left margin' or @place = 'right margin'">
+                <xsl:text>[</xsl:text>
+                <xsl:value-of select="@place"/>
+                <xsl:text>] </xsl:text>
+                <xsl:apply-templates select="child::node()"/>
+                <xsl:text> (add. </xsl:text>
+                <xsl:value-of select="@hand"/>
+                <xsl:text>)</xsl:text>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:text>《</xsl:text>
+                <xsl:apply-templates select="child::node()"/>
+                <xsl:text>》</xsl:text>
+                <xsl:text> (add. </xsl:text>
+                <xsl:value-of select="@hand"/>
+                <xsl:text>)</xsl:text>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
       
     <xsl:template match="tei:subst">
+        <xsl:value-of select="tei:add/text()"/>
+        <xsl:text> [* </xsl:text>
         <xsl:value-of select="tei:del/text()"/>
-        <xsl:text> [</xsl:text>
-            <xsl:value-of select="tei:add/text()"/>
         <xsl:text> </xsl:text>
-            <xsl:value-of select="tei:add/@hand"/>
+        <xsl:value-of select="tei:add/@hand"/>
+        <xsl:text> </xsl:text>
+        <xsl:value-of select="tei:add/text()"/>
         <xsl:text>]</xsl:text>
     </xsl:template>
       
