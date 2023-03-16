@@ -4,8 +4,8 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Genua, Franzon. Urban. 3 (CPG C32; Rahlfs 1055) - Catena Type XIX
-               (Secondary Catena)</title>
+            <title>Genua, Franzon. Urban. 3 (CPG C32; Rahlfs 1055) - Catena Type XIX (Secondary
+               Catena)</title>
             <title type="subtitle">List of Contents, Transcription of (Ps)-Athanasius, Expositiones
                in Psalmos, and of the Unpublished Fragments (Ps 1–10)</title>
             <respStmt>
@@ -552,12 +552,14 @@
                   <note type="lemma">Ps 2,6a</note>
                   <seg type="commentaryfragment" xml:id="franzon-3-fr-2-13"
                      corresp="#franzon-3-ps-2-6a" source="Gregorius of Nazianz">
-                     <quote type="patristic" subtype="quotation" xml:id="franzon-3-quot-2-13"
-                        corresp="#person-33"
-                        source="Gregorius Naz., or. 30,4 (XXX); non habet Vat. gr. 754"/><note
+                     <quote type="patristic" subtype="quotation-expanded"
+                        xml:id="franzon-3-quot-2-13" corresp="#person-3"
+                        source="Gregorius Naz., or. 30,4 (232,19–21); non habet Vat. gr. 754"/><note
                         type="attribution"><foreign xml:lang="grc">Γρη[γο]<unclear reason="faded"
                               >ρ</unclear>ί<unclear reason="faded">ου</unclear>
-                           Νανζιανζοῦ:</foreign></note><!-- faciendum: Quellenkritik: Verweis zu ergänzen -->
+                           Νανζιανζοῦ:</foreign></note><note type="textual-commentary">There is a
+                        sentence without correspondence in Gregory's text. It is evidently an
+                        explanation by the catenist.</note>
                   </seg>
                   <note type="lemma">Ps 2,6b–7a</note>
                   <seg type="commentaryfragment" xml:id="franzon-3-fr-2-14"
@@ -662,17 +664,19 @@
                   <note type="lemma">Ps 2,11</note>
                   <seg type="commentaryfragment" xml:id="franzon-3-fr-2-24"
                      corresp="#franzon-3-ps-2-11a" source="Anonymous">
-                     <quote type="patristic" xml:id="franzon-3-quot-2-24" corresp="#person-6"
-                        source="Didymus, fr. 9 in Ps 2,10–11 (XXX Mühlenberg sub Ps 2,10); non habet Vat. gr. 754"
-                     /><!-- faciendum: Quellenkritik: Verweis zu ergänzen -->
+                     <quote type="patristic" subtype="quotation" xml:id="franzon-3-quot-2-24"
+                        corresp="#person-6"
+                        source="Didymus, fr. 9 in Ps 2,10 (125,6–7 Mühlenberg); non habet Vat. gr. 754"
+                     />
                   </seg>
                   <note type="lemma">Ps 2,12a–b</note>
                   <seg type="commentaryfragment" xml:id="franzon-3-fr-2-25"
                      corresp="#franzon-3-ps-2-12a" source="Anonymous">
-                     <quote type="patristic" xml:id="franzon-3-quot-2-25" corresp="#person-6"
-                        source="Didymus, fr. 10 in Ps 2,12a–c (XXX Mühlenberg)"/>
-                     <ref target="vat-gr-754:vat-gr-754-fr-2-53" type="with-varations">Vat. gr.
-                        754</ref><!-- faciendum: Quellenkritik: Verweis zu ergänzen -->
+                     <quote type="patristic" subtype="quotation-abbreviated-expanded-and-paraphrase"
+                        xml:id="franzon-3-quot-2-25" corresp="#person-6"
+                        source="Didymus, fr. in Ps 2,12a–c (125 Mühlenberg)"/>
+                     <ref target="vat-gr-754:vat-gr-754-fr-2-53"
+                        type="abbreviated-with-variations-and-expanded">Vat. gr. 754</ref>
                   </seg>
                   <note type="lemma">Ps 2,12b–c</note>
                   <seg type="commentaryfragment" xml:id="franzon-3-fr-2-26"
@@ -844,11 +848,11 @@
                   <note type="lemma">Ps 3,5b</note>
                   <seg type="commentaryfragment" xml:id="franzon-3-fr-3-10"
                      corresp="#franzon-3-ps-3-5b" source="Anonymous">
-                     <quote type="patristic" subtype="quotation" xml:id="franzon-3-quot-3-10"
-                        corresp="#person-6"
-                        source="Didymus, fr. 12 in Ps 3,5 (126,XXX Mühlenberg); Ὄρος – θεοῦ non habet M."/>
-                     <ref target="vat-gr-754:vat-gr-754-fr-3-17" type="abbreviated">Vat. gr.
-                        754</ref><!-- Textkrik: keine Varianten --><!-- faciendum: Quellenkritik: Zeile anpassen -->
+                     <quote type="patristic" subtype="quotation-expanded"
+                        xml:id="franzon-3-quot-3-10" corresp="#person-6"
+                        source="Didymus, fr. 12 in Ps 3,5 (126,1–2 Mühlenberg)"/>
+                     <ref target="vat-gr-754:vat-gr-754-fr-3-17" type="abbreviated-with-variant"
+                        >Vat. gr. 754</ref>
                   </seg>
                   <note type="lemma">Ps 3,6 (ut vid.)</note>
                   <seg type="commentaryfragment" xml:id="franzon-3-fr-3-11"
@@ -1011,154 +1015,189 @@
             <!-- Ps 4 commentary -->
             <div type="commentary" subtype="commentary" xml:id="franzon-3-4-3">
                <ab xml:id="franzon-3-4-4" xml:lang="grc">
+                  <note type="lemma">Ps 4,2a</note>
                   <seg type="commentaryfragment" xml:id="franzon-3-fr-4-1"
                      corresp="#franzon-3-ps-4-2a" source="Anonymous">
-                     <quote type="patristic" xml:id="franzon-3-quot-4-1"
-                        corresp="#person-2 #person-16 #person-23"
-                        source="Athanasius, exp. in Ps 4,2a - Theodoretus, comm. in Ps 4,2a - Evagrius, schol. in Ps 4,2a"
-                           >Ὅμ<unclear reason="faded ink">οι</unclear>ον τῷ ἔτι σου λαλοῦντος. ἐρῶ
-                           <unclear reason="faded ink">ἰ</unclear>δοὺ ἐγὼ πάρειμι· ...</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-4-XXX" type="identical">Vat. gr.
-                        754</ref>
-                     <ref target="vat-gr-754:vat-gr-754-fr-4-XXX" type="abbreviated">Vat. gr.
-                        754</ref>
-                     <ref target="vat-gr-754:vat-gr-754-fr-4-XXX" type="expanded">Vat. gr. 754</ref>
+                     <quote type="patristic"
+                        subtype="quotation/quotation-abbreviated-and-adapted/quotation-expanded"
+                        corresp="#person-2 #person-16 #person-21"
+                        source="Athanasius, exp. in Ps 4,2a - Theodoretus, comm. in Ps 4,2a (PG 80,889 B1–2.7–9) - Evagrius, schol. nr. α´ in Ps 4,2a (288 Rondeau – Géhin – Cassin)"
+                           >Ὅμ<supplied reason="illegible">οι</supplied>ον τῶ ἔτι <unclear
+                           reason="faded">σ</unclear>ου λαλο<unclear reason="faded"
+                           >ῦν</unclear>το<unclear reason="faded">ς</unclear>. <unclear
+                           reason="faded">ἐρῶ</unclear>
+                        <supplied reason="illegible">ἰ</supplied>δο<unclear reason="faded"
+                           >ὺ</unclear> ἐγὼ πάρ<unclear reason="faded">ει</unclear>μι· ...</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-4-9" type="identical">Vat. gr. 754</ref>
+                     <ref target="vat-gr-754:vat-gr-754-fr-4-10" type="abbreviated-with-adaptations"
+                        >Vat. gr. 754</ref>
+                     <ref target="vat-gr-754:vat-gr-754-fr-4-41" type="expanded">Vat. gr. 754</ref>
                   </seg>
+                  <note type="lemma">Ps 4,2a</note>
                   <seg type="commentaryfragment" xml:id="franzon-3-fr-4-2"
                      corresp="#franzon-3-ps-4-2a" source="Anonymous">
-                     <quote type="patristic" xml:id="franzon-3-quot-4-2" corresp="#person-16"
-                        source="Theodoretus, comm. in Ps 4,2a"/>
-                     <ref target="vat-gr-754:vat-gr-754-fr-4-XXX" type="abbreviated">Vat. gr.
+                     <quote type="patristic" subtype="quotation" xml:id="franzon-3-quot-4-2"
+                        corresp="#person-16" source="Theodoretus, comm. in Ps 4,2a (PG 80,889 B3–5)"/>
+                     <ref target="vat-gr-754:vat-gr-754-fr-4-10" type="abbreviated">Vat. gr.
                         754</ref>
                   </seg>
+                  <note type="lemma">Ps 4,2b</note>
                   <seg type="commentaryfragment" xml:id="franzon-3-fr-4-3"
                      corresp="#franzon-3-ps-4-2b" source="Anonymous">
                      <quote type="patristic" xml:id="franzon-3-quot-4-3" corresp="#person-2"
-                        source="Athanasius, exp. in Ps 4,2b">Οὐ μόνον φησὶ τῶν περιστάσεων ἐξήγαγες.
-                        ἀλλὰ κα<unclear reason="faded ink">ὶ</unclear> εἰς εὐρυχωρίαν πολλ<unclear
-                           reason="faded ink">ὴ</unclear>ν <unclear reason="faded ink"
-                        >στῆ</unclear>ναι παρεσκεύασας: –</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-4-XXX" type="identical">Vat. gr.
-                        754</ref>
+                        source="Athanasius, exp. in Ps 4,2b">Οὐ μόνον φη(σὶ) τῶν περιστάσεων
+                        ἐξήγαγες. ἀλλὰ κα<supplied reason="illegible">ὶ</supplied> εἰ<unclear
+                           reason="faded">ς</unclear> εὐ<unclear reason="faded"
+                           >ρυ</unclear>χωρία<unclear reason="faded">ν</unclear>
+                        <unclear reason="faded">πολλ</unclear><supplied reason="illegible"
+                           >ὴ</supplied>ν <supplied reason="illegible">στῆ</supplied><unclear
+                           reason="faded">ναι</unclear> παρεσκεύασας: –</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-4-11" type="identical">Vat. gr. 754</ref>
                   </seg>
+                  <note type="lemma">Ps 4,2c</note>
                   <seg type="commentaryfragment" xml:id="franzon-3-fr-4-4"
                      corresp="#franzon-3-ps-4-2c" source="Anonymous">
-                     <quote type="patristic" xml:id="franzon-3-quot-4-4" corresp="#person-2"
-                        source="Athanasius, exp. in Ps 4,2c">Ἐπειδὴ εἰσηκούσθη φησὶν ἐκ τῆς
-                        δικαιοσύνης αὐτοῦ. τούτου χάριν ἐπὶ τοὺς οἰκτιρμοὺς ἀνατρέχει τοῦ θεοῦ. τὸ
-                        πᾶν ἐκείνοις ἀνατιθείς: –</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-4-XXX" type="identical">Vat. gr.
-                        754</ref>
+                     <quote type="patristic" subtype="quotation" xml:id="franzon-3-quot-4-4"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 4,2c">Ἐπειδὴ εἰσηκούσθη
+                        φη(σὶν) ἐκ τῆς δικαιο<supplied reason="illegible">σύ</supplied>νης <unclear
+                           reason="faded">αὐτοῦ</unclear>. <unclear reason="faded"
+                           >τούτ</unclear><supplied reason="illegible">ου</supplied>
+                        <unclear reason="faded">χ</unclear><supplied reason="illegible"
+                        >ά</supplied>ριν ἐπὶ τοὺς οἰκτιρμοὺς ἀνατρέχει το<supplied
+                           reason="illegible">ῦ</supplied> θεοῦ. τὸ πᾶ<unclear reason="faded"
+                           >ν</unclear> ἐκείνοις ἀνατιθ<supplied reason="illegible">είς:
+                           –</supplied></quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-4-15" type="identical">Vat. gr. 754</ref>
                   </seg>
                   <pb n="7v"/>
+                  <note type="lemma">Ps 4,3</note>
                   <seg type="commentaryfragment" xml:id="franzon-3-fr-4-5"
                      corresp="#franzon-3-ps-4-3a" source="Anonymous">
-                     <quote type="patristic" xml:id="franzon-3-quot-4-5" corresp="#person-2"
-                        source="Athanasius, exp. in Ps 4,3a">Ταῦτα ὡς πρὸς τοὺς πιστεύσαντας τῷ
+                     <quote type="patristic" subtype="quotation-abbreviated"
+                        xml:id="franzon-3-quot-4-5" corresp="#person-2"
+                        source="Athanasius, exp. in Ps 4,3">Ταῦτα ὡς πρὸς τοὺς πιστεύσαντας τῶ
                         πλήθει τοῦ στρατοῦ ἐλεῖν τὸν δίκαιον: –</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-4-XXX" type="abbreviated">Vat. gr.
+                     <ref target="vat-gr-754:vat-gr-754-fr-4-16" type="abbreviated">Vat. gr.
                         754</ref>
                   </seg>
+                  <note type="lemma">Ps 4,3</note>
                   <seg type="commentaryfragment" xml:id="franzon-3-fr-4-6"
                      corresp="#franzon-3-ps-4-3a" source="Anonymous">
-                     <quote type="patristic" xml:id="franzon-3-quot-4-6" corresp="#person-23"
-                        source="Evagrius, schol. in Ps 4,3a"/>
-                     <ref target="vat-gr-754:vat-gr-754-fr-4-XXX" type="identical">Vat. gr.
-                        754</ref>
+                     <quote type="patristic" subtype="quotation" xml:id="franzon-3-quot-4-6"
+                        corresp="#person-21"
+                        source="Evagrius, schol. nr. γ´ in Ps 4,3a (290 Rondeau – Géhin – Cassin)"/>
+                     <ref target="vat-gr-754:vat-gr-754-fr-4-17" type="identical">Vat. gr.
+                        754</ref><note type="attribution"><foreign xml:lang="grc"
+                        >ἄλλο(ς)</foreign></note>
                   </seg>
-                  <!-- ἄλλος --><seg type="commentaryfragment" xml:id="franzon-3-fr-4-7"
+                  <note type="lemma">Ps 4,4</note>
+                  <seg type="commentaryfragment" xml:id="franzon-3-fr-4-7"
                      corresp="#franzon-3-ps-4-4a" source="Anonymous">
-                     <quote type="patristic" xml:id="franzon-3-quot-4-7" corresp="#person-2"
+                     <quote type="patristic" subtype="quotation-expanded"
+                        xml:id="franzon-3-quot-4-7" corresp="#person-2"
                         source="Athanasius, exp. in Ps 4,4a">Ἀντὶ τοῦ γνῶτε τοιγὰρ οὖν οἱ πεποιθότες
                         ἐπὶ πλήθει δυνάμεως καὶ πλούτου ὡς θαυμαστὸν ἀπέδειξε. τὸν πεποιθότα ἐπ᾿
-                        αὐτῷ: –</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-4-XXX" type="expanded">Vat. gr. 754</ref>
+                        αὐτῶ: –</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-4-22" type="expanded">Vat. gr. 754</ref>
                   </seg>
+                  <note type="lemma">Ps 4,4</note>
                   <seg type="commentaryfragment" xml:id="franzon-3-fr-4-8"
-                     corresp="#franzon-3-ps-4-4b" source="Anonymous">
-                     <quote type="patristic" xml:id="franzon-3-quot-4-8" corresp="#person-2"
+                     corresp="#franzon-3-ps-4-4a" source="Anonymous">
+                     <quote type="patristic" subtype="quotation-expanded"
+                        xml:id="franzon-3-quot-4-8" corresp="#person-2"
                         source="Athanasius, exp. in Ps 4,4b">Ἐνεστὼς ἀντὶ τ<add place="overstrike"
-                           >οῦ</add> παρεληλυθότος. ἀντὶ τοῦ ἐπήκουσεν: –</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-4-XXX" type="expanded">Vat. gr. 754</ref>
+                           >οῦ</add> παρεληλυθότος. / ἀντὶ τοῦ ἐπήκουσεν: –</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-4-23" type="expanded">Vat. gr. 754</ref>
                   </seg>
+                  <note type="lemma">Ps 4,5</note>
                   <seg type="commentaryfragment" xml:id="franzon-3-fr-4-9"
                      corresp="#franzon-3-ps-4-5a" source="Anonymous">
-                     <quote type="patristic" xml:id="franzon-3-quot-4-9"
-                        corresp="#person-23 #person-2"
-                        source="Evagrius, schol. in Ps 4,5a - Athanasius, exp. in Ps 4,5a">... ἀλλ᾿
-                        ἄπρακτον ἀποφαίνειν τῇ ἐν ἡσυχίᾳ κατανυγῇ· τοῦτο γάρ ἐστι τὸ ἐν ταῖς κοίταις
-                        ὑμῶν κατανύγητε: –</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-4-XXX" type="identical">Vat. gr.
-                        754</ref>
-                     <ref target="vat-gr-754:vat-gr-754-fr-4-XXX" type="abbreviated">Vat. gr.
-                        754</ref>
+                     <quote type="patristic" subtype="quotation/quotation"
+                        xml:id="franzon-3-quot-4-9" corresp="#person-21 #person-2"
+                        source="Evagrius, schol. nr. δ´ in Ps 4,5a (292 Rondeau – Géhin -Cassin) - Athanasius, exp. in Ps 4,5"
+                        >... ἀλλ᾿ ἄπρακτο<supplied reason="damage">ν</supplied> ἀποφαίνειν τῆ ἐν
+                        ἡσυχία κατανυγῆ· τοῦτο γάρ ἐστι τὸ ἐν ταῖς κοίταις ὑμῶν κατανύγητε:
+                        –</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-4-20" type="identical">Vat. gr. 754</ref>
+                     <ref target="vat-gr-754:vat-gr-754-fr-4-24" type="abbreviated-with-variant"
+                        >Vat. gr. 754</ref>
                   </seg>
+                  <note type="lemma">Ps 4,6</note>
                   <seg type="commentaryfragment" xml:id="franzon-3-fr-4-10"
                      corresp="#franzon-3-ps-4-6" source="Anonymous">
-                     <quote type="patristic" xml:id="franzon-3-quot-4-10"
-                        corresp="#person-2 #person-23"
-                        source="Athanasius, exp. in Ps 4,6 - Evagrius, schol. in Ps 4,6">Διδάσκει
-                        πῶς περιεσόμεθα τῶν ἐχθρῶν· ἢ δίκαια πράττοντες καὶ τοῦτο ὥσπερ θυσίαν
-                        ἀναπέμποντες τῷ θεῷ· ...</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-4-XXX" type="abbreviated">Vat. gr.
+                     <quote type="patristic" subtype="quotation/quotation"
+                        xml:id="franzon-3-quot-4-10" corresp="#person-2 #person-21"
+                        source="Athanasius, exp. in Ps 4,6 - Evagrius, schol. nr. ε´ in Ps 4,6 (292 Rondeau – Géhin - Cassin)"
+                        >Διδάσκει πῶς περιεσόμεθα τῶν ἐχθρῶν· ἢ δίκαια πράττοντες καὶ τοῦτο ὥσπερ
+                        θυσίαν ἀναπέμποντες τῶ θεῶ· ...</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-4-27" type="abbreviated">Vat. gr.
                         754</ref>
-                     <ref target="vat-gr-754:vat-gr-754-fr-4-XXX" type="identical">Vat. gr.
-                        754</ref>
+                     <ref target="vat-gr-754:vat-gr-754-fr-4-21" type="identical">Vat. gr. 754</ref>
                   </seg>
+                  <note type="lemma">Ps 4,6</note>
                   <seg type="commentaryfragment" xml:id="franzon-3-fr-4-11"
                      corresp="#franzon-3-ps-4-5a" source="Anonymous">
-                     <quote type="patristic" xml:id="franzon-3-quot-4-11" corresp="#person-39"
-                        source="Gregorius Nyss., beat. 6"/>
-                     <ref target="vat-gr-754:vat-gr-754-fr-4-XXX" type="abbreviated">Vat. gr.
+                     <quote type="patristic" subtype="quotation" xml:id="franzon-3-quot-4-11"
+                        corresp="#person-39"
+                        source="Gregorius Nyss., beat. 6 (146,22–147,1 Callahan) in Mt 5,21–22"/>
+                     <ref target="vat-gr-754:vat-gr-754-fr-4-26" type="abbreviated">Vat. gr.
                         754</ref>
-                     <!-- Der Katenist kürzt ab, weil die Seite zu Ende ist? -->
+                     <!-- Katene: der Katenist kürzt am Ende der Seite ab (?) -->
                   </seg>
+                  <note type="lemma">Ps 4,7a</note>
                   <seg type="commentaryfragment" xml:id="franzon-3-fr-4-12"
                      corresp="#franzon-3-ps-4-7a" source="Anonymous">
                      <quote type="patristic" xml:id="franzon-3-quot-4-12"
                         corresp="#person-2 #person-16"
-                        source="Athanasius, exp. in Ps 4,7a - Theodoretus, comm. in Ps. 4,7a">Ταῦτα
-                        τῶν περὶ τὰς διοικήσεις τοῦ θεοῦ ὀλιγωρούντων τὰ ῥήματα· ...</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-4-XXX" type="identical">Vat. gr.
-                        754</ref>
-                     <ref target="vat-gr-754:vat-gr-754-fr-4-XXX" type="identical">Vat. gr.
-                        754</ref>
+                        source="Athanasius, exp. in Ps 4,7a - Theodoretus, comm. in Ps 4,7a (PG 80,893 A5–7 sub Ps 4,6)"
+                        >Ταῦτα τῶν περὶ τὰς διοικήσεις τοῦ θεοῦ ὀλιγωρούντων τὰ ῥήματα· ...</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-4-28" type="identical">Vat. gr. 754</ref>
+                     <ref target="vat-gr-754:vat-gr-754-fr-4-29" type="identical">Vat. gr. 754</ref>
                   </seg>
+                  <note type="lemma">Ps 4,7b</note>
                   <seg type="commentaryfragment" xml:id="franzon-3-fr-4-13"
                      corresp="#franzon-3-ps-4-7b" source="Origenes">
-                     <quote type="patristic" subtype="abbreviated-with-minor-variations"
+                     <quote type="patristic" subtype="quotation-abbreviated-and-adapted"
                         xml:id="franzon-3-quot-4-13" corresp="#person-13"
-                        source="Origenes, fr. in Ps. 4,7b (PG 12,1165 D3–11)"/>
+                        source="Origenes, fr. in Ps 4,7b (PG 12,1165 D3–5.7–11); non habet Vat. gr. 754"
+                        /><note type="attribution"><foreign xml:lang="grc"
+                        >ωρ(ιγένους)</foreign></note>
                   </seg>
+                  <note type="lemma">Ps 4,8</note>
                   <seg type="commentaryfragment" xml:id="franzon-3-fr-4-14"
-                     corresp="#franzon-3-ps-4-8b" source="Anonymous">
-                     <quote type="patristic" xml:id="franzon-3-quot-4-14" corresp="#person-2"
-                        source="Athanasius, exp. in Ps 4,8b">Ἐν τούτοις τοίνυν εὐθηνοῦντες οἱ περὶ
-                        τὴν γῆν ἐπτοημένοι. ἐνόμισαν τὰ ὄντως ἀγαθὰ ἔχειν: –</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-4-XXX" type="identical">Vat. gr.
-                        754</ref>
-                  </seg>
-                  <seg type="commentaryfragment" xml:id="franzon-3-fr-4-15"
-                     corresp="#franzon-3-ps-4-9a" source="Anonymous">
-                     <quote type="patristic" xml:id="franzon-3-quot-4-15" corresp="#person-2"
-                        source="Athanasius, exp. in Ps 4,9a">Ἐγώ φησιν οὐδὲν τῶν αὐτῶν ἐκείνοις
-                        πεφρονηκὼς. ἐπὶ πάσης ἀσφαλείας ἔσομαι καὶ τοῦτό μοι ἔσται ἀνάπαυσις:
+                     corresp="#franzon-3-ps-4-8a" source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="franzon-3-quot-4-14"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 4,8b">Ἐν τούτοις τοίνυν
+                        εὐθηνοῦντες οἱ περὶ τὴν γῆν ἐπτοημένοι. ἐνόμισαν τὰ ὄντως ἀγαθὰ ἔχειν:
                         –</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-4-XXX" type="identical">Vat. gr.
-                        754</ref>
+                     <ref target="vat-gr-754:vat-gr-754-fr-4-37" type="identical">Vat. gr. 754</ref>
                   </seg>
+                  <note type="lemma">Ps 4,8 (sic)</note>
+                  <seg type="commentaryfragment" xml:id="franzon-3-fr-4-15"
+                     corresp="#franzon-3-ps-4-8a" source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="franzon-3-quot-4-15"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 4,9">Ἐγώ φη(σιν) οὐδὲν
+                        τῶν <unclear reason="faded">α</unclear>ὐτῶν ἐκείνοις πεφρονηκὼς. <unclear
+                           reason="damage">ἐ</unclear>πὶ πάσης ἀσφαλείας ἔσομαι καὶ τοῦτό μοι ἔσται
+                        ἀνάπαυσις: –</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-4-38" type="identical">Vat. gr. 754</ref>
+                  </seg>
+                  <note type="lemma">Ps 4,9</note>
                   <seg type="commentaryfragment" xml:id="franzon-3-fr-4-16"
                      corresp="#franzon-3-ps-4-9a" source="Anonymous">
-                     <quote type="patristic" xml:id="franzon-3-quot-4-16" corresp="#person-32"
-                        source="Gregorius Nyss., Ps. inscr. I 4"/>
-                     <ref target="vat-gr-754:vat-gr-754-fr-4-XXX" type="abbreviated-with-variations"
+                     <quote type="patristic" subtype="quotation-adapted"
+                        xml:id="franzon-3-quot-4-16" corresp="#person-32"
+                        source="Gregorius Nyss., Ps. inscr. I 4 (36,24–27) in Ps 4,9"/>
+                     <ref target="vat-gr-754:vat-gr-754-fr-4-39" type="abbreviated-with-adaptation"
                         >Vat. gr. 754</ref>
                   </seg>
-                  <!-- ἄλλος --><seg type="commentaryfragment" xml:id="franzon-3-fr-4-17"
+                  <note type="lemma">Ps 4,9</note>
+                  <seg type="commentaryfragment" xml:id="franzon-3-fr-4-17"
                      corresp="#franzon-3-ps-4-9a" source="Anonymous">
-                     <quote type="patristic" subtype="with-variations-abbreviated"
+                     <quote type="patristic" subtype="paraphrase-abbreviated"
                         xml:id="franzon-3-quot-4-17" corresp="#person-"
-                        source="Eusebius, fr. in Ps 4,9b (Villani)"/>
+                        source="Eusebius, fr. 9 in Ps 4,9b (Villani); non habet Vat. gr. 754"/><note
+                        type="attribution"><foreign xml:lang="grc">ἄλλο(ς)</foreign></note>
                   </seg>
                </ab>
             </div>
@@ -1269,137 +1308,155 @@
             <!-- Ps 5 commentary -->
             <div type="commentary" subtype="commentary" xml:id="franzon-3-5-3">
                <ab xml:id="franzon-3-5-4" xml:lang="grc">
-                  <seg type="commentaryfragment" xml:id="franzon-3-fr-5-1"
-                     corresp="#franzon-3-ps-5-1" source="Anonymous">
+                  <note type="lemma">Ps 5,1</note>
+                  <seg type="hypothesis" xml:id="franzon-3-fr-5-1" corresp="#franzon-3-ps-5-1a"
+                     source="Anonymous">
                      <quote type="patristic" xml:id="franzon-3-quot-5-1" corresp="#person-11"
-                        source="Hesychius, comm. brevis in Ps 5,1"/>
-                     <ref target="vat-gr-754:vat-gr-754-fr-5-XXX" type="identical">Vat. gr.
-                        754</ref>
+                        source="Hesychius, comm. brevis in Ps 5,1 (5 Jagić)"/>
+                     <ref target="vat-gr-754:vat-gr-754-fr-5-3" type="identical">Vat. gr. 754</ref>
                   </seg>
                   <pb n="8v"/>
-                  <seg type="commentaryfragment" xml:id="franzon-3-fr-5-2"
-                     corresp="#franzon-3-ps-5-1" source="Anonymous">
+                  <note type="lemma">Ps 5,1</note>
+                  <seg type="hypothesis" xml:id="franzon-3-fr-5-2" corresp="#franzon-3-ps-5-1"
+                     source="Anonymous">
                      <quote type="patristic" xml:id="franzon-3-quot-5-2" corresp="#person-2"
                         source="Athanasius, exp. in Ps 5,1">Ἡ κληρονομοῦσα ἐστὶν ἡ θεοφιλεῖς ψυχὴ.
-                        ἤτοι ἐκκλησία· τί δέ ἐστιν ἃ κληρονομεῖ; ἃ ὀφθαλμὸς οὐκ εἶδε καὶ οὓς οὐκ
-                        ἤκουσε: εὔχεται δ᾿εἰσακουσθῆναι. ἑαυτῆς τὸ εὐθὲς παριστᾶσα καὶ τῶν ἐναντίων
-                        διαβάλλουσα τὴν πονηρίαν: –</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-5-XXX" type="abbreviated">Vat. gr.
-                        754</ref><!-- an sich zwei getrennte kommentarfragmente, jedes mit einem Verweiszeichen -->
+                        ἤτοι ἐκκλησία· τί δέ ἐστιν ἃ κληρονομεῖ; ἃ ὀφθαλμὸς οὐκεῖδε καὶ οὓς
+                        οὐκήκουσε: εὔχεται δ᾿ εἰσἀκουσθῆναι. ἑαυτῆς τὸ εὐθὲς παριστᾶσα καὶ τῶν
+                        ἐναντίων διαβάλλουσα τὴν πονηρίαν: –</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-5-2" type="abbreviated">Vat. gr.
+                        754</ref><!-- Textkritik: zwei getrennte Kommentarfragmente (?) -->
                   </seg>
+                  <note type="lemma">Ps 5,2b–3a</note>
                   <seg type="commentaryfragment" xml:id="franzon-3-fr-5-3"
                      corresp="#franzon-3-ps-5-2b" source="Anonymous">
-                     <quote type="patristic" xml:id="franzon-3-quot-5-3" corresp="#person-4"
-                        source="Cyrillus, fr. in Ps 5,2b"/>
-                     <ref target="vat-gr-754:vat-gr-754-fr-5-XXX" type="with-variation-abbreviated"
+                     <quote type="patristic" subtype="paraphrase-quotation-abbreviated"
+                        xml:id="franzon-3-quot-5-3" corresp="#person-4"
+                        source="Cyrillus, fr. in Ps 5,2b (PG 69,741 A15–B6)"/>
+                     <ref target="vat-gr-754:vat-gr-754-fr-5-6" type="abbreviated-with-variations"
                         >Vat. gr. 754</ref>
                   </seg>
+                  <note type="lemma">Ps 5,3b</note>
                   <seg type="commentaryfragment" xml:id="franzon-3-fr-5-4"
                      corresp="#franzon-3-ps-5-3b" source="Anonymous">
-                     <quote type="patristic" xml:id="franzon-3-quot-5-4" corresp="#person-13"
-                        source="Origenes (?), fr. in Ps 5,3b"/>
-                     <ref target="vat-gr-754:vat-gr-754-fr-5-XXX" type="identical">Vat. gr.
-                        754</ref>
+                     <quote type="patristic" subtype="quotation" xml:id="franzon-3-quot-5-4"
+                        corresp="#person-32"
+                        source="Origenes, schol. (?) in Ps 5,3b (PG 12,1168 D5–7)"/>
+                     <ref target="vat-gr-754:vat-gr-754-fr-5-7" type="identical">Vat. gr. 754</ref>
                   </seg>
+                  <note type="lemma">Ps 5,3c–4</note>
                   <seg type="commentaryfragment" xml:id="franzon-3-fr-5-5"
-                     corresp="#franzon-3-ps-5-4a" source="Anonymous">
-                     <quote type="patristic" xml:id="franzon-3-quot-5-5" corresp="#person-2"
-                        source="Athanasius, exp. in Ps 5,4a - Athanasius, exp. in Ps 5,4b "
-                        >Ἐναπολαύσῃ φησὶ τοῦ νοητοῦ γενομένη φωτὸς. προσεύξομαί σοι· διὸ καὶ
-                        εἰσακουσθῆναι πιστεύω· ἐπόψομαι δὲ τὰ θεῖα καὶ ἅγιά σου μυστήρια ἃ ἡτύμασας
-                        τοῖς ἀγαπῶσί σε: –</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-5-XXX" type="identical">Vat. gr.
-                        754</ref>
-                     <ref target="vat-gr-754:vat-gr-754-fr-5-XXX" type="abbreviated">Vat. gr.
-                        754</ref>
+                     corresp="#franzon-3-ps-5-3c" source="Anonymous">
+                     <quote type="patristic" subtype="quotation/quotation-adapted"
+                        xml:id="franzon-3-quot-5-5" corresp="#person-2"
+                        source="Athanasius, exp. in Ps 5,4a et in Ps 5,4b">Ἐναπολαύση φη(σὶ)
+                           το<supplied reason="illegible">ῦ</supplied> νοητοῦ γενομένη φωτὸς.
+                        προσεύξομαί σοι· διὸ καὶ εἰσακουσθῆναι πιστεύω· / ἐπόψομαι δὲ τὰ θεῖα καὶ
+                        ἅγιά σου μυστήρια ἃ ἠτύμασας τοῖς ἀγαπῶσί σε: –</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-5-10" type="identical">Vat. gr. 754</ref>
+                     <ref target="vat-gr-754:vat-gr-754-fr-5-11" type="abbreviated-with-adaptation"
+                        >Vat. gr. 754</ref>
                   </seg>
+                  <note type="lemma">Ps 5,5 (ut vid.)</note>
                   <seg type="commentaryfragment" xml:id="franzon-3-fr-5-6"
-                     corresp="#franzon-3-ps-5-5" source="Anonymous">
+                     corresp="#franzon-3-ps-5-5a" source="Anonymous">
                      <quote type="patristic" xml:id="franzon-3-quot-5-6" corresp="#person-2"
-                        source="Athanasius, exp. in Ps 5,5a">Διὰ τοῦτο φησὶν εἰσακουσθήσεσθαι θαρρῶ
-                        ὅτι τῶν τοιούτων οὐκ ἐπετήδευσα οὐδὲν ὧν μεμίσηκας· ταῦτα δέ ἐστιν. ἀνομία·
-                        καὶ πονηρία· παρανομία τε καὶ ψεῦδος· φθόνος. καὶ δόλος: –</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-5-XXX" type="identical">Vat. gr.
-                        754</ref>
+                        source="Athanasius, exp. in Ps 5,5a">Διατοῦτο φη(σὶν) εἰσακουσθήσεσθαι θαρρῶ
+                           ὅ<unclear reason="faded">τι</unclear> τῶν τοιούτων οὐκεπετήδευσα
+                           οὐ<unclear reason="faded">δ</unclear>ὲν ὧν μεμίσηκας· ταῦτα δέ ἐστιν.
+                           ἀν<unclear reason="faded">ο</unclear>μία· καὶ πονηρία· παραν<unclear
+                           reason="faded">ο</unclear>μία τε καὶ ψεῦδος· φθόνος. καὶ δόλος: –</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-5-15" type="identical">Vat. gr. 754</ref>
                   </seg>
+                  <note type="lemma">Ps 5,6a</note>
                   <seg type="commentaryfragment" xml:id="franzon-3-fr-5-7"
                      corresp="#franzon-3-ps-5-6a" source="Anonymous">
-                     <quote type="patristic" xml:id="franzon-3-quot-5-7" corresp="#person-13"
-                        source="Origenes (?), fr. in Ps 5,6a"/>
-                     <ref target="vat-gr-754:vat-gr-754-fr-5-XXX" type="identical">Vat. gr.
-                        754</ref>
+                     <quote type="patristic" subtype="quotation" xml:id="franzon-3-quot-5-7"
+                        corresp="#person-32"
+                        source="Origenes, schol. (?) in Ps 5,6a (PG 12,1169 A8–11)"/>
+                     <ref target="vat-gr-754:vat-gr-754-fr-5-9" type="identical">Vat. gr. 754</ref>
                   </seg>
+                  <note type="lemma">Ps 5,6b–7</note>
                   <seg type="commentaryfragment" xml:id="franzon-3-fr-5-8"
                      corresp="#franzon-3-ps-5-6b" source="Anonymous">
-                     <quote type="patristic" xml:id="franzon-3-quot-5-8" corresp="#person-13"
-                        source="Origenes, fr. in Ps 5,6b–7a"/>
-                     <ref target="vat-gr-754:vat-gr-754-fr-5-XXX" type="identical">Vat. gr.
-                        754</ref>
+                     <quote type="patristic" subtype="quotation" xml:id="franzon-3-quot-5-8"
+                        corresp="#person-13"
+                        source="Origenes, fr. in Ps 5,6b–7a (PG 12,1169 A14–B6; PG 69,741 C4–11) = schol. (?); PG 27,73 C13–D5 ex Paris. gr. 166–167"/>
+                     <ref target="vat-gr-754:vat-gr-754-fr-5-16" type="identical">Vat. gr. 754</ref>
                   </seg>
                   <pb n="9r"/>
+                  <note type="lemma">Ps 5,6b–7</note>
                   <seg type="commentaryfragment" xml:id="franzon-3-fr-5-9"
                      corresp="#franzon-3-ps-5-6b" source="Anonymous">
                      <quote type="patristic" xml:id="franzon-3-quot-5-9" corresp="#person-13"
-                        source="Origenes, fr. in Ps 5,6b–7a (bis scriptum)"/>
-                     <ref target="vat-gr-754:vat-gr-754-fr-5-XXX" type="abbreviated">Vat. gr.
+                        source="Origenes, fr. in Ps 5,6b–7a (PG 12,1169 B2–6; PG 69,741 C7–11) = schol. (?); iterum scriptum"/>
+                     <ref target="vat-gr-754:vat-gr-754-fr-5-16" type="abbreviated">Vat. gr.
                         754</ref>
                   </seg>
+                  <note type="lemma">Ps 5,8</note>
                   <seg type="commentaryfragment" xml:id="franzon-3-fr-5-10"
                      corresp="#franzon-3-ps-5-8a" source="Anonymous">
-                     <quote type="patristic" xml:id="franzon-3-quot-5-10" corresp="#person-2"
+                     <quote type="patristic" subtype="quotation-expanded"
+                        xml:id="franzon-3-quot-5-10" corresp="#person-2"
                         source="Athanasius, exp. in Ps 5,8a">Οἶκον ἐνταῦθα. τὴν ἐπουράνιον
                         ἱερουσαλὴμ τὴν τῶν πρωτοτόκων μητέρα: –</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-5-XXX" type="expanded">Vat. gr. 754</ref>
+                     <ref target="vat-gr-754:vat-gr-754-fr-5-21" type="expanded">Vat. gr. 754</ref>
                   </seg>
+                  <note type="lemma">Ps 5,8</note>
                   <seg type="commentaryfragment" xml:id="franzon-3-fr-5-11"
                      corresp="#franzon-3-ps-5-8a" source="Anonymous">
-                     <quote type="patristic" xml:id="franzon-3-quot-5-11" corresp="#person-23"
-                        source="Evagrius, schol. α in Ps 5,8b"/>
-                     <ref target="vat-gr-754:vat-gr-754-fr-5-XXX" type="identical">Vat. gr.
-                        754</ref>
+                     <quote type="patristic" subtype="quotation" xml:id="franzon-3-quot-5-11"
+                        corresp="#person-21"
+                        source="Evagrius, schol. nr. δ´ in Ps 5,8b (298 Rondeau – Géhin - Cassin)"/>
+                     <ref target="vat-gr-754:vat-gr-754-fr-5-18" type="identical">Vat. gr. 754</ref>
                   </seg>
+                  <note type="lemma">Ps 5,8 (sic)</note>
                   <seg type="commentaryfragment" xml:id="franzon-3-fr-5-12"
                      corresp="#franzon-3-ps-5-9" source="Anonymous">
-                     <quote type="patristic" xml:id="franzon-3-quot-5-12" corresp="#person-2"
-                        source="Athanasius, exp. in Ps 5,9">Tῶν νοητῶν δηλονότι· πολλοὶ γὰρ οἱ
-                        ἐπιβουλεύοντες τῇ θεοφιλ<subst hand="#m1">
+                     <quote type="patristic" subtype="quotation" xml:id="franzon-3-quot-5-12"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 5,9">Tῶν νοητῶν δηλονότι·
+                        πολλοὶ γὰρ οἱ ἐπιβουλεύοντες τῆ θεοφιλ<subst hand="#m1">
                            <del rend="overwrite" cert="high">ῆ</del>
                            <add place="inline">εῖ</add>
-                        </subst>ψυχῇ τῇ κατὰ θεὸν αὐτῆς προκοπῇ διαβασκαίνοντες: –</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-5-XXX" type="identical">Vat. gr.
-                        754</ref>
+                        </subst>ψυχῆ τῆ κατὰ θεὸν αὐτῆς προκοπῆ διαβασκαίνοντες: –</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-5-26" type="identical">Vat. gr. 754</ref>
                   </seg>
+                  <note type="lemma">Ps 5,9</note>
                   <seg type="commentaryfragment" xml:id="franzon-3-fr-5-13"
-                     corresp="#franzon-3-ps-5-9" source="Anonymous">
-                     <quote type="patristic" xml:id="franzon-3-quot-5-13" corresp="person-11"
-                        source="Hesychius, comm. brevis in Ps 5,9b"/>
-                     <ref target="vat-gr-754:vat-gr-754-fr-2-33" type="expanded">Vat. gr. 754</ref>
+                     corresp="#franzon-3-ps-5-9a" source="Anonymous">
+                     <quote type="patristic" subtype="quotation-expanded"
+                        xml:id="franzon-3-quot-5-13" corresp="person-11"
+                        source="Hesychius, comm. brevis in Ps 5,9b (6 Jagić)"/>
+                     <ref target="vat-gr-754:vat-gr-754-fr-5-27" type="expanded">Vat. gr. 754</ref>
                   </seg>
+                  <note type="lemma">Ps 5,10a–b</note>
                   <seg type="commentaryfragment" xml:id="franzon-3-fr-5-14"
                      corresp="#franzon-3-ps-5-10a" source="Anonymous">
-                     <quote type="patristic" xml:id="franzon-3-quot-5-14"
-                        corresp="#person-2 #person-16"
-                        source="Athanasius, exp. in Ps 5,10a - Theodoretus, comm. in Ps 5,10a - Theodoretus, comm. in Ps 5,10b"
+                     <quote type="patristic" subtype="quotation/quotation-adapted/quotation-adapted"
+                        xml:id="franzon-3-quot-5-14" corresp="#person-2 #person-16"
+                        source="Athanasius, exp. in Ps 5,10a–b - Theodoretus, comm. in Ps 5,10a (PG 80,900 A11–12) - Theodoretus, comm. in Ps 5,10b (PG 80,900 A12–14)"
                         >Τῶν σοφῶν τοῦ αἰῶνος τούτου· ἢ καὶ τῶν αἱρετικῶν· οὕτοι γὰρ ἀληθείας λόγους
                         οὐκ ἴσασιν· ...</quote>
-                     <ref target="vat-gr-754:vat-gr-754-fr-5-XXX" type="identical">Vat. gr.
+                     <ref target="vat-gr-754:vat-gr-754-fr-5-37" type="identical">Vat. gr. 754</ref>
+                     <ref target="vat-gr-754:vat-gr-754-fr-5-38" type="with-adaptation">Vat. gr.
                         754</ref>
-                     <ref target="vat-gr-754:vat-gr-754-fr-5-XXX" type="identical">Vat. gr.
-                        754</ref>
-                     <ref target="vat-gr-754:vat-gr-754-fr-5-XXX" type="identical">Vat. gr.
+                     <ref target="vat-gr-754:vat-gr-754-fr-5-39" type="with-adaptation">Vat. gr.
                         754</ref>
                   </seg>
+                  <note type="lemma">Ps 5,10a–b</note>
                   <seg type="commentaryfragment" xml:id="franzon-3-fr-5-15"
                      corresp="#franzon-3-ps-5-10a" source="Anonymous">
-                     <quote type="patristic" xml:id="franzon-3-quot-5-15" corresp="person-23"
-                        source="Evagrius, schol. in Ps 5,10a"/>
-                     <ref target="vat-gr-754:vat-gr-754-fr-5-33" type="identical">Vat. gr. 754</ref>
+                     <quote type="patristic" subtype="quotation" xml:id="franzon-3-quot-5-15"
+                        corresp="person-21"
+                        source="Evagrius, schol. nr. ζ´ in Ps 5,10a (300 Rondeau – Géhin - Cassin)"/>
+                     <ref target="vat-gr-754:vat-gr-754-fr-5-30" type="identical">Vat. gr. 754</ref>
                   </seg>
+                  <note type="lemma">Ps 5,10a–b (sic)</note>
                   <seg type="commentaryfragment" xml:id="franzon-3-fr-5-16"
-                     corresp="#franzon-3-ps-5-9" source="Anonymous">
-                     <quote type="patristic" xml:id="franzon-3-quot-5-16" corresp="person-16"
-                        source="Theodoretus, comm. in Ps 5,9"/>
-                     <ref target="vat-gr-754:vat-gr-754-fr-5-33" type="abbreviated">Vat. gr.
+                     corresp="#franzon-3-ps-5-10a" source="Anonymous">
+                     <quote type="patristic" subtype="quotation" xml:id="franzon-3-quot-5-16"
+                        corresp="person-16" source="Theodoretus, comm. in Ps 5,9 (PG 80,897 C10–D1)"/>
+                     <ref target="vat-gr-754:vat-gr-754-fr-5-28" type="abbreviated">Vat. gr.
                         754</ref>
                   </seg>
                   <pb n="9v"/>
