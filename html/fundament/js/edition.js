@@ -169,7 +169,7 @@ function handleClickOnLinksForWitnessesWithoutNavigation(event){
 			let commentaryfragmentId = commentaryfragment._embedded.commentaryfragment.id;
 			let urlFragmentForLinkToTranscription = '';
 			if (urlOfCommentaryfragment.includes('vat-gr-754')){ urlFragmentForLinkToTranscription = 'vat_gr_754.html'; }
-			else if (urlOfCommentaryfragment.includes('ambr-b-106-sup')){ urlFragmentForLinkToTranscription = 'ambr_b_106_sup.html'; }
+			else if (urlOfCommentaryfragment.includes('ambr-b-106-sup')){ urlFragmentForLinkToTranscription = 'ambros_B_106_sup.html'; }
 			else if (urlOfCommentaryfragment.includes('ambr-m-47-sup')){ urlFragmentForLinkToTranscription = 'ambr_m_47_sup.html'; }
 			else if (urlOfCommentaryfragment.includes('athen-b-n-8')){ urlFragmentForLinkToTranscription = 'athen_b_n_8.html'; }
 			else if (urlOfCommentaryfragment.includes('bodl-auct-d-4-1')){ urlFragmentForLinkToTranscription = 'bodl_auct_d_4_1.html'; }

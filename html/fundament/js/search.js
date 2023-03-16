@@ -198,7 +198,35 @@ function jsonClient(){
 				.then(function (response) {
 					let commentaryfragment = JSON.parse(response.data);
 					let commentaryfragmentText = commentaryfragment._embedded.commentaryfragment.text;
-					$(resultDiv).text(commentaryfragmentText);
+					let commentaryfragmentId = commentaryfragment._embedded.commentaryfragment.id;
+					let commentaryfragmentManuscript = commentaryfragment._links.manuscript["manuscript-identifier"];
+					let urlOfCommentaryfragment = commentaryfragment._links.self.href;
+					let urlFragmentForLinkToTranscription = '';
+					if (urlOfCommentaryfragment.includes('vat-gr-754')){ urlFragmentForLinkToTranscription = 'vat_gr_754.html'; }
+					else if (urlOfCommentaryfragment.includes('ambr-b-106-sup')){ urlFragmentForLinkToTranscription = 'ambros_B_106_sup.html'; }
+					else if (urlOfCommentaryfragment.includes('ambr-m-47-sup')){ urlFragmentForLinkToTranscription = 'ambr_m_47_sup.html'; }
+					else if (urlOfCommentaryfragment.includes('athen-b-n-8')){ urlFragmentForLinkToTranscription = 'athen_b_n_8.html'; }
+					else if (urlOfCommentaryfragment.includes('bodl-auct-d-4-1')){ urlFragmentForLinkToTranscription = 'bodl_auct_d_4_1.html'; }
+					else if (urlOfCommentaryfragment.includes('coislin-10')){ urlFragmentForLinkToTranscription = 'coislin_10.html'; }
+					else if (urlOfCommentaryfragment.includes('coislin-12')){ urlFragmentForLinkToTranscription = 'coislin_12.html'; }
+					else if (urlOfCommentaryfragment.includes('franzon-3')){ urlFragmentForLinkToTranscription = 'franzon_3.html'; }
+					else if (urlOfCommentaryfragment.includes('mosq-syn-194')){ urlFragmentForLinkToTranscription = 'mosq_syn_194.html'; }
+					else if (urlOfCommentaryfragment.includes('oxon-s-trin-78')){ urlFragmentForLinkToTranscription = 'oxon_s_trin_78.html'; }
+					else if (urlOfCommentaryfragment.includes('par-gr-139')){ urlFragmentForLinkToTranscription = 'par_gr_139.html'; }
+					else if (urlOfCommentaryfragment.includes('par-gr-164')){ urlFragmentForLinkToTranscription = 'par_gr_164.html'; }
+					else if (urlOfCommentaryfragment.includes('par-gr-166')){ urlFragmentForLinkToTranscription = 'par_gr_166.html'; }
+					else if (urlOfCommentaryfragment.includes('plut-5-30')){ urlFragmentForLinkToTranscription = 'plut_5_30.html'; }
+					else if (urlOfCommentaryfragment.includes('plut-6-3')){ urlFragmentForLinkToTranscription = 'plut_6_3.html'; }
+					else if (urlOfCommentaryfragment.includes('vat-gr-1422')){ urlFragmentForLinkToTranscription = 'vat_gr_1422.html'; }
+					let linkToTranscription = "./manuscripts/" + urlFragmentForLinkToTranscription + "#" + commentaryfragmentId;
+					let idOfFirstButton = "buttonForId" + commentaryfragmentId;
+					let idOfSecondButton = "buttonForURL" + commentaryfragmentId;
+					$(resultDiv).append("<p class='search-result-item-commentaryfragment'>" + commentaryfragmentText + "</p>")
+						.append("<p class='search-result-item-link-to-transcription'><a target='_blank' href='" + linkToTranscription + "'>→ " + commentaryfragmentManuscript + "</a></p>")
+						.append("<p class='search-result-item-details'><button type='button' id='" + idOfFirstButton + "' class='btn btn-sm btn-outline-dark' data-toggle='popover' title='Identifier:' data-placement='bottom' data-content='" + commentaryfragmentId + "'>Id</button> <button type='button' id='" + idOfSecondButton + "' class='btn btn-sm btn-outline-dark' data-toggle='popover' data-placement='bottom' title='URL: ' data-content='https://expps.acdh-dev.oeaw.ac.at" + urlOfCommentaryfragment + "'>URL</button></p>");
+					$(function(){ $("#" + idOfFirstButton).popover() })
+					$(function(){ $("#" + idOfSecondButton).popover() })
+					
 				})
 				.catch(function (error) { console.log(error); });
 				$(resultDiv).removeClass("commentaryfragment-details-hidden").addClass("commentaryfragment-details-visible");
