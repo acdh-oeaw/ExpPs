@@ -221,11 +221,13 @@ function jsonClient(){
 					let linkToTranscription = "./manuscripts/" + urlFragmentForLinkToTranscription + "#" + commentaryfragmentId;
 					let idOfFirstButton = "buttonForId" + commentaryfragmentId;
 					let idOfSecondButton = "buttonForURL" + commentaryfragmentId;
+					let idOfThirdButton = "buttonForQuote" + commentaryfragmentId;
 					$(resultDiv).append("<p class='search-result-item-commentaryfragment'>" + commentaryfragmentText + "</p>")
 						.append("<p class='search-result-item-link-to-transcription'><a target='_blank' href='" + linkToTranscription + "'>→ " + commentaryfragmentManuscript + "</a></p>")
-						.append("<p class='search-result-item-details'><button type='button' id='" + idOfFirstButton + "' class='btn btn-sm btn-outline-dark' data-toggle='popover' title='Identifier:' data-placement='bottom' data-content='" + commentaryfragmentId + "'>Id</button> <button type='button' id='" + idOfSecondButton + "' class='btn btn-sm btn-outline-dark' data-toggle='popover' data-placement='bottom' title='URL: ' data-content='https://expps.acdh-dev.oeaw.ac.at" + urlOfCommentaryfragment + "'>URL</button></p>");
+						.append("<p class='search-result-item-details'><button type='button' id='" + idOfFirstButton + "' class='btn btn-sm btn-outline-dark' data-toggle='popover' title='Identifier:' data-placement='bottom' data-content='" + commentaryfragmentId + "'>Id</button> <button type='button' id='" + idOfSecondButton + "' class='btn btn-sm btn-outline-dark' data-toggle='popover' data-placement='bottom' title='URL: ' data-content='https://expps.acdh-dev.oeaw.ac.at" + urlOfCommentaryfragment + "'>URL</button> <button type='button' id='" + idOfThirdButton + "' class='btn btn-sm btn-outline-dark' data-toggle='popover' data-placement='bottom' title='Quotation: ' data-content='Heil, Uta; Panthegini, Sebastiano, Transcription of " + commentaryfragmentManuscript + ". Fragment " + commentaryfragmentId + ", URL: https://expps.acdh-dev.oeaw.ac.at" + urlOfCommentaryfragment + ".'>Quote</button></p>");
 					$(function(){ $("#" + idOfFirstButton).popover() })
 					$(function(){ $("#" + idOfSecondButton).popover() })
+					$(function(){ $("#" + idOfThirdButton).popover() })
 					
 				})
 				.catch(function (error) { console.log(error); });
