@@ -45,7 +45,7 @@
             <xsl:value-of select="tei:fileDesc/tei:publicationStmt/tei:publisher/text()"/>
         </p>
         <p class="license">
-            <xsl:value-of select="tei:fileDesc/tei:publicationStmt/tei:availability/text()"/>
+            <xsl:value-of select="tei:fileDesc/tei:publicationStmt/tei:availability/tei:licence/text()"/>
         </p>
         <p class="date">
             <xsl:value-of select="tei:fileDesc/tei:publicationStmt/tei:date/text()"/>
@@ -54,7 +54,18 @@
             <xsl:value-of select="concat(tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:settlement/text(),', ',tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:repository/text(),', ',tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:idno/text())"/>
         </p>
         <p class="link-to-facsimiles">
-            <xsl:text>Facsimiles of the manuscript are not available online.</xsl:text>
+            <xsl:if test="exists(tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:idno/@facs)">
+                <xsl:text>The facsimiles of the manuscript are available: </xsl:text>
+                <a target="_blank">
+                    <xsl:attribute name="href">
+                        <xsl:value-of select="tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:idno/@facs"/>
+                    </xsl:attribute>
+                    <xsl:value-of select="tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:idno"/>
+                </a>
+            </xsl:if>
+            <xsl:if test="not(exists(tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:idno/@facs))">
+                <xsl:text>Facsimiles of the manuscript are not available online.</xsl:text>
+            </xsl:if>
         </p>
         <p class="link-to-facsimiles">
             <xsl:text>The pinakes identifier of the manuscript is: </xsl:text>
@@ -65,6 +76,12 @@
                 <xsl:value-of select="tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:altIdentifier/tei:idno[@type='pinakes']/text()"/>
             </a>
         </p>
+        <xsl:if test="exists(tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:altIdentifier/tei:idno[@type='diktyon'])">
+            <p class="link-to-facsimiles">
+                <xsl:text>The diktyon identifier of the manuscript is: </xsl:text>
+                <xsl:value-of select="tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:altIdentifier/tei:idno[@type='diktyon']/text()"/>
+            </p>
+        </xsl:if>
         <p class="manuscript-content">
             <xsl:text>The content of the manuscript is: </xsl:text>
             <ul class="text-header">
@@ -311,11 +328,13 @@
                     <xsl:value-of select="child::tei:quote[@type = 'patristic']/@source"/>
                 </xsl:element>
             </xsl:element>
-            <xsl:element name="p">
-                <xsl:attribute name="class" select="'paragraph-in-commentaryfragment'"/>
-                <xsl:text>Lemma: </xsl:text>
-                <xsl:value-of select="preceding-sibling::tei:note[@type = 'lemma'][1]/text()"/>
-            </xsl:element>
+            <xsl:if test="exists(preceding-sibling::tei:note[@type = 'lemma'][1])">
+                <xsl:element name="p">
+                    <xsl:attribute name="class" select="'paragraph-in-commentaryfragment'"/>
+                    <xsl:text>Lemma: </xsl:text>
+                    <xsl:value-of select="preceding-sibling::tei:note[@type = 'lemma'][1]/text()"/>
+                </xsl:element>
+            </xsl:if>
             <xsl:element name="p">
                 <xsl:attribute name="class" select="'paragraph-in-commentaryfragment'"/>
                 <xsl:apply-templates select="child::tei:quote/child::node()"/>
@@ -391,7 +410,14 @@
         <p class="page-number">
             <xsl:text>(</xsl:text>
             <xsl:value-of select="@n"/>
-            <xsl:text>)</xsl:text>
+            <xsl:text>) </xsl:text>
+            <xsl:if test="exists(@facs)">
+                <xsl:element name="a">
+                    <xsl:attribute name="href" select="@facs"/>
+                    <xsl:attribute name="target" select="'_blank'"/>
+                    <i class="fas fa-image" style="transform: translate(0%,10%);"/>
+                </xsl:element>
+            </xsl:if>
         </p>
     </xsl:template>
     
