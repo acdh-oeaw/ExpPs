@@ -753,12 +753,12 @@
             </xsl:element>
             <xsl:element name="p">
                 <xsl:attribute name="class" select="'paragraph-in-commentaryfragment'"/>
-                <xsl:apply-templates select="child::tei:quote[@type = 'patristic']/child::node()"/>
+                <xsl:text>Lemma: </xsl:text>
+                <xsl:value-of select="preceding-sibling::tei:note[@type = 'lemma'][1]/text()"/>
             </xsl:element>
             <xsl:element name="p">
                 <xsl:attribute name="class" select="'paragraph-in-commentaryfragment'"/>
-                <xsl:text>Lemma: </xsl:text>
-                <xsl:value-of select="preceding-sibling::tei:note[@type = 'lemma'][1]/text()"/>
+                <xsl:apply-templates select="child::tei:quote[@type = 'patristic']/child::node()"/>
             </xsl:element>
             <xsl:if test="exists(child::tei:note[@type = 'attribution'])">
                 <xsl:element name="p">
@@ -787,12 +787,12 @@
             </xsl:element>
             <xsl:element name="p">
                 <xsl:attribute name="class" select="'paragraph-in-hexaplaric-variant'"/>
-                <xsl:apply-templates select="child::node()"/>
+                <xsl:text>Lemma: </xsl:text>
+                <xsl:value-of select="preceding-sibling::tei:note[@type = 'lemma'][1]/text()"/>
             </xsl:element>
             <xsl:element name="p">
                 <xsl:attribute name="class" select="'paragraph-in-hexaplaric-variant'"/>
-                <xsl:text>Lemma: </xsl:text>
-                <xsl:value-of select="preceding-sibling::tei:note[@type = 'lemma'][1]/text()"/>
+                <xsl:apply-templates select="child::node()"/>
             </xsl:element>
         </xsl:element>
     </xsl:template>
@@ -815,6 +815,11 @@
                 <xsl:element name="b">
                     <xsl:value-of select="child::tei:quote[@type = 'patristic']/@source"/>
                 </xsl:element>
+            </xsl:element>
+            <xsl:element name="p">
+                <xsl:attribute name="class" select="'paragraph-in-hexaplaric-variant'"/>
+                <xsl:text>Lemma: </xsl:text>
+                <xsl:value-of select="preceding-sibling::tei:note[@type = 'lemma'][1]/text()"/>
             </xsl:element>
             <xsl:element name="p">
                 <xsl:attribute name="class" select="'paragraph-in-glosse'"/>
