@@ -44,7 +44,7 @@ version="2.0">
                 </p>
                 <p class="publisher">FWF Project 32988</p>
                 <p class="license">Available under the Creative Commons Attribution 4.0 International (CC BY 4.0)</p>
-                <p class="date">2023-03-02</p>
+                <p class="date">2023-04-20</p>
             </div>
             <div id="main-content-body">
                 <div class="header-centered">Text, Übersetzung, Kommentar</div>
@@ -275,6 +275,12 @@ version="2.0">
             <xsl:if test="position() != last()"><xsl:text> || </xsl:text></xsl:if>
         </xsl:for-each>
         <xsl:apply-templates select="tei:note[@type = 'textual-commentary']"/>
+        <xsl:if test="not(exists(child::tei:note[@type = 'textual-commentary']))">
+            <p style="font-family: monospace; margin-top: 10pt;">
+                <xsl:text>urn:cts:etf:psath.expps.grc:</xsl:text>
+                <xsl:value-of select="./preceding-sibling::tei:div[@type = 'commentary'][1]/tei:p/@n"/>
+            </p>
+        </xsl:if>
     </div>
 </xsl:template>
     
@@ -460,6 +466,10 @@ version="2.0">
 
 <xsl:template match="tei:note[@type = 'textual-commentary']">
     <p style="margin-top: 10pt;"><xsl:apply-templates select="child::node()"/></p>
+    <p style="font-family: monospace">
+        <xsl:text>urn:cts:etf:psath.expps.grc:</xsl:text>
+        <xsl:value-of select="./parent::tei:div[@type = 'textcritic']/preceding-sibling::tei:div[@type = 'commentary'][1]/tei:p/@n"/>
+    </p>
 </xsl:template>
 
 <xsl:template match="tei:hi[@rend = 'italic']">
