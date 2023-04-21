@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Psalmcatenae - API Access</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/androidstudio.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/languages/xml.min.js"></script>
+	<script>hljs.highlightAll();</script>
+  </head>
+  <body>
+	<div class="container">
+		<h1>Description of the Web Interfaces of the Psalmcatenae Project</h1>
+		<h2>Table of Contents</h2>
+		<ol>
+			<li><a href="#cts">Accessing the Edition - Canonical Text Service</a></li>
+				<ol>
+					<li><a href="#cts-request">Requests</a></li>
+					<li><a href="#cts-response">Response Format</a></li>
+				</ol>
+			<li><a href="#rest">Accessing the Transcriptions - REST API</a></li>
+			<ol>
+				<li><a href="#rest-manuscripts">Manuscripts</a></li>
+				<li><a href="#rest-commentaryfragments">Commentary Fragments</a></li>
+				<li><a href="#rest-hexaplaric-variants">Hexaplaric Variants</a></li>
+				<li><a href="#rest-glosses">Glosses</a></li>
+			</ol>
+		</ol>
+		<h2 id="cts">Accessing the Edition - Canonical Text Service</h2>
+			<h3 id="cts-request">Requests</h3>
+				<h4>Endpoint</h4>
+					<p>The address for making CTS queries is:</p>
+					<pre><code style="font-size:120%">
+https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/cts/
+					</code></pre>
+				<h4>Structure of the URNs</h4>
+					<p>An identifier of an fragment of the edition looks like this:</p>
+					<pre><code style="font-size:120%;">
+urn:cts:etf:psath.expps.{language}:{number of passage}
+					</code></pre>
+					<p>The value for <kbd>language</kbd> can be <kbd>grc</kbd> for the greek text or <kbd>ger</kbd> for the german translation.</p>
+					<p>The value for <kbd>number of passage</kbd> must be the running number of the fragments of the edition.</p>
+				<h4>Exemplaric Request</h4>
+					<pre><code class="http" style="font-size:120%">
+https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/cts/?request=GetPassage&urn=urn:cts:etf:psath.expps.grc:1
+					</code></pre>
+					<p>This request delivers as result the first fragment of the edition in greek language.</p>
+			<h3 id="cts-response">Response</h3>
+				<p>The result for the exemplaric request above is:</p>
+				<pre><code class="language-xml" style="font-size:120%">
+&lt;GetPassage&gt;
+   &lt;request&gt;
+      &lt;requestName&gt;GetPassage&lt;/requestName&gt;
+      &lt;requestUrn&gt;urn:cts:etf:psath.expps.grc:1&lt;/requestUrn&gt;
+   &lt;/request&gt;
+   &lt;reply&gt;
+      &lt;urn&gt;urn:cts:etf:psath.expps.grc:1&lt;/urn&gt;
+      &lt;passage&gt;
+         Τὴν ἀρχὴν τῆς προφητείας ... καὶ λοιμοί: –
+      &lt;/passage&gt;
+      &lt;license&gt;
+         Available under the Creative Commons Attribution 4.0 International (CC BY 4.0)
+      &lt;/license&gt;
+      &lt;source&gt;
+         Heil, Uta; Panteghini, Sebastiano, (Ps.)-Athanasius, Expositiones in Psalmos. Fragment 1 - urn:cts:etf:psath.expps.grc:1 (https://expps.acdh-dev.oeaw.ac.at/expps/edition_ps_1-10.html).
+      &lt;/source&gt;
+   &lt;/reply&gt;
+&lt;/GetPassage&gt;
+				</code></pre>
+		<h2 id="rest">Accessing the Transcriptions - REST API</h2>
+		<p>The REST API has the following base URL:</p>
+		<pre><code class="http" style="font-size:120%">
+https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/
+		</code></pre>
+		<p>All URL fragments of the endpoints are attached to this base URL</p>
+			<h3 id="rest-manuscripts">Manuscripts</h3>
+				<p style="font-family: monospace;color:orange;">manuscripts</p>
+				<p>Returns a list of all manuscripts contained in the database.</p>
+			<h3 id="rest-commentaryfragments">Commentary Fragments</h3>
+				<p style="font-family: monospace;color: orange;">commentaryfragments</p>
+				<p>Returns a list of all commentary fragments of all manuscripts contained in the database.</p>
+				<p style="font-family: monospace;color: orange;">manuscripts/{manuscript-id}/commentaryfragments</p>
+				<p>Returns a list of all commentary fragments of a particular manuscript.</p>
+				<p style="font-family: monospace;color: orange;">manuscripts/{manuscript-id}/commentaryfragments/{commentaryfragment-id}</p>
+				<p>Returns a particular commentary fragment of a particular manuscript.</p>
+			<h3 id="rest-hexaplaric-variants">Hexaplaric Variants</h3>
+				<p style="font-family: monospace;color: orange;">hexaplaric-variants</p>
+				<p>Returns a list of all hexaplaric variants of all manuscripts contained in the database.</p>
+				<p style="font-family: monospace;color: orange;">manuscripts/{manuscript-id}/hexaplaric-variants</p>
+				<p>Returns a list of all hexaplaric variants of a particular manuscript.</p>
+				<p style="font-family: monospace;color: orange;">manuscripts/{manuscript-id}/hexaplaric-variants/{hexaplaric-variant-id}</p>
+				<p>Returns a particular hexaplaric variant of a particular manuscript.</p>
+			<h3 id="rest-glosses">Glosses</h3>
+				<p style="font-family: monospace;color: orange;">glosses</p>
+				<p>Returns a list of all glosses of all manuscripts contained in the database.</p>
+				<p style="font-family: monospace;color: orange;">manuscripts/{manuscript-id}/glosses</p>
+				<p>Returns a list of all glosses of a particular manuscript.</p>
+				<p style="font-family: monospace;color: orange;">manuscripts/{manuscript-id}/glosses/{gloss-id}
+				<p>Returns a particular gloss of a particular manuscript.</p>
+	</div>
+  </body>
+</html>
