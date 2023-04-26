@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../schema/tei-psalmcatenae.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-   <!-- to be done: zu tilgen: "Facsimiles of the manuscript are not available online" -->
-   <!-- to be done: TEI-header sichtbar machen -->
    <!-- faciendum: Textkritik: genauere Kollation mit Vat. gr. 754: ab Ende von f. 5v -->
    <!-- Textkritik: Textlage der Expositiones: Abweichungen von Vat. gr. 754 berücksichtigt -->
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Paris. Coislin 10 (CPG C32; Rahlfs 187) - Catena Type XIX (Secondary Catena)</title>
-            <title type="subtitle">List of Contents, Transcription of (Ps)-Athanasius, Expositiones
+            <title>Paris. Coislin 10 (CPG C32; Rahlfs 187) - Catena Type XIX (Secondary
+               Catena)</title>
+            <title type="subtitle">List of Contents, Transcription of (Ps.)-Athanasius, Expositiones
                in Psalmos, and of the Unpublished Fragments (Ps 7,14b–10)</title>
             <respStmt>
                <resp>by</resp>
@@ -44,7 +43,8 @@
                <msContents>
                   <msItem n="1">
                      <locus>f. 1r–355v</locus>
-                     <title>catena in Psalmos 7,14b–118,165 (full-page catena or "Textkatene")</title>
+                     <title>catena in Psalmos 7,14b–118,165 (full-page catena or
+                        "Textkatene")</title>
                   </msItem>
                </msContents>
                <physDesc>
@@ -60,7 +60,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout><p>355 ff., 35–37 lines per page. One folio lacking after: f. 6v (Ps
-                           9,30–36b).</p></layout>
+                              9,30–36b).</p></layout>
                         <!-- Katene: verlorene folia: 194v (Ps 75,8–12a); 203v (Ps 77,29b–38b); 227v (Ps 85,16b–86,3); 251v (Ps 92,5); 287v 97,6–98,6; 118,126–132 and 118,158–161 etc. -->
                      </layoutDesc>
                   </objectDesc>
@@ -1928,7 +1928,7 @@
             </div>
             <!-- Ps 10 bibletext -->
             <div type="bibletext" subtype="commented" xml:id="coislin-10-10-1"
-               rend="minuscule letters">
+               rend="capital letters">
                <ab xml:id="coislin-10-10-2" xml:lang="grc">
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-10-1"
                      n="Ps (LXX) 10,1" xml:lang="grc" xml:id="coislin-10-ps-10-1">
@@ -1991,8 +1991,7 @@
             </div>
             <!-- Ps 10 commentary -->
             <pb n="7v" facs="https://gallica.bnf.fr/ark:/12148/btv1b52513084s/f26.item"/>
-            <div type="commentary" subtype="commentary" xml:id="coislin-10-10-3"
-               rend="minuscule letters">
+            <div type="commentary" subtype="commentary" xml:id="coislin-10-10-3">
                <ab xml:id="coislin-10-10-4" xml:lang="grc">
                   <note type="lemma">Ps 10,1</note>
                   <seg type="hypothesis" xml:id="coislin-10-fr-10-1" corresp="#coislin-10-ps-10-1a"
@@ -2110,8 +2109,8 @@
                </ab>
             </div>
             <pb n="8r" facs="https://gallica.bnf.fr/ark:/12148/btv1b52513084s/f27.item"/>
-            <div type="commentary" subtype="commentary" xml:id="coislin-10-2-23">
-               <ab xml:lang="grc" xml:id="coislin-10-2-24">
+            <div type="commentary" subtype="commentary" xml:id="coislin-10-5">
+               <ab xml:lang="grc" xml:id="coislin-10-6">
                   <note type="lemma">Ps 10,4d–5a (ὀφθαλμοὶ)</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-10-9"
                      corresp="#coislin-10-ps-10-4d" source="(Athanasius)"
@@ -2139,6 +2138,174 @@
                         /><note type="attribution"><foreign xml:lang="grc"
                         >Θεοδ(ωρήτου)</foreign></note>
                   </seg>
+               </ab>
+            </div>
+            <!-- Ps 11 bibletext -->
+            <div type="bibletext" xml:id="coislin-10-11-1" subtype="commented">
+               <ab xml:lang="grc">
+                  <quote type="bibletext" xml:id="coislin-10-ps-11-2" n="Ps (LXX) 11,2"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-2">
+                     <anchor type="psalmtext" xml:id="coislin-10-ps-11-2a" n="Ps (LXX) 11,2a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-2"/> Σῶσόν με, κύριε, ὅτι
+                     ἐκλέλοιπεν ὅσιος, <anchor type="psalmtext" xml:id="coislin-10-ps-11-2b"
+                        n="Ps (LXX) 11,2b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-2"/> ὅτι
+                     ὠλιγώθησαν αἱ ἀλήθειαι ἀπὸ τῶν υἱῶν τῶν ἀνθρώπων.</quote>
+                  <quote type="bibletext" xml:id="coislin-10-ps-11-3" n="Ps (LXX) 11,3"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-3">
+                     <anchor type="psalmtext" xml:id="coislin-10-ps-11-3a" n="Ps (LXX) 11,3a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-3"/> μάταια ἐλάλησεν ἕκαστος
+                     πρὸς τὸν πλησίον αὐτοῦ, <anchor type="psalmtext" xml:id="coislin-10-ps-11-3b"
+                        n="Ps (LXX) 11,3b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-3"/> χείλη
+                     δόλια ἐν καρδίᾳ καὶ ἐν καρδίᾳ ἐλάλησαν.</quote>
+                  <quote type="bibletext" xml:id="coislin-10-ps-11-4" n="Ps (LXX) 11,4"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-4">
+                     <anchor type="psalmtext" xml:id="coislin-10-ps-11-4a" n="Ps (LXX) 11,4a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-4"/> ἐξολεθρεύσαι κύριος πάντα
+                     τὰ χείλη τὰ δόλια <anchor type="psalmtext" xml:id="coislin-10-ps-11-4b"
+                        n="Ps (LXX) 11,4b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-4"/> καὶ
+                     γλῶσσαν μεγαλορήμονα</quote>
+                  <quote type="bibletext" xml:id="coislin-10-ps-11-5" n="Ps (LXX) 11,5"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-5">
+                     <anchor type="psalmtext" xml:id="coislin-10-ps-11-5a" n="Ps (LXX) 11,5a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-5"/> τοὺς εἰπόντας Τὴν γλῶσσαν
+                     ἡμῶν μεγαλυνοῦμεν, <anchor type="psalmtext" xml:id="coislin-10-ps-11-5b"
+                        n="Ps (LXX) 11,5b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-5"/> τὰ χείλη
+                     ἡμῶν παρ᾽ ἡμῶν ἐστιν· <anchor type="psalmtext" xml:id="coislin-10-ps-11-5c"
+                        n="Ps (LXX) 11,5c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-5"/> τίς ἡμῶν
+                     κύριός ἐστιν;</quote>
+                  <quote type="bibletext" xml:id="coislin-10-ps-11-6" n="Ps (LXX) 11,6"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-6">
+                     <anchor type="psalmtext" xml:id="coislin-10-ps-11-6a" n="Ps (LXX) 11,6a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-6"/> ᾿Απὸ τῆς ταλαιπωρίας τῶν
+                     πτωχῶν <anchor type="psalmtext" xml:id="coislin-10-ps-11-6b" n="Ps (LXX) 11,6b"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-6"/> καὶ ἀπὸ τοῦ στεναγμοῦ τῶν
+                     πενήτων <anchor type="psalmtext" xml:id="coislin-10-ps-11-6c"
+                        n="Ps (LXX) 11,6c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-6"/> νῦν
+                     ἀναστήσομαι, λέγει κύριος, <anchor type="psalmtext"
+                        xml:id="coislin-10-ps-11-6d" n="Ps (LXX) 11,6d"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-6"/> θήσομαι ἐν σωτηρίᾳ,
+                     παρρησιάσομαι ἐν αὐτῷ.</quote>
+                  <quote type="bibletext" xml:id="coislin-10-ps-11-7" n="Ps (LXX) 11,7"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-7">
+                     <anchor type="psalmtext" xml:id="coislin-10-ps-11-7a" n="Ps (LXX) 11,7a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-7"/> τὰ λόγια κυρίου λόγια ἁγνά,
+                        <anchor type="psalmtext" xml:id="coislin-10-ps-11-7b" n="Ps (LXX) 11,7b"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-7"/> ἀργύριον πεπυρωμένον
+                     δοκίμιον τῇ γῇ <anchor type="psalmtext" xml:id="coislin-10-ps-11-7c"
+                        n="Ps (LXX) 11,7c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-7"/>
+                     κεκαθαρισμένον ἑπταπλασίως.</quote>
+                  <quote type="bibletext" xml:id="coislin-10-ps-11-8" n="Ps (LXX) 11,8"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-8">
+                     <anchor type="psalmtext" xml:id="coislin-10-ps-11-8a" n="Ps (LXX) 11,8a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-8"/> σύ, κύριε, φυλάξεις ἡμᾶς
+                        <anchor type="psalmtext" xml:id="coislin-10-ps-11-8b" n="Ps (LXX) 11,8b"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-8"/> καὶ διατηρήσεις ἡμᾶς ἀπὸ
+                     τῆς γενεᾶς ταύτης καὶ εἰς τὸν αἰῶνα.</quote>
+                  <quote type="bibletext" xml:id="coislin-10-ps-11-9" n="Ps (LXX) 11,9"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-9">
+                     <anchor type="psalmtext" xml:id="coislin-10-ps-11-9a" n="Ps (LXX) 11,9a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-9"/> κύκλῳ οἱ ἀσεβεῖς
+                     περιπατοῦσιν· <anchor type="psalmtext" xml:id="coislin-10-ps-11-9b"
+                        n="Ps (LXX) 11,9b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-9"/> κατὰ τὸ
+                     ὕψος σου ἐπολυώρησας τοὺς υἱοὺς τῶν ἀνθρώπων.</quote>
+               </ab>
+            </div>
+            <!-- Ps 11 commentary -->
+            <div type="commentary" subtype="commentary" xml:id="coislin-10-11-3">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 11,1</note>
+                  <seg type="hypothesis" xml:id="coislin-10-fr-11-1" source="(Athanasius)"
+                     corresp="#coislin-10-ps-11-1a">
+                     <quote type="patristic" subtype="quotation" xml:id="coislin-10-quot-11-1"
+                        source="Athanasius, exp. in Ps 11,1" corresp="#person-2">Εἴρηται περὶ τῆς
+                        ὀγδόης ἐν τῶ ἕκτω ψαλμῶ· εὔχεται δὲ ρυσθῆναι τῆς γενεᾶς τῆς πονηρᾶς· αὔτη δὲ
+                        ἂν εἴη γενεὰ ἡ ἐπὶ τοῦ σωτῆρος ἡμῶν Χριστοῦ. περὶ ἧς αὐτὸς ἔλεγεν· ἄνδρες
+                        νινευῗται ἀναστήσονται καὶ κατακρινοῦσι τὴν γενεὰν ταύτην: – [cf. Mt
+                        12,41]</quote>
+                     <ref target="vat-gr-754:vat-gr-754-fr-11-1" type="identical">Vat. gr. 754</ref>
+                     <num type="ordinal" xml:lang="grc" value="1">A΄</num>
+                  </seg>
+                  <note type="lemma">Ps 11,1</note>
+                  <seg type="hexaplaric" xml:id="coislin-10-hexaplaric-11-1"
+                     rendition="right-margin" source="Aquila, Theodotion, Symmachus (Ps 11,1)"
+                     corresp="#coislin-10-ps-11-1a">A Θ τω νικοποιῶ· Ϲ ἐπινίκιος: –</seg>
+               </ab>
+            </div>
+            <pb n="8v" facs="https://gallica.bnf.fr/ark:/12148/btv1b52513084s/f28.item"/>
+            <div type="commentary" subtype="commentary" xml:id="coislin-10-11-4">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 11,2 (ὅσιος)</note>
+                  <seg type="hexaplaric" xml:id="coislin-10-hexaplaric-11-2" rendition="top-margin"
+                     source="〈Aquila〉" corresp="#coislin-10-ps-11-2a">ἁγνός·</seg>
+                  <note type="lemma">Ps 11,2</note>
+                  <seg type="commentaryfragment" xml:id="coislin-10-fr-11-2" source="Theodoretus"
+                     corresp="#coislin-10-ps-11-2a"><quote type="patristic" subtype="quotation"
+                        xml:id="coislin-10-quote-11-2" corresp="#person-16">Theodoretus, comm. in Ps
+                        11,2 (PG 80,941 B15–C4)</quote><ref target="vat-gr-754:vat-gr-754-fr-10-20"
+                        type="abbreviated-with-variant">Vat. gr. 754</ref><note type="attribution"
+                           ><foreign xml:lang="grc">Θεοδ(ωρήτου)</foreign></note></seg>
+                  <note type="lemma">Ps 11,3a</note>
+                  <seg type="commentaryfragment" xml:id="coislin-10-fr-11-3" source="(Athanasius)"
+                     corresp="#coislin-10-ps-11-3a"><quote type="patristic" subtype="quotation"
+                        xml:id="coislin-10-quote-11-3" source="Athanasius, exp. in Ps 11,3a"
+                        corresp="person-2">τὰς κατὰ τοῦ σωτῆρος συνάγων ἐπιβουλάς: –</quote><ref
+                        target="vat-gr-754:vat-gr-754-fr-11-6" type="identical">Vat. gr.
+                        754</ref><num type="ordinal" xml:lang="grc" value="2">B΄</num></seg>
+                  <note type="lemma">Ps 11,3a (μάταια)</note>
+                  <seg type="commentaryfragment" xml:id="coislin-10-fr-11-4" source="Anonymous"
+                     corresp="#coislin-10-ps-11-3a"><quote type="patristic" subtype="quotation"
+                        xml:id="coislin-10-quote-11-4"
+                        source="Theodoretus, comm. in Ps 11,3a (PG 80,941 C6–7)"
+                        corresp="#person-16"/><ref target="vat-gr-754:vat-gr-754-fr-11-7"
+                        type="identical">Vat. gr. 754</ref></seg>
+                  <note type="lemma">Ps 11,3b</note>
+                  <seg type="commentaryfragment" xml:id="coislin-10-fr-11-5" source="(Athanasius)"
+                     corresp="#coislin-10-ps-11-3b"><quote type="patristic" subtype="quotation"
+                        xml:id="coislin-10-quote-11-5" source="Athanasius, exp. in Ps 11,3b">Ὅτι
+                        διδάσκαλον αὐτὸν ἀποκαλοῦντες καὶ ἀγαθὸν. ἕτερα ἐβουλεύοντο περὶ αὐτοῦ:
+                        –</quote><ref target="vat-gr-754:vat-gr-754-fr-11-8" type="identical">Vat.
+                        gr. 754</ref><num type="ordinal" value="3">Γ´</num></seg>
+                  <note type="lemma">Ps 11,4a</note>
+                  <seg type="commentaryfragment" xml:id="coislin-10-fr-11-6" source="(Athanasius)"
+                     corresp="vat-gr-754-ps-11-4a"><quote type="patristic" subtype="quotation"
+                        xml:id="coislin-10-quote-11-6" source="Athanasius, exp. in Ps 11,4–5a"
+                        corresp="#person-2">Πῶς γὰρ οὐ μεγαλορήμων ἡ γλῶσσα ἐκείνη· ἡ τολμήσασα τῶ
+                        σωτῆρι λέγειν· ἐν ποία ἐξουσία ταῦτα ποιεῖς. καὶ τίς σοι ἔδωκε τὴν ἐξουσίαν
+                        ταύτην: – [Mc 11,28]</quote><ref target="vat-gr-754:vat-gr-754-fr-11-10"
+                        type="identical">Vat. gr. 754</ref><num type="ordinal" value="4"
+                     >Δ´</num></seg>
+                  <note type="lemma">Ps 11,4a</note>
+                  <seg type="commentaryfragment" xml:id="coislin-10-fr-11-7" source="Theodoretus"
+                     corresp="#coislin-10-ps-11-4a"><quote type="patristic" subtype="quotation"
+                        xml:id="coislin-10-quote-11-7"
+                        source="Theodoretus, comm. in Ps 11,4 et in Ps 11,5 et in Ps 11,6 (PG 80,941 D1–944 C1)"
+                        corresp="#person-16"/><ref target="vat-gr-754:vat-gr-754-fr-11-11"
+                        type="expanded-with-variant">Vat. gr. 754</ref><note type="attribution"
+                           ><foreign xml:lang="grc">Θεοδωρήτου·</foreign></note></seg>
+                  <note type="lemma">Ps 11,5a–b</note>
+                  <seg type="commentaryfragment" xml:id="coislin-10-fr-11-8" source="(Athanasius)"
+                     corresp="#coislin-10-ps-11-5a"><quote type="patristic" subtype="quotation"
+                        xml:id="coislin-10-quote-11-8" source="Athanasius, exp. in Ps 11,5b"
+                        corresp="#person-2">Ὡς τοῦτο διακονουμένων τὸ ἐξουσίαν ἔχειν πᾶν ὅ τι ἂν
+                        βούλοιντο εἰπεῖν κατὰ το<unclear reason="damage">ῦ</unclear>
+                        <unclear reason="damage">σ</unclear>ωτῆ<unclear reason="damage"
+                           >ρ</unclear>ο<supplied reason="illegible">ς: –</supplied></quote><ref
+                        target="vat-gr-754:vat-gr-754-fr-11-12">Vat. gr. 754</ref><num
+                        type="ordinal" value="5">Ε´</num></seg>
+                  <note type="lemma">Ps 11,5c</note>
+                  <seg type="commentaryfragment" xml:id="coislin-10-fr-11-9" source="(Athanasius)"
+                     corresp="#coislin-10-ps-11-5c"><quote type="patristic" subtype="quotation"
+                        xml:id="coislin-10-quote-11-9" source="Athanasius, exp. in Ps 11,5c">>Ὅμοιον
+                        τὸ τοῦτον δὲ οὐκ οἴδαμεν πόθεν ἐστιν: –</quote><ref
+                        target="vat-gr-754:vat-gr-754-fr-11-13" type="with-variant"/><num
+                        type="ordinal" value="6">Ϛ´</num></seg>
+                  <note type="lemma">Ps 11,6a–c</note>
+                  <seg type="commentaryfragment" xml:id="coislin-10-fr-11-10" source="(Athanasius)"
+                     corresp="#coislin-10-ps-11-6a"><quote type="patristic" subtype="quotation"
+                        xml:id="coislin-10-quote-11-10">Πτωχοὺς μὲν καὶ πένητας τοὺς κατὰ πνεῦμα
+                        λέγει· ὧν καὶ τοῦ στεναγμοῦ ἀκούσας. ἀναστήσομαι φησίν: –</quote><ref
+                        target="vat-gr-754:vat-gr-754-fr-11-14" type="identical">Vat. gr. 754</ref><num
+                        type="ordinal" value="7">Ζ´</num></seg>
                </ab>
             </div>
          </div>
