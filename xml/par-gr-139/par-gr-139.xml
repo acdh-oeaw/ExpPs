@@ -2,11 +2,9 @@
 <?xml-model href="../../schema/tei-psalmcatenae.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
-      <!-- XML-Kodierung: <div> und <ab> müßen umgebaut werden -->
-      <!-- XML-Inhalte: vervollständigt -->
       <!-- faciendum: tei-Header -->
       <!-- faciendum: Verweise auf Autoren in @corresp zu berichtigen -->
-      <!-- Textkritik: P6: vollständig gelesen -->
+      <!-- Textkritik: Par. gr. 139: vollständig gelesen -->
       <!-- Textkritik: Typus III: andere Hss.: nur incipit und explicit der Fragmente gelesen -->
       <!-- Textkritik: Eusebius (ed. Villani): Fragmente nach PTA zitiert -->
       <fileDesc>
@@ -2032,9 +2030,9 @@
                      <quote type="patristic" subtype="quotation" xml:id="par-gr-139-quot-9-11"
                         corresp="#person-2" source="Athanasius, exp. (?) in Ps 9,31a">Παγίδα μὲν γὰρ
                         συνἐπήξατω τῶ Χριστῶ ὁ διάβολος· ἀλλ᾿ ἐν αὐτῆ τεταπείνωται τῆ ἰδία παγίδι
-                        καὶ ὀκεία· λέλυται γὰρ ἐν θανάτω Χριστοῦ καὶ κατηργήθη τύραννος ὁ
-                        πεσεῖσθαι μὴ προσδοκῶν: </quote><note type="attribution"><foreign
-                           xml:lang="grc">Κυριλ(λου):</foreign></note>
+                        καὶ ὀκεία· λέλυται γὰρ ἐν θανάτω Χριστοῦ καὶ κατηργήθη τύραννος ὁ πεσεῖσθαι
+                        μὴ προσδοκῶν: </quote><note type="attribution"><foreign xml:lang="grc"
+                           >Κυριλ(λου):</foreign></note>
                   </seg>
                   <note type="lemma">9,32</note>
                   <seg type="commentaryfragment" xml:id="par-gr-139-fr-9-12"
@@ -2181,6 +2179,393 @@
                   <!-- pb n="33r" -->
                   <!-- Mitte: Hesychius, comm. magnus? -->
                   <!-- Mitte: Hesychius, comm. magnus? -->
+               </ab>
+            </div>
+            <!-- Ps 11 bibletext -->
+            <div type="bibletext" subtype="commented" xml:id="par-gr-139-11-1">
+               <ab xml:lang="grc">
+                  <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-1"
+                     n="Ps (LXX) 11,1" xml:lang="grc" xml:id="par-gr-139-ps-11-1">
+                     <anchor xml:id="par-gr-139-ps-11-1a" type="psalmtext" n="Ps (LXX) 11,1a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-1"/> Εἰς τὸ τέλος, ὑπὲρ τῆς
+                     ὀγδόης· ψαλμὸς τῷ Δαυιδ. </quote>
+                  <quote type="bibletext" xml:id="par-gr-139-ps-11-2" n="Ps (LXX) 11,2"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-2">
+                     <anchor type="psalmtext" xml:id="par-gr-139-ps-11-2a" n="Ps (LXX) 11,2a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-2"/> Σῶσόν με, κύριε, ὅτι
+                     ἐκλέλοιπεν ὅσιος, <anchor type="psalmtext" xml:id="par-gr-139-ps-11-2b"
+                        n="Ps (LXX) 11,2b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-2"/> ὅτι
+                     ὠλιγώθησαν αἱ ἀλήθειαι ἀπὸ τῶν υἱῶν τῶν ἀνθρώπων.</quote>
+                  <quote type="bibletext" xml:id="par-gr-139-ps-11-3" n="Ps (LXX) 11,3"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-3">
+                     <anchor type="psalmtext" xml:id="par-gr-139-ps-11-3a" n="Ps (LXX) 11,3a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-3"/> μάταια ἐλάλησεν ἕκαστος
+                     πρὸς τὸν πλησίον αὐτοῦ, <anchor type="psalmtext" xml:id="par-gr-139-ps-11-3b"
+                        n="Ps (LXX) 11,3b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-3"/> χείλη
+                     δόλια ἐν καρδίᾳ καὶ ἐν καρδίᾳ ἐλάλησαν.</quote>
+                  <quote type="bibletext" xml:id="par-gr-139-ps-11-4" n="Ps (LXX) 11,4"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-4">
+                     <anchor type="psalmtext" xml:id="par-gr-139-ps-11-4a" n="Ps (LXX) 11,4a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-4"/> ἐξολεθρεύσαι κύριος πάντα
+                     τὰ χείλη τὰ δόλια <anchor type="psalmtext" xml:id="par-gr-139-ps-11-4b"
+                        n="Ps (LXX) 11,4b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-4"/> καὶ
+                     γλῶσσαν μεγαλορήμονα</quote>
+                  <quote type="bibletext" xml:id="par-gr-139-ps-11-5" n="Ps (LXX) 11,5"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-5">
+                     <anchor type="psalmtext" xml:id="par-gr-139-ps-11-5a" n="Ps (LXX) 11,5a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-5"/> τοὺς εἰπόντας Τὴν γλῶσσαν
+                     ἡμῶν μεγαλυνοῦμεν, <anchor type="psalmtext" xml:id="par-gr-139-ps-11-5b"
+                        n="Ps (LXX) 11,5b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-5"/> τὰ χείλη
+                     ἡμῶν παρ᾽ ἡμῶν ἐστιν· <anchor type="psalmtext" xml:id="par-gr-139-ps-11-5c"
+                        n="Ps (LXX) 11,5c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-5"/> τίς ἡμῶν
+                     κύριός ἐστιν;</quote>
+                  <quote type="bibletext" xml:id="par-gr-139-ps-11-6" n="Ps (LXX) 11,6"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-6">
+                     <anchor type="psalmtext" xml:id="par-gr-139-ps-11-6a" n="Ps (LXX) 11,6a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-6"/> ᾿Απὸ τῆς ταλαιπωρίας τῶν
+                     πτωχῶν <anchor type="psalmtext" xml:id="par-gr-139-ps-11-6b" n="Ps (LXX) 11,6b"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-6"/> καὶ ἀπὸ τοῦ στεναγμοῦ τῶν
+                     πενήτων <anchor type="psalmtext" xml:id="par-gr-139-ps-11-6c"
+                        n="Ps (LXX) 11,6c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-6"/> νῦν
+                     ἀναστήσομαι, λέγει κύριος, <anchor type="psalmtext"
+                        xml:id="par-gr-139-ps-11-6d" n="Ps (LXX) 11,6d"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-6"/> θήσομαι ἐν σωτηρίᾳ,
+                     παρρησιάσομαι ἐν αὐτῷ.</quote>
+                  <quote type="bibletext" xml:id="par-gr-139-ps-11-7" n="Ps (LXX) 11,7"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-7">
+                     <anchor type="psalmtext" xml:id="par-gr-139-ps-11-7a" n="Ps (LXX) 11,7a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-7"/> τὰ λόγια κυρίου λόγια ἁγνά,
+                        <anchor type="psalmtext" xml:id="par-gr-139-ps-11-7b" n="Ps (LXX) 11,7b"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-7"/> ἀργύριον πεπυρωμένον
+                     δοκίμιον τῇ γῇ <anchor type="psalmtext" xml:id="par-gr-139-ps-11-7c"
+                        n="Ps (LXX) 11,7c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-7"/>
+                     κεκαθαρισμένον ἑπταπλασίως.</quote>
+                  <quote type="bibletext" xml:id="par-gr-139-ps-11-8" n="Ps (LXX) 11,8"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-8">
+                     <anchor type="psalmtext" xml:id="par-gr-139-ps-11-8a" n="Ps (LXX) 11,8a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-8"/> σύ, κύριε, φυλάξεις ἡμᾶς
+                        <anchor type="psalmtext" xml:id="par-gr-139-ps-11-8b" n="Ps (LXX) 11,8b"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-8"/> καὶ διατηρήσεις ἡμᾶς ἀπὸ
+                     τῆς γενεᾶς ταύτης καὶ εἰς τὸν αἰῶνα.</quote>
+                  <quote type="bibletext" xml:id="par-gr-139-ps-11-9" n="Ps (LXX) 11,9"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-9">
+                     <anchor type="psalmtext" xml:id="par-gr-139-ps-11-9a" n="Ps (LXX) 11,9a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-9"/> κύκλῳ οἱ ἀσεβεῖς
+                     περιπατοῦσιν· <anchor type="psalmtext" xml:id="par-gr-139-ps-11-9b"
+                        n="Ps (LXX) 11,9b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-11-9"/> κατὰ τὸ
+                     ὕψος σου ἐπολυώρησας τοὺς υἱοὺς τῶν ἀνθρώπων.</quote>
+               </ab>
+            </div>
+            <pb n="33v"
+               facs="https://gallica.bnf.fr/ark:/12148/btv1b10515446x/f70.item.r=psautier%20du%20paris"/>
+            <!-- Ps 11 commentary -->
+            <div type="commentary" subtype="commentary" xml:id="par-gr-139-11-2">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 11,1</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-11-1" source="Eusebius"
+                     corresp="#par-gr-139-ps-11-1a"><quote type="patristic" subtype="paraphrase"
+                        source="Eusebius, fr. 1 in Ps 11,1 (Villani)"/></seg>
+                  <note type="lemma">Ps 11,1</note>
+                  <seg type="hypothesis" xml:id="par-gr-139-fr-11-2" source="Theodoretus"
+                     corresp="#par-gr-139-ps-11-1a"><quote type="patristic" subtype="quotation"
+                        source="Theodoretus, comm. in Ps 11,1 (PG 80,941)"/></seg>
+                  <note type="lemma">Ps 11,1</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-11-3" source="Cyrillus"
+                     corresp="#par-gr-139-ps-11-1a"><quote type="patristic"
+                        subtype="quotation-adapted-and-expanded"
+                        source="Cyrillus, fr. in Ps 11,1 (amplius quam PG 69,796)"/></seg>
+                  <note type="lemma">Ps 11,1</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-11-4" source="Didymus"
+                     corresp="#par-gr-139-ps-11-1a"><quote type="patristic" subtype="quotation"
+                        source="Didymus, fr. 75A in Ps 11,1 (165 Mühleneberg)"/></seg>
+                  <note type="lemma">Ps 11,2</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-11-5" source="Theodorus"
+                     corresp="#par-gr-139-ps-11-2a"><quote type="patristic" subtype="quotation"
+                        source="Theodoretus, comm. in Ps 11,2 (PG 80,941)"/></seg>
+                  <note type="lemma">Ps 11,2</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-11-6"
+                     source="Theodorus Antiochenus" corresp="#par-gr-139-ps-11-2a"><quote
+                        type="patristic" subtype="quotation"
+                        source="Theodorus, fr. in Ps 11,2a (69 Devreesse)"/></seg>
+                  <note type="lemma">Ps 11,2</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-11-7"
+                     source="Theodorus Antiochenus" corresp="#par-gr-139-ps-11-2a"><quote
+                        type="patristic" subtype="quotation"
+                        source="Theodorus, fr. in Ps 11,2b (69 Devreesse)"/></seg>
+                  <note type="lemma">Ps 11,2</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-11-8" source="Eusebius"
+                     corresp="#par-gr-139-ps-11-2a"><quote type="patristic"
+                        subtype="paraphrase-abbreviated"
+                        source="Eusebius, fr. 2 in Ps 11,2–3 (Villani)"/></seg>
+                  <note type="lemma">Ps 11,2 (sic)</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-11-9" source="Theodoretus"
+                     corresp="#par-gr-139-ps-11-2a"><quote type="patristic"
+                        subtype="paraphrase-abbreviated"
+                        source="Theodoretus, comm. in Ps 11,3a et in Ps 11,3b (PG 80,941)"/></seg>
+                  <note type="lemma">Ps 11,2</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-11-10" source="Didymus"
+                     corresp="#par-gr-139-ps-11-2a"><quote type="patristic"
+                        subtype="paraphrase-quotation"
+                        source="Didymus, fr. 76 in Ps 11,2 (165 Mühlenberg)"/></seg>
+                  <note type="lemma">Ps 11,3a </note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-11-11" source="Theodoretus"
+                     corresp="#par-gr-139-ps-11-3a"><quote type="patristic" subtype="quotation"
+                        source="Theodoretus, comm. in Ps 11,3a (PG 80,941)"/></seg>
+                  <note type="lemma">Ps 11,3a </note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-11-12"
+                     source="Theodorus Antiochenus" corresp="#par-gr-139-ps-11-3a"><quote
+                        type="patristic" subtype="quotation"
+                        source="Theodorus, fr. in Ps 11,3 (70 Devreesse)"/></seg>
+                  <note type="lemma">Ps 11,3b </note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-11-13"
+                     source="Theodorus or Theodoretus" corresp="#par-gr-139-ps-11-3b"><quote
+                        type="patristic" subtype="quotation"
+                        source="Theodoretus, comm. in Ps 11,3b (PG 80,941)"/></seg>
+                  <note type="lemma">Ps 11,3b </note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-11-14" source="Hesychius"
+                     corresp="#par-gr-139-ps-11-3b"><quote type="patristic" subtype="ineditum"
+                        source="Hesychius, comm. magnus (?) in Ps 11,3b (ineditum?)"/></seg>
+                  <note type="lemma">Ps 11,4–5 </note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-11-15" source="Theodorus"
+                     corresp="#par-gr-139-ps-11-4a"><quote type="patristic"
+                        subtype="quotation-adapted/quotation"
+                        source="Theodoretus, comm. in Ps 11,4 et in Ps 11,5 (PG 80,944)"/></seg>
+                  <note type="lemma">Ps 11,4–5 </note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-11-16"
+                     source="Theodorus Antiochenus" corresp="#par-gr-139-ps-11-4a"><quote
+                        type="patristic" subtype="quotation"
+                        source="Theodorus, fr. in Ps 11,5 (71 Devreesse)"/></seg>
+                  <note type="lemma">Ps 11,4–5 </note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-11-17" source="Hesychius"
+                     corresp="#par-gr-139-ps-11-4a"><quote type="patristic" subtype="ineditum"
+                        source="Hesychius, comm. magnus (?) in Ps 11,4–5 (ineditum?)"/></seg>
+                  <note type="lemma">Ps 11,4–5 </note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-11-18" source="Eusebius"
+                     corresp="#par-gr-139-ps-11-4a"><quote type="patristic"
+                        subtype="paraphrase-abbreviated"
+                        source="Eusebius, fr. 3 in Ps Ps 11,4–5 (Villani)"/></seg>
+                  <note type="lemma">Ps 11,4–5 </note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-11-19" source="Origenes"
+                     corresp="#par-gr-139-ps-11-4a"><quote type="patristic" subtype="paraphrase"
+                        source="Origenes, fr. in Ps 11,4 (PG 12,1200 D5–9)"/></seg>
+                  <note type="lemma">Ps 11,4–5 </note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-11-20" source="Didymus"
+                     corresp="#par-gr-139-ps-11-4a"><quote type="patristic"
+                        subtype="paraphrase-abbreviated"
+                        source="Didymus, fr. 77 in Ps 11,5 (166 Mühlenberg)"/></seg>
+               </ab>
+            </div>
+            <pb n="34r"
+               facs="https://gallica.bnf.fr/ark:/12148/btv1b10515446x/f71.item.r=psautier%20du%20paris"/>
+            <div type="commentary" subtype="commentary" xml:id="par-gr-139-3">
+               <ab>
+                  <note type="lemma">Ps 11,6 </note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-11-21" source="Theodorus"
+                     corresp="#par-gr-139-ps-11-6a"><quote type="patristic" subtype="quotation"
+                        source="Theodoretus, comm. in Ps 11,6 (PG 80,944)"/></seg>
+                  <note type="lemma">Ps 11,6 </note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-11-22" source="Cyrillus"
+                     corresp="#par-gr-139-ps-11-6a"><quote type="patristic" subtype="quotation"
+                        source="Cyrillus, fr. in Ps 11,6c–d (PG 69,797)"/></seg>
+                  <note type="lemma">Ps 11,6 </note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-11-23" source="Origenes"
+                     corresp="#par-gr-139-ps-11-6a"><quote type="patristic" subtype="quotation"
+                        source="Origenes, fr. in Ps 11,6 (PG 12,1201 A7–11)"/></seg>
+                  <note type="lemma">Ps 11,6 </note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-11-24" source="Anonymous"
+                     corresp="#par-gr-139-ps-11-6a"><quote type="patristic"
+                        subtype="quotation-expanded"
+                        source="Origenes (?), fr. in Ps 11,6 (paulum amplius quam PG 12,1201 A12–C9)"
+                     /></seg>
+                  <note type="lemma">Ps 11,6 </note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-11-25" source="Origenes"
+                     corresp="#par-gr-139-ps-11-6a"><quote type="patristic" subtype="quotation"
+                        source="Origenes, fr. in Ps 11,6 (PG 12,1201 C11–13)"/></seg>
+                  <note type="lemma">Ps 11,6 </note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-11-26" source="Eusebius"
+                     corresp="#par-gr-139-ps-11-6a"><quote type="patristic" subtype="paraphrase"
+                        source="Eusebius, fr. 4 in Ps 11,6 (Villani)"/></seg>
+                  <note type="lemma">Ps 11,7 (linking not completed) </note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-11-27" source="Theodorus"
+                     corresp="#par-gr-139-ps-11-7a"><quote type="patristic" subtype="quotation"
+                        source="Theodoretus, comm. in Ps 11,7"/></seg>
+                  <note type="lemma">Ps 11,7 (linking not completed) </note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-11-28" source="Eusebius"
+                     corresp="#par-gr-139-ps-11-7a"><quote type="patristic"
+                        subtype="paraphrase-abbreviated"
+                        source="Eusebius, fr. 5 in Ps 11,7 (Villani)"/></seg>
+                  <note type="lemma">Ps 11,7 (linking not completed) </note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-11-29" source="Origenes"
+                     corresp="#par-gr-139-ps-11-7a"><quote type="patristic" subtype="unknown"
+                        source="Origenes, fr. in Ps 11,7 (PG 12,1201 D1–3)"/></seg>
+                  <note type="lemma">Ps 11,8 </note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-11-30" source="Theodorus"
+                     corresp="#par-gr-139-ps-11-8a"><quote type="patristic" subtype="quotation"
+                        source="Theodoretus, comm. in Ps 11,8 (PG 80,944)"/></seg>
+                  <note type="lemma">Ps 11,8 </note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-11-31" source="Athanasius"
+                     corresp="#par-gr-139-ps-11-8a"><quote type="patristic" subtype="quotation"
+                        source="Athanasius, exp. in Ps 11,8–9a">Διατοῦτο φησὶν φυλάξεις ἡμᾶς ἐπειδὴ
+                        κυκλοῦντες κυκλοῦσιν ἡμᾶς οἱ ασεβεῖς ἐπιβουλεύονται τῆ ἡμῶν σωτηρία οὖτοι δ`
+                        ἂν ειεν αἱ αντικείμεναι καὶ πονηραὶ δυνάμεις: </quote><ref
+                        target="vat-gr-754:vat-gr-754-fr-11-19" type="abbreviated-with-variants"
+                        >Vat. gr. 754</ref><note type="attribution"><foreign xml:lang="grc"
+                           >Ἀθ(ανασίου)</foreign></note></seg>
+                  <note type="lemma">Ps 11,8 </note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-11-32" source="Eusebius"
+                     corresp="#par-gr-139-ps-11-8a"><quote type="patristic"
+                        subtype="quotation-adapted" source="Eusebius, fr. 6 in Ps 11,8–9 (Villani)"
+                     /></seg>
+                  <note type="lemma">Ps 11,8 </note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-11-33"
+                     source="Theodorus Antiochenus" corresp="#par-gr-139-ps-11-8a"><quote
+                        type="patristic" subtype="quotation"
+                        source="Theodorus, fr. in Ps 11,8 (73 Devreesse)"/></seg>
+                  <note type="lemma">Ps 11,9 </note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-11-34" source="Theodorus"
+                     corresp="#par-gr-139-ps-11-9a"><quote type="patristic" subtype="quotation"
+                        source="Theodoretus, comm. in Ps 11,9 (PG 80,944)"/></seg>
+                  <note type="lemma">Ps 11,9 </note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-11-35" source="Eusebius"
+                     corresp="#par-gr-139-ps-11-9a"><quote type="patristic" subtype="quotation"
+                        source="Evagrius, schol. nr. γ´ in Ps 11,9a (350 Rondeau – Géhin – Cassin)"
+                     /></seg>
+                  <note type="lemma">Ps 11,9 </note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-11-36"
+                     source="Theodorus Antiochenus" corresp="#par-gr-139-ps-11-9a"><quote
+                        type="patristic" subtype="quotation"
+                        source="fons ignotus in Ps 11,9 (Devreesse 74; in app.)"/></seg>
+                  <note type="lemma">Ps 11,9 </note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-11-37" source="Didymus"
+                     corresp="#par-gr-139-ps-11-9a"><quote type="patristic"
+                        subtype="quotation-paraphrase-abbreviated"
+                        source="Didymus, fr. 79 in Ps 11,8–9 (167 Mühlenberg)"/></seg>
+               </ab>
+            </div>
+            <pb n="34v"
+               facs="https://gallica.bnf.fr/ark:/12148/btv1b10515446x/f72.item.r=psautier%20du%20paris"/>
+            <div type="commentary" subtype="commentary" xml:id="par-gr-139-12-1">
+               <ab xml:lang="grc"/>
+
+            </div>
+            <pb n="35r"
+               facs="https://gallica.bnf.fr/ark:/12148/btv1b10515446x/f73.item.r=psautier%20du%20paris"/>
+            <div type="commentary" subtype="commentary" xml:id="par-gr-139-13-2">
+               <ab xml:lang="grc">
+                  <note type="lemma">13,1a</note>
+                  <seg type="hypothesis" xml:id="par-gr-139-fr-13-1" source="Theodoretus"
+                     corresp="#par-gr-139-ps-13-1a"><quote type="patristic" subtype="quotation"
+                        source="Theodoretus, comm. in Ps 13,1 (PG 80,948)"/></seg>
+                  <note type="lemma">13,1a</note>
+                  <seg type="hypothesis" xml:id="par-gr-139-fr-13-2" source="Eusebius"
+                     corresp="#par-gr-139-ps-13-1a"><quote type="patristic"
+                        subtype="quotation-paraphrase"
+                        source="Eusebius, fr. 1 in Ps 13,1a (Villani)"/></seg>
+                  <note type="lemma">13,1b</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-13-3" source="Theodorus"
+                     corresp="#par-gr-139-ps-13-1b"><quote type="patristic"
+                        subtype="quotation/quotation-adapted"
+                        source="Theodoretus, comm. in Ps 13,1b et in Ps 13,c–d (PG 80,948.949)"
+                     /></seg>
+                  <note type="lemma">13,1b</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-13-4" source="Eusebius"
+                     corresp="#par-gr-139-ps-13-1b"><quote type="patristic"
+                        subtype="paraphrase-abbreviated"
+                        source="Eusebius, fr. 2 in Ps 13,1b–d (Villani)"/></seg>
+                  <note type="lemma">13,1b</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-13-5" source="Didymus"
+                     corresp="#par-gr-139-ps-13-1b"><quote type="patristic"
+                        subtype="quotation-paraphrase-abbreviated"
+                        source="Didymus, fr. 82 in Ps 13,1 (169–170 Mühlenberg)"/></seg>
+                  <note type="lemma">13,1b</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-13-6" source="Cyrillus"
+                     corresp="#par-gr-139-ps-13-1b"><quote type="patristic"
+                        subtype="quotation-adapted-expanded"
+                        source="Cyrillus, fr. in Ps 13, (paulum amplius quam PG 69,801)"/></seg>
+                  <note type="lemma">13,c–d</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-13-7" source="Theodorus"
+                     corresp="#par-gr-139-ps-13-1c"><quote type="patristic" subtype="quotation"
+                        source="Theodoretus, comm. in Ps 13,c–d (PG 80,949)"/></seg>
+                  <note type="lemma">13,c–d</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-13-8" source="Hesychius"
+                     corresp="#par-gr-139-ps-13-1c"><quote type="patristic" subtype="ineditum"
+                        source="Hesychius, comm. magnus in Ps 13,c–d (ineditum?)"/></seg>
+               </ab>
+            </div>
+            <pb n="35v"
+               facs="https://gallica.bnf.fr/ark:/12148/btv1b10515446x/f74.item.r=psautier%20du%20paris"/>
+            <div type="commentary" subtype="commentary" xml:id="par-gr-139-13-3">
+               <ab>
+                  <note type="lemma">Ps 13,2–3b</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-13-9" source="Theodorus"
+                     corresp="#par-gr-139-ps-13-2a"><quote type="patristic" subtype="quotation"
+                        source="Theodoretus, comm. in Ps 13,2–3b (PG 80,952)"/></seg>
+                  <note type="lemma">Ps 13,2–3b</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-13-10" source="Hesychius"
+                     corresp="#par-gr-139-ps-13-2a"><quote type="patristic" subtype="ineditum"
+                        source="Hesychius, comm. magnus in Ps 13,2 (ineditum?)"/></seg>
+                  <note type="lemma">Ps 13,2–3b</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-13-11" source="Origenes"
+                     corresp="#par-gr-139-ps-13-2a"><quote type="patristic" subtype="unknown"
+                        source="Origenes (?), fr. in Ps 13,2 = PG 17,108"/></seg>
+                  <note type="lemma">Ps 13,2–3b</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-13-12" source="Eusebius"
+                     corresp="#par-gr-139-ps-13-2a"><quote type="patristic"
+                        subtype="paraphrase-abbreviated"
+                        source="Eusebius, fr. 3 in Ps 13,2 (Villani)"/></seg>
+                  <note type="lemma">Ps 13,4–5a</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-13-13" source="Theodorus"
+                     corresp="#par-gr-139-ps-13-4a"><quote type="patristic" subtype="quotation"
+                        source="Theodoretus, comm. in Ps 13,4–5a (PG 80,953–953)"/></seg>
+                  <note type="lemma">Ps 13,4–5a</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-13-14" source="Athanasius"
+                     corresp="#par-gr-139-ps-13-4a"><quote type="patristic" subtype="quotation"
+                        source="Athanasius, exp. in Ps 13,4a">Καθ᾿ ὑποστιγμὶν ἀναγνωστέον<add
+                           place="below" hand="corr">.</add> καὶ ἔξωθεν τὸν κύριον προληπτέον καὶ
+                        πάντες φησὶν ἐξέκλιναν<add place="below" hand="corr">.</add> καὶ τὸ ἐποίησαν
+                        οὐ μέλλουσι γινώσκειν τὸν κύριον: </quote><ref
+                        target="vat-gr-754:vat-gr-754-fr-13-9" type="abbreviated-with-variants">Vat.
+                        gr. 754</ref><note type="attribution"><foreign xml:lang="grc"
+                           >Ἀθ(ανασίου)</foreign></note></seg>
+                  <note type="lemma">Ps 13,4–5a</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-13-15" source="Athanasius"
+                     corresp="#par-gr-139-ps-13-4a"><quote type="patristic" subtype="quotation"
+                        source="Athanasius, exp. in Ps 13,5a">Ὁ Μωσέως φησὶ νόμος<add place="below"
+                           hand="corr">.</add> κόλασιν ἐποίει<add place="below" hand="corr">.</add>
+                        ὁ δὲ τοῦ Χριστοῦ φόβος. ἁγνός ἐστι<add place="above" hand="C">ν</add><add
+                           place="below" hand="corr">.</add> ὡς υἱο<add place="above" hand="C"
+                           >ὺ</add>ς γὰρ φοβεῖσθαι πατέρα παρεσκευάσεν<add place="below" hand="corr"
+                           >.</add> μετὰ τὸν καιρὸν ἐκεῖνον φησὶ<del rend="erasure" hand="corr"><gap
+                              reason="illegible" quantity="1" unit="character"/></del> καθὸν δε
+                        δηλονὅτι ἡ ἐπιφάνεια<add place="below" hand="corr">.</add> φόβον
+                        φοβηθήσονται οὖ οὐκέστι φόβος οὐχ᾽ ὁ ἐκ νομικῆς ἀπειλης δηλονὅτι. ἀλλ’ ἡ
+                        πρέπουσα μᾶλλον ἐλευθέροις εὐλάβεια: </quote><ref
+                        target="vat-gr-754:vat-gr-754-fr-13-12" type="with-variants">Vat. gr.
+                        754</ref><note type="attribution"><foreign xml:lang="grc"
+                           >Ἀθ(ανασίου)</foreign></note></seg>
+                  <note type="lemma">Ps 13,4–5a</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-13-16" source="Eusebius"
+                     corresp="#par-gr-139-ps-13-4a"><quote type="patristic" subtype="quotation"
+                        source="Eusebius, fr. 5 in Ps 13,5 (Villani)"/></seg>
+                  <note type="lemma">Ps 13,4–5a</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-13-17"
+                     source="Theodorus Antiochenus" corresp="#par-gr-139-ps-13-4a"><quote
+                        type="patristic" subtype="quotation"
+                        source="Theodorus, fr. in Ps 13,4–5 (82.83 Devreesse)"/></seg>
+                  <note type="lemma">Ps 13,4–5a</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-13-18" source="Origenes"
+                     corresp="#par-gr-139-ps-13-4a"><quote type="patristic" subtype="quotation"
+                        source="Origenes (?), fr. in Ps 13,4 = PG 17,108"/></seg>
+                  <note type="lemma">Ps 13,4–5a</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-13-19" source="Origenes"
+                     corresp="#par-gr-139-ps-13-4a"><quote type="patristic" subtype="quotation"
+                        source="Origenes (?), fr. in Ps 13,5a = PG 17,108"/><note
+                        type="textual-commentary">The final sentence in this fragment was added by
+                        the catenist.</note></seg>
+                  <note type="lemma">Ps 13,5b</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-13-20" source="Theodorus"
+                     corresp="#par-gr-139-ps-13-5b"><quote type="patristic" subtype="quotation"
+                        source="Theodoretus, comm. in Ps 13,5b–6 (PG 80,953 sub Ps 13,6)"/></seg>
                </ab>
             </div>
          </div>
