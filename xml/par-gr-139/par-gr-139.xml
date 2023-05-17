@@ -6,12 +6,14 @@
       <!-- faciendum: Verweise auf Autoren in @corresp zu berichtigen -->
       <!-- Textkritik: Par. gr. 139: vollständig gelesen -->
       <!-- Textkritik: Typus III: andere Hss.: nur incipit und explicit der Fragmente gelesen -->
-      <!-- Textkritik: Eusebius (ed. Villani): Fragmente nach PTA zitiert -->
       <fileDesc>
          <titleStmt>
-            <title>Par. gr. 139 - Transcription</title>
+            <title>Paris. gr. 139 (CPG C16; Rahlfs 1133) - Catena Type III (Secondary
+               Catena)</title>
+            <title type="subtitle">Transcription of (Ps.)-Athanasius, Expositiones in Psalmos (Ps
+               1–11), and Reduced List of Contents (Ps 11–)</title>
             <respStmt>
-               <resp>transcribed by</resp>
+               <resp>by</resp>
                <persName>Sebastiano Panteghini</persName>
             </respStmt>
          </titleStmt>
@@ -28,8 +30,8 @@
                <msIdentifier xml:id="par-gr-139">
                   <country>France</country>
                   <settlement>Paris</settlement>
-                  <repository>Bibliothèque nationale de France</repository>
-                  <idno facs="https://gallica.bnf.fr/ark:/12148/btv1b10515446x/f1.item">Grec 139 -
+                  <repository>Bibliothèque nationale de France (BNF)</repository>
+                  <idno facs="https://gallica.bnf.fr/ark:/12148/btv1b10515446x/f1.item">Grec 0139 -
                      Psautier de Paris</idno>
                   <altIdentifier>
                      <idno type="pinakes" corresp="https://pinakes.irht.cnrs.fr/notices/cote/49706/"
@@ -38,19 +40,45 @@
                </msIdentifier>
                <msContents>
                   <msItem n="1">
-                     <locus>8v-418v</locus>
-                     <title>Catena in Psalmos et Cantica</title>
+                     <locus>1r–7v</locus>
+                     <title>Miniatures on David</title>
+                  </msItem>
+                  <msItem n="2">
+                     <locus>8r–418v</locus>
+                     <title>catena in Psalmos</title>
+                  </msItem>
+                  <msItem n="3">
+                     <locus>419r–448v</locus>
+                     <title>catena in Odas</title>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="perg">
                         <support>parchment</support>
+                        <extent>
+                           <dimensions scope="all" type="leaf" unit="mm">
+                              <height>370</height>
+                              <width>265</width>
+                           </dimensions>
+                        </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout><p>Bordercatena</p></layout>
+                        <layout><p>449 ff.</p></layout>
                      </layoutDesc>
                   </objectDesc>
+                  <scriptDesc>
+                     <p>Minuscule letters (bouletée): commentaryfragments.</p>
+                     <p>Larger miniscule letters (bouletée): Psalm text.</p>
+                     <p>Capitals (majuscules): attributions.</p>
+                     <p>The scribe often makes no use of accents, breathings and punctuation marks.
+                        A corrector made up for these marks or made corrections. Often his
+                        interventions are barely visible. He seems to be especially dedicated to the
+                        Expositiones. In the margins, there are also marks in faded brown tint that
+                        highlight the Expositiones and the fragments from Hesychius' commentarius
+                        magnus (by Montfaucon?).</p>
+
+                  </scriptDesc>
                </physDesc>
                <history>
                   <p>Written between 940 and 960.</p>
@@ -250,13 +278,23 @@
       <encodingDesc>
          <editorialDecl>
             <punctuation>
-               <p>The punctuation has been simplified. Only codepoints 0387 (hex) "GREEK ANO
-                  TELEIA", 00B7 (hex) "MIDDLE DOT", 2022 (hex) "BULLET", 205D (hex) "TRICOLON" and
-                  003A (hex) "COLON" are used in the transcription.</p>
+               <p>The punctuation faithfully reproduces that of the manuscript, where it is
+                  unambiguous. It makes use of the three dots inherited from ancient interpunctive
+                  theory: high dot or τελεία στιγμή (·) at the end of the sentence; middle dot or
+                  μέση στιγμή (·) between clauses (κῶλα); low dot or ὐποστιγμή (.) before the part
+                  that gives fulfillment to the sentence. Manuscript practice may deviate from these
+                  rules. The following Codepoints are used in the transcription: 0387 (hex) "GREEK
+                  ANO TELEIA", 00B7 (hex) "MIDDLE DOT", 002E (hex) "FULL STOP", 002C (hex) "COMMA",
+                  2022 (hex) "BULLET", 2058 (hex) "FOUR DOT PUNCTUATION",
+                  <!-- 205D (hex) "TRICOLON"  --> and 003A (hex) "COLON".</p>
             </punctuation>
             <normalization>
-               <p>The text is silently simplified in all respects. Only semantically relevant
-                  information like additions or deletions are mentioned.</p>
+               <p>The transcription of the fragments is semi-diplomatic: orthographic peculiarities
+                  of the manuscript are not normalized; the resolution of abbreviations is not
+                  indicated by round brackets. An exception is made for tachygraphic (ἐστί) or
+                  (ἐστίν) and for φη(σίν) or φη(σίν) abbreviated by suspension. Phenomena related to
+                  the writing process like additions, deletions, substitutions, or corrections are
+                  documented.</p>
             </normalization>
          </editorialDecl>
          <listPrefixDef>
@@ -2562,10 +2600,91 @@
                         source="Origenes (?), fr. in Ps 13,5a = PG 17,108"/><note
                         type="textual-commentary">The final sentence in this fragment was added by
                         the catenist.</note></seg>
-                  <note type="lemma">Ps 13,5b</note>
+                  <note type="lemma">Ps 13,5b–6</note>
                   <seg type="commentaryfragment" xml:id="par-gr-139-fr-13-20" source="Theodorus"
-                     corresp="#par-gr-139-ps-13-5b"><quote type="patristic" subtype="quotation"
-                        source="Theodoretus, comm. in Ps 13,5b–6 (PG 80,953 sub Ps 13,6)"/></seg>
+                     corresp="#par-gr-139-ps-13-5b"><quote type="patristic"
+                        subtype="quotation-expanded"
+                        source="Theodoretus, comm. in Ps 13,5b–6 et in Ps 13,7 (paulum amplius quam PG 80,953 sub Ps 13,6/7)"
+                     /></seg>
+                  <note type="lemma">Ps 13,5b–6</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-13-21" source="Eusebius"
+                     corresp="#par-gr-139-ps-13-5b"><quote type="patristic"
+                        subtype="paraphrase-abbreviated"
+                        source="Eusebius, fr. 6 in Ps 13,5b–6 (Villani)"/></seg>
+                  <note type="lemma">Ps 13,5b–6</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-13-22" source="Hesychius"
+                     corresp="#par-gr-139-ps-13-5b"><quote type="patristic" subtype="ineditum"
+                        source="Hesychius, comm. magnus in Ps 13,6a (ineditum?)"/></seg>
+                  <note type="lemma">Ps 13,5b–6</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-13-23"
+                     source="Theodorus Antiochenus" corresp="#par-gr-139-ps-13-5b"><quote
+                        type="patristic" subtype="quotation"
+                        source="Theodorus, fr. in Ps 13,5 (83.84 Devreesse)"/></seg>
+                  <pb n="35v–36r"/>
+                  <note type="lemma">Ps 13,5b–6</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-13-24" source="Anonymous"
+                     corresp="#par-gr-139-ps-13-5b"><quote type="patristic"
+                        subtype="paraphrase-abbreviated"
+                        source="Didymus, fr. 83 in Ps 13,4–5 (170–171 Mühlenberg)"/></seg>
+                  <pb n="36r"
+                     facs="https://gallica.bnf.fr/ark:/12148/btv1b10515446x/f75.item.r=psautier%20du%20paris"/>
+                  <note type="lemma">Ps 13,5b–6</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-13-25" source="Theodoretus"
+                     corresp="#par-gr-139-ps-13-5b"><quote type="patristic" subtype="ineditum"
+                        source="fons ignotus in Ps 13,6 (ineditum?)">ἠ ταῦτα καὶ προς αναχηρειμ
+                        εἴρηται καὶ ῥαψάκην νομίσαντας εὐάλωτον εἶναι τὸν λαὸν τοῦ θεοῦ· καὶ τοῦ
+                        κυρίου καταφρονήσαντας ὃν οὐκεπεκαλέσαντο· διὸ φυγῆ ὤχοντο μηδενὸς
+                        ἐκφοβοῦντος ἀνθρώπου· ους πάντας εὗρεν ἀσεβεῖς οιονει πῶς διέκυψας ἐξ
+                        οὐρανοῦ κατεφρόνησαν γὰρ ὡς εὐτελους τινὸς Ἐζεκίου καὶ τῆς ὑπαυτῶν τῶν
+                        εὐσεβουντων γενεᾶς ἣν δικαίως ἐποίμαινεν· βουλὴν δὲ κέκληκε τὴν εἰς θεὸν
+                        βεβαίαν πεποίθησιν:</quote></seg>
+                  <note type="lemma">Ps 13,7a</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-13-26" source="Didymus"
+                     corresp="#par-gr-139-ps-13-7a"><quote type="patristic"
+                        subtype="ineditum/paraphrase"
+                        source="Didymus, fr. in Ps 13,7a (ineditum?); cf. fr. 84 in Ps 13,7 (172 Mühlenberg)"
+                        >Πάντων ἐκκλινάντων αὐτοῦ λοιπὸν χρεία· δυναμένου τὰς ἁμαρτίας ἀφεῖναι καὶ
+                        σῶσαι· ἐκ σιὼν δὲ λέγεται διατὸ ἐκ σπέρματος εἶναι ἰσραὴλ κατὰ τὸ ἤξει ἐκ
+                        σιὼν ὁ ρυόμενος· καὶ πάλιν ἐκ σιὼν ἡ εὐπρέπεια τῆς ὡραιότητος αὐτοῦ· λέγοις
+                        δ᾿ ἂν καὶ ἐκ τῆς ἄνω σειὼν διὸ καὶ ἡ ελπὶς ἡμῶν ἡ βασιλεία τῶν οὐρανῶν· τῶν
+                        δὲ ἐθνῶν σωζομένων οἱ αληθῶς ἰσραὴλ δίκαιοι καὶ προφῆται ἀγαλλιάσονται
+                        συγχαίροντες ἡμῖν· καὶ πληρουμένης αὐτῶν τῆς προφητείας· καὶ συμεων γὰρ φῶς
+                        εἰς ἀποκάλυψιν ἐθνῶν τὸν σωτῆρα φήσας ἐπάγει καὶ δόξαν λαοῦ σου ἰσραὴλ· ...
+                        [sequitur (paraphrasis) fr. 84 in Ps 13,7 (172 Mühlenberg)] </quote></seg>
+                  <note type="lemma">Ps 13,7a</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-13-27" source="Theodoretus"
+                     corresp="#par-gr-139-ps-13-7a"><quote type="patristic"
+                        subtype="paraphrase-abbreviated"
+                        source="Theodoretus, comm. in 13,7a et in Ps 13,7b–c (PG 953)"/></seg>
+                  <note type="lemma">Ps 13,7a</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-13-28" source="Theodorus"
+                     corresp="#par-gr-139-ps-13-7a"><quote type="patristic" subtype="quotation"
+                        source="Theodoretus, comm. in 13,7a (PG 953)"/></seg>
+                  <note type="lemma">Ps 13,7a</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-13-29" source="Cyrillus"
+                     corresp="#par-gr-139-ps-13-7a"><quote type="patristic" subtype="quotation"
+                        source="Cyrillus, fr. in Ps 13,7a (PG 69,805)"/></seg>
+                  <note type="lemma">Ps 13,7a</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-13-30"
+                     source="Theodorus Antiochenus" corresp="#par-gr-139-ps-13-7a"><quote
+                        type="patristic" subtype="quotation"
+                        source="Theodorus, fr. in Ps 13,7 (84 Devreesse)"/></seg>
+                  <note type="lemma">Ps 13,7b–c</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-13-31" source="Theodorus"
+                     corresp="#par-gr-139-ps-13-7b"><quote type="patristic" subtype="quotation"
+                        source="Theodoretus, comm. in 13,7b–c (PG 953)"/></seg>
+                  <note type="lemma">Ps 13,7b–c</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-13-32" source="Theodorus"
+                     corresp="#par-gr-139-ps-13-7b"><quote type="patristic" subtype="quotation"
+                        source="Athanasius (?), exp. in Ps 13,7b–c (non habet typus XIX sed ed. Montfaucon = PG 27,100 A1–4)"
+                        >Τοὺς ἁγίους πατριάρχας καὶ προφήτας φησὶ<del rend="expunction" hand="corr"
+                           >ν</del> τοὺς καὶ χαρ<subst hand="C">
+                           <del rend="unmarked">α</del>
+                           <add place="above">ᾶ</add>
+                        </subst> χαίροντας ἐπιτῶ τὰς προλεχθείσας αὐτῶν ἐπαγγελίας ἀποπληρῶσαι τὸν
+                        Χριστόν· αὖται δὲ ἦσαν αἱ τὴν τῶν ἐθνῶν ἁπάντων σωτηρίαν κατασημαίνουσαι:
+                        </quote><note type="attribution"><foreign xml:lang="grc"
+                        >Ἀθανασιου</foreign></note></seg>
                </ab>
             </div>
          </div>
