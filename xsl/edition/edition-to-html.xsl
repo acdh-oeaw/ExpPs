@@ -466,7 +466,7 @@ version="2.0">
 
 <xsl:template match="tei:note[@type = 'textual-commentary']">
     <p style="margin-top: 10pt;"><xsl:apply-templates select="child::node()"/></p>
-    <p style="font-family: monospace">
+    <p style="font-family: monospace;">
         <xsl:text>urn:cts:etf:psath.expps.grc:</xsl:text>
         <xsl:value-of select="./parent::tei:div[@type = 'textcritic']/preceding-sibling::tei:div[@type = 'commentary'][1]/tei:p/@n"/>
     </p>
