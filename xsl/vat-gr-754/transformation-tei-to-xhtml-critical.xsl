@@ -338,6 +338,12 @@
                 <xsl:if test="parent::tei:div/@rendition = '#top-margin'">
                     <xsl:text>top margin</xsl:text>
                 </xsl:if>
+                <xsl:if test="parent::tei:div/@rendition = '#right-margin-of-right-column'">
+                    <xsl:text>right margin of right column</xsl:text>
+                </xsl:if>
+                <xsl:if test="parent::tei:div/@rendition = '#left-margin-of-left-column'">
+                    <xsl:text>left margin of left column</xsl:text>
+                </xsl:if>
                 <xsl:text>] [</xsl:text>
                 <xsl:value-of select="parent::tei:div/@type"/>
                 <xsl:text>]</xsl:text>
@@ -388,6 +394,12 @@
                 </xsl:if>
                 <xsl:if test="@rendition = '#top-margin'">
                     <xsl:text>top margin</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#right-margin-of-right-column'">
+                    <xsl:text>right margin of right column</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#left-margin-of-left-column'">
+                    <xsl:text>left margin of left column</xsl:text>
                 </xsl:if>
                 <xsl:text>] [</xsl:text>
                 <xsl:value-of select="@type"/>
@@ -448,6 +460,12 @@
                 <xsl:if test="@rendition = '#top-margin'">
                     <xsl:text>top margin</xsl:text>
                 </xsl:if>
+                <xsl:if test="@rendition = '#right-margin-of-right-column'">
+                    <xsl:text>right margin of right column</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#left-margin-of-left-column'">
+                    <xsl:text>left margin of left column</xsl:text>
+                </xsl:if>
                 <xsl:text>] [</xsl:text>
                 <xsl:value-of select="@type"/>
                 <xsl:text>]</xsl:text>
@@ -502,6 +520,12 @@
             <xsl:if test="@rendition = '#top-margin'">
                 <xsl:text>top margin</xsl:text>
             </xsl:if>
+            <xsl:if test="@rendition = '#right-margin-of-right-column'">
+                <xsl:text>right margin of right column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#left-margin-of-left-column'">
+                <xsl:text>left margin of left column</xsl:text>
+            </xsl:if>
             <xsl:text>] [</xsl:text>
             <xsl:value-of select="@type"/>
             <xsl:text>]</xsl:text>
@@ -551,6 +575,12 @@
                 </xsl:if>
                 <xsl:if test="@rendition = '#top-margin'">
                     <xsl:text>top margin</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#right-margin-of-right-column'">
+                    <xsl:text>right margin of right column</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#left-margin-of-left-column'">
+                    <xsl:text>left margin of left column</xsl:text>
                 </xsl:if>
                 <xsl:text>]</xsl:text>
             </span>
@@ -609,6 +639,12 @@
         <xsl:if test="@rendition = '#bottom-margin'">
             <xsl:text>bottom margin</xsl:text>
         </xsl:if>
+        <xsl:if test="@rendition = '#right-margin-of-right-column'">
+            <xsl:text>right margin of right column</xsl:text>
+        </xsl:if>
+        <xsl:if test="@rendition = '#left-margin-of-left-column'">
+            <xsl:text>left margin of left column</xsl:text>
+        </xsl:if>
         <xsl:text>] [hexaplaric variant] </xsl:text>
         <a>
             <xsl:attribute name="id">
@@ -660,6 +696,12 @@
             <xsl:if test="@rendition = '#top-margin'">
                 <xsl:text>top margin</xsl:text>
             </xsl:if>
+            <xsl:if test="@rendition = '#right-margin-of-right-column'">
+                <xsl:text>right margin of right column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#left-margin-of-left-column'">
+                <xsl:text>left margin of left column</xsl:text>
+            </xsl:if>
             <xsl:text>] [</xsl:text>
             <xsl:value-of select="@type"/>
             <xsl:text>]</xsl:text>
@@ -708,6 +750,12 @@
             </xsl:if>
             <xsl:if test="@rendition = '#top-margin'">
                 <xsl:text>top margin</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#right-margin-of-right-column'">
+                <xsl:text>right margin of right column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#left-margin-of-left-column'">
+                <xsl:text>left margin of left column</xsl:text>
             </xsl:if>
             <xsl:text>] [</xsl:text>
             <xsl:value-of select="@type"/>
@@ -869,6 +917,12 @@
             </xsl:if>
             <xsl:if test="@rendition = '#top-margin'">
                 <xsl:text>top margin</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#right-margin-of-right-column'">
+                <xsl:text>right margin of right column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#left-margin-of-left-column'">
+                <xsl:text>left margin of left column</xsl:text>
             </xsl:if>
             <xsl:text>] [</xsl:text>
             <xsl:value-of select="@type"/>
@@ -1222,23 +1276,20 @@
                 <xsl:text>]</xsl:text>
             </xsl:when>
             <xsl:otherwise>
-                <xsl:text>[... (</xsl:text>
-                <xsl:value-of select="@quantity"/>
-                <xsl:text> </xsl:text>
-                <xsl:value-of select="@unit"/>
-                <xsl:text>(s) </xsl:text>
-                <xsl:value-of select="@reason"/>
-                <xsl:text>)]</xsl:text>
+                <xsl:if test="(@quantity = 1) and (@unit = 'character')">
+                    <xsl:text>[.]</xsl:text>
+                </xsl:if>
+                <xsl:if test="not(@quantity = 1)">
+                    <xsl:text>[... (</xsl:text>
+                    <xsl:value-of select="@quantity"/>
+                    <xsl:text> </xsl:text>
+                    <xsl:value-of select="@unit"/>
+                    <xsl:text>s </xsl:text>
+                    <xsl:value-of select="@reason"/>
+                    <xsl:text>)]</xsl:text>
+                </xsl:if>
             </xsl:otherwise>
         </xsl:choose>
-    </xsl:template>
-    
-    <xsl:template match="tei:add">
-        <xsl:if test="@type = 'correction'">
-            <xsl:text>[</xsl:text>
-            <xsl:value-of select="text()"/>        
-            <xsl:text>]</xsl:text>
-        </xsl:if>
     </xsl:template>
     
     <xsl:template match="tei:supplied">
@@ -1371,6 +1422,12 @@
             <xsl:if test="@rendition = '#top-margin'">
                 <xsl:text>top margin</xsl:text>
             </xsl:if>
+            <xsl:if test="@rendition = '#right-margin-of-right-column'">
+                <xsl:text>right margin of right column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#left-margin-of-left-column'">
+                <xsl:text>left margin of left column</xsl:text>
+            </xsl:if>
             <xsl:text>] </xsl:text>
         </xsl:if>
         <xsl:apply-templates/>
@@ -1417,6 +1474,12 @@
             </xsl:if>
             <xsl:if test="@rendition = '#top-margin'">
                 <xsl:text>top margin</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#right-margin-of-right-column'">
+                <xsl:text>right margin of right column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#left-margin-of-left-column'">
+                <xsl:text>left margin of left column</xsl:text>
             </xsl:if>
             <xsl:text>] </xsl:text>
             <xsl:text>[</xsl:text>
@@ -1652,41 +1715,48 @@
         <xsl:apply-templates/>
     </xsl:template>
     
-    <xsl:template match="tei:add[@type = 'second-hand']">
-        <xsl:choose>
-            <xsl:when test="@place = 'above'">
-                <xsl:text>\</xsl:text>
-                <xsl:apply-templates/>
-                <xsl:text>/</xsl:text>
-            </xsl:when>
-            <xsl:when test="@place = 'below'">
-                <xsl:text>/</xsl:text>
-                <xsl:apply-templates select="child::node()"/>
-                <xsl:text>\</xsl:text>
-            </xsl:when>
-            <xsl:when test="@place = 'overstrike'">
-                <xsl:text>《</xsl:text>
-                <xsl:apply-templates select="child::node()"/>
-                <xsl:text>》</xsl:text>
-            </xsl:when>
-            <xsl:when test="@place = 'left margin' or @place = 'right margin'">
-                <xsl:text>[</xsl:text>
-                <xsl:value-of select="@place"/>
-                <xsl:text>] </xsl:text>
-                <xsl:apply-templates select="child::node()"/>
-                <xsl:text> (add. </xsl:text>
-                <xsl:value-of select="@hand"/>
-                <xsl:text>)</xsl:text>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:text>《</xsl:text>
-                <xsl:apply-templates select="child::node()"/>
-                <xsl:text>》</xsl:text>
-                <xsl:text> (add. </xsl:text>
-                <xsl:value-of select="@hand"/>
-                <xsl:text>)</xsl:text>
-            </xsl:otherwise>
-        </xsl:choose>
+    <xsl:template match="tei:add">
+        <xsl:if test="@type = 'correction'">
+            <xsl:text>[</xsl:text>
+            <xsl:value-of select="text()"/>        
+            <xsl:text>]</xsl:text>
+        </xsl:if>
+        <xsl:if test="not(exists(@type)) or (@type != 'correction')">
+            <xsl:choose>            
+                <xsl:when test="@place = 'above'">
+                    <xsl:text>\</xsl:text>
+                    <xsl:apply-templates/>
+                    <xsl:text>/</xsl:text>
+                </xsl:when>
+                <xsl:when test="@place = 'below'">
+                    <xsl:text>/</xsl:text>
+                    <xsl:apply-templates select="child::node()"/>
+                    <xsl:text>\</xsl:text>
+                </xsl:when>
+                <xsl:when test="@place = 'overstrike'">
+                    <xsl:text>《</xsl:text>
+                    <xsl:apply-templates select="child::node()"/>
+                    <xsl:text>》</xsl:text>
+                </xsl:when>
+                <xsl:when test="@place = 'left margin' or @place = 'right margin'">
+                    <xsl:text>[</xsl:text>
+                    <xsl:value-of select="@place"/>
+                    <xsl:text>] </xsl:text>
+                    <xsl:apply-templates select="child::node()"/>
+                    <xsl:text> (add. </xsl:text>
+                    <xsl:value-of select="@hand"/>
+                    <xsl:text>)</xsl:text>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:text>《</xsl:text>
+                    <xsl:apply-templates select="child::node()"/>
+                    <xsl:text>》</xsl:text>
+                    <xsl:text> (add. </xsl:text>
+                    <xsl:value-of select="@hand"/>
+                    <xsl:text>)</xsl:text>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:if>
     </xsl:template>
       
     <xsl:template match="tei:subst">
