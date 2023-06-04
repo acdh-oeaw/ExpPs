@@ -2823,16 +2823,16 @@
                               <ref target="#oxon-s-trin-78:oxon-s-trin-78-fr-2-11"/>
                               <ref target="#par-gr-139:par-gr-139-fr-2-6"/>
                               <ref target="#par-gr-166:par-gr-166-fr-2-23"/>
-                              <!-- ToDo: kann Fragment in M nicht finden -->
                            </listRef>
                         </p>
                      </div>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #P1 #M #P6 #Z #B2">txt</rdg>
+                        <rdg wit="#V1 #P1 #P6 #Z #B2">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Paris. gr. 166-167</wit>
+                        <!-- M: exp. nicht vorhanden -->
                         <wit>Mosq. Synod. 194</wit>
                         <wit>Paris. gr. 139</wit>
                         <wit>Venet. Marc. gr. Z. 17</wit>
@@ -6109,6 +6109,7 @@
                               <ref target="#par-gr-139:par-gr-139-fr-5-2"/>
                               <ref target="#par-gr-166:par-gr-166-fr-5-18"/>
                               <ref target="#plut-6-3:plut-6-3-fr-5-6"/>
+                              <ref target="#ambr-m-47-sup:ambr-m-47-sup-fr-5-14"/>
                            </listRef>
                         </p>
                      </div>
@@ -6178,6 +6179,11 @@
                      <app type="fragment">
                         <rdg wit="#A1">txt</rdg>
                         <wit>Mediolan. Ambros. M 47 sup.</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">στεφάνῳ</foreign></lem>
+                        <rdg wit="#A1*">fort.<foreign xml:lang="grc"> στεφάκῳ</foreign></rdg>
+                        <wit>Ambr. M 47 sup.</wit>
                      </app>
                   </div>
                </div>
@@ -16665,7 +16671,9 @@
                               <ref target="#coislin-10:coislin-10-fr-11-17"/>
                               <ref target="#franzon-3:franzon-3-fr-11-12"/>
                               <ref target="#par-gr-166:par-gr-166-fr-11-11"/>
+                              <!-- toDo: XML-ids in der Transkriptions-Datei korrigiert (von Septuaginta zu par-gr-164) -->
                               <ref target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-11-6"/>
+                              <ref target="#par-gr-164:par-gr-164-fr-11-2"></ref>
                               <ref target="#coislin-12:coislin-12-fr-11-11"/>
                               <ref target="#ambr-m-47-sup:ambr-m-47-sup-fr-11-13"/>
                            </listRef>
@@ -16674,13 +16682,14 @@
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #G #P1 #B1 #P5 #A1">txt</rdg>
+                        <rdg wit="#V1 #C #G #P1 #B1 #P3 #P5 #A1">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Paris. Coislin 10</wit>
                         <wit>Genua, Urbani 3</wit>
                         <!-- Textkritik: G: φησὶν: keine Variante: Ergebnis der Abkürzung -->
                         <wit>Paris. gr. 166–167</wit>
                         <wit>Oxon. Bodl. Auct. D. 4. 1</wit>
+                        <wit>Paris. gr. 164</wit>
                         <wit>Paris. Coislin 12</wit>
                         <wit>Ambr. M 47 sup.</wit>
                      </app>
