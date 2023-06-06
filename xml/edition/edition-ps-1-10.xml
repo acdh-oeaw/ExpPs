@@ -15950,12 +15950,18 @@
                   </div>
                   <div type="textcritic" rend="hide">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #P1 #B1 #P5">txt</rdg>
+                        <rdg wit="#V1 #C #P1 #B1 #P5 #V4">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Paris. Coislin 10</wit>
                         <wit>Paris. gr. 166-167</wit>
                         <wit>Oxon. Bodl. Auct. D. 4. 1</wit>
                         <wit>Paris. Coislin 12</wit>
+                        <wit>Vat. gr. 1747</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">Εἴρηται – ψαλμῷ</foreign></lem>
+                        <rdg wit="#V4"><foreign xml:lang="grc">om.</foreign></rdg>
+                        <wit>Vat. gr. 1747</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">περὶ</foreign></lem>
@@ -15989,6 +15995,11 @@
                         <wit>Paris. gr. 166-167</wit>
                      </app>
                      <app type="text">
+                        <lem><foreign xml:lang="grc">περὶ ἧς – τὴν γενεὰν ταύτην</foreign></lem>
+                        <rdg wit="#V4">om.</rdg>
+                        <wit>Vat. gr. 1747</wit>
+                     </app>
+                     <app type="text">
                         <lem><foreign xml:lang="grc">ἄνδρες νινευῗται ἀναστήσονται</foreign></lem>
                         <rdg wit="#B1"><foreign xml:lang="grc">νινευήται ἀναστήσονται
                               ἄνδρες</foreign></rdg>
@@ -15999,6 +16010,14 @@
                         <rdg wit="#P5"><foreign xml:lang="grc">κρινοῦσι</foreign></rdg>
                         <wit>Paris. Coislin 12</wit>
                      </app>
+                     <note type="textual-commentary"><p>V4 (f. 15v): Die am Anfang und am Ende
+                           abgekürzte exp. 172 liegt in Umarbeitung vor: Εὔχεται ῥυσθῆναι τῆς γενεᾶς
+                           τῆς πονηρᾶς· τῆς λυττησάσης κατὰ τοῦ σωτῆρος ἡμῶν. Das Thema der
+                           Auferstehung in Zusammenhang mit der Oktave wird im dem dieser Hypothesis
+                           vorangestellten Auszug aus Asterius (hom. 20,3–4 in Ps. 11 [154,4–5.7–13
+                           Richard] in Ps 11,1; hier Iohannes Chrysostomus zugeschrieben) erneut
+                           behandelt. Aus diesem Grund wurde der Anfang der Hypothesis
+                           gestrichen.</p></note>
                   </div>
                   <div type="commentary" rend="hide">
                      <p xml:id="edition-11-1-1-1" n="172">Εἴρηται περὶ τῆς ὀγδόης καὶ ἐν τῷ ἕκτῳ
@@ -16072,7 +16091,7 @@
                               <ref target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-11-4"/>
                               <ref target="#coislin-12:coislin-12-fr-11-2"/>
                               <ref target="#ambr-m-47-sup:ambr-m-47-sup-fr-11-2"/>
-                              <ref target="#ambr-b-106:ambr-b-106-sup-fr-11-1"/>
+                              <ref target="#ambr-b-106-sup:ambr-b-106-sup-fr-11-1"/>
                            </listRef>
                         </p>
                      </div>
@@ -16096,7 +16115,9 @@
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">συνάγων</foreign></lem>
-                        <rdg wit="#A2 #V4">om.</rdg>
+                        <rdg wit="#A2">om.</rdg>
+                        <wit>Ambr. B 106 sup.</wit>
+                        <!-- Textkritik: V4: συνάγων non om. -->
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">ἐπιβουλάς</foreign></lem>
@@ -16106,6 +16127,8 @@
                         <rdg wit="#A1">post <foreign xml:lang="grc">ἐπιβουλὰς</foreign> add.<foreign
                               xml:lang="grc">τοῦτο λέγει: –</foreign></rdg>
                      </app>
+                     <note type="textual-commentary"><p>A2, V4 (f. 15v): exp. 173 mit Hesychius
+                           (comm. brevis in Ps 11,2b [17 Jagić]) verbunden.</p></note>
                   </div>
                   <div type="psalmtext">
                      <quote xml:id="edition-ps-11-3b" type="psalmtext" n="3b">χείλη δόλια ἐν καρδίᾳ
@@ -16132,7 +16155,7 @@
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #G #P1 #P5 #L1 #A1 #A2 #V4">txt</rdg>
+                        <rdg wit="#V1 #C #G #P1 #P5 #L1 #A1 #A2">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Paris. Coislin 10</wit>
                         <wit>Genua, Urbani 3</wit>
@@ -16141,11 +16164,14 @@
                         <wit>Ambr. M 47 sup.</wit>
                         <wit>Plut. 5. 30</wit>
                         <wit>Ambr. B 106 sup.</wit>
+                        <!-- Textkritik: V4: exp. om. -->
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">αὐτὸν ἀποκαλοῦντες</foreign></lem>
-                        <rdg wit="#A1"><foreign xml:lang="grc">ἀποκαλοῦντες αὐτὸν</foreign></rdg>
+                        <rdg wit="#A1 #A2"><foreign xml:lang="grc">ἀποκαλοῦντες
+                           αὐτὸν</foreign></rdg>
                         <wit>Ambr. M 47 sup.</wit>
+                        <wit>Ambr. B 106 sup.</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">ἀποκαλοῦντες καὶ ἀγαθὸν, ἕτερα]</foreign></lem>
@@ -16211,13 +16237,14 @@
                               <ref target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-11-5"/>
                               <ref target="#coislin-12:coislin-12-fr-11-4"/>
                               <ref target="#ambr-m-47-sup:ambr-m-47-sup-fr-11-5"/>
+                              <ref target="#ambr-b-106-sup:ambr-b-106-sup-fr-11-3"/>
                            </listRef>
                         </p>
                      </div>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #G #P1 #B1 #P5 #A1">txt</rdg>
+                        <rdg wit="#V1 #C #G #P1 #B1 #P5 #A1 #A2 #V4">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Paris. Coislin 10</wit>
                         <wit>Genua, Urbani 3</wit>
@@ -16225,6 +16252,7 @@
                         <wit>Oxon. Bodl. Auct. D. 4. 1</wit>
                         <wit>Paris. Coislin 12</wit>
                         <wit>Ambr. M 47 sup.</wit>
+                        <note>Ambr. B 106 sup.</note>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">οὐ μεγαλορήμων</foreign></lem>
@@ -16247,6 +16275,9 @@
                         <rdg wit="#A1"><foreign xml:lang="grc">ἔδω-</foreign> supra lin. add.</rdg>
                         <wit>Ambr. M 47 sup.</wit>
                      </app>
+                     <note type="textual-commentary">V4 (f. 15v): exp. 175 mit Hesychius (comm.
+                        brevis in Ps 11,4b [17 Jagić]) verbunden. Diese zwei Erklärungen sind in A2
+                        getrennt.</note>
                   </div>
                   <div type="psalmtext">
                      <quote xml:id="edition-ps-11-5b" type="psalmtext" n="5b">τὰ χείλη ἡμῶν παρ᾽
@@ -16383,18 +16414,25 @@
                               <ref target="#par-gr-166:par-gr-166-fr-11-7"/>
                               <ref target="#coislin-12:coislin-12-fr-11-7"/>
                               <ref target="#ambr-m-47-sup:ambr-m-47-sup-fr-11-8"/>
+                              <ref target="#ambr-b-106-sup:ambr-b-106-sup-fr-11-4"/>
                            </listRef>
                         </p>
                      </div>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #P1 #P5 #A1">txt</rdg>
+                        <rdg wit="#V1 #C #P1 #P5 #A1 #A2 #V4">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Paris. Coislin 10</wit>
                         <wit>Paris. gr. 166–167</wit>
                         <wit>Paris. Coislin 12</wit>
                         <wit>Ambr. M 47 sup.</wit>
+                        <wit>Ambr. B 106 sup.</wit>
+                        <wit>Vat. gr. 1747</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">Πτωχοὺς</foreign></lem>
+                        <rdg wit="#A2">non legi potest</rdg>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">Πτωχοὺς μὲν</foreign></lem>
@@ -16402,9 +16440,27 @@
                         <wit>Paris. gr. 166–167</wit>
                      </app>
                      <app type="text">
-                        <lem><foreign xml:lang="grc">ἀκούσας</foreign></lem>
-                        <rdg wit="#P5"><foreign xml:lang="grc">εἰσακούσας</foreign></rdg>
+                        <lem><foreign xml:lang="grc">τοὺς κατὰ πνεῦμα λέγει</foreign></lem>
+                        <rdg wit="#A2 #V4"><foreign xml:lang="grc">τοὺς συντετριμμένους τῷ πνεύματι
+                              λέγει</foreign><note type="in-readings"> (cf. Iohannes Chrys., exp. in
+                              Ps. 9 [PG 55,130, l. 43–47] in Ps 9,13b; cf. etiam Idem, exp. in Ps.
+                              139 [PG 55,426, l. 18–20] in Ps 139,13–14)</note></rdg>
                      </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">τοῦ στεναγμοῦ ἀκούσας</foreign></lem>
+                        <rdg wit="#P5"><foreign xml:lang="grc">τοῦ στεναγμοῦ
+                           εἰσακούσας</foreign></rdg>
+                        <wit>Paris. Coislin 12</wit>
+                        <rdg wit="#A2"><foreign xml:lang="grc">τοὺς [στεναγμοὺς(?)]
+                              [εἰσ(?)][α]κ[ούσ]α[ς]</foreign></rdg>
+                        <wit>Ambr. B 106 sup.</wit>
+                        <rdg wit="#V4"><foreign xml:lang="grc">τοὺς στεναγμοὺς
+                           εἰσακούσας</foreign></rdg>
+                        <wit>Vat. gr. 1747</wit>
+                     </app>
+                     <note type="textual-commentary">A2, V4 (f. 16r): in exp. 178 scheint eine oder
+                        sogar zwei Stellen aus Iohannes Chrysostomus eingefügt worden zu sein.
+                        Dieser Text wurde in der Folge ihm zugeschrieben (☧).</note>
                   </div>
                   <div type="psalmtext">
                      <quote xml:id="edition-ps-11-6d" type="psalmtext" n="6d">θήσομαι ἐν σωτηρίᾳ,
@@ -16423,19 +16479,27 @@
                               <ref target="#par-gr-166:par-gr-166-fr-11-8"/>
                               <ref target="#coislin-12:coislin-12-fr-11-8"/>
                               <ref target="#ambr-m-47-sup:ambr-m-47-sup-fr-11-9"/>
+                              <ref target="#ambr-b-106-sup:ambr-b-106-sup-fr-11-5"/>
                            </listRef>
                         </p>
                      </div>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #G #P1 #P5 #A1">txt</rdg>
+                        <rdg wit="#V1 #C #G #P1 #P5 #A1 #A2 #V4">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Paris. Coislin 10</wit>
                         <wit>Genua, Urbani 3</wit>
                         <wit>Paris. gr. 166–167</wit>
                         <wit>Paris. Coislin 12</wit>
                         <wit>Ambr. M 47 sup.</wit>
+                        <wit>Ambr. B 106 sup.</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">Τουτέστι</foreign></lem>
+                        <rdg wit="#A2 #V4">om.</rdg>
+                        <wit>Ambr. B 106 sup.</wit>
+                        <wit>Vat. gr. 1747</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">πᾶσι καταστήσω</foreign></lem>
@@ -16451,8 +16515,10 @@
                         <lem><foreign xml:lang="grc">ὃ καὶ</foreign></lem>
                         <rdg wit="#A1"><foreign xml:lang="grc">[ὃ(?)] κα[ὶ]</foreign></rdg>
                         <wit>Ambr. M 47 sup.</wit>
-                        <rdg wit="#P5">om.</rdg>
+                        <rdg wit="#P5 #A2">om.</rdg>
                         <wit>Par. Coislin 12</wit>
+                        <wit>Ambr. B 106 sup.</wit>
+                        <!-- Textkritik: V4: ὃ καὶ non om. -->
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">παρασκευάσω γενέσθαι</foreign></lem>
@@ -16489,7 +16555,7 @@
                   </div>
                   <!-- exp 180 -->
                   <div type="commentary">
-                     <p xml:id="edition-11-7-1" n="180">Ἀληθεῖς φησὶν οἱ λόγοι οἱ περὶ τοῦ σωτηρίου
+                     <p xml:id="edition-11-7-1" n="180">Ἀληθεῖς φησὶν οἱ λόγοι, οἱ περὶ τοῦ σωτηρίου
                         ἐπηγγελμένοι· ὥσπερ καὶ τὸ ἀργύριον τὸ πολλάκις χωνευθὲν καθαρόν: –</p>
                      <div type="links">
                         <p>
@@ -16500,20 +16566,22 @@
                               <ref target="#par-gr-166:par-gr-166-fr-11-9"/>
                               <ref target="#coislin-12:coislin-12-fr-11-9"/>
                               <ref target="#ambr-m-47-sup:ambr-m-47-sup-fr-11-10"/>
+                              <ref target="#ambr-b-106-sup:ambr-b-106-sup-fr-11-6"/>
                            </listRef>
                         </p>
                      </div>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #G #P1 #P5 #A1">txt</rdg>
+                        <rdg wit="#V1 #C #G #P1 #P5 #A1 #A2 #V4">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Paris. Coislin 10</wit>
                         <wit>Genua, Urbani 3</wit>
-                        <!-- Textkritik: G: Umarbeitung der exp. im app. crit. nicht dokumentiert -->
+                        <!-- Textkritik: G: Umarbeitung: app. crit.: nicht dokumentiert -->
                         <wit>Paris. gr. 166–167</wit>
                         <wit>Paris. Coislin 12</wit>
                         <wit>Ambr. M 47 sup.</wit>
+                        <wit>Ambr. B 106 sup.</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">οἱ λόγοι</foreign></lem>
@@ -16586,13 +16654,15 @@
                               <ref target="#coislin-12:coislin-12-fr-11-10"/>
                               <ref target="#plut-5-30:plut-5-30-fr-11-28"/>
                               <ref target="#ambr-m-47-sup:ambr-m-47-sup-fr-11-12"/>
+                              <ref target="#ambr-b-106-sup:ambr-b-106-sup-fr-11-7"/>
+                              <ref target="#par-gr-139:par-gr-139-fr-11-32"/>
                            </listRef>
                         </p>
                      </div>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #G #P1 #P5 #A1 #L1">txt</rdg>
+                        <rdg wit="#V1 #C #G #P1 #P5 #A1 #L1 #A2 #P6 #Z #N2">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Paris. Coislin 10</wit>
                         <wit>Genua, Urbani 3</wit>
@@ -16600,6 +16670,16 @@
                         <wit>Paris. Coislin 12</wit>
                         <wit>Plut. 5. 30</wit>
                         <wit>Ambr. M 47 sup.</wit>
+                        <wit>Ambr. B 106 sup.</wit>
+                        <!-- V4: exp. om. -->
+                        <wit>Par. gr. 139</wit>
+                        <wit>Marc. gr. Z. 17</wit>
+                        <wit>Athen. B.N. 45</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">Διὰ – εἶεν</foreign></lem>
+                        <rdg wit="#A2">om.</rdg>
+                        <wit>Ambr. B 106 sup.</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">φυλάξεις</foreign></lem>
@@ -16673,16 +16753,17 @@
                               <ref target="#par-gr-166:par-gr-166-fr-11-11"/>
                               <!-- toDo: XML-ids in der Transkriptions-Datei korrigiert (von Septuaginta zu par-gr-164) -->
                               <ref target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-11-6"/>
-                              <ref target="#par-gr-164:par-gr-164-fr-11-2"></ref>
+                              <ref target="#par-gr-164:par-gr-164-fr-11-2"/>
                               <ref target="#coislin-12:coislin-12-fr-11-11"/>
                               <ref target="#ambr-m-47-sup:ambr-m-47-sup-fr-11-13"/>
+                              <ref target="#ambr-b-106-sup:ambr-b-106-sup-fr-11-8"/>
                            </listRef>
                         </p>
                      </div>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #G #P1 #B1 #P3 #P5 #A1">txt</rdg>
+                        <rdg wit="#V1 #C #G #P1 #B1 #P3 #P5 #A1 #A2 #V4">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Paris. Coislin 10</wit>
                         <wit>Genua, Urbani 3</wit>
@@ -16692,11 +16773,14 @@
                         <wit>Paris. gr. 164</wit>
                         <wit>Paris. Coislin 12</wit>
                         <wit>Ambr. M 47 sup.</wit>
+                        <wit>Ambr. B 106 sup.</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">Ὕψος – τοιοῦτο</foreign></lem>
-                        <rdg wit="#G">om.</rdg>
+                        <rdg wit="#G #A2 #V4">om.</rdg>
                         <wit>Genua, Urbani 3</wit>
+                        <wit>Ambr. B 106 sup.</wit>
+                        <wit>Vat. gr. 1747</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">ἵνα ἦ</foreign></lem>
@@ -16719,6 +16803,12 @@
                         <wit>Paris. Coislin 12</wit>
                      </app>
                      <app type="text">
+                        <lem><foreign xml:lang="grc">διὰ τῆς σῆς ἰσχύος</foreign></lem>
+                        <rdg wit="#A2 #V4"><foreign>διὰ τῆς σῆς ἰσχύος καὶ δυνάμεως</foreign></rdg>
+                        <wit>Ambr. B 106 sup.</wit>
+                        <wit>Vat. gr. 1747</wit>
+                     </app>
+                     <app type="text">
                         <lem><foreign xml:lang="grc">καὶ αἰώνιον – δέδωκας</foreign></lem>
                         <rdg wit="#G"><foreign xml:lang="grc">ἡμῖν δέδωκας</foreign></rdg>
                         <wit>Genua, Urbani 3</wit>
@@ -16738,10 +16828,12 @@
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">μετὰ – ἐκτείνεται</foreign></lem>
-                        <rdg wit="#B1 #P3">om.</rdg>
+                        <rdg wit="#B1 #P3 #A2 #V4">om.</rdg>
                         <wit>Oxon. Bodl. Auct. D. 4. 1</wit>
                         <wit>Par. gr. 164</wit>
                         <!-- Textkritik: B1: ἵν ἦ -->
+                        <wit>Ambr. B 106 sup.</wit>
+                        <wit>Vat. gr. 1747</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">τὰ τῆς ζωῆς ἡμῖν ἐκτείνεται</foreign></lem>
