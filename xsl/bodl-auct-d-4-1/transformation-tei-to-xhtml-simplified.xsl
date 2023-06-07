@@ -1052,13 +1052,18 @@
     </xsl:template>
     
     <xsl:template match="tei:gap">
-        <xsl:text>[... (</xsl:text>
-        <xsl:value-of select="@quantity"/>
-        <xsl:text> </xsl:text>
-        <xsl:value-of select="@unit"/>
-        <xsl:text>(s) </xsl:text>
-        <xsl:value-of select="@reason"/>
-        <xsl:text>)]</xsl:text>
+        <xsl:if test="@quantity = 1">
+            <xsl:text>[.]</xsl:text>
+        </xsl:if>
+        <xsl:if test="@quantity != 1">
+            <xsl:text>[... (</xsl:text>
+            <xsl:value-of select="@quantity"/>
+            <xsl:text> </xsl:text>
+            <xsl:value-of select="@unit"/>
+            <xsl:text>s </xsl:text>
+            <xsl:value-of select="@reason"/>
+            <xsl:text>)]</xsl:text>
+        </xsl:if>
     </xsl:template>
     
     <xsl:template match="tei:add">
@@ -1071,9 +1076,10 @@
     
     <xsl:template match="tei:supplied">
         <xsl:text>[</xsl:text>
-        <span class="addition-underline">
-            <xsl:apply-templates/>
-        </span>
+        <xsl:apply-templates/>
+        <xsl:if test="exists(@cert) and (@cert = 'low')">
+            <xsl:text>(?)</xsl:text>
+        </xsl:if>
         <xsl:text>]</xsl:text>
     </xsl:template>
     
@@ -1394,14 +1400,42 @@
     </xsl:template>
     
     <xsl:template match="tei:sic">
+        <xsl:text>(sic!) </xsl:text>
         <xsl:value-of select="text()"/>
         <xsl:text> (sic!)</xsl:text>
     </xsl:template>
     
     <xsl:template match="tei:del">
-        <xsl:text>{</xsl:text>
-        <xsl:value-of select="text()"/>
-        <xsl:text>}</xsl:text>
+        <xsl:if test="exists(@resp)">
+            <xsl:text>{</xsl:text>
+            <xsl:value-of select="text()"/>
+            <xsl:text>}</xsl:text>
+        </xsl:if>
+        <xsl:if test="not(exists(@resp))">
+            <xsl:if test="exists(child::tei:gap)">
+                <xsl:variable name="number-of-dots" select="child::tei:gap/@quantity"/>
+                <xsl:text>⟦</xsl:text>
+                <xsl:for-each select="1 to $number-of-dots">
+                    <xsl:text>.</xsl:text>
+                </xsl:for-each>
+                <xsl:text>⟧</xsl:text>
+            </xsl:if>
+            <xsl:if test="not(exists(child::tei:gap))">
+                <xsl:if test="exists(child::tei:unclear)">
+                    <xsl:text>⟦</xsl:text>
+                    <xsl:element name="span">
+                        <xsl:attribute name="class" select="'unclear'"/>
+                        <xsl:value-of select="child::tei:unclear/text()"/>
+                    </xsl:element>
+                    <xsl:text>⟧</xsl:text>
+                </xsl:if>
+                <xsl:if test="not(exists(child::tei:unclear))">
+                    <xsl:text>⟦</xsl:text>
+                    <xsl:value-of select="text()"/>
+                    <xsl:text>⟧</xsl:text>
+                </xsl:if>
+            </xsl:if>
+        </xsl:if>
     </xsl:template>
     
     <xsl:template match="tei:unclear">
@@ -1448,11 +1482,42 @@
         <xsl:apply-templates/>
     </xsl:template>
     
+    <xsl:template match="tei:add[@type != 'second-hand']">
+        <xsl:if test="@place = 'above'">
+            <xsl:text>\</xsl:text>
+            <xsl:apply-templates/>
+            <xsl:text>/</xsl:text>
+        </xsl:if>
+        <xsl:if test="@place = 'below'">
+            <xsl:text>/</xsl:text>
+            <xsl:apply-templates/>
+            <xsl:text>\</xsl:text>
+        </xsl:if>
+        <xsl:if test="@place = 'overstrike'">
+            <xsl:text>«</xsl:text>
+            <xsl:apply-templates/>
+            <xsl:text>»</xsl:text>
+        </xsl:if>
+        <xsl:if test="@place = 'left margin'">
+            <xsl:apply-templates/>
+        </xsl:if>
+    </xsl:template>
+    
     <xsl:template match="tei:add[@type = 'second-hand']">
         <xsl:if test="@place = 'above'">
             <xsl:text>\</xsl:text>
             <xsl:apply-templates/>
             <xsl:text>/</xsl:text>
+        </xsl:if>
+        <xsl:if test="@place = 'below'">
+            <xsl:text>/</xsl:text>
+            <xsl:apply-templates/>
+            <xsl:text>\</xsl:text>
+        </xsl:if>
+        <xsl:if test="@place = 'overstrike'">
+            <xsl:text>«</xsl:text>
+            <xsl:apply-templates/>
+            <xsl:text>»</xsl:text>
         </xsl:if>
         <xsl:if test="@place = 'left margin'">
             <xsl:apply-templates/>
@@ -1463,11 +1528,16 @@
     </xsl:template>
       
     <xsl:template match="tei:subst">
-        <xsl:value-of select="tei:del/text()"/>
-        <xsl:text> [</xsl:text>
-            <xsl:value-of select="tei:add/text()"/>
+        <xsl:value-of select="tei:add/text()"/>
+        <xsl:text> [* </xsl:text>
+            <xsl:value-of select="tei:del/text()"/>
         <xsl:text> </xsl:text>
+        <xsl:if test="exists(tei:add/@hand)">
             <xsl:value-of select="tei:add/@hand"/>
+        </xsl:if>
+        <xsl:if test="not(exists(tei:add/@hand))">
+            <xsl:text>S</xsl:text>
+        </xsl:if>
         <xsl:text>]</xsl:text>
     </xsl:template>
       
