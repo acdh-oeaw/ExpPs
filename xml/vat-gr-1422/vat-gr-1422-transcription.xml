@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../schema/tei-psalmcatenae.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-   <!-- faciendum: Überprüfung des Seitenwechssels Ps 3-10 -->
-   <!-- faciendum: XML-IDs aus dem Vaticanus -->
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -8613,13 +8611,15 @@
                </ab>
             </div>
             <!-- Ps 11 commentary -->
+            <!-- faciendum: V5: 60 Fragmente: L2: 49 Fragmente (= 47 + hexaplaric var. + exp. 178 om. V5): V5: nur 11 "non habet typus XVI" statt 13 -->
             <div type="commentary" subtype="commentary" xml:id="vat-gr-1422-11-2"
                rendition="#top-margin" change="commentaryfragments-only">
                <ab xml:lang="grc">
                   <seg type="perioche" xml:id="vat-gr-1422-fr-11-1" source="Anonymous"
                      corresp="#vat-gr-1422-ps-11-1a"><quote type="patristic" subtype="quotation"
                         xml:id="vat-gr-1422-quote-11-1"
-                        source="Eusebius, Perioche in Ps 11 (128 Bandt)" corresp="person-7"/></seg>
+                        source="Eusebius, Perioche in Ps 11 (128 Bandt); non habet typus XVI"
+                        corresp="person-7"/></seg>
                </ab>
             </div>
             <div type="commentary" subtype="commentary" xml:id="vat-gr-1422-11-3"
@@ -8654,10 +8654,10 @@
                         source="Hesychius, comm. brevis in Ps 11,1 (16–17 Jagić); non habet typus XVI"
                         corresp="#person-11"/><note type="attribution"><foreign xml:lang="grc"
                            >υπ(ο)θ(εσις)</foreign></note></seg>
-                  <note type="lemma">Ps 11,1</note>> <seg type="hypothesis"
-                     xml:id="vat-gr-1422-fr-11-6" rendition="#top-of-the-page" source="Anonymous"
-                     corresp="#vat-gr-1422-ps-11-1a"><quote type="patristic" subtype="quotation"
-                        xml:id="vat-gr-1422-quote-11-6"
+                  <note type="lemma">Ps 11,1</note>
+                  <seg type="hypothesis" xml:id="vat-gr-1422-fr-11-6" rendition="#top-of-the-page"
+                     source="Anonymous" corresp="#vat-gr-1422-ps-11-1a"><quote type="patristic"
+                        subtype="quotation" xml:id="vat-gr-1422-quote-11-6"
                         source="Hesychius, hyp. in Ps 11 (Antonelli; PG 27,685–686 D3–5); non habet typus XVI"
                         corresp="#person-10"/></seg>
                </ab>
@@ -8676,7 +8676,9 @@
                         Χριστοῦ· περὶ ἧς αὐτοῖς ἔλεγεν· ἄνδρες νινευΐται ἀναστήσονται καὶ
                         κατακρινοῦσι τὴν γενεὰν ταύτην: – [cf. Mt 12,41]</quote><ref
                         target="vat-gr-754:vat-gr-754-fr-11-1" type="with-variants">Vat. gr.
-                        754</ref><note><foreign xml:lang="grc">υπ(ο)θ(εσις)</foreign></note></seg>
+                        754</ref><note><foreign xml:lang="grc">υπ(ο)θ(εσις)</foreign></note><note
+                        type="parallels">Paris. gr. 146 (f. 41r, bottom-bottom): Attribution:
+                        Anonymous</note></seg>
                   <note type="lemma">Ps 11,2</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-11-8"
                      rendition="#middle-of-the-page" source="Theodoretus"
@@ -8726,7 +8728,8 @@
                         source="Athanasius, exp. in Ps 11,3a" corresp="#person-2">τὰς κατὰ τοῦ
                         σωτῆρος συνάγων ἐπιβουλάς: </quote><ref
                         target="vat-gr-754:vat-gr-754-fr-11-6" type="identical">Vat. gr.
-                     754</ref></seg>
+                        754</ref><note type="parallels">Paris. gr. 146 (f. 41v, top-middle):
+                        Attribution: Anonymous</note></seg>
                   <note type="lemma">Ps 11,2</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-11-13"
                      rendition="#bottom-of-the-page" source="Anonymous"
@@ -8782,7 +8785,8 @@
                         ...</quote><ref target="vat-gr-754:vat-gr-754-fr-11-6" type="identical">Vat.
                         gr. 754</ref><note type="attribution"><foreign xml:lang="grc"
                               >Ἀθανασίο<supplied reason="illegible"
-                     >υ</supplied></foreign></note></seg>
+                        >υ</supplied></foreign></note><note type="parallels">Paris. gr. 146 (f. 41v,
+                        middle-middle): Attribution: Ἀθανα(σίου)</note></seg>
                   <note type="lemma">Ps 11,3</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-11-20"
                      rendition="#bottom-of-the-page" source="Anonymous"
@@ -8821,9 +8825,10 @@
                         xml:id="vat-gr-1422-quote-11-24"
                         source="Athanasius, exp. in Ps 11,3b - Hesychius, schol. nr. 4 in Ps 11,3b (Antonelli; PG 27,685)"
                         corresp="#person-2 #person-10">Ὅτι διδάσκαλον αὐτὸν ἀποκαλοῦντες καὶ ἀγαθὸν.
-                        ἕτερα ἐβουλεύοντο περὶ αὐτοῦ· ... </quote><ref
-                        target="vat-gr-754:vat-gr-754-fr-11-8" type="identical">Vat. gr.
-                     754</ref></seg>
+                           ἑτ<unclear reason="ductus">έ</unclear>ρα ἐβουλεύοντο περὶ αὐτοῦ· ...
+                        </quote><ref target="vat-gr-754:vat-gr-754-fr-11-8" type="identical">Vat.
+                        gr. 754</ref><note type="parallels">Paris. gr. 146 (f. 41v, middle-bottom):
+                        Attribution: Anonymous</note></seg>
                   <pb n="41v–42r"/>
                   <note type="lemma">Ps 11,4</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-11-25"
@@ -8868,7 +8873,8 @@
                         γὰρ οὐ μεγαλορήμων ἡ γλῶσσα ἐκείνη ἡ τολμῶσα τῶ κυρίω λέγειν· ἐν ποία
                         ἐξουσία ταῦτα ποιεῖς· καὶ τίς σοι ἔδωκε τὴν ἐξουσίαν ταύτην: [Mc
                         11,28]</quote><ref target="vat-gr-754:vat-gr-754-fr-11-10"
-                        type="with-variants">Vat. gr. 754</ref></seg>
+                        type="with-variants">Vat. gr. 754</ref><note type="parallels">Paris. gr. 146
+                        (f. 41v, bottom-middle): Attribution: Anonymous</note></seg>
                   <note type="lemma">Ps 11,5</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-11-30"
                      rendition="#top-of-the-page" source="Anonymous" corresp="#vat-gr-1422-ps-11-5a"
@@ -8884,14 +8890,16 @@
                         corresp="#person-2">Ὡς τούτων διανοουμένων τὸ ἐξουσίαν ἔχειν πᾶν ὅ τι ἂν
                         βούληται εἰπεῖν κατὰ τοῦ σωτῆρος Χριστοῦ: </quote><ref
                         target="vat-gr-754:vat-gr-754-fr-11-12" type="with-variants">Vat. gr.
-                        754</ref></seg>
+                        754</ref><note type="parallels">Paris. gr. 146 (f. 41v, bottom-middle):
+                        Attribution: Anonymous</note></seg>
                   <note type="lemma">Ps 11,5</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-11-32"
                      rendition="#top-of-the-page" source="Anonymous" corresp="#vat-gr-1422-ps-11-5a"
                         ><quote type="patristic" subtype="quotation-adapted"
                         xml:id="vat-gr-1422-quote-11-32"
                         source="Iohannes Chrys., exp. in Ps. 11 (PG 55,146, l. 9) in Ps 11,4–5"
-                        corresp="#person-28"><!-- ταῦτα μαινομένων καὶ παραφρονούντων τὰ
+                        corresp="#person-28"
+                        ><!-- ταῦτα μαινομένων καὶ παραφρονούντων τὰ
                      ρήματα: --></quote></seg>
                   <note type="lemma">Ps 11,6</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-11-33"
@@ -8939,7 +8947,7 @@
                      rendition="#middle-of-the-page" source="Anonymous"
                      corresp="#vat-gr-1422-ps-11-7a"><quote type="patristic"
                         subtype="paraphrase/paraphrase" xml:id="vat-gr-1422-quote-11-38"
-                        source="Iohannes Chrys., exp. in Ps. 11 (PG 55,147, l. 48–52) in Ps 11,7 - Theodoretus, comm. in Ps 11,7 (cf. PG 80,944 C)"
+                        source="Iohannes Chrys., exp. in Ps. 11 (PG 55,147, l. 48–52) in Ps 11,7 - Theodoretus, comm. in Ps 11,7 (PG 80,944 C)"
                         corresp="#person-28 #person-16"/></seg>
                   <note type="lemma">Ps 11,7</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-11-39"
@@ -8974,7 +8982,9 @@
                         καταστήσω τὸ σωτήριον ὃ καὶ ἐξάκουστον παρασκευάσαι γενέσθαι, ἐκηρύχθη γὰρ
                         εἰς πᾶσαν τὴν γῆν:</quote><ref target="vat-gr-754:vat-gr-754-fr-11-16"
                         type="with-variants">Vat. gr. 754</ref><note type="attribution"><foreign
-                           xml:lang="grc">Ἀθανα(σίου)</foreign></note></seg>
+                           xml:lang="grc">Ἀθανα(σίου)</foreign></note><note type="parallels">Paris.
+                        gr. 146 (f. 42r, top-middle): Attribution: <foreign xml:lang="grc"
+                           >Ἀθανα(σίου)·</foreign></note>(f. 41v, middle-top)</seg>
                   <note type="lemma">Ps 11,7</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-11-43"
                      rendition="#middle-of-the-page" source="Anonymous"
@@ -9002,7 +9012,8 @@
                         source="Athanasius, exp. in Ps 11,7b">Ἀληθεῖς φη(σὶν) οἱ λόγοι· οἱ παρὰ τοῦ
                         σωτῆρος ἐπηγγελμένοι· ὡς καὶ τὸ ἀργύριον πολλάκις χωνευθὲν· καθαρόν ἐστιν:
                         –</quote><ref target="vat-gr-754:vat-gr-754-fr-11-17" type="with-variants"
-                        >Vat. gr. 754</ref></seg>
+                        >Vat. gr. 754</ref><note type="parallels">Paris. gr. 146 (f. 42r,
+                        top-bottom): Attribution: Anonymous</note></seg>
                   <note type="lemma">Ps 11,8</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-11-46"
                      rendition="#bottom-of-the-page" source="Origenes"><quote type="patristic"
@@ -9035,7 +9046,9 @@
                         τῆι ἡμῶν σωτηρία· οὗτοι δ᾿ ἂν εἶεν αἱ ἀντικείμεναι καὶ πονηραὶ
                         δυνάμεις:</quote><ref target="vat-gr-754-fr-11-19" type="with-variants">Vat.
                         gr. 754</ref><note type="attribution"><foreign xml:lang="grc"
-                           >Ἀθανα(σίου):</foreign></note></seg>
+                           >Ἀθανα(σίου):</foreign></note><note type="parallels">Paris. gr. 146 (f.
+                        42r, middle-middle): Attribution: <foreign xml:lang="grc"
+                           >Ἀθανασίου</foreign></note></seg>
                   <note type="lemma">Ps 11,8</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-11-50"
                      rendition="#bottom-of-the-page" source="Eusebius"
@@ -9063,20 +9076,24 @@
                   <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-11-53"
                      rendition="#bottom-of-the-page" source="Athanasius"
                      corresp="#vat-gr-1422-ps-11-9a" copyOf="#edition:edition-11-9-2"><quote
-                        type="patristic" subtype="quotation" xml:id="vat-gr-1422-quote-11-53"
-                        source="Athanasius, exp. in Ps 11,9b - Iohannes Chrysostomus, exp. in Ps 11. (PG 55,148 XXX) - glossa in Ps 11,9b XXX"
-                        corresp="#person-2">Ὕψος μὲν τὴν δύναμιν λέγει· πολυωρίαν δὲ· τὴν
-                        πολυχρονιότητα· ἵν ἦ τοιοῦτον· διὰ τῆς ἰσχύος πολυχρονιότητα καὶ αἰώνιον
-                        ζωὴν ἡμῖν δέδωκας· / ἢ ὕψος λέγει· ὅτι ὁμοίους σου ἐποίησας· ὡς ἀνθρώπωι
-                        δυνατόν· / ἢ ὅτι πολλῆς φροντίδος ἠξίωσας: –</quote><ref
+                        type="patristic" subtype="quotation/quotation-adapted/unknown"
+                        xml:id="vat-gr-1422-quote-11-53"
+                        source="Athanasius, exp. in Ps 11,9b - Iohannes Chrysostomus, exp. in Ps. 11 (PG 55,148, l. 22–23) in Ps 11,8–9 - Evagrius, schol. nr. δ´ in Ps 11,9b (350 Rondeau – Géhin – Cassin)"
+                        corresp="#person-2 #person-28 #person-18">Ὕψος μὲν τὴν δύναμιν λέγει·
+                        πολυωρίαν δὲ· τὴν πολυχρονιότητα· ἵν ἦ τοιοῦτον· διὰ τῆς ἰσχύος
+                        πολυχρονιότητα καὶ αἰώνιον ζωὴν ἡμῖν δέδωκας· / ἢ ὕψος λέγει· ὅτι ὁμοίους
+                        σου ἐποίησας· ὡς ἀνθρώπωι δυνατόν· / ἢ ὅτι πολλῆς φροντίδος ἠξίωσας:
+                        –</quote><!-- cf. Euthymius Zig., comm. in Ps. 11 (PG 128,176 D1) in Ps 11,9b --><ref
                         target="vat-gr-754-11-11" type="abbreviated-with-variants">Vat. gr.
                         754</ref><note type="attribution"><foreign xml:lang="grc"
-                           >Ἀθανα(σίου):</foreign></note></seg>
+                           >Ἀθανα(σίου):</foreign></note><note type="parallels">Paris. gr. 146 (f.
+                        42r, middle-bottom): Attribution: <foreign xml:lang="grc"
+                           >Ἀθανασίου</foreign></note></seg>
                   <note type="lemma">Ps 11,9</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-11-54" source="Origenes"
                      rendition="#bottom-of-the-page" corresp="#vat-gr-1422-ps-11-9a"><quote
                         type="patristic" subtype="quotation" xml:id="vat-gr-1422-quote-11-54"
-                        source="Evagrius, schol. nr. γ´ in Ps 11,9a (350,1–2 Rondeau – Géhin – Cassin); om. typus XVI"
+                        source="Evagrius, schol. nr. γ´ in Ps 11,9a (350,1–2 Rondeau – Géhin – Cassin); non habet typus XVI"
                         corresp="#person-21"/><note type="attribution"><foreign xml:lang="grc"
                            >ὠρ(ι)γ(ένους)</foreign></note></seg>
                   <note type="lemma">Ps 11,9</note>
@@ -9090,7 +9107,7 @@
                      rendition="#bottom-of-the-page" source="Anonymous"
                      corresp="#vat-gr-1422-ps-11-9a"><quote type="patristic" subtype="quotation"
                         xml:id="vat-gr-1422-quote-11-56"
-                        source="Hesychius, schol. nr. 19 in Ps 11,9a (Antonelli; PG 27,688); om. typus XVI"
+                        source="Hesychius, schol. nr. 19 in Ps 11,9a (Antonelli; PG 27,688); non habet typus XVI"
                         corresp="#person-10"/></seg>
                   <note type="lemma">Ps 11,9</note>
                   <pb n="42r–42v"/>
@@ -9099,7 +9116,7 @@
                      rendition="#bottom-of-the-page" source="Arsenius"
                      corresp="#vat-gr-1422-ps-11-9a"><quote type="patristic" subtype="unknown"
                         xml:id="vat-gr-1422-quote-11-57"
-                        source="Arsenius, fr. in Ps 11,9 (ed. Dorival IV 370, fr. 2); om. typus XVI"
+                        source="Arsenius, fr. in Ps 11,9 (ed. Dorival IV 370, fr. 2); non habet typus XVI"
                         corresp="#person-42"/></seg>
                </ab>
             </div>
@@ -9119,14 +9136,14 @@
                      rendition="#top-of-the-page" source="Anonymous" corresp="#vat-gr-1422-ps-11-9a"
                         ><quote type="patristic" subtype="quotation-adapted"
                         xml:id="vat-gr-1422-quote-11-59"
-                        source="Theodoretus, comm. in Ps 11,9 (PG 80,944 D1–3); om. typus XVI"
+                        source="Theodoretus, comm. in Ps 11,9 (PG 80,944 D1–3); non habet typus XVI"
                         corresp="#person-16"/></seg>
                   <note type="lemma">Ps 11,9</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-11-60"
                      rendition="#top-of-the-page" source="Anonymous" corresp="#vat-gr-1422-ps-11-9a"
                         ><quote type="patristic" subtype="quotation"
                         xml:id="vat-gr-1422-quote-11-60"
-                        source="Hesychius, schol. nr. 20 in Ps 11,9b (Antonelli; PG 27,688); om. typus XVI"
+                        source="Hesychius, schol. nr. 20 in Ps 11,9b (Antonelli; PG 27,688); non habet typus XVI"
                         corresp="#person-10"/></seg>
                </ab>
             </div>
