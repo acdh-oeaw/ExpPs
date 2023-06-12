@@ -20,7 +20,7 @@ fi
 
 cd deployment
 
-if [ "$local_username"x = x -o "$local_password"x = x ]; then echo Missing credentials for local BaseX; local_username=admin; local_password=admin; fi
+if [ "$local_username"x = x -o "$local_password"x = x ]; then echo "Missing credentials for local BaseX, using admin:${BASEX_admin_pw:-admin}"; local_username=admin; local_password="${BASEX_admin_pw:-admin}"; fi
 #------ Settings ---------------------
 export USERNAME=$local_username
 export PASSWORD=$local_password
