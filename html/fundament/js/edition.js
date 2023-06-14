@@ -253,3 +253,10 @@ function handleClickOnLinksForWitnessesWithoutNavigation(event){
 window.onload = function(){
 	let handleWitnessesClient = handleWitnesses();
 }
+
+$(document).ready(function () {
+    $('#sidebarCollapse').on('click', function () {
+        $('#sidebar').toggleClass('active');
+    });
+
+});
