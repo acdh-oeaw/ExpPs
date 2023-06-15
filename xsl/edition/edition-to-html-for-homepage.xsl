@@ -77,8 +77,8 @@ version="2.0">
                                             <a title="Bodl. Auct. D. 4.1" href="./manuscripts/bodl_auct_d_4_1.html" class="nav-link">Bodl. Auct. D. 4.1</a>
                                             <a title="Coislin 10" href="./manuscripts/coislin_10.html" class="nav-link">Coislin 10</a>
                                             <a title="Coislin 12" href="./manuscripts/coislin_12.html" class="nav-link">Coislin 12</a>
-                                            <a title="Franzon. 3" href="./manuscripts/franzon_3.html" class="nav-link">Franzon. 3</a>
-                                            <a title="Mosq. synod. 194" href="./manuscripts/mosq_synod_194.html" class="nav-link">Mosq. Synod. 194</a>
+                                            <a title="Genua Urbani 3" href="./manuscripts/franzon_3.html" class="nav-link">Genua Urbani 3</a>
+                                            <a title="Mosq. Sinod. gr. 194" href="./manuscripts/mosq_synod_194.html" class="nav-link">Mosq. Sinod. gr. 194</a>
                                             <a title="Oxon. S. Trin. 78" href="./manuscripts/oxon_s_trin_78.html" class="nav-link">Oxon. S. Trin. 78</a>
                                             <a title="Par. gr. 139" href="./manuscripts/par_gr_139.html" class="nav-link">Par. gr. 139</a>
                                             <a title="Par. gr. 164" href="./manuscripts/par_gr_164.html" class="nav-link">Par. gr. 164</a>
@@ -441,7 +441,7 @@ version="2.0">
             <xsl:text>P6</xsl:text>
         </xsl:if>
         <xsl:if test="starts-with(./@target,'#par-gr-164')">
-            <xsl:text>P7</xsl:text>
+            <xsl:text>P3</xsl:text>
         </xsl:if>
         <xsl:if test="starts-with(./@target,'#par-gr-166')">
             <xsl:text>P1</xsl:text>
