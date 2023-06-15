@@ -258,5 +258,7 @@ $(document).ready(function () {
     $('#sidebarCollapse').on('click', function () {
         $('#sidebar').toggleClass('active');
     });
-
+	$('.navigation-list-second-level').on('click', function () {
+		$('#sidebar').toggleClass('active');
+	});
 });

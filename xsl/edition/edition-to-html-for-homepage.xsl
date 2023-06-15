@@ -50,9 +50,9 @@ version="2.0">
                     <!-- button for toggling sidebar - start -->
                     <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
                         <div class="container-fluid"> -->
-                            <button type="button" id="sidebarCollapse" class="btn btn-info">
-                                <i class="fas fa-align-left"></i>
-                            </button>
+                        <button type="button" id="sidebarCollapse" class="btn btn-light">
+                            <i class="fas fa-align-left"></i>
+                        </button>
                     <!--    </div>
                     </nav> -->
                     <!-- button for toggling sidebar - end -->
@@ -123,9 +123,9 @@ version="2.0">
                                     <header class="entry-header">
                                         <div class="entry-top-thumbnail"><img src="./fundament/images/picture_5.png" alt="Manuscript"/></div>
                                     </header><!-- .entry-header -->
-                                    <div class="entry-content">
+                                    <div class="entry-content" id="div-around-navigation-and-content">
                                         <!-- sidebar navigation start -->
-                                        <nav id="sidebar">
+                                        <nav id="sidebar" class="active">
                                             <div class="sidebar-header">
                                                 <h3 class="navigation-sidebar-header">Navigation</h3>
                                             </div>
@@ -136,7 +136,7 @@ version="2.0">
                                                             <xsl:attribute name="href" select="concat('#psalm-',@n)"/>
                                                             <xsl:attribute name="data-toggle" select="'collapse'"/>
                                                             <xsl:attribute name="aria-expanded" select="'false'"/>
-                                                            <xsl:attribute name="class" select="'dropdown-toggle'"/>
+                                                            <xsl:attribute name="class" select="'dropdown-toggle navigation-list-first-level'"/>
                                                             <xsl:value-of select="concat('Psalm ',@n)"/>
                                                         </xsl:element>
                                                         <xsl:element name="ul">
@@ -146,6 +146,7 @@ version="2.0">
                                                                 <li>
                                                                     <xsl:element name="a">
                                                                         <xsl:attribute name="href" select="concat('#',@xml:id)"/>
+                                                                        <xsl:attribute name="class" select="'navigation-list-second-level'"/>
                                                                         <xsl:value-of select="concat('Expositio ',@n)"/>
                                                                     </xsl:element>
                                                                 </li>
