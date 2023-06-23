@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../schema/tei-psalmcatenae.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/tests-for-transcription.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <!-- faciendum: Bibliographie nach dem Muster von Vat. gr. 754 -->
    <!-- faciendum: fehlende Ids bei Ps 7 eintragen -->
@@ -454,7 +455,7 @@
                      <quote type="patristic" subtype="paraphrase-abbreviated"
                         xml:id="bodl-auct-d-4-1-quot-1-3" corresp="#person-40"
                         source="Origenes, cath. 6 in ψαλτήριον (20,20–22,1 Risch); in textu"/>
-                     <ref target="vat-gr-754:vat-gr-754-glosse-1-1" type="with-variant">Vat. gr.
+                     <ref target="#vat-gr-754:vat-gr-754-glosse-1-1" type="with-variant">Vat. gr.
                         754</ref>
                      <ref target="vat-gr-1422:vat-gr-1422-1-4" type="abbreviated">Vat. gr.
                         1422</ref><ref target="ambr-m-47-sup:ambr-m-47-sup-glosse-1-2"
@@ -4177,7 +4178,7 @@
             </div>
             <pb n="51v"/>
             <!-- Ps 11 commentary -->
-            <div type="commentary" subtype="commented" xml:id="bodl-auct-d-4-1-11-2">
+            <div type="commentary" subtype="commentary" xml:id="bodl-auct-d-4-1-11-2">
                <ab xml:lang="grc">
                   <note type="lemma">Ps 11,1</note>
                   <seg type="hypothesis" xml:id="bodl-auct-d-4-1-fr-11-1" source="Theodoretus"

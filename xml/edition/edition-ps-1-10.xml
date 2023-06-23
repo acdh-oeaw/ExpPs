@@ -15915,12 +15915,12 @@
          </div>
          <!-- Ps 11: -->
          <!-- Typus XIX: V1(erledigt) C(erledigt) G(erledigt) P1(erledigt) -->
-         <!-- Typus IV: M(f. 24v; erledigt) O(XXX) -->
+         <!-- Typus IV: M(f. 24v; vollständig gelesen) O(XXX) -->
          <!-- Codices varii: B1(f. 51v; erledigt) B2(XXX) N1(XXX) P2(lost) P3(f. 16v; erledigt) P4(lost) A1(f. 27v; erledigt) P5(f. 42r; erledigt) L1(f. 40v; erledigt) -->
-         <!-- Typus III: P6(f. 33v; erledigt) Z(f. 27r; erledigt) N2(f. 103r; erledigt) -->
+         <!-- Typus III: P6(f. 33v; erledigt) Z(f. 27r; incipit/explicit gelesen) N2(f. 103r; incipit/explicit gelesen) -->
          <!-- Typus XIV: A2(f. 35v; erledigt) V4(f. 15v; erledigt) -->
-         <!-- Typus XV: V5(f. 41v; erledigt) P7(f. 41r; erledigt) P8(lost) -->
-         <!-- Typus XVI: L2(f. 52r; erledigt) A3(f. 17r; erledigt) -->
+         <!-- Typus XV: V5(f. 41v; erledigt) P7(f. 41r; erledigt; vollständig gelesen) P8(lost) -->
+         <!-- Typus XVI: L2(f. 52r; erledigt) A3(f. 17r; vollständig gelesen) -->
          <!-- SD: Transkription überprüft -->
          <div n="11" type="psalm">
             <div n="11.1" type="psalmverse">
@@ -17167,20 +17167,33 @@
                            <listRef>
                               <ref target="#vat-gr-754:vat-gr-754-fr-12-4"/>
                               <ref target="#coislin-10:coislin-10-fr-12-1"/>
+                              <ref target="#par-gr-166:par-gr-166-fr-12-1"/>
                            </listRef>
                         </p>
                      </div>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #C">txt</rdg>
+                        <rdg wit="#V1 #C #P1">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Coislin 10</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">ᾄδει τὸν ψαλμὸν</foreign></lem>
-                        <rdg wit="#C"><foreign xml:lang="grc">τὸν ψαλμὸν ᾄδει</foreign></rdg>
+                        <rdg wit="#C #P1"><foreign xml:lang="grc">τὸν ψαλμὸν ᾄδει</foreign></rdg>
                         <wit>Coislin 10</wit>
+                        <wit>Par. gr. 166</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">ἐν ἁμαρτίᾳ γεγενημένους</foreign></lem>
+                        <rdg wit="#P1"><foreign xml:lang="grc">ἐν ἁμαρτίαις
+                           γενομένους</foreign></rdg>
+                        <wit>Par. gr. 166</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">θεῷ</foreign></lem>
+                        <rdg wit="#P1"><foreign xml:lang="grc">τῷ θεῷ</foreign></rdg>
+                        <wit>Par. gr. 166</wit>
                      </app>
                   </div>
                </div>
@@ -17207,15 +17220,17 @@
                            <listRef>
                               <ref target="#vat-gr-754:vat-gr-754-fr-12-6"/>
                               <ref target="#coislin-10:coislin-10-fr-12-2"/>
+                              <ref target="#par-gr-166:par-gr-166-fr-12-2"/>
                            </listRef>
                         </p>
                      </div>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #C">txt</rdg>
+                        <rdg wit="#V1 #C #P1">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Coislin 10</wit>
+                        <wit>Par. gr. 166</wit>
                      </app>
                      <app type="text"/>
                   </div>
@@ -17251,20 +17266,24 @@
                            <listRef>
                               <ref target="#vat-gr-754:vat-gr-754-fr-12-7"/>
                               <ref target="#coislin-10:coislin-10-fr-12-3"/>
+                              <ref target="#par-gr-166:par-gr-166-fr-12-4"/>
                            </listRef>
                         </p>
                      </div>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #C">txt</rdg>
+                        <rdg wit="#V1 #C #P1">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Coislin 10</wit>
+                        <wit>Par. gr. 166</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">Ἀνιῶμαι</foreign></lem>
                         <rdg wit="#V1"><foreign xml:lang="grc">Αἰνίωμαι</foreign></rdg>
                         <wit>Coislin 10</wit>
+                        <rdg wit="#P1"><foreign xml:lang="grc">ἀνίομαι</foreign></rdg>
+                        <wit>Par. gr. 166</wit>
                      </app>
                   </div>
                   <div type="psalmtext">
@@ -17280,16 +17299,23 @@
                            <listRef>
                               <ref target="#vat-gr-754:vat-gr-754-fr-12-8"/>
                               <ref target="#coislin-10:coislin-10-fr-12-5"/>
+                              <ref target="#par-gr-166:par-gr-166-fr-12-5"/>
                            </listRef></p>
                      </div>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #C">txt</rdg>
+                        <rdg wit="#V1 #C #P1">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Coislin 10</wit>
+                        <wit>Par. gr. 166</wit>
                      </app>
-                     <app type="text"/>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">ταπεινοῦται</foreign></lem>
+                        <rdg wit="#P1">post <foreign xml:lang="grc">ταπεινοῦται</foreign> add.
+                              <foreign xml:lang="grc">ὁ ἐχθρὸς ἡμῶν διάβολος</foreign></rdg>
+                        <wit>Par. gr. 166</wit>
+                     </app>
                   </div>
                </div>
                <div type="translation" xml:lang="de">
@@ -17317,27 +17343,38 @@
                   </div>
                   <!-- exp 187 -->
                   <div type="commentary">
-                     <p xml:id="edition-12-4-2" n="187">τοὺς τῆς διανοίας δηλονότι: –</p>
+                     <p xml:id="edition-12-4-2" n="187">Tοὺς τῆς διανοίας δηλονότι: –</p>
                      <div type="links">
                         <p>
                            <listRef>
                               <ref target="#vat-gr-754:vat-gr-754-fr-12-4a"/>
                               <ref target="#coislin-10:coislin-10-fr-12-8"/>
+                              <ref target="#par-gr-166:par-gr-166-fr-12-6"/>
                            </listRef>
                         </p>
                      </div>
                   </div>
                   <div type="textcritic">
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">Tοὺς – δηλονότι</foreign></lem>
+                        <rdg wit="#P1"><foreign xml:lang="grc">Ὀφθαλμοὺς τοὺς τῆς διανοίας δηλοῖ:
+                              –</foreign></rdg>
+                        <wit>Par. gr 166</wit>
+                        <!-- Textkritik: P1: ὀφθαλμοῦς -->
+                     </app>
                      <app type="fragment">
-                        <rdg wit="#V1 #C">txt</rdg>
+                        <rdg wit="#V1 #C #P1">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Coislin 10</wit>
+                        <wit>Par. gr. 166</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">τῆς διανοίας</foreign></lem>
                         <rdg wit="#C"><foreign xml:lang="grc">τῆς διανοίας ὀφθαλμοὺς</foreign></rdg>
                         <wit>Coislin 10</wit>
                      </app>
+                     <note type="textual-commentary"><p>P1: exp. 187 mit Evagrius (schol. nr. β´ in
+                           Ps 12,4b [352 Rondeau – Géhin – Cassin]) verbunden.</p></note>
                   </div>
                </div>
                <div type="translation" xml:lang="de">
@@ -17382,16 +17419,30 @@
                         <p>
                            <listRef>
                               <ref target="#vat-gr-754:vat-gr-754-fr-12-13"/>
+                              <ref target="#coislin-10:coislin-10-fr-12-12"/>
+                              <ref target="#par-gr-166:par-gr-166-fr-12-8"/>
                            </listRef>
                         </p>
                      </div>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1">txt</rdg>
+                        <rdg wit="#V1 #C #P1">txt</rdg>
                         <wit>Vat. gr. 754</wit>
+                        <wit>Coislin 10</wit>
+                        <wit>Par. gr. 166</wit>
                      </app>
-                     <app type="text"/>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">διὸ</foreign></lem>
+                        <rdg wit="#C #P1"><foreign xml:lang="grc">δι᾿ οὗ</foreign></rdg>
+                        <wit>Coislin 10</wit>
+                        <wit>Par. gr. 166</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">ὀδυνωμένην</foreign></lem>
+                        <rdg wit="#P1"><foreign xml:lang="grc">ὁδυναμένην</foreign></rdg>
+                        <wit>Par. gr. 166</wit>
+                     </app>
                   </div>
                   <div type="psalmtext">
                      <quote xml:id="edition-ps-12-6-3" type="psalmtext" n="6c">ᾄσω τῷ κυρίῳ τῷ
