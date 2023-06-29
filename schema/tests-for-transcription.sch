@@ -22,7 +22,7 @@
                 or starts-with(@target,'#mosq-syn-194:')">Wrong prefix in ref/@target</assert>
         </rule>
         <rule context="tei:seg">
-            <assert test="(@type = 'hypothesis') or (@type = 'commentaryfragment') or (@type = 'hexaplaric') or (@type = 'glosse')">Attribute type on element seg has to be one of 'hypothesis', 'commentaryfragment', 'hexaplaric' or 'glosse'.</assert>
+            <assert test="(@type = 'hypothesis') or (@type = 'commentaryfragment') or (@type = 'hexaplaric') or (@type = 'glosse') or (@type = 'perioche')">Attribute type on element seg has to be one of 'hypothesis', 'commentaryfragment', 'hexaplaric', 'perioche' or 'glosse'.</assert>
         </rule>
         <rule context="tei:seg[(@type = 'hypothesis') or (@type = 'commentaryfragment') or (@type = 'glosse')]">
             <assert test="exists(child::tei:quote)">Missing element quote as content of element seg.</assert>
