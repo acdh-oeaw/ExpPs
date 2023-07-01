@@ -310,8 +310,9 @@
                   that gives fulfillment to the sentence. Manuscript practice may deviate from these
                   rules. The following Codepoints are used in the transcription: 0387 (hex) "GREEK
                   ANO TELEIA", 00B7 (hex) "MIDDLE DOT", 002E (hex) "FULL STOP", 002C (hex) "COMMA",
-                  2022 (hex) "BULLET", 2058 (hex) "FOUR DOT PUNCTUATION",
-                  <!-- 205D (hex) "TRICOLON"  --> and 003A (hex) "COLON".</p>
+                  2022 (hex) "BULLET", 2058 (hex) "FOUR DOT
+                  PUNCTUATION",<!-- 205D (hex) "TRICOLON"  --> 003A (hex) "COLON", 2E2C (hex)
+                  "SQUARED FOUR DOT PUNCTUATION".</p>
             </punctuation>
          </editorialDecl>
          <listPrefixDef>
@@ -4926,13 +4927,324 @@
                         –</foreign></note></seg>
                </ab>
             </div>
-            <!-- MUSTER: 
-                     Hesychius, schol. nr. XX in Ps 11,XX (Antonelli; PG 27,688)
-                     Hesychius, comm. brevis in Ps 11,XX (17 Jagić)
-                     ἐν ἄλλω: – 
-                  MESE:  ·  Bullet:  •
-                  <note type="lemma">Ps 10,XX</note> 
-                  <note type="attribution"><foreign xml:lang="grc">ἐν ἄλλω: –</foreign></note> -->
+            <!-- Ps 12 bibletext -->
+            <div type="bibletext" subtype="commented" xml:id="plut-5-30-12-1">
+               <ab xml:lang="grc">
+                  <quote type="bibletext" xml:id="plut-5-30-ps-12-1" n="Ps (LXX) 12,1"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-12-1">
+                     <anchor type="psalmtext" xml:id="plut-5-30-ps-12-1a" n="Ps (LXX) 12,1a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-12-1"/> Εἰς τὸ τέλος· ψαλμὸς τῷ
+                     Δαυιδ.</quote>
+                  <quote type="bibletext" xml:id="plut-5-30-ps-12-2" n="Ps (LXX) 12,2"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-12-2">
+                     <anchor type="psalmtext" xml:id="plut-5-30-ps-12-2a" n="Ps (LXX) 12,2a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-12-2"/> ῞Εως πότε, κύριε, ἐπιλήσῃ
+                     μου εἰς τέλος; <anchor type="psalmtext" xml:id="plut-5-30-ps-12-2b"
+                        n="Ps (LXX) 12,2b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-12-2"/> ἕως πότε
+                     ἀποστρέψεις τὸ πρόσωπόν σου ἀπ᾽ ἐμοῦ;</quote>
+                  <quote type="bibletext" xml:id="plut-5-30-ps-12-3" n="Ps (LXX) 12,3"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-12-3">
+                     <anchor type="psalmtext" xml:id="plut-5-30-ps-12-3a" n="Ps (LXX) 12,3a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-12-3"/> ἕως τίνος θήσομαι βουλὰς ἐν
+                     ψυχῇ μου, <anchor type="psalmtext" xml:id="plut-5-30-ps-12-3b"
+                        n="Ps (LXX) 12,3b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-12-3"/> ὀδύνας
+                     ἐν καρδίᾳ μου ἡμέρας; <anchor type="psalmtext" xml:id="plut-5-30-ps-12-3c"
+                        n="Ps (LXX) 12,3c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-12-3"/> ἕως πότε
+                     ὑψωθήσεται ὁ ἐχθρός μου ἐπ᾽ ἐμέ;</quote>
+                  <quote type="bibletext" xml:id="plut-5-30-ps-12-4" n="Ps (LXX) 12,4"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-12-4">
+                     <anchor type="psalmtext" xml:id="plut-5-30-ps-12-4a" n="Ps (LXX) 12,4a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-12-4"/> ἐπίβλεψον, εἰσάκουσόν μου,
+                     κύριε ὁ θεός μου· <anchor type="psalmtext" xml:id="plut-5-30-ps-12-4b"
+                        n="Ps (LXX) 12,4b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-12-4"/> φώτισον
+                     τοὺς ὀφθαλμούς μου, μήποτε ὑπνώσω εἰς θάνατον, </quote>
+                  <quote type="bibletext" xml:id="plut-5-30-ps-12-5" n="Ps (LXX) 12,5"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-12-5">
+                     <anchor type="psalmtext" xml:id="plut-5-30-ps-12-5a" n="Ps (LXX) 12,5a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-12-5"/> μήποτε εἴπῃ ὁ ἐχθρός μου
+                     ῎Ισχυσα πρὸς αὐτόν· <anchor type="psalmtext" xml:id="plut-5-30-ps-12-5b"
+                        n="Ps (LXX) 12,5b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-12-5"/> οἱ
+                     θλίβοντές με ἀγαλλιάσονται, ἐὰν σαλευθῶ. </quote>
+                  <quote type="bibletext" xml:id="plut-5-30-ps-12-6" n="Ps (LXX) 12,6"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-12-6">
+                     <anchor type="psalmtext" xml:id="plut-5-30-ps-12-6a" n="Ps (LXX) 12,6a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-12-6"/> ἐγὼ δὲ ἐπὶ τῷ ἐλέει σου
+                     ἤλπισα, <anchor type="psalmtext" xml:id="plut-5-30-ps-12-6b" n="Ps (LXX) 12,6b"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-12-6"/> ἀγαλλιάσεται ἡ καρδία μου
+                     ἐπὶ τῷ σωτηρίῳ σου· <anchor type="psalmtext" xml:id="plut-5-30-ps-12-6c"
+                        n="Ps (LXX) 12,6c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-12-6"/> ᾄσω τῷ
+                     κυρίῳ τῷ εὐεργετήσαντί με <anchor type="psalmtext" xml:id="plut-5-30-ps-12-6d"
+                        n="Ps (LXX) 12,6d" corresp="../psalms-LXX/psalms.xml#Ps-LXX-12-6"/> καὶ ψαλῶ
+                     τῷ ὀνόματι κυρίου τοῦ ὑψίστου. </quote>
+               </ab>
+            </div>
+            <!-- Ps 12 commentary -->
+            <div type="commentary" subtype="commentary" xml:id="plut-5-30-12-2">
+               <ab xml:lang="grc">
+                  <pb n="42r–v"/>
+                  <note type="lemma">Ps 12,1</note>
+                  <seg type="hypothesis" xml:id="plut-5-30-fr-12-1" source="Anonymous"
+                     corresp="#plut-5-30-ps-12-1a">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-12-1"
+                        source="Hesychius, hyp. in Ps 12,1 (Antonelli; PG 27,687–688 D)"
+                        corresp="#person-10"/>
+                  </seg>
+               </ab>
+            </div>
+            <pb n="42v" facs="http://mss.bmlonline.it/s.aspx?Id=AWOIRjkiI1A4r7GxMC13#/oro/92"/>
+            <div type="commentary" subtype="commentary" xml:id="plut-5-30-12-3">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 12,1</note>
+                  <seg type="hypothesis" xml:id="plut-5-30-fr-12-2" source="Anonymous"
+                     corresp="#plut-5-30-ps-12-1a">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-12-2"
+                        source="Hesychius, comm. brevis in Ps 12,1 (18 Jagić)" corresp="#person-11"/>
+                     <note type="attribution">
+                        <foreign xml:lang="grc">ἐν ἄλλω</foreign>
+                     </note>
+                  </seg>
+                  <note type="lemma">Ps 12,2a</note>
+                  <seg type="commentaryfragment" xml:id="plut-5-30-fr-12-3" source="Anonymous"
+                     corresp="#plut-5-30-ps-12-2a">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-12-3"
+                        source="Hesychius, schol. nr. 1 in Ps 12,2a (Antonelli; PG 27,688)"
+                        corresp="#person-10"/>
+                  </seg>
+                  <note type="lemma">Ps 12,2a</note>
+                  <seg type="commentaryfragment" xml:id="plut-5-30-fr-12-4" source="Anonymous"
+                     corresp="#plut-5-30-ps-12-2a">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-12-4"
+                        source="Hesychius, comm. brevis in Ps 12,2a (18 Jagić)" corresp="#person-11"/>
+                     <note type="attribution">
+                        <foreign xml:lang="grc">ἐν ἄλλω:</foreign></note></seg>
+                  <note type="lemma">Ps 12,2b</note>
+                  <seg type="commentaryfragment" xml:id="plut-5-30-fr-12-5" source="Anonymous"
+                     corresp="#plut-5-30-ps-12-2b">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-12-5"
+                        source="Hesychius, schol. nr. 2 in Ps 12,2b (Antonelli; PG 27,689)"
+                        corresp="#person-10"/>
+                  </seg>
+                  <note type="lemma">Ps 12,2b</note>
+                  <seg type="commentaryfragment" xml:id="plut-5-30-fr-12-6" source="Anonymous"
+                     corresp="#plut-5-30-ps-12-2b">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-12-6"
+                        source="Hesychius, comm. brevis in Ps 12,2b (18 Jagić)" corresp="#person-11"/>
+                     <note type="attribution">
+                        <foreign xml:lang="grc">ἐν ἄλλω:</foreign></note></seg>
+                  <note type="lemma">Ps 12,3a</note>
+                  <seg type="commentaryfragment" xml:id="plut-5-30-fr-12-7" source="Anonymous"
+                     corresp="#plut-5-30-ps-12-3a">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-12-7"
+                        source="Hesychius, comm. brevis in Ps 12,3a (18 Jagić)" corresp="#person-11"
+                     />
+                  </seg>
+                  <note type="lemma">Ps 12,3a</note>
+                  <seg type="commentaryfragment" xml:id="plut-5-30-fr-12-8" source="Anonymous"
+                     corresp="#plut-5-30-ps-12-3a">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-12-8"
+                        source="Hesychius, schol. nr. 3 in Ps 12,3a (Antonelli; PG 27,689)"
+                        corresp="#person-10"/>
+                     <note type="attribution">
+                        <foreign xml:lang="grc">ἐν ἄλλω ⸬</foreign></note><note
+                        type="textual-commentary">Within this lemmatic unit Hesychius Antonelli is
+                        in first place, Hesychius Jagić in second place.</note></seg>
+                  <note type="lemma">Ps 12,3a</note>
+                  <seg type="commentaryfragment" xml:id="plut-5-30-fr-12-9" source="Anonymous"
+                     corresp="#plut-5-30-ps-12-3a" copyOf="#edition:edition-12-3-1">
+                     <quote type="patristic" subtype="quotation-adapted"
+                        xml:id="plut-5-30-quot-12-9" source="Athanasius, exp. in Ps 12,2b–3b"
+                        corresp="#person-2">ἀεὶ γ<subst hand="corr">
+                           <del rend="overwrite">ὰ</del>
+                           <add place="above">ά</add>
+                        </subst>ρ φησ<add place="overstrike" hand="corr">ι</add><del rend="erasure"
+                              ><gap reason="illegible" quantity="1" unit="character"/></del>
+                        βουλευόμενος καταψυχὴν μήπως ἄρα ἐν τῆ ἁμαρτία ἀποθανοῦμαι· καὶ τοῦτό ἐστιν
+                           <add place="below" hand="corr">ὃ</add>ὃ μάλιστα ὀδύνας μοι τῆ ψυχ<subst
+                           hand="corr">
+                           <del rend="overwrite">ὴ</del>
+                           <add place="above">ῆ</add>
+                        </subst> παρασκευάζ<subst hand="corr">
+                           <del rend="overwrite">η</del>
+                           <add place="inline">ει·</add>
+                        </subst></quote>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-12-7" type="with-variants">Vat. gr.
+                        754</ref>
+                     <note type="attribution">
+                        <foreign xml:lang="grc">ἐν ἄλλω: –</foreign>
+                     </note>
+                  </seg>
+               </ab>
+            </div>
+            <pb n="43r" facs="http://mss.bmlonline.it/s.aspx?Id=AWOIRjkiI1A4r7GxMC13#/oro/93"/>
+            <div type="commentary" subtype="commentary" xml:lang="plut-5-30-12-4">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 12,3b</note>
+                  <seg type="commentaryfragment" xml:id="plut-5-30-fr-12-10" source="Anonymous"
+                     corresp="#plut-5-30-ps-12-3b">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-12-10"
+                        source="Hesychius, schol. nr. 4 in Ps 12,3b (Antonelli; PG 27,689)"
+                        corresp="#person-10"/>
+                  </seg>
+                  <note type="lemma">Ps 12,3b</note>
+                  <seg type="commentaryfragment" xml:id="plut-5-30-fr-12-11" source="Anonymous"
+                     corresp="#plut-5-30-ps-12-3b">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-12-11"
+                        source="Hesychius, comm. brevis in Ps 12,3b (18 Jagić)" corresp="#person-11"/>
+                     <note type="attribution">
+                        <foreign xml:lang="grc">ἐν ἄλλω</foreign>
+                     </note>
+                  </seg>
+                  <note type="lemma">Ps 12,3c</note>
+                  <seg type="commentaryfragment" xml:id="plut-5-30-fr-12-12" source="Anonymous"
+                     corresp="#plut-5-30-ps-12-3c">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-12-12"
+                        source="Hesychius, schol. nr. 5 in Ps 12,3c (Antonelli; PG 27,689)"
+                        corresp="#person-10"/>
+                  </seg>
+                  <note type="lemma">Ps 12,3c</note>
+                  <seg type="commentaryfragment" xml:id="plut-5-30-fr-12-13" source="Anonymous"
+                     corresp="#plut-5-30-ps-12-3c">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-12-13"
+                        source="Hesychius, comm. brevis in Ps 12,3c (18 Jagić)" corresp="#person-11"/>
+                     <note type="attribution">
+                        <foreign xml:lang="grc">ἐν ἄλλω ⁘</foreign>
+                     </note>
+                  </seg>
+                  <note type="lemma">Ps 12,4a</note>
+                  <seg type="commentaryfragment" xml:id="plut-5-30-fr-12-14" source="Anonymous"
+                     corresp="#plut-5-30-ps-12-4a">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-12-14"
+                        source="Hesychius, schol. nr. 6 in Ps 12,4a (Antonelli; PG 27,689)"
+                        corresp="#person-10"/></seg>
+                  <note type="lemma">Ps 12,4a</note>
+                  <seg type="commentaryfragment" xml:id="plut-5-30-fr-12-15" source="Anonymous"
+                     corresp="#plut-5-30-ps-12-4a">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-12-15"
+                        source="Hesychius, comm. brevis in Ps 12,4a (18 Jagić)" corresp="#person-11"/>
+                     <note type="attribution">
+                        <foreign xml:lang="grc">ἐν ἄλλω</foreign>
+                     </note>
+                  </seg>
+                  <note type="lemma">Ps 12,4b</note>
+                  <seg type="commentaryfragment" xml:id="plut-5-30-fr-12-16" source="Anonymous"
+                     corresp="#plut-5-30-ps-12-4b">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-12-16"
+                        source="Hesychius, schol. nr. 7 in Ps 12,4b (Antonelli; PG 27,689)"
+                        corresp="#person-10"/>
+                  </seg>
+                  <note type="lemma">Ps 12,4b</note>
+                  <seg type="commentaryfragment" xml:id="plut-5-30-fr-12-17" source="Anonymous"
+                     corresp="#plut-5-30-ps-12-4b">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-12-17"
+                        source="Hesychius, comm. brevis in Ps 12,4b (18 Jagić)" corresp="#person-11"/>
+                     <note type="attribution">
+                        <foreign xml:lang="grc">ἐν ἄλλω ⁘</foreign>
+                     </note></seg>
+                  <note type="lemma">Ps 12,5a</note>
+                  <seg type="commentaryfragment" xml:id="plut-5-30-fr-12-18" source="Anonymous"
+                     corresp="#plut-5-30-ps-12-5a">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-12-18"
+                        source="Hesychius, schol. nr. 8 in Ps 12,5a (Antonelli; PG 27,689)"
+                        corresp="#person-10"/></seg>
+                  <note type="lemma">Ps 12,5a</note>
+                  <seg type="commentaryfragment" xml:id="plut-5-30-fr-12-19" source="Anonymous"
+                     corresp="#plut-5-30-ps-12-5a">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-12-19"
+                        source="Hesychius, comm. brevis in Ps 12,5a (18 Jagić)" corresp="#person-11"/>
+                     <note type="attribution">
+                        <foreign xml:lang="grc">ἐν ἄλλω:</foreign>
+                     </note>
+                  </seg>
+                  <note type="lemma">Ps 12,5b</note>
+                  <seg type="commentaryfragment" xml:id="plut-5-30-fr-12-20" source="Anonymous"
+                     corresp="#plut-5-30-ps-12-5b">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-12-20"
+                        source="Hesychius, schol. nr. 9 in Ps 12,5b (Antonelli; PG 27,689)"
+                        corresp="#person-10"/>
+                  </seg>
+                  <note type="lemma">Ps 12,5b</note>
+                  <seg type="commentaryfragment" xml:id="plut-5-30-fr-12-21" source="Anonymous"
+                     corresp="#plut-5-30-ps-12-5b">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-12-21"
+                        source="Hesychius, comm. brevis in Ps 12,5b (18 Jagić)" corresp="#person-11"/>
+                     <note type="attribution">
+                        <foreign xml:lang="grc">ἐν ἄλλω:</foreign>
+                     </note>
+                  </seg>
+                  <note type="lemma">Ps 12,6a</note>
+                  <seg type="commentaryfragment" xml:id="plut-5-30-fr-12-22" source="Anonymous"
+                     corresp="#plut-5-30-ps-12-6a">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-12-22"
+                        source="Hesychius, schol. nr. 10 in Ps 12,6a (Antonelli; PG 27,689)"
+                        corresp="#person-10"/>
+                  </seg>
+                  <note type="lemma">Ps 12,6a</note>
+                  <seg type="commentaryfragment" xml:id="plut-5-30-fr-12-23" source="Anonymous"
+                     corresp="#plut-5-30-ps-12-6a">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-12-23"
+                        source="Hesychius, comm. brevis in Ps 12,6a (18 Jagić)" corresp="#person-11"/>
+                     <note type="attribution">
+                        <foreign xml:lang="grc">ἐν ἄλλω: –</foreign>
+                     </note>
+                  </seg>
+                  <note type="lemma">Ps 12,6b</note>
+                  <seg type="commentaryfragment" xml:id="plut-5-30-fr-12-24" source="Anonymous"
+                     corresp="#plut-5-30-ps-12-6b">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-12-24"
+                        source="Hesychius, schol. nr. 11 in Ps 12,6b (Antonelli; PG 27,689)"
+                        corresp="#person-10"/>
+                  </seg>
+                  <note type="lemma">Ps 12,6b</note>
+                  <seg type="commentaryfragment" xml:id="plut-5-30-fr-12-25" source="Anonymous"
+                     corresp="#plut-5-30-ps-12-6b">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-12-25"
+                        source="Hesychius, comm. brevis in Ps 12,6b (18 Jagić)" corresp="#person-11"/>
+                     <note type="attribution">
+                        <foreign xml:lang="grc">ἐν ἄλλω</foreign>
+                     </note>
+                  </seg>
+               </ab>
+            </div>
+            <pb n="43v" facs="http://mss.bmlonline.it/s.aspx?Id=AWOIRjkiI1A4r7GxMC13#/oro/94"/>
+            <div type="commentary" subtype="commentary" xml:id="plut-5-30-12-5">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 12,6c</note>
+                  <seg type="commentaryfragment" xml:id="plut-5-30-fr-12-26" source="Anonymous"
+                     corresp="#plut-5-30-ps-12-6c">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-12-26"
+                        source="Hesychius, schol. nr. 12 in Ps 12,6c (Antonelli; PG 27,689)"
+                        corresp="#person-10"/>
+                  </seg>
+                  <note type="lemma">Ps 12,6d</note>
+                  <seg type="commentaryfragment" xml:id="plut-5-30-fr-12-27" source="Anonymous"
+                     corresp="#plut-5-30-ps-12-6d">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-12-27"
+                        source="Hesychius, schol. nr. 13 in Ps 12,6d (Antonelli; PG 27,689)"
+                        corresp="#person-10"/>
+                     <note type="lemma">Ps 12,6d</note>
+                     <seg type="commentaryfragment" xml:id="plut-5-30-fr-12-28" source="Anonymous"
+                        corresp="#plut-5-30-ps-12-6d">
+                        <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-12-28"
+                           source="Hesychius, schol. (?) in Ps 12,6d (ineditum?)"
+                           corresp="#person-10">Τοῦτον τὸν στίχον. δύο ζυγαὶ τῶν οζ´ ἑρμηνευτῶν
+                           εἶπαν· διατουτο παράκειται τὸ σημεῖον διατῆς κινναβάρεως τῶ στίχω. ὃ
+                           λέγεται μνήσκος· διαμὲν τῆς κεραιᾶς τῆς μεσης, σημαίνει τὸν στίχον· διὰ
+                           δὲ τῶν δύο στιγμῶν τῆς ἐπάνωθεν καὶ ὑποκάτω τὰς δύο ζυγὰς τῶν ἑρμηνευτῶν
+                           δηλοῖ: –</quote>
+                     </seg>
+                     <note type="lemma">Ps 12,6d</note>
+                     <seg type="commentaryfragment" xml:id="plut-5-30-fr-12-29" source="Anonymous"
+                        corresp="#plut-5-30-ps-12-6d">
+                        <quote type="patristic" subtype="quotation" xml:id="plut-5-30-quot-12-29"
+                           source="Hesychius, comm. brevis in Ps 12,6c–d (18 Jagić)"
+                           corresp="#person-11"/>
+                        <note type="attribution">
+                           <foreign xml:lang="grc">ἐν ἄλλω</foreign>
+                        </note>
+                     </seg>
+                  </seg>
+               </ab>
+            </div>
          </div>
       </body>
    </text>
