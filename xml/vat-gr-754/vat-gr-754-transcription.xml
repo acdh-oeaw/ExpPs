@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../schema/tei-psalmcatenae.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/tests-for-transcription.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!-- to be done: hexaplarische Varianten nicht von Anfang an fett markiert -->
 <!-- to be done: ab Ps 7: die gleiche Transformation wie bei den Lists of Contents anwenden (Trennungslinie zwischen den Kommentarfragmenten, Lemma-Eintrag am Anfang etc.) -->
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
@@ -397,6 +398,10 @@
                <person xml:id="person-69" role="author" sameAs="#person-13">
                   <persName>Origenes</persName>
                   <bibl>Origenes, fr. (PG 17)</bibl>
+               </person>
+               <person xml:id="person-70" role="author">
+                  <persName>Ps.-Iohannes Chrysostomus</persName>
+                  <bibl>Ps.-Johannes Chrys., hom. in illud - Exiit edictum (Lc 2,1) 2 (in Ps 2,9; PG 50, 798, 19–23)</bibl>
                </person>
             </listPerson>
          </sourceDesc>
@@ -1556,7 +1561,7 @@
                </ab>
             </div>
             <div xml:id="vat-gr-754-1-28" rendition="#top-of-the-page" rend="minuscule letters"
-               type="commentary">
+               type="commentary" subtype="commentary">
                <ab xml:id="vat-gr-754-1-29" xml:lang="grc">
                   <lb n="1"/><seg type="commentaryfragment" xml:id="vat-gr-754-fr-1-1"
                      source="Anonymous" rendition="#top-of-the-page" corresp="#vat-gr-754-ps-1"
@@ -1621,7 +1626,7 @@
                </ab>
             </div>
             <div xml:id="vat-gr-754-1-33" rendition="#bottom-of-the-page" rend="minuscule letters"
-               type="commentary">
+               type="commentary" subtype="commentary">
                <ab xml:id="vat-gr-754-1-34" xml:lang="grc">
                   <lb n="1"/><note xml:id="vat-gr-754-1-35" type="inline" place="left margin"><hi
                         rend="overline"><g type="linking" subtype="source"
@@ -1763,7 +1768,7 @@
             </div>
             <pb n="37v" facs="https://digi.vatlib.it/view/MSS_Vat.gr.754/37"/>
             <div xml:id="vat-gr-754-1-40" rendition="#top-of-the-page" rend="minuscule letters"
-               type="commentary">
+               type="commentary" subtype="commentary">
                <ab xml:id="vat-gr-754-1-41" xml:lang="grc">
                   <lb n="1"/><seg type="commentaryfragment" xml:id="vat-gr-754-fr-1-8"
                      rendition="#top-of-the-page" source="Anonymous" prev="#vat-gr-754-fr-1-7"
@@ -1893,7 +1898,7 @@
                   </choice> ὁδὸς ἀσεβῶν ἀπολεῖται: – </quote>
             </div>
             <div xml:id="vat-gr-754-1-51" rendition="#top-of-the-page" rend="minuscule letters"
-               type="commentary">
+               type="commentary" subtype="commentary">
                <ab xml:id="vat-gr-754-1-52" xml:lang="grc">
                   <lb n="4"/><note xml:id="vat-gr-754-1-53" type="inline" place="left margin"><hi
                         rend="overline"><g type="linking" subtype="source"
@@ -2017,7 +2022,7 @@
                </ab>
             </div>
             <div xml:id="vat-gr-754-1-58" rendition="#left-column" rend="minuscule letters"
-               type="commentary">
+               type="commentary" subtype="commentary">
                <ab xml:id="vat-gr-754-1-59" xml:lang="grc">
                   <lb n="1"/><note xml:id="vat-gr-754-1-60" place="left margin of left column"
                      type="inline"><hi rend="overline"><g type="linking" subtype="source"
@@ -2096,7 +2101,7 @@
                <!-- linking sign: ergänzt neben dem Fragment von C2 -->
             </div>
             <div xml:id="vat-gr-754-1-62" rendition="#bottom-of-the-page" rend="minuscule letters"
-               type="commentary">
+               type="commentary" subtype="commentary">
                <ab xml:id="vat-gr-754-1-63" xml:lang="grc">
                   <lb n="1"/><seg type="commentaryfragment" xml:id="vat-gr-754-fr-1-16"
                      prev="#vat-gr-754-fr-1-15" next="#vat-gr-754-fr-1-17"
@@ -2240,7 +2245,7 @@
                      corresp="#vat-gr-754-ps-1-4b">κονιορτός·</seg>
                </ab>
             </div>
-            <div rendition="#right-column" xml:id="vat-gr-754-1-72" type="commentary">
+            <div rendition="#right-column" xml:id="vat-gr-754-1-72" type="commentary" subtype="commentary">
                <ab xml:id="vat-gr-754-1-73" xml:lang="grc">
                   <lb n="8"/><note xml:id="vat-gr-754-1-74" type="inline"
                      place="left margin of right column"><hi rend="majuscule"><choice>
@@ -2694,7 +2699,7 @@
                </ab>
             </div>
             <div rendition="#top-of-the-page" type="commentary" rend="minuscule letters"
-               xml:id="vat-gr-754-2-27">
+               xml:id="vat-gr-754-2-27" subtype="commentary">
                <ab xml:id="vat-gr-754-2-28" xml:lang="grc">
                   <lb n="4"/><note xml:id="vat-gr-754-2-29" type="inline"
                      place="left margin of middle column"><hi rend="overline"><g type="linking"
@@ -2755,7 +2760,7 @@
                      source="Gregorius Nyssenus" corresp="#vat-gr-754-ps-2-1-1"><quote
                         type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-2-5"
                         source="Gregorius Nyss., Ps. inscr. VIII (92,15–24 McDonough) in Ps 2,7"
-                        next="#vat-gr-754-quot-2-6"><hi rend="ekthesis">Ἀ</hi>λλ’ ἐπειδὴ τὸ <choice>
+                        next="#vat-gr-754-quot-2-6" corresp="#person-24"><hi rend="ekthesis">Ἀ</hi>λλ’ ἐπειδὴ τὸ <choice>
                            <orig>μη</orig>
                            <reg type="correction">μὴ</reg>
                         </choice> δεῖν ἀσεβεῖν ἐν <choice>
@@ -2773,14 +2778,14 @@
                </ab>
             </div>
             <div rendition="#right-column" type="commentary" rend="minuscule letters"
-               xml:id="vat-gr-754-2-31">
+               xml:id="vat-gr-754-2-31" subtype="commentary">
                <ab xml:id="vat-gr-754-2-32" xml:lang="grc">
                   <lb n="1"/><seg type="commentaryfragment" xml:id="vat-gr-754-fr-2-4"
                      prev="#vat-gr-754-fr-2-3" rendition="#right-column"
                      corresp="#vat-gr-754-ps-2-1-1" source="Gregorius Nyssenus"><quote
                         xml:id="vat-gr-754-quot-2-6" prev="#vat-gr-754-quot-2-5" type="patristic"
                         subtype="quotation"
-                        source="Gregorius Nyss., Ps. inscr. VIII (92,15–24 McDonough) in Ps 2,7; φρυάξαντο – ἔθνη non habet McD."
+                        source="Gregorius Nyss., Ps. inscr. VIII (92,15–24 McDonough) in Ps 2,7; φρυάξαντο – ἔθνη non habet McD." corresp="#person-24"
                         >σήμερον μὲν γεννηθέν <lb n="2" break="no"/>τος <choice>
                            <orig>διημᾶς</orig>
                            <reg type="correction">δι’ ἡμᾶς</reg>
@@ -2939,7 +2944,7 @@
                </ab>
             </div>
             <div xml:id="vat-gr-754-2-41" rendition="#bottom-of-the-page" type="commentary"
-               rend="minuscule letters">
+               rend="minuscule letters" subtype="commentary">
                <ab xml:id="vat-gr-754-2-42" xml:lang="grc">
                   <lb n="1"/><seg type="commentaryfragment" xml:id="vat-gr-754-fr-2-10"
                      prev="#vat-gr-754-fr-2-9" source="Eusebius" rendition="#bottom-of-the-page"
@@ -3181,7 +3186,7 @@
                   <hi rend="ekthesis">ἐ</hi>γὼ σήμερον γεγέννηκά σε: </quote>
             </div>
             <div xml:id="vat-gr-754-2-57" rendition="#top-of-the-page" type="commentary"
-               rend="minuscule letters">
+               rend="minuscule letters" subtype="commentary">
                <ab xml:id="vat-gr-754-2-58" xml:lang="grc">
                   <lb n="1"/><note xml:id="vat-gr-754-2-59" type="inline" place="left margin"><hi
                         rend="overline"><g type="linking" subtype="source"
@@ -3280,7 +3285,7 @@
                </ab>
             </div>
             <div xml:id="vat-gr-754-2-62" rendition="#left-column" type="commentary"
-               rend="minuscule letters">
+               rend="minuscule letters" subtype="commentary">
                <ab xml:id="vat-gr-754-2-63" xml:lang="grc">
                   <lb n="1"/><seg xml:id="vat-gr-754-fr-2-21" prev="#vat-gr-754-fr-2-20"
                      rendition="#left-column" source="Anonymous" type="commentaryfragment"
@@ -3411,7 +3416,7 @@
                </ab>
             </div>
             <div xml:id="vat-gr-754-2-66" rendition="#bottom-of-the-page" type="commentary"
-               rend="minuscule letters">
+               rend="minuscule letters" subtype="commentary">
                <ab xml:id="vat-gr-754-2-67" xml:lang="grc">
                   <lb n="1"/><seg xml:id="vat-gr-754-fr-2-28" prev="#vat-gr-754-fr-2-27"
                      rendition="#bottom-of-the-page" source="Hesychius" type="commentaryfragment"
@@ -3695,7 +3700,7 @@
                </ab>
             </div>
             <div rendition="#right-column" rend="minuscule letters" type="commentary"
-               xml:id="vat-gr-754-2-84">
+               xml:id="vat-gr-754-2-84" subtype="commentary">
                <ab xml:id="vat-gr-754-2-85" xml:lang="grc">
                   <lb n="22"/><note type="inline" place="left margin of right column"
                      xml:id="vat-gr-754-2-86"><hi rend="overline"><g type="linking" subtype="source"
@@ -3853,7 +3858,7 @@
                </ab>
             </div>
             <div rendition="#top-of-the-page" rend="minuscule letters" xml:id="vat-gr-754-2-98"
-               type="commentary">
+               type="commentary" subtype="commentary">
                <ab xml:id="vat-gr-754-2-99" xml:lang="grc">
                   <lb n="1"/><seg type="commentaryfragment" xml:id="vat-gr-754-fr-2-37"
                      source="Gregorius Nazianzenus" corresp="#vat-gr-754-ps-2-8a"><quote
@@ -3970,7 +3975,7 @@
                </ab>
             </div>
             <div rendition="#right-column" rend="minuscule letters" xml:id="vat-gr-754-2-102"
-               type="commentary">
+               type="commentary" subtype="commentary">
                <ab xml:id="vat-gr-754-2-103" xml:lang="grc">
                   <lb n="1"/><seg type="commentaryfragment" xml:id="vat-gr-754-fr-2-39"
                      prev="#vat-gr-754-fr-2-38" source="Cyrillus" corresp="#vat-gr-754-ps-2-8a"
@@ -4099,7 +4104,7 @@
                </ab>
             </div>
             <div rendition="#left-column" rend="minuscule letters" xml:id="vat-gr-754-2-113"
-               type="commentary">
+               type="commentary" subtype="commentary">
                <ab xml:id="vat-gr-754-2-114" xml:lang="grc">
                   <lb n="5"/><note xml:id="vat-gr-754-2-115" type="inline"
                      place="left margin of left column"><g ref="#linking-sign-36" type="linking"
@@ -4147,7 +4152,7 @@
                </ab>
             </div>
             <div rendition="#bottom-of-the-page" rend="minuscule letters" xml:id="vat-gr-754-2-117"
-               type="commentary">
+               type="commentary" subtype="commentary">
                <ab xml:id="vat-gr-754-2-118" xml:lang="grc">
                   <lb n="1"/><g ref="#linking-sign-35" type="linking" subtype="source"
                      corresp="#vat-gr-754-ls-2-25"/>
@@ -4165,7 +4170,7 @@
                      rendition="#bottom-of-the-page" source="Theodorus"
                      corresp="#vat-gr-754-ps-2-9a"><quote xml:id="vat-gr-754-quot-2-47"
                         type="patristic" subtype="quotation"
-                        source="Theodorus, fr. in Ps 2,9 (15 Devreesse)"><hi rend="ekthesis"
+                        source="Theodorus, fr. in Ps 2,9 (15 Devreesse)" corresp="#person-22"><hi rend="ekthesis"
                         >Ο</hi>ὐχ ὥστε ἀπολέσαι καὶ ἀναλῶσαι συντρίβει. ἀλλ’ ὥστε ἀναπλάσαι· <lb
                            n="3"/>πρὸς τοῦτο γὰρ σκοπὸς <choice>
                            <orig>τῶ</orig>
@@ -4379,7 +4384,7 @@
                   </choice> τί ἐπληθύνθησαν <lb n="13"/>οἱ θλίβοντές με: – </quote>
             </div>
             <div xml:id="vat-gr-754-2-127" type="commentary" rendition="#top-margin"
-               rend="minuscule letters">
+               rend="minuscule letters" subtype="commentary">
                <ab xml:id="vat-gr-754-2-128" xml:lang="grc">
                   <lb n="1"/><hi rend="overline"><g type="linking" subtype="source"
                         corresp="#vat-gr-754-ref-2-22">KS</g></hi>
@@ -4437,7 +4442,7 @@
                      rendition="#right-column" corresp="#vat-gr-754-ps-3-2a"><quote
                         xml:id="vat-gr-754-quot-3-1" type="patristic"
                         source="Evagrius, schol. nr. α´ in Ps 3,2a (284 Rondeau – Géhin – Cassin)"
-                        subtype="quotation"><hi rend="ekthesis">Οἱ</hi> προκόπτον <lb n="13"
+                        subtype="quotation" corresp="#person-21"><hi rend="ekthesis">Οἱ</hi> προκόπτον <lb n="13"
                            break="no"/>τες πολλοὺς <lb n="14"/>τοὺς θλίβον <lb n="15" break="no"
                         />τας ἔχουσιν:</quote></seg>
                   <lb n="16"/><note xml:id="vat-gr-754-2-134" place="left margin of right column"
@@ -4478,7 +4483,7 @@
                </ab>
             </div>
             <div xml:id="vat-gr-754-2-136" type="commentary" rendition="#top-of-the-page"
-               rend="minuscule letters">
+               rend="minuscule letters" subtype="commentary">
                <ab xml:id="vat-gr-754-2-137" xml:lang="grc">
                   <lb n="1"/><seg type="commentaryfragment" xml:id="vat-gr-754-fr-2-50"
                      source="Eusebius" rendition="#top-of-the-page" corresp="#vat-gr-754-ps-2-12a"
@@ -4556,7 +4561,7 @@
                </ab>
             </div>
             <div xml:id="vat-gr-754-2-141" type="commentary" rendition="#left-column"
-               rend="minuscule letters">
+               rend="minuscule letters" subtype="commentary">
                <ab xml:id="vat-gr-754-2-142" xml:lang="grc">
                   <lb n="1"/><note xml:id="vat-gr-754-2-143" type="inline"
                      place="left margin of left column"><choice>
@@ -4570,7 +4575,7 @@
                      rendition="#left-column" source="Didymus" corresp="#vat-gr-754-ps-2-12c"><quote
                         xml:id="vat-gr-754-quot-2-53" type="patristic"
                         subtype="quotation-abbreviated"
-                        source="Didymus, fr. in Ps 2,12a–c (125 Mühlenberg)"><hi rend="ekthesis"
+                        source="Didymus, fr. in Ps 2,12a–c (125 Mühlenberg)" corresp="#person-6"><hi rend="ekthesis"
                            >Τ</hi>ὸ ἐν τάχει. <choice>
                            <orig>τῶ</orig>
                            <reg type="correction">τῷ</reg>
@@ -4616,7 +4621,7 @@
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-2-54"
                      rendition="#left-column" source="Theodorus" corresp="#vat-gr-754-ps-2-12d"
                         ><quote xml:id="vat-gr-754-quot-2-54" type="patristic" subtype="quotation"
-                        source="Theodorus, fr. in Ps 2,12 (16 Devreesse)"><hi rend="ekthesis"
+                        source="Theodorus, fr. in Ps 2,12 (16 Devreesse)" corresp="#person-22"><hi rend="ekthesis"
                         >Ἀ</hi>πρὶξ ἡμᾶς ἔχεσθαι <lb n="13"/>τῆς τοῦ <choice>
                            <abbr type="nomSac">κυ</abbr>
                            <expan>κυρίου</expan>
@@ -4635,7 +4640,7 @@
                </ab>
             </div>
             <div xml:id="vat-gr-754-3-1" type="commentary" rendition="#left-column"
-               rend="minuscule letters">
+               rend="minuscule letters" subtype="commentary">
                <ab xml:id="vat-gr-754-3-2" xml:lang="grc">
                   <lb n="1"/><note xml:id="vat-gr-754-3-3" type="inline"
                      place="left margin of left column"><g ref="#linking-sign-41" type="linking"
@@ -4669,7 +4674,7 @@
                </ab>
             </div>
             <div xml:id="vat-gr-754-3-4" type="commentary" rendition="#bottom-of-the-page"
-               rend="minuscule letters">
+               rend="minuscule letters" subtype="commentary">
                <ab xml:id="vat-gr-754-3-5" xml:lang="grc">
                   <lb n="1"/><seg type="commentaryfragment" xml:id="vat-gr-754-fr-3-5"
                      prev="#vat-gr-754-fr-3-4" source="Eusebius" corresp="#vat-gr-754-ps-3-1-1"
@@ -4814,7 +4819,7 @@
             </div>
             <pb n="40r" facs="https://digi.vatlib.it/view/MSS_Vat.gr.754/39"/>
             <div xml:id="vat-gr-754-3-10" type="commentary" rendition="#top-of-the-page"
-               rend="minuscule letters">
+               rend="minuscule letters" subtype="commentary">
                <ab xml:id="vat-gr-754-3-11" xml:lang="grc">
                   <lb n="1"/><seg type="hypothesis" xml:id="vat-gr-754-fr-3-10"
                      prev="#vat-gr-754-fr-3-9" rendition="#top-of-the-page" source="Theodoretus"
@@ -7477,7 +7482,7 @@
                      rendition="#top-of-the-page" source="Anonymous" corresp="#vat-gr-754-ps-5-1a"
                         ><quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-5-5"
                         prev="#vat-gr-754-quot-5-4"
-                        source="Gregorius Nyss., Ps. inscr. II 11 (120,20–121,2 McDonough) in Ps 5,1"
+                        source="Gregorius Nyss., Ps. inscr. II 11 (120,20–121,2 McDonough) in Ps 5,1" corresp="#person-24"
                         >κότι τοῦ τὸν ὄρθρον ἐπάγοντος· τοῦτο γὰρ ὀνομάζει ἡ ψαλμωδία· καὶ οὕτως
                         ἐστιν <lb n="2"/>ἀεὶ. εὑρεῖν νίκην ἐκ νίκης <choice>
                            <orig>τῶ ἀθλητῆ</orig>
@@ -11607,13 +11612,13 @@
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-7-19"
                      source="Aquila, Symmachus, Quinta, Sexta (Ps 7,10b)"
                      corresp="#vat-gr-754-ps-7-9b">A Ϲ Ε´ S´ καὶ κατευθύνει δίκαιος:</seg><ref
-                     target="bodl-auct-d-4-1:bodl-auct-d-4-1-hexaplaric-7-14" type="expanded">Oxon.
+                     target="#bodl-auct-d-4-1:bodl-auct-d-4-1-hexaplaric-7-14" type="expanded">Oxon.
                      Auct. D. 4. 1</ref><!-- to be done: ref. sichtbar machen -->
                   <note type="lemma">Ps 7,10c (δικαίως)</note>
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-7-20"
                      source="Septuaginta, Theodotion (Ps 7,10c–11a) = ... ὁ θεός. / δικαία ... pro ὁ θεὸς δικαίως / ..."
                      corresp="#vat-gr-754-ps-7-10c">Ο´ Θ δικαία</seg><ref
-                     target="bodl-auct-d-4-1:bodl-auct-d-4-1-hexaplaric-7-15" type="identical">Oxon.
+                     target="#bodl-auct-d-4-1:bodl-auct-d-4-1-hexaplaric-7-15" type="identical">Oxon.
                      Auct. D. 4. 1</ref><!-- to be done: ref. sichtbar machen -->
                   <note type="lemma">Ps 7,13a (στιλβώσει)</note>
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-7-21"
@@ -15287,7 +15292,7 @@
                      corresp="#vat-gr-754-ps-11-4a"><quote type="patristic" subtype="quotation"
                         xml:id="vat-gr-754-quot-11-3"
                         source="Evagrius, schol. nr. β´ in Ps 11,4a (348 Rondeau – Géhin – Cassin)"
-                        corresp="person-21"/><note type="attribution"><foreign xml:lang="grc"
+                        corresp="#person-21"/><note type="attribution"><foreign xml:lang="grc"
                            >β´</foreign></note></seg>
                </ab>
             </div>
@@ -15300,7 +15305,7 @@
                      rendition="#top-of-the-page" source="Theodoretus" corresp="vat-gr-754-ps-11-2a"
                         ><quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-11-4"
                         source="Theodoretus, comm. in Ps 11,2 (PG 80,941 B15–C4)"
-                        corresp="person-16"/><note type="attribution"><foreign xml:lang="grc"
+                        corresp="#person-16"/><note type="attribution"><foreign xml:lang="grc"
                            >Θεοδ(ωρήτου)</foreign></note><note type="textcritic">One variant
                         compared to PG's main text.</note></seg>
                   <note type="lemma">Ps 11,2</note>
@@ -15308,7 +15313,7 @@
                      rendition="#top-of-the-page" source="(Evagrius)" corresp="#vat-gr-754-ps-11-2a"
                         ><quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-11-5"
                         source="Evagrius, schol. nr. α´ in Ps 11,2 (348 Rondeau – Géhin – Cassin)"
-                        corresp="person-21"/><note type="attribution"><foreign xml:lang="grc"
+                        corresp="#person-21"/><note type="attribution"><foreign xml:lang="grc"
                            >α´</foreign></note></seg>
                </ab>
             </div>
@@ -15328,7 +15333,7 @@
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-11-7"
                      rendition="#right-column" source="Anonymous" corresp="#vat-gr-754-ps-11-3a"
                         ><quote type="patristic" subtype="unknown" xml:id="vat-gr-754-quot-11-7"
-                        source="Theodoretus, comm. in Ps 11,3a (PG 80,941 C6–7)" corresp="person-16"
+                        source="Theodoretus, comm. in Ps 11,3a (PG 80,941 C6–7)" corresp="#person-16"
                         /><note type="textual-commentary"><p>The linking sign used resembles the
                            abbreviation ωρ(ιγένους)</p></note></seg>
                   <note type="lemma">Ps 11,3b</note>
@@ -15345,7 +15350,7 @@
                      rendition="#right-column" source="Theodoretus" corresp="#vat-gr-754-ps-11-3b"
                         ><quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-11-9"
                         source="Theodoretus, comm. in Ps 11,3b (PG 80,941 C8–13)"
-                        corresp="person-16"/><note type="attribution"><foreign xml:lang="grc"
+                        corresp="#person-16"/><note type="attribution"><foreign xml:lang="grc"
                            >Θεοδ(ωρήτου)</foreign></note><note type="textcritic">One variant
                         compared to PG's main text.</note></seg>
                </ab>
@@ -15370,7 +15375,7 @@
                      corresp="#vat-gr-754-ps-11-4a"><quote type="patristic"
                         subtype="quotation/quotation/quotation" xml:id="vat-gr-754-quot-11-11"
                         source="Theodoretus, comm. in Ps 11,4 et in Ps 11,5 et in Ps 11,6 (PG 80,941 D1–944 C1)"
-                        corresp="person-16"><note type="attribution"><foreign xml:lang="grc"
+                        corresp="#person-16"><note type="attribution"><foreign xml:lang="grc"
                               >Θεοδ(ωρήτου)</foreign></note></quote><note type="textcritic">comm. in
                         Ps 11,5: some variants compared to PG's main text.</note></seg>
                </ab>
@@ -15550,7 +15555,7 @@
                      rendition="#left-column" source="(Evagrius)" corresp="#vat-gr-754-ps-11-9a"
                         ><quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-11-20"
                         source="Evagrius, schol. nr. γ´ in Ps 11,9a (350 Rondeau – Géhin –
-                        Cassin)"/><note type="attribution">γ´</note></seg>
+                        Cassin)" corresp="#person-21"/><note type="attribution">γ´</note></seg>
                   <note type="lemma">Ps 11,8</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-11-19"
                      rendition="#left-column" source="(Athanasius)" corresp="#vat-gr-754-ps-11-8a"
