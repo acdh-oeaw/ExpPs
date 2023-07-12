@@ -317,7 +317,7 @@ version="2.0">
 </xsl:template>
 
 <xsl:template match="tei:div[@type = 'text']">
-    <xsl:apply-templates select="child::node()"/>
+    <xsl:apply-templates select="tei:div[@type = 'psalmtext'] | tei:div[@type = 'commentary'] | tei:div[@type = 'textcritic']"/>
 </xsl:template>
     
 <xsl:template match="tei:div[@type = 'psalmtext']">
@@ -328,7 +328,7 @@ version="2.0">
     
 <xsl:template match="tei:div[@type = 'commentary' and not(exists(@rend))]">
     <div class="body-commentary">
-        <xsl:apply-templates select="child::node() except (tei:div[@type = 'links'])"/>
+        <xsl:apply-templates select="tei:p"/>
     </div>
 </xsl:template>
     
@@ -464,7 +464,7 @@ version="2.0">
 <xsl:template match="tei:div[@type = 'textcritic' and not(exists(@rend))]">
     <div class="body-textcritic">
         <xsl:apply-templates select="tei:app[@type = 'fragment']"/>
-        <xsl:apply-templates select="preceding-sibling::tei:div[@type = 'commentary'][1]/child::tei:div[@type = 'links']"/>
+        <!-- <xsl:apply-templates select="preceding-sibling::tei:div[@type = 'commentary'][1]/child::tei:div[@type = 'links']"/> -->
         <xsl:for-each select="tei:app[@type = 'text']">
             <xsl:apply-templates select="."/>
             <xsl:if test="position() != last()"><xsl:text> || </xsl:text></xsl:if>
@@ -598,6 +598,7 @@ version="2.0">
             <xsl:if test="position() != last()"><xsl:text> </xsl:text></xsl:if>
         </xsl:for-each>
     </p>
+    <xsl:apply-templates select="parent::tei:div[@type = 'textcritic']/preceding-sibling::tei:div[@type = 'commentary'][1]/child::tei:div[@type = 'links']"/>
 </xsl:template>
 
 <xsl:template match="tei:app[@type = 'text']">
