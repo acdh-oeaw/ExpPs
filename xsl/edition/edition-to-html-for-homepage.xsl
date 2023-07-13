@@ -142,7 +142,7 @@ version="2.0">
                                                         <xsl:element name="ul">
                                                             <xsl:attribute name="class" select="'collapse list-unstyled'"/>
                                                             <xsl:attribute name="id" select="concat('psalm-',@n)"/>
-                                                            <xsl:for-each select="./child::tei:div[@type = 'psalmverse']/child::tei:div[@type = 'text']/tei:div[@type = 'commentary']/tei:p">
+                                                            <xsl:for-each select="./child::tei:div[@type = 'psalmverse']/child::tei:div[@type = 'text']/tei:div[(@type = 'commentary') and (not(exists(@rend)) or (@rend != 'hide'))]/tei:p">
                                                                 <li>
                                                                     <xsl:element name="a">
                                                                         <xsl:attribute name="href" select="concat('#',@xml:id)"/>
@@ -332,13 +332,13 @@ version="2.0">
     </div>
 </xsl:template>
     
-<xsl:template match="tei:div[@type = 'links']">
+<xsl:template match="tei:div[@type = 'links']" mode="list-of-links">
     <div class="body-links">
-        <xsl:apply-templates select="child::tei:p/child::tei:listRef/child::tei:ref"/>
+        <xsl:apply-templates select="child::tei:p/child::tei:listRef/child::tei:ref" mode="list-of-references"/>
     </div>
 </xsl:template>
     
-<xsl:template match="tei:ref">
+<xsl:template match="tei:ref" mode="list-of-references">
     <xsl:text>→ </xsl:text>
     <a class="link-to-witness">
         <xsl:attribute name="href">
@@ -598,7 +598,7 @@ version="2.0">
             <xsl:if test="position() != last()"><xsl:text> </xsl:text></xsl:if>
         </xsl:for-each>
     </p>
-    <xsl:apply-templates select="parent::tei:div[@type = 'textcritic']/preceding-sibling::tei:div[@type = 'commentary'][1]/child::tei:div[@type = 'links']"/>
+    <xsl:apply-templates select="parent::tei:div[@type = 'textcritic']/preceding-sibling::tei:div[@type = 'commentary'][1]/child::tei:div[@type = 'links']" mode="list-of-links"/>
 </xsl:template>
 
 <xsl:template match="tei:app[@type = 'text']">
