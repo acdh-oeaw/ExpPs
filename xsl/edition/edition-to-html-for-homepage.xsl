@@ -568,13 +568,21 @@ version="2.0">
         </xsl:if>
         <xsl:if test="not(exists(parent::tei:div[@type = 'commentary']/@rend))">
             <div class="col-md-5 large-greek-text">
-                <xsl:value-of select="text()"/>
+                <xsl:apply-templates select="text() | tei:span[@type = 'text-critical']"/>
             </div>
             <div class="col-md-5 large-latin-text">
                 <xsl:apply-templates select="parent::tei:div/parent::tei:div/parent::tei:div/tei:div[@type = 'translation']/tei:p[current()/@xml:id = substring-after(@corresp,'#')]"/>
             </div>
         </xsl:if>
     </div>
+</xsl:template>
+    
+<xsl:template match="tei:span[@type = 'text-critical']">
+    <xsl:element name="span">
+        <xsl:attribute name="id" select="@xml:id"/>
+        <xsl:attribute name="class" select="'textcritical'"/>
+        <xsl:value-of select="text()"/>
+    </xsl:element>
 </xsl:template>
 
 <xsl:template match="tei:p[parent::tei:div[@xml:lang = 'de']]">
