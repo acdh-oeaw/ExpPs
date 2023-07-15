@@ -467,7 +467,14 @@ version="2.0">
         <xsl:apply-templates select="tei:app[@type = 'fragment']"/>
         <!-- <xsl:apply-templates select="preceding-sibling::tei:div[@type = 'commentary'][1]/child::tei:div[@type = 'links']"/> -->
         <xsl:for-each select="tei:app[@type = 'text']">
-            <xsl:apply-templates select="."/>
+            <xsl:element name="span">
+                <xsl:attribute name="class" select="'apparatus-entry'"/>
+                <xsl:attribute name="id" select="generate-id(.)"/>
+                <xsl:variable name="reference" select="substring-after(@corresp,'#')"/>
+                <xsl:apply-templates select=".">
+                    <xsl:with-param name="reference" select="$reference"/>
+                </xsl:apply-templates>
+            </xsl:element>
             <xsl:if test="position() != last()"><xsl:text> || </xsl:text></xsl:if>
         </xsl:for-each>
         <xsl:apply-templates select="tei:note[@type = 'textual-commentary']"/>
@@ -577,10 +584,22 @@ version="2.0">
     </div>
 </xsl:template>
     
-<xsl:template match="tei:span[@type = 'text-critical']">
+<xsl:template match="tei:span[(@type = 'text-critical') and parent::tei:p]">
+    <xsl:variable name="current-node" select="."/>
     <xsl:element name="span">
         <xsl:attribute name="id" select="@xml:id"/>
         <xsl:attribute name="class" select="'textcritical'"/>
+        <xsl:attribute name="data-id" select="generate-id(//tei:app[@type = 'text'][@corresp = concat('#',$current-node/@xml:id)])"/>
+        <xsl:apply-templates select="text() | tei:span"/>
+    </xsl:element>
+</xsl:template>
+    
+<xsl:template match="tei:span[(@type = 'text-critical') and parent::tei:span]">
+    <xsl:variable name="current-node" select="."/>
+    <xsl:element name="span">
+        <xsl:attribute name="id" select="@xml:id"/>
+        <xsl:attribute name="class" select="'textcritical-embedded'"/>
+        <xsl:attribute name="data-id" select="generate-id(//tei:app[@type = 'text'][@corresp = concat('#',$current-node/@xml:id)])"/>
         <xsl:value-of select="text()"/>
     </xsl:element>
 </xsl:template>
@@ -611,9 +630,12 @@ version="2.0">
 </xsl:template>
 
 <xsl:template match="tei:app[@type = 'text']">
-    <b>
-    <xsl:apply-templates select="tei:lem"/>
-    </b>
+    <xsl:param name="reference"/>
+    <xsl:element name="span">
+        <xsl:attribute name="class" select="'apparatus-entry-lemma'"/>
+        <xsl:attribute name="data-id" select="$reference"/>
+        <xsl:apply-templates select="tei:lem"/>
+    </xsl:element>
     <xsl:if test="exists(tei:lem/@wit)">
         <xsl:text> </xsl:text>
     </xsl:if>
