@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../schema/tei-psalmcatenae.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-   <!-- Ps 8 inklusiv: die Position der ExpPs wird angegeben -->
+   <!-- Katene: Ps 8 inklusiv: Position der ExpPs angegeben -->
+   <!-- faciendum: Ps 11 und 13: Angabe der Halblemmata zu ergänzen und Ektheseis berücksichtigen -->
+   <!-- faciendum: Ps 11, 12, 13: Referenzen zu Par. gr. 139 zu ergänzen -->
+   <!-- faciendum: Ps 11 und 13: Vat. gr. 1422: Plut. 6. 3: Liste der Fragmente miteinander zu vergleichen -->
+   <!-- faciendum: Ps 11 und 13: Autorenangabe zu überprüfen: Theodorus etc. -->
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -598,7 +602,8 @@
                            σάρκ<supplied reason="illegible">α</supplied> γέννησιν τοῦ μονογενοῦς
                            <supplied reason="illegible" cert="high">υἱοῦ</supplied> οἰκειοῦ<unclear
                            reason="faded-ink">ται ὁ πατήρ:</unclear></quote>
-                     <ref target="#vat-gr-754:vat-gr-754-fr-2-31" type="identical">Vat. gr. 754</ref>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-2-31" type="identical">Vat. gr.
+                        754</ref>
                   </seg><!-- Position: Mitte unten -->
                </ab>
             </div>
@@ -1121,7 +1126,8 @@
                      <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-6-1"
                         corresp="#person-2" source="Athanasius, exp. in Ps 6,3b–4a">αἱ τῆς ψυχῆς
                         δηλονότι δυνάμεις:</quote>
-                     <ref target="#vat-gr-754:vat-gr-754-fr-6-12" type="identical">Vat. gr. 754</ref>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-6-12" type="identical">Vat. gr.
+                        754</ref>
                      <note type="attribution"><foreign xml:lang="grc"
                      >Ἀθα(νασίου):</foreign></note><!-- Position: unten Mitte -->
                   </seg>
@@ -1188,7 +1194,8 @@
                      <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-6-7"
                         corresp="#person-2" source="Athanasius, exp. in Ps 6,9a">ὡς ἤδη
                         εἰσακουσθεὶς, μακρὸν κατὰ τῶν ἐχθρῶν συνείρει λόγον:</quote>
-                     <ref target="#vat-gr-754:vat-gr-754-fr-6-30" type="identical">Vat. gr. 754</ref>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-6-30" type="identical">Vat. gr.
+                        754</ref>
                      <note type="attribution"><foreign xml:lang="grc">ἄλλω(ς)
                         Ἀθα(νασίου):</foreign></note><!-- Position: unten oben -->
                   </seg>
@@ -1397,7 +1404,8 @@
                      <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-7-4"
                         corresp="#person-2" source="Athanasius, exp. in Ps 7,7b"> τουτ(έστιν) ἐν
                         τοῖς κραταιοῖς τῶν ἐχθρῶν σου· πέρατα γὰρ τὰ ἄκρα δηλοῖ:</quote>
-                     <ref target="#vat-gr-754:vat-gr-754-fr-7-17" type="identical">Vat. gr. 754</ref>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-7-17" type="identical">Vat. gr.
+                        754</ref>
                      <note type="attribution"><foreign xml:lang="grc">Ἀθα(νασίου):</foreign></note>
                   </seg>
                   <note type="lemma">Ps 7,6</note>
@@ -1641,7 +1649,8 @@
                      <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-8-6"
                         corresp="#person-2" source="Athanasius, exp. in Ps 8,5-7b">ταῦτα τοῦ Παύλου
                         σαφῶς ἐπὶ τὸν σωτῆρα ἡμῶν ἐξειληφότος, ἀρκεῖσθαι τῆι ἐκδόσει χρή ⁘</quote>
-                     <ref target="#vat-gr-754:vat-gr-754-fr-8-16" type="identical">Vat. gr. 754</ref>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-8-16" type="identical">Vat. gr.
+                        754</ref>
                      <note type="attribution"><foreign xml:lang="grc">τοῦ
                      αὐτοῦ:</foreign></note><!-- Position: unten oben -->
                   </seg>
@@ -2062,7 +2071,8 @@
                         corresp="#person-2" source="Athanasius, exp. in Ps 9,5b">Τὸ ἐκάθισας τὴν εἰς
                         τὸ κρίνει<unclear reason="ductus">ν</unclear> ἐπισκοπὴν δηλοῖ τοῦ
                         θεοῦ:</quote>
-                     <ref target="#vat-gr-754:vat-gr-754-fr-9-11" type="identical">Vat. gr. 754</ref>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-9-11" type="identical">Vat. gr.
+                        754</ref>
                      <note type="textual-commentayr"><p>This Expositio lies between the Psalm
                            lines.</p></note>
                   </seg>
@@ -2170,7 +2180,8 @@
                      <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-9-12"
                         corresp="#person-2" source="Athanasius, exp. in Ps 9,16">Ταῦτα φη(σὶ)
                         πεπόνθασιν ἃ τοῖς ἁγίοις ἐξήρτυσαν:</quote>
-                     <ref target="#vat-gr-754:vat-gr-754-fr-9-51" type="identical">Vat. gr. 754</ref>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-9-51" type="identical">Vat. gr.
+                        754</ref>
                      <note type="attribution"><foreign xml:lang="grc"
                         >Ἀθα(νασίου)</foreign></note><note type="textual-commentary"><p>This
                            Expositio lies between the Psalm lines (above Ps 9,15c).</p></note>
@@ -2297,7 +2308,8 @@
                      <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-9-20"
                         corresp="#person-2" source="Athanasius, exp. in Ps 9,26a">ἀρχὴ πάσης πονηρᾶς
                         πράξεως. τὸ μὴ λογίζεσθαι κριτὴν τὸν θεόν ⁘</quote>
-                     <ref target="#vat-gr-754:vat-gr-754-fr-9-78" type="identical">Vat. gr. 754</ref>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-9-78" type="identical">Vat. gr.
+                        754</ref>
                      <note type="attribution"><foreign xml:lang="grc"
                      >Ἀθα(νασίου):</foreign></note><!-- Position: Mitte oben -->
                   </seg>
@@ -2413,8 +2425,8 @@
                         source="Athanasius, exp. in Ps 9,36b">δι᾿ αὐτὴν τὴν ἁμαρτίαν οὐ μὴ εὑρεθῆ·
                         τὸ δὲ ὅλον οὕτως· ἐὰν φη(σὶν) ἐκζητήσης τὴν ἁμαρτίαν τοῦ πονηροῦ· οὐ μὴ
                         εὑρεθῆ· τουτ(έστιν) ἀπολεῖται ὁ πονηρὸς δι’ αὐτήν ⁘</quote>
-                     <ref target="#vat-gr-754:vat-gr-754-fr-9-122" type="expanded-with-variants">Vat.
-                        gr. 754</ref>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-9-122" type="expanded-with-variants"
+                        >Vat. gr. 754</ref>
                      <note type="attribution"><foreign xml:lang="grc"
                      >Ἀθα(νασίου):</foreign></note><!-- Position: Mitte oben -->
                   </seg>
@@ -2778,15 +2790,16 @@
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-11-19"
                      rendition="#bottom-of-the-page" source="Anonymous" corresp="#plut-6-3-ps-11-4a"
                      copyOf="#edition:edition-11-5-1"><quote type="patristic" subtype="quotation"
-                        xml:id="plut-6-3-quote-11-19" source="Athanasius, exp. in Ps 11,4–5a" corresp="#person-2">πῶς
-                        γὰρ οὐ μεγαλο<add place="above" hand="corr">ρ</add>ρήμων ἡ γλῶσσα ἐκείνη ἡ
-                        τολμῶσα τῶ κυρίω λέγειν· ἐν ποία ἐξουσία ταῦτα ποιεῖς καὶ τίς σοι ἔδωκε<del
-                           rend="erasure"><gap reason="illegible" unit="character" quantity="1"
-                           /></del> τὴν ἐξουσίαν ταύτην: [Mc 11,28]</quote><ref
-                        target="#vat-gr-754:vat-gr-754-fr-11-10" type="with-variants">Vat. gr.
-                        754</ref><note type="attribution"><foreign xml:lang="grc"
-                        >ἄλλω(ς):</foreign></note><note type="parallels">Ambr. C 98 sup. (f. 17v,
-                        middle-bottom): <foreign xml:lang="grc">ἄλλω(ς):</foreign></note></seg>
+                        xml:id="plut-6-3-quote-11-19" source="Athanasius, exp. in Ps 11,4–5a"
+                        corresp="#person-2">πῶς γὰρ οὐ μεγαλο<add place="above" hand="corr"
+                        >ρ</add>ρήμων ἡ γλῶσσα ἐκείνη ἡ τολμῶσα τῶ κυρίω λέγειν· ἐν ποία ἐξουσία
+                        ταῦτα ποιεῖς καὶ τίς σοι ἔδωκε<del rend="erasure"><gap reason="illegible"
+                              unit="character" quantity="1"/></del> τὴν ἐξουσίαν ταύτην: [Mc
+                        11,28]</quote><ref target="#vat-gr-754:vat-gr-754-fr-11-10"
+                        type="with-variants">Vat. gr. 754</ref><note type="attribution"><foreign
+                           xml:lang="grc">ἄλλω(ς):</foreign></note><note type="parallels">Ambr. C 98
+                        sup. (f. 17v, middle-bottom): <foreign xml:lang="grc"
+                        >ἄλλω(ς):</foreign></note></seg>
                   <note type="lemma">Ps 11,5a</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-11-20"
                      rendition="#bottom-of-the-page" source="Anonymous" corresp="#plut-6-3-ps-11-5a"
@@ -2932,7 +2945,8 @@
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-11-36"
                      rendition="#bottom-of-the-page" source="Anonymous" corresp="#plut-6-3-ps-11-6a"
                         ><quote type="patristic" subtype="quotation" xml:id="plut-6-3-quote-11-36"
-                        source="Hesychius, comm. brevis in Ps 11,5b–c (17 Jagić)" corresp="#person-10"/></seg>
+                        source="Hesychius, comm. brevis in Ps 11,5b–c (17 Jagić)"
+                        corresp="#person-10"/></seg>
                   <note type="lemma">Ps 11,6a</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-11-37"
                      rendition="#bottom-of-the-page" source="Iohannes Chrysostomus"
@@ -2984,12 +2998,13 @@
                      rendition="#bottom-of-psalm-column" source="Anonymous"
                      corresp="#plut-6-3-ps-11-7" copyOf="#edition:edition-11-7-1"><quote
                         type="patristic" subtype="quotation" xml:id="plut-6-3-quote-11-40"
-                        source="Athanasius, exp. in Ps 11,7b" corresp="#person-2">ἀληθεῖς φη(σὶν) οἱ λόγοι· οἱ <unclear
-                           reason="abbreviation">παρὰ</unclear> τοῦ σωτῆρος ἐπηγγελμένοι· ὡς καὶ τὸ
-                        ἀργύριον πολλάκις χωνευθὲν· καθαρόν (ἐστιν):</quote><ref
-                        target="#vat-gr-754:vat-gr-754-fr-11-17" type="with-variants">Vat. gr.
-                        754</ref><note type="parallels">Ambr. C 98 sup. (f. 18v, Psalm-column):
-                           <foreign xml:lang="grc">Ἀθα(νασίου):</foreign></note></seg>
+                        source="Athanasius, exp. in Ps 11,7b" corresp="#person-2">ἀληθεῖς φη(σὶν) οἱ
+                        λόγοι· οἱ <unclear reason="abbreviation">παρὰ</unclear> τοῦ σωτῆρος
+                        ἐπηγγελμένοι· ὡς καὶ τὸ ἀργύριον πολλάκις χωνευθὲν· καθαρόν
+                        (ἐστιν):</quote><ref target="#vat-gr-754:vat-gr-754-fr-11-17"
+                        type="with-variants">Vat. gr. 754</ref><note type="parallels">Ambr. C 98
+                        sup. (f. 18v, Psalm-column): <foreign xml:lang="grc"
+                        >Ἀθα(νασίου):</foreign></note></seg>
                </ab>
             </div>
             <pb n="53r" facs="http://mss.bmlonline.it/s.aspx?Id=AWOHzHpBI1A4r7GxMB-P#/oro/111"/>
@@ -3018,9 +3033,9 @@
                         corresp="#person-2">Διατοῦτο φη(σὶ) φυλάξεις ἡμᾶς· ἐπειδὴ κυκλοῦντες
                         κυκλοῦσιν ἡμᾶς οἱ ἀσεβεῖς ἐπιβουλεύοντες τῆι ἡμῶν σωτηρία· οὗτοι δ᾿ ἂν εἶεν
                         αἱ ἀντικείμεναι καὶ πονηραὶ δυνάμεις:</quote><ref
-                        target="#vat-gr-754:vat-gr-754-fr-11-19" type="with-variants">Vat. gr. 754</ref><note
-                        type="attribution"><foreign xml:lang="grc"
-                        >Ἀθα(νασίου):</foreign></note><note type="parallels">Ambr. C 98 sup. (f.
+                        target="#vat-gr-754:vat-gr-754-fr-11-19" type="with-variants">Vat. gr.
+                        754</ref><note type="attribution"><foreign xml:lang="grc"
+                           >Ἀθα(νασίου):</foreign></note><note type="parallels">Ambr. C 98 sup. (f.
                         18v, top-bottom): <foreign xml:lang="grc"
                      >Ἀθα(νασίου):</foreign></note></seg>
                   <note type="lemma">Ps 11,9a</note>
@@ -3039,8 +3054,8 @@
                         πολυχρονιότητα· ἵν᾿ ἦ τοιοῦτον· διὰ τῆς σῆς ἰσχύος πολυχρονιότητα καὶ
                         αἰώνιον ζωὴν ἡμῖν δέδωκας· ἢ ὕψος λέγει· ὅτι ὁμοίους σου ἐποίησας· ὡς
                         ἀνθρώπω δυνατόν· ἢ ὅτι πολλῆς φροντίδος ἠξίωσας ⁘</quote><ref
-                        target="#vat-gr-754:vat-gr-754-11-11" type="abbreviated-with-variants">Vat. gr.
-                        754</ref><note type="attribution"><foreign xml:lang="grc"
+                        target="#vat-gr-754:vat-gr-754-11-11" type="abbreviated-with-variants">Vat.
+                        gr. 754</ref><note type="attribution"><foreign xml:lang="grc"
                            >Ἀθα(νασίου):</foreign></note><note type="parallels">Ambr. C 98 sup. (f.
                         18v, middle-top): <foreign xml:lang="grc"
                      >Ἀθα(νασίου):</foreign></note></seg>
@@ -3076,12 +3091,427 @@
                               >ὠρ(ι)γ(ένους):</foreign></note></quote></seg>
                </ab>
             </div>
-            <!-- <note type="lemma">Ps 11,XXX</note>
-                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-11-XXX" rendition="#XXX" source="XXX"
-                     corresp="#plut-6-3-ps-11-XXX"><quote type="patristic" subtype="XXX"
-                        xml:id="plut-6-3-quote-11-XXX" source="XXX"
-                        corresp="#person-XXX"></quote></seg> -->
+            <!-- Ps 12 bibletext -->
+            <div type="bibletext" subtype="commented" xml:id="plut-6-3-12-1">
+               <ab xml:lang="grc">
+                  <quote type="bibletext" xml:id="plut-6-3-ps-12-1" n="Ps (LXX) 12,1"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-12-1">
+                     <anchor type="psalmtext" xml:id="plut-6-3-ps-12-1a" n="Ps (LXX) 12,1a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-12-1"/> Εἰς τὸ τέλος· ψαλμὸς τῷ
+                     Δαυιδ.</quote>
+                  <quote type="bibletext" xml:id="plut-6-3-ps-12-2" n="Ps (LXX) 12,2"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-12-2">
+                     <anchor type="psalmtext" xml:id="plut-6-3-ps-12-2a" n="Ps (LXX) 12,2a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-12-2"/> ῞Εως πότε, κύριε, ἐπιλήσῃ
+                     μου εἰς τέλος; <anchor type="psalmtext" xml:id="plut-6-3-ps-12-2b"
+                        n="Ps (LXX) 12,2b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-12-2"/> ἕως πότε
+                     ἀποστρέψεις τὸ πρόσωπόν σου ἀπ᾽ ἐμοῦ;</quote>
+                  <quote type="bibletext" xml:id="plut-6-3-ps-12-3" n="Ps (LXX) 12,3"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-12-3">
+                     <anchor type="psalmtext" xml:id="plut-6-3-ps-12-3a" n="Ps (LXX) 12,3a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-12-3"/> ἕως τίνος θήσομαι βουλὰς ἐν
+                     ψυχῇ μου, <anchor type="psalmtext" xml:id="plut-6-3-ps-12-3b"
+                        n="Ps (LXX) 12,3b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-12-3"/> ὀδύνας
+                     ἐν καρδίᾳ μου ἡμέρας; <anchor type="psalmtext" xml:id="plut-6-3-ps-12-3c"
+                        n="Ps (LXX) 12,3c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-12-3"/> ἕως πότε
+                     ὑψωθήσεται ὁ ἐχθρός μου ἐπ᾽ ἐμέ;</quote>
+                  <quote type="bibletext" xml:id="plut-6-3-ps-12-4" n="Ps (LXX) 12,4"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-12-4">
+                     <anchor type="psalmtext" xml:id="plut-6-3-ps-12-4a" n="Ps (LXX) 12,4a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-12-4"/> ἐπίβλεψον, εἰσάκουσόν μου,
+                     κύριε ὁ θεός μου· <anchor type="psalmtext" xml:id="plut-6-3-ps-12-4b"
+                        n="Ps (LXX) 12,4b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-12-4"/> φώτισον
+                     τοὺς ὀφθαλμούς μου, μήποτε ὑπνώσω εἰς θάνατον, </quote>
+                  <quote type="bibletext" xml:id="plut-6-3-ps-12-5" n="Ps (LXX) 12,5"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-12-5">
+                     <anchor type="psalmtext" xml:id="plut-6-3-ps-12-5a" n="Ps (LXX) 12,5a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-12-5"/> μήποτε εἴπῃ ὁ ἐχθρός μου
+                     ῎Ισχυσα πρὸς αὐτόν· <anchor type="psalmtext" xml:id="plut-6-3-ps-12-5b"
+                        n="Ps (LXX) 12,5b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-12-5"/> οἱ
+                     θλίβοντές με ἀγαλλιάσονται, ἐὰν σαλευθῶ. </quote>
+                  <quote type="bibletext" xml:id="plut-6-3-ps-12-6" n="Ps (LXX) 12,6"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-12-6">
+                     <anchor type="psalmtext" xml:id="plut-6-3-ps-12-6a" n="Ps (LXX) 12,6a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-12-6"/> ἐγὼ δὲ ἐπὶ τῷ ἐλέει σου
+                     ἤλπισα, <anchor type="psalmtext" xml:id="plut-6-3-ps-12-6b" n="Ps (LXX) 12,6b"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-12-6"/> ἀγαλλιάσεται ἡ καρδία μου
+                     ἐπὶ τῷ σωτηρίῳ σου· <anchor type="psalmtext" xml:id="plut-6-3-ps-12-6c"
+                        n="Ps (LXX) 12,6c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-12-6"/> ᾄσω τῷ
+                     κυρίῳ τῷ εὐεργετήσαντί με <anchor type="psalmtext" xml:id="plut-6-3-ps-12-6d"
+                        n="Ps (LXX) 12,6d" corresp="../psalms-LXX/psalms.xml#Ps-LXX-12-6"/> καὶ ψαλῶ
+                     τῷ ὀνόματι κυρίου τοῦ ὑψίστου. </quote>
+               </ab>
+            </div>
             <!-- Ps 12 commentary -->
+            <div type="commentary" subtype="commentary" xml:id="plut-6-3-12-2"
+               rendition="#middle-of-the-page">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 12,1</note>
+                  <seg type="hypothesis" xml:id="plut-6-3-fr-12-1" rendition="#middle-of-the-page"
+                     source="Anonymous" corresp="#plut-6-3-ps-12-1a"><quote type="patristic"
+                        subtype="quotation" xml:id="plut-6-3-quot-12-1"
+                        source="Theodoretus, comm. in Ps 12,1 (PG 80,945 A2–9)" corresp="#person-16"
+                        /><ref target="#vat-gr-754:vat-gr-754-fr-12-5" type="with-variants">Vat. gr.
+                        754</ref>
+                     <note type="attribution">
+                        <foreign xml:lang="grc">ὑπόθ(εσις):</foreign>
+                     </note></seg>
+                  <note type="lemma">Ps 12,2 (Ἕως πότε κύριε ἐπιλήσῃ)</note>
+                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-12-2"
+                     rendition="#middle-of-the-page" source="Anonymous" corresp="#plut-6-3-ps-12-2a">
+                     <quote type="patristic"
+                        subtype="quotation-paraphrase/quotation-abbreviated-and-adapted"
+                        xml:id="plut-6-3-quot-12-2"
+                        source="Asterius, hom. 23,9 in Ps. 12 (178,7–10 Richard) in Ps 12,2a - Idem, hom. 24,1 in Ps. 12 (182,12–15 Richard) in Ps 12,2a"
+                        corresp="#person-40"/>
+                  </seg>
+                  <note type="lemma">Ps 12,2 (Ἕως πότε κύριε ἐπιλήσῃ)</note>
+                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-12-3"
+                     rendition="#middle-of-the-page" source="Anonymous" corresp="#plut-6-3-ps-12-2a">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-12-3"
+                        source="Theodoretus, comm. in Ps 12,2a (PG 80,945 A10–12 sub Ps 12,1)"
+                        corresp="#person-16"/><note type="attribution"><foreign xml:lang="grc"
+                           >ἄλλω(ς):</foreign></note>
+                  </seg>
+                  <note type="lemma">Ps 12,2a (sic) (Εως πότε κύριε ἐπιλήσῃ)</note>
+                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-12-4"
+                     rendition="#middle-of-the-page" source="Theodorus Antiochenus"
+                     corresp="#plut-6-3-ps-12-2a">
+                     <quote type="patristic" subtype="quotation-abbreviated"
+                        xml:id="plut-6-3-quot-12-4"
+                        source="Theodorus Mops., fr. in Ps 12,3 (76,25–31; 77,4–6.8–11 Devreesse)"
+                        corresp="#person-22"/>
+                     <note type="attribution">
+                        <foreign xml:lang="grc">Θεοδω(ρου) ἀντιοχ(είας):</foreign>
+                     </note>
+                  </seg>
+                  <note type="lemma">Ps 12,2b (ἕως πότε ἀποστρέψεις)</note>
+                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-12-5"
+                     rendition="#middle-of-the-page" source="Anonymous" corresp="#plut-6-3-ps-12-2b">
+                     <quote type="patristic" subtype="quotation-abbreviated-and-paraphrase"
+                        xml:id="plut-6-3-quot-12-5"
+                        source="Theodoretus, comm. in Ps 12,2b (PG 80,945 A15–B2.B5–6 sub Ps 12,1)"
+                        corresp="#person-16"/>
+                  </seg>
+                  <note type="lemma">Ps 12,3a–b (ἕως τίνος θήσομαι)</note>
+                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-12-6"
+                     rendition="#middle-of-the-page" source="Anonymous" corresp="#plut-6-3-ps-12-3a">
+                     <quote type="patristic" subtype="quotation-adapted" xml:id="plut-6-3-quot-12-6"
+                        source="Asterius, hom. 24,8 in Ps. 12 (184,21–22 Richard) in Ps 12,3a"
+                        corresp="#person-40"/>
+                  </seg>
+                  <note type="lemma">Ps 12,3a–b (ἕως τίνος θήσομαι)</note>
+                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-12-7"
+                     rendition="#middle-of-the-page" source="Anonymous" corresp="#plut-6-3-ps-12-3a"
+                     copyOf="#edition:edition-12-3-1">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-12-7"
+                        source="Athanasius, exp. in Ps 12,2b–3b" corresp="#person-2">Ἀνιῶμαι
+                        βουλευόμενος κατὰ ψυχὴν· μήπως ἄρα ἐν τῆι ἁμαρτία ἀποθανοῦμαι· καὶ τοῦτό
+                        (ἐστιν)· ὃ μάλιστα τῆι ψυχῆι μου. ὀδύνας παρασκευάζει ⁘</quote>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-12-7" type="with-variants">Vat. gr.
+                        754</ref><note type="attribution"><foreign xml:lang="grc"
+                        >ἄλλω(ς):</foreign></note><note type="parallels">Ambros. C 98 sup. (f. 18v,
+                        bottom-middle): Attribution: <foreign xml:lang="grc"
+                        >ἄλλω(ς):</foreign></note>
+                  </seg>
+               </ab>
+            </div>
+            <div type="commentary" subtype="commentary" xml:id="plut-6-3-12-3"
+               rendition="#bottom-of-the-page">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 12,3c</note>
+                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-12-8"
+                     rendition="#bottom-of-the-page" source="Anonymous" corresp="#plut-6-3-ps-12-3c">
+                     <quote type="patristic" subtype="quotation-abbreviated"
+                        xml:id="plut-6-3-quot-12-8"
+                        source="Asterius, hom. 24,9 in Ps. 12 (184,26–29 Richard) in Ps 12,3c et in Ps 12,4a"
+                        corresp="#person-40"/>
+                  </seg>
+                  <note type="lemma">Ps 12,3c</note>
+                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-12-9"
+                     rendition="#bottom-of-the-page" source="Theodorus" corresp="#plut-6-3-ps-12-3c">
+                     <quote type="patristic" subtype="quotation-adapted" xml:id="plut-6-3-quot-12-9"
+                        source="Theodoretus, comm. in Ps 12,3c (PG 80,945 B15–C3)"
+                        corresp="#person-16"/><ref target="#vat-gr-1422:vat-gr-1422-fr-12-19"
+                        type="XXX">Vat. gr. 1422</ref>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-12-10" type="with-variants">Vat. gr.
+                        754</ref>
+                     <note type="attribution">
+                        <foreign xml:lang="grc">Θεοδώ(ρου):</foreign>
+                     </note>
+                  </seg>
+                  <note type="lemma">Ps 12,3c</note>
+                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-12-10"
+                     rendition="#bottom-of-the-page" source="Athanasius"
+                     corresp="#plut-6-3-ps-12-3c" copyOf="#edition:edition-12-3-2">
+                     <quote type="patristic" subtype="quotation/unknown"
+                        xml:id="plut-6-3-quot-12-10"
+                        source="Athanasius, exp. in Ps 12,3c - Hesychius, comm. magnus in Ps 12,3c (PG 93,1184 C8–11); sub auctore Hesychio in Paris. gr. 139 (f. 34v)"
+                        corresp="#person-2 #person-41">Eἰ γὰρ θεοσεβούντων ἡμῶν ταπεινοῦται ὁ
+                           ἐχθρὸς<unclear reason="faded">,</unclear> δηλον<subst>
+                           <del rend="overwrite" cert="high">ὁ</del>
+                           <add place="above">ό</add>
+                        </subst>ότι ἁμαρτανόντων ὑψοῦται· / ὕψος γὰρ τῶ σατανᾶ ἡ τῶν ἀνθρώπων
+                        ταπείνωσις· ἐπειδὴ καθάπερ ὁ θεὸς ἐν τῆι σωτηρία ὑψοῦσθαι τῆ ἡμετέρα· οὕτως
+                        ὁ διάβολος ἐν τῆι ἀπωλεία ἐπαίρεσθαι λέγεται ⁘</quote>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-12-8" type="with-variants">Vat. gr.
+                        754</ref>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-12-9" type="with-variants">Vat. gr.
+                        754</ref><ref target="#par-gr-139:par-gr-139-fr-12-14" type="with-variant"
+                        >Paris. gr. 139</ref><note type="attribution"><foreign xml:lang="grc"
+                           >Αθ(ανασίου):</foreign></note><note type="parallels">Ambros. C. 98
+                        sup.(f. 19r, top-top): Attribution: <foreign xml:lang="grc"
+                           >Ἀθα(νασίου):</foreign></note>
+                  </seg>
+                  <note type="lemma">Ps 12,4a (ἐπίβλεψον)</note>
+                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-12-11"
+                     rendition="#bottom-of-the-page" source="Anonymous" corresp="#plut-6-3-ps-12-4a">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-12-11"
+                        source="Iohannes Chrys., exp. in Ps. 12 (PG 55,150, l. 57–151, l. 1) in 12,3c–4"
+                        corresp="#person-66"/>
+                  </seg>
+                  <note type="lemma">Ps 12,4a (ἐπίβλεψον)</note>
+                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-12-12"
+                     rendition="#bottom-of-the-page" source="Anonymous" corresp="#plut-6-3-ps-12-4a">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-12-12"
+                        source="Asterius, hom. 24,9 in Ps. 12 (184,30–185,2 Richard) in Ps 12,4a"
+                        corresp="#person-40"/>
+                  </seg>
+               </ab>
+            </div>
+            <div type="commentary" subtype="commentary" xml:id="plut-6-3-12-4"
+               rendition="#bottom-margin">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 12,2a (Εως πότε)</note>
+                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-12-13"
+                     rendition="#bottom-margin" source="Anonymous" corresp="#plut-6-3-ps-12-2a">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-12-13"
+                        source="Hesychius, comm. brevis in Ps 12,2a (18 Jagić)" corresp="#person-11"
+                     />
+                  </seg>
+                  <note type="lemma">Ps 12,3b (ἡμέρας καὶ νυκτός)</note>
+                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-12-14"
+                     rendition="#bottom-margin" source="Theodoretus" corresp="#plut-6-3-ps-12-3b">
+                     <quote type="patristic" subtype="quotation-adapted"
+                        xml:id="plut-6-3-quot-12-14"
+                        source="Theodoretus, comm. in Ps 12,3a–b (PG 80,945 B8–13 sub Ps 12,2)"
+                        corresp="#person-16"/>
+                     <note type="attribution">
+                        <foreign xml:lang="grc">Θεοδω(ρή)τ(ου):</foreign>
+                     </note>
+                  </seg>
+                  <note type="lemma">Ps 12,3b (sic) (ἡμέρας καὶ νυκτός)</note>
+                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-12-15"
+                     rendition="#bottom-margin" source="Anonymous" corresp="#plut-6-3-ps-12-3b">
+                     <quote type="patristic" subtype="quotation-adapted"
+                        xml:id="plut-6-3-quot-12-15"
+                        source="Theodoretus, comm. in Ps 12,2b (PG 80,945 A15–B6 sub Ps 12,1)"
+                        corresp="#person-16"/><ref target="#vat-gr-1422:vat-gr-1422-fr-12-17"
+                        type="XXX">Vat. gr. 1422</ref><note type="attribution"><foreign
+                           xml:lang="grc">ἄλλω(ς):</foreign></note>
+                  </seg>
+               </ab>
+            </div>
+            <pb n="53v" facs="http://mss.bmlonline.it/s.aspx?Id=AWOHzHpBI1A4r7GxMB-P#/oro/112"/>
+            <div type="commentary" subtype="commentary" xml:id="plut-6-3-12-5"
+               rendition="#psalm-column">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 12,2</note>
+                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-12-17"
+                     rendition="#psalm-column" source="Anonymous" corresp="#plut-6-3-ps-12-2a">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-12-17"
+                        source="Hesychius, schol. nr. 1 in Ps 12,2a (Antonelli; PG 27,688)"
+                        corresp="#person-10"/>
+                  </seg>
+                  <note type="lemma">Ps 12,3c</note>
+                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-12-18"
+                     rendition="#psalm-column" source="Anonymous" corresp="#plut-6-3-ps-12-3c">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-12-18"
+                        source="Hesychius, schol. nr. 5 in Ps 12,3c (Antonelli; PG 27,689); non habet Ambros. C 98 sup. (f. 19r)"
+                        corresp="#person-10"/>
+                  </seg>
+               </ab>
+            </div>
+            <div type="commentary" subtype="commentary" xml:id="plut-6-3-12-6"
+               rendition="#bottom-of-psalm-column">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 12,4a</note>
+                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-12-19"
+                     rendition="#psalm-column" source="Anonymous" corresp="#plut-6-3-ps-12-4a">
+                     <quote type="patristic" subtype="quotation-expanded"
+                        xml:id="plut-6-3-quot-12-19"
+                        source="Hesychius, schol. nr. 6 in Ps 12,4a (Antonelli; PG 27,689); non habet Typus XV - in textu Ambros. C 98 sup. (f. 18v)"
+                        corresp="#person-10"/>
+                  </seg>
+               </ab>
+            </div>
+            <pb n="53v" facs="http://mss.bmlonline.it/s.aspx?Id=AWOHzHpBI1A4r7GxMB-P#/oro/112"/>
+            <div type="commentary" subtype="commentary" xml:id="plut-6-3-12-7"
+               rendition="#top-margin">
+               <ab>
+                  <note type="textual-commentary">In the top margin is written in red: ὄπι(σ)θ(εν)
+                     τὸ κείμ(ενον)·</note>
+                  <note type="lemma">Ps 12,3c</note>
+                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-12-21" rendition="#top-margin"
+                     source="Anonymous" corresp="#plut-6-3-ps-12-3c">
+                     <quote type="patristic" subtype="unknown/quotation"
+                        xml:id="plut-6-3-quot-12-21"
+                        source="Hesychius, comm. magnus in Ps 12,3c (PG 93,1184 C8–11); iterum scriptus - Theodoretus, comm. in Ps 12,3c (PG 80,945 B15–C3); iterum scriptus"
+                        corresp="#person-41 #person-16"/>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-12-9" type="with-variant">Vat. gr.
+                        754</ref><ref target="#par-gr-139:par-gr-139-fr-12-14" type="with-variants"
+                        >Paris. gr. 139</ref>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-12-10" type="with-corrected-variants"
+                        >Vat. gr. 754</ref>
+                  </seg>
+                  <note type="lemma">Ps 12,3c (sic)</note>
+                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-12-22"
+                     rendition="#bottom-of-the-page" source="Anonymous" corresp="#plut-6-3-ps-12-3c">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-12-22"
+                        source="Hesychius, comm. brevis in Ps 12,4b (18 Jagić)" corresp="#person-11"
+                        /><note type="textual-commentary">The first letter of the fragment has been
+                        dyed red (φώτισον). This is probably to emphasize that the fragment should
+                        refer to the next stich (φώτισον).</note>
+                  </seg>
+               </ab>
+            </div>
+            <div type="commentary" subtype="commentary" xml:id="plut-6-3-12-8"
+               rendition="#top-of-the-page">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 12,4b</note>
+                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-12-25"
+                     rendition="#bottom-of-the-page" source="Anonymous" corresp="#plut-6-3-ps-12-4b">
+                     <quote type="patristic" subtype="paraphrase-abbreviated"
+                        xml:id="plut-6-3-quot-12-25"
+                        source="Asterius, hom. 24,10 in Ps. 12 (185,9–15 Richard) in Ps 12,4b"
+                        corresp="#person-40"/>
+                  </seg>
+                  <note type="lemma">Ps 12,4b</note>
+                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-12-26"
+                     rendition="#top-of-the-page" source="Anonymous" corresp="#plut-6-3-ps-12-4b">
+                     <quote type="patristic" subtype="quotation-adapted"
+                        xml:id="plut-6-3-quot-12-26"
+                        source="Asterius, hom. 24,12 in Ps. 12 (185,28–186,3 Richard) in Ps 12,4b"
+                        corresp="#person-40"/>
+                  </seg>
+                  <note type="lemma">Ps 12,5</note>
+                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-12-28"
+                     rendition="#top-of-the-page" source="Anonymous" corresp="#plut-6-3-ps-12-5a">
+                     <quote type="patristic" subtype="quotation-abbreviated-and-adapted"
+                        xml:id="plut-6-3-quot-12-28"
+                        source="Iohannes Chrys., exp. in Ps. 12 (PG 55,151, l. 6–8.11–12) in Ps 12,3c–4"
+                        corresp="#person-66"/>
+                  </seg>
+                  <note type="lemma">Ps 12,5 (ἀγαλλιάσονται ἐὰν)</note>
+                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-12-29"
+                     rendition="#top-of-the-page" source="Anonymous" corresp="#plut-6-3-ps-12-5a">
+                     <quote type="patristic" subtype="paraphrase" xml:id="plut-6-3-quot-12-29"
+                        source="Asterius, hom. 24,14 in Ps. 12 (186,19–22 Richard) in Ps 12,5b"
+                        corresp="#person-40"/>
+                  </seg>
+                  <note type="lemma">Ps 12,6a–b (ἐγὼ δὲ ἐπὶ τῷ)</note>
+                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-12-31"
+                     rendition="#top-of-the-page" source="Anonymous" corresp="#plut-6-3-ps-12-6a">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-12-31"
+                        source="Asterius, hom. 24,14 in Ps. 12 (186,22–25 Richard) in Ps 12,6a"
+                        corresp="#person-40"/>
+                  </seg>
+               </ab>
+            </div>
+            <div type="commentary" subtype="commentary" xml:id="plut-6-3-12-9"
+               rendition="#middle-of-the-page">
+               <ab>
+                  <note type="lemma">Ps 12,6a–b (ἐγὼ δὲ ἐπὶ τῷ)</note>
+                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-12-32"
+                     rendition="#top-of-the-page" source="Theodorus" corresp="#plut-6-3-ps-12-6a">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-12-32"
+                        source="Theodoretus, comm. in Ps 12,6a (PG 80,945 D3–948 A1)"
+                        corresp="#person-16"/>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-12-14" type="with-variants">Vat. gr.
+                        754</ref>
+                     <note type="attribution">
+                        <foreign xml:lang="grc">Θεοδώ(ρου):</foreign>
+                     </note>
+                  </seg>
+                  <note type="lemma">Ps 12,6a–b (sic) (ἐγὼ δὲ ἐπὶ τῷ)</note>
+                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-12-35"
+                     rendition="#top-of-the-page" source="Theodorus" corresp="#plut-6-3-ps-12-6a">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-12-35"
+                        source="Theodoretus, comm. in Ps 12,6c–d (PG 80,948 A8–12)"
+                        corresp="#person-16"/>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-12-16" type="with-variants">Vat. gr.
+                        754</ref>
+                     <note type="attribution">
+                        <foreign xml:lang="grc">τοῦ αὐτ(οῦ):</foreign>
+                     </note>
+                  </seg>
+                  <note type="lemma">Ps 12,6a–b (ἐγὼ δὲ ἐπὶ τῷ)</note>
+                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-12-36"
+                     rendition="#top-of-the-page" source="Hesychius" corresp="#plut-6-3-ps-12-6a">
+                     <quote type="patristic" subtype="unknown" xml:id="plut-6-3-quot-12-36"
+                        source="Hesychius, comm. magnus (?) in Ps 12,6b (ineditum?); sub auctore Hesychio Paris. gr. 139 (f. 35r)"
+                        corresp="#person-12">Ποῦ καὶ πότε· ὅτ<subst hand="corr" cert="high">
+                           <del rend="erasure">ἂ</del>
+                           <add place="above">α</add>
+                        </subst>ν ταῖς ἀρεταῖς τελειωθεὶς ἀξίως τῆς παρὰ σοῦ σωτηρίας κληρονόμος
+                        γένωμαι· ἢ καὶ σωτήριον νόει τὸν Χριστὸν· ἐν ὧ πάντες οἱ κληρονόμοι τῆς ζωῆς
+                        ἀγαλλιᾶσθαι μέλλουσιν ⁘</quote>
+                     <ref target="#par-gr-139:par-gr-139-fr-12-25" type="with-variants">Paris. gr.
+                        139</ref>
+                     <note type="attribution">
+                        <foreign xml:lang="grc">Ἡσυχ(ίου):</foreign>
+                     </note>
+                  </seg>
+                  <note type="lemma">Ps 12,6a–b (ἐπὶ τῷ σωτηρίῳ σου)</note>
+                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-12-37"
+                     rendition="#top-of-the-page" source="Anonymous" corresp="#plut-6-3-ps-12-6c">
+                     <quote type="patristic" subtype="unknown" xml:id="plut-6-3-quot-12-37"
+                        source="fons ignotus in Ps 12,6b (ineditum?); cf. Euthymius Zig., comm. in Ps 12,6b (PG 128,272 C11-12)"
+                        corresp="#person-18">Ἐπὶ τῆ σωτηρία τῆι παρὰ σοῦ γινομένη ⁘</quote>
+                  </seg>
+                  <note type="lemma">Ps 12,6c–d (ἐπὶ τῷ σωτηρίῳ σου)</note>
+                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-12-38"
+                     rendition="#top-of-the-page" source="Anonymous" corresp="#plut-6-3-ps-12-6c">
+                     <quote type="patristic" subtype="paraphrase" xml:id="plut-6-3-quot-12-38"
+                        source="Iohannes Chrys., exp. in Ps. 12 (PG 55,152, l. 52–53) in Ps 12,6c–d"
+                        corresp="#person-66"/>
+                  </seg>
+                  <note type="lemma">Ps 12,6c–d (ἐπὶ τῷ σωτηρίῳ σου) (sic)</note>
+                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-12-39"
+                     rendition="#middle-of-the-page" source="Theodorus" corresp="#plut-6-3-ps-12-6c">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-12-39"
+                        source="Theodoretus, comm. in Ps 12,6b (PG 80,948 A2–6)"
+                        corresp="#person-16"/>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-12-15" type="identical">Vat. gr.
+                        754<!-- Textkritik: Vat. gr. 1422: Plut. 6. 3: miteinander verglichen --></ref>
+                     <note type="attribution">
+                        <foreign xml:lang="grc">Θεοδώ(ρου):</foreign>
+                     </note>
+                  </seg>
+                  <note type="lemma">Ps 12,6c–d (καὶ ψαλῶ τῷ ὀνόματι)</note>
+                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-12-40"
+                     rendition="#middle-of-the-page" source="Anonymous" corresp="#plut-6-3-ps-12-6c">
+                     <quote type="patristic" subtype="quotation-abbreviated-and-adapted"
+                        xml:id="plut-6-3-quot-12-40"
+                        source="Iohannes Chrys., exp. in Ps. 12 (PG 55,153, l. 1–4) in Ps 12,6c–d"
+                        corresp="#person-66"/>
+                  </seg>
+               </ab>
+            </div>
+            <div type="commentary" subtype="commentary" xml:id="plut-6-3-12-10"
+               rendition="#psalm-column">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 12,5b</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-12-30"
+                     rendition="#psalm-column" source="Anonymous" corresp="#vat-gr-1422-ps-12-5b">
+                     <quote type="patristic" subtype="quotation" xml:id="vat-gr-1422-quot-12-30"
+                        source="Evagrius, schol. nr. γ´ in Ps 12,5b (352 Rondeau – Géhin – Cassin); inter lineas Psalmi habet etiam Ambros. C 98 sup. (f. 19v)"
+                        corresp="#person-21"/>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-12-12" type="with-variants">Vat. gr.
+                        754</ref>
+                  </seg>
+               </ab>
+            </div>
             <!-- Ps 13 bibletext -->
             <div type="bibletext" xml:id="plut-6-13-1" subtype="commented">
                <ab xml:lang="grc">
@@ -3191,10 +3621,10 @@
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-13-3" rendition="#psalm-column"
                      source="Anonymous" corresp="#plut-6-3-ps-13-1b"><quote type="patristic"
                         subtype="quotation" xml:id="plut-6-3-quote-13-3"
-                        source="Hesychius, schol. nr. 1 in Ps 13,1b (Antonelli; PG 27,689)" corresp="#person-10"/><note
-                        type="textual-commentary">This explanation lies below the Psalm line
-                        referred to. It is probably derived from a catena source other than the main
-                        catena used.</note></seg>
+                        source="Hesychius, schol. nr. 1 in Ps 13,1b (Antonelli; PG 27,689)"
+                        corresp="#person-10"/><note type="textual-commentary">This explanation lies
+                        below the Psalm line referred to. It is probably derived from a catena
+                        source other than the main catena used.</note></seg>
                </ab>
             </div>
             <div type="commentary" subtype="commentary" xml:id="plut-6-3-13-4"
@@ -3343,14 +3773,14 @@
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-13-18"
                      rendition="#top-of-the-page" source="Origenes" corresp="#plut-6-3-ps-13-3b"
                         ><quote type="patristic" subtype="unknown" xml:id="plut-6-3-quote-13-18"
-                        source="schol. in Hexapla (Ps 13,3c–h); cf. PG 69,801 D6–9 (cum nota)" corresp="#person-18"><del
-                           rend="expunction" hand="corr">Διόδωρος· καὶ Θεόδωρος καὶ Κύριλλος καὶ
-                           Δίδυμος</del>, τάφος ἀνεωγμένος ὁ λάρυγξ αὐτῶν· ταῖς γλώσσαις αὐτῶν
-                        ἐδολιοῦσαν· ἰὸς ἀσπίδων ὑπὸ τὰ χείλη αὐτῶν· ὧν τὸ στόμα ἀρᾶς καὶ πικρίας
-                        γέμει· ὀξεῖς οἱ πόδες αὐτῶν ἐκχέαι αἷμα· σύντριμμα καὶ ταλαιπωρία ἐν ταῖς
-                        ὁδοῖς αὐτῶν· ἐν δὲ τῶ ἑξαπλῶ ταῦτα οὐχ᾿ εὕρηται ⁘</quote><note
-                        type="attribution"><foreign xml:lang="grc"
-                     >ὠρ(ι)γ(ένους):</foreign></note></seg>
+                        source="schol. in Hexapla (Ps 13,3c–h); cf. PG 69,801 D6–9 (cum nota)"
+                        corresp="#person-18"><del rend="expunction" hand="corr">Διόδωρος· καὶ
+                           Θεόδωρος καὶ Κύριλλος καὶ Δίδυμος</del>, τάφος ἀνεωγμένος ὁ λάρυγξ αὐτῶν·
+                        ταῖς γλώσσαις αὐτῶν ἐδολιοῦσαν· ἰὸς ἀσπίδων ὑπὸ τὰ χείλη αὐτῶν· ὧν τὸ στόμα
+                        ἀρᾶς καὶ πικρίας γέμει· ὀξεῖς οἱ πόδες αὐτῶν ἐκχέαι αἷμα· σύντριμμα καὶ
+                        ταλαιπωρία ἐν ταῖς ὁδοῖς αὐτῶν· ἐν δὲ τῶ ἑξαπλῶ ταῦτα οὐχ᾿ εὕρηται
+                        ⁘</quote><note type="attribution"><foreign xml:lang="grc"
+                           >ὠρ(ι)γ(ένους):</foreign></note></seg>
                   <note type="textual-commentary">The names of Diodorus, Theodorus, Cyrillus, and
                      Didymus (in truth athetised by means of dots) precede the spurious lines Ps
                      13,3c–h.</note>
@@ -3381,8 +3811,9 @@
                         xml:id="plut-6-3-quote-13-21" source="Athanasius, exp. in Ps 13,4a"
                         corresp="#person-2">Καθ᾿ ὑποστιγμὴν ἀναγνωστέον καὶ ἔξωθεν τὸν κύριον
                         προσληπτέον ⁘</quote><note type="attribution"><foreign xml:lang="grc"
-                           >Ἀθα(νασίου):</foreign></note><ref target="#vat-gr-754:vat-gr-754-fr-13-9"
-                        type="abbreviated">Vat. gr. 754</ref></seg>
+                           >Ἀθα(νασίου):</foreign></note><ref
+                        target="#vat-gr-754:vat-gr-754-fr-13-9" type="abbreviated">Vat. gr.
+                        754</ref></seg>
                   <note type="lemma">Ps 13,5a</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-13-22"
                      rendition="#middle-of-the-page" source="Anonymous" corresp="#plut-6-3-ps-13-5a"

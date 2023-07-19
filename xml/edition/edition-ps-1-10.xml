@@ -11023,7 +11023,7 @@
                         <!-- Textkritik: ἀντικειμέναι A3 : ἀντικείμεναι V5 P7 L2 = V1 -->
                      </app>
                      <app type="text">
-                        <lem><foreign xml:lang="grc">Καὶ ποίας </foreign></lem>
+                        <lem><foreign xml:lang="grc">Καὶ ποίας</foreign></lem>
                         <rdg wit="#M #O"><foreign xml:lang="grc">πόλεις δὲ ποίας</foreign></rdg>
                         <wit>Mosq. Synod. 194</wit>
                         <wit>Vat. Ottob. gr. 398</wit>
@@ -17152,10 +17152,10 @@
          <!-- Typus XIX: V1(f. 57r; erledigt) C(f. 9v; erledigt) G(f. 23v; erledigt) P1(f. 26v; erledigt) -->
          <!-- Typus IV: M(f. 25v; erledigt) O(XXX) -->
          <!-- codices varii: B1(f. 52r; erledigt) B2(f. 22v; erledigt) N1(XXX) P2(XXX) P3(f. 17v; erledigt) P4(lost) A1(f. 29r; erledigt) P5(f. 46r; erledigt) L1(f. 42v; erledigt) -->
-         <!-- Typus III: P6(f. 34v; erledigt) Z(XXX) N2(XXX) -->
+         <!-- Typus III: P6(f. 34v; erledigt) Z(f. 28r; gelesen) N2(108r; incipit/explicit gelesen) -->
          <!-- Typus XIV: A2(f. 36r; erledigt) V4(f. 16v; erledigt) -->
-         <!-- Typus XV: V5(XXX) P7(XXX) P8(XXX) -->
-         <!-- Typus XVI: L2(XXX) A3(XXX) -->
+         <!-- Typus XV: V5(f. 42v; erledigt) P7(42r; gelesen) P8(lost) -->
+         <!-- Typus XVI: L2(f. 53r; erledigt) A3(f. 18v; gelesen) -->
          <div type="psalm" n="12">
             <div n="12.1" type="psalmverse">
                <div xml:lang="grc" type="text">
@@ -17166,8 +17166,8 @@
                   <!-- exp 183a -->
                   <div type="commentary" rend="parallel">
                      <p xml:id="edition-12-1" n="183" ana="hypothesis" next="#edition-12-1-1">Τοῦτον
-                        ᾄδει τὸν ψαλμὸν ἐν μετανοίᾳ τοῦ ἁμαρτήματος γεγονώς· ἅμα δὲ καὶ τὸ σωτήριον
-                        ἡμῖν εὐαγγελιζόμενος· δι᾿ οὗ ἐλάβομεν ὑπογραμμὸν, πῶς δεῖ ἡμᾶς ἐν ἁμαρτίᾳ
+                        ᾄδει τὸν ψαλμὸν ἐν μετανοίᾳ τοῦ ἁμαρτήματος γεγονὼς· ἅμα δὲ καὶ τὸ σωτήριον
+                        ἡμῖν εὐαγγελιζόμενος· δι᾿ οὗ ἐλάβομεν ὑπογραμμὸν, πῶς δεῖ ἡμᾶς ἐν ἁμαρτίᾳ
                         γεγενημένους προσιέναι θεῷ: –</p>
                      <div type="links">
                         <p>
@@ -17181,13 +17181,14 @@
                               <ref target="#coislin-12:coislin-12-fr-12-1"/>
                               <ref target="#ambr-m-47-sup:ambr-m-47-sup-12-fr-12-1"/>
                               <ref target="#par-gr-139:par-gr-139-fr-12-2"/>
+                              <ref target="#vat-gr-1422:vat-gr-1422-fr-12-3"/>
                            </listRef>
                         </p>
                      </div>
                   </div>
                   <div type="textcritic" rend="hide">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #G #P1 #M #B1 #P5 #P6 #Z #N2 #V4">txt</rdg>
+                        <rdg wit="#V1 #C #G #P1 #M #B1 #P5 #P6 #Z #V4 #V5 #P7">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Coislin 10</wit>
                         <wit>Urbani 3</wit>
@@ -17197,8 +17198,9 @@
                         <wit>Coislin 12</wit>
                         <wit>Par. gr. 139</wit>
                         <wit>Marc. gr. Z. 17</wit>
-                        <wit>Athen. B.N. 45</wit>
                         <wit>Vat. gr. 1747</wit>
+                        <wit>Vat. gr. 1422</wit>
+                        <wit>Par. gr. 147</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">Τοῦτον</foreign></lem>
@@ -17217,16 +17219,24 @@
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">ἐν μετανοίᾳ τοῦ ἁμαρτήματος</foreign></lem>
-                        <rdg wit="#P6 #Z #N2"><foreign xml:lang="grc">ἐν μετανοία τοῦ
-                              ἁπαντήματος</foreign></rdg>
+                        <rdg wit="#P6 #Z"><foreign xml:lang="grc">ἐν μετανοία τοῦ
+                              ἀπαντήματος</foreign></rdg>
                         <wit>Par. gr. 139</wit>
+                        <!-- Textkritik: ἁπαντήματος -->
                         <wit>Marc. gr. Z. 17</wit>
-                        <wit>Athen. B.N. 45</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">ἅμα δὲ καὶ</foreign></lem>
+                        <rdg wit="#V5 #P7"><foreign xml:lang="grc">ἅμα τὲ καὶ</foreign></rdg>
+                        <wit>Vat. gr. 1422</wit>
+                        <wit>Par. gr. 146</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">τὸ σωτήριον – ὑπογραμμὸν</foreign></lem>
-                        <rdg wit="#V4"><foreign xml:lang="grc">διδάσκει</foreign></rdg>
+                        <rdg wit="#V4 #V5 #P7"><foreign xml:lang="grc">διδάσκει</foreign></rdg>
                         <wit>Vat. gr. 1747</wit>
+                        <wit>Vat. gr. 1422</wit>
+                        <wit>Par. gr. 146</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">τὸ σωτήριον ἡμῖν
@@ -17234,11 +17244,10 @@
                         <rdg wit="#B1"><foreign xml:lang="grc">τὸ σωτήριον ἡμῖν τοῦ Χριστοῦ
                               ἐργαζόμενος</foreign></rdg>
                         <wit>Auct. D. 4. 1</wit>
-                        <rdg wit="#P6 #Z #N2"><foreign xml:lang="grc">τὸ σωτήριον ἡμῖν
+                        <rdg wit="#P6 #Z"><foreign xml:lang="grc">τὸ σωτήριον ἡμῖν
                               ἐργαζόμενος</foreign></rdg>
                         <wit>Par. gr. 139</wit>
                         <wit>Marc. gr. Z. 17</wit>
-                        <wit>Athen. B.N. 45</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">ἐλάβομεν</foreign></lem>
@@ -17252,40 +17261,48 @@
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">ἐν ἁμαρτίᾳ γεγενημένους</foreign></lem>
-                        <rdg wit="#P1 #B1 #P6 #Z #N2 #V4"><foreign xml:lang="grc">ἐν ἁμαρτίαις
+                        <rdg wit="#P1 #B1 #P6 #Z #V4 #V5 #P7"><foreign xml:lang="grc">ἐν ἁμαρτίαις
                               γενομένους</foreign></rdg>
                         <wit>Par. gr. 166</wit>
                         <wit>Auct. D. 4. 1</wit>
                         <wit>Par. gr. 139</wit>
                         <wit>Marc. gr. Z. 17</wit>
-                        <wit>Athen. B.N. 45</wit>
                         <wit>Vat. gr. 1747</wit>
+                        <wit>Vat. gr. 1422</wit>
+                        <wit>Par. gr. 147</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">προσιέναι θεῷ</foreign></lem>
-                        <rdg wit="#P1 #P5 #B1 #P6 #Z #N2"><foreign xml:lang="grc">προσιέναι τῷ
+                        <rdg wit="#P1 #P5 #B1 #P6 #Z"><foreign xml:lang="grc">προσιέναι τῷ
                               θεῷ</foreign></rdg>
                         <wit>Par. gr. 166</wit>
                         <wit>Coislin 12</wit>
                         <wit>Auct. D. 4. 1</wit>
                         <wit>Par. gr. 139</wit>
                         <wit>Marc. gr. Z. 17</wit>
-                        <wit>Athen. B.N. 45</wit>
                         <rdg wit="#M"><foreign xml:lang="grc">προϊέναι θεῷ</foreign></rdg>
                         <wit>Sinod. gr. 194</wit>
                      </app>
-                     <note type="textual-commentary"><p>M: Theodoret (comm. in Ps 12,1 [PG 80,945
-                           A2–9]) mit exp. 183 verbunden, deshalb die Einfügung eines δὲ. Theodorets
-                           Text stammt nicht aus der Tradition des Typus XIX. In dieser Tradition
-                           ist er exp. 183 nachgestellt. exp. 183 in M ist jedoch aus der Tradition
-                           des Typus XIX.</p></note>
+                     <note type="textual-commentary"><p> V1 C G P5 Z: Da γεγονώς· mit Akut sich von
+                           dem, was folgt, abhebt, scheint mit ἅμα – εὐαγγελιζόμενος ein neuer Satz
+                           zu beginnen. In diesem Fall wäre δι᾿ οὗ nicht auf den Psalm (τὸν ψαλμὸν)
+                           an sich zu beziehen, sondern auf τὸ σωτήριον. Diese zweite
+                           Auffassungsmöglichkeit scheint weniger sinnvoll. In andere Textzeugen ist
+                           dieses Partizip mit dem folgenden verbunden: durch Mese (γεγονῶς· P1 |
+                           γεγονὼς· V5 P7) oder durch Hypostigme (γεγονῶς. B1 | γεγονὼς. V4) oder
+                           ohne Pause (γεγονὼς P6). M: Theodoret (comm. in Ps 12,1 [PG 80,945 A2–9])
+                           mit exp. 183 verbunden, deshalb die Einfügung eines δὲ. Theodorets Text
+                           weicht in textkritischer Hinsicht von der Tradition des Typus XIX ab.
+                           exp. 183 ist hingegen aus dieser Tradition. N2: exp. 183 verloren. V5 P7:
+                           exp. 183 aus der Tradition des Typus XIV (V4).</p>
+                        <!-- Textkritik: γεγονώς· V1 C G P5 Z : γεγονῶς· P1 : γεγονὼς· V5 P7: γεγονῶς· M (Teleia; oben nicht erwähnt) : γεγονῶς. Β1 : γεγονὼς. V4 : γεγονὼς sine puncto P6 --><!-- εὐαγγελιζόμενος. C (Mese oder Hypostigme?) G : εὐαγγελιζόμενος· (Teleia) P1 : εὐαγγελιζόμενος· (Mese) M P5 : V4 V5 P7 Abkürzung : ἐργαζόμενος. B1 Z :  ἐργαζόμενος sine punto P6 --><!-- Katene: Typus XIX: Theodoretus exp. 183 nachgestellt --></note>
                   </div>
                   <!-- exp 183b -->
                   <div type="commentary" rend="hide">
                      <p xml:id="edition-12-1-1" n="183">Τοῦτον ᾄδει τὸν ψ[α]λμ[ὸν ὡς ἐκ τῆς
                         ἀνθρω]πότητος· πρὸς τὸν Xριστὸν π[αράκλη]σι[ν]· δ[ιὸ] [καὶ(?)] τὸ σωτήρ[ι]ον
-                        ἡμῖν τ[οῦ θεοῦ εὐαγγελίζεται·] ἔσ[τι δὲ καὶ] ὑπογραμμὸς [πῶς δεῖ] [ἡμᾶς ἐν
-                        ἁμαρτίαις(?)] γε[ν][ο(?)]μέν[ους] πρ[ο]σιέναι τῷ [θεῷ]: –</p>
+                        ἡμῖν τ[οῦ θεοῦ εὐαγγελίζεται·] ἔσ[τι δὲ καὶ] ὑπογραμμὸς [πῶς δεῖ ἡμᾶς ἐν
+                        ἁμαρτί][αις(?)] γε[νο]μέν[ους] πρ[ο]σιέναι τῷ [θεῷ]: –</p>
                   </div>
                   <div type="textcritic" rend="hide">
                      <app type="fragment">
@@ -17297,12 +17314,15 @@
                <div type="translation" xml:lang="de">
                   <quote corresp="#edition-ps-12-1" type="psalmtext" n="1">Auf das Ende hin. Ein
                      Psalm, bezogen auf David.</quote>
-                  <p corresp="#edition-12-1" n="183">Diesen Psalm singt er aus Reue über die Sünde,
-                     indem er uns zugleich das Heil verkündet. Darin haben wir ein Beispiel
-                     gefunden, wie wir, wenn wir in Sünden sind, vor Gott hintreten sollen.</p>
-                  <p corresp="#edition-12-1-1" n="183">Diesen Psalm singt er aus Reue über die
-                     Sünde, indem er uns zugleich das Heil verkündet. Darin haben wir ein Beispiel
-                     gefunden, wie wir, wenn wir in Sünden sind, vor Gott hintreten sollen.</p>
+                  <p corresp="#edition-12-1" n="183">Diesen Psalm singt er, als er in der Buße der
+                     Sünde war, zugleich verkündet er uns auch das Heilmittel. Durch diesen (Psalm)
+                     haben wir ein Muster erhalten, wie wir, wenn wir in der Sünde gewesen sind, vor
+                     Gott hintreten sollen.</p>
+                  <p corresp="#edition-12-1-1" n="183">Diesen Psalm singt er wie im Namen der
+                     Menschheit, ein Hilferuf an Christus. Deshalb verkündet er uns auch das
+                     Heilmittel Gottes. Es ist aber auch ein Muster, wie wir, in den Sünden gewesen,
+                     vor Gott hintreten sollen.</p>
+
                </div>
             </div>
             <div n="12.2" type="psalmverse">
@@ -17327,13 +17347,14 @@
                               <ref target="#coislin-12:coislin-12-fr-12-2"/>
                               <ref target="#ambr-m-47-sup:ambr-m-47-sup-12-fr-12-3"/>
                               <ref target="#ambr-b-106-sup:ambr-b-106-sup-fr-12-1"/>
+                              <ref target="#vat-gr-1422:vat-gr-1422-fr-12-4"/>
                            </listRef>
                         </p>
                      </div>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #G #P1 #M #B1 #P5 #A1 #A2 #V4">txt</rdg>
+                        <rdg wit="#V1 #C #G #P1 #M #B1 #P5 #A1 #A2 #V4 #V5 #P7">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Coislin 10</wit>
                         <wit>Par. gr. 166</wit>
@@ -17344,6 +17365,8 @@
                         <wit>Ambr. M 47 sup.</wit>
                         <wit>Ambr. B 106 sup.</wit>
                         <wit>Vat. gr. 1747</wit>
+                        <wit>Vat. gr. 1422</wit>
+                        <wit>Par. gr. 146</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">Ὡς μακρᾶς οὔσης</foreign></lem>
@@ -17354,10 +17377,11 @@
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">τῆς γινομένης</foreign></lem>
-                        <rdg wit="#B1 #A1*"><foreign xml:lang="grc">τῆς γενομένης</foreign></rdg>
+                        <rdg wit="#B1"><foreign xml:lang="grc">τῆς γενομένης</foreign></rdg>
                         <wit>Auct. D. 4. 1</wit>
+                        <rdg wit="#A1*"><foreign xml:lang="grc">τῆς γεινομένης</foreign></rdg>
                         <wit>Ambr. M 47 sup.</wit>
-                        <rdg wit="#A1corr"><foreign xml:lang="grc">τῆς γινομένης</foreign></rdg>
+                        <rdg wit="#A1m.sec."><foreign xml:lang="grc">τῆς γινομένης</foreign></rdg>
                         <wit>Ambr. M 47 sup.</wit>
                      </app>
                      <app type="text">
@@ -17367,13 +17391,18 @@
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">προσόδου</foreign></lem>
-                        <rdg wit="#P5"><foreign xml:lang="grc">προόδου</foreign></rdg>
-                        <wit>Coislin 12</wit>
                         <rdg wit="#M"><foreign xml:lang="grc">προσώπoυ</foreign></rdg>
                         <wit>Sinod. gr. 194</wit>
+                        <rdg wit="#P5"><foreign xml:lang="grc">προόδου</foreign></rdg>
+                        <wit>Coislin 12</wit>
                         <rdg wit="#A2 #V4">προόδῳ</rdg>
                         <wit>Ambr. B 106 sup.</wit>
                         <wit>Vat. gr. 1747</wit>
+                        <rdg wit="#V5m.sec."><foreign xml:lang="grc">παρόδου</foreign> (ut vid.)
+                           corr.</rdg>
+                        <wit>Vat. gr. 1422</wit>
+                        <rdg wit="#P7"><foreign xml:lang="grc">παροδ(ου)</foreign></rdg>
+                        <wit>Par. gr. 146</wit>
                      </app>
                   </div>
                   <div type="psalmtext">
@@ -17384,8 +17413,8 @@
                <div type="translation" xml:lang="de">
                   <quote corresp="#edition-ps-12-2-1" type="psalmtext" n="2a">Wie lange, Herr, wirst
                      du mich völlig vergessen?</quote>
-                  <p corresp="#edition-12-2-1" n="184">Lange ist nämlich schon die Zeit, während
-                     welcher er wegen der Sünde in Reue vor Gott hintritt.</p>
+                  <p corresp="#edition-12-2-1" n="184">Als ob der Weg zu Gott, der ihm in der Buße
+                     wegen der Sünde widerfahren war, ein langer Weg war.</p>
                   <quote corresp="#edition-ps-12-2-2" type="psalmtext" n="2b">Wie lange wirst du
                      dein Angesicht von mir abwenden?</quote>
                </div>
@@ -17403,6 +17432,8 @@
                      <p xml:id="edition-12-3-1" n="185">Ἀνιῶμαι γάρ φησι βουλευόμενος κατὰ ψυχὴν·
                         μήπως ἄρα ἐν τῇ ἁμαρτίᾳ ἀποθανοῦμαι· καὶ τοῦτό ἐστιν ὃ μάλιστα ὀδύνας μου τῇ
                         ψυχῇ παρασκευάζει: –</p>
+                     <!-- Textkritik: A3: παρασκευάζει: παρα- fort. ex corr. -->
+                     <!-- Textkritik: τοῦτο ἐστὶν Z : τοῦτό ἐστιν P6 = V1 -->
                      <div type="links">
                         <p>
                            <listRef>
@@ -17418,13 +17449,16 @@
                               <ref target="#ambr-m-47-sup:ambr-m-47-sup-12-fr-12-5"/>
                               <ref target="#plut-5-30:plut-5-30-fr-12-9"/>
                               <ref target="#par-gr-139:par-gr-139-fr-12-7"/>
+                              <ref target="#vat-gr-1422:vat-gr-1422-fr-12-15"/>
+                              <ref target="#plut-6-3:plut-6-3-fr-12-7"/>
                            </listRef>
                         </p>
                      </div>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #G #P1 #M #B1 #B2 #P3 #P5 #A1 #L1 #P6 #Z #N2">txt</rdg>
+                        <rdg wit="#V1 #C #G #P1 #M #B1 #B2 #P3 #P5 #A1 #L1 #P6 #Z #V5 #P7 #L2 #A3"
+                           >txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Coislin 10</wit>
                         <wit>Par. gr. 166</wit>
@@ -17438,7 +17472,10 @@
                         <wit>Par. gr. 164</wit>
                         <wit>Par. gr. 139</wit>
                         <wit>Marc. gr. Z. 17</wit>
-                        <wit>Athen. N.N. 45</wit>
+                        <wit>Vat. gr. 1422</wit>
+                        <wit>Par. gr. 146</wit>
+                        <wit>Plut. 6. 3</wit>
+                        <wit>Ambr. C 98 sup.</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">Ἀνιῶμαι</foreign></lem>
@@ -17454,16 +17491,26 @@
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">γάρ φησι</foreign></lem>
-                        <rdg wit="#L1* #P6 #Z #N2"><foreign xml:lang="grc">γὰρ φησὶν</foreign> (ut
-                           vid.)</rdg>
+                        <rdg wit="#L1* #P6"><foreign xml:lang="grc">γὰρ φησὶν</foreign></rdg>
                         <wit>Plut. 5. 30</wit>
                         <wit>Par. gr. 139</wit>
-                        <wit>Marc. gr. Z. 17</wit>
-                        <wit>Athen. N.N. 45</wit>
+                        <!-- Textkritik:  γαρ φησὶν P6 : γάρ φη(σι) Z -->
                         <rdg wit="#L1corr"><foreign xml:lang="grc">γάρ φησι</foreign></rdg>
                         <wit>Plut. 5. 30</wit>
                         <rdg wit="#P3"><foreign xml:lang="grc">φησὶν</foreign></rdg>
                         <wit>Par. gr. 164</wit>
+                        <rdg wit="#V5 #P7 #L2 #A3">om.</rdg>
+                        <wit>Vat. gr. 1422</wit>
+                        <wit>Par. gr. 146</wit>
+                        <wit>Plu. 6. 3</wit>
+                        <wit>Ambr. C 98 sup.</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">βουλευόμενος</foreign></lem>
+                        <rdg wit="#V5 #P7"><foreign xml:lang="grc">βουλόμενος</foreign></rdg>
+                        <wit>Vat. gr. 1422</wit>
+                        <wit>Par. gr. 146</wit>
+                        <!-- Textkritik: βουλευόμενος L2 A3 = V1 -->
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">ἐν τῇ ἁμαρτίᾳ</foreign></lem>
@@ -17477,8 +17524,10 @@
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">ὃ</foreign></lem>
-                        <rdg wit="#L1"><foreign xml:lang="grc">ὃ</foreign> in lin. add. </rdg>
+                        <rdg wit="#L1corr"><foreign xml:lang="grc">ὃ</foreign> in lin. add.</rdg>
                         <wit>Plut. 5. 30</wit>
+                        <rdg wit="#A3"><foreign xml:lang="grc">ὃ</foreign> supra lin. add.</rdg>
+                        <wit>Ambr. C 98 sup.</wit>
                         <rdg wit="#P3"><foreign xml:lang="grc">ὁ</foreign></rdg>
                         <wit>Par. gr. 164</wit>
                      </app>
@@ -17503,6 +17552,12 @@
                         <rdg wit="#A1"><foreign xml:lang="grc">ὁδύνᾶσθαί μου τὴν
                            ψυχὴν</foreign></rdg>
                         <wit>Ambr. M 47 sup.</wit>
+                        <rdg wit="#V5 #P7 #L2 #A3"><foreign xml:lang="grc">τῇ ψυχῇ μου·
+                              ὀδύνας</foreign></rdg>
+                        <wit>Vat. gr. 1422</wit>
+                        <wit>Par. gr. 146</wit>
+                        <wit>Plut. 6. 3</wit>
+                        <wit>Ambr. C 98 sup.</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">παρασκευάζει</foreign></lem>
@@ -17511,11 +17566,11 @@
                         <rdg wit="#L1corr"><foreign xml:lang="grc">παρασκευάζει</foreign></rdg>
                         <wit>Plut. 5. 30</wit>
                         <wit>Plut. 5. 30</wit>
-                        <rdg wit="#P6 #Z #N2"><foreign xml:lang="grc">κατασκευάζει</foreign></rdg>
+                        <rdg wit="#P6 #Z"><foreign xml:lang="grc">κατασκευάζει</foreign></rdg>
                         <wit>Par. gr. 139</wit>
                         <wit>Marc. gr. Z. 17</wit>
-                        <wit>Athen. N.N. 45</wit>
                      </app>
+                     <note type="textual-commentary"><p>N2: exp. 185 verloren.</p></note>
                   </div>
                   <div type="psalmtext">
                      <quote xml:id="edition-ps-12-3-3" type="psalmtext" n="3c">ἕως πότε ὑψωθήσεται ὁ
@@ -17525,6 +17580,7 @@
                   <div type="commentary" rend="parallel">
                      <p xml:id="edition-12-3-2" n="186" next="#edition-12-3-2-1">Εἰ γὰρ θεοσεβούντων
                         ταπεινοῦται, δηλονότι ἁμαρτανόντων ὑψοῦται: –</p>
+                     <!-- Textkritik: A3: θεοσεβούντων ex θεοσεβοῦντων -->
                      <div type="links">
                         <p>
                            <listRef>
@@ -17537,12 +17593,14 @@
                               <ref target="#coislin-12:coislin-12-fr-12-4"/>
                               <ref target="#ambr-m-47-sup:ambr-m-47-sup-12-fr-12-6"/>
                               <ref target="#par-gr-139:par-gr-139-fr-12-13"/>
+                              <ref target="#vat-gr-1422:vat-gr-1422-fr-12-20"/>
+                              <ref target="#plut-6-3:plut-6-3-fr-12-10"/>
                            </listRef></p>
                      </div>
                   </div>
                   <div type="textcritic" rend="hide">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #G #P1 #M #P5 #A1 #P6 #Z #N2">txt</rdg>
+                        <rdg wit="#V1 #C #G #P1 #M #P5 #A1 #P6 #Z #V5 #P7 #L2 #A3">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Coislin 10</wit>
                         <wit>Par. gr. 166</wit>
@@ -17553,7 +17611,10 @@
                         <wit>Ambr. M 47 sup.</wit>
                         <wit>Par. gr. 139</wit>
                         <wit>Marc. gr. Z. 17</wit>
-                        <wit>Athen. B.N. 45</wit>
+                        <wit>Vat. gr. 1422</wit>
+                        <wit>Par. gr. 146</wit>
+                        <wit>Plut. 6. 3</wit>
+                        <wit>Ambr. C 98 sup.</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">Εἰ γὰρ – ὑψοῦται</foreign></lem>
@@ -17564,24 +17625,38 @@
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">θεοσεβούντων</foreign></lem>
-                        <rdg wit="#P6 #Z #N2"><foreign xml:lang="grc">θεοσεβούντων
-                           ἡμῶν</foreign></rdg>
+                        <rdg wit="#P6 #Z #V5 #P7 #L2 #A3"><foreign xml:lang="grc">θεοσεβούντων
+                              ἡμῶν</foreign></rdg>
                         <wit>Par. gr. 139</wit>
                         <wit>Marc. gr. Z. 17</wit>
-                        <wit>Athen. B.N. 45</wit>
+                        <wit>Vat. gr. 1422</wit>
+                        <wit>Par. gr. 146</wit>
+                        <wit>Plut. 6. 3</wit>
+                        <wit>Ambr. C 98 sup.</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">ταπεινοῦται</foreign></lem>
                         <rdg wit="#P1">post <foreign xml:lang="grc">ταπεινοῦται</foreign> add.
                               <foreign xml:lang="grc">ὁ ἐχθρὸς ἡμῶν διάβολος</foreign></rdg>
                         <wit>Par. gr. 166</wit>
-                        <rdg wit="#B1 #P6 #Z #N2">post <foreign xml:lang="grc">ταπεινοῦται</foreign>
-                           add. <foreign xml:lang="grc">ὁ ἐχθρός</foreign></rdg>
+                        <rdg wit="#B1 #P6 #Z #V5 #P7 #L2 #A3">post <foreign xml:lang="grc"
+                              >ταπεινοῦται</foreign> add. <foreign xml:lang="grc">ὁ
+                           ἐχθρός</foreign></rdg>
                         <wit>Auct. D. 4. 1</wit>
                         <wit>Par. gr. 139</wit>
                         <wit>Marc. gr. Z. 17</wit>
-                        <wit>Athen. B.N. 45</wit>
+                        <wit>Vat. gr. 1422</wit>
+                        <wit>Par. gr. 146</wit>
+                        <wit>Plut. 6. 3</wit>
+                        <wit>Ambr. C 98 sup.</wit>
                      </app>
+                     <note type="textual-commentary"><p>
+                           <note type="textual-commentary"><p>Z: exp. 186 mit Hesychius (comm.
+                                 magnus in Ps 12,3c [PG 93,1184 C8–11] verbunden. P6 hat die zwei
+                                 Erklärungen noch getrennt. N2: exp. 186 verloren. V5 P7: Die
+                                 erwähnte Verbindung ist hier wiederzufinden. exp. 186 ist
+                                 offensichtlich aus der Tradition des Typus III (nahe Z). Monfaucon:
+                                 exp. 186 mit Hesychius verbunden (aus P7).</p></note></p></note>
                   </div>
                   <div type="commentary" rend="hide">
                      <p xml:id="edition-12-3-2-1" n="186">Εἰ γὰρ θεοσεβούντων ἡμῶν οἱ δαίμονες
@@ -17598,17 +17673,16 @@
                      (mir) Gedanken machen in meiner Seele,</quote>
                   <quote corresp="#edition-ps-12-3-2" type="psalmtext" n="3b">Kummer (haben) in
                      meinem Herzen am Tage?</quote>
-                  <p corresp="#edition-12-3-1" n="185">Ich betrübe mich, sagt er, indem ich in
-                     meiner Seele zu Rate gehe, ob ich nicht etwa in der Sünde sterbe. Und das ist
-                     es, was meiner Seele vorzugsweise Schmerz bereitet.</p>
+                  <p corresp="#edition-12-3-1" n="185">Denn ich quäle mich ab, sagt er, indem ich in
+                     meiner Seele zu Rate gehe, ob ich nicht etwa in der Sünde sterben werde. Und
+                     das ist es, was meiner Seele am allermeisten Schmerzen bereitet.</p>
                   <quote corresp="#edition-ps-12-3-3" type="psalmtext" n="3c">Wie lange wird sich
                      mein Feind über mich erheben?</quote>
-                  <p corresp="#edition-12-3-2" n="186">Denn wenn, während wir gottesfürchtig sind,
-                     unser Feind, der Teufel, erniedrigt wird, so wird er offenbar, wenn wir
-                     sündigen, erhöht.</p>
-                  <p corresp="#edition-12-3-2-1" n="186">Denn wenn, während wir gottesfürchtig sind,
-                     unser Feind, der Teufel, erniedrigt wird, so wird er offenbar, wenn wir
-                     sündigen, erhöht.</p>
+                  <p corresp="#edition-12-3-2" n="186">Denn wenn er, in dem wir Gott verehren,
+                     erniedrigt wird, offenbar wird er, in dem wir sündigen, erhöht.</p>
+                  <p corresp="#edition-12-3-2-1" n="186">Denn wenn die Dämonen, in dem wir Gott
+                     verehren, erniedrigt werden, offenbar werden sie, in dem wir sündigen,
+                     erhöht.</p>
                </div>
             </div>
             <div n="12.4" type="psalmverse">
@@ -17671,7 +17745,7 @@
                            Ps 12,4b [352 Rondeau – Géhin – Cassin]) verbunden. A1: exp. 187 mit
                            einer überarbeiteten Stelle aus Basilius von Caesarea (prol. 7 = De
                            iudicio Dei [PG 31,656 D3–657 A7; 657 A12–B5] in Rom 1,28–29 et Ps 12,4b)
-                           verbunden. Bei dieser Zusammenfügung wurde die Expositio möglicherweise
+                           verbunden. Bei dieser Verbindung wurde die Expositio möglicherweise
                            leicht angepasst.</p></note>
                   </div>
                </div>
@@ -17680,7 +17754,7 @@
                      mich an, Herr mein Gott.</quote>
                   <quote corresp="#edition-ps-12-4-2" type="psalmtext" n="4b">Erleuchte meine Augen,
                      damit ich nicht in den Tod entschlafe,</quote>
-                  <p corresp="#edition-12-4-2" n="187">Er deutet die Augen der Seele an.</p>
+                  <p corresp="#edition-12-4-2" n="187">Offensichtlich die des Geistes.</p>
                </div>
             </div>
             <div n="12.5" type="psalmverse">
@@ -17813,15 +17887,16 @@
                   <quote corresp="#edition-ps-12-6-1" type="psalmtext" n="6a">Ich aber habe auf dein
                      Erbarmen meine Hoffnung gesetzt.</quote>
                   <quote corresp="#edition-ps-12-6-2" type="psalmtext" n="6b">Mein Herz wird jubeln
-                     über dein Heil.</quote>
-                  <p corresp="#edition-12-6-1" n="188">Ich vertraue darauf, sagt er, Nachlassung der
-                     Sünde zu erlangen, indem ich auf Deine Barmherzigkeit rechne, in welcher Du
-                     auch allen Menschen das Heil gewährt hast. Dieses Heil wird meinem Herzen Jubel
-                     bereiten, das vordem wegen der Sünde Schmerz empfand.</p>
-                  <p corresp="#edition-12-6-1-1" n="188">Ich vertraue darauf, sagt er, Nachlassung
-                     der Sünde zu erlangen, indem ich auf Deine Barmherzigkeit rechne, in welcher Du
-                     auch allen Menschen das Heil gewährt hast. Dieses Heil wird meinem Herzen Jubel
-                     bereiten, das vordem wegen der Sünde Schmerz empfand.</p>
+                     über dein Heilmittel.</quote>
+                  <p corresp="#edition-12-6-1" n="188">Ich vertraue darauf, sagt er, Erlaß der Sünde
+                     zu erlangen, indem ich auf dein Erbarmen zuhalte. Deswegen hast du auch das
+                     Heilmittel allen Menschen gegeben. Eben dieses Heilmittel wird meinem Herzen,
+                     das davor wegen der Sünde schmerzbeladen war, Jubeln bereiten.</p>
+                  <p corresp="#edition-12-6-1-1" n="188">Weil ich darauf vertraue, sagt er,
+                     Vergebung der Sünde zu erlangen, halte ich auf dein Erbarmen zu. Deswegen hast
+                     du auch das Heilmittel allen Menschen gegeben. Eben dieses Heilmittel wird
+                     meinem Herzen, das davor wegen der Sünde schmerzbeladen war, Jubeln
+                     bereiten.</p>
                   <quote corresp="#edition-ps-12-6-3" type="psalmtext" n="6c">Singen will ich dem
                      Herrn, der mir Gutes erweist,</quote>
                   <quote corresp="#edition-ps-12-6-4" type="psalmtext" n="6d">und spielen will ich
