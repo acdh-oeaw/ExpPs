@@ -285,7 +285,12 @@ $(document).ready(function(){
 			$(reference).removeClass("apparatus-entry").addClass("apparatus-entry-highlighted");
 		});
 		$(this).on('mouseleave',function(event){
-			$(this).removeClass("textcritical-embedded-emphasized").addClass("textcritical-embedded");
+			if($(this).parent("span").hasClass("textcritical-emphasized")){
+				$(this).removeClass("textcritical-embedded-emphasized").addClass("textcritical-emphasized");
+			}
+			else{
+				$(this).removeClass("textcritical-embedded-emphasized").addClass("textcritical-embedded");
+			}
 			let reference = "#" + event.target.dataset.id;
 			$(reference).removeClass("apparatus-entry-highlighted").addClass("apparatus-entry");
 		});
