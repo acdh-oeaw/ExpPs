@@ -262,3 +262,59 @@ $(document).ready(function () {
 		$('#sidebar').toggleClass('active');
 	});
 });
+
+$(document).ready(function(){
+	$('.textcritical').each(function(){
+		$(this).on('mouseenter',function(event){
+			$(this).removeClass("textcritical").addClass("textcritical-emphasized");
+			$(this).children("span").removeClass("textcritical-embedded").addClass("textcritical-emphasized");
+			let reference = "#" + event.target.dataset.id;
+			$(reference).removeClass("apparatus-entry").addClass("apparatus-entry-highlighted");
+		});
+		$(this).on('mouseleave',function(event){
+			$(this).removeClass("textcritical-emphasized").addClass("textcritical");
+			$(this).children("span").removeClass("textcritical-emphasized").addClass("textcritical-embedded");
+			let reference = "#" + event.target.dataset.id;
+			$(reference).removeClass("apparatus-entry-highlighted").addClass("apparatus-entry");
+		});
+	});
+	$('.textcritical-embedded').each(function(){
+		$(this).on('mouseenter',function(event){
+			$(this).removeClass("textcritical-embedded").addClass("textcritical-embedded-emphasized");
+			let reference = "#" + event.target.dataset.id;
+			$(reference).removeClass("apparatus-entry").addClass("apparatus-entry-highlighted");
+		});
+		$(this).on('mouseleave',function(event){
+			if($(this).parent("span").hasClass("textcritical-emphasized")){
+				$(this).removeClass("textcritical-embedded-emphasized").addClass("textcritical-emphasized");
+			}
+			else{
+				$(this).removeClass("textcritical-embedded-emphasized").addClass("textcritical-embedded");
+			}
+			let reference = "#" + event.target.dataset.id;
+			$(reference).removeClass("apparatus-entry-highlighted").addClass("apparatus-entry");
+		});
+	});
+	$('.apparatus-entry-lemma').each(function(){
+		$(this).on('mouseenter',function(event){
+			let reference = "#" + event.target.dataset.id;
+			if (!($(reference).hasClass("textcritical-embedded"))){
+				$(reference).removeClass("textcritical").addClass("textcritical-emphasized");
+				$(reference).children("span").removeClass("textcritical-embedded").addClass("textcritical-emphasized");
+			}
+			else {
+				$(reference).removeClass("textcritical-embedded").addClass("textcritical-emphasized");
+			}
+		});
+		$(this).on('mouseleave',function(event){
+			let reference = "#" + event.target.dataset.id;
+			if (!($(reference).hasClass("textcritical-embedded"))){
+				$(reference).removeClass("textcritical-emphasized").addClass("textcritical");
+				$(reference).children("span").removeClass("textcritical-emphasized").addClass("textcritical-embedded");
+			}
+			else {
+				$(reference).removeClass("textcritical-embedded").addClass("textcritical-emphasized");
+			}
+		});
+	});
+});

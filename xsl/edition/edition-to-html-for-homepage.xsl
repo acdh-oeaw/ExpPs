@@ -67,7 +67,7 @@ version="2.0">
                             <!-- Your menu goes here -->
                             <ul id="main-menu" class="navbar-nav">
                                 <li class="nav-item active"><a title="Home" href="index.html" class="nav-link">Home</a></li>
-                                <li class="nav-item"><a title="Edition" href="edition_ps_1-10.html" class="nav-link">Edition</a></li>
+                                <li class="nav-item"><a title="Edition" href="edition.html" class="nav-link">Edition</a></li>
                                 <li class="nav-item dropdown">
                                     <a title="Manuscripts" href="manuscripts.html" data-toggle="dropdown" class="nav-link dropdown-toggle">Manuscripts <span class="caret"></span></a>
                                     <ul class=" dropdown-menu" role="menu">
@@ -99,6 +99,7 @@ version="2.0">
                                             <a title="About Transcriptions" href="./about-transcription.html" class="nav-link">About the Transcriptions</a>
                                             <a title="About Links" href="./about-links.html" class="nav-link">Links to TEI-Sources</a>
                                             <a title="Technical Documentation" href="./encoding.html" class="nav-link">Technical Documentation</a>
+                                            <a title="Access" href="access.html" class="nav-link">Access</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -466,7 +467,14 @@ version="2.0">
         <xsl:apply-templates select="tei:app[@type = 'fragment']"/>
         <!-- <xsl:apply-templates select="preceding-sibling::tei:div[@type = 'commentary'][1]/child::tei:div[@type = 'links']"/> -->
         <xsl:for-each select="tei:app[@type = 'text']">
-            <xsl:apply-templates select="."/>
+            <xsl:element name="span">
+                <xsl:attribute name="class" select="'apparatus-entry'"/>
+                <xsl:attribute name="id" select="generate-id(.)"/>
+                <xsl:variable name="reference" select="substring-after(@corresp,'#')"/>
+                <xsl:apply-templates select=".">
+                    <xsl:with-param name="reference" select="$reference"/>
+                </xsl:apply-templates>
+            </xsl:element>
             <xsl:if test="position() != last()"><xsl:text> || </xsl:text></xsl:if>
         </xsl:for-each>
         <xsl:apply-templates select="tei:note[@type = 'textual-commentary']"/>
@@ -567,13 +575,33 @@ version="2.0">
         </xsl:if>
         <xsl:if test="not(exists(parent::tei:div[@type = 'commentary']/@rend))">
             <div class="col-md-5 large-greek-text">
-                <xsl:value-of select="text()"/>
+                <xsl:apply-templates select="text() | tei:span[@type = 'text-critical']"/>
             </div>
             <div class="col-md-5 large-latin-text">
                 <xsl:apply-templates select="parent::tei:div/parent::tei:div/parent::tei:div/tei:div[@type = 'translation']/tei:p[current()/@xml:id = substring-after(@corresp,'#')]"/>
             </div>
         </xsl:if>
     </div>
+</xsl:template>
+    
+<xsl:template match="tei:span[(@type = 'text-critical') and parent::tei:p]">
+    <xsl:variable name="current-node" select="."/>
+    <xsl:element name="span">
+        <xsl:attribute name="id" select="@xml:id"/>
+        <xsl:attribute name="class" select="'textcritical'"/>
+        <xsl:attribute name="data-id" select="generate-id(//tei:app[@type = 'text'][@corresp = concat('#',$current-node/@xml:id)])"/>
+        <xsl:apply-templates select="text() | tei:span"/>
+    </xsl:element>
+</xsl:template>
+    
+<xsl:template match="tei:span[(@type = 'text-critical') and parent::tei:span]">
+    <xsl:variable name="current-node" select="."/>
+    <xsl:element name="span">
+        <xsl:attribute name="id" select="@xml:id"/>
+        <xsl:attribute name="class" select="'textcritical-embedded'"/>
+        <xsl:attribute name="data-id" select="generate-id(//tei:app[@type = 'text'][@corresp = concat('#',$current-node/@xml:id)])"/>
+        <xsl:value-of select="text()"/>
+    </xsl:element>
 </xsl:template>
 
 <xsl:template match="tei:p[parent::tei:div[@xml:lang = 'de']]">
@@ -602,9 +630,12 @@ version="2.0">
 </xsl:template>
 
 <xsl:template match="tei:app[@type = 'text']">
-    <b>
-    <xsl:apply-templates select="tei:lem"/>
-    </b>
+    <xsl:param name="reference"/>
+    <xsl:element name="span">
+        <xsl:attribute name="class" select="'apparatus-entry-lemma'"/>
+        <xsl:attribute name="data-id" select="$reference"/>
+        <xsl:apply-templates select="tei:lem"/>
+    </xsl:element>
     <xsl:if test="exists(tei:lem/@wit)">
         <xsl:text> </xsl:text>
     </xsl:if>
