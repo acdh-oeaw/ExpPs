@@ -2,7 +2,7 @@
 <?xml-model href="../../schema/tei-psalmcatenae.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <!-- Katene: Ps 8 inklusiv: Position der ExpPs angegeben -->
-   <!-- faciendum: Ps 11 und 13: Angabe der Halblemmata zu ergänzen und Ektheseis berücksichtigen -->
+   <!-- faciendum: Ps 13: Angabe der Halblemmata zu ergänzen und Ektheseis berücksichtigen -->
    <!-- faciendum: Ps 11, 12, 13: Referenzen zu Par. gr. 139 zu ergänzen -->
    <!-- faciendum: Ps 11 und 13: Vat. gr. 1422: Plut. 6. 3: Liste der Fragmente miteinander zu vergleichen -->
    <!-- faciendum: Ps 11 und 13: Autorenangabe zu überprüfen: Theodorus etc. -->
@@ -2625,6 +2625,11 @@
             <div type="commentary" subtype="commentary" xml:id="plut-6-3-11-2"
                rendition="#middle-of-the-page">
                <ab xml:lang="grc">
+                  <note type="textual-commentary">Ps 11: Laurent. Plut. 6. 3. has 48 fragments on
+                     this Psalm as well as one exaplaric variant. It is missing thirteen fragments
+                     out of a total of 60 in Type XV (= Vat. gr. 1422 and Paris. gr. 146). It does,
+                     however, have a fragment of its own. Also its exaplaric variant is absent in
+                     Type XV.</note>
                   <note type="lemma">Ps 11,1</note>
                   <seg type="hypothesis" xml:id="plut-6-3-fr-11-1" rendition="#middle-of-the-page"
                      source="Anonymous" corresp="#plut-6-3-ps-11-1a"><quote type="patristic"
@@ -2632,7 +2637,7 @@
                         source="Theodoretus, comm. in Ps 11,1 (PG 80,941 B7–12.B3–6)"
                         corresp="#person-16"/><note type="attribution"><foreign xml:lang="grc"
                            >Ὑπόθ(εσις):</foreign></note></seg>
-                  <note type="lemma">Ps 11,2a1</note>
+                  <note type="lemma">Ps 11,2a (Σῶσόν με κύριε)</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-11-2"
                      rendition="#middle-of-the-page" source="Theodoretus"
                      corresp="#plut-6-3-ps-11-2a"><quote type="patristic" subtype="quotation"
@@ -2640,7 +2645,7 @@
                         source="Theodoretus, comm. in Ps 11,2 (PG 80,941 B15–C4)"
                         corresp="#person-16"/><note type="attribution"><foreign xml:lang="grc"
                            >Θεοδωριτ(ου):</foreign></note></seg>
-                  <note type="lemma">Ps 11,2a1</note>
+                  <note type="lemma">Ps 11,2a (Σῶσόν με κύριε)</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-11-3"
                      rendition="#middle-of-the-page" source="Theodorus Antiochenus"
                      corresp="#plut-6-3-ps-11-2a"><quote type="patristic" subtype="quotation"
@@ -2648,37 +2653,37 @@
                         source="Theodorus, fr. in Ps 11,2a (69,20–23 Devreesse)"
                         corresp="#person-22"><note type="attribution"><foreign xml:lang="grc"
                               >Θεοδώ(ρου) ἀντ(ιο)χ(είας)</foreign></note></quote></seg>
-                  <note type="lemma">Ps 11,2a2</note>
+                  <note type="lemma">Ps 11,2a (ὅτι ἐκλέλοιπεν ὅσιος)</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-11-4"
                      rendition="#middle-of-the-page" source="Anonymous" corresp="#plut-6-3-ps-11-2a"
                         ><quote type="patristic" subtype="quotation-abbreviated-paraphrase"
                         xml:id="plut-6-3-quote-11-4" rendition="#middle-of-the-page"
                         source="Iohannes Chrys., exp. in Ps. 11 (PG 55,145, l. 6–8) in Ps 11,2"
                         corresp="#person-28"/></seg>
-                  <note type="lemma">Ps 11,2a2</note>
+                  <note type="lemma">11,2a (ὅτι ἐκλέλοιπεν ὅσιος)</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-11-5"
                      rendition="#middle-of-the-page" source="Origenes" corresp="#plut-6-3-ps-11-2a"
                         ><quote type="patristic" subtype="quotation" xml:id="plut-6-3-quote-11-5"
                         source="Evagrius, schol. nr. α´ in Ps 11,2 (348,1–3 Rondeau – Géhin – Cassin)"
-                        corresp="#person-21"/><note type="attribution"><foreign xml:lang="grc"
-                           >ἄλλω(ς): | ὠρ(ι)γ(ένους):</foreign></note><note
-                        type="textual-commentary">This scholion contains two alternative
-                        explanations. Both type XV and type XVI (see below) offer the two
-                        explanations separately. However, type XV quotes at the end of the first
-                        explanation also the first words of the second explanation. This words, in
-                        type XVI, has been erased.</note></seg>
-                  <note type="lemma">Ps 11,2a2 (sic)</note>
+                        corresp="#person-21"/><note type="attribution">in textu: <foreign
+                           xml:lang="grc">ἄλλω(ς):</foreign> | in marg: <foreign xml:lang="grc"
+                           >ὠρ(ι)γ(ένους):</foreign></note><note type="textual-commentary">This
+                        scholion contains two alternative explanations. Both type XV and type XVI
+                        (see below) offer the two explanations separately. However, type XV quotes
+                        at the end of the first explanation also the first words of the second
+                        explanation. This words, in type XVI, has been erased.</note></seg>
+                  <note type="lemma">11,2a (ὅτι ἐκλέλοιπεν ὅσιος) (sic)</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-11-6"
                      rendition="#middle-of-the-page" source="Anonymous" corresp="#plut-6-3-ps-11-2a"
                      copyOf="#edition:edition-11-3-1"><quote type="patristic" subtype="quotation"
                         xml:id="plut-6-3-quote-11-6" source="Athanasius, exp. in Ps 11,3a"
-                        corresp="#person-2">τὰς κατὰ τοῦ σωτῆρος συνάγων ἐπιβουλάς: </quote><ref
+                        corresp="#person-2">Τὰς κατὰ τοῦ σωτῆρος συνάγων ἐπιβουλάς: </quote><ref
                         target="#vat-gr-754:vat-gr-754-fr-11-6" type="identical">Vat. gr.
                         754</ref><note type="attribution"><foreign xml:lang="grc"
                         >ἄλλω(ς):</foreign></note><note type="parallels">Ambr. C 98 sup. (f. 17v,
                         top-top): Attribution: <foreign xml:lang="grc"
                      >ἄλλ(ως):</foreign></note></seg>
-                  <note type="lemma">Ps 11,2a2</note>
+                  <note type="lemma">Ps 11,2a (ὅτι ἐκλέλοιπεν ὅσιος)</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-11-7"
                      rendition="#middle-of-the-page" source="Anonymous" corresp="#plut-6-3-ps-11-2a"
                         ><quote type="patristic" subtype="quotation" xml:id="plut-6-3-quote-11-7"
@@ -2686,14 +2691,16 @@
                         corresp="#person-10"/><note type="attribution"><foreign xml:lang="grc"
                            >ἄλλω(ς):</foreign></note><!-- σῶσόν με
                         κύριε· ὅτι πάντες ἄθεοι ὑπάρχουσιν: --></seg>
-                  <note type="lemma">Ps 11,2a2</note>
+                  <note type="lemma">Ps 11,2a (ὅτι ἐκλέλοιπεν ὅσιος)</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-11-8"
                      rendition="#middle-of-the-page" source="Anonymous" corresp="#plut-6-3-ps-11-2a"
                         ><quote type="patristic" subtype="quotation" xml:id="plut-6-3-quote-11-8"
                         source="Hesychius, comm. brevis in Ps 11,2a (17 Jagić)" corresp="#person-11"
                         /><note type="attribution"><foreign xml:lang="grc"
                      >ἄλλω(ς):</foreign></note></seg>
-                  <note type="lemma">Ps 11,2a2</note>
+                  <note type="textual-commentary">In the margin is written in red: τὰ κεί<unclear
+                        reason="abbreviation">μενα</unclear> ἔμπροσθ(εν)</note>
+                  <note type="lemma">Ps 11,2a (ὅτι ἐκλέλοιπεν ὅσιος)</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-11-9"
                      rendition="#middle-of-the-page" source="Anonymous" corresp="#plut-6-3-ps-11-2a"
                         ><quote type="patristic" subtype="quotation" xml:id="plut-6-3-quote-11-9"
@@ -2705,7 +2712,7 @@
             <div type="commentary" subtype="commentary" xml:id="plut-6-3-11-3"
                rendition="#bottom-of-the-page">
                <ab xml:lang="grc">
-                  <note type="lemma">Ps 11,3a</note>
+                  <note type="lemma">Ps 11,3a (μάταια ἐλάλησεν)</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-11-10"
                      rendition="#bottom-of-the-page" source="Athanasius"
                      corresp="#plut-6-3-ps-11-3a" copyOf="#edition:edition-11-3-1"><quote
@@ -2718,14 +2725,14 @@
                            xml:lang="grc">Ἀθα(νασίου):</foreign></note><note type="parallels">Ambr.
                         C 98 sup. (f. 17v, top-middle): Attribution: <foreign xml:lang="grc"
                            >Ἀθα(νασίου)</foreign></note></seg>
-                  <note type="lemma">Ps 11,3a</note>
+                  <note type="lemma">Ps 11,3a (μάταια ἐλάλησεν)</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-11-11"
                      rendition="#bottom-of-the-page" source="Anonymous" corresp="#plut-6-3-ps-11-3a"
                         ><quote type="patristic" subtype="quotation" xml:id="plut-6-3-quote-11-11"
                         source="Hesychius, comm. brevis in Ps 11,3a (17 Jagić)" corresp="#person-11"
                         /><note type="attribution"><foreign xml:lang="grc"
                      >ἄλλω(ς):</foreign></note></seg>
-                  <note type="lemma">Ps 11,3a (sic)</note>
+                  <note type="lemma">Ps 11,3a (μάταια ἐλάλησεν) (sic)</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-11-12"
                      rendition="#bottom-of-the-page" source="Anonymous" corresp="#plut-6-3-ps-11-3a"
                         ><quote type="patristic" subtype="quotation" xml:id="plut-6-3-quote-11-12"
@@ -2733,7 +2740,7 @@
                         corresp="#person-10"/><note type="attribution"><foreign xml:lang="grc"
                            >ἄλλω(ς):</foreign></note><!-- οὐκ ἔστι
                         διδασκαλία <add place="above">θεοῦ</add> παρὰ ἀνθρώποις: --></seg>
-                  <note type="lemma">Ps 11,3b</note>
+                  <note type="lemma">Ps 11,3b (χείλη δόλια ἐν καρδίᾳ καὶ)</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-11-13"
                      rendition="#bottom-of-the-page" source="Anonymous" corresp="#plut-6-3-ps-11-3b"
                         ><quote type="patristic" subtype="quotation" xml:id="plut-6-3-quote-11-13"
@@ -2741,7 +2748,7 @@
                         corresp="#person-16"/><note type="attribution"><foreign xml:lang="grc"
                               >Θεοδω(ρή)τ(ου)<supplied reason="illegible"
                         >:</supplied></foreign></note></seg>
-                  <note type="lemma">Ps 11,3b (sic)</note>
+                  <note type="lemma">Ps 11,3b (χείλη δόλια ἐν καρδίᾳ καὶ) (sic)</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-11-14"
                      rendition="#bottom-of-the-page" source="Anonymous" corresp="#plut-6-3-ps-11-3b"
                         ><quote type="patristic" subtype="quotation" xml:id="plut-6-3-quote-11-14"
@@ -2751,13 +2758,13 @@
                            <del rend="overwrite">ῖ</del>
                            <add place="above">ί</add>
                         </subst>ως ἐλάλησε πρὸς τὸν πλησίον αὐτοῦ: --></seg>
-                  <note type="lemma">Ps 11,3b</note>
+                  <note type="lemma">Ps 11,3b (χείλη δόλια ἐν καρδίᾳ καὶ)</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-11-15"
                      rendition="#bottom-of-the-page" source="Anonymous" corresp="#plut-6-3-ps-11-3b"
                      copyOf="#edition:edition-11-3-2"><quote type="patristic"
                         subtype="quotation/quotation" xml:id="plut-6-3-quote-11-15"
                         source="Athanasius, exp. in Ps 11,3b - Hesychius, schol. nr. 4 in Ps 11,3b (Antonelli; PG 27,685)"
-                        corresp="#person-2 #person-10">ὅτι διδάσκαλον αὐτὸν ἀποκαλοῦντες καὶ ἀγαθὸν,
+                        corresp="#person-2 #person-10">Ὅτι διδάσκαλον αὐτὸν ἀποκαλοῦντες καὶ ἀγαθὸν,
                         ἕτερα ἐβουλεύοντο περὶ αὐτοῦ· / ῥήματα κολακείας προφέρουσι· καὶ ἐν τῆ
                         καρδία αὐτῶν, ἔχουσι τὴν κακίαν:</quote><ref
                         target="#vat-gr-754:vat-gr-754-fr-11-8" type="identical">Vat. gr.
@@ -2765,33 +2772,33 @@
                         >ἄλλω(ς):</foreign></note><note type="parallels">Ambr. C 98 sup. (f. 17v,
                         middle-top: Attribution: <foreign xml:lang="grc"
                      >ἄλλ(ως):</foreign></note></seg>
-                  <note type="lemma">Ps 11,4a</note>
+                  <note type="lemma">Ps 11,4 (ἐξολεθρεύσαι κύριος πάντα τὰ)</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-11-16"
                      rendition="#bottom-of-the-page" source="Origenes" corresp="#plut-6-3-ps-11-4a"
                         ><quote type="patristic" subtype="unknown" xml:id="plut-6-3-quote-11-16"
                         source="Origenes, fr. in Ps 11,4 (PG 12,1200 D5–9)" corresp="#person-13"
                         /><note type="attribution"><foreign xml:lang="grc"
                         >ὠρ(ι)γ(ένους):</foreign></note></seg>
-                  <note type="lemma">Ps 11,4a</note>
+                  <note type="lemma">Ps 11,4 (ἐξολεθρεύσαι κύριος πάντα τὰ)</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-11-17"
                      rendition="#bottom-of-the-page" source="Anonymous" corresp="#plut-6-3-ps-11-4a"
                         ><quote type="patristic" subtype="quotation" xml:id="plut-6-3-quote-11-17"
                         source="Hesychius, schol. nr. 5;6 in Ps 11,4a;4b (Antonelli; PG 27,685)"
                         corresp="#person-10"/><note type="attribution"><foreign xml:lang="grc"
                            >ἄλλω(ς):</foreign></note></seg>
-                  <note type="lemma">Ps 11,4a</note>
+                  <note type="lemma">Ps 11,4 (ἐξολεθρεύσαι κύριος πάντα τὰ)</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-11-18"
                      rendition="#bottom-of-the-page" source="Anonymous" corresp="#plut-6-3-ps-11-4a"
                         ><quote type="patristic" subtype="quotation" xml:id="plut-6-3-quote-11-18"
                         source="Hesychius, comm. brevis in Ps 11,4a (17 Jagić)" corresp="#person-11"
                         /><note type="attribution"><foreign xml:lang="grc"
                      >ἄλλω(ς):</foreign></note></seg>
-                  <note type="lemma">Ps 11,4a</note>
+                  <note type="lemma">Ps 11,4 (ἐξολεθρεύσαι κύριος πάντα τὰ)</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-11-19"
                      rendition="#bottom-of-the-page" source="Anonymous" corresp="#plut-6-3-ps-11-4a"
                      copyOf="#edition:edition-11-5-1"><quote type="patristic" subtype="quotation"
                         xml:id="plut-6-3-quote-11-19" source="Athanasius, exp. in Ps 11,4–5a"
-                        corresp="#person-2">πῶς γὰρ οὐ μεγαλο<add place="above" hand="corr"
+                        corresp="#person-2">Πῶς γὰρ οὐ μεγαλο<add place="above" hand="corr"
                         >ρ</add>ρήμων ἡ γλῶσσα ἐκείνη ἡ τολμῶσα τῶ κυρίω λέγειν· ἐν ποία ἐξουσία
                         ταῦτα ποιεῖς καὶ τίς σοι ἔδωκε<del rend="erasure"><gap reason="illegible"
                               unit="character" quantity="1"/></del> τὴν ἐξουσίαν ταύτην: [Mc
@@ -2800,13 +2807,13 @@
                            xml:lang="grc">ἄλλω(ς):</foreign></note><note type="parallels">Ambr. C 98
                         sup. (f. 17v, middle-bottom): <foreign xml:lang="grc"
                         >ἄλλω(ς):</foreign></note></seg>
-                  <note type="lemma">Ps 11,5a</note>
+                  <note type="lemma">Ps 11,5 (τοὺς εἰπόντας Τὴν γλῶσσαν)</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-11-20"
                      rendition="#bottom-of-the-page" source="Anonymous" corresp="#plut-6-3-ps-11-5a"
                         ><quote type="patristic" subtype="quotation" xml:id="plut-6-3-quote-11-20"
                         source="Hesychius, schol. nr. 8–9 in Ps 11,5b–c (Antonelli; PG 27,688)"
                         corresp="#person-10"/></seg>
-                  <note type="lemma">Ps 11,5a</note>
+                  <note type="lemma">Ps 11,5 (τοὺς εἰπόντας Τὴν γλῶσσαν)</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-11-21"
                      rendition="#bottom-of-the-page" source="Anonymous" corresp="#plut-6-3-ps-11-5a"
                      copyOf="#edition:edition-11-5-2"><quote type="patristic" subtype="quotation"
@@ -2837,7 +2844,7 @@
                         source="Theodorus, fr. in Ps 11,2b (69,28–70,2 Devreesse)"
                         corresp="#person-22"/><note type="attribution"><foreign xml:lang="grc"
                            >Θεοδώ(ρου):</foreign></note></seg>
-                  <note type="lemma">Ps 11,3a</note>
+                  <note type="lemma">Ps 11,3a (μάταια ἐλάλησεν)</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-11-24"
                      rendition="#top-of-the-page" source="Anonymous" corresp="#plut-6-3-ps-11-3a"
                         ><quote type="patristic" subtype="quotation-abbreviated-and-paraphrase"
@@ -2849,7 +2856,7 @@
             <div type="commentary" subtype="commentary" xml:id="plut-6-3-11-5"
                rendition="#middle-of-the-page">
                <ab xml:lang="grc">
-                  <note type="lemma">Ps 11,4a</note>
+                  <note type="lemma">Ps 11,4a (ἐξολεθρεύσαι κύριος)</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-11-25"
                      rendition="#middle-of-the-page" source="Anonymous" corresp="#plut-6-3-ps-11-4a"
                         ><quote type="patristic"
@@ -2857,36 +2864,37 @@
                         xml:id="plut-6-3-quote-11-25"
                         source="Iohannnes Chrys., exp. in Ps. 11 (PG 55,145, l. 61–146, l. 9; 146, l. 12–13.15–28) in Ps 11,4–5"
                         corresp="#person-28"/></seg>
-                  <note type="lemma">Ps 11,6a</note>
+                  <note type="lemma">Ps 11,6a–b (ἕνεκεν [ἀπὸ LXX Rahlfs] τῆς ταλαιπωρίας)</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-11-26"
                      rendition="#middle-of-the-page" source="Anonymous" corresp="#plut-6-3-ps-11-6a"
                         ><quote type="patristic" subtype="quotation-abbreviated-and-adapted"
                         xml:id="plut-6-3-quote-11-26"
                         source="Iohannnes Chrys., exp. in Ps. 11 (PG 55,147, l. 3.6–9.24–27) in Ps 11,6"
                         corresp="#person-28"/></seg>
-                  <note type="lemma">Ps 11,6a</note>
+                  <note type="lemma">Ps 11,6a–b (ἕνεκεν [ἀπὸ LXX Rahlfs] τῆς ταλαιπωρίας)</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-11-27"
-                     rendition="#middle-of-the-page" source="Theodorus (?)"
-                     corresp="#plut-6-3-11-6a"><quote type="patristic" subtype="quotation"
-                        xml:id="plut-6-3-quote-11-27"
+                     rendition="#middle-of-the-page" source="Theodorus" corresp="#plut-6-3-11-6a"
+                        ><quote type="patristic" subtype="quotation" xml:id="plut-6-3-quote-11-27"
                         source="Theodoretus, comm. in Ps 11,6 (PG 80,944 B8–12)"
                         corresp="#person-16"/><note type="attribution"><foreign xml:lang="grc"
-                           >Θεοδώ(ρου): (?)</foreign></note></seg>
-                  <note type="lemma">Ps 11,6c</note>
+                           >Θεοδώ(ρου):</foreign></note></seg>
+                  <note type="lemma">Ps 11,6c–d (νῦν ἀναστήσομαι θήσομαι ἐν σωτηρίῳ [σωτηρίᾳ LXX
+                     Rahlfs])</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-11-28"
                      rendition="#middle-of-the-page" source="Origenes" corresp="#plut-6-3-ps-11-6c"
                         ><quote type="patristic" subtype="unknown" xml:id="plut-6-3-quote-11-28"
                         source="Origenes, fr. in Ps 11,6d (PG 12,1201 C11–13)" corresp="#person-13"
                            ><note type="attribution"><foreign xml:lang="grc"
                               >ωρ(ι)γ(ένους):</foreign></note></quote></seg>
-                  <note type="lemma">Ps 11,6c</note>
+                  <note type="lemma">Ps 11,6c–d (νῦν ἀναστήσομαι θήσομαι ἐν σωτηρίῳ [σωτηρίᾳ LXX
+                     Rahlfs])</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-11-29"
                      rendition="#middle-of-the-page" source="Eusebius" corresp="#plut-6-3-ps-11-6c"
                         ><quote type="patristic" subtype="paraphrase" xml:id="plut-6-3-quote-11-29"
                         source="Eusebius, fr. 4 in Ps 11,6 (Villani)" corresp="#person-17"/><note
                         type="attribution"><foreign xml:lang="grc"
                      >Εὐσεβ(ίου):</foreign></note></seg>
-                  <note type="lemma">Ps 11,7a</note>
+                  <note type="lemma">Ps 11,7 (τὰ λόγια κυρίου λόγια)</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-11-30"
                      rendition="#middle-of-the-page" source="Anonymous" corresp="#plut-6-3-ps-11-7a"
                         ><quote type="patristic" subtype="paraphrase/paraphrase"
@@ -2898,33 +2906,33 @@
             <div type="commentary" subtype="commentary" xml:id="plut-6-3-11-6"
                rendition="#bottom-of-the-page">
                <ab xml:lang="grc">
-                  <note type="lemma">Ps 11,7a</note>
+                  <note type="lemma">Ps 11,7 (τὰ λόγια κυρίου λόγια)</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-11-31"
                      rendition="#bottom-of-the-page" source="Cyrillus" corresp="#plut-6-3-ps-11-7a"
                         ><quote type="patristic" subtype="quotation" xml:id="plut-6-3-quote-11-31"
                         source="Cyrillus, fr. in Ps 11,7 (PG 69,797 C5–10)" corresp="#person-4"
                         /><note type="attribution"><foreign xml:lang="grc"
                         >Κυριλλ(ου):</foreign></note></seg>
-                  <note type="lemma">Ps 11,7a</note>
+                  <note type="lemma">Ps 11,7 (τὰ λόγια κυρίου λόγια)</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-11-32"
                      rendition="#bottom-of-the-page" source="Eusebius" corresp="#plut-6-3-ps-11-7a"
                         ><quote type="patristic" subtype="paraphrase-abbreviated"
                         xml:id="plut-6-3-quote-11-32" source="Eusebius, fr. 5 in Ps 11,7 (Villani)"
                         corresp="#person-17"><note type="attribution"><foreign xml:lang="grc"
                               >Εὐσεβίου:</foreign></note></quote></seg>
-                  <note type="lemma">Ps 11,7a</note>
+                  <note type="lemma">Ps 11,7 (τὰ λόγια κυρίου λόγια)</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-11-33"
                      rendition="#bottom-of-the-page" source="Origenes" corresp="#plut-6-3-ps-11-7a"
                         ><quote type="patristic" subtype="quotation" xml:id="plut-6-3-quote-11-33"
                         source="Origenes, fr. in Ps 11,7 (PG 12,1201 D1–3)" corresp="#person-13"
                         /><note type="attribution"><foreign xml:lang="grc"
                         >ωρ(ι)γ(ένους):</foreign></note></seg>
-                  <note type="lemma">Ps 11,7a (sic)</note>
+                  <note type="lemma">Ps 11,7 (τὰ λόγια κυρίου λόγια) (sic)</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-11-34"
                      rendition="#bottom-of-the-page" source="Athanasius"
                      corresp="#plut-6-3-quote-ps-11-7a" copyOf="#edition:edition-11-6-2"><quote
                         type="patristic" subtype="quotation" xml:id="plut-6-3-quote-11-34"
-                        source="Athanasius, exp. in Ps 11,6d" corresp="#person-2">φανερὸν πᾶσι
+                        source="Athanasius, exp. in Ps 11,6d" corresp="#person-2">Φανερὸν πᾶσι
                         καταστήσω τὸ σωτήριον ὃ καὶ ἐξάκουστον παρασκευάσ<subst>
                            <del rend="unmarked" cert="medium">αι</del>
                            <add place="above">ω</add>
@@ -2934,20 +2942,21 @@
                            >Ἀθα(νασίου):</foreign></note><note type="parallels">Ambr. C 98 sup. (f.
                         18r, bottom-top): <foreign xml:lang="grc"
                      >Ἀθα(νασίου):</foreign></note></seg>
-                  <note type="lemma">Ps 11,7a</note>
+                  <note type="lemma">Ps 11,7 (τὰ λόγια κυρίου λόγια)</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-11-35"
                      rendition="#bottom-of-the-page" source="Anonymous" corresp="#plut-6-3-ps-11-7a"
                         ><quote type="patristic" subtype="quotation" xml:id="plut-6-3-quote-11-35"
                         source="Hesychius, schol. nr. 14–16 in Ps 11,7 (Antonelli; PG 27,688)"
                         corresp="#person-10"/><note type="attribution"><foreign xml:lang="grc"
                            >ἄλλω(ς):</foreign></note></seg>
-                  <note type="lemma">Ps 11,6a (sic)</note>
+                  <note type="lemma">Ps 11,6a–b (ἕνεκεν [ἀπὸ LXX Rahlfs] τῆς ταλαιπωρίας)
+                     (sic)</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-11-36"
                      rendition="#bottom-of-the-page" source="Anonymous" corresp="#plut-6-3-ps-11-6a"
                         ><quote type="patristic" subtype="quotation" xml:id="plut-6-3-quote-11-36"
                         source="Hesychius, comm. brevis in Ps 11,5b–c (17 Jagić)"
                         corresp="#person-10"/></seg>
-                  <note type="lemma">Ps 11,6a</note>
+                  <note type="lemma">Ps 11,6a–b (ἕνεκεν [ἀπὸ LXX Rahlfs] τῆς ταλαιπωρίας)</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-11-37"
                      rendition="#bottom-of-the-page" source="Iohannes Chrysostomus"
                      corresp="#plut-6-3-ps-11-6a"><quote type="patristic" subtype="paraphrase"
@@ -2959,7 +2968,7 @@
                            Χρ(υσοστόμ)ου</foreign></note><note type="parallels">Ambr. C 98 sup. (f.
                         18r, bottom-middle): <foreign xml:lang="grc">τοῦ
                         Χρ(υσοστόμ)ου</foreign></note></seg>
-                  <note type="lemma">Ps 11,6c</note>
+                  <note type="lemma">Ps 11,6c–d (νῦν ἀναστήσομαι)</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-11-38"
                      rendition="#bottom-of-the-page" source="Anonymous" corresp="#plut-6-3-ps-11-6c"
                         ><quote type="patristic" subtype="unknown" xml:id="plut-6-3-quote-11-38"
@@ -3038,27 +3047,28 @@
                            >Ἀθα(νασίου):</foreign></note><note type="parallels">Ambr. C 98 sup. (f.
                         18v, top-bottom): <foreign xml:lang="grc"
                      >Ἀθα(νασίου):</foreign></note></seg>
-                  <note type="lemma">Ps 11,9a</note>
+                  <note type="lemma">Ps 11,9 (κύκλῳ οἱ ἀσεβεῖς)</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-11-44"
                      rendition="#top-of-the-page" source="Anonymous" corresp="#plut-6-3-ps-11-9a"
-                        ><quote type="patristic" subtype="quotation-abbreviatedand-paraphrase"
+                        ><quote type="patristic" subtype="quotation-abbreviated-and-paraphrase"
                         xml:id="plut-6-3-quote-11-44"
                         source="Iohannes Chrys., exp. in Ps. 11 (PG 55,148, l. 14–16; 149, l. 11–13) in Ps 11,8–9"
                         corresp="#person-28"/></seg>
-                  <note type="lemma">Ps 11,9a</note>
+                  <note type="lemma">Ps 11,9 (κύκλῳ οἱ ἀσεβεῖς)</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-11-45"
                      rendition="#top-of-the-page" source="Athanasius" corresp="#plut-6-3-ps-11-9a"
                      copyOf="#edition:edition-11-9-2"><quote type="patristic" subtype="quotation"
-                        xml:id="plut-6-3-quote-11-45" source="Athanasius, exp. in Ps 11,9b"
-                        corresp="#person-2">ὕψος μὲν τὴν δύναμιν λέγει· πολυωρίαν δὲ· τὴν
-                        πολυχρονιότητα· ἵν᾿ ἦ τοιοῦτον· διὰ τῆς σῆς ἰσχύος πολυχρονιότητα καὶ
-                        αἰώνιον ζωὴν ἡμῖν δέδωκας· ἢ ὕψος λέγει· ὅτι ὁμοίους σου ἐποίησας· ὡς
-                        ἀνθρώπω δυνατόν· ἢ ὅτι πολλῆς φροντίδος ἠξίωσας ⁘</quote><ref
-                        target="#vat-gr-754:vat-gr-754-11-11" type="abbreviated-with-variants">Vat.
-                        gr. 754</ref><note type="attribution"><foreign xml:lang="grc"
-                           >Ἀθα(νασίου):</foreign></note><note type="parallels">Ambr. C 98 sup. (f.
-                        18v, middle-top): <foreign xml:lang="grc"
-                     >Ἀθα(νασίου):</foreign></note></seg>
+                        xml:id="plut-6-3-quote-11-45"
+                        source="Athanasius, exp. in Ps 11,9b - Iohannes Chrysostomus, exp. in Ps. 11 (PG 55,148, l. 22–23) in Ps 11,8–9 - Evagrius, schol. nr. δ´ in Ps 11,9b (350 Rondeau – Géhin – Cassin)"
+                        corresp="#person-2 #person-28 #person-18">Ὕψος μὲν τὴν δύναμιν λέγει·
+                        πολυωρίαν δὲ· τὴν πολυχρονιότητα· ἵν᾿ ἦ τοιοῦτον· διὰ τῆς σῆς ἰσχύος
+                        πολυχρονιότητα καὶ αἰώνιον ζωὴν ἡμῖν δέδωκας· / ἢ ὕψος λέγει· ὅτι ὁμοίους
+                        σου ἐποίησας· ὡς ἀνθρώπω δυνατόν· / ἢ ὅτι πολλῆς φροντίδος ἠξίωσας
+                        ⁘</quote><ref target="#vat-gr-754:vat-gr-754-11-11"
+                        type="abbreviated-with-variants">Vat. gr. 754</ref><note type="attribution"
+                           ><foreign xml:lang="grc">Ἀθα(νασίου):</foreign></note><note
+                        type="parallels">Ambr. C 98 sup. (f. 18v, middle-top): <foreign
+                           xml:lang="grc">Ἀθα(νασίου):</foreign></note></seg>
                </ab>
             </div>
             <div type="commentary" subtype="commentary" xml:id="plut-6-3-11-10"
