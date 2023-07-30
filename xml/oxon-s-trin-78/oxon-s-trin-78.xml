@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../schema/tei-psalmcatenae.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<!-- ab Ps 6 lemmata einzutragen -->
+<!-- faciendum: Ps 1–12 mit B2 zu verknüpfen -->
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -13,7 +13,7 @@
             <respStmt>
                <resp>(Ps.)-Athanasius transcribed by</resp>
                <persName>Maria-Lucia Goiana (Ps 2–5; 7) and Sebastiano Panteghini (Ps 1; 6;
-                  8–10)</persName>
+                  8–13)</persName>
             </respStmt>
          </titleStmt>
          <publicationStmt>
@@ -3372,7 +3372,8 @@
                            <del rend="overwrite">ῆ</del>
                            <add place="inline">ὴν</add>
                         </subst> παρασκευάζει: –</quote>
-                     <ref target="#vat-gr-754:vat-gr-754-fr-12-7" type="XXX">Vat. gr. 754</ref>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-12-7" type="with-variants">Vat. gr.
+                        754</ref>
                   </seg>
                   <note type="lemma">Ps 12,3c–4 (φώτισον)</note>
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-12-3" source="Anonymous"
@@ -3393,7 +3394,8 @@
                         ἀγαλλιᾶσθαί μου τὴν καρδίαν τὴν πάλαι ὀδυνωμένην· διὰ τὴν ἁμαρτίαν<unclear
                            reason="faded">:</unclear>
                      </quote>
-                     <ref target="#vat-gr-754:vat-gr-754-fr-12-13" type="XXX">Vat. gr. 754</ref>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-12-13" type="with-variants">Vat. gr.
+                        754</ref>
                   </seg>
                </ab>
             </div>
@@ -3410,6 +3412,221 @@
                      <ref target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-12-8" type="with-variant"
                         >Oxon. Βodl. Αuct. D. 4. 1</ref>
                   </seg>
+               </ab>
+            </div>
+            <!-- Ps 13 bibletext -->
+            <div type="bibletext" subtype="commented" xml:id="oxon-s-trin-78-13-1">
+               <ab xml:lang="grc">
+                  <quote type="bibletext" xml:id="oxon-s-trin-78-ps-13-1" n="Ps (LXX) 13,1"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-1">
+                     <anchor type="psalmtext" xml:id="oxon-s-trin-78-ps-13-1a" n="Ps (LXX) 13,1a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-1"/> Εἰς τὸ τέλος· ψαλμὸς τῷ
+                     Δαυιδ. <anchor type="psalmtext" xml:id="oxon-s-trin-78-ps-13-1b"
+                        n="Ps (LXX) 13,1b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-1"/> Εἶπεν
+                     ἄφρων ἐν καρδίᾳ αὐτοῦ Οὐκ ἔστιν θεός·</quote>
+                  <quote type="bibletext" xml:id="oxon-s-trin-78-ps-13-1-1" n="Ps (LXX) 13,1"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-1">
+                     <anchor type="psalmtext" xml:id="oxon-s-trin-78-ps-13-1c" n="Ps (LXX) 13,1c"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-1"/>διέφθειραν καὶ ἐβδελύχθησαν
+                     ἐν ἐπιτηδεύμασιν, <anchor type="psalmtext" xml:id="oxon-s-trin-78-ps-13-1d"
+                        n="Ps (LXX) 13,1d" corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-1"/> οὐκ
+                     ἔστιν ποιῶν χρηστότητα, οὐκ ἔστιν ἕως ἑνός.</quote>
+                  <quote type="bibletext" xml:id="oxon-s-trin-78-ps-13-2" n="Ps (LXX) 13,2"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-2">
+                     <anchor type="psalmtext" xml:id="oxon-s-trin-78-ps-13-2a" n="Ps (LXX) 13,2a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-2"/> κύριος ἐκ τοῦ οὐρανοῦ
+                     διέκυψεν ἐπὶ τοὺς υἱοὺς τῶν ἀνθρώπων <anchor type="psalmtext"
+                        xml:id="oxon-s-trin-78-ps-13-2b" n="Ps (LXX) 13,2b"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-2"/> τοῦ ἰδεῖν εἰ ἔστιν συνίων ἢ
+                     ἐκζητῶν τὸν θεόν. </quote>
+                  <quote type="bibletext" xml:id="oxon-s-trin-78-ps-13-3" n="Ps (LXX) 13,3"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-3">
+                     <anchor type="psalmtext" xml:id="oxon-s-trin-78-ps-13-3a" n="Ps (LXX) 13,3a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-3"/> πάντες ἐξέκλιναν, ἅμα
+                     ἠχρεώθησαν, <anchor type="psalmtext" xml:id="oxon-s-trin-78-ps-13-3b"
+                        n="Ps (LXX) 13,3b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-3"/> οὐκ
+                     ἔστιν ποιῶν χρηστότητα, οὐκ ἔστιν ἕως ἑνός. <anchor type="psalmtext"
+                        xml:id="oxon-s-trin-78-ps-13-3c" n="Ps (LXX) 13,3c"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-3"/> [τάφος ἀνεῳγμένος ὁ λάρυγξ
+                     αὐτῶν, <anchor type="psalmtext" xml:id="oxon-s-trin-78-ps-13-3d"
+                        n="Ps (LXX) 13,3d" corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-3"/> ταῖς
+                     γλώσσαις αὐτῶν ἐδολιοῦσαν· <anchor type="psalmtext"
+                        xml:id="oxon-s-trin-78-ps-13-3e" n="Ps (LXX) 13,3e"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-3"/> ἰὸς ἀσπίδων ὑπὸ τὰ χείλη
+                     αὐτῶν, <anchor type="psalmtext" xml:id="oxon-s-trin-78-ps-13-3f"
+                        n="Ps (LXX) 13,3f" corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-3"/> ὧν τὸ
+                     στόμα ἀρᾶς καὶ πικρίας γέμει· <anchor type="psalmtext"
+                        xml:id="oxon-s-trin-78-ps-13-3g" n="Ps (LXX) 13,3g"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-3"/> ὀξεῖς οἱ πόδες αὐτῶν ἐκχέαι
+                     αἷμα· <anchor type="psalmtext" xml:id="oxon-s-trin-78-ps-13-3h"
+                        n="Ps (LXX) 13,3h" corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-3"/>
+                     σύντριμμα καὶ ταλαιπωρία ἐν ταῖς ὁδοῖς αὐτῶν, <anchor type="psalmtext"
+                        xml:id="oxon-s-trin-78-ps-13-3i" n="Ps (LXX) 13,3i"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-3"/> καὶ ὁδὸν εἰρήνης οὐκ
+                     ἔγνωσαν· <anchor type="psalmtext" xml:id="oxon-s-trin-78-ps-13-3j"
+                        n="Ps (LXX) 13,3j" corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-3"/> οὐκ
+                     ἔστιν φόβος θεοῦ ἀπέναντι τῶν ὀφθαλμῶν αὐτῶν.] </quote>
+                  <quote type="bibletext" xml:id="oxon-s-trin-78-ps-13-4" n="Ps (LXX) 13,4"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-4">
+                     <anchor type="psalmtext" xml:id="oxon-s-trin-78-ps-13-4a" n="Ps (LXX) 13,4a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-4"/> οὐχὶ γνώσονται πάντες οἱ
+                     ἐργαζόμενοι τὴν ἀνομίαν; <anchor type="psalmtext"
+                        xml:id="oxon-s-trin-78-ps-13-4b" n="Ps (LXX) 13,4b"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-4"/> οἱ κατεσθίοντες τὸν λαόν
+                     μου βρώσει ἄρτου τὸν κύριον οὐκ ἐπεκαλέσαντο. </quote>
+                  <quote type="bibletext" xml:id="oxon-s-trin-78-ps-13-5" n="Ps (LXX) 13,5"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-5">
+                     <anchor type="psalmtext" xml:id="oxon-s-trin-78-ps-13-5a" n="Ps (LXX) 13,5a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-5"/> ἐκεῖ ἐδειλίασαν φόβῳ, οὗ
+                     οὐκ ἦν φόβος, <anchor type="psalmtext" xml:id="oxon-s-trin-78-ps-13-5b"
+                        n="Ps (LXX) 13,5b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-5"/> ὅτι ὁ
+                     θεὸς ἐν γενεᾷ δικαίᾳ. </quote>
+                  <quote type="bibletext" xml:id="oxon-s-trin-78-ps-13-6" n="Ps (LXX) 13,6"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-6">
+                     <anchor type="psalmtext" xml:id="oxon-s-trin-78-ps-13-6a" n="Ps (LXX) 13,6a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-6"/> βουλὴν πτωχοῦ κατῃσχύνατε,
+                        <anchor type="psalmtext" xml:id="oxon-s-trin-78-ps-13-6b" n="Ps (LXX) 13,6b"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-6"/> ὅτι κύριος ἐλπὶς αὐτοῦ
+                     ἐστιν. </quote>
+                  <quote type="bibletext" xml:id="vat-gr-754-ps-13-7" n="Ps (LXX) 13,7"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-7">
+                     <anchor type="psalmtext" xml:id="vat-gr-754-ps-13-7a" n="Ps (LXX) 13,7a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-7"/> τίς δώσει ἐκ Σιων τὸ
+                     σωτήριον τοῦ Ισραηλ; <anchor type="psalmtext" xml:id="vat-gr-754-ps-13-7b"
+                        n="Ps (LXX) 13,7b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-7"/> ἐν τῷ
+                     ἐπιστρέψαι κύριον τὴν αἰχμαλωσίαν τοῦ λαοῦ αὐτοῦ <anchor type="psalmtext"
+                        xml:id="vat-gr-754-ps-13-7c" n="Ps (LXX) 13,7c"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-7"/> ἀγαλλιάσθω Ιακωβ καὶ
+                     εὐφρανθήτω Ισραηλ.</quote>
+               </ab>
+            </div>
+            <!-- Ps 13 commentary -->
+            <div type="commentary" subtype="commentary" xml:id="oxon-s-trin-78-13-2">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 13,1b–d (Εἶπεν)</note>
+                  <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-13-1" source="Anonymous"
+                     corresp="#oxon-s-trin-78-ps-13-1b"><quote type="patristic" subtype="unknown"
+                        xml:id="oxon-s-trin-78-quot-13-1"
+                        source="Tarasius patriarcha Const., fr. in Ps 13,1a (ineditum?)"
+                        corresp="#person-39">εἰκότως καὶ λίαν ὀρθῶς ὁ παρὼν ψαλμὸς τοὺς ἰουδαίους
+                        ἐλέγχει· ἐπιφέρει γάρ· κύριος ἐκ τοῦ οὐρανοῦ διέκυψεν ἐπὶ τοὺς υἱοὺς τῶν
+                        ἀνθρώπων:</quote><ref target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-13-1"
+                        type="identical">Oxon. Bodl. Auct. D. 4. 1</ref><note
+                        type="textual-commentary">This fragment is linked not by a letter, but by a
+                        linking sign.</note></seg>
+                  <note type="lemma">Ps 13,1b–d (διεφθάρησαν [διέφθειραν LXX Rahlfs])</note>
+                  <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-13-2" source="Anonymous"
+                     corresp="#oxon-s-trin-78-ps-13-1b" copyOf="#edition:edition-13-1-2"><quote
+                        type="patristic" subtype="unknown/quotation"
+                        xml:id="oxon-s-trin-78-quot-13-2"
+                        source="fons ignotus (glossa) in Ps 13,1c; cf. Suda s.v. Ἐβδελύχθησαν (E nr. 23 Adler) - Athanasius, exp. in Ps 13,1b–2"
+                        corresp="#person-18 #person-2">Ἐξουδενώθησαν ἀπερρίφησαν· / ἐπειδὴ μὴ
+                        λογισάμενοι φησὶν εἶναι θεὸν ἐφορῶντα τὰ ἀνθρώπινα καὶ κρίνοντα κρίσει
+                        δικαία· πᾶσαν ἀθεμιτουργίαν εἰργάσαντο· τούτου δὴ καὶ ὁ κύριος ἐκ τοῦ
+                        οὐρανοῦ διέκυψεν:2</quote><ref
+                        target="#bodl-auct-d-4-1:bodl-auct-d-4-1-glosse-13-2" type="identical">Oxon.
+                        Bodl. Auct. D. 4. 1</ref><ref
+                        target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-13-4"
+                        type="abbreviated-with-variants">Oxon. Bodl. Auct. D. 4. 1</ref><ref
+                        target="#vat-gr-754:vat-gr-754-fr-13-2" type="abbreviated-with-variant">Vat.
+                        gr. 754</ref></seg>
+                  <note type="lemma">Ps 13,1b–d (ἐν ἐπιτηδεύμασιν)</note>
+                  <seg type="glosse" xml:id="oxon-s-trin-78-glosse-13-1" source="Anonymous"
+                     corresp="#oxon-s-trin-78-ps-13-1b"><quote type="patristic" subtype="unknown"
+                        xml:id="oxon-s-trin-78-quot-13-3"
+                        source="fons ignotus in Ps 13,1c; apud lineam Psalmi" corresp="#person-18"
+                        >ἐν ἐ<supplied reason="inner-margin">πι</supplied>χειρ<supplied
+                           reason="inner-margin">ή</supplied>μα<unclear reason="inner-margin"
+                           >σ</unclear><supplied reason="inner-margin">ιν</supplied></quote><ref
+                        target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-13-3" type="abbreviated">Oxon.
+                        Bodl. Auct. D. 4. 1</ref></seg>
+                  <note type="lemma">Ps 13,2 (διέκυψεν)</note>
+                  <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-13-3" source="Anonymous"
+                     corresp="#oxon-s-trin-78-ps-13-2a" copyOf="#edition:edition-13-3-1"><num
+                        type="ordinal" xml:lang="grc" value="8">Η´</num><quote type="patristic"
+                        subtype="quotation" xml:id="oxon-s-trin-78-quot-13-4"
+                        source="Athanasius, exp. in Ps 13,3a–b" corresp="#person-2">ἐλθὼν φη(σὶν) ὁ
+                        κύριος, οὐδένα εὗρε χρηστότητος ἐργάτην· ἀλλὰ γὰρ ὑπεύθυνον πάση πράξει
+                        ἀτόπωι: </quote><ref target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-13-5"
+                        type="with-variant">Oxon. Bodl. Auct. D. 4. 1</ref><ref
+                        target="#vat-gr-754:vat-gr-754-fr-13-5" type="with-variant">Vat. gr.
+                        754</ref></seg>
+               </ab>
+            </div>
+            <pb n="24r"/>
+            <div type="commentary" subtype="commentary" xml:id="oxon-s-trin-78-13-3">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 13,3a–b (ἠχρεώθησαν)</note>
+                  <seg type="glosse" xml:id="oxon-s-trin-78-glosse-13-2" source="Anonymous"
+                     corresp="#oxon-s-trin-78-ps-13-3a"><quote type="patristic" subtype="unknown"
+                        xml:id="oxon-s-trin-78-quot-13-6"
+                        source="fons ignotus in Ps 13,3a; cf. Suda s.v. Ἠχρειώθησαν (E nr. 688 Adler)"
+                        corresp="#person-19">ἀχρεῖοι ἐγένοντο, ἢ ἄχρηστοι: –</quote><ref
+                        target="#bodl-auct-d-4-1:bodl-auct-d-4-1-glosse-13-3" type="identical">Oxon.
+                        Bodl. Auct. D. 4. 1</ref><note type="textual-commentary">This glosse is
+                        linked not by a letter, but by a linking sign.</note></seg>
+                  <note type="lemma">Ps 13,4 (γνώσονται)</note>
+                  <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-13-4" source="Anonymous"
+                     corresp="#oxon-s-trin-78-ps-13-4a" copyOf="#edition:edition-13-4-1"><quote
+                        type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-13-7"
+                        source="Athanasius, exp. in Ps 13,4a; non habet Oxon. Bodl. Auct. D. 4. 1"
+                        corresp="#person-2">καθ᾿ ὑποστιγμὴν ἀναγνωστέον:</quote><ref
+                        target="#vat-gr-754:vat-gr-754-fr-13-9" type="abbreviated">Vat. gr.
+                        754</ref><note type="textual-commentary">This glosse is linked not by a
+                        letter, but by a linking sign. This linking sign is not in red.</note></seg>
+                  <note type="lemma">linking not repeated</note>
+                  <seg type="hexaplaric" xml:id="oxon-s-trin-78-hexaplaric-13-1"
+                     source="Symmachus (Ps 13,4a)" corresp="#oxon-s-trin-78-ps-13-4a">Ϲ | μὴ οὐ
+                        γνώσονται:<ref target="bodl-auct-d-4-1-hexaplaric-13-1" type="abbreviated"
+                        >Oxon. Bodl. Auct. D. 4. 1</ref></seg>
+                  <note type="lemma">Ps 13,4 (ἐσθίοντες [κατεσθίοντες LXX Rahlfs])</note>
+                  <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-13-5" source="Anonymous"
+                     corresp="#oxon-s-trin-78-ps-13-4a" copyOf="#edition:edition-13-4-2"><quote
+                        type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-13-10"
+                        source="Athanasius, exp. in Ps 13,4b; non habet Oxon. Bodl. Auct. D. 4. 1"
+                        corresp="#person-2">Κατήσθιον γὰρ τὸν λαὸν αὐτοῦ ἀναπείθοντες προσκυνεῖν τῆι
+                        κτίσει παρὰ τὸν κτίσαντα· καὶ οὗτοι φη(σὶν) εἰσὶν οἱ ἑτέροις τῶν κακῶν
+                        εἰσηγηταὶ γινόμενοι· οὕτω γὰρ ἀναγνωστέον τὸ τὸν κύριον οὐκ ἐπεκαλέσαντο
+                        μέλλοντα ἀντὶ τοῦ παρεληλυθότος: –</quote><ref
+                        target="#vat-gr-754:vat-gr-754-fr-13-10" type="with-variants">Vat. gr.
+                        754</ref><note type="textual-commentary">This fragment is linked not by a
+                        letter, but by a linking sign.</note></seg>
+                  <note type="lemma">Ps 13,5–6 (ἐκεῖ)</note>
+                  <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-13-6" source="Anonymous"
+                     corresp="#oxon-s-trin-78-ps-13-5a" copyOf="#edition:edition-13-5-2"><quote
+                        type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-13-11"
+                        source="Athanasius, exp. in Ps 13,5b; non habet Oxon. Bodl. Auct. D. 4. 1"
+                        corresp="#person-2">τῶν δικαιουμένων διὰ τῆς ἐπιφανείας αὐτο<unclear
+                           reason="faded">ῦ: –</unclear></quote><ref
+                        target="#vat-gr-754:vat-gr-754-fr-13-11" type="identical">Vat. gr.
+                        754</ref><note type="textual-commentary">This fragment is linked not by a
+                        letter, but by a linking sign.</note></seg>
+                  <note type="lemma">Ps 13,5–6 (βουλὴν)</note>
+                  <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-13-7" source="Anonymous"
+                     corresp="#oxon-s-trin-78-ps-13-5a" copyOf="#edition:edition-13-6-1"><quote
+                        type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-13-12"
+                        source="Athanasius, exp. in Ps 13,6a; non habet Oxon. Bodl. Auct. D. 4. 1"
+                        corresp="#person-2">ταῦτα ὡς π<supplied reason="illegible"
+                           >ρὸ</supplied><unclear reason="faded">ς</unclear> τοὺς ἀπομείναντας τῆ
+                        ἀπιστία καὶ διώξαντας τοὺς πιστε<unclear reason="faded">ύ</unclear>σ<unclear
+                           reason="faded">αν</unclear><supplied reason="illegible">τας</supplied>
+                        εἰς τὸν Χριστόν: –</quote><ref target="vat-gr-754:vat-gr-754-fr-13-13"
+                        type="with-variant">Vat. gr. 754</ref><note type="textual-commentary">This
+                        fragment is linked not by a letter, but by a linking sign.</note></seg>
+               </ab>
+            </div>
+            <pb n="24v"/>
+            <div type="commentary" subtype="commentary" xml:id="oxon-s-trin-78-13-4">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 13,7 (Ιακωβ) (Ισραηλ)</note>
+                  <seg type="glosse" xml:id="oxon-s-trin-78-glosse-13-3" source="Anonymous"
+                     corresp="#oxon-s-trin-78-ps-13-7a"><quote type="patristic" subtype="unknown"
+                        xml:id="oxon-s-trin-78-quot-13-13"
+                        source="fons ignotus in Ps 13,7c; cf. Hesychius, lex. s.v. Ἰάκωβος (I nr. 3 Latte) - fons ignotus in Ps 13,7c; cf. Didymus, fr. 84 in Ps 13,7 (172,14 Mühlenberg) et alibi"
+                        corresp="#person-18">πτερνιστής· νοῦς ὁρῶν θεόν:</quote><ref
+                        target="bodl-auct-d-4-1:bodl-auct-d-4-1-glosse-13-5" type="identical">Oxon.
+                        Bodl. Auct. D. 4. 1</ref><note type="textual-commentary">This fragment is
+                        linked by means of two linking signs.</note></seg>
                </ab>
             </div>
          </div>
