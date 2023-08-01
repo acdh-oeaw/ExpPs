@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../schema/tei-psalmcatenae.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!-- faciendum: Ps 1–12 mit B1 zu verküpfen -->
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -1782,7 +1783,7 @@
                      </note></seg>
                </ab>
             </div>
-            <!-- Ps 12 bibletetx -->
+            <!-- Ps 12 bibletext -->
             <div type="bibletext" subtype="commented" xml:id="par-gr-164-12-1">
                <ab xml:lang="grc">
                   <quote type="bibletext" xml:id="par-gr-164-ps-12-1" n="Ps (LXX) 12,1"
@@ -1863,6 +1864,132 @@
                   </seg>
                </ab>
             </div>
+            <pb n="18r" facs="https://gallica.bnf.fr/ark:/12148/btv1b550060713/f43.item"/>
+            <!-- Ps 13 bibletext -->
+            <div type="bibletext" subtype="commented" xml:id="par-gr-164-13-1">
+               <ab xml:lang="grc">
+                  <quote type="bibletext" xml:id="par-gr-164-ps-13-1" n="Ps (LXX) 13,1"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-1">
+                     <anchor type="psalmtext" xml:id="par-gr-164-ps-13-1a" n="Ps (LXX) 13,1a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-1"/> Εἰς τὸ τέλος· ψαλμὸς τῷ
+                     Δαυιδ. <anchor type="psalmtext" xml:id="par-gr-164-ps-13-1b" n="Ps (LXX) 13,1b"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-1"/> Εἶπεν ἄφρων ἐν καρδίᾳ αὐτοῦ
+                     Οὐκ ἔστιν θεός·</quote>
+                  <quote type="bibletext" xml:id="par-gr-164-ps-13-1-1" n="Ps (LXX) 13,1"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-1">
+                     <anchor type="psalmtext" xml:id="par-gr-164-ps-13-1c" n="Ps (LXX) 13,1c"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-1"/>διέφθειραν καὶ ἐβδελύχθησαν
+                     ἐν ἐπιτηδεύμασιν, <anchor type="psalmtext" xml:id="par-gr-164-ps-13-1d"
+                        n="Ps (LXX) 13,1d" corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-1"/> οὐκ
+                     ἔστιν ποιῶν χρηστότητα, οὐκ ἔστιν ἕως ἑνός.</quote>
+                  <quote type="bibletext" xml:id="par-gr-164-ps-13-2" n="Ps (LXX) 13,2"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-2">
+                     <anchor type="psalmtext" xml:id="par-gr-164-ps-13-2a" n="Ps (LXX) 13,2a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-2"/> κύριος ἐκ τοῦ οὐρανοῦ
+                     διέκυψεν ἐπὶ τοὺς υἱοὺς τῶν ἀνθρώπων <anchor type="psalmtext"
+                        xml:id="par-gr-164-ps-13-2b" n="Ps (LXX) 13,2b"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-2"/> τοῦ ἰδεῖν εἰ ἔστιν συνίων ἢ
+                     ἐκζητῶν τὸν θεόν. </quote>
+                  <quote type="bibletext" xml:id="par-gr-164-ps-13-3" n="Ps (LXX) 13,3"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-3">
+                     <anchor type="psalmtext" xml:id="par-gr-164-ps-13-3a" n="Ps (LXX) 13,3a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-3"/> πάντες ἐξέκλιναν, ἅμα
+                     ἠχρεώθησαν, <anchor type="psalmtext" xml:id="par-gr-164-ps-13-3b"
+                        n="Ps (LXX) 13,3b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-3"/> οὐκ
+                     ἔστιν ποιῶν χρηστότητα, οὐκ ἔστιν ἕως ἑνός. <anchor type="psalmtext"
+                        xml:id="par-gr-164-ps-13-3c" n="Ps (LXX) 13,3c"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-3"/> [τάφος ἀνεῳγμένος ὁ λάρυγξ
+                     αὐτῶν, <anchor type="psalmtext" xml:id="par-gr-164-ps-13-3d" n="Ps (LXX) 13,3d"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-3"/> ταῖς γλώσσαις αὐτῶν
+                     ἐδολιοῦσαν· <anchor type="psalmtext" xml:id="par-gr-164-ps-13-3e"
+                        n="Ps (LXX) 13,3e" corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-3"/> ἰὸς
+                     ἀσπίδων ὑπὸ τὰ χείλη αὐτῶν, <anchor type="psalmtext"
+                        xml:id="par-gr-164-ps-13-3f" n="Ps (LXX) 13,3f"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-3"/> ὧν τὸ στόμα ἀρᾶς καὶ
+                     πικρίας γέμει· <anchor type="psalmtext" xml:id="par-gr-164-ps-13-3g"
+                        n="Ps (LXX) 13,3g" corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-3"/> ὀξεῖς οἱ
+                     πόδες αὐτῶν ἐκχέαι αἷμα· <anchor type="psalmtext" xml:id="par-gr-164-ps-13-3h"
+                        n="Ps (LXX) 13,3h" corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-3"/>
+                     σύντριμμα καὶ ταλαιπωρία ἐν ταῖς ὁδοῖς αὐτῶν, <anchor type="psalmtext"
+                        xml:id="par-gr-164-ps-13-3i" n="Ps (LXX) 13,3i"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-3"/> καὶ ὁδὸν εἰρήνης οὐκ
+                     ἔγνωσαν· <anchor type="psalmtext" xml:id="par-gr-164-ps-13-3j"
+                        n="Ps (LXX) 13,3j" corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-3"/> οὐκ
+                     ἔστιν φόβος θεοῦ ἀπέναντι τῶν ὀφθαλμῶν αὐτῶν.] </quote>
+                  <quote type="bibletext" xml:id="par-gr-164-ps-13-4" n="Ps (LXX) 13,4"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-4">
+                     <anchor type="psalmtext" xml:id="par-gr-164-ps-13-4a" n="Ps (LXX) 13,4a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-4"/> οὐχὶ γνώσονται πάντες οἱ
+                     ἐργαζόμενοι τὴν ἀνομίαν; <anchor type="psalmtext" xml:id="par-gr-164-ps-13-4b"
+                        n="Ps (LXX) 13,4b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-4"/> οἱ
+                     κατεσθίοντες τὸν λαόν μου βρώσει ἄρτου τὸν κύριον οὐκ ἐπεκαλέσαντο. </quote>
+                  <quote type="bibletext" xml:id="par-gr-164-ps-13-5" n="Ps (LXX) 13,5"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-5">
+                     <anchor type="psalmtext" xml:id="par-gr-164-ps-13-5a" n="Ps (LXX) 13,5a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-5"/> ἐκεῖ ἐδειλίασαν φόβῳ, οὗ
+                     οὐκ ἦν φόβος, <anchor type="psalmtext" xml:id="par-gr-164-ps-13-5b"
+                        n="Ps (LXX) 13,5b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-5"/> ὅτι ὁ
+                     θεὸς ἐν γενεᾷ δικαίᾳ. </quote>
+                  <quote type="bibletext" xml:id="par-gr-164-ps-13-6" n="Ps (LXX) 13,6"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-6">
+                     <anchor type="psalmtext" xml:id="par-gr-164-ps-13-6a" n="Ps (LXX) 13,6a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-6"/> βουλὴν πτωχοῦ κατῃσχύνατε,
+                        <anchor type="psalmtext" xml:id="par-gr-164-ps-13-6b" n="Ps (LXX) 13,6b"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-6"/> ὅτι κύριος ἐλπὶς αὐτοῦ
+                     ἐστιν. </quote>
+                  <quote type="bibletext" xml:id="par-gr-164-ps-13-7" n="Ps (LXX) 13,7"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-7">
+                     <anchor type="psalmtext" xml:id="par-gr-164-ps-13-7a" n="Ps (LXX) 13,7a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-7"/> τίς δώσει ἐκ Σιων τὸ
+                     σωτήριον τοῦ Ισραηλ; <anchor type="psalmtext" xml:id="par-gr-164-ps-13-7b"
+                        n="Ps (LXX) 13,7b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-7"/> ἐν τῷ
+                     ἐπιστρέψαι κύριον τὴν αἰχμαλωσίαν τοῦ λαοῦ αὐτοῦ <anchor type="psalmtext"
+                        xml:id="par-gr-164-ps-13-7c" n="Ps (LXX) 13,7c"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-7"/> ἀγαλλιάσθω Ιακωβ καὶ
+                     εὐφρανθήτω Ισραηλ.</quote>
+               </ab>
+            </div>
+            <!-- Ps 13 commentary -->
+            <div type="commentary" subtype="commentary" xml:id="par-gr-164-13-2">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 13,1a</note>
+                  <seg type="hypothesis" xml:id="par-gr-164-fr-13-1" source="Tarasius"
+                     corresp="#par-gr-164-ps-13-1a"><quote type="patristic" subtype="unknown"
+                        xml:id="par-gr-164-quot-13-1"
+                        source="Tarasius patriarcha Const., fr. in Ps 13,1a (ineditum?)"
+                        corresp="#person-39">Εἰκότως καὶ λίαν ὀρθὼς ὁ παρὼν ψαλμὸς τοὺς ἰουδαίους
+                        ἐλέγχει· ἐπιφέρει γὰρ κύριος ἐκ τοῦ οὐρανοῦ διέκυψεν ἐπὶ τοὺς <supplied
+                           reason="illegible">υ</supplied>ἱοὺς τῶν ἀνθρώπων·</quote><ref
+                        target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-13-1" type="identical">Oxon.
+                        Bodl. Auct. D. 4. 1</ref><note type="attribution"><foreign xml:lang="grc"
+                           >Ταρα(σίου)</foreign></note></seg>
+                  <note type="lemma">Ps 13,3a</note>
+                  <seg type="glosse" xml:id="par-gr-164-glosse-13-1" source="Anonymous"
+                     corresp="#par-gr-164-ps-13-3a"><quote type="patristic" subtype="unknown"
+                        xml:id="par-gr-164-quot-13-2"
+                        source="fons ignotus in Ps 13,3a; cf. Suda s.v. Ἠχρειώθησαν (E nr. 688 Adler)"
+                        corresp="#person-18">ἄχρει<unclear reason="faded">οι</unclear>
+                        <unclear reason="faded">ἐγ</unclear>ένοντ<unclear reason="faded"
+                        >ο</unclear>·</quote><ref
+                        target="#bodl-auct-d-4-1:bodl-auct-d-4-1-glosse-13-3" type="abbreviated"
+                        >Oxon. Bodl. Auct. D. 4. 1</ref></seg>
+                  <note type="lemma">Ps 13,4a (οὐχὶ γνώσονται)</note>
+                  <seg type="hexaplaric" xml:id="par-gr-164-hexaplaric-13-1"
+                     source="Symmachus (Ps 13,4a)" corresp="#par-gr-164-ps-13-4a">Ϲ | μὴ οὐ <unclear
+                        reason="faded">γ</unclear>ν<unclear reason="faded">ώσο</unclear>ν<unclear
+                        reason="faded">τ</unclear><supplied reason="illegible">αι</supplied>
+                     <unclear reason="faded">π</unclear>άντες <unclear reason="faded">οἱ</unclear>
+                     <unclear reason="faded">ἐρ</unclear>γα<unclear reason="faded"
+                        >ζ</unclear>ό<unclear reason="faded">μενοι</unclear> τ<supplied
+                        reason="illegible">ὴν</supplied>
+                     <unclear reason="faded">ἀνομί</unclear><supplied reason="illegible"
+                        >α</supplied><unclear reason="faded">ν</unclear>·<ref
+                        target="bodl-auct-d-4-1-hexaplaric-13-1"
+                        type="expanded-without-introduction">Oxon. Bodl. Auct. D. 4. 1</ref>
+                  </seg>
+               </ab>
+            </div>
+            <pb n="18v" facs="https://gallica.bnf.fr/ark:/12148/btv1b550060713/f44.item"/>
          </div>
       </body>
    </text>
