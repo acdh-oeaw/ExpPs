@@ -17979,11 +17979,11 @@
             </div>
          </div>
          <!-- Ps 13 commentary -->
-         <!-- Typus XIX: V1(f. 57v: erledigt) C(XXX) G(f. 24v: erledigt) P1(f. 27v: erledigt) -->
-         <!-- Typus IV: M(XXX) O(XXX) -->
+         <!-- Typus XIX: V1(f. 57v: erledigt) C(erledigt) G(f. 24v: erledigt) P1(f. 27v: erledigt) -->
+         <!-- Typus IV: M(erledigt) O(XXX) -->
          <!-- codices varii: B1(f. 52v: erledigt) B2(f. 23v: erledigt) N1(XXX) P2(lost) P3(f. 18r: erledigt: kein Athanasius) P4(lost) A1(XXX) P5(f. 52v: erledigt) L1() -->
-         <!-- Typus III: P6(XXX) Z(XXX) N2(XXX) -->
-         <!-- Typus XIV: A2(XXX) V4(XXX) -->
+         <!-- Typus III: P6(f. 35r: erledigt) Z(f. 28v: erledigt) N2(XXX) -->
+         <!-- Typus XIV: A2(f. 36v: erledigt) V4(f. 17r: erledigt) -->
          <!-- Typus XV: V5(XXX) P7(XXX) P8(XXX) -->
          <!-- Typus XVI: L2(XXX) A3(XXX) -->
          <div type="psalm" n="13">
@@ -18362,7 +18362,7 @@
                   <div type="commentary">
                      <p xml:id="edition-13-4-1" n="192">Καθ᾿ ὑποστιγμὴν ἀναγνωστέον, καὶ ἔξωθεν τὸν
                         κύριον προσληπτέον· ἵνα ᾖ τοῦτο τὸ σημαινόμενον· εἰ καὶ πάντες ἐξέκλιναν·
-                        καὶ τὸ ἐποίησαν, οὐ μέλλουσι γινώσκειν τὸν κύριον;: –</p>
+                        καὶ τὸ ἐποίησαν, οὐ μέλλουσι γινώσκειν τὸν κύριον; : –</p>
                      <div type="links">
                         <p>
                            <listRef>
@@ -18374,6 +18374,7 @@
                               <ref target="#coislin-12:coislin-12-fr-13-4"/>
                               <ref target="#ambr-m-47-sup:ambr-m-47-sup-fr-13-6"/>
                               <ref target="#oxon-s-trin-78:oxon-s-trin-78-fr-13-4"/>
+                              <ref target="#par-gr-139:par-gr-139-fr-13-14"/>
                               <ref target="#ambr-b-106-sup:ambr-b-106-sup-fr-13-2"/>
                            </listRef>
                         </p>
@@ -18381,7 +18382,7 @@
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #G #P1 #M #P5 #A1 #B2 #A2 #V4">txt</rdg>
+                        <rdg wit="#V1 #C #G #P1 #M #P5 #A1 #B2 #P6 #Z #N2 #A2 #V4">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Coislin 10</wit>
                         <wit>Urbani 3</wit>
@@ -18390,6 +18391,9 @@
                         <wit>Coislin 12</wit>
                         <wit>Ambr. M 47 sup.</wit>
                         <wit>S.Trin 78</wit>
+                        <wit>Par. gr. 139</wit>
+                        <wit>Marc. gr. Z. 17</wit>
+                        <wit>Athen. B.N. 45</wit>
                         <wit>Ambr. B 106 sup.</wit>
                         <wit>Vat. gr. 1747</wit>
                      </app>
@@ -18403,6 +18407,26 @@
                         <wit>S.Trin 78</wit>
                      </app>
                      <app type="text">
+                        <lem><foreign xml:lang="grc">προσληπτέον</foreign></lem>
+                        <rdg wit="#P6 #Z #N2"><foreign xml:lang="grc">προληπτέον</foreign></rdg>
+                        <wit>Par. gr. 139</wit>
+                        <wit>Marc. gr. Z. 17</wit>
+                        <wit>Athen. B.N. 45</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">ἵνα – εἰ</foreign></lem>
+                        <rdg wit="#P6 #Z #N2">om.</rdg>
+                        <wit>Par. gr. 139</wit>
+                        <wit>Marc. gr. Z. 17</wit>
+                        <wit>Athen. B.N. 45</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">ἵνα ᾖ</foreign></lem>
+                        <rdg wit="#V4"><foreign xml:lang="grc">ἵν᾿ ᾖ</foreign></rdg>
+                        <wit>Vat. gr. 1747</wit>
+                        <!-- Texkkritik: ἵνα ᾖ A2 = V1 -->
+                     </app>
+                     <app type="text">
                         <lem><foreign xml:lang="grc">τοῦτο τὸ σημαινόμενον</foreign></lem>
                         <rdg wit="#G"><foreign xml:lang="grc">τοῦτο σημαινόμενον</foreign></rdg>
                         <wit>Urbani 3</wit>
@@ -18412,15 +18436,20 @@
                               σημαινόμενον</foreign></rdg>
                         <wit>Ambr. B 106 sup.</wit>
                         <wit>Vat. gr. 1747</wit>
+                        <!-- Textkritik: σημαινομένον V4: σημαινόμενον A2 = V1 -->
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">πάντες</foreign></lem>
-                        <rdg wit="#P5 #A1 #A2 #V4"><foreign xml:lang="grc">πάντες
-                           φησὶν</foreign></rdg>
+                        <rdg wit="#P5 #A1 #P6 #Z #N2 #A2 #V4"><foreign xml:lang="grc">πάντες
+                              φησὶν</foreign></rdg>
                         <wit>Coislin 12</wit>
                         <wit>Ambr. M 47 sup.</wit>
+                        <wit>Par. gr. 139</wit>
+                        <wit>Marc. gr. Z. 17</wit>
+                        <wit>Athen. B.N. 45</wit>
                         <wit>Ambr. B 106 sup.</wit>
                         <wit>Vat. gr. 1747</wit>
+                        <!--  Textkritik: πάντές φη(σιν) V4 : πάντες φη(σὶν) A2 -->
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">καὶ τὸ ἐποίησαν</foreign></lem>
@@ -18431,6 +18460,9 @@
                         <wit>Vat. gr. 1747</wit>
                         <rdg wit="#A1">κα[ὶ τὸ κα]ὶ τὸ ἐποίησαν<foreign xml:lang="grc"/></rdg>
                         <wit>Ambr. M 47 sup.</wit>
+                        <rdg wit="#Z"><foreign xml:lang="grc">καὶ τὸ ἐποίησεν</foreign></rdg>
+                        <wit>Marc. gr. Z. 17</wit>
+                        <!-- Textkritik: καὶ τὸ ἐποίησαν P6 = V1-->
                      </app>
                      <note type="textual-commentary">M: Über den Grund für die Einfügung eines δὲ
                         siehe zu exp. 191.</note>
@@ -18571,6 +18603,7 @@
                         πρέπουσα μᾶλλον ἐλευθέροις εὐλάβεια: –</p>
                      <!-- cave!:  ᾧ im Apparat -->
                      <!-- Textkritik: ἐκεῖνον φη(σὶ) sine puncto V1 : ἐκεῖνον φησὶν· C -->
+                     <!-- Textkritik: ἁγνός ἐστι P6: ἁγνός ἐστιν Z = V1 -->
                      <!-- Quellenkritik: cf. Cyrillus (?), fr. in Ps 13,5a (PG 69,804 B7–10) -->
                      <div type="links">
                         <p>
@@ -18582,6 +18615,7 @@
                               <ref target="#mosq-syn-194:mosq-syn-194-fr-13-6"/>
                               <ref target="#coislin-12:coislin-12-fr-13-6"/>
                               <ref target="#ambr-m-47-sup:ambr-m-47-sup-fr-13-9"/>
+                              <ref target="#par-gr-139:par-gr-139-fr-13-15"/>
                               <ref target="#ambr-b-106-sup:ambr-b-106-sup-fr-13-4"/>
                            </listRef>
                         </p>
@@ -18589,7 +18623,7 @@
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #G #P1 #M #P5 #A1 #A2 #V4">txt</rdg>
+                        <rdg wit="#V1 #C #G #P1 #M #P5 #A1 #P6 #Z #N2 #A2 #V4">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Coislin 10</wit>
                         <wit>Urbani 3</wit>
@@ -18597,6 +18631,9 @@
                         <wit>Sinod. gr. 194</wit>
                         <wit>Coislin 12</wit>
                         <wit>Ambr. M 47 sup.</wit>
+                        <wit>Par. gr. 139</wit>
+                        <wit>Marc. gr. Z. 17</wit>
+                        <wit>Athen. B.N. 45</wit>
                         <wit>Ambr. B 106 sup.</wit>
                         <wit>Vat. gr. 1747</wit>
                      </app>
@@ -18610,6 +18647,10 @@
                         <rdg wit="#M #A1"><foreign xml:lang="grc">νόμος</foreign></rdg>
                         <wit>Sinod. gr. 194</wit>
                         <wit>Ambr. M 47 sup.</wit>
+                        <rdg wit="#P6 #Z #N2"><foreign xml:lang="grc">φησὶ νόμος</foreign></rdg>
+                        <wit>Par. gr. 139</wit>
+                        <wit>Marc. gr. Z. 17</wit>
+                        <wit>Athen. B.N. 45</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">τοῦ Χριστοῦ</foreign></lem>
@@ -18617,6 +18658,20 @@
                         <wit>Ambr. B 106 sup.</wit>
                         <rdg wit="#V4"><foreign xml:lang="grc">τοῦ κυρίου</foreign></rdg>
                         <wit>Vat. gr. 1747</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">ἐστιν</foreign></lem>
+                        <rdg wit="#P6*">ἐστι</rdg>
+                        <wit>Par. gr. 139</wit>
+                        <rdg wit="#P6m.sec.">ἐστιν</rdg>
+                        <wit>Par. gr. 139</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">υἱοὺς</foreign></lem>
+                        <rdg wit="#P6*"><foreign xml:lang="grc">υἱὸς</foreign></rdg>
+                        <wit>Par. gr. 139</wit>
+                        <rdg wit="#P6m.sec."><foreign xml:lang="grc">υἱοὺς</foreign></rdg>
+                        <wit>Par. gr. 139</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">γὰρ</foreign></lem>
@@ -18635,6 +18690,12 @@
                            >παρασκευάζει</foreign></rdg>
                         <wit>Coislin 12</wit>
                         <wit>Ambr. M 47 sup.</wit>
+                        <rdg wit="#P6 #Z* #N2"><foreign xml:lang="grc">παρεσκεύασεν</foreign></rdg>
+                        <wit>Par. gr. 139</wit>
+                        <wit>Marc. gr. Z. 17</wit>
+                        <wit>Athen. B.N. 45</wit>
+                        <rdg wit="#Zcorr"><foreign xml:lang="grc">παρεσκεύασε</foreign></rdg>
+                        <wit>Par. gr. 139</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">κατὰ τὸν καιρὸν – οὐκ ἔστι</foreign></lem>
@@ -18644,9 +18705,28 @@
                         <wit>Vat. gr. 1747</wit>
                      </app>
                      <app type="text">
-                        <lem><foreign xml:lang="grc">δηλονότι</foreign></lem>
-                        <rdg wit="#M">om.</rdg>
+                        <lem><foreign xml:lang="grc">κατὰ τὸν καιρὸν τοίνυν ἐκεῖνον</foreign></lem>
+                        <rdg wit="#P6 #Z #N2"><foreign xml:lang="grc">μετὰ τὸν καιρὸν
+                              ἐκεῖνον</foreign></rdg>
+                        <wit>Par. gr. 139</wit>
+                        <wit>Marc. gr. Z. 17</wit>
+                        <wit>Athen. B.N. 45</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">φησὶν<hi rend="sup">2</hi></foreign></lem>
+                        <rdg wit="#P6*"><foreign xml:lang="grc">φησὶ*</foreign></rdg>
+                        <wit>Par. gr. 139</wit>
+                        <!-- Textkritik: φη(σὶ) Z -->
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">καθ᾿ ὃν δηλονότι</foreign></lem>
+                        <rdg wit="#M"><foreign xml:lang="grc">καθ᾿ ὃν</foreign></rdg>
                         <wit>Sinod. gr. 194</wit>
+                        <rdg wit="#P6 #Z #N2"><foreign xml:lang="grc">καθ᾿ ὃν δὲ
+                           δηλονότι</foreign></rdg>
+                        <wit>Par. gr. 139</wit>
+                        <wit>Marc. gr. Z. 17</wit>
+                        <wit>Athen. B.N. 45</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">ἡ ἐπιφάνεια</foreign></lem>
@@ -18662,12 +18742,16 @@
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">ᾧ οὐκ ἔστι</foreign></lem>
-                        <rdg wit="#G #A1"><foreign xml:lang="grc">οὗ οὐκ ἔστι</foreign></rdg>
+                        <rdg wit="#G #A1 #P6 #Z #N2"><foreign xml:lang="grc">οὗ οὐκ
+                           ἔστι</foreign></rdg>
                         <wit>Urbani 3</wit>
                         <wit>Ambr. M 47 sup.</wit>
+                        <wit>Par. gr. 139</wit>
+                        <wit>Marc. gr. Z. 17</wit>
+                        <wit>Athen. B.N. 45</wit>
                      </app>
                      <note type="textual-commentary"><p>M: exp. 194 unmittelbar nach exp. 196
-                           gestellt.</p></note>
+                           gestellt. </p></note>
                   </div>
                   <div type="psalmtext">
                      <quote xml:id="edition-ps-13-5-2" type="psalmtext" n="5b">ὅτι ὁ θεὸς ἐν γενεᾷ
@@ -18686,6 +18770,7 @@
                               <ref target="#coislin-12:coislin-12-fr-13-7"/>
                               <ref target="#ambr-m-47-sup:ambr-m-47-sup-fr-13-10"/>
                               <ref target="#oxon-s-trin-78:oxon-s-trin-78-fr-13-6"/>
+                              <ref target="#par-gr-139:par-gr-139-fr-13-20"/>
                               <ref target="#ambr-b-106-sup:ambr-b-106-sup-fr-13-5"/>
                            </listRef>
                         </p>
@@ -18693,16 +18778,25 @@
                   </div>
                   <div type="textcritic" rend="hide">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #P1 #P5 #A1 #B2 #A2 #V4">txt</rdg>
+                        <rdg wit="#V1 #C #P1 #P5 #A1 #B2 #P6 #Z #N2 #A2 #V4">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Coislin 10</wit>
                         <wit>Par. gr. 166</wit>
                         <wit>Coislin 12</wit>
                         <wit>S.Trin 78</wit>
+                        <wit>Par. gr. 139</wit>
+                        <wit>Marc. gr. Z. 17</wit>
+                        <wit>Aten. B.N. 45</wit>
                         <wit>Ambr. B 106 sup.</wit>
                         <wit>Vat. gr. 1747</wit>
                      </app>
-                     <app type="text"> </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">Τῶν δικαιουμένων</foreign></lem>
+                        <rdg wit="#Z #N2"><foreign xml:lang="grc">... δηλονότι </foreign>
+                              ante<foreign xml:lang="grc"> τῶν δικαιουμένων</foreign> add.</rdg>
+                     </app>
+                     <note type="textual-commentary"><p>P6 Z N2: Theodoretus (comm. in Ps 13,5b–6
+                           [PG 80,953 A7–B1 sub Ps 13,6]) mit exp. 195 verbunden.</p></note>
                   </div>
                   <div type="commentary" rend="hide">
                      <p xml:id="edition-13-5-2-1" n="195">Τῶν δικα[ι]ουμένων διὰ Ἰησοῦ Χριστοῦ· καὶ
