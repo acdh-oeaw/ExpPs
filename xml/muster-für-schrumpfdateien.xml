@@ -1,5 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../schema/tei-psalmcatenae.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!-- Muster I: allgemein -->
+<div type="commentary" subtype="commentary" xml:id="XXXX">
+   <ab xml:lang="grc">
+      <note type="lemma">Ps XX,XXX</note>
+      <seg type="commentaryfragment" xml:id="plut-5-30-fr-13-XXX" source="XXX"
+         corresp="#plut-5-30-ps-13-XXX"><quote type="patristic" subtype="XXXX"
+            xml:id="plut-5-30-quot-13-XXX"
+            source="XXXX"
+            corresp="#person-XXX"/><ref target="#vat-gr-754:XXXX"
+               type="XXXX">Vat. gr. 754</ref><note type="attribution"><foreign
+                  xml:lang="grc">XXXX</foreign></note></seg>
+   </ab>
+</div>
+<!-- Muster II: Plut. 5. 30 -->
+<note type="lemma">Ps 13,XXX</note>
+<seg type="commentaryfragment" xml:id="plut-5-30-fr-13-XXX" source="Anonymous"
+   corresp="#plut-5-30-ps-13-XXX"><quote type="patristic" subtype="quotation"
+      xml:id="plut-5-30-quot-13-XXX"
+      source="Hesychius, schol. nr. XXX in Ps 13,XXX (Antonelli; PG 27,XXX)"
+      corresp="#person-10"/></seg>
+
+<seg type="commentaryfragment" xml:id="plut-5-30-fr-13-XXX" source="XXX"
+   corresp="#plut-5-30-ps-13-XXX"><quote type="patristic" subtype="XXXX"
+      xml:id="plut-5-30-quot-13-XXX"
+      source="XXXX; non habet Typus XVI"
+      corresp="#person-XXX"/><ref target="#vat-gr-754:XXXX"
+         type="XXXX">Vat. gr. 754</ref><note type="attribution"><foreign
+            xml:lang="grc">XXXX</foreign></note></seg>
+<!-- Ende vom Muster I -->
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -91,20 +120,32 @@
             further usage.</change>
       </revisionDesc>
    </teiHeader>
-   <!-- Muster 1 -->
+   <!-- Muster I: allgemein -->
    <div type="commentary" subtype="commentary" xml:id="XXXX">
       <ab xml:lang="grc">
          <note type="lemma">Ps 13,XXX</note>
          
-         <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-13-XXX" source="XXX"
-            corresp="#vat-gr-1422-ps-13-XXX"><quote type="patristic" subtype="XXXX"
-                  xml:id="vat-gr-1422-quot-13-XXX"
+         <seg type="commentaryfragment" xml:id="plut-5-30-fr-13-XXX" source="XXX"
+            corresp="#plut-5-30-ps-13-XXX"><quote type="patristic" subtype="XXXX"
+               xml:id="plut-5-30-quot-13-XXX"
                   source="XXXX; non habet Typus XVI"
                corresp="#person-XXX"/><ref target="#vat-gr-754:XXXX"
                   type="XXXX">Vat. gr. 754</ref><note type="attribution"><foreign
                      xml:lang="grc">XXXX</foreign></note></seg>
       </ab>
    </div>
+   <!-- Ende vom Muster I -->
+   <!-- Muster II -->
+   
+         <note type="lemma">Ps 13,XXX</note>
+         
+         <seg type="commentaryfragment" xml:id="plut-5-30-fr-13-XXX" source="XXX"
+            corresp="#plut-5-30-ps-13-XXX"><quote type="patristic" subtype="XXXX"
+               xml:id="plut-5-30-quot-13-XXX"
+               source="XXXX; non habet Typus XVI"
+               corresp="#person-XXX"/><ref target="#vat-gr-754:XXXX"
+                  type="XXXX">Vat. gr. 754</ref><note type="attribution"><foreign
+                     xml:lang="grc">XXXX</foreign></note></seg>
    <!-- Ende vom Muster I -->
    <text>
       <body>
