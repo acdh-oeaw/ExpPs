@@ -258,10 +258,10 @@
     </xsl:template>
     
     <xsl:template match="tei:body">
-        <xsl:apply-templates select="//tei:seg[@type = 'commentaryfragment' or 'glosse' or 'hexaplaric' or 'hypothesis'] | //tei:pb"/>
+        <xsl:apply-templates select="//tei:seg[@type = 'commentaryfragment' or 'glosse' or 'hexaplaric' or 'hypothesis' or 'perioche'] | //tei:pb"/>
     </xsl:template>
     
-    <xsl:template match="tei:seg[@type = 'commentaryfragment' or @type = 'hypothesis']">
+    <xsl:template match="tei:seg[@type = 'commentaryfragment' or @type = 'hypothesis' or @type = 'perioche']">
         <xsl:element name="div">
             <xsl:attribute name="class" select="'commentaryfragment'"/>
             <a>
@@ -272,11 +272,100 @@
             <xsl:element name="p">
                 <xsl:attribute name="class" select="'paragraph-in-commentaryfragment-header'"/>
                 <xsl:if test="@type = 'commentaryfragment'">
-                    <xsl:text>Commentaryfragment: </xsl:text>
+                    <xsl:text>Commentary fragment: </xsl:text>
                 </xsl:if>
                 <xsl:if test="@type = 'hypothesis'">
                     <xsl:text>Hypothesis: </xsl:text>
                 </xsl:if>
+                <xsl:if test="@type = 'perioche'">
+                    <xsl:text>Perioche: </xsl:text>
+                </xsl:if>
+                <!-- treatment of optional rendition attribute - start -->
+                <xsl:if test="exists(@rendition)">
+                    <xsl:if test="@rendition = '#middle-column'">
+                        <xsl:text>middle column</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#left-column'">
+                        <xsl:text>left column</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#right-column'">
+                        <xsl:text>right column</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#top-of-the-page'">
+                        <xsl:text>top of the page</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#middle-of-the-page'">
+                        <xsl:text>middle of the page</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#bottom-of-the-page'">
+                        <xsl:text>bottom of the page</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#left-margin-of-left-column'">
+                        <xsl:text>left margin of left column</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#left-margin-of-middle-column'">
+                        <xsl:text>left margin of middle column</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#left-margin-of-right-column'">
+                        <xsl:text>left margin of right column</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#bottom-of-right-column'">
+                        <xsl:text>bottom of right column</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#bottom-of-middle-column'">
+                        <xsl:text>bottom of middle column</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#right-margin-of-middle-column'">
+                        <xsl:text>right margin of middle column</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#left-margin'">
+                        <xsl:text>left margin</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#top-margin'">
+                        <xsl:text>top margin</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#psalm-column'">
+                        <xsl:text>psalm column</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#top-of-psalm-column'">
+                        <xsl:text>top of psalm column</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#bottom-of-psalm-column'">
+                        <xsl:text>bottom of psalm column</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#right-margin-of-right-column'">
+                        <xsl:text>right margin of right column</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#top-top'">
+                        <xsl:text>top / top</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#top-middle'">
+                        <xsl:text>top / middle</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#top-bottom'">
+                        <xsl:text>top / bottom</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#middle-top'">
+                        <xsl:text>middle / top</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#middle-middle'">
+                        <xsl:text>middle / middle</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#middle-bottom'">
+                        <xsl:text>middle / bottom</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#bottom-top'">
+                        <xsl:text>bottom / top</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#bottom-middle'">
+                        <xsl:text>bottom / middle</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#bottom-bottom'">
+                        <xsl:text>bottom / bottom</xsl:text>
+                    </xsl:if>
+                    <xsl:text> - </xsl:text>
+                </xsl:if>
+                <!-- treatment of optional rendition attribute - end -->
                 <xsl:element name="b">
                     <xsl:value-of select="@source"/>
                 </xsl:element>
@@ -293,6 +382,15 @@
             <xsl:element name="p">
                 <xsl:attribute name="class" select="'paragraph-in-commentaryfragment'"/>
                 <xsl:apply-templates select="child::tei:quote[@type = 'patristic']/child::node()"/>
+                <xsl:if test="exists(@copyOf)">
+                    <xsl:text> (</xsl:text>
+                    <xsl:element name="a">
+                        <xsl:attribute name="href" select="concat('../edition.html#',substring-after(@copyOf,'#edition:'))"/>
+                        <xsl:attribute name="target" select="'_blank'"/>
+                        <xsl:text>→ Edition</xsl:text>
+                    </xsl:element>
+                    <xsl:text>)</xsl:text>
+                </xsl:if>
             </xsl:element>
             <xsl:if test="exists(child::tei:note[@type = 'attribution'])">
                 <xsl:element name="p">
@@ -320,6 +418,92 @@
             <xsl:element name="p">
                 <xsl:attribute name="class" select="'paragraph-in-glosse'"/>
                 <xsl:text>Glosse: </xsl:text>
+                <!-- treatment of optional rendition attribute - start -->
+                <xsl:if test="exists(@rendition)">
+                    <xsl:if test="@rendition = '#middle-column'">
+                        <xsl:text>middle column</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#left-column'">
+                        <xsl:text>left column</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#right-column'">
+                        <xsl:text>right column</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#top-of-the-page'">
+                        <xsl:text>top of the page</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#middle-of-the-page'">
+                        <xsl:text>middle of the page</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#bottom-of-the-page'">
+                        <xsl:text>bottom of the page</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#left-margin-of-left-column'">
+                        <xsl:text>left margin of left column</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#left-margin-of-middle-column'">
+                        <xsl:text>left margin of middle column</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#left-margin-of-right-column'">
+                        <xsl:text>left margin of right column</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#bottom-of-right-column'">
+                        <xsl:text>bottom of right column</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#bottom-of-middle-column'">
+                        <xsl:text>bottom of middle column</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#right-margin-of-middle-column'">
+                        <xsl:text>right margin of middle column</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#left-margin'">
+                        <xsl:text>left margin</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#top-margin'">
+                        <xsl:text>top margin</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#psalm-column'">
+                        <xsl:text>psalm column</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#top-of-psalm-column'">
+                        <xsl:text>top of psalm column</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#bottom-of-psalm-column'">
+                        <xsl:text>bottom of psalm column</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#right-margin-of-right-column'">
+                        <xsl:text>right margin of right column</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#top-top'">
+                        <xsl:text>top / top</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#top-middle'">
+                        <xsl:text>top / middle</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#top-bottom'">
+                        <xsl:text>top / bottom</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#middle-top'">
+                        <xsl:text>middle / top</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#middle-middle'">
+                        <xsl:text>middle / middle</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#middle-bottom'">
+                        <xsl:text>middle / bottom</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#bottom-top'">
+                        <xsl:text>bottom / top</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#bottom-middle'">
+                        <xsl:text>bottom / middle</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#bottom-bottom'">
+                        <xsl:text>bottom / bottom</xsl:text>
+                    </xsl:if>
+                    <xsl:text> - </xsl:text>
+                </xsl:if>
+                <!-- treatment of optional rendition attribute - end -->
                 <xsl:element name="b">
                     <xsl:value-of select="@source"/>
                 </xsl:element>
@@ -365,6 +549,92 @@
             <xsl:element name="p">
                 <xsl:attribute name="class" select="'paragraph-in-hexaplaric-variant-header'"/>
                 <xsl:text>Hexaplaric variant: </xsl:text>
+                <!-- treatment of optional rendition attribute - start -->
+                <xsl:if test="exists(@rendition)">
+                    <xsl:if test="@rendition = '#middle-column'">
+                        <xsl:text>middle column</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#left-column'">
+                        <xsl:text>left column</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#right-column'">
+                        <xsl:text>right column</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#top-of-the-page'">
+                        <xsl:text>top of the page</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#middle-of-the-page'">
+                        <xsl:text>middle of the page</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#bottom-of-the-page'">
+                        <xsl:text>bottom of the page</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#left-margin-of-left-column'">
+                        <xsl:text>left margin of left column</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#left-margin-of-middle-column'">
+                        <xsl:text>left margin of middle column</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#left-margin-of-right-column'">
+                        <xsl:text>left margin of right column</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#bottom-of-right-column'">
+                        <xsl:text>bottom of right column</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#bottom-of-middle-column'">
+                        <xsl:text>bottom of middle column</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#right-margin-of-middle-column'">
+                        <xsl:text>right margin of middle column</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#left-margin'">
+                        <xsl:text>left margin</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#top-margin'">
+                        <xsl:text>top margin</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#psalm-column'">
+                        <xsl:text>psalm column</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#top-of-psalm-column'">
+                        <xsl:text>top of psalm column</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#bottom-of-psalm-column'">
+                        <xsl:text>bottom of psalm column</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#right-margin-of-right-column'">
+                        <xsl:text>right margin of right column</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#top-top'">
+                        <xsl:text>top / top</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#top-middle'">
+                        <xsl:text>top / middle</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#top-bottom'">
+                        <xsl:text>top / bottom</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#middle-top'">
+                        <xsl:text>middle / top</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#middle-middle'">
+                        <xsl:text>middle / middle</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#middle-bottom'">
+                        <xsl:text>middle / bottom</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#bottom-top'">
+                        <xsl:text>bottom / top</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#bottom-middle'">
+                        <xsl:text>bottom / middle</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#bottom-bottom'">
+                        <xsl:text>bottom / bottom</xsl:text>
+                    </xsl:if>
+                    <xsl:text> - </xsl:text>
+                </xsl:if>
+                <!-- treatment of optional rendition attribute - end -->
                 <xsl:element name="b">
                     <xsl:value-of select="@source"/>
                 </xsl:element>
@@ -390,14 +660,50 @@
         <xsl:text>→ </xsl:text>
         <xsl:element name="a">
             <xsl:attribute name="href">
-                <xsl:if test="starts-with(@target,'vat-gr-754:')">
-                    <xsl:value-of select="concat('vat_gr_754.html#',substring-after(@target,'vat-gr-754:'))"/>
+                <xsl:if test="starts-with(@target,'#vat-gr-754:')">
+                    <xsl:value-of select="concat('vat_gr_754.html#',substring-after(@target,'#vat-gr-754:'))"/>
                 </xsl:if>
-                <xsl:if test="starts-with(@target,'vat-gr-1422:')">
-                    <xsl:value-of select="concat('vat_gr_1422.html#',substring-after(@target,'vat-gr-1422:'))"/>
+                <xsl:if test="starts-with(@target,'#vat-gr-1422:')">
+                    <xsl:value-of select="concat('vat_gr_1422.html#',substring-after(@target,'#vat-gr-1422:'))"/>
                 </xsl:if>
-                <xsl:if test="starts-with(@target,'ambr-m-47-sup')">
-                    <xsl:value-of select="concat('ambr_m_47_sup.html#',substring-after(@target,'ambr-m-47-sup:'))"/>
+                <xsl:if test="starts-with(@target,'#ambr-m-47-sup')">
+                    <xsl:value-of select="concat('ambr_m_47_sup.html#',substring-after(@target,'#ambr-m-47-sup:'))"/>
+                </xsl:if>
+                <xsl:if test="starts-with(@target,'#ambr-b-106-sup:')">
+                    <xsl:value-of select="concat('ambr_B_106_sup.html#',substring-after(@target,'#ambr-b-106-sup:'))"/>
+                </xsl:if>
+                <xsl:if test="starts-with(@target,'#bodl-auct-d-4-1:')">
+                    <xsl:value-of select="concat('bodl_auct_d_4_1.html#',substring-after(@target,'#bodl-auct-d-4-1:'))"/>
+                </xsl:if>
+                <xsl:if test="starts-with(@target,'#coislin-10:')">
+                    <xsl:value-of select="concat('coislin_10.html#',substring-after(@target,'#coislin-10:'))"/>
+                </xsl:if>
+                <xsl:if test="starts-with(@target,'#coislin-12:')">
+                    <xsl:value-of select="concat('coislin_12.html#',substring-after(@target,'#coislin-12:'))"/>
+                </xsl:if>
+                <xsl:if test="starts-with(@target,'#franzon-3:')">
+                    <xsl:value-of select="concat('franzon_3.html#',substring-after(@target,'#franzon-3:'))"/>
+                </xsl:if>
+                <xsl:if test="starts-with(@target,'#mosq-synod-194:')">
+                    <xsl:value-of select="concat('mosq_synod_194.html#',substring-after(@target,'#mosq-synod-194:'))"/>
+                </xsl:if>
+                <xsl:if test="starts-with(@target,'#oxon-s-trin-78:')">
+                    <xsl:value-of select="concat('oxon_s_trin_78.html#',substring-after(@target,'#oxon-s-trin-78:'))"/>
+                </xsl:if>
+                <xsl:if test="starts-with(@target,'#par-gr-139:')">
+                    <xsl:value-of select="concat('par_gr_139.html#',substring-after(@target,'#par-gr-139:'))"/>
+                </xsl:if>
+                <xsl:if test="starts-with(@target,'#par-gr-164:')">
+                    <xsl:value-of select="concat('par_gr_164.html#',substring-after(@target,'#par-gr-164:'))"/>
+                </xsl:if>
+                <xsl:if test="starts-with(@target,'#par-gr-166:')">
+                    <xsl:value-of select="concat('par_gr_166.html#',substring-after(@target,'#par-gr-166:'))"/>
+                </xsl:if>
+                <xsl:if test="starts-with(@target,'#plut-5-30:')">
+                    <xsl:value-of select="concat('plut_5_30.html#',substring-after(@target,'#plut-5-30:'))"/>
+                </xsl:if>
+                <xsl:if test="starts-with(@target,'#plut-6-3:')">
+                    <xsl:value-of select="concat('plut_6_3.html#',substring-after(@target,'#plut-6-3:'))"/>
                 </xsl:if>
             </xsl:attribute>
             <xsl:attribute name="target"><xsl:text>_blank</xsl:text></xsl:attribute>
@@ -1147,138 +1453,6 @@
             <xsl:text>]</xsl:text>
         </div>
     </xsl:template>
-    
-    <!--<xsl:template match="tei:seg[@type = 'commentaryfragment']">
-        <a>
-            <xsl:attribute name="id">
-                <xsl:value-of select="@xml:id"/>
-            </xsl:attribute>
-        </a>
-        <xsl:if test="exists(@rendition) and (local-name(preceding-sibling::*[1]) = 'note')">
-            <xsl:text>[</xsl:text>
-            <xsl:if test="@rendition = '#middle-column'">
-                <xsl:text>middle column</xsl:text>
-            </xsl:if>
-            <xsl:if test="@rendition = '#left-column'">
-                <xsl:text>left column</xsl:text>
-            </xsl:if>
-            <xsl:if test="@rendition = '#right-column'">
-                <xsl:text>right column</xsl:text>
-            </xsl:if>
-            <xsl:if test="@rendition = '#top-of-the-page'">
-                <xsl:text>top of the page</xsl:text>
-            </xsl:if>
-            <xsl:if test="@rendition = '#bottom-of-the-page'">
-                <xsl:text>bottom of the page</xsl:text>
-            </xsl:if>
-            <xsl:if test="@rendition = '#left-margin-of-left-column'">
-                <xsl:text>left margin of left column</xsl:text>
-            </xsl:if>
-            <xsl:if test="@rendition = '#left-margin-of-middle-column'">
-                <xsl:text>left margin of middle column</xsl:text>
-            </xsl:if>
-            <xsl:if test="@rendition = '#left-margin-of-right-column'">
-                <xsl:text>left margin of right column</xsl:text>
-            </xsl:if>
-            <xsl:if test="@rendition = '#bottom-of-right-column'">
-                <xsl:text>bottom of right column</xsl:text>
-            </xsl:if>
-            <xsl:if test="@rendition = '#bottom-of-middle-column'">
-                <xsl:text>bottom of middle column</xsl:text>
-            </xsl:if>
-            <xsl:if test="@rendition = '#right-margin-of-middle-column'">
-                <xsl:text>right margin of middle column</xsl:text>
-            </xsl:if>
-            <xsl:if test="@rendition = '#left-margin'">
-                <xsl:text>left margin</xsl:text>
-            </xsl:if>
-            <xsl:if test="@rendition = '#top-margin'">
-                <xsl:text>top margin</xsl:text>
-            </xsl:if>
-            <xsl:text>] </xsl:text>
-        </xsl:if>
-        <xsl:apply-templates/>
-    </xsl:template>-->
-    
-    <!--<xsl:template match="tei:seg[@type = 'glosse']">
-        <xsl:if test="exists(@rendition) and ((local-name(preceding-sibling::*[1]) = 'note') or ancestor::tei:div[@type = 'glossai'])">
-            <xsl:text>[</xsl:text>
-            <xsl:if test="@rendition = '#middle-column'">
-                <xsl:text>middle column</xsl:text>
-            </xsl:if>
-            <xsl:if test="@rendition = '#left-column'">
-                <xsl:text>left column</xsl:text>
-            </xsl:if>
-            <xsl:if test="@rendition = '#right-column'">
-                <xsl:text>right column</xsl:text>
-            </xsl:if>
-            <xsl:if test="@rendition = '#top-of-the-page'">
-                <xsl:text>top of the page</xsl:text>
-            </xsl:if>
-            <xsl:if test="@rendition = '#bottom-of-the-page'">
-                <xsl:text>bottom of the page</xsl:text>
-            </xsl:if>
-            <xsl:if test="@rendition = '#left-margin-of-left-column'">
-                <xsl:text>left margin of left column</xsl:text>
-            </xsl:if>
-            <xsl:if test="@rendition = '#left-margin-of-middle-column'">
-                <xsl:text>left margin of middle column</xsl:text>
-            </xsl:if>
-            <xsl:if test="@rendition = '#left-margin-of-right-column'">
-                <xsl:text>left margin of right column</xsl:text>
-            </xsl:if>
-            <xsl:if test="@rendition = '#bottom-of-right-column'">
-                <xsl:text>bottom of right column</xsl:text>
-            </xsl:if>
-            <xsl:if test="@rendition = '#bottom-of-middle-column'">
-                <xsl:text>bottom of middle column</xsl:text>
-            </xsl:if>
-            <xsl:if test="@rendition = '#right-margin-of-middle-column'">
-                <xsl:text>right margin of middle column</xsl:text>
-            </xsl:if>
-            <xsl:if test="@rendition = '#left-margin'">
-                <xsl:text>left margin</xsl:text>
-            </xsl:if>
-            <xsl:if test="@rendition = '#top-margin'">
-                <xsl:text>top margin</xsl:text>
-            </xsl:if>
-            <xsl:text>] </xsl:text>
-            <xsl:text>[</xsl:text>
-            <xsl:value-of select="@type"/>
-            <xsl:text>] </xsl:text>
-        </xsl:if>
-        <xsl:apply-templates/>
-    </xsl:template>-->
-    
-    <!--<xsl:template match="tei:seg[@type = 'hexaplaric']">
-        <xsl:if test="exists(@rendition) and (local-name(preceding-sibling::*[1]) = 'note')">
-            <xsl:text>[</xsl:text>
-            <xsl:value-of select="@rendition"/>
-            <xsl:text>] </xsl:text>
-        </xsl:if>
-        <xsl:apply-templates/>
-    </xsl:template>-->
-    
-    <!--<xsl:template match="tei:quote[@type = 'patristic']">
-        <a>
-            <xsl:attribute name="id">
-                <xsl:value-of select="@xml:id"/>
-            </xsl:attribute>
-        </a>
-        <span class="quotation-patristic-author">
-            <xsl:apply-templates/>
-        </span>
-        <xsl:text> [= </xsl:text>
-        <xsl:value-of select="@source"/>
-        <xsl:if test="exists(@subtype)">
-            <xsl:text> - </xsl:text>
-            <xsl:value-of select="@subtype"/>
-        </xsl:if>
-        <xsl:if test="exists(@prev)">
-            <xsl:text> (continued)</xsl:text>
-        </xsl:if>
-        <xsl:text>]</xsl:text>
-    </xsl:template>-->
     
     <xsl:template match="tei:quote[@type = 'biblical']">
         <a>
