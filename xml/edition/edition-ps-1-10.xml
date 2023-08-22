@@ -11866,8 +11866,8 @@
                         </p>
                      </div>
                   </div>
-                  <div type="textcritic">
-                     <app type="fragment" rend="hide">
+                  <div type="textcritic" rend="hide">
+                     <app type="fragment">
                         <rdg wit="#V1 #C #P1 #M #O #A1 #P5 #P6 #Z #N2 #V5 #P7 #L2 #A3">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Paris. Coislin 10</wit>
@@ -18636,7 +18636,10 @@
                      </app>
                      <note type="textual-commentary">M: exp. 193 ist nach exp. 196 gestellt.
                         Evagrius (schol. nr. δ´ in Ps 13,4b [356 Rondeau – Géhin – Cassin]) ist mit
-                        exp. 193 verbunden. </note>
+                        exp. 193 verbunden. A1: exp. 193 geht eine Erklärung voraus, welche diese
+                        Expositio zusammenfassend wiederzugeben scheint: Γράφεται οὐκ ἐπεκαλέσαντο·
+                        τάττεται δὲ οὐκ ἐπικαλέσονται· μέλλον (μέλλων A1) ἀντὶ
+                        παρεληλυθότ[ος].</note>
                   </div>
                   <div type="commentary" rend="hide">
                      <p xml:id="edition-13-4-2-1" n="193">Κατήσθιον γὰρ τὸν λαὸν αὐτοῦ, ἀναπείθοντες
@@ -18711,7 +18714,7 @@
                         κατὰ τὸν καιρὸν τοίνυν ἐκεῖνον φησὶν· καθ᾿ ὃν δηλονότι ἡ ἐπιφάνεια, φόβον
                         φοβηθήσονται ᾧ οὐκ ἔστι φόβος· οὐχ ὁ ἐκ νομικῆς ἀπειλῆς δηλονότι, ἀλλ’ ἡ
                         πρέπουσα μᾶλλον ἐλευθέροις εὐλάβεια: –</p>
-                     <!-- cave!:  ᾧ im Apparat -->
+                     <!-- cave!:  Die Version von A1 ist nicht konsistent:  ἐκ νομικῆς ist als substantive Form nicht belegt -->
                      <!-- Textkritik: ἐκεῖνον φη(σὶ) sine puncto V1 : ἐκεῖνον φησὶν· C -->
                      <!-- Textkritik: ἁγνός ἐστι P6: ἁγνός ἐστιν Z = V1 -->
                      <!-- Textkritik: εὐλαβεία P6: εὐλάβεια V5 = V1 -->
@@ -18876,13 +18879,6 @@
                         <wit>Ambr. M 47 sup.</wit>
                      </app>
                      <app type="text">
-                        <lem><foreign xml:lang="grc">ᾧ οὐκ ἔστι – εὐλάβεια</foreign></lem>
-                        <rdg wit="#A1"><foreign xml:lang="grc">οὗ οὐκ ἔστι φόβος ὁ ἐκ [νο]μ[ι]κῆς·
-                              ἀλλ’ ἡ πρέπουσα μᾶλλον, ὡς υἱοῖς καὶ ἐλευθέροις
-                           εὐλάβεια</foreign></rdg>
-                        <wit>Ambr. M 47 sup.</wit>
-                     </app>
-                     <app type="text">
                         <lem><foreign xml:lang="grc">ᾧ οὐκ ἔστι</foreign></lem>
                         <rdg wit="#G #A1 #P6 #Z #V5 #P7"><foreign xml:lang="grc">οὗ οὐκ
                               ἔστι</foreign></rdg>
@@ -18892,6 +18888,12 @@
                         <wit>Marc. gr. Z. 17</wit>
                         <wit>Vat. gr. 1422</wit>
                         <wit>Par. gr. 146</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">φόβος – εὐλάβεια</foreign></lem>
+                        <rdg wit="#A1"><foreign xml:lang="grc">φόβος ὁ ἐκ [νο]μ[ι]κῆς· ἀλλ’ ἡ
+                              πρέπουσα μᾶλλον, ὡς υἱοῖς καὶ ἐλευθέροις εὐλάβεια</foreign></rdg>
+                        <wit>Ambr. M 47 sup.</wit>
                      </app>
                      <note type="textual-commentary"><p>M: exp. 194 unmittelbar nach exp. 196
                            gestellt. N2: exp. 194
@@ -18958,15 +18960,17 @@
                   <quote type="psalmtext" corresp="#edition-ps-13-5-1" n="5a">Dort verzagten sie vor
                      Furcht, wo keine Furcht war,</quote>
                   <p corresp="#edition-13-5-1" n="194">Das Gesetz Moses, will er sagen, wendete
-                     Strafe an, die Furcht Christi aber ist heilig, denn sie trieb uns an, wie Söhne
-                     den Vater zu fürchten. In jener Zeit, will er sagen, nämlich in der die
-                     Erscheinung eintritt, werden sie einer Furcht sich hingeben, wo keine Furcht
-                     ist, nämlich nicht wegen der Drohung des Gesetzes, sondern es ist vielmehr die
-                     den Freien geziemende Ehrerbietigkeit.</p>
+                     Strafe an, die Furcht Christi aber ist rein. Denn sie hat uns in die Lage
+                     versetzt, wie Söhne den Vater zu fürchten. In jener Zeit also, will er sagen,
+                     in der nämlich die Erscheinung eintritt, werden sie sich mit einer Furcht
+                     fürchten, der keine Furcht ist: Nämlich nicht die aus der Drohung des Gesetzes,
+                     sondern vielmehr die den Freien geziemende Ehrerbietung.</p>
                   <quote type="psalmtext" corresp="#edition-ps-13-5-2" n="5b">denn Gott ist unter
                      der gerechten Generation.</quote>
-                  <p corresp="#edition-13-5-2" n="195">Die, die durch seine Erscheinung
+                  <p corresp="#edition-13-5-2" n="195">Jener, die durch seine Erscheinung
                      gerechtfertigt werden.</p>
+                  <p corresp="#edition-13-5-2-1" n="195">Jener, die durch Jesus Christus und seine
+                     Erscheinung gerechtfertigt werden.</p>
                </div>
             </div>
             <div type="psalmverse" n="13.6">
@@ -18979,7 +18983,7 @@
                   </div>
                   <!-- exp 196 -->
                   <div type="commentary">
-                     <p xml:id="edition-13-6-1" n="196">Ταῦτα ὡς πρὸς τοὺς ἀπομείναντας τῇ ἀπιστίᾳ,
+                     <p xml:id="edition-13-6-1" n="196">Ταῦτα ὡς πρὸς τοὺς ἀπομείναντας τῇ ἀπιστίᾳ
                         καὶ διώξαντας τοὺς πιστεύσαντας εἰς Χριστόν: –</p>
                      <div type="links">
                         <p>
@@ -19063,8 +19067,8 @@
                <div type="translation" xml:lang="de">
                   <quote type="psalmtext" corresp="#edition-ps-13-6-1" n="6a">Den Plan des Armen
                      habt ihr zuschanden gemacht,</quote>
-                  <p corresp="#edition-13-6-1" n="196">Das sagt er zu denen, die im Unglauben
-                     verharren und die verfolgen, die an Christus glauben.</p>
+                  <p corresp="#edition-13-6-1" n="196">Als ob er das zu denen sagen würde, die im
+                     Unglauben verharren und die verfolgen, die an Christus glauben.</p>
                   <quote type="psalmtext" corresp="#edition-ps-13-6-2" n="6b">denn der Herr ist
                      seine Hoffnung.</quote>
                </div>
@@ -19081,10 +19085,8 @@
                   </div>
                   <!-- exp 197 -->
                   <div type="commentary">
-                     <!-- faciendum: P6 mit Z noch zu kollationieren : L2 A3 noch zu kollationieren -->
-                     <!-- cave: V5 P7 identisch: L2 A3 nicht identisch -->
                      <p xml:id="edition-13-7-1" n="197">Τοὺς ἁγίους πατριάρχας καὶ προφήτας φησὶ·
-                        τοὺς καὶ χαρᾷ χαίροντας ἐπὶ τῷ τὰς προλεχθείσας αὐτοῖς ἐπαγγελίας
+                        τοὺς καὶ χαρᾷ χαίροντας, ἐπὶ τῷ τὰς προλεχθείσας αὐτοῖς ἐπαγγελίας
                         ἀποπληρῶσαι τὸν Χριστόν· αὗται δὲ ἦσαν, αἱ τὴν τῶν ἐθνῶν ἁπάντων σωτηρίαν
                         κατασημαίνουσαι: –</p>
                      <div type="links">
@@ -19122,7 +19124,7 @@
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">φησί</foreign></lem>
-                        <!-- Textkritik: φησί· P5 : φη(σί)· mit Akut N2 -->
+                        <!-- Textkritik: φησί· P5 : φη(σί)· mit Akut Z N2 -->
                         <rdg wit="#P1"><foreign xml:lang="grc">λέγει</foreign></rdg>
                         <wit>Par. gr. 166</wit>
                         <rdg wit="#P6*"><foreign xml:lang="grc">φησὶν</foreign></rdg>
@@ -19164,8 +19166,8 @@
                         <wit>Par. gr. 146</wit>
                         <wit>Plut. 6. 3</wit>
                         <rdg wit="#L2c"><foreign xml:lang="grc">ἀποπληροῦντος τοῦ
-                           Χριστοῦ</foreign></rdg>
-                        <!-- Textkritik: L2: Korrektur in scribendo: Χριστοῦ bereits richtig -->
+                              Χριστοῦ</foreign><note type="in-readings">(in scribendo)</note></rdg>
+                        <!-- Textkritik: L2: Korrektur in ras. : Χριστοῦ nicht das Ergebnis einer Korrektur -->
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">αὗται δὲ ἦσαν</foreign></lem>
@@ -19188,9 +19190,24 @@
                         <wit>Plut. 6. 3</wit>
                         <wit>Ambr. C 98 sup.</wit>
                      </app>
+                     <note type="textual-commentary">V1 C: Die für die Expositiones angewandten
+                        Zählsysteme gehen direkt von exp. 196 zu exp. 198 über, ohne dass eine
+                        Einheit übersprungen wird. Offensichtlich hatte das Exemplar der Urkatene
+                        von Typus XIX, von denen beide Katenen direkt abzuhängen scheinen, zu Ps
+                        13,7 keine Expositio. Denkbar ist es auch, dass in diesem gemeinsamen
+                        Exemplar exp. 197 anders zugeschrieben wurde. P5 P6 Z N2: exp. 197 wird
+                        Athanasius zugeschrieben. P1: exp. 197 ist anonym. Aufgrund der vorrangigen
+                        Stellung der Expositiones in dieser Katene wird die durch die erwähnten
+                        Handschriften bezeugte Zugehörigkeit gestützt. Es ist möglich, dass P1 auf
+                        ein Exemplar der Urkatene von Typus XIX zurückgeht, die eine Expositio zu Ps
+                        13,7 enthielt. Schlussfolgerung: exp. 197 kann als authentisch erachtet
+                        werden. Zudem findet sich ein verwendetes Formulierungsschema
+                        (Demonstrativpronomen + eine Form von εἰμί als Kopulaverb + erklärendes
+                        Prädikat mit Participium) in exp. 117b wieder (αὗται δέ εἰσιν πάλιν, αἱ
+                        ἀντικείμεναι δυνάμεις versus αὗται δὲ ἦσαν, αἱ ... κατασημαίνουσαι).
+                        Montfaucon: exp. 197 aus P6 übernommen.</note>
                   </div>
                </div>
-
                <div type="translation" xml:lang="de">
                   <quote type="psalmtext" corresp="#edition-ps-13-7-1" n="7a">Wer wird von Sion das
                      Heil Israels bringen?</quote>
@@ -19198,6 +19215,10 @@
                      Gefangenen seines Volkes zurückkehren lässt,</quote>
                   <quote type="psalmtext" corresp="#edition-ps-13-7-3" n="7c">(dann) soll Jakob
                      jubeln, und Israel soll sich freuen.</quote>
+                  <p corresp="#edition-13-7-1">Er meint die heiligen Patriarchen und Propheten, die
+                     sich gleichfalls mit voller Freude daran erfreuen, dass Christus die ihnen
+                     vorhergesagten Verheißungen erfüllt hat. Denn diese waren jene, die auf das
+                     Heil aller Völker hinweisen.</p>
                </div>
             </div>
          </div>
