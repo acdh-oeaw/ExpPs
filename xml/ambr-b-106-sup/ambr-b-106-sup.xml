@@ -2,12 +2,13 @@
 <?xml-model href="../../schema/tei-psalmcatenae.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <!-- faciendum: Ps 1–10: Vat. gr. 1747: "parallels" zu ergänzen -->
+   <!-- faciendum: Ps 1–10: Lemmata zu überprüfen -->
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Mediol. Ambros. B 106 sup. (CPG C27; Rahlfs 113) - Catena Type XIV (Primary
                Catena?)</title>
-            <title type="subtitle">List of Contents (Ps 1–2) and Transcription of (Ps)-Athanasius,
+            <title type="subtitle">List of Contents (Ps 1–2) and Transcription of (Ps.)-Athanasius,
                Expositiones in Psalmos (Ps 1–10)</title>
             <respStmt>
                <resp>by</resp>
@@ -41,16 +42,16 @@
                      <idno type="pinakes" corresp="https://pinakes.irht.cnrs.fr/notices/cote/42350/"
                         >42350</idno>
                   </altIdentifier>
-                  <altIdentifier>
+                  <!-- <altIdentifier>
                      <idno type="diktyon">42350</idno>
-                  </altIdentifier>
+                  </altIdentifier> -->
                </msIdentifier>
                <msContents>
                   <msItem n="1">
                      <locus>f. 2r–23v</locus>
                      <title>prolegomena in Psalmos</title>
-                     <note>Contents of the Psalm Catena: ExpPs, Evagrius, Hesychius “Jagić”,
-                        Theodoretus</note>
+                     <!-- <note>Contents of the Psalm Catena: ExpPs, Evagrius, Hesychius "Jagić",
+                        Theodoretus</note> -->
                   </msItem>
                   <msItem n="2">
                      <locus>f. 24r–241r</locus>
@@ -77,7 +78,12 @@
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout><p>255 ff. (but numbered 2–256).</p></layout>
+                        <layout><p>255 ff. (but numbered 2–256). The Psalms texts are organised in
+                              lemmata. Each lemma can be formed by one or more lines. However,
+                              within the lemmata the lines are clearly distinguished, being
+                              separated by colons (cf. e.g. f. 36r). There is not always a
+                              coincidence between one lemma in Ambros. B 106 sup. and one lemma in
+                              the other representative of Type XIV, Vat. gr. 1747.</p></layout>
                      </layoutDesc>
                   </objectDesc>
                </physDesc>
@@ -771,9 +777,9 @@
             </div>
             <pb n="25v"
                facs="http://213.21.172.25/iiif/2/public%26SEP0b02da828008b523%26SEP056_B106sup_c.25v.jp2/full/full/0/default.jpg"/>
-            <note type="lemma">Ps 2,8 (αἴτησαι)</note>
             <div type="commentary" subtype="commentary" xml:id="ambr-b-106-sup-2-4">
                <ab xml:lang="grc">
+                  <note type="lemma">Ps 2,8 (αἴτησαι)</note>
                   <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-2-16"
                      corresp="#ambr-b-106-sup-ps-2-8a" source="Anonymous">
                      <num type="ordinal" xml:lang="grc" value="30">Λ´</num>
@@ -923,9 +929,9 @@
             </div>
             <pb n="26r"
                facs="http://213.21.172.25/iiif/2/public%26SEP0b02da828008b523%26SEP057_B106sup_c.26r.jp2/full/full/0/default.jpg"/>
-            <note type="lemma">Ps 3,6 (ἐκοιμήθην)</note>
             <div type="commentary" subtype="commentary" xml:id="ambr-b-106-sup-3-3">
                <ab xml:lang="grc">
+                  <note type="lemma">Ps 3,6 (ἐκοιμήθην)</note>
                   <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-3-3"
                      corresp="#ambr-b-106-sup-ps-3-6a" source="Anonymous"
                      copyOf="#edition:edition-3-6-1">
@@ -1177,9 +1183,9 @@
             </div>
             <pb n="28r"
                facs="http://213.21.172.25/iiif/2/public%26SEP0b02da828008b523%26SEP061_B106sup_c.28r.jp2/full/full/0/default.jpg"/>
-            <note type="lemma">Ps 5,8 (ἅγιόν σου)</note>
             <div type="commentary" subtype="commentary" xml:id="ambr-b-106-sup-5-3">
                <ab xml:lang="grc">
+                  <note type="lemma">Ps 5,8 (ἅγιόν σου)</note>
                   <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-5-2"
                      corresp="#ambr-b-106-sup-ps-5-8b" source="Anonymous"
                      copyOf="#edition:edition-5-8-1">
@@ -1218,9 +1224,9 @@
             </div>
             <pb n="28v"
                facs="http://213.21.172.25/iiif/2/public%26SEP0b02da828008b523%26SEP062_B106sup_c.28v.jp2/full/full/0/default.jpg"/>
-            <note type="lemma">Ps 5,11d–12b (παρεπίκρανάν σε)</note>
             <div type="commentary" subtype="commentary" xml:id="ambr-b-106-sup-5-4">
                <ab xml:lang="grc">
+                  <note type="lemma">Ps 5,11d–12b (παρεπίκρανάν σε)</note>
                   <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-5-5"
                      corresp="#ambr-b-106-sup-ps-5-11d" source="Anonymous"
                      copyOf="#edition:edition-5-11-2">
@@ -1340,7 +1346,7 @@
                      <num type="ordinal" xml:lang="grc" value="88"><unclear reason="faded"
                            >Ο</unclear>Η´</num>
                      <quote type="patristic" subtype="quotation" xml:id="ambr-b-106-sup-quot-6-2"
-                        corresp="#person-2" source="Athanasius, exp. in Ps 6,2a">Οὐ τὸν ἔλεγχον
+                        corresp="#person-2" source="Athanasius, exp. in Ps 6,2">Οὐ τὸν ἔλεγχον
                         παραιτεῖται· ἀλλὰ τὸν μετὰ θυμοῦ· οὐδὲ τὴν παιδείαν· ἀλλὰ τὴν μετ’ ὀργῆς: – </quote>
                      <ref target="#vat-gr-754:vat-gr-754-fr-6-10" type="identical">Vat. gr.
                         754</ref>
@@ -1699,9 +1705,9 @@
             </div>
             <pb n="31r"
                facs="http://213.21.172.25/iiif/2/public%26SEP0b02da828008b523%26SEP067_B106sup_c.31r.jp2/full/full/0/default.jpg"/>
-            <note type="lemma">Ps 8,7b–8a (πάντα)</note>
             <div type="commentary" subtype="commentary" xml:id="ambr-b-106-sup-8-3">
                <ab xml:lang="grc">
+                  <note type="lemma">Ps 8,7b–8a (πάντα)</note>
                   <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-8-5"
                      corresp="#ambr-b-106-sup-ps-8-7b" source="Athanasius"
                      copyOf="#edition:edition-8-7-1-1">
@@ -2119,9 +2125,9 @@
             </div>
             <pb n="31v"
                facs="http://213.21.172.25/iiif/2/public%26SEP0b02da828008b523%26SEP068_B106sup_c.31v.jp2/full/full/0/default.jpg"/>
-            <note type="lemma">Ps 9,5a (ἐποίησας)</note>
             <div type="commentary" subtype="commentary" xml:id="ambr-b-106-sup-9-3">
                <ab xml:lang="grc">
+                  <note type="lemma">Ps 9,5a (ἐποίησας)</note>
                   <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-9-2"
                      corresp="#ambr-b-106-sup-ps-9-5a" source="Anonymous"
                      copyOf="#edition:edition-9-5-1">
@@ -2732,10 +2738,10 @@
             <!-- Ps 11 commentary -->
             <div type="commentary" subtype="commentary" xml:id="ambr-b-106-sup-11-2">
                <ab xml:lang="grc">
-                  <note type="lemma">Ps 11,3a (μάταια)</note>
+                  <note type="lemma">Ps 11,3 (μάταια)</note>
                   <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-11-1" source="Athanasius"
                      corresp="#ambr-b-106-sup-ps-11-3a" copyOf="#edition:edition-11-3-1">
-                     <num type="ordinal" xml:lang="grc" value="97"> ϘΖ´</num><quote type="patristic"
+                     <num type="ordinal" xml:lang="grc" value="97">ϘΖ´</num><quote type="patristic"
                         subtype="quotation/quotation" xml:id="ambr-b-106-sup-quote-11-1"
                         source="Athanasius, exp. in Ps 11,3a - Hesychius, comm. brevis in Ps 11,2b (17 Jagić)"
                         corresp="#person-2 #person-11">τὰ<supplied reason="illegible">ς κατὰ
@@ -2750,15 +2756,16 @@
                         type="with-variant">Vat. gr. 754</ref><note type="attribution"><foreign
                            xml:lang="grc"><unclear reason="damage"
                         >Ἀ</unclear>θ(ανασίου)</foreign></note><note type="parallels">Vat. gr. 1747
-                        (f. 15v): Attribution: <foreign xml:lang="grc">Ἀθ(ανασίου)</foreign> |
-                        Linking: <foreign xml:lang="grc">ΙΑ´</foreign></note></seg>
-                  <note type="lemma">Ps 11,3b (χείλη)</note>
+                        (f. 15v): Lemma: Ps 11,3 (μάταια) | Attribution: <foreign xml:lang="grc"
+                           >Αθ(ανασίου)</foreign> | Linking: <foreign xml:lang="grc"
+                        >ΙΑ´</foreign></note></seg>
+                  <note type="lemma">Ps 11,3 (χείλη)</note>
                   <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-11-2" source="Athanasius"
-                     corresp="#ambr-b-106-sup-ps-11-2b" copyOf="#edition:edition-11-3-2"><num
+                     corresp="#ambr-b-106-sup-ps-11-3b" copyOf="#edition:edition-11-3-2"><num
                         type="ordinal" value="98"><unclear reason="damage">Ϙ</unclear><supplied
                            reason="illegible">H´</supplied></num><quote type="patristic"
                         subtype="quotation" xml:id="ambr-b-106-sup-quote-11-2"
-                        source="Athanasius, exp. in Ps 11,3b; non habet Vat. gr. 1747 (f. 15v)"
+                        source="Athanasius, exp. in Ps 11,3b; non habet Vat. gr. 1747"
                         corresp="#person-2">ὅτι διδάσκαλ<unclear reason="damage"
                            >ο</unclear><supplied reason="illegible">ν</supplied>
                         <unclear reason="damage">ἀ</unclear>ποκαλοῦντες <unclear reason="damage"
@@ -2767,9 +2774,8 @@
                         <unclear reason="damage">περὶ</unclear> αὐτοῦ: –</quote><ref
                         target="#vat-gr-754:vat-gr-754-fr-11-8" type="with-variant">Vat. gr.
                         754</ref><note type="attribution"><foreign xml:lang="grc"><unclear
-                              reason="damage">Ἀθ</unclear>(ανασίου)</foreign></note><note
-                        type="parallels">Vat. gr. 1747: exp. om.</note></seg>
-                  <note type="lemma">Ps 11,4b–5a (μεγαλορήμονα)</note>
+                              reason="damage">Ἀθ</unclear>(ανασίου)</foreign></note></seg>
+                  <note type="lemma">Ps 11,4–5a (μεγαλορήμονα)</note>
                   <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-11-3"
                      source="Anonymous (?)" corresp="#ambr-b-106-sup-ps-11-4b"
                      copyOf="#edition:edition-11-5-1"><num type="ordinal" xml:lang="grc" value="100"
@@ -2787,8 +2793,8 @@
                            >ς</unclear>
                         <unclear>σ</unclear>οι ἔδωκε τὴν ἐξουσίαν ταύτην: – [Mc 11,28]</quote><ref
                         target="#vat-gr-754:vat-gr-754-fr-11-10" type="identical">Vat. gr.
-                        754</ref><note type="parallels">Vat. gr. 1747 (f. 15v): Attribution:
-                        Anonymous | Linking: by a sign.</note></seg>
+                        754</ref><note type="parallels">Vat. gr. 1747 (f. 15v): Lemma: Ps 11,4
+                        (μεγαλορήμονα) | Attribution: Anonymous | Linking: by a sign.</note></seg>
                   <note type="lemma">Ps 11,6a–c (πτωχῶν) (ut vid.)</note>
                   <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-11-4"
                      source="〈Iohannes Chrysostomus〉" corresp="#ambr-b-106-sup-ps-11-6a"
@@ -2812,15 +2818,16 @@
                         target="#vat-gr-754:vat-gr-754-fr-11-14" type="with-variations-and-variant"
                         >Vat. gr. 754</ref><note type="attribution"><foreign xml:lang="grc"
                            >〈☧〉</foreign>; cf. Vat. gr. 1747</note><note type="parallels">Vat. gr.
-                        1747 (f. 16r): Attribution: <foreign xml:lang="grc">☧</foreign> | Linking:
-                           <foreign xml:lang="grc">ΙΔ´</foreign></note></seg>
+                        1747 (f. 16r): Lemma: Ps 11,6a–b | Attribution: <foreign xml:lang="grc"
+                           >☧</foreign> | Linking: <foreign xml:lang="grc"
+                     >ΙΔ´</foreign></note></seg>
                </ab>
             </div>
             <pb n="36r"
                facs="http://213.21.172.25/iiif/2/public%26SEP0b02da828008b523%26SEP077_B106sup_c.36r.jp2/full/full/0/default.jpg"/>
             <div type="commentary" subtype="commentary" xml:id="ambr-b-106-sup-11-3">
                <ab xml:lang="grc">
-                  <note type="lemma">Ps 11,6d (παρρησιάσομαι)</note>
+                  <note type="lemma">Ps 11,6d–7 (παρρησιάσομαι)</note>
                   <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-11-5" source="Athanasius"
                      corresp="#ambr-b-106-sup-ps-11-6d" copyOf="#edition:edition-11-6-2"><num
                         type="ordinal" xml:lang="grc" value="2">B´</num><quote type="patristic"
@@ -2830,12 +2837,12 @@
                         πᾶσαν τὴν γῆν: –</quote><ref target="#vat-gr-754:vat-gr-754-fr-11-16"
                         type="with-variant">Vat. gr. 754</ref><note type="attribution"><foreign
                            xml:lang="grc">Αθ(ανασίου)</foreign></note><note type="parallels">Vat.
-                        gr. 1747 (f. 16r): Attribution: <foreign xml:lang="grc"
-                           >Αθ(ανασίου)</foreign> | Linking: <foreign xml:lang="grc"
-                        >ΙΕ´</foreign></note></seg>
-                  <note type="lemma">Ps 11,7 (ἁγνά)</note>
+                        gr. 1747 (f. 16r): Lemma: Ps 11,6d–7b (παρρησιάσομαι) | Attribution:
+                           <foreign xml:lang="grc">Αθ(ανασίου)</foreign> | Linking: <foreign
+                           xml:lang="grc">ΙΕ´</foreign></note></seg>
+                  <note type="lemma">Ps 11,6d–7 (ἁγνά)</note>
                   <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-11-6" source="Athanasius"
-                     corresp="#ambr-b-106-sup-ps-11-7a" copyOf="#edition:edition-11-7-1"><num
+                     corresp="#ambr-b-106-sup-ps-11-7b" copyOf="#edition:edition-11-7-1"><num
                         type="ordinal" xml:lang="grc" value="3">Γ´</num><quote type="patristic"
                         subtype="quotation" xml:id="ambr-b-106-sup-quote-11-6"
                         source="Athanasius, exp. in Ps 11,7b" corresp="#person-2">Ἀληθεῖς φησὶν οἱ
@@ -2843,19 +2850,20 @@
                         χωνευθὲν καθαρόν: –</quote><ref target="#vat-gr-754:vat-gr-754-fr-11-17"
                         type="identical">Vat. gr. 754</ref><note type="attribution"><foreign
                            xml:lang="grc">Αθ(ανασίου)</foreign></note><note type="parallels">Vat.
-                        gr. 1747 (f. 16r): Attribution: <foreign xml:lang="grc">αυτ(οῦ</foreign>) |
-                        Linking: <foreign xml:lang="grc">ΙϚ´</foreign></note></seg>
-                  <note type="lemma">Ps 11,9a (ἀσεβεῖς)</note>
+                        gr. 1747 (f. 16r): Lemma: Ps 11,6d–7b (ἁγνά) | Attribution: <foreign
+                           xml:lang="grc">αυτ(οῦ)</foreign> | Linking: <foreign xml:lang="grc"
+                           >ΙϚ´</foreign></note></seg>
+                  <note type="lemma">Ps 11,9 (ἀσεβεῖς)</note>
                   <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-11-7" source="Anonymous"
                      corresp="#ambr-b-106-sup-ps-11-9a" copyOf="#edition:edition-11-9-1"><num
                         type="ordinal" xml:lang="grc" value="5">E´</num><quote type="patristic"
                         subtype="quotation" xml:id="ambr-b-106-sup-quote-11-7"
-                        source="Athanasius, exp. in Ps 11,8–9a" corresp="#person-2">αἱ ἀντικείμεναι
-                           δυν<supplied reason="illegible">ά</supplied>μ<unclear>εις</unclear>:
-                        –</quote><ref target="#vat-gr-754:vat-gr-754-fr-11-19" type="abbreviated"
-                        >Vat. gr. 754</ref><note type="parallels">Vat. gr. 1747: exp.
-                     om.</note></seg>
-                  <note type="lemma">Ps 11,9b (ἐπολυώρησας)</note>
+                        source="Athanasius, exp. in Ps 11,8–9a; non habet Vat. gr. 1747"
+                        corresp="#person-2">αἱ ἀντικείμεναι δυν<supplied reason="illegible"
+                           >ά</supplied>μ<unclear>εις</unclear>: –</quote><ref
+                        target="#vat-gr-754:vat-gr-754-fr-11-19" type="abbreviated">Vat. gr.
+                        754</ref></seg>
+                  <note type="lemma">Ps 11,9 (ἐπολυώρησας)</note>
                   <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-11-8" source="Anonymous"
                      corresp="#ambr-b-106-sup-ps-11-9b" copyOf="#edition:edition-11-9-2"><num
                         type="ordinal" xml:lang="grc" value="7">Z´</num><quote type="patristic"
@@ -2870,9 +2878,9 @@
                         –</quote><ref target="#vat-gr-754:vat-gr-754-fr-11-21"
                         type="abbreviated-with-variant">Vat. gr. 754</ref><note type="attribution"
                            ><foreign xml:lang="grc">Ἀθ(ανασίου)</foreign></note><note
-                        type="parallels">Vat. gr. 1747 (f. 16r): Attribution: <foreign
-                           xml:lang="grc">Ἀθ(ανασίου)</foreign> | Linking: <foreign xml:lang="grc"
-                           >ΙΗ´</foreign></note></seg>
+                        type="parallels">Vat. gr. 1747 (f. 16r): Lemma: Ps 11,9b (ὕψος σου) |
+                        Attribution: <foreign xml:lang="grc">Ἀχθ</foreign> (sic) | Linking: <foreign
+                           xml:lang="grc">ΙΗ´</foreign></note></seg>
                </ab>
             </div>
             <!-- Ps 12 bibletext -->
@@ -2931,8 +2939,10 @@
             <div type="commentary" subtype="commentary" xml:id="ambr-b-106-sup-12-2">
                <ab xml:lang="grc">
                   <note type="parallels">Vat. gr. 1747 (f. 16v) has the following Expositio:
-                     Athanasius, exp. in Ps 12,1: Attribution: <foreign xml:lang="grc">υπο<supplied
-                           reason="illegible" cert="medium">θ</supplied>(εσις)</foreign></note>
+                     Athanasius, exp. in Ps 12,1 | Lemma: Ps 12,1 | Attribution: <foreign
+                        xml:lang="grc">υπο<supplied reason="illegible" cert="high"
+                        >θ</supplied>(εσις)</foreign> | Linking: <foreign xml:lang="grc"
+                        >IΘ´</foreign></note>
                   <note type="lemma">Ps 12,2 (Εως πότε)</note>
                   <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-12-1" source="Athanasius"
                      corresp="#ambr-b-106-sup-ps-12-2a" copyOf="#edition:edition-12-2-1"><num
@@ -2953,9 +2963,9 @@
                      <note type="attribution">
                         <foreign xml:lang="grc">Αθ(ανασίου)</foreign>
                      </note>
-                     <note type="parallels">Vat. gr. 1747 (f. 16r): Attribution: <foreign
-                           xml:lang="grc">Αθ(ανασίου)</foreign> | Linking: <foreign xml:lang="grc"
-                           >Κ´</foreign></note>
+                     <note type="parallels">Vat. gr. 1747 (f. 16v): Lemma: Ps 12,2 (Εως πότε) |
+                        Attribution: <foreign xml:lang="grc">Αθ(ανασίου)</foreign> | Linking:
+                           <foreign xml:lang="grc">Κ´</foreign></note>
                   </seg>
                </ab>
             </div>
@@ -2963,7 +2973,7 @@
                facs="http://213.21.172.25/iiif/2/public%26SEP0b02da828008b523%26SEP078_B106sup_c.36v.jp2/full/full/0/default.jpg"/>
             <div type="commentary" subtype="commentary" xml:id="ambr-b-106-sup-12-3">
                <ab xml:lang="grc">
-                  <note type="lemma">Ps 12,4b (τοὺς ὀφθαλμούς μου)</note>
+                  <note type="lemma">Ps 12,3c–4 (τοὺς ὀφθαλμούς μου)</note>
                   <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-12-2" source="Anonymous"
                      corresp="#ambr-b-106-sup-ps-12-4b" copyOf="#edition:edition-12-4-2"><num
                         type="ordinal" xml:lang="grc" value="13">ΙΓ´</num>
@@ -2971,10 +2981,11 @@
                         source="Athanasius, exp. in Ps 12,4b" corresp="#person-2">τοὺς τῆς διανοίας
                         δῆλονὅτι: –</quote>
                      <ref target="#vat-gr-754:vat-gr-754-fr-12-3" type="identical">Vat. gr.
-                        754</ref><note type="parallels">Vat. gr. 1747 (f. 16r): Attribution:
-                        Anonymous | Linking: <foreign xml:lang="grc">ΚΔ´</foreign></note>
+                        754</ref><note type="parallels">Vat. gr. 1747 (f. 16v): Lemma: Ps 12,4b |
+                        Attribution: Anonymous | Linking: <foreign xml:lang="grc"
+                        >ΚΔ´</foreign></note><!-- Katene: Vat. gr. 1747: exp. in Ps 12,4b übersprungen: am Ende der Seite hinzugefügt in roter Tinte -->
                   </seg>
-                  <note type="lemma">Ps 12,6a–b vel Ps 12,6 (ἐλέει σου)</note>
+                  <note type="lemma">Ps 12,6a–b vel 12,6 (ἐλέει σου)</note>
                   <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-12-3" source="Athanasius"
                      corresp="#ambr-b-106-sup-ps-12-6a" copyOf="#edition:edition-12-6-1">
                      <quote type="patristic" subtype="quotation" xml:id="ambr-b-106-sup-quot-12-4"
@@ -2989,9 +3000,9 @@
                         754</ref>
                      <note type="attribution">
                         <foreign xml:lang="grc">Αθ(ανασίου)</foreign>
-                     </note><note type="parallels">Vat. gr. 1747 (f. 17r): Attribution:<foreign
-                           xml:lang="grc">Αθ(ανασίου)</foreign> | Linking: <foreign xml:lang="grc"
-                           >ΚΖ´</foreign></note>
+                     </note><note type="parallels">Vat. gr. 1747 (f. 17r): Lemma: Ps 12,6a (ἐλέει
+                        σου) | Attribution: <foreign xml:lang="grc">Αθ(ανασίου)</foreign> | Linking:
+                           <foreign xml:lang="grc">ΚΖ´</foreign></note>
                   </seg>
                </ab>
             </div>
@@ -3084,9 +3095,10 @@
             <!-- Ps 13 commentary -->
             <div type="commentary" subtype="commentary" xml:id="ambr-b-106-sup-13-2">
                <ab xml:lang="grc">
-                  <note type="parallels">Vat. gr. 1747 (f. 17r): Attribution:<foreign xml:lang="grc"
-                        >υποθ(εσις)</foreign> | Linking: by a sign.</note>
-                  <note type="lemma">Ps 13,1b (ἄφρων)</note>
+                  <note type="parallels">Vat. gr. 1747 (f. 17r) has the following Expositio:
+                     Athanasius, exp. in Ps 13,1a | Lemma: Ps 13,1a | Attribution:<foreign
+                        xml:lang="grc">υποθ(εσις)</foreign> | Linking: by a sign.</note>
+                  <note type="lemma">Ps 13,1b–d (ἄφρων)</note>
                   <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-13-1" source="Anonymous"
                      corresp="#ambr-b-106-sup-ps-13-1b" copyOf="#edition:edition-13-1-2"><num
                         type="ordinal" xml:lang="grc" value="17">ΙΖ´</num><quote type="patristic"
@@ -3100,15 +3112,16 @@
                            reason="illegible">ν</supplied> κατασημαί<supplied reason="illegible"
                            >ν</supplied>ει: –</quote><ref target="#vat-gr-754:vat-gr-754-fr-13-2"
                         type="with-variants">Vat. gr. 754</ref><note type="parallels">Vat. gr. 1747
-                        (f. 17r): Attribution: Anonymous | Linking: <foreign xml:lang="grc"
-                           >ΚΗ´</foreign></note></seg><!-- Katene: Vat. gr. 1747: f. 17r: Notiz am unteren Rand: -->
+                        (f. 17r): Lemma: Ps 13,1b–d (Εἶπεν) | Attribution: Anonymous | Linking:
+                           <foreign xml:lang="grc"
+                  >ΚΗ´</foreign></note></seg><!-- Katene: Vat. gr. 1747: f. 17r: Notiz des Katenisten am unteren Rand -->
                </ab>
             </div>
             <pb n="37r"
                facs="http://213.21.172.25/iiif/2/public%26SEP0b02da828008b523%26SEP079_B106sup_c.37r.jp2/full/full/0/default.jpg"/>
             <div type="commentary" subtype="commentary" xml:id="ambr-b-106-sup-13-3">
                <ab xml:lang="grc">
-                  <note type="lemma">Ps 13,4a (γνώσονται)</note>
+                  <note type="lemma">Ps 13,4 (γνώσονται)</note>
                   <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-13-2" source="Athanasius"
                      corresp="#ambr-b-106-sup-ps-13-4a" copyOf="#edition:edition-13-4-1"><num
                         type="ordinal" xml:lang="grc" value="21">ΚΑ´</num><quote type="patristic"
@@ -3123,10 +3136,11 @@
                         target="#vat-gr-754:vat-gr-754-fr-13-9" type="with-variants">Vat. gr.
                         754</ref><note type="attribution"><foreign xml:lang="grc"
                            >Αθ(ανασίου)</foreign><note type="parallels">Vat. gr. 1747 (f. 17v):
-                           Attribution: Ἀθ(ανασίου) | Linking: <foreign xml:lang="grc"
+                           Lemma: Ps 13,4a | Attribution: <foreign xml:lang="grc"
+                              >Ἀθ(ανασίου)</foreign> | Linking: <foreign xml:lang="grc"
                               >ΚΑ´:</foreign></note></note>
                   </seg>
-                  <note type="lemma">Ps 13,4b (οἱ ἐσθίοντες [οἱ κατεσθίοντες LXX Rahlfs])</note>
+                  <note type="lemma">Ps 13,4 (οἱ ἐσθίοντες [οἱ κατεσθίοντες LXX Rahlfs])</note>
                   <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-13-3" source="Athanasius"
                      corresp="#ambr-b-106-sup-ps-13-4b" copyOf="#edition:edition-13-4-2"><num
                         type="ordinal" xml:lang="grc" value="22">ΚB´</num><quote type="patristic"
@@ -3143,9 +3157,10 @@
                         target="#vat-gr-754:vat-gr-754-fr-13-10" type="abbreviated">Vat. gr.
                         754</ref><note type="attribution"><foreign xml:lang="grc"
                               ><unclear>Α</unclear>θ(ανασίου)</foreign></note><note type="parallels"
-                        >Vat. gr. 1747 (f. 17v): Attribution: <foreign xml:lang="grc">τοῦ
-                           αυτ(οῦ)</foreign> | Linking: ΚΒ´</note></seg>
-                  <note type="lemma">Ps 13,5a (ἐδειλίασαν)</note>
+                        >Vat. gr. 1747 (f. 17v): Lemma: Ps 13,4b | Attribution: <foreign
+                           xml:lang="grc">τοῦ αυτ(οῦ)</foreign> | Linking: <foreign xml:lang="grc"
+                           >ΚΒ´</foreign></note></seg>
+                  <note type="lemma">Ps 13,5 (ἐδειλίασαν)</note>
                   <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-13-4" source="Athanasius"
                      corresp="#ambr-b-106-sup-ps-13-5a" copyOf="#edition:edition-13-5-1"><num
                         type="ordinal" xml:lang="grc" value="23">ΚΓ´</num><quote type="patristic"
@@ -3162,9 +3177,10 @@
                         type="abbreviated-with-variant">Vat. gr. 754</ref><note type="attribution"
                            ><foreign xml:lang="grc"><unclear>Α</unclear><supplied reason="illegible"
                               >θ</supplied>(ανασίου)</foreign></note><note type="parallels">Vat. gr.
-                        1747 (f. 17v): Attribution: <foreign xml:lang="grc">τοῦ αυτ(οῦ)</foreign> |
-                        Linking: ΚΓ´</note></seg>
-                  <note type="lemma">Ps 13,5b (ἐν γενεᾷ)</note>
+                        1747 (f. 17v): Lemma: 13,5 (ἐδειλίασαν) | Attribution: <foreign
+                           xml:lang="grc">τοῦ αυτ(οῦ)</foreign> | Linking: <foreign xml:lang="grc"
+                           >ΚΓ´</foreign></note></seg>
+                  <note type="lemma">Ps 13,5 (ἐν γενεᾷ)</note>
                   <seg type="commentaryfragment" xml:id="
                      ambr-b-106-sup-fr-13-5" source="Anonymous"
                      corresp="#ambr-b-106-sup-ps-13-5b" copyOf="#edition:edition-13-5-2"><num
@@ -3174,9 +3190,9 @@
                            reason="durctus">κ</unclear>αιουμένων διὰ τῆς ἐπιφανείας αὐτο<unclear
                            reason="faded">ῦ: –</unclear></quote><ref
                         target="#vat-gr-754:vat-gr-754-fr-13-11" type="identical">Vat. gr.
-                        754</ref><note type="parallels">Vat. gr. 1747 (f. 17v): Attribution:
-                           <foreign xml:lang="grc">αυτ(οῦ)</foreign> | Linking: by a
-                     sign.</note></seg>
+                        754</ref><note type="parallels">Vat. gr. 1747 (f. 17v): Lemma: Ps 13,5 (ἐν
+                        γενεᾷ) | Attribution: <foreign xml:lang="grc">αυτ(οῦ)</foreign> | Linking:
+                        by a sign.</note></seg>
                </ab>
             </div>
             <pb n="37v"/>

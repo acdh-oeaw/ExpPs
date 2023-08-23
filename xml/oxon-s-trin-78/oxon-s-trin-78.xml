@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../schema/tei-psalmcatenae.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <!-- faciendum: Ps 1–12: Verknüpfungen mit B2 herzuestellen -->
-<!-- faciendum: Ps 11-13: Lemmata der Fragmente zu überprüfen -->
+<!-- erledigt: Ps 11-13: Lemmata der Fragmente überprüft: die Lemmata und nicht die Zeilen sind angegeben -->
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -3192,7 +3192,7 @@
                <ab xml:lang="grc">
                   <note type="lemma">Ps 11,4 (γλῶσσαν)</note>
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-11-3" source="Anonymous"
-                     corresp="#oxon-s-trin-78-ps-11-4a" copyOf="#edition:edition-11-5-1"><num
+                     corresp="#oxon-s-trin-78-ps-11-4b" copyOf="#edition:edition-11-5-1"><num
                         type="ordinal" xml:lang="grc" value="1">A´</num>
                      <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-11-3"
                         source="Athanasius, exp. in Ps 11,4–5a" corresp="#person-2">πῶς γὰρ οὐ
@@ -3203,7 +3203,7 @@
                   </seg>
                   <note type="lemma">Ps 11,5 (τίς ἡμῶν)</note>
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-11-4" source="Anonymous"
-                     corresp="#oxon-s-trin-78-ps-11-5a" copyOf="#edition:edition-11-5-3">
+                     corresp="#oxon-s-trin-78-ps-11-5c" copyOf="#edition:edition-11-5-3">
                      <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-11-4"
                         source="Athanasius, exp. in Ps 11,5c" corresp="#person-2">Ὅμοιον τοῦτον δὲ
                         οὐκ οἴδαμεν πόθεν ἐστίν: [Ioh 9,29]</quote>
@@ -3230,7 +3230,7 @@
                <ab xml:lang="grc">
                   <note type="lemma">Ps 11,7 (ἀργύριον)</note>
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-11-6" source="Anonymous"
-                     corresp="#oxon-s-trin-78-ps-11-7a" copyOf="#edition:edition-11-7-1"><num
+                     corresp="#oxon-s-trin-78-ps-11-7b" copyOf="#edition:edition-11-7-1"><num
                         type="ordinal" xml:lang="grc" value="3">Γ´</num>
                      <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-11-6"
                         source="Athanasius, exp. in Ps 11,7b" corresp="#person-2">ἀληθεῖς φη(σὶν) οἱ
@@ -3241,7 +3241,7 @@
                   </seg>
                   <note type="lemma">Ps 11,7 (ἑπταπλασίως)</note>
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-11-7" source="Anonymous"
-                     corresp="#oxon-s-trin-78-ps-11-7a"><num type="ordinal" xml:lang="grc" value="4"
+                     corresp="#oxon-s-trin-78-ps-11-7c"><num type="ordinal" xml:lang="grc" value="4"
                         >Δ´</num>
                      <quote type="patristic" subtype="unknown" xml:id="oxon-s-trin-78-quot-11-7"
                         source="fons ignotus in Ps 11,7c; cf. Euthimius Zig., comm. in Ps 11,7c (PG 128,176 A12–13)"
@@ -3249,7 +3249,7 @@
                   </seg>
                   <note type="lemma">Ps 11,9 (τὸ ὕψος)</note>
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-11-8" source="Anonymous"
-                     corresp="#oxon-s-trin-78-ps-11-8a" copyOf="#edition:edition-11-9-2"><num
+                     corresp="#oxon-s-trin-78-ps-11-9b" copyOf="#edition:edition-11-9-2"><num
                         type="ordinal" xml:lang="grc" value="5">Ε´</num>
                      <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-11-8"
                         source="Athanasius, exp. in Ps 11,9b" corresp="#person-2">Ὕψος τὴν δύναμιν
@@ -3270,7 +3270,7 @@
                   </seg>
                   <note type="lemma">Ps 11,9 (ἐπολυώρησας)</note>
                   <seg type="glosse" xml:id="oxon-s-trin-78-glosse-11-3" source="Anonymous"
-                     corresp="#oxon-s-trin-78-ps-11-9a">
+                     corresp="#oxon-s-trin-78-ps-11-9b">
                      <quote type="patristic" subtype="unknown" xml:id="oxon-s-trin-78-quot-11-10"
                         source="fons ignotus in Ps 11,9b" corresp="#person-18">ηὔξησας περιέσσευσας
                         ἐφρόντισας: –</quote>
@@ -3347,11 +3347,11 @@
                         target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-12-1" type="with-variant">Oxon.
                         Bodl. Auct. D. 4. 1</ref>
                   </seg>
-                  <note type="lemma">Ps 12,2a (ἐπιλήσῃ)</note>
+                  <note type="lemma">Ps 12,2 (ἐπιλήσῃ)</note>
                   <seg type="glosse" xml:id="oxon-s-trin-78-glosse-12-1" source="Anonymous (?)"
                      corresp="#plut-5-30-ps-12-2a">
                      <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-12-2"
-                        source="fr. deperditum in Ps 12,2a; erat glossa in marg. (?)"
+                        source="fr. deperditum vel omissum in Ps 12,2a; erat glossa in marg. (?)"
                         corresp="#person-46"/>
                   </seg>
                </ab>
@@ -3378,7 +3378,7 @@
                   </seg>
                   <note type="lemma">Ps 12,3c–4 (φώτισον)</note>
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-12-3" source="Anonymous"
-                     corresp="#oxon-s-trin-78-ps-12-3c"><num type="ordinal" xml:lang="grc" value="7"
+                     corresp="#oxon-s-trin-78-ps-12-4b"><num type="ordinal" xml:lang="grc" value="7"
                         >Z´</num>
                      <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-12-4"
                         source="fons ignotus in Ps 12,4b (ineditum?)" corresp="#person-18">Τοὺς
@@ -3403,7 +3403,7 @@
             <pb n="23v"/>
             <div type="commentary" subtype="commentary" xml:id="oxon-s-trin-78-12-4">
                <ab xml:lang="grc">
-                  <note type="lemma">Ps 12,6b–c</note>
+                  <note type="lemma">Ps 12,6c–d (εὐεργετήσαντί με)</note>
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-12-5" source="Anonymous"
                      corresp="#oxon-s-trin-78-ps-12-6b">
                      <num type="ordinal" xml:lang="grc" value="3">Γ´</num>
@@ -3517,10 +3517,10 @@
                         sign.</note></seg>
                   <note type="lemma">Ps 13,1b–d (διεφθάρησαν [διέφθειραν LXX Rahlfs])</note>
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-13-2" source="Anonymous"
-                     corresp="#oxon-s-trin-78-ps-13-1b" copyOf="#edition:edition-13-1-2"><quote
+                     corresp="#oxon-s-trin-78-ps-13-1c" copyOf="#edition:edition-13-1-2"><quote
                         type="patristic" subtype="unknown/quotation"
                         xml:id="oxon-s-trin-78-quot-13-2"
-                        source="fons ignotus (glossa) in Ps 13,1c; cf. Suda s.v. Ἐβδελύχθησαν (E nr. 23 Adler) - Athanasius, exp. in Ps 13,1b–2"
+                        source="fons ignotus (= glossa) in Ps 13,1c; cf. Suda s.v. Ἐβδελύχθησαν (E nr. 23 Adler) - Athanasius, exp. in Ps 13,1b–2"
                         corresp="#person-18 #person-2">Ἐξουδενώθησαν ἀπερρίφησαν· / ἐπειδὴ μὴ
                         λογισάμενοι φησὶν εἶναι θεὸν ἐφορῶντα τὰ ἀνθρώπινα καὶ κρίνοντα κρίσει
                         δικαία· πᾶσαν ἀθεμιτουργίαν εἰργάσαντο· τούτου δὴ καὶ ὁ κύριος ἐκ τοῦ
@@ -3533,7 +3533,7 @@
                         gr. 754</ref></seg>
                   <note type="lemma">Ps 13,1b–d (ἐν ἐπιτηδεύμασιν)</note>
                   <seg type="glosse" xml:id="oxon-s-trin-78-glosse-13-1" source="Anonymous"
-                     corresp="#oxon-s-trin-78-ps-13-1b"><quote type="patristic" subtype="unknown"
+                     corresp="#oxon-s-trin-78-ps-13-1c"><quote type="patristic" subtype="unknown"
                         xml:id="oxon-s-trin-78-quot-13-3"
                         source="fons ignotus in Ps 13,1c; apud lineam Psalmi" corresp="#person-18"
                         >ἐν ἐ<supplied reason="inner-margin">πι</supplied>χειρ<supplied
@@ -3582,7 +3582,7 @@
                         >Oxon. Bodl. Auct. D. 4. 1</ref></seg>
                   <note type="lemma">Ps 13,4 (ἐσθίοντες [κατεσθίοντες LXX Rahlfs])</note>
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-13-5" source="Anonymous"
-                     corresp="#oxon-s-trin-78-ps-13-4a" copyOf="#edition:edition-13-4-2"><quote
+                     corresp="#oxon-s-trin-78-ps-13-4b" copyOf="#edition:edition-13-4-2"><quote
                         type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-13-10"
                         source="Athanasius, exp. in Ps 13,4b; non habet Oxon. Bodl. Auct. D. 4. 1"
                         corresp="#person-2">Κατήσθιον γὰρ τὸν λαὸν αὐτοῦ ἀναπείθοντες προσκυνεῖν τῆι
@@ -3604,7 +3604,7 @@
                         letter, but by a linking sign.</note></seg>
                   <note type="lemma">Ps 13,5–6 (βουλὴν)</note>
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-13-7" source="Anonymous"
-                     corresp="#oxon-s-trin-78-ps-13-5a" copyOf="#edition:edition-13-6-1"><quote
+                     corresp="#oxon-s-trin-78-ps-13-6a" copyOf="#edition:edition-13-6-1"><quote
                         type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-13-12"
                         source="Athanasius, exp. in Ps 13,6a; non habet Oxon. Bodl. Auct. D. 4. 1"
                         corresp="#person-2">ταῦτα ὡς π<supplied reason="illegible"
@@ -3621,7 +3621,7 @@
                <ab xml:lang="grc">
                   <note type="lemma">Ps 13,7 (Ιακωβ / Ισραηλ)</note>
                   <seg type="glosse" xml:id="oxon-s-trin-78-glosse-13-3" source="Anonymous"
-                     corresp="#oxon-s-trin-78-ps-13-7a"><quote type="patristic" subtype="unknown"
+                     corresp="#oxon-s-trin-78-ps-13-7c"><quote type="patristic" subtype="unknown"
                         xml:id="oxon-s-trin-78-quot-13-13"
                         source="fons ignotus in Ps 13,7c; cf. Hesychius, lex. s.v. Ἰάκωβος (I nr. 3 Latte) et Didymus, fr. 84 in Ps 13,7 (172,14 Mühlenberg); cf. etiam Hesychius, comm. magnus in Ps 52,7b–c (PG 93,1209 D9–10)"
                         corresp="#person-18">πτερνιστής· νοῦς ὁρῶν θεόν:</quote><ref
