@@ -2,8 +2,7 @@
 <?xml-model href="../../schema/tei-psalmcatenae.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
-      <!-- ToDo: Ps 1–10: Personen in @corresp zu berichtigen -->
-      <!-- faciendum: Ps 1–10: List of contents -->
+      <!-- faciendum: Katene: Ps 1–10: List of contents -->
       <fileDesc>
          <titleStmt>
             <title>Paris. gr. 139 (CPG C16; Rahlfs 1133) - Catena Type III (Secondary
@@ -3446,7 +3445,8 @@
                            >Θεοδ(ώρου) αντ(ι)οχ(είας)</foreign></note></seg>
                   <pb n="35v–36r"/>
                   <note type="lemma">Ps 13,5b–6</note>
-                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-13-24" source="Anonymous"
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-13-24"
+                     rendition="#bottom-of-the-page" source="Anonymous"
                      corresp="#par-gr-139-ps-13-5b"><quote type="patristic"
                         subtype="paraphrase-abbreviated"
                         source="Didymus, fr. 83 in Ps 13,4–5 (170–171 Mühlenberg)"
