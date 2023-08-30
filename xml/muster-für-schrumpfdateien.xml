@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../schema/tei-psalmcatenae.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!-- Mese · -->
+<!-- Ϲ -->
+<!-- Theodoretus, comm. in Ps XX,XXX (PG 80,XXX XX–XX) -->
+<!-- Θεοδ(ωρήτου) -->
+<!-- Evagrius, schol. nr. XX´ in Ps XX,XX (XXX Rondeau – Géhin – Cassin) -->
 
 <!-- Muster I: allgemein -->
 <div type="commentary" subtype="commentary" xml:id="XXXX">
    <ab xml:lang="grc">
       <note type="lemma">Ps XX,XX</note>
-      <seg type="commentaryfragment" xml:id="plut-5-30-fr-13-XX" source="XXXX"
+      <seg type="commentaryfragment" xml:id="XXXX-fr-13-XX" source="XXXX"
          corresp="#XXXX-ps-XX-XX"><quote type="patristic" subtype="XXXX"
             xml:id="XXXX-quot-XX-XX"
             source="XXXX"
@@ -14,6 +19,27 @@
                   xml:lang="grc">XXXX</foreign></note></seg>
    </ab>
 </div>
+
+<!-- Muster II: Vat. gr. 754: commentary fragments -->
+<div type="commentary" subtype="commentary" xml:id="vat-gr-754-XX-XX" rendition="#XXXX" rend="minuscule letters" change="commentaryfragments-only">
+   <ab xml:lang="grc">
+<note type="lemma">Ps XX,XX</note>
+      <seg type="commentaryfragment" xml:id="vat-gr-754-fr-XX-XX" rendition="#XXXX" rend="#XXXX" source="XXXX"
+   corresp="#vat-gr-754-ps-XX-XX"><quote type="patristic" subtype="quotation"
+      xml:id="vat-gr-754-quot-XX-XX"
+      source="XXXX"
+      corresp="#person-XX"/><note type="attribution"><foreign
+            xml:lang="grc">XXXX</foreign></note></seg>
+   </ab>
+</div>
+<!-- Muster III: Vat. gr. 754: hexaplaric -->
+      <div type="hexaplaric" subtype="commentary" xml:id="vat-gr-754-XX-XX" rendition="#XXXX" rend="capital letters" change="commentaryfragments-only">
+   <ab xml:lang="grc">
+<note type="lemma">Ps XX,XX</note>
+      <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-XX-XX" rendition="#XXXX" source="XXXX"
+   corresp="#vat-gr-754-ps-XX-XX"></seg>
+   </ab>
+      </div>
 
 <!-- Muster IΙ: Typus XIV -->
 <div type="commentary" subtype="commentary" xml:id="ambr-b-106-sup-XX-XX">
@@ -1254,6 +1280,56 @@
                   κυρίῳ τῷ εὐεργετήσαντί με <anchor type="psalmtext" xml:id="mosq-syn-194-ps-12-6d"
                      n="Ps (LXX) 12,6d" corresp="../psalms-LXX/psalms.xml#Ps-LXX-12-6"/> καὶ ψαλῶ τῷ
                   ὀνόματι κυρίου τοῦ ὑψίστου. </quote>
+            </ab>
+         </div>
+         <!-- Ps 14 bibletext -->
+         <div type="bibletext" xml:id="vat-gr-754-14-1" subtype="commented"
+            rendition="#middle-column" change="commentaryfragments-only">
+            <ab xml:lang="grc">
+               <quote type="bibletext" xml:id="vat-gr-754-ps-14-1" n="Ps (LXX) 14,1"
+                  corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-1">
+                  <anchor type="psalmtext" xml:id="vat-gr-754-ps-14-1a" n="Ps (LXX) 14,1a"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-1"/> Ψαλμὸς τῷ Δαυιδ. <anchor
+                        type="psalmtext" xml:id="vat-gr-754-ps-14-1b" n="Ps (LXX) 14,1b"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-1"/> Κύριε, τίς παροικήσει ἐν τῷ
+                  σκηνώματί σου <anchor type="psalmtext" xml:id="vat-gr-754-ps-14-1c"
+                     n="Ps (LXX) 14,1c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-1"/> καὶ τίς
+                  κατασκηνώσει ἐν τῷ ὄρει τῷ ἁγίῳ σου; </quote>
+               <quote type="bibletext" xml:id="vat-gr-754-ps-14-2" n="Ps (LXX) 14,2"
+                  corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-2">
+                  <anchor type="psalmtext" xml:id="vat-gr-754-ps-14-2a" n="Ps (LXX) 14,2a"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-1"/> πορευόμενος ἄμωμος καὶ
+                  ἐργαζόμενος δικαιοσύνην, <anchor type="psalmtext" xml:id="vat-gr-754-ps-14-2b"
+                     n="Ps (LXX) 14,2b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-2"/> λαλῶν
+                  ἀλήθειαν ἐν καρδίᾳ αὐτοῦ, </quote>
+               <quote type="bibletext" xml:id="vat-gr-754-ps-14-3" n="Ps (LXX) 14,3"
+                  corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-3">
+                  <anchor type="psalmtext" xml:id="vat-gr-754-ps-14-3a" n="Ps (LXX) 14,3a"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-3"/> ὃς οὐκ ἐδόλωσεν ἐν γλώσσῃ
+                  αὐτοῦ <anchor type="psalmtext" xml:id="vat-gr-754-ps-14-3b" n="Ps (LXX) 14,3b"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-3"/> οὐδὲ ἐποίησεν τῷ πλησίον
+                  αὐτοῦ κακὸν <anchor type="psalmtext" xml:id="vat-gr-754-ps-14-3c"
+                     n="Ps (LXX) 14,3c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-3"/> καὶ
+                  ὀνειδισμὸν οὐκ ἔλαβεν ἐπὶ τοὺς ἔγγιστα αὐτοῦ· </quote>
+               <quote type="bibletext" xml:id="vat-gr-754-ps-14-4" n="Ps (LXX) 14,4"
+                  corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-4">
+                  <anchor type="psalmtext" xml:id="vat-gr-754-ps-14-4a" n="Ps (LXX) 14,4a"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-4"/> ἐξουδένωται ἐνώπιον αὐτοῦ
+                  πονηρευόμενος, <anchor type="psalmtext" xml:id="vat-gr-754-ps-14-4b"
+                     n="Ps (LXX) 14,4b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-4"/> τοὺς δὲ
+                  φοβουμένους κύριον δοξάζει· <anchor type="psalmtext"
+                     xml:id="vat-gr-754-ps-14-4c" n="Ps (LXX) 14,4c"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-4"/> ὁ ὀμνύων τῷ πλησίον αὐτοῦ
+                  καὶ οὐκ ἀθετῶν· </quote>
+               <quote type="bibletext" xml:id="vat-gr-754-ps-14-5" n="Ps (LXX) 14,5"
+                  corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-5">
+                  <anchor type="psalmtext" xml:id="vat-gr-754-ps-14-5a" n="Ps (LXX) 14,5a"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-5"/> τὸ ἀργύριον αὐτοῦ οὐκ
+                  ἔδωκεν ἐπὶ τόκῳ <anchor type="psalmtext" xml:id="vat-gr-754-ps-14-5b"
+                     n="Ps (LXX) 14,5b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-4"/> καὶ δῶρα
+                  ἐπ᾽ ἀθῴοις οὐκ ἔλαβεν. <anchor type="psalmtext" xml:id="vat-gr-754-ps-14-5c"
+                     n="Ps (LXX) 14,5c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-5"/> ὁ ποιῶν
+                  ταῦτα οὐ σαλευθήσεται εἰς τὸν αἰῶνα. </quote>
             </ab>
          </div>
          </div>

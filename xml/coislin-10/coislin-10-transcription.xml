@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../schema/tei-psalmcatenae.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-   <!-- faciendum: Textkritik: Ps 1–10: beginnend vom Ende von f. 5v: Fragmente, Expositiones ausgenommen, mit Vat. gr. 754 zu vergleichen -->
-   <!-- ToDo: Ps 1–10: Personen in @corresp zu berichtigen -->
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -2916,14 +2914,14 @@
                         <anchor type="psalmtext" xml:id="coislin-10-ps-13-6b" n="Ps (LXX) 13,6b"
                         corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-6"/> ὅτι κύριος ἐλπὶς αὐτοῦ
                      ἐστιν. </quote>
-                  <quote type="bibletext" xml:id="vat-gr-754-ps-13-7" n="Ps (LXX) 13,7"
+                  <quote type="bibletext" xml:id="coislin-10-ps-13-7" n="Ps (LXX) 13,7"
                      corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-7">
-                     <anchor type="psalmtext" xml:id="vat-gr-754-ps-13-7a" n="Ps (LXX) 13,7a"
+                     <anchor type="psalmtext" xml:id="coislin-10-ps-13-7a" n="Ps (LXX) 13,7a"
                         corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-7"/> τίς δώσει ἐκ Σιων τὸ
-                     σωτήριον τοῦ Ισραηλ; <anchor type="psalmtext" xml:id="vat-gr-754-ps-13-7b"
+                     σωτήριον τοῦ Ισραηλ; <anchor type="psalmtext" xml:id="coislin-10-ps-13-7b"
                         n="Ps (LXX) 13,7b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-7"/> ἐν τῷ
                      ἐπιστρέψαι κύριον τὴν αἰχμαλωσίαν τοῦ λαοῦ αὐτοῦ <anchor type="psalmtext"
-                        xml:id="vat-gr-754-ps-13-7c" n="Ps (LXX) 13,7c"
+                        xml:id="coislin-10-ps-13-7c" n="Ps (LXX) 13,7c"
                         corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-7"/> ἀγαλλιάσθω Ιακωβ καὶ
                      εὐφρανθήτω Ισραηλ.</quote>
                </ab>
@@ -3043,7 +3041,7 @@
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-13-8" source="(Athanasius)"
                      corresp="#coislin-10-ps-13-6a" copyOf="#edition:edition-13-6-1">
                      <quote type="patristic" subtype="quotation" xml:id="coislin-10-quot-13-10"
-                        source="Athanasius, exp. in Ps 13,6a" corresp="#person-2">Ταῦτα ὡς πρὸς τοὺς
+                        source="Athanasius, exp. in Ps 13,6" corresp="#person-2">Ταῦτα ὡς πρὸς τοὺς
                         ἀπομείναντας τῆ ἀπιστία. καὶ διώξαντας τοὺς πιστεύσαντας εἰς τὸν Χριστόν:
                         –</quote>
                      <ref target="#vat-gr-754:vat-gr-754-fr-13-13" type="with-variant">Vat. gr.
@@ -3081,54 +3079,110 @@
                </ab>
             </div>
             <pb n="11v" facs="https://gallica.bnf.fr/ark:/12148/btv1b52513084s/f34.item"/>
+            <!-- Ps 14 bibletext -->
+            <div type="bibletext" xml:id="coislin-10-14-1" subtype="commented"
+               rendition="#middle-column" change="commentaryfragments-only">
+               <ab xml:lang="grc">
+                  <quote type="bibletext" xml:id="coislin-10-ps-14-1" n="Ps (LXX) 14,1"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-1">
+                     <anchor type="psalmtext" xml:id="coislin-10-ps-14-1a" n="Ps (LXX) 14,1a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-1"/> Ψαλμὸς τῷ Δαυιδ. <anchor
+                        type="psalmtext" xml:id="coislin-10-ps-14-1b" n="Ps (LXX) 14,1b"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-1"/> Κύριε, τίς παροικήσει ἐν τῷ
+                     σκηνώματί σου <anchor type="psalmtext" xml:id="coislin-10-ps-14-1c"
+                        n="Ps (LXX) 14,1c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-1"/> καὶ τίς
+                     κατασκηνώσει ἐν τῷ ὄρει τῷ ἁγίῳ σου; </quote>
+                  <quote type="bibletext" xml:id="coislin-10-ps-14-2" n="Ps (LXX) 14,2"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-2">
+                     <anchor type="psalmtext" xml:id="coislin-10-ps-14-2a" n="Ps (LXX) 14,2a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-1"/> πορευόμενος ἄμωμος καὶ
+                     ἐργαζόμενος δικαιοσύνην, <anchor type="psalmtext" xml:id="coislin-10-ps-14-2b"
+                        n="Ps (LXX) 14,2b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-2"/> λαλῶν
+                     ἀλήθειαν ἐν καρδίᾳ αὐτοῦ, </quote>
+                  <quote type="bibletext" xml:id="coislin-10-ps-14-3" n="Ps (LXX) 14,3"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-3">
+                     <anchor type="psalmtext" xml:id="coislin-10-ps-14-3a" n="Ps (LXX) 14,3a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-3"/> ὃς οὐκ ἐδόλωσεν ἐν γλώσσῃ
+                     αὐτοῦ <anchor type="psalmtext" xml:id="coislin-10-ps-14-3b" n="Ps (LXX) 14,3b"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-3"/> οὐδὲ ἐποίησεν τῷ πλησίον
+                     αὐτοῦ κακὸν <anchor type="psalmtext" xml:id="coislin-10-ps-14-3c"
+                        n="Ps (LXX) 14,3c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-3"/> καὶ
+                     ὀνειδισμὸν οὐκ ἔλαβεν ἐπὶ τοὺς ἔγγιστα αὐτοῦ· </quote>
+                  <quote type="bibletext" xml:id="coislin-10-ps-14-4" n="Ps (LXX) 14,4"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-4">
+                     <anchor type="psalmtext" xml:id="coislin-10-ps-14-4a" n="Ps (LXX) 14,4a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-4"/> ἐξουδένωται ἐνώπιον αὐτοῦ
+                     πονηρευόμενος, <anchor type="psalmtext" xml:id="coislin-10-ps-14-4b"
+                        n="Ps (LXX) 14,4b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-4"/> τοὺς δὲ
+                     φοβουμένους κύριον δοξάζει· <anchor type="psalmtext"
+                        xml:id="coislin-10-ps-14-4c" n="Ps (LXX) 14,4c"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-4"/> ὁ ὀμνύων τῷ πλησίον αὐτοῦ
+                     καὶ οὐκ ἀθετῶν· </quote>
+                  <quote type="bibletext" xml:id="coislin-10-ps-14-5" n="Ps (LXX) 14,5"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-5">
+                     <anchor type="psalmtext" xml:id="coislin-10-ps-14-5a" n="Ps (LXX) 14,5a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-5"/> τὸ ἀργύριον αὐτοῦ οὐκ
+                     ἔδωκεν ἐπὶ τόκῳ <anchor type="psalmtext" xml:id="coislin-10-ps-14-5b"
+                        n="Ps (LXX) 14,5b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-4"/> καὶ δῶρα
+                     ἐπ᾽ ἀθῴοις οὐκ ἔλαβεν. <anchor type="psalmtext" xml:id="coislin-10-ps-14-5c"
+                        n="Ps (LXX) 14,5c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-5"/> ὁ ποιῶν
+                     ταῦτα οὐ σαλευθήσεται εἰς τὸν αἰῶνα. </quote>
+               </ab>
+            </div>
+            <!-- Ps 14 commentary -->
             <div type="commentary" subtype="commentary" xml:id="coislin-10-14-2">
                <ab xml:lang="grc">
                   <note type="lemma">Ps 14,1a</note>
                   <seg type="hypothesis" xml:id="coislin-10-fr-14-1" source="(Athanasius)"
-                     corresp="#coislin-10-ps-14-1a">
+                     corresp="#coislin-10-ps-14-1a" copyOf="#edition:edition-14-1-1">
                      <quote type="patristic" subtype="quotation" xml:id="coislin-10-quot-14-1"
                         source="Athanasius, exp. in Ps 14,1a" corresp="#person-2">Τοῦτον ἄδει τὸν
-                        ψαλμόν· διδάσκων τί ἄνθρωπον παρασκευάσει. τῆς μακαρίας ἐκείνης τυχεῖν
+                        ψαλμὸν· διδάσκων τί ἄνθρωπον παρασκευάσει. τῆς μακαρίας ἐκείνης τυχεῖν
                         λήξεως· διὸ ἀρχόμενός φησιν· κύριε τίς παροικήσει ἐν τῶ σκηνώματί σου:
                         –</quote>
-                     <ref target="#XXX" type="XXX">Vat. gr. 754</ref>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-14-1" type="with-variant">Vat. gr.
+                        754</ref>
                      <note type="attribution" xml:lang="grc">Α´</note>
                   </seg>
                   <note type="lemma">Ps 14,1b</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-14-2" source="(Athanasius)"
-                     corresp="#coislin-10-ps-14-1b">
+                     corresp="#coislin-10-ps-14-1b" copyOf="#edition:edition-14-1-2">
                      <quote type="patristic" subtype="quotation" xml:id="coislin-10-quot-14-2"
                         source="Athanasius, exp. in Ps 14,1b" corresp="#person-2">Τίς φησὶν ἄξιος
                         ἔσται ἐν ἐκείναις ταῖς οὐρανίοις γενέσθαι σκηναῖς: –</quote>
-                     <ref target="#XXX" type="XXX">Vat. gr. 754</ref>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-14-5" type="identical">Vat. gr.
+                        754</ref>
                      <note type="attribution" xml:lang="grc">Β´</note>
                   </seg>
-                  <note type="lemma">Ps 14,1b</note>
+                  <note type="lemma">Ps 14,1b (Κύριε)</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-14-3" source="Theodoretus"
                      corresp="#coislin-10-ps-14-1b">
                      <quote type="patristic" subtype="quotation" xml:id="coislin-10-quot-14-3"
-                        source="Theodoretus, comm. in Ps 14,1b (PG 80,953 D4 – 956 A5)"
+                        source="Theodoretus, comm. in Ps 14,1b–c (PG 80,953 D4–956 A5)"
                         corresp="#person-16"/>
-                     <ref target="#XXX" type="XXX">Vat. gr. 754</ref>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-14-6" type="with-variant">Vat. gr.
+                        754</ref>
                      <note type="attribution" xml:lang="grc">Θεοδ(ωρήτου)</note>
                   </seg>
                   <note type="lemma">Ps 14,1c</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-14-4" source="(Athanasius)"
-                     corresp="#coislin-10-ps-14-1c">
+                     corresp="#coislin-10-ps-14-1c" copyOf="#edition:edition-14-1-3">
                      <quote type="patristic" subtype="quotation" xml:id="coislin-10-quot-14-4"
                         source="Athanasius, exp. in Ps 14,1c" corresp="#person-2">Ἐπειδὰν γάρ τις
                         ἀξιωθῆ τῆς μακαρίας ἐκείνης σκηνῆς. εἰς ἀπεράντους αἰῶνας ἕξει τὴν
                         μακαριότητα: –</quote>
-                     <ref target="#XXX" type="XXX">Vat. gr. 754</ref>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-14-7" type="identical">Vat. gr.
+                        754</ref>
                      <note type="attribution" xml:lang="grc">Γ´</note>
                   </seg>
-                  <note type="lemma">Ps 14,1c (sic)</note>
+                  <note type="lemma">Ps 14,1c</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-14-5" source="Origenes"
                      corresp="#coislin-10-ps-14-1c">
                      <quote type="patristic" subtype="quotation" xml:id="coislin-10-quot-14-5"
-                        source="Evagrius, schol. nr. α´ in Ps 14,1b (360 Rondeau – Géhin – Cassin)"
+                        source="Evagrius, schol. nr. α´ in Ps 14,1c (360 Rondeau – Géhin – Cassin)"
                         corresp="#person-21"/>
-                     <ref target="#XXX" type="XXX">Vat. gr. 754</ref>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-14-3" type="identical">Vat. gr.
+                        754</ref>
                      <note type="attribution" xml:lang="grc">ὠριγένους</note>
                   </seg>
                </ab>
@@ -3138,7 +3192,7 @@
                <ab xml:lang="grc">
                   <note type="lemma">Ps 14,2–5</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-14-6" source="(Athanasius)"
-                     corresp="#coislin-10-ps-14-2–5">
+                     corresp="#coislin-10-ps-14-2–5" copyOf="#edition:edition-14-5-1">
                      <quote type="patristic" subtype="quotation" xml:id="coislin-10-quot-14-6"
                         source="Athanasius, exp. in Ps 14,2–5" corresp="#person-2">Διδάσκει δι᾽ ὧν
                         τευξόμεθα τοῦ μακαρίου ἐκείνου πέρατος· καὶ πρῶτον μὲν. εἰ τὴν ἄμωμον
@@ -3154,28 +3208,33 @@
                         πρόσωπα θαυμάζειν· ἀλλὰ κὰν πλούσιος ἦ πονηρὸς. ἐξουθενεῖν· κὰν πένης
                         ἀγαθὸς. δοξάζειν· ὄγδοον. τὸ μὴ παραβαίνειν ὅρκου πίστιν· ἐνατον. τὸ μὴ
                         ἐκτοκίζειν· δέκατον ὃ καὶ τέλος ἐστι παντὸς ἀγαθοῦ. ἀδωροδόκητον εἶναι·
-                        τούτων ὁ ἐκμαθὼν τὴν κατόρθωσιν. ἀσάλευτον ἕξει τῶν ἀγαθῶν τὴν δόσιν:
-                        –</quote>
-                     <ref target="#XXX" type="XXX">Vat. gr. 754</ref>
+                        τούτων ὁ ἐκμαθὼν τὴν κατόρθωσιν. ἀσάλευτον <subst>
+                           <del rend="overwrite">ἐ</del>
+                           <add place="above">ἕ</add>
+                        </subst>ξει τῶν ἀγαθῶν τὴν δόσιν: –</quote>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-14-9" type="with-variants">Vat. gr.
+                        754</ref>
                      <note type="attribution" xml:lang="grc">Δ´</note>
                   </seg>
-                  <note type="lemma">Ps 14,2–5</note>
+                  <note type="lemma">Ps 14,2–5 (πορευόμενος)</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-14-7" source="Theodoretus"
-                     corresp="#coislin-10-ps-14-2–5">
+                     corresp="#coislin-10-ps-14-2a">
                      <quote type="patristic" subtype="quotation" xml:id="coislin-10-quot-14-7"
-                        source="Theodoretus, comm. in Ps 14,2–5 (PG 80,956 A7–11)"
+                        source="Theodoretus, comm. in Ps 14,2a (PG 80,956 A7–11)"
                         corresp="#person-16"/>
-                     <ref target="#XXX" type="XXX">Vat. gr. 754</ref>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-14-8" type="identical">Vat. gr.
+                        754</ref>
                      <note type="attribution" xml:lang="grc">Θεοδ(ωρήτου)</note>
                   </seg>
-                  <note type="lemma">Ps 14,2–5</note>
+                  <note type="lemma">Ps 14,2–5 (πορευόμενος)</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-14-8" source="Origenes"
-                     corresp="#coislin-10-ps-14-2–5">
+                     corresp="#coislin-10-ps-14-2a">
                      <quote type="patristic" subtype="quotation" xml:id="coislin-10-quot-14-8"
                         source="Evagrius, schol. nr. β´ in Ps 14,2a (360 Rondeau – Géhin – Cassin)"
                         corresp="#person-21"/>
-                     <ref target="#XXX" type="XXX">Vat. gr. 754</ref>
-                     <note type="attribution" xml:lang="grc">ὠριγένους</note>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-14-4" type="with-variant">Vat. gr.
+                        754</ref>
+                     <note type="attribution" xml:lang="grc">ὠριγένους·</note>
                   </seg>
                </ab>
             </div>
@@ -4329,3 +4388,5 @@
       </body>
    </text>
 </TEI>
+<!-- faciendum: Textkritik: von f. 5v bis Ps 10 inlusiv: Fragmente, Expositiones ausgenommen, mit Vat. gr. 754 zu vergleichen -->
+<!-- ToDo: Ps 1–10: Personen in @corresp zu berichtigen -->

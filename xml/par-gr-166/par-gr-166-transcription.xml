@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../schema/tei-psalmcatenae.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <!-- Katene: zwischen 8r und 9r ist ein Blatt ausgefallen -->
-<!-- ToDo: Ps 1–10: Personen in @corresp zu berichtigen -->
-<!-- faciendum: Textkritik: Ps 1–10: Fragmente mit Vat. gr. 754 zu vergleichen -->
-<!-- faciendum: Transkription: Ps 9–10: Expositiones in semi-diplomatische Form umzuwandeln -->
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -4479,7 +4476,127 @@
                         αὗται δέ εισιν, αἱ τὴν τῶν ἐθνῶν ἁπάντων σωτηρίαν κατὰσημαίν<unclear
                            reason="abbreviation">ουσαι</unclear>: </quote></seg></ab>
             </div>
+            <!-- Ps 14 bibletext -->
+            <div type="bibletext" xml:id="par-gr-166-14-1" subtype="commented"
+               rendition="#middle-column" change="commentaryfragments-only">
+               <ab xml:lang="grc">
+                  <quote type="bibletext" xml:id="par-gr-166-ps-14-1" n="Ps (LXX) 14,1"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-1">
+                     <anchor type="psalmtext" xml:id="par-gr-166-ps-14-1a" n="Ps (LXX) 14,1a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-1"/> Ψαλμὸς τῷ Δαυιδ. <anchor
+                        type="psalmtext" xml:id="par-gr-166-ps-14-1b" n="Ps (LXX) 14,1b"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-1"/> Κύριε, τίς παροικήσει ἐν τῷ
+                     σκηνώματί σου <anchor type="psalmtext" xml:id="par-gr-166-ps-14-1c"
+                        n="Ps (LXX) 14,1c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-1"/> καὶ τίς
+                     κατασκηνώσει ἐν τῷ ὄρει τῷ ἁγίῳ σου; </quote>
+                  <quote type="bibletext" xml:id="par-gr-166-ps-14-2" n="Ps (LXX) 14,2"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-2">
+                     <anchor type="psalmtext" xml:id="par-gr-166-ps-14-2a" n="Ps (LXX) 14,2a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-1"/> πορευόμενος ἄμωμος καὶ
+                     ἐργαζόμενος δικαιοσύνην, <anchor type="psalmtext" xml:id="par-gr-166-ps-14-2b"
+                        n="Ps (LXX) 14,2b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-2"/> λαλῶν
+                     ἀλήθειαν ἐν καρδίᾳ αὐτοῦ, </quote>
+                  <quote type="bibletext" xml:id="par-gr-166-ps-14-3" n="Ps (LXX) 14,3"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-3">
+                     <anchor type="psalmtext" xml:id="par-gr-166-ps-14-3a" n="Ps (LXX) 14,3a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-3"/> ὃς οὐκ ἐδόλωσεν ἐν γλώσσῃ
+                     αὐτοῦ <anchor type="psalmtext" xml:id="par-gr-166-ps-14-3b" n="Ps (LXX) 14,3b"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-3"/> οὐδὲ ἐποίησεν τῷ πλησίον
+                     αὐτοῦ κακὸν <anchor type="psalmtext" xml:id="par-gr-166-ps-14-3c"
+                        n="Ps (LXX) 14,3c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-3"/> καὶ
+                     ὀνειδισμὸν οὐκ ἔλαβεν ἐπὶ τοὺς ἔγγιστα αὐτοῦ· </quote>
+                  <quote type="bibletext" xml:id="par-gr-166-ps-14-4" n="Ps (LXX) 14,4"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-4">
+                     <anchor type="psalmtext" xml:id="par-gr-166-ps-14-4a" n="Ps (LXX) 14,4a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-4"/> ἐξουδένωται ἐνώπιον αὐτοῦ
+                     πονηρευόμενος, <anchor type="psalmtext" xml:id="par-gr-166-ps-14-4b"
+                        n="Ps (LXX) 14,4b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-4"/> τοὺς δὲ
+                     φοβουμένους κύριον δοξάζει· <anchor type="psalmtext"
+                        xml:id="par-gr-166-ps-14-4c" n="Ps (LXX) 14,4c"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-4"/> ὁ ὀμνύων τῷ πλησίον αὐτοῦ
+                     καὶ οὐκ ἀθετῶν· </quote>
+                  <quote type="bibletext" xml:id="par-gr-166-ps-14-5" n="Ps (LXX) 14,5"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-5">
+                     <anchor type="psalmtext" xml:id="par-gr-166-ps-14-5a" n="Ps (LXX) 14,5a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-5"/> τὸ ἀργύριον αὐτοῦ οὐκ
+                     ἔδωκεν ἐπὶ τόκῳ <anchor type="psalmtext" xml:id="par-gr-166-ps-14-5b"
+                        n="Ps (LXX) 14,5b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-4"/> καὶ δῶρα
+                     ἐπ᾽ ἀθῴοις οὐκ ἔλαβεν. <anchor type="psalmtext" xml:id="par-gr-166-ps-14-5c"
+                        n="Ps (LXX) 14,5c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-5"/> ὁ ποιῶν
+                     ταῦτα οὐ σαλευθήσεται εἰς τὸν αἰῶνα. </quote>
+               </ab>
+            </div>
+            <!-- Ps 14 commentary -->
+            <div type="commentary" subtype="commentary" xml:id="par-gr-166-14-2">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 14,1a</note>
+                  <seg type="hypothesis" xml:id="par-gr-166-fr-14-1" source="Athanasius"
+                     corresp="#par-gr-166-ps-14-1a" copyOf="#edition:edition-14-1-1"><quote
+                        type="patristic" subtype="quotation" xml:id="par-gr-166-quot-14-1"
+                        source="Athanasius, exp. in Ps 14,1a" corresp="#person-2">Τοῦτον ἅδει τὸν
+                        ψαλμὸν διδάσκων, τί ἄνθρωπον παρασκευᾶσει τῆς μακαρίας ἐκείνης τυχεῖν
+                        λήξεως· διὸ ἀρχόμενος φησίν·</quote><ref
+                        target="#vat-gr-754:vat-gr-754-fr-14-1" type="abbreviated-with-variant">Vat.
+                        gr. 754</ref><note type="attribution"><foreign xml:lang="grc"
+                           >Ἀθ(α)ν(α)σ(ίου)</foreign></note></seg>
+                  <pb n="29r–v"/>
+                  <note type="lemma">Ps 14,1b</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-166-fr-14-2" source="Anonymous"
+                     corresp="#par-gr-166-ps-14-1b" copyOf="#edition:edition-14-1-2"><quote
+                        type="patristic" subtype="quotation" xml:id="par-gr-166-quot-14-2"
+                        source="Athanasius, exp. in Ps 14,1b" corresp="#person-2">τίς φη(σὶν) ἄξιος
+                        ἔσται ἐν ἐκείναις ταῖς || οὐρανίαις γενέσθαι σκηναῖς·</quote><ref
+                        target="#vat-gr-754:vat-gr-754-fr-14-5" type="with-variant">Vat. gr.
+                        754</ref></seg>
+               </ab>
+            </div>
+            <pb n="29v" facs="https://gallica.bnf.fr/ark:/12148/btv1b525131059/f66.item"/>
+            <div type="commentary" subtype="commentary" xml:id="par-gr-166-14-3">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 14,1c</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-166-fr-14-3" source="Anonymous"
+                     corresp="#par-gr-166-ps-14-1c" copyOf="#edition:edition-14-1-3"><quote
+                        type="patristic" subtype="quotation" xml:id="par-gr-166-quot-14-3"
+                        source="Athanasius, exp. in Ps 14,1c" corresp="#person-2">ἐπειδἂν γάρ τις
+                        ἀξιωθεῖ τῆς μακαρίας ἐκείνης σκηνῆς· εἰς ἀπεράντους αἰῶνας ἔξει τὴν
+                        μακαριώτητα·</quote><ref target="#vat-gr-754:vat-gr-754-fr-14-7"
+                        type="identical">Vat. gr. 754</ref></seg>
+                  <pb n="29v–30r"/>
+                  <note type="lemma">Ps 14,2–5</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-166-fr-14-4" source="Anonymous"
+                     corresp="#par-gr-166-ps-14-2a" copyOf="#edition:edition-14-5-1"><quote
+                        type="patristic" subtype="quotation" xml:id="par-gr-166-quot-14-4"
+                        source="Athanasius, exp. in Ps 14,2–5" corresp="#person-2">διδάσκει δι᾿ ὧν
+                        τευξόμεθα τοῦ μακαρίου ἐκείνου τέρατος· καὶ πρῶτον μὲν<supplied
+                           reason="inner-margin" cert="medium">,</supplied> εἰ τὴν ἄμωμον ὁδεύσωμεν
+                        ὁδὸν· ἥτις ἐστὶν ὁ Χριστός· ἔπειτα ἐργασώμεθα δικαιοσύνην· τρίτον, εἰ
+                        ἀληθείας οἶκον τὴν καρδίαν ποιήσωμεν· τέταρτον· εἰ || δολίαν γλῶσσαν μὴ
+                        κτησóμεθα· πέμπτον· τὸ μὴ κακὸν τῶ πλησίον ἐργάζεσθαι· ἕκτον· τὸ μὴ
+                        ὀνειδῆσαι τὸν πλησίον ὑπερηφανευόμενον· ἕβδομον, μὴ πρόσωπον θαυμάζειν·
+                        ὄγδοον, τὸ μὴ παραβαίνειν ὄρκου πίστιν· ἕννατον, τὸ μὴ ἐκτοκίζειν· δέκατον,
+                        ὃ καὶ τέλος ἐστὶ παντὸς ἀγαθοῦ, ἀδωροδόκητον εἶναι· τούτων ὁ ἐκμαθὼν τὴν
+                        κατόρθωσιν, ἀσάλευτον ἔξει τῶν ἀγαθῶν τὴν δόσιν·</quote><ref
+                        target="#vat-gr-754:vat-gr-754-fr-14-9" type="abbreviated-with-variants"
+                        >Vat. gr. 754</ref></seg>
+               </ab>
+            </div>
+            <pb n="30r" facs="https://gallica.bnf.fr/ark:/12148/btv1b525131059/f67.item"/>
          </div>
       </body>
    </text>
+   <!-- <div type="commentary" subtype="commentary" xml:id="par-gr-166-XX-XX">
+   <ab xml:lang="grc">
+   <seg type="commentaryfragment" xml:id="par-gr-166-fr-14-XX" source="XXXX"
+        corresp="#par-gr-166-ps-XX-XX"><quote type="patristic" subtype="XXXX"
+        xml:id="par-gr-166-quot-XX-XX"
+        source="XXXX"
+        corresp="#person-XX"/><ref target="#vat-gr-754:XXXX"
+        type="XXXX">Vat. gr. 754</ref><note type="attribution"><foreign
+        xml:lang="grc">XXXX</foreign></note></seg> 
+  </ab>
+  </div> -->
+   <!-- <note type="attribution"><foreign xml:lang="grc">Ἀθ(α)ν(α)σ(ίου)</foreign></note> -->
 </TEI>
+<!-- ToDo: Ps 1–10: Personen in @corresp zu berichtigen -->
+<!-- faciendum: Textkritik: Ps 1–10: Fragmente mit Vat. gr. 754 zu vergleichen -->
+<!-- faciendum: Transkription: Ps 9–10: Expositiones in semi-diplomatische Form umzuwandeln -->

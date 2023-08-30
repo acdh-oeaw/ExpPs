@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../schema/tei-psalmcatenae.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-   <!-- faciendum: List of contents: Ps 1–2: Korrekturen anzubringen (inklusiv @person) -->
-   <!-- faciendum: Kodierung: Ps 1–10: Expositiones in divisions zu unterteilen -->
-   <!-- faciendum: Transkription: Ps 1–10: Expositiones in semi-diplomatische Form umzuwandeln -->
-   <!-- faciendum: Katene: Ps 1–10: Ottob. gr. 398: eventuell Angaben der folia und der Position der Expositiones zu ergänzen -->
    <!-- //seg/@corresp -->
    <teiHeader>
       <fileDesc>
@@ -3608,7 +3604,7 @@
                      rendition="#psalm-column" source="Anonymous" corresp="#mosq-syn-194-ps-12-3c">
                      <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-12-4"
                         source="Athanasius, exp. in Ps 12,3c" corresp="#person-2">εἰ γὰρ
-                        θεοσεβοῦντων ταπεινοῦνται1 ἀνθρώπων3 ὅτι2 ἁμαρτανοντων ὑψοῦται<supplied
+                        θεοσεβοῦντων ταπεινοῦνται ἀνθρώπων ὅτι ἁμαρτανοντων ὑψοῦται<supplied
                            reason="om." resp="Panteghini">: –</supplied></quote>
                      <ref target="#vat-gr-754:vat-gr-754-fr-12-8" type="with-variants">Vat. gr.
                         754</ref>
@@ -3775,31 +3771,31 @@
                         target="#vat-gr-754:vat-gr-754-fr-13-9" type="with-adaptation">Vat. gr.
                         754</ref></seg>
                   <note type="lemma">linking absent</note>
-                  <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-13-4" source="Anonymous"
-                     corresp="#mosq-syn-194-ps-13-1b" copyOf="#edition:edition-13-1-2"><quote
-                        type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-13-4"
-                        source="Athanasius, exp. in Ps 13,1b–2" corresp="#person-2">ἐπειδὴ μη
-                        λογισάμενοι φη(σὶν) εἶναι θεὸν ἐφορῶντα τὰ ἀνθρώπινα· καὶ κρίνοντα κρίσει
-                        δικαία· πάσαν ἀθεμιτουγίαν εἰργασαντο· τούτου δὴ χάριν ὁ κύριος ἐκ τοῦ
-                        οὐρανοῦ διέκυψεν· τοῦτο<add place="above">ου</add> γὰρ σαφῶς τὴν εἰς
-                        ἀνθρώπους τοῦ κυρίου πάροδον κατασημαίνει: –</quote><ref
+                  <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-13-4"
+                     rendition="#top-bottom" source="Anonymous" corresp="#mosq-syn-194-ps-13-1b"
+                     copyOf="#edition:edition-13-1-2"><quote type="patristic" subtype="quotation"
+                        xml:id="mosq-syn-194-quot-13-4" source="Athanasius, exp. in Ps 13,1b–2"
+                        corresp="#person-2">ἐπειδὴ μη λογισάμενοι φη(σὶν) εἶναι θεὸν ἐφορῶντα τὰ
+                        ἀνθρώπινα· καὶ κρίνοντα κρίσει δικαία· πάσαν ἀθεμιτουγίαν εἰργασαντο· τούτου
+                        δὴ χάριν ὁ κύριος ἐκ τοῦ οὐρανοῦ διέκυψεν· τοῦτο<add place="above">ου</add>
+                        γὰρ σαφῶς τὴν εἰς ἀνθρώπους τοῦ κυρίου πάροδον κατασημαίνει: –</quote><ref
                         target="#vat-gr-754:vat-gr-754-fr-13-2" type="with-variant">Vat. gr.
                         754</ref></seg>
                   <note type="lemma">linking not completed</note>
-                  <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-13-5" source="Anonymous"
-                     corresp="#mosq-syn-194-ps-13-6a" copyOf="#edition:edition-13-6-1"><quote
-                        type="patristic" subtype="paraphrase-abbreviated/quotation"
-                        xml:id="mosq-syn-194-quot-13-5"
+                  <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-13-5"
+                     rendition="#bottom-middle" corresp="#mosq-syn-194-ps-13-6a"
+                     copyOf="#edition:edition-13-6-1"><quote type="patristic"
+                        subtype="paraphrase-abbreviated/quotation" xml:id="mosq-syn-194-quot-13-5"
                         source="Eusebius, fr. 4 in Ps 13,4 (Villani) - Athanasius, exp. in Ps 13,6a"
-                        corresp="#person-17 #person-2">... ταῦτα ὡς πρὸς τοὺς ἀπομείναντας τῆ
+                        corresp="#person-17 #person-2">... / ταῦτα ὡς πρὸς τοὺς ἀπομείναντας τῆ
                         ἀπιστία· καὶ διώξαντας τοὺς πιστεύσαντας εἰς Χριστόν:</quote><ref
                         target="#vat-gr-754:vat-gr-754-fr-13-13" type="identical">Vat. gr.
                      754</ref></seg>
                   <note type="lemma">linking not completed</note>
-                  <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-13-6" source="Anonymous"
-                     corresp="#mosq-syn-194-ps-13-5a" copyOf="#edition:edition-13-5-1"><quote
-                        type="patristic" subtype="quotation-abbreviated"
-                        xml:id="mosq-syn-194-quot-13-6"
+                  <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-13-6"
+                     rendition="#bottom-bottom" source="Anonymous" corresp="#mosq-syn-194-ps-13-5a"
+                     copyOf="#edition:edition-13-5-1"><quote type="patristic"
+                        subtype="quotation-abbreviated" xml:id="mosq-syn-194-quot-13-6"
                         source="Athanasius, exp. in Ps 13,5a; cf. Cyrillus (?), fr. in Ps 13,5a (PG 69,804 B7–10)"
                         corresp="#person-2">ὁ Μωσέως νόμος κόλασιν ἐποίει· ὁ δὲ τοῦ Χριστοῦ φόβος
                         ἀγνός (ἐστιν)· ὡς υἱοὺς φοβεῖσθαι πατέρα παρασκευάζων· φόβος οὐχ ὁ ἐκ
@@ -3807,19 +3803,128 @@
                         target="#vat-gr-754:vat-gr-754-fr-13-12" type="abbreviated-with-variants"
                         >Vat. gr. 754</ref></seg>
                   <note type="lemma">Ps 13,4b</note>
-                  <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-13-7" source="Anonymous"
-                     corresp="#mosq-syn-194-ps-13-4b" copyOf="#edition:edition-13-4-2"><quote
-                        type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-13-7"
-                        source="Athanasius, exp. in Ps 13,4b" corresp="#person-2">κατίσθιον γὰρ τὸν
-                        λαὸν αὐτοῦ ἀναπείθοντες προσκυνεῖν τῆ κτίσει παρὰ τὸν κτίσαντα· καὶ οὗτοι
-                        ἑτέροις κακῶν εἰσηγηταὶ γινόμενοι τὸν κύριον οὐκεπικαλέσωνται οὐ γὰρ
-                        ἀναγνωστέον μελλοντα ἀντὶ παρεληλυθότος: –</quote><ref
-                        target="#vat-gr-754:vat-gr-754-fr-13-10" type="with-variants">Vat. gr.
-                        754</ref></seg>
+                  <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-13-7"
+                     rendition="#bottom-bottom" source="Anonymous" corresp="#mosq-syn-194-ps-13-4b"
+                     copyOf="#edition:edition-13-4-2"><quote type="patristic" subtype="quotation"
+                        xml:id="mosq-syn-194-quot-13-7" source="Athanasius, exp. in Ps 13,4b"
+                        corresp="#person-2">κατίσθιον γὰρ τὸν λαὸν αὐτοῦ ἀναπείθοντες προσκυνεῖν τῆ
+                        κτίσει παρὰ τὸν κτίσαντα· καὶ οὗτοι ἑτέροις κακῶν εἰσηγηταὶ γινόμενοι τὸν
+                        κύριον οὐκεπικαλέσωνται οὐ γὰρ ἀναγνωστέον μελλοντα ἀντὶ παρεληλυθότος:
+                        –</quote><ref target="#vat-gr-754:vat-gr-754-fr-13-10" type="with-variants"
+                        >Vat. gr. 754</ref></seg>
                </ab>
             </div>
             <pb n="27r"/>
+            <!-- Ps 14 bibletext -->
+            <div type="bibletext" xml:id="mosq-syn-194-14-1" subtype="commented">
+               <ab xml:lang="grc">
+                  <quote type="bibletext" xml:id="mosq-syn-194-ps-14-1" n="Ps (LXX) 14,1"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-1">
+                     <anchor type="psalmtext" xml:id="mosq-syn-194-ps-14-1a" n="Ps (LXX) 14,1a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-1"/> Ψαλμὸς τῷ Δαυιδ. <anchor
+                        type="psalmtext" xml:id="mosq-syn-194-ps-14-1b" n="Ps (LXX) 14,1b"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-1"/> Κύριε, τίς παροικήσει ἐν τῷ
+                     σκηνώματί σου <anchor type="psalmtext" xml:id="mosq-syn-194-ps-14-1c"
+                        n="Ps (LXX) 14,1c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-1"/> καὶ τίς
+                     κατασκηνώσει ἐν τῷ ὄρει τῷ ἁγίῳ σου; </quote>
+                  <quote type="bibletext" xml:id="mosq-syn-194-ps-14-2" n="Ps (LXX) 14,2"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-2">
+                     <anchor type="psalmtext" xml:id="mosq-syn-194-ps-14-2a" n="Ps (LXX) 14,2a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-1"/> πορευόμενος ἄμωμος καὶ
+                     ἐργαζόμενος δικαιοσύνην, <anchor type="psalmtext"
+                        xml:id="mosq-syn-194-ps-14-2b" n="Ps (LXX) 14,2b"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-2"/> λαλῶν ἀλήθειαν ἐν καρδίᾳ
+                     αὐτοῦ, </quote>
+                  <quote type="bibletext" xml:id="mosq-syn-194-ps-14-3" n="Ps (LXX) 14,3"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-3">
+                     <anchor type="psalmtext" xml:id="mosq-syn-194-ps-14-3a" n="Ps (LXX) 14,3a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-3"/> ὃς οὐκ ἐδόλωσεν ἐν γλώσσῃ
+                     αὐτοῦ <anchor type="psalmtext" xml:id="mosq-syn-194-ps-14-3b"
+                        n="Ps (LXX) 14,3b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-3"/> οὐδὲ
+                     ἐποίησεν τῷ πλησίον αὐτοῦ κακὸν <anchor type="psalmtext"
+                        xml:id="mosq-syn-194-ps-14-3c" n="Ps (LXX) 14,3c"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-3"/> καὶ ὀνειδισμὸν οὐκ ἔλαβεν
+                     ἐπὶ τοὺς ἔγγιστα αὐτοῦ· </quote>
+                  <quote type="bibletext" xml:id="mosq-syn-194-ps-14-4" n="Ps (LXX) 14,4"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-4">
+                     <anchor type="psalmtext" xml:id="mosq-syn-194-ps-14-4a" n="Ps (LXX) 14,4a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-4"/> ἐξουδένωται ἐνώπιον αὐτοῦ
+                     πονηρευόμενος, <anchor type="psalmtext" xml:id="mosq-syn-194-ps-14-4b"
+                        n="Ps (LXX) 14,4b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-4"/> τοὺς δὲ
+                     φοβουμένους κύριον δοξάζει· <anchor type="psalmtext"
+                        xml:id="mosq-syn-194-ps-14-4c" n="Ps (LXX) 14,4c"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-4"/> ὁ ὀμνύων τῷ πλησίον αὐτοῦ
+                     καὶ οὐκ ἀθετῶν· </quote>
+                  <quote type="bibletext" xml:id="mosq-syn-194-ps-14-5" n="Ps (LXX) 14,5"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-5">
+                     <anchor type="psalmtext" xml:id="mosq-syn-194-ps-14-5a" n="Ps (LXX) 14,5a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-5"/> τὸ ἀργύριον αὐτοῦ οὐκ
+                     ἔδωκεν ἐπὶ τόκῳ <anchor type="psalmtext" xml:id="mosq-syn-194-ps-14-5b"
+                        n="Ps (LXX) 14,5b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-4"/> καὶ δῶρα
+                     ἐπ᾽ ἀθῴοις οὐκ ἔλαβεν. <anchor type="psalmtext" xml:id="mosq-syn-194-ps-14-5c"
+                        n="Ps (LXX) 14,5c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-5"/> ὁ ποιῶν
+                     ταῦτα οὐ σαλευθήσεται εἰς τὸν αἰῶνα. </quote>
+               </ab>
+            </div>
+            <!-- Ps 14 commentary -->
+            <div type="commentary" subtype="commentary" xml:id="mosq-syn-194-14-2">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 14,1a</note>
+                  <seg type="hypothesis" xml:id="mosq-syn-194-fr-14-1" rendition="#bottom-top"
+                     source="Theodoretus" corresp="#mosq-syn-194-ps-14-1a"
+                     copyOf="#edition:edition-14-1-1"
+                        ><!-- ToDo: Verlinkung zu zweiter Expositio --><quote type="patristic"
+                        subtype="quotation/quotation/quotation/quotation"
+                        xml:id="mosq-syn-194-quot-14-1"
+                        source="Athanasius, exp. in Ps 14,1a - Theodoretus, comm. in Ps 14,1a et in Ps 14,1b–c (PG 80,953 C3–D2; 953 D4–956 A5) - Athanasius, exp. in Ps 14,1c"
+                        corresp="#person-2 #person-16 #person-2">Τοῦτον διδάσκ<subst>
+                           <del rend="unmarked">ει</del>
+                           <add place="above">ων</add>
+                        </subst> ἄδει τὸν ψαλμὸν τί ἄνθρωπον παρασκευάσει τῆς μακαρίας ἐκεῖνης
+                        τυχεῖν λήξεως· διὸ καὶ ἀρχόμενος φη(σίν)· κύριε τίς παροικήσει ἐν τῶ
+                        σκηνόματί σου· / ... / ... / ἐπειδὰν γὰρ τίς ἄξιωθῆ τῆς μακαρίας ἐκεῖνης
+                        σκηνῆς· εἰς ἀπεράντους αἰῶνας· ἔξη τὴν μακαριότητα: –</quote><ref
+                        target="#vat-gr-754:vat-gr-754-fr-14-1" type="identical">Vat. gr.
+                        754</ref><ref target="#vat-gr-754:vat-gr-754-fr-14-2" type="with-variant"
+                        >Vat. gr. 754</ref><ref target="#vat-gr-754:vat-gr-754-fr-14-6"
+                        type="identical">Vat. gr. 754</ref><ref
+                        target="#vat-gr-754:vat-gr-754-fr-14-7" type="identical">Vat. gr.
+                        754</ref><note type="attribution"><foreign xml:lang="grc">Θεοδ(ωρήτου)
+                           υπ(όθεσις)</foreign></note><note type="textual-commentary"
+                           ><p>Theodoretus, comm. in Ps 14,1a: Vat. gr. 754 does not indicate that
+                           it is a Hypothesis.</p>
+                        <p>Theodoretus, comm. in Ps 14,1b–c: Mosq. Sinod. gr. 194 und Vat. gr. 754
+                           share the same itacism (ποιθόμενος; πυθόμενος Paris. Coislin 10 [f.
+                           11v]).</p></note></seg>
+                  <note type="lemma">Ps 14,1c (sic)</note>
+                  <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-14-2"
+                     rendition="#bottom-of-psalm-column" source="Anonymous"
+                     corresp="#mosq-syn-194-ps-14-1c" copyOf="#edition:edition-14-1-2"><quote
+                        type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-14-2"
+                        source="Athanasius, exp. in Ps 14,1b" corresp="#person-2">Τίς φη(σὶν) ἅξιος
+                        ἔσται ἐν ἐκεῖναις ταῖς οὐρανίαις γενέσθαι σκηναῖς: </quote><ref
+                        target="#vat-gr-754:vat-gr-754-fr-14-5" type="with-variant">Vat. gr. 754</ref>
+                  </seg>
+               </ab>
+            </div>
+            <pb n="27v"/>
          </div>
+         <!-- <div type="commentary" subtype="commentary" xml:id="mosq-syn-194-XX-XX">
+              <ab xml:lang="grc">
+                  <note type="lemma">linking absent</note>
+                  <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-XX-XX"
+                  rendition="#XXXX" source="XXXX" corresp="#mosq-syn-194-ps-XX-XX"
+                  copyOf="#edition:XXXX"><quote type="patristic" subtype="XXXX"
+                  xml:id="mosq-syn-194-quot-XX-XX" source="XXXX"
+                  corresp="#person-2"></quote><ref target="#vat-gr-754:XXXX" type="XXXX">Vat. gr. 754</ref>
+                  <note type="attribution"><foreign xml:lang="grc">XXXX</foreign></note>
+               </seg>
+               </ab>
+               </div> -->
       </body>
    </text>
 </TEI>
+<!-- faciendum: List of contents: Ps 1–2: Korrekturen anzubringen (inklusiv @person) -->
+<!-- faciendum: Kodierung: Ps 1–10: Expositiones in divisions zu unterteilen -->
+<!-- faciendum: Transkription: Ps 1–10: Expositiones in semi-diplomatische Form umzuwandeln -->
+<!-- faciendum: Katene: Ps 1–10: Ottob. gr. 398: eventuell Angaben der folia und der Position der Expositiones zu ergänzen -->
