@@ -224,72 +224,13 @@
                 <xsl:text>Facsimiles of the manuscript are not available online.</xsl:text>
             </xsl:if>
         </p>
-        <p class="link-to-facsimiles">
-            <xsl:text>The pinakes identifier of the manuscript is: </xsl:text>
-            <a target="_blank">
-                <xsl:attribute name="href">
-                    <xsl:value-of select="tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:altIdentifier/tei:idno[@type='pinakes']/@corresp"/>
-                </xsl:attribute>
-                <xsl:value-of select="tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:altIdentifier/tei:idno[@type='pinakes']/text()"/>
-            </a>
-        </p>
         <xsl:if test="exists(tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:altIdentifier/tei:idno[@type='diktyon'])">
             <p class="link-to-facsimiles">
                 <xsl:text>The diktyon identifier of the manuscript is: </xsl:text>
                 <xsl:value-of select="tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:altIdentifier/tei:idno[@type='diktyon']/text()"/>
             </p>
         </xsl:if>
-        <p class="manuscript-content">
-            <xsl:text>The content of the manuscript is: </xsl:text>
-            <ul class="text-header">
-                <xsl:apply-templates select="tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msContents"/>
-            </ul>
-        </p>
-        <div class="manuscript-physical-description">
-            <xsl:text>Physical description of the manuscript: </xsl:text>
-            <p class="manuscript-physical-description-content">
-                <xsl:text>Form: </xsl:text>
-                <xsl:value-of select="tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:physDesc/tei:objectDesc/@form"/>
-            </p>
-            <p class="manuscript-physical-description-content">
-                <xsl:text>Material: </xsl:text>
-                <xsl:value-of select="tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:physDesc/tei:objectDesc/tei:supportDesc/tei:support/text()"/>
-            </p>
-            <p class="manuscript-physical-description-content">
-                <xsl:text>Extent: </xsl:text>
-                <xsl:value-of select="tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:physDesc/tei:objectDesc/tei:supportDesc/tei:extent/tei:dimensions/tei:height/text()"/>
-                <xsl:text> x </xsl:text>
-                <xsl:value-of select="tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:physDesc/tei:objectDesc/tei:supportDesc/tei:extent/tei:dimensions/tei:width/text()"/>
-                <xsl:text> </xsl:text>
-                <xsl:value-of select="tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:physDesc/tei:objectDesc/tei:supportDesc/tei:extent/tei:dimensions/@unit"/>
-            </p>
-            <p class="manuscript-physical-description-content">
-                <xsl:text>Layout of the pages: </xsl:text>
-                <xsl:value-of select="tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:physDesc/tei:objectDesc/tei:layoutDesc/tei:layout/tei:p/text()"/>
-            </p>
-            <p class="manuscript-physical-description-content">
-                <xsl:text>Scripts:</xsl:text>
-            </p>
-            <ul class="manuscript-physical-description-content">
-                <xsl:for-each select="tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:physDesc/tei:scriptDesc/tei:p">
-                    <li>
-                        <xsl:value-of select="text()"/>
-                    </li>
-                </xsl:for-each>
-            </ul>
-            <xsl:for-each select="tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:physDesc/tei:additions/tei:p">
-                <p class="manuscript-physical-description-content">
-                    <xsl:value-of select="text()"/>
-                </p>
-            </xsl:for-each>
-            <p class="manuscript-physical-description-content">
-                <xsl:text>Decoration: </xsl:text>
-                <xsl:value-of select="tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:physDesc/tei:decoDesc/tei:p/text()"/>
-            </p>
-            <p class="manuscript-physical-description-content">
-                <xsl:value-of select="tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:history/tei:p/text()"/>
-            </p>
-        </div>
+        
         <div class="bibliography">
             <p>
                 <xsl:value-of select="tei:fileDesc/tei:sourceDesc/tei:listBibl/tei:head"/>
@@ -381,7 +322,8 @@
     </xsl:template>
     
     <xsl:template match="tei:div[@type = 'manuscript']">
-        <xsl:element name="h1">
+        <xsl:element name="p">
+            <xsl:attribute name="class" select="'heading-manuscript-name'"/>
             <xsl:value-of select="@n"/>
         </xsl:element>
         <xsl:apply-templates select="child::node()"/>
@@ -395,21 +337,36 @@
         <xsl:apply-templates select="child::node()"/>
     </xsl:template>
     
-    <xsl:template match="tei:p[parent::tei:div[@type = 'page-of-manuscript']]">
+    <xsl:template match="tei:p[parent::tei:div[@type = 'page-of-manuscript'] and ancestor::tei:div[@type = 'transcription']]">
         <xsl:element name="p">
             <xsl:attribute name="class" select="'paragraph-of-coptic-text'"/>
-            <xsl:element name="a">
-                <xsl:attribute name="id" select="@xml:id"/>
-            </xsl:element>
             <xsl:apply-templates select="child::node()"/>
-            <xsl:if test="exists(@n)">
-                <span class="number-of-expositio">
-                    <xsl:text> (Expositio </xsl:text>
-                    <xsl:value-of select="@n"/>
-                    <xsl:text>)</xsl:text>
-                </span>
-            </xsl:if>
         </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="tei:seg[@type = 'fragment']">
+        <xsl:element name="a">
+            <xsl:attribute name="id" select="@xml:id"/>
+        </xsl:element>
+        <xsl:apply-templates select="child::node()"/>
+        <xsl:if test="exists(@n)">
+            <span class="number-of-expositio">
+                <xsl:text> (Expositio </xsl:text>
+                <xsl:value-of select="@n"/>
+                <xsl:if test="exists(@prev)">
+                    <xsl:text> [cont.]</xsl:text>
+                </xsl:if>
+                <xsl:if test="exists(@copyOf)">
+                    <xsl:text> → </xsl:text>
+                    <xsl:element name="a">
+                        <xsl:attribute name="target" select="'_blank'"/>
+                        <xsl:attribute name="href" select="concat('../edition.html#',substring-after(@copyOf,'#edition:'))"/>
+                        <xsl:text>Edition</xsl:text>
+                    </xsl:element>
+                </xsl:if>
+                <xsl:text>)</xsl:text>
+            </span>
+        </xsl:if>
     </xsl:template>
     
     <xsl:template match="tei:seg[@type = 'psalmverse']">
@@ -426,10 +383,37 @@
         </xsl:element>
     </xsl:template>
     
-    <xsl:template match="tei:div[@type = 'translation']">
-        <xsl:element name="h2">
-            <xsl:text>Translation</xsl:text>
+    <xsl:template match="tei:div[@type = 'translation'][@xml:lang = 'de']">
+        <xsl:element name="p">
+            <xsl:attribute name="class" select="'heading-manuscript-name-sub'"/>
+            <xsl:text>Deutsche Übersetzung</xsl:text>
         </xsl:element>
+        <xsl:apply-templates select="child::node()"/>
+    </xsl:template>
+    
+    <xsl:template match="tei:div[@type = 'translation'][@xml:lang = 'la']">
+        <xsl:element name="p">
+            <xsl:attribute name="class" select="'heading-manuscript-name-sub'"/>
+            <xsl:text>Lateinische Übersetzung</xsl:text>
+        </xsl:element>
+        <xsl:apply-templates select="child::node()"/>
+    </xsl:template>
+
+    <xsl:template match="tei:p[ancestor::tei:div[@type = 'translation']]">
+        <p class="paragraph-of-german-text">
+            <xsl:apply-templates select="child::node()"/>
+        </p>
+    </xsl:template>
+    
+    <xsl:template match="tei:bibl">
+        <xsl:element name="p">
+            <xsl:attribute name="class" select="'bibliography-inline'"/>
+            <xsl:apply-templates select="child::node()"/>
+        </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="tei:foreign[@xml:lang = 'grc']">
+        <xsl:value-of select="text()"/>
     </xsl:template>
 
     <xsl:template match="tei:ref">
@@ -500,11 +484,15 @@
                     <i class="fas fa-image" style="transform: translate(0%,10%);"/>
                 </xsl:element>
             </xsl:if>
-            <xsl:if test="exists(following-sibling::tei:div[@type = 'page-of-manuscript'])">
+            <xsl:if test="exists(following-sibling::tei:div[@type = 'page-of-manuscript'][@xml:lang = 'cop'])">
                 <xsl:text> </xsl:text>
                 <span class="overline">
                     <xsl:value-of select="following-sibling::tei:div[@type = 'page-of-manuscript'][1]/@n"/>
                 </span>
+            </xsl:if>
+            <xsl:if test="exists(following-sibling::tei:div[@type = 'page-of-manuscript'][@xml:lang = 'de'])">
+                <xsl:text> </xsl:text>
+                <xsl:value-of select="following-sibling::tei:div[@type = 'page-of-manuscript'][1]/@n"/>
             </xsl:if>
         </p>
     </xsl:template>

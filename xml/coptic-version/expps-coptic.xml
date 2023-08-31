@@ -7,12 +7,29 @@
       <fileDesc>
          <titleStmt>
             <title>Ps.-Athanasius, Expositiones in Psalmos - Coptic Version</title>
+            <title type="subtitle">BL Or 6954(9), Vat. Borg. copt. 109</title>
+            <respStmt>
+               <resp>Transcription and German Translation by</resp>
+               <persName>Thomas Klampfl</persName>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
-            <p>Publication Information</p>
+            <publisher>FWF Project 32988</publisher>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">Available under the
+                  Creative Commons Attribution 4.0 International (CC BY 4.0)</licence>
+            </availability>
+            <date>2023-08-31</date>
          </publicationStmt>
          <sourceDesc>
-            <p>Information about the source</p>
+            <msDesc>
+               <msIdentifier xml:id="vat-borg-copt-109">
+                  <country>Vatican</country>
+                  <settlement>Vatican</settlement>
+                  <repository>Biblioteca Apostolica Vaticana</repository>
+                  <idno facs="http://digi.vatlib.it/view/MSS_Borg.copt.109.cass.VI.fasc.18">Borg.copt.109.cass.VI</idno>
+               </msIdentifier>
+            </msDesc>
          </sourceDesc>
       </fileDesc>
   </teiHeader>
@@ -21,44 +38,96 @@
          <div type="manuscript" xml:id="borg-copt-109" n="Borg.copt.109.cass.VI.fasc.18">
             <div type="transcription" xml:lang="cop">
                <pb facs="http://digi.vatlib.it/view/MSS_Borg.copt.109.cass.VI.fasc.18/0003" n="1r"/>
-               <div type="page-of-manuscript" n="Μζ">
+               <div type="page-of-manuscript" n="Μζ" xml:lang="cop">
                   <p xml:id="copt-borg-109-ps-15-11-1" rend="with-indent"><seg type="psalmverse" n="Ps 15,11c"><lb n="1"/>ⲟⲩⲙⲧⲟⲛ ⲡⲉⲧϩⲛ ⲧⲉⲕⲟⲩⲛⲁⲙ ϣⲁ [ⲉⲛⲉϩ]</seg></p>
-                  <p xml:id="copt-borg-109-fr-15-1" copyOf="#edition:edition-15-11-3" n="218"><lb n="2"/>ⲉϥϯⲙⲁⲉⲓⲛ ϩⲙ ⲡⲁⲓ ⲉⲡⲣⲁϣⲉ ⲙⲛⲛⲟⲩ[ⲛⲟϥ ⲉⲧ] <lb n="3"/>ⲛⲁϣⲱⲡⲉ ⲛⲛⲉⲧⲟⲩⲁⲁⲃ ⲙⲛⲛⲥⲁ [ⲧⲣⲉⲩⲱ] <lb n="4"/>ⲛϩ ⲛⲕⲉⲥⲟⲡ ϩⲙ ⲡⲉⲟⲩⲟⲉⲓϣ ⲛⲧⲁⲛⲁ[ⲥⲧⲁⲥⲓⲥ]</p>
-                  <p xml:id="copt-borg-109-fr-15-2" copyOf="#edition:edition-15-11-3" n="218"><lb n="5"/>ⲡⲓⲣⲁϣⲉ ⲇⲉ ⲙⲛ ⲛⲟⲩⲛⲟϥ. ⲛⲧⲉ ϯⲙ[ⲛⲧⲁⲧ] <lb n="6"/>ⲧⲁⲕⲟ ⲧⲁⲓ ⲉⲧⲟⲩⲛⲁϫⲓⲧⲥ ⲉⲃⲟⲗ ϩⲓⲧ[ⲛ ⲡⲉⲛ] <lb n="7"/>ϫⲟⲉⲓⲥ <hi rend="overline">ⲓⲥ</hi> ⲡⲉ <hi rend="overline">ⲭⲥ</hi>. ⲛⲧⲟϥ ⲅⲁⲣ ⲡⲉⲧⲟⲩⲛⲁⲙ <lb n="8"/>ⲙⲡⲓⲱⲧ. ⲁⲩⲱ ϫⲉ ⲟⲩⲙⲉ ⲡⲉ ⲡⲓϣⲁϫⲉ ϥⲟ[ⲩ] <lb n="9"/>ⲟⲛϩ ⲉⲃⲟⲗ ϩⲓⲧⲙ ⲡⲁⲓ ⲉⲧϫⲱ ⲙⲙⲟⲥ. ϫⲉ ⲡⲁⲓ <lb n="10"/>ⲉⲧⲛⲁϣⲓⲃⲉ ⲙⲡⲥⲱⲙⲁ ⲙⲡⲉⲛⲑⲃⲃⲓⲟ. ⲙⲡⲓ <lb n="11"/>ⲛⲉ ⲙⲡⲥⲱⲙⲁ ⲛⲧⲉ ⲡⲉϥⲉⲟⲟⲩ:</p>
+                  <p xml:id="copt-borg-109-fr-15-1"><seg type="fragment" xml:id="copt-borg-109-fr-15-1-1" next="#copt-borg-109-fr-15-1-2" n="218" copyOf="#edition:edition-15-11-3"><lb n="2"/>ⲉϥϯⲙⲁⲉⲓⲛ ϩⲙ ⲡⲁⲓ ⲉⲡⲣⲁϣⲉ ⲙⲛⲛⲟⲩ[ⲛⲟϥ ⲉⲧ] <lb n="3"/>ⲛⲁϣⲱⲡⲉ ⲛⲛⲉⲧⲟⲩⲁⲁⲃ ⲙⲛⲛⲥⲁ [ⲧⲣⲉⲩⲱ] <lb n="4"/>ⲛϩ ⲛⲕⲉⲥⲟⲡ ϩⲙ ⲡⲉⲟⲩⲟⲉⲓϣ ⲛⲧⲁⲛⲁ[ⲥⲧⲁⲥⲓⲥ]</seg></p>
+                  <p xml:id="copt-borg-109-fr-15-2"><seg type="fragment" xml:id="copt-borg-109-fr-15-1-2" prev="#copt-borg-109-fr-15-1-1" copyOf="#edition:edition-15-11-3" n="218"><lb n="5"/>ⲡⲓⲣⲁϣⲉ ⲇⲉ ⲙⲛ ⲛⲟⲩⲛⲟϥ. ⲛⲧⲉ ϯⲙ[ⲛⲧⲁⲧ] <lb n="6"/>ⲧⲁⲕⲟ ⲧⲁⲓ ⲉⲧⲟⲩⲛⲁϫⲓⲧⲥ ⲉⲃⲟⲗ ϩⲓⲧ[ⲛ ⲡⲉⲛ] <lb n="7"/>ϫⲟⲉⲓⲥ <hi rend="overline">ⲓⲥ</hi> ⲡⲉ <hi rend="overline">ⲭⲥ</hi>. ⲛⲧⲟϥ ⲅⲁⲣ ⲡⲉⲧⲟⲩⲛⲁⲙ <lb n="8"/>ⲙⲡⲓⲱⲧ. ⲁⲩⲱ ϫⲉ ⲟⲩⲙⲉ ⲡⲉ ⲡⲓϣⲁϫⲉ ϥⲟ[ⲩ] <lb n="9"/>ⲟⲛϩ ⲉⲃⲟⲗ ϩⲓⲧⲙ ⲡⲁⲓ ⲉⲧϫⲱ ⲙⲙⲟⲥ. ϫⲉ ⲡⲁⲓ <lb n="10"/>ⲉⲧⲛⲁϣⲓⲃⲉ ⲙⲡⲥⲱⲙⲁ ⲙⲡⲉⲛⲑⲃⲃⲓⲟ. ⲙⲡⲓ <lb n="11"/>ⲛⲉ ⲙⲡⲥⲱⲙⲁ ⲛⲧⲉ ⲡⲉϥⲉⲟⲟⲩ:</seg></p>
                   <p xml:id="copt-borg-109-ps-16-1-1"><seg type="psalmverse" n="Ps 16,1a"><lb n="12"/><hi rend="overline">ΙΕ</hi>: ⲡⲉϣⲗⲏⲗ ⲛ<hi rend="overline">ⲇⲁⲇ</hi></seg></p>
-                  <p xml:id="copt-borg-109-fr-16-1" copyOf="#edition:edition-16-1-1" n="219"><lb n="13"/>ⲉϥϫⲱ ⲙⲡⲉⲓⲯⲁⲗⲙⲟⲥ. ⲉⲃⲟⲗ ϩⲙ ⲡⲉⲡⲣⲟⲥⲟⲡⲟ[ⲛ] <lb n="14"/>ⲛⲧⲉ ⲡⲓⲣⲱⲙⲉ ⲛⲧⲉⲗⲓⲟⲥ. ⲁⲩⲱ ⲛⲕⲁⲧⲁ ⲡⲛⲟⲩ <lb n="15"/>ⲧⲉ. <seg type="psalmverse" n="Ps 16,1b"><hi rend="overline">ⲡϭⲥ</hi> ⲥⲱⲧⲙ ⲉⲧⲁⲇⲓⲕⲁⲓⲟⲥⲩⲛⲏ</seg> <seg type="psalmverse" n="Ps 16,1c" xml:id="copt-borg-109-ps-16-1c-1" next="copt-borg-109-ps-16-1c-2">ϯϩⲧⲏⲕ</seg></p>
+                  <p xml:id="copt-borg-109-fr-16-1"><seg type="fragment" copyOf="#edition:edition-16-1-1" n="219"><lb n="13"/>ⲉϥϫⲱ ⲙⲡⲉⲓⲯⲁⲗⲙⲟⲥ. ⲉⲃⲟⲗ ϩⲙ ⲡⲉⲡⲣⲟⲥⲟⲡⲟ[ⲛ] <lb n="14"/>ⲛⲧⲉ ⲡⲓⲣⲱⲙⲉ ⲛⲧⲉⲗⲓⲟⲥ. ⲁⲩⲱ ⲛⲕⲁⲧⲁ ⲡⲛⲟⲩ <lb n="15"/>ⲧⲉ.</seg> <seg type="psalmverse" n="Ps 16,1b"><hi rend="overline">ⲡϭⲥ</hi> ⲥⲱⲧⲙ ⲉⲧⲁⲇⲓⲕⲁⲓⲟⲥⲩⲛⲏ</seg> <seg type="psalmverse" n="Ps 16,1c" xml:id="copt-borg-109-ps-16-1c-1" next="copt-borg-109-ps-16-1c-2">ϯϩⲧⲏⲕ</seg></p>
                   <p xml:id="copt-borg-109-ps-16-1-2" rend="with-indent"><lb n="16"/><seg type="psalmverse" n="Ps 16,1c" xml:id="copt-borg-109-ps-16-1c-2" prev="#copt-borg-109-ps-16-1c-1">ⲉⲡⲁⲥⲟⲡⲥ.</seg></p>
-                  <p xml:id="copt-borg-109-fr-16-2" copyOf="#edition:edition-16-1-2" n="220"><lb n="17"/>ⲡⲉⲓϣⲁϫⲉ ⲙⲉϩ ⲉⲃⲟⲗ ϩⲛ ⲟⲩⲛⲟϭ ⲙⲡⲁⲣⲣⲟⲩⲥ[ⲓⲁ]</p>
+                  <p xml:id="copt-borg-109-fr-16-2"><seg type="fragment" copyOf="#edition:edition-16-1-2" n="220"><lb n="17"/>ⲡⲉⲓϣⲁϫⲉ ⲙⲉϩ ⲉⲃⲟⲗ ϩⲛ ⲟⲩⲛⲟϭ ⲙⲡⲁⲣⲣⲟⲩⲥ[ⲓⲁ]</seg></p>
                   <p xml:id="copt-borg-109-ps-16-1-3" rend="with-indent"><seg type="psalmverse" n="Ps 16,1d"><lb n="18"/>ϫⲉⲓⲥⲙⲏ ⲉⲡⲁϣⲗⲏⲗ. ϩⲛϩⲉⲛⲥⲡ[ⲟⲧⲟⲩ] <lb n="19"/>ⲁⲛ ⲛⲅⲣⲟϥ.</seg></p>
-                  <p xml:id="copt-borg-109-fr-16-3" copyOf="#edition:edition-16-1-3" n="221"><lb n="20"/>ⲙⲉⲣⲉ ⲡⲛⲟⲩⲧⲉ ⲅⲁⲣ ⲥⲱⲧⲙ ⲉⲡⲓϣⲗⲏⲗ ⲉⲧⲛⲏⲩ <lb n="21"/>ⲉⲃⲟⲗ ϩⲛ ϩⲉⲛⲥⲡⲟⲧⲟⲩ ⲛⲕⲣⲟϥ ⲁⲗⲗⲁ ⲉϣⲁϥ <lb n="22"/>ⲥⲱⲧⲙ ⲉⲡⲏ ⲉⲧⲛⲏⲩ ⲉⲃⲟⲗ ϩⲛ ⲟⲩⲗⲁⲥ ⲉϥⲟⲩⲁⲁⲃ <lb n="23"/>[ⲁⲩⲱ] ⲉϥⲧⲥⲁⲃⲏⲩⲧ ⲉϣⲁϫⲉ ϩⲛ ϫⲉⲛϣⲁϫⲉ ⲉ <lb n="24"/>[ⲩⲟ]ⲩⲁⲁⲃ.</p>
+                  <p xml:id="copt-borg-109-fr-16-3"><seg type="fragment" copyOf="#edition:edition-16-1-3" n="221"><lb n="20"/>ⲙⲉⲣⲉ ⲡⲛⲟⲩⲧⲉ ⲅⲁⲣ ⲥⲱⲧⲙ ⲉⲡⲓϣⲗⲏⲗ ⲉⲧⲛⲏⲩ <lb n="21"/>ⲉⲃⲟⲗ ϩⲛ ϩⲉⲛⲥⲡⲟⲧⲟⲩ ⲛⲕⲣⲟϥ ⲁⲗⲗⲁ ⲉϣⲁϥ <lb n="22"/>ⲥⲱⲧⲙ ⲉⲡⲏ ⲉⲧⲛⲏⲩ ⲉⲃⲟⲗ ϩⲛ ⲟⲩⲗⲁⲥ ⲉϥⲟⲩⲁⲁⲃ <lb n="23"/>[ⲁⲩⲱ] ⲉϥⲧⲥⲁⲃⲏⲩⲧ ⲉϣⲁϫⲉ ϩⲛ ϫⲉⲛϣⲁϫⲉ ⲉ <lb n="24"/>[ⲩⲟ]ⲩⲁⲁⲃ.</seg></p>
                </div>
                <pb facs="http://digi.vatlib.it/view/MSS_Borg.copt.109.cass.VI.fasc.18/0004" n="1v"/>
-               <div type="page-of-manuscript" n="Μη">
-                  <p xml:id="copt-borg-109-ps-16-2-1" rend="with-indent"><seg type="psalmverse" n="Ps 16,2"><lb n="1"/>ⲉⲣⲉ ⲡⲁϩⲁⲡ ⲉⲓ ⲛⲁⲓ ⲙⲡⲉⲕⲙⲧⲟ ⲉⲃⲟⲗ. ⲉⲣⲉ ⲛⲁⲃⲁⲗ <lb n="2"/>[ⲛ]ⲁⲩ ⲉⲡⲥⲟⲟⲩⲧⲛ.</seg><seg type="psalmverse" n="Ps 16,3a-b">ⲁⲕⲇⲟⲅⲓⲙⲁⲍⲉ ⲙⲡⲁϩⲏⲧ. ⲁⲕϭⲙ <lb n="3"/>[ⲡⲁ]ϣⲓⲛⲉ ⲛⲧⲉⲩϣⲏ.</seg></p>
-                  <p xml:id="copt-borg-109-fr-16-4" copyOf="#edition:edition-16-2-1" n="222"><lb n="4"/>[ϥⲧⲱⲃ]ϩ ⲛⲟⲩⲱⲛϩ ⲉⲃⲟⲗ. ⲉⲧⲣⲉ ⲡⲓⲙⲟⲛⲟⲅⲉⲛⲏⲥ ϣⲱ <lb n="5"/>[ⲡⲉ ⲉⲣⲟ]ϥ ⲛⲕⲣⲓⲧⲏⲥ.</p>
+               <div type="page-of-manuscript" n="Μη" xml:lang="cop">
+                  <p xml:id="copt-borg-109-ps-16-2-1" rend="with-indent"><seg type="psalmverse" n="Ps 16,2"><lb n="1"/>ⲉⲣⲉ ⲡⲁϩⲁⲡ ⲉⲓ ⲛⲁⲓ ⲙⲡⲉⲕⲙⲧⲟ ⲉⲃⲟⲗ. ⲉⲣⲉ ⲛⲁⲃⲁⲗ <lb n="2"/>[ⲛ]ⲁⲩ ⲉⲡⲥⲟⲟⲩⲧⲛ.</seg><seg type="psalmverse" n="Ps 16,3a">ⲁⲕⲇⲟⲅⲓⲙⲁⲍⲉ ⲙⲡⲁϩⲏⲧ. ⲁⲕϭⲙ <lb n="3"/>[ⲡⲁ]ϣⲓⲛⲉ ⲛⲧⲉⲩϣⲏ.</seg></p>
+                  <p xml:id="copt-borg-109-fr-16-4"><seg type="fragment" copyOf="#edition:edition-16-2-1" n="222"><lb n="4"/>[ϥⲧⲱⲃ]ϩ ⲛⲟⲩⲱⲛϩ ⲉⲃⲟⲗ. ⲉⲧⲣⲉ ⲡⲓⲙⲟⲛⲟⲅⲉⲛⲏⲥ ϣⲱ <lb n="5"/>[ⲡⲉ ⲉⲣⲟ]ϥ ⲛⲕⲣⲓⲧⲏⲥ.</seg></p>
                   <p xml:id="copt-borg-109-ps-16-3-1" rend="with-indent"><seg type="psalmverse" n="Ps 16,3b"><lb n="6"/>[ⲁ]ⲡⲁⲥⲧ ⲙⲛⲉⲕϩⲉ ⲉϫⲓⲛϭⲟⲛⲥ ⲛϩⲏⲧ.</seg></p>
-                  <p xml:id="copt-borg-109-fr-16-5" copyOf="#edition:edition-16-2-2" n="223"><lb n="7"/>ϥⲁ[ⲓ]ϯ ⲙⲡϩⲁⲡ ⲙⲙⲉ ⲙⲡ<hi rend="overline">ⲩⲥ</hi>. ⲡⲁⲓ ⲛⲧⲁϥϯϩⲁⲡ ⲛϩⲏⲧϥ.</p>
+                  <p xml:id="copt-borg-109-fr-16-5"><seg type="fragment" copyOf="#edition:edition-16-2-2" n="223"><lb n="7"/>ϥⲁ[ⲓ]ϯ ⲙⲡϩⲁⲡ ⲙⲙⲉ ⲙⲡ<hi rend="overline">ⲩⲥ</hi>. ⲡⲁⲓ ⲛⲧⲁϥϯϩⲁⲡ ⲛϩⲏⲧϥ.</seg></p>
                   <!-- expositio 224 seems to be missing -->
                   <p xml:id="copt-borg-109-ps-16-4-1" rend="with-indent"><seg type="psalmverse" n="Ps 16,4a"><lb n="8"/>ϫⲉ ⲛⲛⲉ ⲧⲁⲧⲁⲡⲣⲟ ϫⲱ ⲛⲛⲉϩⲏⲩⲉ ⲛⲛⲣⲱⲙⲉ.</seg></p>
-                  <p xml:id="copt-borg-109-fr-16-6" copyOf="#edition:edition-16-4-1" n="225"><lb n="9"/>ⲉϥϩⲁⲣⲉϩ ⲅⲁⲣ ⲉⲣⲟϥ ϣⲁϩⲣⲁⲓ ⲉⲡⲁⲓ ⲉⲧⲙⲧⲣⲉϥϫⲉ ⲗⲁ <lb n="10"/>ⲁⲩ ⲛϣⲁϫⲉ. ⲉⲡⲁϯⲙⲛⲧⲣⲱⲙⲉ ⲡⲉ: ⲁϣⲁϥⲧⲁⲕⲟ <lb n="11"/>ⲁⲗⲗⲁ ⲉϥⲧⲁϫⲣⲟ ⲙⲙⲟϥ ϣⲁϩⲣⲁⲓ ⲉⲩⲕⲟⲩⲓ ⲛϣⲁϫⲉ.</p>
+                  <p xml:id="copt-borg-109-fr-16-6"><seg type="fragment" copyOf="#edition:edition-16-4-1" n="225"><lb n="9"/>ⲉϥϩⲁⲣⲉϩ ⲅⲁⲣ ⲉⲣⲟϥ ϣⲁϩⲣⲁⲓ ⲉⲡⲁⲓ ⲉⲧⲙⲧⲣⲉϥϫⲉ ⲗⲁ <lb n="10"/>ⲁⲩ ⲛϣⲁϫⲉ. ⲉⲡⲁϯⲙⲛⲧⲣⲱⲙⲉ ⲡⲉ: ⲁϣⲁϥⲧⲁⲕⲟ <lb n="11"/>ⲁⲗⲗⲁ ⲉϥⲧⲁϫⲣⲟ ⲙⲙⲟϥ ϣⲁϩⲣⲁⲓ ⲉⲩⲕⲟⲩⲓ ⲛϣⲁϫⲉ.</seg></p>
                   <p xml:id="copt-borg-109-ps-16-4-2" rend="with-indent"><seg type="psalmverse" n="Ps 16,4b"><lb n="12"/>ⲉⲧⲃⲉ ⲛϣⲁϫⲉ ⲛⲛⲉⲕⲥⲡⲟⲧⲟⲩ. ⲁⲓϩⲁⲣⲉϩ ⲉⲛⲉ <lb n="13"/>ϩⲓⲟⲟⲩⲉ ⲉⲧⲛⲁϣⲧ.</seg></p>
-                  <p xml:id="copt-borg-109-fr-16-7" copyOf="#edition:edition-16-4-2" n="226"><lb n="14"/>ⲉⲧⲃⲉ ⲛⲉⲕⲟⲩⲉϩⲥⲁϩⲛⲉ ⲡⲉϫⲁϥ. ⲁⲓⲃⲱⲕ ⲉⲅⲟⲩⲛ ϩⲛ <lb n="15"/>ϯⲡⲩⲗⲏ ⲉⲧϭⲏⲩ ⲁⲩⲱ ⲉⲧϩⲉϫϩⲱϫ.</p>
+                  <p xml:id="copt-borg-109-fr-16-7"><seg type="fragment" copyOf="#edition:edition-16-4-2" n="226"><lb n="14"/>ⲉⲧⲃⲉ ⲛⲉⲕⲟⲩⲉϩⲥⲁϩⲛⲉ ⲡⲉϫⲁϥ. ⲁⲓⲃⲱⲕ ⲉⲅⲟⲩⲛ ϩⲛ <lb n="15"/>ϯⲡⲩⲗⲏ ⲉⲧϭⲏⲩ ⲁⲩⲱ ⲉⲧϩⲉϫϩⲱϫ.</seg></p>
                   <p xml:id="copt-borg-109-ps-16-5-1" rend="with-indent"><seg type="psalmverse" n="Ps 16,5"><lb n="16"/>ⲁⲓⲥⲟⲃⲧⲉ ⲛⲛⲁⲧⲁϭⲥⲉ ϩⲛ ⲛⲉⲕϩⲓⲟⲟⲩⲉ. ϫⲉⲕⲁⲥ <lb n="17"/>ⲛⲛⲉⲩⲕⲓⲙ ⲛϭⲓ ⲛⲁⲧⲁϭⲥⲉ.</seg></p>
-                  <p xml:id="copt-borg-109-fr-16-8" copyOf="#edition:edition-16-5-1" n="227"><lb n="18"/>ⲡⲓϣⲁϫⲉ ⲅⲁⲣ ⲧⲥⲁⲃⲟ ⲙⲙⲟⲛ. ⲉⲧⲙⲧⲣⲉⲛⲕⲁϩⲧⲏⲛ <lb n="19"/>ⲉⲣⲟⲛ ⲙⲁⲩⲁⲁⲛ. ⲁⲗⲗⲁ ⲉⲡⲛⲟⲩⲧⲉ ⲡⲁⲓ ⲉⲧⲧⲁ <lb n="20"/>ϫⲣⲟ ⲙⲙⲟⲛ.</p>
+                  <p xml:id="copt-borg-109-fr-16-8"><seg type="fragment" copyOf="#edition:edition-16-5-1" n="227"><lb n="18"/>ⲡⲓϣⲁϫⲉ ⲅⲁⲣ ⲧⲥⲁⲃⲟ ⲙⲙⲟⲛ. ⲉⲧⲙⲧⲣⲉⲛⲕⲁϩⲧⲏⲛ <lb n="19"/>ⲉⲣⲟⲛ ⲙⲁⲩⲁⲁⲛ. ⲁⲗⲗⲁ ⲉⲡⲛⲟⲩⲧⲉ ⲡⲁⲓ ⲉⲧⲧⲁ <lb n="20"/>ϫⲣⲟ ⲙⲙⲟⲛ.</seg></p>
                   <p xml:id="copt-borg-109-ps-16-6-1" rend="with-indent"><seg type="psalmverse" n="Ps 16,6.7a.b"><lb n="21"/>ⲁⲛⲟⲕ ⲇⲉ ⲁⲓϫⲓϣⲕⲁⲕ ⲉⲃⲟⲗ. ϫⲉ ⲁⲕⲥⲱⲧⲙ ⲉ <lb n="22"/>ⲣⲟⲓ ⲙⲛⲟⲩⲧⲉ. ⲣⲓⲕⲉ ⲙⲡⲉⲕⲙⲁⲁϫⲉ ⲉⲣⲟⲓ: ⲛⲅ <lb n="23"/>ⲥⲱⲧⲙ ⲉⲛⲁϣⲁϫⲉ. ⲙⲁⲣⲟⲩⲉⲣϣⲡⲏⲣⲉⲛⲛⲉⲕ <lb n="24"/>[ⲛⲁ ⲡⲉⲧ]ⲛⲟⲩϩⲙ ⲛⲛⲉⲧϩⲉⲗⲡⲓⲥ ⲉⲣⲟⲕ.</seg></p>
-                  <p xml:id="copt-borg-109-fr-16-9" copyOf="#edition:edition-16-6-1" n="228"><lb n="25"/>ⲉⲧⲉ ⲡⲁⲓ ⲡⲉ ϫⲉ ⲕⲛⲁⲥⲱⲧⲙ ⲉⲣⲟⲓ. <seg type="psalmverse" n="Ps 16,7c" xml:id="copt-borg-109-ps-16-7c-1" next="#copt-borg-109-ps-16-7c-2">ⲉⲃⲟⲗ ϩⲛ ⲛⲉⲧϯ</seg></p>
+                  <p xml:id="copt-borg-109-fr-16-9"><seg type="fragment" copyOf="#edition:edition-16-6-1" n="228"><lb n="25"/>ⲉⲧⲉ ⲡⲁⲓ ⲡⲉ ϫⲉ ⲕⲛⲁⲥⲱⲧⲙ ⲉⲣⲟⲓ.</seg> <seg type="psalmverse" n="Ps 16,7c" xml:id="copt-borg-109-ps-16-7c-1" next="#copt-borg-109-ps-16-7c-2">ⲉⲃⲟⲗ ϩⲛ ⲛⲉⲧϯ</seg></p>
                   <p xml:id="copt-borg-109-ps-16-7-1"><seg type="psalmverse" n="Ps 16,7c" xml:id="copt-borg-109-ps-16-7c-2" prev="#copt-borg-109-ps-16-7c-1"><lb n="26"/>ⲉϩⲟⲩⲛ ⲉ[ϩ]ⲣ[ⲉ]ⲛ ⲧⲉⲕϭⲓϫⲉ ⲛⲟⲩⲛⲁⲙ.</seg></p>
                   <p xml:id="copt-borg-109-ps-16-7-2" rend="with-indent"><seg type="psalmverse" n="Ps 16,8a"><lb n="27"/>ϩⲁⲣⲉϥ ⲉⲣⲟⲓ ⲡ<hi rend="overline">ϭⲥ</hi> ⲛⲑⲉ ⲛⲟⲩⲕⲉⲕ[ⲉ ⲛⲃⲁⲗ]</seg></p>
                </div>
             </div>
-            <div type="translation">
+            <div type="translation" xml:lang="de">
                <pb n="1r"/>
-               <div type="page-of-manuscript" n="47">
-                  <p corresp="#copt-borg-109-ps-15-11-1"></p>
+               <div type="page-of-manuscript" n="47" xml:lang="de">
+                  <p corresp="#copt-borg-109-ps-15-11-1">Ruhe, welche in deiner Rechten in Ewigkeit. (Ps 15,11c)</p>
+                  <p corresp="#copt-borg-109-fr-15-1">Er gibt ein Zeichen durch diese [Worte]: In Freude und Wonne, damit sie Heilige werden, nachdem sie veranlasst wurden zu leben in anderer Weise, durch den Anlass der Auferstehung (<foreign xml:lang="grc">ἀνάστασις</foreign>).</p>
+                  <p corresp="#copt-borg-109-fr-15-2">Freude aber (<foreign xml:lang="grc">δέ</foreign>) und Wonne der gegebenen Unsterblichkeit, welche sie empfangen durch unseren Herrn Jesus, den Christus. Er nämlich (<foreign xml:lang="grc">γάρ</foreign>) ist die rechte Hand des Vaters. Und dasss diese Rede wahr ist, wird offenbar durch dieses [Wort], welches sagt: "Dieser, welcher verwandeln wird den Leib (<foreign xml:lang="grc">σῶμα</foreign>) unserer Niedrigkeit in den Leib (<foreign xml:lang="grc">σῶμα</foreign>) seiner Herrlichkeit." (Phil 3,21)</p>
+                  <p corresp="#copt-borg-109-ps-16-1-1">15 Das Gebet Davids. (Ps 16,1a)</p>
+                  <p corresp="#copt-borg-109-fr-16-1">Er sprach in diesem Psalm (<foreign xml:lang="grc">ψαλμός</foreign>) von der Person (<foreign xml:lang="grc">πρόσωπον</foreign>) des vollendeten (<foreign xml:lang="grc">τέλειος</foreign>) und gemäß (<foreign xml:lang="grc">κατά</foreign>) Gott [lebenden] Menschen. Der Herr hört meine Gerechtigkeit (<foreign xml:lang="grc">δικαιοσύνη</foreign>), auf die du achthast,</p>
+                  <p corresp="#copt-borg-109-ps-16-1-2">in meinem Gebet. (Ps 16,1b.c)</p>
+                  <p corresp="#copt-borg-109-fr-16-2">Dieses Wort ist voll von einer großen Gegenwart (<foreign xml:lang="grc">παρουσία</foreign>) / Freimütigkeit (<foreign xml:lang="grc">παρρησία</foreign>).</p>
+                  <p corresp="#copt-borg-109-ps-16-1-3">Hörend auf mein Gebet, von nicht hinterlistigen Lippen. (Ps 16,1d)</p>
+                  <p corresp="#copt-borg-109-fr-16-3">Gott pflegt nämlich (<foreign xml:lang="grc">γάρ</foreign>) nicht zu hören auf jene Gebete, die herauskommen aus hinterlistigen Lippen, sondern (<foreign xml:lang="grc">ἀλλά</foreign>) er hört auf jene, welche hervorgehen aus einer heiligen Zunge. Und Wort erzieht er zu heiligen Worten.</p>
                </div>
                <pb n="1v"/>
-               <div type="page-of-manuscript" n="48">
-                  <p corresp="#copt-borg-109-ps-16-2-1"></p>
+               <div type="page-of-manuscript" n="48" xml:lang="de">
+                  <p corresp="#copt-borg-109-ps-16-2-1">Mein Urteil ergeht über mich vor dir. Meine Augen schauen in Aufrichtigkeit. (Ps 16,2) Du prüftest (<foreign xml:lang="grc">δοκιμάζω</foreign>) mein Herz. Du hast mich heimgesucht in der Nacht. (Ps 16,3a)</p>
+                  <p corresp="#copt-borg-109-fr-16-4">Er betet, damit offenbar ist, dieser Einzige (<foreign xml:lang="grc">μονογενής</foreign>) soll ihm Richter (<foreign xml:lang="grc">κριτής</foreign>) sein.</p>
+                  <p corresp="#copt-borg-109-ps-16-3-1">Du hast mich im Feuer geprüft, und keine Ungerechtigkeit an mir gefunden. (Ps 16,3b)</p>
+                  <p corresp="#copt-borg-109-fr-16-5">Er gibt das Urteil in Gerechtigkeit im Sohn (<foreign xml:lang="grc">υἱός</foreign>). Dieser, welcher Urteil gab durch ihn,</p>
+                  <p corresp="#copt-borg-109-ps-16-4-1">damit mein Mund nicht sagt: Durch Werke des Menschen. (Ps 16,4a)</p>
+                  <p corresp="#copt-borg-109-fr-16-6">Denn (<foreign xml:lang="grc">γάρ</foreign>) er bewacht ihn, damit er nicht sagt irgendein Wort von meiner Menschheit, sondern (<foreign xml:lang="grc">ἀλλά</foreign>) er pflegt ihn stark zu machen bis hin zu wenigen Worten.</p>
+                  <p corresp="#copt-borg-109-ps-16-4-2">Aufgrund der Worte deiner Lippen beobachte ich die schwierigen Wege. (Ps 16,4b)</p>
+                  <p corresp="#copt-borg-fr-16-7">Wegen deiner Befehle, sagt er, ging ich hinein in das Tor (<foreign xml:lang="grc">πύλη</foreign>), welches eng ist und beschränkt.</p>
+                  <p corresp="#copt-borg-ps-16-5-1">Ich brachte meine Schritte in Ordnung auf deinen Wegen, damit nicht wanken sollen meine Schritte. (Ps 16,5a.b)</p>
+                  <p corresp="#copt-borg-fr-16-8">Diese Worte nämlich (<foreign xml:lang="grc">γάρ</foreign>) lehren uns, dass wir nicht auf uns vertrauen sollen, uns allein, sondern (<foreign xml:lang="grc">ἀλλά</foreign>) auf Gott, der uns stark macht.</p>
+                  <p corresp="#copt-borg-ps-16-6-1">Ich aber (<foreign xml:lang="grc">δέ</foreign>), ich rief hinaus, Gott, dass du mich hörtest. Wende dein Ohr mir zu. Höre meine Worte. Wunderbar sei gemacht dein Erbarmen. Deine Rettung für die, die auf dich hoffen - (Ps 16,6.7a.b)</p>
+                  <p corresp="#copt-borg-109-fr-16-9">Welches dies ist: Du wirst mich hören - vor denen, die</p>
+                  <p corresp="#copt-borg-109-ps-16-7-1">deiner rechten Hand widerstehen.</p>
+                  <p corresp="#copt-borg-109-ps-16-7-2">Bewahre mich, Herr, wie die Pupille des Auges. (Ps 16,8a)</p>
+               </div>
+            </div>
+            <div type="translation" xml:lang="la">
+               <pb n="1r"/>
+               <div type="page-of-manuscript" n="47" xml:lang="la">
+                  <p>... requies quae est in dextera tua in aeternum</p>
+                  <p>Significat in hoc gaudium et felicitatem quae contingent sanctis postquam revixerint denuo tempore resurrectionis, gaudium et felicitatem incorruptibilitatis quam accipient a Domino nostro Jesu Christo; ipse enim est dextera Patris. Et quod veritas sit hic sermo, manifestum est ex hoc quod dictum est: Qui reformabit corpus humilitatis nostrae in similitudinem corporis gloriae suae.</p>
+                  <p>PSALMUS XVI. - ORATIO DAVID.</p>
+                  <p>Dicit hunc psalmum ex persona hominis perfecti et secundum Deum.</p>
+                  <p>Domine exaudi justitiam meam attende ad orationem meam.</p>
+                  <p>Hic sermo plenus est magna confidentia.</p>
+                  <p>Audi precem meam in labiis non dolosis.</p>
+                  <p>Non audit enim Deus orationem venientem a labiis dolosis, sed illam exaudit quae venit a lingua sancta et edocta loqui sermones sanctos.</p>
+               </div>
+               <pb n="1v"/>
+               <div type="page-of-manuscript" n="48" xml:lang="la">
+                  <p>Judicium meum veniat mihi in conspectu tuo, oculi mei videant aequitatem. Probasti cor meum, visitasti me nocte.</p>
+                  <p>Orat manifeste ut Unigenitus sit ei judex.</p>
+                  <p>Igne explorasit me nec invenisti iniquitatem in me.</p>
+                  <p>Invocat justum judicum Filii, in quo judicavit.</p>
+                  <p>Quoniam non loquetur os meum opera hominum.</p>
+                  <p>Praecavet enim usque adeo, ne loquatur ullum verbum quod sit humanitatis, quod sit corruptibile, sed confortat se usque ad pauca verba.</p>
+                  <p>Propter verba labiorum tuorum custodivi vias duras.</p>
+                  <p>Propter mandata tua, inquit, intravi per portam angustam et arctam.</p>
+                  <p>Paravi gressus meos in viis tuis, ne moveantur gressus mei. (40)</p>
+                  <p>Hic sermo docet nos ne confidamus in nosmetipsos, sed in</p>
+                  <p>Deum qui nos confirmat.</p>
+                  <p>Ego autem clamavi quoniam exaudisti me, Deus, inclina aurem tuam mihi, audi verba mea. Admirentur misericordias tuas, qui salvas sperantes in te.</p>
+                  <p>(Exausisti) id est exaudies me.</p>
+                  <p>Ab his qui resistunt dexterae tuae, custodi me Domine, ut pupillam oculi.</p>
+                  <bibl>David, J. 1924. "Les éclaircissements de Saint Athanase sur les Psaumes. Fragments d'une traduction en copte sahidique." Revue de L'Orient Chrétien 24: 1-57, 39-40.</bibl>
                </div>
             </div>
          </div>
