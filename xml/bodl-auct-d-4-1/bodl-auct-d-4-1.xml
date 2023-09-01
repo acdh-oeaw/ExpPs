@@ -2,14 +2,13 @@
 <?xml-model href="../../schema/tei-psalmcatenae.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="../../schema/tests-for-transcription.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-   <!-- faciendum: Ps 1–12: Fragmente, die in B1 fehlen, zu notieren -->
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Oxon. Bodl. Auct. D. 4. 1 (CPG C14; Rahlfs 13) - Catena Type I (Primary
                Catena)</title>
-            <title type="subtitle">List of Contents, Transcription of (Ps.)-Athanasius, Expositiones in
-               Psalmos, and of the Unpublished Fragments (Ps 1–10)</title>
+            <title type="subtitle">List of Contents, Transcription of (Ps.)-Athanasius, Expositiones
+               in Psalmos, and of the Unpublished Fragments (Ps 1–10)</title>
             <respStmt>
                <resp>(Ps.)-Athanasius transcribed by</resp>
                <persName>Maria-Lucia Goiana (Ps 2–5; 7) and Sebastiano Panteghini (Ps 1; 6;
@@ -4520,14 +4519,14 @@
                         <anchor type="psalmtext" xml:id="bodl-auct-d-4-1-ps-13-6b"
                         n="Ps (LXX) 13,6b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-6"/> ὅτι
                      κύριος ἐλπὶς αὐτοῦ ἐστιν. </quote>
-                  <quote type="bibletext" xml:id="vat-gr-754-ps-13-7" n="Ps (LXX) 13,7"
+                  <quote type="bibletext" xml:id="bodl-auct-d-4-1-ps-13-7" n="Ps (LXX) 13,7"
                      corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-7">
-                     <anchor type="psalmtext" xml:id="vat-gr-754-ps-13-7a" n="Ps (LXX) 13,7a"
+                     <anchor type="psalmtext" xml:id="bodl-auct-d-4-1-ps-13-7a" n="Ps (LXX) 13,7a"
                         corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-7"/> τίς δώσει ἐκ Σιων τὸ
-                     σωτήριον τοῦ Ισραηλ; <anchor type="psalmtext" xml:id="vat-gr-754-ps-13-7b"
+                     σωτήριον τοῦ Ισραηλ; <anchor type="psalmtext" xml:id="bodl-auct-d-4-1-ps-13-7b"
                         n="Ps (LXX) 13,7b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-7"/> ἐν τῷ
                      ἐπιστρέψαι κύριον τὴν αἰχμαλωσίαν τοῦ λαοῦ αὐτοῦ <anchor type="psalmtext"
-                        xml:id="vat-gr-754-ps-13-7c" n="Ps (LXX) 13,7c"
+                        xml:id="bodl-auct-d-4-1-ps-13-7c" n="Ps (LXX) 13,7c"
                         corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-7"/> ἀγαλλιάσθω Ιακωβ καὶ
                      εὐφρανθήτω Ισραηλ.</quote>
                </ab>
@@ -4674,11 +4673,225 @@
                         source="fons ignotus in Ps 13,7c; cf. Hesychius, lex. s.v. Ἰάκωβος (I nr. 3 Latte) et Didymus, fr. 84 in Ps 13,7 (172,14 Mühlenberg); cf. etiam Hesychius, comm. magnus in Ps 52,7b–c (PG 93,1209 D9–10)"
                         corresp="#person-18 #person-18">Ϊακὼβ᾿· πτερνιστής ⁘ Ισραήλ᾿· νοῦς ὁρῶν
                         θεόν· ⁘</quote><note type="attribution"><foreign xml:lang="grc">ἐρ<unclear
-                              reason="damage">μ</unclear><supplied reason="illegible"
+                              reason="faded">μ</unclear><supplied reason="illegible"
                               >ην(εία)</supplied></foreign></note></seg>
+               </ab>
+            </div>
+            <!-- Ps 14 bibletext -->
+            <div type="bibletext" xml:id="bodl-auct-d-4-1-14-1" subtype="commented"
+               rendition="#middle-column" change="commentaryfragments-only">
+               <ab xml:lang="grc">
+                  <quote type="bibletext" xml:id="bodl-auct-d-4-1-ps-14-1" n="Ps (LXX) 14,1"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-1">
+                     <anchor type="psalmtext" xml:id="bodl-auct-d-4-1-ps-14-1a" n="Ps (LXX) 14,1a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-1"/> Ψαλμὸς τῷ Δαυιδ. <anchor
+                        type="psalmtext" xml:id="bodl-auct-d-4-1-ps-14-1b" n="Ps (LXX) 14,1b"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-1"/> Κύριε, τίς παροικήσει ἐν τῷ
+                     σκηνώματί σου <anchor type="psalmtext" xml:id="bodl-auct-d-4-1-ps-14-1c"
+                        n="Ps (LXX) 14,1c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-1"/> καὶ τίς
+                     κατασκηνώσει ἐν τῷ ὄρει τῷ ἁγίῳ σου; </quote>
+                  <quote type="bibletext" xml:id="bodl-auct-d-4-1-ps-14-2" n="Ps (LXX) 14,2"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-2">
+                     <anchor type="psalmtext" xml:id="bodl-auct-d-4-1-ps-14-2a" n="Ps (LXX) 14,2a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-1"/> πορευόμενος ἄμωμος καὶ
+                     ἐργαζόμενος δικαιοσύνην, <anchor type="psalmtext"
+                        xml:id="bodl-auct-d-4-1-ps-14-2b" n="Ps (LXX) 14,2b"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-2"/> λαλῶν ἀλήθειαν ἐν καρδίᾳ
+                     αὐτοῦ, </quote>
+                  <quote type="bibletext" xml:id="bodl-auct-d-4-1-ps-14-3" n="Ps (LXX) 14,3"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-3">
+                     <anchor type="psalmtext" xml:id="bodl-auct-d-4-1-ps-14-3a" n="Ps (LXX) 14,3a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-3"/> ὃς οὐκ ἐδόλωσεν ἐν γλώσσῃ
+                     αὐτοῦ <anchor type="psalmtext" xml:id="bodl-auct-d-4-1-ps-14-3b"
+                        n="Ps (LXX) 14,3b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-3"/> οὐδὲ
+                     ἐποίησεν τῷ πλησίον αὐτοῦ κακὸν <anchor type="psalmtext"
+                        xml:id="bodl-auct-d-4-1-ps-14-3c" n="Ps (LXX) 14,3c"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-3"/> καὶ ὀνειδισμὸν οὐκ ἔλαβεν
+                     ἐπὶ τοὺς ἔγγιστα αὐτοῦ· </quote>
+                  <quote type="bibletext" xml:id="bodl-auct-d-4-1-ps-14-4" n="Ps (LXX) 14,4"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-4">
+                     <anchor type="psalmtext" xml:id="bodl-auct-d-4-1-ps-14-4a" n="Ps (LXX) 14,4a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-4"/> ἐξουδένωται ἐνώπιον αὐτοῦ
+                     πονηρευόμενος, <anchor type="psalmtext" xml:id="bodl-auct-d-4-1-ps-14-4b"
+                        n="Ps (LXX) 14,4b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-4"/> τοὺς δὲ
+                     φοβουμένους κύριον δοξάζει· <anchor type="psalmtext"
+                        xml:id="bodl-auct-d-4-1-ps-14-4c" n="Ps (LXX) 14,4c"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-4"/> ὁ ὀμνύων τῷ πλησίον αὐτοῦ
+                     καὶ οὐκ ἀθετῶν· </quote>
+                  <quote type="bibletext" xml:id="bodl-auct-d-4-1-ps-14-5" n="Ps (LXX) 14,5"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-5">
+                     <anchor type="psalmtext" xml:id="bodl-auct-d-4-1-ps-14-5a" n="Ps (LXX) 14,5a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-5"/> τὸ ἀργύριον αὐτοῦ οὐκ
+                     ἔδωκεν ἐπὶ τόκῳ <anchor type="psalmtext" xml:id="bodl-auct-d-4-1-ps-14-5b"
+                        n="Ps (LXX) 14,5b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-4"/> καὶ δῶρα
+                     ἐπ᾽ ἀθῴοις οὐκ ἔλαβεν. <anchor type="psalmtext"
+                        xml:id="bodl-auct-d-4-1-ps-14-5c" n="Ps (LXX) 14,5c"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-5"/> ὁ ποιῶν ταῦτα οὐ
+                     σαλευθήσεται εἰς τὸν αἰῶνα. </quote>
+               </ab>
+            </div>
+            <!-- Ps 14 commentary -->
+            <div type="commentary" subtype="commentary" xml:id="bodl-auct-d-4-1-14-2">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 14,1a</note>
+                  <seg type="hypothesis" xml:id="bodl-auct-d-4-1-fr-14-1" rendition="#main-text"
+                     source="Hesychius" corresp="#bodl-auct-d-4-1-ps-14-1a"
+                     copyOf="#edition:edition-14-1-1"><quote type="patristic" subtype="quotation"
+                        xml:id="bodl-auct-d-4-1-quot-14-1"
+                        source="Athanasius, exp. in Ps 14,1a; non habet Oxon. S.Trin. 78"
+                        corresp="#person-2">Τοῦτ<unclear reason="faded">ο</unclear>ν ἄ<unclear
+                           reason="faded">δ</unclear>ει <supplied reason="illegible">τὸν
+                           ψαλμὸν</supplied> διδάσκων τί ἄνθρωπον παρασκευάσει τῆς μακαρίας ἐκείνης
+                        λίξεως τυχεῖν·1 διὸ2 ἀρχόμενος φησίν· ⁘</quote><ref
+                        target="#vat-gr-754:vat-gr-754-fr-14-1" type="with-variants">Vat. gr.
+                        754</ref><note type="attribution"><foreign xml:lang="grc">ἐρ<unclear
+                              reason="faded">μη</unclear><supplied reason=" illegible" cert="high"
+                              >νεία</supplied>
+                           <unclear reason="faded">Ἡ</unclear><supplied reason="illegible"
+                              >συχ</supplied>ίο<unclear reason="faded"
+                     >υ</unclear>·</foreign></note></seg>
+                  <note type="lemma">Ps 14,1a</note>
+                  <seg type="hypothesis" xml:id="bodl-auct-d-4-1-fr-14-2" rendition="#main-text"
+                     source="Anonymous" corresp="#bodl-auct-d-4-1-ps-14-1a"><quote type="patristic"
+                        subtype="quotation" xml:id="bodl-auct-d-4-1-quot-14-2"
+                        source="Hesychius, comm. brevis in Ps 14,1a (19
+                        Jagić); non habet Oxon. S.Trin. 78"
+                        corresp="#person-11"/><note type="attribution"><foreign xml:lang="grc"
+                           >Αλλ(η) ἐρμ<unclear>ην</unclear>(εία)</foreign>
+                     </note></seg>
+                  <pb n="53r–v"/>
+                  <note type="lemma">Ps 14,1a</note>
+                  <seg type="hypothesis" xml:id="bodl-auct-d-4-1-fr-14-3" rendition="#main-text"
+                     source="Theodoretus" corresp="#bodl-auct-d-4-1-ps-14-1a"><quote
+                        type="patristic" subtype="paraphrase-expanded"
+                        xml:id="bodl-auct-d-4-1-quot-14-3"
+                        source="Theodoretus, comm. in Ps 14,1a (PG 80,953 C7–D2)"
+                        corresp="#person-16">παραινεῖ ὁ παρῶν ψαλμὸς. πῶς δεῖ ἡμᾶς πολιτεύεσθαι ἐν
+                        τῶι δὲ τῶι βίωι· καὶ ἐπειδὴ || ὁ κύριος ἔφη· πολλοί εἰσιν κλητοί· ὁλίγοι δὲ
+                        ἐκλεκτοί· ἐπ᾿ἀποριτικῶς σχηματίζει τὸν λόγον· κατ᾿ἐρώτησιν καὶ ἀπόκρισιν·
+                        ⁘</quote><ref target="#vat-gr-754:vat-gr-754-fr-14-2"
+                        type="abbreviated-with-variations">Vat. gr. 754</ref>
+                     <note type="attribution"><foreign xml:lang="grc">ἑτέρα ἐ<unclear reason="faded"
+                              >ρ</unclear><supplied reason="illegible">μηνεία</supplied>
+                           <supplied reason="illegible" cert="high">Θεοδωρίτ</supplied><unclear
+                              reason="damage">ου</unclear><supplied reason="illegible"
+                           >·</supplied></foreign>
+                     </note></seg>
+               </ab>
+            </div>
+            <pb n="53v"/>
+            <div type="commentary" subtype="commentary" xml:id="bodl-auct-d-4-1-14-3">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 14,1b–3a (Κύριε, τίς)</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-14-4"
+                     rendition="#main-text" source="Anonymous" corresp="#bodl-auct-d-4-1-ps-14-1b"
+                        ><quote type="patristic" subtype="quotation-adapted"
+                        xml:id="bodl-auct-d-4-1-quot-14-4"
+                        source="Basilius, hom. in Ps. 14 (PG 29,253 B8–11) in Ps 14,1b–c; non habet Oxon. S.Trin. 78"
+                        corresp="#person-3"/><note type="textual-commentary">This fragment is the
+                        last within the Hypotheseis section (on Ps 14,1a) preceding the commentary
+                        on the Psalm text. By means of the letter A it is linked to Ps
+                     14,1b.</note></seg>
+                  <note type="lemma">Ps 14,1b–3a (ἄμωμος)</note>
+                  <seg type="glosse" xml:id="bodl-auct-d-4-1-glosse-14-1" rendition="#left-margin"
+                     source="Anonymous" corresp="#bodl-auct-d-4-1-ps-14-2a"><quote type="patristic"
+                        subtype="unknown" xml:id="bodl-auct-d-4-1-quot-14-5"
+                        source="fons ignotus in Ps 14,2a; cf. Hesychius, lex. s.v. ἄμωμος (A nr. 4179 Latte); non habet Oxon. S.Trin. 78"
+                        corresp="#person-18"><unclear reason="margin-cut"
+                        >ἄ</unclear>μεμπτος·</quote><note type="textual-commentary">This glosse is
+                        linked not by a letter, but by a sign.</note></seg>
+                  <note type="lemma">Ps 14,1b–3a (οὐκ ἐδόλωσεν)</note>
+                  <seg type="glosse" xml:id="bodl-auct-d-4-1-glosse-14-2" rendition="#main-text"
+                     source="Anonymous" corresp="#bodl-auct-d-4-1-ps-14-3a"><quote type="patristic"
+                        subtype="unknown" xml:id="bodl-auct-d-4-1-quot-14-6"
+                        source="fons ignotus in Ps 14,3a; non habet Oxon. S.Trin. 78"
+                        corresp="#person-18">οὐκεπανουργεύσατο· οὐκ᾿ ἠπάτησεν·</quote>
+                     <note type="attribution"><foreign xml:lang="grc">ἐρμηνεια λεξεως·</foreign>
+                     </note></seg>
+                  <note type="lemma">Ps 14,3b–c (ὀνειδισμὸν)</note>
+                  <seg type="glosse" xml:id="bodl-auct-d-4-1-glosse-14-3" rendition="#main-text"
+                     source="Anonymous" corresp="#bodl-auct-d-4-1-ps-14-3c"><quote type="patristic"
+                        subtype="unknown" xml:id="bodl-auct-d-4-1-quot-14-7"
+                        source="fons ignotus in Ps 14,3c; non habet Oxon. S.Trin. 78"
+                        corresp="#person-18">χλευασμὸν· ἐξουδένωσιν·</quote><note type="attribution"
+                           ><foreign xml:lang="grc">ἐρμηνεια λεξεως</foreign>
+                     </note>
+                  </seg>
+                  <note type="lemma">Ps 14,4 (ὀμνύων)</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-14-5"
+                     rendition="#main-text" source="Theodoretus" corresp="#bodl-auct-d-4-1-ps-14-4c"
+                        ><quote type="patristic" subtype="ineditum"
+                        xml:id="bodl-auct-d-4-1-quot-14-8"
+                        source="fons ignotus in Ps 14,4c (ineditum?); non habet Oxon. S.Trin. 78"
+                        corresp="#person-18">Πάλαι μὲν συνεχωρήθη ὁ ὄρκος διὰ τὴν εἰδωλο_λατρείαν·
+                           <sic>ὄμνοιων</sic> γὰρ᾿ κατὰ τῶν εἰδώλων· ὡς ἐλέγχει ὁ προφήτης λέγων·
+                        κατὰ τοῦ ἱλασμοῦ <supplied reason="illegible">σαμα</supplied><unclear
+                           reason="faded">ρ</unclear>είσας ὀμνύεται [lege ὀμνύετε] λέγοντες. ζῆ ὁ
+                        θεός σ<supplied reason="illegible">ου</supplied>
+                        <unclear reason="damage">Δ</unclear>ρᾶν· καὶ ζῆ ὁ θεός σου Βηρσαβεαί· [cf.
+                        Am 8,14] καὶ ἀνελάβεται [lege ἀνελάβετε] τὴν σκηνὴν τοῦ Μολόχ· <supplied
+                           reason="damage">καὶ τὸ ἄσ</supplied><unclear reason="faded"
+                        >τρ</unclear>ον το<unclear reason="faded">ῦ</unclear> θεοῦ ἡμῶν Ῥαφφᾶν· τοὺς
+                        τύπους οὓς ἐποιήσαται [lege ἐποιήσατε] προσκυνεῖν αὐτούς· [Am 5,26] διὰ
+                        ταῦτα οὖν νῦν συνεχωρηθη ὁ ὄρκος. ὁ δὲ κύριος ἐλθῶν ἐνετείλατο ἡμῖν μὴ
+                        ὀμῶσαι ὅλως. τὰς ἀ<unclear reason="damage">ρχὰ</unclear>ς τῶν ἁμαρτημάτων
+                        ἐκκόπτων· ὁ γὰρ μὴ ὀμνύων· πάντως οὐκ᾿ ἐπιορκή· ⁘</quote>
+                     <note type="attribution"><foreign xml:lang="grc">ἐρμηνεία
+                           Θεοδωριτ(ου)</foreign>
+                     </note></seg>
+               </ab>
+            </div>
+            <pb n="54r"/>
+            <div type="commentary" subtype="commentary" xml:id="bodl-auct-d-4-1-14-4">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 14,5a (ἐπὶ τόκῳ)</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-14-6"
+                     rendition="#main-text" source="Anonymous" corresp="#bodl-auct-d-4-1-ps-14-5a"
+                        ><quote type="patristic" subtype="quotation"
+                        xml:id="bodl-auct-d-4-1-quot-14-9"
+                        source="Hesychius, schol. nr. 11 in Ps 14,5a (Antonelli; PG 27,693); non habet Oxon. S.Trin. 78"
+                        corresp="#person-10"/>
+                     <note type="attribution"><foreign xml:lang="grc">ἐρηνεία·</foreign>
+                     </note></seg>
+                  <note type="lemma">Ps 14,5b (ἐπ᾽ ἀθῴοις)</note>
+                  <seg type="glosse" xml:id="bodl-auct-d-4-1-glosse-14-4" rendition="#main-text"
+                     source="Anonymous" corresp="#bodl-auct-d-4-1-ps-14-5b"><quote type="patristic"
+                        subtype="unknown" xml:id="bodl-auct-d-4-1-quot-14-10"
+                        source="fons ignotus in Ps 14,5b; cf. Hesychius, lex. s.v. ἀθῷος (A nr. 1648 Latte)"
+                        corresp="#person-18">ἐπ᾿ ἀναιτίοις·</quote><ref
+                        target="#vat-gr-754:vat-gr-754-glosse-14-1" type="identical">Vat. gr.
+                        754</ref>
+                     <note type="attribution"><foreign xml:lang="grc">ἐρηνεια λεξεως</foreign>
+                     </note></seg>
+                  <note type="lemma">Ps 14,5c (ποιῶν) (sic)</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-14-7"
+                     rendition="#main-text" source="Hesychius" corresp="#bodl-auct-d-4-1-ps-14-5c"
+                        ><quote type="patristic" subtype="quotation"
+                        xml:id="bodl-auct-d-4-1-quot-14-11"
+                        source="Cyrillus (?), fr. in Ps 15,1b (PG 69,805 D6–8); non habet Oxon. S.Trin. 78"
+                        corresp="#person-4"/><note type="attribution"><foreign xml:lang="grc"
+                           >ἐρηνεία Ἡσυχίου</foreign>
+                     </note></seg>
                </ab>
             </div>
          </div>
       </body>
+      <!--  <div type="commentary" subtype="commentary" xml:id="bodl-auct-d-4-1-XX-XX">
+         <ab xml:lang="grc">
+            <note type="lemma">Ps XX,XX</note>
+            <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-XX-XX" rendition="#XXXX"
+               source="XXXX" corresp="#bodl-auct-d-4-1-ps-XX-XX"><quote type="patristic"
+               subtype="ΧΧΧΧ" xml:id="bodl-auct-d-4-1-quot-XX-XX" source="XXXX"
+               corresp="#person-XX"/><ref target="#vat-gr-754:XXXX" type="XXXX">Vat. gr. 754</ref>
+               <note type="attribution"><foreign xml:lang="grc">XXXX</foreign>
+               </note></seg>
+         </ab>
+         </div> -->
    </text>
+   <!-- Αλλ(η) ἐρμην(εία) -->
+   <!-- ἐρμηνεία Ἡσυχίου -->
+   <!-- ἐρμηνεια λεξεως -->
+   <!-- ⁘ -->
 </TEI>
+<!-- faciendum: Ps 1–12: Fragmente, die in B1 fehlen, zu notieren -->
+<!-- faciendum: Ps 1–13: lemmas zu berichtigen -->
