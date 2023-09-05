@@ -1,8 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- ToDo: Ps 1–10: Personen in @corresp zu berichtigen -->
-<!-- faciendum: List of contents: Ps 6 und Ps 7 zu ergänzen -->
-<!-- faciendum: Quellenkritik: Ps 1–12: Angabe der Psalmverse zu berichtigen: z.B Ps 7,8b;8c in Ps 7,8b et Ps 7,8c -->
-<!-- faciendum: Quellenkritik: Cyrillus, comm. in Ioh.: neue Edition von B. Meunier (Les éditions du Cerf) -->
 <?xml-model href="../../schema/tei-psalmcatenae.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
@@ -103,6 +99,7 @@
                   <p>Written in the eleventh century.</p>
                </history>
             </msDesc>
+            <!-- Katene: Plut. 5. 30: ab Ps 13 comm. brevis aufgegeben -->
             <listPerson>
                <head>Authors</head>
                <person xml:id="person-1" role="author">
@@ -5347,7 +5344,7 @@
                      <seg type="commentaryfragment" xml:id="plut-5-30-fr-13-1" source="Anonymous"
                         corresp="#plut-5-30-ps-13-1a"><quote type="patristic" subtype="quotation"
                            xml:id="plut-5-30-quot-13-1"
-                           source="Hesychius, hyp. in Ps 13 (Antonelli; Pg 27,689–690)"
+                           source="Hesychius, hyp. in Ps 13 (Antonelli; PG 27,689–690)"
                            corresp="#person-10"/></seg>
                      <note type="lemma">Ps 13,1b</note>
                      <seg type="commentaryfragment" xml:id="plut-5-30-fr-13-2" source="Anonymous"
@@ -5419,7 +5416,7 @@
                      <seg type="commentaryfragment" xml:id="plut-5-30-fr-13-12" source="Anonymous"
                         corresp="#plut-5-30-ps-13-4b"><quote type="patristic" subtype="quotation"
                            xml:id="plut-5-30-quot-13-12" source="Athanasius, exp. in Ps 13,4b"
-                           corresp="#person-2">Κατήσθιον γὰρ τὸν λαὸν αὐτ<add place="overstrike"
+                           corresp="#person-2">κατήσθιον γὰρ τὸν λαὸν αὐτ<add place="overstrike"
                               hand="corr">οῦ</add>, ἀναπείθοντες προσκυνεῖν τῆ κτίσει παρα τὸν
                            κτίσαντα· καὶ ο<subst hand="C">
                               <del rend="overwrite">ύ</del>
@@ -5480,8 +5477,211 @@
                            corresp="#person-10"/></seg>
                   </ab>
                </div>
+               <!-- Ps 14 bibletext -->
+               <div type="bibletext" subtype="commented" xml:id="plut-5-30-14-1">
+                  <ab xml:lang="grc">
+                     <quote type="bibletext" xml:id="plut-5-30-ps-14-1" n="Ps (LXX) 14,1"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-1">
+                        <anchor type="psalmtext" xml:id="plut-5-30-ps-14-1a" n="Ps (LXX) 14,1a"
+                           corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-1"/> Ψαλμὸς τῷ Δαυιδ. <anchor
+                           type="psalmtext" xml:id="plut-5-30-ps-14-1b" n="Ps (LXX) 14,1b"
+                           corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-1"/> Κύριε, τίς παροικήσει ἐν
+                        τῷ σκηνώματί σου <anchor type="psalmtext" xml:id="plut-5-30-ps-14-1c"
+                           n="Ps (LXX) 14,1c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-1"/> καὶ
+                        τίς κατασκηνώσει ἐν τῷ ὄρει τῷ ἁγίῳ σου; </quote>
+                     <quote type="bibletext" xml:id="plut-5-30-ps-14-2" n="Ps (LXX) 14,2"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-2">
+                        <anchor type="psalmtext" xml:id="plut-5-30-ps-14-2a" n="Ps (LXX) 14,2a"
+                           corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-1"/> πορευόμενος ἄμωμος καὶ
+                        ἐργαζόμενος δικαιοσύνην, <anchor type="psalmtext"
+                           xml:id="plut-5-30-ps-14-2b" n="Ps (LXX) 14,2b"
+                           corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-2"/> λαλῶν ἀλήθειαν ἐν καρδίᾳ
+                        αὐτοῦ, </quote>
+                     <quote type="bibletext" xml:id="plut-5-30-ps-14-3" n="Ps (LXX) 14,3"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-3">
+                        <anchor type="psalmtext" xml:id="plut-5-30-ps-14-3a" n="Ps (LXX) 14,3a"
+                           corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-3"/> ὃς οὐκ ἐδόλωσεν ἐν
+                        γλώσσῃ αὐτοῦ <anchor type="psalmtext" xml:id="plut-5-30-ps-14-3b"
+                           n="Ps (LXX) 14,3b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-3"/> οὐδὲ
+                        ἐποίησεν τῷ πλησίον αὐτοῦ κακὸν <anchor type="psalmtext"
+                           xml:id="plut-5-30-ps-14-3c" n="Ps (LXX) 14,3c"
+                           corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-3"/> καὶ ὀνειδισμὸν οὐκ
+                        ἔλαβεν ἐπὶ τοὺς ἔγγιστα αὐτοῦ· </quote>
+                     <quote type="bibletext" xml:id="plut-5-30-ps-14-4" n="Ps (LXX) 14,4"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-4">
+                        <anchor type="psalmtext" xml:id="plut-5-30-ps-14-4a" n="Ps (LXX) 14,4a"
+                           corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-4"/> ἐξουδένωται ἐνώπιον
+                        αὐτοῦ πονηρευόμενος, <anchor type="psalmtext" xml:id="plut-5-30-ps-14-4b"
+                           n="Ps (LXX) 14,4b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-4"/> τοὺς
+                        δὲ φοβουμένους κύριον δοξάζει· <anchor type="psalmtext"
+                           xml:id="plut-5-30-ps-14-4c" n="Ps (LXX) 14,4c"
+                           corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-4"/> ὁ ὀμνύων τῷ πλησίον
+                        αὐτοῦ καὶ οὐκ ἀθετῶν· </quote>
+                     <quote type="bibletext" xml:id="plut-5-30-ps-14-5" n="Ps (LXX) 14,5"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-5">
+                        <anchor type="psalmtext" xml:id="plut-5-30-ps-14-5a" n="Ps (LXX) 14,5a"
+                           corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-5"/> τὸ ἀργύριον αὐτοῦ οὐκ
+                        ἔδωκεν ἐπὶ τόκῳ <anchor type="psalmtext" xml:id="plut-5-30-ps-14-5b"
+                           n="Ps (LXX) 14,5b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-4"/> καὶ
+                        δῶρα ἐπ᾽ ἀθῴοις οὐκ ἔλαβεν. <anchor type="psalmtext"
+                           xml:id="plut-5-30-ps-14-5c" n="Ps (LXX) 14,5c"
+                           corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-5"/> ὁ ποιῶν ταῦτα οὐ
+                        σαλευθήσεται εἰς τὸν αἰῶνα. </quote>
+                  </ab>
+               </div>
+               <!-- Ps 14 commentary -->
+               <div type="commentary" subtype="commentary" xml:id="plut-5-30-14-2">
+                  <ab xml:lang="grc">
+                     <note type="lemma">Ps 14,1a</note>
+                     <seg type="hypothesis" xml:id="plut-5-30-fr-14-1" source="Anonymous"
+                        corresp="#plut-5-30-ps-14-1a"><quote type="patristic"
+                           subtype="quotation-expanded" xml:id="plut-5-30-quote-14-1"
+                           source="Hesychius, hyp. in Ps 14,1a (Antonelli; PG 27,691–692 D)"
+                           corresp="#person-10"/></seg>
+                     <note type="lemma">Ps 14,1b</note>
+                     <seg type="commentaryfragment" xml:id="plut-5-30-fr-14-2" source="Anonymous"
+                        corresp="#plut-5-30-ps-14-1b"><quote type="patristic" subtype="quotation"
+                           xml:id="plut-5-30-quot-14-2"
+                           source="Hesychius, schol. nr. 1 in Ps 14,1b (Antonelli; PG 27,692)"
+                           corresp="#person-10"/></seg>
+                     <note type="lemma">Ps 14,1b (sic)</note>
+                     <seg type="commentaryfragment" xml:id="plut-5-30-fr-14-3" source="Anonymous"
+                        corresp="#plut-5-30-ps-14-1b"><quote type="patristic" subtype="quotation"
+                           xml:id="plut-5-30-quot-14-3"
+                           source="Hesychius, schol. nr. 2 in Ps 14,1c (Antonelli; PG 27,693)"
+                           corresp="#person-10"/></seg>
+                     <note type="lemma">Ps 14,1c</note>
+                     <seg type="commentaryfragment" xml:id="plut-5-30-fr-14-4" source="Anonymous"
+                        corresp="#plut-5-30-ps-14-1c" copyOf="#edition:edition-14-1-3"><quote
+                           type="patristic" subtype="quotation" xml:id="plut-5-30-quot-14-4"
+                           source="Athanasius, exp. in Ps 14,1c" corresp="#person-2">ἐπειδἂν ἀξιωθῆ
+                           τῆς μακαρίας ἐκείνης, εἰς ἀπεράντους αἰώνας ἔξ<subst hand="corr">
+                              <del rend="overwrite">η</del>
+                              <add place="inline">ει</add>
+                           </subst> τὴν μακαρι<subst hand="corr">
+                              <del rend="overwrite">ώ</del>
+                              <add place="inline">ό</add>
+                           </subst>τητα<supplied reason="om." resp="SPanteghini">:
+                           –</supplied></quote><ref target="#vat-gr-754:vat-gr-754-fr-14-7"
+                           type="with-variants">Vat. gr. 754</ref></seg>
+                     <pb n="44v–45r"/>
+                     <note type="lemma">Ps 14,2a</note>
+                     <seg type="commentaryfragment" xml:id="plut-5-30-fr-14-5" source="Athanasius"
+                        corresp="#plut-5-30-ps-14-2a" copyOf="#edition:edition-14-5-1"><quote
+                           type="patristic" subtype="quotation" xml:id="plut-5-30-quot-14-5"
+                           source="Athanasius, exp. in Ps 14,2–5" corresp="#person-2">διδάσκει
+                           ἀμέμπτως <del rend="erasure"><gap reason="illegible" quantity="2"
+                                 unit="character"/></del> διὧν τευξόμεθα τοῦ μακαρίου ἐκείνου
+                           περάτης· καὶ προτούτων || μενεῖ τὴν ἄμωμον ὁδεύσωμεν ὁδὸν· ἥτις ἐστὶν ὁ
+                           Χριστός· ἔπ<add place="overstrike">ει</add>τα ἐργασόμεθα δικαιοσύνην·
+                           τρίτον ἀλήθειαν· οἶκον τὴν καρδίαν ποιήσωμεν: –</quote><ref
+                           target="#vat-gr-754:vat-gr-754-fr-14-9" type="abbreviated-with-variants"
+                           >Vat. gr. 754</ref><note type="attribution"><foreign xml:lang="grc"
+                              >Ἀθανασίου</foreign></note></seg>
+                  </ab>
+               </div>
+               <pb n="45r"/>
+               <div type="commentary" subtype="commentary" xml:id="plut-5-30-14-3">
+                  <ab xml:lang="grc">
+                     <note type="lemma">Ps 14,2b</note>
+                     <seg type="commentaryfragment" xml:id="plut-5-30-fr-14-6" source="Anonymous"
+                        corresp="#plut-5-30-ps-14-2b"><quote type="patristic" subtype="unknown"
+                           xml:id="plut-5-30-quot-14-6"
+                           source="Hesychius, schol. nr. 4 in Ps 14,2b (Antonelli; PG 27,693)"
+                           corresp="#person-10"/></seg>
+                     <note type="lemma">Ps 14,3a</note>
+                     <seg type="commentaryfragment" xml:id="plut-5-30-fr-14-7" source="Anonymous"
+                        corresp="#plut-5-30-ps-14-3a"><quote type="patristic" subtype="ineditum"
+                           xml:id="plut-5-30-quot-14-7"
+                           source="Hesychius, schol. (?) in Ps 14,3a (ineditum?)"
+                           corresp="#person-10">ὃς οὐκελάλησεν ἐν δολιότητι: –</quote></seg>
+                     <note type="lemma">Ps 14,3b (sic)</note>
+                     <seg type="commentaryfragment" xml:id="plut-5-30-fr-14-8" source="Anonymous"
+                        corresp="#plut-5-30-ps-14-3b"><quote type="patristic" subtype="quotation"
+                           xml:id="plut-5-30-quot-14-8"
+                           source="Hesychius, schol. nr. 5 in Ps 14,3a (Antonelli; PG 27,693)"
+                           corresp="#person-10"/></seg>
+                     <note type="lemma">Ps 14,3c (sic)</note>
+                     <seg type="commentaryfragment" xml:id="plut-5-30-fr-14-9" source="Anonymous"
+                        corresp="#plut-5-30-ps-14-3c"><quote type="patristic" subtype="quotation"
+                           xml:id="plut-5-30-quot-14-9"
+                           source="Hesychius, schol. nr. 6 et 7 in Ps 14,3b et in Ps 14,3c (Antonelli; PG 27,693)"
+                           corresp="#person-10"/></seg>
+                     <note type="lemma">Ps 14,4a</note>
+                     <seg type="commentaryfragment" xml:id="plut-5-30-fr-14-10" source="Anonymous"
+                        corresp="#plut-5-30-ps-14-4a"><quote type="patristic" subtype="quotation"
+                           xml:id="plut-5-30-quot-14-10"
+                           source="Hesychius, schol. nr. 8 in Ps 14,4a (Antonelli; PG 27,693)"
+                           corresp="#person-2"/></seg>
+                     <note type="lemma">Ps 14,4a</note>
+                     <seg type="commentaryfragment" xml:id="plut-5-30-fr-14-11" source="Athanasius"
+                        corresp="#plut-5-30-ps-14-4a" copyOf="#edition:edition-14-5-1"><quote
+                           type="patristic" subtype="quotation" xml:id="plut-5-30-quot-14-11"
+                           source="Athanasius, exp. in Ps 14,2–5" corresp="#person-2">μη τα πρόσωπα
+                           ἐφεξῆς θαυμάζειν· ἀλλὰ κἂν πλούσιος ἢ πονηρὸς ἐξουθενεῖν· κἂν πένης
+                           ἀγαθὸς δοξάζειν<supplied reason="om." resp="SPanteghini">:
+                           –</supplied></quote><ref target="#vat-gr-754:vat-gr-754-fr-14-9"
+                           type="abbreviated-with-variants">Vat. gr. 754</ref><note
+                           type="attribution"><foreign xml:lang="grc"
+                        >Ἀθανάσιος</foreign></note></seg>
+                     <note type="lemma">Ps 14,4b</note>
+                     <seg type="commentaryfragment" xml:id="plut-5-30-fr-14-12" source="Anonymous"
+                        corresp="#plut-5-30-ps-14-4b"><quote type="patristic" subtype="quotation"
+                           xml:id="plut-5-30-quot-14-12"
+                           source="Hesychius, schol. nr. 9 in Ps 14,4b (Antonelli; PG 27,693)"
+                           corresp="#person-10"/></seg>
+                     <note type="lemma">Ps 14,4c</note>
+                     <seg type="commentaryfragment" xml:id="plut-5-30-fr-14-13" source="Anonymous"
+                        corresp="#plut-5-30-ps-14-4c"><quote type="patristic" subtype="quotation"
+                           xml:id="plut-5-30-quot-14-13"
+                           source="Hesychius, schol. nr. 10 in Ps 14,4c (Antonelli; PG 27,693)"
+                           corresp="#person-10"/></seg>
+                     <note type="lemma">Ps 14,5a (sic)</note>
+                     <seg type="commentaryfragment" xml:id="plut-5-30-fr-14-14" source="Anonymous"
+                        corresp="#plut-5-30-ps-14-5a"><quote type="patristic" subtype="ineditum"
+                           xml:id="plut-5-30-quot-14-14"
+                           source="Hesychius, schol. nr. 12 in Ps 14,5b (Antonelli; PG 27,693 C13–14)"
+                           corresp="#person-10">τὸν δανείζοντα χαρίσματος ἕνεκεν: –</quote></seg>
+                     <note type="lemma">Ps 14,5a</note>
+                     <seg type="commentaryfragment" xml:id="plut-5-30-fr-14-15" source="Athanasius"
+                        corresp="#plut-5-30-ps-14-5a" copyOf="#edition:edition-14-5-1"><quote
+                           type="patristic" subtype="quotation" xml:id="plut-5-30-quot-14-15"
+                           source="Athanasius, exp. in Ps 14,2–5" corresp="#person-2">το μη
+                           εκτοκίζειν ὃ καὶ τέλος πιστοῦ ἀγαθός ἐστιν ἀδωροδόκητος εἶναι τοῦ
+                           ἐκμαθεῖν τὴν κατορθωσιν ἀσαλεύτως ἔξει τῆ ἀγαθότητι τὴν δόσιν:
+                           –</quote><ref target="#vat-gr-754:vat-gr-754-fr-14-9"
+                           type="abbreviated-with-variants">Vat. gr. 754</ref><note
+                           type="attribution"><foreign xml:lang="grc">Ἀθανάσιος:
+                        –</foreign></note></seg>
+                     <note type="lemma">Ps 14,5b</note>
+                     <seg type="commentaryfragment" xml:id="plut-5-30-fr-14-16" source="Anonymous"
+                        corresp="#plut-5-30-ps-14-5b"><quote type="patristic"
+                           subtype="quotation-adapted" xml:id="plut-5-30-quot-14-16"
+                           source="Hesychius, schol. nr. 12 in Ps 14,5b (Antonelli; PG 27,693 C14–15)"
+                           corresp="#person-10">ὑπεναντίοις· ἢ τόκον παρατοῦ δανειζομένου<supplied
+                              reason="om." resp="SPanteghini">: –</supplied></quote></seg>
+                  </ab>
+               </div>
+               <!--  <div type="commentary" subtype="commentary" xml:id="plut-5-30-XX-XX">
+         <ab xml:lang="grc">
+            <note type="lemma">Ps XX,XX</note>
+            <seg type="commentaryfragment" xml:id="plut-5-30-fr-XX-XX" source="XXXX"
+            corresp="#plut-5-30-ps-XX-XX" copyOf="#edition:XXXX"><quote type="patristic" subtype="XXXX"
+            xml:id="plut-5-30-quot-XX-XX"
+            source="XXXX"
+            corresp="#person-XX"/><note type="attribution"><foreign
+            xml:lang="grc">XXXX</foreign></note></seg>
+         </ab>
+      </div> -->
+               <!-- <ref target="#vat-gr-754:XXXX" type="XXXX">Vat. gr. 754</ref> -->
+               <!-- Hesychius, hyp. in Ps XX,XX (Antonelli; PG 27,XXX–XXX XX) -->
+               <!-- Hesychius, schol. nr. XX in Ps XX,XX (Antonelli; PG 27,XXX) -->
             </div>
          </div>
       </body>
    </text>
 </TEI>
+<!-- ToDo: Ps 1–10: Personen in @corresp zu berichtigen -->
+<!-- faciendum: List of contents: Ps 6 und Ps 7 zu ergänzen -->
+<!-- faciendum: Quellenkritik: Ps 1–12: Angabe der Psalmverse zu berichtigen: z.B Ps 7,8b;8c in Ps 7,8b et Ps 7,8c -->
+<!-- faciendum: Quellenkritik: Cyrillus, comm. in Ioh.: neue Edition von B. Meunier (Les éditions du Cerf) -->
