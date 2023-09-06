@@ -17618,14 +17618,16 @@
                            ψυχῇ</foreign></rdg>
                         <wit>Par. gr. 164</wit>
                         <wit>Plut. 5. 30</wit>
-                        <rdg wit="#B2*"><foreign xml:lang="grc">ὀδυνᾶσαι μου τῇ ψυχῇ</foreign></rdg>
+                        <rdg wit="#B2*"><foreign xml:lang="grc">ὁδυνᾶσθαί μου τῇ
+                           ψυχῇ</foreign></rdg>
                         <wit>S. Trin. 78</wit>
-                        <rdg wit="#B2c"><foreign xml:lang="grc">ὀδυνᾶσαι μου τὴν ψυχὴν</foreign> (ut
-                           vid.)</rdg>
+                        <!-- Textkritik: ὁδυνᾶσθαι μου B2 -->
+                        <rdg wit="#B2c #A1"><foreign xml:lang="grc">ὁδυνᾶσθαί μου τὴν
+                              ψυχὴν</foreign> (ut vid.)</rdg>
                         <wit>S. Trin. 78</wit>
-                        <rdg wit="#A1"><foreign xml:lang="grc">ὁδύνᾶσθαί μου τὴν
-                           ψυχὴν</foreign></rdg>
                         <wit>Ambr. M 47 sup.</wit>
+                        <rdg wit="#A1"><foreign xml:lang="grc">ὁδυνᾶσθαί μου τὴν
+                           ψυχὴν</foreign></rdg>
                         <rdg wit="#V5 #P7 #L2 #A3"><foreign xml:lang="grc">τῇ ψυχῇ μου·
                               ὀδύνας</foreign></rdg>
                         <wit>Vat. gr. 1422</wit>
@@ -19238,9 +19240,9 @@
          <!-- Ps 14 commentary -->
          <!-- Typus XIX: V1(f. 58v: erledigt) C(f. 11v: erledigt) G(f. 25v–26r bei der Aufnahme übersprungen) P1(f. 29r: erledigt) -->
          <!-- Typus IV: M(f. 27r: erledigt) O(XXX) -->
-         <!-- codices varii: B1(XXX) B2(XXX) N1(XXX) P2(lost) P3(XXX) P4(lost) A1(f. 31v: erledigt) P5(f. 53r: erledigt) L1(XXX) -->
+         <!-- codices varii: B1(f. 53r: erledigt) B2(erledigt) N1(XXX) P2(lost) P3(erledigt) P4(lost) A1(f. 31v: erledigt) P5(f. 53r: erledigt) L1(XXX) -->
          <!-- Typus III: P6(XXX) Z(XXX) N2(XXX) -->
-         <!-- Typus XIV: A2(XXX) V4(XXX) -->
+         <!-- Typus XIV: A2(f. 38v: erledigt) V4(f. 18r: gelesen) -->
          <!-- Typus XV: V5(XXX) P7(XXX) P8(XXX) -->
          <!-- Typus XVI: L2(XXX) A3(XXX) -->
          <div type="psalm" n="14">
@@ -19271,7 +19273,7 @@
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #P1 #M #P5 #A1 #B1">txt</rdg>
+                        <rdg wit="#V1 #C #P1 #M #P5 #A1 #V4 #B1">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Coislin 10</wit>
                         <wit>Par. gr. 166</wit>
@@ -19279,6 +19281,7 @@
                         <wit>Coislin 12</wit>
                         <wit>Ambr. M 47 sup.</wit>
                         <wit>Bodl. Auct. D.4.1</wit>
+                        <wit>Vat. gr. 754</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">Τοῦτον ἄδει τὸν ψαλμὸν διδάσκων</foreign></lem>
@@ -19292,6 +19295,9 @@
                         <rdg wit="#A1"><foreign xml:lang="grc">Τοῦτον τὸν ψαλμὸν ἄδει
                               διδάσκων</foreign></rdg>
                         <wit>Ambr. M. 47 sup.</wit>
+                        <rdg wit="#V4"><foreign xml:lang="grc">Διὰ τοῦδε τοῦ ψαλμοῦ
+                              [δ]ιδάσκει</foreign></rdg>
+                        <wit>Vat. gr. 1747</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">τί ἄνθρωπον παρασκευάσει</foreign></lem>
@@ -19303,6 +19309,11 @@
                         <lem><foreign xml:lang="grc">τυχεῖν λήξεως</foreign></lem>
                         <rdg wit="#B1"><foreign xml:lang="grc">λήξεως τυχεῖν</foreign></rdg>
                         <wit>Bodl. Auct. D.4.1</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">διò καὶ ἀρχόμενος φησίν</foreign></lem>
+                        <rdg wit="#V4">om.</rdg>
+                        <wit>Vat. gr. 1747</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">διò καὶ</foreign></lem>
@@ -19552,6 +19563,7 @@
                               <ref target="#coislin-10:coislin-10-fr-14-6"/>
                               <ref target="#par-gr-166:par-gr-166-fr-14-4"/>
                               <ref target="#coislin-12:coislin-12-fr-14-4"/>
+                              <ref target="#ambr-b-106-sup:ambr-b-106-sup-fr-14-1"/>
                               <ref target="#plut-5-30:plut-5-30-fr-14-5"/>
                               <ref target="#plut-5-30:plut-5-30-fr-14-11"/>
                               <ref target="#plut-5-30:plut-5-30-fr-14-15"/>
@@ -19561,12 +19573,20 @@
                   </div>
                   <div type="textcritic" rend="hide">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #P1 #P5 #L1">txt</rdg>
+                        <rdg wit="#V1 #C #P1 #P5 #A2 #V4 #L1">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Coislin 10</wit>
                         <wit>Par. gr. 166</wit>
                         <wit>Coislin 12</wit>
+                        <wit>Ambr. B 106 sup.</wit>
+                        <wit>Vat. gr. 1747</wit>
                         <wit>Plut. 5.30</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">Διδάσκει – ἀδωροδόκητον εἶναι</foreign></lem>
+                        <rdg wit="#A2 #V4">om.</rdg>
+                        <wit>Ambr. B 106 sup.</wit>
+                        <wit>Vat. gr. 1747</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">Διδάσκει</foreign></lem>
@@ -19671,6 +19691,13 @@
                         <rdg wit="#P1 #P5"><foreign xml:lang="grc">ἕννατον</foreign></rdg>
                         <wit>Par. gr. 166</wit>
                         <wit>Coislin 12</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">τούτων</foreign></lem>
+                        <rdg wit="#A2 #V4">post<foreign xml:lang="grc"> τούτων</foreign>
+                              add.<foreign xml:lang="grc"> τῶν προειρημένων</foreign></rdg>
+                        <wit>Ambr. B 106 sup.</wit>
+                        <wit>Vat. gr. 1747</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">ὁ ἐκμαθὼν</foreign></lem>

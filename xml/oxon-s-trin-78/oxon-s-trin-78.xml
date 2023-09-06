@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../schema/tei-psalmcatenae.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<!-- faciendum: Ps 1–10: List of contents -->
-<!-- faciendum: Katene: Ps 11–12: Referenzen zu B2 herzustellen -->
-<!-- erledigt: Ps 11-13: Lemmata und nicht die Psalmzeilen werden angegeben -->
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -3164,16 +3161,19 @@
                   <note type="lemma">linking absent</note>
                   <seg type="hexaplaric" xml:id="oxon-s-trin-78-hexaplaric-11-1"
                      source=" 〈Aquila〉 (Ps 11,2a)" corresp="#oxon-s-trin-78-ps-11-2a">ἁγνός <ref
-                        target="#vat-gr-754:vat-gr-754-hexaplaric-11-3" type="identical">Vat. gr.
-                        754</ref><note type="textual-commentary">The hexaplaric variant is written
-                        in red capital letters.</note>
+                        target="#bodl-auct-d-4-1:bodl-auct-d-4-1-glosse-11-1">Bodl. Auct. D. 4.
+                        1</ref><ref target="#vat-gr-754:vat-gr-754-hexaplaric-11-3" type="identical"
+                        >Vat. gr. 754</ref><note type="textual-commentary">This hexaplaric variant
+                        is written in red capital letters.</note>
                   </seg>
                   <note type="lemma">linking absent</note>
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-11-1" source="Anonymous"
                      corresp="#oxon-s-trin-78-ps-11-3a" copyOf="#edition:edition-11-3-1">
                      <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-11-1"
                         source="Athanasius, exp. in Ps 11,3a" corresp="#person-2">τὰς κατὰ τοῦ
-                        σωτῆρος ἡμῶν συνάγων ἐπιβουλάς: –</quote>
+                        σωτῆρος ἡμῶν συνάγων ἐπιβουλάς: –</quote><ref
+                        target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-11-4"
+                        type="abbreviated-with-variant">Bodl. Auct. D. 4. 1</ref>
                      <ref target="#vat-gr-754:vat-gr-754-fr-11-6" type="with-variant">Vat. gr.
                         754</ref>
                   </seg>
@@ -3182,7 +3182,9 @@
                      corresp="#oxon-s-trin-78-ps-11-2a"><num type="ordinal" xml:lang="grc" value="3"
                         >Γ´</num>
                      <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-11-2"
-                        source="Theodoretus, comm. in Ps 11,1 (PG 80,941 B3–6)" corresp="#person-16"/>
+                        source="Theodoretus, comm. in Ps 11,1 (PG 80,941 B3–6)" corresp="#person-16"
+                        /><ref target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-11-1"
+                        type="with-variants">Bodl. Auct. D. 4. 1</ref>
                      <ref target="#vat-gr-754:vat-gr-754-fr-11-2" type="abbreviated-with-variants"
                         >Vat. gr. 754</ref>
                   </seg>
@@ -3198,7 +3200,9 @@
                      <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-11-3"
                         source="Athanasius, exp. in Ps 11,4–5a" corresp="#person-2">πῶς γὰρ οὐ
                         μεγαλορημονεῖ γλῶσσα ἐκείνη· ἡ τολμῶσα τῶ κυρίω λέγειν· ἐν ποία ἐξουσία
-                        ταῦτα ποιεῖς, καὶ τίς σοι ἔδωκε τὴν ἐξουσίαν: – [Mc 11,28]</quote>
+                        ταῦτα ποιεῖς, καὶ τίς σοι ἔδωκε τὴν ἐξουσίαν: – [Mc 11,28]</quote><ref
+                        target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-11-5"
+                        type="expanded-with-variant">Bodl. Auct. D. 4. 1</ref>
                      <ref target="#vat-gr-754:vat-gr-754-fr-11-10" type="with-variants">Vat. gr.
                         754</ref>
                   </seg>
@@ -3255,7 +3259,9 @@
                      <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-11-8"
                         source="Athanasius, exp. in Ps 11,9b" corresp="#person-2">Ὕψος τὴν δύναμιν
                         λέγει· πολυωρίαν δὲ τὴν πολυχρονιότητα· ἵν᾿ ἦι τὸ λεγόμενον τοιοῦτον· διὰ
-                        τῆς ἰσχύος πολυχρονιότητα καὶ αἰώνιον ζωὴν ἡμῖν δέδωκας:</quote>
+                        τῆς ἰσχύος πολυχρονιότητα καὶ αἰώνιον ζωὴν ἡμῖν δέδωκας:</quote><ref
+                        target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-11-6" type="with-variants">Bodl.
+                        Auct. D. 4. 1</ref>
                      <ref target="#vat-gr-754:vat-gr-754-fr-11-21" type="abbreviated-with-variants"
                         >Vat. gr. 754</ref>
                   </seg>
@@ -3264,7 +3270,9 @@
                      corresp="#oxon-s-trin-78-ps-11-9a">
                      <quote type="patristic" subtype="unknown" xml:id="oxon-s-trin-78-quot-11-9"
                         source="fons ignotus in Ps 11,9a" corresp="#person-18">οἱ τὸν θεὸν
-                        ἀγνοοῦντες:</quote>
+                        ἀγνοοῦντες:</quote><ref
+                        target="#bodl-auct-d-4-1:bodl-auct-d-4-1-glosse-11-4" type="identical">Bodl.
+                        Auct. D. 4. 1</ref>
                      <ref target="#vat-gr-754:vat-gr-754-glosse-11-1" type="identical">Vat. gr.
                         754</ref><note type="textual-commentary">This glosse is linked not by a
                         letter, but by a sign.</note>
@@ -3274,7 +3282,9 @@
                      corresp="#oxon-s-trin-78-ps-11-9b">
                      <quote type="patristic" subtype="unknown" xml:id="oxon-s-trin-78-quot-11-10"
                         source="fons ignotus in Ps 11,9b" corresp="#person-18">ηὔξησας περιέσσευσας
-                        ἐφρόντισας: –</quote>
+                        ἐφρόντισας: –</quote><ref
+                        target="#bodl-auct-d-4-1:bodl-auct-d-4-1-glosse-11-5" type="identical">Bodl.
+                        Auct. D. 4. 1</ref>
                      <ref target="#coislin-10:coislin-10-glosse-11-2" type="identical">Paris.
                         Coislin 10</ref><note type="textual-commentary">This glosse is linked not by
                         a letter, but by a sign.</note>
@@ -3341,19 +3351,22 @@
                      corresp="#oxon-s-trin-78-ps-12-1a"><num type="ordinal" xml:lang="grc" value="5"
                         >E´</num>
                      <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-12-1"
-                        source="Theodoretus, comm. in Ps 12,1 (PG 80,945 A2–5)" corresp="#person-16"/>
+                        source="Theodoretus, comm. in Ps 12,1 (PG 80,945 A2–5)" corresp="#person-16"
+                        /><ref target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-12-1" type="with-variant"
+                        >Bodl. Auct. D. 4. 1</ref><ref target="#par-gr-164:par-gr-164-fr-12-1"
+                        type="with-variant">Paris. gr. 164</ref>
                      <ref target="#vat-gr-754:vat-gr-754-fr-12-5" type="abbreviated-with-variants"
-                        >Vat. gr. 754</ref><ref target="#par-gr-164:par-gr-164-fr-12-1"
-                        type="with-variant">Paris. gr. 164</ref><ref
-                        target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-12-1" type="with-variant">Oxon.
-                        Bodl. Auct. D. 4. 1</ref>
+                        >Vat. gr. 754</ref>
                   </seg>
                   <note type="lemma">Ps 12,2 (ἐπιλήσῃ)</note>
                   <seg type="glosse" xml:id="oxon-s-trin-78-glosse-12-1" source="Anonymous (?)"
                      corresp="#plut-5-30-ps-12-2a">
                      <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-12-2"
                         source="fr. deperditum vel omissum in Ps 12,2a; erat glossa in marg. (?)"
-                        corresp="#person-46"/>
+                        corresp="#person-46"><ref
+                           target="#bodl-auct-d-4-1:bodl-auct-d-4-1-glosse-12-1">Bodl. Auct. D. 4.
+                           1</ref></quote><note type="textual-commentary">Above the Psalm line there
+                        is a sign.</note>
                   </seg>
                </ab>
             </div>
@@ -3367,13 +3380,15 @@
                      <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-12-3"
                         source="Athanasius, exp. in Ps 12,2b–3b" corresp="#person-2">ἀνιῶμαι γάρ
                         φη(σι) βουλευόμενος κατὰ ψυχὴν· μήπως ἄρα ἐν τῆ ἁμαρτία ἀποθανοῦμαι· καὶ
-                        τοῦτό ἐστι μάλιστα ὃ ὀδυνᾶ<unclear reason="faded">σ</unclear>αι μου τ<subst>
+                        τοῦτό ἐστι μάλιστα ὃ ὀδυνᾶ<unclear reason="faded">σ</unclear>θαι μου τ<subst>
                            <del rend="overwrite">ῆ</del>
                            <add place="above">ὴν</add>
                         </subst> ψυχ<subst>
                            <del rend="overwrite">ῆ</del>
                            <add place="inline">ὴν</add>
-                        </subst> παρασκευάζει: –</quote>
+                        </subst> παρασκευάζει: –</quote><ref
+                        target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-12-5" type="with-variant">Bodl.
+                        Auct. D. 4. 1</ref>
                      <ref target="#vat-gr-754:vat-gr-754-fr-12-7" type="with-variants">Vat. gr.
                         754</ref>
                   </seg>
@@ -3412,7 +3427,7 @@
                         source="Hesychius, comm. magnus (?) in Ps 12,6c–d (ineditum?); cf. Cyrillus, fr. in Ps 12,6c (PG 69,801 A2–3) - sub auctore Hesychio Paris. gr. 139 (f. 35r)"
                         corresp="#person-12">τῶ πλάσαντι δηλα_δὴ καὶ ἀναπλάσαντι:</quote>
                      <ref target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-12-8" type="with-variant"
-                        >Oxon. Βodl. Αuct. D. 4. 1</ref>
+                        >Βodl. Αuct. D. 4. 1</ref>
                   </seg>
                </ab>
             </div>
@@ -3506,7 +3521,7 @@
             <div type="commentary" subtype="commentary" xml:id="oxon-s-trin-78-13-2">
                <ab xml:lang="grc">
                   <note type="lemma">Ps 13,1b–d (Εἶπεν)</note>
-                  <seg type="hypothesis" xml:id="oxon-s-trin-78-fr-13-1" source="Anonymous"
+                  <seg type="hypothesis" xml:id="oxon-s-trin-78-fr-13-1"
                      corresp="#oxon-s-trin-78-ps-13-1b"><quote type="patristic" subtype="unknown"
                         xml:id="oxon-s-trin-78-quot-13-1"
                         source="Tarasius patriarcha Const., fr. in Ps 13,1a (ineditum?)"
@@ -3524,24 +3539,23 @@
                         corresp="#person-18 #person-2">Ἐξουδενώθησαν ἀπερρίφησαν· / ἐπειδὴ μὴ
                         λογισάμενοι φησὶν εἶναι θεὸν ἐφορῶντα τὰ ἀνθρώπινα καὶ κρίνοντα κρίσει
                         δικαία· πᾶσαν ἀθεμιτουργίαν εἰργάσαντο· τούτου δὴ καὶ ὁ κύριος ἐκ τοῦ
-                        οὐρανοῦ διέκυψεν:2</quote><ref
-                        target="#bodl-auct-d-4-1:bodl-auct-d-4-1-glosse-13-2" type="identical">Oxon.
-                        Bodl. Auct. D. 4. 1</ref><ref
-                        target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-13-4"
+                        οὐρανοῦ διέκυψεν:</quote><ref
+                        target="#bodl-auct-d-4-1:bodl-auct-d-4-1-glosse-13-2" type="identical">Bodl.
+                        Auct. D. 4. 1</ref><ref target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-13-4"
                         type="abbreviated-with-variants">Bodl. Auct. D. 4. 1</ref><ref
-                        target="#vat-gr-754:vat-gr-754-fr-13-2" type="abbreviated-with-variant">Vat.
-                        gr. 754</ref><note type="textual-commentary">This fragment is linked not by
-                        a letter, but by a sign.</note></seg>
+                        target="#vat-gr-754:vat-gr-754-fr-13-2" type="abbreviated-with-variants"
+                        >Vat. gr. 754</ref><note type="textual-commentary">This fragment is linked
+                        not by a letter, but by a sign.</note></seg>
                   <note type="lemma">Ps 13,1b–d (ἐν ἐπιτηδεύμασιν)</note>
                   <seg type="glosse" xml:id="oxon-s-trin-78-glosse-13-1" source="Anonymous"
                      corresp="#oxon-s-trin-78-ps-13-1c"><quote type="patristic" subtype="unknown"
                         xml:id="oxon-s-trin-78-quot-13-3"
-                        source="fons ignotus in Ps 13,1c; in margine dextro" corresp="#person-18">ἐν
+                        source="fons ignotus in Ps 13,1c; in marg. dextro" corresp="#person-18">ἐν
                            ἐ<supplied reason="inner-margin">πι</supplied>χειρ<supplied
                            reason="inner-margin">ή</supplied>μα<unclear reason="inner-margin"
                            >σ</unclear><supplied reason="inner-margin">ιν</supplied></quote><ref
-                        target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-13-3" type="abbreviated">Oxon.
-                        Bodl. Auct. D. 4. 1</ref></seg>
+                        target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-13-3" type="abbreviated">Bodl.
+                        Auct. D. 4. 1</ref></seg>
                   <note type="lemma">Ps 13,2 (διέκυψεν)</note>
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-13-3" source="Anonymous"
                      corresp="#oxon-s-trin-78-ps-13-2a" copyOf="#edition:edition-13-3-1"><num
@@ -3565,57 +3579,55 @@
                         xml:id="oxon-s-trin-78-quot-13-6"
                         source="fons ignotus in Ps 13,3a; cf. Suda s.v. Ἠχρειώθησαν (E nr. 688 Adler)"
                         corresp="#person-18">ἀχρεῖοι ἐγένοντο, ἢ ἄχρηστοι: –</quote><ref
-                        target="#bodl-auct-d-4-1:bodl-auct-d-4-1-glosse-13-3" type="identical">Oxon.
-                        Bodl. Auct. D. 4. 1</ref><note type="textual-commentary">This glosse is
-                        linked not by a letter, but by a sign.</note></seg>
+                        target="#bodl-auct-d-4-1:bodl-auct-d-4-1-glosse-13-3" type="identical">Bodl.
+                        Auct. D. 4. 1</ref><note type="textual-commentary">This glosse is linked not
+                        by a letter, but by a sign.</note></seg>
                   <note type="lemma">Ps 13,4 (γνώσονται)</note>
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-13-4" source="Anonymous"
                      corresp="#oxon-s-trin-78-ps-13-4a" copyOf="#edition:edition-13-4-1"><quote
                         type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-13-7"
-                        source="Athanasius, exp. in Ps 13,4a; non habet Bodl. Auct. D. 4. 1"
-                        corresp="#person-2">καθ᾿ ὑποστιγμὴν ἀναγνωστέον:</quote><ref
-                        target="#vat-gr-754:vat-gr-754-fr-13-9" type="abbreviated">Vat. gr.
-                        754</ref><note type="textual-commentary">This fragment is linked not by a
-                        letter, but by a sign. This sign is not in red.</note></seg>
+                        source="Athanasius, exp. in Ps 13,4a" corresp="#person-2">καθ᾿ ὑποστιγμὴν
+                        ἀναγνωστέον:</quote><ref target="#vat-gr-754:vat-gr-754-fr-13-9"
+                        type="abbreviated">Vat. gr. 754</ref><note type="textual-commentary">This
+                        Expositio is linked not by a letter, but by a sign. This sign is not in
+                        red.</note></seg>
                   <note type="lemma">linking not repeated</note>
                   <seg type="hexaplaric" xml:id="oxon-s-trin-78-hexaplaric-13-1"
                      source="Symmachus (Ps 13,4a)" corresp="#oxon-s-trin-78-ps-13-4a">Ϲ | μὴ οὐ
-                        γνώσονται:<ref target="bodl-auct-d-4-1-hexaplaric-13-1" type="abbreviated"
-                        >Bodl. Auct. D. 4. 1</ref></seg>
+                        γνώσονται:<ref target="#bodl-auct-d-4-1:bodl-auct-d-4-1-hexaplaric-13-1"
+                        type="abbreviated">Bodl. Auct. D. 4. 1</ref></seg>
                   <note type="lemma">Ps 13,4 (ἐσθίοντες [κατεσθίοντες LXX Rahlfs])</note>
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-13-5" source="Anonymous"
                      corresp="#oxon-s-trin-78-ps-13-4b" copyOf="#edition:edition-13-4-2"><quote
                         type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-13-10"
-                        source="Athanasius, exp. in Ps 13,4b; non habet Bodl. Auct. D. 4. 1"
-                        corresp="#person-2">Κατήσθιον γὰρ τὸν λαὸν αὐτοῦ ἀναπείθοντες προσκυνεῖν τῆι
-                        κτίσει παρὰ τὸν κτίσαντα· καὶ οὗτοι φη(σὶν) εἰσὶν οἱ ἑτέροις τῶν κακῶν
-                        εἰσηγηταὶ γινόμενοι· οὕτω γὰρ ἀναγνωστέον τὸ τὸν κύριον οὐκ ἐπεκαλέσαντο
-                        μέλλοντα ἀντὶ τοῦ παρεληλυθότος: –</quote><ref
-                        target="#vat-gr-754:vat-gr-754-fr-13-10" type="with-variants">Vat. gr.
-                        754</ref><note type="textual-commentary">This fragment is linked not by a
-                        letter, but by a sign.</note></seg>
+                        source="Athanasius, exp. in Ps 13,4b" corresp="#person-2">Κατήσθιον γὰρ τὸν
+                        λαὸν αὐτοῦ ἀναπείθοντες προσκυνεῖν τῆι κτίσει παρὰ τὸν κτίσαντα· καὶ οὗτοι
+                        φη(σὶν) εἰσὶν οἱ ἑτέροις τῶν κακῶν εἰσηγηταὶ γινόμενοι· οὕτω γὰρ ἀναγνωστέον
+                        τὸ τὸν κύριον οὐκ ἐπεκαλέσαντο μέλλοντα ἀντὶ τοῦ παρεληλυθότος:
+                        –</quote><ref target="#vat-gr-754:vat-gr-754-fr-13-10" type="with-variants"
+                        >Vat. gr. 754</ref><note type="textual-commentary">This Expositio is linked
+                        not by a letter, but by a sign.</note></seg>
                   <note type="lemma">Ps 13,5–6 (ἐκεῖ)</note>
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-13-6" source="Anonymous"
                      corresp="#oxon-s-trin-78-ps-13-5a" copyOf="#edition:edition-13-5-2"><quote
                         type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-13-11"
-                        source="Athanasius, exp. in Ps 13,5b; non habet Bodl. Auct. D. 4. 1"
-                        corresp="#person-2">τῶν δικαιουμένων διὰ τῆς ἐπιφανείας αὐτο<unclear
-                           reason="faded">ῦ: –</unclear></quote><ref
+                        source="Athanasius, exp. in Ps 13,5b" corresp="#person-2">τῶν δικαιουμένων
+                        διὰ τῆς ἐπιφανείας αὐτο<unclear reason="faded">ῦ: –</unclear></quote><ref
                         target="#vat-gr-754:vat-gr-754-fr-13-11" type="identical">Vat. gr.
-                        754</ref><note type="textual-commentary">This fragment is linked not by a
+                        754</ref><note type="textual-commentary">This Expositio is linked not by a
                         letter, but by a sign.</note></seg>
                   <note type="lemma">Ps 13,5–6 (βουλὴν)</note>
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-13-7" source="Anonymous"
                      corresp="#oxon-s-trin-78-ps-13-6a" copyOf="#edition:edition-13-6-1"><quote
                         type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-13-12"
-                        source="Athanasius, exp. in Ps 13,6a; non habet Bodl. Auct. D. 4. 1"
-                        corresp="#person-2">ταῦτα ὡς π<supplied reason="illegible"
-                           >ρὸ</supplied><unclear reason="faded">ς</unclear> τοὺς ἀπομείναντας τῆ
-                        ἀπιστία καὶ διώξαντας τοὺς πιστε<unclear reason="faded">ύ</unclear>σ<unclear
-                           reason="faded">αν</unclear><supplied reason="illegible">τας</supplied>
-                        εἰς τὸν Χριστόν: –</quote><ref target="vat-gr-754:vat-gr-754-fr-13-13"
-                        type="with-variant">Vat. gr. 754</ref><note type="textual-commentary">This
-                        fragment is linked not by a letter, but by a sign.</note></seg>
+                        source="Athanasius, exp. in Ps 13,6a" corresp="#person-2">ταῦτα ὡς
+                           π<supplied reason="illegible">ρὸ</supplied><unclear reason="faded"
+                           >ς</unclear> τοὺς ἀπομείναντας τῆ ἀπιστία καὶ διώξαντας τοὺς
+                           πιστε<unclear reason="faded">ύ</unclear>σ<unclear reason="faded"
+                           >αν</unclear><supplied reason="illegible">τας</supplied> εἰς τὸν Χριστόν:
+                        –</quote><ref target="#vat-gr-754:vat-gr-754-fr-13-13" type="with-variant"
+                        >Vat. gr. 754</ref><note type="textual-commentary">This Expositio is linked
+                        not by a letter, but by a sign.</note></seg>
                </ab>
             </div>
             <pb n="24v"/>
@@ -3627,14 +3639,13 @@
                         xml:id="oxon-s-trin-78-quot-13-13"
                         source="fons ignotus in Ps 13,7c; cf. Hesychius, lex. s.v. Ἰάκωβος (I nr. 3 Latte) et Didymus, fr. 84 in Ps 13,7 (172,14 Mühlenberg); cf. etiam Hesychius, comm. magnus in Ps 52,7b–c (PG 93,1209 D9–10)"
                         corresp="#person-18">πτερνιστής· νοῦς ὁρῶν θεόν:</quote><ref
-                        target="bodl-auct-d-4-1:bodl-auct-d-4-1-glosse-13-5" type="identical">Oxon.
-                        Bodl. Auct. D. 4. 1</ref><note type="textual-commentary">These two glosses
-                        are linked by means of two signs.</note></seg>
+                        target="#bodl-auct-d-4-1:bodl-auct-d-4-1-glosse-13-5" type="identical">Bodl.
+                        Auct. D. 4. 1</ref><note type="textual-commentary">Each of the two glosses
+                        is linked by a sign.</note></seg>
                </ab>
             </div>
             <!-- Ps 14 bibletext -->
-            <div type="bibletext" xml:id="oxon-s-trin-78-14-1" subtype="commented"
-               rendition="#middle-column" change="commentaryfragments-only">
+            <div type="bibletext" subtype="commented" xml:id="oxon-s-trin-78-14-1">
                <ab xml:lang="grc">
                   <quote type="bibletext" xml:id="oxon-s-trin-78-ps-14-1" n="Ps (LXX) 14,1"
                      corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-1">
@@ -3704,7 +3715,7 @@
                      corresp="#oxon-s-trin-78-ps-14-1c" copyOf="#edition:edition-ps-14-1-3">
                      <num type="ordinal" xml:lang="grc" value="5">Ε´</num><quote type="patristic"
                         subtype="quotation" xml:id="oxon-s-trin-78-quot-14-2"
-                        source="Athanasius, exp. in Ps 14,1c; non habet Bodl. Auct. D. 4. 1"
+                        source="Athanasius, exp. in Ps 14,1c"
                         corresp="#person-2">Ἐπειδἂν ἀξιωθῆ τις τῆς μακαρίας ἐκείνης σκηνῆς εἰς
                         ἀπεράντους αἰῶνας ἕξει τὴν μακαριότητα:</quote><ref
                         target="#vat-gr-754:vat-gr-754-fr-14-7" type="with-variants">Vat. gr.
@@ -3714,7 +3725,7 @@
                      corresp="#oxon-s-trin-78-ps-14-1b" copyOf="#edition:edition-14-1-2">
                      <num type="ordinal" xml:lang="grc" value="4">Δ´</num><quote type="patristic"
                         subtype="quotation" xml:id="oxon-s-trin-78-quot-14-3"
-                        source="Athanasius, exp. in Ps 14,1b; non habet Bodl. Auct. D. 4. 1"
+                        source="Athanasius, exp. in Ps 14,1b"
                         corresp="#person-2">τίς φη(σιν) ἄξιος ἐν ἐκείναις ταῖς οὐρανίαις γενέσθαι
                         σκηναῖς: –</quote><ref target="#vat-gr-754:vat-gr-754-fr-14-5"
                         type="with-variants">Vat. gr. 754</ref></seg>
@@ -3727,7 +3738,7 @@
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-14-4" source="Anonymous"
                      corresp="#oxon-s-trin-78-ps-14-4c">
                      <quote type="patristic" subtype="ineditum" xml:id="oxon-s-trin-78-quot-14-4"
-                        source="fons ignotus in Ps 14,4c (ineditum?); non habet Bodl. Auct. D. 4. 1"
+                        source="fons ignotus in Ps 14,4c (ineditum?)"
                         corresp="#person-18">ὀμόσας ἕτερος εἶναι καὶ μὴ ἀλλαγείς:</quote><note
                         type="textual-commentary">This fragment is linked not by a letter, but by a
                         sign.</note></seg>
@@ -3737,9 +3748,9 @@
                      <quote type="patristic" subtype="unknown" xml:id="oxon-s-trin-78-quot-14-5"
                         source="fons ignotus in Ps 14,5b; cf. Hesychius, lex. s.v. ἀθῷος (A nr. 1648 Latte) - inter lineas Psalmi"
                         corresp="#person-18">ἐπὶ ἀναιτίοις</quote><ref
-                        target="#bodl-auct-d-4-1:XXXX" type="with-variant">Bodl. Auct. D. 4.
-                        1</ref><ref target="#vat-gr-754:vat-gr-754-glosse-14-1" type="with-variant"
-                        >Vat. gr. 754</ref></seg>
+                        target="#bodl-auct-d-4-1:bodl-auct-d-4-1-glosse-14-4" type="with-variant"
+                        >Bodl. Auct. D. 4. 1</ref><ref target="#vat-gr-754:vat-gr-754-glosse-14-1"
+                        type="with-variant">Vat. gr. 754</ref></seg>
                </ab>
             </div>
 
@@ -3761,3 +3772,6 @@
       </body>
    </text>
 </TEI>
+<!-- faciendum: Ps 1–10: List of contents mit Ref zu Auct. D.4.1 -->
+<!-- erledigt: Ps 11-13: Lemmata und nicht die Psalmzeilen werden angegeben -->
+<!-- erledigt: Ps 11-14: Ref zu Auct. D.4.1 ergänzt -->
