@@ -359,7 +359,6 @@
                 <xsl:if test="exists(@copyOf)">
                     <xsl:text> → </xsl:text>
                     <xsl:element name="a">
-                        <xsl:attribute name="target" select="'_blank'"/>
                         <xsl:attribute name="href" select="concat('../edition.html#',substring-after(@copyOf,'#edition:'))"/>
                         <xsl:text>Edition</xsl:text>
                     </xsl:element>

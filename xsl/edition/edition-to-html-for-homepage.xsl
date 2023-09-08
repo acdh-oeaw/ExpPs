@@ -339,6 +339,25 @@ version="2.0">
     </div>
 </xsl:template>
     
+<xsl:template match="tei:div[@type = 'links-oriental-tradition']" mode="list-of-oriental-links">
+    <div class="body-links">
+        <xsl:apply-templates select="child::tei:p/child::tei:listRef/child::tei:ref" mode="list-of-oriental-references"/>
+    </div>
+</xsl:template>
+    
+<xsl:template match="tei:ref" mode="list-of-oriental-references">
+    <xsl:text>→ </xsl:text>
+    <a>
+        <xsl:attribute name="href">
+            <xsl:if test="starts-with(./@target,'#coptic-version:')">
+                <xsl:text>./manuscripts/coptic-version.html#</xsl:text>
+                <xsl:value-of select="substring-after(./@target,'#coptic-version:')"/>
+            </xsl:if>
+        </xsl:attribute>
+        <xsl:text>Coptic version</xsl:text>
+    </a>
+</xsl:template>
+    
 <xsl:template match="tei:ref" mode="list-of-references">
     <xsl:text>→ </xsl:text>
     <a class="link-to-witness">
@@ -627,6 +646,7 @@ version="2.0">
         </xsl:for-each>
     </p>
     <xsl:apply-templates select="parent::tei:div[@type = 'textcritic']/preceding-sibling::tei:div[@type = 'commentary'][1]/child::tei:div[@type = 'links']" mode="list-of-links"/>
+    <xsl:apply-templates select="parent::tei:div[@type = 'textcritic']/preceding-sibling::tei:div[@type = 'commentary'][1]/child::tei:div[@type = 'links-oriental-tradition']" mode="list-of-oriental-links"/>
 </xsl:template>
 
 <xsl:template match="tei:app[@type = 'text']">
