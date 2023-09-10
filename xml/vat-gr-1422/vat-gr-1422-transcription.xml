@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../schema/tei-psalmcatenae.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="../../schema/tests-for-transcription.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!-- ToDo: Ps 1–2: Personen in @corresp zu berichtigen -->
-<!-- faciendum: Korrekruren: Ps 1–2: finale Revision durchzuführen -->
-<!-- faciendum: List of contents: Ps 3–10 -->
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -10180,7 +10177,500 @@
                         corresp="#person-10"/></seg>
                </ab>
             </div>
+            <!-- Ps 14 bibletext -->
+            <div type="bibletext" xml:id="vat-gr-1422-14-1" subtype="commented"
+               change="commentaryfragments-only" ana="septuaginta">
+               <ab xml:lang="grc">
+                  <quote type="bibletext" xml:id="vat-gr-1422-ps-14-1" n="Ps (LXX) 14,1"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-1">
+                     <anchor type="psalmtext" xml:id="vat-gr-1422-ps-14-1a" n="Ps (LXX) 14,1a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-1"/> Ψαλμὸς τῷ Δαυιδ. <anchor
+                        type="psalmtext" xml:id="vat-gr-1422-ps-14-1b" n="Ps (LXX) 14,1b"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-1"/> Κύριε, τίς παροικήσει ἐν τῷ
+                     σκηνώματί σου <anchor type="psalmtext" xml:id="vat-gr-1422-ps-14-1c"
+                        n="Ps (LXX) 14,1c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-1"/> καὶ τίς
+                     κατασκηνώσει ἐν τῷ ὄρει τῷ ἁγίῳ σου; </quote>
+                  <quote type="bibletext" xml:id="vat-gr-1422-ps-14-2" n="Ps (LXX) 14,2"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-13-2">
+                     <anchor type="psalmtext" xml:id="vat-gr-1422-ps-14-2a" n="Ps (LXX) 14,2a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-1"/> πορευόμενος ἄμωμος καὶ
+                     ἐργαζόμενος δικαιοσύνην, <anchor type="psalmtext" xml:id="vat-gr-1422-ps-14-2b"
+                        n="Ps (LXX) 14,2b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-2"/> λαλῶν
+                     ἀλήθειαν ἐν καρδίᾳ αὐτοῦ, </quote>
+                  <quote type="bibletext" xml:id="vat-gr-1422-ps-14-3" n="Ps (LXX) 14,3"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-3">
+                     <anchor type="psalmtext" xml:id="vat-gr-1422-ps-14-3a" n="Ps (LXX) 14,3a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-3"/> ὃς οὐκ ἐδόλωσεν ἐν γλώσσῃ
+                     αὐτοῦ <anchor type="psalmtext" xml:id="vat-gr-1422-ps-14-3b" n="Ps (LXX) 14,3b"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-3"/> οὐδὲ ἐποίησεν τῷ πλησίον
+                     αὐτοῦ κακὸν <anchor type="psalmtext" xml:id="vat-gr-1422-ps-14-3c"
+                        n="Ps (LXX) 14,3c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-3"/> καὶ
+                     ὀνειδισμὸν οὐκ ἔλαβεν ἐπὶ τοὺς ἔγγιστα αὐτοῦ· </quote>
+                  <quote type="bibletext" xml:id="vat-gr-1422-ps-14-4" n="Ps (LXX) 14,4"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-4">
+                     <anchor type="psalmtext" xml:id="vat-gr-1422-ps-14-4a" n="Ps (LXX) 14,4a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-4"/> ἐξουδένωται ἐνώπιον αὐτοῦ
+                     πονηρευόμενος, <anchor type="psalmtext" xml:id="vat-gr-1422-ps-14-4b"
+                        n="Ps (LXX) 14,4b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-4"/> τοὺς δὲ
+                     φοβουμένους κύριον δοξάζει· <anchor type="psalmtext"
+                        xml:id="vat-gr-1422-ps-14-4c" n="Ps (LXX) 14,4c"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-4"/> ὁ ὀμνύων τῷ πλησίον αὐτοῦ
+                     καὶ οὐκ ἀθετῶν· </quote>
+                  <quote type="bibletext" xml:id="vat-gr-1422-ps-14-5" n="Ps (LXX) 14,5"
+                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-5">
+                     <anchor type="psalmtext" xml:id="vat-gr-1422-ps-14-5a" n="Ps (LXX) 14,5a"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-5"/> τὸ ἀργύριον αὐτοῦ οὐκ
+                     ἔδωκεν ἐπὶ τόκῳ <anchor type="psalmtext" xml:id="vat-gr-1422-ps-14-5b"
+                        n="Ps (LXX) 14,5b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-4"/> καὶ δῶρα
+                     ἐπ᾽ ἀθῴοις οὐκ ἔλαβεν. <anchor type="psalmtext" xml:id="vat-gr-1422-ps-14-5c"
+                        n="Ps (LXX) 14,5c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-14-5"/> ὁ ποιῶν
+                     ταῦτα οὐ σαλευθήσεται εἰς τὸν αἰῶνα. </quote>
+               </ab>
+            </div>
+            <pb n="43v–44r"/>
+            <!-- Ps 14 commentary -->
+            <div type="commentary" subtype="commentary" xml:id="vat-gr-1422-14-2"
+               rendition="#bottom-of-the-page" change="commentaryfragments-only">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 14,1a</note>
+                  <seg type="hypothesis" xml:id="vat-gr-1422-fr-14-1"
+                     rendition="#bottom-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-14-1a"><quote type="patristic"
+                        subtype="quotation-abbreviated-and-adapted/quotation-adapted/quotation-adapted/quotation"
+                        xml:id="vat-gr-1422-quot-14-1"
+                        source="Asterius, hom. 27,5.6 in Ps. 14 (216,19–23; 217,11–15 Richard) in Ps 14,1a - Idem, hom. 26,5 in Ps. 14 (207,25–208,1 Richard) in Ps 14,1b–c - Idem, hom. 27,7 in Ps. 14 (217,25–26 Richard) in Ps 14,1b - Idem, hom. 26,12 in Ps. 14 (211,4–5) in Ps 14,1b–c"
+                        corresp="#person-40"/><note type="attribution"><foreign xml:lang="grc"
+                           >ὑποθ(έσεις) τοῦ ΙΔ´ ψαλμ(οῦ)·</foreign></note></seg>
+               </ab>
+            </div>
+            <pb n="44r" facs="https://digi.vatlib.it/view/MSS_Vat.gr.1422/90"/>
+            <div type="commentary" subtype="commentary" xml:id="vat-gr-1422-14-3"
+               rendition="#top-of-the-page" change="commentaryfragments-only">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 14,1a</note>
+                  <seg type="hypothesis" xml:id="vat-gr-1422-fr-14-2" rendition="#top-of-the-page"
+                     source="Thedoretus" corresp="#vat-gr-1422-ps-14-1a"><quote type="patristic"
+                        subtype="quotation" xml:id="vat-gr-1422-quot-14-2"
+                        source="Theodoretus, comm. in Ps 14,1a (PG 80,953 C3–D2)"
+                        corresp="#person-16"/><note type="attribution"><foreign xml:lang="grc"
+                           >Θεοδω(ρήτου):</foreign></note></seg>
+                  <note type="lemma">Ps 14,1a</note>
+                  <seg type="hypothesis" xml:id="vat-gr-1422-fr-14-3" rendition="#top-of-the-page"
+                     source="Anonymous" corresp="#vat-gr-1422-ps-14-1a"
+                     copyOf="#edition:edition-14-1-1"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-1422-quot-14-3" source="Athanasius, exp. in Ps 14,1a"
+                        corresp="#person-2">Τοῦτον ἄδει τὸν ψαλμὸν διδάσκων τί ἄνθρωπον
+                        παρασκευάσει. τῆς μακαρίας ἐκείνης τυχεῖν λήξεως:</quote><ref
+                        target="#vat-gr-754:vat-gr-754-fr-14-1" type="XXXX">Vat. gr. 754</ref></seg>
+                  <note type="lemma">Ps 14,1a</note>
+                  <seg type="hypothesis" xml:id="vat-gr-1422-fr-14-4" rendition="#top-of-the-page"
+                     source="Anonymous" corresp="#vat-gr-1422-ps-14-1a"><quote type="patristic"
+                        subtype="quotation-adapted" xml:id="vat-gr-1422-quot-14-4"
+                        source="Hesychius, hyp. in Ps 14,1a (Antonelli; PG 27,691–692 D5–8)"
+                        corresp="#person-10"/></seg>
+                  <note type="lemma">Ps 14,1a</note>
+                  <seg type="hypothesis" xml:id="vat-gr-1422-fr-14-5" rendition="#top-of-the-page"
+                     source="Anonymous" corresp="#vat-gr-1422-ps-14-1a"><quote type="patristic"
+                        subtype="quotation" xml:id="vat-gr-1422-quot-14-5"
+                        source="Hesychius, comm. brevis in Ps 14,1a (19 Jagić)" corresp="#person-11"
+                     /></seg>
+               </ab>
+            </div>
+            <div type="commentary" subtype="commentary" xml:id="vat-gr-1422-14-4"
+               rendition="#top-margin" change="commentaryfragments-only">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 14</note>
+                  <seg type="perioche" xml:id="vat-gr-1422-fr-14-6" rendition="#top-margin"
+                     source="Anonymous" corresp="#vat-gr-1422-ps-14-1a"><quote type="patristic"
+                        subtype="quotation" xml:id="vat-gr-1422-quot-14-6"
+                        source="Eusebius, Perioche in Ps 14 (128 Bandt)" corresp="#person-7"/></seg>
+               </ab>
+            </div>
+            <div type="commentary" subtype="commentary" xml:id="vat-gr-1422-14-5"
+               rendition="#top-of-the-page" change="commentaryfragments-only">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 14,1b–c</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-14-7"
+                     rendition="#top-of-the-page" source="Anonymous" corresp="#vat-gr-1422-ps-14-1b"
+                        ><quote type="patristic" subtype="quotation" xml:id="vat-gr-1422-quot-14-7"
+                        source="Theodoretus, comm. in Ps 14,1b–c (PG 80,953 D4–956 A5)"
+                        corresp="#person-16"/></seg>
+                  <note type="lemma">Ps 14,1b–c</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-14-8"
+                     rendition="#top-of-the-page" source="Anonymous" corresp="#vat-gr-1422-ps-14-1b"
+                        ><quote type="patristic" subtype="quotation" xml:id="vat-gr-1422-quot-14-8"
+                        source="Hesychius, comm. brevis in Ps 14,1b (19 Jagić)" corresp="#person-11"
+                     /></seg>
+                  <note type="lemma">Ps 14,1b–c</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-14-9"
+                     rendition="#top-of-the-page" source="Athanasius"
+                     corresp="#vat-gr-1422-ps-14-1b"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-1422-quot-14-9"
+                        source="Basilius, hom. in Ps. 14 (PG 29,252 A5–12) in Ps 14,1b–c"
+                        corresp="#person-3"/><note type="attribution"><foreign xml:lang="grc"
+                           >Ἀθα(νασίου):</foreign></note></seg>
+                  <note type="lemma">Ps 14,1b–c</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-14-10"
+                     rendition="#top-of-the-page" source="Anonymous" corresp="#vat-gr-1422-ps-14-1b"
+                        ><quote type="patristic" subtype="quotation" xml:id="vat-gr-1422-quot-14-10"
+                        source="Hesychius, schol. nr. 1 in Ps 14,1b (Antonelli; PG 27,692)"
+                        corresp="#person-10"/></seg>
+                  <note type="lemma">Ps 14,1b–c</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-14-11"
+                     rendition="#top-of-the-page" source="Anonymous" corresp="#vat-gr-1422-ps-14-1b"
+                        ><quote type="patristic" subtype="quotation-adapted-and-abbreviated"
+                        xml:id="vat-gr-1422-quot-14-11"
+                        source="Basilius, hom. in Ps. 14 (PG 29,252 Α5–8; 253,Β8–11) in Ps 14,1b–c"
+                        corresp="#person-3"/></seg>
+                  <note type="lemma">Ps 14,1b–c</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-14-12"
+                     rendition="#top-of-the-page" source="Basileius" corresp="#vat-gr-1422-ps-14-1b"
+                        ><quote type="patristic" subtype="quotation-adapted"
+                        xml:id="vat-gr-1422-quot-14-12"
+                        source="Basilius, hom. in Ps. 14 (PG 29,249 D6–252 A3) in Ps 14,1b–c"
+                        corresp="#person-3"/><note type="attribution"><foreign xml:lang="grc"
+                           >Βασιλ(είου)</foreign></note></seg>
+               </ab>
+            </div>
+            <div type="commentary" subtype="commentary" xml:id="vat-gr-1422-14-6"
+               rendition="#middle-of-the-page" change="commentaryfragments-only">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 14,1b–c</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-14-13"
+                     rendition="#middle-of-the-page" source="Basilius"
+                     corresp="#vat-gr-1422-ps-14-1b"><quote type="patristic"
+                        subtype="quotation-abbreviated-and-adapted" xml:id="vat-gr-1422-quot-14-13"
+                        source="Basilius, hom. in Ps. 14 (PG 29,252 C2–4; 253 A2–6) in Ps 14,1b–c"
+                        corresp="#person-3"/><note type="attribution"><foreign xml:lang="grc">τ(οῦ)
+                           αυτ(οῦ):</foreign></note></seg>
+                  <note type="lemma">Ps 14,1b–c</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-14-14"
+                     rendition="#middle-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-14-1b"><quote type="patristic"
+                        subtype="quotation-abbreviated-and-adapted" xml:id="vat-gr-1422-quot-14-14"
+                        source="Basilius, hom. in Ps. 14 (PG 29,253 A1–3.8–11) in Ps 14,1b–c"
+                        corresp="#person-3"/></seg>
+                  <note type="lemma">Ps 14,1b–c</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-14-15"
+                     rendition="#middle-of-the-page" source="Basilius"
+                     corresp="#vat-gr-1422-ps-14-1b" copyOf="#edition:edition-14-1-3"><quote
+                        type="patristic" subtype="quotation/quotation"
+                        xml:id="vat-gr-1422-quot-14-15"
+                        source="Athanasius, exp. in Ps 14,1c - Basilius, hom. in Ps. 14 (PG 29,253 B15–C4) in Ps 14,1b–c"
+                        corresp="#person-2 #person-3">Ἐπειδὰν γάρ τις ἀξιωθῆ τῆς μακαρίας ἐκείνης
+                        σκηνῆς. εἰς ἀπεράντους αἰῶνας ἕξει τὴν μακαριότητα / ...</quote><ref
+                        target="#vat-gr-754:vat-gr-754-fr-14-7" type="XXXX">Vat. gr. 754</ref><note
+                        type="attribution"><foreign xml:lang="grc"
+                     >Βα(σιλείου)</foreign></note></seg>
+               </ab>
+            </div>
+            <div type="commentary" subtype="commentary" xml:id="vat-gr-1422-14-7"
+               rendition="#bottom-of-the-page" change="commentaryfragments-only">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 14,2</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-14-16"
+                     rendition="#bottom-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-14-2a"><quote type="patristic"
+                        subtype="quotation-abbreviated" xml:id="vat-gr-1422-quot-14-16"
+                        source="Asterius, hom. 26,12.13 in Ps. 14 (211,6–8.19–20 Richard) in Ps 14,2"
+                        corresp="#person-40"/></seg>
+                  <note type="lemma">Ps 14,2</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-14-17"
+                     rendition="#bottom-of-the-page" source="Theodorus"
+                     corresp="#vat-gr-1422-ps-14-2a"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-1422-quot-14-17"
+                        source="Theodoretus, comm. in Ps 14,2a (PG 80,956 A7–11)"
+                        corresp="#person-16"/><note type="attribution"><foreign xml:lang="grc"
+                           >Θεόδω(ρος):</foreign></note></seg>
+                  <note type="lemma">Ps 14,2</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-14-18"
+                     rendition="#bottom-of-the-page" source="Theodoretus"
+                     corresp="#vat-gr-1422-ps-14-2a"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-1422-quot-14-18"
+                        source="Theodoretus, comm. in Ps 14,2b–3b (PG 80,956 A14–B6)"
+                        corresp="#person-16"/><note type="attribution"><foreign xml:lang="grc"
+                           >Θεοδω(ρήτου):</foreign></note></seg>
+                  <note type="lemma">Ps 14,2</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-14-19"
+                     rendition="#bottom-of-the-page" source="Hesychius"
+                     corresp="#vat-gr-1422-ps-14-19"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-1422-quot-14-19"
+                        source="Hesychius, comm. magnus in Ps 14,2b (PG 93,1184 D1–6)"
+                        corresp="#person-41"/><note type="attribution"><foreign xml:lang="grc"
+                           >Ἡσυχ(ίου):</foreign></note></seg>
+                  <note type="lemma">Ps 14,2 (sic)</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-14-20"
+                     rendition="#bottom-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-14-2a"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-1422-quot-14-20"
+                        source="Hesychius, comm. brevis in Ps 14,3a (20 Jagić)" corresp="#person-11"
+                     /></seg>
+                  <note type="lemma">Ps 14,2</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-14-21"
+                     rendition="#bottom-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-14-2a"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-1422-quot-14-21"
+                        source="Basilius, hom. in Ps. 14 (PG 29,253 C11–256 A6) in Ps 14,2a"
+                        corresp="#person-13"/></seg>
+                  <note type="lemma">Ps 14,2</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-14-22"
+                     rendition="#bottom-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-14-2a" copyOf="#edition:edition-14-5-1"><quote
+                        type="patristic" subtype="quotation" xml:id="vat-gr-1422-quot-14-22"
+                        source="Athanasius, exp. in Ps 14,2–5" corresp="#person-2">Διδάσκει δι᾿ ὧν
+                        τευξόμεθα τοῦ μακαρίου ἐκείνου πέρατος· καὶ πρῶτον μὲν, εἰ τὴν ἄμωμον
+                        ὁδεύσωμεν ὁδὸν· ἥτις ἐστὶν ὁ Χριστός· ἔπειτα ἐργασώμεθα δικαιοσύνην· τρίτον,
+                        εἰ ἀληθείας οἶκον τὴν καρδίαν ποιήσωμεν· τέταρτον, εἰ δολίαν γλῶσσαν μὴ
+                        κτησώμεθα· πέμπτον, τὸ μὴ κακὸν τῷ πλησίον ἐργάζεσθαι· ἕκτον, τὸ μὴ
+                        ὀνειδίσαι τὸν πλησίον ὑπερηφανευόμενον· ἕβδομον, μὴ πρόσωπα θαυμάζειν· ἀλλὰ
+                        κἂν πλούσιος ᾖ πονηρὸς, ἐξουθενεῖν· κἂν πένης ἀγαθὸς, δοξάζειν· ὄγδοον, τὸ
+                        μὴ παραβαίνειν ὅρκου πίστιν· ἔνατον, τὸ μὴ ἐκτοκίζειν· δέκατον ὃ καὶ τέλος
+                        ἐστὶ παντὸς ἀγαθοῦ, ἀδωροδόκητον εἶναι· τούτων ὁ ἐκμαθὼν τὴν κατόρθωσιν,
+                        ἀσάλευτον ἕξει τῶν ἀγαθῶν τὴν δόσιν: –</quote><ref
+                        target="#vat-gr-754:vat-gr-754-fr-14-9" type="XXXX">Vat. gr. 754</ref></seg>
+                  <note type="lemma">Ps 14,2</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-14-23"
+                     rendition="#bottom-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-14-2a"><quote type="patristic"
+                        subtype="quotation-abbreviated" xml:id="vat-gr-1422-quot-14-23"
+                        source="Basilius, hom. in Ps. 14 (PG 29,253 C10–13; 256 A12–15) in Ps 14,2a"
+                        corresp="#person-3"/></seg>
+                  <note type="lemma">Ps 14,3</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-14-24"
+                     rendition="#bottom-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-14-3a"><quote type="patristic"
+                        subtype="quotation-abbreviated" xml:id="vat-gr-1422-quot-14-24"
+                        source="Asterius, hom. 26,13 in Ps. 14 (211,20–23 Richard) in Ps 14,2–3"
+                        corresp="#person-40"/></seg>
+                  <note type="lemma">Ps 14,3</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-14-25"
+                     rendition="#bottom-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-14-3a"><quote type="patristic"
+                        subtype="quotation-abbreviated" xml:id="vat-gr-1422-quot-14-25"
+                        source="Asterius, hom. 26,13 in Ps. 14 (211,23–212,2 Richard) in Ps 14,2–3"
+                        corresp="#person-40"/></seg>
+                  <note type="lemma">Ps 14,3</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-14-26"
+                     rendition="#bottom-of-the-page" source="Hesychius"
+                     corresp="#vat-gr-1422-ps-14-3a"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-1422-quot-14-26"
+                        source="Hesychius, comm. magnus in Ps 14,3c (PG 93,1184 D8–11)"
+                        corresp="#person-41"/><note type="attribution"><foreign xml:lang="grc"
+                           >Ἡσυχ(ίου)</foreign></note></seg>
+                  <pb n="44r–v"/>
+                  <note type="lemma">Ps 14,3</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-14-27"
+                     rendition="#bottom-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-14-3a"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-1422-quot-14-27"
+                        source="Theodoretus, comm. in Ps 14,3c (PG 80,(PG 80,956 B7–10)"
+                        corresp="#person-16"/></seg>
+               </ab>
+            </div>
+            <pb n="44v" facs="https://digi.vatlib.it/view/MSS_Vat.gr.1422/92"/>
+            <div type="commentary" subtype="commentary" xml:id="vat-gr-1422-14-8"
+               rendition="#top-of-the-page" change="commentaryfragments-only">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 14,3 (sic)</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-14-28"
+                     rendition="#top-of-the-page" source="Basilius" corresp="#vat-gr-1422-ps-14-3a"
+                        ><quote type="patristic" subtype="quotation" xml:id="vat-gr-1422-quot-14-28"
+                        source="Basilius, hom. in Ps. 14 (PG 29,260 Α5–10) in Ps 14,4"
+                        corresp="#person-3"/><note type="attribution"><foreign xml:lang="grc"
+                           >Βα(σιλείου)</foreign></note></seg>
+                  <note type="lemma">Ps 14,3</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-14-29"
+                     rendition="#top-of-the-page" source="Basilius" corresp="#vat-gr-1422-ps-14-3a"
+                        ><quote type="patristic" subtype="paraphrase-abbreviated-and-quotation"
+                        xml:id="vat-gr-1422-quot-14-29"
+                        source="Basilius, hom. in Ps. 14 (PG 29,256 D2–257 A1) in Ps 14,3a"
+                        corresp="#person-3"/><note type="attribution"><foreign xml:lang="grc"
+                           >Βα(σιλείου)</foreign></note></seg>
+                  <note type="lemma">Ps 14,3</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-14-30"
+                     rendition="#top-of-the-page" source="Basilius" corresp="#vat-gr-1422-ps-14-3a"
+                        ><quote type="patristic" subtype="quotation-paraphrase"
+                        xml:id="vat-gr-1422-quot-14-30"
+                        source="Basilius, hom. in Ps. 14 (PG 29,257 Α10–15) in Ps 14,3b"
+                        corresp="#person-3"/><note type="attribution"><foreign xml:lang="grc"
+                           >Βα(σιλείου)</foreign></note></seg>
+                  <note type="lemma">Ps 14,4a–b</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-14-31"
+                     rendition="#top-of-the-page" source="Anonymous" corresp="#vat-gr-1422-ps-14-4a"
+                        ><quote type="patristic" subtype="quotation-adapted"
+                        xml:id="vat-gr-1422-quot-14-31"
+                        source="Asterius, hom. 26,13 in Ps. 14 (212,3–4 Richard) in Ps 14,4a–b"
+                        corresp="#person-40"/></seg>
+                  <note type="lemma">Ps 14,4a–b</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-14-32"
+                     rendition="#top-of-the-page" source="Cyrillus" corresp="#vat-gr-1422-ps-14-4a"
+                        ><quote type="patristic" subtype="quotation" xml:id="vat-gr-1422-quot-14-32"
+                        source="Cyrillus, fr. in Ps 14,4a (PG 69,805 C12–14)" corresp="#person-4"
+                        /><note type="attribution"><foreign xml:lang="grc"
+                        >Κυρίλλ(ου):</foreign></note></seg>
+                  <note type="lemma">Ps 14,4c–5</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-14-33"
+                     rendition="#top-of-the-page" source="Anonymous" corresp="#vat-gr-1422-ps-14-4c"
+                        ><quote type="patristic" subtype="quotation" xml:id="vat-gr-1422-quot-14-33"
+                        source="Asterius, hom. 26,13 in Ps. 14 (212,5–6 Richard) in Ps 14,4c"
+                        corresp="#person-40"/></seg>
+                  <note type="lemma">Ps 14,4c–5</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-14-34"
+                     rendition="#top-of-the-page" source="Theodoretus"
+                     corresp="#vat-gr-1422-ps-14-4c"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-1422-quot-14-34"
+                        source="Theodoretus, comm. in Ps 14,4c (PG 80,956 C7–11)"
+                        corresp="#person-16"/><note type="attribution"><foreign xml:lang="grc"
+                           >Θεοδω(ρήτου):</foreign></note></seg>
+                  <note type="lemma">Ps 14,4c–5 (sic)</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-14-35"
+                     rendition="#top-of-the-page" source="Anonymous" corresp="#vat-gr-1422-ps-14-4c"
+                        ><quote type="patristic" subtype="quotation-abbreviated-and-adapted"
+                        xml:id="vat-gr-1422-quot-14-35"
+                        source="Basilius, hom. in Ps. 14 (PG 29,257 B10–13.C9–11) in Ps 14,3c"
+                        corresp="#person-3"/></seg>
+                  <note type="lemma">Ps 14,4c–5</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-14-36"
+                     rendition="#top-of-the-page" source="Anonymous" corresp="#vat-gr-1422-ps-14-4c"
+                        ><quote type="patristic" subtype="quotation-abbreviated"
+                        xml:id="vat-gr-1422-quot-14-36"
+                        source="Basilius, hom. in Ps. 14 (PG 29,260 C13–15; 260,D2–261 A9) in Ps 14,4c"
+                        corresp="#person-3"/></seg>
+               </ab>
+            </div>
+            <div type="commentary" subtype="commentary" xml:id="vat-gr-1422-14-9"
+               rendition="#middle-of-the-page" change="commentaryfragments-only">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 14,4c–5</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-14-37"
+                     rendition="#top-of-the-page" source="Anonymous" corresp="#vat-gr-1422-ps-14-4c"
+                        ><quote type="patristic" subtype="quotation-expanded"
+                        xml:id="vat-gr-1422-quot-14-37"
+                        source="Hesychius, comm. brevis in Ps 14,4b (20 Jagić)" corresp="#person-11"
+                     /></seg>
+                  <note type="lemma">Ps 14,4c–5</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-14-38"
+                     rendition="#middle-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-14-4c"><quote type="patristic" subtype="ineditum"
+                        xml:id="vat-gr-1422-quot-14-38"
+                        source="fons ignotus in Ps 14,4b (ineditum?)" corresp="#person-18">Τὸν
+                        διδασκαλικὸν λόγον φησίν: –</quote></seg>
+                  <note type="lemma">Ps 14,4c–5</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-14-39"
+                     rendition="#middle-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-14-4c"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-1422-quot-14-39"
+                        source="Asterius, hom. 26,13 in Ps. 14 (212,6–7 Richard) in Ps 14,5a"
+                        corresp="#person-40"/></seg>
+                  <note type="lemma">Ps 14,4c–5</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-14-40"
+                     rendition="#middle-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-14-4c"><quote type="patristic" subtype="XXXX/XXX"
+                        xml:id="vat-gr-1422-quot-14-40" source="Athanasius, exp. in Ps 14,2–5"
+                        corresp="#person-2"> τὸ μὴ ἐκτοκίζειν· δέκατον ὃ καὶ τέλος ἐστὶ παντὸς
+                        ἀγαθοῦ, ἀδωροδόκητον εἶναι· τούτων ὁ ἐκμαθὼν τὴν κατόρθωσιν, ἀσάλευτον ἕξει
+                        τῶν ἀγαθῶν τὴν δόσιν: </quote><ref target="#vat-gr-754:vat-gr-754-fr-14-9"
+                        type="XXXX">Vat. gr. 754</ref></seg>
+                  <note type="lemma">Ps 14,4c–5</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-14-41"
+                     rendition="#middle-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-14-4c"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-1422-quot-14-41"
+                        source="Hesychius, comm. brevis in Ps 14,5a (20 Jagić)" corresp="#person-11"
+                        /><note type="textual-commentary">Except for the first word, the first two
+                        lines of this fragment are in rasura.</note></seg>
+                  <note type="lemma">Ps 14,4c–5</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-14-42"
+                     rendition="#middle-of-the-page" source="Asterius"
+                     corresp="#vat-gr-1422-ps-14-43"><quote type="patristic"
+                        subtype="quotation-adapted" xml:id="vat-gr-1422-quot-14-42"
+                        source="Asterius, fr. 11 in Ps 14,4–5 (260 Richard) ex Catena Palestinensi"
+                        corresp="#person-1"/><note type="attribution"><foreign xml:lang="grc"
+                           >Ἀστε(ρίου)</foreign></note></seg>
+                  <note type="lemma">Ps 14,4c–5</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-14-43"
+                     rendition="#middle-of-the-page" source="Hesychius"
+                     corresp="#vat-gr-1422-ps-14-4c"><quote type="patristic" subtype="ineditum"
+                        xml:id="vat-gr-1422-quot-14-43"
+                        source="Hesychius, comm. magnus (?) in Ps 14,5b (ineditum?)"
+                        corresp="#person-12">Πᾶσα μὲν δώρων λῆψις πονηρά· πῦρ κατακαύσει οἴκους
+                        δωροδεκτῶν· πολὺ δὲ μᾶλλον εἰ ἐπαθώοις· τουτέστιν εἰ κατὰ δικαίων· εἰ γὰρ
+                        δωροδοκία εἰς ἀδικίαν ἐξέρχεται:</quote><note type="attribution"><foreign
+                           xml:lang="grc">Ἡσυχ(ίου):</foreign></note></seg>
+               </ab>
+            </div>
+            <div type="commentary" subtype="commentary" xml:id="vat-gr-1422-14-10"
+               rendition="#bottom-of-the-page" change="commentaryfragments-only">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 14,4c–5</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-14-44"
+                     rendition="#bottom-of-the-page" source="Didymus"
+                     corresp="#vat-gr-1422-ps-14-4c"><quote type="patristic"
+                        subtype="paraphrase-abbreviated" xml:id="vat-gr-1422-quot-14-44"
+                        source="Didymus, fr. 88 in Ps 14,5a–b (174,4–8.10–15 Mühlenberg)"
+                        corresp="#person-6"/><note type="attribution"><foreign xml:lang="grc"
+                           >Διδ(ύμου)</foreign></note></seg>
+                  <note type="lemma">Ps 14,4c–5</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-14-45"
+                     rendition="#bottom-of-the-page" source="Eusebius"
+                     corresp="#vat-gr-1422-ps-14-4c"><quote type="patristic" subtype="paraphrase"
+                        xml:id="vat-gr-1422-quot-14-45"
+                        source="Eusebius, fr. 4 in Ps 14,4c (Villani)" corresp="#person-17"/><note
+                        type="attribution"><foreign xml:lang="grc"
+                     >Εὐσεβ(ίου):</foreign></note></seg>
+                  <note type="lemma">Ps 14,4c–5</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-14-46"
+                     rendition="#bottom-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-14-4c"><quote type="patristic"
+                        subtype="quotation-adapted-and-abbreviated" xml:id="vat-gr-1422-quot-14-46"
+                        source="Asterius, hom. 26,13 in Ps. 14 (212,7–9 Richard) in Ps 14,5c"
+                        corresp="#person-40"/></seg>
+                  <note type="lemma">Ps 14,4c–5</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-14-47"
+                     rendition="#bottom-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-14-4c"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-1422-quot-14-47"
+                        source="Theodoretus, comm. in Ps 14,5c (PG 80,956 C12–D1)"
+                        corresp="#person-16"/></seg>
+                  <note type="lemma">Ps 14,4c–5</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-14-48"
+                     rendition="#bottom-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-14-4c"><quote type="patristic" subtype="ineditum"
+                        xml:id="vat-gr-1422-quot-14-48"
+                        source="fons ignotus in Ps 14,5c (ineditum?)" corresp="#person-18">Ἐὰν γὰρ
+                        σαλευθῆ· εἰς τέλος οὐ σαλευθήσεται· ὑπὸ τῶν ἰδίων ἀρετῶν
+                        χειραγωγούμενος:</quote><ref target="#par-gr-139:par-gr-139-fr-14-40"
+                        type="abbreviated-with-variant">Paris. gr. 139</ref></seg>
+                  <note type="lemma">Ps 14,4c–5</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-14-49"
+                     rendition="#bottom-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-14-4c"><quote type="patristic"
+                        subtype="quotation-adapted" xml:id="vat-gr-1422-quot-14-49"
+                        source="Didymus, fr. 89 in Ps 14,5c (174,16–18 Mühlenberg)"
+                        corresp="#person-6"/></seg>
+               </ab>
+            </div>
+            <!--  <div type="commentary" subtype="commentary" xml:id="vat-gr-1422-14-XX" rendition="#XXXX" 
+                  change="commentaryfragments-only">
+                  <ab xml:lang="grc">
+                     <note type="lemma">Ps XX,XX</note>
+                        <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-14-XX" rendition="#XXXX" source="XXXX"
+                        corresp="#vat-gr-1422-ps-14-XX"><quote type="patristic" subtype="XXXX"
+                        xml:id="vat-gr-1422-quot-14-XX"
+                        source="XXXX"
+                        corresp="#person-XX"/><note type="attribution"><foreign
+                        xml:lang="grc">XXXX</foreign></note></seg>
+                 </ab>
+                 </div> 
+            -->
          </div>
+         <!-- Ἀθανασίου Ἀστερίου Βασιλείου Διδύμου Εὐσεβίου Ἡσυχίου Θεοδωρήτου Θεοδώρου Κυρίλλου  -->
+         <!-- ὑποθ(έσεις) τοῦ ΙΒ´ ψαλμ(οῦ) -->
       </body>
+      <!-- <ref target="#vat-gr-754:XXXX" type="XXXX">Vat. gr. 754</ref>
+            -->
    </text>
 </TEI>
+<!-- ToDo: Ps 1–2: Personen in @corresp zu berichtigen -->
+<!-- faciendum: Korrekruren: Ps 1–2: finale Revision durchzuführen -->
+<!-- faciendum: List of contents: Ps 3–10 -->
