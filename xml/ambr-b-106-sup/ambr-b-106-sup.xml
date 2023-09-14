@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../schema/tei-psalmcatenae.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-   <!-- faciendum: Katene: Ps 1–10: Vat. gr. 1747: "parallels" zu ergänzen -->
-   <!-- ToDo: Ps 1–2: Personen in @corresp zu berichtigen -->
-   <!-- faciendum: Ps 1–10: Lemmata zu überprüfen -->
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -1746,7 +1743,7 @@
                   </seg>
                   <note type="lemma">Ps 8,9 (sic)</note>
                   <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-8-8"
-                     corresp="#ambr-b-106-sup-ps-8-8a" source="Anonymous"
+                     corresp="#ambr-b-106-sup-ps-8-9a" source="Anonymous"
                      copyOf="#edition:edition-8-8-1">
                      <quote type="patristic" subtype="quotation" xml:id="ambr-b-106-sup-quot-8-8"
                         corresp="#person-2" source="Athanasius, exp. in Ps 8,8a">Τοὺς ἐξ ισραὴλ
@@ -3118,7 +3115,7 @@
                         type="with-variants">Vat. gr. 754</ref><note type="parallels">Vat. gr. 1747
                         (f. 17r): Lemma: Ps 13,1b–d (Εἶπεν) | Attribution: Anonymous | Linking:
                            <foreign xml:lang="grc"
-                  >ΚΗ´</foreign></note></seg><!-- Katene: Vat. gr. 1747: f. 17r: Notiz des Katenisten am unteren Rand -->
+                  >ΚΗ´</foreign></note></seg>
                </ab>
             </div>
             <pb n="37r"
@@ -3296,3 +3293,8 @@
    </text>
 
 </TEI>
+
+<!-- faciendum: Katene: Ps 1–10: Vat. gr. 1747: "parallels" zu ergänzen -->
+<!-- ToDo: Ps 1–2: Personen in @corresp zu berichtigen -->
+<!-- faciendum: Ps 1–10: Lemmata zu überprüfen -->
+<!-- Katene: Vat. gr. 1747: f. 17r: Notiz des Katenisten am unteren Rand -->
