@@ -19952,6 +19952,13 @@
             </div>
          </div>
          <!-- Ps 15 commentary -->
+         <!-- Typus XIX: V1(f. 59r: erledigt) C(f. 12r: erledigt) G(XXX) P1(f. 30r: erledigt) -->
+         <!-- Typus IV: M(XXX) O(XXX) -->
+         <!-- codices varii: B1(XXX) B2(XXX) N1(XXX) P2(XXX) P3(XXX) P4(XXX) A1(XXX) P5(f. 56v: erledigt) L1(XXX) -->
+         <!-- Typus III: P6(XXX) Z(XXX) N2(XXX) -->
+         <!-- Typus XIV: A2(XXX) V4(XXX) -->
+         <!-- Typus XV: V5(XXX) P7(XXX) P8(XXX) -->
+         <!-- Typus XVI: L2(XXX) A3(XXX) -->
          <div type="psalm" n="15">
             <div type="psalmverse" n="15.1">
                <div type="text" xml:lang="grc">
@@ -20009,8 +20016,14 @@
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">ἐκ προσώπου Χριστοῦ</foreign></lem>
-                        <rdg wit="#P1"><foreign xml:lang="grc">ἐκ προσώπου τοῦ
+                        <rdg wit="#P1 #P5"><foreign xml:lang="grc">ἐκ προσώπου τοῦ
                            Χριστοῦ</foreign></rdg>
+                        <wit>Par. gr. 166</wit>
+                        <wit>Coislin 12</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">ἡμᾶς</foreign></lem>
+                        <rdg wit="#P5"><foreign xml:lang="grc">ἡμῖν</foreign></rdg>
                         <wit>Par. gr. 166</wit>
                      </app>
                      <note type="textual-commentary">Montfaucon: exp. 201 aus P1.</note>
@@ -20029,6 +20042,7 @@
                               <ref target="#coislin-10:coislin-10-fr-15-2"/>
                               <ref target="#par-gr-166:par-gr-166-fr-15-2"/>
                               <ref target="#coislin-12:coislin-12-fr-15-2"/>
+                              <!-- cave: längere Fassung in P5 -->
                            </listRef>
                         </p>
                      </div>
@@ -20090,7 +20104,7 @@
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #P1 #C">txt</rdg>
+                        <rdg wit="#V1 #C #P1 #P5">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Coislin 10</wit>
                         <wit>Par. gr. 166</wit>
@@ -20118,11 +20132,6 @@
                         <wit>Vat. gr. 754</wit>
                      </app>
                      <app type="text">
-                        <lem><foreign xml:lang="grc">πρέπον</foreign></lem>
-                        <rdg wit="#P1"><foreign xml:lang="grc">προτρέπων</foreign></rdg>
-                        <wit>Par. gr. 166</wit>
-                     </app>
-                     <app type="text">
                         <lem><foreign xml:lang="grc">δικαίωσιν</foreign></lem>
                         <rdg wit="#P1"><foreign xml:lang="grc">δικαιοσύνην</foreign></rdg>
                         <wit>Par. gr. 166</wit>
@@ -20143,6 +20152,7 @@
                               <ref target="#coislin-10:coislin-10-fr-15-4"/>
                               <ref target="#par-gr-166:par-gr-166-fr-15-4"/>
                               <ref target="#coislin-12:coislin-12-fr-15-4"/>
+                              <!-- cave: P5 hat längere Fassung -->
                            </listRef>
                         </p>
                      </div>
@@ -20155,7 +20165,10 @@
                         <wit>Par. gr. 166</wit>
                         <wit>Coislin 12</wit>
                      </app>
-                     <app type="text"/>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">κατὰ νόμον</foreign></lem>
+                        <rdg wit="#P5"><foreign xml:lang="grc">κατὰ τὸν νόμον</foreign></rdg>
+                     </app>
                   </div>
                </div>
                <div type="translation" xml:lang="de">
@@ -20293,6 +20306,8 @@
                         <wit>Vat. gr. 754</wit>
                         <rdg wit="#P1"><foreign xml:lang="grc">ἐν τῷ ὑπακοῦσαι</foreign></rdg>
                         <wit>Par. gr. 166</wit>
+                        <rdg wit="#P5"><foreign xml:lang="grc">εἰς τὸ ἐπακοῦσαι</foreign></rdg>
+                        <wit>Par. gr. 166</wit>
                      </app>
                   </div>
                   <div type="psalmtext">
@@ -20350,6 +20365,16 @@
                         <wit>Par. gr. 166</wit>
                      </app>
                      <app type="text"/>
+                     <note type="textual-commentary">P1: exp. 209 ist mit einem verkürzten Zitat aus
+                        Eusebius (fr. 6 in Ps 15,4c–d [Villani]) verbunden. P5: Eine Erklärung zu Ps
+                        15,4d unter dem Namen des Athanasius ist vorhanden. Diese entspricht jedoch
+                        nicht exp. 209, sondern ist das bereits zitierte Eusebius-Zitat in einer
+                        vollständigeren Fassung. Die kürzere Fassung von P1 findet sich in V1 und C
+                        als eigenständiges Fragment unmittelbar nach exp. 208. Schlussfolgerung: Der
+                        Austausch zwischen Athanasius und Eusebius in P5 ist ein Hinweis darauf,
+                        dass die darin enthaltenen Expositiones nicht aus der direkten Überlieferung
+                        des Kommentars, sondern bereits aus einer Typus XIX nahestehenden Katene
+                        entnommen wurden (siehe zu exp. 197).</note>
                   </div>
                </div>
                <div type="translation" xml:lang="de">
@@ -20415,6 +20440,11 @@
                         <lem><foreign xml:lang="grc">ὧ</foreign></lem>
                         <rdg wit="#C"><foreign xml:lang="grc">ὃ</foreign></rdg>
                         <wit>Coislin 10</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">ἀπ᾿ ἐμοῦ</foreign></lem>
+                        <rdg wit="#P5">om.</rdg>
+                        <wit>Coislin 12</wit>
                      </app>
                   </div>
                   <div type="psalmtext">
@@ -20568,14 +20598,11 @@
                         <wit>Coislin 12</wit>
                      </app>
                      <app type="text">
-                        <lem><foreign xml:lang="grc">ὁ τὰ πάντα</foreign></lem>
-                        <rdg wit="#P1"><foreign xml:lang="grc">ὁ πάντα</foreign></rdg>
+                        <lem><foreign xml:lang="grc">ὁ τὰ πάντα στηρίζων καὶ ἀνέχων</foreign></lem>
+                        <rdg wit="#P1 #P5"><foreign xml:lang="grc">ὁ πάντα στηρίζων καὶ
+                              συνέχων</foreign></rdg>
                         <wit>Par. gr. 166</wit>
-                     </app>
-                     <app type="text">
-                        <lem><foreign xml:lang="grc">στηρίζων καὶ ἀνέχων</foreign></lem>
-                        <rdg wit="#P1"><foreign xml:lang="grc">στηρίζων καὶ συνέχων</foreign></rdg>
-                        <wit>Par. gr. 166</wit>
+                        <wit>Coislin 12</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">καθὸ δὲ</foreign></lem>
@@ -20583,9 +20610,17 @@
                         <wit>Par. gr. 166</wit>
                      </app>
                      <app type="text">
-                        <lem><foreign xml:lang="grc">ἂν αὐτῷ</foreign></lem>
-                        <rdg wit="#P1"><foreign xml:lang="grc">ἐν αὐτῷ</foreign></rdg>
+                        <lem><foreign xml:lang="grc">πρέπει ἂν αὐτῷ</foreign></lem>
+                        <rdg wit="#P1"><foreign xml:lang="grc">πρέπει ἐν αὐτῷ</foreign></rdg>
                         <wit>Par. gr. 166</wit>
+                        <rdg wit="#P5"><foreign xml:lang="grc">πρεποι ἂν αὐτῷ</foreign></rdg>
+                        <wit>Coislin 12</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">καὶ τὸ ἐκ δεξιῶν</foreign></lem>
+                        <rdg wit="#P5"><foreign xml:lang="grc">καὶ τὸ λέγειν ἐκ
+                           δεξιῶν</foreign></rdg>
+                        <wit>Coislin 12</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">ἐσχηκέναι</foreign></lem>
@@ -20658,8 +20693,9 @@
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">ὁ θεὸς</foreign></lem>
-                        <rdg wit="#C"><foreign xml:lang="grc">ὡς θεὸς</foreign></rdg>
+                        <rdg wit="#C #P5"><foreign xml:lang="grc">ὡς θεὸς</foreign></rdg>
                         <wit>Coislin 10</wit>
+                        <wit>Coislin 12</wit>
                      </app>
                   </div>
                   <div type="psalmtext">
@@ -20718,9 +20754,19 @@
                         <wit>Coislin 12</wit>
                      </app>
                      <app type="text">
+                        <lem><foreign xml:lang="grc">καὶ ποία</foreign></lem>
+                        <rdg wit="#P5"><foreign xml:lang="grc">[καὶ(?)] π[ο]ία</foreign></rdg>
+                        <wit>Coislin 12</wit>
+                     </app>
+                     <app type="text">
                         <lem><foreign xml:lang="grc">ἡ ἐλπὶς</foreign></lem>
                         <rdg wit="#P1"><foreign xml:lang="grc">ἐλπὶς</foreign></rdg>
                         <wit>Par. gr. 166</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">ἢ ὅτι</foreign></lem>
+                        <rdg wit="#P5"><foreign xml:lang="grc">ἢ ὅτι καὶ</foreign></rdg>
+                        <wit>Coislin 12</wit>
                      </app>
                   </div>
                </div>
@@ -20738,28 +20784,26 @@
                      <quote type="psalmtext" xml:id="edition-ps-15-11-1" n="11a">ἐγνώρισάς μοι ὁδοὺς
                         ζωῆς·</quote>
                   </div>
-                  <div type="commentary">
-                     <p xml:id="edition-15-11-1" n="216">Αὐτὸς ὢν ζωὴ καὶ ζωοποιὸς, ἐζωοποιῆσθαι
-                        λέγεται παρὰ τοῦ πατρὸς· διὰ τὴν οἰκονομίαν: –</p>
+                  <div type="commentary" rend="parallel">
+                     <p xml:id="edition-15-11-1" n="216" next="#edition-15-11-1-1">Αὐτὸς ὢν ζωὴ καὶ
+                        ζωοποιὸς, ἐζωοποιῆσθαι λέγεται παρὰ τοῦ πατρὸς· διὰ τὴν οἰκονομίαν: –</p>
                      <div type="links">
                         <p>
                            <listRef>
                               <ref target="#vat-gr-754:vat-gr-754-fr-15-29"/>
                               <ref target="#coislin-10:coislin-10-fr-15-22"/>
                               <ref target="#par-gr-166:par-gr-166-fr-15-19"/>
-                              <ref target="#coislin-12:coislin-12-fr-15-17"/>
                               <!-- Fragment nach Vian -->
                            </listRef>
                         </p>
                      </div>
                   </div>
-                  <div type="textcritic">
+                  <div type="textcritic" rend="hide">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #P1 #P5">txt</rdg>
+                        <rdg wit="#V1 #C #P1">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Coislin 10</wit>
                         <wit>Par. gr. 166</wit>
-                        <wit>Coislin 12</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">ἐζωοποιῆσθαι</foreign></lem>
@@ -20772,33 +20816,44 @@
                         <wit>Par. gr. 166</wit>
                      </app>
                   </div>
+                  <div type="commentary" rend="hide">
+                     <p xml:id="edition-15-11-1-1" n="216">Αὐτὸς ὢν ἡ ζωὴ καὶ ὁ ζωοποιὸς· κατὰ τὸ
+                        ἐγώ εἰμι ἡ ἀνάστασις καὶ ἡ ζωὴ, ἐζωοποιῆσθαι λέγεται παρὰ τοῦ πατρὸς· διὰ
+                        τὴν οἰκονομίαν: –</p>
+                     <listRef>
+                        <ref target="#coislin-12:coislin-12-fr-15-17"/>
+                        <!-- Fragment nach Vian -->
+                     </listRef>
+                  </div>
+                  <div type="textcritic" rend="hide">
+                     <app type="fragment">
+                        <rdg wit="#P5">text</rdg>
+                     </app>
+                  </div>
                   <div type="psalmtext">
                      <quote type="psalmtext" xml:id="edition-ps-15-11-2" n="11b">πληρώσεις με
                         εὐφροσύνης μετὰ τοῦ προσώπου σου,</quote>
                   </div>
-                  <div type="commentary">
-                     <p xml:id="edition-15-11-2" n="217">Ὁ τῆς ἀνθρωπότητος ἔχων πρόσωπον ὡς καθ᾿
-                        ἡμᾶς γεγονὼς· τοὺς ἡμῖν μᾶλλον καὶ οὐχ ἑαυτῷ πρέποντας· καθὸ νοεῖται θεὸς,
-                        ἀναπέμπει λόγους: –</p>
+                  <div type="commentary" rend="parallel">
+                     <p xml:id="edition-15-11-2" n="217" next="#edition-15-11-2-1">Ὁ τῆς
+                        ἀνθρωπότητος ἔχων πρόσωπον ὡς καθ᾿ ἡμᾶς γεγονὼς· τοὺς ἡμῖν μᾶλλον καὶ οὐχ
+                        ἑαυτῷ πρέποντας· καθὸ νοεῖται θεὸς, ἀναπέμπει λόγους: –</p>
                      <div type="links">
                         <p>
                            <listRef>
                               <ref target="#vat-gr-754:vat-gr-754-fr-15-30"/>
                               <ref target="#coislin-10:coislin-10-fr-15-23"/>
                               <ref target="#par-gr-166:par-gr-166-fr-15-20"/>
-                              <ref target="#coislin-12:coislin-12-fr-15-18"/>
-                              <!-- cave: P5 hat breitere Fassung -->
                            </listRef>
                         </p>
                      </div>
                   </div>
-                  <div type="textcritic">
+                  <div type="textcritic" rend="hide">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #P1 #P5">txt</rdg>
+                        <rdg wit="#V1 #C #P1">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Coislin 10</wit>
                         <wit>Par. gr. 166</wit>
-                        <wit>Coislin 12</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">ὡς καθ᾿ ἡμᾶς γεγονὼς</foreign></lem>
@@ -20811,6 +20866,27 @@
                         <wit>Par. gr. 166</wit>
                      </app>
                   </div>
+                  <div type="commentary" rend="hide">
+                     <p xml:id="edition-15-11-2-1" n="217">Ὡς ἐκ προσώπου τοῦ Χριστοῦ πρὸς τὸν ἐν
+                        οὐρανοῖς πατέρα καὶ θεὸν λέγεται ὁ στίχος· πλὴν ἐκεῖνο διδάσκει ὅτι τὸ τῆς
+                        ἀνθρωπότητος ἔχων πρόσωπον ὡς καθ᾿ ἡμᾶς γεγονὼς· τοὺς ἡμῖν μᾶλλον καὶ οὐχ᾿
+                        ἑαυτῷ πρέποντας καθὸ νοεῖται θεὸς, ἀναπέμπει λόγους· ὡς ἐφ᾿ ἑαυτῷ καὶ πρώτῳ
+                        καλῶν ἐφ᾿ ἡμᾶς τὴν τῶν οὐρανίων ἀγαθῶν μέθεξιν· ὅσα γὰρ ἑαυτῷ δεδόσθαι φησὶ,
+                        ταῦτα τῇ τοῦ ἀνθρώπου φύσει προσνέμει· οὕτω γὰρ πληροῦται τὸ τῇ αὐτοῦ
+                        πτωχείᾳ πεπλουτηκέναι: –</p>
+                     <div type="links">
+                        <p>
+                           <listRef>
+                              <ref target="#coislin-12:coislin-12-fr-15-18"/>
+                           </listRef>
+                        </p>
+                     </div>
+                  </div>
+                  <div type="textcritic" rend="hide">
+                     <app type="fragment">
+                        <rdg wit="#P5">txt</rdg>
+                     </app>
+                  </div>
                   <div type="psalmtext">
                      <quote type="psalmtext" xml:id="edition-ps-15-11-3" n="11c">τερπνότητες ἐν τῇ
                         δεξιᾷ σου εἰς τέλος.</quote>
@@ -20818,7 +20894,7 @@
                   <div type="commentary">
                      <p xml:id="edition-15-11-3" n="218">Τοῦτο σημαίνει, ὅτι ἐν τέρψεσι καὶ
                         εὐφροσύναις ἔσονται μακραῖς καὶ διηνεκέσιν οἱ ἅγιοι· μετὰ τὸ ἀναβιῶναι κατὰ
-                        τὸν τῆς ἀναστάσεως καιρόν· ταύτην δὲ τὴν τέρψιν καὶ τὴν εὐφροσύνην ἥτις
+                        τὸν τῆς ἀναστάσεως καιρόν· ταύτην δὲ τὴν τέρψιν καὶ τὴν εὐφροσύνην· ἥτις
                         ἐστὶν ἡ ἀφθαρσία, λήψεσθαι λέγουσι παρὰ Χριστοῦ· ὃς καὶ ἔστι δεξιὰ τοῦ
                         πατρός· καὶ ὡς ἀληθὴς ὁ λόγος, δῆλον ἐκ τοῦ φήσαντος λογίου· ὃς
                         μετασχηματίσει τὸ σχῆμα τῆς ταπεινώσεως ἡμῶν· σύμμορφον τῶ σώματι τῆς δόξης
@@ -20865,10 +20941,20 @@
                         <wit>Par. gr. 166</wit>
                      </app>
                      <app type="text">
+                        <lem><foreign xml:lang="grc">δεξιὰ τοῦ πατρός</foreign></lem>
+                        <rdg wit="#P5"><foreign xml:lang="grc">δόξα τοῦ πατρός</foreign></rdg>
+                        <wit>Coislin 12</wit>
+                     </app>
+                     <app type="text">
                         <lem><foreign xml:lang="grc">φήσαντος</foreign></lem>
                         <rdg wit="#C #P1"><foreign xml:lang="grc">φείσαντος</foreign></rdg>
                         <wit>Coislin 10</wit>
                         <wit>Par. gr. 166</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">τὸ σχῆμα</foreign></lem>
+                        <rdg wit="#P5"><foreign xml:lang="grc">τὸ σῶμα</foreign></rdg>
+                        <wit>Coislin 12</wit>
                      </app>
                   </div>
                </div>
