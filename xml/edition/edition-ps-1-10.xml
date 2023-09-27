@@ -20116,9 +20116,10 @@
                      <quote xml:id="edition-ps-15-2-1" type="psalmtext" n="2a">εἶπα τῷ κυρίῳ Κύριός
                         μου εἶ σύ,</quote>
                   </div>
-                  <div type="commentary">
-                     <p xml:id="edition-15-2-1" n="203">Πάλιν καὶ τοῦτο πρέπον τῇ τοῦ δούλου μορφῇ·
-                        δηλοῖ δὲ ἅμα καὶ τὴν ἐν πίστει δι᾿ ὁμολογίας δικαίωσιν: –</p>
+                  <div type="commentary" rend="parallel">
+                     <p xml:id="edition-15-2-1" n="203" next="#edition-15-2-1-1">Πάλιν καὶ τοῦτο
+                        πρέπον τῇ τοῦ δούλου μορφῇ· δηλοῖ δὲ ἅμα, καὶ τὴν ἐν πίστει δι᾿ ὁμολογίας
+                        δικαίωσιν: –</p>
                      <!-- Textkritik: δι᾿ ὁμολογίας: δ- rescriptus (ut vid.) V1 -->
                      <div type="links">
                         <p>
@@ -20131,7 +20132,7 @@
                         </p>
                      </div>
                   </div>
-                  <div type="textcritic">
+                  <div type="textcritic" rend="hide">
                      <app type="fragment">
                         <rdg wit="#V1 #C #P1 #P5">txt</rdg>
                         <wit>Vat. gr. 754</wit>
@@ -20167,6 +20168,28 @@
                      </app>
                      <note type="textual-commentary">Montfaucon: exp. 203 aus P1.</note>
                   </div>
+                  <div type="commentary" rend="hide">
+                     <p xml:id="edition-15-2-1-1" n="203">Τὸ εἶπα τῷ κυρίῳ, πάλιν πρέπον τῇ τοῦ
+                        δούλου μορφῇ ὡς ὑπὲρ ἡμῶν λέγεται· δ[η]λοῖ δὲ ἅμα, καὶ τὴν ἐν πίστει
+                        δικαιοσύνην δι᾿ ὁμολογ[ία]ς:</p>
+                     <div type="links">
+                        <p><listRef>
+                              <ref target="#plut-5-30:plut-5-30-fr-15-4"/>
+                           </listRef></p>
+                     </div>
+                  </div>
+                  <div type="textcritic" rend="hide">
+                     <app type="fragment">
+                        <rdg wit="#L1 #V5 #P7">txt</rdg>
+                        <wit>Plut. 5. 30</wit>
+                        <wit>Vat. gr. 1422</wit>
+                        <wit>Par. gr. 146</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">δηλοῖ – ὁμολογίας</foreign></lem>
+                        <rdg wit="#V5 #P7">om.</rdg>
+                     </app>
+                  </div>
                   <div type="psalmtext">
                      <quote xml:id="edition-ps-15-2-2" type="psalmtext" n="2b">ὅτι τῶν ἀγαθῶν μου οὐ
                         χρείαν ἔχεις.</quote>
@@ -20181,16 +20204,17 @@
                               <ref target="#coislin-10:coislin-10-fr-15-4"/>
                               <ref target="#par-gr-166:par-gr-166-fr-15-4"/>
                               <ref target="#coislin-12:coislin-12-fr-15-4"/>
-                              <!-- cave: P5 B2 P6 haben längere Fassung -->
+                              <!-- cave: P5 B2 P6 L1 haben längere Fassung -->
                               <ref target="#ambr-b-106-sup:ambr-b-106-sup-fr-15-2"/>
-                              <ref target="#oxon-s-trin-78:oxon-s-trin-78-fr-15-2"></ref>
+                              <ref target="#oxon-s-trin-78:oxon-s-trin-78-fr-15-2"/>
+                              <ref target="#plut-5-30:plut-5-30-fr-15-6"/>
                            </listRef>
                         </p>
                      </div>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #P1 #P5 #A2 #V4 #B2">txt</rdg>
+                        <rdg wit="#V1 #C #P1 #P5 #A2 #V4 #B2 #L1">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Coislin 10</wit>
                         <wit>Par. gr. 166</wit>
@@ -20198,11 +20222,14 @@
                         <wit>Ambr. B 106 sup.</wit>
                         <wit>Vat. gr. 1747</wit>
                         <wit>S.Trin. 78</wit>
+                        <wit>Plut. 5. 30</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">Ἀγαθά – θυσίας</foreign></lem>
-                        <rdg wit="#B2"><foreign xml:lang="grc">Ἀγαθῶν φησὶν ἐν ταύταις ταῖς κατὰ
-                              νόμον προσφερομέναις θυσίαις</foreign></rdg>
+                        <rdg wit="#B2 #L1"><foreign xml:lang="grc">Ἀγαθῶν φησὶν ἐν ταύταις
+                              (ἐνταῦθα</foreign>
+                           <hi rend="italic">L1</hi>) <foreign xml:lang="grc">ταῖς κατὰ νόμον
+                              προσφερομέναις θυσίαις</foreign></rdg>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">κατὰ νόμον</foreign></lem>
@@ -20247,19 +20274,21 @@
                               <ref target="#par-gr-166:par-gr-166-fr-15-5"/>
                               <ref target="#coislin-12:coislin-12-fr-15-5"/>
                               <ref target="#ambr-b-106-sup:ambr-b-106-sup-fr-15-3"/>
+                              <ref target="#oxon-s-trin-78:oxon-s-trin-78-fr-15-3"/>
                            </listRef>
                         </p>
                      </div>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #P1 #P5 #A2 #V4">txt</rdg>
+                        <rdg wit="#V1 #C #P1 #P5 #A2 #V4 #B2">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Coislin 10</wit>
                         <wit>Par. gr. 166</wit>
                         <wit>Coislin 12</wit>
                         <wit>Ambr. B 106 sup.</wit>
                         <wit>Vat. gr. 1747</wit>
+                        <wit>S.Trin. 78</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">τοὺς</foreign></lem>
@@ -20270,6 +20299,11 @@
                         <lem><foreign xml:lang="grc">γνωστὸν</foreign></lem>
                         <rdg wit="#P1"><foreign xml:lang="grc">γνωσταῖον</foreign></rdg>
                         <wit>Par. gr. 166</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">ἵνα – ἄγγελος</foreign></lem>
+                        <rdg wit="#B2">om.</rdg>
+                        <wit>S.Trin. 78</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">διὸ – ἄγγελος</foreign></lem>
@@ -20343,17 +20377,19 @@
                               <ref target="#coislin-10:coislin-10-fr-15-8"/>
                               <ref target="#par-gr-166:par-gr-166-fr-15-7"/>
                               <ref target="#coislin-12:coislin-12-fr-15-7"/>
+                              <ref target="#oxon-s-trin-78:oxon-s-trin-78-fr-15-4"/>
                            </listRef>
                         </p>
                      </div>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #P1 #P5">txt</rdg>
+                        <rdg wit="#V1 #C #P1 #P5 #B2">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Coislin 10</wit>
                         <wit>Par. gr. 166</wit>
                         <wit>Coislin 12</wit>
+                        <wit>S.Trin. 78</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">εἰς τὸ ὑπακοῦσαι</foreign></lem>
@@ -20382,13 +20418,15 @@
                               <ref target="#coislin-12:coislin-12-fr-15-8"/>
                               <ref target="#ambr-b-106-sup:ambr-b-106-sup-fr-15-5"/>
                               <ref target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-15-4"/>
+                              <ref target="#oxon-s-trin-78:oxon-s-trin-78-fr-15-5"/>
+                              <ref target="#par-gr-164:par-gr-164-fr-15-2"/>
                            </listRef>
                         </p>
                      </div>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #P1 #P5 #A2 #V4 #B1">txt</rdg>
+                        <rdg wit="#V1 #C #P1 #P5 #A2 #V4 #B1 #B2 #P3">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Coislin 10</wit>
                         <wit>Par. gr. 166</wit>
@@ -20396,6 +20434,21 @@
                         <wit>Ambr. B 106 sup.</wit>
                         <wit>Vat. gr. 1747</wit>
                         <wit>Auct. D. 4. 1</wit>
+                        <wit>S.Trin. 78</wit>
+                        <wit>Par. gr. 164</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">Συνάγων – δι’ αἱμάτων</foreign></lem>
+                        <rdg wit="#P3"><foreign xml:lang="grc">Συναγάγω φήσις συναγωγὰς ἐκ τῶ
+                              ἔθνος·</foreign> (sic)<foreign xml:lang="grc"> τουτέστιν οὐ δι’
+                              αἱμάτων</foreign></rdg>
+                        <wit>Par. gr. 164</wit>
+                        <!-- Textkritik: P3 φήσ[.]: in Klammern ist ein nicht eindeutiger Buchstabe -->
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">Συνάγων</foreign></lem>
+                        <rdg wit="#B2"><foreign xml:lang="grc">Συναγαγὼν</foreign></rdg>
+                        <wit>S.Trin. 78</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">δι’ αἱμάτων</foreign></lem>
@@ -20405,9 +20458,10 @@
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">οὐδὲ</foreign></lem>
-                        <rdg wit="#B1"><foreign xml:lang="grc">τουτέστιν· οὐ</foreign></rdg>
+                        <rdg wit="#B1 #B2"><foreign xml:lang="grc">τουτέστιν οὐ</foreign></rdg>
                         <wit>Auct. D. 4. 1</wit>
                         <!-- Textkritik: τοῦτέστιν B1 -->
+                        <wit>S.Trin. 78</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">παρασκευάσω</foreign></lem>
@@ -20419,6 +20473,11 @@
                         <lem><foreign xml:lang="grc">μοι</foreign></lem>
                         <rdg wit="#A2"><foreign xml:lang="grc">[μοι(?)]</foreign></rdg>
                         <wit>Ambr. B 106 sup.</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">προσέρχεσθαι</foreign></lem>
+                        <rdg wit="#P3"><foreign xml:lang="grc">προσεύχεσθ[α]ι</foreign></rdg>
+                        <wit>Par. gr. 164</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">δὲ</foreign></lem>
@@ -20439,7 +20498,8 @@
                               <ref target="#vat-gr-754:vat-gr-754-fr-15-11"/>
                               <ref target="#coislin-10:coislin-10-fr-15-10"/>
                               <ref target="#par-gr-166:par-gr-166-fr-15-9"/>
-                              <!-- cave: P5 B1 P1 V1 C haben die Eusbius' Version -->
+                              <!-- cave: P5 B1 B2 P1 V1 C haben die Eusbius' Version -->
+                              <ref target="#oxon-s-trin-78:oxon-s-trin-78-fr-15-6"/>
                            </listRef>
                         </p>
                      </div>
@@ -20503,16 +20563,19 @@
                               <ref target="#coislin-10:coislin-10-fr-15-12"/>
                               <ref target="#par-gr-166:par-gr-166-fr-15-10"/>
                               <ref target="#coislin-12:coislin-12-fr-15-10"/>
+                              <ref target="#plut-5-30:plut-5-30-fr-15-13"></ref>
                            </listRef>
                         </p>
                      </div>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #P1 #P5">txt</rdg>
+                        <rdg wit="#V1 #C #P1 #P5 #L1">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Coislin 10</wit>
                         <wit>Par. gr. 166</wit>
+                        <wit>Coislin 12</wit>
+                        <wit>Plut. 5. 30</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">Ὡσεὶ</foreign></lem>
@@ -20571,13 +20634,14 @@
                               <ref target="#coislin-12:coislin-12-fr-15-11"/>
                               <ref target="#ambr-b-106-sup:ambr-b-106-sup-fr-15-7"/>
                               <ref target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-15-8"/>
+                              <ref target="#oxon-s-trin-78:oxon-s-trin-78-fr-15-7"/>
                            </listRef>
                         </p>
                      </div>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #P1 #P5 #A2 #V4 #B1">txt</rdg>
+                        <rdg wit="#V1 #C #P1 #P5 #A2 #V4 #B1 #B2">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Coislin 10</wit>
                         <wit>Par. gr. 166</wit>
@@ -20585,11 +20649,13 @@
                         <wit>Ambr. B 106 sup.</wit>
                         <wit>Vat. gr. 1747</wit>
                         <wit>Auct. D. 4. 1</wit>
+                        <wit>S.Trin. 78</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">καὶ κρατίστη ἐστὶν</foreign></lem>
-                        <rdg wit="#C"><foreign xml:lang="grc">κρατίστη ἐστὶν</foreign></rdg>
+                        <rdg wit="#C #B2"><foreign xml:lang="grc">κρατίστη ἐστὶν</foreign></rdg>
                         <wit>Coislin 10</wit>
+                        <wit>S.Trin. 78</wit>
                         <rdg wit="#B1"><foreign xml:lang="grc">κρατίστη</foreign></rdg>
                         <wit>Auct. D. 4. 1</wit>
                      </app>
@@ -20829,6 +20895,7 @@
                               <ref target="#par-gr-166:par-gr-166-fr-15-18"/>
                               <ref target="#coislin-12:coislin-12-fr-15-16"/>
                               <ref target="#ambr-b-106-sup:ambr-b-106-sup-fr-15-9"/>
+                              <ref target="#oxon-s-trin-78:oxon-s-trin-78-fr-15-9"/>
                               <!-- Fragment nach Vian -->
                            </listRef>
                         </p>
@@ -20836,13 +20903,14 @@
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #P1 #P5 #A2 #V4">txt</rdg>
+                        <rdg wit="#V1 #C #P1 #P5 #A2 #V4 #B2">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Coislin 10</wit>
                         <wit>Par. gr. 166</wit>
                         <wit>Coislin 12</wit>
                         <wit>Ambr. B 106 sup.</wit>
                         <wit>Vat. gr. 1747</wit>
+                        <wit>S.Trin. 78</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">Μέχρι – καὶ</foreign></lem>
@@ -20852,9 +20920,10 @@
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">Μέχρι – διαφθοράν</foreign></lem>
-                        <rdg wit="#P1 #P5">om.</rdg>
+                        <rdg wit="#P1 #P5 #B2">om.</rdg>
                         <wit>Par. gr. 166</wit>
                         <wit>Coislin 12</wit>
+                        <wit>S.Trin. 78</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">καὶ ποία</foreign></lem>
@@ -20952,16 +21021,18 @@
                               <ref target="#vat-gr-754:vat-gr-754-fr-15-30"/>
                               <ref target="#coislin-10:coislin-10-fr-15-23"/>
                               <ref target="#par-gr-166:par-gr-166-fr-15-20"/>
+                              <ref target="#oxon-s-trin-78:oxon-s-trin-78-fr-15-10"/>
                            </listRef>
                         </p>
                      </div>
                   </div>
                   <div type="textcritic" rend="hide">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #P1">txt</rdg>
+                        <rdg wit="#V1 #C #P1 #B2">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Coislin 10</wit>
                         <wit>Par. gr. 166</wit>
+                        <wit>S.Trin. 78</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">ὡς καθ᾿ ἡμᾶς γεγονὼς</foreign></lem>
