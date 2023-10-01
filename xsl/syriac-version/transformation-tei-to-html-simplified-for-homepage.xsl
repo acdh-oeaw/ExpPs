@@ -429,6 +429,22 @@
         <xsl:apply-templates select="child::node()"/>
     </xsl:template>
     
+    <xsl:template match="tei:div[@type = 'translation'][@xml:lang = 'en']">
+        <xsl:element name="p">
+            <xsl:attribute name="class" select="'heading-manuscript-name-sub'"/>
+            <xsl:text>Englische Übersetzung</xsl:text>
+        </xsl:element>
+        <xsl:apply-templates select="child::node()"/>
+    </xsl:template>
+    
+    <xsl:template match="tei:div[@type = 'page-of-manuscript'][parent::tei:div[(@type = 'translation') and (@xml:lang = 'en')]]">
+        <xsl:element name="p">
+            <xsl:attribute name="class" select="'page-number-translation'"/>
+            <xsl:value-of select="@n"/>
+        </xsl:element>
+        <xsl:apply-templates select="child::node()"/>
+    </xsl:template>
+    
     <xsl:template match="tei:div[@type = 'translation'][@xml:lang = 'la']">
         <xsl:element name="p">
             <xsl:attribute name="class" select="'heading-manuscript-name-sub'"/>
