@@ -43,28 +43,7 @@
                                     <ul id="main-menu" class="navbar-nav">
                                         <li class="nav-item active"><a title="Home" href="../index.html" class="nav-link">Home</a></li>
                                         <li class="nav-item"><a title="Edition" href="../edition.html" class="nav-link">Edition</a></li>
-                                        <li class="nav-item dropdown">
-                                            <a title="Manuscripts" href="../manuscripts.html" data-toggle="dropdown" class="nav-link dropdown-toggle">Manuscripts <span class="caret"></span></a>
-                                            <ul class=" dropdown-menu" role="menu">
-                                                <li class="nav-item dropdown-submenu">
-                                                    <a title="Ambr. B. 106 sup." href="./ambros_B_106_sup.html" class="nav-link">Ambr. B. 106 sup.</a>
-                                                    <a title="Ambr. M. 47 sup." href="./ambr_m_47_sup.html" class="nav-link">Ambr. M. 47 sup.</a>
-                                                    <a title="Bodl. Auct. D. 4.1" href="./bodl_auct_d_4_1.html" class="nav-link">Bodl. Auct. D. 4.1</a>
-                                                    <a title="Coislin 10" href="./coislin_10.html" class="nav-link">Coislin 10</a>
-                                                    <a title="Coislin 12" href="./coislin_12.html" class="nav-link">Coislin 12</a>
-                                                    <a title="Franzon. 3" href="./franzon_3.html" class="nav-link">Franzon. 3</a>
-                                                    <a title="Mosq. synod. 194" href="./mosq_synod_194.html" class="nav-link">Mosq. Synod. 194</a>
-                                                    <a title="Oxon. S. Trin. 78" href="./oxon_s_trin_78.html" class="nav-link">Oxon. S. Trin. 78</a>
-                                                    <a title="Par. gr. 139" href="./par_gr_139.html" class="nav-link">Par. gr. 139</a>
-                                                    <a title="Par. gr. 164" href="./par_gr_164.html" class="nav-link">Par. gr. 164</a>
-                                                    <a title="Par. gr. 166" href="./par_gr_166.html" class="nav-link">Par. gr. 166</a>
-                                                    <a title="Plut. 5. 30" href="./plut_5_30.html" class="nav-link">Plut. 5. 30</a>
-                                                    <a title="Plut. 6. 3" href="./plut_6_3.html" class="nav-link">Plut. 6. 3</a>
-                                                    <a title="Vat. gr. 754" href="./vat_gr_754.html" class="nav-link">Vat. gr. 754</a>
-                                                    <a title="Vat. gr. 1422" href="./vat_gr_1422.html" class="nav-link">Vat. gr. 1422</a>
-                                                </li>
-                                            </ul>
-                                        </li>
+                                        <li class="nav-item"><a title="Manuscripts" href="../manuscripts.html" class="nav-link">Manuscripts</a></li>
                                         <li class="nav-item"><a title="Search" href="../search.html" class="nav-link">Search</a></li>
                                         <li class="nav-item"><a title="New-Findings" href="../new_findings.html" class="nav-link">New Findings</a></li>
                                         <li class="nav-item dropdown">
@@ -162,6 +141,7 @@
                             </div><!-- #primary -->
                         </div><!-- .row -->
                     </div><!-- Container end -->
+                        <button onclick="goToTop()" id="go-to-top-button" title="Go to top">Go to top</button> 
                 </div>
                     <div class="wrapper fundament-default-footer" id="wrapper-footer-full">
                         <div class="container" id="footer-full-content" tabindex="-1">
@@ -223,6 +203,7 @@
                 <!-- #page we need this extra closing tag here -->
                 <script type="text/javascript" src="../fundament/vendor/jquery/jquery.min.js"></script>
                 <script type="text/javascript" src="../fundament/js/fundament.min.js"></script>
+                <script type="text/javascript" src="../fundament/js/scroll-to-top.js"></script>
             </body>
         </html>
     </xsl:template>

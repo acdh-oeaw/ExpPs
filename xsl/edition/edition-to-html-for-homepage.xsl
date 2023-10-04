@@ -68,28 +68,7 @@ version="2.0">
                             <ul id="main-menu" class="navbar-nav">
                                 <li class="nav-item active"><a title="Home" href="index.html" class="nav-link">Home</a></li>
                                 <li class="nav-item"><a title="Edition" href="edition.html" class="nav-link">Edition</a></li>
-                                <li class="nav-item dropdown">
-                                    <a title="Manuscripts" href="manuscripts.html" data-toggle="dropdown" class="nav-link dropdown-toggle">Manuscripts <span class="caret"></span></a>
-                                    <ul class=" dropdown-menu" role="menu">
-                                        <li class="nav-item dropdown-submenu">
-                                            <a title="Ambr. B. 106 sup." href="./manuscripts/ambros_B_106_sup.html" class="nav-link">Ambr. B. 106 sup.</a>
-                                            <a title="Ambr. M. 47 sup." href="./manuscripts/ambr_m_47_sup.html" class="nav-link">Ambr. M. 47 sup.</a>
-                                            <a title="Bodl. Auct. D. 4.1" href="./manuscripts/bodl_auct_d_4_1.html" class="nav-link">Bodl. Auct. D. 4.1</a>
-                                            <a title="Coislin 10" href="./manuscripts/coislin_10.html" class="nav-link">Coislin 10</a>
-                                            <a title="Coislin 12" href="./manuscripts/coislin_12.html" class="nav-link">Coislin 12</a>
-                                            <a title="Genua Urbani 3" href="./manuscripts/franzon_3.html" class="nav-link">Genua Urbani 3</a>
-                                            <a title="Mosq. Sinod. gr. 194" href="./manuscripts/mosq_synod_194.html" class="nav-link">Mosq. Sinod. gr. 194</a>
-                                            <a title="Oxon. S. Trin. 78" href="./manuscripts/oxon_s_trin_78.html" class="nav-link">Oxon. S. Trin. 78</a>
-                                            <a title="Par. gr. 139" href="./manuscripts/par_gr_139.html" class="nav-link">Par. gr. 139</a>
-                                            <a title="Par. gr. 164" href="./manuscripts/par_gr_164.html" class="nav-link">Par. gr. 164</a>
-                                            <a title="Par. gr. 166" href="./manuscripts/par_gr_166.html" class="nav-link">Par. gr. 166</a>
-                                            <a title="Plut. 5. 30" href="./manuscripts/plut_5_30.html" class="nav-link">Plut. 5. 30</a>
-                                            <a title="Plut. 6. 3" href="./manuscripts/plut_6_3.html" class="nav-link">Plut. 6. 3</a>
-                                            <a title="Vat. gr. 754" href="./manuscripts/vat_gr_754.html" class="nav-link">Vat. gr. 754</a>
-                                            <a title="Vat. gr. 1422" href="./manuscripts/vat_gr_1422.html" class="nav-link">Vat. gr. 1422</a>
-                                        </li>
-                                    </ul>
-                                </li>
+                                <li class="nav-item"><a title="Manuscripts" href="manuscripts.html" class="nav-link">Manuscripts</a></li>
                                 <li class="nav-item"><a title="Search" href="search.html" class="nav-link">Search</a></li>
                                 <li class="nav-item"><a title="New-Findings" href="new_findings.html" class="nav-link">New Findings</a></li>
                                 <li class="nav-item dropdown">
@@ -210,6 +189,7 @@ version="2.0">
                         </div><!-- #primary -->
                     </div><!-- .row -->
                 </div><!-- Container end -->
+                <button onclick="goToTop()" id="go-to-top-button" title="Go to top">Go to top</button> 
             </div>
             
             <div class="wrapper fundament-default-footer" id="wrapper-footer-full">
@@ -275,15 +255,16 @@ version="2.0">
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
         <script type="text/javascript" src="./fundament/js/edition.js"></script>
+        <script type="text/javascript" src="./fundament/js/scroll-to-top.js"></script>
     </body>
 </xsl:template>
 
 <xsl:template match="tei:listWit">
-    <table>
+    <table style="table-layout: fixed;">
         <thead>
             <tr>
-                <td>Handschrift</td>
-                <td>Abkürzung</td>
+                <th style="padding-top: 5pt; padding-bottom: 5pt; width: 10em;" scope="col">Abkürzung</th>
+                <th style="padding-top: 5pt; padding-bottom: 5pt; width: 40em;" scope="col">Handschrift</th>
             </tr>
         </thead>
         <tbody>
@@ -294,8 +275,8 @@ version="2.0">
 
 <xsl:template match="tei:witness">
     <tr>
+        <td><i><xsl:value-of select="@xml:id"/></i></td>
         <td><xsl:value-of select="./text()"/></td>
-        <td style="text-align:right;"><i><xsl:value-of select="@xml:id"/></i></td>
     </tr>
 </xsl:template>
 
