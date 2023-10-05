@@ -2,7 +2,6 @@
 <?xml-model href="../../schema/tei-psalmcatenae.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
-      <!-- faciendum: Katene: Ps 1–10: List of contents -->
       <fileDesc>
          <titleStmt>
             <title>Paris. gr. 139 (CPG C16; Rahlfs 1133) - Catena Type III (Secondary
@@ -3696,7 +3695,7 @@
                      corresp="#par-gr-139-ps-14-1b">
                      <quote type="patristic" subtype="paraphrase-expanded"
                         xml:id="par-gr-139-quot-14-7"
-                        source="fons ignotus in Ps 14,1c; an Origenes vel Eusebius vel Didymus? = PG 23,149 C2–D7 (ex Paris. gr. 139, ut vid.); in initio amplius quam Didymus, fr. 85 in Ps 14,1c (172,18–173,5) ex Catena Palestinensi"
+                        source="fons ignotus in Ps 14,1c; an Origenes vel Eusebius vel Didymus? = PG 23,149 C2–D7 (ex Paris. gr. 139, ut vid.); in initio amplius quam Didymus, fr. 85 in Ps 14,1c (172,18–173,5; ex catena Palestinensi)"
                         corresp="#person-18"/>
                      <note type="attribution"><foreign xml:lang="grc"
                      >Εὐσεβίου</foreign></note></seg>
@@ -3918,7 +3917,7 @@
                      corresp="#par-gr-139-ps-14-4c">
                      <quote type="patristic" subtype="paraphrase-abbreviated"
                         xml:id="par-gr-139-quot-14-30"
-                        source="Asterius, fr. 10 ex Catena Palestinensi in Ps 14,4–5 (260,10–13.15–19.21–23 Richard)"
+                        source="Asterius, fr. 10 in Ps 14,4–5 (260,10–13.15–19.21–23 Richard; ex Catena Palestinensi)"
                         corresp="#person-1"/>
                      <note type="attribution"><foreign xml:lang="grc"
                      >Ἀστερ(ί)ου</foreign></note></seg>
@@ -3972,7 +3971,7 @@
                      corresp="#par-gr-139-ps-14-4c">
                      <quote type="patristic" subtype="quotation-adapted"
                         xml:id="par-gr-139-quot-14-36"
-                        source="Asterius, fr. 11 in Ps 14,4–5 (260 Richard) ex Catena Palestinensi"
+                        source="Asterius, fr. 11 in Ps 14,4–5 (260 Richard;  ex Catena Palestinensi)"
                         corresp="#person-1"/>
                      <note type="attribution"><foreign xml:lang="grc"
                      >Ἀστερ(ίου)</foreign></note></seg>
@@ -4155,7 +4154,7 @@
                      <note type="attribution"><foreign xml:lang="grc">Διδύμου</foreign></note></seg>
                   <note type="lemma">Ps 15,1a</note>
                   <seg type="hypothesis" xml:id="par-gr-139-fr-15-4" rendition="#bottom-of-the-page"
-                     source="Theodorus Antiochenus" corresp="#par-gr-139-ps-15-4">
+                     source="Theodorus Antiochenus" corresp="#par-gr-139-ps-15-1a">
                      <quote type="patristic" subtype="quotation" xml:id="par-gr-139-quot-15-4"
                         source="Theodorus Mops., fr. in Ps 15,1a (90,11–27 Devreesse)"
                         corresp="#person-22"/>
@@ -4196,7 +4195,7 @@
                      >Ἀθανασί(ου)</foreign></note></seg>
                   <note type="lemma">Ps 15,1b–2</note>
                   <seg type="commentaryfragment" xml:id="par-gr-139-fr-15-7"
-                     rendition="#top-of-the-page" source="Hesychius" corresp="#par-gr-139-ps-15-1b">
+                     rendition="#top-of-the-page" source="Hesychius" corresp="#par-gr-139-ps-15-2a">
                      <quote type="patristic" subtype="quotation" xml:id="par-gr-139-quot-15-7"
                         source="Hesychius, comm. magnus in Ps 15,2a (PG 93,1185 A7–12)"
                         corresp="#person-41"/>
@@ -4204,7 +4203,7 @@
                      >Ἡσυχί(ου)</foreign></note></seg>
                   <note type="lemma">Ps 15,1b–2</note>
                   <seg type="commentaryfragment" xml:id="par-gr-139-fr-15-8"
-                     rendition="#top-of-the-page" source="Theodorus" corresp="#par-gr-139-ps-15-1b">
+                     rendition="#top-of-the-page" source="Theodorus" corresp="#par-gr-139-ps-15-2b">
                      <quote type="patristic" subtype="quotation" xml:id="par-gr-139-quot-15-8"
                         source="Theodoretus, comm. in Ps 15,2b (PG 80,957 C10–D5)"
                         corresp="#person-16"/>
@@ -4213,7 +4212,7 @@
                   <note type="lemma">Ps 15,1b–2</note>
                   <!-- exp. kollationiert -->
                   <seg type="commentaryfragment" xml:id="par-gr-139-fr-15-9"
-                     rendition="#top-of-the-page" source="Athanasius" corresp="#par-gr-139-ps-15-1b">
+                     rendition="#top-of-the-page" source="Athanasius" corresp="#par-gr-139-ps-15-2b">
                      <quote type="patristic" subtype="quotation-expanded"
                         xml:id="par-gr-139-quot-15-9" source="Athanasius, exp. in Ps 15,2b"
                         corresp="#person-2">Ἀγαθὸς1 φησὶν ἐν τούτοις τὰς κατανόμον προσφερομένας
@@ -4226,10 +4225,10 @@
                   <note type="lemma">Ps 15,1b–2</note>
                   <seg type="commentaryfragment" xml:id="par-gr-139-fr-15-10"
                      rendition="#top-of-the-page" source="Theodorus Antiochenus"
-                     corresp="#par-gr-139-ps-15-1b">
+                     corresp="#par-gr-139-ps-15-2b">
                      <quote type="patristic" subtype="quotation-abbreviated"
                         xml:id="par-gr-139-quot-15-10"
-                        source="Theodorus Mops., fr. in Ps 15,2 (91,13–28 Devreesse)"
+                        source="Theodorus Mops., fr. in Ps 15,2b (91,13–28 Devreesse)"
                         corresp="#person-22"/>
                      <note type="attribution"><foreign xml:lang="grc">Θεοδ(ώρου)
                            αντιοχ(είας)</foreign></note></seg>
@@ -4259,14 +4258,13 @@
                         corresp="#person-17"/>
                      <note type="attribution"><foreign xml:lang="grc">Ευσ(εβίου): Θεοδ(ω)ρ(ή)τ(ου):
                            Ἀστερίου </foreign></note><note type="textual-commentary">The catena of
-                        Paris. gr. 139 gives this fragment three attributions. Indeed, Eusebius (fr.
-                        2 in Ps 15,1b–2 [Villani]) and Theodoret (comm. in Ps 15,1b–2a [PG 80,957
-                        A8–B3.C3–7.C9–10.C13–D5) coincide almost word for word. However, the
+                        Paris. gr. 139 gives this paraphrase three attributions. Indeed, Eusebius
+                        (fr. 2 in Ps 15,1b–2 [Villani]) and Theodoret (comm. in Ps 15,1b–2a [PG
+                        80,957 A8–B3.C3–7.C9–10.C13–D5) coincide almost word for word. However, the
                         paraphrase offered by this catena is rather a paraphrase of Eusebius, and
-                        not of Theodoret. This due to the fact that it does not make use of those
-                        passages that only Theodoret's commentary on Psalm 15,1b–2a contains. A
-                        fragment of Asterius text that can be related to the two indicated texts is
-                        not known.</note></seg>
+                        not of Theodoret, since it does not paraphrase those passages that only
+                        Theodoret's commentary on Psalm 15,1b–2a contains. A fragment of Asterius
+                        that can be related to the two indicated texts is not known.</note></seg>
                   <note type="lemma">Ps 15,1b–2</note>
                   <seg type="commentaryfragment" xml:id="par-gr-139-fr-15-13"
                      rendition="#bottom-of-the-page" source="Eusebius"
@@ -4350,7 +4348,7 @@
                   <note type="lemma">Ps 15,4a–b</note>
                   <seg type="commentaryfragment" xml:id="par-gr-139-fr-15-22"
                      rendition="#bottom-of-the-page" source="Athanasius"
-                     corresp="#par-gr-139-ps-15-4a">
+                     corresp="#par-gr-139-ps-15-4b">
                      <quote type="patristic" subtype="quotation-expanded"
                         xml:id="par-gr-139-quot-15-22" source="Athanasius, exp. in Ps 15,4b"
                         corresp="#person-2"> Κ᾿ἂν ἠσθένουν φησὶν τὸ πρότερον ἐν ἁμαρτίαις ὄντες ἀλλ’
@@ -4373,7 +4371,7 @@
                      rendition="#bottom-of-the-page" source="Theodorus Antiochenus"
                      corresp="#par-gr-139-ps-15-4a">
                      <quote type="patristic" subtype="quotation" xml:id="par-gr-139-quot-15-24"
-                        source="Theodorus Mops., fr. in Ps 15,4 (92,26–93,9 Devreesse)"
+                        source="Theodorus Mops., fr. in Ps 15,4a–b (92,26–93,9 Devreesse)"
                         corresp="#person-22"/>
                      <note type="attribution"><foreign xml:lang="grc">Θεοδ(ώρου)
                            αντ(ιο)χ(είας)</foreign></note></seg>
@@ -4445,7 +4443,7 @@
                      rendition="#middle-of-the-page" source="Asterius"
                      corresp="#par-gr-139-ps-15-4c">
                      <quote type="patristic" subtype="paraphrase" xml:id="par-gr-139-quot-15-31"
-                        source="Asterius, fr. 12 ex catena Palestinensi in Ps 15,4–5 (261 Richard)"
+                        source="Asterius, fr. 12 in Ps 15,4–5 (261 Richard; ex catena Palestinensi)"
                         corresp="#person-1"/>
                      <note type="attribution"><foreign xml:lang="grc"
                      >Ἀστερίου:</foreign></note></seg>
@@ -4523,13 +4521,146 @@
                         corresp="#person-17"/>
                      <note type="attribution"><foreign xml:lang="grc">Ευσ(εβίου) |
                            Θεοδ(ω)ρ(ή)τ(ου)</foreign></note><note type="textual-commentary">Here too
-                        (see Ps 15,1b–2a), the catena of Paris. gr. 139 gives the fragment more than
-                        one attribution. This is due to the fact that Theodoret (comm. in Ps 15,5a
-                        [PG 80,960 B7–961 A7]) and Eusebius (fr. 7 in Ps 15,5a [Villani]) agree
-                        almost word for word. At the end of the first line of the paraphrase in
-                        question, the scribe used the two separating dots (:). However, the second
-                        line is without ekthesis.</note></seg>
+                        (see Ps 15,1b–2), the catena of Paris. gr. 139 gives this paraphrase more
+                        than one attribution. This is due to the fact that Theodoret (comm. in Ps
+                        15,5a [PG 80,960 B7–961 A7]) and Eusebius (fr. 7 in Ps 15,5a [Villani])
+                        agree almost word for word. The scribe concluded the first line of the
+                        paraphrase with the two separating dots (:). However, the second line is not
+                        highlighted through an ekthesis. Evidently, he must have noticed the
+                        presence of a single fragment.</note></seg>
                   <note type="lemma">Ps 15,5a</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-15-39"
+                     rendition="#bottom-of-the-page" source="Theodoretus"
+                     corresp="#par-gr-139-ps-15-5a">
+                     <quote type="patristic" subtype="paraphrase-abbreviated"
+                        xml:id="par-gr-139-quot-15-39"
+                        source="Theodretus, comm. (?) in Ps 15,5-11 (PG 80,960 B7–965 A4) - non habet Barocci 235 (f. 139r)"
+                        corresp="#person-16">Ἴσθι δὲ καὶ ὡς ἐκ προσώπου τοῦ Χριστοῦ ἀπο τουτων μέχρι
+                        τέλους ὁ λόγος:</quote>
+                     <note type="attribution"><foreign xml:lang="grc"
+                        >Θεοδ(ω)ρ(ή)τ(ου)</foreign></note></seg>
+                  <note type="lemma">Ps 15,5b</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-15-40"
+                     rendition="#bottom-of-the-page" source="Anonymous"
+                     corresp="#par-gr-139-ps-15-5b">
+                     <quote type="patristic" subtype="paraphrase-abbreviated"
+                        xml:id="par-gr-139-quot-15-40"
+                        source="Theodoretus, comm. in Ps 15,5b (PG 80,961 A9–14)"
+                        corresp="#person-16"/></seg>
+                  <note type="lemma">Ps 15,5b</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-15-41"
+                     rendition="#bottom-of-the-page" source="Theodorus"
+                     corresp="#par-gr-139-ps-15-5b">
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-139-quot-15-41"
+                        source="Theodoretus, comm. in Ps 15,5b (PG 80,961 A8–14); iterum scriptus sed in toto ad verbum"
+                        corresp="#person-16"/><note type="attribution"><foreign xml:lang="grc"
+                           >Θεοδώρου</foreign></note></seg>
+                  <note type="lemma">Ps 15,5b</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-15-42"
+                     rendition="#bottom-of-the-page" source="Anonymous"
+                     corresp="#par-gr-139-ps-15-5b">
+                     <quote type="patristic" subtype="ineditum" xml:id="par-gr-139-quot-15-42"
+                        source="fons ignotus in Ps 15,5b (ineditum?)" corresp="#person-18">Ὁ γὰρ
+                        ἐπαγγειλάμενος καὶ τὰς ἐπαγγελίας ἀποπληρῶσαι δύναται· οὐκεῖπεν δὲ σὺ εἰ ὁ
+                        διδοὺς ἀλλὰ σὺ ὁ ἀποκαθιστῶν· ἵνα τοῦ παραδείσου δηλώση τὴν τρυφὴν ἀλλὰ μὴν
+                        καὶ τὴν δημιουργικὴν εἰκόνα<supplied reason="om." resp="SPanteghini"
+                           >·</supplied> ἐκατέρας γὰρ διὰ τὴν παρακοὴν ἐκπεσόντες
+                     ὑπήρχομεν:</quote></seg>
+               </ab>
+            </div>
+            <pb n="39r"
+               facs="https://gallica.bnf.fr/ark:/12148/btv1b10515446x/f81.item.r=psautier%20du%20paris"/>
+            <div type="commentary" subtype="commentary" xml:id="par-gr-139-15-10"
+               rendition="#top-of-the-page">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 15,6</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-15-43"
+                     rendition="#top-of-the-page" source="Theodorus" corresp="#par-gr-139-ps-15-6a">
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-139-quot-15-43"
+                        source="Theodoretus, comm. in Ps 15,6 (PG 80,961 B3–10)"
+                        corresp="#person-16"/>
+                     <note type="attribution"><foreign xml:lang="grc"
+                     >Θεοδώρου</foreign></note></seg>
+                  <note type="lemma">Ps 15,6</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-15-44"
+                     rendition="#top-of-the-page" source="Eusebius" corresp="#par-gr-139-ps-15-6a">
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-139-quot-15-44"
+                        source="Eusebius, fr. 8 in Ps 15,6 (Villani)" corresp="#person-17"/>
+                     <note type="attribution"><foreign xml:lang="grc"
+                     >Εὐσεβίου</foreign></note></seg>
+                  <note type="lemma">Ps 15,6</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-15-45"
+                     rendition="#top-of-the-page" source="Theodorus Antiochenus"
+                     corresp="#par-gr-139-ps-15-6a">
+                     <quote type="patristic" subtype="quotation-abbreviated"
+                        xml:id="par-gr-139-quot-15-45"
+                        source="Theodorus Mops., fr. in Ps 15,6a (96,1–3.5–6.9–11.13–15.17–20 Devreesse)"
+                        corresp="#person-22"/>
+                     <note type="attribution"><foreign xml:lang="grc">Θεοδ(ώρου)
+                           αντ(ι)οχ(είας):</foreign></note></seg>
+               </ab>
+            </div>
+            <div type="commentary" subtype="commentary" xml:id="par-gr-139-15-11"
+               rendition="#middle-of-the-page">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 15,6</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-15-46"
+                     rendition="#middle-of-the-page" source="Didymus" corresp="#par-gr-139-ps-15-6a">
+                     <quote type="patristic" subtype="XXXX" xml:id="par-gr-139-quot-15-46" source="
+                        Didymus, fr. 95 in Ps 15,6 (178 Mühlenberg)"
+                        corresp="#person-6"/>
+                     <note type="attribution"><foreign xml:lang="grc">Διδύμου</foreign></note></seg>
+                  <note type="lemma">Ps 15,6</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-15-47"
+                     rendition="#middle-of-the-page" source="Atanasius"
+                     corresp="#par-gr-139-ps-15-6a">
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-139-quot-15-47"
+                        source="Athanasius, exp. in Ps 15,6" corresp="#person-2">Τοὺς δεσμοὺς τῆς
+                        ἀγάπις φησὶν οὓς ἔσχον1 πρὸς τὴν ἐκκλησίαν ήτις καὶ κρατίστη ἐστιν τοῦτέστιν
+                        ἀρέσκουσα αὐτῶ: –</quote><ref target="#vat-gr-754:vat-gr-754-fr-15-19"
+                        type="with-variant">Vat. gr. 754</ref>
+                     <note type="attribution"><foreign xml:lang="grc"
+                     >Ἀθανασίου</foreign></note></seg>
+                  <note type="lemma">Ps 15,7</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-15-48"
+                     rendition="#middle-of-the-page" source="Theodorus"
+                     corresp="#par-gr-139-ps-15-7a">
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-139-quot-15-48"
+                        source="Theodoretus, comm. in Ps 15,7 (PG 80,961 B13–C12)"
+                        corresp="#person-16"/>
+                     <note type="attribution"><foreign xml:lang="grc">Θεοδώρου
+                     </foreign></note></seg>
+                  <note type="lemma">Ps 15,7</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-15-49"
+                     rendition="#middle-of-the-page" source="Hesychius"
+                     corresp="#par-gr-139-ps-15-7a">
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-139-quot-15-49"
+                        source="Hesychius, comm. magnus in Ps 15,7a (PG 93,1185 B7–9)"
+                        corresp="#person-41"/>
+                     <note type="attribution"><foreign xml:lang="grc">Ἡσυχίου</foreign></note></seg>
+               </ab>
+            </div>
+            <div type="commentary" subtype="commentary" xml:id="par-gr-139-15-12"
+               rendition="#bottom-of-the-page">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 15,7</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-15-50"
+                     rendition="#bottom-of-the-page" source="Hesychius"
+                     corresp="#par-gr-139-ps-15-7b">
+                     <quote type="patristic" subtype="ineditum" xml:id="par-gr-139-quot-15-50"
+                        source="Hesychius, comm. magnus in Ps 15,7b (ineditum?)"
+                        corresp="#person-12"/>
+                     <note type="attribution"><foreign xml:lang="grc"
+                     >Ἡσυχί(ου)</foreign></note></seg>
+                  <note type="lemma">Ps 15,7</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-15-51"
+                     rendition="#bottom-of-the-page" source="Theodorus Antiochenus"
+                     corresp="#par-gr-139-ps-15-7a">
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-139-quot-15-51"
+                        source="Theodorus Mops., fr. in Ps 15,7a (97,2–3.59 Devreesse)"
+                        corresp="#person-22"/>
+                     <note type="attribution"><foreign xml:lang="grc">Θεοδώρου
+                           ἀντιοχ(είας)</foreign></note></seg>
                </ab>
             </div>
             <!--  
@@ -4543,7 +4674,7 @@
              </div> 
             -->
          </div>
-         <!-- Ἀθανασίου Αθ(ανασίου) Ἀστερίου Βασιλείου Διδύμου Εὐσεβίου Ευσ(εβίου) Ἡσυχίου Θεοδωρήτου Θεοδώρου Θεοδ(ώρου) ἀντ(ι)οχ(είας) Κυρίλλου ὡριγένους -->
+         <!-- Ἀθανασίου Αθ(ανασίου) Ἀστερίου | Βασιλείου | Διδύμου | Εὐσεβίου | Ευσ(εβίου) | Ἡσυχίου | Θεοδωρήτου | Θεοδώρου Θεοδ(ώρου) ἀντ(ι)οχ(είας) | Κυρίλλου | ὡριγένους -->
       </body>
       <!-- 
          <ref target="#vat-gr-754:XXXX" type="XXXX">Vat. gr. 754</ref>
@@ -4551,3 +4682,7 @@
            Attribution: <foreign xml:lang="grc">Ἀθανασίου</foreign></note> -->
    </text>
 </TEI>
+<!-- faciendum: Katene: Ps 1–10: List of contents -->
+<!-- faciendum: Ps 1–14: corresp="#par-gr-139-ps-XX-XX" anzupassen -->
+<!-- faciendum: Ps 1–14: Theodorus Mops. exakter zu zitieren in Bezug auf die Psalmzeile in der Edition -->
+<!-- faciendum: Ps 1–10: Paris. gr. 139 und Vat. gr. 1422 in Bezug auf gleiche Expositiones -->
