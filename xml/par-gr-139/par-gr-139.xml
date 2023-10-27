@@ -72,8 +72,7 @@
                         interventions are barely visible. He seems to be especially dedicated to the
                         Expositiones. In the margins, there are also marks in faded brown ink that
                         highlight the Expositiones and the fragments from Hesychius' commentarius
-                        magnus (by Bernard de Montfaucon?).</p>
-
+                        magnus (by Bernard de Montfaucon or one of his collaborators?).</p>
                   </scriptDesc>
                   <decoDesc>
                      <p>ornamental pyles or beams above the headings of the Psalms. These headings
@@ -85,6 +84,7 @@
                   <p>Written between 940 and 960.</p>
                </history>
             </msDesc>
+            <!-- Katene: Athen. B.N. 45: nach f. 124v möglicherweise eine ganze Lage verloren -->
             <listPerson>
                <head>Authors</head>
                <person xml:id="person-1" role="author">
@@ -3415,9 +3415,9 @@
                      rendition="#bottom-of-the-page" source="Origenes"
                      corresp="#par-gr-139-ps-13-4a"><quote type="patristic" subtype="quotation"
                         source="Origenes (?), fr. in Ps 13,5a = PG 17,108 D11–
-                        109 A2 (ex. Marc. gr. Z. 17)"
-                        corresp="#person-69"/><note type="attribution"><foreign xml:lang="grc"
-                           >ωρ(ιγένους)</foreign></note><note type="textual-commentary">The final
+                        109 A2 (ex. Marc. gr. Z. 17)" corresp="#person-69"
+                        /><note type="attribution"><foreign xml:lang="grc"
+                        >ωρ(ιγένους)</foreign></note><note type="textual-commentary">The final
                         sentence in this fragment was added by the catenist.</note></seg>
                   <note type="lemma">Ps 13,5b–6</note>
                   <seg type="commentaryfragment" xml:id="par-gr-139-fr-13-20"
@@ -3948,7 +3948,7 @@
                      corresp="#par-gr-139-ps-14-4c">
                      <quote type="patristic" subtype="paraphrase-quotation"
                         xml:id="par-gr-139-quot-14-31"
-                        source="Basilius, hom. in Ps. 14 (PG 29,261 B6–12) in Ps 14,4c"
+                        source="Basilius, hom. 1 in Ps. 14 (PG 29,261 B6–12) in Ps 14,4c"
                         corresp="#person-3"/>
                      <note type="attribution"><foreign xml:lang="grc"
                      >Βασιλείου</foreign></note></seg>
@@ -4184,6 +4184,8 @@
                            ἀντιοχ(είας):</foreign></note></seg>
                </ab>
             </div>
+            <pb n="38r"
+               facs="https://gallica.bnf.fr/ark:/12148/btv1b10515446x/f79.item.r=psautier%20du%20paris"/>
             <div type="commentary" subtype="commentary" xml:id="par-gr-139-15-4"
                rendition="#top-of-the-page">
                <ab xml:lang="grc">
@@ -4209,13 +4211,15 @@
                            resp="SPanteghini">·</supplied> κύριον οὖν ὁνομάζει τὸν πατέρα διὰ τὸ ἐν
                         τῆ τοῦ δούλου γενέσθαι μορφῆ<supplied reason="om." resp="SPanteghini"
                            >·</supplied> φυλαχθῆναι δὲ αὐτὸν αἰτει διὰ τὴν ἐκκλησίαν ή ἐστιν ἡ σὰρξ
-                        αὐτοῦ· ἡ γὰρ σὰρξ αὐτοῦ ἡ ἐκκλησία<supplied reason="om." resp="SPanteghini"
-                           >·</supplied> φυλαχθῆναι δὲ ταύτην αἰτεῖ εἰκότως οὖν καὶ εἰς τὸ αὐτοῦ
-                        πρόσωπον ἀναφέροιτ’ αν ἡ φυλακή:</quote><ref
+                        αὐτοῦ· ἡ [lege εἰ] γὰρ σὰρξ αὐτοῦ ἡ ἐκκλησία φυλαχθῆναι δὲ ταύτην αἰτεῖ
+                        εἰκότως οὖν καὶ εἰς τὸ αὐτοῦ πρόσωπον ἀναφέροιτ’ αν ἡ φυλακή:</quote><ref
                         target="#vat-gr-754:vat-gr-754-fr-15-3" type="expanded-with-variants">Vat.
                         gr. 754</ref>
-                     <note type="attribution"><foreign xml:lang="grc"
-                     >Ἀθανασί(ου)</foreign></note></seg>
+                     <note type="attribution"><foreign xml:lang="grc">Ἀθανασί(ου)</foreign></note>
+                     <note type="parallels">Marc. gr. Z. 17 (f. 31v, top / middle): Lemma: Ps
+                        15,1b–2 - Attribution: Ἀθ(ανασίου) | Athen. B.N. 45 (f. 124r): Lemma: Ps
+                        15,1b–2 - Attribution: <foreign xml:lang="grc"
+                     >Ἀθ(ανασίου)</foreign></note></seg>
                   <note type="lemma">Ps 15,1b–2</note>
                   <seg type="commentaryfragment" xml:id="par-gr-139-fr-15-7"
                      rendition="#top-of-the-page" source="Hesychius" corresp="#par-gr-139-ps-15-2a">
@@ -4245,7 +4249,10 @@
                         τράγων πίομαι: </quote><ref target="#vat-gr-754:vat-gr-754-fr-15-5"
                         type="expanded-with-variants">Vat. gr. 754</ref>
                      <note type="attribution"><foreign xml:lang="grc"
-                     >Ἀθανασίου</foreign></note></seg>
+                        >Ἀθανασίου</foreign></note><note type="parallels">Marc. gr. Z. 17 (f. 31v,
+                        top / bottom): Lemma: Ps 15,1b–2 - Attribution: Ἀθ(ανασίου) | Athen. B.N. 45
+                        (f. 124v): Lemma: Ps 15,1b–2 - Attribution: <foreign xml:lang="grc"
+                           >Ἀθ(ανασίου)</foreign></note></seg>
                   <note type="lemma">Ps 15,1b–2</note>
                   <seg type="commentaryfragment" xml:id="par-gr-139-fr-15-10"
                      rendition="#top-of-the-page" source="Theodorus Antiochenus"
@@ -4263,7 +4270,8 @@
                <ab xml:lang="grc">
                   <note type="lemma">Ps 15,1b–2</note>
                   <seg type="commentaryfragment" xml:id="par-gr-139-fr-15-11"
-                     rendition="#top-of-the-page" source="Anonymous" corresp="#par-gr-139-ps-15-1b">
+                     rendition="#middle-of-the-page" source="Anonymous"
+                     corresp="#par-gr-139-ps-15-1b">
                      <quote type="patristic" subtype="paraphrase-abbreviated"
                         xml:id="par-gr-139-quot-15-11"
                         source="Didymus, fr. 91 (?) in Ps 15,1b–2 (175,18–176,20)"
@@ -4329,7 +4337,9 @@
                         1422</ref><ref target="#vat-gr-754:vat-gr-754-fr-15-7" type="with-variants"
                         >Vat. gr. 754</ref>
                      <note type="attribution"><foreign xml:lang="grc"
-                     >Ἀθανασίου</foreign></note></seg>
+                        >Ἀθανασίου</foreign></note><note type="parallels">Marc. gr. Z. 17 (f. 31v,
+                        bottom / middle): Lemma: Ps 15,3 - Attribution: Ἀθ(ανασίου) | Athen. B.N.
+                        45: lost<foreign xml:lang="grc">Ἀθανασίου</foreign></note></seg>
                   <note type="lemma">Ps 15,3</note>
                   <seg type="commentaryfragment" xml:id="par-gr-139-fr-15-17"
                      rendition="#bottom-of-the-page" source="Hesychius"
@@ -4376,13 +4386,15 @@
                      corresp="#par-gr-139-ps-15-4b" copyOf="#edition:edition-15-4-2-1">
                      <quote type="patristic" subtype="quotation-expanded"
                         xml:id="par-gr-139-quot-15-22" source="Athanasius, exp. in Ps 15,4b"
-                        corresp="#person-2"> Κ᾿ἂν ἠσθένουν φησὶν τὸ πρότερον ἐν ἁμαρτίαις ὄντες ἀλλ’
+                        corresp="#person-2">Κ᾿ἂν ἠσθένουν φησὶν τὸ πρότερον ἐν ἁμαρτίαις ὄντες ἀλλ’
                         οὖν ἀκούσαντες τοῦ κηρύγματος ὀξέως ὑπήκουσαν· τοῦτο γάρ ἐστι τὸ ἐτάχυναν
                         μετὰ ταῦτα· δηλονὅτι εἰς τὸ ὑπακοῦσαι τῶ κηρύγματι:</quote><ref
                         target="#vat-gr-754:vat-gr-754-fr-15-9" type="expanded-with-variant">Vat.
                         gr. 754</ref>
                      <note type="attribution"><foreign xml:lang="grc"
-                     >Ἀθανασίου</foreign></note></seg>
+                        >Ἀθανασίου</foreign></note><note type="parallels">Marc. gr. Z. 17 (f. 31v,
+                        bottom / bottom): Lemma: Ps 15,4a–b - Attribution: Ἀθ(ανασίου) | Athen. B.N.
+                        45: lost</note></seg>
                   <note type="lemma">Ps 15,4a–b</note>
                   <seg type="commentaryfragment" xml:id="par-gr-139-fr-15-23"
                      rendition="#bottom-of-the-page" source="Hesychius"
@@ -4426,7 +4438,9 @@
                         ἀναιμάκτου θυσίας: </quote><ref target="#vat-gr-754:vat-gr-754-fr-15-10"
                         type="with-variant">Vat. gr. 754</ref>
                      <note type="attribution"><foreign xml:lang="grc"
-                     >Ἀθανασί(ου):</foreign></note></seg>
+                        >Ἀθανασί(ου):</foreign></note><note type="parallels">Marc. gr. Z. 17 (f.
+                        32r, top / top): Lemma: Ps 15,4c–d - Attribution: Ἀθ(ανασίου) | Athen. B.N.
+                        45: lost</note></seg>
                   <note type="lemma">Ps 15,4c–d</note>
                   <seg type="commentaryfragment" xml:id="par-gr-139-fr-15-27"
                      rendition="#top-of-the-page" source="Cyrillus" corresp="#par-gr-139-ps-15-4c">
@@ -4453,7 +4467,8 @@
                      >Εὐσεβίου</foreign></note></seg>
                   <note type="lemma">Ps 15,4c–d</note>
                   <seg type="commentaryfragment" xml:id="par-gr-139-fr-15-30"
-                     rendition="#top-of-the-page" source="Eusebius" corresp="#par-gr-139-ps-15-4c">
+                     rendition="#top-of-the-page" source="Eusebius, Cyrillus"
+                     corresp="#par-gr-139-ps-15-4c">
                      <quote type="patristic" subtype="paraphrase-abbreviated"
                         xml:id="par-gr-139-quot-15-30"
                         source="Eusebius, fr. 6 in Ps 15,4c–d (Villani)" corresp="#person-17"/>
@@ -4509,7 +4524,9 @@
                         target="#vat-gr-754:vat-gr-754-fr-15-13" type="with-variants">Vat. gr.
                         754</ref>
                      <note type="attribution"><foreign xml:lang="grc"
-                     >Αθ(ανασίου)</foreign></note></seg>
+                        >Αθ(ανασίου)</foreign></note><note type="parallels">Marc. gr. Z. 17 (f. 32r,
+                        bottom / middle): Lemma: Ps 15,5 - Attribution: Ἀθανα(σίου) | Athen. B.N.
+                        45: lost</note></seg>
                   <note type="lemma">Ps 15,5a</note>
                   <seg type="commentaryfragment" xml:id="par-gr-139-fr-15-35"
                      rendition="#bottom-of-the-page" source="Cyrillus"
@@ -4528,7 +4545,9 @@
                      <quote type="patristic" subtype="quotation" xml:id="par-gr-139-quot-15-36"
                         source="Hesychius, comm. magnus in Ps 15,5a (PG 93,1185 A15–B4)"
                         corresp="#person-41"/>
-                     <note type="attribution"><foreign xml:lang="grc">Ἡσυχίου</foreign></note></seg>
+                     <note type="attribution"><foreign xml:lang="grc">Ἡσυχίου</foreign></note><note
+                        type="parallels">Marc. gr. Z. 17 (f. 32r, bottom / bottom): The attribution
+                        to Hesychius has been omitted.</note></seg>
                   <note type="lemma">Ps 15,5a</note>
                   <seg type="commentaryfragment" xml:id="par-gr-139-fr-15-37"
                      rendition="#bottom-of-the-page" source="Anonymous"
@@ -4543,8 +4562,8 @@
                      corresp="#par-gr-139-ps-15-5a">
                      <quote type="patristic" subtype="paraphrase-abbreviated"
                         xml:id="par-gr-139-quot-15-38"
-                        source="Eusebius, fr. 7 in Ps 15,5a (Villani) vel Theodoretus, comm. in Ps 15,5a (PG 80,960 B7–14.C2–13)"
-                        corresp="#person-17"/>
+                        source="Eusebius, fr. 7 in Ps 15,5a (Villani) vel Theodoretus, comm. in Ps 15,5a (PG 80,960 B7–14 C2–13)"
+                        corresp="#person-17 #person-16"/>
                      <note type="attribution"><foreign xml:lang="grc">Ευσ(εβίου) |
                            Θεοδ(ω)ρ(ή)τ(ου)</foreign></note><note type="textual-commentary">Here too
                         (see Ps 15,1b–2), the catena of Paris. gr. 139 gives this paraphrase more
@@ -4560,7 +4579,7 @@
                      corresp="#par-gr-139-ps-15-5a">
                      <quote type="patristic" subtype="paraphrase-abbreviated"
                         xml:id="par-gr-139-quot-15-39"
-                        source="schol. in Theodretum, comm. (?) in Ps 15,5-11 (PG 80,960 B7–965 A4) - non habet Barocci 235 (f. 139r)"
+                        source="schol. in Theodoretum, comm. (?) in Ps 15,5–11 (PG 80,960 B7–965 A4); non habet Barocci 235 (f. 139r)"
                         corresp="#person-16">Ἴσθι δὲ καὶ ὡς ἐκ προσώπου τοῦ Χριστοῦ ἀπο τουτων μέχρι
                         τέλους ὁ λόγος:</quote>
                      <note type="attribution"><foreign xml:lang="grc"
@@ -4647,7 +4666,9 @@
                         ἀρέσκουσα αὐτῶ: –</quote><ref target="#vat-gr-754:vat-gr-754-fr-15-19"
                         type="with-variant">Vat. gr. 754</ref>
                      <note type="attribution"><foreign xml:lang="grc"
-                     >Ἀθανασίου</foreign></note></seg>
+                        >Ἀθανασίου</foreign></note><note type="parallels">Marc. gr. Z. 17 (f. 32v,
+                        middle / bottom): Lemma: Ps 15,6 - Attribution: Ἀθανα(σίου) | Athen. B.N.
+                        45: lost</note></seg>
                   <note type="lemma">Ps 15,7</note>
                   <seg type="commentaryfragment" xml:id="par-gr-139-fr-15-48"
                      rendition="#middle-of-the-page" source="Theodorus"
@@ -4730,7 +4751,10 @@
                         στηρίζοντα: –</quote><ref target="#vat-gr-754:vat-gr-754-fr-15-22"
                         type="with-variants">Vat. gr. 754</ref>
                      <note type="attribution"><foreign xml:lang="grc"
-                     >Ἀθανασίου</foreign></note></seg>
+                        >Ἀθανασίου</foreign></note><note type="parallels">Marc. gr. Z. 17 (f. 33r,
+                        top / bottom): Lemma: Ps 15,8 - Attribution: Ἀθανασίου | Athen. B.N. 45 (f.
+                        126v): Lemma: Ps 15,9a–b (sic) - Attribution: <foreign xml:lang="grc"
+                           >Ἀθανα(σίου)</foreign></note></seg>
                   <note type="lemma">Ps 15,8–9b</note>
                   <seg type="commentaryfragment" xml:id="par-gr-139-fr-15-55"
                      rendition="#top-of-the-page" source="Hesychius" corresp="#par-gr-139-ps-15-8a">
