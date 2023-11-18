@@ -424,12 +424,59 @@
         <xsl:apply-templates select="child::node()"/>
     </xsl:template>
     
+    <xsl:template match="tei:div[@type = 'page-of-manuscript'][parent::tei:div[(@type = 'translation') and (@xml:lang = 'de')]]">
+        <xsl:element name="p">
+            <xsl:attribute name="class" select="'page-number-translation'"/>
+            <xsl:value-of select="@n"/>
+        </xsl:element>
+        <xsl:apply-templates select="child::node()"/>
+    </xsl:template>
+    
     <xsl:template match="tei:div[@type = 'translation'][@xml:lang = 'la']">
         <xsl:element name="p">
             <xsl:attribute name="class" select="'heading-manuscript-name-sub'"/>
             <xsl:text>Lateinische Übersetzung</xsl:text>
         </xsl:element>
         <xsl:apply-templates select="child::node()"/>
+    </xsl:template>
+    
+    <xsl:template match="tei:div[@type = 'synopsis']">
+        <xsl:apply-templates select="child::node()"/>
+    </xsl:template>
+
+    <xsl:template match="tei:table">
+        <xsl:element name="table">
+            <xsl:attribute name="class" select="'table'"/>
+            <xsl:apply-templates select="child::node()"/>
+        </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="tei:row[@n = 'head']">
+        <xsl:element name="thead">
+            <xsl:apply-templates select="child::node()"/>
+        </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="tei:cell[parent::tei:row[@n = 'head']]">
+        <xsl:element name="td">
+            <xsl:attribute name="style" select="@style"/>
+            <xsl:element name="span">
+                <xsl:attribute name="style" select="'font-weight: bold'"/>
+                <xsl:value-of select="child::tei:title/text()"/>
+            </xsl:element>
+        </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="tei:row[not(exists(@n))]">
+        <xsl:element name="tr">
+            <xsl:apply-templates select="child::node()"/>
+        </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="tei:cell[not(exists(parent::tei:row[@n = 'head']))]">
+        <xsl:element name="td">
+            <xsl:apply-templates select="child::node()"/>
+        </xsl:element>
     </xsl:template>
 
     <xsl:template match="tei:p[ancestor::tei:div[@type = 'translation']]">
