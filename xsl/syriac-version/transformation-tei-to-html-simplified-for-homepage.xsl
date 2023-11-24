@@ -386,7 +386,7 @@
         </xsl:if>
     </xsl:template>
     
-    <xsl:template match="tei:seg[@type = 'psalmverse']">
+    <xsl:template match="tei:seg[(@type = 'psalmverse') or (@type = 'psalmtext')]">
         <xsl:element name="span">
             <xsl:attribute name="class" select="'coptic-bibletext'"/>
             <xsl:apply-templates select="child::node()"/>
@@ -394,7 +394,12 @@
         <xsl:element name="span">
             <xsl:attribute name="class" select="'coptic-versnumber'"/>
             <xsl:text> (</xsl:text>
-            <xsl:value-of select="@n"/>
+            <xsl:if test="contains(@n,',')">
+                <xsl:value-of select="substring-after(@n,',')"/>
+            </xsl:if>
+            <xsl:if test="not(contains(@n,','))">
+                <xsl:value-of select="@n"/>
+            </xsl:if>
             <xsl:if test="exists(@prev)"><xsl:text> [cont.]</xsl:text></xsl:if>
             <xsl:text>)</xsl:text>
         </xsl:element>
