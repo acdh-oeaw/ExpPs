@@ -329,14 +329,27 @@ version="2.0">
 <xsl:template match="tei:ref" mode="list-of-oriental-references">
     <xsl:text>→ </xsl:text>
     <a>
+        <xsl:attribute name="target" select="'tab-for-syriac-longer-version'"/>
         <xsl:attribute name="href">
             <xsl:if test="starts-with(./@target,'#coptic-version:')">
                 <xsl:text>./manuscripts/coptic-version.html#</xsl:text>
                 <xsl:value-of select="substring-after(./@target,'#coptic-version:')"/>
             </xsl:if>
+            <xsl:if test="starts-with(./@target,'#syriac-longer-version:')">
+                <xsl:text>./manuscripts/syriac-longer-version.html#</xsl:text>
+                <xsl:value-of select="substring-after(./@target,'#syriac-longer-version:')"/>
+            </xsl:if>
         </xsl:attribute>
-        <xsl:text>Coptic version</xsl:text>
+        <xsl:if test="starts-with(./@target,'#coptic-version:')">
+            <xsl:text>Coptic version</xsl:text>
+        </xsl:if>
+        <xsl:if test="starts-with(./@target,'#syriac-longer-version:')">
+            <xsl:text>Syriac longer version</xsl:text>
+        </xsl:if>
     </a>
+    <xsl:if test="exists(following-sibling::tei:ref)">
+        <xsl:text> </xsl:text>
+    </xsl:if>
 </xsl:template>
     
 <xsl:template match="tei:ref" mode="list-of-references">
