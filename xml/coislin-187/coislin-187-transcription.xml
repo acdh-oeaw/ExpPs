@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/tei-psalmcatenae.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Paris. Coislin 187</title>
+                <title type="subtitle">List of Contents, Transcription of (Ps.)-Athanasius, Expositiones
+                    in Psalmos, and of the Unpublished Fragments</title>
+                <respStmt>
+                    <resp>by</resp>
+                    <persName>Sebastiano Panteghini</persName>
+                </respStmt>
+                <respStmt>
+                    <resp>encoded by</resp>
+                    <persName>Sebastiano Panteghini</persName>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>FWF Project 32988</publisher>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">Available under the
+                        Creative Commons Attribution 4.0 International (CC BY 4.0)</licence>
+                </availability>
+                <date>2023-12-07</date>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier xml:id="coislin-187">
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <repository>Bibliothèque Nationale de France (BNF). Départment des Manuscrits</repository>
+                        <idno facs="https://gallica.bnf.fr/ark:/12148/btv1b525129965/f1.item.zoom">Coisl.
+                            187</idno>
+                        <altIdentifier>
+                            <idno type="pinakes" corresp="https://pinakes.irht.cnrs.fr/notices/cote/49326/"
+                                >49326</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem n="1">
+                            <locus>f. 1r–185r</locus>
+                            <title>catena in Psalmos 17,37 - 150 (full-page catena or
+                                "Textkatene")</title>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc form="codex">
+                            <supportDesc material="perg">
+                                <support>parchment</support>
+                                <extent>
+                                    <dimensions scope="all" type="leaf" unit="mm">
+                                        <height>290</height>
+                                        <width>205</width>
+                                    </dimensions>
+                                </extent>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout>
+                                    <p>30 lines per page.</p>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <scriptDesc>
+                            <p>Majuscule letters: Psalm text, attributions.</p>
+                            <p>Minuscule letters: commentary fragments, glosses.</p>
+                            <p>Informal writing.</p>
+                        </scriptDesc>
+                        <!--  hexaplaric variants? -->
+                    </physDesc>
+                    <history>
+                        <p>Written in the 10th century.</p>
+                    </history>
+                </msDesc>
+                <listPerson>
+                    <head>Authors</head>
+                    <person xml:id="person-1" role="author">
+                        <persName>Asterius</persName>
+                        <bibl corresp="#bibliography-title-1">Asterius, fr. (Richard)</bibl>
+                    </person>
+                    <person xml:id="person-2" role="author">
+                        <persName>Athanasius</persName>
+                        <bibl corresp="#bibliography-title-2">Athanasius, exp.</bibl>
+                    </person>
+                    <person xml:id="person-3" role="author">
+                        <persName>Basilius Caesariensis</persName>
+                        <bibl corresp="#bibliography-title-4">Basilius Caesariensis, hom. (PG 29)</bibl>
+                    </person>
+                    <person xml:id="person-4" role="author">
+                        <persName>Cyrillus Alexandrinus</persName>
+                        <bibl corresp="#bibliography-title-5">Cyrillus Alexandrinus, fr. (PG 69)</bibl>
+                    </person>
+                    <person xml:id="person-5" role="author">
+                        <persName>Diodorus Tarsensis</persName>
+                        <bibl corresp="#bibliography-title-6">Diodorus Tarsensis, comm. (Olivier)</bibl>
+                    </person>
+                    <person xml:id="person-6" role="author">
+                        <persName>Didymus Caecus</persName>
+                        <bibl corresp="#bibliography-title-7">Didymus Caecus, fr. (Mühlenberg)</bibl>
+                    </person>
+                    <person xml:id="person-7" role="author">
+                        <persName>Eusebius</persName>
+                        <bibl corresp="#bibliography-title-8">Eusebius, perioche (Bandt)</bibl>
+                    </person>
+                    <person xml:id="person-8" role="author" sameAs="#person-4">
+                        <persName>Cyrillus</persName>
+                        <bibl corresp="#bibliography-title-9">Cyrillus, fr. (Toniolo)</bibl>
+                    </person>
+                    <person xml:id="person-9" role="author">
+                        <persName>Unknown</persName>
+                        <bibl corresp="#bibliography-title-10">fons ignotus (ed. Dorival IV)</bibl>
+                    </person>
+                    <person xml:id="person-10" role="author">
+                        <persName>Hesychius Hierosolomitanus</persName>
+                        <bibl corresp="#bibliography-title-11">Hesychius Hierosolomytanus, schol.
+                            (Antonelli)</bibl>
+                    </person>
+                    <person xml:id="person-11" role="author" sameAs="#person-10">
+                        <persName>Hesychius Hierosolomytanus</persName>
+                        <bibl corresp="#bibliography-title-12">Hesychius Hierosolomitanus, comm. brevis
+                            (Jagić)</bibl>
+                    </person>
+                    <person xml:id="person-12" role="author" sameAs="#person-10">
+                        <persName>Hesychius Hierosolomytanus</persName>
+                        <bibl corresp="#bibliography-title-13">Hesychius Hierosolomytanus, comm. magnus
+                            (ineditum)</bibl>
+                    </person>
+                    <person xml:id="person-13" role="author">
+                        <persName>Origenes</persName>
+                        <bibl corresp="#bibliography-title-14">Origenes, fr. (PG 12)</bibl>
+                    </person>
+                    <person xml:id="person-14" role="author" sameAs="#person-13">
+                        <persName>Origenes</persName>
+                        <bibl corresp="#bibliography-title-15">Origenes, fr. (Analecta sacra II, Ps
+                            1–25)</bibl>
+                    </person>
+                    <person xml:id="person-15" role="author" sameAs="#person-13">
+                        <persName>Origenes</persName>
+                        <bibl corresp="#bibliography-title-16">Origenes, fr. (Analecta sacra III, Ps
+                            26–150)</bibl>
+                    </person>
+                    <person xml:id="person-16" role="author">
+                        <persName>Theodoretus Cyrrensis</persName>
+                        <bibl corresp="#bibliography-title-17">Theodoretus Cyrrensis, comm. (PG 80)</bibl>
+                    </person>
+                    <person xml:id="person-17" role="author">
+                        <persName>Eusebius</persName>
+                        <bibl corresp="#bibliography-title-9">Eusebius, fr. (ed. Villani)</bibl>
+                    </person>
+                    <person xml:id="person-18" role="author">
+                        <persName>Unknown</persName>
+                    </person>
+                    <person xml:id="person-19" role="author">
+                        <persName>Unknown</persName>
+                        <bibl>fons ignotus (Analecta sacra II)</bibl>
+                    </person>
+                    <person xml:id="person-20" role="author">
+                        <persName>Gregorius Nazianzenus, or. 27–31 (Gallay – Jourjon)</persName>
+                    </person>
+                    <person xml:id="person-21" role="author">
+                        <persName>Evagrius</persName>
+                        <bibl>Evagrius, schol. (Rondeau – Géhin – Cassin)</bibl>
+                    </person>
+                    <person xml:id="person-22" role="author">
+                        <persName>Theodorus</persName>
+                        <bibl>Theodorus, fr. (Devreesse)</bibl>
+                    </person>
+                    <person xml:id="person-23" role="author" sameAs="#person-13">
+                        <persName>Origenes</persName>
+                        <bibl>Origenes, def. (Risch)</bibl>
+                    </person>
+                    <person xml:id="person-24" role="author">
+                        <persName>Gregorius of Nyssa</persName>
+                        <bibl>Gregorius Nyss., Ps. inscr. (McDonough)</bibl>
+                    </person>
+                    <person xml:id="person-25" role="author">
+                        <persName>Gregorius of Nyssa</persName>
+                        <bibl>Gregorius Nyss., beat. (Callahan)</bibl>
+                    </person>
+                    <person xml:id="person-26" role="author">
+                        <persName>Gregorius of Nyssa</persName>
+                        <bibl>Gregorius Nyss., hom. in Cant. (Langerbeck)</bibl>
+                    </person>
+                    <person xml:id="person-27" role="author" sameAs="#person-13">
+                        <persName>Origenes</persName>
+                        <bibl>Origenes, cath. in Psalmos (Risch)</bibl>
+                    </person>
+                    <person xml:id="person-28" role="author">
+                        <persName>Ιohannes Chrysostomos</persName>
+                        <bibl>Ιohannes Chrys., exp. in Ps. (PG 55)</bibl>
+                    </person>
+                    <person xml:id="person-29" role="author" sameAs="#person-24">
+                        <persName>Gregorius of Nyssa</persName>
+                        <bibl>Gregorius Nyss., hom. in Eccl. (Alexander)</bibl>
+                    </person>
+                    <person xml:id="person-30" role="author">
+                        <persName>Hadrianus Mon.</persName>
+                        <bibl>Hadrianus Mon., fr. (Martens)</bibl>
+                    </person>
+                    <person xml:id="person-31" role="author">
+                        <persName>Anastasius Sin.</persName>
+                        <bibl>Anastasius Sin., hexaem. (Kuehn – Baggarly)</bibl>
+                    </person>
+                    <person xml:id="person-32" role="author" sameAs="#person-13">
+                        <persName>Origenes</persName>
+                        <bibl>Origenes, schol. (?) (PG 12)</bibl>
+                    </person>
+                    <person xml:id="person-33" role="author" sameAs="#person-13">
+                        <persName>Origenes</persName>
+                        <bibl>Origenes, schol. (?) (Analecta sacra II)</bibl>
+                    </person>
+                    <person xml:id="person-34" role="author" sameAs="#person-13">
+                        <persName>Origenes</persName>
+                        <bibl>Origenes, schol. (?) (ineditum?)</bibl>
+                    </person>
+                    <person xml:id="person-35" role="author" sameAs="#person-20">
+                        <persName>Gregorius Nazianzenus, or. (PG 35)</persName>
+                    </person>
+                    <person xml:id="person-36" role="author" sameAs="#person-20">
+                        <persName>Gregorius Nazianzenus, or. 20–23 (Mossay [SC 270])</persName>
+                    </person>
+                    <person xml:id="person-37" role="author">
+                        <persName>Hieronymus Hierosolomytanus (PG 12)</persName>
+                    </person>
+                    <person xml:id="person-38" role="author" sameAs="#person-13">
+                        <persName>Origenes</persName>
+                        <bibl>Origenes, schol. (PG 23)</bibl>
+                    </person>
+                </listPerson>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <normalization>
+                    <p>The transcription of the fragments is semi-diplomatic: orthographic peculiarities
+                        of the manuscript are not normalized; the resolution of abbreviations is not
+                        indicated by round brackets. An exception is made for tachygraphic (ἐστί) or
+                        (ἐστίν) and for φη(σίν) or φη(σίν) abbreviated by suspension. Phenomena related to
+                        the writing process like additions, deletions, substitutions, or corrections are
+                        documented.</p>
+                </normalization>
+                <punctuation>
+                    <p>The punctuation faithfully reproduces that of the manuscript, where it is
+                        unambiguous. It makes use of the three dots inherited from ancient interpunctive
+                        theory: high dot or τελεία στιγμή (·) at the end of the sentence; middle dot or
+                        μέση στιγμή (·) between clauses (κῶλα); low dot or ὐποστιγμή (.) before the part
+                        that gives fulfillment to the sentence. Manuscript practice may deviate from these
+                        rules. The following codepoints are used in the transcription: 0387 (hex) "GREEK
+                        ANO TELEIA", 00B7 (hex) "MIDDLE DOT", 002E (hex) "FULL STOP", 002C (hex) "COMMA",
+                        2022 (hex) "BULLET", 2058 (hex) "FOUR DOT PUNCTUATION",
+                        <!-- 205D (hex) "TRICOLON"  --> and 003A (hex) "COLON".</p>
+                </punctuation>
+            </editorialDecl>
+            <listPrefixDef>
+                <prefixDef ident="vat-gr-1422" matchPattern="([a-z\-]+)"
+                    replacementPattern="../vat-gr-1422/vat-gr-1422-transcription.xml#$1">
+                    <p>In the context of this project, private URIs with the prefix "vat-gr-1422" point
+                        to segments with attribute type "commentaryfragment" (xml:id) in the transcription
+                        of Vat. gr. 1422.</p>
+                </prefixDef>
+                <prefixDef ident="vat-gr-754" matchPattern="([a-z\-]+)"
+                    replacementPattern="../vat-gr-754/vat-gr-754-transcription.xml#$1">
+                    <p>In the context of this project, private URIs with the prefix "vat-gr-754" point to
+                        segments with attribute type "commentaryfragment" (xml:id) elements in the
+                        transcription von Vat. gr. 754.</p>
+                </prefixDef>
+            </listPrefixDef>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="grc">Ancient Greek</language>
+                <language ident="en">English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change who="Thomas Klampfl" when="2023-12-07">Creation of a skeleton of the file for
+                further usage.</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcription" xml:id="coislin-187-1-1">
+                <div xml:id="coislin-187-17-1" type="bibletext" subtype="commented">
+                    <quote type="bibletext" n="Ps (LXX) 17,1" xml:lang="grc" xml:id="coislin-187-ps-17-1">
+                        <anchor type="psalmtext" n="Ps (LXX) 17,1" xml:id="coislin-187-ps-17-1-1"/>Εἰς τὸ τέλος· τῷ παιδὶ κυρίου τῷ Δαυιδ, ἃ ἐλάλησεν τῷ κυρίῳ τοὺς λόγους τῆς ᾠδῆς ταύτης ἐν ἡμέρᾳ, ᾗ ἐρρύσατο αὐτὸν κύριος ἐκ χειρὸς πάντων τῶν ἐχθρῶν αὐτοῦ καὶ ἐκ χειρὸς Σαουλ,
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-2">
+                        <anchor type="psalmtext" n="Ps (LXX) 17,2" xml:id="coislin-187-ps-17-2a"/>
+                        καὶ εἶπεν
+                        <anchor type="psalmtext" n="Ps (LXX) 17,2" xml:id="coislin-187-ps-17-2b"/>
+                        Ἀγαπήσω σε, κύριε ἡ ἰσχύς μου.
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-3">
+                        <anchor type="psalmtext" n="Ps (LXX) 17," xml:id="coislin-187-ps-17-"/><!-- continue here -->
+                    κύριος στερέωμά μου καὶ καταφυγή μου καὶ ῥύστης μου,
+                    
+                    ὁ θεός μου βοηθός μου, καὶ ἐλπιῶ ἐπ᾽ αὐτόν,
+                    
+                    ὑπερασπιστής μου καὶ κέρας σωτηρίας μου, ἀντιλήμπτωρ μου.
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-4">
+                    αἰνῶν ἐπικαλέσομαι κύριον
+                    
+                    καὶ ἐκ τῶν ἐχθρῶν μου σωθήσομαι.
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-5">
+                    περιέσχον με ὠδῖνες θανάτου,
+                    
+                    καὶ χείμαρροι ἀνομίας ἐξετάραξάν με
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-6">
+                    ὠδῖνες ᾅδου περιεκύκλωσάν με,
+                    
+                    προέφθασάν με παγίδες θανάτου.
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-7">
+                    καὶ ἐν τῷ θλίβεσθαί με ἐπεκαλεσάμην τὸν κύριον
+                    
+                    καὶ πρὸς τὸν θεόν μου ἐκέκραξα·
+                    
+                    ἤκουσεν ἐκ ναοῦ ἁγίου αὐτοῦ φωνῆς μου,
+                    
+                    καὶ ἡ κραυγή μου ἐνώπιον αὐτοῦ εἰσελεύσεται εἰς τὰ ὦτα αὐτοῦ.
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-8">
+                    καὶ ἐσαλεύθη καὶ ἔντρομος ἐγενήθη ἡ γῆ,
+                    
+                    καὶ τὰ θεμέλια τῶν ὀρέων ἐταράχθησαν
+                    
+                    καὶ ἐσαλεύθησαν, ὅτι ὠργίσθη αὐτοῖς ὁ θεός.
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-9">
+                    ἀνέβη καπνὸς ἐν ὀργῇ αὐτοῦ,
+                    
+                    καὶ πῦρ ἀπὸ προσώπου αὐτοῦ κατεφλόγισεν,
+                    
+                    ἄνθρακες ἀνήφθησαν ἀπ᾽ αὐτοῦ.
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-10">
+                    καὶ ἔκλινεν οὐρανὸν καὶ κατέβη,
+                    
+                    καὶ γνόφος ὑπὸ τοὺς πόδας αὐτοῦ.
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-11">
+                    καὶ ἐπέβη ἐπὶ χερουβιν καὶ ἐπετάσθη,
+                    
+                    ἐπετάσθη ἐπὶ πτερύγων ἀνέμων.
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-12">
+                    καὶ ἔθετο σκότος ἀποκρυφὴν αὐτοῦ·
+                    
+                    κύκλῳ αὐτοῦ ἡ σκηνὴ αὐτοῦ,
+                    
+                    σκοτεινὸν ὕδωρ ἐν νεφέλαις ἀέρων.
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-13">
+                    ἀπὸ τῆς τηλαυγήσεως ἐνώπιον αὐτοῦ αἱ νεφέλαι διῆλθον,
+                    
+                    χάλαζα καὶ ἄνθρακες πυρός.
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-14">
+                    καὶ ἐβρόντησεν ἐξ οὐρανοῦ κύριος,
+                    
+                    καὶ ὁ ὕψιστος ἔδωκεν φωνὴν αὐτοῦ·
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-15">
+                    καὶ ἐξαπέστειλεν βέλη καὶ ἐσκόρπισεν αὐτοὺς
+                    
+                    καὶ ἀστραπὰς ἐπλήθυνεν καὶ συνετάραξεν αὐτούς.
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-16">
+                    καὶ ὤφθησαν αἱ πηγαὶ τῶν ὑδάτων,
+                    
+                    καὶ ἀνεκαλύφθη τὰ θεμέλια τῆς οἰκουμένης
+                    
+                    ἀπὸ ἐπιτιμήσεώς σου, κύριε,
+                    
+                    ἀπὸ ἐμπνεύσεως πνεύματος ὀργῆς σου.
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-17">
+                    ἐξαπέστειλεν ἐξ ὕψους καὶ ἔλαβέν με,
+                    
+                    προσελάβετό με ἐξ ὑδάτων πολλῶν.
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-18">
+                    ῥύσεταί με ἐξ ἐχθρῶν μου δυνατῶν
+                    
+                    καὶ ἐκ τῶν μισούντων με, ὅτι ἐστερεώθησαν ὑπὲρ ἐμέ.
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-19">
+                    προέφθασάν με ἐν ἡμέρᾳ κακώσεώς μου,
+                    
+                    καὶ ἐγένετο κύριος ἀντιστήριγμά μου
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-20">
+                    καὶ ἐξήγαγέν με εἰς πλατυσμόν,
+                    
+                    ῥύσεταί με, ὅτι ἠθέλησέν με.
+                    
+                    ῥύσεταί με ἐξ ἐχθρῶν μου δυνατῶν
+                    
+                    καὶ ἐκ τῶν μισούντων με.
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-21">
+                    καὶ ἀνταποδώσει μοι κύριος κατὰ τὴν δικαιοσύνην μου
+                    
+                    καὶ κατὰ τὴν καθαριότητα τῶν χειρῶν μου ἀνταποδώσει μοι,
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-22">
+                    ὅτι ἐφύλαξα τὰς ὁδοὺς κυρίου
+                    
+                    καὶ οὐκ ἠσέβησα ἀπὸ τοῦ θεοῦ μου,
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-23">
+                    ὅτι πάντα τὰ κρίματα αὐτοῦ ἐνώπιόν μου,
+                    
+                    καὶ τὰ δικαιώματα αὐτοῦ οὐκ ἀπέστησα ἀπ᾽ ἐμοῦ.
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-24">
+                    καὶ ἔσομαι ἄμωμος μετ᾽ αὐτοῦ
+                    
+                    καὶ φυλάξομαι ἀπὸ τῆς ἀνομίας μου.
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-25">
+                    καὶ ἀνταποδώσει μοι κύριος κατὰ τὴν δικαιοσύνην μου
+                    
+                    καὶ κατὰ τὴν καθαριότητα τῶν χειρῶν μου ἐνώπιον τῶν ὀφθαλμῶν αὐτοῦ.
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-26">
+                    μετὰ ὁσίου ὁσιωθήσῃ
+                    
+                    καὶ μετὰ ἀνδρὸς ἀθῴου ἀθῷος ἔσῃ
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-27">
+                    καὶ μετὰ ἐκλεκτοῦ ἐκλεκτὸς ἔσῃ
+                    
+                    καὶ μετὰ στρεβλοῦ διαστρέψεις.
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-28">
+                    ὅτι σὺ λαὸν ταπεινὸν σώσεις
+                    
+                    καὶ ὀφθαλμοὺς ὑπερηφάνων ταπεινώσεις.
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-29">
+                    ὅτι σὺ φωτιεῖς λύχνον μου, κύριε·
+                    
+                    ὁ θεός μου, φωτιεῖς τὸ σκότος μου.
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-30">
+                    ὅτι ἐν σοὶ ῥυσθήσομαι ἀπὸ πειρατηρίου
+                    
+                    καὶ ἐν τῷ θεῷ μου ὑπερβήσομαι τεῖχος.
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-31">
+                    ὁ θεός μου, ἄμωμος ἡ ὁδὸς αὐτοῦ,
+                    
+                    τὰ λόγια κυρίου πεπυρωμένα,
+                    
+                    ὑπερασπιστής ἐστιν πάντων τῶν ἐλπιζόντων ἐπ᾽ αὐτόν.
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-32">
+                    ὅτι τίς θεὸς πλὴν τοῦ κυρίου;
+                    
+                    καὶ τίς θεὸς πλὴν τοῦ θεοῦ ἡμῶν;
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-33">
+                    ὁ θεὸς ὁ περιζωννύων με δύναμιν
+                    
+                    καὶ ἔθετο ἄμωμον τὴν ὁδόν μου,
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-34">
+                    ὁ καταρτιζόμενος τοὺς πόδας μου ὡς ἐλάφου
+                    
+                    καὶ ἐπὶ τὰ ὑψηλὰ ἱστῶν με,
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-35">
+                    διδάσκων χεῖράς μου εἰς πόλεμον
+                    
+                    καὶ ἔθου τόξον χαλκοῦν τοὺς βραχίονάς μου·
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-36">
+                    καὶ ἔδωκάς μοι ὑπερασπισμὸν σωτηρίας μου,
+                    
+                    καὶ ἡ δεξιά σου ἀντελάβετό μου,
+                    
+                    καὶ ἡ παιδεία σου ἀνώρθωσέν με εἰς τέλος,
+                    
+                    καὶ ἡ παιδεία σου αὐτή με διδάξει.
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-37">
+                    ἐπλάτυνας τὰ διαβήματά μου ὑποκάτω μου,
+                    
+                    καὶ οὐκ ἠσθένησαν τὰ ἴχνη μου.
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-38">
+                    καταδιώξω τοὺς ἐχθρούς μου καὶ καταλήμψομαι αὐτοὺς
+                    
+                    καὶ οὐκ ἀποστραφήσομαι, ἕως ἂν ἐκλίπωσιν·
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-39">
+                    ἐκθλίψω αὐτούς, καὶ οὐ μὴ δύνωνται στῆναι,
+                    
+                    πεσοῦνται ὑπὸ τοὺς πόδας μου.
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-40">
+                    καὶ περιέζωσάς με δύναμιν εἰς πόλεμον,
+                    
+                    συνεπόδισας πάντας τοὺς ἐπανιστανομένους ἐπ᾽ ἐμὲ ὑποκάτω μου
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-41">
+                    καὶ τοὺς ἐχθρούς μου ἔδωκάς μοι νῶτον
+                    
+                    καὶ τοὺς μισοῦντάς με ἐξωλέθρευσας.
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-42">
+                    ἐκέκραξαν, καὶ οὐκ ἦν ὁ σῴζων,
+                    
+                    πρὸς κύριον, καὶ οὐκ εἰσήκουσεν αὐτῶν.
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-43">
+                    καὶ λεπτυνῶ αὐτοὺς ὡς χοῦν κατὰ πρόσωπον ἀνέμου,
+                    
+                    ὡς πηλὸν πλατειῶν λεανῶ αὐτούς.
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-44">
+                    ῥύσῃ με ἐξ ἀντιλογιῶν λαοῦ,
+                    
+                    καταστήσεις με εἰς κεφαλὴν ἐθνῶν·
+                    
+                    λαός, ὃν οὐκ ἔγνων, ἐδούλευσέν μοι,
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-45">
+                    εἰς ἀκοὴν ὠτίου ὑπήκουσέν μοι·
+                    
+                    υἱοὶ ἀλλότριοι ἐψεύσαντό μοι,
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-46">
+                    υἱοὶ ἀλλότριοι ἐπαλαιώθησαν
+                    
+                    καὶ ἐχώλαναν ἀπὸ τῶν τρίβων αὐτῶν.
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-47">
+                    ζῇ κύριος, καὶ εὐλογητὸς ὁ θεός μου,
+                    
+                    καὶ ὑψωθήτω ὁ θεὸς τῆς σωτηρίας μου,
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-48">
+                    ὁ θεὸς ὁ διδοὺς ἐκδικήσεις ἐμοὶ
+                    
+                    καὶ ὑποτάξας λαοὺς ὑπ᾽ ἐμέ,
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-49">
+                    ὁ ῥύστης μου ἐξ ἐχθρῶν μου ὀργίλων,
+                    
+                    ἀπὸ τῶν ἐπανιστανομένων ἐπ᾽ ἐμὲ ὑψώσεις με,
+                    
+                    ἀπὸ ἀνδρὸς ἀδίκου ῥύσῃ με.
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-50">
+                    διὰ τοῦτο ἐξομολογήσομαί σοι ἐν ἔθνεσιν, κύριε,
+                    
+                    καὶ τῷ ὀνόματί σου ψαλῶ,
+                    </quote>
+                    <quote type="bibletext" n="Ps (LXX) 17,2" xml:lang="grc" xml:id="coislin-187-ps-17-51">
+                    μεγαλύνων τὰς σωτηρίας τοῦ βασιλέως αὐτοῦ
+                    
+                    καὶ ποιῶν ἔλεος τῷ χριστῷ αὐτοῦ,
+                    
+                    τῷ Δαυιδ καὶ τῷ σπέρματι αὐτοῦ ἕως αἰῶνος.
+                    </quote>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>
