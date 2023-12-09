@@ -431,6 +431,10 @@
                   <bibl>Basilius, Is. comm. (PG 30; Edition von Trevisan [1939] nicht
                      zugänglich)</bibl>
                </person>
+               <person xml:id="person-78" role="author" sameAs="#person-20">
+                  <persName>Gregorius Nazianzenus</persName>
+                  <bibl>Gregorius Naz., or. 32–37 (Moreschini – Gallay; SC 318)</bibl>
+               </person>
             </listPerson>
          </sourceDesc>
       </fileDesc>
@@ -16804,8 +16808,14 @@
                         ποτήριον. τὸν θάνατον σημαίνει· κατὰ τὸ εἰρημένον. πάτερ εἰ δυν<add
                            place="overstrike">α</add>τὸν. παρελθέτω ἀπεμοῦ τὸ ποτήριον τοῦτο: – [Mt
                         26,39]</quote>
-                     <pb n="59v–60r"/>
                      <note type="attribution" xml:lang="grc">ϘΒ΄</note></seg>
+               </ab>
+            </div>
+            <pb n="59v–60r"/>
+            <div type="commentary" subtype="commentary" xml:id="vat-gr-754-15-7-1"
+               rendition="#bottom-of-the-page" rend="minuscule letters"
+               change="commentaryfragments-only">
+               <ab xml:lang="grc">
                   <note type="lemma">Ps 15,2b</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-15-14"
                      rendition="#bottom-of-the-page" source="(Evagrius)"
@@ -17783,7 +17793,13 @@
                         source="Hesychius, comm. brevis in Ps 16,14d (24 Jagić)"
                         corresp="#person-11"/>
                      <note type="attribution" xml:lang="grc">Ἡσυχ(ίου)</note></seg>
-                  <pb n="62r–v"/>
+               </ab>
+            </div>
+            <pb n="62r–v"/>
+            <div type="commentary" subtype="commentary" xml:id="vat-gr-754-16-17-1"
+               rendition="#bottom-of-the-page" rend="minuscule letters"
+               change="commentaryfragments-only">
+               <ab xml:lang="grc">
                   <note type="lemma">linking not completed</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-16-41"
                      rendition="#bottom-of-the-page" source="Eusebius"
@@ -17957,7 +17973,7 @@
                      <note type="attribution" xml:lang="grc">Θεοδ(ωρήτου)</note></seg>
                </ab>
             </div>
-            <pb n="63r" facs="https://digi.vatlib.it/view/MSS_Vat.gr.754/63"/>
+            <pb n="63r" facs="https://digi.vatlib.it/view/MSS_Vat.gr.754/62"/>
             <!-- Ps 17 bibletext 2 -->
             <div type="bibletext" xml:id="vat-gr-754-17-3" subtype="commented"
                rendition="#middle-column" change="commentaryfragments-only">
@@ -18071,7 +18087,8 @@
                   </seg>
                   <note type="lemma">Ps 17,8a</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-17-12"
-                     rendition="#right-column" source="(Athanasius)" corresp="#vat-gr-754-ps-17-8a">
+                     rendition="#right-column" source="(Athanasius)" corresp="#vat-gr-754-ps-17-8a"
+                     copyOf="#edition:edition-17-8-1">
                      <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-17-14"
                         corresp="#person-2" source="Athanasius, exp. in Ps 17,8a">Τὰ πραχθέντα τότε
                         ἐπὶ τῆ καθόδω τοῦ κυρίου εἰσηγεῖται· πάντες γὰρ οἱ τὴν γῆν οἰκοῦντες
@@ -18101,7 +18118,7 @@
                   </seg>
                </ab>
             </div>
-            <pb n="63v" facs="https://digi.vatlib.it/view/MSS_Vat.gr.754/64"/>
+            <pb n="63v" facs="https://digi.vatlib.it/view/MSS_Vat.gr.754/63"/>
             <div type="bibletext" xml:id="vat-gr-754-17-8" subtype="commented"
                rendition="#middle-column" change="commentaryfragments-only">
                <ab xml:lang="grc">
@@ -18135,15 +18152,220 @@
                      ἐπετάσθη, <anchor type="psalmtext" xml:id="vat-gr-754-ps-17-11b"
                         n="Ps (LXX) 17,11b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-17-11"/>
                      ἐπετάσθη ἐπὶ πτερύγων ἀνέμων. </quote>
-                  <quote type="bibletext" xml:id="vat-gr-754-ps-17-12" n="Ps (LXX) 17,12"
-                     corresp="../psalms-LXX/psalms.xml#Ps-LXX-17-12">
+                  <quote type="bibletext" xml:id="vat-gr-754-ps-17-12" next="#vat-gr-754-ps-17-12-1"
+                     n="Ps (LXX) 17,12" corresp="../psalms-LXX/psalms.xml#Ps-LXX-17-12">
                      <anchor type="psalmtext" xml:id="vat-gr-754-ps-17-12a" n="Ps (LXX) 17,12a"
                         corresp="../psalms-LXX/psalms.xml#Ps-LXX-17-12"/> καὶ ἔθετο σκότος ἀποκρυφὴν
-                     αὐτοῦ· <anchor type="psalmtext" xml:id="vat-gr-754-ps-17-12b"
-                        n="Ps (LXX) 17,12b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-17-12"/> κύκλῳ
-                     αὐτοῦ ἡ σκηνὴ αὐτοῦ, <anchor type="psalmtext" xml:id="vat-gr-754-ps-17-12c"
-                        n="Ps (LXX) 17,12c" corresp="../psalms-LXX/psalms.xml#Ps-LXX-17-12"/>
-                     σκοτεινὸν ὕδωρ ἐν νεφέλαις ἀέρων. </quote>
+                     αὐτοῦ·</quote>
+               </ab>
+            </div>
+            <div type="commentary" subtype="commentary" xml:id="vat-gr-754-17-9"
+               rendition="#right-column" rend="capital letters" change="commentaryfragments-only">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 17,9b (ἀπὸ προσώπου)</note>
+                  <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-17-2"
+                     rendition="#right-column" source="Aquila (Ps 17,9b)"
+                     corresp="#vat-gr-754-ps-17-9b">Α ἀποστόματος αὐτου φάγεται:</seg>
+                  <note type="lemma">linking not repeated</note>
+                  <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-17-3"
+                     rendition="#right-column" source="Symmachus (Ps 17,9b)"
+                     corresp="#vat-gr-754-ps-17-9b">Ϲ ἐκ στόματος αὐτοῦ ἀναλίσκον:</seg>
+                  <note type="lemma">Ps 17,10a (οὐρανοὺς [οὐρανὸν LXX Rahlfs)</note>
+                  <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-17-4"
+                     rendition="#right-column" source="Theodotion (Ps 17,10a); non habet Field"
+                     corresp="#vat-gr-754-ps-17-4">Θ ὁμοίως τοῖς Ο´ (= οὐρανὸν):</seg>
+                  <note type="lemma">linking not repeated</note>
+                  <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-17-5"
+                     rendition="#right-column" source="Aquila, Symmachus (Ps 17,10a)"
+                     corresp="#vat-gr-754-ps-17-10a">A Ϲ οὐρανοὺς:</seg>
+                  <note type="lemma">linking not completed</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-17-15"
+                     rendition="#right-column" rend="minuscule letters" source="(Evagrius)"
+                     corresp="#vat-gr-754-ps-17-9b"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-754-quot-17-17"
+                        source="Evagrius, schol. nr. ε´ in Ps 17,9b (384 Rondeau – Géhin – Cassin)"
+                        corresp="#person-21"/>
+                     <note type="attribution" xml:lang="grc">ε´</note></seg>
+                  <note type="lemma">Ps 17,10b</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-17-16"
+                     rendition="#right-column" rend="minuscule letters" source="(Athanasius)"
+                     corresp="#vat-gr-754-ps-17-10b" copyOf="#edition:edition-17-10-2">
+                     <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-17-18"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 17,10b (ineditum)">Τὸ
+                        κρύφιον τῆς ἐν τῆ οἰκονομία πορείας δηλοῖ: -</quote>
+                     <note type="attribution" xml:lang="grc">Λ´</note></seg>
+                  <note type="lemma">Ps 17,11a</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-17-17"
+                     rendition="#right-column" source="(Athanasius)" corresp="#vat-gr-754-ps-17-11a"
+                     copyOf="#edition:edition-17-11-1">
+                     <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-17-19"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 17,11">Τὴν ἀνάληψιν αὐτοῦ
+                        διὰ τούτων δηλοῖ· χερουβὶμ δὲ καὶ πτέρυγας ἀνέμων. τὴν νεφέλην φη(σὶ) ἥτις
+                        ὑπέλαβεν αὐτὸν ἀπὸ τῶν ὀφθαλμῶν αὐτῶν: –</quote>
+                     <note type="attribution" xml:lang="grc">ΛA´</note>
+                  </seg>
+               </ab>
+            </div>
+            <div type="hexaplaric" subtype="commentary" xml:id="vat-gr-754-17-10"
+               rendition="#psalm-column" rend="capital letters" change="commentaryfragments-only">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 17,11a (ἐπετάσθη)</note>
+                  <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-17-6"
+                     rendition="#psalm-column"
+                     source="Symmachus (Ps 17,11a); in ἐπετάσθη (Ps 17,11b) Field"
+                     corresp="#vat-gr-754-ps-17-11b">πετομένου</seg>
+                  <note type="lemma">linking not completed</note>
+                  <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-17-7"
+                     rendition="#psalm-column"
+                     source="Aquila, Symmachus, Quinta (?), Sexta (?), Theodotion (Ps 17,11a); non habet Field"
+                     corresp="#vat-gr-754-ps-17-11b">ἀνέμων οἱ ὅλοι:</seg>
+               </ab>
+            </div>
+            <div type="commentary" subtype="commentary" xml:id="vat-gr-754-17-11"
+               rendition="#top-of-the-page" rend="minuscule letters"
+               change="commentaryfragments-only">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 17,8b</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-17-18"
+                     rendition="#top-of-the-page" source="(Athanasius)"
+                     corresp="#vat-gr-754-ps-17-8b" copyOf="#edition:edition-17-8-2">
+                     <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-17-20"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 17,8b"><del
+                           rend="expunction">Καὶ τὰ θεμέλια τῶν ὀρέων ἐταράχθησαν</del> Ὄρη δυνάμεις
+                        πονηραὶ. αἱ ἐπαιρόμεναι κατὰ τῆς δόξης τοῦ θεοῦ· θεμέλια δὲ αὐτῶν. τοὺς ἐν
+                        βάθη διαλογισμοὺς φησίν:</quote><note type="attribution" xml:lang="grc"
+                        >KE´</note>
+                  </seg>
+                  <note type="lemma">Ps 17,8c</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-17-19"
+                     rendition="#top-of-the-page" source="(Athanasius)"
+                     corresp="#vat-gr-754-ps-17-8c" copyOf="#edition:edition-17-8-3">
+                     <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-17-21"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 17,8c">Διὅτι ἐν τῶ μακρῶ
+                        αἰῶνι τοὺς ἐπιτῆς γῆς ἠπάτησαν· διὰ τῆς πολυθέου δεισιδαιμονίας:</quote>
+                     <note type="attribution" xml:lang="grc">ΚϚ´</note>
+                  </seg>
+                  <note type="lemma">Ps 17,9a</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-17-20"
+                     rendition="#top-of-the-page" source="(Athanasius)"
+                     corresp="#vat-gr-754-ps-17-9a" copyOf="#edition:edition-17-9-1">
+                     <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-17-22"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 17,9a">Ὀργισθεὶς φη(σὶ)
+                        κατέσβεσεν αὐτῶν τὸ πῦρ. διοῦ πάλαι τοὺς ἀνθρώπους κατέφλεγον· καὶ τούτου
+                        σύμβολον. τὸν καπνὸν τίθησιν: -</quote>
+                     <note type="attribution" xml:lang="grc">KZ´</note>
+                  </seg>
+                  <note type="lemma">Ps 17,9b</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-17-21"
+                     rendition="#top-of-the-page" source="(Athanasius)"
+                     corresp="#vat-gr-754-ps-17-9b" copyOf="#edition:edition-17-9-2">
+                     <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-17-23"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 17,9b">Ταῦτα γὰρ ὁ τοῦ
+                        θεοῦ υἱὸς ἐνείργει [lege ἐνήργει] ἀφώνως κατὰ τῶν ἀντικειμένων δυνάμεων. τὸ
+                        πῦρ αὐτῶν σβεννὺς ἑτέρω πυρὶ κρείττονι καὶ δυνατωτέρω: -</quote>
+                     <note type="attribution" xml:lang="grc">ΚΗ´</note>
+                  </seg>
+                  <note type="lemma">Ps 17,9c</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-17-22"
+                     rendition="#top-of-the-page" source="Anonymous" corresp="#vat-gr-754-ps-17-9c"
+                        ><quote type="patristic" subtype="unknown" xml:id="vat-gr-754-quot-17-24"
+                        source="Origenes, schol. (?) in Ps 17,9c (ineditum?) = PG 27,109 D13–14 (ex. Paris. gr. 166)"
+                        corresp="#person-34">Οἱ καταμετουσίαν τοῦ θείου πυρὸς φωτισθέντες:
+                     –</quote></seg>
+               </ab>
+            </div>
+            <div type="commentary" subtype="commentary" xml:id="vat-gr-754-17-12"
+               rendition="#left-column" rend="minuscule letters" change="commentaryfragments-only">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 17,9c</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-17-23"
+                     rendition="#left-column" source="Isidorus" corresp="#vat-gr-754-ps-17-9c"
+                        ><quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-17-25"
+                        source="Isidorus Pel., ep. 2 (PG 78,181 A3–8) in Ps 17,9c"
+                        corresp="#person-72"/>
+                     <note type="attribution" xml:lang="grc">Ισηδ(ώρου)</note></seg>
+                  <note type="lemma">Ps 17,10a</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-17-24"
+                     rendition="#left-column" source="(Athanasius)" corresp="#vat-gr-754-ps-17-10a"
+                     copyOf="#edition:edition-17-10-1">
+                     <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-17-26"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 17,10a">Λευκότατα
+                        προφητεύει τὴν κατάβασιν τοῦ κυρίου· εἴη δὲ ἂν σημαντικὸν τοῦ ἑταπείνωσεν
+                        ἑαυτὸν μέχρι θανάτου: - [cf. Phil 2,8]</quote>
+                     <note type="attribution" xml:lang="grc">KΘ´</note>
+                  </seg>
+                  <note type="lemma">Ps 17,11a</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-17-25"
+                     rendition="#left-column" source="(Evagrius)" corresp="#vat-gr-754-ps-17-11a"
+                        ><quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-17-27"
+                        source="Evagrius, schol. nr. ς´ in Ps 17,11a (384 Rondeau – Géhin – Cassin)"
+                        corresp="#person-21"/>
+                     <note type="attribution" xml:lang="grc">ς´</note></seg>
+                  <note type="lemma">Ps 17,12a</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-17-26"
+                     rendition="#left-column" source="(Athanasius)" corresp="#vat-gr-754-ps-17-12a"
+                     copyOf="#edition:edition-17-12-1">
+                     <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-17-28"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 17,12a">Τὴν ἀφανῆ καὶ
+                        λανθάνουσαν τοῦ σωτῆρος σὺν ἀνθρώποις διατριβήν: –</quote>
+                     <note type="attribution" xml:lang="grc">ΛΒ΄</note>
+                  </seg>
+                  <note type="lemma">Ps 17,12a</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-17-27"
+                     rendition="#left-column" source="Anonymous" corresp="#vat-gr-754-ps-17-12a"
+                        ><quote type="patristic" subtype="ineditum" xml:id="vat-gr-754-quot-17-29"
+                        source="Origenes, schol. (?) in Ps 17,12a (ineditum?)" corresp="#person-34"
+                        >σκότος βαθύ· ἠ ὁ περὶ θεοῦ καὶ τῶν αὐτοῦ κριμάτων τὲ καὶ λόγων ἐν γνώσει
+                        ἀγνοῶν: –</quote></seg>
+               </ab>
+            </div>
+            <div type="commentary" subtype="commentary" xml:id="vat-gr-754-17-13"
+               rendition="#bottom-of-the-page" rend="minuscule letters"
+               change="commentaryfragments-only">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 17,12a</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-17-28"
+                     rendition="#bottom-of-the-page" source="Gregorius"
+                     corresp="#vat-gr-754-ps-17-12a"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-754-quot-17-30"
+                        source="Gregorius Naz., or. 32,15 (116,4–9 Moreschini – Gallay; SC 318) in Ps 17,12a et Ex 34,33"
+                        corresp="#person-78"/>
+                     <note type="attribution" xml:lang="grc">Γρη(γορίου) τ(οῦ) θεολόγου</note></seg>
+                  <note type="lemma">Ps 17,12a</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-17-29"
+                     rendition="#bottom-of-the-page" source="Gregorius"
+                     corresp="#vat-gr-754-ps-17-12a"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-754-quot-17-31"
+                        source="Gregorius Naz., or. 28,12 (124,17–21 Gallay – Jourjon; SC 250) in Ex 10,22.20 et in Ps 17,12a"
+                        corresp="#person-20"/>
+                     <note type="attribution" xml:lang="grc">τ(οῦ) αυτ(οῦ)</note></seg>
+               </ab>
+            </div>
+            <pb n="63v–64r"/>
+            <div type="commentary" subtype="commentary" xml:id="vat-gr-754-17-13-1"
+               rendition="#bottom-of-the-page" rend="Gregorius" change="commentaryfragments-only">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 17,12a</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-17-30"
+                     rendition="#bottom-of-the-page" source="Gregorius"
+                     corresp="#vat-gr-754-ps-17-12a"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-754-quot-17-32"
+                        source="Gregorius Naz., or. 17,4 (PG 35,969 C4–14) in Ps 17,12a"
+                        corresp="#person-35"/>
+                     <note type="attribution" xml:lang="grc">τ(οῦ) αυτ(οῦ)</note></seg>
+               </ab>
+            </div>
+            <pb n="64r" facs="https://digi.vatlib.it/view/MSS_Vat.gr.754/63"/>
+            <div type="bibletext" xml:id="vat-gr-754-17-14" subtype="commented"
+               rendition="#middle-column" change="commentaryfragments-only">
+               <ab xml:lang="grc">
+                  <quote type="bibletext" xml:id="vat-gr-754-ps-17-12-1" prev="#vat-gr-754-ps-17-12"
+                     n="Ps (LXX) 17,12" corresp="../psalms-LXX/psalms.xml#Ps-LXX-17-12">
+                     <anchor type="psalmtext" xml:id="vat-gr-754-ps-17-12b" n="Ps (LXX) 17,12b"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-17-12"/> κύκλῳ αὐτοῦ ἡ σκηνὴ αὐτοῦ,
+                        <anchor type="psalmtext" xml:id="vat-gr-754-ps-17-12c" n="Ps (LXX) 17,12c"
+                        corresp="../psalms-LXX/psalms.xml#Ps-LXX-17-12"/> σκοτεινὸν ὕδωρ ἐν νεφέλαις
+                     ἀέρων. </quote>
                   <quote type="bibletext" xml:id="vat-gr-754-ps-17-13" n="Ps (LXX) 17,13"
                      corresp="../psalms-LXX/psalms.xml#Ps-LXX-17-13">
                      <anchor type="psalmtext" xml:id="vat-gr-754-ps-17-13a" n="Ps (LXX) 17,13a"
@@ -18444,89 +18666,58 @@
                      αὐτοῦ ἕως αἰῶνος. </quote>
                </ab>
             </div>
-            <div type="commentary" subtype="commentary" xml:id="vat-gr-754-17-9"
-               rendition="#right-column" rend="capital letters" change="commentaryfragments-only">
+            <div type="commentary" subtype="commentary" xml:id="vat-gr-754-17-15"
+               rendition="#left-column" rend="capital letters" change="commentaryfragments-only">
                <ab xml:lang="grc">
-                  <note type="lemma">Ps 17,9b</note>
-                  <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-17-2"
-                     rendition="#right-column" source="Aquila (Ps 17,9b)"
-                     corresp="#vat-gr-754-ps-17-9b">Α ἀποστόματος αὐτου φάγεται:</seg>
-                  <note type="lemma">Ps 17,9b</note>
-                  <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-17-3"
-                     rendition="#right-column" source="Symmachus (Ps 17,9b)"
-                     corresp="#vat-gr-754-ps-17-9b">Ϲ ἐκ στόματος αὐτοῦ ἀναλίσκον:</seg>
+                  <note type="lemma">Ps 17,12c</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-17-31"
+                     rendition="#left-column" rend="minuscule letters" source="Cyrillus"
+                     corresp="#vat-gr-754-ps-17-12c"><quote type="patristic"
+                        subtype="quotation-expanded" xml:id="vat-gr-754-quot-17-33"
+                        source="Cyrillus, fr. in Ps 17,12c (PG 69,824 B3–4); ὡς – θεοῦ non habet PG sed habet Idem, glaph. Ex. (PG 69,505 B4–7)"
+                        corresp="#person-4">Κεκρυμμένον γὰρ οὕτως ἐστιν τὸ Χριστοῦ μυστήριον. ὡς
+                        δεῖσθαι δεῖ μόνης μυσταγωγίας τῆς ἄνωθεν. καὶ ἀποκαλύψεως τῆς παρὰ θεοῦ:
+                        –</quote>
+                     <note type="attribution" xml:lang="grc">Κυριλ(λου)</note></seg>
+                  <note type="lemma">linking not completed (Ps 16,13b)</note>
+                  <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-17-8"
+                     rendition="#left-column" source="Aquila, Symmachus, Theodotion (Ps 16,13b)"
+                     corresp="#vat-gr-754-ps-17-13b">A Ϲ Θ χάλαζα·</seg>
+                  <note type="lemma">linking absent (?)</note>
+                  <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-17-9"
+                     rendition="#left-column" source="Aquila, Theodotion (Ps 16,14b?)"
+                     corresp="#vat-gr-754-ps-17-14b">A Θ ὁμοίως τοῖς Ο´</seg>
+                  <note type="lemma">linking absent (?)</note>
+                  <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-17-10"
+                     rendition="#left-column" source="Symmachus (Ps 16,14b?)"
+                     corresp="#vat-gr-754-ps-17-14b">Ϲ μεταχαλάζης καὶ ἀνθράκων πυρός:</seg>
+                  <note type="lemma">Ps 17,15b</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-17-32"
+                     rendition="#left-column" rend="minuscule letters" source="(Evagrius)"
+                     corresp="#vat-gr-754-ps-17-15b"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-754-quot-17-34"
+                        source="Evagrius, schol. nr. η´ in Ps 17,15b (388 Rondeau – Géhin – Cassin)"
+                        corresp="#person-21"/>
+                     <note type="attribution" xml:lang="grc">η´</note></seg>
                </ab>
             </div>
-            <!--<note type="lemma">Ps 17,8b</note>
-                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-17-14"
+            <div type="commentary" subtype="commentary" xml:id="vat-gr-754-17-16"
+               rendition="#top-of-the-page" rend="minuscule letters"
+               change="commentaryfragments-only">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 17,12b</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-17-33"
                      rendition="#top-of-the-page" source="(Athanasius)"
-                     corresp="#vat-gr-754-ps-17-8b">
-                     <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-17-16"
-                        corresp="#person-2" source="Athanasius, exp. in Ps 17,8b">καὶ τὰ θεμέλια τῶν
-                        ὀρέων ἐταράχθησαν καὶ τὰ θεμέλια τῶν ὀρέων ἐταράχθησαν Ὄρη δυνάμεις πονηραὶ
-                        αἱ ἐπαιρόμεναι κατὰ τῆς δόξης τοῦ Θεοῦ. Θεμέλια δὲ αὐτῶν τοὺς ἐν βάθη
-                        διαλογισμοὺς φησίν:</quote><note type="attribution" xml:lang="grc"
-                        >KE´</note>
+                     corresp="#vat-gr-754-ps-17-12b">
+                     <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-17-35"
+                        corresp="#person-2" source="Athanasius, exp. in Ps 17,12b">Σκηνὴν αὐτοῦ τὴν
+                        ἁγίαν Ἐκκλησίαν σημαίνει τὴν κύκλω τῆς οἰκουμένης: -</quote>
+                     <note type="attribution" xml:lang="grc">ΛΓ´</note>
                   </seg>
-                  <note type="lemma">Ps 17,8c</note>
-                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-17-8c" rendition="#XXXX"
-                     source="(Athanasius)" corresp="#vat-gr-754-ps-17-8c">
-                     <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-17-8c"
-                        corresp="#person-2" source="Athanasius, exp. in Ps 17,8c">Διὅτι ἐν τῶ μακρῶ
-                        αἰῶνι τοὺς ἐπὶ τῆς γῆς ἠ πάτησαν διὰ τῆς πολυθέου δεισιδαιμονίας:</quote>
-                     <note type="attribution" xml:lang="grc">ΚϚ´</note>
-                  </seg>
-                  <note type="lemma">Ps 17,9a</note>
-                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-17-9a" rendition="#XXXX"
-                     source="(Athanasius)" corresp="#vat-gr-754-ps-17-9a">
-                     <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-17-9a"
-                        corresp="#person-2" source="Athanasius, exp. in Ps 17,9a">Ὀργισθεὶς, φη(σὶ),
-                        κατέσβεσεν αὐτῶν τὸ πῦρ διοῦ πάλαι τοὺς ἀνθρώπους κατέφλεγον. Καὶ τούτου
-                        σύμβολον τὸν καπνὸν τίθησιν: -</quote>
-                     <note type="attribution" xml:lang="grc">KZ´</note>
-                  </seg>
-                  <note type="lemma">Ps 17,9b</note>
-                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-17-9b" rendition="#XXXX"
-                     source="(Athanasius)" corresp="#vat-gr-754-ps-17-9b">
-                     <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-17-9b"
-                        corresp="#person-2" source="Athanasius, exp. in Ps 17,9b">Ταῦτα γὰρ ὁ τοῦ
-                        Θεοῦ Υἱὸς ἐνέργει (sic) ἀφώνως κατὰ τῶν ἀντικειμένων δυνάμεων τὸ πῦρ αὐτῶν
-                        σβεννὺς ἑτέρω πυρὶ κρείττονι καὶ δυνατωτέρω: -</quote>
-                     <note type="attribution" xml:lang="grc">ΚΗ´</note>
-                  </seg>
-                  <note type="lemma">Ps 17,10a</note>
-                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-17-10a" rendition="#XXXX"
-                     source="(Athanasius)" corresp="#vat-gr-754-ps-17-10a">
-                     <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-17-10a"
-                        corresp="#person-2" source="Athanasius, exp. in Ps 17,10a">Λευκότατα
-                        προφητεύει τὴν κατάβασιν τοῦ Κυρίου. Εἴη δὲ ἂν σημαντικὸν τοῦ· ἑταπείνωσεν
-                        ἑαυτὸν μέχρι θανάτου.</quote>
-                     <note type="attribution" xml:lang="grc">KΘ´</note>
-                  </seg>
-                  <note type="lemma">Ps 17,10b</note>
-                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-17-10b" rendition="#XXXX"
-                     source="(Athanasius)" corresp="#vat-gr-754-ps-17-10b">
-                     <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-17-10b"
-                        corresp="#person-2" source="Athanasius, exp. in Ps 17,10b">Τὸ κρύφιον τῆς ὲν
-                        τῆ οίκονομία πορείας δηλοῖ: - Deest in editione</quote>
-                     <note type="attribution" xml:lang="grc">Λ´</note>
-                  </seg>
-                  <note type="lemma">Ps 17,11b</note>
-                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-17-11b" rendition="#XXXX"
-                     source="(Athanasius)" corresp="#vat-gr-754-ps-17-11b">
-                     <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-17-11b"
-                        corresp="#person-2" source="Athanasius, exp. in Ps 17,11b">Τὴν ἀνάληψιν
-                        αὐτοῦ διὰ τούτων δηλοῖ· χερουβὶμ δὲ καὶ πτέρυγας ἀνέμων τὴν νεφέλην φη(σὶ) </quote>
-                     <note type="attribution" xml:lang="grc">ΛA´</note>
-                  </seg>
-                  <note type="lemma">Ps 17,12a</note>
-                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-17-12a" rendition="#XXXX"
-                     source="(Athanasius)" corresp="#vat-gr-754-ps-17-12a">
-                     <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-17-12a"
-                        corresp="#person-2" source="Athanasius, exp. in Ps 17,12a">Τὴν ἀφανῆ καὶ
-                        λανθάνουσαν τοῦ Σωτῆρος σὺν ἀνθρώποις διατριβήν: -</quote>
-                     <note type="attribution" xml:lang="grc">ΛΒ΄</note>
-                  </seg>
+               </ab>
+            </div>
+            <!-- finis  -->
+            <!--
                   <note type="lemma">Ps 17,12b</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-17-12b" rendition="#XXXX"
                      source="(Athanasius)" corresp="#vat-gr-754-ps-17-12b">
