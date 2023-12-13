@@ -22,32 +22,54 @@
                 or starts-with(@target,'#plut-5-30:')
                 or starts-with(@target,'#mosq-syn-194:')">Wrong prefix in ref/@target</assert>
         </rule>
+    </pattern>
+    <pattern>
         <rule context="tei:seg">
             <assert test="(@type = 'hypothesis') or (@type = 'commentaryfragment') or (@type = 'hexaplaric') or (@type = 'glosse') or (@type = 'perioche') or (@type = 'hypopsalmos')">Attribute type on element seg has to be one of 'hypothesis', 'commentaryfragment', 'hexaplaric', 'perioche' or 'glosse'.</assert>
         </rule>
+    </pattern>
+    <pattern>
         <rule context="tei:seg[(@type = 'hypothesis') or (@type = 'commentaryfragment') or (@type = 'glosse')]">
             <assert test="exists(child::tei:quote)">Missing element quote as content of element seg.</assert>
         </rule>
+    </pattern>
+    <pattern>
         <rule context="tei:seg[(@type = 'hypothesis') or (@type = 'commentaryfragment') or (@type = 'glosse') or (@type = 'hexaplaric')]">
             <assert test="starts-with(@corresp,'#')">The attribute corresp on the element seg must start with a '#' sign.</assert>
-            <assert test="exists(//tei:anchor[@xml:id = substring-after(current()/@corresp,'#')])">For value of @corresp on element seg an element anchor could not be found. Please correct the @corresp attbribute</assert>
         </rule>
+    </pattern>
+    <pattern>
+        <rule context="tei:seg[(@type = 'hypothesis') or (@type = 'commentaryfragment') or (@type = 'glosse') or (@type = 'hexaplaric')]">
+            <assert test="substring-after(@corresp,'#') = root()//tei:anchor/@xml:id">For value of @corresp on element seg an element anchor could not be found. Please correct the @corresp attbribute</assert>
+        </rule>
+    </pattern>
+    <pattern>
         <rule context="tei:seg[(@type = 'hypothesis') or (@type = 'commentaryfragment')]">
             <assert test="exists(@xml:id)">Attribute xml:id must be present on seg element.</assert>
             <assert test="exists(@source)">Attribute source must be present on seg element.</assert>
         </rule>
+    </pattern>
+    <pattern>
         <rule context="tei:seg[@type = 'hexaplaric']">
             <assert test="not(exists(child::tei:quote))">Element seg of type 'hexaplaric' must not contain a child element quote.</assert>
         </rule>
+    </pattern>
+    <pattern>
         <rule context="tei:div[@type = 'commentary']">
             <assert test="@subtype = 'commentary'">Element div of type 'commentary' must have a value of 'commentary' as subtype.</assert>
         </rule>
+    </pattern>
+    <pattern>
         <rule context="tei:div[@type = 'bibletext']">
             <assert test="@subtype = 'commented'">Element div of type 'bibletext' must have a value of 'commented' as subtype.</assert>
         </rule>
+    </pattern>
+    <pattern>
         <rule context="tei:div[@type = 'commentary']">
             <assert test="not(exists(descendant::tei:pb))">Element pb must be positioned outside div/@type = 'commentary'.</assert>
         </rule>
+    </pattern>
+    <pattern>
         <rule context="tei:quote[@type = 'patristic']">
             <assert test="starts-with(@corresp,'#')">Referenced person in quote/@corresp must start with a '#' sign.</assert>
         </rule>
