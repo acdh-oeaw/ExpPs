@@ -613,6 +613,16 @@ version="2.0">
         <xsl:attribute name="id" select="@xml:id"/>
         <xsl:attribute name="class" select="'textcritical-embedded'"/>
         <xsl:attribute name="data-id" select="generate-id(//tei:app[@type = 'text'][@corresp = concat('#',$current-node/@xml:id)])"/>
+        <xsl:apply-templates select="text() | tei:span"/>
+    </xsl:element>
+</xsl:template>
+    
+<xsl:template match="tei:span[(@type = 'text-critical') and parent::tei:span and parent::tei:span[parent::tei:span]]">
+    <xsl:variable name="current-node" select="."/>
+    <xsl:element name="span">
+        <xsl:attribute name="id" select="@xml:id"/>
+        <xsl:attribute name="class" select="'textcritical-embedded-embedded'"/>
+        <xsl:attribute name="data-id" select="generate-id(//tei:app[@type = 'text'][@corresp = concat('#',$current-node/@xml:id)])"/>
         <xsl:value-of select="text()"/>
     </xsl:element>
 </xsl:template>
