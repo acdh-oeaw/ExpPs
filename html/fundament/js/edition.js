@@ -266,16 +266,16 @@ $(document).ready(function () {
 $(document).ready(function(){
 	$('.textcritical').each(function(){
 		$(this).on('mouseenter',function(event){
-			$(this).removeClass("textcritical").addClass("textcritical-emphasized");
-			$(this).children("span").removeClass("textcritical-embedded").addClass("textcritical-emphasized");
-			$(this).children("span").children("span").removeClass("textcritical-embedded-embedded").addClass("textcritical-emphasized");
+			$(this).removeClass().addClass("textcritical-emphasized");
+			$(this).children("span").addClass("textcritical-emphasized");
+			$(this).children("span").children("span").addClass("textcritical-emphasized");
 			let reference = "#" + event.target.dataset.id;
 			$(reference).removeClass("apparatus-entry").addClass("apparatus-entry-highlighted");
 		});
 		$(this).on('mouseleave',function(event){
-			$(this).removeClass("textcritical-emphasized").addClass("textcritical");
-			$(this).children("span").removeClass("textcritical-emphasized").addClass("textcritical-embedded");
-			$(this).children("span").children("span").removeClass("textcritical-emphasized").addClass("textcritical-embedded-embedded");
+			$(this).removeClass().addClass("textcritical");
+			$(this).children("span").removeClass().addClass("textcritical-embedded");
+			$(this).children("span").children("span").removeClass().addClass("textcritical-embedded-embedded");
 			let reference = "#" + event.target.dataset.id;
 			$(reference).removeClass("apparatus-entry-highlighted").addClass("apparatus-entry");
 		});
@@ -283,16 +283,16 @@ $(document).ready(function(){
 	$('.textcritical-embedded').each(function(){
 		$(this).on('mouseenter',function(event){
 			$(this).removeClass("textcritical-embedded").addClass("textcritical-embedded-emphasized");
-			$(this).children("span").removeClass("textcritical-embedded-embedded").addClass("textcritical-embedded-emphasized");
+			$(this).children("span").addClass("textcritical-embedded-emphasized");
 			let reference = "#" + event.target.dataset.id;
 			$(reference).removeClass("apparatus-entry").addClass("apparatus-entry-highlighted");
 		});
 		$(this).on('mouseleave',function(event){
 			if($(this).parent("span").hasClass("textcritical-emphasized")){
-				$(this).removeClass("textcritical-embedded-emphasized").addClass("textcritical-emphasized");
+				$(this).removeClass().addClass("textcritical-emphasized");
 			}
 			else{
-				$(this).removeClass("textcritical-embedded-emphasized").addClass("textcritical-embedded");
+				$(this).removeClass().addClass("textcritical-embedded");
 			}
 			let reference = "#" + event.target.dataset.id;
 			$(reference).removeClass("apparatus-entry-highlighted").addClass("apparatus-entry");
@@ -306,10 +306,10 @@ $(document).ready(function(){
 		});
 		$(this).on('mouseleave',function(event){
 			if($(this).parent("span").hasClass("textcritical-embedded-emphasized")){
-				$(this).removeClass("textcritical-embedded-embedded-emphasized").addClass("textcritical-embedded-emphasized");
+				$(this).removeClass().addClass("textcritical-embedded-emphasized");
 			}
 			else{
-				$(this).removeClass("textcritical-embedded-embedded-emphasized").addClass("textcritical-embedded-embedded");
+				$(this).removeClass().addClass("textcritical-embedded-embedded");
 			}
 			let reference = "#" + event.target.dataset.id;
 			$(reference).removeClass("apparatus-entry-highlighted").addClass("apparatus-entry");
