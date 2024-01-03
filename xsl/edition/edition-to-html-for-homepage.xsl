@@ -506,7 +506,14 @@ version="2.0">
         <div class="body-textcritic">
             <xsl:apply-templates select="tei:app[@type = 'fragment']"/>
             <xsl:for-each select="tei:app[@type = 'text']">
-                <xsl:apply-templates select="."/>
+                <xsl:element name="span">
+                    <xsl:attribute name="class" select="'apparatus-entry'"/>
+                    <xsl:attribute name="id" select="generate-id(.)"/>
+                    <xsl:variable name="reference" select="substring-after(@corresp,'#')"/>
+                    <xsl:apply-templates select=".">
+                        <xsl:with-param name="reference" select="$reference"/>
+                    </xsl:apply-templates>
+                </xsl:element>
                 <xsl:if test="position() != last()"><xsl:text> || </xsl:text></xsl:if>
             </xsl:for-each>
             <xsl:apply-templates select="tei:note[@type = 'textual-commentary']"/>
@@ -565,7 +572,8 @@ version="2.0">
                 <xsl:value-of select="text()"/>
             </div>
             <div class="col-md-5 large-greek-text">
-                <xsl:value-of select="parent::tei:div[@type = 'commentary']/parent::tei:div[@type = 'text']/tei:div[@type = 'commentary']/tei:p[@xml:id = substring-after(current()/@next,'#')]/text()"/>
+                <xsl:apply-templates select="parent::tei:div[@type = 'commentary']/parent::tei:div[@type = 'text']/tei:div[@type = 'commentary']/tei:p[@xml:id = substring-after(current()/@next,'#')]/text()
+                    | parent::tei:div[@type = 'commentary']/parent::tei:div[@type = 'text']/tei:div[@type = 'commentary']/tei:p[@xml:id = substring-after(current()/@next,'#')]/tei:span[@type = 'text-critical']"/>
             </div>
             <div class="col-md-2"/>
             <div class="col-md-5 large-latin-text">
