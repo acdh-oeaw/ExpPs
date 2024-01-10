@@ -89,7 +89,7 @@
                <head>Authors</head>
                <person xml:id="person-1" role="author">
                   <persName>Asterius</persName>
-                  <bibl corresp="#bibliography-title-1">Asterius, fr. (Richard)</bibl>
+                  <bibl corresp="#bibliography-title-1">Asterius, fr. in catenis (Richard)</bibl>
                </person>
                <person xml:id="person-2" role="author">
                   <persName>Athanasius Alexandrinus</persName>
@@ -238,7 +238,7 @@
                </person>
                <person xml:id="person-38" role="author" sameAs="#person-13">
                   <persName>Origenes</persName>
-                  <bibl>Origenes, schol. (PG 23)</bibl>
+                  <bibl>Origenes, schol. (?) (PG 23)</bibl>
                </person>
                <person xml:id="person-39" role="author">
                   <persName>Tarasius patriarcha Constantinopolitanus</persName>
@@ -375,6 +375,35 @@
                <person xml:id="person-72" role="author">
                   <persName>Isidorus Pelusiota </persName>
                   <bibl>Isidorus, ep. (PG 78)</bibl>
+               </person>
+               <person xml:id="person-73" role="author" sameAs="#person-6">
+                  <persName>Didymus Alexandrinus</persName>
+                  <bibl>fr. (ineditum?); non habet Mühlenberg</bibl>
+               </person>
+               <person xml:id="person-74" role="author">
+                  <persName>Apolinaris Laodiceus</persName>
+                  <bibl>Apolinaris Laod., fr. (Mühlenberg)</bibl>
+               </person>
+               <person xml:id="person-75" role="author" sameAs="#person-10">
+                  <persName>Hesychius Hierosolymitanus</persName>
+                  <bibl>Hesychius, schol. (ineditum?)</bibl>
+               </person>
+               <person xml:id="person-76" role="author">
+                  <persName>Arethas episcopus Caesareae </persName>
+                  <bibl>Arethas episcopus Caesareae, fr. (ineditum)</bibl>
+               </person>
+               <person xml:id="person-77" role="author">
+                  <persName>(Ps)-Basilius Caesariensis</persName>
+                  <bibl>Basilius, Is. comm. (PG 30; Edition von Trevisan [1939] nicht
+                     zugänglich)</bibl>
+               </person>
+               <person xml:id="person-78" role="author" sameAs="#person-20">
+                  <persName>Gregorius Nazianzenus</persName>
+                  <bibl>Gregorius Naz., or. 32–37 (Moreschini – Gallay; SC 318)</bibl>
+               </person>
+               <person xml:id="person-79" role="author" sameAs="#person-13">
+                  <persName>Origenes, Scholia in Psalmos</persName>
+                  <bibl>Origenes, schol. (?) (PG 27)</bibl>
                </person>
             </listPerson>
          </sourceDesc>
@@ -6389,7 +6418,7 @@
                      <note type="attribution" xml:lang="grc">Θεοδ(ώρου) ἀντιοχ(είας)</note></seg>
                   <note type="lemma">Ps 17,8–9</note>
                   <seg type="commentaryfragment" xml:id="par-gr-139-fr-17-28" rendition="#bottom-of-the-page" source="Hesychius" corresp="#par-gr-139-ps-17-9c">
-                     <quote type="patristic" subtype="quotation" xml:id="par-gr-139-quot-17-28" source="Hesychius, comm. magnus (?) in Ps 17,9c (Analecta sacra II 470,6–471,5) = fr. 215 Vanderschelden" corresp="#person-44"/>
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-139-quot-17-28" source="Hesychius, comm. magnus (?) in Ps 17,9c (Analecta sacra II 470,6–471,5) = fr. 215 Vanderschelden (234)" corresp="#person-44"/>
                      <note type="attribution" xml:lang="grc">Ησυχ(ίου) </note></seg>
                </ab>
             </div>
@@ -6413,12 +6442,120 @@
                      <quote type="patristic" subtype="quotation" xml:id="par-gr-139-quot-17-31" source="Hesychius, comm. magnus (?) in Ps 17,10 (PG 93,1188 A9–14); cf. Cyrillus (?), fr. in Ps 17,10 (PG 69,821 D6–824 A1)" corresp="#person-41"/>
                      <note type="attribution" xml:lang="grc">Ἡσυχ(ίου)</note></seg>
                   <note type="lemma">Ps 17,10–11</note>
-                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-17-32" rendition="#top-of-the-page" source="Athanasius" corresp="#par-gr-139-ps-17-10b">
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-17-32" rendition="#top-of-the-page" source="Athanasius" corresp="#par-gr-139-ps-17-10b" copyOf="#edition:edition-17-10-2-1">
                      <quote type="patristic" subtype="quotation-expanded" xml:id="par-gr-139-quot-17-32" source="Athanasius, exp. in Ps 17,10b" corresp="#person-2">Τὸ
                         κρυφιον τῆς ἐν τῆ οἰκονομία πορείας δηλοῖ καὶ τὸ ἀόρατον τοῦ θεοῦ ἵνα μὴ διῶν εἶπεν εἰς σωματικὰς ἐλκυσθῶμεν ἐννοίας: </quote>
                      <note type="attribution" xml:lang="grc">Ἀθ(ανασίου)</note><ref target="#vat-gr-754:vat-gr-754-fr-17-16" type="expanded">Vat. gr. 754</ref>
                      <note type="parallels">Marc. gr. Z. 17 (f. 37v, bottom / top): Lemma: Ps 17,10–11 - Attribution: <foreign xml:lang="grc">Ἀθανασίου</foreign> | Athen. B.N. 45 (f. 149r): Lemma: Ps 17,10–11 -
                         Attribution: <foreign xml:lang="grc">Ἀθανα(σίου)</foreign></note></seg>
+                  <note type="lemma">Ps 17,10–11</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-17-33" rendition="#top-of-the-page" source="Athanasius" corresp="#par-gr-139-ps-17-11a" copyOf="#edition:edition-17-11-1">
+                     <quote type="patristic" subtype="quotation-expanded" xml:id="par-gr-139-quot-17-33" source="Athanasius, exp. in Ps 17,11" corresp="#person-2">Τὴν ἀνάληψιν αὐτοῦ
+                        διατούτων δηλοῖ<supplied reason="om." resp="SPanteghini">·</supplied> χερουβὶμ καὶ πτέρυγας ἀνέμων τὴν νεφέλιν φησὶν περιῆς ἐν ταῖς πράξεσιν γέγραπται· καὶ ταῦτα εἰπῶν βλεπόντων αὐτῶν ἐπήρθη καὶ νεφέλη ὑπέλαβεν αὐτὸν ἀπὸ τῶν ὀφθαλμῶν αὐτῶν: [Act 1,9]</quote>
+                     <note type="attribution" xml:lang="grc">Ἀθ(ανασίου)</note><ref target="#vat-gr-754:vat-gr-754-fr-17-17" type="expanded-with-variant">Vat. gr. 754</ref>
+                     <note type="parallels">Marc. gr. Z. 17 (f. 37v, bottom / top): Lemma: Ps 17,10–11 - Attribution: <foreign xml:lang="grc">τοῦ αὐτοῦ</foreign> | Athen. B.N. 45 (f. 149r): Lemma: Ps 17,10–11 -
+                        Attribution: <foreign xml:lang="grc">τοῦ αὐτ(οῦ):</foreign></note></seg>
+                  <note type="lemma">Ps 17,10–11 (sic)</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-17-34" rendition="#top-of-the-page" source="Cyrillus" corresp="#par-gr-139-ps-17-10a">
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-139-quot-17-34" source="Cyrillus, fr. in Ps 17,12a (PG 69,824 A5–8)" corresp="#person-4"/>
+                     <note type="attribution" xml:lang="grc">Κυρίλλου:</note></seg>
+                  <note type="lemma">Ps 17,10–11 (sic)</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-17-35" rendition="#top-of-the-page" source="Athanasius" corresp="#par-gr-139-ps-17-10a" copyOf="#edition:edition-17-12-2-1">
+                     <quote type="patristic" subtype="quotation-expanded" xml:id="par-gr-139-quot-17-35" source="Athanasius, exp. in Ps 17,12b" corresp="#person-2">Σκηνὴν αὐτοῦ τὴν
+                        ἁγίαν ἐκκλησίαν σημαίνει ἐνῆ κατασκηνῶσαι ἐπήγγελται· κύκλω δὲ αὐτοῦ φησὶν κατὰ τὸ εἰρημένον ὅπου δύο ἢ τρεῖς εἰσὶν συνηγμένοι ἐν τῶ ἐμῶ ὀνόματι ἐκεῖ εἰμὶ ἐν μέσω αὐτῶν:</quote>
+                     <note type="attribution" xml:lang="grc">Ἀθανασ(ί)(ου)</note><ref target="#vat-gr-754:vat-gr-754-fr-17-33" type="expanded">Vat. gr. 754</ref>
+                     <note type="parallels">Marc. gr. Z. 17 (f. 37v, bottom / top): Lemma: Ps 17,12a–b - Attribution: <foreign xml:lang="grc">Ἀθανασίου</foreign> | Athen. B.N. 45 (f. 149r): Lemma: Ps 17,12a–b -
+                        Attribution: <foreign xml:lang="grc">Ἀθανα(σίου):</foreign></note></seg>
+                  <note type="lemma">Ps 17,12a–b</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-17-36" rendition="#top-of-the-page" source="Anonymous" corresp="#par-gr-139-ps-17-12a">
+                     <quote type="patristic" subtype="quotation-abbreviated-and-adapted" xml:id="par-gr-139-quot-17-36" source="Didymus, fr. 115 in Ps 17,12a–b (191,17–25 Mühlenberg)" corresp="#person-6"/>
+                     </seg>
+               </ab>
+            </div> 
+            <div type="commentary" subtype="commentary" xml:id="par-gr-139-17-11" rendition="#middle-of-the-page">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 17,12a–b</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-17-37" rendition="#middle-of-the-page" source="Origenes" corresp="#par-gr-139-ps-17-12b">
+                     <quote type="patristic" subtype="unknown" xml:id="par-gr-139-quot-17-37" source="Origenes (?), fr. in Ps 17,12b (PG 17,112 C2–10; ex Marc. gr. Z. 17)" corresp="#person-69"/><note type="attribution" xml:lang="grc">ωρ(ιγένους)</note></seg>
+                  <note type="lemma">Ps 17,12a–b (sic)</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-17-38" rendition="#middle-of-the-page" source="Theodoretus" corresp="#par-gr-139-ps-17-12a">
+                     <quote type="patristic" subtype="paraphrase" xml:id="par-gr-139-quot-17-38" source="Theodoretus, comm. in Ps 17,12c (PG 80,977 A7–10); iterum scriptus sed non ad verbum" corresp="#person-16"/>
+                     <note type="attribution" xml:lang="grc">Θεοδωρητ(ου)</note></seg>
+                  <note type="lemma">Ps 17,12c–13a</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-17-39" rendition="#middle-of-the-page" source="Theodorus" corresp="#par-gr-139-ps-17-12c">
+                     <quote type="patristic" subtype="quotation-abbreviated" xml:id="par-gr-139-quot-17-39" source="Theodoretus, comm. in Ps 17,12c–13a (PG 80,977 A13–B5)" corresp="#person-16"/>
+                     <note type="attribution" xml:lang="grc">Θεοδώρου</note></seg>
+                  <note type="lemma">Ps 17,12c–13a</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-17-40" rendition="#middle-of-the-page" source="Athanasius" corresp="#par-gr-139-ps-17-12c" copyOf="#edition:edition-17-12-3">
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-139-quot-17-40" source="Athanasius, exp. in Ps 17,12c" corresp="#person-2">Τοῦτο φησὶν διατὸ αμαυρως τοὺς περὶ αὐτοῦ λόγους ἐν τοῖς προφηταις κεῖσθαι· οἵτινες καὶ νεφέλαι προσηγορεύθησαν:</quote><ref target="#vat-gr-754:vat-gr-754-fr-17-35" type="XXXX">Vat. gr. 754</ref>
+                     <note type="attribution" xml:lang="grc">Ἀθανασίου</note></seg>
+                     <note type="parallels">Marc. gr. Z. 17 (f. 37v, bottom / bottom): Lemma: Ps 17,12c - Attribution: <foreign xml:lang="grc"> Ἀθ(ανασίου)</foreign> | Athen. B.N. 45 (f. 149v): Lemma: Ps 17,12c -
+                        Attribution: <foreign xml:lang="grc">Ἀθανα(σίου)</foreign></note>
+                  <note type="lemma">Ps 17,12c–13a</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-17-41" rendition="#middle-of-the-page" source="Hesychius" corresp="#par-gr-139-ps-17-12c">
+                     <quote type="patristic" subtype="unknown" xml:id="par-gr-139-quot-17-41" source="Hesychius, comm. magnus (?) in Ps 17,12c = fr. 228 Vanderschelden (239)" corresp="#person-44"/>
+                     <note type="attribution" xml:lang="grc">Ἡσυχίου</note></seg>
+                  <note type="lemma">Ps 17,12c–13a</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-17-42" rendition="#middle-of-the-page" source="Theodorus Antiochenus" corresp="#par-gr-139-ps-17-XX">
+                     <quote type="patristic" subtype="quotation" xml:id="par-gr-139-quot-17-42" source="Theodorus Mops., fr. in Ps 17,10–12b (114,1–10.14–16; 114,19–115,2 Devreesse) et in Ps 17,12c (115,2–11 Devreesse)" corresp="#person-22"/>
+                     <note type="attribution" xml:lang="grc">Θεοδώρου ἀντιοχ(είας)</note></seg>
+               </ab>
+            </div>
+            <div type="commentary" subtype="commentary" xml:id="par-gr-139-17-12" rendition="#bottom-of-the-page">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 17,12c–13a</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-17-43" rendition="#bottom-of-the-page" source="Cyrillus" corresp="#par-gr-139-ps-17-13a">
+                     <quote type="patristic" subtype="unknown" xml:id="par-gr-139-quot-17-43" source="Cyrillus (?), fr. in Ps 17,13a = fr. 230 Vanderschelden (241–242)" corresp="#person-44"/>
+                     <note type="attribution" xml:lang="grc">Κυρίλλου</note></seg>
+                  <note type="lemma">Ps 17,12c–13a</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-17-44" rendition="#bottom-of-the-page" source="Didymus" corresp="#par-gr-139-ps-17-12c">
+                     <quote type="patristic" subtype="paraphrase-and-quotation-adapted" xml:id="par-gr-139-quot-17-44" source="Didymus, fr. 116 in Ps 17,12c–13a (192,7–20 Mühlenberg)" corresp="#person-6"/>
+                     <note type="attribution" xml:lang="grc">Διδύμου</note></seg>
+                  <note type="lemma">Ps 17,12c–13a</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-17-45" rendition="#bottom-of-the-page" source="Eusebius" corresp="#par-gr-139-ps-17-12c">
+                     <quote type="patristic" subtype="quotation-abbreviated-and-adapted" xml:id="par-gr-139-quot-17-45" source="Eusebius, fr. 5 in Ps 17,12 (Villani)" corresp="#person-17"/>
+                     <note type="attribution" xml:lang="grc">Εὐσεβίου:</note></seg>
+               </ab>
+            </div>
+            <pb n="44r" facs="https://gallica.bnf.fr/ark:/12148/btv1b10515446x/f92.item.r=psautier%20du%20paris"/>
+            <div type="commentary" subtype="commentary" xml:id="par-gr-139-17-13" rendition="#top-of-the-page">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 17,13b–15</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-17-46" rendition="#top-of-the-page" source="Anonymous" corresp="#par-gr-139-ps-17-13b">
+                     <quote type="patristic" subtype="quotation-and-paraphrase-abbreviated" xml:id="par-gr-139-quot-17-46" source="Theodoretus, comm. in Ps 17,13b–15 (PG 80,977 B10–C1)" corresp="#person-16"/>
+                    </seg>
+                  <note type="lemma">Ps 17,13b–15</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-17-47" rendition="#top-of-the-page" source="Eusebius" corresp="#par-gr-139-ps-17-14a">
+                     <quote type="patristic" subtype="XXXX" xml:id="par-gr-139-quot-17-47" source="Eusebius, fr. 6 in Ps 17,14 (Villani)" corresp="#person-17"/>
+                     <note type="attribution" xml:lang="grc">Εὐσεβίου</note></seg>
+                  <note type="lemma">Ps 17,13b–15</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-17-48" rendition="#top-of-the-page" source="Didymus" corresp="#par-gr-139-ps-17-XX">
+                     <quote type="patristic" subtype="XXXX" xml:id="par-gr-139-quot-17-48" source="Didymus, fr. XX in Ps XX,XX (XXX Mühlenberg)" corresp="#person-6"/>
+                     <note type="attribution" xml:lang="grc">Διδ(ύμου)</note></seg>
+               </ab>
+            </div>
+            <div type="commentary" subtype="commentary" xml:id="par-gr-139-17-14" rendition="#middle-of-the-page">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 17,13b–15</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-139-fr-17-49" rendition="#middle-of-the-page" source="Anonymous" corresp="#par-gr-139-ps-17-XX">
+                     <quote type="patristic" subtype="XXXX" xml:id="par-gr-139-quot-17-49" source="Didymus, fr. XX in Ps XX,XX (XXX Mühlenberg)" corresp="#person-6"></quote></seg>
+                     <note type="lemma">Ps 17,13b–15</note>
+                     <seg type="commentaryfragment" xml:id="par-gr-139-fr-17-50" rendition="#middle-of-the-page" source="Athanasius" corresp="#par-gr-139-ps-17-13b" copyOf="#edition:edition-17-13-2">
+                        <quote type="patristic" subtype="quotation" xml:id="par-gr-139-quot-17-50" source="Athanasius, exp. in Ps 17,13b" corresp="#person-2">Διὰ τούτων
+                           σημαίνει τὰ μετὰ τὴν ἀνάληψιν αὐτοῦ συμβεβηκότα τοῖς ἐχθροῖς τοῖς νοητοῖς
+                           φημί· ὥσπερ δὲ τὸν ἰσραὴλ ἐξ αἰγυπτίων ἐλευθερῶν χάλαζαν καὶ πῦρ ἔβρεξεν·
+                           οὕτω καὶ πάντα τὰ ἔθνη τῆς τῶν δαιμόνων δουλείας ἐλευθερῶν. χαλαζαν ἔβρεξεν
+                           καὶ ἅνθρακας πυρός· ταῦτα δὲ εἶεν ἂν τιμωρητικαὶ δυνάμεις δι᾿ ὧν τοὺς
+                           ἀνοήτους αἰγυπτίους καθεῖλεν: </quote>
+                        <note type="attribution" xml:lang="grc">Ἀθ(ανασίου)</note><ref target="#vat-gr-754:vat-gr-754-fr-17-37" type="with-variant">Vat. gr. 754</ref>
+                        <note type="parallels">Marc. gr. Z. 17 (f. 38v, top / top): Lemma: Ps 17,15 (sic) - Attribution: Anonymous | Athen. B.N. 45 (f. 152v): Lemma: Ps 17,15 -
+                           Attribution: Anonymous</note></seg>
+                     <note type="lemma">Ps 17,16a</note>
+                     <seg type="commentaryfragment" xml:id="par-gr-139-fr-17-51" rendition="#middle-of-the-page" source="Athanasius" corresp="#par-gr-139-ps-17-16a">
+                        <quote type="patristic" subtype="quotation" xml:id="par-gr-139-quot-17-51" source="Athanasius, exp. in Ps 17,16a" corresp="#person-2">Μετὰ τὴν καθαίρεσιν τῶν ἐχθρῶν, ὤφθησαν αἱ πηγαὶ τῶν ὑδάτων· δηλαδὴ ὁ σωτήριος τοῦ εὐαγγελίου λόγος· ὅστις καὶ θεμέλια τῆς οἰκουμένης γέγονεν· ἐπ᾿ αὐτὸν γὰρ ἐπωκοδομήθημεν· ἢ καὶ οὕτως· πηγὰς νοήσεις τοὺς ἁγίους προφήτας· ἅτε δὴ τὸν σωτήριον ἀναβλύζοντας λόγον· οὕτω γὰρ γέγραπται περὶ αὐτῶν· καὶ ἀντλήσετε ὕδωρ μετ᾿ εὐφροσύνης ἐκ τῶν πηγῶν τοῦ σωτηρίου· θεμέλια δὲ τῆς οἰκουμένης, τὴν Μωσέως τοῦ πανσόφου γραφήν· κρηπίδα γὰρ πίστεως καὶ θεογνωσίας, ἐν αὐτῇ καὶ πρώτῃ τεθειμένην εὑρήκαμεν· τὸ Χριστοῦ μυστήριον ἐν τύποις ὠδίνουσαν ἅμα τοῖς προφήταις· ὤφθησαν τοίνυν ἀντὶ τοῦ ἐφανερώθησαν· ἤγουν πηγὰς νοήσεις καὶ θεμέλια τῆς ὑπ᾿ οὐρανὸν, τοὺς ἁγίους ἀποστόλους· ἀναπηγάζουσι γὰρ καὶ αὐτοὶ τὸν σωτήριον λόγον· καὶ κρηπίδα τῇ ὑπ᾿ οὐρανὸν κατεβάλοντο τὴν πίστιν· πηγὰς δὲ ὑδάτων καὶ θεμέλια τῆς οἰκουμένης νοήσεις πάλιν, τὸ σωτήριον βάπτισμα: –</quote>
+                        <note type="attribution" xml:lang="grc">Ἀθανασίου</note><ref target="#vat-gr-754:vat-gr-754-fr-17-39" type="XXXX">Vat. gr. 754</ref><ref target="#vat-gr-754:vat-gr-754-fr-17-42" type="XXXX">Vat. gr. 754</ref>
+                        <note type="parallels">Marc. gr. Z. 17 (f. 38v, top / top): Lemma: Ps 17,16a - Attribution: <foreign xml:lang="grc">Ἀθανα(σίου)</foreign> | Athen. B.N. 45 (f. 152v): Lemma: Ps 17,16a–b -
+                           Attribution: <foreign xml:lang="grc">Ἀθανα(σίου)</foreign></note></seg>
                </ab>
             </div> 
             <!--  
@@ -6434,7 +6571,7 @@
             <!-- 
            <ref target="#vat-gr-754:XXXX" type="XXXX">Vat. gr. 754</ref>
            <note type="parallels">Marc. gr. Z. 17 (f. XX, XXXX): Lemma: Ps XX,XX - Attribution: <foreign xml:lang="grc">XXXXX</foreign> | Athen. B.N. 45 (f. XXX): Lemma: Ps XX,XX -
-           Attribution: <foreign xml:lang="grc">XXXXX</foreign></note> 
+           Attribution: <foreign xml:lang="grc">XXXXX</foreign></note>
       -->
 =======
             <!-- ps 18 bibletext-->
@@ -6712,4 +6849,5 @@
 </TEI>
 <!-- faciendum: Katene: Ps 1–10: List of contents -->
 <!-- faciendum: Ps 1–14: corresp="#par-gr-139-ps-XX-XX" anzupassen -->
+<!-- faciendum: Ps 15 (nur!): Toniolo zu zitieren -->
 <!-- faciendum: Ps 1–14: Theodorus Mops. exakter zu zitieren in Bezug auf die Psalmzeile in der Edition: cave die Abkürzungen -->
