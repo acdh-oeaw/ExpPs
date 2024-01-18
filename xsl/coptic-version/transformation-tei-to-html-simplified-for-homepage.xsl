@@ -186,30 +186,31 @@
         <p class="date">
             <xsl:value-of select="tei:fileDesc/tei:publicationStmt/tei:date/text()"/>
         </p>
-        <p class="title">
-            <xsl:value-of select="concat(tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:settlement/text(),', ',tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:repository/text(),', ',tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:idno/text())"/>
-        </p>
-        <p class="link-to-facsimiles">
-            <xsl:if test="exists(tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:idno/@facs)">
-                <xsl:text>The facsimiles of the manuscript are available: </xsl:text>
-                <a target="_blank">
-                    <xsl:attribute name="href">
-                        <xsl:value-of select="tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:idno/@facs"/>
-                    </xsl:attribute>
-                    <xsl:value-of select="tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:idno"/>
-                </a>
-            </xsl:if>
-            <xsl:if test="not(exists(tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:idno/@facs))">
-                <xsl:text>Facsimiles of the manuscript are not available online.</xsl:text>
-            </xsl:if>
-        </p>
-        <xsl:if test="exists(tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:altIdentifier/tei:idno[@type='diktyon'])">
-            <p class="link-to-facsimiles">
-                <xsl:text>The diktyon identifier of the manuscript is: </xsl:text>
-                <xsl:value-of select="tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:altIdentifier/tei:idno[@type='diktyon']/text()"/>
+        <xsl:for-each select="tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier">
+            <p class="title">
+                <xsl:value-of select="concat(./tei:settlement/text(),', ',./tei:repository/text(),', ',./tei:idno/text())"/>
             </p>
-        </xsl:if>
-        
+            <p class="link-to-facsimiles">
+                <xsl:if test="exists(./tei:idno/@facs)">
+                    <xsl:text>The facsimiles of the manuscript are available: </xsl:text>
+                    <a target="_blank">
+                        <xsl:attribute name="href">
+                            <xsl:value-of select="./tei:idno/@facs"/>
+                        </xsl:attribute>
+                        <xsl:value-of select="./tei:idno"/>
+                    </a>
+                </xsl:if>
+                <xsl:if test="not(exists(./tei:idno/@facs))">
+                    <xsl:text>Facsimiles of the manuscript are not available online.</xsl:text>
+                </xsl:if>
+            </p>
+            <xsl:if test="exists(./tei:altIdentifier/tei:idno[@type='diktyon'])">
+                <p class="link-to-facsimiles">
+                    <xsl:text>The diktyon identifier of the manuscript is: </xsl:text>
+                    <xsl:value-of select="./tei:altIdentifier/tei:idno[@type='diktyon']/text()"/>
+                </p>
+            </xsl:if>
+        </xsl:for-each>
         <div class="bibliography">
             <p>
                 <xsl:value-of select="tei:fileDesc/tei:sourceDesc/tei:listBibl/tei:head"/>
@@ -377,7 +378,13 @@
         <xsl:apply-templates select="child::node()"/>
     </xsl:template>
 
-    <xsl:template match="tei:p[ancestor::tei:div[@type = 'translation']]">
+    <xsl:template match="tei:p[ancestor::tei:div[@type = 'translation'] and exists(@rend) and (@rend = 'italic')]">
+        <p class="paragraph-of-german-text-italic">
+            <xsl:apply-templates select="child::node()"/>
+        </p>
+    </xsl:template>
+    
+    <xsl:template match="tei:p[ancestor::tei:div[@type = 'translation'] and not(exists(@rend))]">
         <p class="paragraph-of-german-text">
             <xsl:apply-templates select="child::node()"/>
         </p>
