@@ -3636,7 +3636,7 @@
                <ab type="hexaplaric">
                   <lb n="4"/><note place="left margin" xml:id="vat-gr-1422-1-28" type="inline"
                      rend="red ink"><hi rend="overline">Β´</hi></note>
-                  <seg type="hexaplaric" rendition="#middle-of-the-page">⁘ ἐν τῷ <choice>
+                  <seg type="hexaplaric" xml:id="vat-gr-1422-hexaplaric-1-6-1" rendition="#middle-of-the-page" corresp="#vat-gr-1422-ps-1-6-1" source="Secunda (Ps 1,6)">⁘ ἐν τῷ <choice>
                         <orig>ἑβραϊκῶ</orig>
                         <reg type="correction">ἑβραϊκῷ</reg>
                      </choice> συνημμένοι <lb n="5"/>εἰσὶν οἱ δύο ψαλμοί· † ἀνεπίγρα</seg><note
@@ -4669,15 +4669,12 @@
                            <reg type="correction">τῇ ἡμέρᾳ</reg>
                         </choice> τῆς κρίσεως•</quote></seg>
                   <note place="right margin" xml:id="vat-gr-1422-2-11" type="inline" rend="red ink"
-                        ><g ref="#horizontal-line-1"/></note><seg type="commentaryfragment"
-                     xml:id="vat-gr-1422-fr-2-22" next="#vat-gr-1422-fr-2-23"
-                     corresp="#vat-gr-1422-ps-2-5-1" source="Hesychius" rendition="#main-text"><hi
-                        rend="red ink bold">Ἡσυχίου</hi></seg>
+                     ><g ref="#horizontal-line-1"/> <hi rend="red ink bold">Ἡσυχίου</hi></note>
                   <lb n="24"/><note place="main text" xml:id="vat-gr-1422-2-12" type="inline"
                      rend="red ink"><hi rend="overline"><g type="linking" subtype="source"
                            corresp="#vat-gr-1422-ref-2-4">Δ´</g></hi></note>
                   <seg type="commentaryfragment" rendition="#main-text" xml:id="vat-gr-1422-fr-2-23"
-                     corresp="#vat-gr-1422-ps-2-5-1" prev="#vat-gr-1422-fr-2-22" source="Hesychius"
+                     corresp="#vat-gr-1422-ps-2-5-1" source="Hesychius"
                         ><quote xml:id="vat-gr-1422-quot-2-32" type="patristic" subtype="quotation"
                         source="Hesychius, comm. magnus in Ps 2,5a" corresp="#person-12"><hi
                            rend="ekthesis">Ὡ</hi>ς <choice>
@@ -6146,7 +6143,7 @@
                            <orig><abbr type="suspension">ἄλλ<hi rend="superscript"
                                  >ω<am>ς</am></hi></abbr></orig>
                            <reg>ἄλλως</reg>
-                        </choice></hi>· Αὐτοὶ γὰρ μόνοι <choice>
+                        </choice></hi>· <quote type="patristic" xml:id="vat-gr-1422-quot-2-75-1" subtype="unknown" source="fons ignotus on Ps 2,11a" corresp="#person-18">Αὐτοὶ γὰρ μόνοι <choice>
                         <orig>ἐξαπάντων</orig>
                         <reg type="correction">ἐξ ἀπάντων</reg>
                      </choice> τῶν ἐθνῶν· <choice>
@@ -6158,7 +6155,7 @@
                      </choice>· κατέκρινον τὰ ἔθνη θύοντα δαιμονίοις καὶ οὐ <choice>
                         <abbr type="nomSac">θω</abbr>
                         <expan>θεῷ</expan>
-                     </choice>•</seg>
+                     </choice>•</quote></seg>
                   <note xml:id="vat-gr-1422-2-30" place="left margin" type="inline"><hi
                         rend="overline"><g type="linking" subtype="source"
                            corresp="#vat-gr-1422-ref-2-10">Ϊ´</g></hi></note>
@@ -6376,9 +6373,9 @@
                            <expan>θεοῦ</expan>
                         </choice> ἡμῶν•</quote></seg>
                   <seg type="commentaryfragment" source="Anonymous" xml:id="vat-gr-1422-fr-2-78"
-                     rendition="#main-text" corresp="#vat-gr-1422-ps-2-12-3"><g
+                     rendition="#main-text" corresp="#vat-gr-1422-ps-2-12-3"><quote xml:id="vat-gr-1422-quot-2-78-1" type="patristic" source="fons ignotus in Ps 2,12" subtype="unknown" corresp="#person-18"><g
                         ref="#division-sign-3"/>
-                     <gap unit="character" quantity="6" reason="fenestra"/></seg>
+                     <gap unit="character" quantity="6" reason="fenestra"/></quote></seg>
                   <lb n="38"/><note xml:id="vat-gr-1422-2-33" place="left margin" type="inline"><hi
                         rend="overline"><g type="linking" subtype="source"
                            corresp="#vat-gr-1422-ref-2-13">IΓ´</g></hi></note>
@@ -8854,7 +8851,12 @@
                         –</quote><ref target="#vat-gr-754:vat-gr-754-fr-11-8" type="identical">Vat.
                         gr. 754</ref><note type="parallels">Paris. gr. 146 (f. 41v, middle-bottom):
                         Lemma: Ps 11,3 - Attribution: Anonymous</note></seg>
-                  <pb n="41v–42r"/>
+               </ab>
+            </div>
+            <pb n="41v–42r"/>
+            <div type="commentary" subtype="commentary" xml:id="vat-gr-1422-11-5-1"
+               rendition="#bottom-of-the-page" change="commentaryfragments-only">
+               <ab xml:lang="grc">
                   <note type="lemma">Ps 11,4</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-11-25"
                      rendition="#bottom-of-the-page" source="Anonymous"
@@ -8933,7 +8935,7 @@
                         corresp="#person-28"/></seg>
                   <note type="lemma">Ps 11,6</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-11-34"
-                     rendition="#top-of-the-page" source="Theodoretus" corresp="#vat-gr-1422-11-6a"
+                     rendition="#top-of-the-page" source="Theodoretus" corresp="#vat-gr-1422-ps-11-6a"
                         ><quote type="patristic" subtype="quotation" xml:id="vat-gr-1422-quot-11-34"
                         source="Theodoretus, comm. in Ps 11,6 (PG 80,944 B8–12)"
                         corresp="#person-16"/><note type="attribution"><foreign xml:lang="grc"
@@ -8999,7 +9001,7 @@
                   <note type="lemma">Ps 11,7</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-11-42"
                      rendition="#middle-of-the-page" source="Athanasius"
-                     corresp="#vat-gr-1422-quot-ps-11-7a" copyOf="#edition:edition-11-6-2"><quote
+                     corresp="#vat-gr-1422-ps-11-7a" copyOf="#edition:edition-11-6-2"><quote
                         type="patristic" subtype="quotation" xml:id="vat-gr-1422-quot-11-42"
                         source="Athanasius, exp. in Ps 11,6d" corresp="#person-2">φανερὸν πᾶσι
                         καταστήσω τὸ σωτήριον ὃ καὶ ἐξάκουστον παρασκευάσαι γενέσθαι, ἐκηρύχθη γὰρ
@@ -9011,7 +9013,7 @@
                   <note type="lemma">Ps 11,7</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-11-43"
                      rendition="#middle-of-the-page" source="Anonymous"
-                     corresp="#vat-gr-1422-quot-ps-11-7a"><quote type="patristic"
+                     corresp="#vat-gr-1422-ps-11-7a"><quote type="patristic"
                         subtype="quotation" xml:id="vat-gr-1422-quot-11-43"
                         source="Hesychius, schol. nr. 14–16 in Ps 11,7 (Antonelli; PG 27,688)"
                         corresp="#person-10"/></seg>
@@ -9030,7 +9032,7 @@
                   <note type="lemma">Ps 11,7</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-11-45"
                      rendition="#bottom-of-the-page" source="Anonymous"
-                     corresp="#vat-gr-1422-ps-11-7" copyOf="#edition:edition-11-7-1"><quote
+                     corresp="#vat-gr-1422-ps-11-7a" copyOf="#edition:edition-11-7-1"><quote
                         type="patristic" subtype="quotation" xml:id="vat-gr-1422-quot-11-45"
                         source="Athanasius, exp. in Ps 11,7b" corresp="#person-2">Ἀληθεῖς φη(σὶν) οἱ
                         λόγοι· οἱ παρὰ τοῦ σωτῆρος ἐπηγγελμένοι· ὡς καὶ τὸ ἀργύριον πολλάκις
@@ -9040,7 +9042,7 @@
                         Ps 11,7 - Attribution: Anonymous</note></seg>
                   <note type="lemma">Ps 11,8</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-11-46"
-                     rendition="#bottom-of-the-page" source="Origenes"><quote type="patristic"
+                     rendition="#bottom-of-the-page" source="Origenes" corresp="#vat-gr-1422-ps-11-8a"><quote type="patristic"
                         subtype="unknown" xml:id="vat-gr-1422-quot-11-46"
                         source="fons ignotus in Ps 11,8 (ed. Dorival IV 371, fr. 4)"
                         corresp="#person-18"><note type="attribution"><foreign xml:lang="grc"
@@ -9133,7 +9135,12 @@
                         xml:id="vat-gr-1422-quot-11-56"
                         source="Hesychius, schol. nr. 19 in Ps 11,9a (Antonelli; PG 27,688); non habet Typus XVI"
                         corresp="#person-10"/></seg>
+               </ab>
+            </div>
                   <pb n="42r–42v"/>
+                  <div type="commentary" subtype="commentary" xml:id="vat-gr-1422-11-8-1"
+                     rendition="#bottom-of-the-page" change="commentaryfragments-only">
+                     <ab xml:lang="grc">
                   <note type="lemma">Ps 11,9</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-11-57"
                      rendition="#bottom-of-the-page" source="Arsenius"
@@ -10170,7 +10177,7 @@
                <ab xml:lang="grc">
                   <note type="lemma">Ps 13,4a</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-13-46"
-                     rendition="#psalm-column" source="Anonymous" corresp="#plut-6-3-ps-13-4a"
+                     rendition="#psalm-column" source="Anonymous" corresp="#vat-gr-1422-ps-13-4a"
                         ><quote type="patristic" subtype="quotation-abbreviated"
                         xml:id="vat-gr-1422-quot-13-46"
                         source="Hesychius, schol. nr. 8 in Ps 13,4a (Antonelli; PG 27,692); non habet Paris. gr. 146"
@@ -10415,7 +10422,7 @@
                   <note type="lemma">Ps 14,2</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-14-19"
                      rendition="#bottom-of-the-page" source="Hesychius"
-                     corresp="#vat-gr-1422-ps-14-19"><quote type="patristic" subtype="quotation"
+                     corresp="#vat-gr-1422-ps-14-2b"><quote type="patristic" subtype="quotation"
                         xml:id="vat-gr-1422-quot-14-19"
                         source="Hesychius, comm. magnus in Ps 14,2b–3b (PG 93,1184 D1–6)"
                         corresp="#person-41"/><note type="attribution"><foreign xml:lang="grc"
@@ -10484,7 +10491,12 @@
                         source="Hesychius, comm. magnus in Ps 14,3c (PG 93,1184 D8–11)"
                         corresp="#person-41"/><note type="attribution"><foreign xml:lang="grc"
                            >Ἡσυχ(ίου)</foreign></note></seg>
+               </ab>
+            </div>
                   <pb n="44r–v"/>
+            <div type="commentary" subtype="commentary" xml:id="vat-gr-1422-14-8-2"
+               rendition="#bottom-of-the-page" change="commentaryfragments-only">
+               <ab xml:lang="grc">
                   <note type="lemma">Ps 14,3</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-14-27"
                      rendition="#bottom-of-the-page" source="Anonymous"
@@ -10612,7 +10624,7 @@
                   <note type="lemma">Ps 14,4c–5</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-14-42"
                      rendition="#middle-of-the-page" source="Asterius"
-                     corresp="#vat-gr-1422-ps-14-43"><quote type="patristic"
+                     corresp="#vat-gr-1422-ps-14-4c"><quote type="patristic"
                         subtype="quotation-adapted" xml:id="vat-gr-1422-quot-14-42"
                         source="Asterius, fr. 11 in Ps 14,4–5 (260 Richard) ex Catena Palestinensi"
                         corresp="#person-1"/><note type="attribution"><foreign xml:lang="grc"
@@ -10839,7 +10851,7 @@
                   <note type="lemma">Ps 15,1b–2</note>
                   <seg type="hexaplaric" xml:id="vat-gr-1422-hexaplaric-15-1"
                      rendition="#bottom-of-the-page" source="Symmachus (Ps 15,1b)"
-                     corresp="#vat-gr-754-ps-15-1b">Ὁ Ϲ(ύμμαχος) φύλαξόν με ὁ θεὸς· ὅτι ἤλπισα ἐπὶ
+                     corresp="#vat-gr-1422-ps-15-1b">Ὁ Ϲ(ύμμαχος) φύλαξόν με ὁ θεὸς· ὅτι ἤλπισα ἐπὶ
                      σoί:</seg>
                   <note type="lemma">Ps 15,1b–2</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-15-7"
@@ -10862,7 +10874,12 @@
                         xml:id="vat-gr-1422-quot-15-9"
                         source="Theodoretus, comm. in Ps 15,1b–2a (PG 80,957 C12–13)"
                         corresp="#person-16"><!-- Σοὶ δὲ ἐνταῦθα κέρδος οὐδέν: --></quote></seg>
+               </ab>
+            </div>
                   <pb n="44v–45r"/>
+            <div type="commentary" subtype="commentary" xml:id="vat-gr-1422-15-2-1"
+               rendition="#bottom-of-the-page" change="commentaryfragments-only">
+               <ab xml:lang="grc">
                   <note type="lemma">Ps 15,1b–2</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-15-10"
                      rendition="#bottom-of-the-page" source="Anonymous"
@@ -10911,7 +10928,7 @@
                         Attribution: Anonymous</note></seg>
                   <note type="lemma">Ps 15,1b–2</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-15-15"
-                     rendition="#top-of-the-page" source="Anonymous" corresp="#vat-gr-1422-ps-15-XX"
+                     rendition="#top-of-the-page" source="Anonymous" corresp="#vat-gr-1422-ps-15-2a"
                         ><quote type="patristic" subtype="quotation" xml:id="vat-gr-1422-quot-15-15"
                         source="Evagrius, schol. nr. α´ in Ps 15,2 (364 Rondeau – Géhin – Cassin)"
                         corresp="#person-21"/></seg>
@@ -11089,7 +11106,7 @@
                   <note type="lemma">Ps 15,5</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-15-34"
                      rendition="#bottom-of-the-page" source="Eusebius"
-                     corresp="#vat-gr-1422-ps-15-XX"><quote type="patristic"
+                     corresp="#vat-gr-1422-ps-15-5a"><quote type="patristic"
                         subtype="quotation-abbreviated-and-adapted" xml:id="vat-gr-1422-quot-15-34"
                         source="Eusebius, fr. 7 in Ps 15,5a (Villani)" corresp="#person-17"/><note
                         type="attribution"><foreign xml:lang="grc"
@@ -11192,7 +11209,7 @@
                         corresp="#person-16"/></seg>
                   <note type="lemma">Ps 15,7</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-15-45"
-                     rendition="#top-of-the-page" source="Eusebius" corresp="#vat-gr-1422-ps-15-XX"
+                     rendition="#top-of-the-page" source="Eusebius" corresp="#vat-gr-1422-ps-15-7a"
                         ><quote type="patristic" subtype="quotation-abbreviated-and-adapted"
                         xml:id="vat-gr-1422-quot-15-45"
                         source="Origenes (?), fr. in Ps 15,7 (PG 12,1213 C8–11 C13–D1)"
@@ -11206,7 +11223,7 @@
                      /></seg>
                   <note type="lemma">Ps 15,7</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-15-47"
-                     rendition="#top-of-the-page" source="Anonymous" corresp="#vat-gr-1422-ps-15-XX"
+                     rendition="#top-of-the-page" source="Anonymous" corresp="#vat-gr-1422-ps-15-7a"
                         ><quote type="patristic" subtype="quotation-abbreviated"
                         xml:id="vat-gr-1422-quot-15-47"
                         source="Theodoretus, comm. in Ps 15,7 (in fine paulum amplius quam PG 80,961 C1–12)"
@@ -12054,11 +12071,16 @@
                   <note type="lemma">Ps 16,13</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-16-59"
                      rendition="#bottom-of-the-page" source="Anonymous"
-                     corresp="#vat-gr-1422-ps-16-XX"><quote type="patristic" subtype="quotation"
+                     corresp="#vat-gr-1422-ps-16-13a"><quote type="patristic" subtype="quotation"
                         xml:id="vat-gr-1422-quot-16-59"
                         source="Hesychius, schol. nr. 27 in Ps 16,13a (Antonelli; PG 27,700)"
                         corresp="#person-10"/></seg>
+               </ab>
+            </div>
                   <pb n="46v–47r"/>
+            <div type="commentary" subtype="commentary" xml:id="vat-gr-1422-16-8-2"
+               rendition="#bottom-of-the-page" change="commentaryfragments-only">
+               <ab xml:lang="grc">
                   <note type="lemma">Ps 16,13</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-16-60"
                      rendition="#bottom-of-the-page" source="Hesychius"
@@ -12076,7 +12098,7 @@
                   <note type="lemma">Ps 16,13</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-16-61"
                      rendition="#top-of-the-page" source="Theodoretus"
-                     corresp="#vat-gr-1422-ps-16-13"><quote type="patristic" subtype="quotation"
+                     corresp="#vat-gr-1422-ps-16-13a"><quote type="patristic" subtype="quotation"
                         xml:id="vat-gr-1422-quot-16-61"
                         source="Theodoretus, comm. in Ps 16,13 (PG 80,969 C9–13)"
                         corresp="#person-16"/><note type="attribution"><foreign xml:lang="grc"
