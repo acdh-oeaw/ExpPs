@@ -31,7 +31,7 @@ version="2.0">
         </title>
         <link rel="stylesheet" id="fundament-styles"  href="./fundament/css/fundament.min.css" type="text/css"/>
         <link rel="stylesheet" href="./fundament/css/custom.css" type="text/css"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" type="text/css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" type="text/css"></link>
         <link rel="icon" type="image/png" href="./favicon.png"/>
     </head>
 </xsl:template>
@@ -157,6 +157,9 @@ version="2.0">
                     <xsl:apply-templates select="root()/tei:TEI/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:listWit"/>
                 </div>
                 <xsl:apply-templates select="child::node()"/>
+                <div class="around-biblical-index">
+                    <xsl:apply-templates select="//tei:anchor[@type = 'biblical-quotation']" mode="biblical-index"/>
+                </div>
             </div>
             <div id="div-around-witnesses" class="fixed-bottom">
                 <div class="for-witness-hidden" id="window-for-witnesses-1">
@@ -254,6 +257,7 @@ version="2.0">
         <script type="text/javascript" src="./fundament/js/fundament.min.js"></script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/js/all.min.js" integrity="sha512-LW9+kKj/cBGHqnI4ok24dUWNR/e8sUD8RLzak1mNw5Ja2JYCmTXJTF5VpgFSw+VoBfpMvPScCo2DnKTIUjrzYw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script type="text/javascript" src="./fundament/js/edition.js"></script>
         <script type="text/javascript" src="./fundament/js/scroll-to-top.js"></script>
     </body>
@@ -569,11 +573,15 @@ version="2.0">
         </div>
         <xsl:if test="exists(parent::tei:div[@type = 'commentary']/@rend) and (parent::tei:div[@type = 'commentary']/@rend = 'parallel')">
             <div class="col-md-5 large-greek-text">
-                <xsl:value-of select="text()"/>
+                <xsl:apply-templates select="text() | tei:span[@type = 'text-critical'] | tei:anchor[@type = 'biblical-quotation']"/>
             </div>
             <div class="col-md-5 large-greek-text">
+                <xsl:element name="a">
+                    <xsl:attribute name="id" select="parent::tei:div[@type = 'commentary']/parent::tei:div[@type = 'text']/tei:div[@type = 'commentary']/tei:p[@xml:id = substring-after(current()/@next,'#')]/@xml:id"/>
+                </xsl:element>
                 <xsl:apply-templates select="parent::tei:div[@type = 'commentary']/parent::tei:div[@type = 'text']/tei:div[@type = 'commentary']/tei:p[@xml:id = substring-after(current()/@next,'#')]/text()
-                    | parent::tei:div[@type = 'commentary']/parent::tei:div[@type = 'text']/tei:div[@type = 'commentary']/tei:p[@xml:id = substring-after(current()/@next,'#')]/tei:span[@type = 'text-critical']"/>
+                    | parent::tei:div[@type = 'commentary']/parent::tei:div[@type = 'text']/tei:div[@type = 'commentary']/tei:p[@xml:id = substring-after(current()/@next,'#')]/tei:span[@type = 'text-critical']
+                    | parent::tei:div[@type = 'commentary']/parent::tei:div[@type = 'text']/tei:div[@type = 'commentary']/tei:p[@xml:id = substring-after(current()/@next,'#')]/tei:anchor[@type = 'biblical-quotation']"/>
             </div>
             <div class="col-md-2"/>
             <div class="col-md-5 large-latin-text">
@@ -596,7 +604,7 @@ version="2.0">
         </xsl:if>
         <xsl:if test="not(exists(parent::tei:div[@type = 'commentary']/@rend))">
             <div class="col-md-5 large-greek-text">
-                <xsl:apply-templates select="text() | tei:span[@type = 'text-critical']"/>
+                <xsl:apply-templates select="text() | tei:span[@type = 'text-critical'] | tei:anchor[@type = 'biblical-quotation']"/>
             </div>
             <div class="col-md-5 large-latin-text">
                 <xsl:apply-templates select="parent::tei:div/parent::tei:div/parent::tei:div/tei:div[@type = 'translation']/tei:p[current()/@xml:id = substring-after(@corresp,'#')]"/>
@@ -615,7 +623,7 @@ version="2.0">
     </xsl:element>
 </xsl:template>
     
-<xsl:template match="tei:span[(@type = 'text-critical') and parent::tei:span]">
+<xsl:template match="tei:span[(@type = 'text-critical') and parent::tei:span and not(parent::tei:span[parent::tei:span])]">
     <xsl:variable name="current-node" select="."/>
     <xsl:element name="span">
         <xsl:attribute name="id" select="@xml:id"/>
@@ -633,6 +641,25 @@ version="2.0">
         <xsl:attribute name="data-id" select="generate-id(//tei:app[@type = 'text'][@corresp = concat('#',$current-node/@xml:id)])"/>
         <xsl:value-of select="text()"/>
     </xsl:element>
+</xsl:template>
+    
+<xsl:template match="tei:anchor[@type = 'biblical-quotation']">
+    <xsl:variable name="quotation">
+        <xsl:if test="@subtype = 'indirect-quotation'">
+            <xsl:value-of select="concat('cf. ',@n)"/>
+        </xsl:if>
+        <xsl:if test="@subtype = 'direct-quotation'">
+            <xsl:value-of select="@n"/>
+        </xsl:if>
+    </xsl:variable>
+        <xsl:element name="i">
+            <xsl:attribute name="class" select="'fas fa-book'"/>
+            <xsl:attribute name="style" select="'transform: translate(20%,10%); font-size: 12pt;'"/>
+            <xsl:attribute name="title" select="$quotation"/>
+        </xsl:element>
+    <!-- <xsl:element name="a">
+        <xsl:attribute name="id" select="generate-id(.)"/>
+    </xsl:element> -->
 </xsl:template>
 
 <xsl:template match="tei:p[parent::tei:div[@xml:lang = 'de']]">
@@ -741,6 +768,16 @@ version="2.0">
     <sup>
         <xsl:value-of select="text()"/>
     </sup>
+</xsl:template>
+    
+<xsl:template match="tei:anchor[@type = 'biblical-quotation']" mode="biblical-index">
+    <xsl:element name="p">
+        <xsl:attribute name="class" select="'around-link-biblical-quotation'"/>
+        <xsl:element name="a">
+            <xsl:attribute name="href" select="concat('#',parent::tei:p/@xml:id)"/>
+            <xsl:value-of select="@n"/>
+        </xsl:element>
+    </xsl:element>
 </xsl:template>
 
 </xsl:stylesheet>
