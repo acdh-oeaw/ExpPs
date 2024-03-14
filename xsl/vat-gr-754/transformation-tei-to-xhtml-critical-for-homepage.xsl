@@ -607,6 +607,21 @@
                 <xsl:if test="@rendition = '#left-margin-of-left-column'">
                     <xsl:text>left margin of left column</xsl:text>
                 </xsl:if>
+                <xsl:if test="@rendition = '#psalm-column'">
+                    <xsl:text>psalm column</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#top-of-psalm-column'">
+                    <xsl:text>top of psalm column</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#bottom-of-psalm-column'">
+                    <xsl:text>bottom of psalm column</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#right-margin-of-right-column'">
+                    <xsl:text>right margin of right column</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#left-margin-of-left-column'">
+                    <xsl:text>left margin of left column</xsl:text>
+                </xsl:if>
                 <xsl:text>] [</xsl:text>
                 <xsl:value-of select="@type"/>
                 <xsl:text>]</xsl:text>
@@ -723,6 +738,21 @@
                 <xsl:if test="@rendition = '#left-margin-of-left-column'">
                     <xsl:text>left margin of left column</xsl:text>
                 </xsl:if>
+                <xsl:if test="@rendition = '#psalm-column'">
+                    <xsl:text>psalm column</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#top-of-psalm-column'">
+                    <xsl:text>top of psalm column</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#bottom-of-psalm-column'">
+                    <xsl:text>bottom of psalm column</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#right-margin-of-right-column'">
+                    <xsl:text>right margin of right column</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#left-margin-of-left-column'">
+                    <xsl:text>left margin of left column</xsl:text>
+                </xsl:if>
                 <xsl:text>]</xsl:text>
             </span>
             <xsl:apply-templates/>
@@ -786,6 +816,27 @@
         <xsl:if test="@rendition = '#left-margin-of-left-column'">
             <xsl:text>left margin of left column</xsl:text>
         </xsl:if>
+        <xsl:if test="@rendition = '#psalm-column'">
+            <xsl:text>psalm column</xsl:text>
+        </xsl:if>
+        <xsl:if test="@rendition = '#top-of-psalm-column'">
+            <xsl:text>top of psalm column</xsl:text>
+        </xsl:if>
+        <xsl:if test="@rendition = '#bottom-of-psalm-column'">
+            <xsl:text>bottom of psalm column</xsl:text>
+        </xsl:if>
+        <xsl:if test="@rendition = '#right-margin-of-right-column'">
+            <xsl:text>right margin of right column</xsl:text>
+        </xsl:if>
+        <xsl:if test="@rendition = '#left-margin-of-left-column'">
+            <xsl:text>left margin of left column</xsl:text>
+        </xsl:if>
+        <xsl:if test="@rendition = '#right-margin'">
+            <xsl:text>right margin</xsl:text>
+        </xsl:if>
+        <xsl:if test="@rendition = '#main-text'">
+            <xsl:text>main text</xsl:text>
+        </xsl:if>
         <xsl:text>] [hexaplaric variant] </xsl:text>
         <a>
             <xsl:attribute name="id">
@@ -840,8 +891,23 @@
             <xsl:if test="@rendition = '#right-margin-of-right-column'">
                 <xsl:text>right margin of right column</xsl:text>
             </xsl:if>
-            <xsl:if test="@rendition = '#left-margin-of-left-column'">
-                <xsl:text>left margin of left column</xsl:text>
+            <xsl:if test="@rendition = '#psalm-column'">
+                <xsl:text>psalm column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#top-of-psalm-column'">
+                <xsl:text>top of psalm column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#bottom-of-psalm-column'">
+                <xsl:text>bottom of psalm column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#right-margin-of-right-column'">
+                <xsl:text>right margin of right column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#right-margin'">
+                <xsl:text>right margin</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#main-text'">
+                <xsl:text>main text</xsl:text>
             </xsl:if>
             <xsl:text>] [</xsl:text>
             <xsl:value-of select="@type"/>
@@ -898,10 +964,20 @@
             <xsl:if test="@rendition = '#left-margin-of-left-column'">
                 <xsl:text>left margin of left column</xsl:text>
             </xsl:if>
+            <xsl:if test="@rendition = '#psalm-column'">
+                <xsl:text>psalm column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#top-of-psalm-column'">
+                <xsl:text>top of psalm column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#bottom-of-psalm-column'">
+                <xsl:text>bottom of psalm column</xsl:text>
+            </xsl:if>
             <xsl:text>] [</xsl:text>
             <xsl:value-of select="@type"/>
             <xsl:text>]</xsl:text>
             <xsl:apply-templates select="tei:ab/tei:seg" mode="commentaryfragments-only"/>
+            <xsl:apply-templates select="tei:ab/tei:note[@type = 'textual-commentary']"/>
         </div>
     </xsl:template>
     
@@ -956,6 +1032,7 @@
                     <xsl:apply-templates select="child::tei:note[@type = 'attribution']/child::node()"/>
                 </xsl:element>
             </xsl:if>
+            <xsl:apply-templates select="child::tei:note[@type = 'textual-commentary']"/>
         </xsl:element>
     </xsl:template>
     
@@ -981,8 +1058,9 @@
             </xsl:element>
             <xsl:element name="p">
                 <xsl:attribute name="class" select="'paragraph-in-hexaplaric-variant'"/>
-                <xsl:apply-templates select="child::node()"/>
+                <xsl:apply-templates select="child::node()[not(tei:note[@type = 'textual-commentary'])]"/>
             </xsl:element>
+            <xsl:apply-templates select="tei:note[@type = 'textual-commentary']"/>
         </xsl:element>
     </xsl:template>
     
@@ -1569,6 +1647,24 @@
             <xsl:if test="@rendition = '#left-margin-of-left-column'">
                 <xsl:text>left margin of left column</xsl:text>
             </xsl:if>
+            <xsl:if test="@rendition = '#psalm-column'">
+                <xsl:text>psalm column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#top-of-psalm-column'">
+                <xsl:text>top of psalm column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#bottom-of-psalm-column'">
+                <xsl:text>bottom of psalm column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#right-margin'">
+                <xsl:text>right margin</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#left-margin'">
+                <xsl:text>left margin</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#main-text'">
+                <xsl:text>main text</xsl:text>
+            </xsl:if>
             <xsl:text>] </xsl:text>
         </xsl:if>
         <xsl:apply-templates/>
@@ -1621,6 +1717,21 @@
             </xsl:if>
             <xsl:if test="@rendition = '#left-margin-of-left-column'">
                 <xsl:text>left margin of left column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#psalm-column'">
+                <xsl:text>psalm column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#top-of-psalm-column'">
+                <xsl:text>top of psalm column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#bottom-of-psalm-column'">
+                <xsl:text>bottom of psalm column</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#right-margin'">
+                <xsl:text>right margin</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#main-text'">
+                <xsl:text>main text</xsl:text>
             </xsl:if>
             <xsl:text>] </xsl:text>
             <xsl:text>[</xsl:text>
@@ -1910,5 +2021,24 @@
         <xsl:value-of select="tei:add/text()"/>
         <xsl:text>]</xsl:text>
     </xsl:template>
-      
+    
+    <xsl:template match="tei:note[@type = 'textual-commentary']">
+        <xsl:if test="not(exists(child::tei:p))">
+            <xsl:element name="p">
+                <xsl:attribute name="class" select="'paragraph-in-commentaryfragment'"/>
+                <xsl:apply-templates select="child::node()"/>
+            </xsl:element>
+        </xsl:if>
+        <xsl:if test="exists(child::tei:p)">
+            <xsl:apply-templates select="child::tei:p"/>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template match="tei:p[parent::tei:note[@type = 'textual-commentary']]">
+        <xsl:element name="p">
+            <xsl:attribute name="class" select="'paragraph-in-commentary'"/>
+            <xsl:apply-templates select="child::node()"/>
+        </xsl:element>
+    </xsl:template>
+
 </xsl:stylesheet>
