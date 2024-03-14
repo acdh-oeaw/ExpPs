@@ -679,7 +679,7 @@
     </xsl:template>
     
     <xsl:template match="tei:div[@type = 'commentary' and @change = 'commentaryfragments-only']">
-        <xsl:apply-templates select="tei:ab/tei:seg[@type = 'commentaryfragment' or @type = 'hypothesis']" mode="commentaryfragments-only"/>
+        <xsl:apply-templates select="tei:ab/tei:seg[@type = 'commentaryfragment' or @type = 'hypothesis'] | tei:ab/tei:note[@type = 'textual-commentary']" mode="commentaryfragments-only"/>
     </xsl:template>
     
     <xsl:template match="tei:seg[@type = 'commentaryfragment' or @type = 'hypothesis']" mode="commentaryfragments-only">
@@ -705,6 +705,7 @@
             <p class="commentaryfragment-in-transcription-simplified">
                 <xsl:apply-templates select="tei:ref" mode="commentaryfragments-only"/>
             </p>
+            <xsl:apply-templates select="tei:note[@type = 'textual-commentary']"/>
         </div>
     </xsl:template>
     
@@ -745,6 +746,8 @@
     </xsl:template>
     
     <xsl:template match="tei:ref" mode="commentaryfragments-only">
+        <xsl:element name="span">
+            <xsl:attribute name="class" select="'set-space-for-links'"/>
          <xsl:element name="a">
              <xsl:attribute name="href">
                  <xsl:choose>
@@ -771,6 +774,7 @@
              <xsl:attribute name="target"><xsl:text>_blank</xsl:text></xsl:attribute>
              <xsl:value-of select="text()"/>
          </xsl:element>
+        </xsl:element>
     </xsl:template>
     
     <xsl:template match="tei:note[parent::tei:div[@type = 'commentary'] and @type != 'inline']">
@@ -1460,6 +1464,37 @@
         <xsl:text> </xsl:text>
             <xsl:value-of select="tei:add/@hand"/>
         <xsl:text>]</xsl:text>
+    </xsl:template>
+    
+    <xsl:template match="tei:note[@type = 'textual-commentary']">
+        <xsl:if test="not(exists(child::tei:p))">
+            <xsl:element name="p">
+                <xsl:attribute name="class" select="'paragraph-in-commentaryfragment'"/>
+                <xsl:apply-templates select="child::node()"/>
+            </xsl:element>
+        </xsl:if>
+        <xsl:if test="exists(child::tei:p)">
+            <xsl:apply-templates select="child::tei:p"/>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template match="tei:note[@type = 'textual-commentary']" mode="commentaryfragments-only">
+        <xsl:if test="not(exists(child::tei:p))">
+            <xsl:element name="p">
+                <xsl:attribute name="class" select="'paragraph-in-commentaryfragment'"/>
+                <xsl:apply-templates select="child::node()"/>
+            </xsl:element>
+        </xsl:if>
+        <xsl:if test="exists(child::tei:p)">
+            <xsl:apply-templates select="child::tei:p"/>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template match="tei:p[parent::tei:note[@type = 'textual-commentary']]">
+        <xsl:element name="p">
+            <xsl:attribute name="class" select="'paragraph-in-commentaryfragment'"/>
+            <xsl:apply-templates select="child::node()"/>
+        </xsl:element>
     </xsl:template>
       
 </xsl:stylesheet>

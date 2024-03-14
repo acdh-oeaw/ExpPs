@@ -261,11 +261,12 @@
                 <xsl:if test="exists(@prev)">
                     <xsl:text>...</xsl:text>
                 </xsl:if>
-                <xsl:apply-templates select="child::node()"/>
+                <xsl:apply-templates select="child::node()[not(self::tei:note[@type = 'textual-commentary'])]"/>
                 <xsl:if test="exists(@next)">
                     <xsl:text>...</xsl:text>
                 </xsl:if>
             </p>
+            <xsl:apply-templates select="child::tei:note[@type = 'textual-commentary']"/>
         </div>
     </xsl:template>
     
@@ -283,11 +284,12 @@
                 <xsl:if test="exists(@prev)">
                     <xsl:text>...</xsl:text>
                 </xsl:if>
-                <xsl:apply-templates select="child::node()"/>
+                <xsl:apply-templates select="child::node()[not(self::tei:note[@type = 'textual-commentary'])]"/>
                 <xsl:if test="exists(@next)">
                     <xsl:text>...</xsl:text>
                 </xsl:if>
             </p>
+            <xsl:apply-templates select="child::tei:note[@type = 'textual-commentary']"/>
         </div>
     </xsl:template>
     
@@ -324,10 +326,16 @@
     </xsl:template>
     
     <xsl:template match="tei:gap">
-        <xsl:apply-templates select="child::node()"/>
+        <xsl:if test="exists(@quantity) and starts-with(@unit,'char')">
+            <xsl:for-each select="1 to @quantity"><xsl:text>.</xsl:text></xsl:for-each>
+        </xsl:if>
     </xsl:template>
     
-    <xsl:template match="tei:add"/>    
+    <xsl:template match="tei:add"/>   
+    
+    <xsl:template match="tei:del">
+        <xsl:apply-templates select="child::node()"/>
+    </xsl:template>
     
     <xsl:template match="tei:unclear">
         <xsl:value-of select="text()"/>
@@ -337,6 +345,25 @@
         <xsl:if test="not(exists(@break))">
             <xsl:text> </xsl:text>
         </xsl:if>
+    </xsl:template>
+    
+    <xsl:template match="tei:note[@type = 'textual-commentary']">
+        <xsl:if test="not(exists(child::tei:p))">
+            <xsl:element name="p">
+                <xsl:attribute name="class" select="'paragraph-in-commentaryfragment'"/>
+                <xsl:apply-templates select="child::node()"/>
+            </xsl:element>
+        </xsl:if>
+        <xsl:if test="exists(child::tei:p)">
+            <xsl:apply-templates select="child::tei:p"/>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template match="tei:p[parent::tei:note[@type = 'textual-commentary']]">
+        <xsl:element name="p">
+            <xsl:attribute name="class" select="'paragraph-in-commentaryfragment'"/>
+            <xsl:apply-templates select="child::node()"/>
+        </xsl:element>
     </xsl:template>
     
     <xsl:template match="text()">

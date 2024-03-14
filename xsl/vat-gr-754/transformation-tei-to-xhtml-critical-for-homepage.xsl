@@ -1058,7 +1058,7 @@
             </xsl:element>
             <xsl:element name="p">
                 <xsl:attribute name="class" select="'paragraph-in-hexaplaric-variant'"/>
-                <xsl:apply-templates select="child::node()[not(tei:note[@type = 'textual-commentary'])]"/>
+                <xsl:apply-templates select="child::node()[not(self::tei:note[@type = 'textual-commentary'])]"/>
             </xsl:element>
             <xsl:apply-templates select="tei:note[@type = 'textual-commentary']"/>
         </xsl:element>
@@ -1073,7 +1073,7 @@
                 </xsl:attribute>
             </a>
             <xsl:element name="p">
-                <xsl:attribute name="class" select="'paragraph-in-glosse'"/>
+                <xsl:attribute name="class" select="'paragraph-in-hexaplaric-variant'"/>
                 <xsl:text>Glosse: </xsl:text>
                 <xsl:element name="b">
                     <xsl:value-of select="@source"/>
@@ -1089,7 +1089,7 @@
                 <xsl:value-of select="preceding-sibling::tei:note[@type = 'lemma'][1]/text()"/>
             </xsl:element>
             <xsl:element name="p">
-                <xsl:attribute name="class" select="'paragraph-in-glosse'"/>
+                <xsl:attribute name="class" select="'paragraph-in-hexaplaric-variant'"/>
                 <xsl:apply-templates select="child::tei:quote/child::node()"/>
             </xsl:element>
         </xsl:element>
@@ -1480,35 +1480,42 @@
     </xsl:template>
     
     <xsl:template match="tei:gap">
-        <xsl:choose>
-            <xsl:when test="exists(@unit) and (starts-with(@unit,'char')) and (@reason != 'fenestra')">
-                <xsl:text>[</xsl:text>
+        <xsl:if test="exists(parent::tei:del)">
+            <xsl:if test="(@reason = 'illegible') and exists(@quantity) and starts-with(@unit,'char')">
                 <xsl:for-each select="1 to @quantity"><xsl:text>.</xsl:text></xsl:for-each>
-                <xsl:text>]</xsl:text>
-            </xsl:when>
-            <xsl:when test="exists(@reason) and (@reason = 'fenestra')">
-                <xsl:text>[</xsl:text>
-                <xsl:value-of select="@quantity"/>
-                <xsl:text> </xsl:text>
-                <xsl:value-of select="@unit"/>
-                <xsl:text>(s) left intentionally blank</xsl:text>
-                <xsl:text>]</xsl:text>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:if test="(@quantity = 1) and (@unit = 'character')">
-                    <xsl:text>[.]</xsl:text>
-                </xsl:if>
-                <xsl:if test="not(@quantity = 1)">
-                    <xsl:text>[... (</xsl:text>
+            </xsl:if>
+        </xsl:if>
+        <xsl:if test="not(exists(parent::tei:del))">
+            <xsl:choose>
+                <xsl:when test="exists(@unit) and (starts-with(@unit,'char')) and (@reason != 'fenestra')">
+                    <xsl:text>[</xsl:text>
+                    <xsl:for-each select="1 to @quantity"><xsl:text>.</xsl:text></xsl:for-each>
+                    <xsl:text>]</xsl:text>
+                </xsl:when>
+                <xsl:when test="exists(@reason) and (@reason = 'fenestra')">
+                    <xsl:text>[</xsl:text>
                     <xsl:value-of select="@quantity"/>
                     <xsl:text> </xsl:text>
                     <xsl:value-of select="@unit"/>
-                    <xsl:text>s </xsl:text>
-                    <xsl:value-of select="@reason"/>
-                    <xsl:text>)]</xsl:text>
-                </xsl:if>
-            </xsl:otherwise>
-        </xsl:choose>
+                    <xsl:text>(s) left intentionally blank</xsl:text>
+                    <xsl:text>]</xsl:text>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:if test="(@quantity = 1) and (@unit = 'character')">
+                        <xsl:text>[.]</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="not(@quantity = 1)">
+                        <xsl:text>[... (</xsl:text>
+                        <xsl:value-of select="@quantity"/>
+                        <xsl:text> </xsl:text>
+                        <xsl:value-of select="@unit"/>
+                        <xsl:text>s </xsl:text>
+                        <xsl:value-of select="@reason"/>
+                        <xsl:text>)]</xsl:text>
+                    </xsl:if>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:if>
     </xsl:template>
     
     <xsl:template match="tei:supplied">
@@ -2036,7 +2043,7 @@
     
     <xsl:template match="tei:p[parent::tei:note[@type = 'textual-commentary']]">
         <xsl:element name="p">
-            <xsl:attribute name="class" select="'paragraph-in-commentary'"/>
+            <xsl:attribute name="class" select="'paragraph-in-commentaryfragment'"/>
             <xsl:apply-templates select="child::node()"/>
         </xsl:element>
     </xsl:template>
