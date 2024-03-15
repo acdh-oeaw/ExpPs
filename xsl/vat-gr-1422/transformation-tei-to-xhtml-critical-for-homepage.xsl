@@ -411,11 +411,13 @@
             <xsl:text>(</xsl:text>
             <xsl:value-of select="@n"/>
             <xsl:text>) </xsl:text>
-            <xsl:element name="a">
-                <xsl:attribute name="href" select="@facs"/>
-                <xsl:attribute name="target" select="'_blank'"/>
-                <i class="fas fa-image" style="transform: translate(0%,10%);"/>
-            </xsl:element>
+            <xsl:if test="exists(@facs)">
+                <xsl:element name="a">
+                    <xsl:attribute name="href" select="@facs"/>
+                    <xsl:attribute name="target" select="'_blank'"/>
+                    <i class="fas fa-image" style="transform: translate(0%,10%);"/>
+                </xsl:element>
+            </xsl:if>
         </p>
     </xsl:template>
     
@@ -482,6 +484,21 @@
                 </xsl:if>
                 <xsl:if test="@rendition = '#margin-top-left-side'">
                     <xsl:text>margin top left side</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#psalm-column'">
+                    <xsl:text>psalm column</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#top-of-psalm-column'">
+                    <xsl:text>top of psalm column</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#bottom-of-psalm-column'">
+                    <xsl:text>bottom of psalm column</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#right-margin-of-right-column'">
+                    <xsl:text>right margin of right column</xsl:text>
+                </xsl:if>
+                <xsl:if test="@rendition = '#left-margin-of-left-column'">
+                    <xsl:text>left margin of left column</xsl:text>
                 </xsl:if>
                 <xsl:text>] [</xsl:text>
                 <xsl:value-of select="@type"/>
@@ -713,11 +730,13 @@
         <xsl:text> (</xsl:text>
         <xsl:value-of select="@n"/>
         <xsl:text>) </xsl:text>
-        <xsl:element name="a">
-            <xsl:attribute name="href" select="@facs"/>
-            <xsl:attribute name="target" select="'_blank'"/>
-            <i class="fas fa-image" style="transform: translate(0%,10%);"/>
-        </xsl:element>
+        <xsl:if test="exists(@facs)">
+            <xsl:element name="a">
+                <xsl:attribute name="href" select="@facs"/>
+                <xsl:attribute name="target" select="'_blank'"/>
+                <i class="fas fa-image" style="transform: translate(0%,10%);"/>
+            </xsl:element>
+        </xsl:if>
     </xsl:template>
     
     <xsl:template match="tei:note[@type = 'lemma']" mode="commentaryfragments-only">
