@@ -557,6 +557,12 @@
                     <xsl:text> - </xsl:text>
                 </xsl:if>
                 <!-- treatment of optional rendition attribute - end -->
+                <xsl:if test="exists(child::tei:quote[@type = 'patristic']/@subtype)">
+                    <xsl:element name="i">
+                        <xsl:value-of select="child::tei:quote[@type = 'patristic']/@subtype"/>
+                    </xsl:element>
+                    <xsl:text> - </xsl:text>
+                </xsl:if>
                 <xsl:element name="b">
                     <xsl:value-of select="@source"/>
                 </xsl:element>
@@ -570,6 +576,13 @@
                 <xsl:text>Lemma: </xsl:text>
                 <xsl:value-of select="preceding-sibling::tei:note[@type = 'lemma'][1]/text()"/>
             </xsl:element>
+            <xsl:if test="exists(child::tei:num)">
+                <xsl:element name="p">
+                    <xsl:attribute name="class" select="'paragraph-in-commentaryfragment'"/>
+                    <xsl:text>Count: </xsl:text>
+                    <xsl:apply-templates select="child::tei:num[@xml:lang = 'grc']"/>
+                </xsl:element>
+            </xsl:if>
             <xsl:element name="p">
                 <xsl:attribute name="class" select="'paragraph-in-commentaryfragment'"/>
                 <xsl:apply-templates select="child::tei:quote[@type = 'patristic']/child::node()"/>
@@ -703,6 +716,12 @@
                     </xsl:if>
                     <xsl:if test="@rendition = '#bottom-bottom'">
                         <xsl:text>bottom / bottom</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#right-margin'">
+                        <xsl:text>right margin</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@rendition = '#main-text'">
+                        <xsl:text>main text</xsl:text>
                     </xsl:if>
                     <xsl:text> - </xsl:text>
                 </xsl:if>
@@ -856,7 +875,7 @@
             </xsl:element>
             <xsl:element name="p">
                 <xsl:attribute name="class" select="'paragraph-in-hexaplaric-variant'"/>
-                <xsl:apply-templates select="child::node()"/>
+                <xsl:apply-templates select="child::node()[not(self::tei:ref)]"/>
             </xsl:element>
             <xsl:element name="p">
                 <xsl:attribute name="class" select="'paragraph-in-hexaplaric-variant'"/>
@@ -1932,6 +1951,11 @@
     
     <xsl:template match="tei:foreign">
         <xsl:apply-templates select="child::node()"/>
+    </xsl:template>
+    
+    <xsl:template match="tei:num[@xml:lang = 'grc']">
+        <xsl:value-of select="text()"/>
+        <xsl:text> </xsl:text>
     </xsl:template>
       
 </xsl:stylesheet>
