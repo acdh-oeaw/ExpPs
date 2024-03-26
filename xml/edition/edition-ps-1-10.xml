@@ -26245,16 +26245,16 @@
                         <wit>par. gr. 146</wit>
                      </app>
                      <app type="text">
+                        <lem><foreign xml:lang="grc">ὅστις – βάπτισμα</foreign></lem>
+                        <rdg wit="#B2">om.</rdg>
+                        <wit>S.Trin. 78</wit>
+                     </app>
+                     <app type="text">
                         <lem><foreign xml:lang="grc">ὅστις</foreign></lem>
                         <rdg wit="#A1"><foreign xml:lang="grc">[ὅστι(?)]ς</foreign></rdg>
                         <wit>Ambr. M 47 sup.</wit>
                         <rdg wit="#L1"><foreign xml:lang="grc">ὃ ἔστησεν</foreign></rdg>
                         <wit>Plut. 5.30</wit>
-                     </app>
-                     <app type="text">
-                        <lem><foreign xml:lang="grc">ὅστις – βάπτισμα</foreign></lem>
-                        <rdg wit="#B2">om.</rdg>
-                        <wit>S.Trin. 78</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">θεμέλια<hi rend="sup">1</hi></foreign></lem>
@@ -26315,10 +26315,13 @@
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">ἐκ τῶν πηγῶν</foreign></lem>
-                        <rdg wit="#P6 #Z #N2 #V1"><foreign xml:lang="grc">ἐκ πηγῶν</foreign></rdg>
+                        <rdg wit="#P6 #Z #N2 #V1 #C"><foreign xml:lang="grc">ἐκ
+                           πηγῶν</foreign></rdg>
                         <wit>Par. gr. 139</wit>
                         <wit>Marc. gr. Z. 17</wit>
                         <wit>Athen. B.N. 45</wit>
+                        <wit>Vat. gr. 754</wit>
+                        <wit>Coislin 10</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">εὑρήκαμεν</foreign></lem>
@@ -26333,8 +26336,8 @@
                         <!-- Textkritik: τὸ Χριστοῦ μυστήριον V1 -->
                      </app>
                      <app type="text">
-                        <lem><foreign xml:lang="grc">κρηπῖδα</foreign></lem>
-                        <rdg wit="#V1 #C"><foreign xml:lang="grc">κρηπῖδα ἣν</foreign></rdg>
+                        <lem><foreign xml:lang="grc">κρηπίδα</foreign><hi rend="sup">2</hi></lem>
+                        <rdg wit="#V1 #C"><foreign xml:lang="grc">κρηπίδα ἣν</foreign></rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Coislin 10</wit>
                      </app>
@@ -26381,7 +26384,6 @@
                      <quote type="psalmtext" xml:id="edition-ps-17-16-4" n="16d">ἀπὸ ἐμπνεύσεως
                         πνεύματος ὀργῆς σου.</quote>
                   </div>
-                  <!-- cave: P6 Z N2: zwei Expositiones zu Ps 17,16c–d: über Autorenzuweisungen zu berichten -->
                   <div type="commentary" rend="parallel">
                      <p xml:id="edition-17-16-2" n="263" next="#edition-17-16-2-1">Προσυπακουστέον
                         τὸ ἀνῃρέθησαν οἱ προλεχθέντες ἐχθροί: –</p>
@@ -26423,45 +26425,30 @@
                         <wit>Vat. gr. 1422</wit>
                         <wit>Par. gr. 146</wit>
                      </app>
-                  </div>
-                  <div type="commentary" rend="hide">
-                     <p xml:id="edition-17-16-2-1" n="263">[Τουτέστιν ἐκ(?)] [ἀποστρο]φ[ῆς] σου
-                        ἀνῃρέθησαν ο[ἱ] [ἐπιβουλεύοντες(?)] ἐχθρ[οὶ] καὶ ἐπίβουλοι τῶν
-                        [ἀνθρώπων(?)]: –</p>
-                     <div type="links">
-                        <p><listRef>
-                              <ref target="#ambr-m-47-sup:ambr-m-47-sup-fr-17-22"/>
-                           </listRef></p>
-                     </div>
-                  </div>
-                  <div type="textcritic" rend="hide">
-                     <app type="fragment">
-                        <rdg wit="#A1">txt</rdg>
-                        <wit>Ambr. M 47 sup.</wit>
-                     </app>
+                     <note type="textual-commentary">Z: Vor exp. 263 wurde das Feld für den
+                        Autorennnamen leer gelassen. Der Name des Athanasius steht jedoch vor dem
+                        sukzessiven Fragment (einer verkürzenden Paraphrase des Didymus (fr. 120 in
+                        Ps 17,16d [194 Mühlenberg], die in P6 N2 anonym ist). Der Name, der
+                        ursprünglich zu exp. 263 gehörte (P6 N2), ist offenbar neben die Paraphrase
+                        verschoben worden.</note>
                   </div>
                </div>
-               <!-- cave: Z (Athanasius) P6 N2 V5 P7 (Anonymus): das ist Didymus! -->
-               <!--<div type="commentary" subtype="dubium">
-                     <p xml:id="edition-17-16-3" n="260">Οὐ παραυτὰ θεὸς κολάζει τοὺς ἁμαρτάνοντας·
-                        ἢ γὰρ ἂν ἄρδην ἀπώλοντο· προαναφωνεῖ δὲ τῆς ὀργῆς τὰς κολάσεις· παιδεύσω γὰρ
-                        αὐτοὺς ἐν τῇ ὀργῇ τῆς θλίψεως αὐτῶν· καὶ τοῦτό ἐστι τὸ ἐμπνέειν αὐτὸν πνεῦμα
-                        τῆς ὀργῆς αὐτοῦ: –</p>
-                     <div type="links">
-                        <p><listRef>
-                              <ref target="#par-gr-139:par-gr-139-fr-17-54"/>
-                           </listRef></p>
-                     </div>
+               <div type="commentary" rend="hide">
+                  <p xml:id="edition-17-16-2-1" n="263">[Τουτέστιν ἐκ(?)] [ἀποστρο]φ[ῆς] σου
+                     ἀνῃρέθησαν ο[ἱ] [ἐπιβουλεύοντες(?)] ἐχθρ[οὶ] καὶ ἐπίβουλοι τῶν [ἀνθρώπων(?)]:
+                     –</p>
+                  <div type="links">
+                     <p><listRef>
+                           <ref target="#ambr-m-47-sup:ambr-m-47-sup-fr-17-22"/>
+                        </listRef></p>
                   </div>
-                  <div type="textcritic">
-                     <app type="fragment">
-                        <rdg wit="#P6 #Z #N2">txt</rdg>
-                        <wit>Par. gr. 139</wit>
-                        <wit>Marc. gr. Z. 17</wit>
-                        <wit>Athen. B.N. 45</wit>
-                     </app>
-                     <app type="text"/>
-                  </div>-->
+               </div>
+               <div type="textcritic" rend="hide">
+                  <app type="fragment">
+                     <rdg wit="#A1">txt</rdg>
+                     <wit>Ambr. M 47 sup.</wit>
+                  </app>
+               </div>
                <div type="translation" xml:lang="de">
                   <quote type="psalmtext" corresp="#edition-ps-17-16-1" n="16a">Und sichtbar wurden
                      die Quellen der Wasser,</quote>
@@ -26552,8 +26539,8 @@
                         <rdg wit="#L1"><foreign xml:lang="grc">λέγει</foreign></rdg>
                         <wit>Auct. D.4.1</wit>
                      </app>
-                     <note type="textual-commentary">C: 260b vom Schreiber am Rand hinzugefügt. N2:
-                        exp. 260 verloren.</note>
+                     <note type="textual-commentary">C: 265 vom Schreiber am Rand hinzugefügt. N2:
+                        exp. 265 verloren.</note>
                   </div>
                   <div type="commentary" rend="hide">
                      <p xml:id="edition-17-17-2-1">Ὕδατα, τοὺς πειρασμοὺς λ[έ]γει καὶ τὰς τῶ[ν]
@@ -26592,16 +26579,29 @@
                         ἐχθρῶν μου δυνατῶν</quote>
                      <quote type="psalmtext" xml:id="edition-ps-17-18-2" n="18b">καὶ ἐκ τῶν
                         μισούντων με, ὅτι ἐστερεώθησαν ὑπὲρ ἐμέ.</quote>
+                     <quote type="psalmtext" xml:id="edition-ps-17-19-1" n="19a">προέφθασάν με ἐν
+                        ἡμέρᾳ κακώσεώς μου,</quote>
+                     <quote type="psalmtext" xml:id="edition-ps-17-19-2" n="19b">καὶ ἐγένετο κύριος
+                        ἀντιστήριγμά μου</quote>
+                     <quote type="psalmtext" xml:id="edition-ps-17-20-1" n="20a">καὶ ἐξήγαγέν με εἰς
+                        πλατυσμόν,</quote>
+                     <quote type="psalmtext" xml:id="edition-ps-17-20-2" n="20b">ῥύσεταί με, ὅτι
+                        ἠθέλησέν με.</quote>
+                     <quote type="psalmtext" xml:id="edition-ps-17-20-3" n="20c">[ῥύσεταί με ἐξ
+                        ἐχθρῶν μου δυνατῶν</quote>
+                     <quote type="psalmtext" xml:id="edition-ps-17-20-4" n="20d">καὶ ἐκ τῶν
+                        μισούντων με]</quote>
                   </div>
                   <div type="commentary">
-                     <p xml:id="edition-17-18-1" n="261">Ῥύσεταί με ἐξ ἐχθρῶν μου εἰς τὰ πεπραγμένα
-                        αὐτῷ ἐπὶ τῇ ἁμαρτίᾳ, καὶ τῇ μετανοίᾳ μετέβη· ὃ δὲ λέγει, τοιοῦτόν ἐστιν· ἤδη
-                        μὲν τῆς ἐξομολογήσεώς μου ἐπακούσας ὁ κύριος, γέγονέ μου ἀντιστήριγμα·
-                        μέλλοντός μου περιτρέπεσθαι καὶ μέγα πτῶμα ὑπομένειν· εἰ μετὰ τὴν ἁμαρτίαν
-                        εἰς παντελῆ ἐξέπιπτον ἀποστασίαν· πλὴν ἀλλὰ καὶ παντελῶς ῥύσεται διδοὺς
-                        ἄφεσιν τῆς ἁμαρτίας κατὰ τὸν προφητευόμενον καιρὸν τῆς αὐτοῦ παρουσίας· καὶ
-                        τοῦτο ποιήσει εὐεργετῶν με ὁ κύριος, ὅτι ἠθέλησέν με· εἰ μὴ γὰρ ἠθέλησέν με·
-                        οὐκ ἂν τὸν προφήτην αὐτοῦ πρός με ἀπέστειλεν: –</p>
+                     <p xml:id="edition-17-18-1" n="266">Eἰς τὰ πεπραγμένα αὐτῷ ἐπὶ τῇ ἁμαρτίᾳ, καὶ
+                        τῇ μετανοίᾳ μετέβη· ὃ δὲ λέγει, τοιοῦτόν ἐστιν· ἤδη μὲν τῆς ἐξομολογήσεώς
+                        μου ἐπακούσας ὁ κύριος, γέγονέ μου ἀντιστήριγμα· μέλλοντός μου περιτρέπεσθαι
+                        καὶ μέγα πτῶμα ὑπομένειν· εἰ μετὰ τὴν ἁμαρτίαν εἰς παντελῆ ἐξέπιπτον
+                        ἀποστασίαν· πλὴν ἀλλὰ καὶ παντελῶς ῥύσεται διδοὺς ἄφεσιν τῆς ἁμαρτίας κατὰ
+                        τὸν προφητευόμενον καιρὸν τῆς αὐτοῦ παρουσίας· καὶ τοῦτο ποιήσει εὐεργετῶν
+                        με ὁ κύριος, ὅτι ἠθέλησέν με· <anchor type="biblical-quotation"
+                           subtype="direct-quotation" n="Ps 17,20b"/> εἰ μὴ γὰρ ἠθέλησέν με, οὐκ ἂν
+                        τὸν προφήτην αὐτοῦ πρός με ἀπέστειλεν: –</p>
                      <!-- Textkritik: γέγονέν μου V1 B1 -->
                      <div type="links">
                         <p>
@@ -26631,24 +26631,10 @@
                         <wit>Par. gr. 146</wit>
                      </app>
                      <app type="text">
-                        <lem><foreign xml:lang="grc">Ῥύσεταί με ἐξ ἐχθρῶν μου</foreign></lem>
-                        <rdg wit="#C #B1 #B2 #P5 #P6 #Z #V5 #P7">om.<note type="in-readings">(= Ps
-                              17,18a)</note></rdg>
-                        <wit>Coslin 10</wit>
-                        <!-- Textkritik: habet V1 -->
-                        <wit>Auct. D.4.1</wit>
-                        <wit>S.Trin. 78</wit>
-                        <wit>Coislin 12</wit>
-                        <wit>Par. gr. 139</wit>
-                        <wit>Marc. gr. Z. 17</wit>
-                        <wit>Vat. gr. 1422</wit>
-                        <wit>Par. gr. 146</wit>
-                     </app>
-
-                     <app type="text">
-                        <lem><foreign xml:lang="grc">ὃ δὲ – ἀπέστειλεν</foreign></lem>
-                        <rdg wit="#B2">om.</rdg>
-                        <wit>S.Trin. 78</wit>
+                        <lem><foreign xml:lang="grc">Eἰς</foreign></lem>
+                        <rdg wit="#V1"><foreign xml:lang="grc">Ῥύσεταί με ἐξ ἐχθρῶν μου</foreign> (=
+                           Ps 17,18a) ante<foreign xml:lang="grc"> εἰς</foreign> add.</rdg>
+                        <wit>Vat. gr. 754</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">ἐπὶ τῇ ἁμαρτίᾳ</foreign></lem>
@@ -26657,20 +26643,25 @@
                         <wit>Par. gr. 146</wit>
                      </app>
                      <app type="text">
+                        <lem><foreign xml:lang="grc">ὃ δὲ – ἀπέστειλεν</foreign></lem>
+                        <rdg wit="#B2">om.</rdg>
+                        <wit>S.Trin. 78</wit>
+                     </app>
+                     <app type="text">
                         <lem><foreign xml:lang="grc">ὃ δὲ λέγει, τοιοῦτόν ἐστιν</foreign></lem>
                         <rdg wit="#B1"><foreign xml:lang="grc">ὁ δὲ λέγει τοιοῦτον</foreign></rdg>
                         <wit>Auct. D.4.1</wit>
                      </app>
                      <app type="text">
-                        <lem><foreign xml:lang="grc">μου</foreign></lem>
+                        <lem><foreign xml:lang="grc">μου</foreign><hi rend="sup">1</hi></lem>
                         <rdg wit="#V5 #P7"><foreign xml:lang="grc">ἐμοῦ</foreign></rdg>
                         <wit>Vat. gr. 1422</wit>
                         <wit>Par. gr. 146</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">γέγονέ μου</foreign></lem>
-                        <rdg wit="#P5 #P6 #Z #N2 #V5 #P7"><foreign xml:lang="grc">γέγονέ
-                              μοι</foreign></rdg>
+                        <rdg wit="#P5 #P6 #Z #V5 #P7"><foreign xml:lang="grc">γέγονέ
+                           μοι</foreign><!-- cave: lectio eligenda? --></rdg>
                         <wit>Coislin 12</wit>
                         <wit>Par. gr. 139</wit>
                         <wit>Marc. gr. Z. 17</wit>
@@ -26741,10 +26732,10 @@
                         <wit>Vat. gr. 1422</wit>
                         <wit>Par. gr. 146</wit>
                      </app>
-                     <note type="textual-commentary">N2: exp. 261 verloren. B1: Es wird behauptet,
-                        dass diese Expositio fünf Zeilen (στίχοι) erklärt: ἐρμηνεία των Ε´ στιχω(ν)
-                        Ἀθανασιου. Während in V1 exp. 261 mit Ps 17,18a verbunden ist, steht sie in
-                        B1 nach Ps 17,20. Dieser Bereich des Psalms umfasst genau fünf
+                     <note type="textual-commentary">N2: exp. 266 verloren. B1: Es wird einleitend
+                        behauptet, dass diese Expositio fünf Zeilen (στίχοι) erklärt: ἐρμηνεία των
+                        Ε´ στιχω(ν) Ἀθανασιου. Während in V1 exp. 266 mit Ps 17,18a verbunden ist,
+                        steht sie in B1 nach Ps 17,20. Dieser Bereich des Psalms umfasst genau fünf
                         Zeilen.</note>
                   </div>
                </div>
@@ -26753,51 +26744,24 @@
                      erretten vor meinen mächtigen Feinden</quote>
                   <quote type="psalmtext" corresp="#edition-ps-17-18-2" n="18b">und vor denen, die
                      mich hassen, denn sie sind stärker geworden als ich.</quote>
-                  <p corresp="#edition-17-18-1" n="261">Er geht über auf das, was er gethan hat in
-                     Bezug auf die Sünde und Reue. Was er aber sagt, geht darauf hinaus. Da der Herr
-                     mein Bekenntnis bereits vernommen hat, ist er mir zur Stütze geworden, da ich
-                     im Begriffe stand zu stürzen und einen großen Fall zu erleiden, wenn ich nach
-                     der Sünde einen vollständigen Abfall mir zu Schulden kommen ließ. Ja er wird
-                     mich vollständig retten, indem er mir in der vorhergesagten Zeit seiner Ankunft
-                     Verzeihung der Sünde gewährt, und das wird der Herr tun, indem er mir eine
-                     Wohltat spendet. "Weil er mich wollte." Denn wenn er mich nicht gewollt hätte,
-                     hätte er nicht seinen Propheten zu mir gesendet.</p>
-               </div>
-            </div>
-            <div type="psalmverse" n="17.19">
-               <div type="text" xml:lang="grc">
-                  <div type="psalmtext">
-                     <quote type="psalmtext" xml:id="edition-ps-17-19-1" n="19a">προέφθασάν με ἐν
-                        ἡμέρᾳ κακώσεώς μου,</quote>
-                     <quote type="psalmtext" xml:id="edition-ps-17-19-2" n="19b">καὶ ἐγένετο κύριος
-                        ἀντιστήριγμά μου</quote>
-                  </div>
-               </div>
-               <div type="translation" xml:lang="de">
+                  <p corresp="#edition-17-18-1" n="261">Er geht über auf das, was von ihm während
+                     der Sünde und der Reue getan wurde. Was er aber sagt, ist von solcher Art: Da
+                     der Herr mein Bekenntnis bereits erhört hat, ist er mir zur Stütze geworden, da
+                     ich im Begriff war, umgeworfen zu werden und einen großen Sturz zu erleiden,
+                     wenn ich nach der Sünde in einen vollständigen Abfall hineingefallen wäre. Aber
+                     er wird mich vollständig erretten, indem er mir Vergebung der Sünde zur
+                     prophezeiten Zeit seines Kommens gewährt. Und dies wird der Herr tun, indem er
+                     mir eine Wohltat erweist, "weil er mich wollte." [Ps 17,20b] Denn wenn er mich
+                     nicht gewollt hätte, hätte er nicht seinen Propheten zu mir gesendet.</p>
                   <quote type="psalmtext" corresp="#edition-ps-17-19-1" n="19a">Sie nahten sich mir
                      am Tag meines Elends,</quote>
                   <quote type="psalmtext" corresp="#edition-ps-17-19-2" n="19b">und der Herr wurde
                      meine Stütze,</quote>
-               </div>
-            </div>
-            <div type="psalmverse" n="17.20">
-               <div type="text" xml:lang="grc">
-                  <div type="psalmtext">
-                     <quote type="psalmtext" xml:id="edition-ps-17-20-1" n="20a">καὶ ἐξήγαγέν με εἰς
-                        πλατυσμόν,</quote>
-                     <quote type="psalmtext" xml:id="edition-ps-17-20-2" n="20b">ῥύσεταί με, ὅτι
-                        ἠθέλησέν με.</quote>
-                     <quote type="psalmtext" xml:id="edition-ps-17-20-3" n="20c">[ῥύσεταί με ἐξ
-                        ἐχθρῶν μου δυνατῶν</quote>
-                     <quote type="psalmtext" xml:id="edition-ps-17-20-4" n="20d">καὶ ἐκ τῶν
-                        μισούντων με]</quote>
-                  </div>
-               </div>
-               <div type="translation" xml:lang="de">
                   <quote type="psalmtext" corresp="#edition-ps-17-20-1" n="20a">und er führte mich
                      hinaus ins Weite;</quote>
                   <quote type="psalmtext" corresp="#edition-ps-17-20-2" n="20b">er wird mich
-                     erretten, denn er hat Gefallen an mir gefunden.</quote>
+                     erretten, weil er mich
+                     wollte.<!-- Übersetzung: SD: denn er hat Gefallen an mir gefunden --></quote>
                   <quote type="psalmtext" corresp="#edition-ps-17-20-3" n="20c">Er wird mich
                      erretten vor meinen mächtigen Feinden</quote>
                   <quote type="psalmtext" corresp="#edition-ps-17-20-4" n="20d">und vor denen, die
@@ -26812,11 +26776,76 @@
                      <quote type="psalmtext" xml:id="edition-ps-17-21-2" n="21b">καὶ κατὰ τὴν
                         καθαριότητα τῶν χειρῶν μου ἀνταποδώσει μοι,</quote>
                   </div>
+                  <div type="psalmverse" n="17.22">
+                     <div type="text" xml:lang="grc">
+                        <div type="psalmtext">
+                           <quote type="psalmtext" xml:id="edition-ps-17-22-1" n="22a">ὅτι ἐφύλαξα
+                              τὰς ὁδοὺς κυρίου</quote>
+                           <quote type="psalmtext" xml:id="edition-ps-17-22-2" n="22b">καὶ οὐκ
+                              ἠσέβησα ἀπὸ τοῦ θεοῦ μου,</quote>
+                        </div>
+                     </div>
+                     <div type="translation" xml:lang="de">
+                        <quote type="psalmtext" corresp="#edition-ps-17-22-1" n="22a">Denn ich habe
+                           die Wege des Herrn bewahrt</quote>
+                        <quote type="psalmtext" corresp="#edition-ps-17-22-2" n="22b">und nicht
+                           gottlos gehandelt weg von meinem Gott.</quote>
+                     </div>
+                  </div>
+                  <div type="psalmverse" n="17.23">
+                     <div type="text" xml:lang="grc">
+                        <div type="psalmtext">
+                           <quote type="psalmtext" xml:id="edition-ps-17-23-1" n="23a">ὅτι πάντα τὰ
+                              κρίματα αὐτοῦ ἐνώπιόν μου,</quote>
+                           <quote type="psalmtext" xml:id="edition-ps-17-23-2" n="23b">καὶ τὰ
+                              δικαιώματα αὐτοῦ οὐκ ἀπέστησα ἀπ’ ἐμοῦ.</quote>
+                        </div>
+                     </div>
+                     <div type="translation" xml:lang="de">
+                        <quote type="psalmtext" corresp="#edition-ps-17-23-1" n="23a">Denn alle
+                           seine Urteile sind vor mir,</quote>
+                        <quote type="psalmtext" corresp="#edition-ps-17-23-2" n="23b">und seine
+                           Rechtsbestimmungen habe ich nicht entfernt von mir.</quote>
+                     </div>
+                  </div>
+                  <div type="psalmverse" n="17.24">
+                     <div type="text" xml:lang="grc">
+                        <div type="psalmtext">
+                           <quote type="psalmtext" xml:id="edition-ps-17-24-1" n="24a">καὶ ἔσομαι
+                              ἄμωμος μετ’ αὐτοῦ</quote>
+                           <!-- cave: A1: Dubium hinzuzufügen? -->
+                           <quote type="psalmtext" xml:id="edition-ps-17-24-2" n="24b">καὶ φυλάξομαι
+                              ἀπὸ τῆς ἀνομίας μου.</quote>
+                        </div>
+                     </div>
+                     <div type="translation" xml:lang="de">
+                        <quote type="psalmtext" corresp="#edition-ps-17-24-1" n="24a">Und ich werde
+                           untadelig sein bei ihm,</quote>
+                        <quote type="psalmtext" corresp="#edition-ps-17-24-2" n="24b">und ich werde
+                           mich bewahren vor meiner Gesetzlosigkeit.</quote>
+                     </div>
+                  </div>
+                  <div type="psalmverse" n="17.25">
+                     <div type="text" xml:lang="grc">
+                        <div type="psalmtext">
+                           <quote type="psalmtext" xml:id="edition-ps-17-25-1" n="25a">καὶ
+                              ἀνταποδώσει μοι κύριος κατὰ τὴν δικαιοσύνην μου</quote>
+                           <quote type="psalmtext" xml:id="edition-ps-17-25-2" n="25b">καὶ κατὰ τὴν
+                              καθαριότητα· τῶν χειρῶν μου ἐνώπιον τῶν ὀφθαλμῶν αὐτοῦ.</quote>
+                        </div>
+                     </div>
+                     <div type="translation" xml:lang="de">
+                        <quote type="psalmtext" corresp="#edition-ps-17-25-1" n="25a">Und der Herr
+                           wird mir vergelten gemäß meiner Gerechtigkeit,</quote>
+                        <quote type="psalmtext" corresp="#edition-ps-17-25-2" n="25b">und gemäß der
+                           Reinheit meiner Hände vor seinen Augen.</quote>
+                     </div>
+                  </div>
                   <div type="commentary">
-                     <p xml:id="edition-17-21-1" n="262">Πέπεισμαι φησὶν ὅτι κατὰ τὸν καιρὸν τῆς
+                     <p xml:id="edition-17-21-1" n="267">Πέπεισμαι φησὶν ὅτι κατὰ τὸν καιρὸν τῆς
                         δικαιοκρισίας αὐτοῦ· οὐ μνημονεύσας μου τῆς ἁμαρτίας, κατὰ τὴν δικαιοσύνην
                         μου ἀνταποδώσει μοι· τὰς γὰρ ἄλλας μου πράξεις τὰς ἐν δικαιοσύνῃ· ὥσπερ ζυγῷ
-                        ἀντιπαραβαλὼν καὶ ἀντιστήσας, τῷ ἁμαρτήματί μου κατὰ πολὺ πλεοναζούσας
+                        ἀντιπαραβαλὼν καὶ ἀντιστήσας τῷ ἁμαρτήματί μου, κατὰ πολὺ πλεοναζούσας
                         εὑρήσει τοῦ γενομένου μοι ἁμαρτήματος· διδάσκει δὲ ὁ λόγος· τὸ δύνασθαι τὸν
                         κατά τινα ἀσθένειαν ὠλισθηκότα, ἀναλαμβάνειν ἑαυτὸν διὰ δευτέρων
                         κατορθωμάτων: –</p>
@@ -26836,14 +26865,13 @@
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #P5 #A1 #P6 #Z #N2 #B1 #V5 #P7">txt</rdg>
+                        <rdg wit="#V1 #C #P5 #A1 #P6 #Z #B1 #V5 #P7">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Coislin 10</wit>
                         <wit>Coislin 12</wit>
                         <wit>Ambr. M 47 sup.</wit>
                         <wit>Par. gr. 139</wit>
                         <wit>Marc. gr. Z. 17</wit>
-                        <wit>Athen. B.N. 45</wit>
                         <wit>Auct. D.4.1</wit>
                         <wit>Vat. gr. 1422</wit>
                         <wit>Par. gr. 146</wit>
@@ -26928,91 +26956,26 @@
                         <wit>Vat. gr. 1422</wit>
                         <wit>Par. gr. 146</wit>
                      </app>
-                     <note type="textual-commentary">B1: Es wird behauptet, dass diese Expositio
-                        zehn Zeilen (στίχοι) erklärt: ἐρμηνεία τῶν Ι´ στίχων Ἀθανασίου· μέχρι τοῦ
-                        ἐνώπιον τῶν ὀφθαλμῶν αὐτοῦ. Während in V1 exp. 262 mit Ps 17,21a verbunden
-                        ist, steht sie in B1 nach Ps 17,25. Dieser Bereich des Psalms umfasst genau
-                        zehn Zeilen.</note>
+                     <note type="textual-commentary">N2: exp. 267 verloren. B1: Es wird behauptet,
+                        dass diese Expositio zehn Zeilen (στίχοι) erklärt: ἐρμηνεία τῶν Ι´ στίχων
+                        Ἀθανασίου· μέχρι τοῦ ἐνώπιον τῶν ὀφθαλμῶν αὐτοῦ. Während in V1 exp. 267 mit
+                        Ps 17,21a verbunden ist, steht sie in B1 nach Ps 17,25. Dieser Bereich des
+                        Psalms umfasst genau zehn Zeilen.</note>
                   </div>
                </div>
                <div type="translation" xml:lang="de">
                   <quote type="psalmtext" corresp="#edition-ps-17-21-1" n="21a">Und der Herr wird
                      mir vergelten gemäß meiner Gerechtigkeit,</quote>
-                  <p corresp="#edition-17-21-1" n="262">Ich bin überzeugt, sagt er, daß er in der
-                     Zeit seines gerechten Gerichtes nicht meiner Sünden gedenken und nach meiner
-                     Gerechtigkeit mir vergelten wird. Denn wenn er meine übrigen Thaten, die in
-                     Gerechtigkeit verrichtet wurden, gleichsam in einer Waagschale mit meiner Sünde
-                     abwiegt und sie ihr gegenüber stellt, so wird er sie viel schwerer finden als
-                     die von mir vollbrachte Sünde. Es lehren aber die Worte die Möglichkeit, daß
-                     der, welcher in Folge einer gewissen Schwäche ausgeglitten ist, sich durch
-                     spätere gute Taten wieder erhole.</p>
+                  <p corresp="#edition-17-21-1" n="267">Ich bin überzeugt, sagt er, dass er in der
+                     Zeit seines gerechten Gerichtes, ohne sich an meiner Sünde zu erinnern, wird
+                     mir vergelten gemäß meiner Gerechtigkeit. Denn wenn er meine anderen Taten, die
+                     in Gerechtigkeit (verrichtet wurden), wie bei einer Waage meiner Sünde
+                     vergleichend gegenüberstellen sollte, wird er finden, dass sie die Sünde, die
+                     mir widerfahren ist, bei weitem überwiegen. Diese Worte aber lehren, dass der,
+                     welcher in Folge einer bestimmten Schwäche ausgerutscht ist, sich selbst durch
+                     spätere erfolgreiche Handlungen zurückgewinnen kann.</p>
                   <quote type="psalmtext" corresp="#edition-ps-17-21-2" n="21b">und gemäß der
                      Reinheit meiner Hände wird er mir vergelten.</quote>
-               </div>
-            </div>
-            <div type="psalmverse" n="17.22">
-               <div type="text" xml:lang="grc">
-                  <div type="psalmtext">
-                     <quote type="psalmtext" xml:id="edition-ps-17-22-1" n="22a">ὅτι ἐφύλαξα τὰς
-                        ὁδοὺς κυρίου</quote>
-                     <quote type="psalmtext" xml:id="edition-ps-17-22-2" n="22b">καὶ οὐκ ἠσέβησα ἀπὸ
-                        τοῦ θεοῦ μου,</quote>
-                  </div>
-               </div>
-               <div type="translation" xml:lang="de">
-                  <quote type="psalmtext" corresp="#edition-ps-17-22-1" n="22a">Denn ich habe die
-                     Wege des Herrn bewahrt</quote>
-                  <quote type="psalmtext" corresp="#edition-ps-17-22-2" n="22b">und nicht gottlos
-                     gehandelt weg von meinem Gott.</quote>
-               </div>
-            </div>
-            <div type="psalmverse" n="17.23">
-               <div type="text" xml:lang="grc">
-                  <div type="psalmtext">
-                     <quote type="psalmtext" xml:id="edition-ps-17-23-1" n="23a">ὅτι πάντα τὰ
-                        κρίματα αὐτοῦ ἐνώπιόν μου,</quote>
-                     <quote type="psalmtext" xml:id="edition-ps-17-23-2" n="23b">καὶ τὰ δικαιώματα
-                        αὐτοῦ οὐκ ἀπέστησα ἀπ’ ἐμοῦ.</quote>
-                  </div>
-               </div>
-               <div type="translation" xml:lang="de">
-                  <quote type="psalmtext" corresp="#edition-ps-17-23-1" n="23a">Denn alle seine
-                     Urteile sind vor mir,</quote>
-                  <quote type="psalmtext" corresp="#edition-ps-17-23-2" n="23b">und seine
-                     Rechtsbestimmungen habe ich nicht entfernt von mir.</quote>
-               </div>
-            </div>
-            <div type="psalmverse" n="17.24">
-               <div type="text" xml:lang="grc">
-                  <div type="psalmtext">
-                     <quote type="psalmtext" xml:id="edition-ps-17-24-1" n="24a">καὶ ἔσομαι ἄμωμος
-                        μετ’ αὐτοῦ</quote>
-                     <!-- cave: A1: Dubium hinzuzufügen? -->
-                     <quote type="psalmtext" xml:id="edition-ps-17-24-2" n="24b">καὶ φυλάξομαι ἀπὸ
-                        τῆς ἀνομίας μου.</quote>
-                  </div>
-               </div>
-               <div type="translation" xml:lang="de">
-                  <quote type="psalmtext" corresp="#edition-ps-17-24-1" n="24a">Und ich werde
-                     untadelig sein bei ihm,</quote>
-                  <quote type="psalmtext" corresp="#edition-ps-17-24-2" n="24b">und ich werde mich
-                     bewahren vor meiner Gesetzlosigkeit.</quote>
-               </div>
-            </div>
-            <div type="psalmverse" n="17.25">
-               <div type="text" xml:lang="grc">
-                  <div type="psalmtext">
-                     <quote type="psalmtext" xml:id="edition-ps-17-25-1" n="25a">καὶ ἀνταποδώσει μοι
-                        κύριος κατὰ τὴν δικαιοσύνην μου</quote>
-                     <quote type="psalmtext" xml:id="edition-ps-17-25-2" n="25b">καὶ κατὰ τὴν
-                        καθαριότητα· τῶν χειρῶν μου ἐνώπιον τῶν ὀφθαλμῶν αὐτοῦ.</quote>
-                  </div>
-               </div>
-               <div type="translation" xml:lang="de">
-                  <quote type="psalmtext" corresp="#edition-ps-17-25-1" n="25a">Und der Herr wird
-                     mir vergelten gemäß meiner Gerechtigkeit,</quote>
-                  <quote type="psalmtext" corresp="#edition-ps-17-25-2" n="25b">und gemäß der
-                     Reinheit meiner Hände vor seinen Augen.</quote>
                </div>
             </div>
             <!-- cave: Ps 17,26 und 17,27 zusammenlegen -->
