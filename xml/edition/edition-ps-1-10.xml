@@ -25262,25 +25262,35 @@
                               <ref target="#ambr-m-47-sup:ambr-m-47-sup-fr-17-10"/>
                               <ref target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-17-19"/>
                               <ref target="#plut-5-30:plut-5-30-fr-17-28"/>
-                              <!-- cave: V5 P7: Athanasius + Evagrius -->
+                              <ref target="#vat-gr-1422:vat-gr-1422-fr-17-31"/>
                            </listRef>
                         </p>
                      </div>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #P5 #A1 #B1 #L1">txt</rdg>
+                        <rdg wit="#V1 #C #P5 #A1 #B1 #L1 #V5 #P7">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Coislin 10</wit>
                         <wit>Coislin 12</wit>
                         <wit>Ambr. M 47 sup.</wit>
                         <wit>Auct. D.4.1</wit>
                         <wit>Plut. 5.30</wit>
+                        <wit>Vat. gr. 1422</wit>
+                        <wit>Par. gr. 146</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">Ταῦτα γὰρ</foreign></lem>
-                        <rdg wit="#A1"><foreign xml:lang="grc">Ταῦτα</foreign></rdg>
+                        <rdg wit="#A1 #V5 #P7"><foreign xml:lang="grc">Ταῦτα</foreign></rdg>
                         <wit>Ambr. M 47 sup.</wit>
+                        <wit>Vat. gr. 1422</wit>
+                        <wit>Par. gr. 146</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">ὁ τοῦ θεοῦ υἱὸς</foreign></lem>
+                        <rdg wit="#V5 #P7"><foreign xml:lang="grc">ὁ υἱὸς τοῦ θεοῦ</foreign></rdg>
+                        <wit>Vat. gr. 1422</wit>
+                        <wit>Par. gr. 146</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">ἐνήργει</foreign></lem>
@@ -25292,10 +25302,12 @@
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">ἀφώνως</foreign></lem>
-                        <rdg wit="#P5 #B1"><foreign xml:lang="grc"
+                        <rdg wit="#P5 #B1 #V5 #P7"><foreign xml:lang="grc"
                               >ἀφανῶς<!-- cave: diese die lectio Eusebs! --></foreign></rdg>
                         <wit>Coislin 12</wit>
                         <wit>Auct. D.4.1</wit>
+                        <wit>Vat. gr. 1422</wit>
+                        <wit>Par. gr. 146</wit>
                         <rdg wit="#L1"><foreign xml:lang="grc">ἄφνω</foreign></rdg>
                         <wit>Plut. 5.30</wit>
                      </app>
@@ -25303,6 +25315,12 @@
                         <lem><foreign xml:lang="grc">τὸ πῦρ αὐτῶν</foreign></lem>
                         <rdg wit="#B1"><foreign xml:lang="grc">τὸ πῦρ</foreign></rdg>
                         <wit>Auct. D.4.1</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">ἑτέρῳ πυρὶ</foreign></lem>
+                        <rdg wit="#V5 #P7"><foreign xml:lang="grc">πυρὶ</foreign></rdg>
+                        <wit>Vat. gr. 1422</wit>
+                        <wit>Par. gr. 146</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">κρείττονι καὶ δυνατωτέρῳ</foreign></lem>
@@ -25313,6 +25331,10 @@
                            δυνατότερον</foreign></rdg>
                         <wit>Plut. 5.30</wit>
                      </app>
+                     <note type="textual-commentary">V5 P7: exp. 252 ist ein Zitat aus Eusebius (fr.
+                        4 in Ps 17,8–11 [Villani]). Es ist daher unklar, ob es exp. 253 oder ihre
+                        Quelle ist, die eine Einheit mit Evagrius (schol. nr. ε´ in Ps 17,9b [384
+                        Rondeau – Géhin – Cassin]) bildet (anonym mit Ps 17,8 verbunden). </note>
                   </div>
                   <div type="psalmtext">
                      <quote type="psalmtext" xml:id="edition-ps-17-9-3" n="9c">ἄνθρακες ἀνήφθησαν
@@ -28633,6 +28655,8 @@
                         <wit>Auct. D.4.1</wit>
                      </app>
                      <app type="text"/>
+                     <note type="textual-commentary">Dieses Dubium (nach Ps 17,43b) wird Athanasius
+                        zugeschrieben.</note>
                   </div>
                   <div type="commentary" subtype="dubium">
                      <p xml:id="edition-17-43-2" n="289b">Τοὺς ἐχθροὺς δηλονότι: –</p>
@@ -28650,6 +28674,7 @@
                         <wit>Ambr. M 47 sup.</wit>
                      </app>
                      <app type="text"/>
+                     <note type="textual-commentary">Dieses Dubium steht nach Ps 17,43.</note>
                   </div>
                </div>
                <div type="translation" xml:lang="de">
@@ -29300,14 +29325,18 @@
                         <wit>Ambr. M 47 sup.</wit>
                      </app>
                      <app type="text">
-                        <lem><foreign xml:lang="grc">Ἐκ τοῦ ἀπίστου λαοῦ</foreign></lem>
-                        <rdg wit="#V5 #P7"><foreign xml:lang="grc">... ἐκ τῶν ἐπανισταμένων· τοῦ
-                              ἀπίστου λαοῦ</foreign></rdg>
+                        <lem><foreign xml:lang="grc">Ἐκ – λαοῦ</foreign></lem>
+                        <rdg wit="#V5 #P7"><foreign xml:lang="grc">... ἐκ τῶν ἐπανισταμένων, τοῦ
+                              ἀπίστου λαοῦ: –</foreign></rdg>
                         <wit>Vat. gr. 1422</wit>
                         <wit>Par. gr. 146</wit>
                      </app>
-                     <note type="textual-commentary">C: exp. 297 vom Schreiber am Rand
-                        hinzugefügt.</note>
+                     <note type="textual-commentary">C: exp. 297 vom Schreiber am Rand hinzugefügt.
+                        V5 P7: Eine verkürzende Paraphrase des Eusebius (fr. 20 in Ps 17,47–50
+                        [Villani]) bildet eine Einheit mit exp. 297 (mit Ps 17,48–49 verbunden und
+                        anonym). Die Erweiterung τῶν ἐπανισταμένων ist aus Ps 17,49b entnommen.
+                        Beide Texte dürften aus der Tradition des Typus III (P6 Z N2) entstammen.
+                        Sie folgen auch dort aufeinander, aber getrennt.</note>
                   </div>
                   <div type="psalmtext">
                      <quote type="psalmtext" xml:id="edition-ps-17-48-2" n="48b">καὶ ὑποτάξας λαοὺς
@@ -29359,7 +29388,6 @@
                   <p corresp="#edition-17-48-2" n="298">Nämlich die (heidnischen) Völker.</p>
                </div>
             </div>
-            <!-- cave: exp. ΞΖ΄ in Ps 17,46 übersprungen: an seiner Stelle ist Evagrius -->
             <div type="psalmverse" n="17.49">
                <div type="text" xml:lang="grc">
                   <div type="psalmtext">
@@ -29399,7 +29427,7 @@
                      <app type="text">
                         <lem><foreign xml:lang="grc">φησὶ λαοῦ</foreign></lem>
                         <rdg wit="#A1 #P6 #Z #N2"><foreign xml:lang="grc">λαοῦ φησίν</foreign><note
-                              type="in-readings"><foreign>(λ[αο]ῦ</foreign> supra lin. <hi
+                              type="in-readings"><foreign>(λ[αο]ῦ</foreign> supra lin. add.<hi
                                  rend="italic">A1<hi rend="sup">c</hi></hi>)</note></rdg>
                         <wit>Ambr. M 47 sup.</wit>
                         <wit>Par. gr. 139</wit>
@@ -29414,7 +29442,6 @@
                   <div type="psalmtext">
                      <quote type="psalmtext" xml:id="edition-ps-17-49-2" n="49b">ἀπὸ τῶν
                         ἐπανιστανομένων ἐπ’ ἐμὲ ὑψώσεις με,</quote>
-                     <!-- cave: Typus XIX: Dubium in Ps 17,49c mit Großbuchstaben! -->
                   </div>
                   <div type="commentary" subtype="dubium">
                      <p xml:id="edition-17-49-2" n="300">Τ[ῶ]ν [ἰ]ου[δα]ίων φησίν: –</p>
@@ -29430,18 +29457,18 @@
                         <wit>Ambr. M 47 sup.</wit>
                      </app>
                      <note type="textual-commentary">V1: Neben Ps 17,49b steht eine Zahl in
-                        Großbuchstaben (ΞΖ΄), wie für eine Epositio vorgesehen. Neben der inneren
-                        Spalte steht die gleiche Zahl. Der Schreiber hat darüber die klein
-                        geschriebene Zahl κδ΄ (Evagrius) hinzugefügt. Die Erklärung, die daneben
-                        liegt, ist nicht die des Athanasius, sondern die des Evagrius. Der Schreiber
-                        hat wahrscheinlich versehentlich die Expositio zu Ps 17,49b weggelassen. A1:
-                        Die fehlende Expositio scheint erhalten geblieben zu sein. Der Hinweis auf
-                        die Iuden findet sich auch in B1 als Erweiterung von exp. 301.</note>
+                        Großbuchstaben (ΞΖ΄), als ob es sich um einen Verweis auf eine Epositio
+                        handelt. Neben der inneren Spalte steht die gleiche Zahl. Allerdings hat der
+                        Schreiber darüber die klein geschriebene Zahl κδ΄ (Evagrius) hinzugefügt.
+                        Die Erklärung, die in der Spalte steht, ist nicht die des Athanasius,
+                        sondern die des Evagrius. Die Expositio zu Ps 17,49b wurde wahrscheinlich
+                        aus Versehen weggelassen. A1: Die fehlende Expositio scheint erhalten
+                        geblieben zu sein. Der Hinweis auf die Iuden findet sich auch in B1 als
+                        Erweiterung von exp. 301.</note>
                   </div>
                   <div type="psalmtext">
                      <quote type="psalmtext" xml:id="edition-ps-17-49-3" n="49c">ἀπὸ ἀνδρὸς ἀδίκου
                         ῥύσῃ με.</quote>
-                     <!-- cave: Typus XIX: Dubium in Ps 17,49c mit Großbuchstaben! -->
                   </div>
                   <div type="commentary" subtype="dubium" rend="parallel">
                      <p xml:id="edition-17-49-3" n="301" next="#edition-17-49-3-1">Tοῦ Ἰούδα λέγει:
@@ -29484,11 +29511,12 @@
                         <lem><foreign xml:lang="grc">Tοῦ – λέγει</foreign></lem>
                         <rdg wit="#B1"><foreign xml:lang="grc">Τοῦ Ἰούδα φησὶ καὶ τῶν ἰουδαίων:
                               –</foreign><note type="in-readings">(in Ps 17,49b–c; cf. exp.
-                              288b)</note></rdg>
+                              300)</note></rdg>
                      </app>
-                     <note type="textual-commentary">C: exp. 301 vom Schreiber am Rand hinzugefügt.
-                        <!--Randkatenen: exp. 289 mit Ps 17,49c verbunden
-                        (V1 P6 Z). Textkatenen: exp. 289 nach Ps 17,49c (N2).--></note>
+                     <note type="textual-commentary">V1: exp. 301 befindet sich in der inneren
+                        Spalte. Sie wird als hexaplarische Variante geschrieben
+                        (Majuskelbuchstaben). C: exp. 301 vom Schreiber am inneren Rand hinzugefügt
+                        (anonym).</note>
                   </div>
                   <div type="commentary" rend="hide">
                      <p xml:id="edition-17-49-3-1" n="289">Ἐπε[κτεί(?)]ν[ει(?)] τ[ὸ]ν λόγον, καὶ
@@ -29512,14 +29540,14 @@
                <div type="translation" xml:lang="de">
                   <quote type="psalmtext" corresp="#edition-ps-17-49-1" n="49a">Mein Erretter vor
                      meinen jähzornigen Feinden,</quote>
-                  <p corresp="#edition-17-49-1" n="299">Er meint von den Herrschern des Volkes
+                  <p corresp="#edition-17-49-1" n="299">Er meint vor den Herrschern des Volkes
                      Israel.</p>
                   <quote type="psalmtext" corresp="#edition-ps-17-49-2" n="49b">vor denen, die sich
                      gegen mich erheben, wirst du mich erhöhen,</quote>
-                  <p corresp="#edition-17-49-2" n="300">Er sagt es von den Iuden.</p>
+                  <p corresp="#edition-17-49-2" n="300">Er meint vor den Juden.</p>
                   <quote type="psalmtext" corresp="#edition-ps-17-49-3" n="49c">vor dem ungerechten
                      Mann wirst du mich erretten.</quote>
-                  <p corresp="#edition-17-49-3" n="301">Er sagt es von Judas.</p>
+                  <p corresp="#edition-17-49-3" n="301">Er meint vor Judas.</p>
                   <p corresp="#edition-17-49-3-1" n="301">Er dehnt die Rede aus, sogar bis auf den
                      Verrat von Judas.</p>
                   <!--<p corresp="#edition-17-49-3-1" n="289">Er sagt es von Judas und den Juden.</p>-->
@@ -29535,10 +29563,11 @@
                   </div>
                </div>
                <div type="translation" xml:lang="de">
-                  <quote type="psalmtext" corresp="#edition-ps-17-50-1" n="50a">Deshalb will ich
-                     dich preisen bei den Völkerschaften, Herr,</quote>
+                  <quote type="psalmtext" corresp="#edition-ps-17-50-1" n="50a">Deshalb werde ich
+                     dich preisen bei den Völkerschaften, Herr,<!-- Übersetzung: will ich
+                     dich preisen SD --></quote>
                   <quote type="psalmtext" corresp="#edition-ps-17-50-2" n="50b">und deinem Namen
-                     will ich spielen,</quote>
+                     werde ich spielen,<!-- Übersetzung: will ich spielen SD --></quote>
                </div>
             </div>
             <div type="psalmverse" n="17.51">
@@ -29552,7 +29581,7 @@
                         κύριε ὁ προφήτης· ἐπειδ᾿ ἂν σὺ αὐτὸς ὁ κύριος τὰ ἔθνη καλέσῃς, δι᾿ αὐτῶν σοι
                         ἐξομολογήσομαι· ἀδόντων αὐτῶν οὓς πεποίηκα ὕμνους· οὐ μόνον δὲ τοῦτο, ἀλλὰ
                         καὶ μεγαλυνῶ φησὶ τὰς σωτηρίας τοῦ βασιλέως· αὐτοῦ μὲν τοῦ ἐξ ἐθνῶν λαοῦ·
-                        ἵνα ᾖ· αὐτοῦ τοῦ βασιλέως αὐτῶν τῶν ἐθνῶν, ἣν ἐποίησε σωτηρίαν ἐν μέσῳ τῆς
+                        ἵνα ᾖ· αὐτοῦ τοῦ βασιλέως αὐτῶν τῶν ἐθνῶν, ἣν ἐποίησε σωτηρίαν ἐν μέσῳ τῆς
                         γῆς: –</p>
                      <!-- Textkritik: ἔλεων P6 : ἔλεον Z N2-->
                      <div type="links">
@@ -29599,6 +29628,11 @@
                         <wit>Par. gr. 146</wit>
                      </app>
                      <app type="text">
+                        <lem><foreign xml:lang="grc">Ἐπειδὴ – ὁ προφήτης</foreign></lem>
+                        <rdg wit="#A1">om.</rdg>
+                        <wit>Ambr. M 47 sup.</wit>
+                     </app>
+                     <app type="text">
                         <lem><foreign xml:lang="grc">Ἐπειδὴ – ὕμνους</foreign></lem>
                         <rdg wit="#L1"><foreign xml:lang="grc">Ἐπειδὴ φησὶν διὰ τῶν ἐθνῶν σοι
                               ἐξομολογήσομαι αὐτὰ καλέσαντος ἐν τῷ ἅδη</foreign></rdg>
@@ -29606,11 +29640,6 @@
                         <rdg wit="#V5a #P7a"><foreign xml:lang="grc">Ἐπειδὴ καὶ τὰ εἰργάσω σὺ ὁ
                               κύριος, διὰ τῶν ἐθνῶν σοι ἐξομολογήσομαι· σοῦ αὐτὰ καλέσαντος ἐν τῷ
                               ἄδειν</foreign></rdg>
-                     </app>
-                     <app type="text">
-                        <lem><foreign xml:lang="grc">Ἐπειδὴ – ὁ προφήτης</foreign></lem>
-                        <rdg wit="#A1">om.</rdg>
-                        <wit>Ambr. M 47 sup.</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">τὰ καινὰ</foreign></lem>
@@ -29651,7 +29680,7 @@
                         <wit>Par. gr. 146</wit>
                      </app>-->
                      <app type="text">
-                        <lem><foreign xml:lang="grc">ἐπειδ᾿ ἂν – σοι</foreign></lem>
+                        <lem><foreign xml:lang="grc">ἐπειδ᾿ ἂν – ὁ κύριος</foreign></lem>
                         <rdg wit="#A1"><foreign xml:lang="grc">Ἐπ[ειδ][ὴ σὺ αὐτὸς ὁ(?)]
                               κ[ύριος(?)]</foreign></rdg>
                         <wit>Ambr. M 47 sup.</wit>
@@ -29701,8 +29730,8 @@
                         <wit>Auct. D.4.1</wit>
                      </app>
                      <app type="text">
-                        <lem><foreign xml:lang="grc">ἐξ ἐθνῶν λαοῦ</foreign></lem>
-                        <rdg wit="#L1"><foreign xml:lang="grc">ἐξ ἐθνῶν μου λαοῦ</foreign></rdg>
+                        <lem><foreign xml:lang="grc">λαοῦ</foreign></lem>
+                        <rdg wit="#L1"><foreign xml:lang="grc">μου λαοῦ</foreign></rdg>
                         <wit>Plut. 5.30</wit>
                      </app>
                      <app type="text">
@@ -29740,25 +29769,36 @@
                               τουτέστιν ἐν τῇ σι[ών·] τ[α]ύτην γὰρ φασὶ τὸ μεσώτατον τῆς γῆς
                               εἶν[αι]</foreign></rdg>
                      </app>
-                     <note type="textual-commentary">V1 P6: exp. 302 und 303 bilden eine Einheit
-                        (mit Ps 17,50 verbunden). B1 P2 Syrische Version (Langfassung): Die
-                        gennanten Expositiones erklären jeweils Ps 17,50–51a und Ps 17,50b–c. B1:
-                        exp. 302 wird wie folgt eingeführt: ἐρμηνεία τῶν Γ´ στιχ(ων) Ἀθανασιου (= Ps
-                        17,50–51a).</note>
+                     <note type="textual-commentary">V1 C P6 Z N2: exp. 302 und 303 bilden eine
+                        Einheit (mit Ps 17,50 verbunden). B1 P2 Syrische Version (Langfassung): Die
+                        gennanten Expositiones erklären jeweils Ps 17,50–51a und Ps 17,50b–c. A1:
+                        Die am Anfang kürzere Fassung von exp. 302 ist zweiteilg. Ἐπ[ειδ][ὴ] –
+                        ὕμνους steht nach Ps 17,50; Οὐ μ[όν]ον – εἶν[αι] nach Ps 17,51a. B1: Es wird
+                        einleitend behauptet, dass diese Expositio drei Zeilen (στίχοι) erklärt:
+                        ἐρμηνεία τῶν Γ´ στιχ(ων) Ἀθανασιου (= Ps 17,50–51a). V5 P7: Αὐτοῦ μὲν – τῆς
+                        γῆς kommt zweimal vor: zunächst als Schlussteil von exp. 302 (V5<hi
+                           rend="sup">a</hi> P7<hi rend="sup">a</hi> mit Ps 17,50 verbunden), dann
+                        als Anfang von exp. 303 (V5<hi rend="sup">b</hi> P7<hi rend="sup">b</hi> mit
+                        Ps 17,51a–b verbunden). exp. 302 ist aus der Tradition der (Text-)Katenen
+                        basierend auf den Kommentaren des Hesychius von Hierysalem und den
+                        Expositiones (B1 L1). Da der wiederholte Teil durch μεγαλύνω (siehe app.)
+                        erweitert wird, stammt exp. 303 aus einer Tradition, die Typus XIX (V1 C)
+                        und III (P6 Z N2) näher ist.</note>
                   </div>
                </div>
                <div type="translation" xml:lang="de">
                   <quote type="psalmtext" corresp="#edition-ps-17-51-1" n="51a">der groß macht die
-                     Rettungen seines Königs</quote>
+                     Rettungen seines Königs<!-- Übersetzung: der groß macht SD --></quote>
                   <quote type="psalmtext" corresp="#edition-ps-17-51-2" n="51b">und Erbarmen schafft
                      seinem Gesalbten,</quote>
                   <quote type="psalmtext" corresp="#edition-ps-17-51-3" n="51c">David und seiner
                      Nachkommenschaft bis in Ewigkeit.</quote>
-                  <p corresp="#edition-17-51-1" n="302">Da du das und das, will der Prophet sagen,
-                     vollbracht hast, so will ich, da du, o Herr, selbst die Völker rufest, in
-                     denselben dich preisen, da sie die Lobgesänge singen, die ich gemacht habe.
-                     Aber hievon abgesehen werde ich, sagt er, das Heil des Königs der Völker selbst
-                     verherrlichen, welches Heil er in der Mitte der Erde gewirkt hat.</p>
+                  <p corresp="#edition-17-51-1" n="302">Da du Neues bewirkt hast – sagt der Prophet
+                     selbst –, sobald du selbst, Herr, die Heiden rufst, werde ich dich durch sie
+                     preisen, da sie die Hymnen singen, die ich gemacht habe. Nicht nur das, sondern
+                     ich, sagt er, werde die Rettungen des Königs des aus den Heiden (bestehenden)
+                     Volkes groß machen, das heißt, die Rettung des Königs der Heiden, welche er in
+                     der Mitte der Erde geschaffen hat.</p>
                </div>
             </div>
             <div type="psalmverse" n="17.51">
@@ -29766,7 +29806,7 @@
                   <div type="psalmtext">
                      <quote type="psalmtext" xml:id="edition-ps-17-51-2" n="51b">καὶ ποιῶν ἔλεος τῷ
                         χριστῷ αὐτοῦ,</quote>
-                     <quote type="psalmtext" xml:id="edition-ps-17-51-3" n="51c">τῷ Δαυιδ καὶ τῷ
+                     <quote type="psalmtext" xml:id="edition-ps-17-51-3" n="51c">τῷ Δαυῒδ καὶ τῷ
                         σπέρματι αὐτοῦ ἕως αἰῶνος.</quote>
                   </div>
                   <div type="commentary" rend="parallel">
@@ -29775,7 +29815,7 @@
                         χρισθέντα αὐτοῦ λαόν· εἰς βασίλειον γὰρ ἱεράτευμα ἐχρίσθημεν· ποιῶν δὲ τῷ
                         λαῷ τὸ ἔλεος, καὶ ἐμοὶ τῷ Δαυῒδ παρασκευάσεις γενέσθαι αὐτῷ καὶ τῷ σπέρματί
                         μου· σπέρμα γὰρ τοῦ Δαυῒδ, καὶ ὁ ἐξ ἐθνῶν λαὸς· ἅτε δὴ γεγονὼς τέκνα τοῦ ἐκ
-                        σπέρματος κατασάρκα γεννηθέντος Δαυΐδ: –</p>
+                        σπέρματος κατὰ σάρκα γεννηθέντος Δαυΐδ: –</p>
                      <div type="links">
                         <p>
                            <listRef>
@@ -29865,14 +29905,15 @@
                         <wit>Vat. gr. 1422</wit>
                         <wit>Par. gr. 146</wit>
                      </app>
-                     <note type="textual-commentary">B1: exp. 291 wird wie folgt eingeführt:
-                        ἐρμ(ηνεία) τῶν Β´ στιχ(ων) Ἀθανασι(ου) (= Ps 17,51b–c).</note>
+                     <note type="textual-commentary">B1: exp. 303 wird wie folgt eingeführt:
+                        ἐρμ(ηνεία) τῶν Β´ στιχ(ων) Ἀθανασι(ου) (= Ps 17,51b–c). V5 P7: Siehe zu exp.
+                        302.</note>
                   </div>
                   <div type="commentary" rend="hide">
                      <p xml:id="edition-17-51-2-1" n="291">Ποιῶν ἔλεος ἐπὶ τὸν χρι[σθ]έντ[α α]ὐτο[ῦ]
                         λ[αόν· εἰς(?)] βασίλειον γὰρ ἱερ[άτευμ]α ἐχρ[ί]σθημεν· καὶ τὸ ἐκ Δαυῒδ τῷ
-                        κατὰ σάρκα Χριστ[ῷ κα]ὶ τ[ῷ σπ]έ[ρ]ματι τοῦ Δαυΐδ· σπέρμ[α γὰρ] α[ὐτ]οῦ ὁ ἐξ
-                        [ἐ]θνῶν λαὸς· διὰ τὸν ἐκ [σπ]έρμ[ατο]ς τοῦ Δ[α]υῒδ· Xριστὸν καλέσαντα τὰ
+                        κατὰ σάρκα Χριστ[ῷ κα]ὶ τ[ῷ σπ]έ[ρ]ματι τοῦ Δαυΐδ· σπέρμ[α γὰρ] α[ὐτ]οῦ, ὁ
+                        ἐξ [ἐ]θνῶν λαὸς· διὰ τὸν ἐκ [σπ]έρμ[ατο]ς τοῦ Δ[α]υῒδ Xριστὸν καλέσαντα τὰ
                         ἔθνη: –</p>
                      <div type="links">
                         <p><listRef>
@@ -29892,13 +29933,20 @@
                      seinem Gesalbten,</quote>
                   <quote type="psalmtext" corresp="#edition-ps-17-51-3" n="51c">David und seiner
                      Nachkommenschaft bis in Ewigkeit.</quote>
-                  <p corresp="#edition-17-51-2" n="303">Das heißt, ich werde Allen laut zurufen.
-                     Denn auch dieses Heil, will er sagen, wirkte er, indem er an seinem gesalbten
-                     Volk Barmherzigkeit übte. Denn zu einem königlichen Priestertum sind wir
-                     gesalbt. Indem du aber gegen das Volk Barmherzigkeit übst, wirst du auch nur,
-                     dem David selbst, und meinem Samen sie verschaffen. Denn Same Davids ist auch
-                     das heidnische Volk, da es ein Sohn desjenigen geworden, der aus dem Samen
-                     Davids nach dem Fleisch geboren ist.</p>
+                  <p corresp="#edition-17-51-2" n="303">Das heißt, ich werde (dies) allen laut
+                     verkünden. Da nämlich auch diese (Rettung), will er sagen, bewirkte er, indem
+                     er seinem gesalbten Volk Erbarmen schaffte. Denn zu einer königlichen
+                     Priesterschaft wurden wir gesalbt. Indem du aber dem Volk Erbarmen schaffst,
+                     wirst du auch mir selbst, dem David, und meiner Nachkommenschaft sie
+                     verschaffen. Denn Nachkommenschaft Davids ist auch das aus den Heiden
+                     (bestehende) Volk, da es ein Sohn desjenigen geworden ist, der aus der
+                     Nachkommenschaft Davids nach dem Fleisch geboren ist.</p>
+                  <p corresp="#edition-17-51-2-1" n="303">Indem er seinem gesalbten Volk Erbarmen
+                     schaffte. Denn zu einer königlichen Priesterschaft wurden wir gesalbt. Und dies
+                     (wurde geschafft) in Bezug auf den dem Fleisch nach aus David (geborenen)
+                     Christus, und auf die Nachkommenschaft Davids. Denn seine Nachkommenschaft ist
+                     das aus den Heiden (bestehende) Volk, wegen dem Christus, der aus der
+                     Nachkommenschaft Davids die Heiden berufen hat.</p>
                </div>
             </div>
          </div>
