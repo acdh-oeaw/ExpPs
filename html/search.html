@@ -77,53 +77,154 @@
 					<h3>Under Construction</h3>
                   </header><!-- .entry-header -->
                   <div class="entry-content" style="background-color: white; padding-bottom: 10pt;">
-                    <form style="padding: 20pt;" id="search-form">
-						<div class="form-group row">
-							<div class="col">
-								<select class="form-control" id="name-of-manuscript-select"></select>
-							</div>
-							<div class="col">
-							<div class="form-check" style="padding-left: 50pt;">
-								<input class="form-check-input" type="radio" name="form-radio" id="commentaryfragment-radio" value="commentaryfragment" checked/>
-								<label class="form-check-label" for="commentaryfragment-radio">Commentaryfragments</label>
-							</div>
-							<div class="form-check" style="padding-left: 50pt;">
-								<input class="form-check-input" type="radio" name="form-radio" id="gloss-radio" value="glosses"/>
-								<label class="form-check-label" for="gloss-radio">Glosses</label>
-							</div>
-							<div class="form-check" style="padding-left: 50pt;">
-								<input class="form-check-input" type="radio" name="form-radio" id="hexaplaric-variant-radio" value="hexaplaric-variants"/>
-								<label class="form-check-label" for="hexaplaric-variant-radio">Hexaplaric Variants</label>
-							</div>
-							<div class="form-check" style="padding-left: 50pt;">
-								<input class="form-check-input" type="radio" name="form-radio" id="psalmtext-radio" value="psalmtexts"/>
-								<label class="form-check-label" for="psalmtext-radio">Psalmtexts</label>
-							</div>
-							</div>
-							<div class="col form-group">
-							<div>
-								<div>
-									<input class="form-check-input" type="checkbox" name="form-radio" id="input-selected" value="refine"/>
-									<label class="form-check-label" for="input-selected">Refine Your Search</label>
-								</div>
-								<label for="input-attribution" style="padding-top: 2pt;">Author According to the Manuscript</label>
-								<select class="form-control" id="input-attribution"><option>Author According to the Manuscript</option></select>
-								<label for="input-author-critical" style="padding-top: 4pt;">Author Critical Attributed</label>
-								<select class="form-control" id="input-author-critical"><option>Author Critical Attributed</option></select>
-								<label for="psalmverse" style="padding-top: 4pt;">Psalmverse</label>
-								<select class="form-control" id="psalmverse"><option>Psalmverse</option></select>
-							</div>
-							<div class="row" style="padding-top: 30pt;">
-								<div class="col-8"></div>
-								<div class="col-4">
-									<button type="button" class="btn btn-outline-warning" id="search-submit">Submit</button>
-								</div>
-							</div>
-							</div>
-						</div>
-					</form>
+                    
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="commentary-fragments-tab" data-toggle="tab" data-target="#commentary-fragments-search" type="button" role="tab" aria-controls="commentary-fragments-search" aria-selected="true">Commentary Fragments</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="glosses-tab" data-toggle="tab" data-target="#glosses-search" type="button" role="tab" aria-controls="glosses-search" aria-selected="false">Glosses</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="hexaplaric-variants-tab" data-toggle="tab" data-target="#hexaplaric-variants-search" type="button" role="tab" aria-controls="hexaplaric-variants-search" aria-selected="false">Hexaplaric Variants</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="full-text-tab" data-toggle="tab" data-target="#full-text-search" type="button" role="tab" aria-controls="full-text-search" aria-selected="false">Full Text</button>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                      <div class="tab-pane fade show active" id="commentary-fragments-search" role="tabpanel" aria-labelledby="commentary-fragments-tab">                    
+                        <form style="padding: 20pt;" id="search-form-commentaryfragments">
+		              				<div class="form-group row">
+							               <div class="col">
+							                 <label for="name-of-manuscript-select-form-commentaryfragments" style="padding-top: 2pt;">Manuscript</label>
+								                <select class="form-control" id="name-of-manuscript-select-form-commentaryfragments"></select>
+							               </div>
+							               <div class="col form-group">
+							                <div>
+								                 <label for="input-attribution-form-commentaryfragments" style="padding-top: 2pt;">Author According to the Manuscript</label>
+								                 <select class="form-control" id="input-attribution-form-commentaryfragments"><option>Author According to the Manuscript</option></select>
+								                 <label for="input-author-critical-form-commentaryfragments" style="padding-top: 4pt;">Author Critically Attributed</label>
+								                 <select class="form-control" id="input-author-critical-form-commentaryfragments"><option>Author Critically Attributed</option></select>
+								                 <label for="psalmverse-form-commentaryfragments" style="padding-top: 4pt;">Psalmverse</label>
+								                 <select class="form-control" id="psalmverse-form-commentaryfragments"><option>Psalmverse</option></select>
+							                   <label for="enable-psalmverse-range-commentaryfragments" style="padding-top: 4pt;">Range of Psalmverses</label>
+							                   <div class="form-group row">
+							                     <div class="col col-md-1">
+							                       <input type="checkbox" style="margin-left: 0rem;" class="form-check-input" id="enable-psalmverse-range-commentaryfragments">
+							                     </div>
+							                     <div class="col col-md-5">
+							                       <input type="text" class="form-control" id="psalmverse-from-value-form-commentaryfragments" disabled/>
+							                     </div>
+							                     <div class="col col-md-1">-</div>
+							                     <div class="col col-md-5">
+							                       <input type="text" class="form-control" id="psalmverse-to-value-form-commentaryfragments" disabled/>
+							                     </div>
+							                   </div>
+							               </div>
+							           <div class="row" style="padding-top: 30pt;">
+								           <div class="col-8"></div>
+								           <div class="col-4">
+									           <button type="button" class="btn btn-outline-warning" id="search-commentaryfragments-submit">Submit</button>
+								           </div>
+							           </div>
+							         </div>
+						        </div>
+					         </form>
+                  </div>
+                      <div class="tab-pane fade" id="glosses-search" role="tabpanel" aria-labelledby="glosses-tab">
+                        <form style="padding: 20pt;" id="search-form-glosses">
+                          <div class="form-group row">
+                            <div class="col">
+                              <label for="name-of-manuscript-select-form-glosses" style="padding-top: 2pt;">Manuscript</label>
+                              <select class="form-control" id="name-of-manuscript-select-form-glosses"></select>
+                            </div>
+                            <div class="col form-group">
+                              <div>
+                                <label for="input-author-critical-form-glosses" style="padding-top: 2pt;">Author Critically Attributed</label>
+                                <select class="form-control" id="input-author-critical-form-glosses"><option>Author Critically Attributed</option></select>
+                                <label for="psalmverse-form-glosses" style="padding-top: 4pt;">Psalmverse</label>
+                                <select class="form-control" id="psalmverse-form-glosses"><option>Psalmverse</option></select>
+                                <label for="enable-psalmverse-range-glosses" style="padding-top: 4pt;">Range of Psalmverses</label>
+                                <div class="form-group row">
+                                  <div class="col col-md-1">
+                                    <input type="checkbox" style="margin-left: 0rem;" class="form-check-input" id="enable-psalmverse-range-glosses">
+                                  </div>
+                                  <div class="col col-md-5">
+                                    <input type="text" class="form-control" id="psalmverse-from-value-form-glosses" disabled/>
+                                  </div>
+                                  <div class="col col-md-1">-</div>
+                                  <div class="col col-md-5">
+                                    <input type="text" class="form-control" id="psalmverse-to-value-form-glosses" disabled/>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row" style="padding-top: 30pt;">
+                                <div class="col-8"></div>
+                                <div class="col-4">
+                                  <button type="button" class="btn btn-outline-warning" id="search-glosses-submit">Submit</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="tab-pane fade" id="hexaplaric-variants-search" role="tabpanel" aria-labelledby="hexaplaric-variants-tab">
+                        <form style="padding: 20pt;" id="search-form-hexaplaric-variants">
+                          <div class="form-group row">
+                            <div class="col">
+                              <label for="name-of-manuscript-select-form-hexaplaric-variants" style="padding-top: 2pt;">Manuscript</label>
+                              <select class="form-control" id="name-of-manuscript-select-form-hexaplaric-variants"></select>
+                            </div>
+                            <div class="col form-group">
+                              <div>
+                                <label for="psalmverse-form-hexaplaric-variants" style="padding-top: 2pt;">Psalmverse</label>
+                                <select class="form-control" id="psalmverse-form-hexaplaric-variants"><option>Psalmverse</option></select>
+                                <label for="enable-psalmverse-range-hexaplaric-variants" style="padding-top: 4pt;">Range of Psalmverses</label>
+                                <div class="form-group row">
+                                  <div class="col col-md-1">
+                                    <input type="checkbox" style="margin-left: 0rem;" class="form-check-input" id="enable-psalmverse-range-hexaplaric-variants">
+                                  </div>
+                                  <div class="col col-md-5">
+                                    <input type="text" class="form-control" id="psalmverse-from-value-form-hexaplaric-variants" disabled/>
+                                  </div>
+                                  <div class="col col-md-1">-</div>
+                                  <div class="col col-md-5">
+                                    <input type="text" class="form-control" id="psalmverse-to-value-form-hexaplaric-variants" disabled/>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row" style="padding-top: 30pt;">
+                                <div class="col-8"></div>
+                                <div class="col-4">
+                                  <button type="button" class="btn btn-outline-warning" id="search-hexaplaric-variants-submit">Submit</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="tab-pane fade" id="full-text-search" role="tabpanel" aria-labelledby="full-text-tab">
+                        <form style="padding: 20pt;" id="search-form-full-text">
+                          <div class="form-group row">
+                            <div class="col">
+                              <label for="full-text-search-input">Search text</label>
+                              <input type="text" class="form-control" id="full-text-search-input"/>
+                            </div>
+                            <div class="col form-group">
+                              <div class="row" style="padding-top: 30pt;">
+                                <div class="col-8"></div>
+                                <div class="col-4">
+                                  <button type="button" class="btn btn-outline-warning" id="search-full-text-submit">Submit</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
 					<div id="search-result-messages"></div>
-					<div id="search-result-content"/></div>
+					<div id="search-result-content"></div>
                   </div><!-- .entry-content -->
                 </article>
               </main><!-- #main -->

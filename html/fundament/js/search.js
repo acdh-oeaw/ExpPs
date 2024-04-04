@@ -3,7 +3,8 @@ function jsonClient(){
 	configurationObject.baseUrl = '';
 	configurationObject.url = '';
 	configurationObject.message = {};
-	configurationObject.object = "home";
+	configurationObject.object = "commentaryfragments";
+	configurationObject.mode = "form";
 	configurationObject.acceptMimeType = "application/json";
 	configurationObject.manuscriptPaths = {};
 	
@@ -30,11 +31,6 @@ function jsonClient(){
 			target : "search-page",
 			func : "httpGet",
 			href : "manuscripts/{id}/glosses"
-		},
-		psalmtexts : {
-			target : "search-page",
-			func : "httpGet",
-			href : "/manuscripts/{id}/psalmtexts"
 		}
 	};
 	
@@ -47,7 +43,8 @@ function jsonClient(){
 			configurationObject.url = url;
 			if(configurationObject.url === "/manuscripts"){
 				request(configurationObject.baseUrl + "/manuscripts","get");
-				configurationObject.object = "home";
+				configurationObject.object = "commentaryfragments";
+				configurationObject.mode = "form";
 			}
 		}
 	}
@@ -71,30 +68,96 @@ function jsonClient(){
 	}
 
 	function configureForm(){
-		if(configurationObject.object === "home"){
+		if(configurationObject.object === "commentaryfragments" && configurationObject.mode === "form"){
 			let listOfManuscripts = configurationObject.message;
 			let namesOfManuscriptsAndPath = new Map();
+			$("#name-of-manuscript-select-form-commentaryfragments").empty();
 			for (let n = 0; n < listOfManuscripts._embedded.manuscripts.length; n++){
 				let nameOfManuscript = listOfManuscripts._embedded.manuscripts[n]["manuscript-name"];
 				let optionAsText = "<option value='" + nameOfManuscript + "'>" + nameOfManuscript + "</option>";
 				let optionAsObject = $(optionAsText);
-				$('#name-of-manuscript-select').append(optionAsObject);
+				$('#name-of-manuscript-select-form-commentaryfragments').append(optionAsObject);
 				let pathOfManuscript = listOfManuscripts._embedded.manuscripts[n]["manuscript-path"];
 				namesOfManuscriptsAndPath.set(nameOfManuscript,pathOfManuscript);
 			}
 			configurationObject.manuscriptPaths = namesOfManuscriptsAndPath;
-			let commentaryfragmentRadio = document.getElementById("commentaryfragment-radio");
-			commentaryfragmentRadio.checked = true;
-			let refineSearchCheckbox = document.getElementById("input-selected");
-			refineSearchCheckbox.checked = false;
-			let attributionField = document.getElementById("input-attribution");
-			let authorCriticalField = document.getElementById("input-author-critical");
-			let psalmverseField = document.getElementById("psalmverse");
-			attributionField.disabled = true;
-			authorCriticalField.disabled = true;
-			psalmverseField.disabled = true;
+			configureFormCommentaryfragmentsSubfields()
+		}
+		if(configurationObject.object === "glosses" && configurationObject.mode === "form"){
+			let listOfManuscripts = configurationObject.message;
+			let namesOfManuscriptsAndPath = new Map();
+			$("#name-of-manuscript-select-form-glosses").empty();
+			for (let n = 0; n < listOfManuscripts._embedded.manuscripts.length; n++){
+				let nameOfManuscript = listOfManuscripts._embedded.manuscripts[n]["manuscript-name"];
+				let optionAsText = "<option value='" + nameOfManuscript + "'>" + nameOfManuscript + "</option>";
+				let optionAsObject = $(optionAsText);
+				$('#name-of-manuscript-select-form-glosses').append(optionAsObject);
+				let pathOfManuscript = listOfManuscripts._embedded.manuscripts[n]["manuscript-path"];
+				namesOfManuscriptsAndPath.set(nameOfManuscript,pathOfManuscript);
+			}
+			configurationObject.manuscriptPaths = namesOfManuscriptsAndPath;
+		}
+		if(configurationObject.object === "hexaplaricvariants" && configurationObject.mode === "form"){
+			let listOfManuscripts = configurationObject.message;
+			let namesOfManuscriptsAndPath = new Map();
+			$("#name-of-manuscript-select-form-hexaplaric-variants").empty();
+			for (let n = 0; n < listOfManuscripts._embedded.manuscripts.length; n++){
+				let nameOfManuscript = listOfManuscripts._embedded.manuscripts[n]["manuscript-name"];
+				let optionAsText = "<option value='" + nameOfManuscript + "'>" + nameOfManuscript + "</option>";
+				let optionAsObject = $(optionAsText);
+				$('#name-of-manuscript-select-form-hexaplaric-variants').append(optionAsObject);
+				let pathOfManuscript = listOfManuscripts._embedded.manuscripts[n]["manuscript-path"];
+				namesOfManuscriptsAndPath.set(nameOfManuscript,pathOfManuscript);
+			}
+			configurationObject.manuscriptPaths = namesOfManuscriptsAndPath;
 		}
 	}
+	
+	function configureFormCommentaryfragmentsSubfields(){
+		let selectedManuscript = document.getElementById("name-of-manuscript-select-form-commentaryfragments").selectedOptions[0].value;
+		let manuscriptPath = configurationObject.manuscriptPaths.get(selectedManuscript);
+		let url = configurationObject.baseUrl + "/manuscripts/" + manuscriptPath;
+		let urlAttribution = url + "/authors-distinct";
+		axios({
+			method: "get",
+			url: urlAttribution,
+			responseType: configurationObject.acceptMimeType
+		})
+		.then(function (response){
+			let authorsDistinct = JSON.parse(response.data);
+			$("#input-attribution-form-commentaryfragments").empty();
+			$("#input-attribution-form-commentaryfragments").append($("<option value='empty'>empty</option>"));
+			for (let n = 0; n < authorsDistinct._embedded.authors.length; n++){
+				let nameOfAuthor = authorsDistinct._embedded.authors[n]["author"];
+				let optionAttributionAsText = "<option value='" + nameOfAuthor + "'>" + nameOfAuthor + "</option>";
+				let optionAttributionAsObject = $(optionAttributionAsText);
+				$("#input-attribution-form-commentaryfragments").append(optionAttributionAsObject);
+			}
+		})
+		.catch(function (error) { console.log(error); });
+		let urlReference = url + "/references";
+		axios({
+			method: "get",
+			url: urlReference,
+			responseType: configurationObject.acceptMimeType
+		})
+		.then(function (response){
+			let references = JSON.parse(response.data);
+			$("#psalmverse-form-commentaryfragments").empty();
+			$("#psalmverse-form-commentaryfragments").append($("<option value='empty'>empty</option>"));
+			for (let n = 0; n < references._embedded.references.length; n++){
+				let reference = references._embedded.references[n]["psalmverse"];
+				let optionReferenceAsText = "<option value='" + reference + "'>" + reference + "</option>";
+				let optionReferenceAsObject = $(optionReferenceAsText);
+				$("#psalmverse-form-commentaryfragments").append(optionReferenceAsObject);
+			}
+		})
+		.catch(function(error){ console.log(error); });
+	}
+	
+	$("#name-of-manuscript-select-form-commentaryfragments").on("change",function(){
+		configureFormCommentaryfragmentsSubfields();
+	});
 	
 	function setItems(){
 		let divForMessage = document.getElementById("search-result-messages");
@@ -338,6 +401,84 @@ function jsonClient(){
 			url = url + "/psalmtexts";
 		}
 		request(url,"get")
+	});
+	
+	$("#commentary-fragments-tab").bind('click',function(){
+		configurationObject.object = "commentaryfragments";
+		request(configurationObject.baseUrl + "/manuscripts","get");
+		configurationObject.mode = "form";
+	});
+	
+	$("#glosses-tab").bind('click',function(){
+		configurationObject.object = "glosses";
+		request(configurationObject.baseUrl + "/manuscripts","get");
+		configurationObject.mode = "form";
+	});
+	
+	$("#hexaplaric-variants-tab").bind('click',function(){
+		configurationObject.object = "hexaplaricvariants";
+		request(configurationObject.baseUrl + "/manuscripts","get");
+		configurationObject.mode = "form";
+	});
+	
+	$("#enable-psalmverse-range-commentaryfragments").change(function(){
+		let isChecked = document.getElementById("enable-psalmverse-range-commentaryfragments").checked;
+		if (isChecked === true){
+			let fromField = document.getElementById("psalmverse-from-value-form-commentaryfragments");
+			fromField.disabled = false;
+			let toField = document.getElementById("psalmverse-to-value-form-commentaryfragments");
+			toField.disabled = false;
+			let psalmverseField = document.getElementById("psalmverse-form-commentaryfragments");
+			psalmverseField.disabled = true;
+		}
+		if (isChecked === false){
+			let fromField = document.getElementById("psalmverse-from-value-form-commentaryfragments");
+			fromField.disabled = true;
+			let toField = document.getElementById("psalmverse-to-value-form-commentaryfragments");
+			toField.disabled = true;
+			let psalmverseField = document.getElementById("psalmverse-form-commentaryfragments");
+			psalmverseField.disabled = false;
+		}
+	});
+	
+	$("#enable-psalmverse-range-glosses").change(function(){
+		let isChecked = document.getElementById("enable-psalmverse-range-glosses").checked;
+		if (isChecked === true){
+			let fromField = document.getElementById("psalmverse-from-value-form-glosses");
+			fromField.disabled = false;
+			let toField = document.getElementById("psalmverse-to-value-form-glosses");
+			toField.disabled = false;
+			let psalmverseField = document.getElementById("psalmverse-form-glosses");
+			psalmverseField.disabled = true;
+		}
+		if (isChecked === false){
+			let fromField = document.getElementById("psalmverse-from-value-form-glosses");
+			fromField.disabled = true;
+			let toField = document.getElementById("psalmverse-to-value-form-glosses");
+			toField.disabled = true;
+			let psalmverseField = document.getElementById("psalmverse-form-glosses");
+			psalmverseField.disabled = false;
+		}
+	});
+	
+	$("#enable-psalmverse-range-hexaplaric-variants").change(function(){
+		let isChecked = document.getElementById("enable-psalmverse-range-hexaplaric-variants").checked;
+		if (isChecked === true){
+			let fromField = document.getElementById("psalmverse-from-value-form-hexaplaric-variants");
+			fromField.disabled = false;
+			let toField = document.getElementById("psalmverse-to-value-form-hexaplaric-variants");
+			toField.disabled = false;
+			let psalmverseField = document.getElementById("psalmverse-form-hexaplaric-variants");
+			psalmverseField.disabled = true;
+		}
+		if (isChecked === false){
+			let fromField = document.getElementById("psalmverse-from-value-form-hexaplaric-variants");
+			fromField.disabled = true;
+			let toField = document.getElementById("psalmverse-to-value-form-hexaplaric-variants");
+			toField.disabled = true;
+			let psalmverseField = document.getElementById("psalmverse-form-hexaplaric-variants");
+			psalmverseField.disabled = false;
+		}
 	});
 	
 	$("#gloss-radio").change(function(){
