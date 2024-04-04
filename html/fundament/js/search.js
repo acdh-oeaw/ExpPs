@@ -51,7 +51,7 @@ function jsonClient(){
 	
 	function processMessage(){
 		configureForm();
-		setItems();
+		setItems()
 	}
 
 	function request(url,method){
@@ -68,7 +68,7 @@ function jsonClient(){
 	}
 
 	function configureForm(){
-		if(configurationObject.object === "commentaryfragments" && configurationObject.mode === "form"){
+		if((configurationObject.object === "commentaryfragments") && (configurationObject.mode === "form")){
 			let listOfManuscripts = configurationObject.message;
 			let namesOfManuscriptsAndPath = new Map();
 			$("#name-of-manuscript-select-form-commentaryfragments").empty();
@@ -81,9 +81,9 @@ function jsonClient(){
 				namesOfManuscriptsAndPath.set(nameOfManuscript,pathOfManuscript);
 			}
 			configurationObject.manuscriptPaths = namesOfManuscriptsAndPath;
-			configureFormCommentaryfragmentsSubfields()
+			configureFormCommentaryfragmentsSubfields();
 		}
-		if(configurationObject.object === "glosses" && configurationObject.mode === "form"){
+		if((configurationObject.object === "glosses") && (configurationObject.mode === "form")){
 			let listOfManuscripts = configurationObject.message;
 			let namesOfManuscriptsAndPath = new Map();
 			$("#name-of-manuscript-select-form-glosses").empty();
@@ -96,8 +96,9 @@ function jsonClient(){
 				namesOfManuscriptsAndPath.set(nameOfManuscript,pathOfManuscript);
 			}
 			configurationObject.manuscriptPaths = namesOfManuscriptsAndPath;
+			configureFormGlossesSubfields();
 		}
-		if(configurationObject.object === "hexaplaricvariants" && configurationObject.mode === "form"){
+		if((configurationObject.object === "hexaplaricvariants") && (configurationObject.mode === "form")){
 			let listOfManuscripts = configurationObject.message;
 			let namesOfManuscriptsAndPath = new Map();
 			$("#name-of-manuscript-select-form-hexaplaric-variants").empty();
@@ -110,6 +111,7 @@ function jsonClient(){
 				namesOfManuscriptsAndPath.set(nameOfManuscript,pathOfManuscript);
 			}
 			configurationObject.manuscriptPaths = namesOfManuscriptsAndPath;
+			configureFormHexaplaricVariantsSubfields();
 		}
 	}
 	
@@ -135,6 +137,10 @@ function jsonClient(){
 			}
 		})
 		.catch(function (error) { console.log(error); });
+		
+		$("#input-author-critical-form-commentaryfragments").empty();
+		$("#input-author-critical-form-commentaryfragments").append($("<option value='empty'>empty</option>"));
+		
 		let urlReference = url + "/references";
 		axios({
 			method: "get",
@@ -155,8 +161,64 @@ function jsonClient(){
 		.catch(function(error){ console.log(error); });
 	}
 	
+	function configureFormGlossesSubfields(){
+		let selectedManuscript = document.getElementById("name-of-manuscript-select-form-glosses").selectedOptions[0].value;
+		let manuscriptPath = configurationObject.manuscriptPaths.get(selectedManuscript);
+		let url = configurationObject.baseUrl + "/manuscripts/" + manuscriptPath;
+		let urlReference = url + "/references";
+		axios({
+			method: "get",
+			url: urlReference,
+			responseType: configurationObject.acceptMimeType
+		})
+		.then(function (response){
+			let references = JSON.parse(response.data);
+			$("#psalmverse-form-glosses").empty();
+			$("#psalmverse-form-glosses").append($("<option value='empty'>empty</option>"));
+			for (let n = 0; n < references._embedded.references.length; n++){
+				let reference = references._embedded.references[n]["psalmverse"];
+				let optionReferenceAsText = "<option value='" + reference + "'>" + reference + "</option>";
+				let optionReferenceAsObject = $(optionReferenceAsText);
+				$("#psalmverse-form-glosses").append(optionReferenceAsObject);
+			}
+		})
+		.catch(function(error){ console.log(error); });
+	}
+	
+	function configureFormHexaplaricVariantsSubfields(){
+		let selectedManuscript = document.getElementById("name-of-manuscript-select-form-hexaplaric-variants").selectedOptions[0].value;
+		let manuscriptPath = configurationObject.manuscriptPaths.get(selectedManuscript);
+		let url = configurationObject.baseUrl + "/manuscripts/" + manuscriptPath;
+		let urlReference = url + "/references";
+		axios({
+			method: "get",
+			url: urlReference,
+			responseType: configurationObject.acceptMimeType
+		})
+		.then(function (response){
+			let references = JSON.parse(response.data);
+			$("#psalmverse-form-hexaplaric-variants").empty();
+			$("#psalmverse-form-hexaplaric-variants").append($("<option value='empty'>empty</option>"));
+			for (let n = 0; n < references._embedded.references.length; n++){
+				let reference = references._embedded.references[n]["psalmverse"];
+				let optionReferenceAsText = "<option value='" + reference + "'>" + reference + "</option>";
+				let optionReferenceAsObject = $(optionReferenceAsText);
+				$("#psalmverse-form-hexaplaric-variants").append(optionReferenceAsObject);
+			}
+		})
+		.catch(function(error){ console.log(error); });
+	}
+	
 	$("#name-of-manuscript-select-form-commentaryfragments").on("change",function(){
 		configureFormCommentaryfragmentsSubfields();
+	});
+	
+	$("#name-of-manuscript-select-form-glosses").on("change",function(){
+		configureFormGlossesSubfields();
+	});
+	
+	$("#name-of-manuscript-select-form-hexaplaric-variants").on("change",function(){
+		configureFormHexaplaricVariantsSubfields();
 	});
 	
 	function setItems(){
@@ -164,7 +226,7 @@ function jsonClient(){
 		let divForItems = document.getElementById("search-result-content");
 		$(divForMessage).empty();
 		$(divForItems).empty();
-		if (configurationObject.object === "commentaryfragments"){
+		if ((configurationObject.object === "commentaryfragments") && (configurationObject.mode === "data")){
 			let commentaryfragments = configurationObject.message;
 			let numberOfItems = commentaryfragments._embedded.commentaryfragments.length;
 			let message = "";
@@ -191,7 +253,7 @@ function jsonClient(){
 				addEventForCommentaryfragments(idOfLink,urlOfCommentaryfragment);
 			}
 		}
-		if (configurationObject.object === "glosses"){
+		if ((configurationObject.object === "glosses") && (configurationObject.mode === "data")){
 			let glosses = configurationObject.message;
 			let numberOfItems = glosses._embedded.glosses.length;
 			let message = "";
@@ -218,7 +280,7 @@ function jsonClient(){
 				addEventForGlosses(idOfLink,urlOfGloss);
 			}
 		}
-		if (configurationObject.object === "hexaplaricVariants"){
+		if ((configurationObject.object === "hexaplaricVariants") && (configurationObject.mode === "data")){
 			let hexaplaricVariants = configurationObject.message;
 			console.log(hexaplaricVariants);
 			let numberOfItems = hexaplaricVariants._embedded["hexaplaric-variants"].length;
@@ -349,56 +411,36 @@ function jsonClient(){
 			}
 	})};
 	
-	$("#search-submit").click(function(event){
+	$("#search-commentaryfragments-submit").click(function(event){
 		event.preventDefault();
-		let selectedManuscript = document.getElementById("name-of-manuscript-select").selectedOptions[0].value;
-		let commentaryfragmentsSelected = document.getElementById("commentaryfragment-radio").checked;
-		let glossesSelected = document.getElementById("gloss-radio").checked;
-		let hexaplaricVariantsSelected = document.getElementById("hexaplaric-variant-radio").checked;
-		let psalmtextsSelected = document.getElementById("psalmtext-radio").checked;
-		let inputSelected = document.getElementById("input-selected").checked;
+		let selectedManuscript = document.getElementById("name-of-manuscript-select-form-commentaryfragments").selectedOptions[0].value;
 		let manuscriptPath = configurationObject.manuscriptPaths.get(selectedManuscript);
 		let url = configurationObject.baseUrl + "/manuscripts/" + manuscriptPath;
-		if (commentaryfragmentsSelected === true){
-			configurationObject.object = "commentaryfragments";
-			url = url + "/commentaryfragments";
-			if (inputSelected === true){
-				url = url + "/search";
-				let attributionFieldValue = document.getElementById("input-attribution").value;
-				let authorCriticalFieldValue = document.getElementById("input-author-critical").value;
-				let psalmverseFieldValue = document.getElementById("psalmverse").value;
-				if (attributionFieldValue != "empty"){
-					url = url + "?author=" + attributionFieldValue;
-				}
-				if (authorCriticalFieldValue != "empty"){
-					if (attributionFieldValue === "empty"){
-						url = url + "?author-critical=" + authorCriticalFieldValue;
-					}
-					else{
-						url = url + "&author-critical=" + authorCriticalFieldValue;
-					}
-				}
-				if (psalmverseFieldValue != "empty"){
-					if (attributionFieldValue === "empty" && authorCriticalFieldValue === "empty"){
-						url = url + "?reference=" + psalmverseFieldValue;
-					}
-					else{
-						url = url + "&reference=" + psalmverseFieldValue;
-					}
-				}
+		configurationObject.object = "commentaryfragments";
+		configurationObject.mode = "data";
+		url = url + "/commentaryfragments";
+		url = url + "/search";
+		let attributionFieldValue = document.getElementById("input-attribution-form-commentaryfragments").value;
+		let authorCriticalFieldValue = document.getElementById("input-author-critical-form-commentaryfragments").value;
+		let psalmverseFieldValue = document.getElementById("psalmverse-form-commentaryfragments").value;
+		if (attributionFieldValue != "empty"){
+			url = url + "?author=" + attributionFieldValue;
+		}
+		if (authorCriticalFieldValue != "empty"){
+			if (attributionFieldValue === "empty"){
+				url = url + "?author-critical=" + authorCriticalFieldValue;
+			}
+			else{
+				url = url + "&author-critical=" + authorCriticalFieldValue;
 			}
 		}
-		if (glossesSelected === true){
-			configurationObject.object = "glosses";
-			url = url + "/glosses";
-		}
-		if (hexaplaricVariantsSelected === true){
-			configurationObject.object = "hexaplaricVariants";
-			url = url + "/hexaplaric-variants";
-		}
-		if (psalmtextsSelected === true){
-			configurationObject.object = "psalmtexts";
-			url = url + "/psalmtexts";
+		if (psalmverseFieldValue != "empty"){
+			if (attributionFieldValue === "empty" && authorCriticalFieldValue === "empty"){
+				url = url + "?reference=" + psalmverseFieldValue;
+			}
+			else{
+				url = url + "&reference=" + psalmverseFieldValue;
+			}
 		}
 		request(url,"get")
 	});
@@ -478,263 +520,6 @@ function jsonClient(){
 			toField.disabled = true;
 			let psalmverseField = document.getElementById("psalmverse-form-hexaplaric-variants");
 			psalmverseField.disabled = false;
-		}
-	});
-	
-	$("#gloss-radio").change(function(){
-		let inputSelected = document.getElementById("input-selected").checked;
-		if (inputSelected === true){
-			$("#input-attribution").empty();
-			$("#input-author-critical").empty();
-			$("#psalmverse").empty();
-			let attributionField = document.getElementById("input-attribution");
-			attributionField.disabled = true;
-			let authorCriticalField = document.getElementById("input-author-critical");
-			authorCriticalField.disabled = true;
-			let psalmverseField = document.getElementById("psalmverse");
-			psalmverseField.disabled = true;
-		}
-	});
-	
-	$("#commentaryfragment-radio").change(function(){
-		let inputSelected = document.getElementById("input-selected").checked;
-		if (inputSelected === true){
-			let attributionField = document.getElementById("input-attribution");
-			attributionField.disabled = false;
-			let authorCriticalField = document.getElementById("input-author-critical");
-			authorCriticalField.disabled = false;
-			let psalmverseField = document.getElementById("psalmverse");
-			psalmverseField.disabled = false;
-			let selectedManuscript = document.getElementById("name-of-manuscript-select").selectedOptions[0].value;
-			let manuscriptPath = configurationObject.manuscriptPaths.get(selectedManuscript);
-			let url = configurationObject.baseUrl + "/manuscripts/" + manuscriptPath;
-			let urlAttribution = url + "/authors-distinct";
-			axios({
-				method: "get",
-				url: urlAttribution,
-				responseType: configurationObject.acceptMimeType
-			})
-			.then(function (response){
-				let authorsDistinct = JSON.parse(response.data);
-				$("#input-attribution").empty();
-				$("#input-attribution").append($("<option value='empty'>empty</option>"));
-				for (let n = 0; n < authorsDistinct._embedded.authors.length; n++){
-					let nameOfAuthor = authorsDistinct._embedded.authors[n]["author"];
-					let optionAttributionAsText = "<option value='" + nameOfAuthor + "'>" + nameOfAuthor + "</option>";
-					let optionAttributionAsObject = $(optionAttributionAsText);
-					$("#input-attribution").append(optionAttributionAsObject);
-				}
-			})
-			.catch(function (error) { console.log(error); });
-			let urlAuthorCritical = url + "/authors-critical-distinct";
-			axios({
-			method: "get",
-				url: urlAuthorCritical,
-				responseType: configurationObject.acceptMimeType
-			})
-			.then(function (response){
-				let authorsCriticalDistinct = JSON.parse(response.data);
-				$("#input-author-critical").empty();
-				$("#input-author-critical").append($("<option value='empty'>empty</option>"));
-				for (let n = 0; n < authorsCriticalDistinct._embedded.authors.length; n++){
-					let nameOfAuthorCritical = authorsCriticalDistinct._embedded.authors[n]["author-critical"];
-					let optionAuthorCriticalAsText = "<option value='" + nameOfAuthorCritical + "'>" + nameOfAuthorCritical + "</option>";
-					let optionAuthorCriticalAsObject = $(optionAuthorCriticalAsText);
-					$("#input-author-critical").append(optionAuthorCriticalAsObject);
-				}
-			})
-			.catch(function(error){ console.log(error); });
-			let urlReference = url + "/references";
-			axios({
-				method: "get",
-				url: urlReference,
-				responseType: configurationObject.acceptMimeType
-			})
-			.then(function (response){
-				let references = JSON.parse(response.data);
-				$("#psalmverse").empty();
-				$("#psalmverse").append($("<option value='empty'>empty</option>"));
-				for (let n = 0; n < references._embedded.references.length; n++){
-					let reference = references._embedded.references[n]["psalmverse"];
-					let optionReferenceAsText = "<option value='" + reference + "'>" + reference + "</option>";
-					let optionReferenceAsObject = $(optionReferenceAsText);
-					$("#psalmverse").append(optionReferenceAsObject);
-				}
-			})
-			.catch(function(error){ console.log(error); });
-		}
-	});
-	
-	$("#hexaplaric-variant-radio").change(function(){
-		let inputSelected = document.getElementById("input-selected").checked;
-		if (inputSelected === true){
-			$("#input-attribution").empty();
-			$("#input-author-critical").empty();
-			$("#psalmverse").empty();
-			let attributionField = document.getElementById("input-attribution");
-			attributionField.disabled = true;
-			let authorCriticalField = document.getElementById("input-author-critical");
-			authorCriticalField.disabled = true;
-			let psalmverseField = document.getElementById("psalmverse");
-			psalmverseField.disabled = false;
-			let selectedManuscript = document.getElementById("name-of-manuscript-select").selectedOptions[0].value;
-			let manuscriptPath = configurationObject.manuscriptPaths.get(selectedManuscript);
-			let url = configurationObject.baseUrl + "/manuscripts/" + manuscriptPath;
-			let urlReferences = url + "/hexaplaric-variants/references";
-			axios({
-				method: "get",
-				url: urlReferences,
-				responseType: configurationObject.acceptMimeType
-			})
-			.then(function (response){
-				let referencesOfHexaplaricVariants = JSON.parse(response.data);
-				$("#psalmverse").empty();
-				$("#psalmverse").append($("<option value='empty'>empty</option>"));
-				for (let n = 0; n < referencesOfHexaplaricVariants._embedded.references.length; n++){
-					let nameOfPsalm = referencesOfHexaplaricVariants._embedded.references[n]["psalmverse"];
-					let optionAttributionAsText = "<option value='" + nameOfPsalm + "'>" + nameOfPsalm + "</option>";
-					let optionAttributionAsObject = $(optionAttributionAsText);
-					$("#psalmverse").append(optionAttributionAsObject);
-				}
-			})
-			.catch(function (error) { console.log(error); });
-		}
-	});
-	
-	$("#psalmtext-radio").change(function(){
-		let inputSelected = document.getElementById("input-selected").checked;
-		if (inputSelected === true){
-			$("#input-attribution").empty();
-			$("#input-author-critical").empty();
-			$("#psalmverse").empty();
-			let attributionField = document.getElementById("input-attribution");
-			attributionField.disabled = true;
-			let authorCriticalField = document.getElementById("input-author-critical");
-			authorCriticalField.disabled = true;
-			let psalmverseField = document.getElementById("psalmverse");
-			psalmverseField.disabled = false;
-		}
-	});
-	
-	$("#input-selected").change(function(){
-		let inputSelected = document.getElementById("input-selected").checked;
-		let attributionField = document.getElementById("input-attribution");
-		let authorCriticalField = document.getElementById("input-author-critical");
-		let psalmverseField = document.getElementById("psalmverse");
-		if (inputSelected === false){
-			let attributionField = document.getElementById("input-attribution");
-			let authorCriticalField = document.getElementById("input-author-critical");
-			let psalmverseField = document.getElementById("psalmverse");
-			$("#input-attribution").empty();
-			$("#input-author-critical").empty();
-			$("#psalmverse").empty();
-			attributionField.disabled = true;
-			authorCriticalField.disabled = true;
-			psalmverseField.disabled = true;
-		}
-		if (inputSelected === true){
-			let commentaryfragmentRadioChecked = document.getElementById("commentaryfragment-radio").checked;
-			let glossesRadioChecked = document.getElementById("gloss-radio").checked;
-			let hexaplaricVariantRadioChecked = document.getElementById("hexaplaric-variant-radio").checked;
-			let psalmtextRadioChecked = document.getElementById("psalmtext-radio").checked;
-			if (commentaryfragmentRadioChecked === true){
-				attributionField.disabled = false;
-				authorCriticalField.disabled = false;
-				psalmverseField.disabled = false;
-				let selectedManuscript = document.getElementById("name-of-manuscript-select").selectedOptions[0].value;
-				let manuscriptPath = configurationObject.manuscriptPaths.get(selectedManuscript);
-				let url = configurationObject.baseUrl + "/manuscripts/" + manuscriptPath;
-				let urlAttribution = url + "/authors-distinct";
-				axios({
-					method: "get",
-					url: urlAttribution,
-					responseType: configurationObject.acceptMimeType
-				})
-				.then(function (response){
-					let authorsDistinct = JSON.parse(response.data);
-					$("#input-attribution").empty();
-					$("#input-attribution").append($("<option value='empty'>empty</option>"));
-					for (let n = 0; n < authorsDistinct._embedded.authors.length; n++){
-						let nameOfAuthor = authorsDistinct._embedded.authors[n]["author"];
-						let optionAttributionAsText = "<option value='" + nameOfAuthor + "'>" + nameOfAuthor + "</option>";
-						let optionAttributionAsObject = $(optionAttributionAsText);
-						$("#input-attribution").append(optionAttributionAsObject);
-					}
-				})
-				.catch(function (error) { console.log(error); });
-				let urlAuthorCritical = url + "/authors-critical-distinct";
-				axios({
-					method: "get",
-					url: urlAuthorCritical,
-					responseType: configurationObject.acceptMimeType
-				})
-				.then(function (response){
-					let authorsCriticalDistinct = JSON.parse(response.data);
-					$("#input-author-critical").empty();
-					$("#input-author-critical").append($("<option value='empty'>empty</option>"));
-					for (let n = 0; n < authorsCriticalDistinct._embedded.authors.length; n++){
-						let nameOfAuthorCritical = authorsCriticalDistinct._embedded.authors[n]["author-critical"];
-						let optionAuthorCriticalAsText = "<option value='" + nameOfAuthorCritical + "'>" + nameOfAuthorCritical + "</option>";
-						let optionAuthorCriticalAsObject = $(optionAuthorCriticalAsText);
-						$("#input-author-critical").append(optionAuthorCriticalAsObject);
-					}
-				})
-				.catch(function(error){ console.log(error); });
-				let urlReference = url + "/references";
-				axios({
-					method: "get",
-					url: urlReference,
-					responseType: configurationObject.acceptMimeType
-				})
-				.then(function (response){
-					let references = JSON.parse(response.data);
-					$("#psalmverse").empty();
-					$("#psalmverse").append($("<option value='empty'>empty</option>"));
-					for (let n = 0; n < references._embedded.references.length; n++){
-						let reference = references._embedded.references[n]["psalmverse"];
-						let optionReferenceAsText = "<option value='" + reference + "'>" + reference + "</option>";
-						let optionReferenceAsObject = $(optionReferenceAsText);
-						$("#psalmverse").append(optionReferenceAsObject);
-					}
-				})
-				.catch(function(error){ console.log(error); });
-			}
-			if (glossesRadioChecked === true){
-				attributionField.disabled = true;
-				authorCriticalField.disabled = true;
-				psalmverseField.disabled = true;
-			}
-			if (hexaplaricVariantRadioChecked === true){
-				attributionField.disabled = true;
-				authorCriticalField.disabled = true;
-				psalmverseField.disabled = false;
-				let selectedManuscript = document.getElementById("name-of-manuscript-select").selectedOptions[0].value;
-				let manuscriptPath = configurationObject.manuscriptPaths.get(selectedManuscript);
-				let url = configurationObject.baseUrl + "/manuscripts/" + manuscriptPath;
-				let urlReferences = url + "/hexaplaric-variants/references";
-				axios({
-					method: "get",
-					url: urlReferences,
-					responseType: configurationObject.acceptMimeType
-				})
-				.then(function (response){
-					let referencesOfHexaplaricVariants = JSON.parse(response.data);
-					$("#psalmverse").empty();
-					$("#psalmverse").append($("<option value='empty'>empty</option>"));
-					for (let n = 0; n < referencesOfHexaplaricVariants._embedded.references.length; n++){
-						let nameOfPsalm = referencesOfHexaplaricVariants._embedded.references[n]["psalmverse"];
-						let optionAttributionAsText = "<option value='" + nameOfPsalm + "'>" + nameOfPsalm + "</option>";
-						let optionAttributionAsObject = $(optionAttributionAsText);
-						$("#psalmverse").append(optionAttributionAsObject);
-					}
-				})
-				.catch(function (error) { console.log(error); });
-			}
-			if (psalmtextRadioChecked === true){
-				attributionField.disabled = true;
-				authorCriticalField.disabled = true;
-				psalmverseField.disabled = false;
-			}
 		}
 	});
 	
