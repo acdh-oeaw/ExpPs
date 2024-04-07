@@ -44,10 +44,10 @@ function manuscripts:get-list-of-manuscripts(){
             ""manuscript-name"": ""Mediolan. Ambros. B. 106 sup."",
             ""manuscript-path"": ""ambr-m-47-sup"" },{
             ""_links"": {
-                ""self"": { ""href"": ""/psalmcatenae-server/manuscripts/athen-b-n-8"" }
+                ""self"": { ""href"": ""/psalmcatenae-server/manuscripts/coislin-187"" }
                       },
-            ""manuscript-name"": ""Athen. B. N. 8"",
-            ""manuscript-path"": ""athen-b-n-8"" },{
+            ""manuscript-name"": ""Paris. Coislin 187"",
+            ""manuscript-path"": ""coislin-187"" },{
             ""links"": {
                ""self"": { ""href"": ""/psalmcatenae-server/manuscripts/bodl-auct-d-4-1"" }
                     },
