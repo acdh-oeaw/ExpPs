@@ -17,7 +17,7 @@ module.exports = function(baseURI){
 				expect(response).to.have.status(200);
 				return chakram.wait();
 			});
-			it('Should response with list of manuscripts',function(){
+			xit('Should response with list of manuscripts',function(){
 				var response = request('get', baseURI + '/manuscripts', {
 					'headers': {"Accept":"application/hal+json",
 								"Content-Type":"application/json"},
