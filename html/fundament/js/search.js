@@ -119,7 +119,7 @@ function jsonClient(){
 		let selectedManuscript = document.getElementById("name-of-manuscript-select-form-commentaryfragments").selectedOptions[0].value;
 		let manuscriptPath = configurationObject.manuscriptPaths.get(selectedManuscript);
 		let url = configurationObject.baseUrl + "/manuscripts/" + manuscriptPath;
-		let urlAttribution = url + "/authors-distinct";
+		let urlAttribution = url + "/commentaryfragments/authors-distinct";
 		axios({
 			method: "get",
 			url: urlAttribution,
@@ -165,6 +165,25 @@ function jsonClient(){
 		let selectedManuscript = document.getElementById("name-of-manuscript-select-form-glosses").selectedOptions[0].value;
 		let manuscriptPath = configurationObject.manuscriptPaths.get(selectedManuscript);
 		let url = configurationObject.baseUrl + "/manuscripts/" + manuscriptPath;
+		let urlAttribution = url + "/glosses/authors-distinct";
+		axios({
+			method: "get",
+			url: urlAttribution,
+			responseType: configurationObject.acceptMimeType
+		})
+		.then(function (response){
+			let authorsDistinct = JSON.parse(response.data);
+			$("#input-attribution-form-glosses").empty();
+			$("#input-attribution-form-glosses").append($("<option value='empty'>empty</option>"));
+			for (let n = 0; n < authorsDistinct._embedded.authors.length; n++){
+				let nameOfAuthor = authorsDistinct._embedded.authors[n]["author"];
+				let optionAttributionAsText = "<option value='" + nameOfAuthor + "'>" + nameOfAuthor + "</option>";
+				let optionAttributionAsObject = $(optionAttributionAsText);
+				$("#input-attribution-form-glosses").append(optionAttributionAsObject);
+			}
+		})
+		.catch(function (error) { console.log(error); });
+		
 		let urlReference = url + "/references";
 		axios({
 			method: "get",
