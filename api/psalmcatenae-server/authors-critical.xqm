@@ -43,7 +43,7 @@ function authors-critical:get-authors-critical-of-manuscript($manuscript-name as
     case 'vat-gr-1422' return 'vat-gr-1422-transcription.xml'
     default return error(xs:QName('response-codes:_404'),'Wrong manuscript name in path')
     let $path := "/psalmcatenae-manuscripts/" || ``[`{$manuscript}`]``
-    let $author-critical-result-fragment := for $commentaryfragment in doc($path)//tei:seg[@type = 'commentaryfragment'] return "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/manuscripts/" || $manuscript-name || "/authors-critical"" }, ""commentaryfragment"" : { ""href"" : ""/psalmcatenae-server/manuscripts/" || $manuscript-name || "/commentaryfragments/" || $commentaryfragment/@xml:id || """}}, ""author-critical"" : """ || $commentaryfragment/child::tei:quote[@type = 'patristic']/@source || """}"
+    let $author-critical-result-fragment := for $commentaryfragment in doc($path)//tei:seg[(@type = 'commentaryfragment') or (@type = 'hypothesis')] return "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/manuscripts/" || $manuscript-name || "/authors-critical"" }, ""commentaryfragment"" : { ""href"" : ""/psalmcatenae-server/manuscripts/" || $manuscript-name || "/commentaryfragments/" || $commentaryfragment/@xml:id || """}}, ""author-critical"" : """ || $commentaryfragment/child::tei:quote[@type = 'patristic']/@source || """}"
     let $authors-critical-as-json-result-fragment := string-join($author-critical-result-fragment,',')
     let $authors-critical-as-json := "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/manuscripts/" || $manuscript-name || "/authors-critical"" }}, ""_embedded"" : { ""authors-critical"" : [" || $authors-critical-as-json-result-fragment || "]}}"
     return
@@ -85,7 +85,7 @@ function authors-critical:get-authors-critical-distinct-of-manuscript($manuscrip
     case 'vat-gr-1422' return 'vat-gr-1422-transcription.xml'
     default return error(xs:QName('response-codes:_404'),'Wrong manuscript name in path')
     let $path := "/psalmcatenae-manuscripts/" || ``[`{$manuscript}`]``
-    let $author-critical-result-fragment := for $author-critical in distinct-values(doc($path)//tei:seg[@type = 'commentaryfragment']/child::tei:quote[@type = 'patristic']/@source) return "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/manuscripts/" || $manuscript-name || "/authors-critical-distinct"" }}, ""author-critical"" : """ || $author-critical || """}"
+    let $author-critical-result-fragment := for $author-critical in distinct-values(doc($path)//tei:seg[(@type = 'commentaryfragment') or (@type = 'hypothesis')]/child::tei:quote[@type = 'patristic']/@source) return "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/manuscripts/" || $manuscript-name || "/authors-critical-distinct"" }}, ""author-critical"" : """ || $author-critical || """}"
     let $authors-critical-as-json-result-fragment := string-join($author-critical-result-fragment,',')
     let $authors-as-json := "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/manuscripts/" || $manuscript-name || "/authors-critical-distinct"" }}, ""_embedded"" : { ""authors"" : [" || $authors-critical-as-json-result-fragment || "]}}"
     return
@@ -97,6 +97,135 @@ function authors-critical:get-authors-critical-distinct-of-manuscript($manuscrip
       <http:header name="Access-Control-Allow-Origin" value="{$origin}"/>
     </http:response>
   </rest:response>,``[`{$authors-as-json}`]``)
+};
+
+(:~
+ : Returns a list of normalized critical assigned authors of commentaryfragments in a given manuscript
+ :)
+declare
+    %rest:GET
+    %rest:path('/psalmcatenae-server/manuscripts/{$manuscript-name}/authors-critical-normalized')
+    %rest:produces('application/hal+json')
+function authors-critical:get-authors-critical-normalized-of-manuscript($manuscript-name as xs:string){
+  let $origin := try { request:header("Origin") } catch basex:http {'urn:local'}
+  let $manuscript := switch ($manuscript-name)
+    case 'vat-gr-754' return 'vat-gr-754-transcription.xml'
+    case 'ambr-b-106-sup' return 'ambr-b-106-sup.xml'
+    case 'ambr-m-47-sup' return 'ambr-m-47-sup.xml'
+    case 'bodl-auct-d-4-1' return 'bodl-auct-d-4-1.xml'
+    case 'coislin-10' return 'coislin-10-transcription.xml'
+    case 'coislin-12' return 'coislin-12-transcription.xml'
+    case 'coislin-187' return 'coislin-187-transcription.xml'
+    case 'franzon-3' return 'franzon-3-transcription.xml'
+    case 'mosq-syn-194' return 'mosq-syn-194.xml'
+    case 'oxon-s-trin-78' return 'oxon-s-trin-78.xml'
+    case 'par-gr-139' return 'par-gr-139.xml'
+    case 'par-gr-164' return 'par-gr-164-transcription.xml'
+    case 'par-gr-166' return 'par-gr-166-transcription.xml'
+    case 'plut-5-30' return 'plut-5-30.xml'
+    case 'plut-6-3' return 'plut-6-3.xml'
+    case 'vat-gr-1422' return 'vat-gr-1422-transcription.xml'
+    default return error(xs:QName('response-codes:_404'),'Wrong manuscript name in path')
+    let $path := "/psalmcatenae-manuscripts/" || ``[`{$manuscript}`]``
+    let $authors-normalized-of-commentaryfragments := for $commentaryfragment in doc($path)//tei:seg[(@type = 'commentaryfragment') or (@type = 'hypothesis')] return substring-after($commentaryfragment/child::tei:quote[@type = 'patristic']/@corresp,'#')
+    let $authors-with-commentaryfragments-result-fragment := for $author in doc($path)//tei:listPerson/tei:person[@role = 'author'] where $author/@xml:id = $authors-normalized-of-commentaryfragments return if (exists($author/child::tei:bibl)) then "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/manuscripts/" || $manuscript-name || "/authors-critical-normalized"" }}, ""author-critical-normalized"" : """ || $author/child::tei:persName/text() || " - " || normalize-space($author/child::tei:bibl/text()) || """}" else "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/manuscripts/" || $manuscript-name || "/authors-critical-normalized"" }}, ""author-critical-normalized"" : """ || $author/child::tei:persName/text() || """}"
+    let $authors-critical-as-json-result-fragment := string-join($authors-with-commentaryfragments-result-fragment,',')
+    let $authors-critical-as-json := "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/manuscripts/" || $manuscript-name || "/authors-critical-normalized"" }}, ""_embedded"" : { ""authors-critical-normalized"" : [" || $authors-critical-as-json-result-fragment || "]}}"
+    return
+  (<rest:response>
+    <output:serialization-parameters>
+        <output:media-type value="application/hal+json"/>
+    </output:serialization-parameters>
+    <http:response status="200" message="OK">
+      <http:header name="Access-Control-Allow-Origin" value="{$origin}"/>
+    </http:response>
+  </rest:response>,``[`{$authors-critical-as-json}`]``)
+};
+
+(:~
+ : Returns a list of normalized critical assigned authors of commentaryfragments in a given manuscript
+ :)
+declare
+    %rest:GET
+    %rest:path('/psalmcatenae-server/manuscripts/{$manuscript-name}/commentaryfragments/authors-critical-normalized')
+    %rest:produces('application/hal+json')
+function authors-critical:get-authors-critical-normalized-of-commentaryfragments-of-manuscript($manuscript-name as xs:string){
+  let $origin := try { request:header("Origin") } catch basex:http {'urn:local'}
+  let $manuscript := switch ($manuscript-name)
+    case 'vat-gr-754' return 'vat-gr-754-transcription.xml'
+    case 'ambr-b-106-sup' return 'ambr-b-106-sup.xml'
+    case 'ambr-m-47-sup' return 'ambr-m-47-sup.xml'
+    case 'bodl-auct-d-4-1' return 'bodl-auct-d-4-1.xml'
+    case 'coislin-10' return 'coislin-10-transcription.xml'
+    case 'coislin-12' return 'coislin-12-transcription.xml'
+    case 'coislin-187' return 'coislin-187-transcription.xml'
+    case 'franzon-3' return 'franzon-3-transcription.xml'
+    case 'mosq-syn-194' return 'mosq-syn-194.xml'
+    case 'oxon-s-trin-78' return 'oxon-s-trin-78.xml'
+    case 'par-gr-139' return 'par-gr-139.xml'
+    case 'par-gr-164' return 'par-gr-164-transcription.xml'
+    case 'par-gr-166' return 'par-gr-166-transcription.xml'
+    case 'plut-5-30' return 'plut-5-30.xml'
+    case 'plut-6-3' return 'plut-6-3.xml'
+    case 'vat-gr-1422' return 'vat-gr-1422-transcription.xml'
+    default return error(xs:QName('response-codes:_404'),'Wrong manuscript name in path')
+    let $path := "/psalmcatenae-manuscripts/" || ``[`{$manuscript}`]``
+    let $authors-normalized-of-commentaryfragments := for $commentaryfragment in doc($path)//tei:seg[(@type = 'commentaryfragment') or (@type = 'hypothesis')] return substring-after($commentaryfragment/child::tei:quote[@type = 'patristic']/@corresp,'#')
+    let $authors-with-commentaryfragments-result-fragment := for $author in doc($path)//tei:listPerson/tei:person[@role = 'author'] where $author/@xml:id = $authors-normalized-of-commentaryfragments return if (exists($author/child::tei:bibl)) then "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/manuscripts/" || $manuscript-name || "/commentaryfragments/authors-critical-normalized"" }}, ""author-critical-normalized"" : """ || $author/child::tei:persName/text() || " - " || normalize-space($author/child::tei:bibl/text()) || """}" else "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/manuscripts/" || $manuscript-name || "/commentaryfragments/authors-critical-normalized"" }}, ""author-critical-normalized"" : """ || $author/child::tei:persName/text() || """}"
+    let $authors-critical-as-json-result-fragment := string-join($authors-with-commentaryfragments-result-fragment,',')
+    let $authors-critical-as-json := "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/manuscripts/" || $manuscript-name || "/commentaryfragments/authors-critical-normalized"" }}, ""_embedded"" : { ""authors-critical-normalized"" : [" || $authors-critical-as-json-result-fragment || "]}}"
+    return
+  (<rest:response>
+    <output:serialization-parameters>
+        <output:media-type value="application/hal+json"/>
+    </output:serialization-parameters>
+    <http:response status="200" message="OK">
+      <http:header name="Access-Control-Allow-Origin" value="{$origin}"/>
+    </http:response>
+  </rest:response>,``[`{$authors-critical-as-json}`]``)
+};
+
+(:~
+ : Returns a list of normalized critical assigned authors of glosses in a given manuscript
+ :)
+declare
+    %rest:GET
+    %rest:path('/psalmcatenae-server/manuscripts/{$manuscript-name}/glosses/authors-critical-normalized')
+    %rest:produces('application/hal+json')
+function authors-critical:get-authors-critical-normalized-of-glosses-of-manuscript($manuscript-name as xs:string){
+  let $origin := try { request:header("Origin") } catch basex:http {'urn:local'}
+  let $manuscript := switch ($manuscript-name)
+    case 'vat-gr-754' return 'vat-gr-754-transcription.xml'
+    case 'ambr-b-106-sup' return 'ambr-b-106-sup.xml'
+    case 'ambr-m-47-sup' return 'ambr-m-47-sup.xml'
+    case 'bodl-auct-d-4-1' return 'bodl-auct-d-4-1.xml'
+    case 'coislin-10' return 'coislin-10-transcription.xml'
+    case 'coislin-12' return 'coislin-12-transcription.xml'
+    case 'coislin-187' return 'coislin-187-transcription.xml'
+    case 'franzon-3' return 'franzon-3-transcription.xml'
+    case 'mosq-syn-194' return 'mosq-syn-194.xml'
+    case 'oxon-s-trin-78' return 'oxon-s-trin-78.xml'
+    case 'par-gr-139' return 'par-gr-139.xml'
+    case 'par-gr-164' return 'par-gr-164-transcription.xml'
+    case 'par-gr-166' return 'par-gr-166-transcription.xml'
+    case 'plut-5-30' return 'plut-5-30.xml'
+    case 'plut-6-3' return 'plut-6-3.xml'
+    case 'vat-gr-1422' return 'vat-gr-1422-transcription.xml'
+    default return error(xs:QName('response-codes:_404'),'Wrong manuscript name in path')
+    let $path := "/psalmcatenae-manuscripts/" || ``[`{$manuscript}`]``
+    let $authors-normalized-of-glosses := for $gloss in doc($path)//tei:seg[@type = 'glosse'] return substring-after($gloss/child::tei:quote[@type = 'patristic']/@corresp,'#')
+    let $authors-with-glosses-result-fragment := for $author in doc($path)//tei:listPerson/tei:person[@role = 'author'] where $author/@xml:id = $authors-normalized-of-glosses return if (exists($author/child::tei:bibl)) then "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/manuscripts/" || $manuscript-name || "/glosses/authors-critical-normalized"" }}, ""author-critical-normalized"" : """ || $author/child::tei:persName/text() || " - " || normalize-space($author/child::tei:bibl/text()) || """}" else "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/manuscripts/" || $manuscript-name || "/glosses/authors-critical-normalized"" }}, ""author-critical-normalized"" : """ || $author/child::tei:persName/text() || """}"
+    let $authors-critical-as-json-result-fragment := string-join($authors-with-glosses-result-fragment,',')
+    let $authors-critical-as-json := "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/manuscripts/" || $manuscript-name || "/glosses/authors-critical-normalized"" }}, ""_embedded"" : { ""authors-critical-normalized"" : [" || $authors-critical-as-json-result-fragment || "]}}"
+    return
+  (<rest:response>
+    <output:serialization-parameters>
+        <output:media-type value="application/hal+json"/>
+    </output:serialization-parameters>
+    <http:response status="200" message="OK">
+      <http:header name="Access-Control-Allow-Origin" value="{$origin}"/>
+    </http:response>
+  </rest:response>,``[`{$authors-critical-as-json}`]``)
 };
 
 declare %private function authors-critical:write-log($message as xs:string, $severity as xs:string) {
