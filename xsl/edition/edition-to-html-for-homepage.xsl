@@ -388,6 +388,10 @@ version="2.0">
                 <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/coislin-12/commentaryfragments/</xsl:text>
                 <xsl:value-of select="substring-after(./@target,'#coislin-12:')"/>
             </xsl:if>
+            <xsl:if test="starts-with(./@target,'#coislin-187')">
+                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/coislin-187/commentaryfragments/</xsl:text>
+                <xsl:value-of select="substring-after(./@target,'#coislin-187:')"/>
+            </xsl:if>
             <xsl:if test="starts-with(./@target,'#franzon-3')">
                 <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/franzon-3/commentaryfragments/</xsl:text>
                 <xsl:value-of select="substring-after(./@target,'#franzon-3:')"/>
@@ -445,6 +449,9 @@ version="2.0">
         </xsl:if>
         <xsl:if test="starts-with(./@target,'#coislin-12')">
             <xsl:text>P5</xsl:text>
+        </xsl:if>
+        <xsl:if test="starts-with(./@target,'#coislin-187')">
+            <xsl:text>P2</xsl:text>
         </xsl:if>
         <xsl:if test="starts-with(./@target,'#franzon-3')">
             <xsl:text>G</xsl:text>
