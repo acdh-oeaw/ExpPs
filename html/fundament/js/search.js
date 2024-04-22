@@ -138,10 +138,26 @@ function jsonClient(){
 		})
 		.catch(function (error) { console.log(error); });
 		
-		$("#input-author-critical-form-commentaryfragments").empty();
-		$("#input-author-critical-form-commentaryfragments").append($("<option value='empty'>empty</option>"));
+		let urlAuthorsCriticalNormalized = url + "/commentaryfragments/authors-critical-normalized";
+		axios({
+			method: "get",
+			url: urlAuthorsCriticalNormalized,
+			responseType: configurationObject.acceptMimeType
+		})
+		.then(function (response){
+			let authorsCriticalNormalized = JSON.parse(response.data);
+			$("#input-author-critical-form-commentaryfragments").empty();
+			$("#input-author-critical-form-commentaryfragments").append($("<option value='empty'>empty</option>"));
+			for (let n = 0; n < authorsCriticalNormalized._embedded["authors-critical-normalized"].length; n++){
+				let nameOfAuthorCriticalNormalized = authorsCriticalNormalized._embedded["authors-critical-normalized"][n]["author-critical-normalized"];
+				let optionAuthorCriticalAsText = "<option value = '" + nameOfAuthorCriticalNormalized + "'>" + nameOfAuthorCriticalNormalized + "</option>";
+				let optionAuthorCriticalAsObject = $(optionAuthorCriticalAsText);
+				$("#input-author-critical-form-commentaryfragments").append(optionAuthorCriticalAsObject);
+			}
+		})
+		.catch(function (error) { console.log(error); });
 		
-		let urlReference = url + "/references";
+		let urlReference = url + "/commentaryfragments/references";
 		axios({
 			method: "get",
 			url: urlReference,
@@ -184,7 +200,26 @@ function jsonClient(){
 		})
 		.catch(function (error) { console.log(error); });
 		
-		let urlReference = url + "/references";
+		let urlAuthorsCriticalNormalized = url + "/glosses/authors-critical-normalized";
+		axios({
+			method: "get",
+			url: urlAuthorsCriticalNormalized,
+			responseType: configurationObject.acceptMimeType
+		})
+		.then(function (response){
+			let authorsCriticalNormalized = JSON.parse(response.data);
+			$("#input-author-critical-form-glosses").empty();
+			$("#input-author-critical-form-glosses").append($("<option value='empty'>empty</option>"));
+			for (let n = 0; n < authorsCriticalNormalized._embedded["authors-critical-normalized"].length; n++){
+				let authorCriticalNormalized = authorsCriticalNormalized._embedded["authors-critical-normalized"][n]["author-critical-normalized"];
+				let optionAuthorCriticalAsText = "<option value='" + authorCriticalNormalized + "'>" + authorCriticalNormalized + "</option>";
+				let optionAuthorCriticalAsObject = $(optionAuthorCriticalAsText);
+				$("#input-author-critical-form-glosses").append(optionAuthorCriticalAsObject);
+			}
+		})
+		.catch(function (error) { console.log(error); });
+		
+		let urlReference = url + "/glosses/references";
 		axios({
 			method: "get",
 			url: urlReference,
@@ -208,7 +243,7 @@ function jsonClient(){
 		let selectedManuscript = document.getElementById("name-of-manuscript-select-form-hexaplaric-variants").selectedOptions[0].value;
 		let manuscriptPath = configurationObject.manuscriptPaths.get(selectedManuscript);
 		let url = configurationObject.baseUrl + "/manuscripts/" + manuscriptPath;
-		let urlReference = url + "/references";
+		let urlReference = url + "/hexaplaric-variants/references";
 		axios({
 			method: "get",
 			url: urlReference,
@@ -353,6 +388,7 @@ function jsonClient(){
 					else if (urlOfCommentaryfragment.includes('bodl-auct-d-4-1')){ urlFragmentForLinkToTranscription = 'bodl_auct_d_4_1.html'; }
 					else if (urlOfCommentaryfragment.includes('coislin-10')){ urlFragmentForLinkToTranscription = 'coislin_10.html'; }
 					else if (urlOfCommentaryfragment.includes('coislin-12')){ urlFragmentForLinkToTranscription = 'coislin_12.html'; }
+					else if (urlOfCommentaryfragment.includes('coislin-187')){ urlFragmentForLinkToTranscription = 'coislin-187.html'; }
 					else if (urlOfCommentaryfragment.includes('franzon-3')){ urlFragmentForLinkToTranscription = 'franzon_3.html'; }
 					else if (urlOfCommentaryfragment.includes('mosq-syn-194')){ urlFragmentForLinkToTranscription = 'mosq_syn_194.html'; }
 					else if (urlOfCommentaryfragment.includes('oxon-s-trin-78')){ urlFragmentForLinkToTranscription = 'oxon_s_trin_78.html'; }
