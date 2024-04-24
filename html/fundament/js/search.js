@@ -350,7 +350,7 @@ function jsonClient(){
 			}
 			$(divForMessage).append($("<p>" + message + "</p>"));
 			for (let n = 0; n < hexaplaricVariants._embedded["hexaplaric-variants"].length; n++){
-				let attribution = hexaplaricVariants._embedded["hexaplaric-variants"][n]["attribution"];
+				let attribution = hexaplaricVariants._embedded["hexaplaric-variants"][n]["critical-attribution"];
 				let urlOfHexaplaricVariant = configurationObject.baseUrl + hexaplaricVariants._embedded["hexaplaric-variants"][n]["_links"]["self"]["href"].substring("/psalmcatenae-server".length);
 				let positionOfId = hexaplaricVariants._embedded["hexaplaric-variants"][n]["_links"]["self"]["href"].lastIndexOf('/');
 				let idOfLink = hexaplaricVariants._embedded["hexaplaric-variants"][n]["_links"]["self"]["href"].substring(positionOfId + 1);
@@ -539,7 +539,7 @@ function jsonClient(){
 		let selectedManuscript = document.getElementById("name-of-manuscript-select-form-commentaryfragments").selectedOptions[0].value;
 		let manuscriptPath = configurationObject.manuscriptPaths.get(selectedManuscript);
 		let url = configurationObject.baseUrl + "/manuscripts/" + manuscriptPath;
-		configurationObject.object = "hexaplaric-variants";
+		configurationObject.object = "hexaplaricVariants";
 		configurationObject.mode = "data";
 		url = url + "/hexaplaric-variants";
 		url = url + "/search";
