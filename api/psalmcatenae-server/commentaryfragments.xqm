@@ -122,7 +122,7 @@ function commentaryfragments:get-list-of-commentaryfragments-from-manuscript($ma
   };
   
   (:~
- : Returns a list of available commentaryfragments from a given transcribed manuscript 
+ : Returns a list of available commentaryfragments from a given transcribed manuscript determined by search parameters 
  :)
 declare
     %rest:GET
@@ -154,17 +154,18 @@ function commentaryfragments:get-list-of-commentaryfragments-from-manuscript-sea
     let $path := "/psalmcatenae-manuscripts/" || ``[`{$manuscript}`]``
     let $commentaryfragments-result-fragment := for $commentaryfragment in doc($path)//tei:seg[(@type = 'commentaryfragment') or (@type = 'hypothesis')] 
        let $author-from-source := $commentaryfragment/@source
-       let $author-critical-from-source := $commentaryfragment/child::tei:quote[@type = 'patristic']/@source
+       let $author-critical-from-source := substring-after($commentaryfragment/child::tei:quote[@type = 'patristic']/@corresp,'#')
+       let $author-critical-id := for $author in doc($path)//tei:listPerson/tei:person[@role = 'author'] where if (exists($author/child::tei:bibl)) then (concat($author/child::tei:persName/text(),' - ',$author/child::tei:bibl/text()) = $author-critical) else ($author/child::tei:persName/text() = $author-critical) return $author/@xml:id
        let $reference-of-commentaryfragment := substring-after($commentaryfragment/@corresp,'#')
        let $references-from-source := for $psalmtext in doc($path)//tei:quote[@type = 'bibletext'] 
          where $psalmtext/@n = $reference
          return $psalmtext/child::tei:anchor[@type = 'psalmtext']/@xml:id
        where 
-         if ($author != '') then if ($author-critical != '') then if ($reference != '') then ($author-from-source = $author) and ($author-critical-from-source = $author-critical) and ($reference-of-commentaryfragment = $references-from-source) 
-                                                                  else ($author-from-source = $author) and ($author-critical-from-source = $author-critical) 
+         if ($author != '') then if ($author-critical != '') then if ($reference != '') then ($author-from-source = $author) and ($author-critical-from-source = $author-critical-id) and ($reference-of-commentaryfragment = $references-from-source) 
+                                                                  else ($author-from-source = $author) and ($author-critical-from-source = $author-critical-id) 
                                  else if ($reference != '') then ($reference-of-commentaryfragment = $references-from-source) and ($author-from-source = $author)         else ($author-from-source = $author) 
-         else if ($author-critical != '') then if ($reference != '') then ($author-critical-from-source = $author-critical) and ($reference-of-commentaryfragment = $references-from-source) 
-                                               else ($author-critical-from-source = $author-critical)
+         else if ($author-critical != '') then if ($reference != '') then ($author-critical-from-source = $author-critical-id) and ($reference-of-commentaryfragment = $references-from-source) 
+                                               else ($author-critical-from-source = $author-critical-id)
               else if ($reference != '') then ($reference-of-commentaryfragment = $references-from-source) else (1 = 1) 
        return "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/manuscripts/" || $manuscript-name || "/commentaryfragments/" || $commentaryfragment/@xml:id || """}}, ""attribution"" : """ || $commentaryfragment/@source ||""", ""author-critical"" : """ || $commentaryfragment/child::tei:quote[@type = 'patristic']/@source || """}"
     let $commentaryfragments-as-json-result-fragment := string-join($commentaryfragments-result-fragment,',')
