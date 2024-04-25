@@ -165,6 +165,61 @@ function glosses:get-gloss-from-manuscript($manuscript-name as xs:string,$gloss-
   </rest:response>,``[`{$gloss-as-json}`]``)
 };
 
+(:~
+ : Returns a list of available glosses from a given transcribed manuscript determined by search parameters 
+ :)
+declare
+    %rest:GET
+    %rest:path('/psalmcatenae-server/manuscripts/{$manuscript-name}/glosses/search')
+    %rest:query-param("author", "{$author}", '')
+    %rest:query-param("author-critical", "{$author-critical}", '')
+    %rest:query-param("reference", "{$reference}", '')
+    %rest:produces('application/hal+json')
+function glosses:get-list-of-glosses-from-manuscript-search($manuscript-name as xs:string,$author as xs:string,$author-critical as xs:string,$reference as xs:string){
+  let $origin := try { request:header("Origin") } catch basex:http {'urn:local'}
+  let $manuscript := switch ($manuscript-name)
+    case 'vat-gr-754' return 'vat-gr-754-transcription.xml'
+    case 'ambr-b-106-sup' return 'ambr-b-106-sup.xml'
+    case 'ambr-m-47-sup' return 'ambr-m-47-sup.xml'
+    case 'bodl-auct-d-4-1' return 'bodl-auct-d-4-1.xml'
+    case 'coislin-10' return 'coislin-10-transcription.xml'
+    case 'coislin-12' return 'coislin-12-transcription.xml'
+    case 'coislin-187' return 'coislin-187-transcription.xml'
+    case 'franzon-3' return 'franzon-3-transcription.xml'
+    case 'mosq-syn-194' return 'mosq-syn-194.xml'
+    case 'oxon-s-trin-78' return 'oxon-s-trin-78.xml'
+    case 'par-gr-139' return 'par-gr-139.xml'
+    case 'par-gr-164' return 'par-gr-164-transcription.xml'
+    case 'par-gr-166' return 'par-gr-166-transcription.xml'
+    case 'plut-5-30' return 'plut-5-30.xml'
+    case 'plut-6-3' return 'plut-6-3.xml'
+    case 'vat-gr-1422' return 'vat-gr-1422-transcription.xml'
+    default return error(xs:QName('response-codes:_404'),'Wrong manuscript name in path')
+    let $path := "/psalmcatenae-manuscripts/" || ``[`{$manuscript}`]``
+    let $glosses-result-fragment := for $gloss in doc($path)//tei:seg[@type = 'glosse'] 
+       let $author-from-source := $gloss/@source
+       let $author-critical-from-source := substring-after($gloss/child::tei:quote[@type = 'patristic']/@corresp,'#')
+       let $author-critical-id := for $author in doc($path)//tei:listPerson/tei:person[@role = 'author'] where if (exists($author/child::tei:bibl)) then (concat($author/child::tei:persName/text(),' - ',$author/child::tei:bibl/text()) = $author-critical) else ($author/child::tei:persName/text() = $author-critical) return $author/@xml:id
+       let $reference-of-gloss := substring-after($gloss/@corresp,'#')
+       let $references-from-source := for $psalmtext in doc($path)//tei:quote[@type = 'bibletext'] 
+         where $psalmtext/@n = $reference
+         return $psalmtext/child::tei:anchor[@type = 'psalmtext']/@xml:id
+       where 
+         if ($author != '') then if ($author-critical != '') then if ($reference != '') then ($author-from-source = $author) and ($author-critical-from-source = $author-critical-id) and ($reference-of-gloss = $references-from-source) else ($author-from-source = $author) and ($author-critical-from-source = $author-critical-id) else if ($reference != '') then ($reference-of-gloss = $references-from-source) and ($author-from-source = $author) else ($author-from-source = $author) else if ($author-critical != '') then if ($reference != '') then ($author-critical-from-source = $author-critical-id) and ($reference-of-gloss = $references-from-source) else ($author-critical-from-source = $author-critical-id) else if ($reference != '') then ($reference-of-gloss = $references-from-source) else (1 = 1) 
+       return "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/manuscripts/" || $manuscript-name || "/glosses/" || $gloss/@xml:id || """}}, ""attribution"" : """ || $gloss/@source ||""", ""author-critical"" : """ || $gloss/child::tei:quote[@type = 'patristic']/@source || """}"
+    let $glosses-as-json-result-fragment := string-join($glosses-result-fragment,',')
+    let $glosses-as-json := "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/manuscripts/" || $manuscript-name || "/glosses/search"" }}, ""_embedded"" : { ""glosses"" : [" || $glosses-as-json-result-fragment || "]}}"
+    return
+  (<rest:response>
+    <output:serialization-parameters>
+        <output:media-type value="application/hal+json"/>
+    </output:serialization-parameters>
+    <http:response status="200" message="OK">
+      <http:header name="Access-Control-Allow-Origin" value="{$origin}"/>
+    </http:response>
+  </rest:response>,``[`{$glosses-as-json}`]``)
+  };
+
 declare %private function glosses:write-log($message as xs:string, $severity as xs:string) {
   if ($glosses:enable-trace) then admin:write-log($message, $severity) else ()
 };

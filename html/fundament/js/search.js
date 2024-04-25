@@ -350,7 +350,7 @@ function jsonClient(){
 			}
 			$(divForMessage).append($("<p>" + message + "</p>"));
 			for (let n = 0; n < hexaplaricVariants._embedded["hexaplaric-variants"].length; n++){
-				let attribution = hexaplaricVariants._embedded["hexaplaric-variants"][n]["attribution"];
+				let attribution = hexaplaricVariants._embedded["hexaplaric-variants"][n]["critical-attribution"];
 				let urlOfHexaplaricVariant = configurationObject.baseUrl + hexaplaricVariants._embedded["hexaplaric-variants"][n]["_links"]["self"]["href"].substring("/psalmcatenae-server".length);
 				let positionOfId = hexaplaricVariants._embedded["hexaplaric-variants"][n]["_links"]["self"]["href"].lastIndexOf('/');
 				let idOfLink = hexaplaricVariants._embedded["hexaplaric-variants"][n]["_links"]["self"]["href"].substring(positionOfId + 1);
@@ -496,6 +496,56 @@ function jsonClient(){
 			else{
 				url = url + "&reference=" + psalmverseFieldValue;
 			}
+		}
+		request(url,"get")
+	});
+	
+	$("#search-glosses-submit").click(function(event){
+		event.preventDefault();
+		let selectedManuscript = document.getElementById("name-of-manuscript-select-form-commentaryfragments").selectedOptions[0].value;
+		let manuscriptPath = configurationObject.manuscriptPaths.get(selectedManuscript);
+		let url = configurationObject.baseUrl + "/manuscripts/" + manuscriptPath;
+		configurationObject.object = "glosses";
+		configurationObject.mode = "data";
+		url = url + "/glosses";
+		url = url + "/search";
+		let attributionFieldValue = document.getElementById("input-attribution-form-glosses").value;
+		let authorCriticalFieldValue = document.getElementById("input-author-critical-form-glosses").value;
+		let psalmverseFieldValue = document.getElementById("psalmverse-form-glosses").value;
+		if (attributionFieldValue != "empty"){
+			url = url + "?author=" + attributionFieldValue;
+		}
+		if (authorCriticalFieldValue != "empty"){
+			if (attributionFieldValue === "empty"){
+				url = url + "?author-critical=" + authorCriticalFieldValue;
+			}
+			else{
+				url = url + "&author-critical=" + authorCriticalFieldValue;
+			}
+		}
+		if (psalmverseFieldValue != "empty"){
+			if (attributionFieldValue === "empty" && authorCriticalFieldValue === "empty"){
+				url = url + "?reference=" + psalmverseFieldValue;
+			}
+			else{
+				url = url + "&reference=" + psalmverseFieldValue;
+			}
+		}
+		request(url,"get")
+	});
+	
+	$("#search-hexaplaric-variants-submit").click(function(event){
+		event.preventDefault();
+		let selectedManuscript = document.getElementById("name-of-manuscript-select-form-commentaryfragments").selectedOptions[0].value;
+		let manuscriptPath = configurationObject.manuscriptPaths.get(selectedManuscript);
+		let url = configurationObject.baseUrl + "/manuscripts/" + manuscriptPath;
+		configurationObject.object = "hexaplaricVariants";
+		configurationObject.mode = "data";
+		url = url + "/hexaplaric-variants";
+		url = url + "/search";
+		let psalmverseFieldValue = document.getElementById("psalmverse-form-hexaplaric-variants").value;
+		if (psalmverseFieldValue != "empty"){
+			url = url + "?reference=" + psalmverseFieldValue;
 		}
 		request(url,"get")
 	});
