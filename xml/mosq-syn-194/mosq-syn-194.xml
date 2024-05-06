@@ -2,14 +2,21 @@
 <?xml-model href="../../schema/tei-psalmcatenae.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="../../schema/tests-for-transcription.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-   <!-- //seg/@corresp -->
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Mosq. Synod. 194 - Transcription</title>
+            <title>Mosq. Sinod. gr. 194 (CPG C17; Rahlfs 1104) - Catena Type IV (Secondary
+               Catena)</title>
+            <title type="subtitle">List of Contents (Ps 1 to Ps 2) and Transcription of
+               (Ps.)-Athanasius, Expositiones in Psalmos (Ps 1 to Ps 18) - Under
+               Construction</title>
             <respStmt>
-               <resp>transcribed by</resp>
+               <resp>by</resp>
                <persName>Sebastiano Panteghini</persName>
+            </respStmt>
+            <respStmt>
+               <resp>encoded by</resp>
+               <persName>Sebastiano Panteghini (Ps 1 to Ps 18)</persName>
             </respStmt>
          </titleStmt>
          <publicationStmt>
@@ -18,7 +25,7 @@
                <licence target="https://creativecommons.org/licenses/by/4.0/">Available under the
                   Creative Commons Attribution 4.0 International (CC BY 4.0)</licence>
             </availability>
-            <date>2021-11-11</date>
+            <date>2024-05-06</date>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -26,7 +33,7 @@
                   <country>Russia</country>
                   <settlement>Moskau</settlement>
                   <repository>Gosudarstvennyj Istoričeskij Musej (GIM)</repository>
-                  <idno>Mosq. Synod. 194</idno>
+                  <idno>Mosq. Sinod. gr. 194</idno>
                   <altIdentifier>
                      <idno type="pinakes" corresp="https://pinakes.irht.cnrs.fr/notices/cote/43819/"
                         >43819</idno>
@@ -34,29 +41,55 @@
                </msIdentifier>
                <msContents>
                   <msItem n="1">
-                     <locus>fols. 273</locus>
-                     <title>Catena in Psalmos et Cantica</title>
+                     <locus>f. 1–7v</locus>
+                     <title>prolegomena in Psalmos</title>
+                  </msItem>
+                  <msItem n="2">
+                     <locus>f. 8r–255v</locus>
+                     <title>Catena marginalis (frame catena) in Ps 1–150</title>
+                  </msItem>
+                  <msItem n="3">
+                     <locus>f. 255v</locus>
+                     <title>Ps 151</title>
+                  </msItem>
+                  <msItem n="4">
+                     <locus>f. 256r–272r</locus>
+                     <title>Catena marginalis in Odas</title>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="perg">
                         <support>parchment</support>
+                        <extent>
+                           <dimensions scope="all" type="leaf" unit="mm">
+                              <height>286</height>
+                              <width>226</width>
+                           </dimensions>
+                        </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout>Fols. 8r-255v contain a bordercatena.</layout>
+                        <layout><p>273 ff., different lines per page</p></layout>
                      </layoutDesc>
                   </objectDesc>
+                  <scriptDesc>
+                     <p>calligraphic but rather rigid hand</p>
+                     <p>rich repertoire of handwriting abbreviations</p>
+                     <p>numerous orthographic deviations</p>
+                  </scriptDesc>
+                  <decoDesc>
+                     <p>absent</p>
+                  </decoDesc>
                </physDesc>
                <history>
-                  <p>Written in the 11th century.</p>
+                  <p>Written in the 11th century</p>
                </history>
             </msDesc>
             <listPerson>
                <head>Authors</head>
                <person xml:id="person-1" role="author">
                   <persName>Asterius</persName>
-                  <bibl corresp="#bibliography-title-1">Asterius, fr. (Richard)</bibl>
+                  <bibl corresp="#bibliography-title-1">Asterius, fr. in catenis (Richard)</bibl>
                </person>
                <person xml:id="person-2" role="author">
                   <persName>Athanasius Alexandrinus</persName>
@@ -64,7 +97,7 @@
                </person>
                <person xml:id="person-3" role="author">
                   <persName>Basilius Caesariensis</persName>
-                  <bibl corresp="#bibliography-title-4">Basilius, hom. in Ps (PG 29)</bibl>
+                  <bibl corresp="#bibliography-title-4">Basilius, hom. in Psalmos (PG 29)</bibl>
                </person>
                <person xml:id="person-4" role="author">
                   <persName>Cyrillus Alexandrinus</persName>
@@ -205,7 +238,7 @@
                </person>
                <person xml:id="person-38" role="author" sameAs="#person-13">
                   <persName>Origenes</persName>
-                  <bibl>Origenes, schol. (PG 23)</bibl>
+                  <bibl>Origenes, schol. (?) (PG 23)</bibl>
                </person>
                <person xml:id="person-39" role="author">
                   <persName>Tarasius patriarcha Constantinopolitanus</persName>
@@ -343,19 +376,78 @@
                   <persName>Isidorus Pelusiota </persName>
                   <bibl>Isidorus, ep. (PG 78)</bibl>
                </person>
+               <person xml:id="person-73" role="author" sameAs="#person-6">
+                  <persName>Didymus Alexandrinus</persName>
+                  <bibl>fr. (ineditum?); non habet Mühlenberg</bibl>
+               </person>
+               <person xml:id="person-74" role="author">
+                  <persName>Apolinaris Laodiceus</persName>
+                  <bibl>Apolinaris Laod., fr. (Mühlenberg)</bibl>
+               </person>
+               <person xml:id="person-75" role="author" sameAs="#person-10">
+                  <persName>Hesychius Hierosolymitanus</persName>
+                  <bibl>Hesychius, schol. (ineditum?)</bibl>
+               </person>
+               <person xml:id="person-76" role="author">
+                  <persName>Arethas episcopus Caesareae </persName>
+                  <bibl>Arethas episcopus Caesareae, fr. (ineditum)</bibl>
+               </person>
+               <person xml:id="person-77" role="author">
+                  <persName>(Ps)-Basilius Caesariensis</persName>
+                  <bibl>Basilius, Is. comm. (PG 30; Edition von Trevisan [1939] nicht
+                     zugänglich)</bibl>
+               </person>
+               <person xml:id="person-78" role="author" sameAs="#person-20">
+                  <persName>Gregorius Nazianzenus</persName>
+                  <bibl>Gregorius Naz., or. 32–37 (Moreschini – Gallay; SC 318)</bibl>
+               </person>
+               <person xml:id="person-79" role="author" sameAs="#person-13">
+                  <persName>Origenes, Scholia in Psalmos</persName>
+                  <bibl>Origenes, schol. (?) (PG 27)</bibl>
+               </person>
+               <person xml:id="person-80" role="author" sameAs="#person-28">
+                  <persName>Ιohannes Chrysostomus</persName>
+                  <bibl>Ιohannes Chrys., In ascensionem Sermo 4 etc. (PG 52)</bibl>
+               </person>
+               <person xml:id="person-81" role="author" sameAs="#person-28">
+                  <persName>Ιohannes Chrysostomus</persName>
+                  <bibl>Ιohannes Chrys., In illud: Dominus regnauit (Ps. 96, 1) et in illud: Dies
+                     diei dicit uerbum (Ps. 18, 3) = CPG 4738 </bibl>
+               </person>
+               <person xml:id="person-82" role="author" sameAs="#person-24">
+                  <persName>Gregorius Nyssenus</persName>
+                  <bibl>Gregorius Nyssenus, De virginitate (Aubineau; SC 119)</bibl>
+               </person>
+               <person xml:id="person-83" role="author">
+                  <persName>Maximus Confessor</persName>
+                  <bibl>qu. dub. (Declerck; CCSG 10)</bibl>
+               </person>
+               <person xml:id="person-84" role="author" sameAs="#person-66">
+                  <persName>Iohannes Chrysostomus</persName>
+                  <bibl>Ps.-Ιohannes Chrys., remiss. (PG 60; CPG 4629)</bibl>
+               </person>
             </listPerson>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
             <punctuation>
-               <p>The punctuation has been simplified. Only codepoints 0387 (hex) "GREEK ANO
-                  TELEIA", 00B7 (hex) "MIDDLE DOT", 2022 (hex) "BULLET", 205D (hex) "TRICOLON" and
-                  003A (hex) "COLON" are used in the transcription.</p>
+               <p>The punctuation faithfully reproduces that of the manuscript, where it is
+                  unambiguous. It makes use of the three dots inherited from ancient interpunctive
+                  theory: high dot or τελεία στιγμή (·) at the end of the sentence; middle dot or
+                  μέση στιγμή (·) between clauses (κῶλα); low dot or ὐποστιγμή (.) before the part
+                  that gives fulfillment to the sentence. Manuscript practice may deviate from these
+                  rules. The following codepoints are used in the transcription: 0387 (hex) "GREEK
+                  ANO TELEIA", 00B7 (hex) "MIDDLE DOT", 002E (hex) "FULL STOP", 002C (hex) "COMMA",
+                  2022 (hex) "BULLET", 2058 (hex) "FOUR DOT PUNCTUATION",
+                  <!-- 205D (hex) "TRICOLON"  --> and 003A (hex) "COLON".</p>
             </punctuation>
             <normalization>
-               <p>The text is silently simplified in all respects. Only semantically relevant
-                  information like additions or deletions are mentioned.</p>
+               <p>The transcription of the fragments is semi-diplomatic: orthographic peculiarities
+                  of the manuscript are not normalized but the resolution of abbreviations is not
+                  indicated by round brackets. Exceptions are tachygraphic (ἐστί) and φη(σί)
+                  abbreviated by suspension. Phenomena related to the writing process like
+                  additions, deletions, substitutions, or corrections are documented.</p>
             </normalization>
          </editorialDecl>
          <listPrefixDef>
@@ -5090,149 +5182,140 @@
                   μου ἐνώπιόν σου διὰ παντός, <anchor type="psalmtext" n="Ps (LXX) 18,15c"
                      xml:id="mosq-syn-194-ps-18-15c"/> κύριε βοηθέ μου καὶ λυτρωτά μου. </quote>
             </div>
+            <!-- Ps 18 commentary -->
             <div type="commentary" subtype="commentary" xml:id="mosq-syn-194-18-2">
                <ab xml:lang="grc">
-                  <!-- Ps 18 commentary -->
-                  <div type="commentary" subtype="commentary" xml:id="mosq-syn-194-18-2">
-                     <ab xml:lang="grc">
-                        <note type="lemma">linking absent</note>
-                        <seg type="hypothesis" xml:id="mosq-syn-194-fr-18-1"
-                           rendition="#bottom-middle" source="Theodoretus"
-                           corresp="#mosq-syn-194-ps-18-1-1" copyOf="#edition:edition-18-1-1"><quote
-                              type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-18-1"
-                              source="Athanasius, exp. in Ps 18,1" corresp="#person-2">Εἰσαγωγικὴν
-                              διδασκαλίαν περιἔχει ὁ παρὼν ψαλμὸς ἐκ προσώπου τῶν ἀποστόλων πρὸς τὰ
-                              ἔθνη· διὃ καὶ οὐρανὸν καὶ ἥλιον καὶ τὰ ἕτερα στοιχεῖα οὓς καὶ μεγάλους
-                              ὠνομάζον θεοὺς ταῦτα ἀνὑμνεῖ τὸν ποιητὴν αὐτῶν λέγει: –</quote><ref
-                              target="#vat-gr-754:vat-gr-754-fr-18-1" type="with-variants">Vat. gr.
-                              754</ref><note type="attribution" xml:lang="grc">Θεοδ(ωρήτου) </note>
-                        </seg>
-                     </ab>
-                  </div>
-                  <pb n="36r"/>
-                  <div type="commentary" subtype="commentary" xml:id="mosq-syn-194-18-3">
-                     <ab xml:lang="grc">
-                        <note type="lemma">linking absent</note>
-                        <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-18-2"
-                           rendition="#middle-bottom" source="Didymus"
-                           corresp="#mosq-syn-194-ps-18-4a" copyOf="#edition:edition-18-4-1"><quote
-                              type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-18-2"
-                              source="Athanasius, exp. in Ps 18,4–5b" corresp="#person-2"
-                              >Καθὑποστιγμὴν ἡ ἀνάγνωσις· ἀντιπίπτον δὲ ὑποτέμνεται· τὸ δὲ
-                              ἀντιπίπτον (ἐστὶ) καὶ μὴν οὐ φθέγγονται διὃ λέγει ἄρα οὐκ εἰσὶν τινὰ
-                              πράγματα ἃ καὶ μὴ ἀφιέντα φωνὴν τὸν τεχνήτην ἀνακηρύττουσιν· ναὶ μήν
-                              καὶ γὰρ ἐκ τῆς καλῶς ἡρμοσμένης νηὸς ἡ τέχνη τοῦ ναυπηγοῦ φαίνεται·
-                              καὶ ἐπιτῶν ἄλλων δὲ ὡσἅυτως· οὐκ οὖν καὶ τὰ ποιήματα προειρημένα οὕτω
-                              κηρύττει ἀπομεγέθους καὶ καλλονῆς καὶ εὐἀρμοστίας τὸν δημιουργὸν· ὡς
-                              εἰς πᾶσαν αὐτῶν τὴν οἰκουμένην διαδραμὴν τὸ κήρυγμα:</quote><ref
-                              target="#vat-gr-754:vat-gr-754-fr-18-7" type="with-variant">Vat. gr.
-                              754</ref><note type="attribution" xml:lang="grc">Διδ(υμου)</note>
-                        </seg>
-                        <note type="lemma">linking absent</note>
-                        <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-18-3"
-                           rendition="#bottom-bottom" source="Theodoretus"
-                           corresp="#mosq-syn-194-ps-18-5c" copyOf="#edition:edition-18-5-1"><quote
-                              type="patristic" subtype="quotation-abbreviated"
-                              xml:id="mosq-syn-194-quot-18-3" source="Athanasius, exp. in Ps 18,5c"
-                              corresp="#person-2">τῶ ἡλίω φη(σὶν) ἔθετο σκήνωμα ἤτοι οἶκον ὃν καὶ
-                              παστὸν ὠνόμασεν· ὥσπερ δὲ ἡμέρα καὶ νὺξ τῆ εὐτάκτω συμφωνία κηρύττουσι
-                              τὸν δημιουργὸν οὕτω καὶ ἥλιος τὸ τὸν δρόμον μετά τινος εὐαρμοστείας
-                              ποιεῖσθαι δηλοῖ τοῦ προστάττοντος τὴν δύναμιν: –</quote><ref
-                              target="#vat-gr-754:vat-gr-754-fr-18-9"
-                              type="abbrevaited-with-variants">Vat. gr. 754</ref><note
-                              type="attribution" xml:lang="grc">Θεοδ(ωρήτου)</note>
-                        </seg>
-                        <note type="lemma">linking absent</note>
-                        <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-18-4"
-                           rendition="#bottom-top" source="Origenes"
-                           corresp="#mosq-syn-194-ps-18-8a" copyOf="#edition:edition-18-8-1"><quote
-                              type="patristic" subtype="quotation/quotation-adapted"
-                              xml:id="mosq-syn-194-quot-18-4"
-                              source="Evagrius, schol. nr. δ´ in Ps 18,8a (410 Rondeau – Géhin – Cassin) - Athanasius, exp. in Ps 18,8a"
-                              corresp="#person-21 #person-2">Ζητητέον πότερον ἀ<unclear
-                                 reason="ductus">πο</unclear>κακίας ἐπιστρέφων ἐπὶ τὴν ἀρετὴν ἢ ἀπὸ
-                              τῶν αἰσθητῶν ἐπιτανοητά· καὶ τάχα τὸ δεῦτερον<supplied reason="om"
-                                 resp="SPanteghini">·</supplied> τὸ γὰρ πρότερον ἡ ἐντολῆ πέφυκε
-                              ποιεῖν / νόμον τὸν εὐἀγγελικὸν δῆλονότι<supplied reason="om"
-                                 resp="SPanteghini">·</supplied> ὡς ἤδη δὲ ἀπὸ τῶν προεἰρημένων
-                              στοιχείων παιδαγογηθέντες οἳ ἐξεθνῶν ἕνα εἶναι τὸν δημιουργὸν
-                              διδάσκονται λοιπὸν καὶ τὸν εὐἀγγελικὸν νόμον ὡς καὶ ἐπέστρεψεν τῶν
-                              ἐθνῶν ἀπάντων τὰς ψυχὰς εἰς ἀλήθειαν: –</quote><ref
-                              target="#vat-gr-754:vat-gr-754-fr-18-15" type="identical">Vat. gr.
-                              754</ref><ref target="#vat-gr-754:vat-gr-754-fr-18-17"
-                              type="with-adaptation-and-variants">Vat. gr. 754</ref><note
-                              type="attribution" xml:lang="grc">ωρ(ι)γ(ένους)</note>
-                        </seg>
-                        <note type="lemma">linking absent</note>
-                        <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-18-5"
-                           rendition="#psalm-column" source="Anonymous"
-                           corresp="#mosq-syn-194-ps-18-8b" copyOf="#edition:edition-18-8-2"><quote
-                              type="patristic"
-                              subtype="quotation/quotation/quotation-adapted-and-abbreviated"
-                              xml:id="mosq-syn-194-quot-18-5"
-                              source="Maximus Conf., qu. dub. 186 (126,3–127,7 Declerck; CCSG 10) in Ps Ps 18,6b - Evagrius, schol. nr. γ´ in Ps 18,7c (408 Rondeau – Géhin – Cassin) - Athanasius, exp. in Ps 18,8b"
-                              corresp="#person-83 #person-21 #person-2">... / ἢ ἐμαρτύρησεν περὶ
-                              αὐτοῦ ὁ μονογενῆς τὸ ἐγὼ φῶς εἰς τὸν κόσμον ἐ<unclear
-                                 reason="poor-image">λ</unclear>ήλυθ<unclear reason="poor-image"
-                                 >α</unclear>· [Ioh 12,46] καὶ ἐγὼ <unclear reason="poor-image"
-                                 >ἐκ</unclear>
-                              <unclear reason="poor-image">τ</unclear>οῦ <unclear
-                                 reason="poor-image">πατρὸς</unclear> ἐξῆλθον [cf. Ioh 8,42; 16,28]
-                              καὶ ἐγώ εἰμι ἡ ζωή: [cf. Ioh 14,6]</quote><ref
-                              target="#vat-gr-754:vat-gr-754-fr-18-12" type="with-variants">Vat. gr.
-                              754</ref><ref target="#vat-gr-754:vat-gr-754-fr-18-14"
-                              type="with-variant">Vat. gr. 754</ref><ref
-                              target="#vat-gr-754:vat-gr-754-fr-18-19"
-                              type="abbreviated-with-adaptation-and-variant">Vat. gr. 754</ref>
-                        </seg>
-                     </ab>
-                  </div>
-                  <pb n="37r"/>
-                  <div type="commentary" subtype="commentary" xml:id="mosq-syn-194-18-4">
-                     <ab xml:lang="grc">
-                        <note type="lemma">Ps 18,15a</note>
-                        <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-18-6"
-                           rendition="#top-middle" source="Anonymous"
-                           corresp="#mosq-syn-194-ps-18-15a" copyOf="#edition:edition-18-15-1"
-                              ><quote type="patristic" subtype="quotation"
-                              xml:id="mosq-syn-194-quot-18-6"
-                              source="Athanasius, exp. in Ps 18,13–15" corresp="#person-2">Ὁ
-                              μυσταγωγηθῆς τῶ νόμω λαὸς τῶ εὐαγγελικῶ καὶ τὰ κρίματα τὰ ἀληθινᾶ
-                              φυλάττειν εἰπὼν εὐχὴν ἀναπέμπει τῶν κατὰ διάνοιαν λογισμῶν καθαρὸς
-                              ὀφθῆναι· ὡσαὔτως καὶ τῶν ἐκτὸς ῥυσθῆναι <surplus>κιν</surplus>δ<subst>
-                                 <del rend="erasure">ύνων</del>
-                                 <add place="inline">αι</add>
-                              </subst>μόνων: –</quote><ref target="#vat-gr-754:vat-gr-754-fr-18-29"
-                              type="with-variant">Vat. gr. 754</ref>
-                        </seg>
-                        <note type="lemma">Ps 18,10a (ὁ φόβος κυρίου:)</note>
-                        <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-18-7"
-                           rendition="#middle-middle" source="Anonymous"
-                           corresp="#mosq-syn-194-ps-18-15a" copyOf="#edition:edition-18-10-1"
-                              ><quote type="patristic" subtype="unknown/quotation-abbreviated"
-                              xml:id="mosq-syn-194-quot-18-7"
-                              source="fons ignotus in Ps 18,8a (sed hic, ut. vid., in ἁγνός = Ps 18,10a); cf. Hesychius, lex. s.v. ἄμωμος (Α nr. 4179 Latte) - Athanasius, exp. in Ps 18,10a"
-                              corresp="#person-2">ἄμεμπτος καθαρὸς / ὡς πρὸς αντιδιαστολὴν τοῦ
-                              νομικοῦ φόβου ἐκεῖνος γὰρ κολαστὴς εἴη:</quote><ref
-                              target="#vat-gr-754:vat-gr-754-glosse-18-1" type="identical">Vat. gr.
-                              754</ref><ref target="#vat-gr-754:vat-gr-754-fr-18-23"
-                              type="abbreviated-with-variant">Vat. gr. 754</ref>
-                        </seg>
-                        <note type="lemma">Ps 18,15a (sic)</note>
-                        <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-18-8"
-                           rendition="#middle-middle" source="Anonymous"
-                           corresp="#mosq-syn-194-ps-18-15a" copyOf="#edition:edition-18-12-1"
-                              ><quote type="patristic" subtype="quotation"
-                              xml:id="mosq-syn-194-quot-18-8"
-                              source="Athanasius, exp. in Ps 18,11–12" corresp="#person-2">μισθὸς
-                              γὰρ φυλακῆς γίνεται ἃ ὀφθαλμὸς οὐκεῖδεν καὶ οὗς οὐκήκουσεν καὶ
-                              ἐπικαρδίαν ἀνθρώπου οὐκανέβη: – [1Cor 2,9]</quote><ref
-                              target="#vat-gr-754:vat-gr-754-fr-18-27" type="identical">Vat. gr.
-                              754</ref>
-                        </seg>
-                     </ab>
-                  </div>
-                  <!--
+                  <note type="lemma">linking absent</note>
+                  <seg type="hypothesis" xml:id="mosq-syn-194-fr-18-1" rendition="#bottom-middle"
+                     source="Theodoretus" corresp="#mosq-syn-194-ps-18-1-1"
+                     copyOf="#edition:edition-18-1-1"><quote type="patristic" subtype="quotation"
+                        xml:id="mosq-syn-194-quot-18-1" source="Athanasius, exp. in Ps 18,1"
+                        corresp="#person-2">Εἰσαγωγικὴν διδασκαλίαν περιἔχει ὁ παρὼν ψαλμὸς ἐκ
+                        προσώπου τῶν ἀποστόλων πρὸς τὰ ἔθνη· διὃ καὶ οὐρανὸν καὶ ἥλιον καὶ τὰ ἕτερα
+                        στοιχεῖα οὓς καὶ μεγάλους ὠνομάζον θεοὺς ταῦτα ἀνὑμνεῖ τὸν ποιητὴν αὐτῶν
+                        λέγει: –</quote><ref target="#vat-gr-754:vat-gr-754-fr-18-1"
+                        type="with-variants">Vat. gr. 754</ref><note type="attribution"
+                        xml:lang="grc">Θεοδ(ωρήτου) </note>
+                  </seg>
+               </ab>
+            </div>
+            <pb n="36r"/>
+            <div type="commentary" subtype="commentary" xml:id="mosq-syn-194-18-3">
+               <ab xml:lang="grc">
+                  <note type="lemma">linking absent</note>
+                  <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-18-2"
+                     rendition="#middle-bottom" source="Didymus" corresp="#mosq-syn-194-ps-18-4a"
+                     copyOf="#edition:edition-18-4-1"><quote type="patristic" subtype="quotation"
+                        xml:id="mosq-syn-194-quot-18-2" source="Athanasius, exp. in Ps 18,4–5b"
+                        corresp="#person-2">Καθὑποστιγμὴν ἡ ἀνάγνωσις· ἀντιπίπτον δὲ ὑποτέμνεται· τὸ
+                        δὲ ἀντιπίπτον (ἐστὶ) καὶ μὴν οὐ φθέγγονται διὃ λέγει ἄρα οὐκ εἰσὶν τινὰ
+                        πράγματα ἃ καὶ μὴ ἀφιέντα φωνὴν τὸν τεχνήτην ἀνακηρύττουσιν· ναὶ μήν καὶ γὰρ
+                        ἐκ τῆς καλῶς ἡρμοσμένης νηὸς ἡ τέχνη τοῦ ναυπηγοῦ φαίνεται· καὶ ἐπιτῶν ἄλλων
+                        δὲ ὡσἅυτως· οὐκ οὖν καὶ τὰ ποιήματα προειρημένα οὕτω κηρύττει ἀπομεγέθους
+                        καὶ καλλονῆς καὶ εὐἀρμοστίας τὸν δημιουργὸν· ὡς εἰς πᾶσαν αὐτῶν τὴν
+                        οἰκουμένην διαδραμὴν τὸ κήρυγμα:</quote><ref
+                        target="#vat-gr-754:vat-gr-754-fr-18-7" type="with-variant">Vat. gr.
+                        754</ref><note type="attribution" xml:lang="grc">Διδ(υμου)</note>
+                  </seg>
+                  <note type="lemma">linking absent</note>
+                  <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-18-3"
+                     rendition="#bottom-bottom" source="Theodoretus"
+                     corresp="#mosq-syn-194-ps-18-5c" copyOf="#edition:edition-18-5-1"><quote
+                        type="patristic" subtype="quotation-abbreviated"
+                        xml:id="mosq-syn-194-quot-18-3" source="Athanasius, exp. in Ps 18,5c"
+                        corresp="#person-2">τῶ ἡλίω φη(σὶν) ἔθετο σκήνωμα ἤτοι οἶκον ὃν καὶ παστὸν
+                        ὠνόμασεν· ὥσπερ δὲ ἡμέρα καὶ νὺξ τῆ εὐτάκτω συμφωνία κηρύττουσι τὸν
+                        δημιουργὸν οὕτω καὶ ἥλιος τὸ τὸν δρόμον μετά τινος εὐαρμοστείας ποιεῖσθαι
+                        δηλοῖ τοῦ προστάττοντος τὴν δύναμιν: –</quote><ref
+                        target="#vat-gr-754:vat-gr-754-fr-18-9" type="abbrevaited-with-variants"
+                        >Vat. gr. 754</ref><note type="attribution" xml:lang="grc"
+                        >Θεοδ(ωρήτου)</note>
+                  </seg>
+                  <note type="lemma">linking absent</note>
+                  <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-18-4"
+                     rendition="#bottom-top" source="Origenes" corresp="#mosq-syn-194-ps-18-8a"
+                     copyOf="#edition:edition-18-8-1"><quote type="patristic"
+                        subtype="quotation/quotation-adapted" xml:id="mosq-syn-194-quot-18-4"
+                        source="Evagrius, schol. nr. δ´ in Ps 18,8a (410 Rondeau – Géhin – Cassin) - Athanasius, exp. in Ps 18,8a"
+                        corresp="#person-21 #person-2">Ζητητέον πότερον ἀ<unclear reason="ductus"
+                           >πο</unclear>κακίας ἐπιστρέφων ἐπὶ τὴν ἀρετὴν ἢ ἀπὸ τῶν αἰσθητῶν
+                        ἐπιτανοητά· καὶ τάχα τὸ δεῦτερον<supplied reason="om" resp="SPanteghini"
+                           >·</supplied> τὸ γὰρ πρότερον ἡ ἐντολῆ πέφυκε ποιεῖν / νόμον τὸν
+                        εὐἀγγελικὸν δῆλονότι<supplied reason="om" resp="SPanteghini">·</supplied> ὡς
+                        ἤδη δὲ ἀπὸ τῶν προεἰρημένων στοιχείων παιδαγογηθέντες οἳ ἐξεθνῶν ἕνα εἶναι
+                        τὸν δημιουργὸν διδάσκονται λοιπὸν καὶ τὸν εὐἀγγελικὸν νόμον ὡς καὶ
+                        ἐπέστρεψεν τῶν ἐθνῶν ἀπάντων τὰς ψυχὰς εἰς ἀλήθειαν: –</quote><ref
+                        target="#vat-gr-754:vat-gr-754-fr-18-15" type="identical">Vat. gr.
+                        754</ref><ref target="#vat-gr-754:vat-gr-754-fr-18-17"
+                        type="with-adaptation-and-variants">Vat. gr. 754</ref><note
+                        type="attribution" xml:lang="grc">ωρ(ι)γ(ένους)</note>
+                  </seg>
+               </ab>
+            </div>
+            <pb n="36v"/>
+            <div type="commentary" subtype="commentary" xml:id="mosq-syn-194-18-4">
+               <ab xml:lang="grc">
+                  <note type="lemma">linking absent</note>
+                  <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-18-5"
+                     rendition="#psalm-column" source="Anonymous" corresp="#mosq-syn-194-ps-18-8b"
+                     copyOf="#edition:edition-18-8-2"><quote type="patristic"
+                        subtype="quotation/quotation/quotation-adapted-and-abbreviated"
+                        xml:id="mosq-syn-194-quot-18-5"
+                        source="Maximus Conf., qu. dub. 186 (126,3–127,7 Declerck; CCSG 10) in Ps Ps 18,6b - Evagrius, schol. nr. γ´ in Ps 18,7c (408 Rondeau – Géhin – Cassin) - Athanasius, exp. in Ps 18,8b"
+                        corresp="#person-83 #person-21 #person-2">... / ἢ ἐμαρτύρησεν περὶ αὐτοῦ ὁ
+                        μονογενῆς τὸ ἐγὼ φῶς εἰς τὸν κόσμον ἐ<unclear reason="poor-image"
+                           >λ</unclear>ήλυθ<unclear reason="poor-image">α</unclear>· [Ioh 12,46] καὶ
+                        ἐγὼ <unclear reason="poor-image">ἐκ</unclear>
+                        <unclear reason="poor-image">τ</unclear>οῦ <unclear reason="poor-image"
+                           >πατρὸς</unclear> ἐξῆλθον [cf. Ioh 8,42; 16,28] καὶ ἐγώ εἰμι ἡ ζωή: [cf.
+                        Ioh 14,6]</quote><ref target="#vat-gr-754:vat-gr-754-fr-18-12"
+                        type="with-variants">Vat. gr. 754</ref><ref
+                        target="#vat-gr-754:vat-gr-754-fr-18-14" type="with-variant">Vat. gr.
+                        754</ref><ref target="#vat-gr-754:vat-gr-754-fr-18-19"
+                        type="abbreviated-with-adaptation-and-variant">Vat. gr. 754</ref>
+                  </seg>
+               </ab>
+            </div>
+            <pb n="37r"/>
+            <div type="commentary" subtype="commentary" xml:id="mosq-syn-194-18-5">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 18,15a</note>
+                  <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-18-6"
+                     rendition="#top-middle" source="Anonymous" corresp="#mosq-syn-194-ps-18-15a"
+                     copyOf="#edition:edition-18-15-1"><quote type="patristic" subtype="quotation"
+                        xml:id="mosq-syn-194-quot-18-6" source="Athanasius, exp. in Ps 18,13–15"
+                        corresp="#person-2">Ὁ μυσταγωγηθῆς τῶ νόμω λαὸς τῶ εὐαγγελικῶ καὶ τὰ κρίματα
+                        τὰ ἀληθινᾶ φυλάττειν εἰπὼν εὐχὴν ἀναπέμπει τῶν κατὰ διάνοιαν λογισμῶν
+                        καθαρὸς ὀφθῆναι· ὡσαὔτως καὶ τῶν ἐκτὸς ῥυσθῆναι <surplus>κιν</surplus>δ<subst>
+                           <del rend="erasure">ύνων</del>
+                           <add place="inline">αι</add>
+                        </subst>μόνων: –</quote><ref target="#vat-gr-754:vat-gr-754-fr-18-29"
+                        type="with-variant">Vat. gr. 754</ref>
+                  </seg>
+                  <note type="lemma">Ps 18,10a (ὁ φόβος κυρίου:)</note>
+                  <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-18-7"
+                     rendition="#middle-middle" source="Anonymous" corresp="#mosq-syn-194-ps-18-15a"
+                     copyOf="#edition:edition-18-10-1"><quote type="patristic"
+                        subtype="unknown/quotation-abbreviated" xml:id="mosq-syn-194-quot-18-7"
+                        source="fons ignotus in Ps 18,8a (sed hic, ut. vid., in ἁγνός = Ps 18,10a); cf. Hesychius, lex. s.v. ἄμωμος (Α nr. 4179 Latte) - Athanasius, exp. in Ps 18,10a"
+                        corresp="#person-2">ἄμεμπτος καθαρὸς / ὡς πρὸς αντιδιαστολὴν τοῦ νομικοῦ
+                        φόβου ἐκεῖνος γὰρ κολαστὴς εἴη:</quote><ref
+                        target="#vat-gr-754:vat-gr-754-glosse-18-1" type="identical">Vat. gr.
+                        754</ref><ref target="#vat-gr-754:vat-gr-754-fr-18-23"
+                        type="abbreviated-with-variant">Vat. gr. 754</ref>
+                  </seg>
+                  <note type="lemma">Ps 18,15a (sic)</note>
+                  <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-18-8"
+                     rendition="#middle-middle" source="Anonymous" corresp="#mosq-syn-194-ps-18-15a"
+                     copyOf="#edition:edition-18-12-1"><quote type="patristic" subtype="quotation"
+                        xml:id="mosq-syn-194-quot-18-8" source="Athanasius, exp. in Ps 18,11–12"
+                        corresp="#person-2">μισθὸς γὰρ φυλακῆς γίνεται ἃ ὀφθαλμὸς οὐκεῖδεν καὶ οὗς
+                        οὐκήκουσεν καὶ ἐπικαρδίαν ἀνθρώπου οὐκανέβη: – [1Cor 2,9]</quote><ref
+                        target="#vat-gr-754:vat-gr-754-fr-18-27" type="identical">Vat. gr. 754</ref>
+                  </seg>
+               </ab>
+            </div>
+            <!--
                <div type="commentary" subtype="commentary" xml:id="mosq-syn-194-18-XX">
                <ab xml:lang="grc">
                   <note type="lemma">linking absent</note>
@@ -5248,8 +5331,6 @@
                </div>
                   <note type="textual-commentary">XXXX</note>
                   -->
-               </ab>
-            </div>
             <!-- ps 19 bibletext -->
             <div xml:id="mosq-syn-194-19-1" type="bibletext" subtype="commented"
                change="commentaryfragments-only">

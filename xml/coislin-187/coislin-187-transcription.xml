@@ -5,9 +5,10 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Paris. Coislin 187</title>
+                <title>Paris. Coislin 187 (CPG C40,8; Rahlfs 190)</title>
                 <title type="subtitle">List of Contents, Transcription of (Ps.)-Athanasius,
-                    Expositiones in Psalmos, and of the Unpublished Fragments (Ps 1)</title>
+                    Expositiones in Psalmos, and of the Unpublished Fragments (Ps 17,36d to Ps
+                    18)</title>
                 <respStmt>
                     <resp>by</resp>
                     <persName>Athanasia Katsiakiori-Rankl and Sebastiano Panteghini</persName>
@@ -23,7 +24,7 @@
                     <licence target="https://creativecommons.org/licenses/by/4.0/">Available under
                         the Creative Commons Attribution 4.0 International (CC BY 4.0)</licence>
                 </availability>
-                <date>2023-12-07</date>
+                <date>2024-05-07</date>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
@@ -42,9 +43,13 @@
                     </msIdentifier>
                     <msContents>
                         <msItem n="1">
-                            <locus>f. 1r–185r</locus>
-                            <title>catena in Psalmos 17,37 - 150 (full-page catena or
-                                "Textkatene")</title>
+                            <locus>f. 1r–175r</locus>
+                            <title>Catena textualis (alternating catena or Textkatene) in Psalmos
+                                17,〈36c〉–150</title>
+                        </msItem>
+                        <msItem n="2">
+                            <locus>f. 175v–193v</locus>
+                            <title>Catena textualis in Odas</title>
                         </msItem>
                     </msContents>
                     <physDesc>
@@ -54,25 +59,34 @@
                                 <extent>
                                     <dimensions scope="all" type="leaf" unit="mm">
                                         <height>290</height>
-                                        <width>205</width>
+                                        <width>210</width>
                                     </dimensions>
                                 </extent>
                             </supportDesc>
                             <layoutDesc>
                                 <layout>
-                                    <p>30 lines per page.</p>
+                                    <p>193 ff., 30 lines per page</p>
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
                         <scriptDesc>
-                            <p>Majuscule letters: Psalm text, attributions.</p>
-                            <p>Minuscule letters: commentary fragments, glosses.</p>
-                            <p>Informal writing.</p>
+                            <p>Majuscule letters (Alexandrinische Auszeichnungsmajuskel): Psalm
+                                text, commentary fragments and glosses added by the first hand in
+                                the margins</p>
+                            <p>Minuscule letters (Minuscola quadrata): commentary fragments in the
+                                main text</p>
+                            <p>Small majuscule letters: commentary fragments and hexaplaric variants
+                                added by a second hand in the margins</p>
+                            <p>High orthographic correctness</p>
                         </scriptDesc>
+                        <decoDesc>
+                            <p>absent</p>
+                        </decoDesc>
                         <!--  hexaplaric variants? -->
                     </physDesc>
                     <history>
-                        <p>Written in the 10th century.</p>
+                        <p>Written in the second half of the 9th century or in the 10th century
+                            (dating by Maria Tomadaki)</p>
                     </history>
                 </msDesc>
                 <listPerson>
@@ -241,11 +255,11 @@
             <editorialDecl>
                 <normalization>
                     <p>The transcription of the fragments is semi-diplomatic: orthographic
-                        peculiarities of the manuscript are not normalized; the resolution of
-                        abbreviations is not indicated by round brackets. An exception is made for
-                        tachygraphic (ἐστί) or (ἐστίν) and for φη(σίν) or φη(σίν) abbreviated by
-                        suspension. Phenomena related to the writing process like additions,
-                        deletions, substitutions, or corrections are documented.</p>
+                        peculiarities of the manuscript are not normalized but the resolution of
+                        abbreviations is not indicated by round brackets. Exceptions are
+                        tachygraphic (ἐστί) and φη(σί) abbreviated by suspension. Phenomena related
+                        to the writing process like additions, deletions, substitutions, or
+                        corrections are documented.</p>
                 </normalization>
                 <punctuation>
                     <p>The punctuation faithfully reproduces that of the manuscript, where it is
@@ -830,7 +844,7 @@
                             corresp="#coislin-187-ps-17-44a" copyOf="#edition:edition-17-44-1">
                             <quote type="patristic" subtype="quotation"
                                 xml:id="coislin-187-quot-17-18"
-                                source="Athanasius, exp. in Ps 17,44–46; add. man.sec."
+                                source="Athanasius, exp. in Ps 17,44–46; add. man. sec."
                                 corresp="#person-2">αἰτ<unclear reason="faded">εῖ</unclear>ται τοῦ
                                 πρόσωπον ἀ<unclear reason="faded">π</unclear>οστρεφόμενον μὲν δι᾿
                                     <unclear reason="faded">ἀ</unclear>πε<unclear reason="faded"
@@ -1075,6 +1089,7 @@
                         </seg>
                     </ab>
                 </div>
+                <pb n="2r" facs="https://gallica.bnf.fr/ark:/12148/btv1b525129965/f7.item"/>
                 <!-- ps 18 bibletext -->
                 <div xml:id="coislin-187-18-1" type="bibletext" subtype="commented"
                     change="commentaryfragments-only">
@@ -1171,10 +1186,156 @@
                             type="psalmtext" n="Ps (LXX) 18,15c" xml:id="coislin-187-ps-18-15c"/>
                         κύριε βοηθέ μου καὶ λυτρωτά μου. </quote>
                 </div>
-                <div type="commentary" subtype="commentary" xml:id="coislin-187-18-2">
+                <!-- ps 18 commentary -->
+                <div type="commentary" subtype="commentary" xml:id="coislin-187-18-2"
+                    change="commentaryfragments-only">
                     <ab xml:lang="grc">
-                        <!-- ps 18 commentary -->
-                        <!-- 
+                        <note type="lemma">Ps 18,1 (Εἰς)</note>
+                        <seg type="hypothesis" xml:id="coislin-187-fr-18-1" rendition="#main-text"
+                            rend="minuscule letters" source="Anonymous"
+                            corresp="#coislin-187-ps-18-1-1" copyOf="#edition:edition-18-1-1">
+                            <quote type="patristic" subtype="quotation"
+                                xml:id="coislin-187-quot-18-1" source="Athanasius, exp. in Ps 18,1"
+                                corresp="#person-2">Εἰσαγωγικὴν διδασκαλίαν περιέχει ὁ παρὼν ψαλμὸς
+                                ὡς ἐκ προσώπου τῶν ἀποστόλων πρὸς τὰ ἔθνη· διὸ καὶ οὐρανὸν καὶ ἥλιον
+                                καὶ ἕτερα στοιχεία. οὓς καὶ μεγάλους νομίζει θεοὺς. τούτους ἀνυμνεῖν
+                                τὸν ποιητὴν τούτων λέγουσιν: –</quote>
+                            <ref target="#vat-gr-754:vat-gr-754-fr-18-1" type="with-variants">Vat.
+                                gr. 754</ref>
+                        </seg>
+                        <note type="lemma">Ps 18,1 (Εἰς)</note>
+                        <seg type="hypothesis" xml:id="coislin-187-fr-18-2" rendition="#left-margin"
+                            rend="capital letters" source="Anonymous"
+                            corresp="#coislin-187-ps-18-1-1">
+                            <quote type="patristic" subtype="quotation"
+                                xml:id="coislin-187-quot-18-2"
+                                source="Hesychius, comm. brevis in Ps 18,1 (30 Jagić); add. man. sec."
+                                corresp="#person-11"/>
+                        </seg>
+                        <note type="lemma">Ps 18,2a (Οἱ)</note>
+                        <seg type="commentaryfragment" xml:id="coislin-187-fr-18-3"
+                            rendition="#main-text" rend="minuscule letters" source="Anonymous"
+                            corresp="#coislin-187-ps-18-2a" copyOf="#edition:edition-18-2-1">
+                            <quote type="patristic" subtype="quotation"
+                                xml:id="coislin-187-quot-18-3" source="Athanasius, exp. in Ps 18,2"
+                                corresp="#person-2">Ὅμοιον τῶι εἰρημένωι. τὰ γὰρ ἀώρατα αὐτοῦ
+                                ἀποκτίσεως κόσμου τοῖς ποιήμασιν. νοούμενα καθ᾽ὁρᾶται καὶ τὰ
+                                ἑξῆς:</quote>
+                            <ref target="#vat-gr-754:vat-gr-754-fr-18-2" type="abbreviated">Vat. gr.
+                                754</ref>
+                        </seg>
+                        <note type="lemma">Ps 18,2a (Οἱ οὐρανοὶ)</note>
+                        <seg type="commentaryfragment" xml:id="coislin-187-fr-18-4"
+                            rendition="#left-margin" rend="capital letters" source="Anonymous"
+                            corresp="#coislin-187-ps-18-2a">
+                            <quote type="patristic" subtype="ineditum"
+                                xml:id="coislin-187-quot-18-4"
+                                source="fons ignotus in Ps 18,2 (ineditum?); add. man. sec."
+                                corresp="#person-18">ἐνταῦθα τοὺς ἀποστόλους προαινίτετται ὁ
+                                προφήτης· σὺν αὐτοῖς δὲ καὶ τὴν τοῦ στερεώματος διακόσμησιν:</quote>
+                            <note type="textual-commentary">Because of the inner margin, the linking
+                                sign related to this fragment is only visible above the psalm line.
+                                The same applies to the Scholion that follows.</note>
+                        </seg>
+                        <note type="lemma">Ps 18,2a (Οἱ οὐρανοὶ)</note>
+                        <seg type="commentaryfragment" xml:id="coislin-187-fr-18-5"
+                            rendition="#left-margin" rend="capital letters" source="Anonymous"
+                            corresp="#coislin-187-ps-18-2a">
+                            <quote type="patristic" subtype="quotation"
+                                xml:id="coislin-187-quot-18-5"
+                                source="Evagrius, schol. nr. α´ in Ps 18,2a (406 Rondeau – Géhin – Cassin)"
+                                corresp="#person-21"/>
+                            <ref target="#vat-gr-754:vat-gr-754-fr-18-4" type="identical">Vat. gr.
+                                754</ref>
+                        </seg>
+                        <note type="lemma">Ps 18,2b–3 (ἡμέρα)</note>
+                        <seg type="commentaryfragment" xml:id="coislin-187-fr-18-6"
+                            rendition="#main-text" rend="minuscule letters" source="Anonymous"
+                            corresp="#coislin-187-ps-18-2b" copyOf="#edition:edition-18-3-1">
+                            <quote type="patristic" subtype="quotation"
+                                xml:id="coislin-187-quot-18-6" source="Athanasius, exp. in Ps 18,3"
+                                corresp="#person-2">Ἡμέρα φησὶ καὶ νὺξ᾿ εὐτάκτως καὶ εὐαρμόστως
+                                ἀντιπαραχωροῦσαι τοὺς δρόμους ἀλλήλαις. διὰ τῶν πραγμάτων τὸν
+                                δημιουργὸν ἀνακηρύττουσιν ἑαυτῶν: –</quote>
+                            <ref target="#vat-gr-754:vat-gr-754-fr-18-6" type="with-variants">Vat.
+                                gr. 754</ref>
+                        </seg>
+                        <note type="lemma">Ps 18,2b–3 (ἡμέρα)</note>
+                        <seg type="commentaryfragment" xml:id="coislin-187-fr-18-7"
+                            rendition="#left-margin" rend="capital letters"
+                            source="Iohannes Chrysostomus" corresp="#coislin-187-ps-18-3a">
+                            <quote type="patristic" subtype="ineditum"
+                                xml:id="coislin-187-quot-18-7"
+                                source="Iohannes Chrys. (?), fr. in Ps 18,3a (ineditum?)"
+                                corresp="#person-18">ὑποχωροῦσα φη(σὶν) ἡ ἡμέρα καὶ ἤκουσα ἐρεύεται
+                                ῥῆμα· τὸ περιμείωσιν αὐτῆς καὶ αὔξησιν:</quote>
+                            <note type="attribution" xml:lang="grc">Ιω(άννης) τ(οῦ)
+                                ☧(υσοστόμου)·</note>
+                        </seg>
+                        <note type="lemma">linking sign not repeated</note>
+                        <seg type="commentaryfragment" xml:id="coislin-187-fr-18-8"
+                            rendition="#left-margin" rend="capital letters"
+                            source="Iohannes Chrysostomus" corresp="#coislin-187-ps-18-3a">
+                            <quote type="patristic" subtype="ineditum"
+                                xml:id="coislin-187-quot-18-8"
+                                source="Iohannes Chrys. (?), fr. in Ps 18,3a (ineditum?)"
+                                corresp="#person-XX">ὁ πατὴρ ἐρεύεται ῥῆμα τῶ υἱῶ· καὶ ποῖον ῥῆμα·
+                                τὸ πνεῦμα τὸ ἅγιον καθὼς Παῦλος λέγει· ἀναλάβετε τῆν μάχεραν [lege
+                                μάχαιραν] τοῦ πνεύματος ὅ (ἐστι) ῥῆμα θεοῦ: [Eph 6,17]</quote>
+                            <note type="attribution" xml:lang="grc">ἄλλ(ως) τ(οῦ)
+                                ☧(υσοστόμου)·</note></seg>
+                        <note type="lemma">linking sign not repeated</note>
+                        <seg type="commentaryfragment" xml:id="coislin-187-fr-18-9"
+                            rendition="#left-margin" rend="capital letters" source="Anonymous"
+                            corresp="#coislin-187-ps-18-3a">
+                            <quote type="patristic" subtype="ineditum"
+                                xml:id="coislin-187-quot-18-9"
+                                source="fons ignotus in Ps 18,3a (ineditum?)" corresp="#person-18">
+                                ἡμέρα ὁ πατήρ· ὁ γὰρ θεὸς φῶς (ἐστίν)· ἡμέρα καὶ ὁ υἱός· ἐγὼ γάρ
+                                εἰμι τὸ φῶς τοῦ κόσμου: – [Ioh 8,12]</quote>
+                            <note type="attribution" xml:lang="grc">ἄλλ(ως)</note>
+                        </seg>
+                        <note type="lemma">linking sign not repeated</note>
+                        <seg type="commentaryfragment" xml:id="coislin-187-fr-18-10"
+                            rendition="#left-margin" rend="capital letters" source="Anonymous"
+                            corresp="#coislin-187-ps-18-3a">
+                            <quote type="patristic" subtype="ineditum"
+                                xml:id="coislin-187-quot-18-10"
+                                source="fons ignotus in Ps 18,3a (ineditum?)" corresp="#person-18">ὁ
+                                καθαρὸς νοῦς τῶ καθαρῶ διηγεῖται ῥῆμα καὶ σοφίαν θεοῦ: –</quote>
+                            <note type="attribution" xml:lang="grc">ἄλλ(ως)·</note>
+                        </seg>
+                        <note type="lemma">Ps 18,2b–3 (καὶ νὺξ)</note>
+                        <seg type="commentaryfragment" xml:id="coislin-187-fr-18-11"
+                            rendition="#left-margin" rend="capital letters" source="Anonymous"
+                            corresp="#coislin-187-ps-18-3b">
+                            <quote type="patristic" subtype="ineditum"
+                                xml:id="coislin-187-quot-18-11"
+                                source="fons ignotus in Ps 18,3b (ineditum?)" corresp="#person-18">ὁ
+                                δέ γε νύχιος καὶ ἀσεβὴς νοῦς. τῶ σκοτεινῶ καὶ ἀσεβῆ νῶ. τὴν περὶ τὰ
+                                φαῦλα γνῶσιν ἐκδιδάσκει: –</quote>
+                        </seg>
+                        <note type="lemma">Ps 18,4 (οὐκ)</note>
+                        <seg type="commentaryfragment" xml:id="coislin-187-fr-18-12"
+                            rendition="#main-text" rend="minuscule letters" source="Anonymous"
+                            corresp="#coislin-187-ps-18-4a" copyOf="#edition:edition-18-4-1">
+                            <quote type="patristic" subtype="quotation"
+                                xml:id="coislin-187-quot-18-12"
+                                source="Athanasius, exp. in Ps 18,4–5b" corresp="#person-2">Ὃ λέγει.
+                                τοιοῦτόν ἐστιν· ἆρ οὐκ᾿ εἰσὶ τινὰ πράγματα. καὶ μὴ ἀφιέντα φωνὴν τὸν
+                                τεχνήτην ἀνακηρύττοντα<add place="below" hand="corr">;</add> ναὶ
+                                    μιν<add place="below" hand="corr">·</add> καὶ γὰρ ἐκ τῆς καλῶς
+                                ἠρμοσμένης νηὸς. ἡ τέχνη τοῦ ναυπιγοῦ φαίνεται· καὶ ἐπὶ τῶν ἄλλων ὡς
+                                αὕτως· oὐκ οὖν καὶ τὰ ποιήματα τὰ προεἰρημένα οὕτως κηρύττει. ἀπὸ
+                                ποιήματος καὶ καλλονῆς καὶ εὐαρμοστίας τὸν δημιουργὸν. ὡς εἰς πᾶσαν
+                                αὐτῶν τὴν οἰκουμένην διαδραμεῖν τὸ κήρυγμα· : –</quote>
+                            <ref target="#vat-gr-754:vat-gr-754-fr-18-7"
+                                type="abbreviated-with-variants">Vat. gr. 754</ref>
+                        </seg>
+                    </ab>
+                </div>
+                <pb n="2v" facs="https://gallica.bnf.fr/ark:/12148/btv1b525129965/f8.item"/>
+                <!-- 
                <div type="commentary" subtype="commentary" xml:id="coislin-187-18-XX"
                change="commentaryfragments-only">
                <ab xml:lang="grc">
@@ -1197,8 +1358,7 @@
                      source="XXX"
                      corresp="#vat-gr-754-ps-17-XX">XXXX</seg>
                   -->
-                    </ab>
-                </div>
+                <!-- ps 19 bibletext -->
                 <div xml:id="coislin-187-19-1" type="bibletext" subtype="commented"
                     change="commentaryfragments-only">
                     <quote type="bibletext" n="Ps (LXX) 19,1" xml:lang="grc"
