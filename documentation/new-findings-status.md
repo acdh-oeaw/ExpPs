@@ -5,4 +5,5 @@ In dieser Datei wird dokumentiert, wie weit die Transkriptionen der einzelnen Ha
 ## 08.05.2024: Erste Überarbeitung nach der initialen Erstellung
 
 - ```ambr-b-106-sup``` - Psalm 1-17: keine neuen Kommentarfragmente; keine neuen hexaplarischen Varianten.
-- ```ambr-m-47-sup``` - bis Fragment 17-26
+- ```ambr-m-47-sup``` - Psalm 1-17: Kommentarfragmente; keine neuen hexaplarischen Varianten
+- ```bodl-auct-d-4-1``` - Psalm 1-17: hexaplarische Varianten;
