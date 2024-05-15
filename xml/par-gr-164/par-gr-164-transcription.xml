@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../schema/tei-psalmcatenae.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="../../schema/tests-for-transcription.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!-- faciendum: Ps 1–10: Revision -->
-<!-- faciendum: Ps 1–12: Referenzen zu B1 herzustellen -->
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Par. gr. 164 - Transcription</title>
+            <title>Paris. gr. 164 (CPG C40.9; Rahlfs 1140) - Codices varii</title>
+            <title type="subtitle">List of Contents, Transcription of (Ps.)-Athanasius, Expositiones
+               in Psalmos, and of the Unpublished Fragments (Ps 1 to Ps 18)</title>
             <respStmt>
-               <resp>transcribed by</resp>
-               <persName>Maria-Lucia Goiana</persName>
+               <resp>by</resp>
+               <persName>Maria-Lucia Goiana (Ps 1 to Ps 10)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>by</resp>
+               <persName>Sebastiano Panteghini (Ps 11 to Ps 18)</persName>
             </respStmt>
          </titleStmt>
          <publicationStmt>
@@ -19,7 +23,7 @@
                <licence target="https://creativecommons.org/licenses/by/4.0/">Available under the
                   Creative Commons Attribution 4.0 International (CC BY 4.0)</licence>
             </availability>
-            <date>2021-10-01</date>
+            <date>2024-05-15</date>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -38,34 +42,60 @@
                </msIdentifier>
                <msContents>
                   <msItem n="1">
-                     <locus>fols. 7r-179v</locus>
-                     <title>in Ps. 1—151: Theodoretus, hexaplaric variants, ExpPs</title>
+                     <locus>f. 1r–4v</locus>
+                     <title>Athanasius, Epistula ad Marcellinum</title>
+                  </msItem>
+                  <msItem n="2">
+                     <locus>f. 5r–6v</locus>
+                     <title>varia</title>
+                  </msItem>
+                  <msItem n="3">
+                     <locus>f. 7r–179v</locus>
+                     <title>Psalmi cum scholiis</title>
+                  </msItem>
+                  <msItem n="4">
+                     <locus>f. 180r–199v</locus>
+                     <title>Odae</title>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="perg">
                         <support>parchment</support>
+                        <extent>
+                           <dimensions scope="all" type="leaf" unit="mm">
+                              <height>180</height>
+                              <width>140</width>
+                           </dimensions>
+                        </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout>
-                           <p>199 folios. Layout: two columns.</p>
+                           <p>199 ff., two columns (the inner, wider columns for the Bible text; the
+                              external columns for the fragments); 23 lines per column (Bible
+                              text)</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <scriptDesc>
-                     <p>The hexaplaric variants, glossai, commentary fragments and the advisory
-                        sentences at the top of the pages are written in majuscule.</p>
-                     <p>Red ink, at times combined with golden ink, is used for sigla of the
-                        authors, the symbol-letters for hexaplaric variants; verse initials;
-                        liturgical indications; psalm numbers, linking signs, initials of
-                        hypotheseis, and advisory sentences at the top of the pages. For the rest,
-                        the codex is written in brown ink, but there are also later rewritings of
-                        (faded) letters/ words/ verses in black ink.</p>
+                     <p>Minuscule letters: Bible text</p>
+                     <p>Majuscule letters: hexaplaric variants, glossai, commentary fragments and
+                        the advisory sentences at the top of the pages</p>
+                     <p> written in brown ink; later rewritings of (faded) letters/ words/ verses in
+                        black ink</p>
                   </scriptDesc>
+                  <decoDesc>
+                     <p>Red ink (at times combined with golden ink): author attributions,
+                        symbol-letters for hexaplaric variants, verse initials, liturgical
+                        indications, psalm numbers, linking signs, initials of hypotheseis, and
+                        advisory sentences at the top of the pages</p>
+                  </decoDesc>
+                  <additions>
+                     <p/>
+                  </additions>
                </physDesc>
                <history>
-                  <p>Anno 1070. Antioch.</p>
+                  <p>Written in the year 1070 in Antioch</p>
                </history>
             </msDesc>
          </sourceDesc>
@@ -191,11 +221,26 @@
                commentaryfragments. Therefore other material contained in the manuscript is
                ignored.</p>
          </projectDesc>
-         <editorialDecl>
+         <!-- <editorialDecl>
             <normalization>
-               <p>The transcription has been silently normalized in all respects.</p>
+               <p>The transcription of the fragments is semi-diplomatic: orthographic peculiarities
+                  of the manuscript are not normalized but the resolution of abbreviations is not
+                  indicated by round brackets. Exceptions are tachygraphic (ἐστί) and φη(σί)
+                  abbreviated by suspension. Phenomena related to the writing process like
+                  additions, deletions, substitutions, or corrections are documented.</p>
             </normalization>
-         </editorialDecl>
+            <punctuation>
+               <p>The punctuation faithfully reproduces that of the manuscript, where it is
+                  unambiguous. It makes use of the three dots inherited from ancient interpunctive
+                  theory: high dot or τελεία στιγμή (·) at the end of the sentence; middle dot or
+                  μέση στιγμή (·) between clauses (κῶλα); low dot or ὐποστιγμή (.) before the part
+                  that gives fulfillment to the sentence. Manuscript practice may deviate from these
+                  rules. The following Codepoints are used in the transcription: 0387 (hex) "GREEK
+                  ANO TELEIA", 00B7 (hex) "MIDDLE DOT", 002E (hex) "FULL STOP", 002C (hex) "COMMA",
+                  2022 (hex) "BULLET", 2058 (hex) "FOUR DOT PUNCTUATION",
+                  <!-\- 205D (hex) "TRICOLON"  -\-> and 003A (hex) "COLON".</p>
+            </punctuation>
+         </editorialDecl>-->
       </encodingDesc>
       <revisionDesc>
          <change who="Maria-Lucia Goiana" when="2021-10-15">Transcription of the manuscript
@@ -2477,7 +2522,7 @@
                         >Bodl. Auct. D. 4. 1</ref></seg>
                </ab>
             </div>
-            <!-- ps 17 psalmtext -->
+            <!-- ps 17 bibletext -->
             <div xml:id="par-gr-164-17-1" type="bibletext" subtype="commented"
                change="commentaryfragments-only">
                <quote type="bibletext" n="Ps (LXX) 17,1" xml:lang="grc" xml:id="par-gr-164-ps-17-1">
@@ -2767,8 +2812,10 @@
                   αὐτοῦ, <anchor type="psalmtext" n="Ps (LXX) 17,51c" xml:id="par-gr-164-ps-17-51c"
                   /> τῷ Δαυιδ καὶ τῷ σπέρματι αὐτοῦ ἕως αἰῶνος. </quote>
             </div>
+            <!-- ps 17 commentary -->
             <div type="commentary" subtype="commentary" xml:id="par-gr-164-17-2">
                <ab xml:lang="grc">
+                  <note type="lemma">Ps 17,1–2a</note>
                   <seg type="commentaryfragment" xml:id="par-gr-164-fr-17-1" source="Anonymous"
                      corresp="#par-gr-164-ps-17-1-1"><quote type="patristic" subtype="quotation"
                         xml:id="par-gr-164-quot-17-1"
@@ -2823,23 +2870,58 @@
                </ab>
             </div>
             <pb n="23r" facs="https://gallica.bnf.fr/ark:/12148/btv1b550060713/f53.item"/>
-            <!-- 
-         <div type="commentary" subtype="commentary" xml:id="par-gr-164-17-XX">
-         <ab xml:lang="grc">
-             <note type="lemma">Ps 17,XX (XXXX)</note>
-                <seg type="commentaryfragment" xml:id="par-gr-164-fr-17-XX" source="XXXX"
-                corresp="#par-gr-164-ps-17-XX"><quote type="patristic" subtype="XXXX"
-                xml:id="par-gr-164-quot-17-XX" source="XXXX" corresp="#person-XX"/>
-                <ref target="#bodl-auct-d-4-1:XXXX" type="XXXX">Bodl. Auct. D. 4. 1</ref>
-                 <ref target="#vat-gr-754:XXXX" type="XXXX">Vat. gr. 754</ref>
-                <note type="attribution"><foreign xml:lang="grc">XXXX</foreign></note></seg>
-          </ab>
-          </div> 
-          Θε(οδωρήτου)
-           <ref target="#par-gr-164:XXXX" type="XXXX">Paris. gr. 164</ref>
-         -->
+            <div type="commentary" subtype="commentary" xml:id="par-gr-164-17-6">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 17,29a (φωτιεῖς)</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-164-fr-17-5" source="Anonymous"
+                     corresp="#par-gr-164-ps-17-29a"><quote type="patristic" subtype="quotation"
+                        xml:id="par-gr-164-quot-17-5"
+                        source="Theodoretus, comm. in Ps 17,29 (PG 80,981 C2–8)"
+                        corresp="#person-16"/>
+                     <ref target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-17-49" type="with-variant"
+                        >Bodl. Auct. D. 4. 1</ref></seg>
+               </ab>
+            </div>
+            <pb n="23v" facs="https://gallica.bnf.fr/ark:/12148/btv1b550060713/f54.item"/>
+            <div type="commentary" subtype="commentary" xml:id="par-gr-164-17-6-1">
+               <ab xml:lang="grc">
+                  <note type="textual-commentary">This folio has no fragments.</note>
+               </ab>
+            </div>
+            <pb n="24r" facs="https://gallica.bnf.fr/ark:/12148/btv1b550060713/f55.item"/>
+            <div type="commentary" subtype="commentary" xml:id="par-gr-164-17-7">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 17,41a (ἐχθρούς μου)</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-164-fr-17-6" source="Theodoretus"
+                     corresp="#par-gr-164-ps-17-41a"><quote type="patristic" subtype="quotation"
+                        xml:id="par-gr-164-quot-17-6"
+                        source="Theodoretus, comm. in Ps 17,41a (PG 80,985 B6–7)"
+                        corresp="#person-16"/>
+                     <ref target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-17-66" type="with-variant"
+                        >Bodl. Auct. D. 4. 1</ref>
+                     <note type="attribution"><foreign xml:lang="grc"
+                     >Θε(οδωρήτου)</foreign></note></seg>
+                  <note type="lemma">Ps 17,44a (ἀντιλογίας [ἀντιλογιῶν LXX Rahlfs])</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-164-fr-17-7" source="Theodoretus"
+                     corresp="#par-gr-164-ps-17-44a"><quote type="patristic" subtype="quotation"
+                        xml:id="par-gr-164-quot-17-7"
+                        source="Theodoretus, comm. in Ps 17,44a (PG 80,985 C6–10)"
+                        corresp="#person-16"/>
+                     <ref target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-17-70" type="identical">Bodl.
+                        Auct. D. 4. 1</ref>
+                     <note type="attribution"><foreign xml:lang="grc"
+                     >Θε(οδωρήτου)</foreign></note></seg>
+                  <note type="lemma">Ps 17,46a (ἐπαλαιώθησαν)</note>
+                  <seg type="commentaryfragment" xml:id="par-gr-164-fr-17-8" source="Anonymous"
+                     corresp="#par-gr-164-ps-17-46a"><quote type="patristic" subtype="quotation"
+                        xml:id="par-gr-164-quot-17-8"
+                        source="Theodoretus, comm. in Ps 17,46 (PG 80,988 B3–5)"
+                        corresp="#person-16"/>
+                     <ref target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-17-74" type="identical">Bodl.
+                        Auct. D. 4. 1</ref></seg></ab>
+            </div>
             <pb n="24v" facs="https://gallica.bnf.fr/ark:/12148/btv1b550060713/f56.item"/>
-            <!-- ps 18 psalmtext -->
+            <!-- ps 18 bibletext -->
             <div xml:id="par-gr-164-18-1" type="bibletext" subtype="commented"
                change="commentaryfragments-only">
                <quote type="bibletext" n="Ps (LXX) 18,1" xml:lang="grc" xml:id="par-gr-164-ps-18-1">
@@ -2961,32 +3043,6 @@
                         >Bodl. Auct. D. 4. 1</ref></seg>
                </ab>
             </div>
-            <!-- 
-         <div type="commentary" subtype="commentary" xml:id="par-gr-164-18-XX">
-         <ab xml:lang="grc">
-             <note type="lemma">Ps 18,XX (XXXX)</note>
-                <seg type="commentaryfragment" xml:id="par-gr-164-fr-18-XX" source="XXXX"
-                corresp="#par-gr-164-ps-18-XX"><quote type="patristic" subtype="XXXX"
-                xml:id="par-gr-164-quot-18-XX" source="XXXX" corresp="#person-XX"/>
-                <ref target="#bodl-auct-d-4-1:XXXX" type="XXXX">Bodl. Auct. D. 4. 1</ref>
-                 <ref target="#vat-gr-754:XXXX" type="XXXX">Vat. gr. 754</ref>
-                <note type="attribution"><foreign xml:lang="grc">XXXX</foreign></note></seg>
-          </ab>
-          </div> 
-         <div type="commentary" subtype="commentary" xml:id="par-gr-164-18-XX">
-         <ab xml:lang="grc">
-             <note type="lemma">Ps 18,XX (XXXX)</note>
-                <seg type="commentaryfragment" xml:id="par-gr-164-fr-18-XX" source="XXXX"
-                corresp="#par-gr-164-ps-18-XX"><quote type="patristic" subtype="XXXX"
-                xml:id="par-gr-164-quot-18-XX" source="Athanasius, exp. in Ps 18,XX" corresp="#person-XX"/>
-                <ref target="#bodl-auct-d-4-1:XXXX" type="XXXX">Bodl. Auct. D. 4. 1</ref>
-                 <ref target="#vat-gr-754:XXXX" type="XXXX">Vat. gr. 754</ref>
-                <note type="attribution"><foreign xml:lang="grc">XXXX</foreign></note></seg>
-          </ab>
-          </div> 
-          Θε(οδωρήτου)
-           <ref target="#par-gr-164:XXXX" type="XXXX">Paris. gr. 164</ref>
-         -->
             <div xml:id="par-gr-164-19-1" type="bibletext" subtype="commented"
                change="commentaryfragments-only">
                <quote type="bibletext" n="Ps (LXX) 19,1" xml:lang="grc" xml:id="par-gr-164-ps-19-1">
@@ -3039,7 +3095,33 @@
             </div>
             <div type="commentary" subtype="commentary" xml:id="par-gr-164-19-2">
                <ab xml:lang="grc">
-                  <!-- insert commentaryfragments of psalm 19 here -->
+                  <!--
+         <ref target="#par-gr-164:XXXX" type="XXXX">Paris. gr. 164</ref>
+         ***
+         <div type="commentary" subtype="commentary" xml:id="par-gr-164-18-XX">
+         <ab xml:lang="grc">
+             <note type="lemma">Ps 18,XX (XXXX)</note>
+                <seg type="commentaryfragment" xml:id="par-gr-164-fr-18-XX" source="XXXX"
+                corresp="#par-gr-164-ps-18-XX"><quote type="patristic" subtype="XXXX"
+                xml:id="par-gr-164-quot-18-XX" source="XXXX" corresp="#person-XX"/>
+                <ref target="#bodl-auct-d-4-1:XXXX" type="XXXX">Bodl. Auct. D. 4. 1</ref>
+                 <ref target="#vat-gr-754:XXXX" type="XXXX">Vat. gr. 754</ref>
+                <note type="attribution"><foreign xml:lang="grc">XXXX</foreign></note></seg>
+          </ab>
+          </div> 
+         <div type="commentary" subtype="commentary" xml:id="par-gr-164-18-XX">
+         <ab xml:lang="grc">
+             <note type="lemma">Ps 18,XX (XXXX)</note>
+                <seg type="commentaryfragment" xml:id="par-gr-164-fr-18-XX" source="XXXX"
+                corresp="#par-gr-164-ps-18-XX"><quote type="patristic" subtype="XXXX"
+                xml:id="par-gr-164-quot-18-XX" source="Athanasius, exp. in Ps 18,XX" corresp="#person-XX"/>
+                <ref target="#bodl-auct-d-4-1:XXXX" type="XXXX">Bodl. Auct. D. 4. 1</ref>
+                 <ref target="#vat-gr-754:XXXX" type="XXXX">Vat. gr. 754</ref>
+                <note type="attribution"><foreign xml:lang="grc">XXXX</foreign></note></seg>
+          </ab>
+          </div> 
+          Θε(οδωρήτου)
+         -->
                </ab>
             </div>
             <div xml:id="par-gr-164-20-1" type="bibletext" subtype="commented"
