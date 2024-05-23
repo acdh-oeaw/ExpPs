@@ -10,4 +10,6 @@ In dieser Datei wird dokumentiert, wie weit die Transkriptionen der einzelnen Ha
 - ```coislin-10``` - Psalm 1-18: keine unbekannten hexaplarischen Varianten; Kommentarfragmente bis inkl. Ps 18,14
 - ```vat-gr-754``` - Psalm 1-18: hexaplarische Varianten bis inkl. Ps 18,8a; Kommentarfragmente bis inkl. Ps 18,14
 - ```coislin-12``` - Psalm 1-18: keine hexaplarischen Varianten; Kommentarfragmente bis inkl. Ps 18,13
-- ```coislin-187```- Psalm 1-18: keine hexaplarischen Varianten; Kommentarfragmente bis inkl. Ps 18,15 
+- ```coislin-187```- Psalm 1-18: keine hexaplarischen Varianten; Kommentarfragmente bis inkl. Ps 18,15
+- ```franzon-3``` - Psalm 1-15: keine hexaplarischen Varianten; Kommentarfragmente bis inkl. Ps. 15,11
+- ```mosq-syn-194``` - Psalm 1-18: keine neuen hexaplarischen Varianten;  
