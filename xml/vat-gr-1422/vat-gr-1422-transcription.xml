@@ -2,13 +2,16 @@
 <?xml-model href="../../schema/tei-psalmcatenae.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="../../schema/tests-for-transcription.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-   <!-- ToDo: ein Korrektor hat mimimla Korrekturen vollzogen (die Tinte ist schwarz) -->
+   <!-- ToDo: ein Korrektor hat mimimale Korrekturen vollzogen (die Tinte ist schwarz) -->
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Vat. gr. 1422 - Transcription</title>
+            <title>Vat. gr. 1422 (CPG C28; Rahlfs 1177) - Catena Type XV (Secondary Catena):</title>
+            <title type="subtitle"> Full Transcription (Ps 1 to Ps 2); Transcription of
+               (Ps.)-Athanasius, Expositiones in Psalmos (Ps 1 to Ps 18), and of the Unpublished
+               Fragments (Ps 11 to Ps 18); List of contents (Ps 11 to Ps 18)</title>
             <respStmt>
-               <resp>transcribed by</resp>
+               <resp>by</resp>
                <persName>Sebastiano Panteghini</persName>
             </respStmt>
          </titleStmt>
@@ -18,7 +21,7 @@
                <licence target="https://creativecommons.org/licenses/by/4.0/">Available under the
                   Creative Commons Attribution 4.0 International (CC BY 4.0)</licence>
             </availability>
-            <date>2024-01-24</date>
+            <date>2024-05-27</date>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -33,16 +36,20 @@
                </msIdentifier>
                <msContents>
                   <msItem n="1">
-                     <locus>fols. 1r-24v</locus>
-                     <title>Prolegomena</title>
+                     <locus>f. 1r–24v</locus>
+                     <title>prolegomena</title>
                   </msItem>
                   <msItem n="2">
-                     <locus>fols. 25r-242v</locus>
-                     <title>Psalmcatena</title>
+                     <locus>f. 25r–242v</locus>
+                     <title>Catena marginalis in Psalmos 1–151 (frame catena or Randkatene)</title>
                   </msItem>
                   <msItem n="3">
-                     <locus>fols. 258v-259r</locus>
-                     <title>Odescatena</title>
+                     <locus>f. 243r–258r</locus>
+                     <title>Catena marginalis in Odas</title>
+                  </msItem>
+                  <msItem n="3">
+                     <locus>f. 258v–259r</locus>
+                     <title>Catena textualis in Odas (alternating catena or Textkatene)</title>
                   </msItem>
                </msContents>
                <physDesc>
@@ -57,11 +64,11 @@
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout>Fols. 1r-24v are written in two columns. The liniature type of fols
-                           1r-24v is 32D2.</layout>
-                        <layout>Fols. 25r-242v are written as bordercatena. Liniature: 18 vertical
-                           lines for the bible verses; 64 vertical lines for the catena.</layout>
-                        <layout>Fols. 258v-259r contain a textcatena.</layout>
+                        <layout>259 ff.</layout>
+                        <layout>f. 1r–24v (prolegomena): two columns (liniature type 32D2), 64 lines
+                           per column</layout>
+                        <layout>f. 25r–242v: 64 lines (frame catena) per page and 18 lines (Bible
+                           text) per page</layout>
                         <layout n="layout of the page">
                            <graphic url="./images/layout-vat-gr-1422.jpeg"/>
                            <p xml:id="middle-of-the-page">middle of the page</p>
@@ -77,12 +84,18 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
+                  <scriptDesc>
+                     <p>Larger minuscule letters: Bible text</p>
+                     <p>Minuscule letters: prolegomena, commentary fragments, hexaplaric variants,
+                        glosses</p>
+                     <p>Capital letters: headings, attributions</p>
+                  </scriptDesc>
                   <decoDesc>
-                     <p>Contains coloured capitals and decoration.</p>
+                     <p>headings, ektheseis, counting letters, and attributions in red ink</p>
                   </decoDesc>
                </physDesc>
                <history>
-                  <p>Written in the 10th or 11th century.</p>
+                  <p>Written in the 10th or 11th century</p>
                </history>
             </msDesc>
             <listBibl>
@@ -1006,7 +1019,7 @@
                   <bibl>Arethas episcopus Caesareae, fr. (ineditum)</bibl>
                </person>
                <person xml:id="person-77" role="author">
-                  <persName>(Ps)-Basilius Caesariensis</persName>
+                  <persName>(Ps.)-Basilius Caesariensis</persName>
                   <bibl>Basilius, Is. comm. (PG 30; Edition von Trevisan [1939] nicht
                      zugänglich)</bibl>
                </person>
@@ -1195,7 +1208,7 @@
          </charDecl>
          <editorialDecl>
             <p n="selection">The manuscript has been fully transcribed only for the first two
-               psalms. Afterwards only the commentaryfragments are given.</p>
+               psalms.</p>
             <p n="parallels">The attributions from the manuscripts belonging to type XV are
                documented in the note with type "parallels".</p>
             <punctuation>
@@ -1204,8 +1217,25 @@
                   003A (hex) "COLON" are used in the transcription.</p>
             </punctuation>
             <normalization>
-               <p n="auszeichnungsmajuskeln">"Auszeichnungsmajuskeln" are ignored.</p>
+               <p>For the first two psalms, the transcription is both diplomatic and normalised.
+                  Starting with Psalm three, the transcription of the fragments is semi-diplomatic:
+                  orthographic peculiarities of the manuscript are not normalized but the resolution
+                  of abbreviations is not indicated by round brackets. Exceptions are tachygraphic
+                  (ἐστί) and φη(σί) abbreviated by suspension. Phenomena related to the writing
+                  process like additions, deletions, substitutions, or corrections are documented.
+               </p>
             </normalization>
+            <!-- <punctuation>
+               <p>The punctuation faithfully reproduces that of the manuscript, where it is
+                  unambiguous. It makes use of the three dots inherited from ancient interpunctive
+                  theory: high dot or τελεία στιγμή (·) at the end of the sentence; middle dot or
+                  μέση στιγμή (·) between clauses (κῶλα); low dot or ὐποστιγμή (.) before the part
+                  that gives fulfillment to the sentence. Manuscript practice may deviate from these
+                  rules. The following Codepoints are used in the transcription: 0387 (hex) "GREEK
+                  ANO TELEIA", 00B7 (hex) "MIDDLE DOT", 002E (hex) "FULL STOP", 002C (hex) "COMMA",
+                  2022 (hex) "BULLET", 2058 (hex) "FOUR DOT PUNCTUATION",
+                  <!-\- 205D (hex) "TRICOLON"  -\-> and 003A (hex) "COLON".</p>
+            </punctuation>-->
          </editorialDecl>
       </encodingDesc>
       <profileDesc>
@@ -11968,7 +11998,7 @@
                      rendition="#bottom-of-the-page" source="Anonymous"
                      corresp="#vat-gr-1422-ps-16-4b"><quote type="patristic" subtype="quotation"
                         xml:id="vat-gr-1422-quot-16-25"
-                        source="(Ps)-Basilius, Is. comm. 8,213 (PG 30,488 A5–10) in Is 8,11–14 et in Ps 16,4b"
+                        source="(Ps.)-Basilius, Is. comm. 8,213 (PG 30,488 A5–10) in Is 8,11–14 et in Ps 16,4b"
                         corresp="#person-77"/></seg>
                   <note type="lemma">Ps 16,4</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-16-26"
@@ -15019,6 +15049,19 @@
                      xml:id="vat-gr-1422-ps-18-15c"/> κύριε βοηθέ μου καὶ λυτρωτά μου. </quote>
             </div>
             <!-- ps 18 commentary -->
+            <div type="commentary" subtype="commentary" xml:id="vat-gr-1422-18-1-1"
+               rendition="#top-margin" change="commentaryfragments-only">
+               <ab xml:lang="grc">
+                  <seg type="hypopsalmos" rendition="#top-margin" rend="capital letters">ΙΗ´ ΙΘ´ K´
+                     ἐπάκουσόν μου κύριε:</seg>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-18-1-1"
+                     rendition="#top-margin" rend="capital letters" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-18-1-1"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-1422-quot-18-1-1"
+                        source="Eusebius, Perioche in Ps 18 (128 Villani)" corresp="#person-7"
+                     /></seg>
+               </ab>
+            </div>
             <div type="commentary" subtype="commentary" xml:id="vat-gr-1422-18-2"
                rendition="#bottom-of-the-page" change="commentaryfragments-only">
                <ab xml:lang="grc">
@@ -15079,8 +15122,8 @@
                      rendition="#bottom-of-the-page" source="Basilius"
                      corresp="#vat-gr-1422-ps-18-2a"><quote type="patristic" subtype="quotation"
                         xml:id="vat-gr-1422-quot-18-7"
-                        source="(Ps.)-Basilius Caes., Is. enarr. 5,162 (PG 30,385 Β3–8; CPG 2911) in Ps 18,2a"
-                        corresp="#person-87"/>
+                        source="(Ps.)-Basilius Caes., Is. comm. 5,162 (PG 30,385 Β3–8; CPG 2911) in Ps 18,2a"
+                        corresp="#person-77"/>
                      <note type="attribution" xml:lang="grc">Βα(σι)λ(είου)</note></seg>
                   <note type="lemma">Ps 18,2</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-18-8"
@@ -15367,12 +15410,13 @@
                      /></seg>
                   <note type="lemma">Ps 18,6b–7</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-18-36"
-                     rendition="#bottom-of-the-page" source="Anonymous"
+                     rendition="#bottom-of-the-page" source="Maximus"
                      corresp="#vat-gr-1422-ps-18-6b"><quote type="patristic" subtype="quotation"
                         xml:id="vat-gr-1422-quot-18-36"
                         source="Maximus Conf., qu. dub. 186 (126,3–127,7 Declerck; CCSG 10) in Ps Ps 18,6b"
                         corresp="#person-83"/>
-                     <note type="attribution" xml:lang="grc">Μαξιμ(ου)</note></seg>
+                     <note type="attribution" xml:lang="grc">Μαξι<unclear reason="faded"
+                        >μ</unclear>(ου)</note></seg>
                </ab>
             </div>
             <div type="commentary" subtype="commentary" xml:id="vat-gr-1422-18-5-1"
@@ -15393,9 +15437,374 @@
                   <note type="lemma">Ps 18,6b–7</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-18-38"
                      rendition="#bottom-of-the-page" source="Asterius"
-                     corresp="#vat-gr-1422-ps-18-XX"><quote type="patristic" subtype="XXXX"
-                        xml:id="vat-gr-1422-quot-18-38" source="XXXX" corresp="#person-XX"/>
+                     corresp="#vat-gr-1422-ps-18-7a"><quote type="patristic"
+                        subtype="quotation-adapted-and-abbreviated" xml:id="vat-gr-1422-quot-18-38"
+                        source="Asterius, fr. 21 in Ps 18,7 (268,3–9 Richard; ex Barocci 235)"
+                        corresp="#person-1"/>
                      <note type="attribution" xml:lang="grc">Ἀστε(ρίου):</note></seg>
+               </ab>
+            </div>
+            <pb n="52r" facs="https://digi.vatlib.it/view/MSS_Vat.gr.1422/107"/>
+            <div type="commentary" subtype="commentary" xml:id="vat-gr-1422-18-6"
+               rendition="#top-of-the-page" change="commentaryfragments-only">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 18,6b–7</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-18-39"
+                     rendition="#top-of-the-page" source="Anonymous" corresp="#vat-gr-1422-ps-18-7c"
+                        ><quote type="patristic" subtype="quotation" xml:id="vat-gr-1422-quot-18-39"
+                        source="Theodoretus, comm. in Ps 18,7c (PG 80,996 A3–10)"
+                        corresp="#person-16"/></seg>
+                  <note type="lemma">Ps 18,6b–7</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-18-40"
+                     rendition="#top-of-the-page" source="Hesychius" corresp="#vat-gr-1422-ps-18-7c"
+                        ><quote type="patristic" subtype="ineditum" xml:id="vat-gr-1422-quot-18-40"
+                        source="Hesychius, comm. magnus (?) in Ps 18,7c (ineditum?)"
+                        corresp="#person-12">Ὅτι οὐκ ἔστιν οὐδὲν τῆς κτίσεως μέρος· ὃ εὐεργεσίας οὐ
+                        μετέχει τῆς θείας:</quote>
+                     <note type="attribution" xml:lang="grc">Ἡσυχ(ίου)</note></seg>
+                  <note type="lemma">Ps 18,6b–7</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-18-41"
+                     rendition="#top-of-the-page" source="Anonymous" corresp="#vat-gr-1422-ps-18-7c"
+                        ><quote type="patristic" subtype="quotation" xml:id="vat-gr-1422-quot-18-41"
+                        source="Hesychius, comm. brevis in Ps 18,7c (31 Jagić)" corresp="#person-11"/>
+                     <note type="attribution" xml:lang="grc"/></seg>
+                  <note type="lemma">Ps 18,6b–7 (sic)</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-18-42"
+                     rendition="#top-of-the-page" source="Origenes" corresp="#vat-gr-1422-ps-18-6b"
+                     copyOf="#edition:edition-18-8-1"><quote type="patristic"
+                        subtype="quotation/quotation-adapted " xml:id="vat-gr-1422-quot-18-42"
+                        source="Evagrius, schol. nr. δ´ in Ps 18,8a (410 Rondeau – Géhin – Cassin) - Athanasius, exp. in Ps 18,8a"
+                        corresp="#person-21 #person-2">Ζητητέον ἀποκακίας ἐπιστρέφειν ἐπὶ τὴν ἀρετὴν
+                        ἢ ἀπὸ τῶν αἰσθητῶν ἐπὶ τὰ νοητὰ· καὶ τάχα τὸ δεύτερον· τὸ γὰρ πρότερον ἡ
+                        ἐντολὴ πέφυκεν ποιεῖν· / νόμον· τὸν εὐαγγελικὸν δηλονότι· ὡς ἤδη δὲ ἀπὸ τῶν
+                        προειρημένων στοιχείων παιδαγωγηθέντες οἱ ἐξεθνῶν ἕνα εἶναι τὸν δημιουργὸν
+                        διδάσκονται· λοιπὸν καὶ τὸν εὐαγγελικὸν νόμον· ὃς καὶ ἐπέστρεψε τῶν ἐθνῶν
+                        ἁπάντων τὰς ψυχὰς· εἰς τὴν ἀλήθειαν:</quote><ref
+                        target="#vat-gr-754:vat-gr-754-fr-18-17" type="with-adaptation-and-variant"
+                        >Vat. gr. 754</ref>
+                     <note type="attribution" xml:lang="grc">ὠριγ(ένους):</note>
+                     <note type="parallels">Paris. gr. 146 (f. 52r, top / middle): Lemma: Ps 18,6b–7
+                        (sic) - Attribution: <foreign xml:lang="grc"
+                     >ὠριγένους·</foreign></note></seg>
+               </ab>
+            </div>
+            <div type="commentary" subtype="commentary" xml:id="vat-gr-1422-18-7"
+               rendition="#middle-of-the-page" change="commentaryfragments-only">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 18,6b–7 (sic)</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-18-43"
+                     rendition="#middle-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-18-6b"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-1422-quot-18-43"
+                        source="Hesychius, schol. nr. 14 in Ps 18,8a (Antonelli; PG 27,713)"
+                        corresp="#person-10"/>
+                     <note type="attribution" xml:lang="grc"/></seg>
+                  <note type="lemma">Ps 18,6b–7 (sic)</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-18-44"
+                     rendition="#middle-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-18-6b" copyOf="#edition:edition-18-8-2">
+                     <quote type="patristic" subtype="quotation" xml:id="vat-gr-1422-quot-18-44"
+                        source="Athanasius, exp. in Ps 18,8b" corresp="#person-2">Ἣν ἐμαρτύρησεν
+                        περὶ ἑαυτοῦ ὁ σωτὴρ·1 τὸ ἐγὼ φῶς εἰς τὸν κόσμον ἐλήλυθα [Ioh 12,46] καὶ ἐγὼ
+                        ἐκ τοῦ πατρὸς ἐξῆλθον· [cf. Ioh 8,42; 16,28] καὶ ἐγὼ εἰμὶ ἡ ζωή: [cf. Ioh
+                        14,6]</quote>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-18-19" type="abbreviated-with-variant"
+                        >Vat. gr. 754</ref>
+                     <note type="parallels">Paris. gr. 146 (f. 52r, top / middle): Lemma: Ps 18,6b–7
+                        (sic) - Attribution: Anonymous</note>
+                  </seg>
+                  <note type="lemma">Ps 18,6b–7 (sic)</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-18-45"
+                     rendition="#middle-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-18-6b"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-1422-quot-18-45"
+                        source="Hesychius, comm. brevis in Ps 18,8b (31 Jagić)" corresp="#person-11"
+                     /></seg>
+                  <note type="lemma">Ps 18,6b–7 (sic)</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-18-46"
+                     rendition="#middle-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-18-6b"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-1422-quot-18-46"
+                        source="Hesychius, schol. nr. 15 in Ps 18,8b (Antonelli; PG 27,713)"
+                        corresp="#person-10"/></seg>
+                  <note type="lemma">Ps 18,8–9</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-18-47"
+                     rendition="#middle-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-18-8a"><quote type="patristic"
+                        subtype="quotation-adapted" xml:id="vat-gr-1422-quot-18-47"
+                        source="Theodoretus, comm. in Ps 18,8–11 (PG 80,996 C10–12)"
+                        corresp="#person-16"/></seg>
+                  <note type="lemma">Ps 18,8–9</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-18-48"
+                     rendition="#middle-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-18-8a"><quote type="patristic"
+                        subtype="paraphrase-abbreviated-and-quotation-adapted"
+                        xml:id="vat-gr-1422-quot-18-48"
+                        source="Theodoretus, comm. in Ps 18,8–11 (PG 80,996 B7–9 B14–C6)"
+                        corresp="#person-16"/></seg>
+                  <note type="lemma">Ps 18,8–9</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-18-49"
+                     rendition="#middle-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-18-9a"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-1422-quot-18-49"
+                        source="Hesychius, comm. brevis in Ps 18,9a (31 Jagić)" corresp="#person-11"
+                     /></seg>
+                  <note type="lemma">Ps 18,8–9</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-18-50"
+                     rendition="#middle-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-18-9a"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-1422-quot-18-50"
+                        source="Hesychius, schol. nr. 16 in Ps 18,9a (Antonelli; PG 27,713)"
+                        corresp="#person-10"/></seg>
+                  <note type="lemma">Ps 18,8–9</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-18-51"
+                     rendition="#middle-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-18-9a" copyOf="#edition:edition-18-9-1">
+                     <quote type="patristic" subtype="quotation" xml:id="vat-gr-1422-quot-18-51"
+                        source="Athanasius, exp. in Ps 18,9a" corresp="#person-2">Ἀντὶ τοῦ ἡ
+                        δικαίωσις ἡ γενομένη ἐν τῆι ἡμετέραι κρίσει<add place="below" hand="corr"
+                           >.</add> κρίνας γὰρ ἡμῶν τὴν κρίσην. ἐξέβαλεν τὸν ἄρχοντα τοῦ αἰῶνος
+                        διδοὺς ἡμῖν εὐφροσύνην ἐν καρδία: </quote>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-18-20" type="identical">Vat. gr.
+                        754</ref>
+                     <note type="attribution" xml:lang="grc"/>
+                     <note type="parallels">Paris. gr. 146 (f. 52r, middle / middle): Lemma: Ps
+                        18,8–9 - Attribution: Anonymous</note></seg>
+                  <note type="lemma">Ps 18,8–9</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-18-52"
+                     rendition="#middle-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-18-9b" copyOf="#edition:edition-18-9-2">
+                     <quote type="patristic" subtype="quotation" xml:id="vat-gr-1422-quot-18-52"
+                        source="Athanasius, exp. in Ps 18,9b" corresp="#person-2">Τοὺς τῆς διανοίας
+                        φη(σίν):</quote>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-18-21" type="identical">Vat. gr.
+                        754</ref>
+                     <note type="parallels">Paris. gr. 146 (f. 52r, middle / middle): Ps 18,8–9 -
+                        Attribution: Anonymous</note>
+                  </seg>
+                  <note type="lemma">Ps 18,8–9</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-18-53"
+                     rendition="#middle-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-18-9b"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-1422-quot-18-53"
+                        source="(Ps.)-Basilius, Is. comm. 5,174 (PG 30,409 B2–8) in Ps 18,9b et in Ps 118,105"
+                        corresp="#person-77"/></seg>
+               </ab>
+            </div>
+            <div type="commentary" subtype="commentary" xml:id="vat-gr-1422-18-8"
+               rendition="#bottom-of-the-page" change="commentaryfragments-only">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 18,10</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-18-54"
+                     rendition="#bottom-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-18-10a" copyOf="#edition:vat-gr-1422">
+                     <quote type="patristic" subtype="quotation" xml:id="vat-gr-1422-quot-18-54"
+                        source="Athanasius, exp. in Ps 18,10" corresp="#person-2">Ὡς πρὸς
+                        ἀντιδιαστολὴν τοῦ νομικοῦ φόβου τὸ τοιοῦτο<add place="below" hand="corr"
+                           >.</add> ἐκεῖνος γὰρ κολαστὴς ἦν:</quote>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-18-23" type="identical">Vat. gr.
+                        754</ref>
+                     <note type="parallels">Paris. gr. 146 (f. 52r): exp. om.</note>
+                  </seg>
+                  <note type="lemma">Ps 18,10</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-18-55"
+                     rendition="#bottom-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-18-10a"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-1422-quot-18-55"
+                        source="Evagrius, schol. nr. ε´ in Ps 18,10a (410 Rondeau – Géhin – Cassin)"
+                        corresp="#person-21"/></seg>
+                  <note type="lemma">Ps 18,10</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-18-56"
+                     rendition="#bottom-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-18-10b"><quote type="patristic" subtype="unknown"
+                        xml:id="vat-gr-1422-quot-18-56"
+                        source="Hesychius, schol. nr. 19 in Ps 18,10b (Antonelli; PG 27,713)"
+                        corresp="#person-11"/></seg>
+                  <note type="lemma">Ps 18,10</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-18-57"
+                     rendition="#bottom-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-18-10a"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-1422-quot-18-57"
+                        source="Theodoretus, comm. in Ps 18,8–11 (PG 80,997 A5–13)"
+                        corresp="#person-16"/></seg>
+                  <note type="lemma">Ps 18,11</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-18-58"
+                     rendition="#bottom-of-the-page" source="Hesychius"
+                     corresp="#vat-gr-1422-ps-18-11a"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-1422-quot-18-58"
+                        source="Hesychius, comm. brevis in Ps 18,11a (32 Jagić)"
+                        corresp="#person-11"/>
+                     <note type="attribution" xml:lang="grc">Ἡσυχ(ίου)</note></seg>
+                  <note type="lemma">Ps 18,12a (καὶ γὰρ ὁ δοῦλος)</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-18-59"
+                     rendition="#bottom-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-18-12a"><quote type="patristic" subtype="unknown"
+                        xml:id="vat-gr-1422-quot-18-59"
+                        source="Origenes (?), fr. in Ps 18,12a (PG 12,1245 A11–15); cf. Analecta sacra II (474,41–475,4; ex Vat. gr. 1422 etc.)"
+                        corresp="#person-13"/>
+                     <note type="textual-commentary">This fragment and the following one are part of
+                        the lemmatic unit commenting on Ps 18,11 (Θ´). However, the halblemma
+                        preceding them relates them to Ps 18,12a.</note></seg>
+                  <note type="lemma">Ps 18,12a</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-18-60"
+                     rendition="#bottom-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-18-12a"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-1422-quot-18-60"
+                        source="Hesychius, comm. brevis in Ps 18,12a (32 Jagić)"
+                        corresp="#person-11"/></seg>
+                  <note type="lemma">Ps 18,12–13a</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-18-61"
+                     rendition="#bottom-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-18-12a"><quote type="patristic"
+                        subtype="quotation-adapted" xml:id="vat-gr-1422-quot-18-61"
+                        source="Theodoretus, comm. in Ps 18,12a et in Ps 18,12b (PG 80,977 A14–B6)"
+                        corresp="#person-16"/></seg>
+                  <note type="lemma">Ps 18,12–13a</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-18-62"
+                     rendition="#bottom-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-18-13a"><quote type="patristic"
+                        subtype="quotation-abbreviated" xml:id="vat-gr-1422-quot-18-62"
+                        source="Theodoretus, comm. in Ps 18,13 (PG 80,997 B7–14)"
+                        corresp="#person-16"/></seg>
+                  <note type="lemma">Ps 18,12–13a (sic)</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-18-63"
+                     rendition="#bottom-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-18-12a"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-1422-quot-18-63"
+                        source="Hesychius, schol. nr. 20 in Ps 18,11a (Antonelli; PG 27,713)"
+                        corresp="#person-10"/></seg>
+                  <note type="lemma">Ps 18,12–13a (sic)</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-18-64"
+                     rendition="#bottom-of-the-page" source="fons ignotus in Ps 18,9b"
+                     corresp="#vat-gr-1422-ps-18-12a"><quote type="patristic"
+                        subtype="quotation-expanded" xml:id="vat-gr-1422-quot-18-64"
+                        source="Hesychius, schol. nr. 19 in Ps 18,9b (Antonelli; PG 27,713) + glossa in Ps 18,9b (?)"
+                        corresp="#person-10">Ἡ ἐντολὴ κυρίου πόρρωθεν τὴν αὐγὴν ἀποπέμπουσα· ἰωμένη
+                        καὶ λαμπρύνουσα τοὺς τῶν καρδιῶν ὀφθαλμο<unclear reason="faded"
+                        >ύ</unclear>ς: –</quote></seg>
+               </ab>
+            </div>
+            <pb n="52v" facs="https://digi.vatlib.it/view/MSS_Vat.gr.1422/108"/>
+            <div type="commentary" subtype="commentary" xml:id="vat-gr-1422-18-9"
+               rendition="#top-of-the-page" change="commentaryfragments-only">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 18,13b–14a</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-18-65"
+                     rendition="#top-of-the-page" source="Theodoretus"
+                     corresp="#vat-gr-1422-ps-18-14a"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-1422-quot-18-65"
+                        source="Theodoretus, comm. in Ps 18,14a (PG 80,997 C2–7)"
+                        corresp="#person-16"/>
+                     <note type="attribution" xml:lang="grc">Θεοδω(ρή)τ(ου)</note></seg>
+                  <note type="lemma">Ps 18,13b–14a (sic)</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-18-66"
+                     rendition="#top-of-the-page" source="Theodoretus"
+                     corresp="#vat-gr-1422-ps-18-13b"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-1422-quot-18-66"
+                        source="Theodoretus, comm. in Ps 19,2–3 (PG 80,1000 D1–5)"
+                        corresp="#person-16"/>
+                     <note type="attribution" xml:lang="grc">Θεοδ(ωρή)τ(ου)</note></seg>
+                  <note type="lemma">Ps 18,13b–14a</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-18-67"
+                     rendition="#top-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-18-13b"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-1422-quot-18-67"
+                        source="Hesychius, schol. nr. 25 in Ps 18,13b (Antonelli; PG 27,716)"
+                        corresp="#person-10"/></seg>
+                  <note type="lemma">Ps 18,13b–14a</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-18-68"
+                     rendition="#top-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-18-14a"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-1422-quot-18-68"
+                        source="Hesychius, comm. brevis in Ps 18,14a (32 Jagić)"
+                        corresp="#person-11"/></seg>
+                  <note type="lemma">Ps 18,13b–14a</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-18-69"
+                     rendition="#top-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-18-14a"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-1422-quot-18-69"
+                        source="Hesychius, schol. nr. 26 in Ps 18,14a (Antonelli; PG 27,716)"
+                        corresp="#person-10"/></seg>
+                  <note type="lemma">Ps 18,13b–14a</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-18-70"
+                     rendition="#top-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-18-14a"><quote type="patristic" subtype="ineditum"
+                        xml:id="vat-gr-1422-quot-18-70"
+                        source="fons ignotus in Ps 18,14a (ineditum?)" corresp="#person-18"
+                        >Ἀλλοτρίους τοὺς δαίμονας λέγει· ἀλλότρια εἶναι φαμὲν· τὰ ἐκ διαβολικῆς
+                        ἐνεργείας ἐπιχεόμενα πάθη· ἐν οἷς εἰσὶ λογισμοὶ ὑπεροψίας καὶ φιλοκερδείας·
+                        ὀργὰς· θυμούς· καὶ τὰ τούτων ἀδελφὰ· καὶ τὰ λοιπὰ παμβέβηλα
+                     πάθη:</quote></seg>
+                  <note type="lemma">Ps 18,14b–c</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-18-71"
+                     rendition="#top-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-18-14b"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-1422-quot-18-71"
+                        source="Hesychius, comm. brevis in Ps 18,14b (32 Jagić)"
+                        corresp="#person-11"/></seg>
+                  <note type="lemma">Ps 18,14b–c</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-18-72"
+                     rendition="#top-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-18-14c"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-1422-quot-18-72"
+                        source="Hesychius, schol. nr. 28 in Ps 18,14c (Antonelli; PG 27,716)"
+                        corresp="#person-10"/></seg>
+                  <note type="lemma">Ps 18,14b–c</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-18-73"
+                     rendition="#top-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-18-14b"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-1422-quot-18-73"
+                        source="Theodoretus, comm. in Ps 18,14b–15b (PG 80,997 C12–D3)"
+                        corresp="#person-16"/></seg>
+               </ab>
+            </div>
+            <div type="commentary" subtype="commentary" xml:id="vat-gr-1422-18-10"
+               rendition="#middle-of-the-page" change="commentaryfragments-only">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 18,14b–c</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-18-74"
+                     rendition="#middle-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-18-14c"><quote type="patristic"
+                        subtype="paraphrase-abbreviated" xml:id="vat-gr-1422-quot-18-74"
+                        source="Didymus, fr. 159 in Ps 18,14c.15 (214,12–14 Mühlenberg)"
+                        corresp="#person-6"/></seg>
+                  <note type="lemma">Ps 18,15a–b</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-18-75"
+                     rendition="#middle-of-the-page" source="Theodoretus"
+                     corresp="#vat-gr-1422-ps-18-15a"><quote type="patristic"
+                        subtype="quotation-adapted-and-paraphrase-abbreviated"
+                        xml:id="vat-gr-1422-quot-18-75"
+                        source="Theodoretus, comm. in Ps 18,14b–15b (PG 80,997 D3–1000 A6)"
+                        corresp="#person-16"/>
+                     <note type="attribution" xml:lang="grc">Θεοδω(ρή)τ(ου):</note></seg>
+                  <note type="lemma">Ps 18,15a–b</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-18-76"
+                     rendition="#middle-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-18-15a"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-1422-quot-18-76"
+                        source="Hesychius, comm. brevis in Ps 18,15a (32 Jagić)"
+                        corresp="#person-11"/></seg>
+                  <note type="lemma">Ps 18,15a–b</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-18-77"
+                     rendition="#middle-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-18-15b"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-1422-quot-18-77"
+                        source="Hesychius, schol. nr. 30 in Ps 18,15b (Antonelli; PG 27,716)"
+                        corresp="#person-10"/></seg>
+                  <note type="lemma">Ps 18,15c</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-18-78"
+                     rendition="#middle-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-18-15c"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-1422-quot-18-78"
+                        source="Hesychius, schol. nr. 31 in Ps 18,15c (Antonelli; PG 27,716)"
+                        corresp="#person-10"/></seg>
+                  <note type="lemma">Ps 18,15c</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-1422-fr-18-79"
+                     rendition="#middle-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-1422-ps-18-15c"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-1422-quot-18-79"
+                        source="Theodoretus, comm. in Ps 18,15c (PG 80,1000 A8–B6)"
+                        corresp="#person-16"/></seg>
                </ab>
             </div>
             <!--  
@@ -15432,5 +15841,9 @@
    </text>
 </TEI>
 <!-- ToDo: Ps 1–2: Personen in @corresp zu berichtigen -->
-<!-- faciendum: Korrekruren: Ps 1–2: finale Revision durchzuführen -->
-<!-- faciendum: List of contents: Ps 3–10 -->
+<!-- ToDo: heading: element <scriptDesc> nicht transformierbar -->
+<!-- ToDo: heading: element <scriptDesc> nicht transformierbar -->
+<!-- ToDo: element <punctuation> nicht transformierbar -->
+<!-- ToDo: element <title type="subtitle"> nicht transformierbar -->
+<!-- faciendum: Ps 1–2: finale Revision durchzuführen -->
+<!-- faciendum: Ps 3–10: List of contents zu erstellen -->
