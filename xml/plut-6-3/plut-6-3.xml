@@ -9,9 +9,10 @@
          <titleStmt>
             <title>Flor. Med. Laurent. Plut. 6. 3 (CPG C29; Rahlfs 292) - Catena Type XVI (Secondary
                Catena)</title>
-            <title type="subtitle">(Ps.)-Athanasius, Expositiones in Psalmos (Ps 1–10)</title>
+            <title type="subtitle">Transcriptions of (Ps.)-Athanasius, Expositiones in Psalmos (Ps 1
+               to Ps 18), and List of Contents (Ps 11 to Ps 13)</title>
             <respStmt>
-               <resp>transcribed by</resp>
+               <resp>by</resp>
                <persName>Sebastiano Panteghini</persName>
             </respStmt>
          </titleStmt>
@@ -21,7 +22,7 @@
                <licence target="https://creativecommons.org/licenses/by/4.0/">Available under the
                   Creative Commons Attribution 4.0 International (CC BY 4.0)</licence>
             </availability>
-            <date>2022-09-21</date>
+            <date>2024-05-28</date>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -29,7 +30,8 @@
                   <country>Italy</country>
                   <settlement>Firenze</settlement>
                   <repository>Biblioteca Medicea Laurenziana (BML)</repository>
-                  <idno facs="http://mss.bmlonline.it/s.aspx?Id=AWOHzHpBI1A4r7GxMB-P#/book"
+                  <idno
+                     facs="https://tecabml.contentdm.oclc.org/digital/collection/plutei/id/184261/rec/480"
                      >IT:FI0100_Plutei_06.03</idno>
                   <altIdentifier>
                      <idno type="pinakes" corresp="https://pinakes.irht.cnrs.fr/notices/cote/15990/"
@@ -43,7 +45,7 @@
                   </msItem>
                   <msItem n="2">
                      <locus>f. 40r–243r</locus>
-                     <title>catena in Psalmos 1–150 (marginal catena)</title>
+                     <title>Catena marginalis in Psalmos 1–150 (frame catena or Randkatene)</title>
                   </msItem>
                   <msItem n="3">
                      <locus>f. 243v</locus>
@@ -51,7 +53,7 @@
                   </msItem>
                   <msItem n="3">
                      <locus>f. 244r–263v</locus>
-                     <title>catena in Odas (marginal catena)</title>
+                     <title>Catena marginalis in Odas</title>
                   </msItem>
                </msContents>
                <physDesc>
@@ -66,16 +68,23 @@
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout><p>263 ff., ca. 50 lines per page (catenae).</p></layout>
+                        <layout><p>263 ff.</p>
+                           <p>f. 1r–39v (prolegomenna): 30 lines per page (full-page)</p>
+                           <p>f. 40r–263v (catenae): ca. 50 lines per page</p>
+                        </layout>
                      </layoutDesc>
                   </objectDesc>
                   <scriptDesc>
-                     <p>Minuscule informal.</p>
-                     <p>High orthographic correctness.</p>
-                     <p>Red ink: indications of where to find the explanations.</p>
+                     <p>Larger minuscule letters (minuscule informal): Bible text</p>
+                     <p>Minuscule letters (minuscule informal): commentary fragments, hexaplaric
+                        variants</p>
+                     <p>Capital letters: attributions of fragments</p>
+                     <p>High orthographic correctness</p>
                   </scriptDesc>
                   <decoDesc>
-                     <p>f. 40r (ornamental pyle); red ink: initials.</p>
+                     <p>f. 40r (ornamental pyle); red ink: dividing bars between the psalms; first
+                        letter of a psalm text; indications of where to find the explanations; the
+                        indication of a hypothesis (ὑπόθεσις)</p>
                   </decoDesc>
                   <additions>
                      <p>To type XVI belong Plut. 6. 3 and Mediolan. Ambros. C 98 sup. Type XVI is
@@ -90,7 +99,7 @@
                   </additions>
                </physDesc>
                <history>
-                  <p>Written in the 11th century.</p>
+                  <p>Written in the 11th century</p>
                </history>
             </msDesc>
             <listPerson>
@@ -262,11 +271,10 @@
          <editorialDecl>
             <normalization>
                <p>The transcription of the fragments is semi-diplomatic: orthographic peculiarities
-                  of the manuscript are not normalized; the resolution of abbreviations is not
-                  indicated by round brackets. An exception is made for tachygraphic (ἐστί) or
-                  (ἐστίν) and for φη(σίν) or φη(σίν) abbreviated by suspension. Phenomena related to
-                  the writing process like additions, deletions, substitutions, or corrections are
-                  documented.</p>
+                  of the manuscript are not normalized but the resolution of abbreviations is not
+                  indicated by round brackets. Exceptions are tachygraphic (ἐστί) and φη(σί)
+                  abbreviated by suspension. Phenomena related to the writing process like
+                  additions, deletions, substitutions, or corrections are documented.</p>
             </normalization>
             <punctuation>
                <p>The punctuation faithfully reproduces that of the manuscript, where it is
@@ -5528,7 +5536,7 @@
             </div>
             <pb n="61v"
                facs="https://tecabml.contentdm.oclc.org/digital/collection/plutei/id/183827/rec/480"/>
-            <div type="commentary" subtype="commentary" xml:id="plut-6-3-18-XX">
+            <div type="commentary" subtype="commentary" xml:id="plut-6-3-18-3">
                <ab xml:lang="grc">
                   <note type="lemma">Ps 18,2 (Οἱ οὐρανοὶ διη:)</note>
                   <seg type="commentaryfragment" xml:id="plut-6-3-fr-18-2" rendition="#top-margin"
@@ -5545,29 +5553,122 @@
                      <note type="parallels">Ambr. C 98 sup. (f. 32r, top / bottom): Lemma: Ps 18,2
                         (oἱ οὐρανοὶ διη:) | Attribution: <foreign xml:lang="grc"
                         >ἄλλ(ως):</foreign></note></seg>
+                  <note type="lemma">Ps 18,4a (⁘ οὐκ εἰσὶν λαλιαί:)</note>
+                  <seg type="hexaplaric" xml:id="plut-6-3-hexaplaric-18-1"
+                     rendition="#top-of-psalm-column"
+                     source="Symmachus (Ps 18,4–5a); cf. Theodoretus, comm. in Ps 18,4–5b (PG 80,993 B3–4)"
+                     corresp="#plut-6-3-ps-17-40b">ὁ Ϲ· οὐ ῥήσεσιν οὐδὲ λόγοις ὧν οὐκ ἀκούονται
+                     φωναὶ· ἀλλ᾿ εἰς πᾶσαν τὴν γῆν ἐξῆλθεν:</seg>
+                  <note type="textual-commentary">Next to the Ps 18,3a is written in red ink:
+                     ἔμπροσθ(εν). This is because the fragments commenting on this verse are on the
+                     following page.</note>
+                  <note type="lemma">Ps 18,3–5b (ἡμέρα τῇ ἡμέρᾳ:)</note>
+                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-18-3" rendition="#top-middle"
+                     source="Athanasius" corresp="#plut-6-3-ps-18-3a"
+                     copyOf="#edition:edition-18-3-1-1">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-18-3"
+                        source="Athanasius, exp. in Ps 18,3" corresp="#person-2">ἡμέρα φη(σὶ) καὶ
+                        νὺξ εὐτάκτως καὶ εὐαρμόστως ἀντιπαραχωροῦσαι τοὺς δρόμους ἀλλήλαις, δι᾿
+                        αὐτῶν τῶν πραγμάτων τὸν δημιουργὸν ἑαυτῶν ἀνακηρύττουσιν· ο<subst>
+                           <del rend="erasure">ὕ</del>
+                           <add place="above">ὗ</add>
+                        </subst>τ<subst>
+                           <del rend="overwrite">ως</del>
+                           <add place="above">ῶ</add>
+                        </subst> νόμω πειθόμεναι<add place="overstrike" hand="corr">,</add> τὴν οὕτω
+                        καλὴν ἁρμονίαν ἐργάζονται ⁘</quote>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-18-6" type="expanded-with-variants">Vat.
+                        gr. 754</ref>
+                     <note type="attribution" xml:lang="grc">Ἀθα(νασίου):</note>
+                     <note type="parallels">Ambr. C 98 sup. (f. 32r, middle / top): Ps 18,3–5b
+                        (ἡμέρα τῇ ἡμέρᾳ:) | Attribution: <foreign xml:lang="grc"
+                           >Ἀθα(νασίου)</foreign></note></seg>
+                  <note type="lemma">Ps 18,8 (ὁ νόμος κυρίου: [τοῦ κυρίου LXX Rahlfs])</note>
+                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-18-4"
+                     rendition="#bottom-bottom" source="Origenes" corresp="#plut-6-3-ps-18-8a"
+                     copyOf="#edition:edition-18-8-1">
+                     <quote type="patristic" subtype="quotation/quotation-adapted"
+                        xml:id="plut-6-3-quot-18-4" source="Athanasius, exp. in Ps 18,8a"
+                        corresp="#person-2">Ζητητέον ἀπὸ κακίας ἐπιστρέφειν ἐπὶ τὴν ἀρετὴν ἢ ἀπὸ τῶν
+                        αἰσθητῶν ἐπὶ τὰ νοητὰ· καὶ τάχα τὸ δεύτ<add place="overstrike">ε</add>ρον·
+                        τὸ γὰρ πρότερον ἡ ἐντολὴ πέφυκεν ποιεῖν· / νόμον. τὸν εὐαγγελικὸν δῆλονότι·
+                        ὡς ἤδη δὲ ἀπὸ τῶν προειρημένων στοιχείων παιδαγωγηθέντες οἱ ἐξ ἐθνῶν ἕνα
+                        εἶναι τὸν δημιουργὸν διδάσκονται· λοιπὸν καὶ τὸν εὐαγγελικὸν νόμον· ὃς καὶ
+                        ἐπέστρεψε τῶν ἐθνῶν ἁπάντων τὰς ψυχὰς· εἰς τὴν ἀλήθειαν:</quote>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-18-17"
+                        type="with-adaptation-and-variant">Vat. gr. 754</ref>
+                     <note type="attribution" xml:lang="grc">ωρ(ι)γ(ένους):</note>
+                     <note type="parallels">Ambr. C 98 sup. (f. 32v, middle / middle): Lemma: Ps
+                        18,8a (ὁ νόμος κυρίου:) | Attribution: <foreign xml:lang="grc"
+                           >ὠρ(ι)γ(ένους)</foreign></note><note type="textual-commentary">Next to Ps
+                        18,8 is the counting letter Δ'. However, it has not been repeated next to
+                        this fragment, with which a section dedicated to Ps 18,8
+                     begins.</note></seg>
                </ab>
             </div>
-            <!--  
-               <div type="commentary" subtype="commentary" xml:id="plut-6-3-18-XX">
-                  <ab xml:lang="grc">
-                     <note type="lemma">Ps 18,XX (XXXX)</note>
-                        <seg type="commentaryfragment" xml:id="plut-6-3-fr-18-XX" rendition="#XXXX" source="XXXX"
-                        corresp="#plut-6-3-ps-18-XX" copyOf="#edition:XXXXXXXX">
-                        <quote type="patristic" subtype="XXXX"
-                        xml:id="plut-6-3-quot-18-XX" source="Athanasius, exp. in Ps 18,XX" corresp="#person-2"/>
-                        <ref target="#vat-gr-754:XXXX" type="XXXX">Vat. gr. 754</ref>
-                        <note type="attribution" xml:lang="grc"></note>
-                        <note type="parallels">Ambr. C 98 sup. (f. XXX,
-                        XXX / XXX): Lemma: Ps 18,XX | Attribution: <foreign xml:lang="grc">XXXX</foreign></note></seg>
-                 </ab>
-                 </div>
-                 <seg type="hexaplaric" xml:id="plut-6-3-hexaplaric-17-XX"
-                     rendition="#right-column" source="XXXX"
-                     corresp="#plut-6-3-ps-17-40b">XXXX</seg>
-            -->
-            <div type="commentary" subtype="commentary" xml:id="plut-6-3-18-2">
-               <ab xml:lang="grc"> </ab>
+            <pb n="61v–62r"/>
+            <div type="commentary" subtype="commentary" xml:id="plut-6-3-18-3-1">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 18,8 (ἡ μαρτυρία κυρίου:)</note>
+                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-18-5"
+                     rendition="#bottom-bottom" source="Anonymous" corresp="#plut-6-3-ps-18-8b"
+                     copyOf="#edition:edition-18-8-2">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-18-5"
+                        source="Athanasius, exp. in Ps 18,8b" corresp="#person-2">ἣν ἐμαρτύρησεν
+                        περὶ ἑαυτοῦ ὁ σωτὴρ· τὸ <unclear reason="faded">ἐγ</unclear>ὼ φῶς εἰς τὸν
+                        κόσμον ἐλήλυθα [Ioh 12,46] καὶ ἐγὼ ἐκ || τοῦ πατρὸς ἐξῆλθον· [cf. Ioh 8,42;
+                        16,28] καὶ ἐγὼ εἰμὶ ἡ ζωή: [cf. Ioh 14,6]</quote>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-18-19" type="abbreviated-with-variant"
+                        >Vat. gr. 754</ref>
+                     <note type="parallels">Ambr. C 98 sup. (f. 32v, middle / bottom): Lemma: Ps
+                        18,8 (ἡ μαρτυρία κυρίου:) | Attribution: Anonymous</note></seg>
+               </ab>
             </div>
+            <pb n="62r"
+               facs="https://tecabml.contentdm.oclc.org/digital/collection/plutei/id/183828/rec/480"/>
+            <div type="commentary" subtype="commentary" xml:id="plut-6-3-18-4">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 18,9a (τὰ δικαιώματα κυρίου:)</note>
+                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-18-6" rendition="#top-middle"
+                     source="Anonymous" corresp="#plut-6-3-ps-18-9a"
+                     copyOf="#edition:edition-18-9-1">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-18-6"
+                        source="Athanasius, exp. in Ps 18,9a" corresp="#person-2">ἀντὶ τοῦ ἡ
+                        δικαίωσις ἡ γενομένη ἐν τῆι ἡμετέραι κρίσει· κρίνας γὰρ ἡμῶν τὴν κρίσην,
+                        ἐξέβαλεν τὸν ἄρχοντα τοῦ αἰῶνος διδοὺς ἡμῖν εὐφροσύνην ἐν καρδία ⁘</quote>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-18-20" type="identical">Vat. gr.
+                        754</ref>
+                     <note type="attribution" xml:lang="grc"/>
+                     <note type="parallels">Ambr. C 98 sup. (f. 33r, top / top): Lemma: Ps 18,9a (τὰ
+                        δικαιώματα κυρίου:) | Attribution: Anonymous</note></seg>
+                  <note type="lemma">Ps 18,9b (ἡ ἐντολὴ κυρίου:)</note>
+                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-18-7" rendition="#top-bottom"
+                     source="Anonymous" corresp="#plut-6-3-ps-18-9b"
+                     copyOf="#edition:edition-18-9-2">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-18-7"
+                        source="Athanasius, exp. in Ps 18,9b" corresp="#person-2">Τοὺς τῆς διανοίας
+                        φη(σίν):</quote>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-18-21" type="identical">Vat. gr.
+                        754</ref>
+                     <note type="attribution" xml:lang="grc"/>
+                     <note type="parallels">Ambr. C 98 sup. (f. 33r, top / top): Lemma: Ps 18,9b (ἡ
+                        ἐντολὴ κυρίου:) | Attribution: Anonymous</note></seg>
+                  <note type="lemma">Ps 18,10a (ὁ φόβος τοῦ κυρίου:)</note>
+                  <seg type="commentaryfragment" xml:id="plut-6-3-fr-18-8" rendition="#top-bottom"
+                     source="Anonymous" corresp="#plut-6-3-ps-18-10a"
+                     copyOf="#edition:edition-18-10-1">
+                     <quote type="patristic" subtype="quotation" xml:id="plut-6-3-quot-18-8"
+                        source="Athanasius, exp. in Ps 18,10" corresp="#person-2">Ὡς πρὸς
+                        ἀντιδιαστολὴν τοῦ νομικοῦ φόβου τὸ τοιοῦτο ἐκεῖνος γὰρ κολαστὴς ἦν ⁘</quote>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-18-23" type="identical">Vat. gr.
+                        754</ref>
+                     <note type="parallels">Ambr. C 98 sup. (f. 33r, top / top): Lemma: Ps 18,9b (ἡ
+                        ἐντολὴ κυρίου:) | Attribution: Anonymous</note></seg>
+               </ab>
+            </div>
+            <pb n="62v"
+               facs="https://tecabml.contentdm.oclc.org/digital/collection/plutei/id/183829/rec/480"/>
+            <!-- ps 19 bibletext -->
             <div xml:id="plut-6-3-19-1" type="bibletext" subtype="commented"
                change="commentaryfragments-only">
                <quote type="bibletext" n="Ps (LXX) 19,1" xml:lang="grc" xml:id="plut-6-3-ps-19-1">
@@ -5619,7 +5720,24 @@
             </div>
             <div type="commentary" subtype="commentary" xml:id="plut-6-3-19-2">
                <ab xml:lang="grc">
-                  <!-- insert commentary fragments of psalm 19 here -->
+                  <!--  
+               <div type="commentary" subtype="commentary" xml:id="plut-6-3-18-XX">
+                  <ab xml:lang="grc">
+                     <note type="lemma">Ps 18,XX (XXXX)</note>
+                        <seg type="commentaryfragment" xml:id="plut-6-3-fr-18-XX" rendition="#XXXX" source="XXXX"
+                        corresp="#plut-6-3-ps-18-XX" copyOf="#edition:XXXXXXXX">
+                        <quote type="patristic" subtype="XXXX"
+                        xml:id="plut-6-3-quot-18-XX" source="Athanasius, exp. in Ps 18,XX" corresp="#person-2"/>
+                        <ref target="#vat-gr-754:XXXX" type="XXXX">Vat. gr. 754</ref>
+                        <note type="attribution" xml:lang="grc"></note>
+                        <note type="parallels">Ambr. C 98 sup. (f. XXX,
+                        XXX / XXX): Lemma: Ps 18,XX | Attribution: <foreign xml:lang="grc">XXXX</foreign></note></seg>
+                 </ab>
+                 </div>
+                 <seg type="hexaplaric" xml:id="plut-6-3-hexaplaric-17-XX"
+                     rendition="#right-column" source="XXXX"
+                     corresp="#plut-6-3-ps-17-40b">XXXX</seg>
+            -->
                </ab>
             </div>
             <div xml:id="plut-6-3-20-1" type="bibletext" subtype="commented"
