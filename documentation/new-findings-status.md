@@ -16,4 +16,5 @@ In dieser Datei wird dokumentiert, wie weit die Transkriptionen der einzelnen Ha
 - ```oxon-s-trin-78``` - Psalm 1-18: hexaplarische Varianten; Kommentarfragmente bis inkl. Ps 18,14
 - ```par-gr-139``` - Psalm 1-18: keine hexaplarischen Varianten; Kommentarfragmente bis inkl. Ps 18,15
 - ```par-gr-164``` - Psalm 1-18: keine hexaplarischen Varianten; Kommentarfragmente bis inkl. Ps. 18,3
-- ```par-gr-166``` - Psalm 1-17: keine hexaplarischen Varianten; Kommentarfragmente bis inkl. Ps 17 
+- ```par-gr-166``` - Psalm 1-17: keine hexaplarischen Varianten; Kommentarfragmente bis inkl. Ps 17
+- ```plut-5-30``` - Psalm 1-18: keine hexaplarischen Varianten; Kommentarfragmente bis inkl. fr. 2-27
