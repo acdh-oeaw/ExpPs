@@ -8,7 +8,7 @@
             <title>Paris. Coislin 10 (CPG C32; Rahlfs 187) - Catena Type XIX (Secondary
                Catena)</title>
             <title type="subtitle">List of Contents, Transcription of (Ps.)-Athanasius, Expositiones
-               in Psalmos, and of the Unpublished Fragments (Ps 7,14b to Ps 18)</title>
+               in Psalmos, and of the Unpublished Fragments (Ps 7,14b to Ps 19)</title>
             <respStmt>
                <resp>by</resp>
                <persName>Sebastiano Panteghini (Ps 1 to Ps 12), Marta Kontić (Ps 13 to Ps 18;
@@ -26,7 +26,7 @@
                <licence target="https://creativecommons.org/licenses/by/4.0/">Available under the
                   Creative Commons Attribution 4.0 International (CC BY 4.0)</licence>
             </availability>
-            <date>2024-04-02</date>
+            <date>2024-06-06</date>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -6287,6 +6287,15 @@
             <pb n="24v" facs="https://gallica.bnf.fr/ark:/12148/btv1b52513084s/f61.item"/>
             <div type="commentary" subtype="commentary" xml:id="coislin-10-18-4">
                <ab xml:lang="grc">
+                  <note type="textual-commentary">In the left margin, a later hand wrote an almost
+                     illegible comment: <supplied reason="illegible" cert="medium">ὅταν</supplied>
+                     <gap reason="illegible" quantity="5" unit="character"/><unclear reason="ductus"
+                        >εν</unclear>
+                     <unclear reason="ductus">ει</unclear>μ<gap reason="illegible" quantity="2"
+                        unit="character"/>
+                     <supplied reason="illegible" cert="high">ὀ</supplied> δια<gap
+                        reason="illegible" quantity="7" unit="character"/><unclear reason="faded"
+                        >σ</unclear>ακ<gap reason="illegible" quantity="2" unit="character"/></note>
                   <note type="lemma">Ps 18,4–5b (οὐκ)</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-18-7" source="Theodoretus"
                      corresp="#coislin-10-ps-18-4a">
@@ -6311,16 +6320,11 @@
                         754</ref>
                      <note type="attribution" xml:lang="grc">Ε´</note>
                   </seg>
-                  <note type="textual-commentary">In the left margin, a later hand wrote an almost
-                     illegible comment: <supplied reason="illegible" cert="medium">ὅταν</supplied>
-                     <gap reason="illegible" quantity="5" unit="character"/><unclear reason="ductus"
-                        >εν</unclear>
-                     <unclear reason="ductus">ει</unclear>μ<gap reason="illegible" quantity="2"
-                        unit="character"/>
-                     <supplied reason="illegible" cert="medium">ὀ</supplied> δια<gap
-                        reason="illegible" quantity="7" unit="character"/><unclear reason="faded"
-                        >σ</unclear>ακ<gap reason="illegible" quantity="2" unit="character"/></note>
-                  <pb n="24v–25r"/>
+               </ab>
+            </div>
+            <pb n="24v–25r"/>
+            <div type="commentary" subtype="commentary" xml:id="coislin-10-18-4-1">
+               <ab xml:lang="grc">
                   <note type="lemma">Ps 18,6a (καὶ)</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-18-9"
                      source="Gregorius Nyssenus" corresp="#coislin-10-ps-18-6a">
@@ -6641,72 +6645,78 @@
                   σε. </quote>
             </div>
             <!-- ps 19 commentary -->
-            <!--<div type="commentary" subtype="commentary" xml:id="coislin-10-19-2">
+            <div type="commentary" subtype="commentary" xml:id="coislin-10-19-2">
                <ab xml:lang="grc">
-                  <note type="lemma">Ps 19,1</note>
-                  <seg type="commentaryfragment" xml:id="coislin-10-fr-19-1" source="Theodoretus"
+                  <note type="lemma">Ps 19,1 (Εἰς)</note>
+                  <seg type="hypothesis" xml:id="coislin-10-fr-19-1" source="Theodoretus"
                      corresp="#coislin-10-ps-19-1-1">
                      <quote type="patristic" subtype="quotation" xml:id="coislin-10-quot-19-1"
                         source="Theodoretus, comm. in Ps 19,1 (PG 80,1000 B8–C10)"
                         corresp="#person-16"/>
-                     <ref target="#XXX" type="XXX">Vat. gr. 754</ref>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-19-2" type="identical">Vat. gr.
+                        754</ref>
                      <note type="attribution" xml:lang="grc">Θεοδ(ωρήτου)</note>
                      <note type="textual-commentary">At the bottom margin, a later hand wrote:
-                        ἀρχ(ὴ) τ(οῦ) ΙΘ’ ψαλ(μοῦ). It is not certain whether the note at the bottom
-                        margin of the next page is a continuation or an imprint of this note.</note>
+                        ἀρχ(ὴ) τ(οῦ) ΙΘ’ ψα<supplied reason="inner-margin">λμοῦ</supplied>) | <gap
+                           reason="illegible" unit="character" quantity="40"/>. The second line of
+                        this annotation continues on the following page.</note>
                   </seg>
-                  <!-\- Finish the transcription of the marginal note. -\->
                </ab>
             </div>
             <pb n="27r" facs="https://gallica.bnf.fr/ark:/12148/btv1b52513084s/f66.item"/>
             <div type="commentary" subtype="commentary" xml:id="coislin-10-19-3">
                <ab xml:lang="grc">
-                  <note type="lemma">Ps 19,2–3</note>
-                  <seg type="commentaryfragment" xml:id="coislin-10-fr-19-2" source="(Athanasius)"
-                     corresp="#coislin-10-ps-19-2a">
+                  <note type="lemma">Ps 19,2–3 (sic)</note>
+                  <seg type="hypothesis" xml:id="coislin-10-fr-19-2" source="(Athanasius)"
+                     corresp="#coislin-10-ps-19-2a" copyOf="#edition:edition-19-1">
                      <quote type="patristic" subtype="quotation" xml:id="coislin-10-quot-19-2"
                         source="Athanasius, exp. in Ps 19,1" corresp="#person-2">Λέγεται μὲν ὁ
-                        ψαλμὸς ὡς ἐκ προσώπου τῶν περὶ τὸν Δαυῒδ ἑτέρων· αὐτῶ τῶ Δαυῒδ ἐπευχομένων.
-                        ποιοῦντι θυσίαν· ἀναφέρεται δὲ καὶ εἰς πρόσωπον τῶν ἀποστόλων. ὡς ἐν ἡμέρα
-                        τοῦ σταυροῦ λεγομένων: –</quote>
-                     <ref target="#XXX" type="XXX">Vat. gr. 754</ref>
+                        ψαλμὸς ὡς ἐκ προσώπου τῶν περὶ τὸν Δαυῒδ ἑτέρων· [lege ἑταίρων] αὐτῶ τῶ
+                        Δαυῒδ ἐπευχομένων. ποιοῦντι θυσίαν· ἀναφέρεται δὲ καὶ εἰς πρόσωπον τῶν
+                        ἀποστόλων. ὡς ἐν ἡμέρα τοῦ σταυροῦ λεγομένων: –</quote>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-19-1" type="with-variant">Vat. gr.
+                        754</ref>
                      <note type="attribution" xml:lang="grc">Α´</note>
                   </seg>
                   <note type="lemma">Ps 19,2–3 (ὑπερασπίσαι)</note>
                   <seg type="glosse" xml:id="coislin-10-glosse-19-1" source="Anonymous"
-                     corresp="#coislin-10-ps-19-2a">
+                     corresp="#coislin-10-ps-19-2b">
                      <quote type="patristic" subtype="quotation" xml:id="coislin-10-quot-19-3"
                         source="fons ignotus in Ps 19,2b; in marg." corresp="#person-18">προσταθείη
-                        σοι σκεπάσαι σε φυλάξαι σε</quote>
-                     <ref target="#XXX" type="XXX">Vat. gr. 754</ref>
-                     <note type="textual-commentary">At this lemma there is a linking sign to which
-                        no fragment corresponds.</note>
+                        σοι· σκεπάσαι σε φυλάξαι σε·</quote>
+                     <ref target="#vat-gr-754:vat-gr-754-glosse-19-1" type="identical">Vat. gr.
+                        754</ref>
+                     <note type="textual-commentary">Over Ps 19,2a (Ἐπακούσαι) there is a linking
+                        sign to which no fragment corresponds.</note>
                   </seg>
-                  <note type="lemma">Ps 19,4a</note>
+                  <note type="lemma">Ps 19,4a (μνησθείη)</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-19-3" source="Eusebius"
                      corresp="#coislin-10-ps-19-4a">
                      <quote type="patristic" subtype="quotation" xml:id="coislin-10-quot-19-4"
                         source="Origenes, schol. (?) in Ps 19,4a (Analecta sacra II 475,25–26)"
                         corresp="#person-33"/>
-                     <ref target="#XXX" type="XXX">Vat. gr. 754</ref>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-19-3" type="identical">Vat. gr.
+                        754</ref>
                      <note type="attribution" xml:lang="grc">Εὐσ(εβίου)</note>
                   </seg>
-                  <note type="lemma">Ps 19,4b (ὁλοκαύτωμα)</note>
+                  <note type="lemma">Ps 19,4b (ὁλοκαύτωμά σου)</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-19-4" source="Origenes"
                      corresp="#coislin-10-ps-19-4b">
                      <quote type="patristic" subtype="quotation" xml:id="coislin-10-quot-19-5"
                         source="Evagrius, schol. nr. α´ in Ps 19,4 (412 Rondeau – Géhin – Cassin)"
                         corresp="#person-21"/>
-                     <ref target="#XXX" type="XXX">Vat. gr. 754</ref>
-                     <note type="attribution" xml:lang="grc">ὠριγ(ένους)</note>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-19-8" type="identical">Vat. gr.
+                        754</ref>
+                     <note type="attribution" xml:lang="grc">ὠριγ(ένους) ※</note>
                   </seg>
-                  <note type="lemma">Ps 19,4b (ὁλοκαύτωμα)</note>
+                  <note type="lemma">Ps 19,4b (ὁλοκαύτωμά σου)</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-19-5" source="Anonymous"
                      corresp="#coislin-10-ps-19-4b">
                      <quote type="patristic" subtype="quotation" xml:id="coislin-10-quot-19-6"
                         source="glossa (?) in Ps 19,4b = Origenes (?), fr. in Ps 19,4b (PG 12,1248 A4–5)"
                         corresp="#person-13"/>
-                     <ref target="#XXX" type="XXX">Vat. gr. 754</ref>
+                     <ref target="#vat-gr-754:vat-gr-754-glosse-19-2" type="identical">Vat. gr.
+                        754</ref>
                   </seg>
                   <note type="lemma">Ps 19,4b (πιανάτω)</note>
                   <seg type="glosse" xml:id="coislin-10-glosse-19-2" source="Anonymous"
@@ -6714,63 +6724,70 @@
                      <quote type="patristic" subtype="quotation" xml:id="coislin-10-quot-19-7"
                         source="fons ignotus in Ps 19,4b; in marg." corresp="#person-18">φαιδρυνάτω·
                         στεασάτω·</quote>
-                     <ref target="#XXX" type="XXX">Vat. gr. 754</ref>
+                     <ref target="#vat-gr-754:vat-gr-754-glosse-19-3" type="identical">Vat. gr.
+                        754</ref>
                   </seg>
-                  <note type="lemma">Ps 19,5</note>
+                  <note type="lemma">Ps 19,5 (δῴη)</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-19-6" source="Theodoretus"
                      corresp="#coislin-10-ps-19-5a">
                      <quote type="patristic" subtype="quotation" xml:id="coislin-10-quot-19-8"
                         source="Theodoretus, comm. in Ps 19,5 (PG 80,1001 A14–16)"
                         corresp="#person-16"/>
-                     <ref target="#XXX" type="XXX">Vat. gr. 754</ref>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-19-7" type="identical">Vat. gr.
+                        754</ref>
                      <note type="attribution" xml:lang="grc">Θεοδ(ωρήτου)</note>
                   </seg>
                   <note type="lemma">Ps 19,6a</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-19-7" source="(Athanasius)"
-                     corresp="#coislin-10-ps-19-6a">
+                     corresp="#coislin-10-ps-19-6a" copyOf="#edition:edition-19-6-1">
                      <quote type="patristic" subtype="quotation" xml:id="coislin-10-quot-19-9"
-                        source="Athanasius, exp. in Ps 19,6" corresp="#person-2">Τὸ σωτήριον φησὶν
-                        ὃ δέδωκας τῶ ἀνθρωπείω γένει<subst cert="medium">
+                        source="Athanasius, exp. in Ps 19,6a–b" corresp="#person-2">Τὸ σωτήριον
+                        φησὶν ὃ δέδωκας τῶ ἀνθρωπείω γένει<subst cert="medium">
                            <del rend="strikethrough">:</del>
                            <add place="inline">.</add>
-                        </subst> διὰ τῆς σῆς ἀναστάσεως, πᾶσιν φανερὸν κατέστησας: –</quote>
-                     <ref target="#XXX" type="XXX">Vat. gr. 754</ref>
+                        </subst> διὰ τῆς σῆς ἀναστάσεως. πᾶσιν φανερὸν κατέστησας: –</quote>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-19-4" type="with-variants">Vat. gr.
+                        754</ref>
                      <note type="attribution" xml:lang="grc">Β´</note>
                   </seg>
-                  <note type="lemma">Ps 19,6a (τῷ σωτηρίῳ)</note>
+                  <note type="lemma">Ps 19,6a (τῷ)</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-19-8" source="Origenes"
                      corresp="#coislin-10-ps-19-6a">
                      <quote type="patristic" subtype="quotation" xml:id="coislin-10-quot-19-10"
                         source="Evagrius, schol. nr. β´ in Ps 19,6a (412 Rondeau – Géhin – Cassin)"
                         corresp="#person-21"/>
-                     <ref target="#XXX" type="XXX">Vat. gr. 754</ref>
-                     <note type="attribution" xml:lang="grc">ὠριγ(ένους)</note>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-19-9" type="XXX">Vat. gr. 754</ref>
+                     <note type="attribution" xml:lang="grc">ὠριγ(ένους) ※</note>
                   </seg>
-                  <note type="lemma">Ps 19,6a (τῷ σωτηρίῳ)</note>
+                  <note type="lemma">Ps 19,6a (σωτηρίῳ)</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-19-9" source="Anonymous"
                      corresp="#coislin-10-ps-19-6a">
                      <quote type="patristic" subtype="quotation" xml:id="coislin-10-quot-19-11"
                         source="Origenes, schol. (?) in Ps 19,6a (PG 12,1248 B5–6)"
                         corresp="#person-32"/>
-                     <ref target="#XXX" type="XXX">Vat. gr. 754</ref>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-19-5" type="identical">Vat. gr.
+                        754</ref>
                   </seg>
-                  <note type="lemma">Ps 19,6b</note>
+                  <note type="lemma">Ps 19,6b (καὶ ἐν)</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-19-10" source="Theodoretus"
                      corresp="#coislin-10-ps-19-6b">
                      <quote type="patristic" subtype="quotation" xml:id="coislin-10-quot-19-12"
                         source="Theodoretus, comm. in Ps 19,6 (PG 80,1001 B5–7)"
                         corresp="#person-16"/>
-                     <ref target="#XXX" type="XXX">Vat. gr. 754</ref>
-                     <note type="attribution" xml:lang="grc">Θεοδ(ωρήτου)</note>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-19-13" type="identical">Vat. gr.
+                        754</ref>
+                     <note type="attribution" xml:lang="grc"><unclear reason="inner-margin"
+                           >Θ</unclear>εοδ(ωρήτου)</note>
                   </seg>
                   <note type="lemma">Ps 19,6c</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-19-11" source="(Athanasius)"
-                     corresp="#coislin-10-ps-19-6c">
+                     corresp="#coislin-10-ps-19-6c" copyOf="#edition:edition-19-6-2">
                      <quote type="patristic" subtype="quotation" xml:id="coislin-10-quot-19-13"
                         source="Athanasius, exp. in Ps 19,6c" corresp="#person-2">Τίνα ἦν τὰ
-                        αἰτήματα. ἢ τὸ πάτερ ἅγιε τήρησον αὐτοὺς ἐκ τοῦ κόσμου· δῆλον δὲ ὅτι τοὺς
-                        πιστεύσαντας εἰς αὐτόν: –</quote>
-                     <ref target="#XXX" type="XXX">Vat. gr. 754</ref>
+                        αἰτήματα. ἢ τὸ πάτερ ἅγιε τήρησον αὐτοὺς [Ioh 17,11] ἐκ τοῦ κόσμου· [Ioh
+                        17,15 passim] δῆλον δὲ ὅτι τοὺς πιστεύσαντας εἰς αὐτόν: –</quote>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-19-11" type="identical">Vat. gr.
+                        754</ref>
                      <note type="attribution" xml:lang="grc">Γ´</note>
                   </seg>
                </ab>
@@ -6780,60 +6797,66 @@
                <ab xml:lang="grc">
                   <note type="lemma">Ps 19,7a</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-19-12" source="(Athanasius)"
-                     corresp="#coislin-10-ps-19-7a">
+                     corresp="#coislin-10-ps-19-7a" copyOf="#edition:edition-19-7-1">
                      <quote type="patristic" subtype="quotation" xml:id="coislin-10-quot-19-14"
                         source="Athanasius, exp. in Ps 19,7a" corresp="#person-2">Ὡς ἤδη
                         φωταγωγηθεὶς διὰ τοῦ πνεύματος. τὰ περὶ τῆς ἀναστάσεως: –</quote>
-                     <ref target="#XXX" type="XXX">Vat. gr. 754</ref>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-19-12" type="identical">Vat. gr.
+                        754</ref>
                      <note type="attribution" xml:lang="grc">Δ´</note>
                   </seg>
-                  <note type="lemma">Ps 19,7b</note>
+                  <note type="lemma">Ps 19,7b (ἐπακούσεται)</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-19-13" source="Theodoretus"
                      corresp="#coislin-10-ps-19-7b">
                      <quote type="patristic" subtype="quotation" xml:id="coislin-10-quot-19-15"
                         source="Theodoretus, comm. in Ps 19,7a–b (PG 80,1001 B9–15)"
                         corresp="#person-16"/>
-                     <ref target="#XXX" type="XXX">Vat. gr. 754</ref>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-19-14" type="identical">Vat. gr.
+                        754</ref>
                      <note type="attribution" xml:lang="grc">Θεοδ(ωρήτου)</note>
                   </seg>
                   <note type="lemma">Ps 19,7c</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-19-14" source="(Athanasius)"
-                     corresp="#coislin-10-ps-19-7c">
+                     corresp="#coislin-10-ps-19-7c" copyOf="#edition:edition-19-7-2">
                      <quote type="patristic" subtype="quotation" xml:id="coislin-10-quot-19-16"
                         source="Athanasius, exp. in Ps 19,7c" corresp="#person-2">Ἔσωσεν ἡμᾶς φησὶν.
-                        δυνάμεις μεγάλας ἐργασάμενος· τὰς πράξεις γὰρ ἐνταῦθα σημαίνει, διὰ τῆς
+                        δυνάμεις μεγάλας ἐργασάμενος· τὰς πράξεις γὰρ ἐνταῦθα σημαίνει. διὰ τῆς
                         δεξιᾶς: –</quote>
-                     <ref target="#XXX" type="XXX">Vat. gr. 754</ref>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-19-18" type="identical">Vat. gr.
+                        754</ref>
                      <note type="attribution" xml:lang="grc">Ε´</note>
                   </seg>
-                  <note type="lemma">Ps 19,7c</note>
+                  <note type="lemma">Ps 19,7c (ἐν)</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-19-15" source="Theodoretus"
                      corresp="#coislin-10-ps-19-7c">
                      <quote type="patristic" subtype="quotation-adapted"
                         xml:id="coislin-10-quot-19-17"
                         source="Theodoretus, comm. in Ps 19,7c (PG 80,1001 C1–5); cf. app. ad loc."
                         corresp="#person-16"/>
-                     <ref target="#XXX" type="XXX">Vat. gr. 754</ref>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-19-19" type="with-variant">Vat. gr.
+                        754</ref>
                      <note type="attribution" xml:lang="grc">Θεοδ(ωρήτου)</note>
                   </seg>
                   <note type="lemma">Ps 19,8–9</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-19-16" source="(Athanasius)"
-                     corresp="#coislin-10-ps-19-8a">
+                     corresp="#coislin-10-ps-19-8a" copyOf="#edition:edition-19-10-1">
                      <quote type="patristic" subtype="quotation" xml:id="coislin-10-quot-19-18"
-                        source="Athanasius, exp. in Ps 19,8a" corresp="#person-2">Ὥσπερ τῶν
-                        αἰγυπτίων σώζων τοὺς ἐξ ἰσραὴλ. ἅρματα φαραὼ καὶ τὴν δύναμιν αὐτοῦ ἔρριψεν
+                        source="Athanasius, exp. in Ps 19,8–10" corresp="#person-2">Ὥσπερ τῶν
+                        αἰγυπτίων σώζων τοὺς ἐξ ἰσραὴλ· ἅρματα φαραὼ καὶ τὴν δύναμιν αὐτοῦ ἔρριψεν
                         εἰς θάλασσαν. οὕτω καὶ πάντων ἀνθρώπων σώζων τὸ γένος, τῶν νοητῶν αἰγυπτίων
                         συνέτριψε τὰ ἅρματα: –</quote>
-                     <ref target="#XXX" type="XXX">Vat. gr. 754</ref>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-19-20" type="identical">Vat. gr.
+                        754</ref>
                      <note type="attribution" xml:lang="grc">Ϛ´</note>
                   </seg>
-                  <note type="lemma">Ps 19,8–9</note>
+                  <note type="lemma">Ps 19,8–9 (οὗτοι)</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-19-17" source="Theodoretus"
                      corresp="#coislin-10-ps-19-8a">
                      <quote type="patristic" subtype="quotation" xml:id="coislin-10-quot-19-19"
                         source="Theodoretus, comm. in Ps 19,8–9 (PG 80,1001 C9–15)"
                         corresp="#person-16"/>
-                     <ref target="#XXX" type="XXX">Vat. gr. 754</ref>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-19-21" type="with-variants">Vat. gr.
+                        754</ref>
                      <note type="attribution" xml:lang="grc">Θεοδ(ωρήτου)</note>
                   </seg>
                   <note type="lemma">Ps 19,8–9 (ἐν ἅρμασι)</note>
@@ -6842,24 +6865,26 @@
                      <quote type="patristic" subtype="quotation" xml:id="coislin-10-quot-19-20"
                         source="Evagrius, schol. nr. δ´ in Ps 19,8 (414 Rondeau – Géhin – Cassin)"
                         corresp="#person-21"/>
-                     <ref target="#XXX" type="XXX">Vat. gr. 754</ref>
-                     <note type="attribution" xml:lang="grc">ὠριγε(νους)</note>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-19-15" type="with-variant">Vat. gr.
+                        754</ref>
+                     <note type="attribution" xml:lang="grc">ὠριγε(νους) ⁘</note>
                   </seg>
-                  <note type="lemma">Ps 19,10</note>
+                  <note type="lemma">Ps 19,10 (κύριε)</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-19-19" source="Theodoretus"
                      corresp="#coislin-10-ps-19-10a">
                      <quote type="patristic" subtype="quotation" xml:id="coislin-10-quot-19-21"
                         source="Theodoretus, comm. in Ps 19,10 (PG 80,1001 D3–5)"
                         corresp="#person-16"/>
-                     <ref target="#XXX" type="XXX">Vat. gr. 754</ref>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-19-17" type="identical">Vat. gr.
+                        754</ref>
                      <note type="attribution" xml:lang="grc">Θεοδ(ωρήτου)</note>
-                     <note type="textual-commentary">At this lemma there is a linking sign to which
-                        no fragment corresponds.</note>
+                     <note type="textual-commentary">Over Ps 19,10a (σῶσον) there is a linking sign
+                        to which no fragment corresponds.</note>
                   </seg>
                </ab>
-            </div>-->
+            </div>
             <!-- ps 20 bibletext -->
-            <div xml:id="coislin-10-20-1" type="bibletext" subtype="commented"
+            <!-- <div xml:id="coislin-10-20-1" type="bibletext" subtype="commented"
                change="commentaryfragments-only">
                <quote type="bibletext" n="Ps (LXX) 20,1" xml:lang="grc" xml:id="coislin-10-ps-20-1">
                   <anchor type="psalmtext" n="Ps (LXX) 20,1" xml:id="coislin-10-ps-20-1-1"/> Εἰς τὸ
@@ -6932,12 +6957,12 @@
                      xml:id="coislin-10-ps-20-14b"/> ᾄσομεν καὶ ψαλοῦμεν τὰς δυναστείας σου.
                </quote>
             </div>
-            <!-- ps 20 commentary -->
+            
+            <!-\- ps 20 commentary -\->
             <div type="commentary" subtype="commentary" xml:id="coislin-10-20-2"
                change="commentaryfragments-only">
                <ab xml:lang="grc"> </ab>
             </div>
-            <!-- 
                <div type="commentary" subtype="commentary" xml:id="coislin-10-17-XX"
                change="commentaryfragments-only">
                <ab xml:lang="grc">
@@ -6964,8 +6989,7 @@
                      <note type="attribution" xml:lang="grc">XXXX</note>
                   </seg> 
             </ab>
-            </div>
-                  -->
+            </div>-->
          </div>
       </body>
    </text>
