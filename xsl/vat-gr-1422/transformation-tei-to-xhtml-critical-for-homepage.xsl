@@ -168,7 +168,10 @@
    
     <xsl:template match="tei:teiHeader">
         <p class="title">
-            <xsl:value-of select="tei:fileDesc/tei:titleStmt/tei:title"/>
+            <xsl:value-of select="tei:fileDesc/tei:titleStmt/tei:title[not(@type)]"/>
+        </p>
+        <p class="author">
+            <xsl:value-of select="tei:fileDesc/tei:titleStmt/tei:title[exists(@type)]"/>
         </p>
         <p class="responsibility">
             <xsl:value-of select="tei:fileDesc/tei:titleStmt/tei:respStmt/tei:resp"/>
@@ -237,6 +240,14 @@
                 <xsl:apply-templates select="tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:physDesc/tei:objectDesc/tei:layoutDesc/tei:layout"/>
             </ul>
             <p class="manuscript-physical-description-content">
+                <xsl:text>Script:</xsl:text>
+            </p>
+            <xsl:for-each select="tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:physDesc/tei:scriptDesc/tei:p">
+                <p class="manuscript-physical-description-content" style="margin-left: 60pt;">
+                    <xsl:value-of select="."/>
+                </p>
+            </xsl:for-each>
+            <p class="manuscript-physical-description-content">
                 <xsl:text>Decoration: </xsl:text>
                 <xsl:value-of select="tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:physDesc/tei:decoDesc/tei:p/text()"/>
             </p>
@@ -298,7 +309,7 @@
             <p class="editorial-declaration-normalization-paragraph">
                 <!--<xsl:value-of select="tei:normalization/tei:p[@n = 'abbreviations']/text()"/>-->
                 <xsl:apply-templates select="tei:normalization/tei:p/tei:list/tei:item"/>
-                <xsl:apply-templates select="tei:normalization/tei:p[@n = 'auszeichnungsmajuskeln']"/>
+                <xsl:apply-templates select="tei:normalization/tei:p"/>
             </p>
         </div>
     </xsl:template>
@@ -696,7 +707,28 @@
     </xsl:template>
     
     <xsl:template match="tei:div[@type = 'commentary' and @change = 'commentaryfragments-only']">
-        <xsl:apply-templates select="tei:ab/tei:seg[@type = 'commentaryfragment' or @type = 'hypothesis'] | tei:ab/tei:note[@type = 'textual-commentary']" mode="commentaryfragments-only"/>
+        <xsl:apply-templates select="tei:ab/tei:seg[(@type = 'commentaryfragment') or (@type = 'hypothesis') or (@type = 'hexaplaric')] | tei:ab/tei:note[@type = 'textual-commentary']" mode="commentaryfragments-only"/>
+    </xsl:template>
+    
+    <xsl:template match="tei:seg[@type = 'hexaplaric']" mode="commentaryfragments-only">
+        <div class="commentaryfragment">
+            <p class="commentaryfragment-in-transcription-simplified">
+                <a>
+                    <xsl:attribute name="id">
+                        <xsl:value-of select="@xml:id"/>
+                    </xsl:attribute>
+                </a>
+                <b>
+                    <xsl:value-of select="@source"/>
+                </b>
+            </p>
+            <p class="commentaryfragment-in-transcription-simplified">
+                <xsl:apply-templates select="preceding-sibling::tei:note[@type = 'lemma'][1]" mode="commentaryfragments-only"/>
+            </p>
+            <p class="commentaryfragment-in-transcription-simplified">
+                <xsl:apply-templates select="child::node()"/>
+            </p>
+        </div>
     </xsl:template>
     
     <xsl:template match="tei:seg[@type = 'commentaryfragment' or @type = 'hypothesis']" mode="commentaryfragments-only">
@@ -719,6 +751,9 @@
                 <xsl:apply-templates select="tei:note[@type = 'attribution']" mode="commentaryfragments-only"/>
             </p>
                 <xsl:apply-templates select="tei:quote[@type = 'patristic']" mode="commentaryfragments-only"/>
+            <p class="commentaryfragment-in-transcription-simplified">
+                <xsl:apply-templates select="tei:note[@type = 'parallels']" mode="commentaryfragments-only"/>
+            </p>
             <p class="commentaryfragment-in-transcription-simplified">
                 <xsl:apply-templates select="tei:ref" mode="commentaryfragments-only"/>
             </p>
@@ -746,7 +781,16 @@
     
     <xsl:template match="tei:note[@type = 'attribution']" mode="commentaryfragments-only">
         <xsl:text> Attribution: </xsl:text>
-        <xsl:apply-templates select="tei:foreign/child::node()"/>
+        <xsl:if test="exists(child::tei:foreign)">
+            <xsl:apply-templates select="tei:foreign/child::node()"/>
+        </xsl:if>
+        <xsl:if test="not(exists(child::tei:foreign))">
+            <xsl:apply-templates select="child::node()"/>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template match="tei:note[@type = 'parallels']" mode="commentaryfragments-only">
+        <xsl:apply-templates select="child::node()"/>
     </xsl:template>
     
     <xsl:template match="tei:quote[@type = 'patristic']" mode="commentaryfragments-only">
@@ -758,6 +802,8 @@
         <p class="commentaryfragment-in-transcription-simplified"><b>
             <xsl:value-of select="@source"/>
         </b>
+            <xsl:text> - </xsl:text>
+            <xsl:value-of select="translate(@subtype,'-',' ')"/>
         </p>
         <p class="commentaryfragment-in-transcription-simplified">
             <xsl:apply-templates select="child::node()"/>
@@ -784,6 +830,9 @@
                      </xsl:when>
                      <xsl:when test="starts-with(@target,'#bodl-auct-d-4-1:')">
                          <xsl:value-of select="concat('./bodl_auct_d_4_1.html#',substring-after(@target,'#bodl-auct-d-4-1:'))"/>
+                     </xsl:when>
+                     <xsl:when test="starts-with(@target,'#coislin-187:')">
+                         <xsl:value-of select="concat('./coislin-187.html#',substring-after(@target,'#coislin-187:'))"/>
                      </xsl:when>
                      <xsl:otherwise>
                          <xsl:value-of select="''"/>

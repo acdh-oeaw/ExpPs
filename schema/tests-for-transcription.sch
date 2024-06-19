@@ -20,6 +20,7 @@
                 or starts-with(@target,'#par-gr-164')
                 or starts-with(@target,'#par-gr-166:')
                 or starts-with(@target,'#plut-5-30:')
+                or starts-with(@target,'#coislin-187:')
                 or starts-with(@target,'#mosq-syn-194:')">Wrong prefix in ref/@target</assert>
         </rule>
     </pattern>
