@@ -22706,6 +22706,7 @@
             </div>
          </div>
          <!-- Ps 16 commentary -->
+         <!-- faciendum: Ps 16: G Z N2 P7 A3 noch zu kollationieren -->
          <div type="psalm" n="16">
             <div type="psalmverse" n="16.1">
                <div type="text" xml:lang="grc">
@@ -24486,6 +24487,9 @@
             </div>
          </div>
          <!-- Ps 17 commentary -->
+         <!-- faciendum: Ps 17: Syrische Übersetzung noch zu untersuchen -->
+         <!-- faciendum: Ps 17: N2: Kollation gemacht?: Z: Kollation scheint bereits gemacht -->
+         <!-- faciendum: Ps 17: G P7 noch zu kollationieren: A3 bereits begonnen -->
          <div type="psalm" n="17">
             <div type="psalmverse" n="17.1">
                <div type="text" xml:lang="grc">
@@ -31307,6 +31311,7 @@
             </div>
          </div>
          <!-- ps 18 commentary -->
+         <!-- faciendum: Ps 18: Verweis auf Koptische Expositio nicht durch griechische Katenen bezeugt -->
          <div type="psalm" n="18">
             <div type="psalmverse" n="18.1">
                <div type="text" xml:lang="grc">
@@ -33165,16 +33170,18 @@
                      <quote type="psalmtext" xml:id="edition-ps-19-1" n="1">Εἰς τὸ τέλος· ψαλμὸς τῷ
                         Δαυΐδ.</quote>
                   </div>
-                  <div type="commentary">
-                     <p xml:id="edition-19-1" n="317" ana="hypothesis">Λέγεται μὲν ὁ ψαλμὸς, ὡς ἐκ
-                        προσώπου τῶν περὶ τὸν Δαυῒδ ἑταίρων· αὐτῷ τῷ Δαυῒδ ἐπευχομένων ποιοῦντι
-                        θυσίαν· ἀναφέρεται δὲ καὶ εἰς πρόσωπον τῶν ἀποστόλων, ὡς ἐν ἡμέρᾳ τοῦ
-                        σταυροῦ λεγομένων: –</p>
+                  <div type="commentary" rend="parallel">
+                     <p xml:id="edition-19-1" n="317" ana="hypothesis" next="#edition-19-1-1"
+                        >Λέγεται μὲν ὁ ψαλμὸς, ὡς ἐκ προσώπου τῶν περὶ τὸν Δαυῒδ ἑταίρων· αὐτῷ τῷ
+                        Δαυῒδ ἐπευχομένων ποιοῦντι θυσίας· ἀναφέρεται δὲ καὶ εἰς πρόσωπον τῶν
+                        ἀποστόλων, ὡς ἐν ἡμέρᾳ τοῦ σταυροῦ λεγομένων: –</p>
                      <div type="links">
                         <p><listRef>
                               <ref target="#vat-gr-754:vat-gr-754-fr-19-1"/>
                               <ref target="#coislin-10:coislin-10-fr-19-2"/>
                               <ref target="#mosq-syn-194:mosq-syn-194-fr-19-1"/>
+                              <ref target="#franzon-3:franzon-3-fr-19-1"/>
+                              <ref target="#par-gr-166:par-gr-166-fr-19-1"/>
                               <ref target="#coislin-12:coislin-12-fr-19-1"/>
                               <ref target="#coislin-187:coislin-187-fr-19-1"/>
                               <ref target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-19-1"/>
@@ -33184,12 +33191,14 @@
                            </listRef></p>
                      </div>
                   </div>
-                  <div type="textcritic">
+                  <div type="textcritic" rend="hide">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #M #P5 #V4 #P2 #B1 #B2 #P6 #Z #N2 #V5 #P7">txt</rdg>
+                        <rdg wit="#V1 #C #M #G #P1 #P5 #V4 #P2 #B1 #B2 #P6 #Z #N2 #V5 #P7">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Coislin 10</wit>
                         <wit>Sinod. gr. 194</wit>
+                        <wit>Par. gr. 166</wit>
+                        <wit>Urbani 3</wit>
                         <wit>Coislin 12</wit>
                         <wit>Vat. gr. 1747</wit>
                         <wit>Coislin 187</wit>
@@ -33217,14 +33226,18 @@
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">ἑταίρων – τῷ Δαυῒδ</foreign></lem>
-                        <rdg wit="#M">om.</rdg>
+                        <rdg wit="#M">om.<note type="in-readings">(homoeoteleuti causa)</note></rdg>
                         <wit>Sinod. gr. 194</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">τῶν περὶ τὸν Δαυῒδ ἑταίρων</foreign></lem>
-                        <rdg wit="#C"><foreign xml:lang="grc">τῶν περὶ τὸν Δαυῒδ
-                           ἑτέρων</foreign></rdg>
+                        <rdg wit="#C #P1"><foreign xml:lang="grc">τῶν περὶ τὸν Δαυῒδ
+                              ἑτέρων</foreign></rdg>
                         <wit>Coislin 10</wit>
+                        <wit>Par. gr. 166</wit>
+                        <rdg wit="#G"><foreign xml:lang="grc">τῶν περὶ τῶν Δαυῒδ
+                           ἑταίρων</foreign></rdg>
+                        <wit>Urbani 3</wit>
                         <rdg wit="#B1"><foreign xml:lang="grc">τῶν περὶ τοῦ Δαυῒδ·
                            ἑτέρων</foreign></rdg>
                         <wit>Auct. D.4.1</wit>
@@ -33259,21 +33272,19 @@
                         <wit>S.Trin 78</wit>
                      </app>
                      <app type="text">
-                        <lem><foreign xml:lang="grc">ποιοῦντι θυσίαν</foreign>
+                        <lem><foreign xml:lang="grc">ποιοῦντι θυσίας</foreign>
                         </lem>
+                        <rdg wit="#V1 #C #G #P1"><foreign xml:lang="grc">ποιοῦντι
+                           θυσίαν</foreign></rdg>
+                        <wit>Vat. gr. 754</wit>
+                        <wit>Coislin 10</wit>
+                        <wit>Urbani 3</wit>
+                        <wit>Par. gr. 166</wit>
                         <rdg wit="#M"><foreign xml:lang="grc">ποιοῦνται</foreign> (ut vid.)<foreign
                               xml:lang="grc"> θυσίαν</foreign></rdg>
                         <wit>Sinod. gr. 194</wit>
-                        <rdg wit="#P5 #P2 #B1 #P6 #Z #N2 #V5 #P7"><foreign xml:lang="grc">ποιοῦντι
-                              θυσίας</foreign></rdg>
-                        <wit>Coislin 12</wit>
-                        <wit>Coislin 187</wit>
-                        <wit>Auct. D.4.1</wit>
-                        <wit>Par. gr. 139</wit>
-                        <wit>Marc. gr. Z. 17</wit>
-                        <wit>Athen. B.N. 45</wit>
-                        <wit>Vat. gr. 1422</wit>
-                        <wit>Par. gr. 146</wit>
+                        <rdg><foreign xml:lang="grc">ποιοῦντι θυσίας</foreign> ceteri sicut in
+                           Copt.</rdg>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">ἀναφέρεται</foreign></lem>
@@ -33300,8 +33311,7 @@
                         <rdg wit="#V5 #P7"><foreign xml:lang="grc">ἐν ἡμέρᾳ</foreign></rdg>
                      </app>
                      <app type="text">
-                        <lem><foreign xml:lang="grc">λεγομένων</foreign>
-                        </lem>
+                        <lem><foreign xml:lang="grc">λεγομένων</foreign></lem>
                         <rdg wit="#M"><foreign xml:lang="grc">λεγόντων</foreign></rdg>
                         <wit>Sinod. gr. 194</wit>
                         <rdg wit="#B1"><foreign xml:lang="grc">λεγόμενον</foreign></rdg>
@@ -33311,16 +33321,58 @@
                      </app>
                      <note type="textual-commentary">V5 P7: exp. 317 nahe der Tradition der
                         (Text-)Katenen basierend auf den Expositiones und den Kommentaren des
-                        Hesychius von Hierysalem (P2 B1).</note>
+                        Hesychius von Hierysalem (P2 B1). Montfaucon: exp. 317 nach P1 (λεγομένων in
+                        ῥηθέντος korrigiert).</note>
+                  </div>
+                  <div type="commentary" rend="hide">
+                     <p xml:id="edition-19-1-1" n="317">Λέγεται μὲν οὗτος ὁ ψαλμὸς ἱστορικῶς ἐκ
+                        προσώπου τῶν περὶ τὸν Δαυῒδ ἑταίρων· αὐτῷ τῷ Δαυῒδ ἐπευχομένῳ ποιοῦντι
+                        θυσίας· ἀναφέρεται δὲ ἀναγωγικῶς καὶ εἰς πρόσωπον τῶν ἀποστόλων, ὡς ἐν ἡμέρᾳ
+                        τοῦ σταυροῦ λεγόμενος· νοεῖται δὲ καὶ ἐκ ψυχῆς ἁπάσης ὑπὲρ ἑτέρας ἐν θλίψει
+                        οὔσης προσευχομένης: –</p>
+                     <div type="links">
+                        <p><listRef>
+                              <ref target="#ambr-m-47-sup:ambr-m-47-sup-fr-19-1"/>
+                           </listRef></p>
+                     </div>
+                  </div>
+                  <div type="textcritic" rend="hide">
+                     <app type="fragment">
+                        <rdg wit="#A1">txt</rdg>
+                        <wit>Ambr. M.47.sup.</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">οὗτος</foreign></lem>
+                        <rdg wit="#A1*"><foreign xml:lang="grc">οὕτως</foreign> (ut vid.)</rdg>
+                        <wit>Ambr. M.47.sup.</wit>
+                        <rdg wit="#A1m.sec."><foreign xml:lang="grc">οὗτος</foreign></rdg>
+                        <wit>Ambr. M.47.sup.</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">ποιοῦντι</foreign></lem>
+                        <rdg wit="#A1m.sec."><foreign xml:lang="grc">π-</foreign> corr.<note
+                              type="in-readings">(ut vid.)</note></rdg>
+                        <wit>Ambr. M.47.sup.</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">λεγόμενος</foreign></lem>
+                        <rdg wit="#A1"><note type="in-readings">sicut in Copt.</note></rdg>
+                     </app>
                   </div>
                </div>
                <div type="translation" xml:lang="de">
                   <quote type="psalmtext" corresp="#edition-ps-19-1" n="1">Auf das Ende hin. Ein
                      Psalm, bezogen auf David. </quote>
-                  <p corresp="#edition-19-1" n="219">Der Psalm wird vorgetragen im Namen der Freunde
-                     Davids, die dem David selbst, da er das Opfer darbringt, ihre Segenswünsche
-                     aussprechen. Er läßt sich aber auch auf die Person der Apostel beziehen, wie
-                     wenn er am Tage der Kreuzigung vorgetragen worden wäre.</p>
+                  <p corresp="#edition-19-1" n="219">Der Psalm wird wie in der Person von Davids
+                     Freunden gesprochen, die für David selbst beten, während er die Opfer
+                     darbringt. Er kann aber auch auf die Person der Apostel bezogen werden, (so)
+                     als ob sie am Tag des Kreuzes sprechen würden.</p>
+                  <p corresp="#edition-19-1-1" n="219">Historisch wird dieser Psalm in der Person
+                     von Davids Freunden gesprochen, die für David selbst beten, während er die
+                     Opfer darbringt. Im anagogischen Sinn kann er aber auch auf die Person der
+                     Apostel bezogen werden, (so) als ob er am Tag des Kreuzes gesprochen wäre. Er
+                     kann aber auch ausgehend von jeder Seele gedacht werden, die für eine andere
+                     betet, die sich in Bedrängnis befindet.</p>
                </div>
             </div>
             <div type="psalmverse" n="19.2">
@@ -33389,6 +33441,7 @@
                      erfülle er.</quote>
                </div>
             </div>
+            <!-- ToDo: Trennungslinie zwischen Ps 19,5 und Ps 19,6 -->
             <div type="psalmverse" n="19.6">
                <div type="text" xml:lang="grc">
                   <div type="psalmtext">
@@ -33399,13 +33452,15 @@
                   </div>
                   <div type="commentary">
                      <p xml:id="edition-19-6-1" n="318">Τὸ σωτήριον φησὶν ὃ δέδωκας τῷ ἀνθρωπίνῳ
-                        γένει· διὰ τῆς σῆς ἀναστάσεως, πᾶσι φανερὸν κατέστησας: –</p>
+                        γένει· διὰ τῆς σῆς ἀναστάσεως, πᾶσι φανερὸν καταστήσεις: –</p>
                      <div type="links">
                         <p><listRef>
                               <ref target="#vat-gr-754:vat-gr-754-fr-19-4"/>
                               <ref target="#coislin-10:coislin-10-fr-19-7"/>
                               <ref target="#mosq-syn-194:mosq-syn-194-fr-19-3"/>
+                              <ref target="#franzon-3:franzon-3-fr-19-2"/>
                               <ref target="#coislin-12:coislin-12-fr-19-2"/>
+                              <ref target="#ambr-m-47-sup:ambr-m-47-sup-fr-19-3"/>
                               <ref target="#coislin-187:coislin-187-fr-19-2"/>
                               <ref target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-19-7"/>
                               <ref target="#par-gr-139:par-gr-139-fr-19-14"/>
@@ -33414,11 +33469,14 @@
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #M #P5 #P2 #B1 #P6 #Z #N2">txt</rdg>
+                        <rdg wit="#V1 #C #M #G #P5 #A1 #P2 #B1 #P6 #Z #N2">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Coislin 10</wit>
                         <wit>Sinod. gr. 194</wit>
+                        <wit>Urbani 3</wit>
+                        <!-- Katene: P1 exp. om.-->
                         <wit>Coislin 12</wit>
+                        <wit>Ambr. M 47 sup.</wit>
                         <wit>Coislin 187</wit>
                         <wit>Auct. D.4.1</wit>
                         <wit>Par. gr. 139</wit>
@@ -33431,8 +33489,13 @@
                            glossae in Ps 19,4b) ante<foreign xml:lang="grc"> τὸ</foreign> add.</rdg>
                      </app>
                      <app type="text">
-                        <lem><foreign xml:lang="grc">Τὸ σωτήριον φησὶν</foreign></lem>
-                        <rdg wit="#M"><foreign xml:lang="grc">τὸ σωτήριόν σου</foreign></rdg>
+                        <lem><foreign xml:lang="grc">Τὸ σωτήριον φησὶν ὃ δέδωκας</foreign></lem>
+                        <rdg wit="#M"><foreign xml:lang="grc">... τὸ σωτήριόν σου ὃ
+                              δέδωκας</foreign></rdg>
+                        <wit>Sinod. gr. 194</wit>
+                        <rdg wit="#A1"><foreign xml:lang="grc">Τὸ σωτήριον, ὃ δέδωκάς
+                           φησὶ</foreign></rdg>
+                        <wit>Ambr. M 47 sup.</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="">τῷ ἀνθρωπίνῳ γένει</foreign></lem>
@@ -33447,23 +33510,21 @@
                         <wit>Coislin 187</wit>
                      </app>
                      <app type="text">
-                        <lem><foreign xml:lang="grc">κατέστησας</foreign></lem>
+                        <lem><foreign xml:lang="grc">καταστήσεις</foreign></lem>
                         <rdg wit="#V1 #M"><foreign xml:lang="grc"> κατέστησα</foreign><note
                               type="in-readings">(sed. linea ex <foreign xml:lang="grc">-α</foreign>
                               educta <hi rend="italic">V1</hi>)</note></rdg>
                         <wit>Vat. gr. 754</wit>
-                        <rdg wit="#P5 #P2 #B1 #P6 #Z #N2"><foreign xml:lang="grc"
-                              >καταστήσεις</foreign></rdg>
-                        <wit>Coislin 12</wit>
-                        <wit>Coislin 187</wit>
-                        <wit>Auct. D.4.1</wit>
-                        <wit>Par. gr. 139</wit>
-                        <wit>Marc. gr. Z. 17</wit>
-                        <wit>Athen. B.N. 45</wit>
+                        <rdg wit="#C #G"><foreign xml:lang="grc">κατέστησας</foreign></rdg>
+                        <wit>Coislin 10</wit>
+                        <wit>Urbani 3</wit>
                      </app>
-                     <note type="textual-commentary">M: exp. 318 steht nach exp. 319. Auch in V1
-                        stehen die im Apparat zitierten Glossen vor exp. 318 (wenn auch mit einer
-                        Trennung).</note>
+                     <note type="textual-commentary">Zu 19,1–5 ist keine expositio
+                        vorhanden.<!-- Copt: exp. 318 steht nach Ps 19,6b.--> M: exp. 318 steht nach
+                        exp. 319. Die exp. 318 beigefügten Glossen (siehe app.) befinden sich
+                        ebenfalls in V1 unmittelbar vor dieser Expositio (allerdings getrennt). P1:
+                        exp. 319 mit einer anderen Erklärung ersetzt (Origenes, schol. [?] in Ps
+                        19,6a [PG 12,1248 B5–6). Montfaucon hat diese Erklärung ediert.</note>
                   </div>
                   <div type="psalmtext">
                      <quote type="psalmtext" xml:id="edition-ps-19-6-3" n="6c">πληρώσαι κύριος πάντα
@@ -33473,14 +33534,17 @@
                      <p xml:id="edition-19-6-2" n="319">Τίνα ἦν τὰ αἰτήματα, ἢ τὸ πάτερ ἅγιε·
                         τήρησον αὐτοὺς <anchor type="biblical-quotation" subtype="direct-quotation"
                            n="Ioh 17,11"/> ἐκ τοῦ κόσμου· <anchor type="biblical-quotation"
-                           subtype="direct-quotation" n="Ioh 17,15 passim"/> δῆλον δὲ ὅτι τοὺς
+                           subtype="direct-quotation" n="Ioh 17,15 passim"/> δῆλον δὲ, ὅτι τοὺς
                         πιστεύσαντας εἰς αὐτόν: –</p>
                      <div type="links">
                         <p><listRef>
                               <ref target="#vat-gr-754:vat-gr-754-fr-19-11"/>
                               <ref target="#coislin-10:coislin-10-fr-19-11"/>
                               <ref target="#mosq-syn-194:mosq-syn-194-fr-19-2"/>
+                              <ref target="#franzon-3:franzon-3-fr-19-3"/>
+                              <ref target="#par-gr-166:par-gr-166-fr-19-4"/>
                               <ref target="#coislin-12:coislin-12-fr-19-3"/>
+                              <ref target="#ambr-m-47-sup:ambr-m-47-sup-fr-19-4"/>
                               <ref target="#coislin-187:coislin-187-fr-19-3"/>
                               <ref target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-19-8"/>
                               <ref target="#plut-5-30:plut-5-30-fr-19-10"/>
@@ -33488,17 +33552,22 @@
                               <ref target="#vat-gr-1422:vat-gr-1422-fr-19-20"/>
                               <ref target="#vat-gr-1422:vat-gr-1422-fr-19-32"/>
                               <ref target="#plut-6-3:plut-6-3-fr-19-1"/>
+                              <ref target="#plut-6-3:plut-6-3-fr-19-3"/>
                            </listRef></p>
                      </div>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #M #P5 #P2 #B1 #L1 #P6 #V5a #P7a #V5b #P7b #L2 #A3"
+                        <rdg
+                           wit="#V1 #C #M #G #P1 #P5 #A1 #P2 #B1 #L1 #P6 #Z #N2 #V5a #P7a #V5b #P7b #L2a #A3a #L2b #A3b"
                            >txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Coislin 10</wit>
                         <wit>Sinod. gr. 194</wit>
+                        <wit>Urbani 3</wit>
+                        <wit>Par. gr. 166</wit>
                         <wit>Coislin 12</wit>
+                        <wit>Ambr. M 47 sup.</wit>
                         <wit>Coislin 187</wit>
                         <wit>Auct. D.4.1</wit>
                         <wit>Plut. 5.30</wit>
@@ -33511,13 +33580,20 @@
                         <wit>Ambr. C 98 sup.</wit>
                      </app>
                      <app type="text">
+                        <lem><foreign xml:lang="grc">Τίνα – εἰς αὐτόν</foreign></lem>
+                        <rdg wit="#L2b"><note type="in-readings">per ras. deleta</note></rdg>
+                        <wit>Plut. 6.3</wit>
+                     </app>
+                     <app type="text">
                         <lem><foreign xml:lang="grc">Τίνα ἦν</foreign></lem>
                         <rdg wit="#L1"><foreign xml:lang="grc">Τίνα φησὶν</foreign></rdg>
                         <wit>Plut. 5.30</wit>
                         <rdg wit="#M"><foreign xml:lang="grc">... τίνα δὲ ἦν</foreign></rdg>
                         <wit>Sinod. gr. 194</wit>
-                        <rdg wit="#V5a #P7a #L2 #A3"><foreign xml:lang="grc">... τί δὲ
-                           εἴη</foreign></rdg>
+                        <rdg wit="#G"><foreign xml:lang="grc">Tίνα δὲ ἦν</foreign></rdg>
+                        <wit>Urbani 3</wit>
+                        <rdg wit="#V5a #P7a #L2a #A3a"><foreign xml:lang="grc">... τί δὲ
+                              εἴη</foreign></rdg>
                         <wit>Vat. gr. 1422</wit>
                         <wit>Par. gr. 146</wit>
                         <wit>Plut. 6.3</wit>
@@ -33525,7 +33601,7 @@
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">ἢ τὸ</foreign></lem>
-                        <rdg wit="#M #V5a #P7a #L2 #A3">om.</rdg>
+                        <rdg wit="#M #V5a #P7a #L2a #A3a">om.</rdg>
                         <wit>Sinod. gr. 194</wit>
                         <wit>Vat. gr. 1422</wit>
                         <wit>Par. gr. 146</wit>
@@ -33534,23 +33610,38 @@
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">πάτερ ἅγιε</foreign></lem>
-                        <rdg wit="#V5b #P7b"><foreign xml:lang="grc">ἅγιε</foreign></rdg>
+                        <rdg wit="#V5b #P7b #A3b"><foreign xml:lang="grc">ἅγιε</foreign></rdg>
                         <wit>Vat. gr. 1422</wit>
                         <wit>Par. gr. 146</wit>
+                        <wit>Par. gr. 146</wit>
+                        <wit>Plut. 6.3</wit>
+                        <wit>Ambr. C 98 sup.</wit>
+                        <rdg wit="#L2b"><foreign xml:lang="grc">[ἅγιε(?)]</foreign></rdg>
+                        <wit>Plut. 6.3</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">τήρησον</foreign></lem>
-                        <rdg wit="#Z #N2 #V5b #P7b"><foreign xml:lang="grc"
-                           >διατήρησον</foreign></rdg>
+                        <rdg wit="#Z #N2 #V5b #P7b #A3b"><foreign xml:lang="grc"
+                              >διατήρησον</foreign></rdg>
                         <wit>Marc. gr. 17</wit>
                         <wit>Athen. B.N. 45</wit>
                         <!-- τήρησον P6 = V1  -->
                         <wit>Vat. gr. 1422</wit>
                         <wit>Par. gr. 146</wit>
+                        <wit>Ambr. C 98 sup.</wit>
+                        <rdg wit="#L2b"><foreign xml:lang="grc">[διατήρησον(?)]</foreign></rdg>
+                        <wit>Plut. 6.3</wit>
                      </app>
                      <app type="text">
-                        <lem><foreign xml:lang="grc">δῆλον δὲ ὅτι</foreign></lem>
-                        <rdg wit="#M #P5 #P6 #Z #N2 #V5a #P7a #V5b #P7b #L2 #A3"><foreign
+                        <lem><foreign xml:lang="grc">ἐκ τοῦ κόσμου</foreign></lem>
+                        <rdg wit="#A1"><foreign xml:lang="grc">ἐν τῷ ὀνόματ[ί σου]</foreign><note
+                              type="in-readings">(= Ioh 17,11)</note>
+                        </rdg>
+                        <wit>Ambr. M 47 sup.</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">δῆλον δὲ, ὅτι</foreign></lem>
+                        <rdg wit="#M #P5 #P6 #Z #N2 #V5a #P7a #V5b #P7b #L2a #A3a #A3b"><foreign
                               xml:lang="grc">δηλονότι</foreign></rdg>
                         <wit>Sinod. gr. 194</wit>
                         <wit>Coislin 12</wit>
@@ -33561,14 +33652,18 @@
                         <wit>Par. gr. 146</wit>
                         <wit>Plut. 6.3</wit>
                         <wit>Ambr. C 98 sup.</wit>
+                        <!-- Textkritik: δηλότι (sic) A3 -->
+                        <rdg wit="#L2b"><foreign xml:lang="grc">[δηλονότι(?)]</foreign></rdg>
+                        <wit>Par. gr. 146</wit>
                         <rdg wit="#L1"><foreign xml:lang="grc">δῆλος δὲ, ὅτι</foreign></rdg>
                         <wit>Plut. 5.30</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">τοὺς πιστεύσαντας</foreign></lem>
-                        <rdg wit="#M #B1 #Z #N2 #V5a #P7a #V5b #P7b #L2 #A3"><foreign xml:lang="grc"
-                              >τοὺς πιστεύοντας</foreign></rdg>
+                        <rdg wit="#M #P1 #B1 #Z #N2 #V5a #P7a #V5b #P7b #L2a #A3a #A3b"><foreign
+                              xml:lang="grc">τοὺς πιστεύοντας</foreign></rdg>
                         <wit>Sinod. gr. 194</wit>
+                        <wit>Par. gr. 166</wit>
                         <wit>Auct. D.4.1</wit>
                         <wit>Marc. gr. 17</wit>
                         <wit>Athen. B.N. 45</wit>
@@ -33577,23 +33672,36 @@
                         <wit>Par. gr. 146</wit>
                         <wit>Plut. 6.3</wit>
                         <wit>Ambr. C 98 sup.</wit>
+                        <rdg wit="#L2b"><foreign xml:lang="grc">[τοὺς
+                           πιστεύοντας(?)]</foreign></rdg>
+                        <wit>Plut. 6.3</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">εἰς αὐτόν</foreign></lem>
+                        <rdg wit="#A1"><foreign xml:lang="grc">[εἰς] [αὐτόν(?)]</foreign></rdg>
+                        <wit>Ambr. M 47 sup.</wit>
                         <rdg wit="#L1"><foreign xml:lang="grc">αὐτῷ</foreign></rdg>
                         <wit>Plut. 5.30</wit>
-                        <rdg wit="#V5a #P7a #L2 #A3"><foreign xml:lang="grc">εἰς σέ</foreign></rdg>
+                        <rdg wit="#V5a #P7a #L2a #A3a"><foreign xml:lang="grc">εἰς
+                           σέ</foreign></rdg>
                         <wit>Vat. gr. 1422</wit>
                         <wit>Par. gr. 146</wit>
                         <wit>Plut. 6.3</wit>
                         <wit>Ambr. C 98 sup.</wit>
+                        <!-- Textkritik: σὲ A3* : σέ A3c -->
                      </app>
-                     <note type="textual-commentary">V5 P7: exp. 319 ist in zwei Fassungen
-                        vorhanden. Die erste Fassung (V5<hi rend="sup">a</hi> P7<hi rend="sup"
-                           >a</hi>) ist mit Ps 19,5 verbunden, die zweite (V5<hi rend="sup">b</hi>
-                           P7<hi rend="sup">b</hi>) mit Ps 19,6c–7a. M V5<hi rend="sup">a</hi> P7<hi
+                     <note type="textual-commentary">V5 P7 L2 A3: exp. 319 ist in zwei Fassungen
+                        vorhanden: Die erste (V5<hi rend="sup">a</hi> P7<hi rend="sup">a</hi> L2<hi
+                           rend="sup">a</hi> A3<hi rend="sup">a</hi>) ist mit Ps 19,5 verbunden, die
+                        zweite (V5<hi rend="sup">b</hi> P7<hi rend="sup">b</hi> L2<hi rend="sup"
+                           >b</hi> A3<hi rend="sup">b</hi>) mit Ps 19,6c–7a. Der L2-Schreiber
+                        bemerkte das Duplikat und radierte die zweite Fassung aus. M V5<hi
+                           rend="sup">a</hi> P7<hi rend="sup">a </hi>L2<hi rend="sup">a </hi>A3<hi
                            rend="sup">a</hi>: Evagrius (schol. nr. γ´ in Ps 19,6c [414 Rondeau –
-                        Géhin – Cassin]) mit exp. 319 verbunden.</note>
+                        Géhin – Cassin]) mit exp. 319 verbunden. A1: Es ist anzumerken, dass nur in
+                        dieser Fassung das Zitat aus Ioh 17,11 textuell ist. Die koptische Version
+                        basiert ebenfalls auf dem Ausdruck, die alle andere hier betrachteten
+                        Katenen teilen (ἐκ τοῦ κόσμου). Montfaucon: exp. 319 nach P1.</note>
                   </div>
                </div>
                <div type="translation" xml:lang="de">
@@ -33601,13 +33709,14 @@
                      dein Heil,</quote>
                   <quote type="psalmtext" corresp="#edition-ps-19-6-2" n="6b">und durch den Namen
                      unseres Gottes wollen wir groß gemacht werden.</quote>
-                  <p corresp="#edition-19-6-1" n="318">Das Heilmittel, sagt er, das du den Menschen
-                     gegeben hast, hast du durch deine Auferstehung für alle sichtbar gemacht.</p>
+                  <p corresp="#edition-19-6-1" n="318">Das Heilmittel, sagt er, das du dem
+                     menschlichen Geschlecht gegeben hast, wirst du durch deine Auferstehung für
+                     alle sichtbar aufstellen.</p>
                   <quote type="psalmtext" corresp="#edition-ps-19-6-3" n="6c">Der Herr erfülle alle
                      deine Bitten.</quote>
-                  <p corresp="#edition-19-6-2" n="319">Welches waren aber die Bitten, außer:
-                     "Heiliger Vater, bewahre sie [Ioh 17,11] vor der Welt?" [Ioh 17,15 passim]
-                     Offenbar aber meint er die, welche an ihn glauben.</p>
+                  <p corresp="#edition-19-6-2" n="319">Welches waren die Bitten, wenn nicht
+                     "heiliger Vater, bewahre sie [Ioh 17,11] vor der Welt?" [Ioh 17,15 passim] Es
+                     sind offensichtlich diejenigen, die an ihn glauben.</p>
                </div>
             </div>
             <div type="psalmverse" n="19.7">
@@ -33625,20 +33734,27 @@
                         <p><listRef>
                               <ref target="#vat-gr-754:vat-gr-754-fr-19-12"/>
                               <ref target="#coislin-10:coislin-10-fr-19-12"/>
+                              <ref target="#par-gr-166:par-gr-166-fr-19-5"/>
+                              <ref target="#franzon-3:franzon-3-fr-19-4"/>
                               <ref target="#coislin-12:coislin-12-fr-19-4"/>
+                              <ref target="#ambr-m-47-sup:ambr-m-47-sup-fr-19-5"/>
                               <ref target="#coislin-187:coislin-187-fr-19-4"/>
                               <ref target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-19-9"/>
                               <ref target="#par-gr-139:par-gr-139-fr-19-16"/>
                               <ref target="#vat-gr-1422:vat-gr-1422-fr-19-23"/>
+                              <ref target="#plut-6-3:plut-6-3-fr-19-2"/>
                            </listRef></p>
                      </div>
                   </div>
                   <div type="textcritic" rend="hide">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #P5 #P2 #B1 #P6 #V5 #P7">txt</rdg>
+                        <rdg wit="#V1 #C #G #P1 #P5 #A1 #P2 #B1 #P6 #V5 #P7 #L2 #A3">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Coislin 10</wit>
+                        <wit>Urbani 3</wit>
+                        <wit>Par. gr. 166</wit>
                         <wit>Coislin 12</wit>
+                        <wit>Ambr. M 47 sup.</wit>
                         <wit>Coislin 187</wit>
                         <wit>Auct. D.4.1</wit>
                         <wit>Par. gr. 139</wit>
@@ -33646,30 +33762,43 @@
                         <wit>Athen. B.N. 45</wit>
                         <wit>Vat. gr. 1422</wit>
                         <wit>Par. gr. 146</wit>
+                        <wit>Plut. 6.3</wit>
+                        <wit>Ambr. C 98 sup.</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">φωταγωγηθεὶς</foreign></lem>
-                        <rdg wit="#B1">post<foreign xml:lang="grc"> φωταγωγηθεὶς</foreign>
-                              add.<foreign xml:lang="grc"> φησὶν</foreign></rdg>
+                        <rdg wit="#A1"><foreign xml:lang="grc">πληροφορ[η]θεὶς</foreign></rdg>
+                        <wit>Ambr. M 47 sup.</wit>
+                        <rdg wit="#B1"><foreign xml:lang="grc">φωταγωγηθεὶς φησὶν</foreign></rdg>
                         <wit>Auct. D.4.1</wit>
-                        <rdg wit="#V5">post<foreign xml:lang="grc"> φωταγωγηθεὶς</foreign>
-                              add.<foreign xml:lang="grc"> καὶ φωτισθεὶς</foreign></rdg>
+                        <rdg wit="#V5 #L2 #A3">post<foreign xml:lang="grc"> φωταγωγηθεὶς</foreign>
+                              add.<foreign xml:lang="grc"> καὶ φωτισθεὶς</foreign> (= glossa?)</rdg>
                         <wit>Vat. gr. 1422</wit>
                         <!-- Textkritik: καὶ φωτισθεὶς non habet P7 -->
+                        <wit>Plut. 6.3</wit>
+                        <wit>Ambr. C 98 sup.</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">τὰ περὶ τῆς ἀναστάσεως</foreign></lem>
-                        <rdg wit="#B1"><foreign xml:lang="grc">περὶ τῆς θείας καὶ σωτηρίου
+                        <rdg wit="#B1"><foreign xml:lang="grc">τὰ περὶ τῆς θείας καὶ σωτηρίου
                               (σωτηρίου</foreign> correximus | <foreign xml:lang="grc"
                               >σωση</foreign><hi rend="italic"> B1)</hi>
                            <foreign xml:lang="grc"> κόσμου αὐτοῦ ἀναστάσεως</foreign></rdg>
                         <wit>Auct. D.4.1</wit>
-                        <rdg wit="#V5 #P7"><foreign xml:lang="grc">τὰ περὶ τῆς ἀναστάσεως
-                              ἐμεμαθήκει</foreign></rdg>
+                        <rdg wit="#V5 #P7 #L2 #A3">post<foreign xml:lang="grc"> τὰ περὶ τῆς
+                              ἀναστάσεως</foreign> add.<foreign xml:lang="grc">
+                           ἐμεμαθήκει</foreign></rdg>
                         <wit>Vat. gr. 1422</wit>
                         <wit>Par. gr. 146</wit>
+                        <wit>Plut. 6.3</wit>
+                        <wit>Ambr. C 98 sup.</wit>
+                        <rdg wit="#A1">post<foreign xml:lang="grc"> τὰ περὶ [τῆ]ς
+                              ἀναστάσεως</foreign> add. <foreign xml:lang="grc">φησὶν ὁ
+                              λόγος</foreign></rdg>
+                        <wit>Ambr. M 47 sup.</wit>
                      </app>
-                     <app type="text"/>
+                     <note type="textual-commentary">Montfaucon: exp. 320 eher von P1 als von P6
+                        übernommen.</note>
                   </div>
                   <div type="commentary" rend="hide">
                      <p xml:id="edition-19-7-1-1" n="320">Ὡς ἤδη φωταγωγηθεὶς διὰ τοῦ πνεύματος τὰ
@@ -33701,14 +33830,16 @@
                               <ref target="#oxon-s-trin-78:oxon-s-trin-78-fr-19-7"/>
                               <ref target="#plut-5-30:plut-5-30-fr-19-14"/>
                               <ref target="#par-gr-139:par-gr-139-fr-19-18"/>
+                              <ref target="#par-gr-166:par-gr-166-fr-19-6"/>
                            </listRef></p>
                      </div>
                   </div>
                   <div type="textcritic" rend="hide">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #P5 #P2 #B1 #B2 #L1 #P6 #Z #N2">txt</rdg>
+                        <rdg wit="#V1 #C #P1 #P5 #P2 #B1 #B2 #L1 #P6 #Z #N2">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Coislin 10</wit>
+                        <wit>Par. gr. 166</wit>
                         <wit>Coislin 12</wit>
                         <wit>Coislin 187</wit>
                         <wit>Auct. D.4.1</wit>
@@ -33736,15 +33867,24 @@
                         <rdg wit="#L1"><foreign xml:lang="grc">σημαίνει ἐνταῦθα</foreign></rdg>
                         <wit>Plut. 5.30</wit>
                      </app>
-                     <note type="textual-commentary">Z N2: exp. 321 Eusebius zugeschrieben. Beim
-                        ältesten Zeugen des Typus III (P6) gehört diese Zuschreibung zum nächsten
-                        Fragment, das tatsächlich auf Didymus zurückgeht (fr. 163 in Ps 19,7
-                        [217,11–12 Mühlenberg]).</note>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">διὰ τῆς δεξιᾶς</foreign></lem>
+                        <rdg wit="#P1">post<foreign xml:lang="grc"> διὰ τὰς δεξιὰς</foreign> (sic)
+                              add.<foreign xml:lang="grc"> δυνάμεις τοῖς προσιοῦσιν
+                              ὀρέγειν</foreign><note type="in-readings">(= Theodoretus, comm. in Ps
+                              19,7c (PG 80,1001 C2–3; cf. app. ad loc.)</note></rdg>
+                        <wit>Par. gr. 166</wit>
+                     </app>
+                     <note type="textual-commentary">P1: exp. 321 mit Theodoret verwoben (siehe
+                        app.). Z N2: exp. 321 Eusebius zugeschrieben. Beim ältesten Zeugen des Typus
+                        III (P6) gehört diese Zuschreibung zum nächsten Fragment, das tatsächlich
+                        auf Didymus zurückgeht (fr. 163 in Ps 19,7 [217,11–12 Mühlenberg]).
+                        Montfaucon: exp. 321 nach P1.</note>
                   </div>
                   <div type="commentary" rend="hide">
                      <p xml:id="edition-19-7-2-1" n="321">Ἔσωσεν ἡμᾶς φησὶν ἐκ τῶν ἐχθρῶν ἡμῶν,
                         δυνάμεις μεγάλας καὶ ποικίλας ἐργασάμενος· τὰς πράξεις καὶ τὰς ἀρετὰς
-                        ἐνταῦθα σημαίνει διὰ τῆς δεξιᾶς αὐτοῦ τοῦ θεοῦ: –</p>
+                        ἐνταῦθα σημαίνει, διὰ τῆς δεξιᾶς αὐτοῦ τοῦ θεοῦ: –</p>
                      <div type="links">
                         <p><listRef>
                               <ref target="#vat-gr-1422:vat-gr-1422-fr-19-38"/>
@@ -33768,15 +33908,15 @@
                      Geist über die Dinge der Auferstehung erleuchtet worden wäre.</p>
                   <p corresp="#edition-19-7-1-1" n="320">Als ob er bereits durch den Geist über die
                      Dinge der Auferstehung erleuchtet worden wäre, sagt er diese Worte, in dem er
-                     in Form eines Gebets das vollbringt, was einem frommen Geist gebührt.</p>
+                     in Form eines Gebets das vollbringt, was einem frommen Geist geziemt.</p>
                   <quote type="psalmtext" corresp="#edition-ps-19-7-3" n="7c">in Machttaten
                      (offenbart sich) das Heil seiner Rechten.</quote>
                   <p corresp="#edition-19-7-2" n="321">Er rettete uns, will er sagen, indem er große
                      Kräfte wirkte. Denn hier deutet er auf die Taten durch die Rechte (Hand)
                      hin.</p>
-                  <p corresp="#edition-19-7-2-1" n="321">Er hat uns vor unseren Feinden gerettet,
-                     will er sagen, indem er große und vielfältige Kräfte wirkte. Denn hier deutet
-                     er auf die Taten und Tugenden durch die Rechte (Hand) Gottes selbst hin.</p>
+                  <p corresp="#edition-19-7-2-1" n="321">Er rettete uns von unseren Feinden, will er
+                     sagen, indem er große und vielfältige Kräfte wirkte. Denn hier deutet er auf
+                     die Taten und Tugenden durch die Rechte (Hand) Gottes selbst hin.</p>
                </div>
             </div>
             <div type="psalmverse" n="19.8">
@@ -33821,16 +33961,18 @@
                   </div>
                   <div type="commentary" rend="parallel">
                      <p xml:id="edition-19-10-1" n="322" next="#edition-19-10-1-1">Ὥσπερ τῶν
-                        αἰγυπτίων σώζων τοὺς ἐξ ἰσραὴλ· ἅρματα Φαραὼ καὶ τὴν δύναμιν αὐτοῦ ἔρριψεν
-                        εἰς θάλασσαν· οὕτω καὶ πάντων ἀνθρώπων σώζων τὸ γένος, τῶν νοητῶν αἰγυπτίων
-                        συνέτριψε τὰ ἅρματα: –</p>
+                        αἰσθητῶν αἰγυπτίων σώζων τοὺς ἐξ ἰσραὴλ· ἅρματα Φαραὼ καὶ τὴν δύναμιν αὐτοῦ
+                        ἔρριψεν εἰς θάλασσαν· οὕτω καὶ πάντων ἀνθρώπων σώζων τὸ γένος, τῶν νοητῶν
+                        αἰγυπτίων συνέτριψε τὰ ἅρματα: –</p>
                      <!-- Textkritik: ἔρρηψεν V1 : ἔρριψεν C -->
                      <div type="links">
                         <p><listRef>
                               <ref target="#vat-gr-754:vat-gr-754-fr-19-20"/>
                               <ref target="#coislin-10:coislin-10-fr-19-16"/>
                               <ref target="#mosq-syn-194:mosq-syn-194-fr-19-4"/>
+                              <ref target="#par-gr-166:par-gr-166-fr-19-7"/>
                               <ref target="#coislin-12:coislin-12-fr-19-6"/>
+                              <ref target="#ambr-m-47-sup:ambr-m-47-sup-fr-19-7"/>
                               <ref target="#coislin-187:coislin-187-fr-19-7"/>
                               <ref target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-19-14"/>
                               <ref target="#par-gr-139:par-gr-139-fr-19-21"/>
@@ -33840,11 +33982,13 @@
                   </div>
                   <div type="textcritic" rend="hide">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #M #P5 #P2 #B1 #P6 #Z #N2 #V5 #P7">txt</rdg>
+                        <rdg wit="#V1 #C #M #P1 #P5 #A1 #P2 #B1 #P6 #Z #N2 #V5 #P7">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Coislin 10</wit>
                         <wit>Sinod. gr. 194</wit>
+                        <wit>Par. gr. 166</wit>
                         <wit>Coislin 12</wit>
+                        <wit>Ambr. M 47 sup.</wit>
                         <wit>Coislin 187</wit>
                         <wit>Auct. D.4.1</wit>
                         <wit>Par. gr. 139</wit>
@@ -33854,15 +33998,22 @@
                         <wit>Par. gr. 146</wit>
                      </app>
                      <app type="text">
-                        <lem><foreign xml:lang="grc">τῶν αἰγυπτίων</foreign></lem>
-                        <rdg wit="#P5 #P2 #B1 #P6 #Z #N2"><foreign xml:lang="grc">τῶν αἰσθητῶν
-                              αἰγυπτίων</foreign></rdg>
-                        <wit>Coislin 12</wit>
-                        <wit>Coislin 187</wit>
-                        <wit>Auct. D.4.1</wit>
-                        <wit>Par. gr. 139</wit>
-                        <wit>Marc. gr. Z. 17</wit>
-                        <wit>Athen. B.N. 45</wit>
+                        <lem><foreign xml:lang="grc">τῶν αἰσθητῶν αἰγυπτίων</foreign></lem>
+                        <rdg wit="#A1"><foreign xml:lang="grc">[ἐ]κ τῶν αἰσθ[ητ]ῶν
+                              αἰγυπτί[ω]ν</foreign></rdg>
+                        <wit>Ambr. M 47 sup.</wit>
+                        <rdg wit="#V1 #C #M #V5 #P7"><foreign xml:lang="grc">τῶν
+                           αἰγυπτίων</foreign></rdg>
+                        <wit>Vat. gr. 754</wit>
+                        <wit>Coislin 10</wit>
+                        <wit>Sinod. gr. 194</wit>
+                        <wit>Vat. gr. 1422</wit>
+                        <wit>Par. gr. 146</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">σώζων τοὺς</foreign></lem>
+                        <rdg wit="#A1"><foreign xml:lang="grc">-ζων τοὺς</foreign> evanida</rdg>
+                        <wit>Ambr. M 47 sup.</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">σώζων</foreign></lem>
@@ -33872,11 +34023,21 @@
                         <wit>Par. gr. 146</wit>
                      </app>
                      <app type="text">
+                        <lem><foreign xml:lang="grc">τοὺς ἐξ ἰσραὴλ</foreign></lem>
+                        <rdg wit="#P1"><foreign xml:lang="grc">τὸν ἰσραὴλ</foreign></rdg>
+                        <wit>Par. gr. 166</wit>
+                     </app>
+                     <app type="text">
                         <lem><foreign xml:lang="grc">εἰς θάλασσαν</foreign></lem>
                         <rdg wit="#V5 #P7"><foreign xml:lang="grc">εἰς θάλασσαν
                            ἐρυθρὰν</foreign></rdg>
                         <wit>Vat. gr. 1422</wit>
                         <wit>Par. gr. 146</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">οὕτω</foreign></lem>
+                        <rdg wit="#A1">evanidum</rdg>
+                        <wit>Ambr. M 47 sup.</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">πάντων ἀνθρώπων</foreign></lem>
@@ -33888,17 +34049,25 @@
                         <wit>Athen. B.N. 45</wit>
                      </app>
                      <app type="text">
+                        <lem><foreign xml:lang="grc">τῶν νοητῶν αἰγυπτίων</foreign></lem>
+                        <rdg wit="#A1"><foreign xml:lang="grc">[τῶν] νοητῶν ἐχθρῶ[ν] καὶ
+                              αἰγυπτίων</foreign><note type="in-readings">(αἰ- corr.<hi
+                                 rend="italic"> A1<hi rend="sup">m.sec.</hi></hi> [ut vid.])</note>
+                        </rdg>
+                     </app>
+                     <app type="text">
                         <lem><foreign xml:lang="grc">τὰ ἅρματα</foreign></lem>
                         <rdg wit="#V5 #P7">post<foreign xml:lang="grc"> τὰ ἅρματα</foreign> add.
                               <foreign xml:lang="grc"> ἤγουν τῶν πονηρῶν δυνάμεων καὶ τῶν τούτοις
-                              ἀρχόντων καὶ ἔργον αὐτῶν·</foreign></rdg>
+                              ἀρχόντων καὶ ἔργον αὐτῶν</foreign></rdg>
                      </app>
                      <note type="textual-commentary">B1: Es wird einleitend behauptet, dass diese
                         Expositio 6 Zeilen (στίχοι) des Psalms erklärt: ἐρμην(εία) τῶν Ϛ´ στίχ(ων)
                         Ἀθανασιου. Während in V1 exp. 322 mit Ps 19,8a verbunden ist, steht sie in
                         B1 nach Ps 19,10b. Dieser Bereich des Psalmes umfasst genau 6 Zeilen. V5 P7:
-                        Eine erweiterte Fassung von exp. 322 ist mit einer erweiterten Fassung des
-                        Theodoret (comm. in Ps 19,8–9 [PG 80,1001 C9–11]) verbunden.</note>
+                        Eine erweiterte Fassung von exp. 322 (siehe app.) ist mit einer erweiterten
+                        Fassung des Theodoret (comm. in Ps 19,8–9 [PG 80,1001 C9–11]) verbunden.
+                        Montfaucon: exp. 322 nach P1.</note>
                   </div>
                   <div type="commentary" rend="hide">
                      <p xml:id="edition-19-10-1-1" n="322">Ὥσπερ αἰσθητῶν αἰγυπτίων σώζων τοὺς ἐξ
@@ -33923,15 +34092,76 @@
                      König</quote>
                   <quote type="psalmtext" corresp="#edition-ps-19-10-2" n="10b">und erhöre uns am
                      Tag, an dem wir dich anrufen.</quote>
-                  <p corresp="#edition-19-10-1" n="322">Wie er, da er Israel von den äusserlich
-                     wahrnehmbaren Ägyptiern rettete, die Wagen Pharaos und seine Macht ins Meer
-                     warf, in gleicher Weise zerschmetterte er, als er das Geschlecht sämmtlicher
-                     Menschen rettete, die Wagen der geistigen Ägyptier.</p>
-                  <p corresp="#edition-19-10-1-1" n="322">Wie er, da er Israel von den äusserlich
-                     wahrnehmbaren Ägyptiern rettete, die Wagen Pharaos und seine Macht ins Meer
-                     warf, in gleicher Weise rettet er das Geschlecht aller gläubigen Menschen; und
-                     die Pfeile der Dämonen wurden zerschmettert, wie es einst den Männern des
+                  <p corresp="#edition-19-10-1" n="322">So wie er, als er die Israeliten von den
+                     (sinnlich) wahrnehmbaren Ägyptiern rettete, die Wagen des Pharao und seine
+                     Macht ins Meer warf, so zerschmetterte er auch, als er das Geschlecht
+                     sämmtlicher Menschen rettete, die Wagen der geistigen Ägyptier.</p>
+                  <p corresp="#edition-19-10-1-1" n="322">So wie er, als er die Israeliten von
+                     (sinnlich) wahrnehmbaren Ägyptiern rettete, die Wagen des Pharao und seine
+                     Macht ins Meer warf, so rettet er auch das Geschlecht aller gläubigen Menschen;
+                     und die Pfeile der Dämonen wurden zerschmettert, wie es einst den Männern des
                      Pharao (erging).</p>
+               </div>
+            </div>
+         </div>
+         <!-- ps 20 commentary -->
+         <div type="psalm" n="20">
+            <div type="psalmverse" n="20.1">
+               <div type="text" xml:lang="grc">
+                  <div type="psalmtext">
+                     <quote type="psalmtext" xml:id="edition-ps-20-1" n="1">Εἰς τὸ τέλος· ψαλμὸς τῷ
+                        Δαυΐδ.</quote>
+                  </div>
+                  <div type="commentary">
+                     <p xml:id="edition-20-1" n="323" ana="hypothesis">Καὶ τοῦτον τὸν ψαλμὸν οἱ
+                        προδηλωθέντες ἑταῖροι τοῦ βασιλέως ἀναπέμπουσιν, ὡς ἤδη αὐτοῦ εὐφραινομένου
+                        διὰ τὸ ἐκ τοῦ σπέρματος αὐτοῦ γεγενημένον τῷ κόσμῳ σωτήριον. τοῦτο γὰρ ἦν ὃ
+                        ἐπεθύμει κατὰ ψυχὴν, καὶ ἐδέετο λαβεῖν· ὅπερ καὶ δοθὲν γέγονεν αὐτῷ οἷά τις
+                        στέφανος ἐκ λίθου τιμίου τὴν κεφαλὴν δοξάζων· δοξάζεται γὰρ ἐν πᾶσι τοῖς
+                        ἔθνεσιν ὁ Δαυῒδ μετὰ τοῦ κυρίου αὐτοῦ καὶ υἱοῦ τὸ κατὰ σάρκα· οὐ μόνον δὲ
+                        στέφανος αὐτῷ γέγονε τὸ σωτήριον, ἀλλὰ καὶ ζωὴ· καὶ μακροημέρευσις καὶ δόξα
+                        καὶ μεγαλοπρέπεια· καὶ εὐφροσύνη καὶ χαρά· καὶ ἐλπὶς καὶ ἔλεον οὐ
+                        σαλευόμενον: –</p>
+                     <div type="links">
+                        <p><listRef>
+                              <ref target="#vat-gr-754:vat-gr-754-fr-20-2"/>
+                           </listRef></p>
+                     </div>
+                  </div>
+                  <div type="textcritic">
+                     <app type="fragment">
+                        <rdg wit="#V1">txt</rdg>
+                        <wit>Vat. gr. 754</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">ἑταῖροι</foreign></lem>
+                        <rdg wit="#V1"><foreign xml:lang="grc">ἑτέροι</foreign></rdg>
+                        <wit>Vat. gr. 754</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">ἦν</foreign></lem>
+                        <rdg wit="#V1"><foreign xml:lang="grc">ἣν</foreign></rdg>
+                        <wit>Vat. gr. 754</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">τὸ<hi rend="sup">2</hi></foreign></lem>
+                        <rdg wit="#V1"><foreign xml:lang="grc">τὸ*</foreign></rdg>
+                        <wit>Vat. gr. 754</wit>
+                     </app>
+                  </div>
+               </div>
+               <div type="translation" xml:lang="grc">
+                  <quote type="psalmtext" corresp="#edition-ps-20-1">Auf das Ende hin; ein Psalm,
+                     bezogen auf David. </quote>
+                  <p corresp="#edition-20-1" n="323">Auch diesen Psalm bringen die schon angeführten
+                     Freunde des Königs dar, da er sich bereits über das aus seinem Namen der Welt
+                     entsprossene Heil freut. Denn das war es, was er im Herzen ersehnte und zu
+                     erlangen flehte. Als ihm das verliehen war, ist es ihm zu einer Krone von
+                     kostbarem Stein geworden, die sein Haupt verherrlicht. Denn David wird mit
+                     seinem Herrn und Sohn dem Fleische nach unter allen Völkern verherrlicht. Nicht
+                     aber bloß zur Krone ist ihm das Heil geworden, sondern auch zum Leben und zu
+                     hohem Alter, zu Herrlichkeit, Größe, Fröhlichkeit; zu Freude, Hoffnung und
+                     Barmherzigkeit, die nicht wankt.</p>
                </div>
             </div>
          </div>

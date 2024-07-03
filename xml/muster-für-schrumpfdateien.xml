@@ -2,7 +2,7 @@
 <?xml-model href="../../schema/tei-psalmcatenae.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <!-- Mese · | Teleia · | Bullet • | zwei Punkte : | drei Punke ⁝ | 4 Punkte · ⁘ | Asteriscus ※ | Spitze Klammern: 〈XXX〉 | 
 ***
-   A Ϲ Θ | ὁμοίως τοῖς Ο´ | ἡ E´ S´ | οἱ Γ´ | Α´ Β´ Γ´ Δ´ Ε´ Ϛ´ Ζ´ Η´ Θ´ Ι´ | Κ´ Λ´ Μ´ Ν´ Ξ´ Ο´ Π´ Ρ´ Ϙ´
+   A Ϲ Θ | ὁμοίως τοῖς Ο´ | ὁμοίως οἱ Γ´ | ἡ E´ S´ | οἱ Γ´ | Α´ Β´ Γ´ Δ´ Ε´ Ϛ´ Ζ´ Η´ Θ´ Ι´ | Κ´ Λ´ Μ´ Ν´ Ξ´ Ο´ Π´ Ρ´ Ϙ´
 *** 
    Αλλ(η) ἐρμην(εία)· | Αλλος ἐρμ(ηνεία) Ἡσυχιου· | ἄλλ(ως) | ἄλλω(ς)
    ἐν ἄλλω | ἐρμ(ηνεία) | ερμην(εία) λέξεω(ς)· | ἐρμην(εία) λεξεω(ς)· | ἐρμηνεια λεξεως· ‼ | ἐρμήνευσις· | Ἑτέρα ἐρμην(εία)· 
@@ -62,12 +62,10 @@ Hesychius, schol. nr. XX in Ps XX,XX (Antonelli; PG 27,XXX)
    person-10
 Hesychius, schol. (?) in Ps XX,XX (ineditum?)
    person-75
-   Ἡσυχίου | Ἡσυχιου· ‼ Ησυχιου· ‼ | ἐρμηνεία Ἡσυχίου· | Αλλ(η) ἐρμ(ηνεία) Ἡσυχίου
 ***
 Hesychius, comm. brevis in Ps XX,XX (XX Jagić)
    person-11
-   Ἡσυχιου· | Ἡσυχίου | ἐρμηνεία Ἡσυχίου· 
-   
+   Ἡσυχίου | Ἡσυχιου· ‼ Ησυχιου· ‼ | Ἡσυχ(ίου) | ἐρμηνεία Ἡσυχίου· | Αλλ(η) ἐρμ(ηνεία) Ἡσυχίου | ἐρμηνεία Ἡσυχίου· 
 cave: Hesychius Zitate (comm. brevis) mit Angabe der Zeilen bis Ps 18 inklusiv müssen nach der Methode für Evagrius berichtigt werden : Ps 18 bei Vat. gr. 1422 breits nach der neuen Methode
 ***
 Hesychius, comm. magnus (?) in Ps 18,XX (ineditum?)
@@ -76,7 +74,7 @@ Hesychius, comm. magnus (?) in Ps 18,XX (ineditum?)
 ***
 Hesychius, comm. magnus in Ps XX,XX (PG 93,XXXX XX–XX)
    person-41
-   Ἡσυχίου | Ἠσυχ(ίου) ‼ | Ησυχ(ίου) 
+   Ἡσυχίου | Ἠσυχ(ίου) | Ησυχ(ίου) ‼ 
 ***
 Origenes (?), fr. in Ps XX,XX (PG 12,XXX XX–XX)
    person-13
@@ -86,28 +84,28 @@ Origenes (?), fr. in Ps XX,XX (PG 17,XXX XX–XX; ex Marc. gr. Z. 17)
    ὡριγένους | ὠριγένους ‼ ὠριγενους ‼ |  ὠρ(ι)γ(ένους)| ωρ(ι)γ(ένους) ‼ | ὡρ(ιγένους) | ωρ(ιγένους)
 ***
 Theodoretus, comm. in Ps XX,XX (PG 80,XXX XXX–XXX sub Ps XX-XX)
-   Θεοδωρήτου | Θεοδωρητου ‼ | Θεοδωρ(ή)τ(ου) | Θεοδω(ρή)τ(ου) | Θεοδ(ωρήτου)  | Θεοδώρου | Θεοδ(ώρου) | Θεοδωρου | ἐρμηνεία Θεοδωριτ(ου)· | αλλο(ς) Θεοδωριτ(ου)·  
+   Θεοδωρήτου | Θεοδωρητου ‼ | Θεοδ(ωρήτου) | Θεοδωρ(ή)τ(ου) | Θεοδω(ρή)τ(ου) | Θεοδ(ωρήτου)  | Θεοδώρου | Θεοδ(ώρου) | Θεοδωρου | ἐρμηνεία Θεοδωριτ(ου)· | αλλο(ς) Θεοδωριτ(ου)·  
 ***
 Theodorus Mops., fr. in Ps XX,XX (XX,XX Devreesse)
    person-22
    Θεοδ(ώρου) ἀντ(ι)οχ(είας) | Θεοδ(ώρου) ἀντιοχ(είας)
 ***
 
-<div type="commentary" subtype="commentary" xml:id="vat-gr-754-19-XX" rendition="#XXXX" rend="XXXX" change="commentaryfragments-only">
+<div type="commentary" subtype="commentary" xml:id="vat-gr-754-20-XX" rendition="#XXXX" rend="XXXX" change="commentaryfragments-only">
    <ab xml:lang="grc">
-      <note type="lemma">Ps 19,XX (ΧΧΧΧ)</note>
-      <seg type="commentaryfragment" xml:id="vat-gr-754-fr-19-XX" rendition="#XXXX" source="XXXX"
-         corresp="#vat-gr-754-ps-19-XX"><quote type="patristic" subtype="XXXX"
-            xml:id="vat-gr-754-quot-19-XX" source="XXXX" corresp="#person-XX"/>
+      <note type="lemma">Ps 20,XX (ΧΧΧΧ)</note>
+      <seg type="commentaryfragment" xml:id="vat-gr-754-fr-20-XX" rendition="#XXXX" source="XXXX"
+         corresp="#vat-gr-754-ps-20-XX"><quote type="patristic" subtype="XXXX"
+            xml:id="vat-gr-754-quot-20-XX" source="XXXX" corresp="#person-XX"/>
          <note type="attribution" xml:lang="grc">XXXX</note></seg> 
    </ab>
 </div>
 ***
 <div type="hexaplaric" subtype="commentary" xml:id="vat-gr-754-18-XX" rendition="#XXXX" rend="capital letters" change="commentaryfragments-only">
    <ab xml:lang="grc">
-      <note type="lemma">Ps 18,XX (XXXX)</note>
-      <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-18-XX" rendition="#XXXX" source="XXXX"
-         corresp="#vat-gr-754-ps-18-XX"></seg>
+      <note type="lemma">Ps 20,XX (XXXX)</note>
+      <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-20-XX" rendition="#XXXX" source="XXXX"
+         corresp="#vat-gr-754-ps-20-XX"></seg>
    </ab>
 </div>
  -->
