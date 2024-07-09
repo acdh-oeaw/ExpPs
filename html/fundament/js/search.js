@@ -307,6 +307,55 @@ function jsonClient(){
 				addEventForCommentaryfragments(idOfLink,urlOfCommentaryfragment);
 			}
 		}
+		if ((configurationObject.object === "searchResults") && (configurationObject.mode === "data")){
+			let segments = configurationObject.message;
+			let searchString = segments.searchstring;
+			$(divForMessage).append($("<p>" + searchString + "</p>"));
+			for (let n = 0; n < segments._embedded.length; n++){
+				let typeOfSegment = segments._embedded[n]._embedded.type;
+				if (typeOfSegment === 'commentaryfragment'){
+					let commentaryfragment = segments._embedded[n]._embedded.data;
+					let attribution = commentaryfragment.commentaryfragment.attribution;
+					let source = commentaryfragment.commentaryfragment.source;
+					let textOfCommentaryfragment = commentaryfragment.commentaryfragment.text;
+					let textOfCommentaryfragmentHighlighted = textOfCommentaryfragment.replace(
+						new RegExp(searchString,'gi'),'<span style="background-color: #ffc107;">$&</span>');
+					$(divForItems).append(
+					$("<div class='search-result-item'></div>").append(
+					$("<p>" + "Commentary fragment: " + "<b>" + attribution + " - " + source + "</b></p>")
+					).append(
+					$("<p>" + textOfCommentaryfragmentHighlighted + "</p>")
+					));
+				}
+				if (typeOfSegment === 'glosse'){
+					let glosse = segments._embedded[n]._embedded.data;
+					let attribution = glosse.glosse.attribution;
+					let source = glosse.glosse.source;
+					let textOfGlosse = glosse.glosse.text;
+					let textOfGlosseHighlighted = textOfGlosse.replace(
+						new RegExp(searchString,'gi'),'<span style="background-color: #ffc107;">$&</span>');
+					$(divForItems).append(
+					$("<div class='search-result-item'></div>").append(
+					$("<p>" + "Glosse: " + "<b>" + attribution + " - " + source + "</b></p>")
+					).append(
+					$("<p>" + textOfGlosseHighlighted + "</p>")
+					));
+				}
+				if (typeOfSegment === 'hexaplaric'){
+					let hexaplaricVariant = segments._embedded[n]._embedded.data;
+					let attribution = hexaplaricVariant["hexaplaric-variant"].attribution;
+					let textOfHexaplaricVariant = hexaplaricVariant["hexaplaric-variant"].text;
+					let textOfHexaplaricVariantHighlighted = textOfHexaplaricVariant.replace(
+						new RegExp(searchString,'gi'),'<span style="background-color: #ffc107;">$&</span>');
+					$(divForItems).append(
+					$("<div class='search-result-item'></div>").append(
+					$("<p>" + "Hexaplaric variant: " + "<b>" + attribution + "</b></p>")
+					).append(
+					$("<p>" + textOfHexaplaricVariantHighlighted + "</p>")
+					));
+				}
+			}
+		}
 		if ((configurationObject.object === "glosses") && (configurationObject.mode === "data")){
 			let glosses = configurationObject.message;
 			let numberOfItems = glosses._embedded.glosses.length;
@@ -336,7 +385,6 @@ function jsonClient(){
 		}
 		if ((configurationObject.object === "hexaplaricVariants") && (configurationObject.mode === "data")){
 			let hexaplaricVariants = configurationObject.message;
-			console.log(hexaplaricVariants);
 			let numberOfItems = hexaplaricVariants._embedded["hexaplaric-variants"].length;
 			let message = "";
 			if(numberOfItems === 0){
@@ -497,7 +545,7 @@ function jsonClient(){
 				url = url + "&reference=" + psalmverseFieldValue;
 			}
 		}
-		request(url,"get")
+		request(url,"get");
 	});
 	
 	$("#search-glosses-submit").click(function(event){
@@ -531,7 +579,7 @@ function jsonClient(){
 				url = url + "&reference=" + psalmverseFieldValue;
 			}
 		}
-		request(url,"get")
+		request(url,"get");
 	});
 	
 	$("#search-hexaplaric-variants-submit").click(function(event){
@@ -547,7 +595,16 @@ function jsonClient(){
 		if (psalmverseFieldValue != "empty"){
 			url = url + "?reference=" + psalmverseFieldValue;
 		}
-		request(url,"get")
+		request(url,"get");
+	});
+	
+	$("#search-full-text-submit").click(function(event){
+		event.preventDefault();
+		let searchString = document.getElementById("full-text-search-input").value;
+		let url = configurationObject.baseUrl + "/manuscripts/search?searchstring=" + searchString;
+		configurationObject.object = "searchResults";
+		configurationObject.mode = "data";
+		request(url,"get");
 	});
 	
 	$("#commentary-fragments-tab").bind('click',function(){
