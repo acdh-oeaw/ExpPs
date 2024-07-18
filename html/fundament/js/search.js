@@ -307,52 +307,88 @@ function jsonClient(){
 				addEventForCommentaryfragments(idOfLink,urlOfCommentaryfragment);
 			}
 		}
-		if ((configurationObject.object === "searchResults") && (configurationObject.mode === "data")){
+		if ((configurationObject.object === "searchResultsManuscripts") && (configurationObject.mode === "data")){
 			let segments = configurationObject.message;
 			let searchString = segments.searchstring;
 			$(divForMessage).append($("<p>" + searchString + "</p>"));
-			for (let n = 0; n < segments._embedded.length; n++){
-				let typeOfSegment = segments._embedded[n]._embedded.type;
-				if (typeOfSegment === 'commentaryfragment'){
-					let commentaryfragment = segments._embedded[n]._embedded.data;
-					let attribution = commentaryfragment.commentaryfragment.attribution;
-					let source = commentaryfragment.commentaryfragment.source;
-					let textOfCommentaryfragment = commentaryfragment.commentaryfragment.text;
+			if (segments._embedded.length === 0){
+				$(divForItems).append($("<div class='search-result-item'></div>").append($("<p>No matches found.</p>")));
+			}
+			else{
+				for (let n = 0; n < segments._embedded.length; n++){
+					let typeOfSegment = segments._embedded[n]._embedded.type;
+					let manuscriptIdentifier = segments._embedded[n]._embedded.manuscript.manuscriptIdentifier;
+					let linkToSegment = segments._embedded[n]._links.transcription.href;
+					if (typeOfSegment === 'commentaryfragment'){
+						let commentaryfragment = segments._embedded[n]._embedded.data;
+						let attribution = commentaryfragment.commentaryfragment.attribution;
+						let source = commentaryfragment.commentaryfragment.source;
+						let textOfCommentaryfragment = commentaryfragment.commentaryfragment.text;
+						let textOfCommentaryfragmentHighlighted = textOfCommentaryfragment.replace(
+							new RegExp(searchString,'gi'),'<span style="background-color: #ffc107;">$&</span>');
+						$(divForItems).append(
+						$("<div class='search-result-item'></div>").append(
+						$("<p>" + "Commentary fragment: " + "<b>" + attribution + " - " + source + "</b></p>")
+						).append(
+						$("<p>" + textOfCommentaryfragmentHighlighted + "</p>")
+						).append(
+						$("<p><a target='_blank' href='" + linkToSegment + "'>→ " + manuscriptIdentifier + "</a></p>")
+						));
+					}
+					if (typeOfSegment === 'glosse'){
+						let glosse = segments._embedded[n]._embedded.data;
+						let attribution = glosse.glosse.attribution;
+						let source = glosse.glosse.source;
+						let textOfGlosse = glosse.glosse.text;
+						let textOfGlosseHighlighted = textOfGlosse.replace(
+							new RegExp(searchString,'gi'),'<span style="background-color: #ffc107;">$&</span>');
+						$(divForItems).append(
+						$("<div class='search-result-item'></div>").append(
+						$("<p>" + "Glosse: " + "<b>" + attribution + " - " + source + "</b></p>")
+						).append(
+						$("<p>" + textOfGlosseHighlighted + "</p>")
+						));
+					}
+					if (typeOfSegment === 'hexaplaric'){
+						let hexaplaricVariant = segments._embedded[n]._embedded.data;
+						let attribution = hexaplaricVariant["hexaplaric-variant"].attribution;
+						let textOfHexaplaricVariant = hexaplaricVariant["hexaplaric-variant"].text;
+						let textOfHexaplaricVariantHighlighted = textOfHexaplaricVariant.replace(
+							new RegExp(searchString,'gi'),'<span style="background-color: #ffc107;">$&</span>');
+						$(divForItems).append(
+						$("<div class='search-result-item'></div>").append(
+						$("<p>" + "Hexaplaric variant: " + "<b>" + attribution + "</b></p>")
+						).append(
+						$("<p>" + textOfHexaplaricVariantHighlighted + "</p>")
+						));
+					}
+				}
+			}
+		}
+		if ((configurationObject.object === "searchResultsEdition") && (configurationObject.mode === "data")){
+			let paragraphs = configurationObject.message;
+			let searchString = paragraphs.searchstring;
+			$(divForMessage).append($("<p>" + searchString + "</p>"));
+			if (paragraphs._embedded.length === 0){
+				$(divForItems).append($("<div class='search-result-item'></div>").append($("<p>No matches found.</p>")));
+			}
+			else{
+				for (let n = 0; n < paragraphs._embedded.length; n++){
+					let linkToEdition = paragraphs._embedded[n].edition;
+					let idOfFragment = paragraphs._embedded[n]._embedded.commentaryfragment.id;
+					let linkToFragment = linkToEdition + "#" + idOfFragment;
+					let numberOfFragment = paragraphs._embedded[n]._embedded.commentaryfragment.fragment;
+					let attribution = paragraphs._embedded[n]._embedded.commentaryfragment.attribution;
+					let source = paragraphs._embedded[n]._embedded.commentaryfragment.source;
+					let textOfCommentaryfragment = paragraphs._embedded[n]._embedded.commentaryfragment.text;
 					let textOfCommentaryfragmentHighlighted = textOfCommentaryfragment.replace(
 						new RegExp(searchString,'gi'),'<span style="background-color: #ffc107;">$&</span>');
 					$(divForItems).append(
-					$("<div class='search-result-item'></div>").append(
-					$("<p>" + "Commentary fragment: " + "<b>" + attribution + " - " + source + "</b></p>")
-					).append(
-					$("<p>" + textOfCommentaryfragmentHighlighted + "</p>")
-					));
-				}
-				if (typeOfSegment === 'glosse'){
-					let glosse = segments._embedded[n]._embedded.data;
-					let attribution = glosse.glosse.attribution;
-					let source = glosse.glosse.source;
-					let textOfGlosse = glosse.glosse.text;
-					let textOfGlosseHighlighted = textOfGlosse.replace(
-						new RegExp(searchString,'gi'),'<span style="background-color: #ffc107;">$&</span>');
-					$(divForItems).append(
-					$("<div class='search-result-item'></div>").append(
-					$("<p>" + "Glosse: " + "<b>" + attribution + " - " + source + "</b></p>")
-					).append(
-					$("<p>" + textOfGlosseHighlighted + "</p>")
-					));
-				}
-				if (typeOfSegment === 'hexaplaric'){
-					let hexaplaricVariant = segments._embedded[n]._embedded.data;
-					let attribution = hexaplaricVariant["hexaplaric-variant"].attribution;
-					let textOfHexaplaricVariant = hexaplaricVariant["hexaplaric-variant"].text;
-					let textOfHexaplaricVariantHighlighted = textOfHexaplaricVariant.replace(
-						new RegExp(searchString,'gi'),'<span style="background-color: #ffc107;">$&</span>');
-					$(divForItems).append(
-					$("<div class='search-result-item'></div>").append(
-					$("<p>" + "Hexaplaric variant: " + "<b>" + attribution + "</b></p>")
-					).append(
-					$("<p>" + textOfHexaplaricVariantHighlighted + "</p>")
-					));
+						$("<div class='search-result-item'></div>").append(
+							$("<p>" + "Commentary fragment: " + "<b>" + attribution + ", " + source + ", Exp. " + numberOfFragment + "</b></p>")).append(
+								$("<p>" + textOfCommentaryfragmentHighlighted + "</p>")).append(
+									$("<p><a href='" + linkToFragment + "' target='_blank'>→ Edition</a></p>")
+							));
 				}
 			}
 		}
@@ -601,10 +637,19 @@ function jsonClient(){
 	$("#search-full-text-submit").click(function(event){
 		event.preventDefault();
 		let searchString = document.getElementById("full-text-search-input").value;
-		let url = configurationObject.baseUrl + "/manuscripts/search?searchstring=" + searchString;
-		configurationObject.object = "searchResults";
-		configurationObject.mode = "data";
-		request(url,"get");
+		let editionOrManuscriptsSelection = document.getElementById("full-text-select-edition").checked;
+		if (editionOrManuscriptsSelection === true){
+			let url = configurationObject.baseUrl + "/edition/search?searchstring=" + searchString;
+			configurationObject.object = "searchResultsEdition";
+			configurationObject.mode = "data";
+			request(url,"get");
+		}
+		else{
+			let url = configurationObject.baseUrl + "/manuscripts/search?searchstring=" + searchString;
+			configurationObject.object = "searchResultsManuscripts";
+			configurationObject.mode = "data";
+			request(url,"get");
+		}
 	});
 	
 	$("#commentary-fragments-tab").bind('click',function(){
