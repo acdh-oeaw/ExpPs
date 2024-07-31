@@ -6,7 +6,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Vat. gr. 754 - Transcription</title>
+            <title>Vat. gr. 754 - Transcription (Ps 1–20)</title>
             <respStmt>
                <resp>transcribed by</resp>
                <persName>Sebastiano Panteghini</persName>
@@ -14,7 +14,7 @@
             <respStmt>
                <resp>encoded by</resp>
                <persName>Thomas Klampfl (Ps 1–10), Canan Arıkan-Caba and Sebastiano Panteghini (Ps
-                  11–18)</persName>
+                  11–20)</persName>
             </respStmt>
          </titleStmt>
          <publicationStmt>
@@ -2833,7 +2833,7 @@
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-2-3"
                      next="#vat-gr-754-fr-2-4" rendition="#top-of-the-page"
                      source="Gregorius Nyssenus" corresp="#vat-gr-754-ps-2-1-1"><quote
-                        type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-2-5"
+                        type="patristic" subtype="quotation-expanded" xml:id="vat-gr-754-quot-2-5"
                         source="Gregorius Nyss., Ps. inscr. VIII (92,15–24 McDonough) in Ps 2,7"
                         next="#vat-gr-754-quot-2-6" corresp="#person-24"><hi rend="ekthesis"
                         >Ἀ</hi>λλ’ ἐπειδὴ τὸ <choice>
@@ -15411,8 +15411,7 @@
                      rendition="#right-column" source="Anonymous" corresp="#vat-gr-754-ps-11-3a"
                         ><quote type="patristic" subtype="unknown" xml:id="vat-gr-754-quot-11-7"
                         source="Theodoretus, comm. in Ps 11,3a (PG 80,941 C6–7)"
-                        corresp="#person-16"
-                     /><!-- The linking sign used resembles the
+                        corresp="#person-16"/><!-- The linking sign used resembles the
                            abbreviation ωρ(ιγένους) --></seg>
                   <note type="lemma">Ps 11,3b</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-11-8"
@@ -15632,9 +15631,8 @@
                      rendition="#left-column" source="(Evagrius)" corresp="#vat-gr-754-ps-11-9a"
                         ><quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-11-20"
                         source="Evagrius, schol. nr. γ´ in Ps 11,9a (350 Rondeau – Géhin –
-                        Cassin)"
-                        corresp="#person-21"/><note type="attribution" xml:lang="grc"
-                     >γ´</note></seg>
+                        Cassin)" corresp="#person-21"/><note
+                        type="attribution" xml:lang="grc">γ´</note></seg>
                   <note type="lemma">Ps 11,8a</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-11-19"
                      rendition="#left-column" source="(Athanasius)" corresp="#vat-gr-754-ps-11-8a"
@@ -16948,8 +16946,8 @@
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-15-18"
                      rendition="#left-column"
                      source="Aquila, Symmachus, Quinta (?), Sexta (?), Theodotion (Ps 15,9b ἡ γλῶσσά
-                     μου)"
-                     corresp="#vat-gr-754-ps-15-8a">γνωστεον ὅτι πάντες δόξα μου:</seg>
+                     μου)" corresp="#vat-gr-754-ps-15-8a">γνωστεον ὅτι πάντες
+                     δόξα μου:</seg>
                   <note type="lemma">Ps 15,9a</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-15-17"
                      rendition="#left-column" rend="minuscule letters" source="Anonymous"
@@ -20793,11 +20791,12 @@
                         σπέρματος αὐτοῦ γεγενημένον τῶ κόσμω σωτήριον. τοῦτο γὰρ ἣν ὃ ἐπεθύμει κατὰ
                         ψυχὴν. καὶ ἐδέετο λαβεῖν· ὅπερ καὶ δοθὲν γέγονεν αὐτω οἷά τις στέφανος ἐκ
                         λίθου τιμίου τὴν κεφαλὴν δοξάζων· δοξάζεται γὰρ ἐν πᾶσι τοῖς ἔθνεσιν ὁ Δαυῒδ
-                        μετὰ του κυρίου αὐτοῦ καὶ υἱοῦ τὸ<del rendition="erasure"><gap
-                              reason="illegible" unit="character" quantity="1"/></del> κατασάρκα· οὐ
-                        μόνον δὲ στέφανος αὐτῶ γέγονε τὸ σωτήριον. ἀλλὰ καὶ ζωὴ· καὶ μακρο_ημέρευσις
-                        καὶ δόξα καὶ μεγαλο_πρέπεια· καὶ εὐφροσύνη καὶ χαρά· καὶ ἐλπὶς καὶ ἔλεον οὐ
-                        σαλευόμενον:</quote>
+                        μετὰ του κυρίου αὐτοῦ καὶ υἱοῦ τὸ<subst>
+                           <del rend="erasure">οῦ</del>
+                           <add place="inline">ὸ</add>
+                        </subst> κατασάρκα· οὐ μόνον δὲ στέφανος αὐτῶ γέγονε τὸ σωτήριον. ἀλλὰ καὶ
+                        ζωὴ· καὶ μακρο_ημέρευσις καὶ δόξα καὶ μεγαλο_πρέπεια· καὶ εὐφροσύνη καὶ
+                        χαρά· καὶ ἐλπὶς καὶ ἔλεον οὐ σαλευόμενον:</quote>
                      <note type="attribution" xml:lang="grc">ΠΖ΄</note>
                   </seg>
                </ab>
@@ -20970,7 +20969,7 @@
                      rendition="#bottom-of-the-page" source="Theodoretus"
                      corresp="#vat-gr-754-ps-20-7a"><quote type="patristic" subtype="quotation"
                         xml:id="vat-gr-754-quot-20-11"
-                        source="Theodoretus, comm. in Ps 20,7 (PG 80,1004 D1–1005 A7)"
+                        source="Theodoretus, comm. in Ps 20,7 (PG 80,1004 D1–1005 A7); ed. Montfaucon sub auctore Athanasio (PG 27,128 D8–129 A3; ex Paris. gr. 166–167)"
                         corresp="#person-16"/><note type="attribution" xml:lang="grc">τ(οῦ)
                         αυτ(οῦ)</note></seg>
                </ab>
