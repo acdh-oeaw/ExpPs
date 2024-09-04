@@ -175,8 +175,9 @@ function handleClickOnLinksForWitnessesWithoutNavigation(event){
 			else if (urlOfCommentaryfragment.includes('bodl-auct-d-4-1')){ urlFragmentForLinkToTranscription = 'bodl_auct_d_4_1.html'; }
 			else if (urlOfCommentaryfragment.includes('coislin-10')){ urlFragmentForLinkToTranscription = 'coislin_10.html'; }
 			else if (urlOfCommentaryfragment.includes('coislin-12')){ urlFragmentForLinkToTranscription = 'coislin_12.html'; }
+			else if (urlOfCommentaryfragment.includes('coislin-187')){ urlFragmentForLinkToTranscription = 'coislin-187.html'; }
 			else if (urlOfCommentaryfragment.includes('franzon-3')){ urlFragmentForLinkToTranscription = 'franzon_3.html'; }
-			else if (urlOfCommentaryfragment.includes('mosq-syn-194')){ urlFragmentForLinkToTranscription = 'mosq_syn_194.html'; }
+			else if (urlOfCommentaryfragment.includes('mosq-syn-194')){ urlFragmentForLinkToTranscription = 'mosq_synod_194.html'; }
 			else if (urlOfCommentaryfragment.includes('oxon-s-trin-78')){ urlFragmentForLinkToTranscription = 'oxon_s_trin_78.html'; }
 			else if (urlOfCommentaryfragment.includes('par-gr-139')){ urlFragmentForLinkToTranscription = 'par_gr_139.html'; }
 			else if (urlOfCommentaryfragment.includes('par-gr-164')){ urlFragmentForLinkToTranscription = 'par_gr_164.html'; }

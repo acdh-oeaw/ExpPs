@@ -1606,21 +1606,22 @@
         </xsl:if>
     </xsl:template>
     
-    <xsl:template match="tei:add">
-        <xsl:if test="@type = 'correction'">
-            <xsl:text>[</xsl:text>
-            <xsl:value-of select="text()"/>        
-            <xsl:text>]</xsl:text>
-        </xsl:if>
-    </xsl:template>
-    
-    <xsl:template match="tei:supplied">
+    <xsl:template match="tei:supplied[@reason != 'om.']">
         <xsl:text>[</xsl:text>
         <xsl:apply-templates/>
         <xsl:if test="exists(@cert) and (@cert = 'low')">
             <xsl:text>(?)</xsl:text>
         </xsl:if>
         <xsl:text>]</xsl:text>
+    </xsl:template>
+    
+    <xsl:template match="tei:supplied[@reason = 'om.']">
+        <xsl:text>〈</xsl:text>
+        <xsl:apply-templates/>
+        <xsl:if test="exists(@cert) and (@cert = 'low')">
+            <xsl:text>(?)</xsl:text>
+        </xsl:if>
+        <xsl:text>〉</xsl:text>
     </xsl:template>
     
     <xsl:template match="tei:g[not(@type = 'reference') and not(@type = 'linking')]">
@@ -1890,7 +1891,13 @@
         <xsl:apply-templates/>
     </xsl:template>
     
-    <xsl:template match="tei:add[@type != 'second-hand']">
+    <xsl:template match="tei:add[@type = 'correction']">
+        <xsl:text>[</xsl:text>
+        <xsl:value-of select="text()"/>        
+        <xsl:text>]</xsl:text>
+    </xsl:template>
+    
+    <xsl:template match="tei:add[((@type != 'second-hand') and (@type != 'correction')) or not(exists(@type))]">
         <xsl:if test="@place = 'above'">
             <xsl:text>\</xsl:text>
             <xsl:apply-templates/>
