@@ -904,7 +904,7 @@
                     <xsl:value-of select="concat('ambr_m_47_sup.html#',substring-after(@target,'#ambr-m-47-sup:'))"/>
                 </xsl:if>
                 <xsl:if test="starts-with(@target,'#ambr-b-106-sup:')">
-                    <xsl:value-of select="concat('ambr_B_106_sup.html#',substring-after(@target,'#ambr-b-106-sup:'))"/>
+                    <xsl:value-of select="concat('ambros_B_106_sup.html#',substring-after(@target,'#ambr-b-106-sup:'))"/>
                 </xsl:if>
                 <xsl:if test="starts-with(@target,'#bodl-auct-d-4-1:')">
                     <xsl:value-of select="concat('bodl_auct_d_4_1.html#',substring-after(@target,'#bodl-auct-d-4-1:'))"/>
@@ -920,6 +920,9 @@
                 </xsl:if>
                 <xsl:if test="starts-with(@target,'#mosq-synod-194:')">
                     <xsl:value-of select="concat('mosq_synod_194.html#',substring-after(@target,'#mosq-synod-194:'))"/>
+                </xsl:if>
+                <xsl:if test="starts-with(@target,'#mosq-syn-194:')">
+                    <xsl:value-of select="concat('mosq_synod_194.html#',substring-after(@target,'#mosq-syn-194:'))"/>
                 </xsl:if>
                 <xsl:if test="starts-with(@target,'#oxon-s-trin-78:')">
                     <xsl:value-of select="concat('oxon_s_trin_78.html#',substring-after(@target,'#oxon-s-trin-78:'))"/>
@@ -1909,9 +1912,9 @@
             <xsl:text>\</xsl:text>
         </xsl:if>
         <xsl:if test="@place = 'overstrike'">
-            <xsl:text>«</xsl:text>
+            <xsl:text>《</xsl:text>
             <xsl:apply-templates/>
-            <xsl:text>»</xsl:text>
+            <xsl:text>》</xsl:text>
         </xsl:if>
         <xsl:if test="@place = 'left margin'">
             <xsl:apply-templates/>
@@ -1930,9 +1933,9 @@
             <xsl:text>\</xsl:text>
         </xsl:if>
         <xsl:if test="@place = 'overstrike'">
-            <xsl:text>«</xsl:text>
+            <xsl:text>《</xsl:text>
             <xsl:apply-templates/>
-            <xsl:text>»</xsl:text>
+            <xsl:text>》</xsl:text>
         </xsl:if>
         <xsl:if test="@place = 'left margin'">
             <xsl:apply-templates/>
