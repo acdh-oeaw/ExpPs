@@ -884,6 +884,11 @@
             </a>
             <xsl:element name="p">
                 <xsl:attribute name="class" select="'paragraph-in-commentaryfragment'"/>
+                <a>
+                    <xsl:attribute name="id">
+                        <xsl:value-of select="child::tei:quote[@type = 'patristic']/@xml:id"/>
+                    </xsl:attribute>
+                </a>
                 <xsl:if test="@type = 'commentaryfragment'">
                     <xsl:text>Commentary fragment: </xsl:text>
                 </xsl:if>

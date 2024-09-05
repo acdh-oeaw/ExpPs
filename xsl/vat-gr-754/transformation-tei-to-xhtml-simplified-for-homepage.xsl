@@ -261,11 +261,16 @@
                 <xsl:if test="exists(@prev)">
                     <xsl:text>...</xsl:text>
                 </xsl:if>
-                <xsl:apply-templates select="child::node()[not(self::tei:note[@type = 'textual-commentary'])]"/>
+                <xsl:apply-templates select="child::node()[not(self::tei:note[@type = 'textual-commentary']) and not(self::tei:ref)]"/>
                 <xsl:if test="exists(@next)">
                     <xsl:text>...</xsl:text>
                 </xsl:if>
             </p>
+            <xsl:if test="exists(child::tei:ref)">
+                <p class="paragraph-in-commentaryfragment">
+                    <xsl:apply-templates select="child::tei:ref"/>
+                </p>
+            </xsl:if>
             <xsl:apply-templates select="child::tei:note[@type = 'textual-commentary']"/>
         </div>
     </xsl:template>
@@ -289,6 +294,11 @@
                     <xsl:text>...</xsl:text>
                 </xsl:if>
             </p>
+            <xsl:if test="exists(child::tei:ref)">
+                <p class="paragraph-in-commentaryfragment">
+                    <xsl:apply-templates select="child::tei:ref"/>
+                </p>
+            </xsl:if>
             <xsl:apply-templates select="child::tei:note[@type = 'textual-commentary']"/>
         </div>
     </xsl:template>
@@ -364,6 +374,65 @@
             <xsl:attribute name="class" select="'paragraph-in-commentaryfragment'"/>
             <xsl:apply-templates select="child::node()"/>
         </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="tei:ref">
+        <xsl:text>→ </xsl:text>
+        <xsl:element name="a">
+            <xsl:attribute name="href">
+                <xsl:if test="starts-with(@target,'#vat-gr-754:')">
+                    <xsl:value-of select="concat('vat_gr_754.html#',substring-after(@target,'#vat-gr-754:'))"/>
+                </xsl:if>
+                <xsl:if test="starts-with(@target,'#vat-gr-1422:')">
+                    <xsl:value-of select="concat('vat_gr_1422.html#',substring-after(@target,'#vat-gr-1422:'))"/>
+                </xsl:if>
+                <xsl:if test="starts-with(@target,'#ambr-m-47-sup')">
+                    <xsl:value-of select="concat('ambr_m_47_sup.html#',substring-after(@target,'#ambr-m-47-sup:'))"/>
+                </xsl:if>
+                <xsl:if test="starts-with(@target,'#ambr-b-106-sup:')">
+                    <xsl:value-of select="concat('ambros_B_106_sup.html#',substring-after(@target,'#ambr-b-106-sup:'))"/>
+                </xsl:if>
+                <xsl:if test="starts-with(@target,'#bodl-auct-d-4-1:')">
+                    <xsl:value-of select="concat('bodl_auct_d_4_1.html#',substring-after(@target,'#bodl-auct-d-4-1:'))"/>
+                </xsl:if>
+                <xsl:if test="starts-with(@target,'#coislin-10:')">
+                    <xsl:value-of select="concat('coislin_10.html#',substring-after(@target,'#coislin-10:'))"/>
+                </xsl:if>
+                <xsl:if test="starts-with(@target,'#coislin-12:')">
+                    <xsl:value-of select="concat('coislin_12.html#',substring-after(@target,'#coislin-12:'))"/>
+                </xsl:if>
+                <xsl:if test="starts-with(@target,'#franzon-3:')">
+                    <xsl:value-of select="concat('franzon_3.html#',substring-after(@target,'#franzon-3:'))"/>
+                </xsl:if>
+                <xsl:if test="starts-with(@target,'#mosq-synod-194:')">
+                    <xsl:value-of select="concat('mosq_synod_194.html#',substring-after(@target,'#mosq-synod-194:'))"/>
+                </xsl:if>
+                <xsl:if test="starts-with(@target,'#mosq-syn-194:')">
+                    <xsl:value-of select="concat('mosq_synod_194.html#',substring-after(@target,'#mosq-syn-194:'))"/>
+                </xsl:if>
+                <xsl:if test="starts-with(@target,'#oxon-s-trin-78:')">
+                    <xsl:value-of select="concat('oxon_s_trin_78.html#',substring-after(@target,'#oxon-s-trin-78:'))"/>
+                </xsl:if>
+                <xsl:if test="starts-with(@target,'#par-gr-139:')">
+                    <xsl:value-of select="concat('par_gr_139.html#',substring-after(@target,'#par-gr-139:'))"/>
+                </xsl:if>
+                <xsl:if test="starts-with(@target,'#par-gr-164:')">
+                    <xsl:value-of select="concat('par_gr_164.html#',substring-after(@target,'#par-gr-164:'))"/>
+                </xsl:if>
+                <xsl:if test="starts-with(@target,'#par-gr-166:')">
+                    <xsl:value-of select="concat('par_gr_166.html#',substring-after(@target,'#par-gr-166:'))"/>
+                </xsl:if>
+                <xsl:if test="starts-with(@target,'#plut-5-30:')">
+                    <xsl:value-of select="concat('plut_5_30.html#',substring-after(@target,'#plut-5-30:'))"/>
+                </xsl:if>
+                <xsl:if test="starts-with(@target,'#plut-6-3:')">
+                    <xsl:value-of select="concat('plut_6_3.html#',substring-after(@target,'#plut-6-3:'))"/>
+                </xsl:if>
+            </xsl:attribute>
+            <xsl:attribute name="target"><xsl:text>_blank</xsl:text></xsl:attribute>
+            <xsl:value-of select="text()"/>
+        </xsl:element>
+        <xsl:text> </xsl:text>
     </xsl:template>
     
     <xsl:template match="text()">
