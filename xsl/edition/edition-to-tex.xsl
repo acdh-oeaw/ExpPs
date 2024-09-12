@@ -16,6 +16,7 @@ version="2.0">
 \usepackage{fontspec}
 \defaultfontfeatures{Mapping=tex-text}
 \usepackage{xunicode}
+\usepackage{libertineotf}
 \usepackage{xltxtra}
 \usepackage{reledmac}
 \usepackage{reledpar}
@@ -73,16 +74,24 @@ Wien, 20.01.2021
 </xsl:template>
 
 <xsl:template match="tei:div[@type = 'text']">
-<xsl:apply-templates select="child::node()"/>
+    <xsl:apply-templates select="tei:div[@type = 'psalmtext'] | tei:div[@type = 'commentary'] | tei:div[@type = 'textcritic']"/>
 \vspace{7mm}
 </xsl:template>
 
-<!--<xsl:template match="tei:div[@type = 'translation']">
-<xsl:apply-templates select="child::node()"/>
-</xsl:template>-->
+<xsl:template match="tei:div[@type = 'psalmtext']">
+    <xsl:apply-templates select="child::node()"/>
+</xsl:template>
+    
+<xsl:template match="tei:div[@type = 'commentary']">
+    <xsl:apply-templates select="child::node()"/>
+</xsl:template>
+    
+<xsl:template match="tei:div[@type = 'textcritic']">
+    <xsl:apply-templates select="child::node()"/>
+</xsl:template>
 
-<xsl:template match="tei:quote[@type = 'psalmtext' and parent::tei:div[@xml:lang = 'grc']]" xml:space="default">
-\begin{pairs}\begin{Leftside}\beginnumbering\numberlinefalse\pstart{<xsl:for-each select=".">
+<xsl:template match="tei:quote[(@type = 'psalmtext') and ancestor::tei:div[@xml:lang = 'grc']]" xml:space="default">
+\begin{pairs}\begin{Leftside}\beginnumbering\numberlinefalse\pstart{
 <xsl:if test="exists(@n)">
 <xsl:text>(</xsl:text>
 <xsl:value-of select="@n"/>
@@ -90,14 +99,14 @@ Wien, 20.01.2021
 </xsl:if>
 \foreignlanguage{greek}{
 <xsl:value-of select="text()"/>
-}</xsl:for-each>}\pend\endnumbering\end{Leftside}
+}}\pend\endnumbering\end{Leftside}
 \begin{Rightside}\beginnumbering\numberlinefalse\pstart{
-<xsl:for-each select=".">
-<xsl:apply-templates select="parent::tei:div/parent::tei:div/tei:div[@type = 'translation']/tei:quote[current()/@xml:id = substring-after(@corresp,'#')]"/>
-</xsl:for-each>}\pend\endnumbering\end{Rightside}\end{pairs}\Columns
+\foreignlanguage{german}{
+<xsl:apply-templates select="parent::tei:div/parent::tei:div/parent::tei:div/tei:div[@type = 'translation']/tei:quote[current()/@xml:id = substring-after(@corresp,'#')]"/>
+}}\pend\endnumbering\end{Rightside}\end{pairs}\Columns
 </xsl:template>
 
-<xsl:template match="tei:quote[@type = 'psalmtext' and parent::tei:div[@xml:lang = 'de']]" xml:space="default">
+<xsl:template match="tei:quote[(@type = 'psalmtext') and ancestor::tei:div[@xml:lang = 'de']]" xml:space="default">
 <xsl:if test="exists(@n)">
 <xsl:text>(</xsl:text>
 <xsl:value-of select="@n"/>
@@ -106,7 +115,7 @@ Wien, 20.01.2021
 <xsl:value-of select="text()"/>
 </xsl:template>
 
-<xsl:template match="tei:p[parent::tei:div[@xml:lang = 'grc']]" xml:space="default">
+<xsl:template match="tei:p[ancestor::tei:div[@xml:lang = 'grc']][not(parent::tei:div[@type = 'links'])][not(parent::tei:note[@type = 'textual-commentary'])]" xml:space="default">
 \par\vspace{3mm}\begin{german}
 <xsl:text>Expositio </xsl:text>
 <xsl:value-of select="@n"/>
@@ -114,16 +123,17 @@ Wien, 20.01.2021
 <xsl:if test="exists(@ana) and @ana = 'hypothesis'">Hypothesis</xsl:if>
 <xsl:text>\end{german}\par</xsl:text>
 \begin{pairs}\begin{Leftside}\beginnumbering\pstart\firstlinenum{1}\linenumincrement{2}
-\large\foreignlanguage{greek}{
-<xsl:value-of select="text()"/>
+\foreignlanguage{greek}{
+<xsl:apply-templates select="child::node()"/>
 }\normalsize\pend\endnumbering\end{Leftside}
-<xsl:apply-templates select="parent::tei:div/parent::tei:div/tei:div[@type = 'translation']/tei:p[current()/@xml:id = substring-after(@corresp,'#')]"/>
+<xsl:apply-templates select="parent::tei:div/parent::tei:div/parent::tei:div/tei:div[@type = 'translation']/tei:p[current()/@xml:id = substring-after(@corresp,'#')]"/>
 </xsl:template>
 
 <xsl:template match="tei:p[parent::tei:div[@xml:lang = 'de']]" xml:space="default">
 \begin{Rightside}\beginnumbering\numberlinefalse\pstart{
+\foreignlanguage{german}{
 <xsl:value-of select="text()"/>
-}\pend\endnumbering\end{Rightside}\end{pairs}\Columns
+}}\pend\endnumbering\end{Rightside}\end{pairs}\Columns
 </xsl:template>
 
 <xsl:template match="tei:app[@type = 'fragment']" xml:space="default">
@@ -149,18 +159,38 @@ Wien, 20.01.2021
 </xsl:for-each>
 </xsl:for-each>
 </xsl:template>
+    
+<xsl:template match="tei:note[@type = 'textual-commentary']">
+    <xsl:apply-templates select="child::node()"/>
+</xsl:template>
+    
+<xsl:template match="tei:p[parent::tei:note[@type = 'textual-commentary']]">
+\begin{german}{
+<xsl:apply-templates select="child::node()"/>
+}\end{german}
+</xsl:template>
 
 <xsl:template match="tei:lem">
 <xsl:apply-templates select="child::node()"/>
+</xsl:template>
+
+<xsl:template match="tei:span[@type = 'text-critical']">
+    <xsl:apply-templates select="child::node()"/>
 </xsl:template>
     
 <xsl:template match="tei:foreign[@xml:lang = 'grc']">
 \foreignlanguage{greek}{<xsl:value-of select="./text()"/>}
 </xsl:template>
 
+    <xsl:template match="tei:anchor[@type = 'biblical-quotation']">
+        <xsl:text> (</xsl:text>
+        <xsl:value-of select="@n"/>
+        <xsl:text>)</xsl:text>
+    </xsl:template>
+
 <xsl:template match="text()">
 <xsl:choose>
-    <xsl:when test="text() = '                  '"/>
+    <xsl:when test=". = '                  '"/>
     <xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
 </xsl:choose>
 </xsl:template>
