@@ -16,7 +16,7 @@ version="2.0">
 \usepackage{fontspec}
 \defaultfontfeatures{Mapping=tex-text}
 \usepackage{xunicode}
-\usepackage{libertineotf}
+\usepackage{libertine}
 \usepackage{xltxtra}
 \usepackage{reledmac}
 \usepackage{reledpar}
@@ -41,16 +41,11 @@ version="2.0">
 </xsl:template>
 
 <xsl:template match="tei:teiHeader">
-\Large
-\begin{center}
-\textsc{<xsl:value-of select="tei:fileDesc/tei:titleStmt/tei:author/text()"/>}\par
-\vspace{20mm}
-\textbf{<xsl:value-of select="tei:fileDesc/tei:titleStmt/tei:title/text()"/>}\par
-\vspace{100mm}
-Wien, 20.01.2021
-\end{center}
-\normalsize
-\newpage
+\begin{titlepage}
+\author{\textsc{<xsl:value-of select="tei:fileDesc/tei:titleStmt/tei:author/text()"/>}}
+\title{\textbf{<xsl:value-of select="tei:fileDesc/tei:titleStmt/tei:title/text()"/>}}
+\date{Wien, 13.09.2024}
+\end{titlepage}
 </xsl:template>
 
 <xsl:template match="tei:text">
@@ -58,6 +53,7 @@ Wien, 20.01.2021
 </xsl:template>
 
 <xsl:template match="tei:body">
+\maketitle
 \tableofcontents
 \part{Einleitung}
 \part{Text, Übersetzung, Kommentar}
@@ -115,13 +111,21 @@ Wien, 20.01.2021
 <xsl:value-of select="text()"/>
 </xsl:template>
 
-<xsl:template match="tei:p[ancestor::tei:div[@xml:lang = 'grc']][not(parent::tei:div[@type = 'links'])][not(parent::tei:note[@type = 'textual-commentary'])]" xml:space="default">
+    <xsl:template match="tei:p[ancestor::tei:div[@xml:lang = 'grc']][not(parent::tei:div[@type = 'links'])][not(parent::tei:div[@type = 'links-oriental-tradition'])][not(parent::tei:note[@type = 'textual-commentary'])]" xml:space="default">
 \par\vspace{3mm}\begin{german}
-<xsl:text>Expositio </xsl:text>
+<xsl:text>\textbf{Expositio </xsl:text>
 <xsl:value-of select="@n"/>
-<xsl:text>: </xsl:text>
+        <xsl:if test="exists(parent::tei:div[@type = 'commentary']/@rend) and (parent::tei:div[@type = 'commentary']/@rend = 'parallel')">
+            <xsl:text> -- Parallele</xsl:text>
+        </xsl:if>
+<xsl:text>:} </xsl:text>
 <xsl:if test="exists(@ana) and @ana = 'hypothesis'">Hypothesis</xsl:if>
-<xsl:text>\end{german}\par</xsl:text>
+<xsl:if test="exists(parent::tei:div[@type = 'commentary']/@subtype)">
+    <xsl:text> (</xsl:text>
+    <xsl:value-of select="parent::tei:div[@type = 'commentary']/@subtype"/>
+    <xsl:text>)</xsl:text>
+</xsl:if>
+<xsl:text>\end{german}\par\vspace{3mm}</xsl:text>
 \begin{pairs}\begin{Leftside}\beginnumbering\pstart\firstlinenum{1}\linenumincrement{2}
 \foreignlanguage{greek}{
 <xsl:apply-templates select="child::node()"/>
@@ -138,29 +142,54 @@ Wien, 20.01.2021
 
 <xsl:template match="tei:app[@type = 'fragment']" xml:space="default">
 \begin{german}
-<xsl:text>-- </xsl:text>
 \textit{<xsl:value-of select="tei:rdg/text()"/>}
 <xsl:text> </xsl:text>
-<xsl:for-each select="tei:wit">
-<xsl:value-of select="./text()"/>
-    <xsl:if test="position() != last()"><xsl:text> </xsl:text></xsl:if>
-</xsl:for-each>
+    <xsl:for-each select="tokenize(tei:rdg/@wit,' ')">
+        <i>
+            <xsl:analyze-string select="substring-after(.,'#')" regex="(V1|C|P1|G|O|M|B1|P2|B2|N1|P3|A1|P4|P5|P6|P7|P8|L1|Z|V2|V3|V4|V5|A2|A3|N2|L2)(.*)">
+                <xsl:matching-substring>
+                    <xsl:value-of select="regex-group(1)"/>
+                    <xsl:if test="regex-group(2) != ''">
+                        <xsl:text>\textsuperscript{</xsl:text>
+                            <xsl:value-of select="regex-group(2)"/>
+                        <xsl:text>}</xsl:text>
+                    </xsl:if>
+                </xsl:matching-substring>
+            </xsl:analyze-string>
+        </i>
+        <xsl:if test="position() != last()"><xsl:text> </xsl:text></xsl:if>
+    </xsl:for-each>
 \end{german}\par\vspace{3mm}
 </xsl:template>
 
 <xsl:template match="tei:app[@type = 'text']" xml:space="default">
-<xsl:text>--- </xsl:text>
+    <xsl:if test="(local-name(preceding-sibling::*[1]) = 'app') and (preceding-sibling::tei:app/@type = 'text')">
+        <xsl:text>--- </xsl:text>
+    </xsl:if>
 <xsl:apply-templates select="tei:lem"/><xsl:text>\hspace{-0.75mm}] </xsl:text>
 <xsl:for-each select="tei:rdg">
-<xsl:apply-templates select="tei:foreign | text()"/>
-<xsl:for-each select="following-sibling::tei:wit">
-<xsl:value-of select="text()"/>
-    <xsl:if test="position() != last()"><xsl:text> </xsl:text></xsl:if>
-</xsl:for-each>
+    <xsl:apply-templates select="tei:foreign | text()"/>
+    <xsl:text> </xsl:text>
+    <xsl:for-each select="tokenize(./@wit,' ')">
+        <i>
+            <xsl:analyze-string select="substring-after(.,'#')" regex="(V1|C|P1|G|O|M|B1|P2|B2|N1|P3|A1|P4|P5|P6|P7|P8|L1|Z|V2|V3|V4|V5|A2|A3|N2|L2)(.*)">
+                <xsl:matching-substring>
+                    <xsl:value-of select="regex-group(1)"/>
+                    <xsl:if test="regex-group(2) != ''">
+                        <xsl:text>\textsuperscript{</xsl:text>
+                        <xsl:value-of select="regex-group(2)"/>
+                        <xsl:text>}</xsl:text>
+                    </xsl:if>
+                </xsl:matching-substring>
+            </xsl:analyze-string>
+        </i>
+        <xsl:if test="position() != last()"><xsl:text> </xsl:text></xsl:if>
+    </xsl:for-each>
 </xsl:for-each>
 </xsl:template>
     
 <xsl:template match="tei:note[@type = 'textual-commentary']">
+    <xsl:text>\par\vspace{5mm}</xsl:text>
     <xsl:apply-templates select="child::node()"/>
 </xsl:template>
     
