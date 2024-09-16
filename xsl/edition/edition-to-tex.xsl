@@ -115,7 +115,7 @@ version="2.0">
 \par\vspace{3mm}\begin{german}
 <xsl:text>\textbf{Expositio </xsl:text>
 <xsl:value-of select="@n"/>
-        <xsl:if test="exists(parent::tei:div[@type = 'commentary']/@rend) and (parent::tei:div[@type = 'commentary']/@rend = 'parallel')">
+        <xsl:if test="exists(parent::tei:div[@type = 'commentary']/@rend) and (parent::tei:div[@type = 'commentary']/@rend = 'hide')">
             <xsl:text> -- Parallele</xsl:text>
         </xsl:if>
 <xsl:text>:} </xsl:text>
@@ -191,6 +191,7 @@ version="2.0">
 <xsl:template match="tei:note[@type = 'textual-commentary']">
     <xsl:text>\par\vspace{5mm}</xsl:text>
     <xsl:apply-templates select="child::node()"/>
+    <xsl:text>\par\vspace{3mm}</xsl:text>
 </xsl:template>
     
 <xsl:template match="tei:p[parent::tei:note[@type = 'textual-commentary']]">
