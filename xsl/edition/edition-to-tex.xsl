@@ -217,6 +217,18 @@ version="2.0">
         <xsl:value-of select="@n"/>
         <xsl:text>)</xsl:text>
     </xsl:template>
+    
+    <xsl:template match="tei:hi[@rend = 'sup']">
+        <xsl:text>\textsuperscript{</xsl:text>
+        <xsl:apply-templates select="child::node()"/>
+        <xsl:text>}</xsl:text>
+    </xsl:template>
+    
+    <xsl:template match="tei:hi[@rend = 'italic']">
+        <xsl:text>\textit{</xsl:text>
+        <xsl:apply-templates select="child::node()"/>
+        <xsl:text>}</xsl:text>
+    </xsl:template>
 
 <xsl:template match="text()">
 <xsl:choose>
