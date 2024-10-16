@@ -942,6 +942,9 @@
                 <xsl:if test="starts-with(@target,'#plut-6-3:')">
                     <xsl:value-of select="concat('plut_6_3.html#',substring-after(@target,'#plut-6-3:'))"/>
                 </xsl:if>
+                <xsl:if test="starts-with(@target,'#coislin-187:')">
+                    <xsl:value-of select="concat('coislin-187.html#',substring-after(@target,'#coislin-187:'))"/>
+                </xsl:if>
             </xsl:attribute>
             <xsl:attribute name="target"><xsl:text>_blank</xsl:text></xsl:attribute>
             <xsl:value-of select="text()"/>
@@ -1610,6 +1613,15 @@
     </xsl:template>
     
     <xsl:template match="tei:supplied[@reason != 'om.']">
+        <xsl:text>[</xsl:text>
+        <xsl:apply-templates/>
+        <xsl:if test="exists(@cert) and (@cert = 'low')">
+            <xsl:text>(?)</xsl:text>
+        </xsl:if>
+        <xsl:text>]</xsl:text>
+    </xsl:template>
+    
+    <xsl:template match="tei:supplied[not(exists(@reason))]">
         <xsl:text>[</xsl:text>
         <xsl:apply-templates/>
         <xsl:if test="exists(@cert) and (@cert = 'low')">
