@@ -337,11 +337,15 @@
     <xsl:template match="tei:note[@type = 'marginal-note']">
         <xsl:element name="p">
             <xsl:attribute name="class" select="'marginal-note'"/>
-            <xsl:text>Marginal note (</xsl:text>
-            <xsl:value-of select="@place"/>
-            <xsl:text>, </xsl:text>
-            <xsl:value-of select="@rend"/>
-            <xsl:text>): </xsl:text>
+            <xsl:text>Marginal note</xsl:text>
+            <xsl:if test="exists(@place) and exists(@rend)">
+                <xsl:text> (</xsl:text>
+                <xsl:value-of select="@place"/>
+                <xsl:text>, </xsl:text>
+                <xsl:value-of select="@rend"/>
+                <xsl:text>)</xsl:text>
+            </xsl:if>
+            <xsl:text>: </xsl:text>
             <xsl:apply-templates select="child::node()"/>
         </xsl:element>
     </xsl:template>
@@ -416,12 +420,12 @@
     <xsl:template match="tei:div[@type = 'translation'][@xml:lang = 'en']">
         <xsl:element name="p">
             <xsl:attribute name="class" select="'heading-manuscript-name-sub'"/>
-            <xsl:text>Englische Übersetzung</xsl:text>
+            <xsl:text>English Translation</xsl:text>
         </xsl:element>
         <xsl:apply-templates select="child::node()"/>
     </xsl:template>
     
-    <xsl:template match="tei:div[@type = 'page-of-manuscript'][parent::tei:div[(@type = 'translation') and (@xml:lang = 'en')]]">
+    <xsl:template match="tei:div[@type = 'commentary-section'][parent::tei:div[(@type = 'translation') and (@xml:lang = 'en')]]">
         <xsl:element name="p">
             <xsl:attribute name="class" select="'page-number-translation'"/>
             <xsl:value-of select="@n"/>
