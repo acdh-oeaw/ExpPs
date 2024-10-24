@@ -147,7 +147,7 @@ version="2.0">
                 </p>
                 <p class="publisher">FWF Project 32988</p>
                 <p class="license">Available under the Creative Commons Attribution 4.0 International (CC BY 4.0)</p>
-                <p class="date">2023-06-14</p>
+                <p class="date">2024-10-24</p>
                 <p class="date">In Bearbeitung.</p>
             </div>
             <div id="main-content-body">

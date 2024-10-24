@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+     <fileDesc>
+        <titleStmt>
+           <title>(Ps.)-Athanasius, Expositiones in Psalmos. Ps 26-30</title>
+           <author>Uta Heil, Christoph Scheerer. Technisch betreut durch Thomas
+              Klampfl.</author>
+        </titleStmt>
+        <publicationStmt>
+           <p>In Bearbeitung (Stand 24.10.2024)</p>
+        </publicationStmt>
+        <sourceDesc>
+           <listWit>
+              <witness xml:id="A1">Mediolan. Ambros. M 47 sup.</witness>
+              <witness xml:id="A2">Mediolan. Ambros. B 106 sup.</witness>
+              <witness xml:id="A3">Mediolan. Ambros. C 98 sup.</witness>
+              <witness xml:id="B1">Oxon. Bodl. Auct. D. 4. 1.</witness>
+              <witness xml:id="B2">Oxon. Coll. S. Trin. 78</witness>
+              <witness xml:id="C">Paris. Coislin 10</witness>
+              <witness xml:id="G">Genua, Franzon. Urbani 3</witness>
+              <witness xml:id="L1">Flor. Med. Laurent. Plut. 5. 30</witness>
+              <witness xml:id="L2">Flor. Med. Laurent. Plut. 6. 3</witness>
+              <witness xml:id="M">Mosq. Sinod. gr. 194</witness>
+              <witness xml:id="N1">Athen. B.N. 8</witness>
+              <witness xml:id="N2">Athen. B.N. 45</witness>
+              <witness xml:id="O">Vat. Ottob. gr. 398</witness>
+              <witness xml:id="P1">Paris. gr. 166–167</witness>
+              <witness xml:id="P2">Paris. Coislin 187</witness>
+              <witness xml:id="P3">Paris. gr. 164</witness>
+              <witness xml:id="P4">Paris. gr. 165</witness>
+              <witness xml:id="P5">Paris. Coislin 12</witness>
+              <witness xml:id="P6">Paris. gr. 139</witness>
+              <witness xml:id="P7">Paris. gr. 146</witness>
+              <witness xml:id="P8">Paris. Suppl. gr. 1157</witness>
+              <witness xml:id="V1">Vat. gr. 754</witness>
+              <witness xml:id="V2">Vat. gr. 1677–1678</witness>
+              <witness xml:id="V3">Vat. gr. 1682–1683</witness>
+              <witness xml:id="V4">Vat. gr. 1747</witness>
+              <witness xml:id="V5">Vat. gr. 1422</witness>
+              <witness xml:id="Z">Venet. Marc. gr. Z. 17</witness>
+           </listWit>
+        </sourceDesc>
+     </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <div n="26" type="psalm">
+            <div n="26.1" type="psalmverse">
+               <div xml:lang="grc" type="text">
+                  <div type="psalmtext">
+                     <quote xml:id="edition-26-30-ps-26-1a" type="psalmtext" n="1a">Τοῦ Δαυιδ· πρὸ τοῦ χρισθῆναι.</quote>
+                  </div>
+                  <div type="commentary">
+                     <p xml:id="edition-26-30-26-1-1" n="501" ana="hypothesis">Περιέχει ὁ ψαλμὸς κατήχησιν κατ’ ἐχθρῶν, ἀφῶν ἤδη ἐδέξατο παραθεοῦ γινομένην, καὶ αἴτησιν δευτέρων ἀγαθῶν τὸ μετεξομολογήσεως. Τὸ δὲ, πρὸ τοῦ χρισθῆναι, ἐκεῖνο σημαίνει, ὅτι, τῶ Πνεύματι τῶ θείω προἑωρακὼς, ὡς χρισθήσεται μὲν εἰς βασιλέα, περιπέσοι μέντοι πειρασμοῖς, ἀνδρείαν περιζωσάμενος τὴν ὀσφὺν εὖ μᾶλα περὶ τοὺς κινδύνους ἀντισοῦσθαι διαβεβαιοῦται:</p>
+                     <div type="links">
+                        <p>
+                           <listRef>
+                              <ref target="#vat-gr-754:vat-gr-754-"/>
+                           </listRef>
+                        </p>
+                     </div>
+                  </div>
+                  <div type="textcritic">
+                     <app type="fragment">
+                        <rdg wit="#V1">txt</rdg>
+                        <wit>Vat. gr. 754</wit>
+                     </app>
+                  </div>
+                  <div type="psalmtext">
+                     <quote xml:id="edition-26-30-ps-26-1b" type="psalmtext" n="1b">Κύριος φωτισμός μου καὶ σωτήρ μου· τίνα φοβηθήσομαι;</quote>
+                  </div>
+                  <div type="commentary">
+                     <p xml:id="edition-26-30-26-1-2" n="502">Κατευμεγεθεῖ τῶν ἀντικειμένων δυνάμεων τῶ φωτὶ τοῦ Κυρίου θαρρήσας:</p>
+                     <div type="links">
+                        <p>
+                           <listRef>
+                              <ref target="#vat-gr-754:vat-gr-754-"/>
+                           </listRef>
+                        </p>
+                     </div>
+                  </div>
+                  <div type="textcritic">
+                     <app type="fragment">
+                        <rdg wit="#V1">txt</rdg>
+                     </app>
+                  </div>
+                  <div type="psalmtext">
+                     <quote xml:id="edition-26-30-ps-26-1c" type="psalmtext" n="1c">κύριος ὑπερασπιστὴς τῆς ζωῆς μου· ἀπὸ τίνος δειλιάσω;</quote>
+                  </div>
+               </div>
+               <div type="translation" xml:lang="de">
+                  <quote corresp="#edition-26-30-ps-26-1a" type="psalmtext" n="1a"></quote>
+                  <p corresp="#edition-26-30-26-1-1" n="501">Der Psalm enthält eine Trostrede gegen die Feinde, die aus Gütern, die er bereits von Gott empfing, erkannt wird, und eine Bitte um weitere Güter mit Lobpreisung. Die Worte aber, Bevor er gesalbt wurde“ bedeuten, daß er im göttlichen Geiste vorhergesehen hat, daß er zum König werde gesalbt werden, daß, er aber den Versuchungen anheimfallen werde. Indem er nun seine Lenden mit Tapferkeit umgürtet, erscheint er zum Kampfe gegen die Gefahren wohl gerüstet.</p>
+                  <quote corresp="#edition-26-30-ps-26-1b" type="psalmtext" n="1b"></quote>
+                  <p corresp="#edition-26-30-26-1-2" n="502">Er achtet die feindlichen Mächte gering, indem er auf das Licht des Herrn vertraut.</p>
+                  <quote corresp="#edition-26-30-ps-26-1c" type="psalmtext" n="1c"></quote>
+               </div>
+            </div>
+            <div type="psalmverse" n="26.2">
+               <div type="text" xml:lang="grc">
+                  <div type="psalmtext">
+                     <quote type="psalmtext" xml:id="edition-26-30-ps-26-2a" n="2a">ἐν τῷ ἐγγίζειν ἐπ᾽ ἐμὲ κακοῦντας τοῦ φαγεῖν τὰς σάρκας μου</quote>
+                  </div>
+                  <div type="commentary">
+                     <p xml:id="edition-26-30-26-2-1" n="503">Προσῆλθον, φη(σὶ), διαφθεῖραι θέλοντες πεπόνθασι δὲ ἅ δράσειν ἤλπισαν:-</p>
+                     <div type="links">
+                        <p>
+                           <listRef>
+                              <ref target="#vat-gr-754:vat-gr-754-"/>
+                           </listRef>
+                        </p>
+                     </div>
+                  </div>
+                  <div type="textcritic">
+                     <app type="fragment">
+                        <rdg wit="#V1">txt</rdg>
+                     </app>
+                  </div>
+                  <div type="psalmtext">
+                     <quote type="psalmtext" xml:id="edition-26-30-ps-26-2b" n="2b">οἱ θλίβοντές με καὶ οἱ ἐχθροί μου αὐτοὶ ἠσθένησαν καὶ ἔπεσαν·</quote>
+                  </div>
+               </div>
+               <div type="translation" xml:lang="de">
+                  <quote type="psalmtext" corresp="#edition-26-30-ps-26-2a" n="2a"></quote>
+                  <p corresp="#edition-26-30-26-2-1" n="503">Sie nahten mir, will er sagen, in der Absicht, mich zu verderben.</p>
+                  <quote type="psalmtext" corresp="#edition-26-30-ps-26-2b" n="2b"></quote>
+               </div>
+            </div>
+            <div type="psalmverse" n="26.3">
+               <div type="text" xml:lang="grc">
+                  <div type="psalmtext">
+                     <quote type="psalmtext" xml:id="edition-26-30-ps-26-3a" n="3a">ἐὰν παρατάξηται ἐπ᾽ ἐμὲ παρεμβολή, οὐ φοβηθήσεται ἡ καρδία μου·</quote>
+                     <quote type="psalmtext" xml:id="edition-26-30-ps-26-3b" n="3b">ἐὰν ἐπαναστῇ ἐπ᾽ ἐμὲ πόλεμος, ἐν ταύτῃ ἐγὼ ἐλπίζω.</quote>
+                  </div>
+               </div>
+               <div type="translation" xml:lang="de">
+                  <quote type="psalmtext" corresp="#edition-26-30-ps-26-3a" n="3a"></quote>
+               </div>
+            </div>
+            <div type="psalmverse" n="26.4">
+               <div type="text" xml:lang="grc">
+                  <div type="psalmtext">
+                     <quote type="psalmtext" xml:id="edition-26-30-ps-26-4a" n="4a">μίαν ᾐτησάμην παρὰ κυρίου, ταύτην ἐκζητήσω·</quote>
+                     <quote type="psalmtext" xml:id="edition-26-30-ps-26-4b" n="4b">τοῦ κατοικεῖν με ἐν οἴκῳ κυρίου πάσας τὰς ἡμέρας τῆς ζωῆς μου,</quote>
+                  </div>
+                  <div type="commentary">
+                     <p xml:id="edition-26-30-26-4-1" n="504">Καὶ ἁγιοπρεποῦς ἡ αἴτησις γέγονεν, καὶ Θεῶ δοῦναι ἀξία:-</p>   
+                     <div type="links">
+                        <p>
+                           <listRef>
+                              <ref target="#vat-gr-754:vat-gr-754-"/>
+                           </listRef>
+                        </p>
+                     </div>
+                  </div>
+                  <div type="textcritic">
+                     <app type="fragment">
+                        <rdg wit="#V1">txt</rdg>
+                     </app>
+                  </div>
+                  <div type="psalmtext">
+                     <quote type="psalmtext" xml:id="edition-26-30-ps-26-4c" n="4c">τοῦ θεωρεῖν με τὴν τερπνότητα τοῦ κυρίου</quote>
+                     <quote type="psalmtext" xml:id="edition-26-30-ps-26-4d" n="4d">καὶ ἐπισκέπτεσθαι τὸν ναὸν αὐτοῦ.</quote>
+                  </div>
+               </div>
+               <div type="translation" xml:lang="de">
+                  <quote type="psalmtext" corresp="#edition-26-30-ps-26-4a" n="4a"></quote>
+                  <quote type="psalmtext" corresp="#edition-26-30-ps-26-4b" n="4b"></quote>
+                  <p corresp="#edition-26-30-26-4-1" n="504">Es ist ja eine heilige Bitte, deren Erfüllung Gottes würdig ist.</p>
+                  <quote type="psalmtext" corresp="#edition-26-30-ps-26-4c" n="4c"></quote>
+                  <quote type="psalmtext" corresp="#edition-26-30-ps-26-4d" n="4d"></quote>
+               </div>
+            </div>
+            <div type="psalmverse" n="26.5">
+               <div type="text" xml:lang="grc">
+                  <div type="psalmtext">
+                     <quote type="psalmtext" xml:id="edition-26-30-ps-26-5a" n="5a">ὅτι ἔκρυψέν με ἐν σκηνῇ ἐν ἡμέρᾳ κακῶν μου·</quote>
+                  </div>
+                  <div type="commentary">
+                     <p xml:id="edition-26-30-26-5-1" n="505">Ἐνταῦθα, φη(σὶν), εὔχομαι διαπαντὸς οἰκεῖν, ἐν ῆ καὶ τῆς σωτηρίας ἔτυχον:-</p>
+                     <div type="links">
+                        <p>
+                           <listRef>
+                              <ref target="#vat-gr-754:vat-gr-754-"/>
+                           </listRef>
+                        </p>
+                     </div>
+                  </div>
+                  <div type="textcritic">
+                     <app type="fragment">
+                        <rdg wit="#V1">txt</rdg>
+                     </app>
+                  </div>
+                  <div type="psalmtext">
+                     <quote type="psalmtext" xml:id="edition-26-30-ps-26-5b" n="5b">ἐσκέπασέν με ἐν ἀποκρύφῳ τῆς σκηνῆς αὐτοῦ,</quote>
+                     <quote type="psalmtext" xml:id="edition-26-30-ps-26-5c" n="5c">ἐν πέτρᾳ ὕψωσέν με·</quote>
+                  </div>
+                  <div type="commentary">
+                     <p xml:id="edition-26-30-26-5-2" n="506">Σαφῶς ὁ Παῦλος τὴν πέτραν εἶναι τὸν Χριστὸν διϊσχυρίζεται:-</p>
+                     <div type="links">
+                        <p>
+                           <listRef>
+                              <ref target="#vat-gr-754:vat-gr-754-"/>
+                           </listRef>
+                        </p>
+                     </div>
+                  </div>
+                  <div type="textcritic">
+                     <app type="fragment">
+                        <rdg wit="#V1">txt</rdg>
+                     </app>
+                  </div>
+               </div>
+               <div type="translation" xml:lang="de">
+                  <quote type="psalmtext" corresp="#edition-26-30-ps-26-5a" n="5a"></quote>
+                  <p corresp="#edition-26-30-26-5-1" n="505">In dieser, will er sagen wünsche ich immer zu wohnen, in der mir auch das Heil zu Theil wurde.</p>
+                  <quote type="psalmtext" corresp="#edition-26-30-ps-26-5b" n="5b"></quote>
+                  <quote type="psalmtext" corresp="#edition-26-30-ps-26-5c" n="5c"></quote>
+                  <p corresp="#edition-26-30-26-5-2" n="506">Deutlich versichert Paulus, daß Christus der Felsen sei.</p>
+               </div>
+            </div>
+            <div type="psalmverse" n="26.6">
+               <div type="text" xml:lang="grc">
+                  <div type="psalmtext">
+                     <quote type="psalmtext" xml:id="edition-26-30-ps-26-6a" n="6a">καὶ νῦν ἰδοὺ ὕψωσεν τὴν κεφαλήν μου ἐπ᾽ ἐχθρούς μου·</quote>
+                     <quote type="psalmtext" xml:id="edition-26-30-ps-26-6b" n="6b">ἐκύκλωσα καὶ ἔθυσα ἐν τῇ σκηνῇ αὐτοῦ θυσίαν ἀλαλαγμοῦ,</quote>
+                     <quote type="psalmtext" xml:id="edition-26-30-ps-26-6c" n="6c">ᾄσομαι καὶ ψαλῶ τῷ κυρίῳ.</quote>
+                  </div>
+                  <div type="commentary">
+                     <p xml:id="edition-26-30-26-6-1" n="507">Σαφῶς τὴν τοῦ, Ἅγιος, ἅγιος, ἅγιος, ἀνακηρύττει λατρείαν:-</p>
+                     <div type="links">
+                        <p>
+                           <listRef>
+                              <ref target="#vat-gr-754:vat-gr-754-"/>
+                           </listRef>
+                        </p>
+                     </div>
+                  </div>
+                  <div type="textcritic">
+                     <app type="fragment">
+                        <rdg wit="#V1">txt</rdg>
+                     </app>
+                  </div>
+               </div>
+               <div type="translation" xml:lang="de">
+                  <quote type="psalmtext" corresp="#edition-26-30-ps-26-6a" n="6a"></quote>
+                  <quote type="psalmtext" corresp="#edition-26-30-ps-26-6b" n="6b"></quote>
+                  <quote type="psalmtext" corresp="#edition-26-30-ps-26-6c" n="6c"></quote>
+                  <p corresp="#edition-26-30-26-6-1" n="507">Offenbar verkündet er die Anbetung in den Worten: Heilig, heilig, heilig.</p>
+               </div>
+            </div>
+            <div type="psalmverse" n="26.7">
+               <div type="text" xml:lang="grc">
+                  <div type="psalmtext">
+                     <quote type="psalmtext" xml:id="edition-26-30-ps-26-7a" n="7a">εἰσάκουσον, κύριε, τῆς φωνῆς μου, ἧς ἐκέκραξα·</quote>
+                     <quote type="psalmtext" xml:id="edition-26-30-ps-26-7b" n="7b">ἐλέησόν με καὶ εἰσάκουσόν μου.</quote>
+                  </div>
+               </div>
+               <div type="translation" xml:lang="de">
+                  <quote type="psalmtext" corresp="#edition-26-30-ps-26-7a" n="7a"></quote>
+                  <quote type="psalmtext" corresp="#edition-26-30-ps-26-7b" n="7b"></quote>
+               </div>
+            </div>
+            <div type="psalmverse" n="26.8">
+               <div type="text" xml:lang="grc">
+                  <div type="psalmtext">
+                     <quote type="psalmtext" xml:id="edition-26-30-ps-26-8a" n="8a">σοὶ εἶπεν ἡ καρδία μου Ἐζήτησεν τὸ πρόσωπόν μου·</quote>
+                     <quote type="psalmtext" xml:id="edition-26-30-ps-26-8b" n="8b">τὸ πρόσωπόν σου, κύριε, ζητήσω.</quote>
+                  </div>
+               </div>
+               <div type="translation" xml:lang="de">
+                  <quote type="psalmtext" corresp="#edition-26-30-ps-26-8a" n="8a"></quote>
+                  <quote type="psalmtext" corresp="#edition-26-30-ps-26-8b" n="8b"></quote>
+               </div>
+            </div>
+            <div type="psalmverse" n="26.9">
+               <div type="text" xml:lang="grc">
+                  <div type="psalmtext">
+                     <quote type="psalmtext" xml:id="edition-26-30-ps-26-9a" n="9a">μὴ ἀποστρέψῃς τὸ πρόσωπόν σου ἀπ᾽ ἐμοῦ,</quote>
+                     <quote type="psalmtext" xml:id="edition-26-30-ps-26-9b" n="9b">μὴ ἐκκλίνῃς ἐν ὀργῇ ἀπὸ τοῦ δούλου σου·</quote>
+                     <quote type="psalmtext" xml:id="edition-26-30-ps-26-9c" n="9c">βοηθός μου γενοῦ, μὴ ἀποσκορακίσῃς με</quote>
+                     <quote type="psalmtext" xml:id="edition-26-30-ps-26-9d" n="9d">καὶ μὴ ἐγκαταλίπῃς με, ὁ θεὸς ὁ σωτήρ μου.</quote>
+                  </div>
+               </div>
+               <div type="translation" xml:lang="de">
+                  <quote type="psalmtext" corresp="#edition-26-30-ps-26-9a" n="9a"></quote>
+                  <quote type="psalmtext" corresp="#edition-26-30-ps-26-9b" n="9b"></quote>
+                  <quote type="psalmtext" corresp="#edition-26-30-ps-26-9c" n="9c"></quote>
+                  <quote type="psalmtext" corresp="#edition-26-30-ps-26-9d" n="9d"></quote>
+               </div>
+            </div>
+            <div type="psalmverse" n="26.10">
+               <div type="text" xml:lang="grc">
+                  <div type="psalmtext">
+                     <quote type="psalmtext" xml:id="edition-26-30-ps-26-10a" n="10a">ὅτι ὁ πατήρ μου καὶ ἡ μήτηρ μου ἐγκατέλιπόν με,</quote>
+                     <quote type="psalmtext" xml:id="edition-26-30-ps-26-10b" n="10b">ὁ δὲ κύριος προσελάβετό με.</quote>
+                  </div>
+               </div>
+               <div type="translation" xml:lang="de">
+                  <quote type="psalmtext" corresp="#edition-26-30-ps-26-10a" n="10a"></quote>
+                  <quote type="psalmtext" corresp="#edition-26-30-ps-26-10b" n="10b"></quote>
+               </div>
+            </div>
+            <div type="psalmverse" n="26.11">
+               <div type="text" xml:lang="grc">
+                  <div type="psalmtext">
+                     <quote type="psalmtext" xml:id="edition-26-30-ps-26-11a" n="11a">νομοθέτησόν με, κύριε, τῇ ὁδῷ σου</quote>
+                  </div>
+                  <div type="commentary">
+                     <p xml:id="edition-26-30-26-11-1" n="508">Τὸν εὐαγγελικὸν νόμον εὔχεται γυμνωθῆναι αὐτῶ· αὐτὸς γὰρ καὶ ἡ εὐθεῖα ὁδός:</p>
+                     <div type="links">
+                        <p>
+                           <listRef>
+                              <ref target="#vat-gr-754:vat-gr-754-"/>
+                           </listRef>
+                        </p>
+                     </div>
+                  </div>
+                  <div type="textcritic">
+                     <app type="fragment">
+                        <rdg wit="#V1">txt</rdg>
+                     </app>
+                  </div>
+                  <div type="psalmtext">
+                     <quote type="psalmtext" xml:id="edition-26-30-ps-26-11b" n="11b">καὶ ὁδήγησόν με ἐν τρίβῳ εὐθείᾳ ἕνεκα τῶν ἐχθρῶν μου.</quote>
+                  </div>
+               </div>
+               <div type="translation" xml:lang="de">
+                  <quote type="psalmtext" corresp="#edition-26-30-ps-26-11a" n="11a"></quote>
+                  <p corresp="#edition-26-30-26-11-1" n="508">Er fleht, es möge das Gesetz des Evangeliums ihm enthüllt werden. Denn das war der gerade Weg.</p>
+                  <quote type="psalmtext" corresp="#edition-26-30-ps-26-11b" n="11b"></quote>
+               </div>
+            </div>
+            <div type="psalmverse" n="26.12">
+               <div type="text" xml:lang="grc">
+                  <div type="psalmtext">
+                     <quote type="psalmtext" xml:id="edition-26-30-ps-26-12a" n="12a">μὴ παραδῷς με εἰς ψυχὰς θλιβόντων με,</quote>
+                     <quote type="psalmtext" xml:id="edition-26-30-ps-26-12b" n="12b">ὅτι ἐπανέστησάν μοι μάρτυρες ἄδικοι,</quote>
+                     <quote type="psalmtext" xml:id="edition-26-30-ps-26-12c" n="12c">καὶ ἐψεύσατο ἡ ἀδικία ἑαυτῇ.</quote>
+                  </div>
+                  <div type="commentary">
+                     <p xml:id="edition-26-30-26-12-1" n="509">Τουτέστιν ἠσθένησεν ἡ καθημῶν ἀδικία:</p>
+                     <div type="links">
+                        <p>
+                           <listRef>
+                              <ref target="#vat-gr-754:vat-gr-754-"/>
+                           </listRef>
+                        </p>
+                     </div>
+                  </div>
+                  <div type="textcritic">
+                     <app type="fragment">
+                        <rdg wit="#V1">txt</rdg>
+                     </app>
+                  </div>
+               </div>
+               <div type="translation" xml:lang="de">
+                  <quote type="psalmtext" corresp="#edition-26-30-ps-26-12a" n="12a"></quote>
+                  <quote type="psalmtext" corresp="#edition-26-30-ps-26-12b" n="12b"></quote>
+                  <quote type="psalmtext" corresp="#edition-26-30-ps-26-12c" n="12c"></quote>
+                  <p corresp="#edition-26-30-26-12-1" n="509">Das heißt, die Ungerechtigkeit gegen uns ist ohnmächtig geworden.</p>
+               </div>
+            </div>
+            <div type="psalmverse" n="26.13">
+               <div type="text" xml:lang="grc">
+                  <div type="psalmtext">
+                     <quote type="psalmtext" xml:id="edition-26-30-ps-26-13" n="13">πιστεύω τοῦ ἰδεῖν τὰ ἀγαθὰ κυρίου ἐν γῇ ζώντων.</quote>
+                  </div>
+                  <div type="commentary">
+                     <p xml:id="edition-26-30-26-13-1" n="510">Τὴν ἄνω Ἱερουσαλήμ φησίν:</p>
+                     <div type="links">
+                        <p>
+                           <listRef>
+                              <ref target="#vat-gr-754:vat-gr-754-"/>
+                           </listRef>
+                        </p>
+                     </div>
+                  </div>
+                  <div type="textcritic">
+                     <app type="fragment">
+                        <rdg wit="#V1">txt</rdg>
+                     </app>
+                  </div>
+               </div>
+               <div type="translation" xml:lang="de">
+                  <quote type="psalmtext" corresp="#edition-26-30-ps-26-13" n="13"></quote>
+                  <p corresp="#edition-26-30-26-13-1" n="510">Er meint das himmlische Jerusalem.</p>
+               </div>
+            </div>
+            <div type="psalmverse" n="26.14">
+               <div type="text" xml:lang="grc">
+                  <div type="psalmtext">
+                     <quote type="psalmtext" xml:id="edition-26-30-ps-26-14a" n="14a">ὑπόμεινον τὸν κύριον·</quote>
+                  </div>
+                  <div type="commentary">
+                     <p xml:id="edition-26-30-26-14-1" n="511">Ἀντιφθέγγεται τὸ πνεῦμα τῶ εἰρηκότι· πιστεύω τοῦ ἰδεῖν τὰ ἀγαθὰ κυρίου, παρακελευόμενον δι᾿ ὑπομονῆς τὸν προκείμενον ἐξανύειν ἀγῶνα:-</p>
+                     <div type="links">
+                        <p>
+                           <listRef>
+                              <ref target="#vat-gr-754:vat-gr-754-"/>
+                           </listRef>
+                        </p>
+                     </div>
+                  </div>
+                  <div type="textcritic">
+                     <app type="fragment">
+                        <rdg wit="#V1">txt</rdg>
+                     </app>
+                  </div>
+                  <div type="psalmtext">
+                     <quote type="psalmtext" xml:id="edition-26-30-ps-26-14b" n="14b">ἀνδρίζου, καὶ κραταιούσθω ἡ καρδία σου,</quote>
+                     <quote type="psalmtext" xml:id="edition-26-30-ps-26-14c" n="14c">καὶ ὑπόμεινον τὸν κύριον.</quote>
+                  </div>
+               </div>
+               <div type="translation" xml:lang="de">
+                  <quote type="psalmtext" corresp="#edition-26-30-ps-26-14a" n="14a"></quote>
+                  <p corresp="#edition-26-30-26-14-1" n="511">Übersetzung fehlt.</p>
+                  <quote type="psalmtext" corresp="#edition-26-30-ps-26-14b" n="14b"></quote> 
+                  <quote type="psalmtext" corresp="#edition-26-30-ps-26-14c" n="14c"></quote> 
+               </div>
+             </div>
+         </div>
+      </body>
+  </text>
+</TEI>
