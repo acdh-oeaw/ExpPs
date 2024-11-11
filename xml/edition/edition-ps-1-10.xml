@@ -22873,7 +22873,7 @@
             </div>
          </div>
          <!-- Ps 16 commentary -->
-         <!-- cave: Ps 16: Z N2 P7 noch zu kollationieren : G L2 A3 noch zu bearbeiten -->
+         <!-- cave: Ps 16: Z N2 P7 noch zu kollationieren : G noch zu bearbeiten -->
          <div type="psalm" n="16">
             <div type="psalmverse" n="16.1">
                <div type="text" xml:lang="grc">
@@ -22895,6 +22895,7 @@
                               <ref target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-16-2"/>
                               <ref target="#par-gr-139:par-gr-139-fr-16-2"/>
                               <ref target="#vat-gr-1422:vat-gr-1422-fr-16-2"/>
+                              <ref target="#plut-6-3:plut-6-3-fr-16-1"/>
                            </listRef>
                         </p>
                      </div>
@@ -23005,23 +23006,39 @@
                            <listRef>
                               <ref target="#par-gr-139:par-gr-139-fr-16-4"/>
                               <ref target="#vat-gr-1422:vat-gr-1422-fr-16-5"/>
+                              <ref target="#plut-6-3:plut-6-3-fr-16-2"/>
                            </listRef>
                         </p>
                      </div>
                   </div>
                   <div type="textcritic" rend="hide">
                      <app type="fragment">
-                        <rdg wit="#P6 #Z #N2 #V5 #P7">txt</rdg>
+                        <rdg wit="#P6 #Z #N2 #V5 #P7 #L2 #A3">txt</rdg>
                         <wit>Par. gr. 139</wit>
                         <wit>Marc. gr. Z. 17</wit>
                         <wit>Athen. B.N. 45</wit>
                         <wit>Vat. gr. 1422</wit>
                         <wit>Par. gr. 146</wit>
+                        <wit>Plut. 6.3</wit>
+                        <wit>Ambr. C 98 sup.</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">γὰρ</foreign></lem>
                         <rdg wit="#P6">om.</rdg>
                         <wit>Par. gr. 139</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">δίκαιον</foreign></lem>
+                        <rdg wit="#L2*"><foreign xml:lang="grc">δικαιῶν</foreign> (ut vid.)</rdg>
+                        <wit>Plut. 6.3</wit>
+                        <rdg wit="#L2corr"><foreign xml:lang="grc">δίκαιον</foreign></rdg>
+                        <wit>Plut. 6.3</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">ἀντὶ τοῦ δικαίως</foreign></lem>
+                        <rdg wit="#A3"><foreign xml:lang="grc">ἀντὶ τοῦ δικαίου</foreign></rdg>
+                        <wit>Ambr. C 98 sup.</wit>
+                        <!-- Textkritik:  ἀντὶ τοῦ δικαίως A2 = V5 -->
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">ὑπομένω</foreign></lem>
@@ -23521,6 +23538,7 @@
                               <ref target="#ambr-b-106-sup:ambr-b-106-sup-fr-16-3"/>
                               <ref target="#oxon-s-trin-78:oxon-s-trin-78-fr-16-8"/>
                               <ref target="#vat-gr-1422:vat-gr-1422-fr-16-30"/>
+                              <ref target="#plut-6-3:plut-6-3-fr-16-3"/>
                            </listRef>
                         </p>
                      </div>
@@ -23534,7 +23552,7 @@
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #P1 #P5 #A2 #V4 #B2 #V5 #P7">txt</rdg>
+                        <rdg wit="#V1 #C #P1 #P5 #A2 #V4 #B2 #V5 #P7 #L2 #A3">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Coislin 10</wit>
                         <wit>Par. gr. 166</wit>
@@ -23544,15 +23562,19 @@
                         <wit>S.Trin 78</wit>
                         <wit>Vat. gr. 1422</wit>
                         <wit>Par. gr. 146</wit>
+                        <wit>Plut. 6.3</wit>
+                        <wit>Ambr. C 98 sup.</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">ἐφ᾿ ἑαυτοῖς</foreign></lem>
-                        <rdg wit="#A2 #V4 #V5 #P7"><foreign xml:lang="grc">ἐφ᾿ ἑαυτῷ ἢ ἐφ᾿
+                        <rdg wit="#A2 #V4 #V5 #P7 #L2 #A3"><foreign xml:lang="grc">ἐφ᾿ ἑαυτῷ ἢ ἐφ᾿
                               ἑαυτοῖς</foreign></rdg>
                         <wit>Ambr. B 106 sup.</wit>
                         <wit>Vat. gr. 1747</wit>
                         <wit>Vat. gr. 1422</wit>
                         <wit>Par. gr. 146</wit>
+                        <wit>Plut. 6.3</wit>
+                        <wit>Ambr. C 98 sup.</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">πεποιθέναι</foreign></lem>
@@ -23571,8 +23593,8 @@
                         V5 P7: exp. 231 anscheinend aus der Tradition des Typus XIV (A2 V4).
                         Koptische Version: Anscheinend hatte die griechische Vorlage <foreign
                            xml:lang="grc">ἐφ᾿ ἑαυτοῖς</foreign>, und nicht <foreign xml:lang="grc"
-                           >ἐφ᾿ ἑαυτῷ ἢ ἐφ᾿ ἑαυτοῖς</foreign> (= A2 V4 V5 P7). Montfaucon: exp. 231
-                        nach P1.</note>
+                           >ἐφ᾿ ἑαυτῷ ἢ ἐφ᾿ ἑαυτοῖς</foreign> (= A2 V4 V5 P7 L2 A3). Montfaucon:
+                        exp. 231 nach P1.</note>
                   </div>
                </div>
                <div type="translation" xml:lang="de">
@@ -23716,13 +23738,14 @@
                               <ref target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-16-12"/>
                               <ref target="#oxon-s-trin-78:oxon-s-trin-78-fr-16-10"/>
                               <ref target="#vat-gr-1422:vat-gr-1422-fr-16-37"/>
+                              <ref target="#plut-6-3:plut-6-3-fr-16-4"/>
                            </listRef>
                         </p>
                      </div>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #M #P1 #P5 #A1 #A2 #V4 #B1 #B2 #V5 #P7">txt</rdg>
+                        <rdg wit="#V1 #C #M #P1 #P5 #A1 #A2 #V4 #B1 #B2 #V5 #P7 #L2 #A3">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Coislin 10</wit>
                         <wit>Sinod. gr. 194</wit>
@@ -23735,6 +23758,8 @@
                         <wit>S.Trin. 78</wit>
                         <wit>Vat. gr. 1422</wit>
                         <wit>Par. gr. 146</wit>
+                        <wit>Plut. 6.3</wit>
+                        <wit>Ambr. C 98 sup.</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">Ἀβλαβῆ</foreign></lem>
@@ -23743,13 +23768,15 @@
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">τηρηθῆναι</foreign></lem>
-                        <rdg wit="#P1 #B1 #V5 #P7"><foreign xml:lang="grc"
-                           >διατηρηθῆναι</foreign></rdg>
+                        <rdg wit="#P1 #B1 #V5 #P7 #L2 #A3"><foreign xml:lang="grc"
+                              >διατηρηθῆναι</foreign></rdg>
                         <wit>Par. gr. 166</wit>
+                        <wit>Bodl. Auct. D. 4. 1</wit>
                         <wit>Auct. D. 4. 1</wit>
                         <wit>Vat. gr. 1422</wit>
                         <wit>Par. gr. 146</wit>
-                        <wit>Bodl. Auct. D. 4. 1</wit>
+                        <wit>Plut. 6.3</wit>
+                        <wit>Ambr. C 98 sup.</wit>
                         <rdg wit="#A1"><foreign xml:lang="grc">φυλαχθῆναι</foreign></rdg>
                         <wit>Ambr. M 47 sup.</wit>
                      </app>
@@ -23884,13 +23911,14 @@
                               <ref target="#coislin-12:coislin-12-fr-16-13"/>
                               <ref target="#ambr-b-106-sup:ambr-b-106-sup-fr-16-5"/>
                               <ref target="#vat-gr-1422:vat-gr-1422-fr-16-50"/>
+                              <ref target="#plut-6-3:plut-6-3-fr-16-6"/>
                            </listRef>
                         </p>
                      </div>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #P1 #P5 #A2 #V4 #V5 #P7">txt</rdg>
+                        <rdg wit="#V1 #C #P1 #P5 #A2 #V4 #V5 #P7 #L2 #A3">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Coislin 10</wit>
                         <wit>Par. gr. 166</wit>
@@ -23899,6 +23927,8 @@
                         <wit>Vat. gr. 1747</wit>
                         <wit>Vat. gr. 1422</wit>
                         <wit>Par. gr. 146</wit>
+                        <wit>Plut. 6.3</wit>
+                        <wit>Ambr. C 98 sup.</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">σημαίνει</foreign></lem>
@@ -23909,10 +23939,12 @@
                         <wit>Vat. gr. 1747</wit>
                      </app>
                      <note type="textual-commentary"
-                        ><!-- A1: Ps 16,9b–10 wird nicht durch exp. 234
+                        ><!-- A1: Ps 16,9b–10 wird nicht durch exp. 235
                         erklärt, sondern durch eine Paraphrase des Theodoret (comm. in Ps 16,9b–10
-                        [PG 80,969 A10–Β2]). -->
-                        Montfaucon: exp. 235 aus der Sammlung von Colville.</note>
+                        [PG 80,969 A10–Β2]). -->A3:
+                        exp. 235 mit Hesychius (schol. nr. 23 in Ps 16,11a [Antonelli; PG 27,700])
+                        verbunden. Montfaucon: exp. 235 aus der Sammlung von Colville.
+                        <!-- L2: die zwei Texte schienen getrennt zu sein; wurde ein Doppelpunkt hinzugefügt? --></note>
                   </div>
                   <div type="psalmtext">
                      <quote type="psalmtext" xml:id="edition-ps-16-10-2" n="10b">τὸ στόμα αὐτῶν
@@ -23974,7 +24006,7 @@
                         αὐτῶν ἔθεντο ἐκκλῖναι ἐν τῇ γῇ.</quote>
                   </div>
                   <div type="commentary">
-                     <p xml:id="edition-16-11-2" n="237">Εἷς σκοπός φησι γέγονεν αὐτοῖς οἱονεὶ
+                     <p xml:id="edition-16-11-2" n="237">Εἷς σκοπός φησι γέγονεν αὐτοῖς· οἱονεὶ
                         κατενέγκαι εἰς γῆν, καὶ τὰ σαρκὸς πεῖσαι φρονεῖν: –<anchor
                            type="biblical-quotation" subtype="indirect-quotation" n="Rom 8,5"/></p>
                      <!-- Textkritik: ποιῆσθαι B2 (?): eher nicht -->
@@ -23991,13 +24023,16 @@
                               <ref target="#par-gr-139:par-gr-139-fr-16-49"/>
                               <ref target="#vat-gr-1422:vat-gr-1422-fr-16-52"/>
                               <ref target="#vat-gr-1422:vat-gr-1422-fr-16-54"/>
+                              <ref target="#plut-6-3:plut-6-3-fr-16-5"/>
+                              <ref target="#plut-6-3:plut-6-3-fr-16-7"/>
                            </listRef>
                         </p>
                      </div>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #M #P1 #P5 #A2 #V4 #B2 #P6 #Z #N2 #V5a #P7a #V5b #P7b"
+                        <rdg
+                           wit="#V1 #C #M #P1 #P5 #A2 #V4 #B2 #P6 #Z #N2 #V5a #P7a #V5b #P7b #L2a #A3a #L2b #A3b"
                            >txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Coislin 10</wit>
@@ -24012,6 +24047,20 @@
                         <wit>Athen. B.N. 45</wit>
                         <wit>Vat. gr. 1422</wit>
                         <wit>Par. gr. 146</wit>
+                        <wit>Plut. 6.3</wit>
+                        <wit>Ambr. C 98 sup.</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">Εἷς σκοπός</foreign></lem>
+                        <rdg wit="#V5b* #P7b #L2b #A3b"><foreign xml:lang="grc">Εἰς
+                           σκοπὸν</foreign></rdg>
+                        <wit>Vat. gr. 1422</wit>
+                        <wit>Par. gr. 146</wit>
+                        <wit>Plut. 6.3</wit>
+                        <wit>Ambr. C 98 sup.</wit>
+                        <rdg wit="#V5bcorr"><foreign xml:lang="grc">Εἰς σκοπὸς</foreign> (sic)</rdg>
+                        <wit>Vat. gr. 1422</wit>
+
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">φησι</foreign></lem>
@@ -24026,10 +24075,18 @@
                         <wit>Athen. B.N. 45</wit>
                      </app>
                      <app type="text">
+                        <lem><foreign xml:lang="grc">κατενέγκαι</foreign></lem>
+                        <rdg wit="#A3a"><foreign xml:lang="grc">-αι</foreign> ex corr.</rdg>
+                        <wit>Ambr. C 98 sup.</wit>
+                     </app>
+                     <app type="text">
                         <lem><foreign xml:lang="grc">εἰς γῆν</foreign></lem>
-                        <rdg wit="#V5b #P7b"><foreign xml:lang="grc">εἰς τὴν γῆν</foreign></rdg>
+                        <rdg wit="#V5b #P7b #L2b #A3b"><foreign xml:lang="grc">εἰς τὴν
+                           γῆν</foreign></rdg>
                         <wit>Vat. gr. 1422</wit>
                         <wit>Par. gr. 146</wit>
+                        <wit>Plut. 6.3</wit>
+                        <wit>Ambr. C 98 sup.</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">καὶ</foreign></lem>
@@ -24038,20 +24095,24 @@
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">πεῖσαι</foreign></lem>
-                        <rdg wit="#V1 #C #M #B2 #V5b #P7b"><foreign xml:lang="grc"
-                           >ποιῆσαι</foreign></rdg>
+                        <rdg wit="#V1 #C #M #B2 #V5b #P7b #L2b #A3b"><foreign xml:lang="grc"
+                              >ποιῆσαι</foreign></rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Coislin 10</wit>
                         <wit>Sinod. gr. 194</wit>
                         <wit>Vat. gr. 1422</wit>
                         <wit>Par. gr. 146</wit>
+                        <wit>Plut. 6.3</wit>
+                        <wit>Ambr. C 98 sup.</wit>
                      </app>
                      <note type="textual-commentary">V4: exp. 237 mit Hesychius (comm. brevis in Ps
                         16,11b [23 Jagić]) verbunden. Diese Einheit wird Theodoretus zugeschrieben.
-                        V5 P7: exp. 237 kommt zweimal vor: Zunächst mit Zuschreibung an Athanasius
-                           (V5<hi rend="sup">a</hi> P7<hi rend="sup">a</hi>), dann anonym (V5<hi
-                           rend="sup">b</hi> P7<hi rend="sup">b</hi>). Beide Texte sind mit Ps
-                        16,11b verbunden. Montfaucon: exp. 237 nach P1.</note>
+                        V5 P7 L2 A3: exp. 237 kommt zweimal vor: Zunächst mit Zuschreibung an
+                        Athanasius (V5<hi rend="sup">a</hi> P7<hi rend="sup">a</hi> L2<hi rend="sup"
+                           >a</hi> A3<hi rend="sup">a</hi>), dann anonym (V5<hi rend="sup">b</hi>
+                           P7<hi rend="sup">b</hi> L2<hi rend="sup">b</hi> A3<hi rend="sup">b</hi>).
+                        Beide Texte sind mit Ps 16,11b verbunden. Montfaucon: exp. 237 nach
+                        P1.</note>
                   </div>
                </div>
                <div type="translation" xml:lang="de">
@@ -24144,6 +24205,7 @@
                               <ref target="#par-gr-139:par-gr-139-fr-16-58"/>
                               <ref target="#vat-gr-1422:vat-gr-1422-fr-16-63"/>
                               <ref target="#vat-gr-1422:vat-gr-1422-fr-16-65"/>
+                              <ref target="#plut-6-3:plut-6-3-fr-16-8"/>
                            </listRef>
                         </p>
                      </div>
@@ -24151,7 +24213,7 @@
                   <div type="textcritic">
                      <app type="fragment">
                         <rdg
-                           wit="#V1 #C #M #P1 #P5 #A1 #A2 #V4 #B1 #L1 #P6 #Z #N2 #V5a #P7a #V5b #P7b"
+                           wit="#V1 #C #M #P1 #P5 #A1 #A2 #V4 #B1 #L1 #P6 #Z #N2 #V5a #P7a #V5b #P7b #L2 #A3"
                            >txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Coislin 10</wit>
@@ -24168,6 +24230,8 @@
                         <wit>Athen. B.N. 45</wit>
                         <wit>Vat. gr. 1422</wit>
                         <wit>Par. gr. 146</wit>
+                        <wit>Plut. 6.3</wit>
+                        <wit>Ambr. C 98 sup.</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">δικαίων</foreign></lem>
@@ -24205,9 +24269,12 @@
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">ῥομφαία – τῆς πονηρίας</foreign></lem>
-                        <rdg wit="#V5a #P7a">ῥομφαία ἐστὶ θεοῦ</rdg>
+                        <rdg wit="#V5a #P7a #L2 #A3">ῥομφαία ἐστὶ θεοῦ</rdg>
                         <wit>Vat. gr. 1422</wit>
                         <wit>Par. gr. 146</wit>
+                        <wit>Plut. 6.3</wit>
+                        <wit>Ambr. C 98 sup.</wit>
+                        <!-- Textkritik: ῥομφαία ἔστι L2 A3 -->
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">ῥομφαία ἐστὶν ἠκονημένη</foreign></lem>
@@ -24227,9 +24294,11 @@
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">ὦ δέσποτα – ἠκόνησας</foreign></lem>
-                        <rdg wit="#V5a #P7a">om.</rdg>
+                        <rdg wit="#V5a #P7a #L2 #A3">om.</rdg>
                         <wit>Vat. gr. 1422</wit>
                         <wit>Par. gr. 146</wit>
+                        <wit>Plut. 6.3</wit>
+                        <wit>Ambr. C 98 sup.</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">φησὶν· ἣν αὐτὸς</foreign></lem>
@@ -24261,10 +24330,12 @@
                      <app type="text">
                         <lem><foreign xml:lang="grc">ῥῦσαι ἀπὸ τῶν ἐχθρῶν τῆς σῆς
                            χειρός</foreign></lem>
-                        <rdg wit="#A1 #V5a #P7a">ῥῦσαι ἀπὸ τῶν ἐχθρῶν τῆς χειρός σου</rdg>
+                        <rdg wit="#A1 #V5a #P7a #L2 #A3">ῥῦσαι ἀπὸ τῶν ἐχθρῶν τῆς χειρός σου</rdg>
                         <wit>Ambr. M 47 sup.</wit>
                         <wit>Vat. gr. 1422</wit>
                         <wit>Par. gr. 146</wit>
+                        <wit>Plut. 6.3</wit>
+                        <wit>Ambr. C 98 sup.</wit>
                         <rdg wit="#P5"><foreign xml:lang="grc">ῥῦσαι ἀπὸ τῶν ἐχθρῶν
                            σου</foreign></rdg>
                         <wit>Coislin 12</wit>
@@ -24285,9 +24356,11 @@
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">τίνες – αὐτοῦ</foreign></lem>
-                        <rdg wit="#V5a #P7a">om.</rdg>
+                        <rdg wit="#V5a #P7a #L2 #A3">om.</rdg>
                         <wit>Vat. gr. 1422</wit>
                         <wit>Par. gr. 146</wit>
+                        <wit>Plut. 6.3</wit>
+                        <wit>Ambr. C 98 sup.</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">τίνες δ᾿ ἂν</foreign></lem>
@@ -24385,13 +24458,14 @@
                               <ref target="#oxon-s-trin-78:oxon-s-trin-78-fr-16-14"/>
                               <ref target="#plut-5-30:plut-5-30-fr-16-34"/>
                               <ref target="#vat-gr-1422:vat-gr-1422-fr-16-66"/>
+                              <ref target="#plut-6-3:plut-6-3-fr-16-9"/>
                            </listRef>
                         </p>
                      </div>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #M #P1 #P5 #A2 #V4 #L1 #V5 #P7">txt</rdg>
+                        <rdg wit="#V1 #C #M #P1 #P5 #A2 #V4 #L1 #V5 #P7 #L2 #A3">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Coislin 10</wit>
                         <wit>Sinod. gr. 194</wit>
@@ -24403,6 +24477,8 @@
                         <wit>Plut. 5.30</wit>
                         <wit>Vat. gr. 1422</wit>
                         <wit>Par. gr. 146</wit>
+                        <wit>Plut. 6.3</wit>
+                        <wit>Ambr. C 98 sup.</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">Χωρισθῆναι</foreign></lem>
@@ -24437,10 +24513,13 @@
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">καὶ οἱονεὶ πῶς</foreign></lem>
-                        <rdg wit="#M #V5 #P7"><foreign xml:lang="grc">οἱονεί πως</foreign></rdg>
+                        <rdg wit="#M #V5 #P7 #L2 #A3"><foreign xml:lang="grc">οἱονεί
+                           πως</foreign></rdg>
                         <wit>Sinod. gr. 194</wit>
                         <wit>Vat. gr. 1422</wit>
                         <wit>Par. gr. 146</wit>
+                        <wit>Plut. 6.3</wit>
+                        <wit>Ambr. C 98 sup.</wit>
                         <rdg wit="#L1"><foreign xml:lang="grc">καὶ οἷον εἶπω</foreign></rdg>
                         <wit>Plut. 5.30</wit>
                      </app>
@@ -24462,9 +24541,9 @@
                         <rdg wit="#V1"><foreign xml:lang="grc">ἐ-</foreign> ex corr.</rdg>
                         <wit>Vat. gr. 754</wit>
                      </app>
-                     <note type="textual-commentary">M: exp. 240 in der inneren Spalte. V5 P7: exp.
-                        240 mit einem Zitat aus Diodorus von Tarsus (comm. in Ps 16,14c [90,147–150
-                        Olivier]) verbunden. Montfaucon: exp. 240 nach P7.</note>
+                     <note type="textual-commentary">M: exp. 240 in der inneren Spalte. V5 P7 L2 A3:
+                        exp. 240 mit einem Zitat aus Diodorus von Tarsus (comm. in Ps 16,14c
+                        [90,147–150 Olivier]) verbunden. Montfaucon: exp. 240 nach P7.</note>
                   </div>
                   <div type="psalmtext">
                      <quote type="psalmtext" xml:id="edition-ps-16-14-3" n="14c">καὶ τῶν κεκρυμμένων
@@ -24485,6 +24564,7 @@
                               <ref target="#coislin-12:coislin-12-fr-16-18"/>
                               <ref target="#oxon-s-trin-78:oxon-s-trin-78-fr-16-15"/>
                               <ref target="#vat-gr-1422:vat-gr-1422-fr-16-71"/>
+                              <!-- Katene: exp. om. L2 A3 -->
                            </listRef>
                         </p>
                      </div>
@@ -24544,13 +24624,14 @@
                               <ref target="#oxon-s-trin-78:oxon-s-trin-78-fr-16-16"/>
                               <ref target="#plut-5-30:plut-5-30-fr-16-37"/>
                               <ref target="#vat-gr-1422:vat-gr-1422-fr-16-73"/>
+                              <ref target="#plut-6-3:plut-6-3-fr-16-10"/>
                            </listRef>
                         </p>
                      </div>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #M #P1 #P5 #A2 #V4 #B1 #B2 #L1 #V5 #P7">txt</rdg>
+                        <rdg wit="#V1 #C #M #P1 #P5 #A2 #V4 #B1 #B2 #L1 #V5 #P7 #L2 #A3">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Coislin 10</wit>
                         <wit>Sinod. gr. 194</wit>
@@ -24563,6 +24644,8 @@
                         <wit>Plut. 5.30</wit>
                         <wit>Vat. gr. 1422</wit>
                         <wit>Par. gr. 146</wit>
+                        <wit>Plut. 6.3</wit>
+                        <wit>Ambr. C 98 sup.</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">ἐπλήσθησαν</foreign></lem>
@@ -24632,22 +24715,31 @@
                            <listRef>
                               <ref target="#par-gr-139:par-gr-139-quot-16-72"/>
                               <ref target="#vat-gr-1422:vat-gr-1422-fr-16-81"/>
+                              <ref target="#plut-6-3:plut-6-3-fr-16-11"/>
                            </listRef>
                         </p>
                      </div>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#P6 #Z #N2 #V5 #P7">txt</rdg>
+                        <rdg wit="#P6 #Z #N2 #V5 #P7 #L2 #A3">txt</rdg>
                         <wit>Par. gr. 139</wit>
                         <wit>Marc. gr. Z. 17</wit>
                         <wit>Athen. B.N. 45</wit>
                         <wit>Vat. gr. 1422</wit>
                         <wit>Par. gr. 146</wit>
+                        <wit>Plut. 6.3</wit>
+                        <wit>Ambr. C 98 sup.</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">οὐδὲ</foreign></lem>
+                        <rdg wit="#A3"><foreign xml:lang="grc">οὐ</foreign></rdg>
+                        <wit>Ambr. C 98 sup.</wit>
+                        <!-- Textkritik: οὐδὲ L2 = P6 -->
                      </app>
                      <note type="textual-commentary">P6 Z N2: Dieses dubium wird Athanasius
-                        zugeschrieben. V5 P7: exp. 243 aus der Tradition des Typus III. Montfaucon:
-                        exp. 243 aus P6 bzw. P7.</note>
+                        zugeschrieben. V5 P7 L2 A3: exp. 243 (Athanasius zugeschrieben) aus der
+                        Tradition des Typus III. Montfaucon: exp. 243 aus P6 bzw. P7.</note>
                   </div>
                </div>
                <div type="translation" xml:lang="de">
