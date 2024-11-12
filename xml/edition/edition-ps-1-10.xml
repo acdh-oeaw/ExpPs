@@ -22881,9 +22881,9 @@
                      <quote type="psalmtext" xml:id="edition-ps-16-1-1" n="1a">Προσευχὴ τοῦ
                         Δαυΐδ.</quote>
                   </div>
-                  <div type="commentary">
-                     <p xml:id="edition-16-1-1" n="222" ana="hypothesis">ᾌδεται ὁ ψαλμὸς ἐκ προσώπου
-                        τοῦ κατὰ θεὸν τελείου: –</p>
+                  <div type="commentary" rend="parallel">
+                     <p xml:id="edition-16-1-1" n="222" ana="hypothesis" next="#edition-16-1-1-1"
+                        >ᾌδεται ὁ ψαλμὸς ἐκ προσώπου τοῦ κατὰ θεὸν τελείου: –</p>
                      <div type="links">
                         <p>
                            <listRef>
@@ -22907,7 +22907,7 @@
                         </p>
                      </div>
                   </div>
-                  <div type="textcritic">
+                  <div type="textcritic" rend="hide">
                      <app type="fragment">
                         <rdg wit="#V1 #C #P1 #P5 #A1 #B1 #P6 #Z #N2 #V5 #P7">txt</rdg>
                         <wit>Vat. gr. 754</wit>
@@ -22922,28 +22922,48 @@
                         <wit>Vat. gr. 1422</wit>
                         <wit>Par. gr. 146</wit>
                      </app>
-                     <app type="text">
+                     <!--<app type="text">
                         <lem><foreign xml:lang="grc">ᾌδεται</foreign></lem>
                         <rdg wit="#A1"><foreign xml:lang="grc">Νοητῶς μὲν</foreign> ante<foreign
                               xml:lang="grc"> ᾄδεται</foreign> add.</rdg>
                         <wit>Ambr. M 47 sup.</wit>
-                     </app>
+                     </app>-->
                      <app type="text">
                         <lem><foreign xml:lang="grc">τελείου</foreign></lem>
                         <rdg wit="#B1"><foreign xml:lang="grc">τελειουμένου</foreign></rdg>
                         <wit>Auct. D. 4. 1</wit>
-                        <rdg wit="#A1">post <foreign xml:lang="grc">τελείου</foreign> add.<foreign
+                        <!-- <rdg wit="#A1">post <foreign xml:lang="grc">τελείου</foreign> add.<foreign
                               xml:lang="grc"> [κατὰ τῶν δαιμόν(?)]ων</foreign></rdg>
+                        <wit>Ambr. M 47 sup.</wit>-->
+                     </app>
+                     <note type="textual-commentary">Montfaucon: exp. 222 aus P1 bzw. P6. Syrische
+                        Version (Epitome): exp. 222 vollständig wiedergegeben.</note>
+                  </div>
+                  <div type="commentary" rend="hide">
+                     <p xml:id="edition-16-1-1-1" next="222">Νοητῶς μὲν ἄδε[ται] ὁ ψαλ[μ]ὸς [ἐκ
+                        π]ρ[ο]σώ[που] τοῦ κατὰ θεὸν τελείο[υ] [κατὰ τῶν δαιμόν(?)]ων· ἱστ[ο]ρικῶς
+                        δὲ, περὶ [τ]ο[ῦ Σαοὺ]λ [ὁ] Δαυῒδ [τὸν] θεὸν εἰς ἐπικουρίαν [κα]λ[εῖ·(?)]
+                        [ἐκ]λ[αμβάνεται(?)] [δὲ] ἀναγωγικῶς καὶ ἀπὸ τοῦ Χριστοῦ πρὸς [τὸν
+                        πατέρα(?)]: –</p>
+                     <div type="links">
+                        <p><listRef>
+                              <ref target="#ambr-m-47-sup:ambr-m-47-sup-fr-16-1"/>
+                           </listRef></p>
+                     </div>
+                  </div>
+                  <div type="textcritic" rend="hide">
+                     <app type="fragment">
+                        <rdg wit="#A1">txt</rdg>
                         <wit>Ambr. M 47 sup.</wit>
                      </app>
-                     <note type="textual-commentary">A1: exp. 222 dient als Einleitungssatz einer
-                        umfassenderen Hypothesis. Die Erweiterungen in diesem Satz zielen auf die
-                        geistliche Auslegung des Psalms ab (<foreign xml:lang="grc"
-                        >νοητῶς</foreign>). Der Mittelteil weist auf den Sitz im Leben des Psalms
-                        hin (<foreign xml:lang="grc">ἱστορικῶς</foreign>) und geht wahrscheinlich
-                        auf Theodoret zurück (comm. in Ps 16,1a [PG 80,965 A6–8]). Die Quelle der
-                        conclusio (<foreign xml:lang="grc">ἀναγωγικῶς</foreign>) lässt sich nicht
-                        bestimmen. Montfaucon: exp. 222 aus P1 bzw. P6.</note>
+                     <note type="textual-commentary">Exp. 222 findet sich hier als Einleitungssatz
+                        einer umfassenderen Hypothesis wieder, wenn auch mit geringfügigen
+                        Erweiterungen. Die Erweiterungen zielen auf die geistliche Auslegung des
+                        Psalms ab (<foreign xml:lang="grc">νοητῶς</foreign>). Der Mittelteil weist
+                        auf den Sitz im Leben des Psalms hin (<foreign xml:lang="grc"
+                           >ἱστορικῶς</foreign>) und könnte auf Theodoret zurückgehen (comm. in Ps
+                        16,1a [PG 80,965 A6–8]). Die Quelle der conclusio (<foreign xml:lang="grc"
+                           >ἀναγωγικῶς</foreign>) lässt sich nicht bestimmen.</note>
                   </div>
                   <div type="psalmtext">
                      <quote type="psalmtext" xml:id="edition-ps-16-1-2" n="1b">Εἰσάκουσον, κύριε,
@@ -23140,17 +23160,22 @@
                      David.</quote>
                   <p corresp="#edition-16-1-1" n="222">Dieser Psalm wird gesungen in Person
                      desjenigen, der nach Gott vollkommen ist.</p>
+                  <p corresp="#edition-16-1-1-1" n="222">Spirituell wird der Psalm von der Person
+                     dessen gesungen, der nach Gott vollkommen (gegen die Dämonen?) ist. Aber
+                     historisch (gesehen), David bittet Gott um Unterstützung in Bezug auf Saul.
+                     Anagogisch kann (der Psalm) jedoch als von Christus zum Vater gedeutet
+                     werden.</p>
                   <quote type="psalmtext" corresp="#edition-ps-16-1-2" n="1b">Höre, Herr, meine
                      Gerechtigkeit an,</quote>
                   <quote type="psalmtext" corresp="#edition-ps-16-1-3" n="1c">achte auf mein
                      Flehen,</quote>
                   <p corresp="#edition-16-1-2" n="223">Die Rede ist voll großer Zuversicht.</p>
                   <p corresp="#edition-16-1-2-1" n="223">Die Rede ist voll großer Zuversicht; denn
-                     hier spricht er das Wort der Gerechtigkeit nicht als einer, der sich rühmt,
-                     noch als einer, der sich als gerecht darstellt. Vielmehr anstelle von jemandem,
-                     der sagt: Weil ich zu Recht um deine Hilfe bitte und erbitte, von den Dingen
-                     befreit zu werden, die ich zu Unrecht erdulde, dadurch, dass ich von Saul ohne
-                     Grund verfolgt werde, höre an und gewähre die Bitte.</p>
+                     hier spricht er von der Gerechtigkeit nicht als einer, der sich rühmt, noch als
+                     einer, der sich als gerecht darstellt. Sondern als einer (der sagt): Da ich um
+                     deine Hilfe in gerechter Weise bitte und erbitte, von den Dingen befreit zu
+                     werden, die ich zu Unrecht erdulde – weil ich von Saulus grundlos verfolgt
+                     werde –, höre an und gewähre die Bitte.</p>
                   <quote type="psalmtext" corresp="#edition-ps-16-1-4" n="1d">vernimm mein Gebet(,
                      das ich) nicht mit betrügerischen Lippen (spreche).</quote>
                   <p corresp="#edition-16-1-3" n="224">Denn ein Gebet, das nicht mit betrügerischen
@@ -23211,8 +23236,8 @@
                         <wit>Ambr. M 47 sup.</wit>
                      </app>
                      <note type="textual-commentary">M: exp. 225 steht nach exp. 226 (in der inneren
-                        Spalte). Koptische Version: exp. 225 nach Ps 16,2–3a. Montfaucon: exp. 225
-                        aus P1.</note>
+                        Spalte). Koptische Version: exp. 225 steht nach Ps 16,2–3a. Montfaucon: exp.
+                        225 aus P1.</note>
                   </div>
                   <div type="psalmtext">
                      <quote type="psalmtext" xml:id="edition-ps-16-2-2" n="2b">οἱ ὀφθαλμοί μου
@@ -23259,13 +23284,13 @@
                         <wit>Ambr. M 47 sup.</wit>
                      </app>
                      <note type="textual-commentary">M: exp. 226 neben dem Psalmtext. Koptische
-                        Version: exp. 226 nach Ps 16,3b. Montfaucon: exp. 226 aus P1.</note>
+                        Version: exp. 226 steht nach Ps 16,3b. Montfaucon: exp. 226 aus P1.</note>
                   </div>
                </div>
                <div type="translation" xml:lang="de">
                   <quote type="psalmtext" corresp="#edition-ps-16-2-1" n="2a">Aus deinem Angesicht
                      gehe das Urteil über mich hervor,</quote>
-                  <p corresp="#edition-16-2-1" n="225">Offenbar fleht er, dass der Eingeborene als
+                  <p corresp="#edition-16-2-1" n="225">Deutlich fleht er, dass der Eingeborene als
                      Richter über ihn selbst eingesetzt wird.</p>
                   <quote type="psalmtext" corresp="#edition-ps-16-2-2" n="2b">meine Augen sollen
                      Aufrichtigkeit erblicken.</quote>
@@ -23302,7 +23327,7 @@
                         εὑρέθη ἐν ἐμοὶ ἀδικία.</quote>
                   </div>
                   <div type="commentary">
-                     <p xml:id="edition-16-3-2" n="228">Ἀδικίαν εἴωθεν ἡ θεία γραφὴ καλεῖν τὴν κατὰ
+                     <p xml:id="edition-16-3-2" n="228">Ἀδικίαν εἴωθεν ἡ θεία γραφὴ καλεῖν, τὴν κατὰ
                         τοῦ θεοῦ βλασφημίαν· ἀδικίαν γάρ φησιν εἰς τὸ ὕψος ἐλάλησαν: – <anchor
                            type="biblical-quotation" subtype="direct-quotation" n="Ps 72,8b"/></p>
                      <div type="links">
@@ -23349,8 +23374,9 @@
                         16,3b) wird Athanasius zugeschrieben: <foreign xml:lang="grc">Πύρωσιν, τοὺς
                            πειρασμοὺς λέγει· οἷς τῶν δικαίων αἱ ψυχαὶ δοκιμάζονται.</foreign> V1<hi
                            rend="sup">m.sec.</hi> C B1 B2 schreiben diesen Text Hesychius zu (comm.
-                        magnus [?] in Ps 16,3b). Koptische Version: exp. 228 durch exp. 226 (siehe
-                        oben) ersetzt. Montfaucon: exp. 228 aus P1.</note>
+                        magnus [?] in Ps 16,3b). Syrische Version (Epitome): Eine inhaltliche
+                        Parallele ist zu finden (βλασφημίαν). Koptische Version: exp. 226 tritt an
+                        die Stelle von exp. 228 (siehe oben). Montfaucon: exp. 228 aus P1.</note>
                   </div>
                </div>
                <div type="translation" xml:lang="de">
@@ -23361,9 +23387,9 @@
                      Gesetzlosigkeit neigte.</p>
                   <quote type="psalmtext" corresp="#edition-ps-16-3-2" n="3b">hast mich geläutert,
                      und keine Ungerechtigkeit wurde an mir gefunden.</quote>
-                  <p corresp="#edition-16-3-2" n="228">Unrecht pflegt die göttliche Schrift die
-                     Lästerung gegen Gott zu nennen. Denn, sagt er, 'Unrecht haben sie gegen die
-                     Höhe geredet.' [Ps 72,8b]</p>
+                  <p corresp="#edition-16-3-2" n="228">Ungerechtigkeit pflegt die göttliche Schrift
+                     die Lästerung gegen Gott zu nennen. Denn, sagt er, 'Ungerechtigkeit haben sie
+                     gegen die Höhe geredet.' [Ps 72,8b]</p>
                </div>
             </div>
             <div type="psalmverse" n="16.4">
@@ -23373,7 +23399,7 @@
                         στόμα μου τὰ ἔργα τῶν ἀνθρώπων,</quote>
                   </div>
                   <div type="commentary">
-                     <p xml:id="edition-16-4-1" n="229">Διδάσκει ὡς καὶ τοῦτο παρεφυλάττετο πρὸς τὸ
+                     <p xml:id="edition-16-4-1" n="229">Διδάσκει ὡς καὶ τοῦτο παρεφυλάττετο, πρὸς τὸ
                         μηδὲν θνητὸν μηδὲ ἀνθρώπινον φθέγγεσθαι· ἀλλὰ μέχρι καὶ τοῦ τυχόντος ῥήματος
                         ἀκριβολογεῖσθαι: –</p>
                      <div type="links">
@@ -23414,7 +23440,7 @@
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">ὡς</foreign></lem>
-                        <rdg wit="#M"><foreign xml:lang="grc">ὡ</foreign></rdg>
+                        <rdg wit="#M"><foreign xml:lang="grc">ὡ〈ς〉</foreign></rdg>
                         <note>Sinod. gr. 194</note>
                      </app>
                      <app type="text">
@@ -23450,7 +23476,7 @@
                         χειλέων σου ἐγὼ ἐφύλαξα ὁδοὺς σκληράς.</quote>
                   </div>
                   <div type="commentary">
-                     <p xml:id="edition-16-4-2" n="230">Διὰ τὰ σὰ προστάγματα φησὶ, τὴν στενὴν καὶ
+                     <p xml:id="edition-16-4-2" n="230">Διὰ τὰ σὰ προστάγματα φησὶν, τὴν στενὴν καὶ
                         τεθλιμμένην εἰσήλασα πύλην: –<anchor type="biblical-quotation"
                            subtype="indirect-quotation" n="Mt 7,13–14"/></p>
                      <div type="links">
@@ -23501,14 +23527,15 @@
                            καὶ οὕτως πάσης διαβολικῆς λοιδωρίας παύσεται.</foreign> Da es bereits
                         eine Expositio zu Ps 16,4b gibt, ist es wahrscheinlicher, dass es einen
                         Autorentausch stattgefunden hat. Auch hier könnte man an eine Stelle aus dem
-                        Commentarius magnus des Hesychius denken (siehe zu exp. 228). Montfaucon:
-                        exp. 230 aus P1.</note>
+                        Commentarius magnus des Hesychius denken (siehe zu exp. 228). Syrische
+                        Version (Epitome): exp. 230 frei wiedergegeben. Montfaucon: exp. 230 aus
+                        P1.</note>
                   </div>
                </div>
                <div type="translation" xml:lang="de">
                   <quote type="psalmtext" corresp="#edition-ps-16-4-1" n="4a">Damit mein Mund nicht
                      die Werke der Menschen verkündigt,</quote>
-                  <p corresp="#edition-16-4-1" n="229">Er lehrt, dass er auch dieses bewahrt hat, um
+                  <p corresp="#edition-16-4-1" n="229">Er lehrt, dass er auch dieses bewahrte, um
                      nichts Sterbliches oder Menschliches zu sagen, sondern um bei jedem kleinen
                      Wort genau zu sein.</p>
                   <quote type="psalmtext" corresp="#edition-ps-16-4-2" n="4b">habe ich aufgrund der
@@ -23593,8 +23620,9 @@
                         V5 P7: exp. 231 anscheinend aus der Tradition des Typus XIV (A2 V4).
                         Koptische Version: Anscheinend hatte die griechische Vorlage <foreign
                            xml:lang="grc">ἐφ᾿ ἑαυτοῖς</foreign>, und nicht <foreign xml:lang="grc"
-                           >ἐφ᾿ ἑαυτῷ ἢ ἐφ᾿ ἑαυτοῖς</foreign> (= A2 V4 V5 P7 L2 A3). Montfaucon:
-                        exp. 231 nach P1.</note>
+                           >ἐφ᾿ ἑαυτῷ ἢ ἐφ᾿ ἑαυτοῖς</foreign> (= A2 V4 V5 P7 L2 A3). Syrische
+                        Version (Epitome): exp. 231 frei wiedergegeben. Montfaucon: exp. 231 nach
+                        P1.</note>
                   </div>
                </div>
                <div type="translation" xml:lang="de">
@@ -23799,8 +23827,9 @@
                         ist dieser Text eindeutig als Scholion des Hesychius (nr. 14.15 in Ps
                         16,7a–b [Antonelli; PG 27,700]) intendiert, da es unmittelbar nach dem Lemma
                         platziert ist (der für die anonyme Scholia des Hesychius reservierte Platz).
-                        Zwischen den beiden Texten findet ein Seitenwechsel statt. Montfaucon: exp.
-                        233 nicht vorhanden.</note>
+                        Zwischen den beiden Texten findet ein Seitenwechsel statt. Syrische Version
+                        (Epitome): exp. 233 frei wiedergegeben. Montfaucon: exp. 233 nicht
+                        vorhanden.</note>
                   </div>
                   <div type="psalmtext">
                      <quote type="psalmtext" xml:id="edition-ps-16-8-2" n="8b">ἐν σκέπῃ τῶν πτερύγων
@@ -23867,8 +23896,8 @@
                <div type="translation" xml:lang="de">
                   <quote type="psalmtext" corresp="#edition-ps-16-8-1" n="8a">Behüte mich wie den
                      Augapfel;</quote>
-                  <p corresp="#edition-16-8-1" n="233">Er fleht, dass das Auge des Geistes ohne
-                     Schaden vor der Bosheit der feindlichen Mächte bewahrt wird.</p>
+                  <p corresp="#edition-16-8-1" n="233">Er fleht, dass das Auge des Geistes
+                     unverletzt vor der Bosheit der feindlichen Mächte bewahrt wird.</p>
                   <quote type="psalmtext" corresp="#edition-ps-16-8-2" n="8b">im Schutz deiner
                      Flügel wirst du mich schützen</quote>
                   <p corresp="#edition-16-8-2" n="234">Auf keinen Fall, sagt er, wird der Schaden
@@ -23993,10 +24022,10 @@
                      <app type="text">
                         <lem><foreign xml:lang="grc">Ἀντὶ – ἐκβαλεῖν</foreign></lem>
                         <rdg wit="#P1"><foreign xml:lang="grc">Tοὺς ἐκβάλλοντας ἀντὶ τοῦ κεκρικότας
-                              ἐκβάλλειν</foreign></rdg>
+                              ἐκβάλλειν: –</foreign></rdg>
                         <wit>Par. gr. 166</wit>
-                        <rdg wit="#P5"><foreign xml:lang="grc">Ἀντὶ τοῦ κεκρικότες
-                              ἐκβάλλειν</foreign></rdg>
+                        <rdg wit="#P5"><foreign xml:lang="grc">Ἀντὶ τοῦ κεκρικότες ἐκβάλλειν:
+                              –</foreign></rdg>
                      </app>
                      <note type="textual-commentary">M: exp. 236 steht nach exp. 237 (in der inneren
                         Spalte). Montfaucon: exp. 236 nicht vorhanden.</note>
@@ -24112,13 +24141,14 @@
                            rend="sup">a</hi>; Athanasius zugeschrieben) ist mit Ps 16,11, die zweite
                            (V5<hi rend="sup">b</hi> P7<hi rend="sup">b</hi> P7<hi rend="sup">a</hi>
                            L2<hi rend="sup">b</hi> A3<hi rend="sup">b</hi>; anonym) mit Ps 16,11b
-                        verbunden. Montfaucon: exp. 237 nach P1.</note>
+                        verbunden. Syrische Version (Epitome): exp. 237 wiedergegeben. Montfaucon:
+                        exp. 237 nach P1.</note>
                   </div>
                </div>
                <div type="translation" xml:lang="de">
                   <quote type="psalmtext" corresp="#edition-ps-16-11-1" n="11a">Sie warfen hinaus
                      (und) haben mich jetzt umzingelt,</quote>
-                  <p corresp="#edition-16-11-1" n="236">Anstelle von 'Nachdem sie beschlossen hatten
+                  <p corresp="#edition-16-11-1" n="236">Anstelle von 'nachdem sie beschlossen hatten
                      hinauszuwerfen'.</p>
                   <quote type="psalmtext" corresp="#edition-ps-16-11-2" n="11b">ihre Augen haben sie
                      (darauf) gerichtet, zur Erde zu beugen.</quote>
@@ -24136,8 +24166,10 @@
                         οἰκῶν ἐν ἀποκρύφοις.</quote>
                   </div>
                   <div type="commentary" subtype="dubium">
-                     <p xml:id="edition-16-12-1" n="238">Ὁ γὰρ ἐχθρὸς περιέρχεται ὡς λέ[ων
-                        ὠ]ρυ[ό]μενος· ζητῶν ἑτοίμως με κατ[ασπ]άσα[ι] τ[ὰ σαρ]κὸς φρονεῖν·<anchor
+                     <p xml:id="edition-16-12-1" n="238">Ὁ γὰρ ἐχθρὸς, περιέρχεται ὡς λέ[ων
+                        ὠ]ρυ[ό]μενος· ζητῶν ἑτοίμως με κατ[ασπ]άσα[ι] <anchor
+                           type="biblical-quotation" subtype="indirect-quotation"
+                           n="1Petr 5,8var et Ps 21,14b"/> τ[ὰ σαρ]κὸς φρονεῖν· <anchor
                            type="biblical-quotation" subtype="indirect-quotation" n="Rom 8,5"/> καὶ
                         λαθρ[αίω]ς [ὡ]ς [σ(?)]κ[ύμνος(?)] [λ]έ[οντ]ος: –</p>
                      <div type="links">
@@ -24153,20 +24185,21 @@
                         <rdg wit="#A1">txt</rdg>
                         <wit>Ambr. M 47 sup.</wit>
                      </app>
-                     <note type="textual-commentary">Dieses Dubium teilt mit exp. 237 einen dem
+                     <note type="textual-commentary">Dieses Dubium ähnelt einem anderen Dubium aus
+                        A1 (siehe unten exp. 345 in Ps 21,14). Es teilt mit exp. 237 einen aus dem
                         Römerbrief entlehnten Ausdruck (<foreign xml:lang="grc">τὰ σαρκὸς
-                           φρονεῖν</foreign>). A1 hatte Ps 16,11 nicht mit exp. 236 und exp. 237,
-                        sondern mit einem einzigen Text erklärt (Diodorus Tars. [?], comm. in Ps
-                        16,11a [88 Olivier]).</note>
+                           φρονεῖν</foreign>). In A1 wird Ps 16,11 jedoch nicht durch exp. 236 und
+                        237, sondern durch eine einzige Exegese erklärt (Diodorus Tars. [?], comm.
+                        in Ps 16,11a [88 Olivier]).</note>
                   </div>
                </div>
                <div type="translation" xml:lang="de">
                   <quote type="psalmtext" corresp="#edition-ps-16-12-1" n="12a">Sie überfielen mich
                      wie ein Löwe, (der) bereit (ist) zu Jagd,</quote>
                   <p corresp="#edition-16-12-1" n="238">Denn der Feind streift umher wie ein
-                     brüllender Löwe, der entschlossen versucht, mich niederzureißen, damit ich an
-                     die Dinge des Fleisches denke, [cf. Rom 8,5] und auf versteckte Weise wie ein
-                     Löwenjunges.</p>
+                     brüllender Löwe, der entschlossen versucht, mich niederzureißen, [cf. 1Petr
+                     5,8var et Ps 21,14b] damit ich an die Dinge des Fleisches denke, [cf. Rom 8,5]
+                     und auf versteckte Weise wie ein Löwenjunges.</p>
                   <quote type="psalmtext" corresp="#edition-ps-16-12-2" n="12b">und wie ein
                      Junglöwe, der im Verborgenen wohnt.</quote>
                </div>
@@ -24413,7 +24446,9 @@
                         exp. 239 ist in zwei Fassungen vorhanden: Die erste (V5<hi rend="sup">a</hi>
                            P7<hi rend="sup">a</hi>) wird Athanasius zugeschrieben, die zweite ist
                         anonym. Beide Texte sind mit Ps 16,13c verbunden. L2 A3 haben die zweite
-                        Fassung ausgelassen. Montfaucon: exp. 239 nach P6.</note>
+                        Fassung ausgelassen. Syrische Version (Epitome): exp. 239 bis τῆς σῆς χειρός
+                        vollständig wiedergegeben; der letzte Satz jedoch in gekürzter Form.
+                        Montfaucon: exp. 239 nach P6.</note>
                      <!-- cave: Verbindungen in den Katenen hinzuzufügen -->
                   </div>
                </div>
@@ -24427,10 +24462,10 @@
                   <p corresp="#edition-16-13-1" n="239">Jede Seele der Gerechten und besonders
                      derer, die die Sünder von der Gottlosigkeit zur Gottesfurcht hinführen, ist
                      gleichsam ein Schwert, geschärft gegen die Geister der Bosheit. Dieses Schwert
-                     also, o Herr, will er sagen, das du gegen deine Feinde geschärft hast, entreiß
-                     den Feinden deiner Hand. Wer aber wohl wären die Feinde der Hand Gottes, wenn
-                     nicht diejenigen, die sich dem Glauben an seinen eingeborenen Sohn widersetzen,
-                     der auch seine Hand ist?</p>
+                     also, o Herr, – sagt er –, das du gegen deine Feinde geschärft hast, errette
+                     vor den Feinden deiner Hand. Wer aber wohl wären die Feinde der Hand Gottes,
+                     wenn nicht diejenigen, die sich dem Glauben an seinen eingeborenen Sohn
+                     widersetzen, der auch seine Hand ist?</p>
                </div>
             </div>
             <div type="psalmverse" n="16.14">
@@ -24599,7 +24634,8 @@
                         <wit>Vat. gr. 1422</wit>
                      </app>
                      <note type="textual-commentary">M: exp. 241 steht nach exp. 242 (in der inneren
-                        Spalte). Montfaucon: exp. 241 (aus P1 [?]) durch eine unbekannte Quelle
+                        Spalte). Syrische Version (Epitome): Eine inhaltliche Parallele ist zu
+                        finden. Montfaucon: exp. 241 (aus P1 [?]) durch eine unbekannte Quelle
                         erweitert.</note>
                   </div>
                   <div type="psalmtext">
@@ -24685,10 +24721,10 @@
                      nicht die, von denen gesagt worden ist: 'Viele sind berufen, aber wenige
                      auserwählt'. [Mt 22,14]</p>
                   <quote type="psalmtext" corresp="#edition-ps-16-14-3" n="14c">Und von deinen
-                     verstreckten (Gütern) hat sich ihr Magen gefüllt,</quote>
-                  <p corresp="#edition-16-14-2" n="241">Sie haben, sagt er, alle Kostbarkeiten
-                     genossen. Deshalb haben sie auch auf eine Weise ausgeschlagen, dass sie das
-                     Gesetz übertreten haben.</p>
+                     versteckten (Gütern) hat sich ihr Magen gefüllt,</quote>
+                  <p corresp="#edition-16-14-2" n="241">Sie erfreuten sich, sagt er, an allen
+                     kostbaren Dingen. Deshalb schlugen sie mit der Ferse zu, so dass sie sogar das
+                     Gesetz übertraten.</p>
                   <quote type="psalmtext" corresp="#edition-ps-16-14-4" n="14d">sie haben sich mit
                      Söhnen
                      gesättigt,<!-- Übersetzung: SD: mit Söhnen sind sie gesättigt worden --></quote>
@@ -39966,6 +40002,7 @@
                      wohnen.</p>
                </div>
             </div>
+            <!-- ps 23 commentary -->
          </div>
       </body>
    </text>
