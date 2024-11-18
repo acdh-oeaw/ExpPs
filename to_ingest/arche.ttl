@@ -1,0 +1,554 @@
+@prefix acdh: <https://vocabs.acdh.oeaw.ac.at/schema#> .
+@prefix acdhi: <https://id.acdh.oeaw.ac.at/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://orcid.org/0000-0002-7593-8285> a acdh:Person ;
+    acdh:hasTitle "Uta Heil"@und .
+
+<https://orcid.org/0009-0007-3571-0175> a acdh:Person ;
+    acdh:hasTitle "Sebastiano Panteghini"@und .
+
+<https://orcid.org/0009-0002-4995-7260> a acdh:Person ;
+    acdh:hasTitle "Christoph Scheerer"@und .
+
+<https://orcid.org/0000-0003-0534-4972> a acdh:Person ;
+    acdh:hasTitle "Maria-Lucia Goiana"@und .
+
+<https://orcid.org/0009-0009-4476-1737> a acdh:Person ;
+    acdh:hasTitle "Marta Kontić"@und .
+
+<https://orcid.org/0000-0003-3281-5178> a acdh:Person ;
+    acdh:hasTitle "Canan Arıkan-Caba"@und .
+
+<https://orcid.org/0000-0002-5146-1371> a acdh:Person ;
+    acdh:hasTitle "Thomas Klampfl"@und .
+
+<https://d-nb.info/gnd/5043581-4> a acdh:Organisation ;
+    acdh:hasTitle "Institut für Kirchengeschichte, Christliche Archäologie und Kirchliche Kunst, Evangelisch-Theologische Fakultät, Universität Wien"@de .
+
+<https://id.acdh.oeaw.ac.at/athanasius-expositiones-in-psalmos> a acdh:TopCollection ;
+    acdh:hasTitle "(Ps.)-Athanasius - Expositiones in Psalmos - Kritische Edition"@de ;
+    acdh:hasTitle "(Ps.)-Athanasius - Expositiones in Psalmos - Critical Edition"@en ;
+    acdh:hasIdentifier acdhi:athanasius-expositiones-in-psalmos ;
+    acdh:hasUrl "https://expps.acdh-dev.oeaw.ac.at" ;
+    acdh:hasDescription ""@de ;
+    acdh:hasDescription ""@en ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/deu> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/grc> ;
+    acdh:hasLifeCycleStatus <https://vocabs.acdh.oeaw.ac.at/archelifecyclestatus/active> ;
+    acdh:hasRelatedDiscipline <https://vocabs.acdh.oeaw.ac.at/oefosdisciplines/603211> ;
+    acdh:hasRelatedDiscipline <https://vocabs.acdh.oeaw.ac.at/oefosdisciplines/602024> ;
+    acdh:hasRelatedDiscipline <https://vocabs.acdh.oeaw.ac.at/oefosdisciplines/603218> ;
+    acdh:hasPrincipalInvestigator <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasContact <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasCreator <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasMetadataCreator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasSubject "Psalms commentary"@en ;
+    acdh:hasSubject "Psalmenkommentar"@de ;
+    acdh:hasSubject "Athanasius of Alexandria"@en ;
+    acdh:hasSubject "Athanasius von Alexandrien"@de ;
+    acdh:hasSubject "Allegorical Exegesis"@en ;
+    acdh:hasSubject "Allegorische Exegese"@de ;
+    acdh:hasOwner <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasRightsHolder <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicensor  <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicense <https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasContributor <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasContributor <https://orcid.org/0009-0002-4995-7260> ;
+    acdh:hasContributor <https://orcid.org/0009-0002-4995-7260> ;
+    acdh:hasContributor <https://orcid.org/0000-0003-0534-4972> ;
+    acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .
+
+<https://id.acdh.oeaw.ac.at/athanasius-expositiones-in-psalmos/ambr-b-106-sup.xml> a acdh:Resource ;
+    acdh:isPartOf acdhi:priscian-glosses ;
+    acdh:hasTitle "Athanasius von Alexandrien, Expositiones in Psalmos - Ambr. B. 106 sup. - Transkription"@de ;
+    acdh:hasTitle "Athanasius of Alexandria, Expositiones in Psalmos - Ambr. B. 106 sup. - Transcription"@en ;
+    acdh:hasUrl "https://expps.acdh-dev.oeaw.ac.at/expps/manuscripts/ambros_B_106_sup.html" ;
+    acdh:hasDescription "Transkription der Fragmente des Athanasius von Alexandrien der Handschrift Ambr. B. 106 sup. mit Liste aller Fragmente."@de ;
+    acdh:hasDescription "Transcription of the fragments of Athanasius of Alexandria as found in the manuscript Ambr. B. 106 sup. with a list of all fragments."@en ;
+    acdh:hasCategory <https://vocabs.acdh.oeaw.ac.at/archecategory/text/tei> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/grc> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/deu> ;
+    acdh:hasContact <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasCreator <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasMetadataCreator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasOwner <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasRightsHolder <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicensor  <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicense <https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasContributor <https://orcid.org/0000-0003-0534-4972> ;
+    acdh:hasContributor <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .
+
+<https://id.acdh.oeaw.ac.at/athanasius-expositiones-in-psalmos/ambr-m-47-sup.xml> a acdh:Resource ;
+    acdh:isPartOf acdhi:priscian-glosses ;
+    acdh:hasTitle "Athanasius von Alexandrien, Expositiones in Psalmos - Ambr. M. 47 sup. - Transkription"@de ;
+    acdh:hasTitle "Athanasius of Alexandria, Expositiones in Psalmos - Ambr. M. 47 sup. - Transcription"@en ;
+    acdh:hasUrl "https://expps.acdh-dev.oeaw.ac.at/expps/manuscripts/ambr_m_47_sup.html" ;
+    acdh:hasDescription "Transkription der Fragmente des Athanasius von Alexandrien der Handschrift Ambr. M. 47 sup. mit Liste aller Fragmente."@de ;
+    acdh:hasDescription "Transcription of the fragments of Athanasius of Alexandria as found in the manuscript Ambr. M. 47 sup. with a list of all fragments."@en ;
+    acdh:hasCategory <https://vocabs.acdh.oeaw.ac.at/archecategory/text/tei> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/grc> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/deu> ;
+    acdh:hasContact <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasCreator <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasMetadataCreator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasOwner <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasRightsHolder <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicensor  <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicense <https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasContributor <https://orcid.org/0000-0003-0534-4972> ;
+    acdh:hasContributor <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .
+    # todo: add Athanasia Katsiakiori-Rankl
+
+<https://id.acdh.oeaw.ac.at/athanasius-expositiones-in-psalmos/bodl-auct-d-4-1.xml> a acdh:Resource ;
+    acdh:isPartOf acdhi:priscian-glosses ;
+    acdh:hasTitle "Athanasius von Alexandrien, Expositiones in Psalmos - Bodl. Auct. D. 4.1 - Transkription"@de ;
+    acdh:hasTitle "Athanasius of Alexandria, Expositiones in Psalmos - Bodl. Auct. D. 4.1 - Transcription"@en ;
+    acdh:hasUrl "https://expps.acdh-dev.oeaw.ac.at/expps/manuscripts/bodl_auct_d_4_1.html" ;
+    acdh:hasDescription "Transkription der Fragmente des Athanasius von Alexandrien der Handschrift Bodl. Auct. D. 4.1 mit Liste aller Fragmente."@de ;
+    acdh:hasDescription "Transcription of the fragments of Athanasius of Alexandria as found in the manuscript Bodl. Auct. D. 4.1 with a list of all fragments."@en ;
+    acdh:hasCategory <https://vocabs.acdh.oeaw.ac.at/archecategory/text/tei> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/grc> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/deu> ;
+    acdh:hasContact <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasCreator <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasMetadataCreator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasOwner <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasRightsHolder <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicensor  <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicense <https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasContributor <https://orcid.org/0000-0003-0534-4972> ;
+    acdh:hasContributor <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .
+
+<https://id.acdh.oeaw.ac.at/athanasius-expositiones-in-psalmos/coislin-10-transcription.xml> a acdh:Resource ;
+    acdh:isPartOf acdhi:priscian-glosses ;
+    acdh:hasTitle "Athanasius von Alexandrien, Expositiones in Psalmos - Paris. Coislin 10 - Transkription"@de ;
+    acdh:hasTitle "Athanasius of Alexandria, Expositiones in Psalmos - Paris. Coislin 10 - Transcription"@en ;
+    acdh:hasUrl "https://expps.acdh-dev.oeaw.ac.at/expps/manuscripts/coislin_10.html" ;
+    acdh:hasDescription "Transkription der Fragmente des Athanasius von Alexandrien der Handschrift Paris. Coislin 10 mit Liste aller Fragmente."@de ;
+    acdh:hasDescription "Transcription of the fragments of Athanasius of Alexandria as found in the manuscript Paris. Coislin 10 with a list of all fragments."@en ;
+    acdh:hasCategory <https://vocabs.acdh.oeaw.ac.at/archecategory/text/tei> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/grc> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/deu> ;
+    acdh:hasContact <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasCreator <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasMetadataCreator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasOwner <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasRightsHolder <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicensor  <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicense <https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasContributor <https://orcid.org/0009-0009-4476-1737> ;
+    acdh:hasContributor <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .
+
+<https://id.acdh.oeaw.ac.at/athanasius-expositiones-in-psalmos/coislin-12-transcription.xml> a acdh:Resource ;
+    acdh:isPartOf acdhi:priscian-glosses ;
+    acdh:hasTitle "Athanasius von Alexandrien, Expositiones in Psalmos - Paris. Coislin 12 - Transkription"@de ;
+    acdh:hasTitle "Athanasius of Alexandria, Expositiones in Psalmos - Paris. Coislin 12 - Transcription"@en ;
+    acdh:hasUrl "https://expps.acdh-dev.oeaw.ac.at/expps/manuscripts/coislin_12.html" ;
+    acdh:hasDescription "Transkription der Fragmente des Athanasius von Alexandrien der Handschrift Paris. Coislin 12 mit Liste aller Fragmente."@de ;
+    acdh:hasDescription "Transcription of the fragments of Athanasius of Alexandria as found in the manuscript Paris. Coislin 12 with a list of all fragments."@en ;
+    acdh:hasCategory <https://vocabs.acdh.oeaw.ac.at/archecategory/text/tei> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/grc> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/deu> ;
+    acdh:hasContact <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasCreator <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasMetadataCreator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasOwner <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasRightsHolder <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicensor  <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicense <https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasContributor <https://orcid.org/0000-0003-0534-4972> ;
+    acdh:hasContributor <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .
+
+<https://id.acdh.oeaw.ac.at/athanasius-expositiones-in-psalmos/coislin-187-transcription.xml> a acdh:Resource ;
+    acdh:isPartOf acdhi:priscian-glosses ;
+    acdh:hasTitle "Athanasius von Alexandrien, Expositiones in Psalmos - Paris. Coislin 187 - Transkription"@de ;
+    acdh:hasTitle "Athanasius of Alexandria, Expositiones in Psalmos - Paris. Coislin 187 - Transcription"@en ;
+    acdh:hasUrl "https://expps.acdh-dev.oeaw.ac.at/expps/manuscripts/coislin-187.html" ;
+    acdh:hasDescription "Transkription der Fragmente des Athanasius von Alexandrien der Handschrift Paris. Coislin 187 mit Liste aller Fragmente."@de ;
+    acdh:hasDescription "Transcription of the fragments of Athanasius of Alexandria as found in the manuscript Paris. Coislin 187 with a list of all fragments."@en ;
+    acdh:hasCategory <https://vocabs.acdh.oeaw.ac.at/archecategory/text/tei> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/grc> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/deu> ;
+    acdh:hasContact <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasCreator <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasMetadataCreator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasOwner <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasRightsHolder <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicensor  <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicense <https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasContributor <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .
+    # todo: add Athanasia Katsiakiori-Rankl
+
+<https://id.acdh.oeaw.ac.at/athanasius-expositiones-in-psalmos/expps-coptic.xml> a acdh:Resource ;
+    acdh:isPartOf acdhi:priscian-glosses ;
+    acdh:hasTitle "Athanasius von Alexandrien, Expositiones in Psalmos - Koptische Überlieferung - Transkription"@de ;
+    acdh:hasTitle "Athanasius of Alexandria, Expositiones in Psalmos - Coptic Transmission - Transcription"@en ;
+    acdh:hasUrl "https://expps.acdh-dev.oeaw.ac.at/expps/manuscripts/coptic-version.html" ;
+    acdh:hasDescription "Transkription des Textes des Athanasius von Alexandrien nach den Fragmenten BL Or 6954(9), Vat. Borg. copt. 109, BNF Copte 131 (5)."@de ;
+    acdh:hasDescription "Transcription of the text of Athanasius of Alexandria as found in the fragments BL Or 6954(9), Vat. Borg. copt. 109, BNF Copte 131 (5)"@en ;
+    acdh:hasCategory <https://vocabs.acdh.oeaw.ac.at/archecategory/text/tei> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/grc> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/deu> ;
+    acdh:hasContact <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasCreator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasMetadataCreator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasOwner <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasRightsHolder <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicensor  <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicense <https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .
+
+<https://id.acdh.oeaw.ac.at/athanasius-expositiones-in-psalmos/edition-ps-1-10.xml> a acdh:Resource ;
+    acdh:isPartOf acdhi:priscian-glosses ;
+    acdh:hasTitle "Athanasius von Alexandrien, Expositiones in Psalmos - Edition der Kommentarfragmente zu Psalm 1 bis Psalm 25"@de ;
+    acdh:hasTitle "Athanasius of Alexandria, Expositiones in Psalmos - Edition of the commentary fragments of psalm 1 to psalm 25"@en ;
+    acdh:hasUrl "https://expps.acdh-dev.oeaw.ac.at/expps/edition.html" ;
+    acdh:hasDescription "Edition der Fragmente des Werkes Expositiones in Psalmos des Athanasius von Alexandrien nach dem Zeugnis der Katenenhandschriften"@de ;
+    acdh:hasDescription "Edition of the fragments of the work Expositiones in Psalmos of Athanasius of Alexandria according to the witnesses of the catenae manuscripts"@en ;
+    acdh:hasCategory <https://vocabs.acdh.oeaw.ac.at/archecategory/text/tei> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/grc> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/deu> ;
+    acdh:hasContact <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasCreator <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasCreator <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasMetadataCreator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasOwner <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasRightsHolder <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicensor  <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicense <https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .
+
+<https://id.acdh.oeaw.ac.at/athanasius-expositiones-in-psalmos/edition-ps-26-30.xml> a acdh:Resource ;
+    acdh:isPartOf acdhi:priscian-glosses ;
+    acdh:hasTitle "Athanasius von Alexandrien, Expositiones in Psalmos - Edition der Kommentarfragmente zu Psalm 26 bis Psalm 30"@de ;
+    acdh:hasTitle "Athanasius of Alexandria, Expositiones in Psalmos - Edition of the commentary fragments of psalm 26 to psalm 30"@en ;
+    acdh:hasUrl "https://expps.acdh-dev.oeaw.ac.at/expps/edition-part-two.html" ;
+    acdh:hasDescription "Edition der Fragmente des Werkes Expositiones in Psalmos des Athanasius von Alexandrien nach dem Zeugnis der Katenenhandschriften - Teil 2"@de ;
+    acdh:hasDescription "Edition of the fragments of the work Expositiones in Psalmos of Athanasius of Alexandria according to the witnesses of the catenae manuscripts - part 2"@en ;
+    acdh:hasCategory <https://vocabs.acdh.oeaw.ac.at/archecategory/text/tei> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/grc> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/deu> ;
+    acdh:hasContact <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasCreator <https://orcid.org/0009-0002-4995-7260> ;
+    acdh:hasCreator <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasMetadataCreator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasOwner <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasRightsHolder <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicensor  <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicense <https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .
+
+<https://id.acdh.oeaw.ac.at/athanasius-expositiones-in-psalmos/franzon-3-transcription.xml> a acdh:Resource ;
+    acdh:isPartOf acdhi:priscian-glosses ;
+    acdh:hasTitle "Athanasius von Alexandrien, Expositiones in Psalmos - Genua, Franzon. Urban. 3 - Transkription"@de ;
+    acdh:hasTitle "Athanasius of Alexandria, Expositiones in Psalmos - Genua, Franzon. Urban. 3 - Transcription"@en ;
+    acdh:hasUrl "https://expps.acdh-dev.oeaw.ac.at/expps/manuscripts/franzon_3.html" ;
+    acdh:hasDescription "Transkription der Fragmente des Athanasius von Alexandrien der Handschrift Genua, Franzon. Urban. 3 mit Liste aller Fragmente."@de ;
+    acdh:hasDescription "Transcription of the fragments of Athanasius of Alexandria as found in the manuscript Genua, Franzon. Urban. 3 with a list of all fragments."@en ;
+    acdh:hasCategory <https://vocabs.acdh.oeaw.ac.at/archecategory/text/tei> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/grc> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/deu> ;
+    acdh:hasContact <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasCreator <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasMetadataCreator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasOwner <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasRightsHolder <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicensor  <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicense <https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasContributor <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .
+
+<https://id.acdh.oeaw.ac.at/athanasius-expositiones-in-psalmos/mosq-syn-194.xml> a acdh:Resource ;
+    acdh:isPartOf acdhi:priscian-glosses ;
+    acdh:hasTitle "Athanasius von Alexandrien, Expositiones in Psalmos - Mosq. Sinod. gr. 194 - Transkription"@de ;
+    acdh:hasTitle "Athanasius of Alexandria, Expositiones in Psalmos - Mosq. Sinod. gr. 194 - Transcription"@en ;
+    acdh:hasUrl "https://expps.acdh-dev.oeaw.ac.at/expps/manuscripts/mosq_synod_194.html" ;
+    acdh:hasDescription "Transkription der Fragmente des Athanasius von Alexandrien der Handschrift Mosq. Sinod. gr. 194 mit Liste aller Fragmente."@de ;
+    acdh:hasDescription "Transcription of the fragments of Athanasius of Alexandria as found in the manuscript Mosq. Sinod. gr. 194 with a list of all fragments."@en ;
+    acdh:hasCategory <https://vocabs.acdh.oeaw.ac.at/archecategory/text/tei> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/grc> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/deu> ;
+    acdh:hasContact <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasCreator <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasMetadataCreator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasOwner <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasRightsHolder <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicensor  <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicense <https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasContributor <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .
+
+<https://id.acdh.oeaw.ac.at/athanasius-expositiones-in-psalmos/oxon-s-trin-78.xml> a acdh:Resource ;
+    acdh:isPartOf acdhi:priscian-glosses ;
+    acdh:hasTitle "Athanasius von Alexandrien, Expositiones in Psalmos - Oxon. Coll. S. Trin. 78 - Transkription"@de ;
+    acdh:hasTitle "Athanasius of Alexandria, Expositiones in Psalmos - Oxon. Coll. S. Trin. 78 - Transcription"@en ;
+    acdh:hasUrl "https://expps.acdh-dev.oeaw.ac.at/expps/manuscripts/oxon_s_trin_78.html" ;
+    acdh:hasDescription "Transkription der Fragmente des Athanasius von Alexandrien der Handschrift Oxon. Coll. S. Trin. 78 mit Liste aller Fragmente."@de ;
+    acdh:hasDescription "Transcription of the fragments of Athanasius of Alexandria as found in the manuscript Oxon. Coll. S. Trin. 78 with a list of all fragments."@en ;
+    acdh:hasCategory <https://vocabs.acdh.oeaw.ac.at/archecategory/text/tei> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/grc> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/deu> ;
+    acdh:hasContact <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasCreator <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasCreator <https://orcid.org/0000-0003-0534-4972> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasMetadataCreator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasOwner <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasRightsHolder <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicensor  <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicense <https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasContributor <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasContributor <https://orcid.org/0000-0003-0534-4972> ;
+    acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .
+
+<https://id.acdh.oeaw.ac.at/athanasius-expositiones-in-psalmos/par-gr-139.xml> a acdh:Resource ;
+    acdh:isPartOf acdhi:priscian-glosses ;
+    acdh:hasTitle "Athanasius von Alexandrien, Expositiones in Psalmos - Paris. gr. 139 - Transkription"@de ;
+    acdh:hasTitle "Athanasius of Alexandria, Expositiones in Psalmos - Paris. gr. 139 - Transcription"@en ;
+    acdh:hasUrl "https://expps.acdh-dev.oeaw.ac.at/expps/manuscripts/par_gr_139.html" ;
+    acdh:hasDescription "Transkription der Fragmente des Athanasius von Alexandrien der Handschrift Paris. gr. 139 mit Liste aller Fragmente."@de ;
+    acdh:hasDescription "Transcription of the fragments of Athanasius of Alexandria as found in the manuscript Paris. gr. 139 with a list of all fragments."@en ;
+    acdh:hasCategory <https://vocabs.acdh.oeaw.ac.at/archecategory/text/tei> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/grc> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/deu> ;
+    acdh:hasContact <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasCreator <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasMetadataCreator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasOwner <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasRightsHolder <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicensor  <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicense <https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasContributor <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .
+
+<https://id.acdh.oeaw.ac.at/athanasius-expositiones-in-psalmos/par-gr-164-transcription.xml> a acdh:Resource ;
+    acdh:isPartOf acdhi:priscian-glosses ;
+    acdh:hasTitle "Athanasius von Alexandrien, Expositiones in Psalmos - Paris. gr. 164 - Transkription"@de ;
+    acdh:hasTitle "Athanasius of Alexandria, Expositiones in Psalmos - Paris. gr. 164 - Transcription"@en ;
+    acdh:hasUrl "https://expps.acdh-dev.oeaw.ac.at/expps/manuscripts/par_gr_164.html" ;
+    acdh:hasDescription "Transkription der Fragmente des Athanasius von Alexandrien der Handschrift Paris. gr. 164 mit Liste aller Fragmente."@de ;
+    acdh:hasDescription "Transcription of the fragments of Athanasius of Alexandria as found in the manuscript Paris. gr. 164 with a list of all fragments."@en ;
+    acdh:hasCategory <https://vocabs.acdh.oeaw.ac.at/archecategory/text/tei> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/grc> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/deu> ;
+    acdh:hasContact <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasCreator <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasCreator <https://orcid.org/0000-0003-0534-4972> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasMetadataCreator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasOwner <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasRightsHolder <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicensor  <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicense <https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasContributor <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasContributor <https://orcid.org/0000-0003-0534-4972> ;
+    acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .
+
+<https://id.acdh.oeaw.ac.at/athanasius-expositiones-in-psalmos/par-gr-166-transcription.xml> a acdh:Resource ;
+    acdh:isPartOf acdhi:priscian-glosses ;
+    acdh:hasTitle "Athanasius von Alexandrien, Expositiones in Psalmos - Paris. gr. 166-167 - Transkription"@de ;
+    acdh:hasTitle "Athanasius of Alexandria, Expositiones in Psalmos - Paris. gr. 166-167 - Transcription"@en ;
+    acdh:hasUrl "https://expps.acdh-dev.oeaw.ac.at/expps/manuscripts/par_gr_166.html" ;
+    acdh:hasDescription "Transkription der Fragmente des Athanasius von Alexandrien der Handschrift Paris. gr. 166-167 mit Liste aller Fragmente."@de ;
+    acdh:hasDescription "Transcription of the fragments of Athanasius of Alexandria as found in the manuscript Paris. gr. 166-167 with a list of all fragments."@en ;
+    acdh:hasCategory <https://vocabs.acdh.oeaw.ac.at/archecategory/text/tei> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/grc> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/deu> ;
+    acdh:hasContact <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasCreator <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasMetadataCreator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasOwner <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasRightsHolder <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicensor  <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicense <https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasContributor <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .
+
+<https://id.acdh.oeaw.ac.at/athanasius-expositiones-in-psalmos/plut-5-30.xml> a acdh:Resource ;
+    acdh:isPartOf acdhi:priscian-glosses ;
+    acdh:hasTitle "Athanasius von Alexandrien, Expositiones in Psalmos - Flor. Med. Laurent. Plut. 5. 30 - Transkription"@de ;
+    acdh:hasTitle "Athanasius of Alexandria, Expositiones in Psalmos - Flor. Med. Laurent. Plut. 5. 30 - Transcription"@en ;
+    acdh:hasUrl "https://expps.acdh-dev.oeaw.ac.at/expps/manuscripts/plut_5_30.html" ;
+    acdh:hasDescription "Transkription der Fragmente des Athanasius von Alexandrien der Handschrift Flor. Med. Laurent. Plut. 5. 30 mit Liste aller Fragmente."@de ;
+    acdh:hasDescription "Transcription of the fragments of Athanasius of Alexandria as found in the manuscript Flor. Med. Laurent. Plut. 5. 30 with a list of all fragments."@en ;
+    acdh:hasCategory <https://vocabs.acdh.oeaw.ac.at/archecategory/text/tei> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/grc> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/deu> ;
+    acdh:hasContact <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasCreator <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasMetadataCreator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasOwner <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasRightsHolder <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicensor  <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicense <https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasContributor <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .
+
+<https://id.acdh.oeaw.ac.at/athanasius-expositiones-in-psalmos/plut-6-3.xml> a acdh:Resource ;
+    acdh:hasTitle "Athanasius von Alexandrien, Expositiones in Psalmos - Flor. Med. Laurent. Plut. 6. 3 - Transkription"@de ;
+    acdh:hasTitle "Athanasius of Alexandria, Expositiones in Psalmos - Flor. Med. Laurent. Plut. 6. 3 - Transcription"@en ;
+    acdh:hasUrl "https://expps.acdh-dev.oeaw.ac.at/expps/manuscripts/plut_6_3.html" ;
+    acdh:hasDescription "Transkription der Fragmente des Athanasius von Alexandrien der Handschrift Flor. Med. Laurent. Plut. 6. 3 mit Liste aller Fragmente."@de ;
+    acdh:hasDescription "Transcription of the fragments of Athanasius of Alexandria as found in the manuscript Flor. Med. Laurent. Plut. 6. 3 with a list of all fragments."@en ;
+    acdh:hasCategory <https://vocabs.acdh.oeaw.ac.at/archecategory/text/tei> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/grc> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/deu> ;
+    acdh:hasContact <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasCreator <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasMetadataCreator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasOwner <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasRightsHolder <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicensor  <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicense <https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasContributor <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .
+
+
+<https://id.acdh.oeaw.ac.at/athanasius-expositiones-in-psalmos/syriac-longer-version.xml> a acdh:Resource ;
+    acdh:isPartOf acdhi:priscian-glosses ;
+    acdh:hasTitle "Athanasius von Alexandrien, Expositiones in Psalmos - Syrische Überlieferung Langversion - Transkription"@de ;
+    acdh:hasTitle "Athanasius of Alexandria, Expositiones in Psalmos - Syriac Transmission long version - Transcription"@en ;
+    acdh:hasUrl "https://expps.acdh-dev.oeaw.ac.at/expps/manuscripts/syriac-longer-version.html" ;
+    acdh:hasDescription "Transkription des Textes des Athanasius von Alexandrien nach der Handschrift British Library Add MS 14568."@de ;
+    acdh:hasDescription "Transcription of the text of Athanasius of Alexandria as found in the manuscript British Library Add MS 14568."@en ;
+    acdh:hasCategory <https://vocabs.acdh.oeaw.ac.at/archecategory/text/tei> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/grc> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/deu> ;
+    acdh:hasContact <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasCreator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasMetadataCreator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasOwner <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasRightsHolder <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicensor  <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicense <https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .
+
+<https://id.acdh.oeaw.ac.at/athanasius-expositiones-in-psalmos/syriac-version-abbreviated.xml> a acdh:Resource ;
+    acdh:isPartOf acdhi:priscian-glosses ;
+    acdh:hasTitle "Athanasius von Alexandrien, Expositiones in Psalmos - Syrische Überlieferung Kurzversion - Transkription"@de ;
+    acdh:hasTitle "Athanasius of Alexandria, Expositiones in Psalmos - Syriac Transmission abbreviated version - Transcription"@en ;
+    acdh:hasUrl "https://expps.acdh-dev.oeaw.ac.at/expps/manuscripts/syriac-abbreviated-version.html" ;
+    acdh:hasDescription "Transkription des Textes des Athanasius von Alexandrien nach der Handschrift British Library Add MS 12168."@de ;
+    acdh:hasDescription "Transcription of the text of Athanasius of Alexandria as found in the manuscript British Library Add MS 12168."@en ;
+    acdh:hasCategory <https://vocabs.acdh.oeaw.ac.at/archecategory/text/tei> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/grc> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/deu> ;
+    acdh:hasContact <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasCreator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasMetadataCreator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasOwner <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasRightsHolder <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicensor  <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicense <https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .
+
+<https://id.acdh.oeaw.ac.at/athanasius-expositiones-in-psalmos/vat-gr-1422-transcription.xml> a acdh:Resource ;
+    acdh:hasTitle "Athanasius von Alexandrien, Expositiones in Psalmos - Vat. gr. 1422 - Transkription"@de ;
+    acdh:hasTitle "Athanasius of Alexandria, Expositiones in Psalmos - Vat. gr. 1422 - Transcription"@en ;
+    acdh:hasUrl "https://expps.acdh-dev.oeaw.ac.at/expps/manuscripts/vat_gr_1422.html" ;
+    acdh:hasDescription "Transkription der Fragmente des Athanasius von Alexandrien der Handschrift Vat. gr. 1422 mit Liste aller Fragmente."@de ;
+    acdh:hasDescription "Transcription of the fragments of Athanasius of Alexandria as found in the manuscript Vat. gr. 1422 with a list of all fragments."@en ;
+    acdh:hasCategory <https://vocabs.acdh.oeaw.ac.at/archecategory/text/tei> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/grc> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/deu> ;
+    acdh:hasContact <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasCreator <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasMetadataCreator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasOwner <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasRightsHolder <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicensor  <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicense <https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasContributor <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .
+
+<https://id.acdh.oeaw.ac.at/athanasius-expositiones-in-psalmos/vat-gr-754-transcription.xml> a acdh:Resource ;
+    acdh:hasTitle "Athanasius von Alexandrien, Expositiones in Psalmos - Vat. gr. 754 - Transkription"@de ;
+    acdh:hasTitle "Athanasius of Alexandria, Expositiones in Psalmos - Vat. gr. 754 - Transcription"@en ;
+    acdh:hasUrl "https://expps.acdh-dev.oeaw.ac.at/expps/manuscripts/vat_gr_754.html" ;
+    acdh:hasDescription "Transkription der Fragmente des Athanasius von Alexandrien der Handschrift Vat. gr. 754 mit Liste aller Fragmente."@de ;
+    acdh:hasDescription "Transcription of the fragments of Athanasius of Alexandria as found in the manuscript Vat. gr. 754 with a list of all fragments."@en ;
+    acdh:hasCategory <https://vocabs.acdh.oeaw.ac.at/archecategory/text/tei> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/grc> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/deu> ;
+    acdh:hasContact <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasCreator <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasCreator <https://orcid.org/0000-0003-3281-5178> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasMetadataCreator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasOwner <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasRightsHolder <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicensor  <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicense <https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasContributor <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasContributor <https://orcid.org/0000-0003-3281-5178> ;
+    acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .
