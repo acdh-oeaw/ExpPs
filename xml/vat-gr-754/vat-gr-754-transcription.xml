@@ -6,15 +6,15 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Vat. gr. 754 - Transcription (Ps 1 to Ps 21)</title>
+            <title>Vat. gr. 754 - Transcription (Ps 1 to Ps 30)</title>
             <respStmt>
                <resp>transcribed by</resp>
                <persName>Sebastiano Panteghini</persName>
             </respStmt>
             <respStmt>
                <resp>encoded by</resp>
-               <persName>Thomas Klampfl (Ps 1 to Ps 10), Canan Arıkan-Caba (Ps 11 to Ps 20) and
-                  Sebastiano Panteghini (Ps 11 to Ps 21)</persName>
+               <persName>Thomas Klampfl (Ps 1 to Ps 10), Canan Arıkan-Caba (Ps 11 to Ps 20),
+                  Sebastiano Panteghini (Ps 11 to Ps 25), and Christoph Scheerer (Ps 26 to Ps 30)</persName>
             </respStmt>
          </titleStmt>
          <publicationStmt>
@@ -416,8 +416,8 @@
                   <bibl>fr. (ineditum?); non habet Mühlenberg</bibl>
                </person>
                <person xml:id="person-74" role="author">
-                  <persName>Apolinaris Laodiceus</persName>
-                  <bibl>Apolinaris Laod., fr. (Mühlenberg)</bibl>
+                  <persName>Apollinaris Laodiceus</persName>
+                  <bibl>Apollinaris Laod., fr. (Mühlenberg)</bibl>
                </person>
                <person xml:id="person-75" role="author" sameAs="#person-10">
                   <persName>Hesychius Hierosolymitanus</persName>
@@ -22549,7 +22549,7 @@
             <!-- psalm 26 bibletext  -->
                         <div type="bibletext" subtype="commented" xml:id="vat-gr-754-26-1"> 
                <quote type="bibletext"  n="Ps (LXX) 26,1" xml:lang="grc" xml:id="vat-gr-754-ps-26-1-1">
-                  <num>Κς</num>
+                  <num>ΚϚ'</num>
                   <anchor type="psalmtext" n="Ps (LXX) 26,1" xml:id="vat-gr-754-ps-26-1-1a"/>Ψαλμός [Ψαλμός om. LXX Rahlfs] τοῦ Δαυιδ προ τοῦ χρισθῆναι:
                   <anchor type="psalmtext" n="Ps (LXX) 26,1" xml:id="vat-gr-754-ps-26-1b"/>Κύριος φωτισμός μου καὶ σωτήρ μου
                   τίνα φοβηθήσομαι: –
@@ -22604,20 +22604,29 @@
             <!-- psalm 26 bibletext  -->
             <div type="bibletext" subtype="commented" xml:id="vat-gr-754-26-3"> 
                <quote type="bibletext"  n="Ps (LXX) 26,1" xml:lang="grc" xml:id="vat-gr-754-ps-26-1-2">
-                  <anchor type="psalmtext" n="Ps (LXX) 26,1" xml:id="vat-gr-754-ps-26-1c"/>Κύριος ὑπερασπιστὴς τῆς ζωῆς
+                  <anchor type="psalmtext" n="Ps (LXX) 26,1c" xml:id="vat-gr-754-ps-26-1c"/>Κύριος ὑπερασπιστὴς τῆς ζωῆς
                   μου ἀπὸ τίνος δειλιάσω:</quote>
-               <quote type="bibletext"  n="Ps (LXX) 26,1" xml:lang="grc" xml:id="vat-gr-754-ps-26-2">
+               <quote type="bibletext"  n="Ps (LXX) 26,2" xml:lang="grc" xml:id="vat-gr-754-ps-26-2">
                   <anchor type="psalmtext" n="Ps (LXX) 26,2a" xml:id="vat-gr-754-ps-26-2a"/>Ἐν τῶ ἐγγίζειν ἐπ’ ἐμὲ κακοῦντας
                   τοῦ φαγεῖν τὰς σάρκας μου:
                   <anchor type="psalmtext" n="Ps (LXX) 26,2b1" xml:id="vat-gr-754-ps-26-2b1"/>Οἱ θλίβοντές με καὶ οἱ ἐχθροί μου
                                  <anchor type="psalmtext" n="Ps (LXX) 26,2b2" xml:id="vat-gr-754-ps-26-2b2"/>αὐτοὶ ἠσθένησαν καὶ ἔπεσον [ἔπεσαν LXX Rahlfs]: –</quote>
-               <quote type="bibletext"  n="Ps (LXX) 26,1" xml:lang="grc" xml:id="vat-gr-754-ps-26-3">
+               <quote type="bibletext"  n="Ps (LXX) 26,3" xml:lang="grc" xml:id="vat-gr-754-ps-26-3">
                   <anchor type="psalmtext" n="Ps (LXX) 26,3a" xml:id="vat-gr-754-ps-26-3a"/>Ἐὰν παρατάξηται ἐπ’ ἐμὲ παρεμβολή οὐ φοβηθήσεται
                   ἡ καρδία μου: –
                   <anchor type="psalmtext" n="Ps (LXX) 26,3b" xml:id="vat-gr-754-ps-26-3b"/>Ἐὰν ἐπαναστῆ ἐπεμὲ πόλεμος
                   ἐν ταύτη ἐγὼ ἐλπίζω:</quote>
                <!-- psalm 26 commentary -->
-               <div type="commentary" subtype="commentary" xml:id="vat-gr-754-26-4"
+               <div type="hexaplaric" subtype="commentary" xml:id="vat-gr-754-26-4"
+                  rendition="#right-column" rend="capital letters" change="commentaryfragments-only">
+                  <ab xml:lang="grc">
+                     <note type="lemma">Ps 26,2a (κακοῦντας). Linking (ἐγγίζειν) does not match.</note>
+                     <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-26-1"
+                        rendition="#right-column" source="Symmachus (Ps 26,2a)"
+                        corresp="#vat-gr-754-ps-26-2a">Ϲ κακούργους·</seg>
+                  </ab>
+               </div>
+               <div type="commentary" subtype="commentary" xml:id="vat-gr-754-26-5"
                   rendition="#top-of-the-page" rend="minuscule letters"
                   change="commentaryfragments-only">
                   <ab xml:lang="grc">
@@ -22638,13 +22647,14 @@
                      </seg>
                      
                     <seg type="commentaryfragment" xml:id="vat-gr-754-fr-26-7"
-                        rendition="#left-column" source="Anonymous"
+                        rendition="#left-column" source="(Evagrius)"
                         corresp="#vat-gr-754-ps-26-2a"><quote type="patristic" subtype="quotation"
                            xml:id="vat-gr-754-quot-26-7"
-                           source="Origenes, schol. (?) in Ps 26,2 (PG 12,1277 A9–B10)"
-                           corresp="#person-32"/>
-                        </seg>
-                     
+                           source="Evagrius, schol. nr. α´ in Ps 26,2a (458 – 460 Rondeau – Géhin – Cassin)"
+                           corresp="#person-21"/>
+                       <note type="attribution" xml:lang="grc">α´</note></seg>
+                                            
+                     <note type="lemma">Ps 26,2b</note>
                      <seg type="commentaryfragment" xml:id="vat-gr-754-fr-26-8"
                         rendition="#bottom-of-the-page" source="Theodorus"
                         corresp="#vat-gr-754-ps-26-2b1">
@@ -22657,32 +22667,67 @@
                         rendition="#bottom-of-the-page" source="Theodorus"
                         corresp="#vat-gr-754-ps-26-2b2">
                         <quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-26-9"
-                           source="Theodorus, fr. in Ps 26,3b (130 Devreesse)" corresp="#person-22"/>
+                           source="Theodorus, fr. in Ps 26,3b (sic) (130 Devreesse)" corresp="#person-22"/>
                         <note type="attribution">τ(οῦ) αύτ(οῦ)</note>
                      </seg>
                      
+                     <note type="lemma">Ps 26,3a</note>
                      <seg type="commentaryfragment" xml:id="vat-gr-754-fr-26-10"
-                        rendition="#bottom-of-the-page" source="Anonymous"
+                        rendition="#bottom-of-the-page" source="(Evagrius)"
                         corresp="#vat-gr-754-ps-26-3a"><quote type="patristic" subtype="quotation"
                            xml:id="vat-gr-754-quot-26-10"
-                           source="Origenes, schol. (?) in Ps 26,2 (PG 12,1277 C5–8)"
-                           corresp="#person-32"/>
+                           source="Evagrius, schol. nr. β´ in Ps 26,3a (462 Rondeau – Géhin – Cassin)"
+                           corresp="#person-21"/>
+                        <note type="attribution" xml:lang="grc">β´</note>
                      </seg>
+                  </ab>
+               </div>
                      
+                     <div type="commentary" subtype="commentary" xml:id="vat-gr-754-26-6"
+                        rendition="#bottom-of-middle-column" rend="minuscule letters" change="commentaryfragments-only">
+                        <ab xml:lang="grc">
+                     <note type="lemma">Ps 26,3a (παρεμβολή)</note>
+                     <seg type="glosse" xml:id="vat-gr-754-glosse-26-1"
+                        source="Anonymous" corresp="#vat-gr-754-ps-26-3a"><quote type="patristic"
+                           subtype="unknown" xml:id="vat-gr-754-quot-26-10-1"
+                           source="fons ignotus" corresp="#person-18"
+                           >πόλεμος ἐνπαράσκευος. στρατόπεδον· παράταξις:  –</quote></seg>
+                  </ab>
+               </div>
+                     
+               <div type="commentary" subtype="commentary" xml:id="vat-gr-754-26-7"
+                  rendition="#bottom-of-the-page" rend="minuscule letters" change="commentaryfragments-only">
+                  <ab xml:lang="grc">
+                     <note type="lemma">Ps 26,3b</note>
                      <seg type="commentaryfragment" xml:id="vat-gr-754-fr-26-11"
                         rendition="#bottom-of-the-page" source="Anonymous"
                         corresp="#vat-gr-754-ps-26-3b"><quote type="patristic" subtype="quotation"
                            xml:id="vat-gr-754-quot-26-11"
                            source="Theodoretus, comm. in Ps 26,3 (PG 80,1052 A12–B1)"
-                           corresp="#person-16"/>
+                           corresp="#person-16"/></seg>
                      
-                  </ab>
+                     <seg type="commentaryfragment" xml:id="vat-gr-fr-26-12" 
+                        rendition="#bottom-of-middle-column" source="(Evagrius)" 
+                        corresp="#vat-gr-754-ps-26-3b"><quote type="patristic" subtype="quotation" 
+                           xml:id="vat-gr-754-quot-26-12" 
+                           source="Evagrius, schol. nr. γ´ in Ps 26,3a (462 Rondeau – Géhin – Cassin)" 
+                           corresp="#person-21"/>
+                     <note type="attribution" xml:lang="grc">γ´</note></seg>
+                     
+                     <seg type="commentaryfragment" xml:id="vat-gr-fr-26-13" 
+                        rendition="#right-column" source="Anonymous" 
+                        corresp="#vat-gr-754-ps-26-3b"><quote type="patristic" subtype="quotation-expanded" 
+                           xml:id="vat-gr-754-quot-26-13" 
+                           source="Didymus, fr. 237 in Ps 26,3b (252 Mühlenberg); Ἐὰν – ἐπεμὲ non habet M." 
+                           corresp="#person-6">Ἐὰν οἱ προειρημένοι ἐχθροὶ πολεμεῖν με θέλοντες· ἐπαναστῶσιν ἐπεμὲ. ἐν ταύτῆ τῆ μὴ
+                           φοβουμένη αὐτοὺς καρδία μου ἐγὼ ἐλπίζω ὑπέρμαχον θεὸν ἔχειν θαρρήσας:</quote></seg>
+                                       </ab>
                </div>
                
                <pb n="83r" facs="https://digi.vatlib.it/view/MSS_Vat.gr.754/82"/>
                <!-- psalm 26 bibletext  -->
-               <div type="bibletext" subtype="commented" xml:id="vat-gr-754-26-xx">
-               <quote type="bibletext"  n="Ps (LXX) 26,1" xml:lang="grc" xml:id="vat-gr-754-ps-26-4">
+               <div type="bibletext" subtype="commented" xml:id="vat-gr-754-26-8">
+               <quote type="bibletext"  n="Ps (LXX) 26,4" xml:lang="grc" xml:id="vat-gr-754-ps-26-4">
                   <anchor type="psalmtext" n="Ps (LXX) 26,4a" xml:id="vat-gr-754-ps-26-4a"/>Μίαν ήτησάμην παρα κυρίου ταύτην
                   ζητήσω [ἐκζητήσω LXX Rahlfs]: –
                   <anchor type="psalmtext" n="Ps (LXX) 26,4b" xml:id="vat-gr-754-ps-26-4b"/>Τοῦ κατοικεῖν με ἐν οἴκω κυρίου
@@ -22691,50 +22736,109 @@
                   κυρίου
                   <anchor type="psalmtext" n="Ps (LXX) 26,4d" xml:id="vat-gr-754-ps-26-4d"/>καὶ ἐπισκεπτεσθαι τὸν ναὸν
                   τὀν ἅγιον [τὀν ἅγιον om. LXX Rahlfs] αὐτοῦ: –</quote>
-               <quote type="bibletext"  n="Ps (LXX) 26,1" xml:lang="grc" xml:id="vat-gr-754-ps-26-5">
+               <quote type="bibletext"  n="Ps (LXX) 26,5" xml:lang="grc" xml:id="vat-gr-754-ps-26-5">
                   <anchor type="psalmtext" n="Ps (LXX) 26,5a" xml:id="vat-gr-754-ps-26-5a"/>Ὅτι ἔκρυψέν με ἐν σκηνὴ αὐτοῦ [αὐτοῦ om. LXX Rahlfs]
                   ἐν ἡμέρα κακῶν μου: –
                   <anchor type="psalmtext" n="Ps (LXX) 26,5b" xml:id="vat-gr-754-ps-26-5b"/>Ἐσκέπασέν με ἐν ἀποκρύφω
                   τῆς σκηνῆς αὐτοῦ: –
                   <anchor type="psalmtext" n="Ps (LXX) 26,5c" xml:id="vat-gr-754-ps-26-5c"/>Ἐν πέτρα ὕψωσέν με: –</quote>
-               <quote type="bibletext"  n="Ps (LXX) 26,1" xml:lang="grc" xml:id="vat-gr-754-ps-26-6">
+               <quote type="bibletext"  n="Ps (LXX) 26,6" xml:lang="grc" xml:id="vat-gr-754-ps-26-6-1">
                   <anchor type="psalmtext" n="Ps (LXX) 26,6a" xml:id="vat-gr-754-ps-26-6a"/>Καὶ νῦν ἰδοὺ ὕψωσε [ὕψωσεν τὴν LXX Rahlfs] κεφαλήν
                   μου ἐπ' ἐχθρούς μου: –
-             
+               </quote>
+               </div>
+               <!-- Ps 26 commentary --> 
+               <div type="hexaplaric" subtype="commentary" xml:id="vat-gr-754-26-9"
+                  rendition="#left-column" rend="capital letters" change="commentaryfragments-only">
+                  <ab xml:lang="grc">
+                     <note type="lemma">Ps 26,4c (τὴν τερπνότητα). Linking (θεωρεῖν) does not match.</note>
+                     <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-26-2"
+                        rendition="#right-column" source="Symmachus (Ps 26,4c)"
+                        corresp="#vat-gr-754-ps-26-4c">Ϲ τὸ κάλλος</seg>
+                  </ab>
+               </div>
+               <div type="commentary" subtype="commentary" xml:id="vat-gr-754-26-10"
+                  rendition="#top-of-the-page" rend="minuscule letters" change="commentaryfragments-only">
+                  <ab xml:lang="grc">
+                     <note type="lemma">Ps 26,4a</note>
+                     <seg type="commentaryfragment" xml:id="vat-gr-754-fr-26-14"
+                        rendition="#top-of-the-page" source="Didymus"
+                        corresp="#vat-gr-754-ps-26-4a"><quote type="patristic" subtype="quotation"
+                           xml:id="vat-gr-754-quot-26-14"
+                           source="fons ignotus; Tοῦτέστιν – με non habet Mühlenberg (252 M.)" 
+                           corresp="#person-18">Tοῦτέστιν μίαν χάριν ἡτησάμην παρὰ κυρίου· ποία δέ ἐστιν, εὐθέως ἐπάγει· τοῦ κατοικεν με:</quote></seg>   
+                     
+                     <seg type="commentaryfragment" xml:id="vat-gr-754-fr-26-15"
+                        rendition="#top-of-the-page" source="(Athanasius)"
+                        corresp="#vat-gr-754-ps-26-4a" copyOf="#edition:edition-26-30-26-4-1"><quote
+                           type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-26-15"
+                           source="Athanasius, exp. in Ps 26,4a" corresp="#person-2">Καὶ ἁγιοπρεποῦς ἡ αἴτησις γέγονεν. καὶ θεῶ δοῦναι ἀξία: –</quote>
+                        <note type="attribution" xml:lang="grc">ΟΔ΄</note></seg>
+                     
+                     <note type="lemma">Ps 26,4</note>
+                     <seg type="commentaryfragment" xml:id="vat-gr-754-fr-26-16"
+                        rendition="#top-of-the-page" source="Anonymous"
+                        corresp="#vat-gr-754-ps-26-4a"><quote
+                           type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-26-16"
+                           source="Apollinaris, fr. 8A in Ps 26,4 (5 Mühlenberg) " corresp="#person-74"/>
+                        <note type="attribution">No specific linking to the psalm text.</note></seg>
+                     
+                     <note type="lemma">Ps 26,4c (τερπνότητα)</note>
+                     <seg type="commentaryfragment" xml:id="vat-gr-754-fr-26-17"
+                        rendition="#left-column" source="Anonymous"
+                        corresp="#vat-gr-754-ps-26-4c"><quote
+                           type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-26-17"
+                           source="fons ignotus " corresp="#person-18">τούτεστιν εἰσέμαι καὶ ὁρὰν αὐτὸν ἀεί: –</quote>
+                       </seg>
+                     
+                     <seg type="commentaryfragment" xml:id="vat-gr-754-fr-26-18"
+                        rendition="#right-column" source="(Athanasius)"
+                        corresp="#vat-gr-754-ps-26-5a" copyOf="#edition:edition-26-30-26-5-1"><quote
+                           type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-26-18"
+                           source="Athanasius, exp. in Ps 26,5a" corresp="#person-2">Ἐνταῦθα φη(σὶν) εὔχομαι
+                           διαπαντὸς οἰκεῖν.
+                           ἐν ῆ καὶ τῆς σωτηρίας ἔτυχον: –</quote>
+                        <note type="attribution" xml:lang="grc">ΟΕ΄</note></seg>
+                     
+                  </ab>
+               </div>
+                     
                   <pb n="83v" facs="https://digi.vatlib.it/view/MSS_Vat.gr.754/83"/>
                   
+               <div type="bibletext" subtype="commented" xml:id="vat-gr-754-26-xx">
+               <quote type="bibletext"  n="Ps (LXX) 26,6" xml:lang="grc" xml:id="vat-gr-754-ps-26-6-2">
                   <anchor type="psalmtext" n="Ps (LXX) 26,6b" xml:id="vat-gr-754-ps-26-6b"/>Ἐκύκλωσα καὶ ἔθυσα ἐν
                   τῆ σκηνῆ αὐτοῦ: –
                   Θυσίαν αἰνέσεως καἰ [αἰνέσεως καἰ om. LXX Rahlfs] ἀλαλαγμοῦ:
                   <anchor type="psalmtext" n="Ps (LXX) 26,6c" xml:id="vat-gr-754-ps-26-6c"/>Ἄσω [ᾄσομαι LXX Rahlfs] καὶ ψαλῶ τὼ κυρίῶ: –</quote>
-               <quote type="bibletext"  n="Ps (LXX) 26,1" xml:lang="grc" xml:id="vat-gr-754-ps-26-7">
+               <quote type="bibletext"  n="Ps (LXX) 26,7" xml:lang="grc" xml:id="vat-gr-754-ps-26-7">
                   <anchor type="psalmtext" n="Ps (LXX) 26,7a" xml:id="vat-gr-754-ps-26-7a"/>Εἰσάκουσον κύριε τῆς φωνῆς
                   μου ἧς ἐκέκραξα: –
                   <anchor type="psalmtext" n="Ps (LXX) 26,7b" xml:id="vat-gr-754-ps-26-7b"/>Ἐλέησόν με καὶ εἰσάκουσόν μου:</quote>
-               <quote type="bibletext"  n="Ps (LXX) 26,1" xml:lang="grc" xml:id="vat-gr-754-ps-26-8">
+               <quote type="bibletext"  n="Ps (LXX) 26,8" xml:lang="grc" xml:id="vat-gr-754-ps-26-8">
                   <anchor type="psalmtext" n="Ps (LXX) 26,8a" xml:id="vat-gr-754-ps-26-8a"/>Σοὶ εἶπεν ἡ καρδία μου
                   κύριον ζητήσω [κύριον ζητήσω om. LXX Rahlfs]: –
                   Ἐξεζήτησέν σε [Ἐζήτησεν LXX Rahlfs] τὸ πρόσ<add place="above" hand="hand 1">ω</add>πόν μου:
                   <anchor type="psalmtext" n="Ps (LXX) 26,8b" xml:id="vat-gr-754-ps-26-8b"/>Τὸ πρόσωπόν σου κύριε ζητήσω:</quote>
-               <quote type="bibletext"  n="Ps (LXX) 26,1" xml:lang="grc" xml:id="vat-gr-754-ps-26-9">
+               <quote type="bibletext"  n="Ps (LXX) 26,9" xml:lang="grc" xml:id="vat-gr-754-ps-26-9">
                   <anchor type="psalmtext" n="Ps (LXX) 26,9a" xml:id="vat-gr-754-ps-26-9a"/>Μὴ ἀποστρέψης τὸ πρόσωπόν
                   σου ἀπ’ ἐμοῦ: –
                   <anchor type="psalmtext" n="Ps (LXX) 26,9b" xml:id="vat-gr-754-ps-26-9b"/>Καὶ [Καὶ om. LXX Rahlfs] μὴ ἐκκλίνῃς ἐν ὀργη
                   ἀπὸ τοῦ δούλου σου: –
-                  
+                         
                   <pb n="84r" facs="https://digi.vatlib.it/view/MSS_Vat.gr.754/83"/>
                   
                   <anchor type="psalmtext" n="Ps (LXX) 26,9c" xml:id="vat-gr-754-ps-26-9c"/>Βοηθός μου γενοῦ μὴ ἀποσκορακίσης με: –
                   <anchor type="psalmtext" n="Ps (LXX) 26,9d" xml:id="vat-gr-754-ps-26-9d"/>Καὶ μὴ ἐγκαταλίπης με ὁ θεὸς ὁ σωτήρ μου:</quote>
-               <quote type="bibletext"  n="Ps (LXX) 26,1" xml:lang="grc" xml:id="vat-gr-754-ps-26-10">
+               <quote type="bibletext"  n="Ps (LXX) 26,10" xml:lang="grc" xml:id="vat-gr-754-ps-26-10">
                   <anchor type="psalmtext" n="Ps (LXX) 26,10a" xml:id="vat-gr-754-ps-26-10a"/>Ὅτι ὁ πατήρ μου καὶ ἡ μήτηρ μου ἐγκατέλιπόν με: –
                   <anchor type="psalmtext" n="Ps (LXX) 26,10b" xml:id="vat-gr-754-ps-26-10b"/>Ὁ δὲ κύριος προσελάβετό με: –</quote>
-               <quote type="bibletext"  n="Ps (LXX) 26,1" xml:lang="grc" xml:id="vat-gr-754-ps-26-11">
+               <quote type="bibletext"  n="Ps (LXX) 26,11" xml:lang="grc" xml:id="vat-gr-754-ps-26-11">
                   <anchor type="psalmtext" n="Ps (LXX) 26,11a" xml:id="vat-gr-754-ps-26-11a"/>Νομοθέτησόν με κύριε ἐν [ἐν om. LXX Rahlfs] τῆ
                   ὁδῶ σου: –
                   <anchor type="psalmtext" n="Ps (LXX) 26,11b" xml:id="vat-gr-754-ps-26-11b"/>Καὶ ὁδήγησόν με ἐν τρίβω εὐθεί:
                   Ἕνεκα τῶν ἐχθρῶν μου</quote>
-               <quote type="bibletext"  n="Ps (LXX) 26,1" xml:lang="grc" xml:id="vat-gr-754-ps-26-12">
+               <quote type="bibletext"  n="Ps (LXX) 26,12" xml:lang="grc" xml:id="vat-gr-754-ps-26-12">
                   <anchor type="psalmtext" n="Ps (LXX) 26,12a" xml:id="vat-gr-754-ps-26-12a"/>μὴ παραδως με εἰς ψυχὰς
                   θλιβόντων με: –
                   <anchor type="psalmtext" n="Ps (LXX) 26,12b" xml:id="vat-gr-754-ps-26-12b"/>Ὅτι ἐπανέστησάν μοι μάρτυρες ἄδικοι: –
@@ -22742,10 +22846,10 @@
                   <pb n="84v" facs="https://digi.vatlib.it/view/MSS_Vat.gr.754/84"/>
                   
                   <anchor type="psalmtext" n="Ps (LXX) 26,12c" xml:id="vat-gr-754-ps-26-12c"/>Καὶ ἐψεύσατο ἡ ἀδικί<add place="above" hand="hand 1">α</add> ἑαυτη: –</quote>
-               <quote type="bibletext"  n="Ps (LXX) 26,1" xml:lang="grc" xml:id="vat-gr-754-ps-26-13">
+               <quote type="bibletext"  n="Ps (LXX) 26,13" xml:lang="grc" xml:id="vat-gr-754-ps-26-13">
                   <anchor type="psalmtext" n="Ps (LXX) 26,13a" xml:id="vat-gr-754-ps-26-13a"/>Πιστεύω τοῦ ἰδεῖν τὰ ἀγαθὰ
                   κυρίου ἐν γη ζώντων: –</quote>
-               <quote type="bibletext"  n="Ps (LXX) 26,1" xml:lang="grc" xml:id="vat-gr-754-ps-26-14">
+               <quote type="bibletext"  n="Ps (LXX) 26,14" xml:lang="grc" xml:id="vat-gr-754-ps-26-14">
                   <anchor type="psalmtext" n="Ps (LXX) 26,14a" xml:id="vat-gr-754-ps-26-14a"/>Ὑπόμεινον τὸν κύριον: –
                   <anchor type="psalmtext" n="Ps (LXX) 26,14b" xml:id="vat-gr-754-ps-26-14b"/>Ἀνδρίζου καὶ κραταιούσθω ἡ
                   καρδία σου
@@ -22759,7 +22863,7 @@
             
          </div>
          </div>
-      </body>
+            </body>
    </text>
 </TEI>
 <!-- faciendum: Ps 7-10: Lemmata zu überprüfen -->
