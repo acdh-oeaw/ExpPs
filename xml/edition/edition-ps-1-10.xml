@@ -37610,8 +37610,9 @@
                      <quote type="psalmtext" xml:id="edition-ps-21-17-1" n="17a">ὅτι ἐκύκλωσάν με
                         κύνες πολλοί,</quote>
                   </div>
-                  <div type="commentary">
-                     <p xml:id="edition-21-17-1" n="351">Πάλιν τοὺς ἄρχοντας σημαίνει: –</p>
+                  <div type="commentary" rend="parallel">
+                     <p xml:id="edition-21-17-1" n="351" next="#edition-21-17-1-1">Πάλιν τοὺς
+                        ἄρχοντας σημαίνει: –</p>
                      <div type="links">
                         <p><listRef>
                               <ref target="#vat-gr-754:vat-gr-754-fr-21-31"/>
@@ -37624,7 +37625,7 @@
                            </listRef></p>
                      </div>
                   </div>
-                  <div type="textcritic">
+                  <div type="textcritic" rend="hide">
                      <app type="fragment">
                         <rdg wit="#V1 #C #P1 #P5 #P2 #B1 #P6 #Z #N2">txt</rdg>
                         <wit>Vat. gr. 754</wit>
@@ -37638,6 +37639,10 @@
                         <wit>Athen. B.N. 45</wit>
                      </app>
                      <app type="text">
+                        <lem><foreign xml:lang="grc">Πάλιν – σημαίνει</foreign></lem>
+                        <rdg wit="#G"><foreign xml:lang="grc"/></rdg>
+                     </app>
+                     <app type="text">
                         <lem><foreign xml:lang="grc">σημαίνει</foreign></lem>
                         <rdg wit="#P2corr">post <foreign xml:lang="grc"> σημαίνει</foreign>
                               add.<foreign xml:lang="grc"> τῶν ἰουδαίων</foreign></rdg>
@@ -37647,12 +37652,34 @@
                      <quote type="psalmtext" xml:id="edition-ps-21-17-2" n="17b">συναγωγὴ
                         πονηρευομένων περιέσχον με,</quote>
                   </div>
+                  <div type="commentary" rend="hide">
+                     <p xml:id="edition-21-17-1-1" n="351">[Πάλιν μόσχους, τοὺς ἄ]ρχ[ο]ντας
+                        [σημαίνει(?)]· [πονηρ]ε[υομ]ένων δὲ [κατὰ Χριστοῦ(?)] [τ]ῶν [ἰου]δ[α]ίων: – </p>
+                     <div type="links">
+                        <p><listRef>
+                              <ref target="#franzon-3-fr-21-11"/>
+                           </listRef></p>
+                     </div>
+                  </div>
+                  <div type="textcritic" rend="hide">
+                     <app type="fragment">
+                        <rdg wit="#G">txt</rdg>
+                        <wit>Urbani 3</wit>
+                     </app>
+                     <note type="textual-commentary">G: Diese Fassung scheint aus exp. 351 und 352
+                        (dubium) zusammengesetzt zu sein. Der Verfasser stand noch unter dem
+                        Einfluss von exp. 344 zu Ps 21,13, die kurz zuvor abgeschrieben worden war
+                        und fast identisch mit exp. 351 ist. In der Tat würde man hier nicht
+                           <foreign xml:lang="grc">μόσχους </foreign>(vgl. Ps 21,13a) erwarten,
+                        sondern <foreign xml:lang="grc">κύνας</foreign>.</note>
+                  </div>
                   <!-- cave: B2: Ist die Erklärung zu Ps 21,17b dieselbe wie die folgende? -->
                   <div type="commentary" subtype="dubium">
                      <p xml:id="edition-21-17-2" n="352">Τοὺς ἰουδαίους λέγει: –</p>
                      <div type="links">
                         <p><listRef>
                               <ref target="#vat-gr-754:vat-gr-754-fr-21-36"/>
+                              <ref target="#franzon-3:franzon-3-fr-21-11"/>
                               <ref target="#coislin-187:coislin-187-fr-21-16"/>
                               <ref target="#oxon-s-trin-78:oxon-s-trin-78-fr-21-18"/>
                               <ref target="#plut-5-30:plut-5-30-fr-21-36"/>
@@ -37661,8 +37688,9 @@
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #P2 #B2 #L1">txt</rdg>
+                        <rdg wit="#V1 #G #P2 #B2 #L1">txt</rdg>
                         <wit>Vat. gr. 754</wit>
+                        <wit>Urbani 3</wit>
                         <wit>Coislin 187</wit>
                         <wit>S. Trin. 78</wit>
                         <wit>Plut. 5.30</wit>
@@ -37677,16 +37705,16 @@
                         gezählt zu werden, wie es bei Expositiones der Fall ist. In P2 befindet sich
                         das Dubium dort, wo hauptsächlich Expositiones verwendet werden, d.h. im
                         Haupttext (erste Hand) und nicht in den Rändern. Diese Tatsache legt nahe,
-                        dass es sich um eine Expositio handeln könnte. Siehe auch das folgende
-                        Dubium. L1: Eine fast identische Erklärung findet sich auch hier nach Ps
-                        21,17b (<foreign xml:lang="grc">Tοὺς αὐτοὺς ἰουδαίους λέγει</foreign>). Da
-                        die Lemmata zunächst mit den Scholia des Hesychius erklärt werden, ist es
-                        wahrscheinlich, dass es sich auch hier um ein Scholion handelt. In
-                        Antonellis Ausgabe (PG 27,724) gibt es jedoch keine Entsprechung: schol. nr.
-                        32,33 betrifft nur Ps 21,17a. Die Tatsache, dass bereits Ps 21,16a fast
-                        identisch erklärt wird, ist vielleicht ein Hinweis auf eine Störung (schol.
-                        nr. 29 in Ps 21,16a [Antonelli; PG 27,724]: <foreign xml:lang="grc">Tοὺς
-                           ἰουδαίους λέγει</foreign>).</note>
+                        dass es sich um eine Expositio handeln könnte. Siehe auch die vorherige
+                        Expositio (G) und das folgende Dubium. L1: Eine fast identische Erklärung
+                        findet sich auch hier nach Ps 21,17b (<foreign xml:lang="grc">Tοὺς αὐτοὺς
+                           ἰουδαίους λέγει</foreign>). Da die Lemmata zunächst mit den Scholia des
+                        Hesychius erklärt werden, ist es wahrscheinlich, dass es sich auch hier um
+                        ein Scholion handelt. In Antonellis Ausgabe (PG 27,724) gibt es jedoch keine
+                        Entsprechung: schol. nr. 32,33 betrifft nur Ps 21,17a. Die Tatsache, dass
+                        bereits Ps 21,16a fast identisch erklärt wird, ist vielleicht ein Hinweis
+                        auf eine Störung (schol. nr. 29 in Ps 21,16a [Antonelli; PG 27,724]:
+                           <foreign xml:lang="grc">Tοὺς ἰουδαίους λέγει</foreign>).</note>
                   </div>
                   <div type="commentary" subtype="dubium">
                      <p xml:id="edition-21-17-2-1" n="351–352">Πάλιν κύνας, τοὺς τοῦ Π[ι]λάτου
@@ -37719,6 +37747,8 @@
                   <quote type="psalmtext" corresp="#edition-ps-21-17-2" n="17b">die Versammlung der
                      Übeltäter hat mich umgeben,</quote>
                   <p corresp="#edition-21-17-1" n="351">Er bezeichnet wieder die Herrscher.</p>
+                  <p corresp="#edition-21-17-1-1" n="351">Wieder (bezeichnet?) er die Herrscher der
+                     Juden als Jungstiere, weil die Juden Übeltäter (gegen Christus?) waren.</p>
                   <p corresp="#edition-21-17-2" n="352">Er meint die Juden.</p>
                   <p corresp="#edition-21-17-2-1" n="351–352">Wieder nennt er die Soldaten des
                      Pilatus Hunde. Denn die Soldaten, die Römer und Heiden waren, haben ihn
@@ -38475,7 +38505,6 @@
                      <quote type="psalmtext" xml:id="edition-ps-21-24-1" n="24a">Οἱ φοβούμενοι
                         κύριον, αἰνέσατε αὐτόν,</quote>
                   </div>
-                  <!-- cave: exp. 360 und 361 verbunden (V1 C B1) versus P5 P2 A1 -->
                   <div type="commentary" rend="parallel">
                      <p xml:id="edition-21-24-1" n="360" next="#edition-21-24-1-1">Πάλιν ὡς
                         ἄνθρωπος· ἢ ὅτι διὰ τῆς ἐκκλησίας: –</p>
@@ -38607,8 +38636,9 @@
                         <wit>Ambr. C 98 sup.</wit>
                      </app>
                      <note type="textual-commentary">P1: Ps 21,24 wird mit Theodoret (comm. in Ps
-                        21,24 [PG 80,1020 B11–C5]) erklärt (anonym), und nicht mit exp. 361.
-                        Montfaucon: Die Erklärung Theodorets wird als Expositio ediert.</note>
+                        21,24 [PG 80,1020 B11–C5]) erklärt (anonym), und nicht mit exp. 361. P5:
+                        exp. 361 neben Ps 21,24b am äußeren Rand geschrieben. Montfaucon: Die
+                        Erklärung Theodorets wird als Expositio ediert.</note>
                   </div>
                   <div type="commentary">
                      <p xml:id="edition-21-24-2-1" n="360–361">Καὶ τοῦτο πάλιν ὡς ἄνθρωπος· τοὺς γὰρ
@@ -39939,14 +39969,14 @@
                         Δαυΐδ.</quote>
                   </div>
                   <div type="commentary">
-                     <p xml:id="edition-22-1-1" n="373" ana="hypothesis">ᾌδεται ὁ προκείμενος ψαλμὸς
-                        ἐκ προσώπου τῶν ἐθνῶν ἀγαλλομένων ἐπὶ τὸ ποιμᾶναι αὐτοὺς τὸν κύριον· καὶ μὴν
-                        καὶ τὴν μυστικὴν ἐξηγοῦνται εὐωδίαν, ἣν παρέθηκεν αὐτὸς ὁ ποιμαίνων αὐτούς:
-                        –</p>
+                     <p xml:id="edition-22-1-1" n="373" ana="hypothesis">Ἄδεται ὁ προκείμενος
+                        ψαλμὸς, ἐκ προσώπου τῶν ἐθνῶν ἀγαλλομένων ἐπὶ τὸ ποιμᾶναι αὐτοὺς τὸν κύριον·
+                        καὶ μὴν καὶ τὴν μυστικὴν ἐξηγοῦνται εὐωδίαν, ἣν παρέθηκεν αὐτὸς ὁ ποιμαίνων
+                        αὐτούς: –</p>
                      <div type="links">
                         <p>
                            <listRef>
-                              <ref target="#vat-gr-754:"/>
+                              <ref target="#vat-gr-754:vat-gr-754-fr-22-3"/>
                            </listRef>
                         </p>
                      </div>
@@ -39962,12 +39992,12 @@
                         καὶ οὐδέν με ὑστερήσει.</quote>
                   </div>
                   <div type="commentary">
-                     <p xml:id="edition-22-1-2" n="374">Μέγα ἐπὶ τῷ κυρίῳ φρονοῦσιν οἱ παρ᾿ αὐτοῦ
+                     <p xml:id="edition-22-1-2" n="374">Μέγα ἐπὶ τῷ κυρίῳ φρονοῦσιν, οἱ παρ᾿ αὐτοῦ
                         ποιμαινόμενοι: –</p>
                      <div type="links">
                         <p>
                            <listRef>
-                              <ref target="#vat-gr-754:"/>
+                              <ref target="#vat-gr-754:vat-gr-754-fr-22-4"/>
                            </listRef>
                         </p>
                      </div>
@@ -39988,7 +40018,7 @@
                      weidet.</p>
                   <quote type="psalmtext" corresp="#edition-ps-22-1-2" n="1b">Der Herr weidet mich,
                      und nichts wird mir mangeln.</quote>
-                  <p corresp="#edition-ps-22-1-2" n="374">Hoch im Herrn dünken sich die, die von ihm
+                  <p corresp="#edition-22-1-2" n="374">Hoch im Herrn dünken sich die, die von ihm
                      geweidet weiden.</p>
                </div>
             </div>
@@ -40004,7 +40034,7 @@
                      <div type="links">
                         <p>
                            <listRef>
-                              <ref target="#vat-gr-754:"/>
+                              <ref target="#vat-gr-754:vat-gr-754-fr-22-1"/>
                            </listRef>
                         </p>
                      </div>
@@ -40020,12 +40050,12 @@
                         ἐξέθρεψέν με,</quote>
                   </div>
                   <div type="commentary">
-                     <p xml:id="edition-22-2-2" n="376">Ὕδωρ ἀναπαύσεως νοηθείη ἂν τὸ τοῦ ἁγίου
-                        βαπτίσματος, ἅτε δὴ τὸ φορτίον ἐξαλείφων τῶν ἁμαρτημάτων: –</p>
+                     <p xml:id="edition-22-2-2" n="376">Ὕδωρ ἀναπαύσεως νοηθείη ἂν, τὸ τοῦ ἁγίου
+                        βαπτίσματος· ἅτε δὴ τὸ φορτίον ἐξαλείφων τῶν ἁμαρτημάτων: –</p>
                      <div type="links">
                         <p>
                            <listRef>
-                              <ref target="#vat-gr-754:"/>
+                              <ref target="#vat-gr-754:vat-gr-754-fr-22-7"/>
                            </listRef>
                         </p>
                      </div>
@@ -40040,7 +40070,7 @@
                <div type="translation" xml:lang="de">
                   <quote type="psalmtext" corresp="#edition-ps-22-2-1" n="2a">Am Ort frischen Grüns,
                      dort ließ er mich lagern,</quote>
-                  <p corresp="#edition-22-2-1" n="375"/>
+                  <p corresp="#edition-22-2-1" n="375">Die Taufe nennt er das geistige Gras.</p>
                   <quote type="psalmtext" corresp="#edition-ps-22-2-2" n="2b">am ruhigen Wasser zog
                      er mich auf.</quote>
                   <p corresp="#edition-22-2-2" n="376">Unter erquickendem Wasser wird wohl das der
@@ -40059,7 +40089,7 @@
                      <div type="links">
                         <p>
                            <listRef>
-                              <ref target="#vat-gr-754:"/>
+                              <ref target="#vat-gr-754:vat-gr-754-fr-22-2"/>
                            </listRef>
                         </p>
                      </div>
@@ -40079,7 +40109,7 @@
                      <div type="links">
                         <p>
                            <listRef>
-                              <ref target="#vat-gr-754:"/>
+                              <ref target="#vat-gr-754:vat-gr-754-fr-22-9"/>
                            </listRef>
                         </p>
                      </div>
@@ -40098,10 +40128,10 @@
                <div type="translation">
                   <quote type="psalmtext" corresp="#edition-ps-22-3-1" n="3a">Meine Seele ließ er
                      umkehren.</quote>
-                  <p corresp="#edition-22-3-1" n="377"/>
+                  <p corresp="#edition-22-3-1" n="377">Vom Tod zum Leben.</p>
                   <quote type="psalmtext" corresp="#edition-ps-22-3-2" n="3b">Er führte mich auf die
                      Pfade der Gerechtigkeit</quote>
-                  <p corresp="#edition-22-3-2" n="378"/>
+                  <p corresp="#edition-22-3-2" n="378">Er meint die Lehren des Evangeliums. </p>
                   <quote type="psalmtext" corresp="#edition-ps-22-3-3" n="3c">um seines Namens
                      willen.</quote>
                </div>
@@ -40134,101 +40164,101 @@
                         <wit>Vat. gr. 754</wit>
                      </app>
                   </div>
-                  <div type="translation" xml:lang="de">
-                     <quote type="psalmtext" corresp="#edition-ps-22-4-1" n="4a">Denn wenn ich auch
-                        wandle inmitten des Todesschattens,</quote>
-                     <quote type="psalmtext" corresp="#edition-ps-22-4-2" n="4b">werde ich Böses
-                        nicht fürchten, denn du bist mit mir.</quote>
-                     <quote type="psalmtext" corresp="#edition-ps-22-4-3" n="4c">Dein Stab und dein
-                        Stock, sie haben mich getröstet.</quote>
-                     <p corresp="#edition-22-4-1" n="380">Er meint Christus selbst. Ebenso: „Eine
-                        Rute der Macht wird Dir der Herr senden aus Sion,“ und „eine sehr rühmliche
-                        Rute und eine sehr große Rute.“</p>
+               </div>
+               <div type="translation" xml:lang="de">
+                  <quote type="psalmtext" corresp="#edition-ps-22-4-1" n="4a">Denn wenn ich auch
+                     wandle inmitten des Todesschattens,</quote>
+                  <quote type="psalmtext" corresp="#edition-ps-22-4-2" n="4b">werde ich Böses nicht
+                     fürchten, denn du bist mit mir.</quote>
+                  <quote type="psalmtext" corresp="#edition-ps-22-4-3" n="4c">Dein Stab und dein
+                     Stock, sie haben mich getröstet.</quote>
+                  <p corresp="#edition-22-4-1" n="380">Er meint Christus selbst. Ebenso: „Eine Rute
+                     der Macht wird Dir der Herr senden aus Sion,“ und „eine sehr rühmliche Rute und
+                     eine sehr große Rute.“</p>
+               </div>
+            </div>
+            <div type="psalmverse" n="22.5">
+               <div type="text" xml:lang="grc">
+                  <div type="psalmtext">
+                     <quote type="psalmtext" xml:id="edition-ps-22-5-1" n="5a"> ἡτοίμασας ἐνώπιόν
+                        μου τράπεζαν ἐξ ἐναντίας τῶν θλιβόντων με· </quote>
+                     <quote type="psalmtext" xml:id="edition-ps-22-5-2" n="5b"> ἐλίπανας ἐν ἐλαίῳ
+                        τὴν κεφαλήν μου, </quote>
+                  </div>
+                  <div type="commentary">
+                     <p xml:id="edition-22-5-1" n="374">Καὶ τοῦτο τὸ χρίσμα μυστικόν: –</p>
+                     <div type="links">
+                        <p>
+                           <listRef>
+                              <ref target="#vat-gr-754:"/>
+                           </listRef>
+                        </p>
+                     </div>
+                  </div>
+                  <div type="textcritic">
+                     <app type="fragment">
+                        <rdg wit="#V1">txt</rdg>
+                        <wit>Vat. gr. 754</wit>
+                     </app>
+                  </div>
+                  <div type="psalmtext">
+                     <quote type="psalmtext" xml:id="edition-ps-22-5-3" n="5c"> καὶ τὸ ποτήριόν σου
+                        μεθύσκον ὡς κράτιστον. </quote>
+                  </div>
+                  <div type="commentary">
+                     <p xml:id="edition-22-5-2" n="375">Πάλιν τὴν μυστικὴν εὐφροσύνην: -</p>
+                     <div type="links">
+                        <p>
+                           <listRef>
+                              <ref target="#vat-gr-754:"/>
+                           </listRef>
+                        </p>
+                     </div>
+                  </div>
+                  <div type="textcritic">
+                     <app type="fragment">
+                        <rdg wit="#V1">txt</rdg>
+                        <wit>Vat. gr. 754</wit>
+                     </app>
                   </div>
                </div>
-               <div type="psalmverse" n="22.5">
-                  <div type="text" xml:lang="grc">
-                     <div type="psalmtext">
-                        <quote type="psalmtext" xml:id="edition-ps-22-5-1" n="5a"> ἡτοίμασας ἐνώπιόν
-                           μου τράπεζαν ἐξ ἐναντίας τῶν θλιβόντων με· </quote>
-                        <quote type="psalmtext" xml:id="edition-ps-22-5-2" n="5b"> ἐλίπανας ἐν ἐλαίῳ
-                           τὴν κεφαλήν μου, </quote>
-                     </div>
-                     <div type="commentary">
-                        <p xml:id="edition-22-5-1" n="374">Καὶ τοῦτο τὸ χρίσμα μυστικόν: –</p>
-                        <div type="links">
-                           <p>
-                              <listRef>
-                                 <ref target="#vat-gr-754:"/>
-                              </listRef>
-                           </p>
-                        </div>
-                     </div>
-                     <div type="textcritic">
-                        <app type="fragment">
-                           <rdg wit="#V1">txt</rdg>
-                           <wit>Vat. gr. 754</wit>
-                        </app>
-                     </div>
-                     <div type="psalmtext">
-                        <quote type="psalmtext" xml:id="edition-ps-22-5-3" n="5c"> καὶ τὸ ποτήριόν
-                           σου μεθύσκον ὡς κράτιστον. </quote>
-                     </div>
-                     <div type="commentary">
-                        <p xml:id="edition-22-5-2" n="375">Πάλιν τὴν μυστικὴν εὐφροσύνην: -</p>
-                        <div type="links">
-                           <p>
-                              <listRef>
-                                 <ref target="#vat-gr-754:"/>
-                              </listRef>
-                           </p>
-                        </div>
-                     </div>
-                     <div type="textcritic">
-                        <app type="fragment">
-                           <rdg wit="#V1">txt</rdg>
-                           <wit>Vat. gr. 754</wit>
-                        </app>
-                     </div>
-                  </div>
-                  <div type="translation" xml:lang="de">
-                     <quote type="psalmtext" corresp="#edition-ps-22-5-1" n="5a">Du hast vor mir
-                        einen Tische bereitet, meinen Bedrängern gegenüber;</quote>
-                     <quote type="psalmtext" corresp="#edition-ps-22-5-2" n="5b">du hast mit Öl mein
-                        Haupt gesalbt,</quote>
-                     <p corresp="#edition-22-5-1" n="374">Das bedeutet die mystische Salbung.</p>
-                     <quote type="psalmtext" corresp="#edition-ps-22-5-3" n="5c">und dein Becher
-                        machte trunken wie der stärkste Trank.</quote>
-                     <p corresp="#edition-22-5-2" n="375">Er redet wieder von der mystischen
-                        Freude.</p>
-                  </div>
+               <div type="translation" xml:lang="de">
+                  <quote type="psalmtext" corresp="#edition-ps-22-5-1" n="5a">Du hast vor mir einen
+                     Tische bereitet, meinen Bedrängern gegenüber;</quote>
+                  <quote type="psalmtext" corresp="#edition-ps-22-5-2" n="5b">du hast mit Öl mein
+                     Haupt gesalbt,</quote>
+                  <p corresp="#edition-22-5-1" n="374">Das bedeutet die mystische Salbung.</p>
+                  <quote type="psalmtext" corresp="#edition-ps-22-5-3" n="5c">und dein Becher machte
+                     trunken wie der stärkste Trank.</quote>
+                  <p corresp="#edition-22-5-2" n="375">Er redet wieder von der mystischen
+                     Freude.</p>
                </div>
-               <div type="psalmverse" n="22.6">
-                  <div type="text" xml:lang="grc">
-                     <div type="psalmtext">
-                        <quote type="psalmtext" xml:id="edition-ps-22-6-1" n="6a"> καὶ τὸ ἔλεός σου
-                           καταδιώξεταί με πάσας τὰς ἡμέρας τῆς ζωῆς μου, </quote>
-                        <quote type="psalmtext" xml:id="edition-ps-22-6-2" n="6b"> καὶ τὸ κατοικεῖν
-                           με ἐν οἴκῳ κυρίου εἰς μακρότητα ἡμερῶν. </quote>
+            </div>
+            <div type="psalmverse" n="22.6">
+               <div type="text" xml:lang="grc">
+                  <div type="psalmtext">
+                     <quote type="psalmtext" xml:id="edition-ps-22-6-1" n="6a"> καὶ τὸ ἔλεός σου
+                        καταδιώξεταί με πάσας τὰς ἡμέρας τῆς ζωῆς μου, </quote>
+                     <quote type="psalmtext" xml:id="edition-ps-22-6-2" n="6b"> καὶ τὸ κατοικεῖν με
+                        ἐν οἴκῳ κυρίου εἰς μακρότητα ἡμερῶν. </quote>
+                  </div>
+                  <div type="commentary">
+                     <p xml:id="edition-22-6-1" n="376">Οἱ γὰρ τῶν προλεχθέντων ἁπάντων μεταλαβόντες
+                        ἔσονται διὰ παντὸς ἐν τῷ ἐλέει τοῦ Θεοῦ· καὶ μὴν καὶ κατασκηνώσουσιν ἐν τῶ
+                        οἴκῳ αὐτοῦ: -</p>
+                     <div type="links">
+                        <p>
+                           <listRef>
+                              <ref target="#vat-gr-754:"/>
+                           </listRef>
+                        </p>
                      </div>
-                     <div type="commentary">
-                        <p xml:id="edition-22-6-1" n="376">Οἱ γὰρ τῶν προλεχθέντων ἁπάντων
-                           μεταλαβόντες ἔσονται διὰ παντὸς ἐν τῷ ἐλέει τοῦ Θεοῦ· καὶ μὴν καὶ
-                           κατασκηνώσουσιν ἐν τῶ οἴκῳ αὐτοῦ: -</p>
-                        <div type="links">
-                           <p>
-                              <listRef>
-                                 <ref target="#vat-gr-754:"/>
-                              </listRef>
-                           </p>
-                        </div>
-                     </div>
-                     <div type="textcritic">
-                        <app type="fragment">
-                           <rdg wit="#V1">txt</rdg>
-                           <wit>Vat. gr. 754</wit>
-                        </app>
-                     </div>
+                  </div>
+                  <div type="textcritic">
+                     <app type="fragment">
+                        <rdg wit="#V1">txt</rdg>
+                        <wit>Vat. gr. 754</wit>
+                     </app>
                   </div>
                </div>
                <div type="translation" xml:lang="de">
@@ -40241,9 +40271,9 @@
                      wohnen.</p>
                </div>
             </div>
-            <!-- ps 23 commentary -->
-            <!-- ps 23 commentary -->
          </div>
+         <!-- ps 23 commentary -->
+         <!-- ps 23 commentary -->
       </body>
    </text>
    <!-- Ps XXX: -->
