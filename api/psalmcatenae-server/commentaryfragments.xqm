@@ -130,8 +130,8 @@ declare
     %rest:query-param("author", "{$author}", '')
     %rest:query-param("author-critical", "{$author-critical}", '')
     %rest:query-param("reference", "{$reference}", '')
-    %rest:query-param("reference-from", "{$reference-from}",'')
-    %rest:query-param("reference-to", "{$reference-to}",'')
+    %rest:query-param("reference-from", "{$reference-from}","empty")
+    %rest:query-param("reference-to", "{$reference-to}","empty")
     %rest:produces('application/hal+json')
 function commentaryfragments:get-list-of-commentaryfragments-from-manuscript-search($manuscript-name as xs:string,$author as xs:string,$author-critical as xs:string,$reference as xs:string,$reference-from as xs:string,$reference-to as xs:string){
   let $origin := try { request:header("Origin") } catch basex:http {'urn:local'}
