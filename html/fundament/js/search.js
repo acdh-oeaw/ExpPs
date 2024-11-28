@@ -173,6 +173,22 @@ function jsonClient(){
 				let optionReferenceAsObject = $(optionReferenceAsText);
 				$("#psalmverse-form-commentaryfragments").append(optionReferenceAsObject);
 			}
+			$("#psalmverse-from-value-form-commentaryfragments").empty();
+			$("#psalmverse-from-value-form-commentaryfragments").append($("<option value='empty'>empty</option>"));
+			for (let n = 0; n < references._embedded.references.length; n++){
+				let reference = references._embedded.references[n]["psalmverse"];
+				let optionReferenceAsText = "<option value='" + reference + "'>" + reference + "</option>";
+				let optionReferenceAsObject = $(optionReferenceAsText);
+				$("#psalmverse-from-value-form-commentaryfragments").append(optionReferenceAsObject);
+			}
+			$("#psalmverse-to-value-form-commentaryfragments").empty();
+			$("#psalmverse-to-value-form-commentaryfragments").append($("<option value='empty'>empty</option>"));
+			for (let n = 0; n < references._embedded.references.length; n++){
+				let reference = references._embedded.references[n]["psalmverse"];
+				let optionReferenceAsText = "<option value='" + reference + "'>" + reference + "</option>";
+				let optionReferenceAsObject = $(optionReferenceAsText);
+				$("#psalmverse-to-value-form-commentaryfragments").append(optionReferenceAsObject);
+			}
 		})
 		.catch(function(error){ console.log(error); });
 	}
@@ -562,6 +578,9 @@ function jsonClient(){
 		let attributionFieldValue = document.getElementById("input-attribution-form-commentaryfragments").value;
 		let authorCriticalFieldValue = document.getElementById("input-author-critical-form-commentaryfragments").value;
 		let psalmverseFieldValue = document.getElementById("psalmverse-form-commentaryfragments").value;
+		let isRangeEnabled = document.getElementById("enable-psalmverse-range-commentaryfragments").checked;
+		let psalmverseFromValue = document.getElementById("psalmverse-from-value-form-commentaryfragments").value;
+		let psalmverseToValue = document.getElementById("psalmverse-to-value-form-commentaryfragments").value;
 		if (attributionFieldValue != "empty"){
 			url = url + "?author=" + attributionFieldValue;
 		}
@@ -573,12 +592,24 @@ function jsonClient(){
 				url = url + "&author-critical=" + authorCriticalFieldValue;
 			}
 		}
-		if (psalmverseFieldValue != "empty"){
-			if (attributionFieldValue === "empty" && authorCriticalFieldValue === "empty"){
-				url = url + "?reference=" + psalmverseFieldValue;
+		if (isRangeEnabled){
+			if ((psalmverseFromValue != "empty") || (psalmverseToValue != "empty")){
+				if (attributionFieldValue === "empty" && authorCriticalFieldValue === "empty"){
+					url = url + "?reference-from=" + psalmverseFromValue + "&reference-to=" + psalmverseToValue;
+				}
+				else {
+					url = url + "&reference-from=" + psalmverseFromValue + "&reference-to=" + psalmverseToValue;
+				}
 			}
-			else{
-				url = url + "&reference=" + psalmverseFieldValue;
+		}
+		else {
+			if (psalmverseFieldValue != "empty"){
+				if (attributionFieldValue === "empty" && authorCriticalFieldValue === "empty"){
+					url = url + "?reference=" + psalmverseFieldValue;
+				}
+				else{
+					url = url + "&reference=" + psalmverseFieldValue;
+				}
 			}
 		}
 		request(url,"get");
