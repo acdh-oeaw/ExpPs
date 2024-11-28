@@ -130,8 +130,10 @@ declare
     %rest:query-param("author", "{$author}", '')
     %rest:query-param("author-critical", "{$author-critical}", '')
     %rest:query-param("reference", "{$reference}", '')
+    %rest:query-param("reference-from", "{$reference-from}",'')
+    %rest:query-param("reference-to", "{$reference-to}",'')
     %rest:produces('application/hal+json')
-function commentaryfragments:get-list-of-commentaryfragments-from-manuscript-search($manuscript-name as xs:string,$author as xs:string,$author-critical as xs:string,$reference as xs:string){
+function commentaryfragments:get-list-of-commentaryfragments-from-manuscript-search($manuscript-name as xs:string,$author as xs:string,$author-critical as xs:string,$reference as xs:string,$reference-from as xs:string,$reference-to as xs:string){
   let $origin := try { request:header("Origin") } catch basex:http {'urn:local'}
   let $manuscript := switch ($manuscript-name)
     case 'vat-gr-754' return 'vat-gr-754-transcription.xml'
@@ -152,6 +154,9 @@ function commentaryfragments:get-list-of-commentaryfragments-from-manuscript-sea
     case 'vat-gr-1422' return 'vat-gr-1422-transcription.xml'
     default return error(xs:QName('response-codes:_404'),'Wrong manuscript name in path')
     let $path := "/psalmcatenae-manuscripts/" || ``[`{$manuscript}`]``
+    let $reference-from-prepared := commentaryfragments:prepare-reference-from($path,$reference-from)
+    let $reference-to-prepared := commentaryfragments:prepare-reference-to($path,$reference-to)
+    let $references-in-range := commentaryfragments:get-references-in-range($path,$reference-from-prepared,$reference-to-prepared)
     let $commentaryfragments-result-fragment := for $commentaryfragment in doc($path)//tei:seg[(@type = 'commentaryfragment') or (@type = 'hypothesis')] 
        let $author-from-source := $commentaryfragment/@source
        let $author-critical-from-source := substring-after($commentaryfragment/child::tei:quote[@type = 'patristic']/@corresp,'#')
@@ -161,12 +166,13 @@ function commentaryfragments:get-list-of-commentaryfragments-from-manuscript-sea
          where $psalmtext/@n = $reference
          return $psalmtext/child::tei:anchor[@type = 'psalmtext']/@xml:id
        where 
-         if ($author != '') then if ($author-critical != '') then if ($reference != '') then ($author-from-source = $author) and ($author-critical-from-source = $author-critical-id) and ($reference-of-commentaryfragment = $references-from-source) 
-                                                                  else ($author-from-source = $author) and ($author-critical-from-source = $author-critical-id) 
-                                 else if ($reference != '') then ($reference-of-commentaryfragment = $references-from-source) and ($author-from-source = $author)         else ($author-from-source = $author) 
+         if ($author != '') then if ($author-critical != '') then if ($reference != '') then ($author-from-source = $author) and ($author-critical-from-source = $author-critical-id) and ($reference-of-commentaryfragment = $references-from-source)
+         else ($author-from-source = $author) and ($author-critical-from-source = $author-critical-id) and ($reference-of-commentaryfragment = $references-in-range)
+         else if ($reference != '') then ($reference-of-commentaryfragment = $references-from-source) and ($author-from-source = $author)
+         else ($author-from-source = $author) and ($reference-of-commentaryfragment = $references-in-range)
          else if ($author-critical != '') then if ($reference != '') then ($author-critical-from-source = $author-critical-id) and ($reference-of-commentaryfragment = $references-from-source) 
-                                               else ($author-critical-from-source = $author-critical-id)
-              else if ($reference != '') then ($reference-of-commentaryfragment = $references-from-source) else (1 = 1) 
+         else ($author-critical-from-source = $author-critical-id) and ($reference-of-commentaryfragment = $references-in-range)
+         else if ($reference != '') then ($reference-of-commentaryfragment = $references-from-source) else ($reference-of-commentaryfragment = $references-in-range)
        return "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/manuscripts/" || $manuscript-name || "/commentaryfragments/" || $commentaryfragment/@xml:id || """}}, ""attribution"" : """ || $commentaryfragment/@source ||""", ""author-critical"" : """ || $commentaryfragment/child::tei:quote[@type = 'patristic']/@source || """}"
     let $commentaryfragments-as-json-result-fragment := string-join($commentaryfragments-result-fragment,',')
     let $commentaryfragments-as-json := "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/manuscripts/" || $manuscript-name || "/commentaryfragments/search"" }}, ""_embedded"" : { ""commentaryfragments"" : [" || $commentaryfragments-as-json-result-fragment || "]}}"
@@ -180,7 +186,60 @@ function commentaryfragments:get-list-of-commentaryfragments-from-manuscript-sea
     </http:response>
   </rest:response>,``[`{$commentaryfragments-as-json}`]``)
   };
-  
+
+declare %private function commentaryfragments:get-references-in-range($path as xs:string,$psalmverse-from as xs:string,$psalmverse-to as xs:string){
+  let $references-in-range := for $psalmtext in doc($path)//tei:quote[@type = 'bibletext']
+    where commentaryfragments:is-psalmverse-in-range(substring-after($psalmtext/@n,'Ps (LXX) '),$psalmverse-from,$psalmverse-to)
+    return $psalmtext/child::tei:anchor[@type = 'psalmtext']/@xml:id
+  return $references-in-range
+};
+
+declare %private function commentaryfragments:prepare-reference-from($path as xs:string,$psalmverse-from as xs:string){
+  let $result := if ($psalmverse-from = 'empty') then (commentaryfragments:get-min-value-for-reference($path))
+    else (substring-after($psalmverse-from,'Ps (LXX) '))
+  return $result
+};
+
+declare %private function commentaryfragments:prepare-reference-to($path as xs:string,$psalmverse-to as xs:string){
+  let $result := if ($psalmverse-to = 'empty') then (commentaryfragments:get-max-value-for-reference($path))
+    else (substring-after($psalmverse-to,'Ps (LXX) '))
+  return $result
+};
+
+declare %private function commentaryfragments:get-min-value-for-reference($path as xs:string){
+  let $min-value := (doc($path)//tei:quote[@type = 'bibletext'])[1]/@n
+  return (substring-after($min-value,'Ps (LXX) '))
+};
+
+declare %private function commentaryfragments:get-max-value-for-reference($path as xs:string){
+  let $max-value := (doc($path)//tei:quote[@type = 'bibletext'])[last()]/@n
+  return (substring-after($max-value,'Ps (LXX) '))
+};
+
+declare %private function commentaryfragments:is-psalmverse-in-range($psalmverse as xs:string,$psalmverse-from as xs:string,$psalmverse-to as xs:string){
+  let $psalm := number(substring-before($psalmverse,','))
+  let $verse := number(substring-after($psalmverse,','))
+  let $psalm-from := number(substring-before($psalmverse-from,','))
+  let $verse-from := number(substring-after($psalmverse-from,','))
+  let $psalm-to := number(substring-before($psalmverse-to,','))
+  let $verse-to := number(substring-after($psalmverse-to,','))
+  let $result :=  if ($psalm lt $psalm-from) then (false())
+  else if ($psalm gt $psalm-to) then (false())
+  else if (($psalm gt $psalm-from) and ($psalm lt $psalm-to)) then (true())
+  else if (($psalm eq $psalm-from) and ($verse eq $verse-from) and ($psalm eq $psalm-to) and ($verse eq $verse-to)) then (true())
+  else if (($psalm eq $psalm-from) and ($verse eq $verse-from) and ($psalm eq $psalm-to) and ($verse lt $verse-to)) then (true())
+  else if (($psalm eq $psalm-from) and ($verse eq $verse-from) and ($psalm lt $psalm-to)) then (true())
+  else if (($psalm eq $psalm-from) and ($verse eq $verse-from) and ($psalm eq $psalm-to) and ($verse gt $verse-to)) then (false())
+  else if (($psalm eq $psalm-from) and ($verse gt $verse-from) and ($psalm eq $psalm-to) and ($verse eq $verse-to)) then (true())
+  else if (($psalm eq $psalm-from) and ($verse gt $verse-from) and ($psalm eq $psalm-to) and ($verse gt $verse-to)) then (false())
+  else if (($psalm eq $psalm-from) and ($verse gt $verse-from) and ($psalm eq $psalm-to) and ($verse lt $verse-to)) then (true())
+  else if (($psalm eq $psalm-from) and ($verse lt $verse-from)) then (false())
+  else if (($psalm gt $psalm-from) and ($psalm eq $psalm-to) and ($verse eq $verse-to)) then (true())
+  else if (($psalm gt $psalm-from) and ($psalm eq $psalm-to) and ($verse lt $verse-to)) then (true())
+  else if (($psalm gt $psalm-from) and ($psalm eq $psalm-to) and ($verse gt $verse-to)) then (false())
+  return $result
+};
+ 
 (:~
  : Return a particular commentaryfragment of a particular manuscript
  :)
