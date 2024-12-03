@@ -484,6 +484,10 @@
                   <bibl>Theodorus?, fr. inediti ex Vat. gr. 754 sub attributione ΘΕΟ<hi
                         rend="superscript">Δ</hi></bibl>
                </person>
+               <person xml:id="person-90" role="author" sameAs="#person-20">
+                  <persName>Gregorius Nazianzenus</persName>
+                  <bibl>Gregorius Naz., or. 4–5 (ed. Bernardi)<hi rend="superscript">Δ</hi></bibl>
+               </person>
             </listPerson>
          </sourceDesc>
       </fileDesc>
@@ -22605,6 +22609,7 @@
                         source="Evagrius, schol. nr. ιζ´ in Ps 21,31b (434 Rondeau – Géhin – Cassin)"
                         corresp="#person-21"/>
                      <note type="attribution" xml:lang="grc">ιζ´</note></seg>
+                  <!-- ps 22 commentary -->
                   <note type="lemma">Ps 22,1a</note>
                   <seg type="hypothesis" xml:id="vat-gr-754-fr-22-3" rendition="#top-of-the-page"
                      source="(Athanasius)" corresp="#vat-gr-754-ps-22-1a"
@@ -22699,7 +22704,145 @@
                      κατοικεῖν με ἐν οἴκῳ κυρίου εἰς μακρότητα ἡμερῶν. </quote>
                   <pb n="82r" facs="https://digi.vatlib.it/view/MSS_Vat.gr.754/81"/></ab>
             </div>
-
+            <div type="hexaplaric" subtype="commentary" xml:id="vat-gr-754-22-4"
+               rendition="#right-column" rend="capital letters" change="commentaryfragments-only">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 22,5c (τὸ ποτήριόν σου)</note>
+                  <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-22-4"
+                     rendition="#right-column" source="Theodotion (Ps 22,5c)"
+                     corresp="#vat-gr-754-ps-22-5c">Θ ποτήριόν μου·</seg>
+                  <note type="lemma">linking to Ps 22,5c not repeated</note>
+                  <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-22-5"
+                     rendition="#right-column" source="Symmachus (Ps 22,5c)"
+                     corresp="#vat-gr-754-ps-22-5c">Ϲ ποτήριον μεθύσκον πλὴν ἀγαθόν·</seg>
+                  <note type="lemma">linking to Ps 22,5c not repeated</note>
+                  <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-22-6"
+                     rendition="#right-column" source="Quinta (Ps 22,5c)"
+                     corresp="#vat-gr-754-ps-22-5c">ἡ E´ καὶ <add place="above">τὸ</add> ποτήριόν
+                     μου μεθύσκον πλὴν ἀγαθόν:</seg>
+                  <note type="lemma">linking to Ps 22,5c not repeated</note>
+                  <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-22-7"
+                     rendition="#right-column" source="Sexta (Ps 22,5c)"
+                     corresp="#vat-gr-754-ps-22-5c">τὸ ποτηριόν μου μεθύσκον ὡς κράτιστον:</seg>
+                  <note type="lemma">Ps 22,5a</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-22-10"
+                     rendition="#right-column" rend="minuscule letters" source="(Athanasius)"
+                     corresp="#vat-gr-754-ps-22-5a" copyOf="#edition:edition-22-4-1"><quote
+                        type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-22-10"
+                        source="Athanasius, exp. in Ps 22,5a" corresp="#person-2">Tὴν μυστικὴν
+                        λέγει: –</quote>
+                     <note type="attribution" xml:lang="grc">ΛΕ΄</note></seg>
+                  <note type="lemma">Ps 22,5b</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-22-11"
+                     rendition="#right-column" rend="minuscule letters" source="(Athanasius)"
+                     corresp="#vat-gr-754-ps-22-5b" copyOf="#edition:edition-22-5-2"><quote
+                        type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-22-11"
+                        source="Athanasius, exp. in Ps 22,5b" corresp="#person-2">Καὶ τοῦτο τὸ
+                        χρίσμα μυστικόν·</quote>
+                     <note type="attribution" xml:lang="grc">ΛϚ΄</note></seg>
+                  <note type="lemma">Ps 22,5c</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-22-12"
+                     rendition="#right-column" rend="minuscule letters" source="(Athanasius)"
+                     corresp="#vat-gr-754-ps-22-5c" copyOf="#edition:edition-22-5-3"><quote
+                        type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-22-12"
+                        source="Athanasius, exp. in Ps 22,5c" corresp="#person-2">Πάλιν την μυστικὴν
+                        εὐφροσύνην: –</quote>
+                     <note type="attribution" xml:lang="grc">ΛΖ΄</note></seg>
+               </ab>
+            </div>
+            <div type="commentary" subtype="commentary" xml:id="vat-gr-754-22-5"
+               rendition="#top-of-the-page" rend="minuscule letters"
+               change="commentaryfragments-only">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 22,4c</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-22-13"
+                     rendition="#top-of-the-page" source="Gregorius Nyssenus"
+                     corresp="#vat-gr-754-ps-22-4c"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-754-quot-22-13"
+                        source="Gregorius Nyss., hom. 12 in Cant. 5,5–7 (365,16–366,6; 362,6–14 Langerbeck) in Cant 5,7b et in Ps 22,4c–6"
+                        corresp="#person-26"/>
+                     <note type="attribution" xml:lang="grc">Γρη(γορίου) Νύ(σης)</note>
+                     <note type="textual-commentary">The second passage from Gregory is introduced
+                        by καὶ προτούτων. In fact, in the context of the homily, this passage
+                        precedes the first. An omission in the second passage is integrated into the
+                        outer margin by means of an obelos periestigmenos. This is probably the hand
+                        of a corrector (C1).</note>
+                  </seg>
+               </ab>
+            </div>
+            <div type="commentary" subtype="commentary" xml:id="vat-gr-754-22-6"
+               rendition="#bottom-of-the-page" rend="minuscule letters"
+               change="commentaryfragments-only">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 22,4c</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-22-14"
+                     rendition="#bottom-of-the-page" source="(Athanasius)"
+                     corresp="#vat-gr-754-ps-22-4c" copyOf="#edition:edition-22-4-1"><quote
+                        type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-22-14"
+                        source="Athanasius, exp. in Ps 22,4c" corresp="#person-2">Ὡς πρὸς τὸν πατέρα
+                        ὁ λόγος· αὐτὸν δὲ τὸν Χριστὸν φη(σὶ) κατὰ τὸ ῥάβδον δυνάμεως ἐξαποστελεῖ σοι
+                        κύριος ἐκ σιὼν· [Ps 109,2a] καὶ ῥάβδος εὐκλεής καὶ ῥάβδος μεγαλειότητος:
+                        [cf. Ier 31,17]</quote>
+                     <note type="attribution" xml:lang="grc">ΛΔ΄</note></seg>
+                  <note type="lemma">Ps 22,4c</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-22-15"
+                     rendition="#bottom-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-754-ps-22-4c"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-754-quot-22-15"
+                        source="fons ignotus in Ps 22,4c; ed. Montfaucon sub auctore Athanasio (PG 27,140 C11–12)"
+                        corresp="#person-47">Ῥάβδος ἡ παιδευτικὴ δύναμις· βακτηρια δὲ, ἡ διὰ τῆς
+                        παρακλησεως αντίληψις:</quote></seg>
+                  <note type="lemma">Ps 22,4c</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-22-16"
+                     rendition="#bottom-of-the-page" source="Anonymous"
+                     corresp="#vat-gr-754-ps-22-4c"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-754-quot-22-16"
+                        source="Isidorus Pel., ep. 301 (PG 78,357 B4–8) in Ps 22,4c"
+                        corresp="#person-72"/></seg>
+                  <note type="lemma">Ps 22,4c</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-22-17"
+                     rendition="#bottom-of-the-page" source="(Evagrius)"
+                     corresp="#vat-gr-754-ps-22-4c"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-754-quot-22-17"
+                        source="Evagrius, schol. nr. γ´ in Ps 22,4c (436 Rondeau – Géhin – Cassin)"
+                        corresp="#person-21"/>
+                     <note type="attribution" xml:lang="grc">γ´</note></seg>
+                  <note type="lemma">Ps 22,5a</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-22-18"
+                     rendition="#bottom-of-the-page" source="Gregorius Nazianzenus"
+                     corresp="#vat-gr-754-ps-22-5a"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-754-quot-22-18"
+                        source="Gregorius Naz., or. 5,35 (366,19–23 Bernardi; SC 309) in Ps 22,5a"
+                        corresp="#person-90"/>
+                     <note type="attribution" xml:lang="grc">Γρη(γορίου) τ(οῦ)
+                     Θεολ(όγου)</note></seg>
+                  <note type="lemma">Ps 22,5a</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-22-19"
+                     rendition="#bottom-of-the-page" source="(Evagrius)"
+                     corresp="#vat-gr-754-ps-22-5a"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-754-quot-22-19"
+                        source="Evagrius, schol. nr. δ´ in Ps 22,5a (436 Rondeau – Géhin – Cassin)"
+                        corresp="#person-21"/>
+                     <note type="attribution" xml:lang="grc">δ´</note></seg>
+               </ab>
+            </div>
+            <pb n="76v–77r"/>
+            <div type="commentary" subtype="commentary" xml:id="vat-gr-754-22-7"
+               rendition="#bottom-of-the-page" rend="minuscule letters"
+               change="commentaryfragments-only">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 22,6a</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-22-20"
+                     rendition="#bottom-of-the-page" source="(Athanasius)"
+                     corresp="#vat-gr-754-ps-22-6a" copyOf="#edition:edition-22-6-1"><quote
+                        type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-22-20"
+                        source="Athanasius, exp. in Ps 22,6" corresp="#person-2">Οἱ γὰρ τῶν
+                        προλεχθέντων ἁπάντων μεταλαβόντες. ἔσονται διαπαντὸς ἐν τῶ || ἐλέει τοῦ
+                        θεοῦ· καὶ μὴν καὶ κατασκηνώσουσιν ἐν τῶ οἴκω αὐτοῦ: – </quote>
+                     <note type="attribution" xml:lang="grc">ΛΗ΄</note></seg>
+               </ab>
+            </div>
+            <pb n="77r" facs="https://digi.vatlib.it/view/MSS_Vat.gr.754/76"/>
             <!-- psalm 26 bibletext  -->
             <div type="bibletext" subtype="commented" xml:id="vat-gr-754-26-1">
                <quote type="bibletext" n="Ps (LXX) 26,1" xml:lang="grc"
@@ -23338,7 +23481,6 @@
                            xml:id="vat-gr-754-quot-26-43"
                            source="Theodorus, fr. in Ps 26,10b (131 Devreesse)" corresp="#person-22"/>
                         <note type="attribution" xml:lang="grc">Θεοδ(ώρου) Ἀντιοχ(είας)</note></seg>
-                     
                      <note type="lemma">Ps 26,11a</note>
                      <seg type="commentaryfragment" xml:id="vat-gr-754-fr-26-44"
                         rendition="#left-column" source="Theodoretus"
@@ -23347,7 +23489,6 @@
                            source="Theodoretus, comm. in Ps 26,11a (PG 80,1053 C10–13)"
                            corresp="#person-16"/>
                         <note type="attribution" xml:lang="grc">Θεοδ(ώρετου)</note></seg>
-                     
                      <seg type="commentaryfragment" xml:id="vat-gr-754-fr-26-45"
                         rendition="#left-column" source="(Athanasius)"
                         corresp="#vat-gr-754-ps-26-11a" copyOf="#edition:edition-26-30-26-11-1"
@@ -23356,7 +23497,6 @@
                            corresp="#person-2">Τὸν εὐαγγελικὸν νόμον εὔχεται γυμνωθῆναι αὐτῶ. αὐτὸς
                            γὰρ καὶ ἡ εὐθεία ὁδός:</quote>
                         <note type="attribution" xml:lang="grc">ΟΗ΄</note></seg>
-                     
                      <note type="lemma">Ps 26,12a</note>
                      <seg type="commentaryfragment" xml:id="vat-gr-754-fr-26-46"
                         rendition="#bottom-of-the-page" source="Anonymous"
@@ -23364,7 +23504,6 @@
                            xml:id="vat-gr-754-quot-26-46"
                            source="Theodorus, fr. in Ps 26,12a (131 Devreesse)" corresp="#person-22"/>
                         <note type="attribution" xml:lang="grc">τοῦ αὐτοῦ</note></seg>
-                     
                      <note type="lemma">Ps 26,12b</note>
                      <seg type="commentaryfragment" xml:id="vat-gr-754-fr-26-47"
                         rendition="#left-column" source="(Evagrius)" corresp="#vat-gr-754-ps-26-12b"
@@ -23374,15 +23513,14 @@
                            corresp="#person-21"/>
                         <note type="attribution" xml:lang="grc">η΄</note>
                      </seg>
-                     
                      <seg type="commentaryfragment" xml:id="vat-gr-754-fr-26-48"
                         rendition="#bottom-of-the-page" source="Theodor(et?)us"
                         corresp="#vat-gr-754-ps-26-12b"><quote type="patristic" subtype="quotation"
                            xml:id="vat-gr-754-quot-26-48"
                            source="fons ignotus; Theodorus Mopsuestenus?" corresp="#person-89">ὁ δὲ
                            Α(κύλας) ἀνέστησάν μοι μάρτυρες ψεύδους καὶ ἐξεφάνη ἡ ἀδικία: οὐκ εξῆλθον
-                           γάρ φη(σιν) εἰς ἔργον τὰ παρεκείνων λεγόμενα· ἀδικίαν καλῶν. τὰ 
-                           ἀδίκως παρ' ἐκεινων λεγόμενα· ἀντι τοῦ μηδένα ἕτερον ἀπατῆσαι ἀλλ' αὐτὴν ἑαυτῆ
+                           γάρ φη(σιν) εἰς ἔργον τὰ παρεκείνων λεγόμενα· ἀδικίαν καλῶν. τὰ ἀδίκως
+                           παρ' ἐκεινων λεγόμενα· ἀντι τοῦ μηδένα ἕτερον ἀπατῆσαι ἀλλ' αὐτὴν ἑαυτῆ
                            ἐψεῦσθαι· ἀντι τοῦ || μόνην ἑαυτὴν ἠπατηκέναι. ὡς καὶ σύνηθες ἡμῖν
                            λέγειν· ἐπὶ τῶν μηδένα ἀπατᾶν δυναμένων· ὅτι ἑαυτὸν ἠπάτησεν. καὶ ἑαυτὸν
                            ἐψεύσατο· καὶ ἑαυτὸν ἔβλαψεν οὐκ ἐμέ: –</quote>
@@ -23445,7 +23583,6 @@
                            corresp="#person-25"/>
                         <note type="attribution" xml:lang="grc">Γρη(γορίου) Νυ(σης)</note>
                      </seg>
-                     
                      <note type="lemma">Ps 26,12c</note>
                      <seg type="commentaryfragment" xml:id="vat-gr-754-fr-26-50"
                         rendition="#left-column" source="(Athanasius)"
@@ -23454,7 +23591,6 @@
                            xml:id="vat-gr-754-quot-26-50" source="Athanasius, exp. in Ps 26,12c"
                            corresp="#person-2">Τουτέστιν ἠσθένησεν ἡ καθημῶν ἀδικία:</quote>
                         <note type="attribution" xml:lang="grc">ΟΘ΄</note></seg>
-                                          
                      <note type="lemma">Ps 26,13a</note>
                      <seg type="commentaryfragment" xml:id="vat-gr-754-fr-26-51"
                         rendition="#left-column" source="(Athanasius)"
