@@ -634,7 +634,7 @@ version="2.0">
         <xsl:attribute name="id" select="@xml:id"/>
         <xsl:attribute name="class" select="'textcritical'"/>
         <xsl:attribute name="data-id" select="generate-id(//tei:app[@type = 'text'][@corresp = concat('#',$current-node/@xml:id)])"/>
-        <xsl:apply-templates select="text() | tei:span"/>
+        <xsl:apply-templates select="text() | tei:span | tei:anchor"/>
     </xsl:element>
 </xsl:template>
     
@@ -644,7 +644,7 @@ version="2.0">
         <xsl:attribute name="id" select="@xml:id"/>
         <xsl:attribute name="class" select="'textcritical-embedded'"/>
         <xsl:attribute name="data-id" select="generate-id(//tei:app[@type = 'text'][@corresp = concat('#',$current-node/@xml:id)])"/>
-        <xsl:apply-templates select="text() | tei:span"/>
+        <xsl:apply-templates select="text() | tei:span | tei:anchor"/>
     </xsl:element>
 </xsl:template>
     
@@ -654,7 +654,7 @@ version="2.0">
         <xsl:attribute name="id" select="@xml:id"/>
         <xsl:attribute name="class" select="'textcritical-embedded-embedded'"/>
         <xsl:attribute name="data-id" select="generate-id(//tei:app[@type = 'text'][@corresp = concat('#',$current-node/@xml:id)])"/>
-        <xsl:value-of select="text()"/>
+        <xsl:value-of select="text() | tei:anchor"/>
     </xsl:element>
 </xsl:template>
     
