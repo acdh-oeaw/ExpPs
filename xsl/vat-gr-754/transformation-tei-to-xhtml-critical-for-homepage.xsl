@@ -1021,9 +1021,18 @@
                     <xsl:text> (→ </xsl:text>
                     <xsl:element name="a">
                         <xsl:attribute name="href">
-                            <xsl:text>../edition.html#</xsl:text>
-                            <xsl:value-of select="substring-after(self::tei:seg/@copyOf,'#edition:')"/>
+                            <xsl:choose>
+                                <xsl:when test="starts-with(self::tei:seg/@copyOf,'#edition-part-two:')">
+                                    <xsl:text>../edition-part-two.html#</xsl:text>
+                                    <xsl:value-of select="substring-after(self::tei:seg/@copyOf,'#edition-part-two:')"/>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:text>../edition.html#</xsl:text>
+                                    <xsl:value-of select="substring-after(self::tei:seg/@copyOf,'#edition:')"/>
+                                </xsl:otherwise>
+                            </xsl:choose>
                         </xsl:attribute>
+                        <xsl:attribute name="target" select="'_blank'"/>
                         <xsl:text>Edition</xsl:text>
                     </xsl:element>
                     <xsl:text>)</xsl:text>
@@ -1798,9 +1807,18 @@
             <xsl:text> (→ </xsl:text>
                 <xsl:element name="a">
                     <xsl:attribute name="href">
-                        <xsl:text>../edition.html#</xsl:text>
-                        <xsl:value-of select="substring-after(parent::tei:seg[@type = 'commentaryfragment' or @type = 'hypothesis']/@copyOf,'#edition:')"/>
+                        <xsl:choose>
+                            <xsl:when test="starts-with(parent::tei:seg[(@type = 'commentaryfragment') or (@type = 'hypothesis')]/@copyOf,'#edition-part-two:')">
+                                <xsl:text>../edition-part-two.html#</xsl:text>
+                                <xsl:value-of select="substring-after(parent::tei:seg[(@type = 'commentaryfragment') or (@type = 'hypothesis')]/@copyOf,'#edition-part-two:')"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:text>../edition.html#</xsl:text>
+                                <xsl:value-of select="substring-after(parent::tei:seg[(@type = 'commentaryfragment') or (@type = 'hypothesis')]/@copyOf,'#edition:')"/>
+                            </xsl:otherwise>
+                        </xsl:choose>
                     </xsl:attribute>
+                    <xsl:attribute name="target" select="'_blank'"/>
                     <xsl:text>Edition</xsl:text>
                 </xsl:element>
             <xsl:text>)</xsl:text>

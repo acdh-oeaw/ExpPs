@@ -597,9 +597,18 @@
                 <xsl:if test="exists(@copyOf)">
                     <xsl:text> (</xsl:text>
                     <xsl:element name="a">
-                        <xsl:attribute name="href" select="concat('../edition.html#',substring-after(@copyOf,'#edition:'))"/>
-                        <xsl:attribute name="target" select="'_blank'"/>
-                        <xsl:text>→ Edition</xsl:text>
+                        <xsl:choose>
+                            <xsl:when test="starts-with(@copyOf,'#edition-part-two:')">
+                                <xsl:attribute name="href" select="concat('../edition-part-two.html#',substring-after(@copyOf,'#edition-part-two:'))"/>
+                                <xsl:attribute name="target" select="'_blank'"/>
+                                <xsl:text>→ Edition</xsl:text>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:attribute name="href" select="concat('../edition.html#',substring-after(@copyOf,'#edition:'))"/>
+                                <xsl:attribute name="target" select="'_blank'"/>
+                                <xsl:text>→ Edition</xsl:text>
+                            </xsl:otherwise>
+                        </xsl:choose>
                     </xsl:element>
                     <xsl:text>)</xsl:text>
                 </xsl:if>
