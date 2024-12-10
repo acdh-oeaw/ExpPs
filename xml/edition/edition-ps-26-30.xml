@@ -55,10 +55,10 @@
                      <quote xml:id="edition-26-30-ps-26-1a" type="psalmtext" n="1a">Τοῦ Δαυιδ· πρὸ τοῦ χρισθῆναι.</quote>
                   </div>
                   <div type="commentary">
-                     <p xml:id="edition-26-30-26-1-1" n="501" ana="hypothesis">Περιέχει ὁ ψαλμὸς κατήχησιν κατ’ ἐχθρῶν,
-                        ἀφ' ὧν ἤδη ἐδέξατο παρὰ θεοῦ γινομένην· καὶ αἴτησιν δευτέρων ἀγαθῶν τὸ μετεξομολογήσεως·
+                     <p xml:id="edition-26-30-26-1-1" n="501" ana="hypothesis"><span xml:id="edition-26-1-1-tc-1">Περιέχει ὁ ψαλμὸς <span xml:id="edition-26-1-1-tc-2">κατήχησιν</span> κατ’ ἐχθρῶν</span>,
+                        <span xml:id="edition-26-1-1-tc-3">ἀφ' ὧν</span> ἤδη ἐδέξατο παρὰ θεοῦ <span xml:id="edition-26-1-1-tc-4">γινομένην</span>· <span xml:id="edition-26-1-1-tc-5">καὶ</span> αἴτησιν δευτέρων ἀγαθῶν <span xml:id="edition-26-1-1-tc-6">τὸ</span> μετεξομολογήσεως·
                         τὸ δὲ, πρὸ τοῦ χρισθῆναι, ἐκεῖνο σημαίνει· ὅτι, τῷ πνεύματι τῷ θείῷ προεωρακὼς, ὡς χρισθήσεται μὲν εἰς βασιλέα·
-                        περιπέσοι μέντοι πειρασμοῖς, ἀνδρείαν περιζωσάμενος τὴν ὀσφὺν εὖ μᾶλα περὶ τοὺς κινδύνους ἀντισοῦσθαι διαβεβαιοῦται: –</p>
+                        περιπέσοι <span xml:id="edition-26-1-1-tc-7">μέντοι</span> πειρασμοῖς, <span xml:id="edition-26-1-1-tc-8">ἀνδρείαν</span> περιζωσάμενος <span xml:id="edition-26-1-1-tc-9">τὴν ὀσφὺν</span> εὖ μᾶλα <span xml:id="edition-26-1-1-tc-10">περὶ</span> τοὺς κινδύνους <span xml:id="edition-26-1-1-tc-11">ἀντισοῦσθαι</span> διαβεβαιοῦται: –</p>
                      <div type="links">
                         <p>
                            <listRef>
@@ -66,6 +66,7 @@
                               <ref target="#coislin-10:coislin-10-fr-26-1"/>
                               <ref target="#franzon-3:franzon-3-fr-26-1"/>
                               <ref target="#par-gr-166:par-gr-166-fr-26-1"/>
+                              <ref target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-26-2"/>
                               <ref target="#coislin-12:coislin-12-fr-26-1"/>
                                                          </listRef>
                         </p>
@@ -73,14 +74,15 @@
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #G #P1 #P5">txt</rdg>
+                        <rdg wit="#V1 #C #G #P1 #B1 #P5">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Coislin 10</wit>
                         <wit>Urbani 3</wit>
-                        <wit> Par. gr. 166</wit>
+                        <wit>Par. gr. 166</wit>
+                        <wit>Auct. D.4.1</wit>
                         <wit>Coislin 12</wit>
                      </app>
-                     <app type="text">
+                     <app type="text" corresp="#edition-26-1-1-tc-1">
                         <lem><foreign xml:lang="grc">Περιέχει – ἐχθρῶν</foreign></lem>
                         <rdg wit="#V1 #C #P1">om.</rdg>
                         <wit>Vat. gr. 754</wit>
@@ -89,29 +91,51 @@
                         <rdg wit="#G"><foreign xml:lang="grc"></foreign>Ἐυχαριστίαν δηλοῖ.</rdg>
                         <wit>Urbani 3</wit>
                      </app>
-                     <app type="text">
+                     <app type="text" corresp="#edition-26-1-1-tc-2">
+                        <lem><foreign xml:lang="grc">κατήχησιν</foreign></lem>
+                        <rdg wit="#B1">πεποιθήσιν</rdg>
+                        <wit>Auct. D.4.1</wit>
+                     </app>
+                     <app type="text" corresp="#edition-26-1-1-tc-3">
                         <lem><foreign xml:lang="grc">ἀφ' ὧν</foreign></lem>
                         <rdg wit="#V1"><foreign xml:lang="grc">ἀφῶν</foreign></rdg>
                         <wit>Vat. gr. 754</wit>
                         <rdg wit="#P1"><foreign xml:lang="grc">Σαφῶς</foreign></rdg>
+                                          <wit>Par. gr. 166</wit>
                      </app>
-                     <app type="text"><lem><foreign xml:lang="grc">γινομένην</foreign></lem>
+                                          <app type="text" corresp="#edition-26-1-1-tc-4"><lem><foreign xml:lang="grc">γινομένην</foreign></lem>
                      <rdg wit="#P1"><foreign xml:lang="grc">γενομένην</foreign></rdg>
-                     </app>
-                     <app type="text"><lem><foreign xml:lang="grc">καὶ</foreign></lem>
+                                             <wit>Par. gr. 166</wit>
+                                                                  </app>
+                                          <app type="text" corresp="#edition-26-1-1-tc-5"><lem><foreign xml:lang="grc">καὶ</foreign></lem>
                         <rdg wit="#P1">om.</rdg>
+                                             <wit>Par. gr. 166</wit>
+                                                                  </app>
+                     <app type="text" corresp="#edition-26-1-1-tc-6"><lem><foreign xml:lang="grc">τὸ</foreign></lem>
+                        <rdg wit="#B1">om.</rdg>
+                                                <wit>Auct. D.4.1</wit>
                      </app>
-                     <app type="text"><lem><foreign xml:lang="grc">μέντοι</foreign></lem>
-                     <rdg wit="#P1"><foreign xml:lang="grc">δὲ</foreign></rdg>
+                     <app type="text" corresp="#edition-26-1-1-tc-7"><lem><foreign xml:lang="grc">μέντοι</foreign></lem>
+                     <rdg wit="#P1 #B1"><foreign xml:lang="grc">δὲ</foreign></rdg>
+                        <wit>Par. gr. 166</wit>
+                        <wit>Auct. D.4.1</wit>
                      </app>
-                     <app type="text">
+                     <app type="text" corresp="#edition-26-1-1-tc-8">
                         <lem><foreign xml:lang="grc">ἀνδρείαν</foreign></lem>
                         <rdg wit="#P5"><foreign xml:lang="grc">ἀνδρεία</foreign></rdg>
                         <wit>Coislin 12</wit>
                      </app>
-                     <app type="text"><lem><foreign xml:lang="grc">τὴν ὀσφὺν</foreign></lem>
+                     <app type="text" corresp="#edition-26-1-1-tc-9"><lem><foreign xml:lang="grc">τὴν ὀσφὺν</foreign></lem>
                      <rdg wit="#G">om.</rdg>
                         <wit>Urbani 3</wit>
+                     </app>
+                     <app type="text" corresp="#edition-26-1-1-tc-10"><lem><foreign xml:lang="grc">περὶ</foreign></lem>
+                        <rdg wit="#B1"><foreign xml:lang="grc">πρὸς</foreign></rdg>
+                        <wit>Auct. D.4.1</wit>
+                     </app>
+                     <app type="text" corresp="#edition-26-1-1-tc-11">
+                        <lem><foreign>ἀντισοῦσθαι</foreign></lem>
+                        <rdg wit="#B1"><foreign>ἐναντιοῦσθαι</foreign></rdg>
                      </app>
                   </div>
                   <div type="psalmtext">
