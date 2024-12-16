@@ -40280,6 +40280,7 @@
                            <listRef>
                               <ref target="#vat-gr-754:vat-gr-754-fr-22-3"/>
                               <ref target="#coislin-10:coislin-10-fr-22-1"/>
+                              <ref target="#mosq-syn-194:mosq-syn-194-fr-22-2"/>
                               <ref target="#franzon-3:franzon-3-fr-22-1"/>
                               <ref target="#par-gr-166:par-gr-166-fr-22-1"/>
                               <ref target="#coislin-12:coislin-12-fr-22-2"/>
@@ -40293,9 +40294,10 @@
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #G #P1 #P5 #P2 #P6 #Z #N2 #V5 #P7 #L2 #A3">txt</rdg>
+                        <rdg wit="#V1 #C #M #G #P1 #P5 #P2 #P6 #Z #N2 #V5 #P7 #L2 #A3">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Coislin 10</wit>
+                        <wit>Sinod. gr. 194</wit>
                         <wit>Urbani 3</wit>
                         <wit>Par. gr. 166</wit>
                         <wit>Coislin 12</wit>
@@ -40321,6 +40323,11 @@
                         <rdg wit="#P2"><foreign xml:lang="grc">ἐπὶ τὸ ποιμάναι αὐτὰ τὸν κύριον, καὶ
                               μὴν κατὰ τὴν μυστικὴν ἐξήγοντο</foreign></rdg>
                         <wit>Coislin 187</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">ἀγαλλομένων</foreign></lem>
+                        <rdg wit="#M"><foreign xml:lang="grc">ἀγαλλιαμένων</foreign></rdg>
+                        <wit>Sinod. gr. 194</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">ἐπὶ τὸ ποιμᾶναι</foreign></lem>
@@ -40357,6 +40364,10 @@
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">αὐτὸς</foreign></lem>
+                        <rdg wit="#M*"><foreign xml:lang="grc">αὐτοὺς</foreign></rdg>
+                        <wit>Sinod. gr. 194</wit>
+                        <rdg wit="#Mc"><foreign xml:lang="grc">αὐτὸς</foreign></rdg>
+                        <wit>Sinod. gr. 194</wit>
                         <rdg wit="#P1"><foreign xml:lang="grc">αὐτοῖς</foreign></rdg>
                         <wit>Par. gr. 166</wit>
                         <rdg wit="#L2*utvid"><foreign xml:lang="grc">ἑαυτοῖς αὐτὸς</foreign></rdg>
@@ -40381,6 +40392,8 @@
                         <wit>Plut. 6.3</wit>
                         <wit>Ambr. C 98 sup.</wit>
                      </app>
+                     <note type="textual-commentary">M: exp. 373 und 374 bilden eine Einheit
+                        (Theodoret zugeschrieben).</note>
                   </div>
                   <div type="psalmtext">
                      <quote type="psalmtext" xml:id="edition-ps-22-1-2" n="1b">Κύριος ποιμαίνει με,
@@ -40406,9 +40419,10 @@
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #P1 #P5 #A2 #V4 #P2 #L1 #P6 #Z #N2">txt</rdg>
+                        <rdg wit="#V1 #C #M #P1 #P5 #A2 #V4 #P2 #L1 #P6 #Z #N2">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Coislin 10</wit>
+                        <wit>Sinod. gr. 194</wit>
                         <wit>Par. gr. 166</wit>
                         <wit>Coislin 12</wit>
                         <wit>Ambr. B 106 sup.</wit>
@@ -40718,7 +40732,7 @@
                      <quote type="psalmtext" xml:id="edition-ps-22-4-3" n="4c"> ἡ ῥάβδος σου καὶ ἡ
                         βακτηρία σου, αὐταί με παρεκάλεσαν. </quote>
                   </div>
-                  <!-- cave: V1 P2; V5 P7 L2 A3 (Kurzfassung) Montfaucon: Ῥάβδος. ἡ παιδευτικὴ δύναμις· βακτηρία δὲ. ἡ
+                  <!-- cave: V1 P2 A2 V4 M (with-variant); V5 P7 L2 A3 (Kurzfassung) Montfaucon: Ῥάβδος. ἡ παιδευτικὴ δύναμις· βακτηρία δὲ. ἡ
                                 διὰ τῆς παρακλησεως ἀντίληψις: wahrscheinlich nach dieser exp. zu edieren –-->
                   <div type="commentary">
                      <p xml:id="edition-22-4-1" n="379">Ὡς πρὸς τὸν πατέρα ὁ λόγος· αὐτὸν δὲ τὸν
@@ -40727,11 +40741,13 @@
                            n="Ps 109,2a"/> καὶ ῥάβδος εὐκλεὴς, καὶ ῥάβδος μεγαλειότητος: – <anchor
                            type="biblical-quotation" subtype="indirect-quotation" n="Ier 31,17"
                         /></p>
+                     <!-- Textkritik: ἐξαποστελῆ M -->
                      <div type="links">
                         <p>
                            <listRef>
                               <ref target="#vat-gr-754:vat-gr-754-fr-22-14"/>
                               <ref target="#coislin-10:coislin-10-fr-22-11"/>
+                              <ref target="#mosq-syn-194:mosq-syn-194-fr-22-4"/>
                               <ref target="#par-gr-166:par-gr-166-fr-22-7"/>
                               <ref target="#coislin-12:coislin-12-fr-22-7"/>
                               <ref target="#plut-5-30:plut-5-30-fr-22-11"/>
@@ -40742,9 +40758,10 @@
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #P1 #P5 #L1 #P6 #Z #N2">txt</rdg>
+                        <rdg wit="#V1 #C #M #P1 #P5 #L1 #P6 #Z #N2">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Coislin 10</wit>
+                        <wit>Sinod. gr. 194</wit>
                         <wit>Par. gr. 166</wit>
                         <wit>Coislin 12</wit>
                         <wit>Plut. 5.30</wit>
@@ -40763,16 +40780,18 @@
                         <wit>Athen. B.N. 45</wit>
                      </app>
                      <app type="text">
-                        <lem><foreign xml:lang="grc">αὐτὸν δὲ τὸν Χριστὸν</foreign></lem>
-                        <rdg wit="#P1 #P5 #P6 #Z #N2"><foreign xml:lang="grc">Aὐτὸν τὸν
-                              Χριστὸν</foreign></rdg>
+                        <lem><foreign xml:lang="grc">αὐτὸν δὲ τὸν Χριστὸν φησὶν</foreign></lem>
+                        <rdg wit="#M">om.</rdg>
+                        <wit>Sinod. gr. 194</wit>
+                        <rdg wit="#P1 #P5 #P6 #Z #N2"><foreign xml:lang="grc">Aὐτὸν τὸν Χριστὸν
+                              φησὶν</foreign></rdg>
                         <wit>Par. gr. 166</wit>
                         <wit>Coislin 12</wit>
                         <wit>Par. gr. 139</wit>
                         <wit>Marc. gr. Z. 17</wit>
                         <wit>Athen. B.N. 45</wit>
-                        <rdg wit="#L1"><foreign xml:lang="grc">Aὐτὸν τὸν θεὸν καὶ
-                           Χριστὸν</foreign></rdg>
+                        <rdg wit="#L1"><foreign xml:lang="grc">Aὐτὸν τὸν θεὸν καὶ Χριστὸν
+                              φησὶν</foreign></rdg>
                         <wit>Plut. 5.30</wit>
                      </app>
                      <app type="text">
@@ -40781,16 +40800,23 @@
                         <wit>Plut. 5.30</wit>
                      </app>
                      <app type="text">
-                        <lem><foreign xml:lang="grc">ἐξαποστελεῖ σοι</foreign></lem>
-                        <rdg wit="#P5 #P6 #Z #N2"><foreign xml:lang="grc"
-                           >ἐξαποστελεῖ</foreign></rdg>
+                        <lem><foreign xml:lang="grc">ἐξαποστελεῖ σοι κύριος</foreign></lem>
+                        <rdg wit="#P5 #P6 #Z #N2"><foreign xml:lang="grc">ἐξαποστελεῖ κύριος
+                           </foreign></rdg>
                         <wit>Coislin 12</wit>
                         <wit>Par. gr. 139</wit>
                         <wit>Marc. gr. Z. 17</wit>
                         <wit>Athen. B.N. 45</wit>
                      </app>
                      <app type="text">
+                        <lem><foreign xml:lang="grc">ἐκ σιών</foreign></lem>
+                        <rdg wit="#M">om.</rdg>
+                        <wit>Sinod. gr. 194</wit>
+                     </app>
+                     <app type="text">
                         <lem><foreign xml:lang="grc">ῥάβδος</foreign><hi rend="sup">1</hi></lem>
+                        <rdg wit="#M"><foreign xml:lang="grc">ῥά〈β〉δος</foreign></rdg>
+                        <wit>Sinod. gr. 194</wit>
                         <rdg wit="#P6c"><foreign xml:lang="grc">-β-</foreign> supra lin. add.</rdg>
                         <wit>Par. gr. 139</wit>
                      </app>
