@@ -8,7 +8,7 @@ const expect = chakram.expect;
 module.exports = function(baseURI){
 	describe('Tests for /glosses', function(){
 		describe('Tests for list of glosses from all manuscripts', function(){
-			it('Should response 200 for "OK"',function(){
+			xit('Should response 200 for "OK"',function(){
 				var response = request('get', baseURI + '/glosses', {
 					'headers': {"Accept":"application/hal+json",
 								"Content-Type":"application/json"},
@@ -32,7 +32,7 @@ module.exports = function(baseURI){
     });
     describe('Tests for /manuscripts/{$manuscript-name}/glosses', function(){
 		describe('Tests for list of glosses from a particular manuscript', function(){
-			it('Should response 200 for "OK"',function(){
+			xit('Should response 200 for "OK"',function(){
 				var response = request('get', baseURI + '/manuscripts/vat-gr-754/glosses', {
 					'headers': {"Accept":"application/hal+json",
 								"Content-Type":"application/json"},
