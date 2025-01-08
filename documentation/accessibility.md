@@ -1,4 +1,4 @@
-# Accessibility Check - ExpPs Homepage
+# Accessibility Check - ExpPs Homepage #
 
 Tests mittels des ```axe``` Browser-Plugins und des ```Page Structure``` Plugins.
 
@@ -41,3 +41,33 @@ Tests mittels des ```axe``` Browser-Plugins und des ```Page Structure``` Plugins
    - Links müssen wahrnehmbaren Text beinhalten.
    - Kontrast des Buttons des Helpdesks ACDH-CH nicht ausreichend.
    - Headings: h3 - h6
+   
+- ```about-transcription.html```
+
+   - Kontrast des Buttons des Helpdesks ACDH-CH nicht ausreichend.
+   - Headings: h1 - h5
+   
+- ```about-links.html```
+
+   - Kontrast des Buttons des Helpdesks ACDH-CH nicht ausreichend.
+   - Headings: h1 - h3
+   
+- ```access.html```
+
+   - Kontrast der Aufzählung der API Endpoints nicht ausreichend (Orange auf Weiß).
+   
+- ```encoding.html```
+
+   - Kontrast in den Codebeispielen mitunter nicht ausreichend.
+   - Headings: h1 - h3 - h2
+   
+- ```bodl_auct_d_4_1.html``` - Transkriptionen
+
+   - ```html``` Element muss ein ```lang``` Attribut tragen.
+   - Kontrast des Buttons des Helpdesks ACDH-CH nicht ausreichend.
+   - Headings: fehlen
+   
+# Sonstige ToDos #
+
+- ACDH-CH im Footer: Adresse korrigieren; E-Mail Adresse korrigieren
+- FWF-Logo aktualisieren
