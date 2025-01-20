@@ -425,7 +425,7 @@
                <person xml:id="person-89" role="author" sameAs="#person-22">
                   <persName>Theodorus Mopsuestenus (?)</persName>
                   <bibl>Theodorus?, fr. inediti ex Vat. gr. 754 sub attributione ΘΕΟ<hi
-                     rend="superscript">Δ</hi></bibl>
+                        rend="superscript">Δ</hi></bibl>
                </person>
                <person xml:id="person-90" role="author">
                   <persName>Hesychius Alexandrinus</persName>
@@ -4099,7 +4099,7 @@
                      <note type="attribution" xml:lang="grc">Γρ(ηγορί)ου Νύσ(ης)</note><note
                         type="textual-commentary">This fragment consists of two pieces, with a
                         source cut in the middle. Before the second piece, the scribe has written:
-                        <foreign xml:lang="grc">κ(αὶ) μετ(ο)λ(ίγα)</foreign>.</note>
+                           <foreign xml:lang="grc">κ(αὶ) μετ(ο)λ(ίγα)</foreign>.</note>
                   </seg>
                </ab>
             </div>
@@ -4883,9 +4883,10 @@
                      <ref target="#vat-gr-754:vat-gr-754-fr-17-8" type="with-variants">Vat. gr.
                         754</ref>
                      <note type="attribution" xml:lang="grc">Θεοδ(ωρήτου)</note><note
-                        type="textual-commentary">The beginning of the word <foreign xml:lang="grc">λαθραίας</foreign> is in rasura.
-                        In Vat. gr. 754, a similar word (<foreign xml:lang="grc">λαθρέας</foreign>) is almost entirely in rasura. The
-                        problem must date back to a Vorlage, on which both manuscripts probably
+                        type="textual-commentary">The beginning of the word <foreign xml:lang="grc"
+                           >λαθραίας</foreign> is in rasura. In Vat. gr. 754, a similar word
+                           (<foreign xml:lang="grc">λαθρέας</foreign>) is almost entirely in rasura.
+                        The problem must date back to a Vorlage, on which both manuscripts probably
                         depend directly.</note>
                   </seg>
                   <note type="lemma">Ps 17,5a (περιέσχον)</note>
@@ -8681,91 +8682,162 @@
                   </seg>
                </ab>
             </div>
-
+            <!-- ps 23 bibletext -->
+            <div xml:id="coislin-10-23-1" type="bibletext" subtype="commented"
+               change="commentaryfragments-only">
+               <quote type="bibletext" n="Ps (LXX) 23,1" xml:lang="grc" xml:id="coislin-10-ps-23-1">
+                  <anchor type="psalmtext" n="Ps (LXX) 23,1a" xml:id="coislin-10-ps-23-1a"/> Ψαλμὸς
+                  τῷ Δαυιδ· τῆς μιᾶς σαββάτων. <anchor type="psalmtext" n="Ps (LXX) 23,1b"
+                     xml:id="coislin-10-ps-23-1b"/> Τοῦ κυρίου ἡ γῆ καὶ τὸ πλήρωμα αὐτῆς, <anchor
+                     type="psalmtext" n="Ps (LXX) 23,1c" xml:id="coislin-10-ps-23-1c"/> ἡ οἰκουμένη
+                  καὶ πάντες οἱ κατοικοῦντες ἐν αὐτῇ· </quote>
+               <quote type="bibletext" n="Ps (LXX) 23,2" xml:lang="grc" xml:id="coislin-10-ps-23-2">
+                  <anchor type="psalmtext" n="Ps (LXX) 23,2a" xml:id="coislin-10-ps-23-2a"/> αὐτὸς
+                  ἐπὶ θαλασσῶν ἐθεμελίωσεν αὐτὴν <anchor type="psalmtext" n="Ps (LXX) 23,2b"
+                     xml:id="coislin-10-ps-23-2b"/> καὶ ἐπὶ ποταμῶν ἡτοίμασεν αὐτήν. </quote>
+               <quote type="bibletext" n="Ps (LXX) 23,3" xml:lang="grc" xml:id="coislin-10-ps-23-3">
+                  <anchor type="psalmtext" n="Ps (LXX) 23,3a" xml:id="coislin-10-ps-23-3a"/> τίς
+                  ἀναβήσεται εἰς τὸ ὄρος τοῦ κυρίου <anchor type="psalmtext" n="Ps (LXX) 23,3b"
+                     xml:id="coislin-10-ps-23-3b"/> καὶ τίς στήσεται ἐν τόπῳ ἁγίῳ αὐτοῦ; </quote>
+               <quote type="bibletext" n="Ps (LXX) 23,4" xml:lang="grc" xml:id="coislin-10-ps-23-4">
+                  <anchor type="psalmtext" n="Ps (LXX) 23,4a" xml:id="coislin-10-ps-23-4a"/> ἀθῷος
+                  χερσὶν καὶ καθαρὸς τῇ καρδίᾳ, <anchor type="psalmtext" n="Ps (LXX) 23,4b"
+                     xml:id="coislin-10-ps-23-4b"/>ὃς οὐκ ἔλαβεν ἐπὶ ματαίῳ τὴν ψυχὴν αὐτοῦ <anchor
+                     type="psalmtext" n="Ps (LXX) 23,4c" xml:id="coislin-10-ps-23-4c"/> καὶ οὐκ
+                  ὤμοσεν ἐπὶ δόλῳ τῷ πλησίον αὐτοῦ. </quote>
+               <quote type="bibletext" n="Ps (LXX) 23,5" xml:lang="grc" xml:id="coislin-10-ps-23-5">
+                  <anchor type="psalmtext" n="Ps (LXX) 23,5a" xml:id="coislin-10-ps-23-5a"/> οὗτος
+                  λήμψεται εὐλογίαν παρὰ κυρίου <anchor type="psalmtext" n="Ps (LXX) 23,5b"
+                     xml:id="coislin-10-ps-23-5b"/> καὶ ἐλεημοσύνην παρὰ θεοῦ σωτῆρος αὐτοῦ. </quote>
+               <quote type="bibletext" n="Ps (LXX) 23,6" xml:lang="grc" xml:id="coislin-10-ps-23-6">
+                  <anchor type="psalmtext" n="Ps (LXX) 23,6a" xml:id="coislin-10-ps-23-6a"/> αὕτη ἡ
+                  γενεὰ ζητούντων αὐτόν, <anchor type="psalmtext" n="Ps (LXX) 23,6b"
+                     xml:id="coislin-10-ps-23-6b"/> ζητούντων τὸ πρόσωπον τοῦ θεοῦ Ιακωβ. <anchor
+                     type="psalmtext" n="Ps (LXX) 23,6c" xml:id="coislin-10-ps-23-6c"/>
+                  διάψαλμα.</quote>
+               <quote type="bibletext" n="Ps (LXX) 23,7" xml:lang="grc" xml:id="coislin-10-ps-23-7">
+                  <anchor type="psalmtext" n="Ps (LXX) 23,7a" xml:id="coislin-10-ps-23-7a"/> ἄρατε
+                  πύλας, οἱ ἄρχοντες ὑμῶν, <anchor type="psalmtext" n="Ps (LXX) 23,7b"
+                     xml:id="coislin-10-ps-23-7b"/> καὶ ἐπάρθητε, πύλαι αἰώνιοι, <anchor
+                     type="psalmtext" n="Ps (LXX) 23,7c" xml:id="coislin-10-ps-23-7c"/> καὶ
+                  εἰσελεύσεται ὁ βασιλεὺς τῆς δόξης. </quote>
+               <quote type="bibletext" n="Ps (LXX) 23,8" xml:lang="grc" xml:id="coislin-10-ps-23-8">
+                  <anchor type="psalmtext" n="Ps (LXX) 23,8a" xml:id="coislin-10-ps-23-8a"/> τίς
+                  ἐστιν οὗτος ὁ βασιλεὺς τῆς δόξης; <anchor type="psalmtext" n="Ps (LXX) 23,8b"
+                     xml:id="coislin-10-ps-23-8b"/> κύριος κραταιὸς καὶ δυνατός, <anchor
+                     type="psalmtext" n="Ps (LXX) 23,8b" xml:id="coislin-10-ps-23-8c"/> κύριος
+                  δυνατὸς ἐν πολέμῳ. </quote>
+               <quote type="bibletext" n="Ps (LXX) 23,9" xml:lang="grc" xml:id="coislin-10-ps-23-9">
+                  <anchor type="psalmtext" n="Ps (LXX) 23,9a" xml:id="coislin-10-ps-23-9a"/> ἄρατε
+                  πύλας, οἱ ἄρχοντες ὑμῶν, <anchor type="psalmtext" n="Ps (LXX) 23,9b"
+                     xml:id="coislin-10-ps-23-9b"/> καὶ ἐπάρθητε, πύλαι αἰώνιοι, <anchor
+                     type="psalmtext" n="Ps (LXX) 23,9b" xml:id="coislin-10-ps-23-9c"/> καὶ
+                  εἰσελεύσεται ὁ βασιλεὺς τῆς δόξης. </quote>
+               <quote type="bibletext" n="Ps (LXX) 23,10" xml:lang="grc"
+                  xml:id="coislin-10-ps-23-10">
+                  <anchor type="psalmtext" n="Ps (LXX) 23,10a" xml:id="coislin-10-ps-23-10a"/> τίς
+                  ἐστιν οὗτος ὁ βασιλεὺς τῆς δόξης; <anchor type="psalmtext" n="Ps (LXX) 18,10b"
+                     xml:id="coislin-10-ps-23-10b"/> κύριος τῶν δυνάμεων, αὐτός ἐστιν ὁ βασιλεὺς τῆς
+                  δόξης. </quote>
+            </div>
             <!-- psalm 26 bibletext  -->
 
             <div type="bibletext" subtype="commented" xml:id="coislin-10-26-1">
                <ab xml:lang="grc">
-               <quote type="bibletext" n="Ps (LXX) 26,1" xml:lang="grc" xml:id="coislin-10-ps-26-1">
-                  <anchor type="psalmtext" n="Ps (LXX) 26,1" xml:id="coislin-10-ps-26-1-1a"/>Τοῦ
-                  Δαυιδ· πρὸ τοῦ χρισθῆναι. <anchor type="psalmtext" n="Ps (LXX) 26,1"
-                     xml:id="coislin-10-ps-26-1b"/>Κύριος φωτισμός μου καὶ σωτήρ μου· τίνα
-                  φοβηθήσομαι; <anchor type="psalmtext" n="Ps (LXX) 26,1"
-                     xml:id="coislin-10-ps-26-1c"/>κύριος ὑπερασπιστὴς τῆς ζωῆς μου· ἀπὸ τίνος
-                  δειλιάσω;</quote>
-               <quote type="bibletext" n="Ps (LXX) 26,1" xml:lang="grc" xml:id="coislin-10-ps-26-2">
-                  <anchor type="psalmtext" n="Ps (LXX) 26,2a" xml:id="coislin-10-ps-26-2a"/>ἐν τῷ
-                  ἐγγίζειν ἐπ’ ἐμὲ κακοῦντας τοῦ φαγεῖν τὰς σάρκας μου <anchor type="psalmtext"
-                     n="Ps (LXX) 26,2b" xml:id="coislin-10-ps-26-2b"/>οἱ θλίβοντές με καὶ οἱ ἐχθροί
-                  μου αὐτοὶ ἠσθένησαν καὶ ἔπεσαν·</quote>
-               <quote type="bibletext" n="Ps (LXX) 26,1" xml:lang="grc" xml:id="coislin-10-ps-26-3">
-                  <anchor type="psalmtext" n="Ps (LXX) 26,3a" xml:id="coislin-10-ps-26-3a"/>ἐὰν
-                  παρατάξηται ἐπ’ ἐμὲ παρεμβολή, οὐ φοβηθήσεται ἡ καρδία μου· <anchor
-                     type="psalmtext" n="Ps (LXX) 26,3b" xml:id="coislin-10-ps-26-3b"/>ἐὰν ἐπαναστῇ
-                  ἐπ’ ἐμὲ πόλεμος, ἐν ταύτῃ ἐγὼ ἐλπίζω.</quote>
-               <quote type="bibletext" n="Ps (LXX) 26,1" xml:lang="grc" xml:id="coislin-10-ps-26-4">
-                  <anchor type="psalmtext" n="Ps (LXX) 26,4a" xml:id="coislin-10-ps-26-4a"/>μίαν
-                  ᾐτησάμην παρὰ κυρίου, ταύτην ἐκζητήσω· <anchor type="psalmtext" n="Ps (LXX) 26,4b"
-                     xml:id="coislin-10-ps-26-4b"/>τοῦ κατοικεῖν με ἐν οἴκῳ κυρίου πάσας τὰς ἡμέρας
-                  τῆς ζωῆς μου, <anchor type="psalmtext" n="Ps (LXX) 26,4c"
-                     xml:id="coislin-10-ps-26-4c"/>τοῦ θεωρεῖν με τὴν τερπνότητα τοῦ κυρίου <anchor
-                     type="psalmtext" n="Ps (LXX) 26,4d" xml:id="coislin-10-ps-26-4d"/>καὶ
-                  ἐπισκέπτεσθαι τὸν ναὸν αὐτοῦ.</quote>
-               <quote type="bibletext" n="Ps (LXX) 26,1" xml:lang="grc" xml:id="coislin-10-ps-26-5">
-                  <anchor type="psalmtext" n="Ps (LXX) 26,5a" xml:id="coislin-10-ps-26-5a"/>ὅτι
-                  ἔκρυψέν με ἐν σκηνῇ ἐν ἡμέρᾳ κακῶν μου· <anchor type="psalmtext"
-                     n="Ps (LXX) 26,5b" xml:id="coislin-10-ps-26-5b"/>ἐσκέπασέν με ἐν ἀποκρύφῳ τῆς
-                  σκηνῆς αὐτοῦ, <anchor type="psalmtext" n="Ps (LXX) 26,5c"
-                     xml:id="coislin-10-ps-26-5c"/>ἐν πέτρᾳ ὕψωσέν με·</quote>
-               <quote type="bibletext" n="Ps (LXX) 26,1" xml:lang="grc" xml:id="coislin-10-ps-26-6">
-                  <anchor type="psalmtext" n="Ps (LXX) 26,6a" xml:id="coislin-10-ps-26-6a"/>καὶ νῦν
-                  ἰδοὺ ὕψωσεν τὴν κεφαλήν μου ἐπ’ ἐχθρούς μου· <anchor type="psalmtext"
-                     n="Ps (LXX) 26,6b" xml:id="coislin-10-ps-26-6b"/>ἐκύκλωσα καὶ ἔθυσα ἐν τῇ σκηνῇ
-                  αὐτοῦ θυσίαν ἀλαλαγμοῦ, <anchor type="psalmtext" n="Ps (LXX) 26,6c"
-                     xml:id="coislin-10-ps-26-6c"/>ᾄσομαι καὶ ψαλῶ τῷ κυρίῳ.</quote>
-               <quote type="bibletext" n="Ps (LXX) 26,1" xml:lang="grc" xml:id="coislin-10-ps-26-7">
-                  <anchor type="psalmtext" n="Ps (LXX) 26,7a" xml:id="coislin-10-ps-26-7a"
-                  />εἰσάκουσον, κύριε, τῆς φωνῆς μου, ἧς ἐκέκραξα· <anchor type="psalmtext"
-                     n="Ps (LXX) 26,7b" xml:id="coislin-10-ps-26-7b"/>ἐλέησόν με καὶ εἰσάκουσόν
-                  μου.</quote>
-               <quote type="bibletext" n="Ps (LXX) 26,1" xml:lang="grc" xml:id="coislin-10-ps-26-8">
-                  <anchor type="psalmtext" n="Ps (LXX) 26,8a" xml:id="coislin-10-ps-26-8a"/>σοὶ
-                  εἶπεν ἡ καρδία μου Ἐζήτησεν τὸ πρόσωπόν μου· <anchor type="psalmtext"
-                     n="Ps (LXX) 26,8b" xml:id="coislin-10-ps-26-8b"/>τὸ πρόσωπόν σου, κύριε,
-                  ζητήσω.</quote>
-               <quote type="bibletext" n="Ps (LXX) 26,1" xml:lang="grc" xml:id="coislin-10-ps-26-9">
-                  <anchor type="psalmtext" n="Ps (LXX) 26,9a" xml:id="coislin-10-ps-26-9a"/>μὴ
-                  ἀποστρέψῃς τὸ πρόσωπόν σου ἀπ’ ἐμοῦ, <anchor type="psalmtext" n="Ps (LXX) 26,9b"
-                     xml:id="coislin-10-ps-26-9b"/>μὴ ἐκκλίνῃς ἐν ὀργῇ ἀπὸ τοῦ δούλου σου· <anchor
-                     type="psalmtext" n="Ps (LXX) 26,9c" xml:id="coislin-10-ps-26-9c"/>βοηθός μου
-                  γενοῦ, μὴ ἀποσκορακίσῃς με <anchor type="psalmtext" n="Ps (LXX) 26,9d"
-                     xml:id="coislin-10-ps-26-9d"/>καὶ μὴ ἐγκαταλίπῃς με, ὁ θεὸς ὁ σωτήρ
-                  μου.</quote>
-               <quote type="bibletext" n="Ps (LXX) 26,1" xml:lang="grc" xml:id="coislin-10-ps-26-10">
-                  <anchor type="psalmtext" n="Ps (LXX) 26,10a" xml:id="coislin-10-ps-26-10a"/>ὅτι ὁ
-                  πατήρ μου καὶ ἡ μήτηρ μου ἐγκατέλιπόν με, <anchor type="psalmtext"
-                     n="Ps (LXX) 26,10b" xml:id="coislin-10-ps-26-10b"/>ὁ δὲ κύριος προσελάβετό
-                  με.</quote>
-               <quote type="bibletext" n="Ps (LXX) 26,1" xml:lang="grc" xml:id="coislin-10-ps-26-11">
-                  <anchor type="psalmtext" n="Ps (LXX) 26,11a" xml:id="coislin-10-ps-26-11a"
-                  />νομοθέτησόν με, κύριε, τῇ ὁδῷ σου <anchor type="psalmtext" n="Ps (LXX) 26,11b"
-                     xml:id="coislin-10-ps-26-11b"/>καὶ ὁδήγησόν με ἐν τρίβῳ εὐθείᾳ ἕνεκα τῶν ἐχθρῶν
-                  μου.</quote>
-               <quote type="bibletext" n="Ps (LXX) 26,1" xml:lang="grc" xml:id="coislin-10-ps-26-12">
-                  <anchor type="psalmtext" n="Ps (LXX) 26,12a" xml:id="coislin-10-ps-26-12a"/>μὴ
-                  παραδῷς με εἰς ψυχὰς θλιβόντων με, <anchor type="psalmtext" n="Ps (LXX) 26,12b"
-                     xml:id="coislin-10-ps-26-12b"/>ὅτι ἐπανέστησάν μοι μάρτυρες ἄδικοι, <anchor
-                     type="psalmtext" n="Ps (LXX) 26,12c" xml:id="coislin-10-ps-26-12c"/>καὶ
-                  ἐψεύσατο ἡ ἀδικία ἑαυτῇ.</quote>
-               <quote type="bibletext" n="Ps (LXX) 26,1" xml:lang="grc" xml:id="coislin-10-ps-26-13">
-                  <anchor type="psalmtext" n="Ps (LXX) 26,13a" xml:id="coislin-10-ps-26-13a"
-                  />πιστεύω τοῦ ἰδεῖν τὰ ἀγαθὰ κυρίου ἐν γῇ ζώντων.</quote>
-               <quote type="bibletext" n="Ps (LXX) 26,1" xml:lang="grc" xml:id="coislin-10-ps-26-14">
-                  <anchor type="psalmtext" n="Ps (LXX) 26,14a" xml:id="coislin-10-ps-26-14a"
-                  />ὑπόμεινον τὸν κύριον· <anchor type="psalmtext" n="Ps (LXX) 26,14b"
-                     xml:id="coislin-10-ps-26-14b"/>ἀνδρίζου, καὶ κραταιούσθω ἡ καρδία σου, <anchor
-                     type="psalmtext" n="Ps (LXX) 26,14c" xml:id="coislin-10-ps-26-14c"/>καὶ
-                  ὑπόμεινον τὸν κύριον. </quote>
+                  <quote type="bibletext" n="Ps (LXX) 26,1" xml:lang="grc"
+                     xml:id="coislin-10-ps-26-1">
+                     <anchor type="psalmtext" n="Ps (LXX) 26,1" xml:id="coislin-10-ps-26-1-1a"/>Τοῦ
+                     Δαυιδ· πρὸ τοῦ χρισθῆναι. <anchor type="psalmtext" n="Ps (LXX) 26,1"
+                        xml:id="coislin-10-ps-26-1b"/>Κύριος φωτισμός μου καὶ σωτήρ μου· τίνα
+                     φοβηθήσομαι; <anchor type="psalmtext" n="Ps (LXX) 26,1"
+                        xml:id="coislin-10-ps-26-1c"/>κύριος ὑπερασπιστὴς τῆς ζωῆς μου· ἀπὸ τίνος
+                     δειλιάσω;</quote>
+                  <quote type="bibletext" n="Ps (LXX) 26,1" xml:lang="grc"
+                     xml:id="coislin-10-ps-26-2">
+                     <anchor type="psalmtext" n="Ps (LXX) 26,2a" xml:id="coislin-10-ps-26-2a"/>ἐν τῷ
+                     ἐγγίζειν ἐπ’ ἐμὲ κακοῦντας τοῦ φαγεῖν τὰς σάρκας μου <anchor type="psalmtext"
+                        n="Ps (LXX) 26,2b" xml:id="coislin-10-ps-26-2b"/>οἱ θλίβοντές με καὶ οἱ
+                     ἐχθροί μου αὐτοὶ ἠσθένησαν καὶ ἔπεσαν·</quote>
+                  <quote type="bibletext" n="Ps (LXX) 26,1" xml:lang="grc"
+                     xml:id="coislin-10-ps-26-3">
+                     <anchor type="psalmtext" n="Ps (LXX) 26,3a" xml:id="coislin-10-ps-26-3a"/>ἐὰν
+                     παρατάξηται ἐπ’ ἐμὲ παρεμβολή, οὐ φοβηθήσεται ἡ καρδία μου· <anchor
+                        type="psalmtext" n="Ps (LXX) 26,3b" xml:id="coislin-10-ps-26-3b"/>ἐὰν
+                     ἐπαναστῇ ἐπ’ ἐμὲ πόλεμος, ἐν ταύτῃ ἐγὼ ἐλπίζω.</quote>
+                  <quote type="bibletext" n="Ps (LXX) 26,1" xml:lang="grc"
+                     xml:id="coislin-10-ps-26-4">
+                     <anchor type="psalmtext" n="Ps (LXX) 26,4a" xml:id="coislin-10-ps-26-4a"/>μίαν
+                     ᾐτησάμην παρὰ κυρίου, ταύτην ἐκζητήσω· <anchor type="psalmtext"
+                        n="Ps (LXX) 26,4b" xml:id="coislin-10-ps-26-4b"/>τοῦ κατοικεῖν με ἐν οἴκῳ
+                     κυρίου πάσας τὰς ἡμέρας τῆς ζωῆς μου, <anchor type="psalmtext"
+                        n="Ps (LXX) 26,4c" xml:id="coislin-10-ps-26-4c"/>τοῦ θεωρεῖν με τὴν
+                     τερπνότητα τοῦ κυρίου <anchor type="psalmtext" n="Ps (LXX) 26,4d"
+                        xml:id="coislin-10-ps-26-4d"/>καὶ ἐπισκέπτεσθαι τὸν ναὸν αὐτοῦ.</quote>
+                  <quote type="bibletext" n="Ps (LXX) 26,1" xml:lang="grc"
+                     xml:id="coislin-10-ps-26-5">
+                     <anchor type="psalmtext" n="Ps (LXX) 26,5a" xml:id="coislin-10-ps-26-5a"/>ὅτι
+                     ἔκρυψέν με ἐν σκηνῇ ἐν ἡμέρᾳ κακῶν μου· <anchor type="psalmtext"
+                        n="Ps (LXX) 26,5b" xml:id="coislin-10-ps-26-5b"/>ἐσκέπασέν με ἐν ἀποκρύφῳ
+                     τῆς σκηνῆς αὐτοῦ, <anchor type="psalmtext" n="Ps (LXX) 26,5c"
+                        xml:id="coislin-10-ps-26-5c"/>ἐν πέτρᾳ ὕψωσέν με·</quote>
+                  <quote type="bibletext" n="Ps (LXX) 26,1" xml:lang="grc"
+                     xml:id="coislin-10-ps-26-6">
+                     <anchor type="psalmtext" n="Ps (LXX) 26,6a" xml:id="coislin-10-ps-26-6a"/>καὶ
+                     νῦν ἰδοὺ ὕψωσεν τὴν κεφαλήν μου ἐπ’ ἐχθρούς μου· <anchor type="psalmtext"
+                        n="Ps (LXX) 26,6b" xml:id="coislin-10-ps-26-6b"/>ἐκύκλωσα καὶ ἔθυσα ἐν τῇ
+                     σκηνῇ αὐτοῦ θυσίαν ἀλαλαγμοῦ, <anchor type="psalmtext" n="Ps (LXX) 26,6c"
+                        xml:id="coislin-10-ps-26-6c"/>ᾄσομαι καὶ ψαλῶ τῷ κυρίῳ.</quote>
+                  <quote type="bibletext" n="Ps (LXX) 26,1" xml:lang="grc"
+                     xml:id="coislin-10-ps-26-7">
+                     <anchor type="psalmtext" n="Ps (LXX) 26,7a" xml:id="coislin-10-ps-26-7a"
+                     />εἰσάκουσον, κύριε, τῆς φωνῆς μου, ἧς ἐκέκραξα· <anchor type="psalmtext"
+                        n="Ps (LXX) 26,7b" xml:id="coislin-10-ps-26-7b"/>ἐλέησόν με καὶ εἰσάκουσόν
+                     μου.</quote>
+                  <quote type="bibletext" n="Ps (LXX) 26,1" xml:lang="grc"
+                     xml:id="coislin-10-ps-26-8">
+                     <anchor type="psalmtext" n="Ps (LXX) 26,8a" xml:id="coislin-10-ps-26-8a"/>σοὶ
+                     εἶπεν ἡ καρδία μου Ἐζήτησεν τὸ πρόσωπόν μου· <anchor type="psalmtext"
+                        n="Ps (LXX) 26,8b" xml:id="coislin-10-ps-26-8b"/>τὸ πρόσωπόν σου, κύριε,
+                     ζητήσω.</quote>
+                  <quote type="bibletext" n="Ps (LXX) 26,1" xml:lang="grc"
+                     xml:id="coislin-10-ps-26-9">
+                     <anchor type="psalmtext" n="Ps (LXX) 26,9a" xml:id="coislin-10-ps-26-9a"/>μὴ
+                     ἀποστρέψῃς τὸ πρόσωπόν σου ἀπ’ ἐμοῦ, <anchor type="psalmtext"
+                        n="Ps (LXX) 26,9b" xml:id="coislin-10-ps-26-9b"/>μὴ ἐκκλίνῃς ἐν ὀργῇ ἀπὸ τοῦ
+                     δούλου σου· <anchor type="psalmtext" n="Ps (LXX) 26,9c"
+                        xml:id="coislin-10-ps-26-9c"/>βοηθός μου γενοῦ, μὴ ἀποσκορακίσῃς με <anchor
+                        type="psalmtext" n="Ps (LXX) 26,9d" xml:id="coislin-10-ps-26-9d"/>καὶ μὴ
+                     ἐγκαταλίπῃς με, ὁ θεὸς ὁ σωτήρ μου.</quote>
+                  <quote type="bibletext" n="Ps (LXX) 26,1" xml:lang="grc"
+                     xml:id="coislin-10-ps-26-10">
+                     <anchor type="psalmtext" n="Ps (LXX) 26,10a" xml:id="coislin-10-ps-26-10a"/>ὅτι
+                     ὁ πατήρ μου καὶ ἡ μήτηρ μου ἐγκατέλιπόν με, <anchor type="psalmtext"
+                        n="Ps (LXX) 26,10b" xml:id="coislin-10-ps-26-10b"/>ὁ δὲ κύριος προσελάβετό
+                     με.</quote>
+                  <quote type="bibletext" n="Ps (LXX) 26,1" xml:lang="grc"
+                     xml:id="coislin-10-ps-26-11">
+                     <anchor type="psalmtext" n="Ps (LXX) 26,11a" xml:id="coislin-10-ps-26-11a"
+                     />νομοθέτησόν με, κύριε, τῇ ὁδῷ σου <anchor type="psalmtext"
+                        n="Ps (LXX) 26,11b" xml:id="coislin-10-ps-26-11b"/>καὶ ὁδήγησόν με ἐν τρίβῳ
+                     εὐθείᾳ ἕνεκα τῶν ἐχθρῶν μου.</quote>
+                  <quote type="bibletext" n="Ps (LXX) 26,1" xml:lang="grc"
+                     xml:id="coislin-10-ps-26-12">
+                     <anchor type="psalmtext" n="Ps (LXX) 26,12a" xml:id="coislin-10-ps-26-12a"/>μὴ
+                     παραδῷς με εἰς ψυχὰς θλιβόντων με, <anchor type="psalmtext" n="Ps (LXX) 26,12b"
+                        xml:id="coislin-10-ps-26-12b"/>ὅτι ἐπανέστησάν μοι μάρτυρες ἄδικοι, <anchor
+                        type="psalmtext" n="Ps (LXX) 26,12c" xml:id="coislin-10-ps-26-12c"/>καὶ
+                     ἐψεύσατο ἡ ἀδικία ἑαυτῇ.</quote>
+                  <quote type="bibletext" n="Ps (LXX) 26,1" xml:lang="grc"
+                     xml:id="coislin-10-ps-26-13">
+                     <anchor type="psalmtext" n="Ps (LXX) 26,13a" xml:id="coislin-10-ps-26-13a"
+                     />πιστεύω τοῦ ἰδεῖν τὰ ἀγαθὰ κυρίου ἐν γῇ ζώντων.</quote>
+                  <quote type="bibletext" n="Ps (LXX) 26,1" xml:lang="grc"
+                     xml:id="coislin-10-ps-26-14">
+                     <anchor type="psalmtext" n="Ps (LXX) 26,14a" xml:id="coislin-10-ps-26-14a"
+                     />ὑπόμεινον τὸν κύριον· <anchor type="psalmtext" n="Ps (LXX) 26,14b"
+                        xml:id="coislin-10-ps-26-14b"/>ἀνδρίζου, καὶ κραταιούσθω ἡ καρδία σου,
+                        <anchor type="psalmtext" n="Ps (LXX) 26,14c" xml:id="coislin-10-ps-26-14c"
+                     />καὶ ὑπόμεινον τὸν κύριον. </quote>
                </ab>
             </div>
 
@@ -8805,7 +8877,6 @@
                         754</ref>
                      <note type="attribution" xml:lang="grc">Θεοδ(ωρήτου)</note>
                   </seg>
-                  
                   <note type="lemma">Ps 26,1b–c</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-26-3" source="(Athanasius)"
                      corresp="#coislin-10-ps-26-1b" copyOf="#edition-part-two:edition-26-30-26-1-2">
@@ -8816,7 +8887,6 @@
                         754</ref>
                      <note type="attribution" xml:lang="grc">ΙΒ'</note>
                   </seg>
-                          
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-26-4" source="Theodoretus"
                      corresp="#coislin-10-ps-26-1b"><quote type="patristic" subtype="quotation"
                         xml:id="vat-gr-754-quot-26-4"
@@ -8972,7 +9042,8 @@
                         754</ref>
                      <note type="attribution" xml:lang="grc">Διδύμου</note></seg>
                   <note type="lemma">Ps 26,5a</note><note type="textual-commentary">The lemma
-                     provides <foreign xml:lang="grc">αὐτοῦ</foreign> after <foreign xml:lang="grc">σκηνῇ</foreign> (om. LXX Rahlfs).</note>
+                     provides <foreign xml:lang="grc">αὐτοῦ</foreign> after <foreign xml:lang="grc"
+                        >σκηνῇ</foreign> (om. LXX Rahlfs).</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-26-18" source="(Athanasius)"
                      corresp="#coislin-10-ps-26-5a" copyOf="#edition-part-two:edition-26-30-26-5-1"
                         ><quote type="patristic" subtype="quotation" xml:id="coislin-10-quot-26-18"
@@ -9026,9 +9097,10 @@
                      <ref target="#vat-gr-754:vat-gr-754-fr-26-24" type="with-variant">Vat. gr.
                         754</ref>
                      <note type="attribution" xml:lang="grc">Θεοδ(ωρ[ήτ?]ου)</note>
-                     <note type="textual-commentary"><foreign xml:lang="grc">ἀνώτερον πεποίηκε τῶν ἐχθρῶν</foreign> cf. Diodorus <quote
-                           type="patristic" source="Diodorus, comm. in Ps 26,6a (155,75 Olivier)"
-                           corresp="#person-5"/></note>
+                     <note type="textual-commentary"><foreign xml:lang="grc">ἀνώτερον πεποίηκε τῶν
+                           ἐχθρῶν</foreign> cf. Diodorus <quote type="patristic"
+                           source="Diodorus, comm. in Ps 26,6a (155,75 Olivier)" corresp="#person-5"
+                        /></note>
                   </seg>
                   <note type="lemma">Ps 26,6a (κεφαλήν μου)</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-26-24"
@@ -9055,11 +9127,12 @@
                      <ref target="#vat-gr-754:vat-gr-754-fr-26-26" type="identical">Vat. gr.
                         754</ref>
                      <note type="attribution" xml:lang="grc">Ἡσύχιου</note>
-                     <note type="textual-commentary">Hesychius, comm. magnus? <quote type="patristic"
-                           source="Hesychius, comm. magnus ineditus?" corresp="#person-12"
-                     /></note></seg>
+                     <note type="textual-commentary">Hesychius, comm. magnus? <quote
+                           type="patristic" source="Hesychius, comm. magnus ineditus?"
+                           corresp="#person-12"/></note></seg>
                   <note type="lemma">Ps 26,6c</note><note type="textual-commentary">The lemma
-                     provides <foreign xml:lang="grc">ἄσω</foreign> (<foreign xml:lang="grc">ᾄσομαι</foreign> LXX Rahlfs).</note>
+                     provides <foreign xml:lang="grc">ἄσω</foreign> (<foreign xml:lang="grc"
+                        >ᾄσομαι</foreign> LXX Rahlfs).</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-26-27"
                      rendition="#top-of-the-page" source="(Athanasius)"
                      corresp="#coislin-10-ps-26-6c" copyOf="#edition-part-two:edition-26-30-26-6-1"
@@ -9078,10 +9151,10 @@
                      <ref target="#vat-gr-754:vat-gr-754-fr-26-28" type="with-variant">Vat. gr.
                         754</ref>
                      <note type="attribution" xml:lang="grc">Θεοδ(ωρ[ήτ?]ου)</note>
-                     <note type="textual-commentary">The phrase <foreign xml:lang="grc">ἐνήλλακται (γὰρ) ὁ χρόνος</foreign> occurs
-                        several times in Diodorus<quote type="patristic"
-                           source="Diodorus, comm. in Ps" corresp="#person-5"/> but cf. also
-                        Theodorus Mopsuestenus <quote type="patristic"
+                     <note type="textual-commentary">The phrase <foreign xml:lang="grc">ἐνήλλακται
+                           (γὰρ) ὁ χρόνος</foreign> occurs several times in Diodorus<quote
+                           type="patristic" source="Diodorus, comm. in Ps" corresp="#person-5"/> but
+                        cf. also Theodorus Mopsuestenus <quote type="patristic"
                            source="Theodorus, fr. in Ps, e.g. in Ps 26,6a–8a  (131 Devreesse)"
                            corresp="#person-22"/></note>
                   </seg>
@@ -9089,7 +9162,7 @@
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-26-29"
                      rendition="#left-column" source="Theodor(et?)us" corresp="#coislin-10-ps-26-7a"
                         ><quote type="patristic" subtype="unknown" xml:id="coislin-10-quot-26-29"
-                           source="fons ignotus; Theodorus Mopsuestenus (?) ἀντι – ἑξῆς ed. Montfaucon sub auctore Athanasio (PG 27, 149 A13–15; ex Paris. gr. 166–167, f. 69v)"
+                        source="fons ignotus; Theodorus Mopsuestenus (?) ἀντι – ἑξῆς ed. Montfaucon sub auctore Athanasio (PG 27, 149 A13–15; ex Paris. gr. 166–167, f. 69v)"
                         corresp="#person-89">ἀντι τοῦ εὐχαριστῶ σοι ὑπερ τῶν παρελθόντων· δεηθήσομαι
                         οὖν. καὶ ὑπερ τῶν ἑξῆς· τὸ δὲ ἄσω καὶ ψαλῶ τῶ κυρίω. ἐπισυνῆπται τοῖς
                         προκειμέμοις·</quote>
@@ -9108,10 +9181,11 @@
                      <ref target="#vat-gr-754:vat-gr-754-fr-26-31" type="with-variants">Vat. gr.
                         754</ref>
                      <note type="attribution" xml:lang="grc">Ἡσυχ(ιου)</note>
-                     <note type="textual-commentary">Hesychius, comm. magnus? <quote type="patristic"
-                           source="Hesychius, comm. magnus ineditus?" corresp="#person-12"/></note>
-                     <note type="textual-commentary"><foreign xml:lang="grc">οὐ χρεωστεῖ – εἰσακούομεν</foreign> cf. Euthymius, comm.
-                        in Ps, PG 128 324,23–25</note>
+                     <note type="textual-commentary">Hesychius, comm. magnus? <quote
+                           type="patristic" source="Hesychius, comm. magnus ineditus?"
+                           corresp="#person-12"/></note>
+                     <note type="textual-commentary"><foreign xml:lang="grc">οὐ χρεωστεῖ –
+                           εἰσακούομεν</foreign> cf. Euthymius, comm. in Ps, PG 128 324,23–25</note>
                   </seg>
                   <note type="lemma">Ps 26,8a</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-26-31"
@@ -9179,8 +9253,8 @@
                         ἐκβαλλεται· ἐκρίπτεται· κωλύεται· : –</quote>
                      <ref target="#vat-gr-754:vat-gr-754-glosse-26-2" type="identical">Vat. gr.
                         754</ref>
-                     <note type="textual-commentary"><foreign xml:lang="grc">σκορακίζει – καταράται</foreign> cf. <quote
-                           type="patristic"
+                     <note type="textual-commentary"><foreign xml:lang="grc">σκορακίζει –
+                           καταράται</foreign> cf. <quote type="patristic"
                            source="cf. Hesychius, lex. s.v. σκορακίζει (Σ nr. 1102 Hansen)"
                            corresp="#person-90"/></note></seg>
                   <seg type="glosse" xml:id="coislin-10-glosse-26-3" source="Anonymous"
@@ -9222,8 +9296,9 @@
                      <ref target="#vat-gr-754:vat-gr-754-fr-26-39" type="identical">Vat. gr.
                         754</ref>
                      <note type="attribution" xml:lang="grc">Ἡσυχ(ιου)</note>
-                     <note type="textual-commentary">Hesychius, comm. magnus? <quote type="patristic"
-                           source="Hesychius, comm. magnus ineditus?" corresp="#person-12"/></note>
+                     <note type="textual-commentary">Hesychius, comm. magnus? <quote
+                           type="patristic" source="Hesychius, comm. magnus ineditus?"
+                           corresp="#person-12"/></note>
                   </seg>
                   <note type="lemma">Ps 26,10a</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-26-38"
@@ -9301,7 +9376,8 @@
                      <ref target="#vat-gr-754:vat-gr-754-fr-26-48" type="identical">Vat. gr.
                         754</ref>
                      <note type="attribution" xml:lang="grc">Θεοδ(ωρ[ήτ?]ου)</note>
-                     <note type="textual-commentary"><foreign xml:lang="grc">ὁ δὲ – ἀδικία</foreign> cf. <quote type="patristic"
+                     <note type="textual-commentary"><foreign xml:lang="grc">ὁ δὲ – ἀδικία</foreign>
+                        cf. <quote type="patristic"
                            source="Theodoretus, comm. in Ps 26,12b–c (PG 80,1056 A6–8)"
                            corresp="#person-16"/> and <quote type="patristic"
                            source="Theodorus, fr. in Ps 26,12c (sic) (131 Devreesse)"
