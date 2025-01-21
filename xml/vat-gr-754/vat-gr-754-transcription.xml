@@ -16571,7 +16571,7 @@
                   <seg type="glosse" xml:id="vat-gr-754-glosse-14-1" rendition="#left-column"
                      source="Anonymous" corresp="#vat-gr-754-ps-14-5b"><quote type="patristic"
                         subtype="quotation" xml:id="vat-gr-754-quot-14-13"
-                        source="fons ignotus in Ps 14,5b; cf. Hesychius, lex. s.v. ἀθῷος (A nr. 1648 Latte)"
+                        source="fons ignotus in Ps 14,5b; cf. Hesychius, lex. s.v. ἀθῷος (A nr. 1648 Latte) et alibi"
                         corresp="#person-18">ἐπαναιτίοις·</quote></seg>
                   <note type="lemma">Ps 15,1a (Εἰς στηλογραφίαν [Στηλογραφία LXX Rahlfs])</note>
                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-15-1"
@@ -18011,9 +18011,15 @@
                rendition="#left-column" rend="minuscule letters" change="commentaryfragments-only">
                <ab xml:lang="grc">
                   <note type="lemma">Ps 17,1–2a</note>
+<<<<<<< HEAD
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-17-3"
                      rendition="#left-column" source="Theodoretus" corresp="#vat-gr-754-ps-17-1-1"
                         ><quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-17-5"
+=======
+                  <seg type="hypothesis" xml:id="vat-gr-754-fr-17-3" rendition="#left-column"
+                     source="Theodoretus" corresp="#vat-gr-754-ps-17-1-1"><quote type="patristic"
+                        subtype="quotation" xml:id="vat-gr-754-quot-17-5"
+>>>>>>> e57852616d72cbfefe0002f41ae60e724e6c9a25
                         source="Theodoretus, comm. in Ps 17,1–2a (PG 80,972 B16–C7)"
                         corresp="#person-16"/>
                      <note type="attribution" xml:lang="grc">Θεοδ(ωρήτου)</note></seg>
@@ -22697,11 +22703,9 @@
                      ἐν ἐλαίῳ τὴν κεφαλήν μου, <anchor type="psalmtext" n="Ps (LXX) 22,5c"
                         xml:id="vat-gr-754-ps-22-5c"/> καὶ τὸ ποτήριόν σου μεθύσκον ὡς κράτιστον. </quote>
                   <quote type="bibletext" n="Ps (LXX) 22,6" xml:lang="grc"
-                     xml:id="vat-gr-754-ps-22-6">
+                     xml:id="vat-gr-754-ps-22-6" next="vat-gr-754-ps-22-6-1">
                      <anchor type="psalmtext" n="Ps (LXX) 22,6a" xml:id="vat-gr-754-ps-22-6a"/> καὶ
-                     τὸ ἔλεός σου καταδιώξεταί με πάσας τὰς ἡμέρας τῆς ζωῆς μου, <anchor
-                        type="psalmtext" n="Ps (LXX) 22,6b" xml:id="vat-gr-754-ps-22-6b"/> καὶ τὸ
-                     κατοικεῖν με ἐν οἴκῳ κυρίου εἰς μακρότητα ἡμερῶν. </quote></ab>
+                     τὸ ἔλεός σου καταδιώξεταί με πάσας τὰς ἡμέρας τῆς ζωῆς μου, </quote></ab>
             </div>
             <div type="hexaplaric" subtype="commentary" xml:id="vat-gr-754-22-4"
                rendition="#right-column" rend="capital letters" change="commentaryfragments-only">
@@ -22842,6 +22846,219 @@
                </ab>
             </div>
             <pb n="77r" facs="https://digi.vatlib.it/view/MSS_Vat.gr.754/76"/>
+            <!-- ps 23 bibletext -->
+            <div xml:id="vat-gr-754-23-1" type="bibletext" subtype="commented"
+               rendition="#middle-column" change="commentaryfragments-only">
+               <ab xml:lang="grc">
+                  <quote type="bibletext" n="Ps (LXX) 22,6" xml:lang="grc"
+                     xml:id="vat-gr-754-ps-22-6-1" prev="#vat-gr-754-ps-22-6">
+                     <anchor type="psalmtext" n="Ps (LXX) 22,6b" xml:id="vat-gr-754-ps-22-6b"/> καὶ
+                     τὸ κατοικεῖν με ἐν οἴκῳ κυρίου εἰς μακρότητα ἡμερῶν. </quote>
+                  <quote type="bibletext" n="Ps (LXX) 23,1" xml:lang="grc"
+                     xml:id="vat-gr-754-ps-23-1">
+                     <anchor type="psalmtext" n="Ps (LXX) 23,1a" xml:id="vat-gr-754-ps-23-1a"/>
+                     Ψαλμὸς τῷ Δαυιδ· τῆς μιᾶς σαββάτων. <anchor type="psalmtext" n="Ps (LXX) 23,1b"
+                        xml:id="vat-gr-754-ps-23-1b"/> Τοῦ κυρίου ἡ γῆ καὶ τὸ πλήρωμα αὐτῆς, <anchor
+                        type="psalmtext" n="Ps (LXX) 23,1c" xml:id="vat-gr-754-ps-23-1c"/> ἡ
+                     οἰκουμένη καὶ πάντες οἱ κατοικοῦντες ἐν αὐτῇ· </quote>
+                  <quote type="bibletext" n="Ps (LXX) 23,2" xml:lang="grc"
+                     xml:id="vat-gr-754-ps-23-2">
+                     <anchor type="psalmtext" n="Ps (LXX) 23,2a" xml:id="vat-gr-754-ps-23-2a"/>
+                     αὐτὸς ἐπὶ θαλασσῶν ἐθεμελίωσεν αὐτὴν <anchor type="psalmtext"
+                        n="Ps (LXX) 23,2b" xml:id="vat-gr-754-ps-23-2b"/> καὶ ἐπὶ ποταμῶν ἡτοίμασεν
+                     αὐτήν. </quote>
+                  <quote type="bibletext" n="Ps (LXX) 23,3" xml:lang="grc"
+                     xml:id="vat-gr-754-ps-23-3">
+                     <anchor type="psalmtext" n="Ps (LXX) 23,3a" xml:id="vat-gr-754-ps-23-3a"/> τίς
+                     ἀναβήσεται εἰς τὸ ὄρος τοῦ κυρίου <anchor type="psalmtext" n="Ps (LXX) 23,3b"
+                        xml:id="vat-gr-754-ps-23-3b"/> καὶ τίς στήσεται ἐν τόπῳ ἁγίῳ αὐτοῦ; </quote>
+                  <quote type="bibletext" n="Ps (LXX) 23,4" xml:lang="grc"
+                     xml:id="vat-gr-754-ps-23-4" next="#vat-gr-754-ps-23-4-1">
+                     <anchor type="psalmtext" n="Ps (LXX) 23,4a" xml:id="vat-gr-754-ps-23-4a"/>
+                     ἀθῷος χερσὶν καὶ καθαρὸς τῇ καρδίᾳ, </quote>
+               </ab>
+            </div>
+            <div type="hexaplaric" subtype="commentary" xml:id="vat-gr-754-23-2"
+               rendition="#left-column" rend="capital letters" change="commentaryfragments-only">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 22,6b (κατοικεῖν)</note>
+                  <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-22-8"
+                     rendition="#left-column" source="Symmachus (Ps 22,6b)"
+                     corresp="#vat-gr-754-ps-22-6b">Ϲ καὶ ἡ κατοίκησίς μου:</seg>
+                  <note type="lemma">linking absent</note>
+                  <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-22-9"
+                     rendition="#left-column"
+                     source="Theodotion (Ps 22,6b); cf. Field II (121, n. 15)"
+                     corresp="#vat-gr-754-ps-22-6b">Θ τῶ κυρίω·</seg>
+                  <note type="lemma">linking absent</note>
+                  <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-22-10"
+                     rendition="#left-column"
+                     source="Aquila, Symmachus (Ps 22,6b); cf. Field II (121, n. 15)"
+                     corresp="#vat-gr-754-ps-22-6b">Θ τοῦ κυρίου</seg>
+                  <note type="lemma">linking not completed</note>
+                  <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-23-1"
+                     rendition="#left-column" source="Symmachus (Ps 23,2)"
+                     corresp="#vat-gr-754-ps-23-2a">Ϲ οὗτος ἐπιθαλάσσας ἐθεμελίωσεν αἰτέν· [lege
+                     αὐτήν] καὶ συνποταμοῖς ήδρασεν αὐτήν·</seg>
+                  <note type="lemma">linking not completed</note>
+                  <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-23-2"
+                     rendition="#left-column" source="Theodotion (Ps 23,2)"
+                     corresp="#vat-gr-754-ps-23-2a">Θ ὁμοίως τοῖς Ο´</seg>
+                  <note type="lemma">Ps 23,3b (τόπῳ [sic])</note>
+                  <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-23-3"
+                     rendition="#left-column" source="Aquila, Theodotion (Ps 23,3b)"
+                     corresp="#vat-gr-754-ps-23-3b">A Θ ἁγιάσματος:</seg>
+               </ab>
+            </div>
+            <div type="commentary" subtype="commentary" xml:id="vat-gr-754-23-3"
+               rendition="#psalm-column" rend="minuscule letters" change="commentaryfragments-only">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 23,4a (ἀθῷος)</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-754-glosse-23-1"
+                     rendition="#psalm-column" source="Anonymous" corresp="#vat-gr-754-ps-23-4a"
+                        ><quote type="patristic" subtype="unknown" xml:id="vat-gr-754-quot-23-1"
+                        source="fons ignotus in Ps 23,4a; cf. Hesychius, lex. s.v. ἀθῷος (A nr. 1648 Latte) et alibi"
+                        corresp="#person-18">ἀναίτιος</quote></seg>
+               </ab>
+            </div>
+            <!-- ps 23 commentary -->
+            <div type="commentary" subtype="commentary" xml:id="vat-gr-754-23-4"
+               rendition="#top-of-the-page" rend="minuscule letters"
+               change="commentaryfragments-only">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 23,1a</note>
+                  <seg type="hypothesis" xml:id="vat-gr-754-fr-23-1" rendition="#top-of-the-page"
+                     source="(Athanasius)" corresp="#vat-gr-754-ps-23-1a"
+                     copyOf="#edition:edition-23-1-1"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-754-quot-23-2" source="Athanasius, exp. in Ps 23,1a"
+                        corresp="#person-2">Τὴν ἀνάληψιν τοῦ κυρίου ὁ παρὼν ἡμῖν κηρύττει ψαλμός·
+                        καὶ τῶν ἐθνῶν διδασκαλίαν. πῶς ἂν καὶ αὐτοὶ ἄξιοι γέν<subst hand="corr">
+                           <del rend="erasure">ω</del>
+                           <add place="inline">ο</add>
+                        </subst>νται τῶν ἐποὐρανίων σκηνῶν: – </quote>
+                     <note type="attribution" xml:lang="grc">ΛΘ΄</note></seg>
+                  <note type="lemma">Ps 23,1b</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-23-2"
+                     rendition="#top-of-the-page" source="(Athanasius)"
+                     corresp="#vat-gr-754-ps-23-1b" copyOf="#edition:edition-23-1-2"><quote
+                        type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-23-3"
+                        source="Athanasius, exp. in Ps 23,1b" corresp="#person-2">Τὴν βασιλείαν ἣν
+                        ἐβασίλευσε τῶν ἐθνῶν ἐπιδημήσας ὁ μονογενὴς τοῦ θεοῦ λόγος. διὰ τῶν παρόντων
+                        κηρύττει: –</quote>
+                     <note type="attribution" xml:lang="grc">M´</note></seg>
+               </ab>
+            </div>
+            <div type="commentary" subtype="commentary" xml:id="vat-gr-754-23-5"
+               rendition="#right-column" rend="minuscule letters" change="commentaryfragments-only">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 23,1c</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-23-3"
+                     rendition="#right-column" source="(Evagrius)" corresp="#vat-gr-754-ps-23-1c"
+                        ><quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-23-4"
+                        source="Evagrius, schol. nr. α´ in Ps 23,1b–c (438 Rondeau – Géhin – Cassin)"
+                        corresp="#person-21"/>
+                     <note type="attribution" xml:lang="grc">α´</note></seg>
+                  <note type="lemma">Ps 23,3</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-23-4"
+                     rendition="#right-column" source="(Evagrius)" corresp="#vat-gr-754-ps-23-3a"
+                        ><quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-23-5"
+                        source="Evagrius, schol. nr. β´ in Ps 23,3–4a (438 Rondeau – Géhin – Cassin)"
+                        corresp="#person-21"/>
+                     <note type="attribution" xml:lang="grc">β´</note></seg>
+               </ab>
+            </div>
+            <div type="commentary" subtype="commentary" xml:id="vat-gr-754-23-6"
+               rendition="#bottom-of-the-page" rend="minuscule letters"
+               change="commentaryfragments-only">
+               <ab xml:lang="grc">
+                  <!--<note type="lemma">linking not completed</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-23-5" rendition="#XXXX"
+                     source="XXXX" corresp="#vat-gr-754-ps-23-XX"><quote type="patristic"
+                        subtype="XXXX" xml:id="vat-gr-754-quot-23-5" source="XXXX"
+                        corresp="#person-XX"/>
+                     <note type="attribution" xml:lang="grc">XXXX</note></seg>-->
+                  <note type="lemma">Ps 23,2a (sic)</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-23-6"
+                     rendition="#bottom-of-the-page" source="(Athanasius)"
+                     corresp="#vat-gr-754-ps-23-2a" copyOf="#edition:edition-23-2-2"><quote
+                        type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-23-6"
+                        source="Athanasius, exp. in Ps 23,2b" corresp="#person-2">Ἀντιτοῦ
+                           διεκόσμη<subst cert="high">
+                           <del rend="erasure">ε</del>
+                           <add place="inline">σ</add>
+                        </subst>εν: –</quote>
+                     <note type="attribution" xml:lang="grc">MA´</note></seg>
+                  <note type="lemma">Ps 23,2b (sic)</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-23-7"
+                     rendition="#bottom-of-the-page" source="(Athanasius)"
+                     corresp="#vat-gr-754-ps-23-2b" copyOf="#edition:edition-23-2-1"><quote
+                        type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-23-7"
+                        source="Athanasius, exp. in Ps 23,2a" corresp="#person-2">Ἵνα μή τις τῶν
+                        ἐχθρῶν δόξη εἶναι μὲν τὴν γῆν τοῦ σατανᾶ. νυνὶ δὲ αὐτῆς βασιλεῦσαι τὸν
+                        Χριστὸν. τούτου χάριν τὸν Χριστὸν αὐτῆς ποιητὴν ἀποδείκνυσιν· ἅμα δὲ καὶ τὴν
+                        δύναμιν αὐτοῦ δηλοῖ· ὥστε τοσοῦτον μέγεθος τῆς γῆς ἐπι ὑδάτων στηριχθῆναι:
+                        –</quote>
+                     <note type="attribution" xml:lang="grc">MB´</note></seg>
+               </ab>
+            </div>
+            <pb n="77v" facs="https://digi.vatlib.it/view/MSS_Vat.gr.754/77"/>
+            <div xml:id="vat-gr-754-23-XXX" type="bibletext" subtype="commented"
+               rendition="#middle-column" change="commentaryfragments-only">
+               <ab xml:lang="grc">
+                  <quote type="bibletext" n="Ps (LXX) 23,4" xml:lang="grc"
+                     xml:id="vat-gr-754-ps-23-4-1" prev="#vat-gr-754-ps-23-4">
+                     <anchor type="psalmtext" n="Ps (LXX) 23,4b" xml:id="vat-gr-754-ps-23-4b"/>ὃς
+                     οὐκ ἔλαβεν ἐπὶ ματαίῳ τὴν ψυχὴν αὐτοῦ <anchor type="psalmtext"
+                        n="Ps (LXX) 23,4c" xml:id="vat-gr-754-ps-23-4c"/> καὶ οὐκ ὤμοσεν ἐπὶ δόλῳ τῷ
+                     πλησίον αὐτοῦ. </quote>
+                  <quote type="bibletext" n="Ps (LXX) 23,5" xml:lang="grc"
+                     xml:id="vat-gr-754-ps-23-5">
+                     <anchor type="psalmtext" n="Ps (LXX) 23,5a" xml:id="vat-gr-754-ps-23-5a"/>
+                     οὗτος λήμψεται εὐλογίαν παρὰ κυρίου <anchor type="psalmtext" n="Ps (LXX) 23,5b"
+                        xml:id="vat-gr-754-ps-23-5b"/> καὶ ἐλεημοσύνην παρὰ θεοῦ σωτῆρος αὐτοῦ. </quote>
+                  <quote type="bibletext" n="Ps (LXX) 23,6" xml:lang="grc"
+                     xml:id="vat-gr-754-ps-23-6">
+                     <anchor type="psalmtext" n="Ps (LXX) 23,6a" xml:id="vat-gr-754-ps-23-6a"/> αὕτη
+                     ἡ γενεὰ ζητούντων αὐτόν, <anchor type="psalmtext" n="Ps (LXX) 23,6b"
+                        xml:id="vat-gr-754-ps-23-6b"/> ζητούντων τὸ πρόσωπον τοῦ θεοῦ Ιακωβ. <anchor
+                        type="psalmtext" n="Ps (LXX) 23,6c" xml:id="vat-gr-754-ps-23-6c"/>
+                     διάψαλμα.</quote>
+                  <quote type="bibletext" n="Ps (LXX) 23,7" xml:lang="grc"
+                     xml:id="vat-gr-754-ps-23-7" next="#vat-gr-754-ps-23-7-1">
+                     <anchor type="psalmtext" n="Ps (LXX) 23,7a" xml:id="vat-gr-754-ps-23-7a"/>
+                     ἄρατε πύλας, οἱ ἄρχοντες ὑμῶν, <anchor type="psalmtext" n="Ps (LXX) 23,7b"
+                        xml:id="vat-gr-754-ps-23-7b"/> καὶ ἐπάρθητε, πύλαι αἰώνιοι, </quote>
+               </ab>
+            </div>
+            <pb n="78r" facs="https://digi.vatlib.it/view/MSS_Vat.gr.754/77"/>
+            <div xml:id="vat-gr-754-23-XXXX" type="bibletext" subtype="commented"
+               rendition="#middle-column" change="commentaryfragments-only">
+               <ab xml:lang="grc">
+                  <quote type="bibletext" n="Ps (LXX) 23,7" xml:lang="grc"
+                     xml:id="vat-gr-754-ps-23-7-1" prev="#vat-gr-754-ps-23-7">
+                     <anchor type="psalmtext" n="Ps (LXX) 23,7c" xml:id="vat-gr-754-ps-23-7c"/> καὶ
+                     εἰσελεύσεται ὁ βασιλεὺς τῆς δόξης. </quote>
+                  <quote type="bibletext" n="Ps (LXX) 23,8" xml:lang="grc"
+                     xml:id="vat-gr-754-ps-23-8">
+                     <anchor type="psalmtext" n="Ps (LXX) 23,8a" xml:id="vat-gr-754-ps-23-8a"/> τίς
+                     ἐστιν οὗτος ὁ βασιλεὺς τῆς δόξης; <anchor type="psalmtext" n="Ps (LXX) 23,8b"
+                        xml:id="vat-gr-754-ps-23-8b"/> κύριος κραταιὸς καὶ δυνατός, <anchor
+                        type="psalmtext" n="Ps (LXX) 23,8b" xml:id="vat-gr-754-ps-23-8c"/> κύριος
+                     δυνατὸς ἐν πολέμῳ. </quote>
+                  <quote type="bibletext" n="Ps (LXX) 23,9" xml:lang="grc"
+                     xml:id="vat-gr-754-ps-23-9">
+                     <anchor type="psalmtext" n="Ps (LXX) 23,9a" xml:id="vat-gr-754-ps-23-9a"/>
+                     ἄρατε πύλας, οἱ ἄρχοντες ὑμῶν, <anchor type="psalmtext" n="Ps (LXX) 23,9b"
+                        xml:id="vat-gr-754-ps-23-9b"/> καὶ ἐπάρθητε, πύλαι αἰώνιοι, <anchor
+                        type="psalmtext" n="Ps (LXX) 23,9b" xml:id="vat-gr-754-ps-23-9c"/> καὶ
+                     εἰσελεύσεται ὁ βασιλεὺς τῆς δόξης. </quote>
+                  <quote type="bibletext" n="Ps (LXX) 23,10" xml:lang="grc"
+                     xml:id="vat-gr-754-ps-23-10">
+                     <anchor type="psalmtext" n="Ps (LXX) 23,10a" xml:id="vat-gr-754-ps-23-10a"/>
+                     τίς ἐστιν οὗτος ὁ βασιλεὺς τῆς δόξης; <anchor type="psalmtext"
+                        n="Ps (LXX) 18,10b" xml:id="vat-gr-754-ps-23-10b"/> κύριος τῶν δυνάμεων,
+                     αὐτός ἐστιν ὁ βασιλεὺς τῆς δόξης. </quote></ab>
+            </div>
             <!-- psalm 26 bibletext  -->
             <div type="bibletext" subtype="commented" xml:id="vat-gr-754-26-1">
                <ab xml:lang="grc">
