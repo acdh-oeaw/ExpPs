@@ -8,7 +8,7 @@ version="2.0">
 <xsl:output encoding="UTF-8" method="html" indent="no"/>
 
 <xsl:template match="/">
-    <html>
+    <html lang="de">
         <xsl:apply-templates select="child::node()"/>
     </html>
 </xsl:template>
@@ -109,15 +109,15 @@ version="2.0">
                             <main class="site-main" id="main">
                                 <article>
                                     <header class="entry-header">
-                                        <div class="entry-top-thumbnail"><img src="./fundament/images/picture_5.png" alt="Manuscript"/></div>
+                                        <div class="entry-top-thumbnail"><img src="./fundament/images/picture_5.png" alt="Picture of manuscript" title="Picture of manuscript"/></div>
                                     </header><!-- .entry-header -->
                                     <div class="entry-content" id="div-around-navigation-and-content">
                                         <!-- sidebar navigation start -->
                                         <nav id="sidebar" class="active">
                                             <div class="sidebar-header">
-                                                <h3 class="navigation-sidebar-header">Navigation</h3>
+                                                <p class="navigation-sidebar-header">Navigation</p>
                                             </div>
-                                            <ul class="list-unstyled components">
+                                            <ul class="list-unstyled components" title="navigation">
                                                 <xsl:for-each select="child::tei:div[@type = 'psalm']">
                                                     <li>
                                                         <xsl:element name="a">
@@ -125,6 +125,7 @@ version="2.0">
                                                             <xsl:attribute name="data-toggle" select="'collapse'"/>
                                                             <xsl:attribute name="aria-expanded" select="'false'"/>
                                                             <xsl:attribute name="class" select="'dropdown-toggle navigation-list-first-level'"/>
+                                                            <xsl:attribute name="title" select="concat('Psalm ',@n)"/>
                                                             <xsl:value-of select="concat('Psalm ',@n)"/>
                                                         </xsl:element>
                                                         <xsl:element name="ul">
@@ -135,6 +136,7 @@ version="2.0">
                                                                     <xsl:element name="a">
                                                                         <xsl:attribute name="href" select="concat('#',@xml:id)"/>
                                                                         <xsl:attribute name="class" select="'navigation-list-second-level'"/>
+                                                                        <xsl:attribute name="title" select="concat('Exposition ',@n)"/>
                                                                         <xsl:value-of select="concat('Expositio ',@n)"/>
                                                                     </xsl:element>
                                                                 </li>
@@ -173,22 +175,22 @@ version="2.0">
                 <div class="for-witness-hidden" id="window-for-witnesses-1">
                     <p id="paragraph-for-witness-1-header">Header 1</p>
                     <p id="paragraph-for-witness-1">Text 1</p>
-                    <button type="button" class="btn btn-light" id="close-button-1">Close</button>
+                    <button type="button" class="btn btn-light" id="close-button-1" title="Close">Close</button>
                 </div>
                 <div class="for-witness-hidden" id="window-for-witnesses-2">
                     <p id="paragraph-for-witness-2-header">Header 2</p>
                     <p id="paragraph-for-witness-2">Text 2</p>
-                    <button type="button" class="btn btn-light" id="close-button-2">Close</button>
+                    <button type="button" class="btn btn-light" id="close-button-2" title="Close">Close</button>
                 </div>
                 <div class="for-witness-hidden" id="window-for-witnesses-3">
                     <p id="paragraph-for-witness-3-header">Header 3</p>
                     <p id="paragraph-for-witness-3">Text 3</p>
-                    <button type="button" class="btn btn-light" id="close-button-3">Close</button>
+                    <button type="button" class="btn btn-light" id="close-button-3" title="Close">Close</button>
                 </div>
                 <div class="for-witness-hidden" id="window-for-witnesses-4">
                     <p id="paragraph-for-witness-4-header">Header 4</p>
                     <p id="paragraph-for-witness-4">Text 4</p>
-                    <button type="button" class="btn btn-light" id="close-button-4">Close</button>
+                    <button type="button" class="btn btn-light" id="close-button-4" title="Close">Close</button>
                 </div>
                 <div class="for-links-of-witnesses-hidden" id="window-for-links-of-witnesses"/>
             </div>
@@ -225,7 +227,7 @@ version="2.0">
                                             Austrian Academy of Sciences
                                 </p>
                                 <p>
-                                    Sonnenfelsgasse 19,
+                                    Bäckerstraße 13,
                                     <br/>
                                         1010 Vienna
                                 </p>
@@ -244,7 +246,7 @@ version="2.0">
                         <!-- .footer-widget -->
                         <div class="footer-widget col-lg-3 col-md-4 col-sm-4 ml-auto">
                             <div class="textwidget custom-html-widget">
-                                <h6>HELPDESK</h6>
+                                <p>HELPDESK</p>
                                 <p>ACDH-CH runs a helpdesk offering advice for questions related to various digital humanities topics.</p>
                                 <p>
                                     <a class="helpdesk-button" href="mailto:acdh-helpdesk@oeaw.ac.at">ASK US!</a>

@@ -7,7 +7,7 @@
     <xsl:output method="html" encoding="UTF-8" version="5"/>
     
     <xsl:template match="tei:TEI">
-        <html>
+        <html lang="en">
             <head>
                 <meta charset="UTF-8"/>
                 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -86,6 +86,7 @@
                                                 <div class="entry-top-thumbnail">
                                                     <xsl:element name="img">
                                                         <xsl:attribute name="alt" select="'header-image'"/>
+                                                        <xsl:attribute name="title" select="'Picture of manuscript'"/>
                                                         <xsl:attribute name="src">
                                                             <xsl:choose>
                                                                 <xsl:when test="root()/tei:TEI/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/@xml:id eq 'bodl-auct-d-4-1'">
@@ -173,7 +174,7 @@
                                                     Austrian Academy of Sciences
                                         </p>
                                         <p>
-                                            Sonnenfelsgasse 19,
+                                            Bäckerstraße 13,
                                             <br/>
                                                 1010 Vienna
                                         </p>
@@ -192,7 +193,7 @@
                                 </div>
                                 <div class="footer-widget col-lg-3 col-md-4 col-sm-4 ml-auto">
                                     <div class="textwidget custom-html-widget">
-                                        <h6>HELPDESK</h6>
+                                        <p>HELPDESK</p>
                                         <p>ACDH-CH runs a helpdesk offering advice for questions related to various digital humanities topics.</p>
                                         <p>
                                             <a class="helpdesk-button" href="mailto:acdh-helpdesk@oeaw.ac.at">ASK US!</a>

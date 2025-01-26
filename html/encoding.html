@@ -16,7 +16,7 @@
 	<div class="container">
 		<h1>Description of the TEI-Encoding for the Psalmcatenae Project</h1>
 		<p><a href="index.html">Back</a></p>
-		<h3>Table of Contents</h3>
+		<h2>Table of Contents</h2>
 		<ol>
 			<li><a href="#header">Header</a>
 				<ol>
@@ -70,7 +70,7 @@
 &lt;g ref="#linking-sign-1"/&gt;
 			</code></pre>
 			
-			The <kbd>#</kbd> sign is used to mark the value as a reference. The <kbd>graphic</kbd> element contains the path to the image of the glyph (<kbd>url</kbd>).
+			<p>The <kbd>#</kbd> sign is used to mark the value as a reference. The <kbd>graphic</kbd> element contains the path to the image of the glyph (<kbd>url</kbd>).
 			</p>
 			<h3 id="layout">Defining the Layout</h3>
 			
@@ -96,7 +96,7 @@
 				<pre><code class="language-xml" style="font-size:120%">
 &lt;div rendition="#middle-of-the-page"&gt; ... &lt;/div&gt;
 				</code></pre>
-			References start with the <kbd>#</kbd> sign.
+			<p>References start with the <kbd>#</kbd> sign.
 			</p>
 			
 			<h3 id="authors">List of Authors</h3>
@@ -122,7 +122,7 @@
 			</code></pre>
 			<h4>Notes</h4>
 			<p>The <kbd>xml:id</kbd> is used to identify an entity in the transcription. The value can be freely choosen, however, it should be somehow consistent, e.g. <i>name of the manuscript / manuscript identifier</i> + <i>number of the psalm</i> the entity belongs to + <i>counting upwards</i>. The identifier must be unique within a document.</p>
-			<p>The values of the <kbd>type</kbd> attribute are restricted to the following values:
+			<p>The values of the <kbd>type</kbd> attribute are restricted to the following values:</p>
 				<ul>
 					<li><i>header</i> - For headers of psalms</li>
 					<li><i>bibletext</i> - Section of bibletext</li>
@@ -135,7 +135,6 @@
 					<li><i>hexaplaric</i> - Hexaplaric variants</li>
 					<li><i>commentary</i> - Commentary of a bibletext</li>
 				</ul>
-			</p>
 			<p><i>Divisions</i> are terminated by a page break. Every section on a page like the different colums builds a <i>division</i> on its own.</p>
 			
 			<h3 id="notes">Notes</h3>
@@ -144,7 +143,7 @@
 &lt;note place="right margin" rend="red ink" xml:id="vat-gr-1422-1-6" xml:lang="grc" corresp="#vat-gr-1422-fr-1-1"&gt; ... &lt;/note&gt;
 			</code></pre>
 			<h4>Notes</h4>
-			<p>The <kbd>place</kbd> attribute contains the position of the note on the page. Possible values are:
+			<p>The <kbd>place</kbd> attribute contains the position of the note on the page. Possible values are:</p>
 				<ul>
 					<li><i>main text</i> - in the main textflow</li>
 					<li><i>top of the page</i> - on top of page</li>
@@ -158,7 +157,6 @@
 					<li><i>right margin of middle column</i> - in the right margin of the middle column</li>
 					<li><i>right margin of right column</i> - on the right margin of right column</li>
 				</ul>
-			</p>
 			<p>The <kbd>corresp</kbd> attribute gives a reference to the entity the note belongs to. Here the note is associated with a <i>commentaryfragment</i> with the <i>id</i> <kbd>vat-gr-1422-fr-1-1</kbd></p>
 			
 			<h3 id="anonymous-blocks">Anonymous Blocks</h3>
@@ -175,7 +173,7 @@
 &lt;seg type="commentaryfragment" source="Basilius of Kappadokia" xml:id="vat-gr-1422-fr-1-1" corresp="#vat-gr-1422-ps-1-1a" rendition="#main-text"&gt; ... &lt;/seg&gt;
 			</code></pre>
 			<h4>Notes</h4>
-			<p>The <kbd>type</kbd> attribute can take on of the six values:
+			<p>The <kbd>type</kbd> attribute can take on of the six values:</p>
 				<ul>
 					<li><i>commentaryfragment</i> - Segment containing a commentaryfragment</li>
 					<li><i>hexaplaric</i> - Segment containing a hexaplaric variant</li>
@@ -184,7 +182,6 @@
 					<li><i>hypothesis</i> - Short introduction to a Psalm in manuscripts of the Psalms</li>
 					<li><i>perioche</i> - Short summary of a Psalm (by Eusebius of Caesarea) in manuscripts of the Psalms</li>
 				</ul>
-			</p>
 			<p> The <kbd>corresp</kbd> attribute contains a reference to a psalm text (or another text) the <i>segment</i> belongs to. In almost all cases this is by convention an identifier of an <a href="#anchors"><i>anchor</i></a>.</p>
 			<p>The <kbd>source</kbd> attribute has the name of the author as mentioned in the text of the manuscript. Often the value is <i>Anonymous</i>.</p>
 			<p>When a <i>commentaryfragment</i> runs over a <i>pagebreak</i> it is necessary to set the <kbd>prev</kbd> and <kbd>next</kbd> attributes with the <kbd>xml:id</kbd>s to indicate that the texts belong together.</p>
@@ -196,15 +193,13 @@
 			</code></pre>
 			
 			<h4>Notes</h4>
-			<p>The value of the <kbd>type</kbd> attribute must be one of:
+			<p>The value of the <kbd>type</kbd> attribute must be one of:</p>
 				<ul>
 					<li><i>bibletext</i> - Quotation of a psalmtext</li>
 					<li><i>patristic</i> - Quotation of a patristic author</li>
 					<li><i>biblical</i> - Quotation of a bible text</li>
 					<li><i>heading</i> - Heading of bible text, e.g. Halleluja</li>
-                  </valItem>
 				</ul>
-			</p>
 			<p>The value of the <kbd>corresp</kbd> attribute is a pointer to a element of a list of authors given in the document header.</p>
 			<p>When a <i>quote</i> runs over a <i>pagebreak</i> it is necessary to set the <kbd>prev</kbd> and <kbd>next</kbd> attributes to indicate that the texts belong together.</p>
 			
@@ -283,7 +278,7 @@
 &lt;hi rend="ekthesis"&gt;Μ&lt;/hi&gt;ακάριος
 			</code></pre>
 			
-			<p>Other possible values for the <kbd>rend</kbd> attribute on <kbd>hi</kbd> are:
+			<p>Other possible values for the <kbd>rend</kbd> attribute on <kbd>hi</kbd> are:</p>
 				<ul>
 					<li><i>initial</i></li>
 					<li><i>tall</i> - for large letters</li>
@@ -296,7 +291,7 @@
 					<li><i>superscript</i></li>
 					<li><i>red ink</i></li>
 					<li><i>red ink bold</i></li>
-				</ul></p>
+				</ul>
 				
 			<h3 id="uncertain-readability">Uncertain Readability</h3>
 			<pre><code class="language-xml" style="font-size:120%">
@@ -406,7 +401,7 @@
 				
 				</li>
 			</ol>
-			<p>To sum up, the possible values for the <kbd>type</kbd> attribute on <kbd>abbr</kbd> are:
+			<p>To sum up, the possible values for the <kbd>type</kbd> attribute on <kbd>abbr</kbd> are:</p>
 			<ul>
 				<li><i>siglum</i> - classifies abbreviation as siglum</li>
 				<li><i>nomSac</i> - classifies an abbreviation as nomen sacrum</li>
@@ -418,10 +413,10 @@
 				<li><i>compression</i> - classifies an abbreviation as compression</li>
                 <li><i>compression-suspension</i> - combination of compression and suspension</li>
 				<li><i>compression-tachygraphic</i> - classifies an abbreviation as compression and tachygraphic</li>
-			</ul></p>
+			</ul>
 			
 		<h2 id="hints">Hints</h2>
-		<p>For easier understanding and work the values of the <kbd>xml:id</kbd> attributes should follow this rules:
+		<p>For easier understanding and work the values of the <kbd>xml:id</kbd> attributes should follow this rules:</p>
 			<ul>
 				<li><i>Divisions</i>, <i>notes</i>, <i>anonymous blocks</i> are named without further qualification: <kbd>vat-gr-1422-1-1</kbd></li>
 				<li><i>Quotes</i> of psalmtexts contain the abbreviation <kbd>ps</kbd> after the manuscript identifier. This is also true for subsections of psalmverses, i.e. <i>anchors</i>: <kbd>vat-gr-1422-ps-1-1a</kbd></li>
@@ -430,7 +425,6 @@
 				<li><i>Commentaryfragments</i> contain the abbreviation <kbd>fr</kbd> after the abbreviation for the manuscript: <kbd>vat-gr-1422-fr-1-1</kbd></li>
 				<li>The first number is the number of the psalms. The second number is a running count.</li>
 			</ul>
-		</p>
 		<p>The flow of work should go from outside to inside: <i>divisions</i> then <i>anonoymous blocks</i> then <i>segments</i> and <i>quotes</i> with <i>anchors</i>. In the next step the markup of the microlevel elements follows.</p>
 	</div>
   </body>
