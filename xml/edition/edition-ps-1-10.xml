@@ -41855,18 +41855,22 @@
                               <ref target="#par-gr-166:par-gr-166-fr-23-1"/>
                               <ref target="#coislin-12:coislin-12-fr-23-1"/>
                               <ref target="#coislin-187:coislin-187-fr-23-1"/>
-                           <ref target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-23-3"></ref>
+                              <ref target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-23-3"/>
+                              <ref target="#par-gr-139:par-gr-139-fr-23-1"/>
                            </listRef></p>
                      </div>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #P1 #P5 #P2 #B1">txt</rdg>
+                        <rdg wit="#V1 #P1 #P5 #P2 #B1 #P6 #Z #N2">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Par. gr. 166</wit>
                         <wit>Coislin 12</wit>
                         <wit>Coislin 187</wit>
                         <wit>Auct. D.4.1</wit>
+                        <wit>Par. gr. 139</wit>
+                        <wit>Marc. gr. Z. 17</wit>
+                        <wit>Athen. B.N. 45</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">τοῦ κυρίου</foreign></lem>
@@ -41883,15 +41887,25 @@
                         <rdg wit="#P2"><foreign xml:lang="grc">τῶν ἐπουρανίων ἄξιοι γένοιντο
                               σκηνῶν</foreign></rdg>
                         <wit>Coislin 187</wit>
+                        <rdg wit="#B1"><foreign xml:lang="grc">ἄξιοι τῶν ἐπουρανίων γένωνται
+                              σκηνῶν</foreign></rdg>
+                        <wit>Auct. D.4.1</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">γένονται</foreign></lem>
-                        <rdg wit="#V1*"><foreign xml:lang="grc">γένωνται</foreign></rdg>
+                        <rdg wit="#V1* #Z #N2"><foreign xml:lang="grc">γένωνται</foreign></rdg>
                         <wit>Vat. gr. 754</wit>
+                        <wit>Marc. gr. Z. 17</wit>
+                        <wit>Athen. B.N. 45</wit>
                         <rdg wit="#V1corr"><foreign xml:lang="grc">γένονται</foreign></rdg>
                         <wit>Vat. gr. 754</wit>
                         <rdg wit="#P5"><foreign xml:lang="grc">γένοιτο</foreign> (sic)</rdg>
                         <wit>Coislin 12</wit>
+                        <rdg wit="#P2 #P6 #Z #N2"><foreign xml:lang="grc">γένοιντο</foreign></rdg>
+                        <wit>Coislin 187</wit>
+                        <wit>Par. gr. 139</wit>
+                        <wit>Marc. gr. Z. 17</wit>
+                        <wit>Athen. B.N. 45</wit>
                      </app>
                   </div>
                   <div type="psalmtext">
@@ -41909,16 +41923,34 @@
                               <ref target="#par-gr-166:par-gr-166-fr-23-2"/>
                               <ref target="#coislin-12:coislin-12-fr-23-2"/>
                               <ref target="#coislin-187:coislin-187-fr-23-2"/>
+                              <ref target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-23-4"/>
+                              <ref target="#par-gr-139:par-gr-139-fr-23-2"/>
                            </listRef></p>
                      </div>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #P1 #P5 #P2">txt</rdg>
+                        <rdg wit="#V1 #P1 #P5 #P2 #B1 #P6 #Z #N2">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Par. gr. 166</wit>
                         <wit>Coislin 12</wit>
                         <wit>Coislin 187</wit>
+                        <wit>Auct. D.4.1</wit>
+                        <wit>Par. gr. 139</wit>
+                        <wit>Marc. gr. Z. 17</wit>
+                        <wit>Athen. B.N. 45</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">Τὴν – τῶν ἐθνῶν</foreign></lem>
+                        <rdg wit="#B1"><foreign xml:lang="grc">Tὴν βασιλείαν τῶν ἐθνῶν
+                              ἐβασίλευσεν</foreign></rdg>
+                        <wit>Auct. D.4.1</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">ἐπιδημήσας – λόγος</foreign></lem>
+                        <rdg wit="#N2"><foreign xml:lang="grc">ἐπιδημήσας ὁ κύριος</foreign></rdg>
+                        <wit>Athen. B.N. 45</wit>
+                        <!-- Textkritik: ὁ μονογενὴς habent P6 Z -->
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">κηρύττει</foreign></lem>
@@ -41949,44 +41981,81 @@
                         ἐθεμελίωσεν αὐτὴν </quote>
                   </div>
                   <!-- cave: V1: Die Zählung der zwei folgenden Expositiones umgetauscht -->
-                  <div type="commentary">
-                     <p xml:id="edition-23-2-1" n="387">Ἵνα μή τις τῶν ἐχθρῶν δόξῃ εἶναι μὲν τὴν γῆν
-                        τοῦ σατανᾶ· νυνὶ δὲ αὐτῆς βασιλεῦσαι τὸν Χριστὸν, τούτου χάριν τὸν Χριστὸν
-                        αὐτῆς ποιητὴν ἀποδείκνυσιν· ἅμα δὲ καὶ τὴν δύναμιν αὐτοῦ δηλοῖ, ὥστε
-                        τοσοῦτον μέγεθος τῆς γῆς ἐπὶ ὑδάτων στηριχθῆναι: –</p>
+                  <div type="commentary" rend="parallel">
+                     <p xml:id="edition-23-2-1" n="387" next="#edition-23-2-1-1">Ἵνα μή τις τῶν
+                        ἐχθρῶν δόξῃ εἶναι μὲν τὴν γῆν τοῦ σατανᾶ· νυνὶ δὲ αὐτῆς βασιλεῦσαι τὸν
+                        Χριστὸν, τούτου χάριν τὸν Χριστὸν αὐτῆς ποιητὴν ἀποδείκνυσιν· ἅμα δὲ καὶ τὴν
+                        δύναμιν αὐτοῦ δηλοῖ, ὥστε τοσοῦτον μέγεθος τῆς γῆς ἐπὶ ὑδάτων στηριχθῆναι:
+                        –</p>
                      <div type="links">
                         <p><listRef>
                               <ref target="#vat-gr-754:vat-gr-754-fr-23-7"/>
                               <ref target="#par-gr-166:par-gr-166-fr-23-3"/>
                               <ref target="#coislin-12:coislin-12-fr-23-3"/>
                               <ref target="#coislin-187:coislin-187-fr-23-3"/>
+                              <ref target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-23-6"/>
+                              <ref target="#par-gr-139:par-gr-139-fr-23-3"/>
                            </listRef></p>
                      </div>
                   </div>
-                  <div type="textcritic">
+                  <div type="textcritic" rend="hide">
                      <app type="fragment">
-                        <rdg wit="#V1 #P1 #P5 #P2">txt</rdg>
+                        <rdg wit="#V1 #P1 #P5 #P2 #B1 #P6">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Par. gr. 166</wit>
                         <wit>Coislin 12</wit>
                         <wit>Coislin 187</wit>
+                        <wit>Auct. D.4.1</wit>
+                        <wit>Par. gr. 139</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">αὐτῆς ποιητὴν</foreign></lem>
-                        <rdg wit="#P2"><foreign xml:lang="grc">ποιητὴν αὐτῆς</foreign></rdg>
+                        <rdg wit="#P2 #B1"><foreign xml:lang="grc">ποιητὴν αὐτῆς</foreign></rdg>
                         <wit>Coislin 187</wit>
+                        <wit>Auct. D.4.1</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">τὴν δύναμιν</foreign></lem>
+                        <rdg wit="#B1"><foreign xml:lang="grc">τὴν δύνα{να}μιν</foreign></rdg>
+                        <wit>Auct. D.4.1</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">ὥστε</foreign></lem>
-                        <rdg wit="#P2"><foreign xml:lang="grc">ὡς</foreign></rdg>
+                        <rdg wit="#P2 #B1"><foreign xml:lang="grc">ὡς</foreign></rdg>
                         <wit>Coislin 187</wit>
+                        <wit>Auct. D.4.1</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">τοσοῦτον μέγεθος</foreign></lem>
+                        <rdg wit="#B1*"><foreign xml:lang="grc">τοσουτονέγεθος</foreign></rdg>
+                        <wit>Auct. D.4.1</wit>
+                        <rdg wit="#B1c"><foreign xml:lang="grc">τοσουτομέγεθος</foreign></rdg>
+                        <wit>Auct. D.4.1</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">στηριχθῆναι</foreign></lem>
-                        <rdg wit="#P5"><foreign xml:lang="grc">ἐστηρίχθαι</foreign></rdg>
+                        <rdg wit="#P5 #B1 #P6"><foreign xml:lang="grc">ἐστηρίχθαι</foreign></rdg>
                         <wit>Coislin 12</wit>
+                        <wit>Auct. D.4.1</wit>
                         <rdg wit="#P2"><foreign xml:lang="grc">ἐστηρίχθη</foreign></rdg>
                         <wit>Coislin 187</wit>
+                     </app>
+                     <note type="textual-commentary">B1: Es wird einleitend behauptet, dass diese
+                        Expositio 4 Zeilen (στίχοι) des Psalms erklärt: <foreign xml:lang="grc"
+                           >ερμην(εία) τῶν Δ´ στι(χων) Ἀθανασιου</foreign>.</note>
+                  </div>
+                  <div type="commentary" rend="hide">
+                     <p xml:id="edition-23-2-1-1" n="387">Ἵνα μή τις τῶν ἐχθρῶν δόξῃ εἶναι μὲν τὴν
+                        γῆν τοῦ σατανᾶ· νυνὶ δὲ αὐτῆς βασιλεῦσαι τὸν Χριστὸν, τούτου χάριν τὸν
+                        Χριστὸν ποιητὴν αὐτῆς ἀποδείκνυσιν· ἅμα δὲ καὶ τὴν δύναμιν αὐτοῦ δηλοῖ καὶ
+                        τὸν τῆς δημιουργίας λόγον· ᾧ τοσοῦτον τὸ τῆς ἰσχύος καὶ τὸ τοῦ θεϊκοῦ
+                        προστάγματος, ὥστε τοσοῦτον μέγεθος τῆς γῆς ἐπὶ ὑδάτων ἐστηρίχθαι: –</p>
+                  </div>
+                  <div type="textcritic" rend="hide">
+                     <app type="fragment">
+                        <rdg wit="#Z #N2">txt</rdg>
+                        <wit>Marc. gr. Z. 17</wit>
+                        <wit>Athen. B.N. 45</wit>
                      </app>
                   </div>
                   <div type="psalmtext">
@@ -42001,16 +42070,24 @@
                               <ref target="#par-gr-166:par-gr-166-fr-23-4"/>
                               <ref target="#coislin-12:coislin-12-fr-23-4"/>
                               <ref target="#coislin-187:coislin-187-fr-23-4"/>
+                           <ref target="#par-gr-139:par-gr-139-fr-23-4"></ref>
                            </listRef></p>
                      </div>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #P1 #P5 #P2">txt</rdg>
+                        <rdg wit="#V1 #P1 #P5 #P2 #P6 #Z #N2">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Par. gr. 166</wit>
                         <wit>Coislin 12</wit>
                         <wit>Coislin 187</wit>
+                        <wit>Par. gr. 139</wit>
+                        <wit>Marc. gr. Z. 17</wit>
+                        <wit>Athen. B.N. 45</wit>
+                     </app>
+                     <app type="text"><lem><foreign xml:lang="grc">τοῦ</foreign></lem>
+                        <rdg wit="#P6">** τοῦ</rdg>
+                        <wit>Par. gr. 139</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">διεκόσμησεν</foreign></lem>
@@ -42051,22 +42128,27 @@
                               <ref target="#par-gr-166:par-gr-166-fr-23-5"/>
                               <ref target="#coislin-12:coislin-12-fr-23-5"/>
                               <ref target="#coislin-187:coislin-187-fr-23-5"/>
+                              <ref target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-23-7"/>
                            </listRef></p>
                      </div>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #P1 #P5 #P2">txt</rdg>
+                        <rdg wit="#V1 #P1 #P5 #P2 #B1">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Par. gr. 166</wit>
                         <wit>Coislin 12</wit>
                         <wit>Coislin 187</wit>
+                        <wit>Auct. D.4.1</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">διδασκαλίαν εἰσηγεῖται</foreign></lem>
                         <rdg wit="#P1"><foreign xml:lang="grc">διδασκαλίας ἐξηγεῖται</foreign></rdg>
                         <wit>Par. gr. 166</wit>
                      </app>
+                     <note type="textual-commentary">B1: exp. 389 mit einer unbekannten Erklärung zu
+                        Ps 23,3 verbunden. Die Zuschreibung lautet <foreign xml:lang="grc">Ἀθανασιου
+                           καὶ Θεοδωριτου</foreign>.</note>
                   </div>
                </div>
                <div type="translation" xml:lang="de">
@@ -42093,16 +42175,18 @@
                               <ref target="#par-gr-166:par-gr-166-fr-23-6"/>
                               <ref target="#coislin-12:coislin-12-fr-23-6"/>
                               <ref target="#coislin-187:coislin-187-fr-23-6"/>
+                              <ref target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-23-11"/>
                            </listRef></p>
                      </div>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #P1 #P5 #P2">txt</rdg>
+                        <rdg wit="#V1 #P1 #P5 #P2 #B1">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Par. gr. 166</wit>
                         <wit>Coislin 12</wit>
                         <wit>Coislin 187</wit>
+                        <wit>Auct. D.4.1</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">Eἴρηται – ψαλμῷ</foreign></lem>
@@ -42126,21 +42210,25 @@
                               <ref target="#par-gr-166:par-gr-166-fr-23-7"/>
                               <ref target="#coislin-12:coislin-12-fr-23-7"/>
                               <ref target="#coislin-187:coislin-187-fr-23-7"/>
+                              <ref target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-23-10"/>
                            </listRef></p>
                      </div>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #P1 #P5 #P2">txt</rdg>
+                        <rdg wit="#V1 #P1 #P5 #P2 #B1">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Par. gr. 166</wit>
                         <wit>Coislin 12</wit>
                         <wit>Coislin 187</wit>
+                        <wit>Auct. D.4.1</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">φησίν</foreign></lem>
                         <rdg wit="#P2"><foreign xml:lang="grc">δηλοῖ</foreign></rdg>
                         <wit>Coislin 187</wit>
+                        <rdg wit="#B1"><foreign xml:lang="grc">λέγει</foreign></rdg>
+                        <wit>Auct. D.4.1</wit>
                      </app>
                   </div>
                   <div type="psalmtext">
@@ -42193,16 +42281,18 @@
                               <ref target="#par-gr-166:par-gr-166-fr-23-9"/>
                               <ref target="#coislin-12:coislin-12-fr-23-8"/>
                               <ref target="#coislin-187:coislin-187-fr-23-8"/>
+                              <ref target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-23-12"/>
                            </listRef></p>
                      </div>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #P1 #P5 #P2">txt</rdg>
+                        <rdg wit="#V1 #P1 #P5 #P2 #B1">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Par. gr. 166</wit>
                         <wit>Coislin 12</wit>
                         <wit>Coislin 187</wit>
+                        <wit>Auct. D.4.1</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">φυλάξασα</foreign></lem>
@@ -42253,16 +42343,18 @@
                            <ref target="#par-gr-166:par-gr-166-fr-23-10"/>
                            <ref target="#coislin-12:coislin-12-fr-23-9"/>
                            <ref target="#coislin-187:coislin-187-fr-23-9"/>
+                           <ref target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-23-16"/>
                         </p>
                      </div>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #P1 #P5 #P2">txt</rdg>
+                        <rdg wit="#V1 #P1 #P5 #P2 #B1">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Par. gr. 166</wit>
                         <wit>Coislin 12</wit>
                         <wit>Coislin 187</wit>
+                        <wit>Auct. D.4.1</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">Οἱ – τὰς πύλας</foreign></lem>
@@ -42273,9 +42365,10 @@
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">ἐπὶ τῆς γῆς</foreign></lem>
-                        <rdg wit="#P1 #P5"><foreign xml:lang="grc">ἐπὶ γῆς</foreign></rdg>
+                        <rdg wit="#P1 #P5 #B1"><foreign xml:lang="grc">ἐπὶ γῆς</foreign></rdg>
                         <wit>Par. gr. 166</wit>
                         <wit>Coislin 12</wit>
+                        <wit>Auct. D.4.1</wit>
                      </app>
                   </div>
                </div>
@@ -42306,16 +42399,18 @@
                               <ref target="#par-gr-166:par-gr-166-fr-23-11"/>
                               <ref target="#coislin-12:coislin-12-fr-23-10"/>
                               <ref target="#coislin-187:coislin-187-fr-23-10"/>
+                              <ref target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-23-17"/>
                            </listRef></p>
                      </div>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #P1 #P2">txt</rdg>
+                        <rdg wit="#V1 #P1 #P2 #B1">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Par. gr. 166</wit>
                         <wit>Coislin 12</wit>
                         <wit>Coislin 187</wit>
+                        <wit>Auct. D.4.1</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">καταπληττόμεναι</foreign></lem>
@@ -42341,15 +42436,17 @@
                               <ref target="#vat-gr-754:vat-gr-754-fr-23-20"/>
                               <ref target="#par-gr-166:par-gr-166-fr-23-12"/>
                               <ref target="#coislin-187:coislin-187-fr-23-11"/>
+                              <ref target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-23-18"/>
                            </listRef></p>
                      </div>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #P1 #P2">txt</rdg>
+                        <rdg wit="#V1 #P1 #P2 #B1">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Par. gr. 166</wit>
                         <wit>Coislin 187</wit>
+                        <wit>Auct. D.4.1</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">ἀνελθόντες</foreign></lem>
@@ -42358,8 +42455,9 @@
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">καταπατήσας</foreign></lem>
-                        <rdg wit="#P1"><foreign xml:lang="grc">ὁ καταπατήσας</foreign></rdg>
+                        <rdg wit="#P1 #B1"><foreign xml:lang="grc">ὁ καταπατήσας</foreign></rdg>
                         <wit>Par. gr. 166</wit>
+                        <wit>Auct. D.4.1</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">τοὺς – νοητοὺς</foreign></lem>
@@ -42368,10 +42466,11 @@
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">ὁ τῶν ὅλων κύριος</foreign></lem>
-                        <rdg wit="#P1 #P2"><foreign xml:lang="grc">ὁ τῶν δυνάμεων
-                           κύριος</foreign></rdg>
+                        <rdg wit="#P1 #P2 #B1"><foreign xml:lang="grc">ὁ τῶν δυνάμεων
+                              κύριος</foreign></rdg>
                         <wit>Par. gr. 166</wit>
                         <wit>Coislin 187</wit>
+                        <wit>Auct. D.4.1</wit>
                      </app>
                      <note type="textual-commentary">P5: exp. 395 verloren (Blattausfall).</note>
                   </div>
