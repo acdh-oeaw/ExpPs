@@ -979,6 +979,7 @@
                 <xsl:element name="a">
                     <xsl:attribute name="href" select="@facs"/>
                     <xsl:attribute name="target" select="'_blank'"/>
+                    <xsl:attribute name="title" select="'Link to facsimile'"/>
                     <i class="fas fa-image" style="transform: translate(0%,10%);"/>
                 </xsl:element>
             </xsl:if>

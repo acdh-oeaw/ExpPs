@@ -71,3 +71,69 @@ Tests mittels des ```axe``` Browser-Plugins und des ```Page Structure``` Plugins
 
 - ACDH-CH im Footer: Adresse korrigieren; E-Mail Adresse korrigieren
 - FWF-Logo aktualisieren
+
+# Korrekturen - 29.01.2025 #
+
+- ```index.html```
+
+   - Automatische Checks: ok
+   - Überschriften: ok
+   
+- ```manuscript.html```
+
+   - Automatische Checks: ok
+   - Überschriften: ok
+   
+- ```search.html```
+
+   - Automatische Checks: ok
+   - Überschriften: ok
+   
+- ```new_findings.html```
+
+   - Automatische Checks: ok
+   - Überschriften: ok
+   
+- ```news.html```
+
+   - Automatische Checks: ok
+   - Überschriften: ok
+   
+- ```team.html```
+
+   - Automatische Checks: ok
+   - Überschriften: ok
+   
+- ```about-transcription.html```
+
+   - Automatische Checks: ok
+   - Überschriften: ok
+   
+- ```about-links.html```
+
+   - Automatische Checks: ok
+   - Überschriften: ok
+   
+- ```encoding.html```
+
+   - Der Farbkontrast in den Codebeispielen ist manchmal nicht ausreichend. Da es sich um automatisch generierte Farben handelt, werden diese Fehler nicht behoben.
+   - Überschriften: ok
+  
+- ```access.html```
+
+   - Automatische Checks: ok
+   - Überschriften: ok
+   
+- ```edition.html```
+
+   - Zum Navigationsbutton ```title``` Element hinzugefügt.
+   - Fehler in Quelldatei: Expositio 60a: leeres ```ref``` Element.
+   
+- Handschriftenpräsentationen
+
+   - Links zu Facsimiles nun mit ```title``` Attribut.
+   
+- Sonstiges
+
+   - FWF-Logo aktualisiert
+   - Adresse ACDH-CH korrigiert
