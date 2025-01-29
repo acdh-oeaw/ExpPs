@@ -50,7 +50,7 @@ version="2.0">
                     <!-- button for toggling sidebar - start -->
                     <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
                         <div class="container-fluid"> -->
-                        <button type="button" id="sidebarCollapse" class="btn btn-light">
+                        <button type="button" id="sidebarCollapse" class="btn btn-light" title="Button for toggling sidebar">
                             <i class="fas fa-align-left"></i>
                         </button>
                     <!--    </div>
