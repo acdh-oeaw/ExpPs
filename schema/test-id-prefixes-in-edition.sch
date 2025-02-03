@@ -18,7 +18,8 @@
                 or starts-with(@target,'#par-gr-139:')
                 or starts-with(@target,'#par-gr-164')
                 or starts-with(@target,'#par-gr-166:')
-                or starts-with(@target,'#mosq-syn-194:')">Wrong prefix in ref/@target</assert>
+                or starts-with(@target,'#mosq-syn-194:')
+                or starts-with(@target,'#plut-6-3:')">Wrong prefix in ref/@target</assert>
         </rule>
     </pattern>
 </schema>
