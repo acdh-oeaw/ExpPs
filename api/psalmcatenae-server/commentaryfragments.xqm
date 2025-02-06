@@ -223,13 +223,9 @@ declare %private function commentaryfragments:is-psalmverse-in-range($psalmverse
   let $verse-from := number(substring-after($psalmverse-from,','))
   let $psalm-to := number(substring-before($psalmverse-to,','))
   let $verse-to := number(substring-after($psalmverse-to,','))
-  let $result :=  if ($psalm lt $psalm-from) then (false())
-  (: above lower limit - psalm :)
-  else if ($verse lt $verse-from) then (false())
-  (: above lower limit - psalm and verse :)
-       else if ($psalm gt $psalm-to) then (false())
-            else if ($verse gt $verse-to) then (false())
-                 else (true())
+  let $result :=  if (($psalm lt $psalm-from) or ($psalm gt $psalm-to)) then (false())
+     else (: lower limit <= value <= upper limit:) if (($psalm = $psalm-from) and ($verse lt $verse-from)) then (false())
+     else if (($psalm = $psalm-to) and ($verse gt $verse-to)) then (false()) else (true())
   return $result
 };
  

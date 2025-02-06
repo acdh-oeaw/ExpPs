@@ -291,6 +291,22 @@ function jsonClient(){
 				let optionReferenceAsObject = $(optionReferenceAsText);
 				$("#psalmverse-form-hexaplaric-variants").append(optionReferenceAsObject);
 			}
+			$("#psalmverse-from-value-form-hexaplaric-variants").empty();
+			$("#psalmverse-from-value-form-hexaplaric-variants").append($("<option value='empty'>empty</option>"));
+			for (let n = 0; n < references._embedded.references.length; n++){
+				let reference = references._embedded.references[n]["psalmverse"];
+				let optionReferenceAsText = "<option value='" + reference + "'>" + reference + "</option>";
+				let optionReferenceAsObject = $(optionReferenceAsText);
+				$("#psalmverse-from-value-form-hexaplaric-variants").append(optionReferenceAsObject);
+			}
+			$("#psalmverse-to-value-form-hexaplaric-variants").empty();
+			$("#psalmverse-to-value-form-hexaplaric-variants").append($("<option value='empty'>empty</option>"));
+			for (let n = 0; n < references._embedded.references.length; n++){
+				let reference = references._embedded.references[n]["psalmverse"];
+				let optionReferenceAsText = "<option value='" + reference + "'>" + reference + "</option>";
+				let optionReferenceAsObject = $(optionReferenceAsText);
+				$("#psalmverse-to-value-form-hexaplaric-variants").append(optionReferenceAsObject);
+			}
 		})
 		.catch(function(error){ console.log(error); });
 	}
@@ -690,8 +706,18 @@ function jsonClient(){
 		url = url + "/hexaplaric-variants";
 		url = url + "/search";
 		let psalmverseFieldValue = document.getElementById("psalmverse-form-hexaplaric-variants").value;
-		if (psalmverseFieldValue != "empty"){
-			url = url + "?reference=" + psalmverseFieldValue;
+		let isRangeEnabled = document.getElementById("enable-psalmverse-range-hexaplaric-variants").checked;
+		let psalmverseFromValue = document.getElementById("psalmverse-from-value-form-hexaplaric-variants").value;
+		let psalmverseToValue = document.getElementById("psalmverse-to-value-form-hexaplaric-variants").value;
+		if (isRangeEnabled){
+			if ((psalmverseFromValue != "empty") || (psalmverseToValue != "empty")){
+				url = url + "?reference-from=" + psalmverseFromValue + "&reference-to=" + psalmverseToValue;
+			}
+		}
+		else {
+			if (psalmverseFieldValue != "empty"){
+				url = url + "?reference=" + psalmverseFieldValue;
+			}
 		}
 		request(url,"get");
 	});

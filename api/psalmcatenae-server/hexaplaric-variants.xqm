@@ -172,8 +172,10 @@ declare
     %rest:GET
     %rest:path('/psalmcatenae-server/manuscripts/{$manuscript-name}/hexaplaric-variants/search')
     %rest:query-param("reference", "{$reference}", '')
+    %rest:query-param("reference-from", "{$reference-from}","empty")
+    %rest:query-param("reference-to", "{$reference-to}","empty")
     %rest:produces('application/hal+json')
-function hexaplaric-variants:get-list-of-hexaplaric-variants-from-manuscript-search($manuscript-name as xs:string,$reference as xs:string){
+function hexaplaric-variants:get-list-of-hexaplaric-variants-from-manuscript-search($manuscript-name as xs:string,$reference as xs:string,$reference-from as xs:string,$reference-to as xs:string){
   let $origin := try { request:header("Origin") } catch basex:http {'urn:local'}
   let $manuscript := switch ($manuscript-name)
     case 'vat-gr-754' return 'vat-gr-754-transcription.xml'
@@ -194,13 +196,16 @@ function hexaplaric-variants:get-list-of-hexaplaric-variants-from-manuscript-sea
     case 'vat-gr-1422' return 'vat-gr-1422-transcription.xml'
     default return error(xs:QName('response-codes:_404'),'Wrong manuscript name in path')
     let $path := "/psalmcatenae-manuscripts/" || ``[`{$manuscript}`]``
+    let $reference-from-prepared := hexaplaric-variants:prepare-reference-from($path,$reference-from)
+    let $reference-to-prepared := hexaplaric-variants:prepare-reference-to($path,$reference-to)
+    let $references-in-range := hexaplaric-variants:get-references-in-range($path,$reference-from-prepared,$reference-to-prepared)
     let $hexaplaric-variants-result-fragment := for $hexaplaric-variant in doc($path)//tei:seg[@type = 'hexaplaric'] 
        let $reference-of-hexaplaric-variant := substring-after($hexaplaric-variant/@corresp,'#')
        let $references-from-source := for $psalmtext in doc($path)//tei:quote[@type = 'bibletext'] 
          where $psalmtext/@n = $reference
          return $psalmtext/child::tei:anchor[@type = 'psalmtext']/@xml:id
        where 
-         if ($reference != '') then ($reference-of-hexaplaric-variant = $references-from-source) else (1 = 1) 
+         if ($reference != '') then ($reference-of-hexaplaric-variant = $references-from-source) else ($reference-of-hexaplaric-variant = $references-in-range)
        return "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/manuscripts/" || $manuscript-name || "/hexaplaric-variants/" || $hexaplaric-variant/@xml:id || """}}, ""critical-attribution"" : """ || $hexaplaric-variant/@source || """}"
     let $hexaplaric-variants-as-json-result-fragment := string-join($hexaplaric-variants-result-fragment,',')
     let $hexaplaric-variants-as-json := "{ ""_links"" : { ""self"" : { ""href"" : ""/psalmcatenae-server/manuscripts/" || $manuscript-name || "/hexaplaric-variants/search"" }}, ""_embedded"" : { ""hexaplaric-variants"" : [" || $hexaplaric-variants-as-json-result-fragment || "]}}"
@@ -214,6 +219,50 @@ function hexaplaric-variants:get-list-of-hexaplaric-variants-from-manuscript-sea
     </http:response>
   </rest:response>,``[`{$hexaplaric-variants-as-json}`]``)
   };
+
+declare %private function hexaplaric-variants:get-references-in-range($path as xs:string,$psalmverse-from as xs:string,$psalmverse-to as xs:string){
+  let $references-in-range := for $psalmtext in doc($path)//tei:quote[@type = 'bibletext']
+    where hexaplaric-variants:is-psalmverse-in-range(substring-after($psalmtext/@n,'Ps (LXX) '),$psalmverse-from,$psalmverse-to)
+    return $psalmtext/child::tei:anchor[@type = 'psalmtext']/@xml:id
+  return $references-in-range
+};
+
+declare %private function hexaplaric-variants:prepare-reference-from($path as xs:string,$psalmverse-from as xs:string){
+  let $result := if ($psalmverse-from = 'empty') then (hexaplaric-variants:get-min-value-for-reference($path))
+    else (substring-after($psalmverse-from,'Ps (LXX) '))
+  return $result
+};
+
+declare %private function hexaplaric-variants:prepare-reference-to($path as xs:string,$psalmverse-to as xs:string){
+  let $result := if ($psalmverse-to = 'empty') then (hexaplaric-variants:get-max-value-for-reference($path))
+    else (substring-after($psalmverse-to,'Ps (LXX) '))
+  return $result
+};
+
+declare %private function hexaplaric-variants:get-min-value-for-reference($path as xs:string){
+  let $min-value := (doc($path)//tei:quote[@type = 'bibletext'])[1]/@n
+  return (substring-after($min-value,'Ps (LXX) '))
+};
+
+declare %private function hexaplaric-variants:get-max-value-for-reference($path as xs:string){
+  let $max-value := (doc($path)//tei:quote[@type = 'bibletext'])[last()]/@n
+  return (substring-after($max-value,'Ps (LXX) '))
+};
+
+declare %private function hexaplaric-variants:is-psalmverse-in-range($psalmverse as xs:string,$psalmverse-from as xs:string,$psalmverse-to as xs:string){
+  let $psalm := number(substring-before($psalmverse,','))
+  let $verse := number(substring-after($psalmverse,','))
+  let $psalm-from := number(substring-before($psalmverse-from,','))
+  let $verse-from := number(substring-after($psalmverse-from,','))
+  let $psalm-to := number(substring-before($psalmverse-to,','))
+  let $verse-to := number(substring-after($psalmverse-to,','))
+  let $result :=
+     if (($psalm lt $psalm-from) or ($psalm gt $psalm-to)) then (false())
+     else (: lower limit <= value <= upper limit:) if (($psalm = $psalm-from) and ($verse lt $verse-from)) then (false())
+     else if (($psalm = $psalm-to) and ($verse gt $verse-to)) then (false()) else (true())
+                 
+  return $result
+};
 
 declare %private function hexaplaric-variants:write-log($message as xs:string, $severity as xs:string) {
   if ($hexaplaric-variants:enable-trace) then admin:write-log($message, $severity) else ()
