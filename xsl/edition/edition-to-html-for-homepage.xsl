@@ -796,5 +796,18 @@ version="2.0">
         </xsl:element>
     </xsl:element>
 </xsl:template>
+    
+    <xsl:template match="tei:quote[parent::tei:note[(@type = 'lemma') or (@type = 'textual-commentary')]]">
+        <xsl:element name="i">
+            <xsl:choose>
+                <xsl:when test="exists(@source)">
+                    <xsl:value-of select="@source"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:apply-templates select="child::node()"/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:element>
+    </xsl:template>
 
 </xsl:stylesheet>

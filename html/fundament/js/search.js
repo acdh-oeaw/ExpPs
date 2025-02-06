@@ -251,6 +251,22 @@ function jsonClient(){
 				let optionReferenceAsObject = $(optionReferenceAsText);
 				$("#psalmverse-form-glosses").append(optionReferenceAsObject);
 			}
+			$("#psalmverse-from-value-form-glosses").empty();
+			$("#psalmverse-from-value-form-glosses").append($("<option value='empty'>empty</option>"));
+			for (let n = 0; n < references._embedded.references.length; n++){
+				let reference = references._embedded.references[n]["psalmverse"];
+				let optionReferenceAsText = "<option value='" + reference + "'>" + reference + "</option>";
+				let optionReferenceAsObject = $(optionReferenceAsText);
+				$("#psalmverse-from-value-form-glosses").append(optionReferenceAsObject);
+			}
+			$("#psalmverse-to-value-form-glosses").empty();
+			$("#psalmverse-to-value-form-glosses").append($("<option value='empty'>empty</option>"));
+			for (let n = 0; n < references._embedded.references.length; n++){
+				let reference = references._embedded.references[n]["psalmverse"];
+				let optionReferenceAsText = "<option value='" + reference + "'>" + reference + "</option>";
+				let optionReferenceAsObject = $(optionReferenceAsText);
+				$("#psalmverse-to-value-form-glosses").append(optionReferenceAsObject);
+			}
 		})
 		.catch(function(error){ console.log(error); });
 	}
@@ -627,6 +643,9 @@ function jsonClient(){
 		let attributionFieldValue = document.getElementById("input-attribution-form-glosses").value;
 		let authorCriticalFieldValue = document.getElementById("input-author-critical-form-glosses").value;
 		let psalmverseFieldValue = document.getElementById("psalmverse-form-glosses").value;
+		let isRangeEnabled = document.getElementById("enable-psalmverse-range-glosses").checked;
+		let psalmverseFromValue = document.getElementById("psalmverse-from-value-form-glosses").value;
+		let psalmverseToValue = document.getElementById("psalmverse-to-value-form-glosses").value;
 		if (attributionFieldValue != "empty"){
 			url = url + "?author=" + attributionFieldValue;
 		}
@@ -638,12 +657,24 @@ function jsonClient(){
 				url = url + "&author-critical=" + authorCriticalFieldValue;
 			}
 		}
-		if (psalmverseFieldValue != "empty"){
-			if (attributionFieldValue === "empty" && authorCriticalFieldValue === "empty"){
-				url = url + "?reference=" + psalmverseFieldValue;
+		if (isRangeEnabled){
+			if ((psalmverseFromValue != "empty") || (psalmverseToValue != "empty")){
+				if (attributionFieldValue === "empty" && authorCriticalFieldValue === "empty"){
+					url = url + "?reference-from=" + psalmverseFromValue + "&reference-to=" + psalmverseToValue;
+				}
+				else {
+					url = url + "&reference-from=" + psalmverseFromValue + "&reference-to=" + psalmverseToValue;
+				}
 			}
-			else{
-				url = url + "&reference=" + psalmverseFieldValue;
+		}
+		else {
+			if (psalmverseFieldValue != "empty"){
+				if (attributionFieldValue === "empty" && authorCriticalFieldValue === "empty"){
+					url = url + "?reference=" + psalmverseFieldValue;
+				}
+				else {
+					url = url + "&reference=" + psalmverseFieldValue;
+				}
 			}
 		}
 		request(url,"get");

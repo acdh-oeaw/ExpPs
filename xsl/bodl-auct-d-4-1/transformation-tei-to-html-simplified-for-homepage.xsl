@@ -583,7 +583,7 @@
             <xsl:element name="p">
                 <xsl:attribute name="class" select="'paragraph-in-commentaryfragment'"/>
                 <xsl:text>Lemma: </xsl:text>
-                <xsl:value-of select="preceding-sibling::tei:note[@type = 'lemma'][1]/text()"/>
+                <xsl:apply-templates select="preceding-sibling::tei:note[@type = 'lemma'][1]"/>
             </xsl:element>
             <xsl:if test="exists(child::tei:num)">
                 <xsl:element name="p">
@@ -756,7 +756,7 @@
                 <xsl:element name="p">
                     <xsl:attribute name="class" select="'paragraph-in-commentaryfragment'"/>
                     <xsl:text>Lemma: </xsl:text>
-                    <xsl:value-of select="preceding-sibling::tei:note[@type = 'lemma'][1]/text()"/>
+                    <xsl:apply-templates select="preceding-sibling::tei:note[@type = 'lemma'][1]"/>
                 </xsl:element>
             </xsl:if>
             <xsl:element name="p">
@@ -898,7 +898,7 @@
             <xsl:element name="p">
                 <xsl:attribute name="class" select="'paragraph-in-hexaplaric-variant'"/>
                 <xsl:text>Lemma: </xsl:text>
-                <xsl:value-of select="preceding-sibling::tei:note[@type = 'lemma'][1]/text()"/>
+                <xsl:apply-templates select="preceding-sibling::tei:note[@type = 'lemma'][1]"/>
             </xsl:element>
             <xsl:if test="exists(child::tei:ref)">
                 <p class="paragraph-in-hexaplaric-variant">
@@ -1997,6 +1997,19 @@
     <xsl:template match="tei:num[@xml:lang = 'grc']">
         <xsl:value-of select="text()"/>
         <xsl:text> </xsl:text>
+    </xsl:template>
+    
+    <xsl:template match="tei:quote[parent::tei:note[(@type = 'lemma') or (@type = 'textual-commentary')]]">
+        <xsl:element name="i">
+            <xsl:choose>
+               <xsl:when test="exists(@source)">
+                    <xsl:value-of select="@source"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:apply-templates select="child::node()"/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:element>
     </xsl:template>
       
 </xsl:stylesheet>
