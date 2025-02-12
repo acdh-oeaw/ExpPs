@@ -24119,12 +24119,14 @@
                         <pb n="85r" facs="https://digi.vatlib.it/view/MSS_Vat.gr.754/84"/>
             
             <!-- psalm 27 bibletext  -->
-            <div type="bibletext" subtype="commented" xml:id="vat-gr-754-27-xx">
+            <div type="bibletext" subtype="commented" xml:id="vat-gr-754-27-4">
                <ab xml:lang="grc">
                   <quote type="bibletext" n="Ps (LXX) 27,1" xml:lang="grc"
                      xml:id="vat-gr-754-ps-27-1-2">
             <anchor type="psalmtext" n="Ps (LXX) 27,1d" xml:id="vat-gr-754-ps-27-1d"/>
                        μήποτε παρασιωπήσῃς ἀπ᾽ ἐμοῦ
+                     <anchor type="psalmtext" n="Ps (LXX) 27,1d" xml:id="vat-gr-754-ps-27-1e"/>
+                     καὶ ὁμοιωθήσομαι τοῖς καταβαίνουσιν εἰς λάκκον.
                   </quote>
                   <quote type="bibletext" n="Ps (LXX) 27,2" xml:lang="grc"
                      xml:id="vat-gr-754-ps-27-2">
@@ -24156,7 +24158,7 @@
                </ab>
             </div>
             <!-- psalm 27 commentary -->
-            <div type="hexaplaric" subtype="commentary" xml:id="vat-gr-754-27-4"
+            <div type="hexaplaric" subtype="commentary" xml:id="vat-gr-754-27-5"
                rendition="#left-column" rend="capital letters" change="commentaryfragments-only">
                <ab xml:lang="grc">
                   <note type="lemma">Ps 27,2b (ναὸν)</note>
@@ -24169,8 +24171,86 @@
                      corresp="#vat-gr-754-ps-26-13a">Θ Δαβεὶρ</seg>
                </ab>
             </div>
-            
-            
+            <div type="commentary" subtype="commentary" xml:id="vat-gr-754-27-6"
+               rendition="#top-of-the-page" rend="minuscule letters" change="commentaryfragments-only">
+               <ab xml:lang="grc">
+            <note type="lemma">Ps 27,1d</note>
+            <seg type="commentaryfragment" xml:id="vat-gr-754-fr-27-4"
+               rendition="#top-of-the-page" source="(Evagrius)" corresp="#vat-gr-754-ps-27-1d"
+               ><quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-27-4"
+                  source="Evagrius, schol. nr. α´ in Ps 27,1c–e (468 Rondeau – Géhin – Cassin)"
+                  corresp="#person-21"/>
+               <note type="attribution" xml:lang="grc">α´</note>
+                           </seg>
+                  
+                  <note type="lemma">Ps 27,1e</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-27-5"
+                     rendition="#top-of-the-page" source="(Athanasius)" corresp="#vat-gr-754-ps-27-1e"
+                     copyOf="#edition-part-two:edition-26-30-27-1-2"><quote type="patristic"
+                        subtype="quotation" xml:id="vat-gr-754-quot-27-5"
+                        source="Athanasius, exp. in Ps 27,1e" corresp="#person-2">
+                        Ἔθος τῆ θεία γραφὴ. λάκκον ὀνομάζειν τὸν ἅδην: –</quote>
+                     <note type="attribution" xml:lang="grc">ΠΓ΄</note></seg>
+                  
+                  <note type="lemma">Ps 27,2b</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-27-6"
+                     rendition="#top-of-the-page" source="(Evagrius)" corresp="#vat-gr-754-ps-27-2b"
+                     ><quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-27-6"
+                        source="Evagrius, schol. nr. β´ in Ps 27,2b (470 Rondeau – Géhin – Cassin)"
+                        corresp="#person-21"/>
+                     <note type="attribution" xml:lang="grc">β´</note>
+                  </seg>
+                  
+                  <note type="lemma">Ps 27,3a</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-27-7"
+                     rendition="#right-column" source="(Athanasius)" corresp="#vat-gr-754-ps-27-3a"
+                     copyOf="#edition-part-two:edition-26-30-27-3-1"><quote type="patristic"
+                        subtype="quotation" xml:id="vat-gr-754-quot-27-7"
+                        source="Athanasius, exp. in Ps 27,3a" corresp="#person-2">
+                        Ἁμαρτωλοὺς.
+                        τὸ Ἰουδαίων
+                        ἔθνος φη(σὶ)
+                        κατὰ τὸ εἰρημένον
+                        αὐτοῖς παρατοῦ
+                        Ἰησοῦ· ἐὰν μὴ πιστεύσητε
+                        ὅτι ἐγὼ εἰμὶ.
+                        ἐν ταῖς ἁμαρτίαις ὑμῶν
+                        ἀποθανεῖσθαι·
+                        αὐτοὶ δὲ καὶ
+                        ἐργαζόμενοι τὴν ἀνομίαν
+                        ὅτι τὸν ἀθῶον καὶ
+                        δίκαιον ἀπέκτειναν
+                        ὃν οὐκ ἀποκτείνειν
+                        νόμος ἐκέλευεν:</quote>
+                     <note type="attribution" xml:lang="grc">ΠΔ΄</note></seg>
+                  
+                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-27-8"
+                     rendition="#right-column" source="Theodoretus" corresp="#vat-gr-754-ps-27-3a"
+                     ><quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-27-8"
+                        source="Theodoretus, comm. in Ps 27,3 (PG 80,1057 B14–C5)"
+                        corresp="#person-16"/>
+                     <note type="attribution" xml:lang="grc">Θεοδ(ωρήτου)</note>
+                  </seg>
+                  
+                  <note type="lemma">Ps 27,3c</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-27-9"
+                     rendition="#left-column" source="(Athanasius)" corresp="#vat-gr-754-ps-27-3a"
+                     copyOf="#edition-part-two:edition-26-30-27-3-2"><quote type="patristic"
+                        subtype="quotation" xml:id="vat-gr-754-quot-27-9"
+                        source="Athanasius, exp. in Ps 27,3a" corresp="#person-2">
+                        Τοῦτο φη(σιν) ὅτι διδάσκαλον καὶ ἀγαθὸν ἀποκαλοῦντες τὸν σωτῆρα. κακὰ διελογίζοντο καταυτοῦ: –</quote>
+                     <note type="attribution" xml:lang="grc">ΠΕ΄</note></seg>
+                  
+                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-27-10"
+                     rendition="#bottom-of-the-page" source="Theodoretus" corresp="#vat-gr-754-ps-27-4a"
+                     ><quote type="patristic" subtype="quotation" xml:id="vat-gr-754-quot-27-10"
+                        source="Theodoretus, comm. in Ps 27,3 (PG 80,1057 B14–C5)"
+                        corresp="#person-16"/>
+                     <note type="attribution" xml:lang="grc">Θεοδ(ωρήτου)</note>
+                  </seg>
+                  
+               </ab>
+            </div>
                   </div>
       </body>
    </text>
