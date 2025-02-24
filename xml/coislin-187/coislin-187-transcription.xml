@@ -8,14 +8,14 @@
                 <title>Paris. Coislin 187 (CPG C40,8; Rahlfs 190)</title>
                 <title type="subtitle">List of Contents, Transcription of (Ps.)-Athanasius,
                     Expositiones in Psalmos, and of the Unpublished Fragments (Ps 17,36d to Ps
-                    22)</title>
+                    30)</title>
                 <respStmt>
                     <resp>by</resp>
-                    <persName>Sebastiano Panteghini</persName>
+                    <persName>Sebastiano Panteghini (Ps 17,36d to Ps 25) and Christoph Scheerer (Ps 26 to Ps 30)</persName>
                 </respStmt>
                 <respStmt>
                     <resp>encoded by</resp>
-                    <persName>Sebastiano Panteghini</persName>
+                    <persName>Sebastiano Panteghini (Ps 17,36d to Ps 25) and Christoph Scheerer (Ps 26 to Ps 30)</persName>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
@@ -3807,13 +3807,169 @@
             
             <!-- Psalm 27 commentary -->
             
-            <pb n="12r" facs="https://gallica.bnf.fr/ark:/12148/btv1b525129965/f27.item"/>
+            <pb n="12r-13r" facs="https://gallica.bnf.fr/ark:/12148/btv1b525129965/f27.item"/>
             <div type="commentary" subtype="commentary" xml:id="coislin-187-27-2"
                 change="commentaryfragments-only">
                 <ab xml:lang="grc">
                     <note type="lemma">Ps 27,1a</note>
+                    <seg type="hypothesis" xml:id="coislin-187-fr-27-1"
+                        source="Anonymous" corresp="#coislin-187-ps-27-1-1a"
+                        copyOf="#edition-part-two:edition-26-30-27-1-1"><quote type="patristic"
+                            subtype="quotation" xml:id="coislin-187-quot-27-1"
+                            source="Athanasius, exp. in Ps 27,1a = Theodoretus, comm. in Ps 27,1 (PG 80,1056 C5–10)" corresp="#person-2 / #person-16">
+                            Ἄδει τὸν παρόντα ψαλμὸν ἐκ προσώπου τῶν πιστευσάντων
+                            εἰς Χριστὸν διὰ δεήσεως· εἰς ἐπικουρίαν καλῶν
+                            τὸν Θεόν· ἅμα δὲ καὶ τῆς Ἰουδαίων ἀπονοίας
+                            κατάῤῥησιν ἔχων καὶ εὐχὴν τοῦ χωρισθῆναι τῆς
+                            ἐκείνων μερίδος: –</quote>
+                        <ref target="#vat-gr-754:vat-gr-754-fr-27-1" type="with-variants">Vat. gr.
+                            754</ref></seg>
                     
+                    <note type="lemma">Ps 27,1e (<foreign xml:lang="grc">εἰς λάκκον</foreign>)</note>
+                    <seg type="glosse" xml:id="coislin-187-glosse-27-1" rendition="#inner-margin"
+                         rend="inner-margin" source="Anonymous" corresp="#coislin-187-ps-27-1e"><quote type="patristic"
+                            subtype="unknown" xml:id="coislin-187-quot-27-1-1" source="fons ignotus"
+                            corresp="#person-18"><gap reason="missing" unit="character" quantity="1"/><supplied resp="#CScheerer" cert="high">ε</supplied>ις βόθρον:</quote>
+                        </seg>
                     
+                    <seg type="commentaryfragment" xml:id="coislin-187-fr-27-2"
+                        source="Anonymous" corresp="#coislin-187-ps-27-1e"
+                        copyOf="#edition-part-two:edition-26-30-27-1-2"><quote type="patristic"
+                            subtype="quotation" xml:id="coislin-187-quot-27-2"
+                            source="Athanasius, exp. in Ps 27,1e" corresp="#person-2">
+                            Ἔθος τῆι θεία γραφὴι· λάκκον ὀνομάζειν ἅιδην· </quote>
+                        <ref target="#vat-gr-754:vat-gr-754-fr-27-5" type="with-variant">Vat. gr.
+                            754</ref></seg>
+                    
+                    <note type="lemma">Ps 27,2b (<foreign xml:lang="grc">ἐν τῷ αἵρειν με</foreign>)</note>
+                    <seg type="glosse" xml:id="coislin-187-glosse-27-2" rendition="#inner-margin"
+                        rend="inner-margin" source="Anonymous" corresp="#coislin-187-ps-27-2b"><quote type="patristic"
+                            subtype="unknown" xml:id="coislin-187-quot-27-2-1" source="fons ignotus"
+                            corresp="#person-18"><gap reason="missing" unit="character" quantity="1"/><supplied resp="#CScheerer" cert="high">ε</supplied>ν τῶ ἐναί<gap reason="missing" unit="character" quantity="1"/><supplied resp="#CScheerer" cert="high">ρ</supplied>ειν με: –</quote>
+                    </seg>
+                    
+                    <note type="lemma">Ps 27,3a (<foreign xml:lang="grc">ἁμαρτωλῶν</foreign>)</note>
+                    <seg type="commentaryfragment" xml:id="coislin-187-fr-27-3"
+                        source="Anonymous" corresp="#coislin-187-ps-27-3a"
+                        copyOf="#edition-part-two:edition-26-30-27-3-1"><quote type="patristic"
+                            subtype="quotation" xml:id="coislin-187-quot-27-3"
+                            source="Athanasius, exp. in Ps 27,3a" corresp="#person-2">
+                            Ἁμαρτωλοὺς, τὸ Ἰουδαίων ἔθνος φησὶ. κατὰ τὸ εἰρημένον
+                            αὐτοῖς παρα τοῦ σωτῆρος· ἐὰν μὴ πιστεύσητε ὅτι
+                            ἐγὼ εἰμὶ· ἐν ταῖς ἁμαρτίαις ὑμῶν ἀποθανεῖσθε·
+                            αὐτοὶ δὲ καὶ ἐργαζόμενοι τὴν ἀδικίαν· ὅτι τὸν ἀθῶον ||
+                            καὶ δίκαιον ἀπέκτειναν. ὃν ἀποκτείνειν ὁ νόμος
+                            οὐκ ἐκέλευσεν: –</quote>
+                        <ref target="#vat-gr-754:vat-gr-754-fr-27-7" type="with-variants">Vat. gr.
+                            754</ref></seg>
+                    
+                    <note type="lemma">Ps 27,3c–d</note>
+                    <seg type="commentaryfragment" xml:id="coislin-187-fr-27-4"
+                        rendition="#left-column" source="Anonymous" corresp="#coislin-187-ps-27-3c"
+                        copyOf="#edition-part-two:edition-26-30-27-3-2"><quote type="patristic"
+                            subtype="quotation" xml:id="coislin-187-quot-27-4"
+                            source="Athanasius, exp. in Ps 27,3c" corresp="#person-2">
+                            Τοῦτό φησιν ὅτι διδάσκαλον καὶ ἀγαθὸν ἀποκαλοῦντες
+                            τὸν σωτῆρα. κακὰ διελογίζοντο κατ'αὐτοῦ: –</quote>
+                        <ref target="#vat-gr-754:vat-gr-754-fr-27-9" type="identical">Vat. gr.
+                            754</ref></seg>
+                    
+                    <note type="lemma">Ps 27,4b (<foreign xml:lang="grc">τῶν ἐπιτηδευμάτων</foreign>)</note>
+                    <seg type="glosse" xml:id="coislin-187-glosse-27-3" rendition="#inner-margin"
+                        rend="inner-margin" source="Anonymous" corresp="#coislin-187-ps-27-4b"><quote type="patristic"
+                            subtype="unknown" xml:id="coislin-187-quot-27-4-1" source="fons ignotus"
+                            corresp="#person-18">τῶν ἐπιχειρημάτων:</quote>
+                    </seg>
+                    
+                    <note type="lemma">Ps 27,5a</note>
+                    <seg type="commentaryfragment" xml:id="coislin-187-fr-27-5"
+                        rendition="#top-of-the-page" source="Anonymous" corresp="#coislin-187-ps-27-5a"
+                        copyOf="#edition-part-two:edition-26-30-27-5"><quote type="patristic"
+                            subtype="quotation" xml:id="coislin-187-quot-27-5"
+                            source="Athanasius, exp. in Ps 27,5a" corresp="#person-2">
+                            Ἀντι τοῦ οὐκ ἠθέλησαν τὴν οἰκείαν παραδέξασθαι σωτηρίαν: –</quote>
+                        <ref target="#vat-gr-754:vat-gr-754-fr-27-13" type="with-variant">Vat. gr.
+                            754</ref></seg>
+                    
+                    <note type="lemma">Ps 27,5c (<foreign xml:lang="grc">καθελεῖς</foreign>)</note>
+                    <seg type="glosse" xml:id="coislin-187-glosse-27-4" rendition="#inner-margin"
+                        rend="inner-margin" source="Anonymous" corresp="#coislin-187-ps-27-5c"><quote type="patristic"
+                            subtype="unknown" xml:id="coislin-187-quot-27-5-1" source="fons ignotus"
+                            corresp="#person-18">καταβαλεῖς:</quote>
+                    </seg>
+                    
+                    <note type="lemma">Ps 27,7a (<foreign xml:lang="grc">ὑπερασπιστής μου</foreign>)</note>
+                    <seg type="glosse" xml:id="coislin-187-glosse-27-5" rendition="#inner-margin"
+                        rend="inner-margin" source="Anonymous" corresp="#coislin-187-ps-27-7a"><quote type="patristic"
+                            subtype="unknown" xml:id="coislin-187-quot-27-5-2" source="fons ignotus"
+                            corresp="#person-18">φύλαξ μου:</quote>
+                    </seg>
+                    
+                    <note type="lemma">Ps 27,7c (<foreign xml:lang="grc">ἀνέθαλεν</foreign>)</note>
+                    <seg type="commentaryfragment" xml:id="coislin-187-fr-27-6"
+                        source="Anonymous" corresp="#coislin-187-ps-27-7c"
+                        copyOf="#edition-part-two:edition-26-30-27-7-1"><quote type="patristic"
+                            subtype="quotation" xml:id="coislin-187-quot-27-6"
+                            source="Athanasius, exp. in Ps 27,7b" corresp="#person-2">
+                            Σαφῶς ἐν τοῦτο τὴν ἀνάστασιν κηρύτγει·</quote>
+                        <ref target="#vat-gr-754:vat-gr-754-fr-27-26" type="identical">Vat. gr.
+                            754</ref></seg>
+                    <seg type="commentaryfragment" xml:id="coislin-187-fr-27-7"
+                        source="Anonymous" corresp="#coislin-187-ps-27-7c"
+                        copyOf="#edition-part-two:edition-26-30-27-7-2"><quote type="patristic"
+                            subtype="quotation" xml:id="coislin-187-quot-27-7"
+                            source="Athanasius, exp. in Ps 27,7d" corresp="#person-2">
+                            Ἀντὶ τοῦ
+                            ἑκουσίως. τοῦτο δὲ πρὸς ἀντιδιαστολὴν τῆς νομικῆς
+                            λατρείας. ὅτι φόβωι τῶν κολάσεων ἐκείνη<del rend="erasure">ν</del> ἐπετελεῖτο: –</quote>
+                        <ref target="#vat-gr-754:vat-gr-754-fr-27-20" type="with-variant">Vat. gr.
+                            754</ref></seg>
+                    
+                    <note type="lemma">Ps 27,8a (<foreign xml:lang="grc">κραταίωμα</foreign>)</note>
+                    <seg type="glosse" xml:id="coislin-187-glosse-27-6" rendition="#inner-margin"
+                        rend="inner-margin" source="Anonymous" corresp="#coislin-187-ps-27-8a"><quote type="patristic"
+                            subtype="unknown" xml:id="coislin-187-quot-27-7-1" source="fons ignotus"
+                            corresp="#person-18">ἰσχύς:</quote>
+                    </seg>
+                    
+                    <note type="lemma">Ps 27,8b (<foreign xml:lang="grc">ὑπερασπιστής</foreign>)</note>
+                    <seg type="glosse" xml:id="coislin-187-glosse-27-7" rendition="#inner-margin"
+                        rend="inner-margin" source="Anonymous" corresp="#coislin-187-ps-27-8b"><quote type="patristic"
+                            subtype="unknown" xml:id="coislin-187-quot-27-7-2" source="fons ignotus"
+                            corresp="#person-18">φύλαξ:</quote>
+                    </seg>
+                    
+                    <note type="lemma">Ps 27,8b (<foreign xml:lang="grc">τοῦ χριστοῦ αὐτοῦ</foreign>)</note>
+                    <seg type="commentaryfragment" xml:id="coislin-187-fr-27-8"
+                        source="Anonymous" corresp="#coislin-187-ps-27-8b"
+                        copyOf="#edition-part-two:edition-26-30-27-8"><quote type="patristic"
+                            subtype="quotation" xml:id="coislin-187-quot-27-8"
+                            source="Athanasius, exp. in Ps 27,8b" corresp="#person-2">
+                            Χρηστὸν ἐνταῦθα. τὸν χρισθέντα λαὸν εἰς βασίλειον
+                            ἱεράτευμα φησιν· αὐτὸς οὖν ὁ κύριος ὑπερασπίζει τὸν χρισθέντα.: –</quote>
+                        <ref target="#vat-gr-754:vat-gr-754-fr-27-21" type="with-variants-abbreviated">Vat. gr.
+                            754</ref></seg>
+                    
+                    <note type="lemma">Ps 27,9b (<foreign xml:lang="grc">ἔπαρον</foreign>)</note>
+                    <seg type="glosse" xml:id="coislin-187-glosse-27-8" rendition="#inner-margin"
+                        rend="inner-margin" source="Anonymous" corresp="#coislin-187-ps-27-9b"><quote type="patristic"
+                            subtype="quotation-abbreviated" xml:id="coislin-187-quot-27-8-2" source="Diodorus Tarsensis, comm. in Ps 27,9
+                            (161,81 Olivier)"
+                            corresp="#person-5">ἀντὶ τοῦ ὕψωσον λέγει:</quote></seg>
+                    
+                    <note type="lemma">Ps 27,9b (<foreign xml:lang="grc">ποίμανον</foreign>)</note>
+                    <seg type="commentaryfragment" xml:id="coislin-187-fr-27-9"
+                        source="Athanasius" corresp="#coislin-187-ps-27-9b"
+                        copyOf="#edition-part-two:edition-26-30-27-9"><quote type="patristic"
+                            subtype="quotation" xml:id="coislin-187-quot-27-9"
+                            source="Athanasius, exp. in Ps 27,9b" corresp="#person-2">
+                            Αὐτὸς γὰρ ἡμᾶς ποιμαίνει πέμψας ἡμῖν ἀντὶ αὐτοῦ καὶ
+                            ὡς ἑαυτὸν τὸν παράκλητον καὶ μὴν καὶ ἐπαίρει· τοῦ||
+                            τ'ἐστιν ὑψηλοὺς ἀποφαίνει εἰς τοὺς μέλλοντας καὶ
+                            ἀτελευτήτους αἰῶνας: –</quote>
+                        <note type="attribution" xml:lang="grc">Ἀθανασιου</note>
+                        <ref target="#vat-gr-754:vat-gr-754-fr-27-24" type="with-variants">Vat. gr.
+                            754</ref></seg>
                 </ab>
             </div>
 
