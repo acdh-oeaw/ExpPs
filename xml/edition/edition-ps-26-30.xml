@@ -1330,7 +1330,7 @@
                      </app>
                      <app type="text" corresp="#edition-27-1-2-tc-2">
                         <lem><foreign xml:lang="grc">ᾅδην</foreign></lem>
-                        <rdg wit="#A1"><foreign xml:lang="grc">ἅδην [κατα]
+                        <rdg wit="#A1"><foreign xml:lang="grc">ἅδην [καὶ τὸν]
                            τῶν ἁμαρτωλῶν σύνδεσμον</foreign></rdg>
                      </app>
                   </div>
@@ -1520,7 +1520,7 @@
                            <quote xml:id="edition-26-30-ps-27-3d" type="psalmtext" n="3d">κακὰ δὲ ἐν ταῖς καρδίαις αὐτῶν.</quote>
                      </div>
                         <div type="commentary">
-                           <p xml:id="edition-26-30-27-3-2" n="515">Τοῦτο φησιν ὅτι διδάσκαλον <span type="text-critical" xml:id="edition-27-3-2-tc-1">καὶ ἀγαθὸν ἀποκαλοῦντες</span> τὸν <span type="text-critical" xml:id="edition-27-3-2-tc-2">σωτῆρα</span>. κακὰ διελογίζοντο <span type="text-critical" xml:id="edition-27-3-2-tc-3">κατ'</span> αὐτοῦ: –</p>
+                           <p xml:id="edition-26-30-27-3-2" n="515"><span type="text-critical" xml:id="edition-27-3-2-tc-0">Τοῦτο φησιν</span> ὅτι διδάσκαλον <span type="text-critical" xml:id="edition-27-3-2-tc-1">καὶ ἀγαθὸν ἀποκαλοῦντες</span> <span type="text-critical" xml:id="edition-27-3-2-tc-1a">τὸν <span type="text-critical" xml:id="edition-27-3-2-tc-2">σωτῆρα</span></span>. κακὰ διελογίζοντο <span type="text-critical" xml:id="edition-27-3-2-tc-3">κατ'</span> αὐτοῦ: –</p>
                            <div type="links">
                               <p>
                                  <listRef>
@@ -1533,13 +1533,14 @@
                                     <ref target="#oxon-s-trin-78:oxon-s-trin-78-fr-27-6"/>
                                     <ref target="#plut-5-30:plut-5-30-fr-27-10"/>
                                     <ref target="#coislin-12:coislin-12-fr-27-4"/>
+                                    <ref target="#ambr-m-47-sup:ambr-m-47-sup-fr-27-5"/>
                                  </listRef>
                               </p>
                            </div>
                         </div>
                         <div type="textcritic">
                            <app type="fragment">
-                              <rdg wit="#V1 #C #G #P1 #B1 #P2 #B2 #L1 #P5">txt</rdg>
+                              <rdg wit="#V1 #C #G #P1 #B1 #P2 #B2 #L1 #P5 #A1">txt</rdg>
                               <wit>Vat. gr. 754</wit>
                               <wit>Coislin 10</wit>
                               <wit>Urbani 3</wit>
@@ -1549,11 +1550,20 @@
                               <wit>S. Trin. 78</wit>
                               <wit>Plut. 5.30</wit>
                               <wit>Coislin 12</wit>
+                              <wit>Ambr. M 47 sup.</wit>
+                           </app>
+                           <app type="text" corresp="#edition-27-3-2-tc-0">
+                              <lem><foreign xml:lang="grc">Τοῦτο φησιν</foreign></lem>
+                              <rdg wit="#A1"><foreign>Τοῦτο περἰ τοῦ Χριστοῦ φησὶ κατὰ τῶν Ιουδαίων</foreign></rdg>
                            </app>
                            <app type="text" corresp="#edition-27-3-2-tc-1">
                               <lem><foreign xml:lang="grc">καὶ ἀγαθὸν ἀποκαλοῦντες</foreign></lem>
                               <rdg wit="#G"><foreign xml:lang="grc">ἀποκαλοῦντες ἀγαθὸν</foreign></rdg>
                               <wit>Urbani 3</wit>
+                           </app>
+                           <app type="text" corresp="edition-27-3-2-tc-1a">
+                              <lem><foreign xml:lang="grc">τὸν σωτῆρα</foreign></lem>
+                              <rdg exclude="#A1">αὐτὸν</rdg>
                            </app>
                            <app type="text" corresp="#edition-27-3-2-tc-2">
                               <lem><foreign xml:lang="grc">σωτῆρα</foreign></lem>
@@ -1565,6 +1575,7 @@
                               <rdg wit="#P5"><foreign xml:lang="grc">περὶ</foreign></rdg>
                               <wit>Coislin 12</wit>
                            </app>
+                           <note type="textual-commentary">A1: Die beiden Hinzufügungen scheinen als Ersatz für die ausgelassene Exp. 514 zu dienen, insofern ohne diese das Subjekt des ὅτι-Satzes unklar wäre.</note>
                         </div>
                         </div>
                                           
