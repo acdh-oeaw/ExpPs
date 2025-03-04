@@ -43155,14 +43155,21 @@
                         <p><listRef>
                               <ref target="#vat-gr-754:vat-gr-754-fr-24-1"/>
                               <ref target="#par-gr-166:par-gr-166-fr-24-1"/>
+                              <ref target="#coislin-187:coislin-187-fr-24-1"/>
                            </listRef></p>
                      </div>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #P1">txt</rdg>
+                        <rdg wit="#V1 #P1 #P2">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Par. gr. 166</wit>
+                        <wit>Coislin 187</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">ψαλμῷ</foreign></lem>
+                        <rdg wit="#P2">om.</rdg>
+                        <wit>Coislin 187</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">τὸ ἑκάστου</foreign></lem>
@@ -43170,12 +43177,22 @@
                         <wit>Par. gr. 166</wit>
                         <rdg wit="#P1c"><foreign xml:lang="grc">τῶ ἑκάστου</foreign></rdg>
                         <wit>Par. gr. 166</wit>
+                        <rdg wit="#P2"><foreign xml:lang="grc">ἑκάστῳ</foreign></rdg>
+                        <wit>Coislin 187</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">ἁπάντων τῶν συνηλεγμένων</foreign></lem>
                         <rdg wit="#P1"><foreign xml:lang="grc">αὐτῶν τῶν
                            συνειλεγμένων</foreign></rdg>
                         <wit>Par. gr. 166</wit>
+                        <rdg wit="#P2"><foreign xml:lang="grc">ἁπάντων συνηλεγμένων</foreign></rdg>
+                        <wit>Coislin 187</wit>
+                     </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">εἰς – ζωήν</foreign></lem>
+                        <rdg wit="#P2"><foreign xml:lang="grc">καὶ εἰς πνευματικὴν παρακαλούντων
+                              ἀπευθύνεσθαι ζωήν</foreign></rdg>
+                        <wit>Coislin 187</wit>
                      </app>
                      <note type="textual-commentary">P1: exp. 397 mit Evagrius (schol. nr. α´ in Ps
                         24,1b–3a [442 Rondeau – Géhin – Cassin]) verbunden.</note>
@@ -43194,19 +43211,25 @@
                         <p><listRef>
                               <ref target="#vat-gr-754:vat-gr-754-fr-24-3"/>
                               <ref target="#par-gr-166:par-gr-166-fr-24-2"/>
+                           <ref target="#coislin-187:coislin-187-fr-24-2"></ref>
                            </listRef></p>
                      </div>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #P1">txt</rdg>
+                        <rdg wit="#V1 #P1 #P2">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Par. gr. 166</wit>
+                        <wit>Coislin 187</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">τὴν εἰδωλολατρείαν</foreign></lem>
                         <rdg wit="#P1"><foreign xml:lang="grc">τῆς εἰδωλολατρείας</foreign></rdg>
                         <wit>Par. gr. 166</wit>
+                     </app>
+                     <app type="text"><lem><foreign xml:lang="grc">φησίν</foreign></lem>
+                     <rdg wit="#P2">om.</rdg>
+                        <wit>Coislin 187</wit>
                      </app>
                   </div>
                </div>
@@ -43675,10 +43698,24 @@
             <div type="psalmverse" n="24.17">
                <div type="text" xml:lang="grc">
                   <div type="psalmtext">
-                     <quote type="psalmtext" xml:id="edition-ps-24-17-1" n="17a">ἐπίβλεψον ἐπ’ ἐμὲ
-                        καὶ ἐλέησόν με,</quote>
-                     <quote type="psalmtext" xml:id="edition-ps-24-17-2" n="17b">ὅτι μονογενὴς καὶ
-                        πτωχός εἰμι ἐγώ.</quote>
+                     <quote type="psalmtext" xml:id="edition-ps-24-17-1" n="17a">αἱ θλίψεις τῆς
+                        καρδίας μου ἐπλατύνθησαν·</quote>
+                     <quote type="psalmtext" xml:id="edition-ps-24-17-2" n="17b">ἐκ τῶν ἀναγκῶν μου
+                        ἐξάγαγέ με.</quote>
+                  </div>
+                  <div type="commentary" subtype="dubium">
+                     <p xml:id="edition-24-17-2" n="405">Ἐκ τῶν συνεχῶν μου: –</p>
+                     <div type="links">
+                        <p><listRef>
+                              <ref target="#par-gr-166:par-gr-166-fr-24-25"/>
+                           </listRef></p>
+                     </div>
+                  </div>
+                  <div type="textcritic">
+                     <app type="fragment">
+                        <rdg wit="#P1">txt</rdg>
+                        <wit>Par. gr. 166</wit>
+                     </app>
                   </div>
                </div>
                <div type="translation" xml:lang="de">
@@ -43686,6 +43723,7 @@
                      meines Herzens haben sich vermehrt;</quote>
                   <quote type="psalmtext" corresp="#edition-ps-24-17-2" n="17b">aus meinen Nöten
                      führe mich heraus.</quote>
+                  <p corresp="#edition-24-17-2">Aus meinen anhaltenden (Nöten).</p>
                </div>
             </div>
             <div type="psalmverse" n="24.18">
@@ -43703,14 +43741,19 @@
                      <div type="links">
                         <p><listRef>
                               <ref target="#vat-gr-754:vat-gr-754-fr-24-42"/>
+                              <ref target="#par-gr-166:par-gr-166-fr-24-26"/>
                            </listRef></p>
                      </div>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1">txt</rdg>
+                        <rdg wit="#V1 #P1">txt</rdg>
                         <wit>Vat. gr. 754</wit>
+                        <wit>Par. gr. 166</wit>
                      </app>
+                     <note type="textual-commentary">P1: Theodoretus (comm. in Ps 24,17–18 [PG
+                        80,1044 A2–6]), der nach Ps 24,17a steht, wird Athanasius zugeschrieben.
+                     </note>
                   </div>
                </div>
                <div type="translation" xml:lang="de">
@@ -43785,13 +43828,15 @@
                      <div type="links">
                         <p><listRef>
                               <ref target="#vat-gr-754:vat-gr-754-fr-24-43"/>
+                              <ref target="#par-gr-166:par-gr-166-fr-24-27"/>
                            </listRef></p>
                      </div>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1">txt</rdg>
+                        <rdg wit="#V1 #P1">txt</rdg>
                         <wit>Vat. gr. 754</wit>
+                        <wit>Par. gr. 166</wit>
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">ἐκκαλεῖται</foreign></lem>
