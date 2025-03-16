@@ -1204,7 +1204,7 @@
                               <ref target="#coislin-12:coislin-12-fr-27-1"/>
                               <ref target="#ambr-m-47-sup:ambr-m-47-sup-fr-27-1"/>
                               <ref target="#par-gr-139:par-gr-139-fr-27-1"/>
-                              <ref target="#mosq-syn-194:mosq-syn-194-fr-27-2"></ref>
+                              <ref target="#mosq-syn-194:mosq-syn-194-fr-27-2"/>
                               </listRef>
                         </p>
                      </div>
@@ -1566,7 +1566,7 @@
                            <quote xml:id="edition-26-30-ps-27-3d" type="psalmtext" n="3d">κακὰ δὲ ἐν ταῖς καρδίαις αὐτῶν.</quote>
                      </div>
                         <div type="commentary">
-                           <p xml:id="edition-26-30-27-3-2" n="515"><span type="text-critical" xml:id="edition-27-3-2-tc-0">Τοῦτο φησιν</span> ὅτι διδάσκαλον <span type="text-critical" xml:id="edition-27-3-2-tc-1">καὶ ἀγαθὸν ἀποκαλοῦντες</span> <span type="text-critical" xml:id="edition-27-3-2-tc-1a">τὸν <span type="text-critical" xml:id="edition-27-3-2-tc-2">σωτῆρα</span></span>. κακὰ διελογίζοντο <span type="text-critical" xml:id="edition-27-3-2-tc-3">κατ'</span> αὐτοῦ: –</p>
+                           <p xml:id="edition-26-30-27-3-2" n="515"><span type="text-critical" xml:id="edition-27-3-2-tc-0">Τοῦτο φησιν</span> <span type="text-critical" xml:id="edition-27-3-2-tc-0a">ὅτι</span> διδάσκαλον <span type="text-critical" xml:id="edition-27-3-2-tc-1"><span type="text-critical" xml:id="edition-27-3-2-tc-1z">καὶ</span> ἀγαθὸν ἀποκαλοῦντες</span> <span type="text-critical" xml:id="edition-27-3-2-tc-1a">τὸν <span type="text-critical" xml:id="edition-27-3-2-tc-2">σωτῆρα</span></span>. κακὰ διελογίζοντο <span type="text-critical" xml:lang="edition-27-3-2-tc-2a"><span type="text-critical" xml:id="edition-27-3-2-tc-3">κατ'</span> αὐτοῦ</span>: –</p>
                            <div type="links">
                               <p>
                                  <listRef>
@@ -1581,13 +1581,14 @@
                                     <ref target="#coislin-12:coislin-12-fr-27-4"/>
                                     <ref target="#ambr-m-47-sup:ambr-m-47-sup-fr-27-5"/>
                                     <ref target="#par-gr-139:par-gr-139-fr-27-14"/>
+                                    <ref target="#mosq-syn-194:mosq-syn-194-fr-27-12"/>
                                  </listRef>
                               </p>
                            </div>
                         </div>
                         <div type="textcritic">
                            <app type="fragment">
-                              <rdg wit="#V1 #C #G #P1 #B1 #P2 #B2 #L1 #P5 #A1 #P6 #Z #N2">txt</rdg>
+                              <rdg wit="#V1 #C #G #P1 #B1 #P2 #B2 #L1 #P5 #A1 #P6 #Z #N2 #M">txt</rdg>
                               <wit>Vat. gr. 754</wit>
                               <wit>Coislin 10</wit>
                               <wit>Urbani 3</wit>
@@ -1601,24 +1602,43 @@
                               <wit>Par. gr. 139</wit>
                               <wit>Marc. gr. Z. 17</wit>
                               <wit>Athen. B.N. 45</wit>
+                              <wit>Mosq. Sinod. gr. 194</wit>
                            </app>
                            <app type="text" corresp="#edition-27-3-2-tc-0">
                               <lem><foreign xml:lang="grc">Τοῦτο φησιν</foreign></lem>
                               <rdg wit="#A1"><foreign>Τοῦτο περἰ τοῦ Χριστοῦ φησὶ κατὰ τῶν Ιουδαίων</foreign></rdg>
+                           </app>
+                           <app type="text" corresp="#edition-27-3-2-tc-0a">
+                              <lem><foreign xml:lang="grc">ὅτι</foreign></lem>
+                              <rdg wit="#M">om.</rdg>
+                              <wit>Mosq. Sinod. gr. 194</wit>
                            </app>
                            <app type="text" corresp="#edition-27-3-2-tc-1">
                               <lem><foreign xml:lang="grc">καὶ ἀγαθὸν ἀποκαλοῦντες</foreign></lem>
                               <rdg wit="#G"><foreign xml:lang="grc">ἀποκαλοῦντες ἀγαθὸν</foreign></rdg>
                               <wit>Urbani 3</wit>
                            </app>
+                           <app type="text" corresp="#edition-27-3-2-tc-1z">
+                              <lem><foreign xml:lang="grc">καὶ</foreign></lem>
+                              <rdg wit="#M">om.</rdg>
+                              <wit>Mosq. Sinod. gr. 194</wit>
+                           </app>
                            <app type="text" corresp="edition-27-3-2-tc-1a">
                               <lem><foreign xml:lang="grc">τὸν σωτῆρα</foreign></lem>
-                              <rdg exclude="#A1">αὐτὸν</rdg>
+                              <rdg wit="#A1"><foreign xml:lang="grc">αὐτὸν</foreign></rdg>
+                              <wit>Auct. D.4.1</wit>
+                              <rdg wit="#M">om.</rdg>
+                              <wit>Mosq. Sinod. gr. 194</wit>
                            </app>
                            <app type="text" corresp="#edition-27-3-2-tc-2">
                               <lem><foreign xml:lang="grc">σωτῆρα</foreign></lem>
                               <rdg wit="#B2">Χριστὸν</rdg>
                               <wit>S. Trin. 78</wit>
+                           </app>
+                           <app type="text" corresp="#edition-27-3-2-tc-2a">
+                              <lem><foreign xml:lang="grc">κατ' αὐτοῦ</foreign></lem>
+                              <rdg wit="#M"><foreign xml:lang="grc">κατεμοῦ</foreign></rdg>
+                              <wit>Mosq. Sinod. gr. 194</wit>
                            </app>
                            <app type="text" corresp="#edition-27-3-2-tc-3">
                               <lem><foreign xml:lang="grc">κατ'</foreign></lem>
@@ -1667,7 +1687,7 @@
                      <quote xml:id="edition-26-30-ps-27-5a" type="psalmtext" n="5a">ὅτι οὐ συνῆκαν εἰς τὰ ἔργα κυρίου</quote>
                   </div>
                   <div type="commentary">
-                     <p xml:id="edition-26-30-27-5" n="516">Ἀντὶ τοῦ οὐκ ηθέλησαν, <span type="text-critical" xml:id="edition-27-5-tc-1">φησὶ</span>, τὴν <span type="text-critical" xml:id="edition-27-5-tc-2">οἰκείαν</span> παραδέξασθαι <span type="text-critical" xml:id="edition-27-5-tc-3">σωτηρίαν</span>: –</p>
+                     <p xml:id="edition-26-30-27-5" n="516">Ἀντὶ τοῦ οὐκ <span type="text-critical" xml:id="edition-27-5-tc-0">ηθέλησαν</span>, <span type="text-critical" xml:id="edition-27-5-tc-1">φησὶ</span>, τὴν <span type="text-critical" xml:id="edition-27-5-tc-2">οἰκείαν</span> παραδέξασθαι <span type="text-critical" xml:id="edition-27-5-tc-3">σωτηρίαν</span>: –</p>
                      <div type="links">
                         <p>
                            <listRef>
@@ -1680,13 +1700,14 @@
                               <ref target="#coislin-12:coislin-12-fr-27-5"/>
                               <ref target="#ambr-m-47-sup:ambr-m-47-sup-fr-27-7"/>
                               <ref target="#par-gr-139:par-gr-139-fr-27-19"/>
+                              <ref target="#mosq-syn-194:mosq-syn-194-fr-27-16"/>
                            </listRef>
                         </p>
                      </div>
                   </div>
                   <div type="textcritic">
                      <app type="fragment">
-                        <rdg wit="#V1 #C #G #P1 #B1 #P2 #P5 #A1 #P6 #Z #N2">txt</rdg>
+                        <rdg wit="#V1 #C #G #P1 #B1 #P2 #P5 #A1 #P6 #Z #N2 #M">txt</rdg>
                         <wit>Vat. gr. 754</wit>
                         <wit>Coislin 10</wit>
                         <wit>Urbani 3</wit>
@@ -1698,13 +1719,20 @@
                         <wit>Par. gr. 139</wit>
                         <wit>Marc. gr. Z. 17</wit>
                         <wit>Athen. B.N. 45</wit>
+                        <wit>Mosq. Sinod. gr. 194</wit>
+                     </app>
+                     <app type="text" corresp="#edition-27-5-tc-0">
+                        <lem><foreign xml:lang="grc">ηθέλησαν</foreign></lem>
+                        <rdg wit="#M"><foreign xml:lang="grc">ηθέλησεν</foreign></rdg>
+                        <wit>Mosq. Sinod. gr. 194</wit>
                      </app>
                      <app type="text" corresp="#edition-27-5-tc-1">
                         <lem><foreign xml:lang="grc">φησὶ</foreign></lem>
-                        <rdg wit="#B1 #P2 #A1">om.</rdg>
+                        <rdg wit="#B1 #P2 #A1 #M">om.</rdg>
                         <wit>Auct. D.4.1</wit>
                         <wit>Coislin 187</wit>
                         <wit>Ambr. 47 M sup.</wit>
+                        <wit>Mosq. Sinod. gr. 194</wit>
                      </app>
                      <app type="text" corresp="#edition-27-5-tc-2">
                         <lem><foreign xml:lang="grc">οἰκείαν</foreign></lem>
@@ -1717,8 +1745,9 @@
                            οἰκοδομουμένας οἰκίας οὕτως ἐάσεις
                            ἀνοικοδομήτους καὶ ἀτελειώτους καὶ ἀφήσεις εἰς τὸ συμπεσεῖν τελείως</foreign> add. ad 27,5c</rdg>
                         <wit>Ambr. M 47 sup.</wit>
+                        <rdg wit="#M"><foreign xml:lang="grc">οὓτε λόγον οὔτε ἔργον θεῖον μαθεῖν ἐθελήσαντες</foreign> add. ad 27,4d</rdg>
                      </app>
-                     <note type="textual-commentary">A1: Ad additum ad Ps 27,5c cf. <quote type="patristic" source="Theodoretus, comm. in Ps 27,5 (PG 80,1060 A5–7)" corresp="#person-16"/> </note>
+                     <note type="textual-commentary">A1: Ad additum ad Ps 27,5c cf. <quote type="patristic" source="Theodoretus, comm. in Ps 27,5 (PG 80,1060 A5–7)" corresp="#person-16"/>. M: Explizite Verknüpfung mit Ps 27,4d.</note>
                   </div>
                   <div type="psalmtext">
                      <quote xml:id="edition-26-30-ps-27-5b" type="psalmtext" n="5b">καὶ εἰς τὰ ἔργα τῶν χειρῶν αὐτοῦ·</quote>
