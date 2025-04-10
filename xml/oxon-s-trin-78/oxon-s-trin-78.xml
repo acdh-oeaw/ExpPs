@@ -462,10 +462,9 @@
             </div>
             <pb n="5r"/>
             <!-- Pointers to identical fragments in other documents. @type = identical | with-variant / with-variants | with-variation / with-variations | abbreviated | expanded -->
-            <div type="commentary" subtype="commentary" xml:id="oxon-s-trin-78-1-4">
-               <ab xml:id="oxon-s-trin-78-1-2" xml:lang="grc">
+            <div type="commentary" subtype="commentary" xml:id="oxon-s-trin-78-1-2">
+               <ab xml:lang="grc">
                   <!-- Ps 1 commentary -->
-                  <!-- glosse/Basilius zu Mακάριος -->
                   <!-- glosse/Basilius zu ἀλληλουΐα und ψαλτήριον (Origenes, schol.) -->
                   <!-- glosse/Basilius (?) zu Mακάριος -->
                   <!-- glosse zu ἀσεβῶν: τῶν τὸν θεὸν ἀγνοούντων -->
@@ -474,12 +473,77 @@
                   <!-- glosse zu λοιμῶν: ἀκαθάρτων κακῶν [?] -->
                   <!-- glosse zu οὐκ ἐκάθισεν: τὴν τῶν κακῶν ἐργασίαν κατὰ διάδοσιν γενομένην (falsch angebunden?) -->
                   <!-- glosse zu λοιμῶν: ἀκαθάρτων κακῶν [?] -->
+                  <!-- 
+            *** Andere Autoren
+            <div type="commentary" subtype="commentary" xml:id="oxon-s-trin-78-24-XX">
+            <ab xml:lang="grc">
+                  <note type="lemma">Ps 24,XX (XXXX)</note>
+                     <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-24-XX" source="XXXX"
+                     corresp="#oxon-s-trin-78-ps-24-XX">
+                     <num type="ordinal" xml:lang="grc" value="XX">XX´</num>
+                     <quote type="patristic" subtype="XXXX" xml:id="oxon-s-trin-78-quot-24-XX" source="XXXX"
+                        corresp="#person-XX"/>
+                     <ref target="#bodl-auct-d-4-1:XXXX" type="XXXX">Bodl. Auct. D. 4. 1</ref>
+                     </seg>
+            </ab>
+            </div>
+            *** Referenzen zu anderen Handschriften
+           <ref target="#oxon-s-trin-78:XXX" type="XXXX">Oxon. S.Trin. 78</ref> 
+            *** Athanasius
+            <div type="commentary" subtype="commentary" xml:id="oxon-s-trin-78-23-XX">
+            <ab xml:lang="grc">
+                  <note type="lemma">Ps 24,XX (XXXX)</note>
+                     <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-24-XX" source="Anonymous"
+                     corresp="#oxon-s-trin-78-ps-24-XX" copyOf="#edition:XXXX">
+                     <num type="ordinal" xml:lang="grc" value="XX">XX´</num>
+                     <quote type="patristic" subtype="XXXX"
+                     xml:id="oxon-s-trin-78-quot-24-XX" source="Athanasius, exp. in Ps 24,XX" corresp="#person-2"/>
+                     <ref target="#bodl-auct-d-4-1:XXXX" type="XXXX">Bodl. Auct. D. 4. 1</ref>
+                     <ref target="#vat-gr-754:XXXX" type="XXXX">Vat. gr. 754</ref>
+                     </seg>
+            </ab>
+            </div>
+            *** Glossen
+                  <note type="lemma">Ps 1,XX (XXXX)</note>
+                     <seg type="glosse" xml:id="oxon-s-trin-78-glosse-1-XX" source="Anonymous"
+                     corresp="#oxon-s-trin-78-ps-1-XX">
+                     <num type="ordinal" xml:lang="grc" value="XX">XX´</num>
+                     <quote type="patristic" subtype="unknown" xml:id="oxon-s-trin-78-quot-1-XX"
+                     source="fons ignotus in Ps 1,XX" corresp="#person-18">XXXX</quote>
+                     <ref target="#bodl-auct-d-4-1:XXXX" type="XXXX">Bodl. Auct. D. 4. 1</ref>
+                     </seg>
+           *** hexaplariche Varianten
+                     <seg type="hexaplaric" xml:id="oxon-s-trin-78-hexaplaric-20-XX" rendition="#XXXX" source="XXXX"
+                     corresp="#oxon-s-trin-78-ps-20-XX"></seg>
+           *** Kommentare
+                     <note type="textual-commentary">This fragment is linked not by a counting letter, but by a sign.</note>
+           *** Autorennamen 
+                     <note type="attribution"><foreign xml:lang="grc">XXXX</foreign></note> 
+         -->
+                  <note type="lemma">Ps 24,1a (Μακάριος)</note>
+                  <seg type="glosse" xml:id="oxon-s-trin-78-glosse-1-1" source="Anonymous"
+                     corresp="#oxon-s-trin-78-ps-1-1a">
+                     <num type="ordinal" xml:lang="grc" value="1"><supplied reason="illegible"
+                           >A´</supplied></num>
+                     <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-1-1"
+                        source="Basilius, hom. in Ps 1 (PG 29,216 B5–7) in Ps 1,1a"
+                        corresp="#person-3"/>
+                  </seg>
+                  <note type="lemma">Ψαλτήριον τοῦ Δαυῒδ ἀλληλούϊα</note>
+                  <seg type="glosse" xml:id="oxon-s-trin-78-glosse-1-2" source="Anonymous"
+                     corresp="#oxon-s-trin-78-ps-1-1a">
+                     <num type="ordinal" xml:lang="grc" value="1"><supplied reason="illegible"
+                           >A´</supplied></num>
+                     <quote type="patristic" subtype="unknown" xml:id="oxon-s-trin-78-quot-1-2"
+                        source="fons ignotus in ἀλληλουΐα; cf. Dorival IV 367 (fr. 3) et alibi - Origenes, cath. 6 in ψαλτήριον (20,19–22,1 Risch); cf. Dorival IV 366 (fr. 1)"
+                        corresp="#person-9 #person-27"/>
+                  </seg>
                   <note type="lemma">Ps 1,2b (νόμῳ)</note>
                   <seg type="commentaryfragment" xml:id="oxon-s-trin-78-fr-1-1"
                      corresp="#oxon-s-trin-78-ps-1-2b" source="Anonymous"
                      copyOf="#edition:edition-1-2-2">
                      <num type="ordinal" xml:lang="grc" value="7">Ζ´</num>
-                     <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-1-1"
+                     <quote type="patristic" subtype="quotation" xml:id="oxon-s-trin-78-quot-1-X"
                         corresp="#person-2" source="Athanasius, exp. in Ps 1,2b"><unclear
                            reason="faded-ink">Τὸ</unclear>
                         <supplied reason="illegible">σύ</supplied><unclear reason="faded-ink"
@@ -8322,6 +8386,8 @@
    </text>
 </TEI>
 <!-- faciendum: Ps 1–10: List of contents mit Ref zu Auct. D.4.1 -->
+<!-- ToDo: nicht transformiert: Ps 1–10: <num type="ordinal" xml:lang="grc" value="1"><supplied reason="illegible"
+                           >A´</supplied></num> -->
+<!-- ToDo: Numeral bei Glossen nicht transformiert: Beispiel: oxon-s-trin-78-glosse-19-1 -->
 <!-- erledigt: Ps 11-13: Lemmata und nicht die Psalmzeilen werden angegeben -->
 <!-- erledigt: Ps 11-14: Ref zu Auct. D.4.1 ergänzt -->
-<!-- ToDo: Numeral bei Glossen nicht transformiert: Beispiel: oxon-s-trin-78-glosse-19-1 -->

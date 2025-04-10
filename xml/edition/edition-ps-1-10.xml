@@ -2,7 +2,7 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!-- Suchbegriffe: exp 2: Ps 2 commentary: faciendum: parallele Darstellung: unentschieden: Trennungslinie: Position: --> 
+<!-- Suchbegriffe: exp 2: Ps 2 commentary: faciendum: parallele Darstellung: cave: Trennungslinie: Position: --> 
 <!-- Suchbegriffe: Katene: Textkritik:  Quellenkritik: Kommentar: Übersetzung: Alternative: SD (= Septuaginta-Deutsch): Syrisch: -->
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
@@ -83,7 +83,8 @@
                   <div type="psalmtext">
                      <quote xml:id="edition-ps-1-0" type="psalmtext" subtype="heading">ΨΑΛΜΟΣ
                         Α´</quote>
-                     <!-- unentschieden: dazu der Titulus Ψαλμὸς τῷ Δαυΐδ? Diesen gibt es in V1, V5, A1 nicht. Die Hypothesis scheint ihn vorauszusetzen -->
+                     <!-- cave: exp. 1 in B3 zu kollationieren -->
+                     <!-- cave: Die erste Expositio könnte keine Hypothesis sein – Ps 1 besitzt keinen Titulus –, vielmehr die Erklärung zu Ps 1,1. In diese Richtung weisen B1, B3 hin. B3 bezeichnet exp. 1 nicht als Hypothesis, im Gegensatz zur Hypothesis zur Ps 2. V1 wiedeholt die Zählung am Psalmtext nicht. Sollte einen Titulus Ψαλμὸς τῷ Δαυΐδ hinzugefügt werden (M)? V1 V5 A1 haben einen solchen nicht -->
                   </div>
                   <!-- exp 1 -->
                   <div type="commentary">
@@ -94,9 +95,9 @@
                         ἐν πρώτοις μακαρίζει τοὺς εἰς αὐτὸν <span type="text-critical"
                            xml:id="edition-1-0-1-tc-3">ἠλπικότας· μακαρίους δὲ καλεὶ</span>, τοὺς
                            <span type="text-critical" xml:id="edition-1-0-1-tc-4">μὴ
-                           πορευθέντας</span> ἐν βουλῇ ἀσεβῶν· μήτε <span type="text-critical"
+                           πορευθέντας</span> ἐν βουλῇ ἀσεβῶν· μήτε <span type="text-critical"
                            xml:id="edition-1-0-1-tc-5">μὴν</span> στάντας <span type="text-critical"
-                           xml:id="edition-1-0-1-tc-6">ἐν ὁδῷ</span> ἁμαρτωλῶν∙ <span
+                           xml:id="edition-1-0-1-tc-6">ἐν ὁδῷ</span> ἁμαρτωλῶν· <span
                            type="text-critical" xml:id="edition-1-0-1-tc-7">μήτε <span
                               type="text-critical" xml:id="edition-1-0-1-tc-8">ἐπὶ
                            καθέδραν</span></span>
@@ -105,11 +106,11 @@
                            xml:id="edition-1-0-1-tc-10">τρία γὰρ ἦν <span type="text-critical"
                               xml:id="edition-1-0-1-tc-11">τάγματα</span> παρὰ ἰουδαίοις κατὰ τοῦ
                            σωτῆρος ἐπαναστάντα· <span type="text-critical"
-                              xml:id="edition-1-0-1-tc-12">γραμματεὶς∙ φαρισαῖοι∙</span> καὶ
+                              xml:id="edition-1-0-1-tc-12">γραμματεῖς· φαρισαῖοι·</span> καὶ
                            νομικοί· οἳ καὶ <span type="text-critical" xml:id="edition-1-0-1-tc-13"
                               >κληθεῖεν</span>
                            <span type="text-critical" xml:id="edition-1-0-1-tc-14">εἰκότως</span>,
-                           ἀσεβεῖς∙ καὶ ἁμαρτωλοὶ∙ καὶ λοιμοί</span>: –</p>
+                           ἀσεβεῖς· καὶ ἁμαρτωλοὶ· καὶ λοιμοί</span>: –</p>
                      <div type="links">
                         <p>
                            <listRef>
@@ -147,19 +148,20 @@
                         <wit>Paris. gr. 146</wit>
                      </app>
                      <app type="text" corresp="#edition-1-0-1-tc-3">
-                        <lem><foreign xml:lang="grc">ἠλπικότας· μακαρίους δὲ καλεὶ</foreign></lem>
-                        <rdg wit="#B2">post<foreign xml:lang="grc"> ἠ-</foreign> non legi
-                           possunt</rdg>
+                        <lem><foreign xml:lang="grc">ἠλπικότας – καλεὶ</foreign></lem>
+                        <rdg wit="#B2">post<foreign xml:lang="grc"> ἠ-</foreign> evanida</rdg>
                         <wit>Oxon. Coll. S. Trin. 78</wit>
                      </app>
                      <app type="text" corresp="#edition-1-0-1-tc-4">
                         <lem><foreign xml:lang="grc">μὴ πορευθέντας</foreign></lem>
+                        <rdg wit="#B1"><foreign xml:lang="grc">μὴ τί πορευθέντας</foreign></rdg>
+                        <wit>Auct. D.4.1</wit>
                         <rdg wit="#B2"><foreign xml:lang="grc">μήτε πορ[ε]υ[θέντ]ας</foreign></rdg>
                         <wit>Oxon. Coll. S. Trin. 78</wit>
                      </app>
                      <app type="text" corresp="#edition-1-0-1-tc-5">
                         <lem><foreign xml:lang="grc">μὴν</foreign></lem>
-                        <rdg wit="#O"><foreign xml:lang="grc">-ν</foreign> supra lin.</rdg>
+                        <rdg wit="#O"><foreign xml:lang="grc">-ν</foreign> supra lin. add.</rdg>
                         <wit>Vat. Ottob. gr. 398</wit>
                      </app>
                      <app type="text" corresp="#edition-1-0-1-tc-6">
@@ -187,25 +189,31 @@
                         <rdg wit="#B2"><foreign xml:lang="grc">κ[α]θε[στηκότας(?)]
                               λο[ιμῶν]</foreign></rdg>
                         <wit>Oxon. Coll. S. Trin. 78</wit>
-                        <rdg wit="#V5 #P7"><foreign xml:lang="grc">κεκαθηκότας
-                           λοιμῶν</foreign></rdg>
+                        <rdg wit="#V5 #P7"><foreign xml:lang="grc">κεκαθηκότας λοιμῶν</foreign>
+                           (sic)</rdg>
                         <wit>Vat. gr. 1422</wit>
                         <wit>Paris. gr. 146</wit>
-                        <!-- κεκαθηκότας: kein Beleg im TLG; aus κάθημαι? -->
+                        <!-- Textkritik: κεκαθηκότας: kein Beleg im TLG; aus κάθημαι? -->
                      </app>
                      <app type="text" corresp="#edition-1-0-1-tc-10">
                         <lem><foreign xml:lang="grc">τρία – λοιμοί</foreign></lem>
                         <rdg wit="#B2">om.</rdg>
                         <wit>Oxon. Coll. S. Trin. 78</wit>
                      </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">τρία</foreign></lem>
+                        <rdg wit="#M"><foreign xml:lang="grc">τρία**</foreign></rdg>
+                        <wit>Sinod. gr. 194</wit>
+                     </app>
                      <app type="text" corresp="#edition-1-0-1-tc-11">
-                        <lem><foreign xml:lang="grc">τάγματα</foreign></lem>
-                        <rdg wit="#V5 #P7">om.</rdg>
+                        <lem><foreign xml:lang="grc">τάγματα – τοῦ σωτῆρος</foreign></lem>
+                        <rdg wit="#V5 #P7"><foreign xml:lang="grc">παρὰ ἰουδαίοις τὰ κατὰ τοῦ
+                              σωτῆρος</foreign></rdg>
                         <wit>Vat. gr. 1422</wit>
                         <wit>Paris. gr. 146</wit>
                      </app>
                      <app type="text" corresp="#edition-1-0-1-tc-12">
-                        <lem><foreign xml:lang="grc">γραμματεῖς φαρισαίοι</foreign></lem>
+                        <lem><foreign xml:lang="grc">γραμματεῖς∙ φαρισαῖοι</foreign></lem>
                         <rdg wit="#B1"><foreign xml:lang="grc">γραμματεῖς καὶ
                            φαρισαίοι</foreign></rdg>
                         <wit>Oxon. Bodl. Auct. D. 4. 1</wit>
@@ -243,7 +251,18 @@
                            Erklärungen aus einer unbekannten katenarischen Tradition ist
                            wahrscheinlich. Syrische Version (Epitome): Eine inhaltliche Parallele
                            ist zu finden (<foreign xml:lang="grc">γραμματεὶς</foreign> – <foreign
-                              xml:lang="grc">λοιμοί</foreign>).</p></note>
+                              xml:lang="grc">λοιμοί</foreign>). Montfaucon: In seiner editio
+                           princeps der Expositiones hat er nur Τὴν ἀρχὴν – ἠλπικότας ediert (darin
+                           fehlt <foreign xml:lang="grc">κατὰ σάρκα</foreign>). Diese Kurzfassung
+                           findet sich in keiner der Handschriften, die er in der Präfatio seiner
+                           Edition nennt (P1 P6 P7; Paris. gr. 148 [= Catena typus III]). Exp. 1 ist
+                           zwar in P7 vollständig bezeugt, aber anonym, so dass sie unbemerkt blieb.
+                           Für die genannte Kurzfassung (ein Incipit) verdankt sich Montfaucon
+                           wahrscheinlich einer Bemerkung von A. Arnold, die er auch in seiner
+                           Praefatio zitiert (siehe oben, p. XXX). Den Rest von exp. 1 hat er aus
+                           der Sammlung von Colville in den Nachträgen zu seiner Ausgabe
+                           veröffentlicht (siehe oben, p. XXX).
+                           <!-- v.l. τὰ τάγματα + Erweiterung --></p></note>
                   </div>
                </div>
                <div xml:lang="de" type="translation">
@@ -43817,8 +43836,8 @@
                         <p><listRef>
                               <ref target="#vat-gr-754:vat-gr-754-fr-24-11"/>
                               <ref target="#coislin-10:coislin-10-fr-24-15"/>
-                           <ref target="#mosq-syn-194:mosq-syn-194-fr-24-4"/>
-                           <ref target="#franzon-3:franzon-3-fr-24-5"></ref>
+                              <ref target="#mosq-syn-194:mosq-syn-194-fr-24-4"/>
+                              <ref target="#franzon-3:franzon-3-fr-24-5"/>
                               <ref target="#par-gr-166:par-gr-166-fr-24-8"/>
                            </listRef></p>
                      </div>
@@ -43837,7 +43856,8 @@
                         <rdg wit="#M"><foreign xml:lang="grc">Tὰς προφήτου</foreign> (sic)</rdg>
                         <wit>Sinod. gr. 194</wit>
                      </app>
-                     <app type="text"><lem><foreign xml:lang="grc">μὴ δεδιδαχθέντος</foreign></lem>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">μὴ δεδιδαχθέντος</foreign></lem>
                         <rdg wit="#G"><foreign xml:lang="grc">μὴ δὲ δεδιδαχθέντος</foreign></rdg>
                         <wit>Urbani 3</wit>
                      </app>

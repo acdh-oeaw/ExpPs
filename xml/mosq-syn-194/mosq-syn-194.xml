@@ -485,6 +485,9 @@
    <text>
       <body>
          <div type="transcription" xml:id="mosq-syn-194-1-1">
+
+            <pb n="8r"/>
+            <!-- ps 1 bibletext -->
             <div xml:id="mosq-syn-194-1-3" type="bibletext" subtype="commented">
                <ab xml:lang="grc">
                   <quote type="bibletext" corresp="../psalms-LXX/psalms.xml#Ps-LXX-1-1"
@@ -539,8 +542,6 @@
                      ἀσεβῶν ἀπολεῖται. </quote>
                </ab>
             </div>
-            <!-- Pointers to identical fragments in other documents. @type = identical | with-variations | abbreviated | expanded 〈 〉-->
-            <pb n="8r"/>
             <div type="commentary" subtype="commentary" xml:id="mosq-syn-194-1-4">
                <ab xml:id="mosq-syn-194-1-2" xml:lang="grc">
                   <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-1-1"
@@ -702,23 +703,26 @@
                         corresp="#person-3" source="Basilius, hom. in Ps. 48 (PG 29,436 C3–5)"/>
                      <ref target="#vat-gr-754:vat-gr-754-fr-1-1" type="identical">Vat. gr. 754</ref>
                   </seg>
+                  <note type="lemma">linking absent</note>
                   <seg type="hypothesis" xml:id="mosq-syn-194-fr-1-26"
                      corresp="#mosq-syn-194-ps-1-1a" source="Anonymous"
                      copyOf="#edition:edition-1-0-1">
                      <quote type="patristic" subtype="quotation" xml:id="mosq-syn-194-quot-1-26"
-                        corresp="#person-2" source="Athanasius, schol. in Ps 1">Τὴν ἀρχὴν τῆς
-                        προφητείας τῷ ἐξ αὐτοῦ κατασάρκα τεχθησομένῳ Χριστῷ ἀνατίθησιν ὁ Δαυΐδ· διὸ
-                        ἐν πρώτοις μακαρίζει τοὺς εἰς αὐτὸν ἠλπικότας· μακαρίους δὲ καλεῖ, τοὺς μὴ
-                        πορευθέντας ἐν βουλῇ ἀσεβῶν· μήτε μὴν στάντας ἐν ὀδῷ ἁμαρτωλῶν<subst>
-                           <del rend="unmarked">·</del>
+                        corresp="#person-2" source="Athanasius, exp. in Ps 1,1">Τὴν ἀρχὴν τῆς
+                        προφητείας τῶι ἐξ αὐτοῦ κατασάρκα τεχθησομένω Χριστῶι ἀνατίθησιν ὁ Δαυΐδ·
+                        διὸ ἐν πρώτοις μακαρίζει τοὺς εἰς αὐτὸν ἠλπικότας· μακαρίους δὲ καλεῖ, τοὺς
+                        μὴ πορευθέντας ἐν βουλῆι ἀσεβῶν· μήτε μὴν στάντας ἐν ὀδῶι ἁμαρτωλῶν<subst>
+                           <del rend="unmarked">· •</del>
                            <add place="above">·</add>
                         </subst> μήτε ἐπικαθέδραν λοιμῶν καθεστηκότας· τρία<del rend="erasure">
-                           <unclear>ς</unclear></del><del rend="erasure"><gap reason="illegible"
+                           <unclear>ο</unclear></del><del rend="erasure"><gap reason="illegible"
                               quantity="1"/></del> γὰρ ἦν τάγματα παραϊοὐδαίοις κατὰ τοῦ σωτῆρος
                         ἐπαναστάντα· γραμματεῖς· φαρισαῖοι. καὶ νομικοί· οἳ καὶ κληθεῖεν εἰκότως,
                         ἀσεβεῖς καὶ ἁμαρτωλοὶ καὶ λοιμοί·</quote>
-                     <ref target="#vat-gr-754:vat-gr-754-fr-1-2" type="identical">Vat. gr. 754</ref>
-                  </seg><!-- kein Verweiszeichen -->
+                     <ref target="#vat-gr-754:vat-gr-754-fr-1-2" type="identical">Vat. gr.
+                        754</ref><note type="parallels">Vat. Ottob. gr. 398 (f. 39r, top / top):
+                        Lemma: linking absent - Attribution: Anonymous</note>
+                  </seg>
                   <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-1-27"
                      corresp="#mosq-syn-194-ps-1-1a" source="Anonymous">
                      <quote type="patristic" subtype="quotation/paraphrase-abbreviated"
@@ -6447,8 +6451,8 @@
                <note type="lemma">Ps 24,3b–5</note>
                <seg type="commentaryfragment" xml:id="mosq-syn-194-fr-24-4"
                   rendition="#middle-bottom" source="Anonymous" corresp="#mosq-syn-194-ps-24-5b"
-                  copyOf="#edition:edition-24-5-2"><quote type="patristic" subtype="quotation-abbreviated"
-                     xml:id="mosq-syn-194-quot-24-4"
+                  copyOf="#edition:edition-24-5-2"><quote type="patristic"
+                     subtype="quotation-abbreviated" xml:id="mosq-syn-194-quot-24-4"
                      source="Athanasius, exp. (?) in Ps 24,5b; ed. Montfaucon sub auctore Athanasio (PG 27,144 C4–10; ex Paris. gr. 166–167)"
                      corresp="#person-2">τὰς π<unclear reason="damage">ρ</unclear>οφήτου
                         μηδέ<unclear reason="faded"/>
