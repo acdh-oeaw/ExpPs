@@ -491,7 +491,11 @@
                      n="Ps (LXX) 1,6b" corresp="../psalms-LXX/psalms.xml#Ps-LXX-1-6"/> καὶ ὁδὸς
                   ἀσεβῶν ἀπολεῖται. </quote>
             </div>
-            <!-- Ps 1 commentary -->
+            <!--<note type="parallels">Vat. gr. 1747
+               (f. XXX): Lemma: Ps XX,XX (XXX) | Attribution: <foreign xml:lang="grc"
+                  >XXX</foreign> | Linking: <foreign xml:lang="grc"
+                     >XX</foreign></note>-->
+            <!-- ps 1 commentary -->
             <pb n="24r"
                facs="http://213.21.172.25/iiif/2/public%26SEP0b02da828008b523%26SEP053_B106sup_c.24r.jp2/full/full/0/default.jpg"/>
             <div type="commentary" subtype="commentary" xml:id="ambr-b-106-sup-1-2">
@@ -647,16 +651,18 @@
                      <quote type="patristic" subtype="quotation" xml:id="ambr-b-106-sup-quot-1-17"
                         corresp="#person-32" source="Hesychius, comm. brevis in Ps 1,3d (1 Jagić)"/>
                   </seg>
-                  <note type="lemma">Ps 1,3d (πάντα)</note>
+                  <note type="lemma">Ps 1,3b–d (πάντα)</note>
                   <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-1-18"
                      corresp="#ambr-b-106-sup-ps-1-3d" source="Anonymous"
                      copyOf="#edition:edition-1-3-4">
                      <num type="ordinal" xml:lang="grc" value="12">ΙB´</num>
                      <quote type="patristic" subtype="quotation" xml:id="ambr-b-106-sup-quot-1-18"
                         corresp="#person-2" source="Athanasius, exp. in Ps 1,3d">οὐ γάρ (ἐστι)
-                        πρᾶξις τῶν κατὰ θεὸν γινομένων ἀνωφελής: –</quote>
+                        πράξις τῶν κατὰ θεὸν γινομένων ἀνωφελής: –</quote>
                      <ref target="#vat-gr-754:vat-gr-754-fr-1-10" type="identical">Vat. gr.
-                        754</ref>
+                        754</ref><note type="parallels">Vat. gr. 1747 (f. 1v): Lemma: Ps 1,3d
+                           (ὅσα) | Attribution: Anonymous | Linking:
+                           by a sign</note>
                   </seg>
                   <note type="lemma">Ps 1,4 (οὕτως)</note>
                   <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-1-19"
@@ -6698,22 +6704,22 @@
                   </seg>
                </ab>
             </div>
-            
+
             <!-- psalm 27 bibletext  -->
-            
-            
+
+
             <div type="bibletext" subtype="commented" xml:id="ambr-b-106-sup-27-1">
                <ab xml:lang="grc">
                   <quote type="bibletext" n="Ps (LXX) 27,1" xml:lang="grc"
                      xml:id="ambr-b-106-sup-ps-27-1-1">
                      <num>ΚΖ'</num>
-                     <anchor type="psalmtext" n="Ps (LXX) 27,1a" xml:id="ambr-b-106-sup-ps-27-1-1a"/>
-                     Τοῦ Δαυιδ <anchor type="psalmtext" n="Ps (lXX) 27,1b"
+                     <anchor type="psalmtext" n="Ps (LXX) 27,1a" xml:id="ambr-b-106-sup-ps-27-1-1a"
+                     /> Τοῦ Δαυιδ <anchor type="psalmtext" n="Ps (lXX) 27,1b"
                         xml:id="ambr-b-106-sup-ps-27-1b"/> Πρὸς σέ, κύριε, ἐκέκραξα, <anchor
-                           type="psalmtext" n="Ps (LXX) 27,1c" xml:id="ambr-b-106-sup-ps-27-1c"/> ὁ θεός
-                     μου, μὴ παρασιωπήσῃς ἀπ᾽ ἐμοῦ, <anchor type="psalmtext" n="Ps (LXX) 27,1d"
+                        type="psalmtext" n="Ps (LXX) 27,1c" xml:id="ambr-b-106-sup-ps-27-1c"/> ὁ
+                     θεός μου, μὴ παρασιωπήσῃς ἀπ᾽ ἐμοῦ, <anchor type="psalmtext" n="Ps (LXX) 27,1d"
                         xml:id="ambr-b-106-sup-ps-27-1d"/> μήποτε παρασιωπήσῃς ἀπ᾽ ἐμοῦ, <anchor
-                           type="psalmtext" n="Ps (LXX) 27,1d" xml:id="ambr-b-106-sup-ps-27-1e"/> καὶ
+                        type="psalmtext" n="Ps (LXX) 27,1d" xml:id="ambr-b-106-sup-ps-27-1e"/> καὶ
                      ὁμοιωθήσομαι τοῖς καταβαίνουσιν εἰς λάκκον. </quote>
                   <quote type="bibletext" n="Ps (LXX) 27,2" xml:lang="grc"
                      xml:id="ambr-b-106-sup-ps-27-2">
@@ -6723,27 +6729,28 @@
                      αἴρειν χεῖράς μου πρὸς ναὸν ἅγιόν σου. </quote>
                   <quote type="bibletext" n="Ps (LXX) 27,3" xml:lang="grc"
                      xml:id="ambr-b-106-sup-ps-27-3"><anchor type="psalmtext" n="Ps (LXX) 27,3a"
-                        xml:id="ambr-b-106-sup-ps-27-3a"/> μὴ συνελκύσῃς μετὰ ἁμαρτωλῶν τὴν ψυχήν μου
-                     <anchor type="psalmtext" n="Ps (LXX) 27,3b" xml:id="ambr-b-106-sup-ps-27-3b"/>
-                     καὶ μετὰ ἐργαζομένων ἀδικίαν μὴ συναπολέσῃς με <anchor type="psalmtext"
-                        n="Ps (LXX) 27,3c" xml:id="ambr-b-106-sup-ps-27-3c"/> τῶν λαλούντων εἰρήνην μετὰ
-                     τῶν πλησίον αὐτῶν, <anchor type="psalmtext" n="Ps (LXX) 27,3d"
+                        xml:id="ambr-b-106-sup-ps-27-3a"/> μὴ συνελκύσῃς μετὰ ἁμαρτωλῶν τὴν ψυχήν
+                     μου <anchor type="psalmtext" n="Ps (LXX) 27,3b"
+                        xml:id="ambr-b-106-sup-ps-27-3b"/> καὶ μετὰ ἐργαζομένων ἀδικίαν μὴ
+                     συναπολέσῃς με <anchor type="psalmtext" n="Ps (LXX) 27,3c"
+                        xml:id="ambr-b-106-sup-ps-27-3c"/> τῶν λαλούντων εἰρήνην μετὰ τῶν πλησίον
+                     αὐτῶν, <anchor type="psalmtext" n="Ps (LXX) 27,3d"
                         xml:id="ambr-b-106-sup-ps-27-3d"/> κακὰ δὲ ἐν ταῖς καρδίαις αὐτῶν. </quote>
                   <quote type="bibletext" n="Ps (LXX) 27,4" xml:lang="grc"
                      xml:id="ambr-b-106-sup-ps-27-4"><anchor type="psalmtext" n="Ps (LXX) 27,4a"
                         xml:id="ambr-b-106-sup-ps-27-4a"/> δὸς αὐτοῖς κατὰ τὰ ἔργα αὐτῶν <anchor
-                           type="psalmtext" n="Ps (LXX) 27,4b" xml:id="ambr-b-106-sup-ps-27-4b"/> καὶ κατὰ
-                     τὴν πονηρίαν τῶν ἐπιτηδευμάτων αὐτῶν· <anchor type="psalmtext"
-                        n="Ps (LXX) 27,4c" xml:id="ambr-b-106-sup-ps-27-4c"/> κατὰ τὰ ἔργα τῶν χειρῶν
-                     αὐτῶν δὸς αὐτοῖς, <anchor type="psalmtext" n="Ps (LXX) 27,4d"
+                        type="psalmtext" n="Ps (LXX) 27,4b" xml:id="ambr-b-106-sup-ps-27-4b"/> καὶ
+                     κατὰ τὴν πονηρίαν τῶν ἐπιτηδευμάτων αὐτῶν· <anchor type="psalmtext"
+                        n="Ps (LXX) 27,4c" xml:id="ambr-b-106-sup-ps-27-4c"/> κατὰ τὰ ἔργα τῶν
+                     χειρῶν αὐτῶν δὸς αὐτοῖς, <anchor type="psalmtext" n="Ps (LXX) 27,4d"
                         xml:id="ambr-b-106-sup-ps-27-4d"/> ἀπόδος τὸ ἀνταπόδομα αὐτῶν αὐτοῖς. </quote>
                   <quote type="bibletext" n="Ps (LXX) 27,5" xml:lang="grc"
                      xml:id="ambr-b-106-sup-ps-27-5">
-                     <anchor type="psalmtext" n="Ps (LXX) 27,5a" xml:id="ambr-b-106-sup-ps-27-5a"/> ὅτι
-                     οὐ συνῆκαν εἰς τὰ ἔργα κυρίου <anchor type="psalmtext" n="Ps (LXX) 27,5b"
+                     <anchor type="psalmtext" n="Ps (LXX) 27,5a" xml:id="ambr-b-106-sup-ps-27-5a"/>
+                     ὅτι οὐ συνῆκαν εἰς τὰ ἔργα κυρίου <anchor type="psalmtext" n="Ps (LXX) 27,5b"
                         xml:id="ambr-b-106-sup-ps-27-5b"/> καὶ εἰς τὰ ἔργα τῶν χειρῶν αὐτοῦ· <anchor
-                           type="psalmtext" n="Ps (LXX) 27,5c" xml:id="ambr-b-106-sup-ps-27-5c"/> καθελεῖς
-                     αὐτοὺς καὶ οὐ μὴ οἰκοδομήσεις αὐτούς. </quote>
+                        type="psalmtext" n="Ps (LXX) 27,5c" xml:id="ambr-b-106-sup-ps-27-5c"/>
+                     καθελεῖς αὐτοὺς καὶ οὐ μὴ οἰκοδομήσεις αὐτούς. </quote>
                   <quote type="bibletext" n="Ps (LXX) 27,6" xml:lang="grc"
                      xml:id="ambr-b-106-sup-ps-27-6">
                      <anchor type="psalmtext" n="Ps (LXX) 27,6a" xml:id="ambr-b-106-sup-ps-27-6a"/>
@@ -6752,11 +6759,11 @@
                      xml:id="ambr-b-106-sup-ps-27-7">
                      <anchor type="psalmtext" n="Ps (LXX) 27,7a" xml:id="ambr-b-106-sup-ps-27-7a"/>
                      κύριος βοηθός μου καὶ ὑπερασπιστής μου· <anchor type="psalmtext"
-                        n="Ps (LXX) 27,7b" xml:id="ambr-b-106-sup-ps-27-7b"/> ἐπ᾽ αὐτῷ ἤλπισεν ἡ καρδία
-                     μου, καὶ ἐβοηθήθην, <anchor type="psalmtext" n="Ps (LXX) 27,7c"
+                        n="Ps (LXX) 27,7b" xml:id="ambr-b-106-sup-ps-27-7b"/> ἐπ᾽ αὐτῷ ἤλπισεν ἡ
+                     καρδία μου, καὶ ἐβοηθήθην, <anchor type="psalmtext" n="Ps (LXX) 27,7c"
                         xml:id="ambr-b-106-sup-ps-27-7c"/> καὶ ἀνέθαλεν ἡ σάρξ μου· <anchor
-                           type="psalmtext" n="Ps (LXX) 27,7d" xml:id="ambr-b-106-sup-ps-27-7d"/> καὶ ἐκ
-                     θελήματός μου ἐξομολογήσομαι αὐτῷ. </quote>
+                        type="psalmtext" n="Ps (LXX) 27,7d" xml:id="ambr-b-106-sup-ps-27-7d"/> καὶ
+                     ἐκ θελήματός μου ἐξομολογήσομαι αὐτῷ. </quote>
                   <quote type="bibletext" n="Ps (LXX) 27,8" xml:lang="grc"
                      xml:id="ambr-b-106-sup-ps-27-8">
                      <anchor type="psalmtext" n="Ps (LXX) 27,8a" xml:id="ambr-b-106-sup-ps-27-8a"/>
@@ -6767,62 +6774,62 @@
                      xml:id="ambr-b-106-sup-ps-27-9">
                      <anchor type="psalmtext" n="Ps (LXX) 27,9a" xml:id="ambr-b-106-sup-ps-27-9a"/>
                      σῶσον τὸν λαόν σου καὶ εὐλόγησον τὴν κληρονομίαν σου <anchor type="psalmtext"
-                        n="Ps (LXX) 27,9b" xml:id="ambr-b-106-sup-ps-27-9b"/> καὶ ποίμανον αὐτοὺς καὶ
-                     ἔπαρον αὐτοὺς ἕως τοῦ αἰῶνος. </quote>
+                        n="Ps (LXX) 27,9b" xml:id="ambr-b-106-sup-ps-27-9b"/> καὶ ποίμανον αὐτοὺς
+                     καὶ ἔπαρον αὐτοὺς ἕως τοῦ αἰῶνος. </quote>
                </ab>
             </div>
-            
+
             <!-- Psalm 27 commentary -->
-            
+
             <pb n="56r" facs="https://digitallibrary.unicatt.it/veneranda/0b02da828008b523"/>
             <div type="commentary" subtype="commentary" xml:id="ambr-b-106-sup-27-2"
                change="commentaryfragments-only">
                <ab xml:lang="grc">
                   <note type="lemma">Ps 27,1a</note>
-                  <seg type="hypothesis" xml:id="ambr-b-106-sup-fr-27-1"
-                     source="Anonymous"
-                     corresp="#ambr-b-106-sup-ps-27-1-1a"><quote type="patristic" subtype="quotation"
-                        xml:id="ambr-b-106-sup-quot-27-1"
+                  <seg type="hypothesis" xml:id="ambr-b-106-sup-fr-27-1" source="Anonymous"
+                     corresp="#ambr-b-106-sup-ps-27-1-1a"><quote type="patristic"
+                        subtype="quotation" xml:id="ambr-b-106-sup-quot-27-1"
                         source="Theodoretus, comm. in Ps 27,1 (PG 80,1056 C13 – 1057 A1)"
                         corresp="#person-16"/>
                      <ref target="#vat-gr-754:vat-gr-754-fr-27-3" type="with-variants-abbreviated"
                         >Vat. gr. 754</ref>
-                     <note type="parallels">Vat. gr. 1747 (f. 38v): Lemma: Ps 27,1a | Attribution: no attribution | Linking: by a linking sign</note>
+                     <note type="parallels">Vat. gr. 1747 (f. 38v): Lemma: Ps 27,1a | Attribution:
+                        no attribution | Linking: by a linking sign</note>
                   </seg>
-                  
                   <note type="lemma">Ps 27,1e (<foreign xml:lang="grc">εἰς λάκκον</foreign>)</note>
                   <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-27-2" source="Anonymous"
                      corresp="#ambr-b-106-sup-ps-27-1e">
                      <num type="ordinal" xml:lang="grc" value="95"> ϞΕʹ</num>
                      <quote type="patristic" subtype="unknown" xml:id="ambr-b-106-sup-quot-27-2"
-                        source="fons ignotus"
-                        corresp="#person-18">λάκκον τὸν θάνατον ὀνομάζει</quote>
+                        source="fons ignotus" corresp="#person-18">λάκκον τὸν θάνατον
+                        ὀνομάζει</quote>
                      <note type="parallels">Vat. gr. 1747 (f. 38v) | Lemma: Ps 27,1e (<foreign
-                        xml:lang="grc">λάκκον</foreign>) | Attribution: no attribution |
-                        Linking: by a linking sign</note>
+                           xml:lang="grc">λάκκον</foreign>) | Attribution: no attribution | Linking:
+                        by a linking sign</note>
                   </seg>
-                                 </ab>
+               </ab>
             </div>
 
             <pb n="56v" facs="https://digitallibrary.unicatt.it/veneranda/0b02da828008b523"/>
             <div type="commentary" subtype="commentary" xml:id="ambr-b-106-sup-27-3"
                change="commentaryfragments-only">
                <ab xml:lang="grc">
-                  <note type="lemma">Ps 27,2b  (<foreign xml:lang="grc">πρὸς ναὸν ἅγιον σου</foreign>)</note>
+                  <note type="lemma">Ps 27,2b (<foreign xml:lang="grc">πρὸς ναὸν ἅγιον
+                     σου</foreign>)</note>
                   <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-27-3" source="Anonymous"
                      corresp="#ambr-b-106-sup-ps-27-2b">
                      <num type="ordinal" xml:lang="grc" value="96"> ϞϚʹ</num>
                      <quote type="patristic" subtype="quotation" xml:id="ambr-b-106-sup-quot-27-3"
                         source="Theodoretus, comm. in Ps 27,2 (PG 80,1057 B3–6)"
                         corresp="#person-16"/>
-                     <ref target="#par-gr-139:par-gr-139-fr-27-10" type="with-variants-abbreviated-and-expanded">Par. gr. 139</ref>
+                     <ref target="#par-gr-139:par-gr-139-fr-27-10"
+                        type="with-variants-abbreviated-and-expanded">Par. gr. 139</ref>
                      <note type="parallels">Vat. gr. 1747 (f. 39r) | Lemma: Ps 27,2b (<foreign
-                        xml:lang="grc">πρὸς ναὸν ἅγιον σου</foreign>) | Attribution: no attribution |
-                        Linking: <foreign xml:lang="grc">IϚ´</foreign></note>
+                           xml:lang="grc">πρὸς ναὸν ἅγιον σου</foreign>) | Attribution: no
+                        attribution | Linking: <foreign xml:lang="grc">IϚ´</foreign></note>
                   </seg>
-                  
-                  <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-27-4"
-                     source="Origenes" corresp="#ambr-b-106-sup-ps-27-2b">
+                  <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-27-4" source="Origenes"
+                     corresp="#ambr-b-106-sup-ps-27-2b">
                      <num type="ordinal" xml:lang="grc" value="96"> ϞϚʹ</num>
                      <quote type="patristic" subtype="quotation" xml:id="ambr-b-106-sup-quot-27-4"
                         source="Evagrius, schol. nr. β´ in Ps 27,2b (470 Rondeau – Géhin – Cassin)"
@@ -6831,13 +6838,14 @@
                         >Vat. gr. 754</ref>
                      <note type="attribution" xml:lang="grc">Ὠριγε(νους)</note>
                      <note type="parallels">Vat. gr. 1747 (f. 39r) | Lemma: Ps 27,2b (<foreign
-                        xml:lang="grc">πρὸς ναὸν ἅγιον σου</foreign>) | Attribution: <foreign xml:lang="grc">Ὠριγ(ενους)</foreign> |
-                        Linking: <foreign xml:lang="grc">IϚ´</foreign></note>
+                           xml:lang="grc">πρὸς ναὸν ἅγιον σου</foreign>) | Attribution: <foreign
+                           xml:lang="grc">Ὠριγ(ενους)</foreign> | Linking: <foreign xml:lang="grc"
+                           >IϚ´</foreign></note>
                   </seg>
-                 
-                  <note type="lemma">Ps 27,3a  (<foreign xml:lang="grc">μὴ συνελκύσῃς με</foreign>)</note>
-                  <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-27-5" source="Theodoretus"
-                     corresp="#ambr-b-106-sup-ps-27-3a">
+                  <note type="lemma">Ps 27,3a (<foreign xml:lang="grc">μὴ συνελκύσῃς
+                     με</foreign>)</note>
+                  <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-27-5"
+                     source="Theodoretus" corresp="#ambr-b-106-sup-ps-27-3a">
                      <num type="ordinal" xml:lang="grc" value="97"> ϞΖʹ</num>
                      <quote type="patristic" subtype="quotation" xml:id="ambr-b-106-sup-quot-27-5"
                         source="Theodoretus, comm. in Ps 27,3 (PG 80,1057 B14–C4)"
@@ -6846,11 +6854,11 @@
                         >Vat. gr. 754</ref>
                      <note type="attribution" xml:lang="grc">Θεοδωρητ(ου)</note>
                      <note type="parallels">Vat. gr. 1747 (f. 39r) | Lemma: Ps 27,3a (<foreign
-                        xml:lang="grc">μὴ συνελκύσῃς με</foreign>) | Attribution: no attribution |
-                        Linking: <foreign xml:lang="grc">IΖ´</foreign></note>
+                           xml:lang="grc">μὴ συνελκύσῃς με</foreign>) | Attribution: no attribution
+                        | Linking: <foreign xml:lang="grc">IΖ´</foreign></note>
                   </seg>
-                  
-                  <note type="lemma">Ps 27,4a  (<foreign xml:lang="grc">δός αὐτοῖς κύριε</foreign>)</note>
+                  <note type="lemma">Ps 27,4a (<foreign xml:lang="grc">δός αὐτοῖς
+                     κύριε</foreign>)</note>
                   <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-27-6" source="Anonymous"
                      corresp="#ambr-b-106-sup-ps-27-4a">
                      <num type="ordinal" xml:lang="grc" value="98"> ϞΗʹ</num>
@@ -6859,33 +6867,35 @@
                         corresp="#person-16"/>
                      <ref target="#vat-gr-754:vat-gr-754-fr-27-10" type="with-variants-abbreviated"
                         >Vat. gr. 754</ref>
-                    <note type="parallels">Vat. gr. 1747 (f. 39r) | Lemma: Ps 27,4a (<foreign
-                       xml:lang="grc">δός αὐτοῖς κύριε</foreign>) | Attribution: no attribution |
-                        Linking: <foreign xml:lang="grc">IΗ´</foreign></note>
+                     <note type="parallels">Vat. gr. 1747 (f. 39r) | Lemma: Ps 27,4a (<foreign
+                           xml:lang="grc">δός αὐτοῖς κύριε</foreign>) | Attribution: no attribution
+                        | Linking: <foreign xml:lang="grc">IΗ´</foreign></note>
                   </seg>
-                     
-                     <note type="lemma">Ps 27,5a  (<foreign xml:lang="grc">ὅτι οὐ συνῆκαν</foreign>)</note>
-                     <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-27-7" source="Origenes"
-                        corresp="#ambr-b-106-sup-ps-27-5a">
-                        <num type="ordinal" xml:lang="grc" value="99"> ϞΘʹ</num>
-                        <quote type="patristic" subtype="quotation" xml:id="ambr-b-106-sup-quot-27-7"
-                           source="Evagrius, schol. nr. γ´ in Ps 27,5a–b (470 Rondeau – Géhin – Cassin)"
-                           corresp="#person-21"/>
-                        <ref target="#vat-gr-754:vat-gr-754-fr-27-14" type="identical"
-                           >Vat. gr. 754</ref>
-                        <note type="attribution" xml:lang="grc">Ὠριγένους</note>
-                        <note type="parallels">Vat. gr. 1747 (f. 39r) | Lemma: Ps 27,5a (<foreign
-                           xml:lang="grc">ὅτι οὐ συνῆκαν</foreign>) | Attribution: <foreign xml:lang="grc">Ὠριγ(ενους)</foreign> |
-                           Linking: <foreign xml:lang="grc">IΘ´</foreign></note>
+                  <note type="lemma">Ps 27,5a (<foreign xml:lang="grc">ὅτι οὐ
+                     συνῆκαν</foreign>)</note>
+                  <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-27-7" source="Origenes"
+                     corresp="#ambr-b-106-sup-ps-27-5a">
+                     <num type="ordinal" xml:lang="grc" value="99"> ϞΘʹ</num>
+                     <quote type="patristic" subtype="quotation" xml:id="ambr-b-106-sup-quot-27-7"
+                        source="Evagrius, schol. nr. γ´ in Ps 27,5a–b (470 Rondeau – Géhin – Cassin)"
+                        corresp="#person-21"/>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-27-14" type="identical">Vat. gr.
+                        754</ref>
+                     <note type="attribution" xml:lang="grc">Ὠριγένους</note>
+                     <note type="parallels">Vat. gr. 1747 (f. 39r) | Lemma: Ps 27,5a (<foreign
+                           xml:lang="grc">ὅτι οὐ συνῆκαν</foreign>) | Attribution: <foreign
+                           xml:lang="grc">Ὠριγ(ενους)</foreign> | Linking: <foreign xml:lang="grc"
+                           >IΘ´</foreign></note>
                   </seg>
                </ab>
             </div>
-            
+
             <pb n="57r" facs="https://digitallibrary.unicatt.it/veneranda/0b02da828008b523"/>
             <div type="commentary" subtype="commentary" xml:id="ambr-b-106-sup-27-4"
                change="commentaryfragments-only">
                <ab xml:lang="grc">
-                  <note type="lemma">Ps 27,5c  (<foreign xml:lang="grc">μὴ οἰκοδομήσεις</foreign>)</note>
+                  <note type="lemma">Ps 27,5c (<foreign xml:lang="grc">μὴ
+                     οἰκοδομήσεις</foreign>)</note>
                   <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-27-8" source="Anonymous"
                      corresp="#ambr-b-106-sup-ps-27-5c">
                      <num type="ordinal" xml:lang="grc" value="100"> Ρʹ</num>
@@ -6894,55 +6904,63 @@
                         corresp="#person-21"/>
                      <ref target="#vat-gr-754:vat-gr-754-fr-27-16" type="abbreviated-with-variants"
                         >Vat. gr. 754</ref>
-                                         <note type="parallels">Vat. gr. 1747 (f. 39v) | Lemma: Ps 27,5c (<foreign
-                        xml:lang="grc">καθελεῖς</foreign>) | Attribution: <foreign xml:lang="grc">Ὠριγ(ενους)</foreign> |
-                        Linking: <foreign xml:lang="grc">K´</foreign></note>
+                     <note type="parallels">Vat. gr. 1747 (f. 39v) | Lemma: Ps 27,5c (<foreign
+                           xml:lang="grc">καθελεῖς</foreign>) | Attribution: <foreign xml:lang="grc"
+                           >Ὠριγ(ενους)</foreign> | Linking: <foreign xml:lang="grc"
+                        >K´</foreign></note>
                   </seg>
-                  
-                  <note type="lemma">Ps 27,7c  (<foreign xml:lang="grc">ἀνέθαλεν ἡ σάρξ μου</foreign>)</note>
+                  <note type="lemma">Ps 27,7c (<foreign xml:lang="grc">ἀνέθαλεν ἡ σάρξ
+                     μου</foreign>)</note>
                   <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-27-9" source="Origenes"
                      corresp="#ambr-b-106-sup-ps-27-7c">
                      <num type="ordinal" xml:lang="grc" value="1"> Αʹ</num>
                      <quote type="patristic" subtype="quotation" xml:id="ambr-b-106-sup-quot-27-9"
                         source="Evagrius, schol. nr. ε´ in Ps 27,7c (472 Rondeau – Géhin – Cassin)"
                         corresp="#person-21"/>
-                     <ref target="#vat-gr-754:vat-gr-754-fr-27-27" type="identical"
-                        >Vat. gr. 754</ref>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-27-27" type="identical">Vat. gr.
+                        754</ref>
                      <note type="attribution" xml:lang="grc">Ὠριγ(ενους)</note>
                      <note type="parallels">Vat. gr. 1747 (f. 39v) | Lemma: Ps 27,7c (<foreign
-                        xml:lang="grc">ἀνέθαλεν ἡ σάρξ μου</foreign>) | Attribution: no attribution |
-                        Linking: <foreign xml:lang="grc">ΚΑ´</foreign></note>
+                           xml:lang="grc">ἀνέθαλεν ἡ σάρξ μου</foreign>) | Attribution: no
+                        attribution | Linking: <foreign xml:lang="grc">ΚΑ´</foreign></note>
                   </seg>
-                  
-                  <note type="lemma">Ps 27,9a  (<foreign xml:lang="grc">τὴν κληρονομίαν σου</foreign>)</note>
+                  <note type="lemma">Ps 27,9a (<foreign xml:lang="grc">τὴν κληρονομίαν
+                     σου</foreign>)</note>
                   <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-27-10" source="Origenes"
                      corresp="#ambr-b-106-sup-ps-27-9a">
                      <num type="ordinal" xml:lang="grc" value="2"> Βʹ</num>
                      <quote type="patristic" subtype="quotation" xml:id="ambr-b-106-sup-quot-27-10"
                         source="Evagrius, schol. nr. ς´ in Ps 27,9a (472 Rondeau – Géhin – Cassin)"
                         corresp="#person-21"/>
-                     <ref target="#vat-gr-754:vat-gr-754-fr-27-23" type="identical"
-                        >Vat. gr. 754</ref>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-27-23" type="identical">Vat. gr.
+                        754</ref>
                      <note type="attribution" xml:lang="grc">Ὠριγ(ενους)</note>
                      <note type="parallels">Vat. gr. 1747 (f. 39v) | Lemma: Ps 27,9a (<foreign
-                        xml:lang="grc">τὴν κληρονομίαν σου</foreign>) | Attribution: no attribution |
-                        Linking: <foreign xml:lang="grc">ΚΒ´</foreign></note>
+                           xml:lang="grc">τὴν κληρονομίαν σου</foreign>) | Attribution: no
+                        attribution | Linking: <foreign xml:lang="grc">ΚΒ´</foreign></note>
                   </seg>
                   <note type="lemma">Ps 27,9b (καῖ ποίμανον αὐτοὺς)</note>
-                  <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-27-11" source="Athanasius"
-                     corresp="#ambr-b-106-sup-ps-26-9b" copyOf="#edition-part-two:edition-26-30-27-9">
+                  <seg type="commentaryfragment" xml:id="ambr-b-106-sup-fr-27-11"
+                     source="Athanasius" corresp="#ambr-b-106-sup-ps-26-9b"
+                     copyOf="#edition-part-two:edition-26-30-27-9">
                      <num type="ordinal" xml:lang="grc" value="3">Γ´</num>
-                     <quote type="patristic" subtype="quotation" xml:id="ambr-b-106-sup-quot-27-9b" source="Athanasius, exp. in Ps 27,9b" corresp="#person-2">Αὐτὸς ἡμᾶς
+                     <quote type="patristic" subtype="quotation" xml:id="ambr-b-106-sup-quot-27-9b"
+                        source="Athanasius, exp. in Ps 27,9b" corresp="#person-2">Αὐτὸς ἡμᾶς
                         ποιμαίνει πέμψας ἡμῖν ἀνθ ἑαυτοῦ καὶ ὡς αὐτὸν τὸν παράκλητον· καὶ μὴν καὶ
                         ἐπαίρει τοῦτέστιν ὑψηλοὺς ἀποφαίνει εἰς τοὺς μέλλοντας καὶ ἀτελευτήτους
                         αἰῶνας –</quote>
-                     <ref target="#vat-gr-754:vat-gr-754-fr-27-24" type="with-variants">Vat. gr. 754</ref>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-27-24" type="with-variants">Vat. gr.
+                        754</ref>
                      <note type="attribution" xml:lang="grc">Ἀθ(ανασίου)</note>
-                     <note type="parallels">Vat. gr. 1747 (f. 39v): Lemma: Ps 27,9b (<foreign xml:lang="grc">καῖ ποίμανον αὐτοὺς</foreign>) | Attribution: <foreign
-                        xml:lang="grc">Ἀθ(ανασίου)</foreign> | Linking: <foreign xml:lang="grc">ΚΓ´</foreign></note>
-                     <note>Vat. gr. 1747 (f. 39v) provides in addition to the repeated same linking (<foreign xml:lang="grc">ΚΓ´</foreign>) another fragment: <quote type="patristic" source="Diodorus, comm. in Ps 27,9 (161,81–82 Olivier)" corresp="#person-5"/>.</note>
+                     <note type="parallels">Vat. gr. 1747 (f. 39v): Lemma: Ps 27,9b (<foreign
+                           xml:lang="grc">καῖ ποίμανον αὐτοὺς</foreign>) | Attribution: <foreign
+                           xml:lang="grc">Ἀθ(ανασίου)</foreign> | Linking: <foreign xml:lang="grc"
+                           >ΚΓ´</foreign></note>
+                     <note>Vat. gr. 1747 (f. 39v) provides in addition to the repeated same linking
+                           (<foreign xml:lang="grc">ΚΓ´</foreign>) another fragment: <quote
+                           type="patristic" source="Diodorus, comm. in Ps 27,9 (161,81–82 Olivier)"
+                           corresp="#person-5"/>.</note>
                   </seg>
-                  
                </ab>
             </div>
 
