@@ -25,8 +25,11 @@
     </xsl:template>
     
      <xsl:template match="tei:choice">
+      <xsl:if test="ends-with(preceding-sibling::text()[1],' ')">
+        <xsl:text> </xsl:text>
+      </xsl:if>
       <xsl:apply-templates select="child::node()"/>
-      <xsl:if test="starts-with(following-sibling::text()[1],' ')">
+      <xsl:if test="starts-with(following-sibling::text()[1],' ') or starts-with(following-sibling::text()[1],'&#xA;')">
         <xsl:text> </xsl:text>
       </xsl:if>
     </xsl:template>
@@ -47,7 +50,7 @@
       <xsl:apply-templates select="child::node()"/>
     </xsl:template>
     
-    <xsl:template match="tei:lb[@break and @break = 'no']"/>
+    <xsl:template match="tei:lb[@break and (@break = 'no')]"/>
     
     <xsl:template match="tei:lb[not(@break)]">
       <xsl:text> </xsl:text>
