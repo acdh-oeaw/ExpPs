@@ -45,8 +45,8 @@
 											<a title="Edition" href="edition.html" data-toggle="dropdown" class="nav-link dropdown-toggle">Edition <span class="caret"></span></a>
 											<ul class="dropdown-menu" role="menu">
 												<li class="nav-item dropdown-submenu">
-													<a title="Edition - First Part" href="./edition.html" class="nav-link">Edition: Ps 1-25</a>
-													<a title="Edition - Second Part" href="./edition-part-two.html" class="nav-link">Edition: Ps 26-30</a>
+													<a title="Edition - First Part" href="../edition.html" class="nav-link">Edition: Ps 1-25</a>
+													<a title="Edition - Second Part" href="../edition-part-two.html" class="nav-link">Edition: Ps 26-30</a>
 												</li>
 											</ul>
 										</li>
