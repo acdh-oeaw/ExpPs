@@ -451,6 +451,10 @@
                   <persName>Hesychius Alexandrinus</persName>
                   <bibl>Hesychius, lex.</bibl>
                </person>
+               <person xml:id="person-91" role="author">
+                  <persName>Hippolytus Romanus</persName>
+                  <bibl>Hippolytus, chron. (Helm)</bibl>
+               </person>
             </listPerson>
          </sourceDesc>
       </fileDesc>
@@ -10396,7 +10400,7 @@
                         source="fons ignotus" corresp="#person-18">σωτήρ ὁ φωτίζων καὶ σώζων με ἐκ
                         πάντων·</quote>
                      <note type="textual-commentary">Cf. <quote type="patristic"
-                           source="Hesychius, comm. in Ps 26,1b (Antonelli; PG 27,741 D1)"
+                        source="Hesychius, schol. nr. 1 in Ps 26,1b (Antonelli; PG 27,741 D1)"
                            corresp="#person-10"/></note>
                   </seg>
                   <note type="lemma">Ps 26,1c</note>
@@ -10406,7 +10410,7 @@
                         source="fons ignotus" corresp="#person-18">ὡς πρόνοιαν ποιεῖται τῆς σαρκὸς
                         ζωής μου·</quote>
                      <note type="textual-commentary">Cf. <quote type="patristic"
-                           source="Hesychius, comm. in Ps 26,1c (Antonelli; PG 27,741 D3)"
+                        source="Hesychius, schol. nr. 2 in Ps 26,1c (Antonelli; PG 27,741 D3)"
                            corresp="#person-10"/></note>
                   </seg>
                   <note type="lemma">Ps 26,2a</note>
@@ -10419,7 +10423,7 @@
                            δαίμονας</foreign> occurs several times in Hesychius, comm. brevis <quote
                            type="patristic" source="Hesychius, comm. brevis" corresp="#person-11"/>,
                         cf. also <quote type="patristic"
-                           source="Hesychius, comm. in Ps 26,2a (Antonelli; PG 27,741 D1)"
+                           source="Hesychius, schol. nr. 8,9 in Ps 26,2a (Antonelli; PG 27,741 D5)"
                            corresp="#person-10"/></note>
                   </seg>
                   <note type="lemma">Ps 26,3a</note>
@@ -10604,7 +10608,7 @@
                   <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-26-21"
                      source="Anonymous" corresp="#bodl-auct-d-4-1-ps-26-9d"><quote type="patristic"
                         subtype="quotation-with-variant" xml:id="bodl-auct-d-4-1-quot-26-21"
-                        source="Hesychius, comm. in Ps 26,9d (Antonelli; PG 27,744 D4–5)"
+                        source="Hesychius, schol. nr. 24,25 in Ps 26,9d (Antonelli; PG 27,744 D4–5)"
                         corresp="#person-10">μὴ ἐκλείψη τὸ φῶς σου ἀπ' ἐμοῦ· ἵνα μὴ τυφλωθῆ ἡ ὅρασις
                         τῆς διανοίας μου·</quote>
                      <note type="attribution" xml:lang="grc">ἐρμην(εία)</note></seg>
@@ -10873,7 +10877,7 @@
                   <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-27-12"
                      source="Hesychius" corresp="#bodl-auct-d-4-1-ps-26-5c"><quote type="patristic"
                         subtype="quotation-with-variants" xml:id="bodl-auct-d-4-1-quot-27-12"
-                        source="Hesychius, comm. in Ps 27,5c (Antonelli; PG 27,748 C10–11)"
+                        source="Hesychius, schol. nr. 16 in Ps 27,5c (Antonelli; PG 27,748 C10–11)"
                         corresp="#person-10"/>
                      <note type="attribution" xml:lang="grc">Ἡσυχιου</note></seg>
                   <note type="lemma">Ps 27,6a–7a</note>
@@ -11123,7 +11127,7 @@
                   <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-28-11"
                      source="Theodoretus"
                      corresp="#bodl-auct-d-4-1-ps-28-3c"
-                     ><quote type="patristic" subtype="paraphrase" xml:id="bodl-auct-d-4-1-quot-28-11"
+                     ><quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-28-11"
                         source="fons ignotus" corresp="#person-18">τὰς ἐπὶ τοῦ σωτηρίου φωνᾶς
                         λἐγει· αἵ τινες ἐν ἰσχύει μὲν τῆι κατὰ
                         δαιμόνων· ἐν μεγαλοπρεπεία δὲ. τοῦτ'ἔστιν· τῆι πρὸς ἡμᾶς φιλανθρωπία γεγονώσει· ἢ πάλιν· ἰσχὺν μὲν τὴν θεότητα· τὴν διὰ σαρκὸς νοήσεις μεγαλοπρέπειαν·</quote>
@@ -11146,8 +11150,58 @@
                change="commentaryfragments-only">
                <ab xml:lang="grc">
                   <note type="lemma">Ps 28,5b</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-28-13"
+                     source="Anonymous"
+                     corresp="#bodl-auct-d-4-1-ps-28-3c"
+                     ><quote type="patristic" subtype="combination-of-paraphrases-and-unknown" xml:id="bodl-auct-d-4-1-quot-28-13"
+                        source="Hippolytus/fons ignotus/Hesychius" corresp="#person-91 #person-18 #person-10">τῶν δώδεκα ὀρέων τῶν ὀνομαστῶν· πρῶτον τὸν Λίβανον φασὶ· κεῖται δὲ ἐν Συρία· ἀναμεταξὺ Βύβλου καὶ Βηρύτου· φασὶν δὲ αὐτὸν ἔχειν κέδρους πλήστους· τροπικῶς δὲ τὸν διάβολον Λίβανον εἶπειν· διὰ τὰ ὄρος εἶναι κακίας· καὶ ἔχειν υπ' αὐτὸν ὡς κέδρους τοὺς φαύλος δαίμονας· :</quote>
+                     <note type="textual-commentary"><foreign xml:lang="grc">τῶν δώδεκα ... Βηρύτου</foreign> cf. <quote type="patristic" source="Hippolytus, chron. (235,1–3.236,1 Helm)" corresp="#person-91"/>; <foreign xml:lang="grc">κέδρους ... δαίμονας</foreign>cf. <quote type="patristic" source="Hesychius, schol. nr. 11 in Ps 28,5b (Antonelli; PG 27,749 C13)" corresp="#person-10"/>.</note>
+                     <note type="attribution" xml:lang="grc">ἐρμηνεία</note></seg>
+                  
+                  <note type="lemma">Ps 28,6a</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-28-14"
+                     source="Hesychius"
+                     corresp="#bodl-auct-d-4-1-ps-28-6a"
+                     ><quote type="patristic" subtype="quotation-with-variants-expanded" xml:id="bodl-auct-d-4-1-quot-28-14"
+                        source="Hesychius, comm. brevis in Ps. 28,6a (50,1–6 Jagić)" corresp="#person-11"/>
+                     <note type="attribution" xml:lang="grc">Ἡσυχιου</note></seg>
+                  
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-28-15"
+                     source="Anonymοus"
+                     corresp="#bodl-auct-d-4-1-ps-28-6a"
+                     ><quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-28-15"
+                        source="fons ignotus" corresp="#person-18">Λίβανον γὰρ τὴν εἰδωλολατρείαν νοήσις.</quote>
+                     <note type="attribution">No attribution, separated just by four dots from the previous fragment.</note></seg>
+                  
+                  <note type="lemma">Ps 28,6b</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-28-16"
+                     source="Athanasius"
+                     corresp="#bodl-auct-d-4-1-ps-28-6b" copyOf="#edition-part-two:edition-26-30-28-6-2"
+                     ><quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-28-16"
+                        source="Athanasius, exp. in Ps 28,6b" corresp="#person-2">Ὁ ἠγαπημένος φησὶ
+                        τῶν ἀποστόλων χορὸς. υἱὸς γέγονε μονοκερώτων· μονοκέρωτος δὲ. οἱ ἅγιοι προφῆται
+                        καὶ πατριάρχαι· ὧν υἱοὶ οἱ ἀπόστολοι· διὰ τὸ ἐπὶ μόνω θεῶ τὸ κέρας καὶ τὴν ισχὺν ἔχειν· : –</quote>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-28-32" type="with-variants">Vat. gr. 754</ref>
+                     <note type="attribution" xml:lang="grc">Ἀθανασιου</note></seg>
+                  
+                  <note type="lemma">Ps 28,7a</note>
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-28-17"
+                     source="Athanasius"
+                     corresp="#bodl-auct-d-4-1-ps-28-7a" copyOf="#edition-part-two:edition-26-30-28-7"
+                     ><quote type="patristic" subtype="quotation" xml:id="bodl-auct-d-4-1-quot-28-17"
+                        source="Athanasius, exp. in Ps 28,7a" corresp="#person-2">Αὐτὴν τὴν ἐπαγγελίαν
+                        σημαίνει· ἣν τοῖς ἁγίοις ἐπηγγείλατο ὁ θεὸς λέγων· καὶ ἐὰν διὰ πυρὸς διέλθης. φλὸξ
+                        οὐ κατακαύσει σε [Is 43:2b]· : –</quote>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-28-33" type="with-variants">Vat. gr. 754</ref>
+                     <note type="attribution" xml:lang="grc">Ἀθανασιου</note></seg>
                   
                   
+                  <seg type="commentaryfragment" xml:id="bodl-auct-d-4-1-fr-28-18"
+                     source="Anonymοus"
+                     corresp="#bodl-auct-d-4-1-ps-28-7a"
+                     ><quote type="patristic" subtype="unknown" xml:id="bodl-auct-d-4-1-quot-28-18"
+                        source="fons ignotus" corresp="#person-18">ὥσπερ γέγονεν καὶ επὶ τοῦ ληστοῦ ὅτε εἶπεν αὐτῶ. τὸ σήμερον μετ εμοῦ ἔση ἐν τω παραδείσω [Lk 23:43]· καὶ διεκοψεν την φλoγινην ρομφ[αιαν]</quote>
+                     <note type="attribution">No attribution, separated just by four dots from the previous fragment.</note></seg>
                </ab>
             </div>
 
