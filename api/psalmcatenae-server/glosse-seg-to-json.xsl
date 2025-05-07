@@ -68,6 +68,8 @@
       <xsl:value-of select="@source"/>
       <xsl:text>]</xsl:text>
     </xsl:template>
+	
+	<xsl:template match="tei:ref"/>
     
     <xsl:template match="text()">
       <xsl:choose>

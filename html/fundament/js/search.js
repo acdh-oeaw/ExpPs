@@ -646,10 +646,61 @@ function jsonClient(){
 		}
 		request(url,"get");
 	});
+
+	$("#search-form-commentaryfragments").on("keypress",function(event){
+		if (event.keyCode === 13){
+			event.preventDefault();
+			let selectedManuscript = document.getElementById("name-of-manuscript-select-form-commentaryfragments").selectedOptions[0].value;
+			let manuscriptPath = configurationObject.manuscriptPaths.get(selectedManuscript);
+			let url = configurationObject.baseUrl + "/manuscripts/" + manuscriptPath;
+			configurationObject.object = "commentaryfragments";
+			configurationObject.mode = "data";
+			url = url + "/commentaryfragments";
+			url = url + "/search";
+			let attributionFieldValue = document.getElementById("input-attribution-form-commentaryfragments").value;
+			let authorCriticalFieldValue = document.getElementById("input-author-critical-form-commentaryfragments").value;
+			let psalmverseFieldValue = document.getElementById("psalmverse-form-commentaryfragments").value;
+			let isRangeEnabled = document.getElementById("enable-psalmverse-range-commentaryfragments").checked;
+			let psalmverseFromValue = document.getElementById("psalmverse-from-value-form-commentaryfragments").value;
+			let psalmverseToValue = document.getElementById("psalmverse-to-value-form-commentaryfragments").value;
+			if (attributionFieldValue != "empty"){
+				url = url + "?author=" + attributionFieldValue;
+			}
+			if (authorCriticalFieldValue != "empty"){
+				if (attributionFieldValue === "empty"){
+					url = url + "?author-critical=" + authorCriticalFieldValue;
+				}
+				else{
+					url = url + "&author-critical=" + authorCriticalFieldValue;
+				}
+			}
+			if (isRangeEnabled){
+				if ((psalmverseFromValue != "empty") || (psalmverseToValue != "empty")){
+					if (attributionFieldValue === "empty" && authorCriticalFieldValue === "empty"){
+						url = url + "?reference-from=" + psalmverseFromValue + "&reference-to=" + psalmverseToValue;
+					}
+					else {
+						url = url + "&reference-from=" + psalmverseFromValue + "&reference-to=" + psalmverseToValue;
+					}
+				}
+			}
+			else {
+				if (psalmverseFieldValue != "empty"){
+					if (attributionFieldValue === "empty" && authorCriticalFieldValue === "empty"){
+						url = url + "?reference=" + psalmverseFieldValue;
+					}
+					else{
+						url = url + "&reference=" + psalmverseFieldValue;
+					}
+				}
+			}
+			request(url,"get");
+		}
+	});
 	
 	$("#search-glosses-submit").click(function(event){
 		event.preventDefault();
-		let selectedManuscript = document.getElementById("name-of-manuscript-select-form-commentaryfragments").selectedOptions[0].value;
+		let selectedManuscript = document.getElementById("name-of-manuscript-select-form-glosses").selectedOptions[0].value;
 		let manuscriptPath = configurationObject.manuscriptPaths.get(selectedManuscript);
 		let url = configurationObject.baseUrl + "/manuscripts/" + manuscriptPath;
 		configurationObject.object = "glosses";
@@ -695,10 +746,61 @@ function jsonClient(){
 		}
 		request(url,"get");
 	});
+
+	$("#search-form-glosses").on("keypress",function(event){
+		if (event.keyCode === 13){
+			event.preventDefault();
+			let selectedManuscript = document.getElementById("name-of-manuscript-select-form-glosses").selectedOptions[0].value;
+			let manuscriptPath = configurationObject.manuscriptPaths.get(selectedManuscript);
+			let url = configurationObject.baseUrl + "/manuscripts/" + manuscriptPath;
+			configurationObject.object = "glosses";
+			configurationObject.mode = "data";
+			url = url + "/glosses";
+			url = url + "/search";
+			let attributionFieldValue = document.getElementById("input-attribution-form-glosses").value;
+			let authorCriticalFieldValue = document.getElementById("input-author-critical-form-glosses").value;
+			let psalmverseFieldValue = document.getElementById("psalmverse-form-glosses").value;
+			let isRangeEnabled = document.getElementById("enable-psalmverse-range-glosses").checked;
+			let psalmverseFromValue = document.getElementById("psalmverse-from-value-form-glosses").value;
+			let psalmverseToValue = document.getElementById("psalmverse-to-value-form-glosses").value;
+			if (attributionFieldValue != "empty"){
+				url = url + "?author=" + attributionFieldValue;
+			}
+			if (authorCriticalFieldValue != "empty"){
+				if (attributionFieldValue === "empty"){
+					url = url + "?author-critical=" + authorCriticalFieldValue;
+				}
+				else{
+					url = url + "&author-critical=" + authorCriticalFieldValue;
+				}
+			}
+			if (isRangeEnabled){
+				if ((psalmverseFromValue != "empty") || (psalmverseToValue != "empty")){
+					if (attributionFieldValue === "empty" && authorCriticalFieldValue === "empty"){
+						url = url + "?reference-from=" + psalmverseFromValue + "&reference-to=" + psalmverseToValue;
+					}
+					else {
+						url = url + "&reference-from=" + psalmverseFromValue + "&reference-to=" + psalmverseToValue;
+					}
+				}
+			}
+			else {
+				if (psalmverseFieldValue != "empty"){
+					if (attributionFieldValue === "empty" && authorCriticalFieldValue === "empty"){
+						url = url + "?reference=" + psalmverseFieldValue;
+					}
+					else {
+						url = url + "&reference=" + psalmverseFieldValue;
+					}
+				}
+			}
+			request(url,"get");
+		}
+	});
 	
 	$("#search-hexaplaric-variants-submit").click(function(event){
 		event.preventDefault();
-		let selectedManuscript = document.getElementById("name-of-manuscript-select-form-commentaryfragments").selectedOptions[0].value;
+		let selectedManuscript = document.getElementById("name-of-manuscript-select-form-hexaplaric-variants").selectedOptions[0].value;
 		let manuscriptPath = configurationObject.manuscriptPaths.get(selectedManuscript);
 		let url = configurationObject.baseUrl + "/manuscripts/" + manuscriptPath;
 		configurationObject.object = "hexaplaricVariants";
@@ -721,6 +823,34 @@ function jsonClient(){
 		}
 		request(url,"get");
 	});
+
+	$("#search-form-hexaplaric-variants").on("keypress",function(event){
+		if (event.keyCode === 13){
+			event.preventDefault();
+			let selectedManuscript = document.getElementById("name-of-manuscript-select-form-hexaplaric-variants").selectedOptions[0].value;
+			let manuscriptPath = configurationObject.manuscriptPaths.get(selectedManuscript);
+			let url = configurationObject.baseUrl + "/manuscripts/" + manuscriptPath;
+			configurationObject.object = "hexaplaricVariants";
+			configurationObject.mode = "data";
+			url = url + "/hexaplaric-variants";
+			url = url + "/search";
+			let psalmverseFieldValue = document.getElementById("psalmverse-form-hexaplaric-variants").value;
+			let isRangeEnabled = document.getElementById("enable-psalmverse-range-hexaplaric-variants").checked;
+			let psalmverseFromValue = document.getElementById("psalmverse-from-value-form-hexaplaric-variants").value;
+			let psalmverseToValue = document.getElementById("psalmverse-to-value-form-hexaplaric-variants").value;
+			if (isRangeEnabled){
+				if ((psalmverseFromValue != "empty") || (psalmverseToValue != "empty")){
+					url = url + "?reference-from=" + psalmverseFromValue + "&reference-to=" + psalmverseToValue;
+				}
+			}
+			else {
+				if (psalmverseFieldValue != "empty"){
+					url = url + "?reference=" + psalmverseFieldValue;
+				}
+			}
+			request(url,"get");
+		}
+	});
 	
 	$("#search-full-text-submit").click(function(event){
 		event.preventDefault();
@@ -740,6 +870,26 @@ function jsonClient(){
 		}
 	});
 	
+	$("#search-form-full-text").on("keypress",function(event){
+		if (event.keyCode === 13){
+			event.preventDefault();
+			let searchString = document.getElementById("full-text-search-input").value;
+			let editionOrManuscriptsSelection = document.getElementById("full-text-select-edition").checked;
+			if (editionOrManuscriptsSelection === true){
+				let url = configurationObject.baseUrl + "/edition/search?searchstring=" + searchString;
+				configurationObject.object = "searchResultsEdition";
+				configurationObject.mode = "data";
+				request(url,"get");
+			}
+			else{
+				let url = configurationObject.baseUrl + "/manuscripts/search?searchstring=" + searchString;
+				configurationObject.object = "searchResultsManuscripts";
+				configurationObject.mode = "data";
+				request(url,"get");
+			}
+		}
+	});
+
 	$("#commentary-fragments-tab").bind('click',function(){
 		configurationObject.object = "commentaryfragments";
 		request(configurationObject.baseUrl + "/manuscripts","get");
@@ -816,6 +966,11 @@ function jsonClient(){
 			let psalmverseField = document.getElementById("psalmverse-form-hexaplaric-variants");
 			psalmverseField.disabled = false;
 		}
+	});
+
+	$("#full-text-tab").click(function(){
+		$("#search-result-messages").empty();
+		$("#search-result-content").empty();
 	});
 	
 	var that = {};
