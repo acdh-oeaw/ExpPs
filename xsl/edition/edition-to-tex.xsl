@@ -11,23 +11,16 @@ version="2.0">
 </xsl:character-map>
 
 <xsl:template match="/">
-\documentclass[12pt]{book}
-\usepackage{polyglossia}
-\usepackage{fontspec}
-\defaultfontfeatures{Mapping=tex-text}
-\usepackage{xunicode}
-\usepackage{libertine}
-\usepackage{xltxtra}
+    \documentclass[12pt,a4paper]{scrbook}
+    \usepackage{polyglossia}
+    \usepackage{fontspec}
+    \usepackage{libertine}
 \usepackage{reledmac}
 \usepackage{reledpar}
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-\fancyhead{}
-\fancyhead[RO,LE]{\leftmark}
-\fancyhead[LO,RE]{(Ps.)-Athanasius, Expositiones in Psalmos}
-\fancyfoot{}
-\fancyfoot[C]{\thepage}
-\setmainlanguage{german}
+\usepackage{scrlayer-scrpage}
+\cehead{Uta Heil, Sebastiano Panteghini}
+\cohead{(Ps.)-Athanasius, \textit{Expositiones in Psalmos}}
+\setmainlanguage[variant=austrian, spelling=new]{german}
 \setotherlanguage[variant=ancient]{greek}
 \newfontfamily\greekfont[ExternalLocation="./"]{SBL_BLit.ttf}
 \parindent0pt
@@ -44,7 +37,7 @@ version="2.0">
 \begin{titlepage}
 \author{\textsc{<xsl:value-of select="tei:fileDesc/tei:titleStmt/tei:author/text()"/>}}
 \title{\textbf{<xsl:value-of select="tei:fileDesc/tei:titleStmt/tei:title/text()"/>}}
-\date{Wien, 13.09.2024}
+\date{Wien, 15.05.2025}
 \end{titlepage}
 </xsl:template>
 
@@ -61,7 +54,7 @@ version="2.0">
 </xsl:template>
 
 <xsl:template match="tei:div[@type = 'psalm']">
-\chapter{<xsl:text>Psalm </xsl:text><xsl:value-of select="@n"/>}
+    \chapter*{<xsl:text>Psalm </xsl:text><xsl:value-of select="@n"/>}\addcontentsline{toc}{chapter}{Psalm <xsl:value-of select="@n"/>}
 <xsl:apply-templates select="tei:div[@type = 'psalmverse']"/>
 </xsl:template>
 
@@ -112,7 +105,7 @@ version="2.0">
 </xsl:template>
 
     <xsl:template match="tei:p[ancestor::tei:div[@xml:lang = 'grc']][not(parent::tei:div[@type = 'links'])][not(parent::tei:div[@type = 'links-oriental-tradition'])][not(parent::tei:note[@type = 'textual-commentary'])]" xml:space="default">
-\par\vspace{3mm}\begin{german}
+        \par\vspace{3mm}\addcontentsline{toc}{section}{Expositio <xsl:value-of select="@n"/>}\begin{german}
 <xsl:text>\textbf{Expositio </xsl:text>
 <xsl:value-of select="@n"/>
         <xsl:if test="exists(parent::tei:div[@type = 'commentary']/@rend) and (parent::tei:div[@type = 'commentary']/@rend = 'hide')">
@@ -164,7 +157,7 @@ version="2.0">
     <xsl:if test="(local-name(preceding-sibling::*[1]) = 'app') and (preceding-sibling::tei:app/@type = 'text')">
         <xsl:text>--- </xsl:text>
     </xsl:if>
-<xsl:apply-templates select="tei:lem"/><xsl:text>\hspace{-0.75mm}] </xsl:text>
+<xsl:apply-templates select="tei:lem"/><xsl:text>\hspace{-0.25mm}] </xsl:text>
 <xsl:for-each select="tei:rdg">
     <xsl:apply-templates select="tei:foreign | text()"/>
     <xsl:text> </xsl:text>
@@ -181,6 +174,7 @@ version="2.0">
             </xsl:analyze-string>
         <xsl:if test="position() != last()"><xsl:text> </xsl:text></xsl:if>
     </xsl:for-each>
+    <xsl:if test="position() != last()"><xsl:text> </xsl:text></xsl:if>
 </xsl:for-each>
 </xsl:template>
     
@@ -204,9 +198,7 @@ version="2.0">
     <xsl:apply-templates select="child::node()"/>
 </xsl:template>
     
-<xsl:template match="tei:foreign[@xml:lang = 'grc']">
-\foreignlanguage{greek}{<xsl:value-of select="./text()"/>}
-</xsl:template>
+<xsl:template match="tei:foreign[@xml:lang = 'grc']">\foreignlanguage{greek}{<xsl:value-of select="./text()"/>}</xsl:template>
 
     <xsl:template match="tei:anchor[@type = 'biblical-quotation']">
         <xsl:text> (</xsl:text>
@@ -229,6 +221,8 @@ version="2.0">
 <xsl:template match="text()">
 <xsl:choose>
     <xsl:when test=". = '                  '"/>
+    <xsl:when test=". = '
+        '"><xsl:text> </xsl:text></xsl:when>
     <xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
 </xsl:choose>
 </xsl:template>
