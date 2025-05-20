@@ -2748,10 +2748,10 @@
                         
                         <div type="commentary">
                            <p xml:id="edition-26-30-28-2" n="525"><span type="text-critical" xml:id="edition-28-2-tc-1">Σαφῶς διὰ τούτων
-                              ἡμῖν</span> παρακελεύεται.
+                              <span type="text-critical" xml:id="edition-28-2-tc-2">ἡμῖν</span></span> παρακελεύεται.
                               ὡς ἔξω τῆς ἐκκλησίας
                               οὐ δεῖ προσκυνεῖν·
-                              τοῦτο δὲ φησι διὰ τὰς
+                              τοῦτο δὲ <span type="text-critical" xml:id="edition-28-2-tc-3">φησι</span> διὰ τὰς
                               τῶν ἑτεροδόξων
                               συναγωγάς: –</p>
                            <div type="links">
@@ -2765,13 +2765,14 @@
                                     <ref target="#coislin-187:coislin-187-fr-28-6"/>
                                     <ref target="#coislin-12:coislin-12-fr-28-8"/>
                                     <ref target="#par-gr-139:par-gr-139-fr-28-14"/>
+                                    <ref target="#mosq-syn-194:mosq-syn-194-fr-28-6"/>
                                  </listRef>
                               </p>
                            </div>
                         </div>
                         <div type="textcritic">
                            <app type="fragment">
-                              <rdg wit="#V1 #C #G #P1 #B1 #P2 #P5 #P6 #Z #N2">txt</rdg>
+                              <rdg wit="#V1 #C #G #P1 #B1 #P2 #P5 #P6 #Z #N2 #M">txt</rdg>
                               <wit>Vat. gr. 754</wit>
                               <wit>Coislin 10</wit>
                               <wit>Urbani 3</wit>
@@ -2782,11 +2783,22 @@
                               <wit>Par. gr. 139</wit>
                               <wit>Marc. gr. Z. 17</wit>
                               <wit>Athen. B.N. 45</wit>
+                              <wit>Mosq. Sinod. gr. 194</wit>
                            </app>
                            <app type="text" corresp="#edition-28-2-tc-1">
                               <lem><foreign xml:lang="grc">Σαφῶς ... ἡμῖν</foreign></lem>
                               <rdg wit="#P2">om.</rdg>
                               <wit>Coislin 187</wit>
+                           </app>
+                           <app type="text" corresp="#edition-28-2-tc-2">
+                              <lem><foreign xml:lang="grc">ἡμῖν</foreign></lem>
+                              <rdg wit="#M">om.</rdg>
+                              <wit>Mosq. Sinod. gr. 194</wit>
+                           </app>
+                           <app type="text" corresp="#edition-28-2-tc-3">
+                              <lem><foreign xml:lang="grc">φησι</foreign></lem>
+                              <rdg wit="#M">om.</rdg>
+                              <wit>Mosq. Sinod. gr. 194</wit>
                            </app>
                         </div>
                      </div>
