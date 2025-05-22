@@ -1911,7 +1911,15 @@
     <xsl:template match="tei:subst">
         <xsl:value-of select="tei:add/text()"/>
         <xsl:text> [* </xsl:text>
-        <xsl:value-of select="tei:del/text()"/>
+        <xsl:if test="exists(child::tei:del/child::tei:unclear)">
+            <xsl:element name="span">
+                <xsl:attribute name="class" select="'unclear'"/>
+                <xsl:value-of select="tei:del/tei:unclear/text()"/>
+            </xsl:element>
+        </xsl:if>
+        <xsl:if test="not(exists(child::tei:del/child::tei:unclear))">
+            <xsl:value-of select="tei:del/text()"/>
+        </xsl:if>
         <xsl:text> </xsl:text>
         <xsl:value-of select="tei:add/@hand"/>
         <xsl:text> </xsl:text>

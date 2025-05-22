@@ -384,6 +384,10 @@
         </xsl:element>
     </xsl:template>
     
+    <xsl:template match="tei:subst">
+        <xsl:value-of select="child::tei:add/text()"/>
+    </xsl:template>
+    
     <xsl:template match="tei:ref">
         <xsl:text>→ </xsl:text>
         <xsl:element name="a">
