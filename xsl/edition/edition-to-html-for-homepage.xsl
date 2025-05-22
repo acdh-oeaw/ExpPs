@@ -692,7 +692,7 @@ version="2.0">
         <xsl:text>– </xsl:text>
         <xsl:for-each select="tokenize(tei:rdg/@wit,' ')">
             <i>
-                <xsl:analyze-string select="substring-after(.,'#')" regex="(V1|C|P1|G|O|M|B1|P2|B2|N1|P3|A1|P4|P5|P6|P7|P8|L1|Z|V2|V3|V4|V5|A2|A3|N2|L2)(.*)">
+                <xsl:analyze-string select="substring-after(.,'#')" regex="(V1|C|P1|G|O|M|B1|P2|B2|B3|N1|P3|A1|P4|P5|P6|P7|P8|L1|Z|V2|V3|V4|V5|A2|A3|N2|L2)(.*)">
                     <xsl:matching-substring>
                         <xsl:value-of select="regex-group(1)"/>
                         <sup>
@@ -721,7 +721,7 @@ version="2.0">
     </xsl:if>
     <xsl:for-each select="tokenize(tei:lem/@wit,' ')">
         <i>
-            <xsl:analyze-string select="substring-after(.,'#')" regex="(V1|C|P1|G|O|M|B1|P2|B2|N1|P3|A1|P4|P5|P6|P7|P8|L1|Z|V2|V3|V4|V5|A2|A3|N2|L2)(.*)">
+            <xsl:analyze-string select="substring-after(.,'#')" regex="(V1|C|P1|G|O|M|B1|P2|B2|B3|N1|P3|A1|P4|P5|P6|P7|P8|L1|Z|V2|V3|V4|V5|A2|A3|N2|L2)(.*)">
                 <xsl:matching-substring>
                     <xsl:value-of select="regex-group(1)"/>
                     <sup>
@@ -742,7 +742,7 @@ version="2.0">
         <xsl:text> </xsl:text>
         <xsl:for-each select="tokenize(./@wit,' ')">
             <i>
-                <xsl:analyze-string select="substring-after(.,'#')" regex="(V1|C|P1|G|O|M|B1|P2|B2|N1|P3|A1|P4|P5|P6|P7|P8|L1|Z|V2|V3|V4|V5|A2|A3|N2|L2)(.*)">
+                <xsl:analyze-string select="substring-after(.,'#')" regex="(V1|C|P1|G|O|M|B1|P2|B2|B3|N1|P3|A1|P4|P5|P6|P7|P8|L1|Z|V2|V3|V4|V5|A2|A3|N2|L2)(.*)">
                     <xsl:matching-substring>
                         <xsl:value-of select="regex-group(1)"/>
                         <sup>

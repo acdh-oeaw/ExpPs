@@ -1114,6 +1114,7 @@
                 <xsl:attribute name="class" select="'paragraph-in-hexaplaric-variant'"/>
                 <xsl:apply-templates select="child::tei:quote/child::node()"/>
             </xsl:element>
+            <xsl:apply-templates select="child::tei:note[@type = 'textual-commentary']"/>
         </xsl:element>
     </xsl:template>
     
