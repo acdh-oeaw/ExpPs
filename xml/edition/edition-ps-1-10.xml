@@ -11583,9 +11583,9 @@
                   <div type="commentary" rend="parallel">
                      <p xml:id="edition-9-5-1" n="113" next="#edition-9-5-1-1"><span
                            type="text-critical" xml:id="edition-9-5-1-tc-1">Τὴν αἰτίαν</span> τῆς
-                           <span type="text-critical" xml:id="edition-9-5-1-tc-2">εὐχαριστίας</span>
-                        <span type="text-critical" xml:id="edition-9-5-1-tc-3">ἀποδίδωσιν</span>:
-                        –</p>
+                           <span type="text-critical" xml:id="edition-9-5-1-tc-2"
+                        >εὐχαριστίας</span>, <span type="text-critical" xml:id="edition-9-5-1-tc-3"
+                           >ἀποδίδωσιν</span>: –</p>
                      <div type="links">
                         <p>
                            <listRef>
@@ -11648,8 +11648,8 @@
                   </div>
                   <!-- exp 113b -->
                   <div type="commentary" rend="hide">
-                     <p xml:id="edition-9-5-1-1" n="113">Τὴν αἰτίαν τῆς εὐχαριστείας ἀποδίδωσι· δι᾿
-                        ὅτι φησὶν ἐποίησας μετ᾿ ἐμοῦ κρίσ[ιν] καὶ δίκην, πρὸς τὰ πνευματικὰ τῆς
+                     <p xml:id="edition-9-5-1-1" n="113">Τὴν αἰτίαν τῆς εὐχαριστείας, ἀποδίδωσι· δι᾿
+                        ὅτι φησὶν, ἐποίησας μετ᾿ ἐμοῦ κρίσ[ιν] καὶ δίκην· πρὸς τὰ πνευματικὰ τῆς
                         πονηρίας: – <anchor type="biblical-quotation" subtype="direct-quotation"
                            n="Eph 6,12"/></p>
                      <div type="links">
@@ -29521,6 +29521,7 @@
                               κατορθωμάτων</foreign></rdg>
                         <wit>Sinod. gr. 194</wit>
                      </app>
+                     <!-- cave: darauf hinweisen, ob das Spurium Ps 17,20c in den Katenen vorhanden ist -->
                      <note type="textual-commentary">N2: exp. 267 verloren (Blattausfall). B1: Es
                         wird einleitend behauptet, dass diese Expositio zehn Zeilen (<foreign
                            xml:lang="grc">στίχοι</foreign>) erklärt: <foreign xml:lang="grc"
@@ -30256,7 +30257,7 @@
                      <p xml:id="edition-17-31-1" n="274" next="#edition-17-31-1-1">Ταῦτα <span
                            type="text-critical" xml:id="edition-17-31-1-tc-1">φησὶν</span>, τὴν
                         ἀγνωμοσύνην τῶν ἰουδαίων καταμεμφόμενος· <span type="text-critical"
-                           xml:id="edition-17-31-1-tc-2">ἐπειδὴ ἐπελάμβανον</span> τοῦ σωτῆρος· ὡς
+                           xml:id="edition-17-31-1-tc-2">ἐπειδὴ ἐπελαμβάνοντο</span> τοῦ σωτῆρος· ὡς
                         παρὰ <span type="text-critical" xml:id="edition-17-31-1-tc-3">τὸν
                            θεῖον</span> πράττοντος νόμον· <span type="text-critical"
                            xml:id="edition-17-31-1-tc-4">καὶ μὴν καὶ</span>
@@ -30298,12 +30299,13 @@
                         <rdg wit="#P5"><foreign xml:lang="grc">φησὶ *</foreign> (ut vid.)</rdg>
                      </app>
                      <app type="text" corresp="#edition-17-31-1-tc-2">
-                        <lem><foreign xml:lang="grc">ἐπειδὴ ἐπελάμβανον</foreign></lem>
-                        <rdg wit="#M #Z"><foreign xml:lang="grc">ἐπειδὴ
+                        <lem><foreign xml:lang="grc">ἐπειδὴ ἐπελαμβάνοντο</foreign></lem>
+                        <rdg wit="#V1 #C #P1 #P5 #P6 #N2">ἐπειδὴ ἐπελάμβανον</rdg>
+                        <!-- <rdg wit="#M #Z"><foreign xml:lang="grc">ἐπειδὴ
                            ἐπελαμβάνοντο</foreign></rdg>
                         <wit>Sinod. gr. 194</wit>
-                        <wit>Marc. gr. Z. 17</wit>
-                        <!-- Textkritik: ἐπελάμβανον P6 = V1 -->
+                        <wit>Marc. gr. Z. 17</wit>-->
+                        <!-- Textkritik: ἐπελαμβάνοντο Z : ἐπελάμβανον P6 N2 = V1 -->
                         <rdg wit="#A1"><foreign xml:lang="grc">ὅτι δὴ ἐπελαμβάνοντο</foreign></rdg>
                         <wit>Ambr. M 47 sup.</wit>
                         <rdg wit="#B1"><foreign xml:lang="grc">ὅτι ἐπελαμβάνοντο</foreign></rdg>
@@ -30344,7 +30346,7 @@
                      <p xml:id="edition-17-31-1-1" n="274">Ἐνταῦθα <span type="text-critical"
                            xml:id="edition-17-31-1-1-tc-1">{φησὶ}</span> τὴν ἀγνωμοσύνην· καὶ τὴν
                         κακίαν καὶ τὴν ἀπειθῆ γνώμην καὶ τὴν σκληρότητα τῶν ἀγνωμόνων καὶ ἀχαρίστων
-                        καὶ σκληροκαρδίων ἰουδαίων καταμέμφεται, ἐπειδὴ ἐπελαμβάνοντο τοῦ σωτῆρος
+                        καὶ σκληροκαρδίων ἰουδαίων, καταμέμφεται· ἐπειδὴ ἐπελαμβάνοντο τοῦ σωτῆρος
                         ἡμῶν Χριστοῦ· ὡς παρὰ τὸν θεῖον πράττοντος νόμον· καὶ μὴν καὶ <span
                            type="text-critical" xml:id="edition-17-31-1-1-tc-2">τῶν λόγων
                            αὐτῶν</span>, ἐλοιδόρουν καὶ ἐνδιέβαλον ὡς βλασφήμων· λέγοντες πρὸς
@@ -30398,15 +30400,15 @@
                      untadelig ist sein Weg,</quote>
                   <p corresp="#edition-17-31-1" n="274">Diese Worte sagt er, um den Unverstand der
                      Juden zu tadeln, da sie unseren Erlöser angegriffen haben, als ob er gegen das
-                     göttliche Gesetz handelte; ja sogar seine Worte, als ob sie lästerlich wären.
-                     [cf. Mc 2,7]</p>
+                     göttliche Gesetz handelte; ja sogar seine Worte, als ob auch diese lästerlich
+                     wären. [cf. Mc 2,7]</p>
                   <p corresp="#edition-17-31-1-1" n="274">Hier tadelt er den Unverstand, die
                      Bosheit, die ungehorsame Gesinnung und die Härte der unverständigen,
-                     undankbaren und hartherzigen Juden, da sie unseren Erlöser Christus tadelten,
-                     als ob er gegen das göttliche Gesetz handelte. Ja sogar selbst seine Worte
+                     undankbaren und hartherzigen Juden, da sie den Erlöser Christus tadelten, als
+                     ob er gegen das göttliche Gesetz handelte. Ja sogar selbst seine Worte
                      verachteten sie und verleumdeten sie als lästerlich, indem sie zueinander
                      sagten: 'Er lästert; denn wer kann Sünden vergeben?' [Mc 2,7] Aus schlechtem
-                     Gewissen und bösem Denken heraus das waren die Dinge, die sie erwogen, als sie
+                     Gewissen und bösem Denken heraus waren das die Dinge, die sie erwogen, als sie
                      gegen den Herrn und Gott aller Dinge nachdachten und abwägten.</p>
                   <quote type="psalmtext" corresp="#edition-ps-17-31-2" n="31b">die Worte des Herrn
                      sind geläutert;</quote>
@@ -30441,11 +30443,11 @@
                      <p xml:id="edition-17-33-1" n="275" next="#edition-17-33-1-1"><span
                            type="text-critical" xml:id="edition-17-33-1-1-tc-1">Ὅμοιον <span
                               type="text-critical" xml:id="edition-17-33-1-1-tc-2">τῷ
-                              εἰρημένῳ</span></span>, <span type="text-critical"
-                           xml:id="edition-17-33-1-1-tc-3">ἕως οὗ</span> ἐνδύσησθε <span
-                           type="text-critical" xml:id="edition-17-33-1-1-tc-4">ἐξ ὕψους
-                           δύναμιν</span>: – <anchor type="biblical-quotation"
-                           subtype="direct-quotation" n="Lc 24,49"/></p>
+                              εἰρημένῳ</span>, '<span type="text-critical"
+                              xml:id="edition-17-33-1-1-tc-3">ἕως οὗ</span> ἐνδύσησθε <span
+                              type="text-critical" xml:id="edition-17-33-1-1-tc-4">ἐξ ὕψους
+                              δύναμιν</span></span>' : – <anchor type="biblical-quotation"
+                           subtype="direct-quotation" n="Lc 24,49b"/></p>
                      <div type="links">
                         <p>
                            <listRef>
@@ -30479,7 +30481,7 @@
                         <wit>Ambr. C 98 sup.</wit>
                      </app>
                      <app type="text" corresp="#edition-17-33-1-1-tc-1">
-                        <lem><foreign xml:lang="grc">Ὅμοιον – τῷ εἰρημένῳ</foreign></lem>
+                        <lem><foreign xml:lang="grc">Ὅμοιον – δύναμιν</foreign></lem>
                         <rdg wit="#Z"><foreign xml:lang="grc">Tò ὁ θεὸς ὁ περιζωννύων με δύναμιν, τῷ
                               ἕως οὗ ἐνδύσησθε δύναμιν ἐξ ὕψους συνᾴδει: –</foreign></rdg>
                         <wit>Marc. gr. Z. 17</wit>
@@ -30498,8 +30500,8 @@
                         <rdg wit="#V4"><foreign xml:lang="grc">ἕως ἂν</foreign></rdg>
                         <wit>Vat. gr. 1747</wit>
                         <rdg wit="#V5 #P7 #L2 #A3"><foreign xml:lang="grc">ὑμεῖς δὲ καθίσατε ἐν τῇ
-                              πόλει ἱερουσαλὴμ</foreign> ante <foreign xml:lang="grc">ἕως
-                              οὗ</foreign> (= Lc 24,49) add.</rdg>
+                              πόλει ἱερουσαλὴμ</foreign> (= Lc 24,49a) ante <foreign xml:lang="grc"
+                              >ἕως οὗ</foreign> add.</rdg>
                         <wit>Vat. gr. 1422</wit>
                         <wit>Par. gr. 146</wit>
                         <wit>Plut. 6.3</wit>
@@ -30524,9 +30526,9 @@
                         erklärt worden zu sein. Montfaucon: exp. 275 nach P1.</note>
                   </div>
                   <div type="commentary" rend="hide">
-                     <p xml:id="edition-17-33-1-1" n="275">Ὅμοιον τῷ εἰρημένῳ, ἕως οὗ ἐνδύσησθε τὴν
-                        ἐξ ὕψους δύναμιν· <anchor type="biblical-quotation"
-                           subtype="direct-quotation" n="Lc 24,49"/> δύναμις γὰρ τὸ πανάγιον
+                     <p xml:id="edition-17-33-1-1" n="275">Ὅμοιον τῷ εἰρημένῳ, 'ἕως οὗ ἐνδύσησθε τὴν
+                        ἐξ ὕψους δύναμιν'· <anchor type="biblical-quotation"
+                           subtype="direct-quotation" n="Lc 24,49b"/> δύναμις γὰρ τὸ πανάγιον
                         πνεῦμ[α]: –</p>
                      <div type="links">
                         <p>
@@ -30612,14 +30614,15 @@
                   <quote type="psalmtext" corresp="#edition-ps-17-33-1" n="33a">Gott, der mich mit
                      Kraft umgürtete,</quote>
                   <p corresp="#edition-17-33-1" n="275">Ähnlich der Aussage: 'Bis ihr bekleidet
-                     werdet mit Kraft aus der Höhe.' [Lc 24,49]</p>
+                     werdet mit Kraft aus der Höhe.' [Lc 24,49b]</p>
                   <p corresp="#edition-17-33-1-1" n="275">Ähnlich der Aussage: 'Bis ihr bekleidet
-                     werdet mit Kraft aus der Höhe.' [Lc 24,49] Denn Kraft ist der allheilge
+                     werdet mit Kraft aus der Höhe.' [Lc 24,49b] Denn Kraft ist der allheilige
                      Geist.</p>
                   <quote type="psalmtext" corresp="#edition-ps-17-33-2" n="33b">er hat auch meinen
                      Weg untadelig gemacht;</quote>
-                  <p corresp="#edition-17-33-2" n="276">Das heißt: Durch die Dekrete des Evangeliums
-                     hat er mich in die Lage versetzt, den untadeligen Weg zu laufen.</p>
+                  <p corresp="#edition-17-33-2" n="276">Das heißt, durch die Gottesorakel des
+                     Evangeliums hat er mich in die Lage versetzt, den untadeligen Weg zu
+                     laufen.</p>
                </div>
             </div>
             <div type="psalmverse" n="17.34">
