@@ -20,3 +20,7 @@ In dieser Datei wird dokumentiert, wie weit die Transkriptionen der einzelnen Ha
 - ```plut-5-30``` - Psalm 1-18: keine hexaplarischen Varianten; Kommentarfragmente bis inkl. Ps 18,15
 - ```plut-6-3``` - Psalm 1-18: hexaplarische Varianten bis inkl. Ps 18; Kommentarfragmente bis inkl. Ps 18,10
 - ```vat-gr-1422``` - Psalm 1-18: hexaplarische Varianten bis inkl. Ps 18; Kommentarfragemente bis inkl. Ps 18,15
+
+## 04.06.2025: Weitere Überarbeitung
+
+- ```vat-gr-754``` - hexaplarische Varianten bis Ps 28,11b
