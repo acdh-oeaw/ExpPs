@@ -23,4 +23,6 @@ In dieser Datei wird dokumentiert, wie weit die Transkriptionen der einzelnen Ha
 
 ## 04.06.2025: Weitere Überarbeitung
 
-- ```vat-gr-754``` - hexaplarische Varianten bis Ps 28,11b
+- ```vat-gr-754``` - hexaplarische Varianten bis Ps 28,11b; Kommentarfragmente bis inkl. 28,11b.
+- ```ambr-b-106-sup``` - keine hexaplarischen Varianten bis Ps 28,10a; Kommentarfragmente bis inkl. 28,10a.
+- ```ambr-m-47-sup``` - keine hexaplarischen Varianten bis Ps 28,11b;
