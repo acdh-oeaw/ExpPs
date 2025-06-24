@@ -27,9 +27,15 @@ In dieser Datei wird dokumentiert, wie weit die Transkriptionen der einzelnen Ha
 - ```ambr-b-106-sup``` - keine hexaplarischen Varianten bis Ps 28,10a; Kommentarfragmente bis inkl. 28,10a.
 - ```ambr-m-47-sup``` - keine hexaplarischen Varianten bis Ps 28,11b; Kommentarfragmente bis Ps 28,11b. (Eventuell sind die Fragmente nach Ps 25 nicht als inedita markiert.)
 - ```bodl-auct-d-4-1``` - hexaplarische Varianten bis Ps 28,11b; Kommentarfragmente bis Ps 28,11b. (Eventuell sind die Fragmente nach Ps 25 nicht als inedita markiert.)
-- ```coislin-10``` - hexaplarische Varianten bis 28,11b; Kommentarfragmente bis Ps 29,10.
+- ```coislin-10``` - hexaplarische Varianten bis 28,11b; Kommentarfragmente bis Ps 28,10.
 - ```coislin-12``` - keine hexaplarischen Varianten; Kommentarfragmente bis Ps 28,11b.
-- ```coislin-187``` - keine hexaplarischen VariantenM; Kommentarfragmente bis Ps 28,11b.
+- ```coislin-187``` - keine hexaplarischen Varianten; Kommentarfragmente bis Ps 28,11b.
 - ```franzon-3``` - keine hexaplarischen Varianten; Kommentarfragmente bis Ps 28,11b.
 - ```mosq-syn-194``` - keine hexaplarischen Varianten; Kommentarfragmente bis Ps 28,10b.
-- ```oxon-s-trin-78``` - keine hexaplarischen Varianten; Kommentarfragmente bis Ps 20,4.
+- ```oxon-s-trin-78``` - keine hexaplarischen Varianten; Kommentarfragmente bis Ps 28,11b.
+- ```par-gr-139``` - keine hexaplarischen Varianten; Kommentarfragmente bis Ps 28,11b.
+- ```par-gr-164``` - hexaplarischen Varianten bis Ps 28,8a; Kommentarfragmente bis Ps 28,8a.
+- ```par-gr-166``` - keine hexaplarischen Varianten; Kommentarfragmente bis Ps 28,11b.
+- ```plut-5-30``` - keine hexaplarischen Varianten; Kommentarfragmente bis Ps 28,11b. 
+- ```plut-6-3``` - keine hexaplarischen Varianten; Kommentarfragmente bis Ps 28,11.
+- ```vat-gr-1422``` - keine hexaplarischen Varianten; Kommentarfragmente bis Ps 28,11.
