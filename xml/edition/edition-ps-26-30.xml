@@ -4780,7 +4780,7 @@
                      <p corresp="#edition-26-30-29-6-1" n="544">Νicht, indem er selbst das tun möchte, sondern indem er diesen [Zorn, C.S.] über einen jeden selbst bringt. Denn was er will, ist Leben.</p>
                      <quote corresp="#edition-26-30-ps-29-6c" type="psalmtext" n="6c">Am Abend wird Wehklagen sich ausbreiten</quote>
                      <quote corresp="#edition-26-30-ps-29-6d" type="psalmtext" n="6d">und bis zum Morgen Jubel (ausbrechen).</quote>
-                     <p corresp="#edition-26-30-29-6-2" n="545">Das leicht zu Bewerkstelligende des Sinneswandels wird dadurch bezeichnet. Denn nicht gibt es eine solche Menge an Sünden, welche nicht sofort der Sinneswandel in Jubel überführt</p>
+                     <p corresp="#edition-26-30-29-6-2" n="545">Das leicht zu Bewerkstelligende des Sinneswandels wird dadurch bezeichnet. Denn nicht gibt es eine solche Menge an Sünden, welche nicht sofort der Sinneswandel in Jubel überführt.</p>
                   </div>
                </div>
                <div n="29.7" type="psalmverse">
@@ -4790,12 +4790,12 @@
                         <quote xml:id="edition-26-30-ps-29-7b" type="psalmtext" n="7b">Οὐ μὴ σαλευθῶ εἰς τὸν αἰῶνα.</quote>
                      </div>
                      <div type="commentary">
-                        <p xml:id="edition-26-30-29-7" n="546">Τὸ αἴτιον λέγει τῆς πτώσεως· ἐπειδὴ μέγα φησὶν ἐν τῆ εὐημερία πεφρόνηκα.
-                           τούτου χάριν τετάραγμαι· γέγονεν δέ μοι τοῦτο οὐ σοῦ <span type="text-critical" xml:id="edition-29-7-tc-1">με</span> <span type="text-critical" xml:id="edition-29-7-tc-2">προσωθήσαντος</span>.
+                        <p xml:id="edition-26-30-29-7" n="546">Τὸ αἴτιον <span type="text-critical" xml:id="edition-29-7-tc-0">λέγει</span> τῆς πτώσεως· ἐπειδὴ μέγα φησὶν ἐν τῆ εὐημερία πεφρόνηκα.
+                           τούτου χάριν τετάραγμαι· γέγονεν δέ μοι τοῦτο οὐ <span type="text-critical" xml:id="edition-29-7-tc-0a">σοῦ</span> <span type="text-critical" xml:id="edition-29-7-tc-1">με</span> <span type="text-critical" xml:id="edition-29-7-tc-2">προσωθήσαντος</span>.
                            ἀλλ’ ἀποστρέψαντος μόνον τὸ πρόσωπον·
-                           ἐπειδὴ τοίνυν ἄνευ τῆς ἰσχύος σου
+                           ἐπειδὴ τοίνυν ἄνευ τῆς <span type="text-critical" xml:id="edition-29-7-tc-3">ἰσχύος σου</span>
                            οὐδὲ στῆναι δυνάμεθα. τὸ σὸν πάλιν
-                           ἐπιτελὼν θέλημα. τὸ κάλλος μου τῆς ψυχῆς,
+                           ἐπιτελὼν θέλημα. τὸ κάλλος <span type="text-critical" xml:id="edition-29-7-tc-4">μου</span> τῆς ψυχῆς,
                            διαλάμπειν παρασκεύασον: –</p>
                         <div type="links">
                            <p>
@@ -4804,22 +4804,36 @@
                                  <ref target="#coislin-10:coislin-10-fr-29-13"/>
                                  <ref target="#franzon-3:franzon-3-fr-29-6"/>
                                  <ref target="#par-gr-166:par-gr-166-fr-29-7"/>
+                                 <ref target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-29-10"/>
                               </listRef>
                            </p>
                         </div>
                      </div>
                      <div type="textcritic">
                         <app type="fragment">
-                           <rdg wit="#V1 #C #G #P1">txt</rdg>
+                           <rdg wit="#V1 #C #G #P1 #B1">txt</rdg>
                            <wit>Vat. gr. 754</wit>
                            <wit>Coislin 10</wit>
                            <wit>Urbani 3</wit>
                            <wit>Par. gr. 166</wit>
+                           <wit>Auct. D.4.1</wit>
+                        </app>
+                        <app type="text" corresp="#edition-29-7-tc-0">
+                           <lem><foreign xml:lang="grc">λέγει</foreign></lem>
+                           <rdg wit="#B1">om.</rdg>
+                           <wit>Auct. D.4.1</wit>
+                        </app>
+                        <app type="text" corresp="#edition-29-7-tc-0a">
+                           <lem><foreign xml:lang="grc">σοῦ</foreign></lem>
+                           <rdg wit="#B1"><foreign xml:lang="grc">σύ</foreign></rdg>
+                           <wit>Auct. D.4.1</wit>
                         </app>
                         <app type="text" corresp="#edition-29-7-tc-1">
                            <lem><foreign xml:lang="grc">με</foreign></lem>
                            <rdg wit="#G"><foreign xml:lang="grc">μὲν</foreign></rdg>
                            <wit>Urbani 3</wit>
+                           <rdg wit="#B1"><foreign xml:lang="grc">μοι</foreign></rdg>
+                           <wit>Auct. D.4.1</wit>
                         </app>
                         <app type="text" corresp="#edition-29-7-tc-2">
                            <lem><foreign xml:lang="grc">προσωθήσαντος</foreign></lem>
@@ -4828,8 +4842,18 @@
                            <rdg wit="#P1"><foreign xml:lang="grc">προωθήσαντος</foreign></rdg>
                            <wit>Par. gr. 166</wit>
                         </app>
+                        <app type="text" corresp="#edition-29-7-tc-3">
+                           <lem><foreign xml:lang="grc">ἰσχύος σου</foreign></lem>
+                           <rdg wit="#B1"><foreign xml:lang="grc">σῆς ἰσχύος</foreign></rdg>
+                           <wit>Auct. D.4.1</wit>
+                        </app>
+                        <app type="text" corresp="#edition-29-7-tc-4">
+                           <lem><foreign xml:lang="grc">μου</foreign></lem>
+                           <rdg wit="#B1"><foreign xml:lang="grc">πάλιν</foreign> add.</rdg>
+                           <wit>Auct. D.4.1</wit>
+                        </app>
                         <note type="textual-commentary">G und P1: Mit dem nachfolgenden Fragment (<quote type="patristic"  source="Theodoretus, comm. in Ps 29,7 (PG 80,1073 B10–15)"
-                           corresp="#person-16"/>) zu einem Fragment verbunden. Montfaucon: exp. xxx546 ist P1 entsprechend mit dem Theodoret-Fragment verbunden, zusammen mit dem Hinweis, dass es bei Daniel Barberus Theodoret zugeschrieben wird.</note>
+                           corresp="#person-16"/>) zu einem Fragment verbunden. B1: Nach Vers 9a–b mit dem Hinweis, dass die expositio sich auf vier Verse bezieht, was aber die Verse 7a–8b meinen muss. Montfaucon: exp. xxx546 ist P1 entsprechend mit dem Theodoret-Fragment verbunden, zusammen mit dem Hinweis, dass es bei Daniel Barberus Theodoret zugeschrieben wird.</note>
                      </div>
                                        </div>   
                   <div type="translation" xml:lang="de">
@@ -4869,14 +4893,14 @@
                         <quote xml:id="edition-26-30-ps-29-10b" type="psalmtext" n="10b">ἐν τῷ καταβῆναί με εἰς διαφθοράν;</quote>
                         </div>
                         <div type="commentary">
-                           <p xml:id="edition-26-30-29-10" n="547">Δέομαι φησὶν ἀναχθῆναι ἐκ τοῦ λάκκου. ἐπειδὴ οὐκ '<span type="text-critical" xml:id="edition-29-10-tc-1">ἐξομολογεῖται</span> <span type="text-critical" xml:id="edition-29-10-tc-2">σοι</span> χοῦς'<anchor  type="biblical-quotation"
+                           <p xml:id="edition-26-30-29-10" n="547">Δέομαι φησὶν <span type="text-critical" xml:id="edition-29-10-tc-0">ἀναχθῆναι</span> ἐκ τοῦ λάκκου. <span type="text-critical" xml:id="edition-29-10-tc-0a">ἐπειδὴ οὐκ</span> '<span type="text-critical" xml:id="edition-29-10-tc-1">ἐξομολογεῖται</span> <span type="text-critical" xml:id="edition-29-10-tc-2">σοι</span> χοῦς'<anchor  type="biblical-quotation"
                               subtype="indirect-quotation" n="Ps 29,10c"/>·
                               ἐν δὲ τῷ <span type="text-critical" xml:id="edition-29-10-tc-3">καταβῆναί</span> με εἰς διαφθορὰν. <span type="text-critical" xml:id="edition-29-10-tc-4">οὔτε</span> μία τίς ὠφέλεια. οὔτε
                               ἐμοὶ οὔτε ἑτέροις· ἐγώ τε γὰρ ἀπεστερούμην τῆς παρὰ σοῦ ζωῆς· ἄλλοι
-                              τε <span type="text-critical" xml:id="edition-29-10-tc-5">οὐδαμῶς</span> <span type="text-critical" xml:id="edition-29-10-tc-6">ἐτύγχανον</span> τῆς παρ' ἐμοῦ σωτηρίας· ἐν δὲ τῷ εἰσακοῦσαι τῆς φωνῆς
+                              τε <span type="text-critical" xml:id="edition-29-10-tc-5">οὐδαμῶς</span> <span type="text-critical" xml:id="edition-29-10-tc-6">ἐτύγχανον</span> τῆς παρ' ἐμοῦ σωτηρίας· ἐν δὲ τῷ <span type="text-critical" xml:id="edition-29-10-tc-6a">εἰσακοῦσαι</span> τῆς φωνῆς
                               μου· καὶ μεταβαλεῖν τὸν κοπετὸν εἰς χαρὰν· καὶ περιζῶσαί με εὐφροσύνην.
-                              οὐχ ἡ τυχοῦσά μοι γενήσεται ὠφέλεια· ἀπολαβὼν γὰρ τὴν προτέραν
-                              ἐμαυτοῦ δόξαν. διὰ ταύτης σοι ψαλῶ· οὐ μετά τινος φαύλης <span type="text-critical" xml:id="edition-29-10-tc-7">συνειδήσεως</span>·
+                              οὐχ ἡ τυχοῦσά μοι <span type="text-critical" xml:id="edition-29-10-tc-6b">γενήσεται</span> ὠφέλεια· ἀπολαβὼν γὰρ τὴν προτέραν
+                              ἐμαυτοῦ δόξαν. διὰ ταύτης σοι <span type="text-critical" xml:id="edition-29-10-tc-6c">ψαλῶ</span>· οὐ μετά τινος φαύλης <span type="text-critical" xml:id="edition-29-10-tc-7">συνειδήσεως</span>·
                               τοῦτο γὰρ δηλοῖ τὸ 'οὐ μὴ <span type="text-critical" xml:id="edition-29-10-tc-8">κατανυγῶ</span>'<anchor  type="biblical-quotation"
                                  subtype="indirect-quotation" n="Ps 29,13a"/>: –</p>
                            <div type="links">
@@ -4885,16 +4909,28 @@
                                     <ref target="#vat-gr-754:vat-gr-754-fr-29-22"/>
                                     <ref target="#coislin-10:coislin-10-fr-29-18"/>
                                     <ref target="#par-gr-166:par-gr-166-fr-29-10"/>
+                                    <ref target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-29-10"/>
                                  </listRef>
                               </p>
                            </div>
                         </div>
                         <div type="textcritic">
                            <app type="fragment">
-                              <rdg wit="#V1 #C #P1">txt</rdg>
+                              <rdg wit="#V1 #C #P1 #B1">txt</rdg>
                               <wit>Vat. gr. 754</wit>
                               <wit>Coislin 10</wit>
                               <wit>Par. gr. 166</wit>
+                              <wit>Auct. D.4.1</wit>
+                           </app>
+                           <app type="text" corresp="#edition-29-10-tc-0">
+                              <lem><foreign xml:lang="grc">ἀναχθῆναι</foreign></lem>
+                              <rdg wit="#B1"><foreign xml:lang="grc">ἀνεπεχθῆναι</foreign></rdg>
+                              <wit>Auct. D.4.1</wit>
+                           </app>
+                           <app type="text" corresp="#edition-29-10-tc-0a">
+                              <lem><foreign xml:lang="grc">ἐπειδὴ οὐκ</foreign></lem>
+                              <rdg wit="#B1"><foreign xml:lang="grc">ἐπεὶ</foreign></rdg>
+                              <wit>Auct. D.4.1</wit>
                            </app>
                            <app type="text" corresp="#edition-29-10-tc-1">
                               <lem><foreign xml:lang="grc">ἐξομολογεῖται</foreign></lem>
@@ -4912,7 +4948,9 @@
                            </app>
                            <app type="text" corresp="#edition-29-10-tc-4">
                               <lem><foreign xml:lang="grc">οὔτε</foreign></lem>
-                              <rdg wit="#P1"><foreign xml:lang="grc">οὐδὲ</foreign></rdg>
+                              <rdg wit="#P1 #B1"><foreign xml:lang="grc">οὐδὲ</foreign></rdg>
+                              <wit>Par. gr. 166</wit>
+                              <wit>Auct. D.4.1</wit>
                            </app>
                            <app type="text" corresp="#edition-29-10-tc-5">
                               <lem><foreign xml:lang="grc">οὐδαμῶς</foreign></lem>
@@ -4922,6 +4960,21 @@
                               <lem><foreign xml:lang="grc">ἐτύγχανον</foreign></lem>
                               <rdg wit="#P1"><foreign xml:lang="grc">ἐτύγχαννον</foreign></rdg>
                            </app>
+                           <app type="text" corresp="#edition-29-10-tc-6a">
+                              <lem><foreign xml:lang="grc">εἰσακοῦσαι</foreign></lem>
+                              <rdg wit="#B1"><foreign xml:lang="grc">σε</foreign> add.</rdg>
+                              <wit>Auct. D.4.1</wit>
+                           </app>
+                           <app type="text" corresp="#edition-29-10-tc-6b">
+                              <lem><foreign xml:lang="grc">γενήσεται</foreign></lem>
+                              <rdg wit="#B1"><foreign xml:lang="grc">γίνεται</foreign></rdg>
+                              <wit>Auct. D.4.1</wit>
+                           </app>
+                           <app type="text" corresp="#edition-29-10-tc-6c">
+                              <lem><foreign xml:lang="grc">ψαλῶ</foreign></lem>
+                              <rdg wit="#B1"><foreign xml:lang="grc">ψάλλω</foreign></rdg>
+                              <wit>Auct. D.4.1</wit>
+                           </app>
                            <app type="text" corresp="#edition-29-10-tc-7">
                               <lem><foreign xml:lang="grc">συνειδήσεως</foreign></lem>
                               <rdg wit="#P1"><foreign xml:lang="grc">συνιδήσεως</foreign></rdg>
@@ -4930,6 +4983,7 @@
                               <lem><foreign xml:lang="grc">κατανυγῶ</foreign></lem>
                               <rdg wit="#P1"><foreign xml:lang="grc">κατανοιγῶ</foreign></rdg>
                            </app>
+                           <note type="textual-commentary">B1: Nach Vers 13b mit der Angabe, sich auf 10 Verse zu beziehen, also ab Vers 10a.</note>
                         </div>
                         <div type="psalmtext">
                         <quote xml:id="edition-26-30-ps-29-10c" type="psalmtext" n="10c">μὴ ἐξομολογήσεταί σοι χοῦς</quote>
