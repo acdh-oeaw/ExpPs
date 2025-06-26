@@ -4643,7 +4643,7 @@
                         <quote xml:id="edition-26-30-ps-29-4b" type="psalmtext" n="4b">ἔσωσάς με ἀπὸ τῶν καταβαινόντων εἰς λάκκον.</quote>
                      </div>
                      <div type="commentary">
-                        <p xml:id="edition-26-30-29-4" n="542">'Λάκκον' τὸν ἅδην φησίν: –</p>
+                        <p xml:id="edition-26-30-29-4" n="542">'Λάκκον' τὸν ἅδην <span type="text-critical" xml:id="edition-29-4-tc-1">φησίν</span>: –</p>
                         <div type="links">
                            <p>
                               <listRef>
@@ -4652,18 +4652,25 @@
                                  <ref target="#par-gr-166:par-gr-166-fr-29-3"/>
                                  <ref target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-29-4"/>
                                  <ref target="#coislin-187:coislin-187-fr-29-3"/>
+                                 <ref target="#oxon-s-trin-78:oxon-s-trin-78-fr-29-6"/>
                               </listRef>
                            </p>
                         </div>
                      </div>
                      <div type="textcritic">
                         <app type="fragment">
-                           <rdg wit="#V1 #C #P1 #B1 #P2">txt</rdg>
+                           <rdg wit="#V1 #C #P1 #B1 #P2 #B2">txt</rdg>
                            <wit>Vat. gr. 754</wit>
                            <wit>Coislin 10</wit>
                            <wit>Par. gr. 166</wit>
                            <wit>Auct. D.4.1</wit>
                            <wit>Coislin 187</wit>
+                           <wit>S. Trin. 78</wit>
+                        </app>
+                        <app type="text" corresp="#edition-29-4-tc-1">
+                           <lem><foreign xml:lang="grc">φησίν</foreign></lem>
+                           <rdg wit="#B2"><foreign xml:lang="grc">λέγει</foreign></rdg>
+                           <wit>S. Trin. 78</wit>
                         </app>
                      </div>
                   </div>   
@@ -4691,19 +4698,21 @@
                                  <ref target="#par-gr-166:par-gr-166-fr-29-4"/>
                                  <ref target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-29-5"/>
                                  <ref target="#coislin-187:coislin-187-fr-29-4"/>
+                                 <ref target="#oxon-s-trin-78:oxon-s-trin-78-fr-29-8"/>
                               </listRef>
                            </p>
                         </div>
                      </div>
                      <div type="textcritic">
                         <app type="fragment">
-                           <rdg wit="#V1 #C #G #P1 #B1 #P2">txt</rdg>
+                           <rdg wit="#V1 #C #G #P1 #B1 #P2 #B2">txt</rdg>
                            <wit>Vat. gr. 754</wit>
                            <wit>Coislin 10</wit>
                            <wit>Urbani 3</wit>
                            <wit>Par. gr. 166</wit>
                            <wit>Auct. D.4.1</wit>
                            <wit>Coislin 187</wit>
+                           <wit>S. Trin. 78</wit>
                         </app>
                         <app type="text" corresp="#edition-29-5-tc-0">
                            <lem><foreign xml:lang="grc">προσήκει</foreign></lem>
@@ -4716,8 +4725,9 @@
                         </app>
                         <app type="text" corresp="#edition-29-5-tc-1a">
                            <lem><foreign xml:lang="grc">τοὺς ὕμνους</foreign></lem>
-                           <rdg wit="#P2"><foreign xml:lang="grc">τὀν ὕμνον</foreign></rdg>
+                           <rdg wit="#P2 #B2"><foreign xml:lang="grc">τὀν ὕμνον</foreign></rdg>
                            <wit>Coislin 187</wit>
+                           <wit>S. Trin. 78</wit>
                         </app>
                         <app type="text" corresp="#edition-29-5-tc-2">
                            <lem><foreign xml:lang="grc">μεμνημένους</foreign></lem>
@@ -4726,11 +4736,12 @@
                         </app>
                         <app type="text" corresp="#edition-29-5-tc-3">
                            <lem><foreign xml:lang="grc">τοῦ</foreign></lem>
-                           <rdg wit="#B1 #P2"><foreign xml:lang="grc">ἁγίου</foreign> add.</rdg>
+                           <rdg wit="#B1 #P2 #B2"><foreign xml:lang="grc">ἁγίου</foreign> add.</rdg>
                            <wit>Auct. D.4.1</wit>
                            <wit>Coislin 187</wit>
+                           <wit>S. Trin. 78</wit>
                         </app>
-                        <note type="textual-commentary">V1: exp. 543xxx wird zweimal identisch mit derselben Verweiszahl geboten. Cf. <quote type="patristic" source="Eusebius, fr. 4 in Ps 29,5a–6b (ed. Villani)" corresp="#person-17"/></note>
+                        <note type="textual-commentary">V1: exp. 543xxx wird zweimal identisch mit derselben Verweiszahl geboten. Cf. <quote type="patristic" source="Eusebius, fr. 4 in Ps 29,5a–6b (ed. Villani)" corresp="#person-17"/>. B2: Mit Vers 7a–b verknüpft.</note>
                      </div>
                   </div>   
                   <div type="translation" xml:lang="de">
@@ -4867,24 +4878,27 @@
                                  <ref target="#par-gr-166:par-gr-166-fr-29-7"/>
                                  <ref target="#bodl-auct-d-4-1:bodl-auct-d-4-1-fr-29-10"/>
                                  <ref target="#coislin-187:coislin-187-fr-29-8"/>
+                                 <ref target="#oxon-s-trin-78:oxon-s-trin-78-fr-29-9"/>
                               </listRef>
                            </p>
                         </div>
                      </div>
                      <div type="textcritic">
                         <app type="fragment">
-                           <rdg wit="#V1 #C #G #P1 #B1 #P2">txt</rdg>
+                           <rdg wit="#V1 #C #G #P1 #B1 #P2 #B2">txt</rdg>
                            <wit>Vat. gr. 754</wit>
                            <wit>Coislin 10</wit>
                            <wit>Urbani 3</wit>
                            <wit>Par. gr. 166</wit>
                            <wit>Auct. D.4.1</wit>
                            <wit>Coislin 187</wit>
+                           <wit>S. Trin. 78</wit>
                         </app>
                         <app type="text" corresp="#edition-29-7-tc-Z">
                            <lem><foreign xml:lang="grc">λέγει τῆς</foreign></lem>
                            <rdg wit="#P2"><foreign xml:lang="grc">τῆς πεποιθήσεως λέγει· μᾶλλον δὲ</foreign></rdg>
                            <wit>Coislin 187</wit>
+                           <rdg wit="#B2"><foreign xml:lang="grc">πίστεως· μᾶλλον δὲ</foreign> add.</rdg>
                         </app>
                         <app type="text" corresp="#edition-29-7-tc-0">
                            <lem><foreign xml:lang="grc">λέγει</foreign></lem>
@@ -4900,8 +4914,9 @@
                            <lem><foreign xml:lang="grc">με</foreign></lem>
                            <rdg wit="#G"><foreign xml:lang="grc">μὲν</foreign></rdg>
                            <wit>Urbani 3</wit>
-                           <rdg wit="#B1"><foreign xml:lang="grc">μοι</foreign></rdg>
+                           <rdg wit="#B1 #B2"><foreign xml:lang="grc">μοι</foreign></rdg>
                            <wit>Auct. D.4.1</wit>
+                           <wit>S. Trin. 78</wit>
                            <rdg wit="#P2"><foreign xml:lang="grc">μου</foreign></rdg>
                            <wit>Coislin 187</wit>
                         </app>
@@ -4911,8 +4926,9 @@
                            <wit>Urbani 3</wit>
                            <rdg wit="#P1"><foreign xml:lang="grc">προωθήσαντος</foreign></rdg>
                            <wit>Par. gr. 166</wit>
-                           <rdg wit="#P2"><foreign xml:lang="grc">προσοχθίσαντος</foreign></rdg>
+                           <rdg wit="#P2 #B2"><foreign xml:lang="grc">προσοχθίσαντος</foreign></rdg>
                            <wit>Coislin 187</wit>
+                           <wit>S. Trin. 78</wit>
                         </app>
                         <app type="text" corresp="#edition-29-7-tc-3">
                            <lem><foreign xml:lang="grc">ἰσχύος σου</foreign></lem>
@@ -4922,8 +4938,9 @@
                         </app>
                         <app type="text" corresp="#edition-29-7-tc-3a">
                            <lem><foreign xml:lang="grc">δυνάμεθα</foreign></lem>
-                           <rdg wit="#P2"><foreign xml:lang="grc">δύναμαι</foreign></rdg>
+                           <rdg wit="#P2 #B2"><foreign xml:lang="grc">δύναμαι</foreign></rdg>
                            <wit>Coislin 187</wit>
+                           <wit>S. Trin. 78</wit>
                         </app>
                         <app type="text" corresp="#edition-29-7-tc-4">
                            <lem><foreign xml:lang="grc">μου</foreign></lem>
@@ -4932,8 +4949,11 @@
                         </app>
                         <app type="text" corresp="#edition-29-7-tc-5">
                            <lem><foreign xml:lang="grc">τῆς ψυχῆς διαλάμπειν</foreign></lem>
-                           <rdg wit="#P2"><foreign xml:lang="grc">διαλάμπειν τῆς ψυχῆς</foreign> tr.</rdg>
+                           <rdg wit="#P2 #B2"><foreign xml:lang="grc">διαλάμπειν τῆς ψυχῆς</foreign> tr.</rdg>
+                           <wit>Coislin 187</wit>
+                           <wit>S. Trin. 78</wit>
                         </app>
+                        
                         <note type="textual-commentary">G und P1: Mit dem nachfolgenden Fragment (<quote type="patristic"  source="Theodoretus, comm. in Ps 29,7 (PG 80,1073 B10–15)"
                            corresp="#person-16"/>) zu einem Fragment verbunden. B1: Nach Vers 9a–b mit dem Hinweis, dass die expositio sich auf vier Verse bezieht, was aber die Verse 7a–8b meinen muss. Montfaucon: exp. xxx546 ist P1 entsprechend mit dem Theodoret-Fragment verbunden, zusammen mit dem Hinweis, dass es bei Daniel Barberus Theodoret zugeschrieben wird.</note>
                      </div>
