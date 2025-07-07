@@ -3707,7 +3707,8 @@
                      </app>
                      <note type="textual-commentary">O (Typus IV) L2 (Typus XVI): exp. 34 liegt
                         nicht im Hauptkommentar, sondern zwischen den Psalmzeilen. M (Typus IV) hat
-                        sie ausgelassen.</note>
+                        sie ausgelassen. A3 (Typus XVI): exp. 34 liegt nicht im Hauptkommentar,
+                        sondern am unteren Rand.</note>
                   </div>
                   <!-- cave: Die folgende Fassung ist mit Evagrius verbunden-->
                   <div type="commentary" rend="hide">
@@ -3753,10 +3754,10 @@
                         ἐν τῷ θεῷ αὐτοῦ.</quote>
                   </div>
                   <!-- exp 35 -->
-                  <div type="commentary">
-                     <p xml:id="edition-3-3-1" n="35">Ὁ θεὸς φησὶν αὐτοῦ, οὐ σώσει αὐτόν· <span
-                           type="text-critical" xml:id="edition-3-3-1-tc-1">εἰς γὰρ μόνην
-                           ἁμαρτίαν</span> ἔβλεπον ἣν <span type="text-critical"
+                  <div type="commentary" rend="parallel">
+                     <p xml:id="edition-3-3-1" n="35" next="#edition-3-3-1-1">Ὁ θεὸς φησὶν αὐτοῦ, οὐ
+                        σώσει αὐτόν· <span type="text-critical" xml:id="edition-3-3-1-tc-1">εἰς γὰρ
+                           μόνην ἁμαρτίαν</span> ἔβλεπον ἣν <span type="text-critical"
                            xml:id="edition-3-3-1-tc-2">πεποιήκει</span>, ἀγνοοῦντες αὐτοῦ τὴν
                         μετάνοιαν: –</p>
                      <div type="links">
@@ -3776,8 +3777,7 @@
                   <!-- αὐτόν· V1 : αὐτὸν· V5 -->
                   <!-- ἔβλεπων M : ἔβλεπον O = V1 -->
                   <!-- ἀγνωοῦντες M : ἀγνοοῦντες O = V1 -->
-                  <!-- V5 (f. 28v, l. 12 von unten): Kommentar: fons ignotus gleich beginnend wie diese exp. -->
-                  <div type="textcritic">
+                  <div type="textcritic" rend="hide">
                      <app type="fragment">
                         <rdg wit="#V1 #M #O #G #P1 #A1 #A2 #V4 #V5 #P7">txt</rdg>
                         <wit>Vat. gr. 754</wit>
@@ -3803,6 +3803,9 @@
                         <wit>Vat. gr. 1747</wit>
                         <wit>Vat. gr. 1422</wit>
                         <wit>Paris. gr. 146</wit>
+                        <rdg wit="#A1"><foreign xml:lang="grc">εἰς γὰρ τὴν
+                           [ἁμα]ρτίαν</foreign></rdg>
+                        <wit>Ambr. M 47 sup.</wit>
                      </app>
                      <app type="text" corresp="#edition-3-3-1-tc-2">
                         <lem><foreign xml:lang="grc">πεποιήκει</foreign></lem>
@@ -3818,6 +3821,20 @@
                      <note type="textual-commentary">P1 (Typus XIX): exp. 35 mit Theodor von
                         Mopsuestia (fr. in Ps 3,2b [17 Devreesse sub Ps 3,3]) verbunden.</note>
                   </div>
+                  <div type="commentary" rend="hide">
+                     <p xml:id="edition-3-3-1-1" n="35">Ὁ θεὸς φησὶν, οὐ σώσει αὐτόν· τοῦτο γὰρ
+                        ποιοῦσιν, οἱ τοῖς κακοῖς ἐπιχαίροντες τοῦ δικαίου: –</p>
+                     <div type="links">
+                        <p><listRef>
+                              <ref target="#vat-gr-1422:vat-gr-1422-fr-3-4"/>
+                           </listRef></p>
+                     </div>
+                  </div>
+                  <div type="textcritic" rend="hide">
+                     <app type="fragment">
+                        <rdg wit="#V5 #P7">txt</rdg>
+                     </app>
+                  </div>
                   <div type="psalmtext">
                      <quote xml:id="edition-ps-3-3c" type="psalmtext" n="3c">διάψαλμα.</quote>
                   </div>
@@ -3830,6 +3847,8 @@
                   <p corresp="#edition-3-3-1" n="33">Sein Gott, sagt er, wird ihn nicht erretten.
                      Denn sie richteten ihr Augenmerk stets allein auf die Sünde, die er begangen
                      hatte, und kannten seine Umkehr nicht.</p>
+                  <p corresp="#edition-3-3-1-1" n="33">Sein Gott, sagt er, wird ihn nicht erretten.
+                     Das tun nämlich diejenigen, die sich über die Übel der Gerechten freuen.</p>
                   <quote corresp="#edition-ps-3-3c" type="psalmtext" n="3c">Zwischenspiel.</quote>
                </div>
             </div>
@@ -3885,10 +3904,10 @@
                         <wit>Vat. gr. 1422</wit>
                         <wit>Paris. gr. 146</wit>
                      </app>
-                     <!-- <app type="text">
+                     <app type="text">
                         <lem><foreign xml:lang="grc">Διδάσκει</foreign></lem>
                         <rdg wit="#A1"><foreign xml:lang="grc">... διδάσκει δὲ</foreign></rdg>
-                     </app> -->
+                     </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">θεῷ μόνῳ</foreign></lem>
                         <rdg wit="#G"><foreign xml:lang="grc">μόνῳ θεῷ</foreign></rdg>
@@ -3903,11 +3922,16 @@
                         <rdg wit="#P7corr"><foreign xml:lang="grc">προσιέναι</foreign></rdg>
                         <wit>Paris. gr. 146</wit>
                      </app>
+                     <app type="text">
+                        <lem><foreign xml:lang="grc">δεῖ</foreign></lem>
+                        <rdg wit="#B1"><foreign xml:lang="grc">δή</foreign></rdg>
+                        <wit>Auct. D.4.1</wit>
+                     </app>
                      <note type="textual-commentary"><p>exp. 36 mit Ps 3,5a verbunden (V1 P1 A1)
                            bzw. mit Ps 3,4a (B1), Ps 3,4 (V5 P7). A1: Eine verkürzende Paraphrase
                            des Theodoret (comm. in Ps 3,5 [cf. PG 80,885 C4–7]) ist verbunden mit
-                           exp.
-                           36.<!-- unentschieden: Kommentar: aus Gründen der Vorsicht anführen: Φωνὴν τ[ὴ]ν τῆς ψυχῆς λέγει πρὸς θεὸν βοὴν ὡς Μωσῇ θεὸ[ς], τί βοᾷς πρό[ς] με· [Ex 14,15] / διδάσκει δὲ ὁ λόγος [ὡ]ς ἐν ταῖς
+                           exp. 36. B1 (Typus I): exp. 36 irrtümluch Hesychius
+                           zugeschrieben.<!-- unentschieden: Kommentar: aus Gründen der Vorsicht anführen: Φωνὴν τ[ὴ]ν τῆς ψυχῆς λέγει πρὸς θεὸν βοὴν ὡς Μωσῇ θεὸ[ς], τί βοᾷς πρό[ς] με· [Ex 14,15] / διδάσκει δὲ ὁ λόγος [ὡ]ς ἐν ταῖς
                            περιστάσ[ε]σιν οὐκ ἄλλ[ῳ ἢ] θεῷ μόν[ῳ] προϊέναι δεῖ: – -->
                         </p></note>
                   </div>
@@ -4216,10 +4240,10 @@
                         <rdg wit="#P1"><foreign xml:lang="grc">πατάξης</foreign></rdg>
                      </app>
                      <app type="text" corresp="#edition-3-8-1-tc-3">
-                        <lem><foreign xml:lang="grc">οὐ γὰρ ἠδικημένοι ἐπετίθεντο</foreign></lem>
-                        <rdg wit="#L2 #V4">om.</rdg>
-                        <wit>Plut. 6.3</wit>
+                        <lem><foreign xml:lang="grc">οὐ – ἐπετίθεντο</foreign></lem>
+                        <rdg wit="#V4 #L2">om.</rdg>
                         <wit>Vat. gr. 1747</wit>
+                        <wit>Plut. 6.3</wit>
                      </app>
                      <app type="text" corresp="#edition-3-8-1-tc-4">
                         <lem><foreign xml:lang="grc">ἠδικημένοι</foreign></lem>
@@ -4239,8 +4263,18 @@
                            in der inneren Spalte. Die Glosse <foreign xml:lang="grc"
                               >συνεδρευόντων</foreign> zu Ps 3,7b (<foreign xml:lang="grc"
                               >συνεπιτιθεμένων</foreign>) ist in O mit dieser Expositio ohne
-                           eindeutige Trennung verbunden. O hat sie L2 (Typus XVI): exp. 40 liegt
-                           über der Kolumne des Psalmtextes.</p></note>
+                           eindeutige Trennung verbunden. A1: <foreign xml:lang="grc">Ἀντὶ τοῦ
+                              πατάξεις</foreign> wurde vom Schreiber (A) am äußeren Rand neben Ps
+                           3,8a–b hinzugefügt; <foreign xml:lang="grc">οὐ – ἐπετίθεντο</foreign>
+                           findet sich nach diesem Lemma im Haupttext. exp. 40 ist V4 (Typus XIV):
+                           exp. 38 und 40 folgen aufeinander, jedoch nicht im Hauptkommentar,
+                           sondern unterhalb der Kolumne mit dem Bibeltext. Im Gegensatz zu den
+                           meisten umliegenden Fragmenten sind sie nicht durch Zahlen, sondern durch
+                           Zeichen mit dem Bibeltext verbunden. Außerdem sind sie, in Abhebung von
+                           den anderen Fragmenten auf der Seite, mit roter Tinte geschrieben worden.
+                           Die Schwesterkatene A2 hat exp. 40 nicht. L2 (Typus XVI): exp. 40 liegt
+                           nicht im Hauptkommentar, sondern über der Kolumne des
+                        Psalmtextes.</p></note>
                   </div>
                   <div type="psalmtext">
                      <quote xml:id="edition-ps-3-8c" type="psalmtext" n="8c">ὀδόντας ἁμαρτωλῶν
@@ -4334,7 +4368,7 @@
                         <!-- Textkritik: εὔχομαι δὲ τοῦτο καὶ M = V1 -->
                         <wit>Vat. Ottob. gr. 398</wit>
                         <rdg wit="#P6 #Z"><foreign xml:lang="grc">εὔχομαι δὲ καὶ τοῦτο εἰς πάντα
-                              ἐξενηνέχθαι τὸν λαόν</foreign></rdg>
+                           ἐξενεχθῆναι τὸν λαόν</foreign></rdg>
                         <wit>Paris. gr. 139</wit>
                         <wit>Venet. Marc. gr. Z. 17</wit>
                         <rdg wit="#N2"><foreign xml:lang="grc">τοῦτο δὲ καὶ εἰς πάντα τὸν λαὸν
@@ -4361,7 +4395,7 @@
                      </app>
                      <app type="text">
                         <lem><foreign xml:lang="grc">ἰστέον</foreign></lem>
-                        <rdg wit="#O #V5"><foreign>ἵστεον</foreign></rdg>
+                        <rdg wit="#O #V5"><foreign>ἴστεον</foreign></rdg>
                         <wit>Vat. Ottob. gr. 398</wit>
                         <wit>Vat. gr. 1422</wit>
                         <!-- ἰστέον M P7exp = V1 -->
@@ -4380,8 +4414,8 @@
                         <wit>Paris. gr. 146</wit>
                      </app>
                      <app type="text">
-                        <lem><foreign xml:lang="grc">ἁμαρτοῦσαν μὲν καὶ διὰ τοῦτο</foreign></lem>
-                        <rdg wit="#P6 #Z #N2"><foreign xml:lang="grc">ἁμαρτοῦσαν καὶ δι᾿ αὐτὸ
+                        <lem><foreign xml:lang="grc">διὰ τοῦτο</foreign></lem>
+                        <rdg wit="#P6 #Z #N2"><foreign xml:lang="grc">δι᾿ αὐτὸ
                               τοῦτο</foreign></rdg>
                         <wit>Paris. gr. 139</wit>
                         <wit>Venet. Marc. gr. Z. 17</wit>
@@ -4404,7 +4438,7 @@
                         <lem><foreign xml:lang="grc">τοῖς νοητοῖς</foreign></lem>
                         <rdg wit="#P1"><foreign xml:lang="grc">τοῖς ἀνοήτοις</foreign></rdg>
                         <wit>Paris. gr. 166-167</wit>
-                        <rdg wit="#P6"><foreign xml:lang="grc">ἐν τοῖς νοητοῖς </foreign></rdg>
+                        <rdg wit="#P6"><foreign xml:lang="grc">ἐν τοῖς νοητοῖς</foreign></rdg>
                         <wit>Paris. gr. 139</wit>
                         <!-- τοῖς νοητοῖς Z N2 = V1 -->
                      </app>
