@@ -5018,7 +5018,7 @@
                         <quote xml:id="edition-26-30-ps-29-7b" type="psalmtext" n="7b">Οὐ μὴ σαλευθῶ εἰς τὸν αἰῶνα.</quote>
                      </div>
                      <div type="commentary">
-                        <p xml:id="edition-26-30-29-7" n="546">Τὸ αἴτιον <span type="text-critical" xml:id="edition-29-7-tc-Z"><span type="text-critical" xml:id="edition-29-7-tc-0">λέγει</span> τῆς</span> πτώσεως· ἐπειδὴ μέγα φησὶν ἐν τῆ εὐημερία πεφρόνηκα.
+                        <p xml:id="edition-26-30-29-7" n="546">Τὸ αἴτιον <span type="text-critical" xml:id="edition-29-7-tc-Z"><span type="text-critical" xml:id="edition-29-7-tc-0">λέγει</span> τῆς</span> πτώσεως· ἐπειδὴ <span type="text-critical" xml:id="edition-29-7-tc-0x">μέγα φησὶν</span> ἐν τῆ εὐημερία <span type="text-critical" xml:id="edition-29-7-tc-0x1">πεφρόνηκα</span>.
                            τούτου χάριν τετάραγμαι· <span type="text-critical" xml:id="edition-29-7-tc-0y">γέγονεν δέ μοι τοῦτο <span type="text-critical" xml:id="edition-29-7-tc-0z">οὐ <span type="text-critical" xml:id="edition-29-7-tc-0a">σοῦ</span> <span type="text-critical" xml:id="edition-29-7-tc-1">με</span></span> <span type="text-critical" xml:id="edition-29-7-tc-2">προσωθήσαντος</span>.
                            ἀλλ’ ἀποστρέψαντος μόνον τὸ πρόσωπον·
                            ἐπειδὴ τοίνυν ἄνευ τῆς <span type="text-critical" xml:id="edition-29-7-tc-3">ἰσχύος σου</span>
@@ -5038,13 +5038,14 @@
                                  <ref target="#coislin-12:coislin-12-fr-29-15"/>
                                  <ref target="#ambr-m-47-sup:ambr-m-47-sup-fr-29-9"/>
                                  <ref target="#par-gr-139:par-gr-139-fr-29-32"/>
+                                 <ref target="#mosq-syn-194:mosq-syn-194-fr-29-21"/>
                               </listRef>
                            </p>
                         </div>
                      </div>
                      <div type="textcritic">
                         <app type="fragment">
-                           <rdg wit="#V1 #C #G #P1 #B1 #P2 #B2 #L1 #P5 #A1 #P6 #Z #N2">txt</rdg>
+                           <rdg wit="#V1 #C #G #P1 #B1 #P2 #B2 #L1 #P5 #A1 #P6 #Z #N2 #M">txt</rdg>
                            <wit>Vat. gr. 754</wit>
                            <wit>Coislin 10</wit>
                            <wit>Urbani 3</wit>
@@ -5058,6 +5059,7 @@
                            <wit>Par. gr. 139</wit>
                            <wit>Marc. gr. Z. 17</wit>
                            <wit>Athen B.N. 45</wit>
+                           <wit>Sinod. gr. 197</wit>
                            </app>
                         <app type="text" corresp="#edition-29-7-tc-Z">
                            <lem><foreign xml:lang="grc">λέγει τῆς</foreign></lem>
@@ -5072,14 +5074,26 @@
                            <rdg wit="#B1">om.</rdg>
                            <wit>Auct. D.4.1</wit>
                         </app>
+                        <app type="text" corresp="#edition-29-7-tc-0x">
+                           <lem><foreign xml:lang="grc">μέγα φησὶν</foreign></lem>
+                           <rdg wit="#M"><foreign xml:lang="grc">φη(σιν) μέγα</foreign></rdg>
+                           <wit>Sinod. gr. 194</wit>
+                        </app>
+                        <app type="text" corresp="#edition-29-7-tc-0x1">
+                           <lem><foreign xml:lang="grc">πεφρόνηκα</foreign></lem>
+                           <rdg wit="#M"><foreign xml:lang="grc">πετίκα</foreign></rdg>
+                        </app>
                         <app type="text" corresp="#edition-29-7-tc-0y">
                            <lem><foreign xml:lang="grc">γέγονεν ... παρασκεύασον</foreign></lem>
                            <rdg wit="#A1">om.</rdg>
+                           <wit>Ambr. M 47 sup.</wit>
                         </app>
                         <app type="text" corresp="#edition-29-7-tc-0z">
                            <lem><foreign xml:lang="grc"></foreign>οὐ σοῦ με</lem>
                            <rdg wit="#L1"><foreign xml:lang="grc">ὡς εμοῦ</foreign></rdg>
                            <wit>Plut. 5.30</wit>
+                           <rdg wit="#M"><foreign xml:lang="grc">ὡς οὐ με</foreign></rdg>
+                           <wit>Sinodd. gr. 194</wit>
                         </app>
                         <app type="text" corresp="#edition-29-7-tc-0a">
                            <lem><foreign xml:lang="grc">σοῦ</foreign></lem>
