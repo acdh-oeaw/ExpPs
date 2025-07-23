@@ -11,15 +11,28 @@ version="2.0">
 </xsl:character-map>
 
 <xsl:template match="/">
-    \documentclass[12pt,a4paper]{scrbook}
+    \documentclass[12pt,a4paper]{memoir}
     \usepackage{polyglossia}
     \usepackage{fontspec}
     \usepackage{libertine}
 \usepackage{reledmac}
 \usepackage{reledpar}
-\usepackage{scrlayer-scrpage}
-\cehead{Uta Heil, Sebastiano Panteghini}
-\cohead{(Ps.)-Athanasius, \textit{Expositiones in Psalmos}}
+% Layout start
+\settrimmedsize{297mm}{210mm}{*}
+\setlength{\trimtop}{0pt}
+\setlength{\trimedge}{\stockwidth}
+\addtolength{\trimedge}{-\paperwidth}
+\settypeblocksize{22.5cm}{14.5cm}{*}
+\setulmargins{3.5cm}{*}{*}
+\setlrmargins{*}{*}{1}
+\setmarginnotes{10pt}{11pt}{\onelineskip}
+\setheadfoot{\onelineskip}{2\onelineskip}
+\setheaderspaces{*}{\onelineskip}{*}
+\checkandfixthelayout
+% Layout end
+%\usepackage{scrlayer-scrpage}
+%\cehead{Uta Heil, Sebastiano Panteghini}
+%\cohead{(Ps.)-Athanasius, \textit{Expositiones in Psalmos}}
 \setmainlanguage[variant=austrian, spelling=new]{german}
 \setotherlanguage[variant=ancient]{greek}
 \newfontfamily\greekfont[ExternalLocation="./"]{SBL_BLit.ttf}
@@ -34,11 +47,11 @@ version="2.0">
 </xsl:template>
 
 <xsl:template match="tei:teiHeader">
-\begin{titlepage}
+%\begin{titlepage}
 \author{\textsc{<xsl:value-of select="tei:fileDesc/tei:titleStmt/tei:author/text()"/>}}
 \title{\textbf{<xsl:value-of select="tei:fileDesc/tei:titleStmt/tei:title/text()"/>}}
 \date{Wien, 15.05.2025}
-\end{titlepage}
+%\end{titlepage}
 </xsl:template>
 
 <xsl:template match="tei:text">
