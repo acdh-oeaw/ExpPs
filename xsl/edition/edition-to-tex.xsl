@@ -89,7 +89,7 @@ version="2.0">
 </xsl:template>
     
 <xsl:template match="tei:div[@type = 'textcritic']">
-    <xsl:apply-templates select="child::node()"/>
+    <xsl:apply-templates select="child::node()[not(self::comment())]"/>
 </xsl:template>
 
 <xsl:template match="tei:quote[(@type = 'psalmtext') and ancestor::tei:div[@xml:lang = 'grc']]" xml:space="default">
@@ -143,7 +143,7 @@ version="2.0">
 \begin{Rightside}\beginnumbering\numberlinefalse\pstart{
 \foreignlanguage{german}{
 <xsl:value-of select="text()"/>
-}}\pend\endnumbering\end{Rightside}\end{pairs}\Columns
+}}\pend\endnumbering\end{Rightside}\end{pairs}\Columns\par\vspace{3mm}
 </xsl:template>
 
 <xsl:template match="tei:app[@type = 'fragment']" xml:space="default">
@@ -151,7 +151,7 @@ version="2.0">
 \textit{<xsl:value-of select="tei:rdg/text()"/>}
 <xsl:text> </xsl:text>
     <xsl:for-each select="tokenize(tei:rdg/@wit,' ')">
-            <xsl:analyze-string select="substring-after(.,'#')" regex="(V1|C|P1|G|O|M|B1|P2|B2|N1|P3|A1|P4|P5|P6|P7|P8|L1|Z|V2|V3|V4|V5|A2|A3|N2|L2)(.*)">
+            <xsl:analyze-string select="substring-after(.,'#')" regex="(V1|C|P1|G|O|M|B1|P2|B2|B3|N1|P3|A1|P4|P5|P6|P7|P8|L1|Z|V2|V3|V4|V5|A2|A3|N2|L2)(.*)">
                 <xsl:matching-substring>
                     <xsl:value-of select="regex-group(1)"/>
                     <xsl:if test="regex-group(2) != ''">
@@ -172,10 +172,10 @@ version="2.0">
     </xsl:if>
 <xsl:apply-templates select="tei:lem"/><xsl:text>\hspace{-0.25mm}] </xsl:text>
 <xsl:for-each select="tei:rdg">
-    <xsl:apply-templates select="tei:foreign | text()"/>
+    <xsl:apply-templates select="tei:foreign | tei:hi | text()"/>
     <xsl:text> </xsl:text>
     <xsl:for-each select="tokenize(./@wit,' ')">
-            <xsl:analyze-string select="substring-after(.,'#')" regex="(V1|C|P1|G|O|M|B1|P2|B2|N1|P3|A1|P4|P5|P6|P7|P8|L1|Z|V2|V3|V4|V5|A2|A3|N2|L2)(.*)">
+            <xsl:analyze-string select="substring-after(.,'#')" regex="(V1|C|P1|G|O|M|B1|P2|B2|B3|N1|P3|A1|P4|P5|P6|P7|P8|L1|Z|V2|V3|V4|V5|A2|A3|N2|L2)(.*)">
                 <xsl:matching-substring>
                     <xsl:value-of select="regex-group(1)"/>
                     <xsl:if test="regex-group(2) != ''">
@@ -193,13 +193,13 @@ version="2.0">
     
 <xsl:template match="tei:note[@type = 'textual-commentary']">
     <xsl:text>\par\vspace{5mm}</xsl:text>
-    <xsl:apply-templates select="child::node()"/>
+    <xsl:apply-templates select="child::node()[not(self::comment())]"/>
     <xsl:text>\par\vspace{3mm}</xsl:text>
 </xsl:template>
     
 <xsl:template match="tei:p[parent::tei:note[@type = 'textual-commentary']]">
 \begin{german}{
-<xsl:apply-templates select="child::node()"/>
+<xsl:apply-templates select="child::node()[not(self::comment())]"/>
 }\end{german}
 </xsl:template>
 
@@ -214,9 +214,9 @@ version="2.0">
 <xsl:template match="tei:foreign[@xml:lang = 'grc']">\foreignlanguage{greek}{<xsl:value-of select="./text()"/>}</xsl:template>
 
     <xsl:template match="tei:anchor[@type = 'biblical-quotation']">
-        <xsl:text> (</xsl:text>
+        <xsl:text>\begin{german}{ (</xsl:text>
         <xsl:value-of select="@n"/>
-        <xsl:text>)</xsl:text>
+        <xsl:text>)\end{german}</xsl:text>
     </xsl:template>
     
     <xsl:template match="tei:hi[@rend = 'sup']">
@@ -231,7 +231,7 @@ version="2.0">
         <xsl:text>}</xsl:text>
     </xsl:template>
 
-<xsl:template match="text()">
+<xsl:template match="text()[not(parent::comment())]">
 <xsl:choose>
     <xsl:when test=". = '                  '"/>
     <xsl:when test=". = '
