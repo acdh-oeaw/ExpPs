@@ -5450,13 +5450,15 @@
                         <rdg wit="#A1"><foreign xml:lang="grc">ἐπ[ὶ ταῖς κοί]ταις</foreign></rdg>
                         <wit>Ambr. M 47 sup.</wit>
                      </app>
-                     <note type="textual-commentary"><p>M O (Typu IV): Eine verkürzende Paraphrase
+                     <note type="textual-commentary"><p>M O (Typus IV): Eine verkürzende Paraphrase
                            aus Eusebius (fr. 4 in Ps 4,5a [Villani]), exp. 49 sowie ein Zitat aus
                            Gregor von Nyssa (beat. 6 [146,22–147,4 Callahan] in Mt 5,21–22) folgen
-                           ohne eindeutige Trennung aufeinander. Syrische Version (Epitome): Eine
-                           inhaltliche Parallele ist vorhanden (<foreign xml:lang="grc">εἰ
-                              καὶ</foreign> – <foreign xml:lang="grc"
-                        >κατανυγῇ</foreign>).</p></note>
+                           ohne eindeutige Trennung aufeinander. Während Typus IV hier für Eusebius
+                           von der Tradition des Typus III abhängig ist (vgl. P6, f. 16v), stammen
+                           exp. 49 sowie die Stelle aus Gregor aus dem Typus XIX (vgl. V1, f. 41v).
+                           Syrische Version (Epitome): Eine inhaltliche Parallele ist vorhanden
+                              (<foreign xml:lang="grc">εἰ καὶ</foreign> – <foreign xml:lang="grc"
+                              >κατανυγῇ</foreign>).</p></note>
                   </div>
                   <div type="psalmtext">
                      <quote xml:id="edition-ps-4-5d" type="psalmtext" n="5d">διάψαλμα.</quote>
@@ -5914,7 +5916,6 @@
                         κληρονομούσης· ψαλμὸς τῷ Δαυΐδ.</quote>
                   </div>
                   <!-- exp 55 -->
-                  <!-- cave: G: diese exp. in zwei Frgmanten getrennt -->
                   <div type="commentary">
                      <p xml:id="edition-5-1-1" n="55" ana="hypothesis"><span type="text-critical"
                            xml:id="edition-5-1-1-tc-1">Ἡ κληρονομοῦσά ἐστιν ἡ θεοφιλὴς ψυχὴ, <span
@@ -5923,9 +5924,10 @@
                            type="text-critical" xml:id="edition-5-1-1-tc-3">ἃ ὀφθαλμὸς οὐκ
                            ἴδεν</span> καὶ <span type="text-critical" xml:id="edition-5-1-1-tc-4"
                            >οὖς</span> οὐκ ἤκουσεν <span type="text-critical"
-                           xml:id="edition-5-1-1-tc-5">καὶ ἐπὶ καρδίαν ἀνθρώπου οὐκ ἀνέβη</span>·
-                           <anchor type="biblical-quotation" subtype="direct-quotation" n="1Cor 2,9"
-                           /><span type="text-critical" xml:id="edition-5-1-1-tc-6">εὔχεται</span>
+                           xml:id="edition-5-1-1-tc-5">καὶ ἐπὶ καρδίαν ἀνθρώπου οὐκ
+                           ἀνέβη</span>·<anchor type="biblical-quotation" subtype="direct-quotation"
+                           n="1Cor 2,9"/>
+                        <span type="text-critical" xml:id="edition-5-1-1-tc-6">εὔχεται</span>
                         <span type="text-critical" xml:id="edition-5-1-1-tc-7">δὴ</span> καὶ τί ἂν
                         ποιουμένη εἰσακουσθῆναι· ἑαυτῆς <span type="text-critical"
                            xml:id="edition-5-1-1-tc-8">τό τε εὐθὲς</span> παριστᾶσα, καὶ <span
@@ -5938,7 +5940,8 @@
                            <listRef>
                               <ref target="#vat-gr-754:vat-gr-754-fr-5-2"/>
                               <ref target="#mosq-syn-194:mosq-syn-194-fr-5-1"/>
-                              <ref target="#franzon-3:franzon-3-ps-5-1-1"/>
+                              <ref target="#franzon-3:franzon-3-fr-5-2"/>
+                              <ref target="#franzon-3:franzon-3-fr-5-2-1"/>
                               <ref target="#ambr-m-47-sup:ambr-m-47-sup-fr-5-1"/>
                               <ref target="#ambr-m-47-sup:ambr-m-47-sup-fr-5-2"/>
                               <ref target="#oxon-s-trin-78:oxon-s-trin-78-fr-5-1"/>
@@ -6007,9 +6010,8 @@
                         <wit>Sinod. gr. 194</wit>
                         <wit>Vat. Ottob. gr. 398</wit>
                      </app>
-
                      <app type="text" corresp="#edition-5-1-1-tc-6">
-                        <lem><foreign xml:lang="grc">εὔχεται – τὴν πονηρίαν</foreign></lem>
+                        <lem><foreign xml:lang="grc">Εὔχεται – παριστᾶσα</foreign></lem>
                         <rdg wit="#G"><foreign xml:lang="grc">εὔχεται δ᾿ εἰσακουσθῆναι, ἑαυτῆς τὸ
                               εὐθὲς παριστᾶσα</foreign></rdg>
                         <wit>Urbani 3</wit>
@@ -6038,17 +6040,19 @@
                         <wit>Urbani 3</wit>
                         <wit>Ambr. M 47 sup.</wit>
                      </app>
-                     <note type="textual-commentary"><p>Μ Ο: Evagrius (schol. nr. α´ in Ps 5,1 [294
-                           Rondeau – Géhin – Cassin]) ohne eindeutige Trennung mit exp. 55
-                           verbunden. A1: <foreign xml:lang="grc">Ἡ</foreign> – <foreign
-                              xml:lang="grc">ἀνέβη</foreign> verbunden mit Ps 5,1; <foreign
-                              xml:lang="grc">εὔχεται</foreign> – <foreign xml:lang="grc">τὴν
-                              πονηρίαν</foreign> mit Ps 5,2a. Dieser letzte Teil ist mit Theodoret
-                           (comm. in Ps 5,2–3b [PG 80,896 C10–12]) verbunden. V4: Die kurze
+                     <note type="textual-commentary"><p>Μ Ο (Typus IV): Evagrius (schol. nr. α´ in
+                           Ps 5,1 [294 Rondeau – Géhin – Cassin]) ohne eindeutige Trennung mit exp.
+                           55 verbunden. A1 G: exp. 55 ist in der Textkatene A1 zweiteilig: <foreign
+                              xml:lang="grc">Ἡ</foreign> – <foreign xml:lang="grc">ἀνέβη</foreign>
+                           steht nach Ps 5,1 und <foreign xml:lang="grc">εὔχεται</foreign> –
+                              <foreign xml:lang="grc">τὴν πονηρίαν</foreign> nach Ps 5,2a. Dem
+                           zweiten Teil wurde ein Zitat aus Theodoret (comm. in Ps 5,2–3b [PG 80,896
+                           C10–12]) angehängt. In der Randkatene G findet sich dieselbe Teilung von
+                           exp. 55 mit denselben Psalmbezügen wie in A1. V4 (Typus XIV): Die kurze
                            Hypothesis (<foreign xml:lang="grc">Καὶ οὗτος ὁ ψαλμὸς ἀπὸ τῆς ἐκκλησίας
                               εἴρηται</foreign>) kann aus exp. 55 oder Hesychius (Antonelli; PG
                            27,661–662 C8) entnommen worden sein. Syrische Version (Epitome): Eine
-                           inhaltliche Parallele ist zu finden (<foreign xml:lang="grc">Ἡ
+                           inhaltliche Parallele ist vorhanden (<foreign xml:lang="grc">Ἡ
                               κληρονομοῦσά</foreign> – <foreign xml:lang="grc"
                         >ἀνέβη</foreign>).</p></note>
                   </div>
@@ -6292,8 +6296,10 @@
                      </app>
                      <app type="text" corresp="#edition-5-4-2-tc-5">
                         <lem><foreign xml:lang="grc">αὐτῆς</foreign></lem>
-                        <rdg wit="#M">bis descripsit</rdg>
+                        <rdg wit="#M"><foreign xml:lang="grc">αὐτῆς {αὐτῆς}</foreign></rdg>
                         <wit>Sinod. gr. 194</wit>
+                        <rdg wit="#A1"><foreign xml:lang="grc">αὐτοῦ</foreign></rdg>
+                        <wit>Ambros. C 98 sup.</wit>
                      </app>
                      <app type="text" corresp="#edition-5-4-2-tc-6">
                         <lem><foreign xml:lang="grc">παρίστασθαι</foreign></lem>
@@ -6407,14 +6413,15 @@
                            <span type="text-critical" xml:id="edition-5-7-1-1-tc-1"
                            >εἰσακουσθήσεσθαι</span>
                         <span type="text-critical" xml:id="edition-5-7-1-1-tc-2">θαρρῶ</span>, ὅτι
-                        τῶν τοιούτων οὐκ ἐπετήδευσα <span type="text-critical"
-                           xml:id="edition-5-7-1-1-tc-3"><span type="text-critical"
-                              xml:id="edition-5-7-1-1-tc-4">οὐδὲν</span>· ὧν μεμίσηκας</span>· ταῦτα
-                        δέ ἐστιν, <span type="text-critical" xml:id="edition-5-7-1-1-tc-5">ἀνομία
-                           καὶ πονηρία</span>· <span type="text-critical"
-                           xml:id="edition-5-7-1-1-tc-6">καὶ <span type="text-critical"
-                              xml:id="edition-5-7-1-1-tc-7">παρανομία</span> καὶ ψεῦδος· καὶ φθόνος
-                           καὶ δόλος</span>: –</p>
+                        τῶν τοιούτων οὐκ <span type="text-critical" xml:id="edition-5-7-1-1-tc-3"
+                           >ἐπετήδευσα</span>
+                        <span type="text-critical" xml:id="edition-5-7-1-1-tc-4"><span
+                              type="text-critical" xml:id="edition-5-7-1-1-tc-5">οὐδὲν</span>· ὧν
+                           μεμίσηκας</span>· ταῦτα δέ ἐστιν, <span type="text-critical"
+                           xml:id="edition-5-7-1-1-tc-6">ἀνομία καὶ πονηρία</span>· <span
+                           type="text-critical" xml:id="edition-5-7-1-1-tc-7">καὶ <span
+                              type="text-critical" xml:id="edition-5-7-1-1-tc-8">παρανομία</span>
+                           καὶ ψεῦδος· καὶ φθόνος καὶ δόλος</span>: –</p>
                      <div type="links">
                         <p>
                            <listRef>
@@ -6456,17 +6463,22 @@
                         <!-- Textkritik: θαρρῶ O = V1 -->
                      </app>
                      <app type="text" corresp="#edition-5-7-1-1-tc-3">
+                        <lem><foreign xml:lang="grc">ἐπετήδευσα</foreign></lem>
+                        <rdg wit="#P1"><foreign xml:lang="grc">ἐπιτήδευσα</foreign></rdg>
+                        <wit>Par. gr. 166</wit>
+                     </app>
+                     <app type="text" corresp="#edition-5-7-1-1-tc-4">
                         <lem><foreign xml:lang="grc">οὐδὲν ὧν μεμίσηκας</foreign></lem>
                         <rdg wit="#A1">om.</rdg>
                         <wit>Ambr. M 47 sup.</wit>
                      </app>
-                     <app type="text" corresp="#edition-5-7-1-1-tc-4">
+                     <app type="text" corresp="#edition-5-7-1-1-tc-5">
                         <lem><foreign xml:lang="grc">οὐδὲν</foreign></lem>
                         <rdg wit="#M #O"><foreign xml:lang="grc">οὐδὲ</foreign> (sic)</rdg>
                         <wit>Sinod. gr. 194</wit>
                         <wit>Vat. Ottob. gr. 398</wit>
                      </app>
-                     <app type="text" corresp="#edition-5-7-1-1-tc-5">
+                     <app type="text" corresp="#edition-5-7-1-1-tc-6">
                         <lem><foreign xml:lang="grc">ἀνομία καὶ πονηρία</foreign></lem>
                         <rdg wit="#M"><foreign xml:lang="grc">ἀνομία</foreign></rdg>
                         <wit>Sinod. gr. 194</wit>
@@ -6474,7 +6486,7 @@
                         <rdg wit="#B2"><foreign xml:lang="grc">ἀνομία· παρα[ν]ομία·</foreign></rdg>
                         <wit>S.Trin. 78</wit>
                      </app>
-                     <app type="text" corresp="#edition-5-7-1-1-tc-6">
+                     <app type="text" corresp="#edition-5-7-1-1-tc-7">
                         <lem><foreign xml:lang="grc">καὶ παρανομία – δόλος</foreign></lem>
                         <rdg wit="#G"><foreign xml:lang="grc">παραν[ο]μία τε καὶ ψεῦδος· φθόνος, καὶ
                               δόλος</foreign></rdg>
@@ -6490,7 +6502,7 @@
                               δόλος</foreign></rdg>
                         <wit>S.Trin. 78</wit>
                      </app>
-                     <app type="text" corresp="#edition-5-7-1-1-tc-7">
+                     <app type="text" corresp="#edition-5-7-1-1-tc-8">
                         <lem><foreign xml:lang="grc">παρανομία</foreign></lem>
                         <rdg wit="#M"><foreign xml:lang="grc">πα**ρανομία</foreign></rdg>
                         <wit>Sinod. gr. 194</wit>
@@ -6498,7 +6510,11 @@
                      <note type="textual-commentary">M O (Typus IV): Eine verkürzende Paraphrase aus
                         Eusebius (fr. 3 in Ps 5,5–7 [Villani]) ist ohne eindeutige Trennung mit exp.
                         59 verbunden. In O sind die Grenzen zwischen den herumliegenden Fragmenten
-                        noch unpräziser..</note>
+                        noch unpräziser. P1 (Typus XIX): exp. 59 steht nach Ps 5,5 (= Lemma). Ein
+                        mögliches Scholion des Origenes steht sowohl nach Ps 5,6a (PG 12,1169 A8–11)
+                        als auch nach Ps 5,6b–7a (PG 12,1169 A14–B6; PG 69,741 C4–11; PG 27,73
+                        C13–D5 [ex Paris. gr. 166–167]). Das zweite dieser Scholien wird irrtümlich
+                        Athanasius zugeschrieben.</note>
                   </div>
                   <div type="commentary" rend="hide">
                      <p xml:id="edition-5-7-1-1-1" n="59">Διατοῦτο φησὶν εἰσακουσθήσεσθαι θαρρῶ, ὅτι
@@ -6956,7 +6972,9 @@
                      </app>
                      <app type="text" corresp="#edition-5-10-2-tc-1">
                         <lem><foreign xml:lang="grc">Τὰ</foreign></lem>
-                        <rdg wit="#P1"><foreign xml:lang="grc">... καὶ τὰ</foreign></rdg>
+                        <rdg wit="#P1"><foreign xml:lang="grc">Tὴν γλῶσσαν αὐτῶν λεαίνουσι</foreign>
+                           (= fons ignotus in Ps 5,10d ) ante<foreign xml:lang="grc"> καὶ
+                              τὰ</foreign> add.</rdg>
                         <wit>Paris. gr. 166-167</wit>
                      </app>
                      <app type="text" corresp="#edition-5-10-2-tc-2">
@@ -7103,8 +7121,8 @@
                         <rdg wit="#P1 #B1">τὴν φιλοθέως κατορθουμένην ψυχὴν</rdg>
                         <wit>Paris. gr. 166-167</wit>
                         <wit>Auct. D.4.1.</wit>
-                        <rdg wit="#A2 #V4"><foreign xml:lang="grc">τῆι φιλα θεῶι κατορθούσηι
-                              ψυχῆι</foreign></rdg>
+                        <rdg wit="#A2 #V4"><foreign xml:lang="grc">τῇ φίλα θεῷ κατορθούσῃ
+                              ψυχῇ</foreign></rdg>
                      </app>
                      <app type="text" corresp="#edition-5-11-2-tc-2">
                         <lem><foreign xml:lang="grc">θεὸν παραπικραίνουσιν</foreign></lem>
@@ -7113,8 +7131,9 @@
                         <rdg wit="#B1"><foreign xml:lang="grc">σὲ ἐμπαραπικραίνουσιν</foreign></rdg>
                         <!-- Textkritik: παραπικραίνουσι A2 V4 -->
                      </app>
-                     <note type="textual-commentary"><p>A2 V4: exp. 65 anonym (A2) bzw. Iohannes
-                           Chrysostomus zugeschrieben (V4).</p></note>
+                     <note type="textual-commentary"><p>A2 V4 (Typus XIV): exp. 65 ist entweder
+                           anonym (A2) oder wurde irrtümlich Iohannes Chrysostomus zugeschrieben
+                           (V4).</p></note>
                   </div>
                </div>
                <div xml:lang="de" type="translation">
