@@ -12,6 +12,13 @@
 - Kommentare aus textkritischem Apparat ausschließen.
 - Abstand zwischen Expositio und Bezeugungsleiste erhöhen.
 - Suche nach *hi @rend = italic, sup* in *foreign* - *sup* in *foreign xml:lang = grc* in der Transformation berücksichtigen.
+- *hi @rend = italic* in deutschen Texten berücksichtigen.
 - Exp. 117b, Textual Commentary: *Ps A2: exp. 117b* (?)
 - Expositio 139, Übersetzung: tümmsten - dümmsten (?)
 - Expositiones 141, 153, 155: kein Abstand zwischen Apparat und Psalmtext.
+- Expositio 172, Textual Commentary: *in Zusammenhang mit der Achte* - im Zusammenhang mit der Achten (?)
+- Expositio 172, Textual Commentary: *wird im dem dieser Hypothesis vorangestellten Auszug aus Asterius* - wird im, dem dieser Hypothesis vorangestellten, Auszug aus Asterius (?)
+- Expositio 201 - Parallele: *zehntens, das unbestechlich sein* - ohne das oder groß schreiben mit Bindestrich (?)
+- Expositio 201 ist doppelt / falsche Zählung: siehe Ende Psalm 14 und Beginn Psalm 15. (?)
+- Expositio 159b trägt die Zählung 156b. (?)
+- Expositio 168 Parallele trägt die Zählung 68. (?)
