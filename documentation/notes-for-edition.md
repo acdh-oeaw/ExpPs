@@ -22,3 +22,14 @@
 - Expositio 201 ist doppelt / falsche Zählung: siehe Ende Psalm 14 und Beginn Psalm 15. (?)
 - Expositio 159b trägt die Zählung 156b. (?)
 - Expositio 168 Parallele trägt die Zählung 68. (?)
+- Expositio 214, Kritischer Apparat: *A2 Paraphrasin Thedoreti (PG 80,961 B15–C1 C10–12)* (?)
+- Expositio 282: Apparat ohne Lemma (?)
+- Exposition 285, Textual Commentary: *In den Ergänzungen zur seiner Editio princeps der Expositiones Montfaucon edierte ein Fragment* - edierte Monfaucon (?)
+- Manchmal kommen geschwungene Klammern im griechischen Text vor: Das funktioniert in LaTeX nicht.
+- Ps 17,39a: *Ich will sie hart bedrängen, und, sie werden immer bestehen können* - nimmer bestehen (?)
+- Expositio 300, Textual Commentary: *die Iuden* - die Juden (?)
+- Expositio 307, Textual Commentary: *Denn in beiden Katenen Ps 18,4a–b bildet eine einzige Zeile* - Denn in beiden Katenen bilden Ps 18,4a-b eine einzige Zeile.
+- Expositio 315: Textual Commentary: *entweder um Ps 18,12b oder Ps 12* - entweder um Ps 18,12b oder um Ps 18,12
+- Exposition 336 - Parallele: *dass ein jedes Wort des vorliegenden Psalms betrifft die Strafe, die jedem zusteht* - dass ein jedes Wort des vorliegenden Psalms die Strafe betrifft, die jedem zusteht (?)
+- Expositio 415 - Parallele: *XXX* - 415 (?)
+- Expositio 418 - Parallele: *XXX* - 418 (?)
