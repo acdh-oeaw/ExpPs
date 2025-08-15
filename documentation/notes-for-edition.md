@@ -1,7 +1,7 @@
 # Anmerkungen zur Edition (Ps 1-25)
 
 - Expositio 1, Textual Commentary (am Ende): 2 x *p XXX*
-- Es muss stichprobenartig überprüft werden, ob Kommentare nicht irrtümlich mitübernommen werden.
+- Es muss stichprobenartig überprüft werden, ob Kommentare nicht irrtümlich mitübernommen werden, z.B.: Exp 167.
 - Expositio 6: *B1: exp. 14 irrtümlich Hesychius zugeschrieben* (?)
 - Checked for *@xml:lang* on *foreign* (14 Fälle korrigiert)
 - Checked for *@xml:lang = 'grc'* (3 Fälle korrigiert)
@@ -15,7 +15,8 @@
 - *hi @rend = italic* in deutschen Texten berücksichtigen.
 - Exp. 117b, Textual Commentary: *Ps A2: exp. 117b* (?)
 - Expositio 139, Übersetzung: tümmsten - dümmsten (?)
-- Expositiones 141, 153, 155: kein Abstand zwischen Apparat und Psalmtext.
+- Expositiones 141, 153, 155, 164 - Parallele, 203 - Parallele, 217, 274 - Parallele, 290: kein Abstand zwischen Apparat und Psalmtext.
+- Expositio 165: zu großer Abstand.
 - Expositio 172, Textual Commentary: *in Zusammenhang mit der Achte* - im Zusammenhang mit der Achten (?)
 - Expositio 172, Textual Commentary: *wird im dem dieser Hypothesis vorangestellten Auszug aus Asterius* - wird im, dem dieser Hypothesis vorangestellten, Auszug aus Asterius (?)
 - Expositio 201 - Parallele: *zehntens, das unbestechlich sein* - ohne das oder groß schreiben mit Bindestrich (?)
@@ -33,3 +34,5 @@
 - Exposition 336 - Parallele: *dass ein jedes Wort des vorliegenden Psalms betrifft die Strafe, die jedem zusteht* - dass ein jedes Wort des vorliegenden Psalms die Strafe betrifft, die jedem zusteht (?)
 - Expositio 415 - Parallele: *XXX* - 415 (?)
 - Expositio 418 - Parallele: *XXX* - 418 (?)
+- Expositio 190: deutsches o statt Omikron (mit verschiedenen Akzenten)
+- Ps 25,2b: falsche Übersetzung (= 2a) (?).
