@@ -5,10 +5,7 @@ xmlns:tei="http://www.tei-c.org/ns/1.0"
 exclude-result-prefixes="xs"
 version="2.0">
 
-<xsl:output encoding="UTF-8" method="text" indent="no" use-character-maps="remove-spaces"/>
-<xsl:character-map name="remove-spaces">
-<!--<xsl:output-character character="&#10;" string=""/>-->
-</xsl:character-map>
+<xsl:output encoding="UTF-8" method="text" indent="no"/>
 
 <xsl:template match="/">
     \documentclass[12pt,a4paper]{memoir}
@@ -133,9 +130,9 @@ version="2.0">
 </xsl:if>
 <xsl:text>\end{german}\par\vspace{3mm}</xsl:text>
 \begin{pairs}\begin{Leftside}\beginnumbering\pstart\firstlinenum{1}\linenumincrement{2}
-\foreignlanguage{greek}{
+\begin{greek}
 <xsl:apply-templates select="child::node()"/>
-}\normalsize\pend\endnumbering\end{Leftside}
+\end{greek}\normalsize\pend\endnumbering\end{Leftside}
 <xsl:apply-templates select="parent::tei:div/parent::tei:div/parent::tei:div/tei:div[@type = 'translation']/tei:p[current()/@xml:id = substring-after(@corresp,'#')]"/>
 </xsl:template>
 
@@ -211,12 +208,12 @@ version="2.0">
     <xsl:apply-templates select="child::node()"/>
 </xsl:template>
     
-<xsl:template match="tei:foreign[@xml:lang = 'grc']">\foreignlanguage{greek}{<xsl:value-of select="./text()"/>}</xsl:template>
+    <xsl:template match="tei:foreign[@xml:lang = 'grc']">\foreignlanguage{greek}{<xsl:value-of select="./text()"/>}</xsl:template>
 
     <xsl:template match="tei:anchor[@type = 'biblical-quotation']">
-        <xsl:text>\begin{german}{ (</xsl:text>
+        <xsl:text>\foreignlanguage{german}{ (</xsl:text>
         <xsl:value-of select="@n"/>
-        <xsl:text>)\end{german}</xsl:text>
+        <xsl:text>)}</xsl:text>
     </xsl:template>
     
     <xsl:template match="tei:hi[@rend = 'sup']">
@@ -231,11 +228,11 @@ version="2.0">
         <xsl:text>}</xsl:text>
     </xsl:template>
 
-<xsl:template match="text()[not(parent::comment())]">
+<xsl:template match="text()">
 <xsl:choose>
+    <xsl:when test="starts-with(normalize-space(.),'[')"><xsl:value-of select="concat('{[}',substring-after(.,'['))"/></xsl:when>
     <xsl:when test=". = '                  '"/>
-    <xsl:when test=". = '
-        '"><xsl:text> </xsl:text></xsl:when>
+    <xsl:when test=". = '&#10;                     '"><xsl:text> </xsl:text></xsl:when>
     <xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
 </xsl:choose>
 </xsl:template>
