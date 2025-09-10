@@ -924,7 +924,7 @@
         </div>
     </xsl:template>
     
-    <xsl:template match="tei:div[(@type = 'commentary' or @type = 'hexaplaric') and exists(@change) and (@change = 'commentaryfragments-only')]">
+    <xsl:template match="tei:div[((@type = 'commentary') or (@type = 'hexaplaric') or (@type = 'glossai')) and exists(@change) and (@change = 'commentaryfragments-only')]">
         <div class="main-text-commentary">
             <xsl:text>[</xsl:text>
             <xsl:if test="@rendition = '#middle-column'">

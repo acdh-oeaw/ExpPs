@@ -438,6 +438,10 @@ version="2.0">
                 <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/vat-gr-1422/commentaryfragments/</xsl:text>
                 <xsl:value-of select="substring-after(./@target,'#vat-gr-1422:')"/>
             </xsl:if>
+            <xsl:if test="starts-with(./@target,'#laudon-gr-42')">
+                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/laudon-gr-42/commentaryfragments/</xsl:text>
+                <xsl:value-of select="substring-after(./@target,'#laudon-gr-42:')"/>
+            </xsl:if>
         </xsl:attribute>
         <xsl:if test="starts-with(./@target,'#vat-gr-754')">
             <xsl:text>V1</xsl:text>
@@ -490,13 +494,16 @@ version="2.0">
         <xsl:if test="starts-with(./@target,'#vat-gr-1422')">
             <xsl:text>V5</xsl:text>
         </xsl:if>
+        <xsl:if test="starts-with(./@target,'#laudon-gr-42')">
+            <xsl:text>B3</xsl:text>
+        </xsl:if>
     </a>
     <xsl:text> </xsl:text>
 </xsl:template>
     
-<xsl:template match="tei:div[@type = 'commentary' and @rend = 'hide']"/>
+<xsl:template match="tei:div[(@type = 'commentary') and (@rend = 'hide')]"/>
 
-<xsl:template match="tei:div[@type = 'textcritic' and not(exists(@rend))]">
+<xsl:template match="tei:div[(@type = 'textcritic') and not(exists(@rend))]">
     <div class="body-textcritic">
         <xsl:apply-templates select="tei:app[@type = 'fragment']"/>
         <!-- <xsl:apply-templates select="preceding-sibling::tei:div[@type = 'commentary'][1]/child::tei:div[@type = 'links']"/> -->
