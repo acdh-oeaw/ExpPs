@@ -602,6 +602,9 @@
                 <xsl:if test="@rendition = '#top-margin'">
                     <xsl:text>top margin</xsl:text>
                 </xsl:if>
+                <xsl:if test="@rendition = '#at-the-bibletext'">
+                    <xsl:text>at the bibletext</xsl:text>
+                </xsl:if>
                 <xsl:text>]</xsl:text>
                 <!--<xsl:value-of select="@type"/>
                 <xsl:text>]</xsl:text>-->
@@ -763,6 +766,9 @@
         <xsl:if test="@rendition = '#bottom-margin'">
             <xsl:text>bottom margin</xsl:text>
         </xsl:if>
+        <xsl:if test="@rendition = '#at-the-bibletext'">
+            <xsl:text>at the bibletext</xsl:text>
+        </xsl:if>
         <xsl:text>] </xsl:text>
         <a>
             <xsl:attribute name="id">
@@ -875,6 +881,9 @@
             <xsl:if test="@rendition = '#right-margin-of-right-column'">
                 <xsl:text>right margin of right column</xsl:text>
             </xsl:if>
+            <xsl:if test="@rendition = '#at-the-bibletext'">
+                <xsl:text>at the bibletext</xsl:text>
+            </xsl:if>
             <xsl:text>] </xsl:text>
             <!--<xsl:value-of select="@type"/>
             <xsl:text>]</xsl:text>-->
@@ -934,7 +943,7 @@
             <xsl:element name="p">
                 <xsl:attribute name="class" select="'paragraph-in-commentaryfragment'"/>
                 <xsl:text>Lemma: </xsl:text>
-                <xsl:value-of select="preceding-sibling::tei:note[@type = 'lemma'][1]/text()"/>
+                <xsl:apply-templates select="preceding-sibling::tei:note[@type = 'lemma'][1]/child::node()"/>
             </xsl:element>
             <xsl:element name="p">
                 <xsl:attribute name="class" select="'paragraph-in-commentaryfragment'"/>
@@ -969,7 +978,7 @@
             <xsl:element name="p">
                 <xsl:attribute name="class" select="'paragraph-in-hexaplaric-variant'"/>
                 <xsl:text>Lemma: </xsl:text>
-                <xsl:value-of select="preceding-sibling::tei:note[@type = 'lemma'][1]/text()"/>
+                <xsl:apply-templates select="preceding-sibling::tei:note[@type = 'lemma'][1]/child::node()"/>
             </xsl:element>
             <xsl:element name="p">
                 <xsl:attribute name="class" select="'paragraph-in-hexaplaric-variant'"/>
@@ -1000,7 +1009,7 @@
             <xsl:element name="p">
                 <xsl:attribute name="class" select="'paragraph-in-hexaplaric-variant'"/>
                 <xsl:text>Lemma: </xsl:text>
-                <xsl:value-of select="preceding-sibling::tei:note[@type = 'lemma'][1]/text()"/>
+                <xsl:apply-templates select="preceding-sibling::tei:note[@type = 'lemma'][1]/child::node()"/>
             </xsl:element>
             <xsl:element name="p">
                 <xsl:attribute name="class" select="'paragraph-in-glosse'"/>
@@ -1051,6 +1060,9 @@
             </xsl:if>
             <xsl:if test="@rendition = '#top-margin'">
                 <xsl:text>top margin</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#at-the-bibletext'">
+                <xsl:text>at the bibletext</xsl:text>
             </xsl:if>
             <xsl:text>] </xsl:text>
             <!--<xsl:value-of select="@type"/>
@@ -1565,6 +1577,9 @@
             <xsl:if test="@rendition = '#top-margin'">
                 <xsl:text>top margin</xsl:text>
             </xsl:if>
+            <xsl:if test="@rendition = '#at-the-bibletext'">
+                <xsl:text>at the bibletext</xsl:text>
+            </xsl:if>
             <xsl:text>] </xsl:text>
         </xsl:if>
         <xsl:apply-templates/>
@@ -1611,6 +1626,9 @@
             </xsl:if>
             <xsl:if test="@rendition = '#top-margin'">
                 <xsl:text>top margin</xsl:text>
+            </xsl:if>
+            <xsl:if test="@rendition = '#at-the-bibletext'">
+                <xsl:text>at the bibletext</xsl:text>
             </xsl:if>
             <xsl:text>] </xsl:text>
             <!--<xsl:text>[</xsl:text>
@@ -1945,6 +1963,10 @@
             <xsl:attribute name="class" select="'paragraph-in-commentaryfragment'"/>
             <xsl:apply-templates select="child::node()"/>
         </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="tei:foreign[@xml:lang = 'grc']">
+        <xsl:apply-templates select="child::node()"/>
     </xsl:template>
       
 </xsl:stylesheet>
