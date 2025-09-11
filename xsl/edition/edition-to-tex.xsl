@@ -115,19 +115,29 @@ version="2.0">
 </xsl:template>
 
     <xsl:template match="tei:p[ancestor::tei:div[@xml:lang = 'grc']][not(parent::tei:div[@type = 'links'])][not(parent::tei:div[@type = 'links-oriental-tradition'])][not(parent::tei:note[@type = 'textual-commentary'])]" xml:space="default">
-        \par\vspace{3mm}\addcontentsline{toc}{section}{Expositio <xsl:value-of select="@n"/>}\begin{german}
+        \par\vspace{3mm}\addcontentsline{toc}{section}{Expositio 
+<xsl:value-of select="@n"/>
+<xsl:if test="exists(parent::tei:div[@type = 'commentary']/@rend) and (parent::tei:div[@type = 'commentary']/@rend = 'hide')">
+<xsl:text> -- Parallele</xsl:text>
+</xsl:if>
+<xsl:if test="exists(parent::tei:div[@type = 'commentary']/@subtype) and (parent::tei:div[@type = 'commentary']/@subtype = 'dubium')">
+<xsl:text> (dubium)</xsl:text>
+</xsl:if>}\begin{german}
 <xsl:text>\textbf{Expositio </xsl:text>
 <xsl:value-of select="@n"/>
         <xsl:if test="exists(parent::tei:div[@type = 'commentary']/@rend) and (parent::tei:div[@type = 'commentary']/@rend = 'hide')">
             <xsl:text> -- Parallele</xsl:text>
         </xsl:if>
+        <xsl:if test="exists(parent::tei:div[@type = 'commentary']/@subtype) and (parent::tei:div[@type = 'commentary']/@subtype = 'dubium')">
+            <xsl:text> (dubium)</xsl:text>
+        </xsl:if>
 <xsl:text>:} </xsl:text>
 <xsl:if test="exists(@ana) and @ana = 'hypothesis'">Hypothesis</xsl:if>
-<xsl:if test="exists(parent::tei:div[@type = 'commentary']/@subtype)">
+<!-- <xsl:if test="exists(parent::tei:div[@type = 'commentary']/@subtype)">
     <xsl:text> (</xsl:text>
     <xsl:value-of select="parent::tei:div[@type = 'commentary']/@subtype"/>
     <xsl:text>)</xsl:text>
-</xsl:if>
+</xsl:if> -->
 <xsl:text>\end{german}\par\vspace{3mm}</xsl:text>
 \begin{pairs}\begin{Leftside}\beginnumbering\pstart\firstlinenum{1}\linenumincrement{2}
 \begin{greek}
