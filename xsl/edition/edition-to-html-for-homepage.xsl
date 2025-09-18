@@ -522,7 +522,14 @@ version="2.0">
         <xsl:if test="not(exists(child::tei:note[@type = 'textual-commentary']))">
             <p style="font-family: monospace; margin-top: 10pt;">
                 <xsl:text>urn:cts:etf:psath.expps.grc:</xsl:text>
-                <xsl:value-of select="./preceding-sibling::tei:div[@type = 'commentary'][1]/tei:p/@n"/>
+                <xsl:choose>
+                    <xsl:when test="./preceding-sibling::tei:div[@type = 'commentary'][1]/@rend = 'hide'">
+                        <xsl:value-of select="concat(./preceding-sibling::tei:div[@type = 'commentary'][1]/tei:p/@n,'par')"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="./preceding-sibling::tei:div[@type = 'commentary'][1]/tei:p/@n"/>
+                    </xsl:otherwise>
+                </xsl:choose>
             </p>
         </xsl:if>
     </div>
@@ -782,7 +789,14 @@ version="2.0">
     <p style="margin-top: 10pt;"><xsl:apply-templates select="child::node()"/></p>
     <p style="font-family: monospace;">
         <xsl:text>urn:cts:etf:psath.expps.grc:</xsl:text>
-        <xsl:value-of select="./parent::tei:div[@type = 'textcritic']/preceding-sibling::tei:div[@type = 'commentary'][1]/tei:p/@n"/>
+        <xsl:choose>
+            <xsl:when test="./parent::tei:div[@type = 'textcritic']/preceding-sibling::tei:div[@type = 'commentary'][1]/@rend = 'hide'">
+                <xsl:value-of select="concat(./parent::tei:div[@type = 'textcritic']/preceding-sibling::tei:div[@type = 'commentary'][1]/tei:p/@n,'par')"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="./parent::tei:div[@type = 'textcritic']/preceding-sibling::tei:div[@type = 'commentary'][1]/tei:p/@n"/>
+            </xsl:otherwise>
+        </xsl:choose>
     </p>
 </xsl:template>
 
