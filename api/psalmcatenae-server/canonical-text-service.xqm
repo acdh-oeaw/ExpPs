@@ -25,11 +25,11 @@ function cts:canonical-text-service($request as xs:string,$urn as xs:string){
   let $origin := try { request:header("Origin") } catch basex:http {'urn:local'}
   let $request-type := switch ($request)
     case 'GetPassage' return 'GetPassage'
-    case 'GetCapabilities' return error(xs:QName('response-codes:_501'),'Not Implemented')
-    case 'GetValidReff' return error(xs:QName('response-codes:_501'),'Not Implemented')
+    case 'GetCapabilities' return 'GetCapabilities'
+    case 'GetValidReff' return 'GetValidReff'
     case 'GetFirstUrn' return error(xs:QName('response-codes:_501'),'Not Implemented')
     case 'GetPrevNextUrn' return error(xs:QName('response-codes:_501'),'Not Implemented')
-    case 'GetLabel' return error(xs:QName('response-codes:_501'),'Not Implemented')
+    case 'GetLabel' return 'GetLabel'
     case 'GetPassagePlus' return error(xs:QName('response-codes:_501'),'Not Implemented')
     default return error(xs:QName('response-codes:_400'),'Bad Request')
   let $fragments-of-urn := tokenize($urn,':')
@@ -42,16 +42,60 @@ function cts:canonical-text-service($request as xs:string,$urn as xs:string){
   let $language := $work-components[3]
   let $path := "/psalmcatenae-edition/edition-ps-1-10.xml"
   let $available-fragments := for $commentaryfragment in doc($path)/tei:TEI/tei:text/tei:body/tei:div[@type = 'psalm']/tei:div[@type = 'psalmverse']/tei:div[(@xml:lang = 'grc') and (@type = 'text')]/tei:div[(@type = 'commentary') and (not(exists(@rend)) or (@rend = 'parallel') or (@rend = 'hide'))]/tei:p return if ($commentaryfragment/parent::tei:div/@rend = 'hide') then concat($commentaryfragment/@n,'par') else $commentaryfragment/@n
-  let $result-text := if ($language = 'grc') 
+  let $result-text := switch ($request-type)
+    case 'GetPassage' return if ($language = 'grc') 
   then if (not(contains($passage,'par'))) then for $commentaryfragment in doc($path)/tei:TEI/tei:text/tei:body/tei:div[@type = 'psalm']/tei:div[@type = 'psalmverse']/tei:div[(@xml:lang = 'grc') and (@type = 'text')]/tei:div[(@type = 'commentary') and (not(exists(@rend)) or (@rend = 'parallel'))]/tei:p where $commentaryfragment/@n = $passage return string-join($commentaryfragment/descendant::text(),'') else for $commentaryfragment in doc($path)/tei:TEI/tei:text/tei:body/tei:div[@type = 'psalm']/tei:div[@type = 'psalmverse']/tei:div[(@xml:lang = 'grc') and (@type = 'text')]/tei:div[(@type = 'commentary') and (exists(@rend) and (@rend = 'hide'))]/tei:p where $commentaryfragment/@n = substring-before($passage,'par') return string-join($commentaryfragment/descendant::text(),'')
   else if (not(contains($passage,'par'))) then for $commentaryfragment in doc($path)/tei:TEI/tei:text/tei:body/tei:div[@type = 'psalm']/tei:div[@type = 'psalmverse']/tei:div[(@xml:lang = 'grc') and (@type = 'text')]/tei:div[(@type = 'commentary') and (not(exists(@rend)) or (@rend = 'parallel'))]/tei:p where $commentaryfragment/@n = $passage return $commentaryfragment/parent::tei:div[@type = 'commentary']/parent::tei:div[@type = 'text']/parent::tei:div[@type = 'psalmverse']/tei:div[(@type = 'translation') and (@xml:lang = 'de')]/tei:p[substring-after(@corresp,'#') = $commentaryfragment/@xml:id]/text() else for $commentaryfragment in doc($path)/tei:TEI/tei:text/tei:body/tei:div[@type = 'psalm']/tei:div[@type = 'psalmverse']/tei:div[(@xml:lang = 'grc') and (@type = 'text')]/tei:div[(@type = 'commentary') and (exists(@rend) and (@rend = 'hide'))]/tei:p where $commentaryfragment/@n = substring-before($passage,'par') return $commentaryfragment/parent::tei:div[@type = 'commentary']/parent::tei:div[@type = 'text']/parent::tei:div[@type = 'psalmverse']/tei:div[(@type = 'translation') and (@xml:lang = 'de')]/tei:p[substring-after(@corresp,'#') = $commentaryfragment/@xml:id]/text()
-  let $result-xml-fragment := if (not(($namespace eq 'etf') and ($textgroup eq 'psath') and ($work eq 'expps') and (($language eq 'ger') or ($language eq 'grc'))))
+    case 'GetLabel' return "(Ps.-)Athanasius von Alexandrien, Expositiones in Psalmos, Expositio " || $passage
+    case 'GetCapabilities' return '{"label" : "(Ps.-)Athanasius von Alexandrien, Expositiones in Psalmos.", "urn-greek-texts" : "urn:cts:etf:psath.expps.grc", "urn-german-texts" : "urn:cts:etf:psath.expps.ger"}'
+    case 'GetValidReff' return for $available-fragment in $available-fragments return  concat('urn:cts:etf:psath.expps.grc:',$available-fragment)
+    default return error(xs:QName('response-codes:_400'),'Bad Request')
+  let $result-xml-fragment := if (not(($request-type eq 'GetCapabilities') or ($request-type eq 'GetValidReff')) and not(($namespace eq 'etf') and ($textgroup eq 'psath') and ($work eq 'expps') and (($language eq 'ger') or ($language eq 'grc'))))
      then 
        element CTSError {
           element message { 'Invalid URN syntax. Use urn:cts:etf:psath.expps.(grc|ger):(number). For example: urn:cts:etf:psath.expps.grc:1 - for the first commentary fragment in ancient greek.' },
           element code { '2' }
       }
-     else if (not($available-fragments = $passage)) then
+     else
+        switch ($request-type)
+        case 'GetLabel' return
+          if (not($available-fragments = $passage)) then
+       element CTSError {
+         element message { 'URN refers in invalid value. Use urn:cts:etf:psath.expps.(grc|ger):(number) with a number out of: ' || string-join($available-fragments,', ') },
+         element code { '3' }
+       } else
+          element {$request-type} {
+            element request {
+              element requestName { $request-type },
+              element requestUrn { concat('urn:cts:etf:psath.expps.',$language,':',$passage) }
+            },
+            element reply {
+              element urn { concat('urn:cts:etf:psath.expps.',$language,':',$passage) },
+              element label { ``[`{$result-text}`]`` }
+            }
+          }
+       case 'GetCapabilities' return
+           element {$request-type} {
+            element request {
+              element requestName { $request-type }
+            },
+             copy $nodes := json:parse(``[`{$result-text}`]``) modify
+             rename node $nodes/json as 'reply'
+             return $nodes update { delete nodes (.//attribute()) }
+           }
+       case 'GetValidReff' return 
+         element {$request-type}{
+           element request {
+             element requestName { $request-type },
+             element requestUrn { "urn:cts:etf:psath.expps.grc" }
+           },
+           element reply {
+             for $valid-urn in ``[`{$result-text}`]`` => tokenize(' ')
+             return element urn { $valid-urn }
+           }
+         }
+       case 'GetPassage' return
+      if (not($available-fragments = $passage)) then
        element CTSError {
          element message { 'URN refers in invalid value. Use urn:cts:etf:psath.expps.(grc|ger):(number) with a number out of: ' || string-join($available-fragments,', ') },
          element code { '3' }
@@ -65,9 +109,10 @@ function cts:canonical-text-service($request as xs:string,$urn as xs:string){
          element urn { concat('urn:cts:etf:psath.expps.',$language,':',$passage) },
          element passage { ``[`{$result-text}`]`` },
          element license { "Available under the Creative Commons Attribution 4.0 International (CC BY 4.0)" },
-         element source { "Heil, Uta; Panteghini, Sebastiano, (Ps.)-Athanasius, Expositiones in Psalmos. Fragment " || $passage || " - " || concat('urn:cts:etf:psath.expps.',$language,':',$passage) || " (https://expps.acdh-dev.oeaw.ac.at/expps/edition.html)."}
+         element source { "Heil, Uta; Panteghini, Sebastiano, (Ps.-)Athanasius, Expositiones in Psalmos. Fragment " || $passage || " - " || concat('urn:cts:etf:psath.expps.',$language,':',$passage) || " (https://expps.acdh-dev.oeaw.ac.at/expps/edition.html)."}
        }
      }
+     default return error(xs:QName('response-codes:_400'),'Bad Request')
   return
   (<rest:response>
     <output:serialization-parameters>
