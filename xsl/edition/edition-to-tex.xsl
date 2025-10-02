@@ -177,7 +177,7 @@ version="2.0">
     <xsl:if test="(local-name(preceding-sibling::*[1]) = 'app') and (preceding-sibling::tei:app/@type = 'text')">
         <xsl:text>--- </xsl:text>
     </xsl:if>
-<xsl:apply-templates select="tei:lem"/><xsl:text>\hspace{-0.25mm}] </xsl:text>
+<xsl:apply-templates select="tei:lem"/><xsl:text>\hspace{-0.25mm}\nolinebreak] </xsl:text>
 <xsl:for-each select="tei:rdg">
     <xsl:apply-templates select="tei:foreign | tei:hi | text()"/>
     <xsl:text> </xsl:text>
