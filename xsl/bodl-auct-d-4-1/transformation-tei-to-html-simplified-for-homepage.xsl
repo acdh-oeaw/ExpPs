@@ -1977,16 +1977,25 @@
     </xsl:template>
       
     <xsl:template match="tei:subst">
+        <xsl:variable name="text-before">
+            <xsl:if test="contains(preceding-sibling::text()[1],' ')">
+                <xsl:value-of select="tokenize(normalize-space(preceding-sibling::text()[1]),' ')[last()]"/>
+            </xsl:if>
+            <xsl:if test="not(contains(preceding-sibling::text()[1],' '))">
+                <xsl:value-of select="preceding-sibling::text()[1]"/>
+            </xsl:if>
+        </xsl:variable>
         <xsl:value-of select="tei:add/text()"/>
         <xsl:text> [* </xsl:text>
-            <xsl:value-of select="tei:del/text()"/>
+            <xsl:value-of select="concat($text-before,tei:del/text())"/>
         <xsl:text> </xsl:text>
         <xsl:if test="exists(tei:add/@hand)">
             <xsl:value-of select="tei:add/@hand"/>
         </xsl:if>
         <xsl:if test="not(exists(tei:add/@hand))">
-            <xsl:text>S</xsl:text>
+            <xsl:text>S </xsl:text>
         </xsl:if>
+        <xsl:value-of select="concat($text-before,tei:add/text())"/>
         <xsl:text>]</xsl:text>
     </xsl:template>
     

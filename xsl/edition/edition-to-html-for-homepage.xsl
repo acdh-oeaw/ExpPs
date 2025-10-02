@@ -157,7 +157,7 @@ version="2.0">
                 </p>
                 <p class="publisher">FWF Project 32988</p>
                 <p class="license">Available under the Creative Commons Attribution 4.0 International (CC BY 4.0)</p>
-                <p class="date">2024-10-24</p>
+                <p class="date">2025-10-02</p>
                 <p class="date">In Bearbeitung.</p>
             </div>
             <div id="main-content-body">
@@ -698,7 +698,7 @@ version="2.0">
 </xsl:template>
 
 <xsl:template match="tei:p[parent::tei:div[@xml:lang = 'de']]">
-    <xsl:value-of select="text()"/>
+    <xsl:apply-templates select="child::node()"/>
 </xsl:template>
 
 <xsl:template match="tei:app[@type = 'fragment']">

@@ -148,9 +148,9 @@ version="2.0">
 
 <xsl:template match="tei:p[parent::tei:div[@xml:lang = 'de']]" xml:space="default">
 \begin{Rightside}\beginnumbering\numberlinefalse\pstart{
-\foreignlanguage{german}{
-<xsl:value-of select="text()"/>
-}}\pend\endnumbering\end{Rightside}\end{pairs}\Columns\par\vspace{3mm}
+\begin{german}
+<xsl:apply-templates select="child::node()"/>
+\end{german}}\pend\endnumbering\end{Rightside}\end{pairs}\Columns\par\vspace{3mm}
 </xsl:template>
 
 <xsl:template match="tei:app[@type = 'fragment']" xml:space="default">
