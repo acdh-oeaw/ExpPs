@@ -22,6 +22,7 @@
 				<ol>
 					<li><a href="#cts-request">Requests</a></li>
 					<li><a href="#cts-response">Response Format</a></li>
+					<li><a href="#cts-further-requests">Further Requests</a></li>
 				</ol></li>
 			<li><a href="#rest">Accessing the Transcriptions - REST API</a>
 			<ol>
@@ -29,6 +30,9 @@
 				<li><a href="#rest-commentaryfragments">Commentary Fragments</a></li>
 				<li><a href="#rest-hexaplaric-variants">Hexaplaric Variants</a></li>
 				<li><a href="#rest-glosses">Glosses</a></li>
+				<li><a href="#rest-authors">Authors</a></li>
+				<li><a href="#rest-authors-critical">Authors Critical</a></li>
+				<li><a href="#rest-references">References (= Psalmverses with fragments)</a></li>
 			</ol></li>
 		</ol>
 		<h2 id="cts">Accessing the Edition - Canonical Text Service</h2>
@@ -44,7 +48,7 @@ https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/cts/
 urn:cts:etf:psath.expps.{language}:{number of passage}
 					</code></pre>
 					<p>The value for <kbd>language</kbd> can be <kbd>grc</kbd> for the greek text or <kbd>ger</kbd> for the german translation.</p>
-					<p>The value for <kbd>number of passage</kbd> must be the running number of the fragments of the edition.</p>
+					<p>The value for <kbd>number of passage</kbd> must be the running number of the fragments of the edition. The identifier can also be found in the online version of the <a href="edition.html" target="_blank">edition</a> at the end of each commentary fragment. A list of all URNs is delivered for the request <a href="#cts-further-requests">GetValidReff</a> (see below).</p>
 				<h4>Exemplaric Request</h4>
 					<pre><code class="http" style="font-size:120%">
 https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/cts/?request=GetPassage&urn=urn:cts:etf:psath.expps.grc:1
@@ -72,6 +76,17 @@ https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/cts/?request=GetPassage&ur
    &lt;/reply&gt;
 &lt;/GetPassage&gt;
 				</code></pre>
+		<h3 id="cts-further-requests">Further Requests</h3>
+		<h4>GetValidReff</h4>
+				<p>To get a list of all available URNs the following request can be used.</p>
+		<pre><code class="http" style="font-size:120%">
+https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/cts/?request=GetValidReff
+					</code></pre>
+		<h4>GetLabel</h4>
+				<p>To get a short label for a particular commentary fragment the following request can be used.</p>
+		<pre><code class="http" style="font-size:120%">
+https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/cts/?request=GetLabel&urn=urn:cts:etf:psath.expps.grc:1
+	</code></pre>
 		<h2 id="rest">Accessing the Transcriptions - REST API</h2>
 		<p>The REST API has the following base URL:</p>
 		<pre><code class="http" style="font-size:120%">
@@ -88,6 +103,26 @@ https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/
 				<p>Returns a list of all commentary fragments of a particular manuscript.</p>
 				<p style="font-family: monospace;color: black;">manuscripts/{manuscript-id}/commentaryfragments/{commentaryfragment-id}</p>
 				<p>Returns a particular commentary fragment of a particular manuscript.</p>
+				<p style="font-family: monospace; color: black;">manuscripts/{manuscript-id}/commentaryfragments/search</p>
+				<p>Parameters:</p>
+				<ol>
+					<li><span style="font-family: monospace; color: black;">author</span> - The author of a fragment according to the manuscript.</li>
+					<li><span style="font-family: monospace; color: black;">author-critical</span> - The author critically attributed of a commentary fragment.</li>
+					<li><span style="font-family: monospace; color: black;">reference</span> - The commented psalmverse.</li>
+					<li><span style="font-family: monospace; color: black;">reference-from</span> - The start of a range of commented psalmverses.</li>
+					<li><span style="font-family: monospace; color: black;">reference-to</span> - The end of a range of commented psalmverses.</li>
+				</ol>
+				<p>With this endpoint and the parameters it is possible to search for fragments of a particular author, for commentary fragments concerning a particular psalmverse, or for fragments commenting on a range of psalmverses.</p>
+				<p>Examples:</p>
+				<pre><code class="http" style="font-size:120%">
+https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/vat-gr-754/commentaryfragments/search?author=Athanasius
+				</code></pre>
+				<pre><code class="http" style="font-size:120%">
+https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/vat-gr-754/commentaryfragments/search?reference=Ps (LXX) 7,10
+				</code></pre>
+				<pre><code class="http" style="font-size:120%">
+https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/vat-gr-754/commentaryfragments/search?reference-from=Ps (LXX) 9,1&reference-to=Ps (LXX) 9,4
+				</code></pre>
 			<h3 id="rest-hexaplaric-variants">Hexaplaric Variants</h3>
 				<p style="font-family: monospace;color: black;">hexaplaric-variants</p>
 				<p>Returns a list of all hexaplaric variants of all manuscripts contained in the database.</p>
@@ -95,6 +130,18 @@ https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/
 				<p>Returns a list of all hexaplaric variants of a particular manuscript.</p>
 				<p style="font-family: monospace;color: black;">manuscripts/{manuscript-id}/hexaplaric-variants/{hexaplaric-variant-id}</p>
 				<p>Returns a particular hexaplaric variant of a particular manuscript.</p>
+				<p style="font-family: monospace;color:black;">manuscripts/{manuscript-id}/hexaplaric-variants/search</p>
+				<p>Parameter:</p>
+				<ol>
+					<li><span style="font-family: monospace; color: black;">reference</span> - The psalmverse to which hexaplaric variants are connected.</li>
+					<li><span style="font-family: monospace; color: black;">reference-from</span> - The start of the range to which hexaplaric variants are connected.</li>
+					<li><span style="font-family: monospace; color: black;">reference-to</span> - The end of the range.</li>
+				</ol>
+				<p>With this endpoint and the parameters it is possible to get hexaplaric variants connected to a psalmverse or a range of psalmverses.</p>
+				<p>Example:</p>
+				<pre><code class="http" style="font-size:120%">
+https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/vat-gr-754/hexaplaric-variants/search?reference-from=Ps (LXX) 9,1&reference-to=Ps (LXX) 9,4
+				</code></pre>
 			<h3 id="rest-glosses">Glosses</h3>
 				<p style="font-family: monospace;color: black;">glosses</p>
 				<p>Returns a list of all glosses of all manuscripts contained in the database.</p>
@@ -102,6 +149,49 @@ https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/
 				<p>Returns a list of all glosses of a particular manuscript.</p>
 				<p style="font-family: monospace;color: black;">manuscripts/{manuscript-id}/glosses/{gloss-id}
 				<p>Returns a particular gloss of a particular manuscript.</p>
+				<p style="font-family: monospace;color:black;">manuscripts/{manuscript-id}/glosses/search</p>
+				<p>Parameter:</p>
+				<ol>
+					<li><span style="font-family: monospace; color: black;">author</span> - The author of a gloss according to the manuscript.</li>
+					<li><span style="font-family: monospace; color: black;">author-critical</span> - The author critically attributed of a gloss.</li>
+					<li><span style="font-family: monospace; color: black;">reference</span> - The commented psalmverse.</li>
+					<li><span style="font-family: monospace; color: black;">reference-from</span> - The start of a range of commented psalmverses.</li>
+					<li><span style="font-family: monospace; color: black;">reference-to</span> - The end of a range of commented psalmverses.</li>
+				</ol>
+				<p>With this endpoint and the parameters it is possible to search for glosses by an author or for glosses connected to a psalmverse or a range of psalmverses.</p>
+				<p>Example:</p>
+				<pre><code class="http" style="font-size:120%">
+https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/vat-gr-754/glosses/search?reference-from=Ps (LXX) 1,1&reference-to=Ps (LXX) 9,4
+				</code></pre>
+			<h3 id="rest-authors">Authors</h3>
+				<p style="font-family:monospace;color:black;">manuscripts/{manuscript-name}/authors</p>
+				<p>Returns a list of authors of fragments in a given manuscript.</p>
+				<p style="font-family:monospace;color:black;">manuscripts/{manuscript-name}/authors-distinct</p>
+				<p>Returns a list of distinct authors of fragments in a given manuscript.</p>
+				<p style="font-family:monospace;color:black;">manuscripts/{manuscript-name}/commentaryfragments/authors-distinct</p>
+				<p>Returns a list of distinct authors of commentary fragments in a given manuscript.</p>
+				<p style="font-family:monospace;color:black;">manuscripts/{manuscript-name}/glosses/authors-distinct</p>
+				<p>Returns a list of distinct authors of glosses in a given manuscript.</p>
+			<h3 id="rest-authors-critical">Authors Critical</h3>
+				<p style="font-family:monospace;color:black;">manuscripts/{manuscript-name}/authors-critical</p>
+				<p>Returns a list of critically assigned authors of fragments in a given manuscript.</p>
+				<p style="font-family:monospace;color:black;">manuscripts/{manuscript-name}/authors-critical-distinct</p>
+				<p>Returns a list of distinct critically assigned authors of fragments in a given manuscript.</p>
+				<p style="font-family:monospace;color:black;">manuscripts/{manuscript-name}/authors-critical-normalized</p>
+				<p>Returns a list of normalized critically assigned authors of fragments in a given manuscript.</p>
+				<p style="font-family:monospace;color:black;">manuscripts/{manuscript-name}/commentaryfragments/authors-critical-normalized</p>
+				<p>Returns a list of normalized critically assigned authors of commentary fragments in a given manuscript.</p>
+				<p style="font-family:monospace;color:black;">manuscripts/{manuscript-name}/glosses/authors-critical-normalized</p>
+				<p>Returns a list of normalized critically assigned authors of glosses in a given manuscript.</p>
+			<h3 id="rest-references">References</h3>
+				<p style="font-family:monospace;color:black;">manuscripts/{manuscript-name}/references</p>
+				<p>Returns a list of psalmverses for which fragments are available in a given manuscript.</p>
+				<p style="font-family:monospace;color:black;">manuscripts/{manuscript-name}/commentaryfragments/references</p>
+				<p>Returns a list of psalmverses for which commentary fragments are available in a given manuscript.</p>
+				<p style="font-family:monospace;color:black;">manuscripts/{manuscript-name}/hexaplaric-variants/references</p>
+				<p>Returns a list of psalmverses for which hexaplaric variants are available in a given manuscript.</p>
+				<p style="font-family:monospace;color:black;">manuscripts/{manuscript-name}/glosses/references</p>
+				<p>Returns a list of psalmverses for which glosses are available in a given manuscript.</p>
 	</div>
   </body>
 </html>

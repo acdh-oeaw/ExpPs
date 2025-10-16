@@ -14,15 +14,13 @@ tags:
     description: Query manuscripts for glosses.
   - name: hexaplaric-variants
     description: Query manuscripts for hexaplaric variants.
-  - name: psalmtexts
-    description: Query manuscripts for psalmtexts.
   - name: authors
     description: Query manuscripts for authors of commentaryfragments.
   - name: authors-critical
     description: Query manuscripts for critical assigned authors of commentaryfragments.
   - name: references
     description: Query manuscripts for references to psalmtexts for which commentaryfragments exist.
-host: "psalmcatenae-server.acdh.oeaw.ac.at"
+host: "expps.acdh.oeaw.ac.at/psalmcatenae-server"
 schemes:
   - "https"
 paths:
@@ -33,14 +31,11 @@ paths:
       description: "Returns a list of available manuscripts."
       produces:
         - application/hal+json
-        - application/json
       responses:
         '200':
           description: OK
         '404':
           description: Not Found
-        '415':
-          description: Unsupported Media Type
   '/commentaryfragments':
     get:
       tags:
@@ -48,14 +43,11 @@ paths:
       description: "Returns a list of all available commentaryfragments in all manuscripts."
       produces:
         - application/hal+json
-        - application/json
       responses:
         '200':
           description: OK
         '404':
           description: Not Found
-        '415':
-          description: Unsupported Media Type
   '/glosses':
     get:
       tags:
@@ -63,14 +55,11 @@ paths:
       description: "Returns a list of all available glosses in all manuscripts."
       produces:
         - application/hal+json
-        - application/json
       responses:
         '200':
           description: OK
         '404':
           description: Not Found
-        '415':
-          description: Unsupported Media Type
   '/hexaplaric-variants':
     get:
       tags:
@@ -78,29 +67,11 @@ paths:
       description: "Returns a list of all available hexaplaric variants in all manuscripts."
       produces:
         - application/hal+json
-        - application/json
       responses:
         '200':
           description: OK
         '404':
           description: Not Found
-        '415':
-          description: Unsupported Media Type
-  '/psalmtexts':
-    get:
-      tags:
-        - psalmtexts
-      description: "Returns a list of all available psalmtexts in all manuscripts."
-      produces:
-        - application/hal+json
-        - application/json
-      responses:
-        '200':
-          description: OK
-        '404':
-          description: Not Found
-        '415':
-          description: Unsupported Media Type
   '/commentaryfragments/{commentaryfragment-id}':
     parameters:
      - name: commentaryfragment-id
@@ -114,14 +85,11 @@ paths:
       description: "Returns a particular commentaryfragment if existent in all manuscripts."
       produces:
         - application/hal+json
-        - application/json
       responses:
         '200':
           description: OK
         '404':
           description: Not Found
-        '415':
-          description: Unsupported Media Type
   '/glosses/{gloss-id}':
     parameters:
      - name: gloss-id
@@ -135,14 +103,11 @@ paths:
       description: "Returns a particular gloss if existent in all manuscripts."
       produces:
         - application/hal+json
-        - application/json
       responses:
         '200':
           description: OK
         '404':
           description: Not Found
-        '415':
-          description: Unsupported Media Type
   '/hexaplaric-variants/{hexaplaric-variant-id}':
     parameters:
      - name: hexaplaric-variant-id
@@ -156,35 +121,11 @@ paths:
       description: "Returns a particular hexaplaric variant if existent in all manuscripts."
       produces:
         - application/hal+json
-        - application/json
       responses:
         '200':
           description: OK
         '404':
           description: Not Found
-        '415':
-          description: Unsupported Media Type
-  '/psalmtexts/{psalmtext-id}':
-    parameters:
-     - name: psalmtext-id
-       in: path
-       required: true
-       type: string
-       description: "ID referencing a particular fragment of psalmtext"
-    get:
-      tags:
-        - psalmtexts
-      description: "Returns a particular psalmtext if existent in all manuscripts."
-      produces:
-        - application/hal+json
-        - application/json
-      responses:
-        '200':
-          description: OK
-        '404':
-          description: Not Found
-        '415':
-          description: Unsupported Media Type
   '/manuscripts/{manuscript-name}/commentaryfragments':
     parameters:
      - name: manuscript-name
@@ -197,25 +138,37 @@ paths:
        required: false
        type: string
        description: "Search for commentaryfragments of a particular author in the given manuscript."
+     - name: author-critical
+       in: query
+       required: false
+       type: string
+       description: "Search for commentaryfragments of a particular critically assigned author in the given manuscript."
      - name: reference
        in: query
        required: false
        type: string
        description: "Search for commentaryfragments concerning a particular psalmtext in the given manuscript."
+     - name: reference-from
+       in: query
+       required: false
+       type: string
+       description: "Search for commentaryfragments connected with a range of psalmtexts in the given manuscript."
+     - name: reference-to
+       in: query
+       required: false
+       type: string
+       description: "Search for commentaryfragments connected with a range of psalmtexts in the given manuscript."
     get:
       tags:
         - commentaryfragments
       description: Returns a list of all commentaryfragments in a given manuscript or commentaryfragments for a given author concerning a given psalmtext.
       produces:
         - application/hal+json
-        - application/json
       responses:
         '200':
           description: OK
         '404':
           description: Not Found
-        '415':
-          description: Unsupported Media Type
   '/manuscripts/{manuscript-name}/glosses':
     parameters:
      - name: manuscript-name
@@ -229,14 +182,11 @@ paths:
       description: Returns a list of all glosses in a given manuscript.
       produces:
         - application/hal+json
-        - application/json
       responses:
         '200':
           description: OK
         '404':
           description: Not Found
-        '415':
-          description: Unsupported Media Type
   '/manuscripts/{manuscript-name}/hexaplaric-variants':
     parameters:
      - name: manuscript-name
@@ -250,35 +200,11 @@ paths:
       description: Returns a list of all hexaplaric variants in a given manuscript.
       produces:
         - application/hal+json
-        - application/json
       responses:
         '200':
           description: OK
         '404':
           description: Not Found
-        '415':
-          description: Unsupported Media Type
-  '/manuscripts/{manuscript-name}/psalmtexts':
-    parameters:
-     - name: manuscript-name
-       in: path
-       required: true
-       type: string
-       description: "Name of an existing manuscript in the database"
-    get:
-      tags:
-        - psalmtexts
-      description: Returns a list of all psalmtexts in a given manuscript.
-      produces:
-        - application/hal+json
-        - application/json
-      responses:
-        '200':
-          description: OK
-        '404':
-          description: Not Found
-        '415':
-          description: Unsupported Media Type
   '/manuscripts/{manuscript-name}/commentaryfragments/{commentaryfragment-id}':
     parameters:
      - name: manuscript-name
@@ -297,14 +223,11 @@ paths:
       description: Returns a particular commentaryfragment identified by the id if existent in a given manuscript.
       produces:
         - application/hal+json
-        - application/json
       responses:
         '200':
           description: OK
         '404':
           description: Not Found
-        '415':
-          description: Unsupported Media Type
   '/manuscripts/{manuscript-name}/glosses/{gloss-id}':
     parameters:
      - name: manuscript-name
@@ -323,14 +246,11 @@ paths:
       description: Returns a particular gloss identified by the id if existent in a given manuscript.
       produces:
         - application/hal+json
-        - application/json
       responses:
         '200':
           description: OK
         '404':
           description: Not Found
-        '415':
-          description: Unsupported Media Type
   '/manuscripts/{manuscript-name}/hexaplaric-variants/{hexaplaric-variant-id}':
     parameters:
      - name: manuscript-name
@@ -349,40 +269,11 @@ paths:
       description: Returns a particular hexaplaric variant identified by the id if existent in a given manuscript.
       produces:
         - application/hal+json
-        - application/json
       responses:
         '200':
           description: OK
         '404':
           description: Not Found
-        '415':
-          description: Unsupported Media Type
-  '/manuscripts/{manuscript-name}/psalmtexts/{psalmtext-id}':
-    parameters:
-     - name: manuscript-name
-       in: path
-       required: true
-       type: string
-       description: "Name of an existing manuscript in the database"
-     - name: psalmtext-id
-       in: path
-       required: true
-       type: string
-       description: "ID referencing a particular psalmtext"
-    get:
-      tags:
-        - psalmtexts
-      description: Returns a particular psalmtext identified by the id if existent in a given manuscript.
-      produces:
-        - application/hal+json
-        - application/json
-      responses:
-        '200':
-          description: OK
-        '404':
-          description: Not Found
-        '415':
-          description: Unsupported Media Type
   '/manuscripts/{manuscript-name}/authors':
     parameters:
      - name: manuscript-name
@@ -396,14 +287,11 @@ paths:
       description: Returns a list of authors of commentaryfragments in a given manuscript.
       produces:
         - application/hal+json
-        - application/json
       responses:
         '200':
           description: OK
         '404':
           description: Not Found
-        '415':
-          description: Unsupported Media Type
   '/manuscripts/{manuscript-name}/authors-critical':
     parameters:
      - name: manuscript-name
@@ -417,14 +305,11 @@ paths:
       description: Returns a list of critical assigned authors of commentaryfragments in a given manuscript.
       produces:
         - application/hal+json
-        - application/json
       responses:
         '200':
           description: OK
         '404':
           description: Not Found
-        '415':
-          description: Unsupported Media Type
   '/manuscripts/{manuscript-name}/references':
     parameters:
      - name: manuscript-name
@@ -438,11 +323,8 @@ paths:
       description: Returns a list of references of psalmtexts for which one or more commentaryfragments exists in a given manuscript.
       produces:
         - application/hal+json
-        - application/json
       responses:
         '200':
           description: OK
         '404':
           description: Not Found
-        '415':
-          description: Unsupported Media Type
