@@ -9,10 +9,10 @@
     <xsl:template match="tei:p">
     <xsl:text>{ "commentaryfragment" : {</xsl:text>
     <xsl:text> "id" : "</xsl:text>
-    <xsl:if test="exists(@corresp)">
+    <xsl:if test="@corresp">
       <xsl:value-of select="substring-after(@corresp,'#')"/>
     </xsl:if>
-    <xsl:if test="exists(@xml:id)">
+    <xsl:if test="@xml:id">
       <xsl:value-of select="@xml:id"/>
     </xsl:if>
     <xsl:text>", "fragment" : "</xsl:text>
