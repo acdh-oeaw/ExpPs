@@ -29,6 +29,7 @@
     
     <xsl:template match="tei:span[@type = 'text-critical']">
       <xsl:apply-templates select="child::node()"/>
+      <xsl:text> </xsl:text>
     </xsl:template>
     
     <xsl:template match="tei:quote">
@@ -78,6 +79,10 @@
       <xsl:text> [</xsl:text>
       <xsl:value-of select="@source"/>
       <xsl:text>]</xsl:text>
+    </xsl:template>
+  
+    <xsl:template match="tei:anchor[@type = 'biblical-quotation']">
+      <xsl:text> </xsl:text>
     </xsl:template>
     
     <xsl:template match="text()">

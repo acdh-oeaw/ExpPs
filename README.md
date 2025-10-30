@@ -50,4 +50,15 @@ Two types of transcription exist: Full transcriptions and reduced or simplified 
    - ```xml/par-gr-166/par-gr-166.xml``` - ```html/manuscripts/par_gr_166.html```
    - ```xml/par-gr-164/par-gr-164.xml``` - ```html/manuscripts/par_gr_164.html```
    - ```xml/plut-5-30/plut-5-30.xml``` - ```html/manuscripts/plut_5_30.html```
-   - ```xml/plut-6-3/plut-6-3.xml``` - ```html/manuscripts/plut_6_3.html```   
+   - ```xml/plut-6-3/plut-6-3.xml``` - ```html/manuscripts/plut_6_3.html```
+
+## The Edition
+
+The TEI/XML files of the edition are in the directory ```xml/edition``` namely ```edition-ps-1-10.xml``` (Ps 1-25) and ```edition-ps-26-30.xml``` (Ps 26-30).
+Two transformations exist in the directory ```xsl/edition```: ```edition-to-html-for-homepage.xsl``` - for the html output on the homepage, and ```edition-to-tex.xsl``` for the creation of the LaTeX sources of the edition.
+The transformations are:
+
+- ```xml/edition/edition-ps-1-10.xml``` - ```xsl/edition/edition-to-html-for-homepage.xsl``` - ```html/edition.html```
+- ```xml/edition/edition-ps-26-30.xml``` - ```xsl/edition/edition-to-html-for-homepage.xsl``` - ```html/edition-part-two.html```
+
+The results of the transformation to LaTeX have to be processed with the XeLaTeX engine. The font file ```SBL_BLit.ttf``` is used and expected in the same directory as the LaTeX source file.
