@@ -39,3 +39,7 @@ In dieser Datei wird dokumentiert, wie weit die Transkriptionen der einzelnen Ha
 - ```plut-5-30``` - keine hexaplarischen Varianten; Kommentarfragmente bis Ps 28,11b. 
 - ```plut-6-3``` - keine hexaplarischen Varianten; Kommentarfragmente bis Ps 28,11.
 - ```vat-gr-1422``` - keine hexaplarischen Varianten; Kommentarfragmente bis Ps 28,11.
+
+## 20.11.2025: Weitere Überarbeitung
+
+- ```vat-gr-754```- hexaplarische Varianten Ps 25,12 bis 39,7;
