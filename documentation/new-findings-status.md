@@ -42,4 +42,4 @@ In dieser Datei wird dokumentiert, wie weit die Transkriptionen der einzelnen Ha
 
 ## 20.11.2025: Weitere Überarbeitung
 
-- ```vat-gr-754```- hexaplarische Varianten Ps 25,12 bis 39,7;
+- ```vat-gr-754```- hexaplarische Varianten Ps 25,12 bis 39,7; Kommentarfragmente Ps 26,4c bis 40,5a.
