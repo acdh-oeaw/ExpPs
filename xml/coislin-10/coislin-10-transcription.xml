@@ -13,12 +13,12 @@
                <resp>by</resp>
                <persName>Sebastiano Panteghini (Ps 1 to Ps 12), Marta Kontić (Ps 13 to Ps 21;
                   reviewed by Sebastiano Panteghini), and Christoph Scheerer (Ps 26 to Ps
-                  30</persName>
+                  50</persName>
             </respStmt>
             <respStmt>
                <resp>encoded by</resp>
                <persName>Sebastiano Panteghini (Ps 1 to Ps 12), Marta Kontić (Ps 13 to Ps 21), and
-                  Christoph Scheerer (Ps 26 to Ps 30)</persName>
+                  Christoph Scheerer (Ps 26 to Ps 50)</persName>
             </respStmt>
          </titleStmt>
          <publicationStmt>
@@ -232,6 +232,14 @@
                   <persName>Hieronymus Hierosolomytanus</persName>
                   <bibl>Hieronymus, fr. (PG 12)</bibl>
                </person>
+               <person xml:id="person-37a" role="author" sameAs="#person-37">
+                  <persName>Hieronymus Hierosolomytanus</persName>
+                  <bibl>Hieronymus, fr. (Waldis)</bibl>
+               </person>
+               <person xml:id="person-37b" role="author" sameAs="#person-37">
+                  <persName>Hieronymus Hierosolomytanus</persName>
+                  <bibl>Hieronymus, fr. (inedita)</bibl>
+               </person>
                <person xml:id="person-38" role="author" sameAs="#person-13">
                   <persName>Origenes</persName>
                   <bibl>Origenes, schol. (?) (PG 23)</bibl>
@@ -434,6 +442,14 @@
                <person xml:id="person-93" role="author" sameAs="#person-20">
                   <persName>Gregorius Nazianzenus</persName>
                   <bibl>Gregorius Naz., or. 27–45 (PG 36)</bibl>
+               </person>
+               <person xml:id="person-94" role="author" sameAs="#person-20">
+                  <persName>Nilus Ancyranus</persName>
+                  <bibl>Nilus, exerc. (PG 79)</bibl>
+               </person>
+               <person xml:id="person-95" role="author" sameAs="#person-24">
+                  <persName>Gregorius Nyssenus</persName>
+                  <bibl>Gregorius Nyssenus, Antirrheticus adversus Apollinarum (Müller; GNA 3,1)</bibl>
                </person>
             </listPerson>
          </sourceDesc>
@@ -14828,7 +14844,7 @@
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-44-16" source="Theodoretus"
                      corresp="#coislin-10-ps-44-5c">
                      <quote type="patristic" subtype="quotation" xml:id="coislin-10-quot-44-16"
-                        source="Theodoretus, comm. in Ps 44,2 (PG 80, 1189 D3–6)"
+                        source="Theodoretus, comm. in Ps 44,4.5 (PG 80, 1189 D3–6)"
                         corresp="#person-16"/>
                      <ref target="#vat-gr-754:vat-gr-754-fr-44-xx" type="xxx">Vat. gr.
                         754</ref>
@@ -14839,7 +14855,7 @@
                </ab>
             </div>
             
-            <pb n="101r" facs="https://gallica.bnf.fr/ark:/12148/btv1b52513484s/f214.item"/>
+            <pb n="101r–v" facs="https://gallica.bnf.fr/ark:/12148/btv1b52513484s/f214.item"/>
             <div type="commentary" subtype="commentary" xml:id="coislin-10-44-3"
                change="commentaryfragments-only">
                <ab xml:lang="grc">
@@ -14864,16 +14880,65 @@
                   <note type="lemma">Ps 44,7a</note>
                   <seg type="commentaryfragment" xml:id="coislin-10-fr-44-18"
                      source="(Athanasius)" corresp="#coislin-10-ps-44-7a"
-                     copyOf="#edition-part-two:edition-26-30-44-7/1"><quote type="patristic"
+                     copyOf="#edition-part-two:edition-26-30-44-7-1"><quote type="patristic"
                         subtype="quotation" xml:id="coislin-10-quot-44-18"
                         source="Athanasius, exp. in Ps 44,7a" corresp="#person-2">Οἱ κεκλημένοι διὰ τῶν ἀποστόλων ὁμολογοῦντες τοῦ
-                        μονογενοῦς τὴν θεότητα, φασίν. ὁ θρόνος σου, ὁ θεὸς εἰς τὸν: –
+                        μονογενοῦς τὴν θεότητα, φασίν. ὁ θρόνος σου ὁ θεὸς εἰς τὸν: –
                      </quote>
                      <ref target="#vat-gr-754:vat-gr-754-fr-44-xx" type="xxx">Vat. gr.
                         754</ref>
                      <note type="attribution" xml:lang="grc">Ι´</note></seg>
                   
-                  Hiero
+                  <seg type="commentaryfragment" xml:id="coislin-10-fr-44-19" source="Hieronymus" corresp="#coislin-10-ps-44-7a">
+                     <quote type="patristic" subtype="ineditum" xml:id="coislin-10-quot-44-19" source="Hieronymus, fr. in Ps 44,7a (ineditum, non habent Morin et Waldis)" corresp="#person-37b">θρόνος ἐπὶ θεοῦ. ἡ βασιλεία αὐτοῦ εἴρηται· ῥαβδος δὲ. ἡ ἐξουσία: –</quote>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-44-xx" type="xxx">Vat. gr.
+                        754</ref>
+                     <note type="textual-commentary"><foreign xml:lang="grc"> ῥαβδος ... ἐξουσία</foreign>cf. <quote type="patristic" source="Origenes, fr. in Ps 2,9 (PG 12, 1112 A6) et fr. in Ps 44,7 (PG 12, 1429 D8 – 1432 A3)" corresp="#person-13"/></note>
+                     <note type="attribution" xml:lang="grc">Ἱερωνύμου</note></seg>
+                 
+                 
+                  <note type="lemma">Ps 44,7b</note>
+                  <seg type="commentaryfragment" xml:id="coislin-10-fr-44-20"
+                     source="(Athanasius)" corresp="#coislin-10-ps-44-7b"
+                     copyOf="#edition-part-two:edition-26-30-44-7-2"><quote type="patristic"
+                        subtype="quotation" xml:id="coislin-10-quot-44-20"
+                        source="Athanasius, exp. in Ps 44,7b" corresp="#person-2">Ἡ εὐθύτης παρὰ τῆ θεία γραφῆ. δικαιοσύνην σημαίνει·
+                        λέγει τοίνυν· ὡς οἱ βασιλευόμενοι παρὰ Χριστοῦ. τὴν τῆς
+                        δικαιοσύνης μάθοιεν βαδίζειν ὁδόν: –
+                     </quote>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-44-xx" type="xxx">Vat. gr.
+                        754</ref>
+                     <note type="attribution" xml:lang="grc">ΙΑ´</note></seg>
+                  
+                  <seg type="commentaryfragment" xml:id="coislin-10-fr-44-21" source="Theodoretus"
+                     corresp="#coislin-10-ps-44-7b">
+                     <quote type="patristic" subtype="quotation" xml:id="coislin-10-quot-44-21"
+                        source="Gregorius Nyssenus, Antirrheticus adversus Apollinarum (220,21–26 Müller)"
+                        corresp="#person-95"/>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-44-xx" type="xxx">Vat. gr.
+                        754</ref>
+                     <note type="attribution" xml:lang="grc">Θεοδ(ωρήτου)</note>
+                  </seg>
+                  
+                  <note type="lemma">Ps 44,8a–c</note>
+                  <seg type="commentaryfragment" xml:id="coislin-10-fr-44-22"
+                     source="(Athanasius)" corresp="#coislin-10-ps-44-8a"
+                     copyOf="#edition-part-two:edition-26-30-44-8"><quote type="patristic"
+                        subtype="quotation" xml:id="coislin-10-quot-44-22"
+                        source="Athanasius, exp. in Ps 44,8a" corresp="#person-2">Ἐπειδὴ τὴν τροπὴν παθοῦσα ἡ ἀνθρώπου φύσις· καταλείψασα
+                        τὴν δικαιοσύνην ἠγάπησε τὴν ἀνομίαν. ταύτη
+                        τοι γέγονεν ἄνθρωπος ὁ μονογενὴς κατορθῶν ἐν ἑαυτῶ
+                        τῆ ἀνθρώπου φύσει· τὸ ἀγαπᾶν δικαιοσύνην. καὶ μισεῖν
+                        ἀνομίαν· καὶ ἡ τῆς ἐνανθρωπήσεως αὕτη αἰτία·
+                        διό φ<subst><del rend="unmarked">α</del><add place="above">η</add></subst>σὶν δια τοῦτο ἔχρισέ σε ὁ θεός· διὰ τοῦτο δὲ ποῖον.
+                        ἠ ὥστε καὶ τοὺς ἐν μεθέξει σοῦ γενομένους ἀγαλλι||
+                        άσασθαι ἅτε δὴ ὡς ἠλεημένους· διὰ τὸ κατoρθῶσθαι
+                        αὐτοῖς διὰ σοῦ τὸ ἀγαπᾶν δικαιοσύνην. καὶ μισεῖν ἀνομίαν: –
+                     </quote>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-44-xx" type="xxx">Vat. gr.
+                        754</ref>
+                     <note type="attribution" xml:lang="grc">ΙΒ´</note></seg>
+                  
                   
                </ab>
             </div>
