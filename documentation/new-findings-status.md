@@ -42,4 +42,8 @@ In dieser Datei wird dokumentiert, wie weit die Transkriptionen der einzelnen Ha
 
 ## 20.11.2025: Weitere Überarbeitung
 
-- ```vat-gr-754```- hexaplarische Varianten Ps 25,12 bis 39,7; Kommentarfragmente Ps 26,4c bis 40,5a.
+- ```vat-gr-754``` - hexaplarische Varianten Ps 25,12 bis 39,7; Kommentarfragmente Ps 26,4c bis 40,5a.
+- ```ambr-b-106-sup``` - keine hexaplarischen Varianten; Kommentarfragmente bis Ps 28,2b.
+- ```ambr-m-47-sup``` - keine hexaplarischen Varianten; Kommentarfragmente von Ps 25,2 bis 29,13b.
+- ```bodl-auct-d-4-1``` - keine neuen hexaplarischen Varianten; Kommentarfragmente von Ps 24,17a bis 28,7a.
+- ```coislin-10``` - keine neuen hexaplarischen Varianten; letztes Frgm.: coislin-10-quot-26-45
