@@ -36243,7 +36243,7 @@
             <!-- Psalm 45 commentary -->
             
             <div type="commentary" subtype="commentary" xml:id="vat-gr-754-45-12"
-               rendition="xxx" change="commentaryfragments-only">
+               rendition="top-of-the-page" change="commentaryfragments-only">
                <ab xml:lang="grc">
                   <note type="lemma">(Ps 45,11b; bibletext missing)</note>
                   <seg type="commentaryfragment" xml:id="vat-gr-754-fr-45-29" rendition="#top-of-the-page"
@@ -36691,7 +36691,9 @@
                      source="(Athanasius)" corresp="#vat-gr-754-ps-47-2a"
                      copyOf="#edition-part-two:edition-26-30-47-2"><quote type="patristic"
                         subtype="quotation" xml:id="vat-gr-754-quot-47-4"
-                        source="Athanasius, exp. in Ps 47,2a–b" corresp="#person-2">: –</quote>
+                        source="Athanasius, exp. in Ps 47,2a–b" corresp="#person-2">Οὐκ ἔτι φη(σὶν) ἐπὶ τὴν Ἰουδαίαν μόνoν μέγας ὁ θεὸς, ἀλλὰ
+                        καὶ ἐπὶ τὸ ὄρος τὸ ἡγιασμένον· ὄρος δὲ ἐνταῦθα τὴν
+                        ἐκκλησίαν φησὶν. διὰ τὸ ὑψηλὸν τῶν περὶ θεοῦ δογμάτων: –</quote>
                      <note type="attribution" xml:lang="grc">ΚΑ´</note>
                         </seg>
                   
@@ -36714,7 +36716,7 @@
             <div type="bibletext" subtype="commented" xml:id="vat-gr-754-47-5">
                <ab xml:lang="grc">
                      <quote type="bibletext" n="Ps (LXX) 47,3" xml:lang="grc" xml:id="vat-gr-754-ps-47-3">
-                     <anchor type="psalmtext" n="Ps (LXX) 47,3a" xml:id="vat-gr-754-ps-47-3a"/>εὖ ῥιζῶν ἀγαλλιάματι πάσης τῆς γῆς.
+                     <anchor type="psalmtext" n="Ps (LXX) 47,3a" xml:id="vat-gr-754-ps-47-3a"/>εὖ ῥιζῶ<del rend="erasure">ν</del> ἀγαλλιάματι πάσης τῆς γῆς.
                      <anchor type="psalmtext" n="Ps (LXX) 47,3b" xml:id="vat-gr-754-ps-47-3b"/>ὄρη Σιων, τὰ πλευρὰ τοῦ βορρᾶ,
                      <anchor type="psalmtext" n="Ps (LXX) 47,3c" xml:id="vat-gr-754-ps-47-3c"/>ἡ πόλις τοῦ βασιλέως τοῦ μεγάλου,
                   </quote>
@@ -36723,31 +36725,91 @@
                      <anchor type="psalmtext" n="Ps (LXX) 47,4b" xml:id="vat-gr-754-ps-47-4b"/>ὅταν ἀντιλαμβάνηται αὐτῆς.
                   </quote>
                   <quote type="bibletext" n="Ps (LXX) 47,5" xml:lang="grc" xml:id="vat-gr-754-ps-47-5">
-                     <anchor type="psalmtext" n="Ps (LXX) 47,5a" xml:id="vat-gr-754-ps-47-5a"/>ὅτι ἰδοὺ οἱ βασιλεῖς συνήχθησαν,
-                     <anchor type="psalmtext" n="Ps (LXX) 47,5b" xml:id="vat-gr-754-ps-47-5b"/>ἤλθοσαν ἐπὶ τὸ αὐτό·
+                     <anchor type="psalmtext" n="Ps (LXX) 47,5a" xml:id="vat-gr-754-ps-47-5a"/>ὅτι ἰδοὺ οἱ βασιλεῖς τῆς γῆς (τῆς γῆς om. LXX Rahlfs) συνήχθησαν,
+                     <anchor type="psalmtext" n="Ps (LXX) 47,5b" xml:id="vat-gr-754-ps-47-5b"/>διήλθοσαν (ἤλθοσαν LXX Rahlfs) ἐπὶ τὸ αὐτό·
                    </quote>
                   <quote type="bibletext" n="Ps (LXX) 47,6" xml:lang="grc" xml:id="vat-gr-754-ps-47-6">
                      <anchor type="psalmtext" n="Ps (LXX) 47,6a" xml:id="vat-gr-754-ps-47-6a"/>αὐτοὶ ἰδόντες οὕτως ἐθαύμασαν,
                      <anchor type="psalmtext" n="Ps (LXX) 47,6b" xml:id="vat-gr-754-ps-47-6b"/>ἐταράχθησαν, ἐσαλεύθησαν,
                     </quote>
+                 </ab>
+            </div>
+            
+            <!-- Psalm 47 commentary -->
+            
+            <div type="hexaplaric" subtype="commentary" xml:id="vat-gr-754-47-6"
+               rendition="#left-column" rend="capital letters" change="commentaryfragments-only">
+               <ab xml:lang="grc">
+                  <note type="lemma">(Ps 47,3a? ([<foreign xml:lang="grc">εὐρίζω(ν)</foreign>]?; linking sign at the bibletext missing)</note>
+                  <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-47-1" rendition="#left-column"
+                     source="Quinta (Ps 47,3a?)" corresp="#vat-gr-754-ps-47-3a">ἡ E´ εὐκλάδω
+                  </seg>
+                  <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-47-2" rendition="#left-column"
+                     source="Aquila (Ps 46,3a?)" corresp="#vat-gr-754-ps-47-3a">Α καλω βλαστήματι·
+                  </seg>
+                    <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-47-3" rendition="#left-column"
+                     source="Theodotion (Ps 47,3a?)" corresp="#vat-gr-754-ps-47-3a">Θ εὐρίζω
+                  </seg>
+                   <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-47-4" rendition="#left-column"
+                     source="Symmachus (Ps 46,3a?)" corresp="#vat-gr-754-ps-47-3a">Ϲ ἐπαρχῆς ἀφωρισμενον·
+                  </seg>
+                  <note type="lemma">Ps 47,3b (<foreign xml:lang="grc">τὰ πλευρὰ</foreign>)</note>
+                  <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-47-5" rendition="#left-column"
+                     source="Quinta (Ps 47,3b)" corresp="#vat-gr-754-ps-47-3b">ἡ E´ οἱ μηροὶ·
+                  </seg>
+                  <note type="lemma">Ps 47,4a (<foreign xml:lang="grc">ἐν ταῖς βάρεσιν</foreign>)</note>
+                  <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-47-6" rendition="#left-column"
+                     source="Quinta (Ps 47,4a)" corresp="#vat-gr-754-ps-47-4a">ἡ E´ ἐν τοῖς βασιλείοις· (Field sub attributione Ϲ solo; attributio ad Quintam ex Nobil.)
+                  </seg>
+                  <note type="lemma">Ps 47,4b (<foreign xml:lang="grc">ἀντιλαμβάνηται αὐτῆς</foreign>)</note>
+                  <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-47-7" rendition="#left-column"
+                     source="Aquila (Ps 46,4b)" corresp="#vat-gr-754-ps-47-4b">Α εἰς ὑπερέπαρσιν·
+                  </seg>
+                  <note type="lemma">(Ps 47,6a? ([<foreign xml:lang="grc">ἐταράχθησαν</foreign>]?; linking sign at the bibletext missing)</note>
+                  <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-47-8" rendition="#left-column"
+                     source="Aquila (Ps 46,6a?)" corresp="#vat-gr-754-ps-47-6a">Α ἐθαμβήθησαν: –
+                  </seg>
+               </ab>
+            </div>
+            
+          <div type="commentary" subtype="commentary" xml:id="vat-gr-754-47-7"
+               rendition="top-of-the-page" change="commentaryfragments-only">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 47,3a</note>
+                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-47-6" rendition="#top-of-the-page"
+                     source="(Athanasius)" corresp="#vat-gr-754-ps-47-3a"
+                     copyOf="#edition-part-two:edition-26-30-47-3-1"><quote type="patristic"
+                        subtype="quotation" xml:id="vat-gr-754-quot-47-6"
+                        source="Athanasius, exp. in Ps 47,3a" corresp="#person-2">Ἐξέτεινε φη(σὶ) τὸ ἀγαλλίαμα ἐπὶ πάσης τῆς γῆς: –</quote>
+                     <note type="attribution" xml:lang="grc">ΚΒ´</note>
+                  </seg>
+               </ab>
+            </div>
+         
+            <pb n="128v" facs="https://digi.vatlib.it/view/MSS_Vat.gr.754/128"/>
+            
+            <!-- Psalm 47 bibletxt -->
+            
+            <div type="bibletext" subtype="commented" xml:id="vat-gr-754-47-xy">
+               <ab xml:lang="grc">
                   <quote type="bibletext" n="Ps (LXX) 47,7" xml:lang="grc" xml:id="vat-gr-754-ps-47-7">
                      <anchor type="psalmtext" n="Ps (LXX) 47,7a" xml:id="vat-gr-754-ps-47-7a"/>τρόμος ἐπελάβετο αὐτῶν,
                      <anchor type="psalmtext" n="Ps (LXX) 47,7b" xml:id="vat-gr-754-ps-47-7b"/>ἐκεῖ ὠδῖνες ὡς τικτούσης.
                   </quote>
                   <quote type="bibletext" n="Ps (LXX) 47,8" xml:lang="grc" xml:id="vat-gr-754-ps-47-8">
                      <anchor type="psalmtext" n="Ps (LXX) 47,8a" xml:id="vat-gr-754-ps-47-8a"/>ἐν πνεύματι βιαίῳ συντρίψεις πλοῖα Θαρσις.
-                      </quote>
+                  </quote>
                   <quote type="bibletext" n="Ps (LXX) 47,9" xml:lang="grc" xml:id="vat-gr-754-ps-47-9">
                      <anchor type="psalmtext" n="Ps (LXX) 47,9a" xml:id="vat-gr-754-ps-47-9a"/>καθάπερ ἠκούσαμεν, οὕτως εἴδομεν
                      <anchor type="psalmtext" n="Ps (LXX) 47,9b" xml:id="vat-gr-754-ps-47-9b"/>ἐν πόλει κυρίου τῶν δυνάμεων,
                      <anchor type="psalmtext" n="Ps (LXX) 47,9c" xml:id="vat-gr-754-ps-47-9c"/>ἐν πόλει τοῦ θεοῦ ἡμῶν·
                      <anchor type="psalmtext" n="Ps (LXX) 47,9d" xml:id="vat-gr-754-ps-47-9d"/>ὁ θεὸς ἐθεμελίωσεν αὐτὴν εἰς τὸν αἰῶνα.
                      <anchor type="psalmtext" n="Ps (LXX) 47,9e" xml:id="vat-gr-754-ps-47-9e"/>διάψαλμα.
-                    </quote>
+                  </quote>
                   <quote type="bibletext" n="Ps (LXX) 47,10" xml:lang="grc" xml:id="vat-gr-754-ps-47-10">
                      <anchor type="psalmtext" n="Ps (LXX) 47,10a" xml:id="vat-gr-754-ps-47-10a"/>ὑπελάβομεν, ὁ θεός, τὸ ἔλεός σου
                      <anchor type="psalmtext" n="Ps (LXX) 47,10b" xml:id="vat-gr-754-ps-47-10b"/>ἐν μέσῳ τοῦ ναοῦ σου.
-                     </quote>
+                  </quote>
                   <quote type="bibletext" n="Ps (LXX) 47,11" xml:lang="grc" xml:id="vat-gr-754-ps-47-11">
                      <anchor type="psalmtext" n="Ps (LXX) 47,11a" xml:id="vat-gr-754-ps-47-11a"/>κατὰ τὸ ὄνομά σου, ὁ θεός,
                      <anchor type="psalmtext" n="Ps (LXX) 47,11b" xml:id="vat-gr-754-ps-47-11b"/>οὕτως καὶ ἡ αἴνεσίς σου ἐπὶ τὰ πέρατα τῆς γῆς·
@@ -36772,18 +36834,19 @@
                      <anchor type="psalmtext" n="Ps (LXX) 47,15b" xml:id="vat-gr-754-ps-47-15b"/>εἰς τὸν αἰῶνα καὶ εἰς τὸν αἰῶνα τοῦ αἰῶνος·
                      <anchor type="psalmtext" n="Ps (LXX) 47,15c" xml:id="vat-gr-754-ps-47-15c"/>αὐτὸς ποιμανεῖ ἡμᾶς εἰς τοὺς αἰῶνας.
                   </quote>
-                 </ab>
+               </ab>
             </div>
             
             <!-- Psalm 47 commentary -->
             
-          <div type="commentary" subtype="commentary" xml:id="vat-gr-754-47-6"
+            <div type="commentary" subtype="commentary" xml:id="vat-gr-754-47-xz"
                rendition="xxx" change="commentaryfragments-only">
                <ab xml:lang="grc">
-                  <note type="lemma">Ps 47,2a</note>
+                  <note type="lemma">Ps 47,7a</note>
                   
                </ab>
             </div>
+            
          
             <!-- Psalm 48 bibletxt -->
             
