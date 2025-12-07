@@ -46,4 +46,8 @@ In dieser Datei wird dokumentiert, wie weit die Transkriptionen der einzelnen Ha
 - ```ambr-b-106-sup``` - keine hexaplarischen Varianten; Kommentarfragmente bis Ps 28,2b.
 - ```ambr-m-47-sup``` - keine hexaplarischen Varianten; Kommentarfragmente von Ps 25,2 bis 29,13b.
 - ```bodl-auct-d-4-1``` - keine neuen hexaplarischen Varianten; Kommentarfragmente von Ps 24,17a bis 28,7a.
-- ```coislin-10``` - keine neuen hexaplarischen Varianten; letztes Frgm.: coislin-10-quot-26-45
+- ```coislin-10``` - keine neuen hexaplarischen Varianten; Kommentarfragmente von Ps 26,4c bis 44,7a.
+- ```coislin-12``` - keine hexaplarischen Varianten; keine neuen unbekannte Kommentarfragmente
+- ```coislin-187``` - keine neuen hexaplarischen Varianten; keine neuen unbekannten Kommentarfragmente
+- ```franzon-3``` - keine hexaplarischen Varianten; Kommentarfragmente von Ps 26,4d bis 29,12b.
+- ```mosq-syn-194``` - hexaplarische Varianten bis Ps 26,13a; Kommentarfragmente von Ps 24,5 bis 29,8b.
