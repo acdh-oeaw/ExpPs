@@ -51,3 +51,5 @@ In dieser Datei wird dokumentiert, wie weit die Transkriptionen der einzelnen Ha
 - ```coislin-187``` - keine neuen hexaplarischen Varianten; keine neuen unbekannten Kommentarfragmente
 - ```franzon-3``` - keine hexaplarischen Varianten; Kommentarfragmente von Ps 26,4d bis 29,12b.
 - ```mosq-syn-194``` - hexaplarische Varianten bis Ps 26,13a; Kommentarfragmente von Ps 24,5 bis 29,8b.
+- ```oxon-s-trin-78``` - keine neuen hexplarischen Varianten; Kommentarfragmente von Ps 25,2b bis 29,12b.
+- ```par-gr-139``` - keine hexaplarischen Varianten; Kommentarfragmente von Ps 16,2a bis 29,8b.
