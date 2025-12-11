@@ -57,4 +57,4 @@ In dieser Datei wird dokumentiert, wie weit die Transkriptionen der einzelnen Ha
 - ```par-gr-166``` - keine hexaplarischen Varianten; Kommentarfragmente Ps 24,15 bis Ps 29,12b.
 - ```plut-5-30``` - keine neuen hexaplarischen Varianten; Kommentarfragmente Ps 24,11 bis 27,4a.
 - ```plut-6-3``` - keine neuen hexaplarischen Varianten; Kommentarfragmente Ps 13,7b bis 29,11a (möglicherweise ist eine Lücke vorhanden).
-- ```vat-gr-1422``` - 
+- ```vat-gr-1422``` - keine neuen hexaplarischen Varianten; Kommentarfragmente Ps 19,10 bis 29,11a (möglicherweise ist eine Lücke vorhanden).
