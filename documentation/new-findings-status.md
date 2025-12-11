@@ -53,3 +53,8 @@ In dieser Datei wird dokumentiert, wie weit die Transkriptionen der einzelnen Ha
 - ```mosq-syn-194``` - hexaplarische Varianten bis Ps 26,13a; Kommentarfragmente von Ps 24,5 bis 29,8b.
 - ```oxon-s-trin-78``` - keine neuen hexplarischen Varianten; Kommentarfragmente von Ps 25,2b bis 29,12b.
 - ```par-gr-139``` - keine hexaplarischen Varianten; Kommentarfragmente von Ps 16,2a bis 29,8b.
+- ```par-gr-164``` - keine neuen hexaplarischen Varianten; Kommentarfragmente von Ps 14,4c bis 26,12b.
+- ```par-gr-166``` - keine hexaplarischen Varianten; Kommentarfragmente Ps 24,15 bis Ps 29,12b.
+- ```plut-5-30``` - keine neuen hexaplarischen Varianten; Kommentarfragmente Ps 24,11 bis 27,4a.
+- ```plut-6-3``` - keine neuen hexaplarischen Varianten; Kommentarfragmente Ps 13,7b bis 29,11a (möglicherweise ist eine Lücke vorhanden).
+- ```vat-gr-1422``` - 
