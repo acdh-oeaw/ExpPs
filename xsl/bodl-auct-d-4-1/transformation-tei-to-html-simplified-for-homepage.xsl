@@ -47,7 +47,7 @@
 											<ul class="dropdown-menu" role="menu">
 												<li class="nav-item dropdown-submenu">
 													<a title="Edition - First Part" href="./edition.html" class="nav-link">Edition: Ps 1-25</a>
-													<a title="Edition - Second Part" href="./edition-part-two.html" class="nav-link">Edition: Ps 26-30</a>
+													<a title="Edition - Second Part" href="./edition-part-two.html" class="nav-link">Edition: Ps 26-50</a>
 												</li>
 											</ul>
 										</li>
@@ -962,6 +962,9 @@
                 </xsl:if>
                 <xsl:if test="starts-with(@target,'#coislin-187:')">
                     <xsl:value-of select="concat('coislin-187.html#',substring-after(@target,'#coislin-187:'))"/>
+                </xsl:if>
+                <xsl:if test="starts-with(@target,'#laudon-gr-42:')">
+                    <xsl:value-of select="concat('laudon_gr_42.html#',substring-after(@target,'#laudon-gr-42:'))"/>
                 </xsl:if>
             </xsl:attribute>
             <xsl:attribute name="target"><xsl:text>_blank</xsl:text></xsl:attribute>
