@@ -26,6 +26,9 @@
 <https://d-nb.info/gnd/5043581-4> a acdh:Organisation ;
     acdh:hasTitle "Institut für Kirchengeschichte, Christliche Archäologie und Kirchliche Kunst, Evangelisch-Theologische Fakultät, Universität Wien"@de .
 
+<https://d-nb.info/gnd/5156217-0> a acdh:Organisation ;
+    acdh:hasTitle "Bibiothèque Nationale de France"@fr .
+
 <https://id.acdh.oeaw.ac.at/athanasius-expositiones-in-psalmos> a acdh:TopCollection ;
     acdh:hasTitle "(Ps.)-Athanasius - Expositiones in Psalmos - Kritische Edition"@de ;
     acdh:hasTitle "(Ps.)-Athanasius - Expositiones in Psalmos - Critical Edition"@en ;
@@ -58,8 +61,9 @@
     acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
     acdh:hasContributor <https://orcid.org/0009-0007-3571-0175> ;
     acdh:hasContributor <https://orcid.org/0009-0002-4995-7260> ;
-    acdh:hasContributor <https://orcid.org/0009-0002-4995-7260> ;
+    acdh:hasContributor <https://orcid.org/0000-0003-3281-5178> ;
     acdh:hasContributor <https://orcid.org/0000-0003-0534-4972> ;
+    acdh:hasContributor <https://orcid.org/0009-0009-4476-1737> ;
     acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .
 
 <https://id.acdh.oeaw.ac.at/athanasius-expositiones-in-psalmos/ambr-b-106-sup.xml> a acdh:Resource ;
@@ -83,7 +87,68 @@
     acdh:hasDepositor <https://orcid.org/0000-0002-5146-1371> ;
     acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
     acdh:hasContributor <https://orcid.org/0000-0003-0534-4972> ;
+    acdh:hasContributor <https://orcid.org/0009-0002-4995-7260> ;
     acdh:hasContributor <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .
+
+<https://id.acdh.oeaw.ac.at/athanasius-expositiones-in-psalmos/tei-psalmcatenae.rng> a acdh:Resource ;
+    acdh:isPartOf acdhi:athanasius-expositiones-in-psalmos ;
+    acdh:hasTitle "Athanasius von Alexandrien, Expositiones in Psalmos - Schema für Transkriptionen"@de ;
+    acdh:hasTitle "Athanasius of Alexandria, Expositiones in Psalmos - Schema for transcriptions"@en ;
+    acdh:hasDescription "RNG Schemadatei zur Überprüfung von Transkriptionen von Handschriften"@de ;
+    acdh:hasDescription "RNG schema file for validating transcriptions of manuscripts"@en ;
+    acdh:hasCategory <https://vocabs.acdh.oeaw.ac.at/archecategory/model/grammar> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/eng> ;
+    acdh:hasContact <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasCreator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasMetadataCreator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasOwner <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasRightsHolder <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicensor  <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicense <https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .
+
+<https://id.acdh.oeaw.ac.at/athanasius-expositiones-in-psalmos/tests-for-transcription.sch> a acdh:Resource ;
+    acdh:isPartOf acdhi:athanasius-expositiones-in-psalmos ;
+    acdh:hasTitle "Athanasius von Alexandrien, Expositiones in Psalmos - Schematron-Tests für Transkriptionen"@de ;
+    acdh:hasTitle "Athanasius of Alexandria, Expositiones in Psalmos - Schematron tests for transcriptions"@en ;
+    acdh:hasDescription "Schematrondatei zur Überprüfung von Transkriptionen von Handschriften"@de ;
+    acdh:hasDescription "Schematron file for validating transcriptions of manuscripts"@en ;
+    acdh:hasCategory <https://vocabs.acdh.oeaw.ac.at/archecategory/model/grammar> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/eng> ;
+    acdh:hasContact <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasCreator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasMetadataCreator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasOwner <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasRightsHolder <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicensor  <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicense <https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .
+
+<https://id.acdh.oeaw.ac.at/athanasius-expositiones-in-psalmos/test-id-prefixes-in-edition.sch> a acdh:Resource ;
+    acdh:isPartOf acdhi:athanasius-expositiones-in-psalmos ;
+    acdh:hasTitle "Athanasius von Alexandrien, Expositiones in Psalmos - Schematron-Tests für die kritische Edition"@de ;
+    acdh:hasTitle "Athanasius of Alexandria, Expositiones in Psalmos - Schematron tests for the critical edition"@en ;
+    acdh:hasDescription "Schematrondatei zur Überprüfung der ids in der kritischen Edition"@de ;
+    acdh:hasDescription "Schematron file for validating the ids in the critical edition"@en ;
+    acdh:hasCategory <https://vocabs.acdh.oeaw.ac.at/archecategory/model/grammar> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/eng> ;
+    acdh:hasContact <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasCreator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasMetadataCreator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasOwner <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasRightsHolder <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicensor  <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicense <https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
     acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .
 
 <https://id.acdh.oeaw.ac.at/athanasius-expositiones-in-psalmos/ambr-m-47-sup.xml> a acdh:Resource ;
@@ -108,6 +173,7 @@
     acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
     acdh:hasContributor <https://orcid.org/0000-0003-0534-4972> ;
     acdh:hasContributor <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasContributor <https://orcid.org/0009-0002-4995-7260> ;
     acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .
     # todo: add Athanasia Katsiakiori-Rankl
 
@@ -133,6 +199,7 @@
     acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
     acdh:hasContributor <https://orcid.org/0000-0003-0534-4972> ;
     acdh:hasContributor <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasContributor <https://orcid.org/0009-0002-4995-7260> ;
     acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .
 
 <https://id.acdh.oeaw.ac.at/athanasius-expositiones-in-psalmos/coislin-10-transcription.xml> a acdh:Resource ;
@@ -157,6 +224,7 @@
     acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
     acdh:hasContributor <https://orcid.org/0009-0009-4476-1737> ;
     acdh:hasContributor <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasContributor <https://orcid.org/0009-0002-4995-7260> ;
     acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .
 
 <https://id.acdh.oeaw.ac.at/athanasius-expositiones-in-psalmos/coislin-12-transcription.xml> a acdh:Resource ;
@@ -181,6 +249,7 @@
     acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
     acdh:hasContributor <https://orcid.org/0000-0003-0534-4972> ;
     acdh:hasContributor <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasContributor <https://orcid.org/0009-0002-4995-7260> ;
     acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .
 
 <https://id.acdh.oeaw.ac.at/athanasius-expositiones-in-psalmos/coislin-187-transcription.xml> a acdh:Resource ;
@@ -204,6 +273,7 @@
     acdh:hasDepositor <https://orcid.org/0000-0002-5146-1371> ;
     acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
     acdh:hasContributor <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasContributor <https://orcid.org/0009-0002-4995-7260> ;
     acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .
     # todo: add Athanasia Katsiakiori-Rankl
 
@@ -250,6 +320,7 @@
     acdh:hasLicense <https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0> ;
     acdh:hasDepositor <https://orcid.org/0000-0002-5146-1371> ;
     acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasContributor <https://orcid.org/0009-0007-3571-0175> ;
     acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .
 
 <https://id.acdh.oeaw.ac.at/athanasius-expositiones-in-psalmos/edition-ps-26-30.xml> a acdh:Resource ;
@@ -273,6 +344,7 @@
     acdh:hasLicense <https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0> ;
     acdh:hasDepositor <https://orcid.org/0000-0002-5146-1371> ;
     acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasContributor <https://orcid.org/0009-0002-4995-7260> ;
     acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .
 
 <https://id.acdh.oeaw.ac.at/athanasius-expositiones-in-psalmos/franzon-3-transcription.xml> a acdh:Resource ;
@@ -296,6 +368,7 @@
     acdh:hasDepositor <https://orcid.org/0000-0002-5146-1371> ;
     acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
     acdh:hasContributor <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasContributor <https://orcid.org/0009-0002-4995-7260> ;
     acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .
 
 <https://id.acdh.oeaw.ac.at/athanasius-expositiones-in-psalmos/mosq-syn-194.xml> a acdh:Resource ;
@@ -319,6 +392,7 @@
     acdh:hasDepositor <https://orcid.org/0000-0002-5146-1371> ;
     acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
     acdh:hasContributor <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasContributor <https://orcid.org/0009-0002-4995-7260> ;
     acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .
 
 <https://id.acdh.oeaw.ac.at/athanasius-expositiones-in-psalmos/oxon-s-trin-78.xml> a acdh:Resource ;
@@ -343,6 +417,7 @@
     acdh:hasDepositor <https://orcid.org/0000-0002-5146-1371> ;
     acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
     acdh:hasContributor <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasContributor <https://orcid.org/0009-0002-4995-7260> ;
     acdh:hasContributor <https://orcid.org/0000-0003-0534-4972> ;
     acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .
 
@@ -367,6 +442,7 @@
     acdh:hasDepositor <https://orcid.org/0000-0002-5146-1371> ;
     acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
     acdh:hasContributor <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasContributor <https://orcid.org/0009-0002-4995-7260> ;
     acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .
 
 <https://id.acdh.oeaw.ac.at/athanasius-expositiones-in-psalmos/par-gr-164-transcription.xml> a acdh:Resource ;
@@ -391,6 +467,7 @@
     acdh:hasDepositor <https://orcid.org/0000-0002-5146-1371> ;
     acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
     acdh:hasContributor <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasContributor <https://orcid.org/0009-0002-4995-7260> ;
     acdh:hasContributor <https://orcid.org/0000-0003-0534-4972> ;
     acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .
 
@@ -415,6 +492,7 @@
     acdh:hasDepositor <https://orcid.org/0000-0002-5146-1371> ;
     acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
     acdh:hasContributor <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasContributor <https://orcid.org/0009-0002-4995-7260> ;
     acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .
 
 <https://id.acdh.oeaw.ac.at/athanasius-expositiones-in-psalmos/plut-5-30.xml> a acdh:Resource ;
@@ -438,6 +516,7 @@
     acdh:hasDepositor <https://orcid.org/0000-0002-5146-1371> ;
     acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
     acdh:hasContributor <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasContributor <https://orcid.org/0009-0002-4995-7260> ;
     acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .
 
 <https://id.acdh.oeaw.ac.at/athanasius-expositiones-in-psalmos/plut-6-3.xml> a acdh:Resource ;
@@ -461,6 +540,7 @@
     acdh:hasDepositor <https://orcid.org/0000-0002-5146-1371> ;
     acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
     acdh:hasContributor <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasContributor <https://orcid.org/0009-0002-4995-7260> ;
     acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .
 
 
@@ -529,6 +609,7 @@
     acdh:hasDepositor <https://orcid.org/0000-0002-5146-1371> ;
     acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
     acdh:hasContributor <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasContributor <https://orcid.org/0009-0002-4995-7260> ;
     acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .
 
 <https://id.acdh.oeaw.ac.at/athanasius-expositiones-in-psalmos/vat-gr-754-transcription.xml> a acdh:Resource ;
@@ -553,5 +634,51 @@
     acdh:hasDepositor <https://orcid.org/0000-0002-5146-1371> ;
     acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
     acdh:hasContributor <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasContributor <https://orcid.org/0009-0002-4995-7260> ;
     acdh:hasContributor <https://orcid.org/0000-0003-3281-5178> ;
+    acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .
+
+<https://id.acdh.oeaw.ac.at/athanasius-expositiones-in-psalmos/laudon-gr-42.xml> a acdh:Resource ;
+    acdh:isPartOf acdhi:athanasius-expositiones-in-psalmos ;
+    acdh:hasTitle "Athanasius von Alexandrien, Expositiones in Psalmos - Laudon. gr. 42 - Transkription"@de ;
+    acdh:hasTitle "Athanasius of Alexandria, Expositiones in Psalmos - Laudon. gr. 42 - Transcription"@en ;
+    acdh:hasUrl "https://expps.acdh-dev.oeaw.ac.at/expps/manuscripts/laudon_gr_42.html" ;
+    acdh:hasDescription "Transkription der Fragmente des Athanasius von Alexandrien der Handschrift Laudon. gr. 42 mit Liste aller Fragmente."@de ;
+    acdh:hasDescription "Transcription of the fragments of Athanasius of Alexandria as found in the manuscript Laudon. gr. 42 with a list of all fragments."@en ;
+    acdh:hasCategory <https://vocabs.acdh.oeaw.ac.at/archecategory/text/tei> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/grc> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/deu> ;
+    acdh:hasContact <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasCreator <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasCreator <https://orcid.org/0009-0002-4995-7260> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasMetadataCreator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasOwner <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasRightsHolder <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicensor  <https://d-nb.info/gnd/5043581-4> ;
+    acdh:hasLicense <https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasContributor <https://orcid.org/0009-0007-3571-0175> ;
+    acdh:hasContributor <https://orcid.org/0009-0002-4995-7260> ;
+    acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .
+
+<https://id.acdh.oeaw.ac.at/athanasius-expositiones-in-psalmos/paris-bnf-gr-139-fol-106v.png> a acdh:Resource ;
+    acdh:isPartOf acdhi:athanasius-expositiones-in-psalmos ;
+    acdh:hasTitle "Athanasius von Alexandrien, Expositiones in Psalmos - Bild für Sammlung in ARCHE"@de ;
+    acdh:hasTitle "Athanasius of Alexandria, Expositiones in Psalmos - Picture for collection in ARCHE"@en ;
+    acdh:hasDescription "Detail aus der Seite 106v der Handschrift Paris. gr. 139"@de ;
+    acdh:hasDescription "Detail out of the page 106v of the manuscript Paris. gr. 139"@en ;
+    acdh:hasCategory <https://vocabs.acdh.oeaw.ac.at/archecategory/image> ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6393/grc> ;
+    acdh:hasContact <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasCreator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-7593-8285> ;
+    acdh:hasMetadataCreator <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasOwner <https://d-nb.info/gnd/5156217-0> ;
+    acdh:hasRightsHolder <https://d-nb.info/gnd/5156217-0> ;
+    acdh:hasLicensor  <https://d-nb.info/gnd/5156217-0> ;
+    acdh:hasLicense <https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-nc-4-0> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-5146-1371> ;
+    acdh:hasCurator <https://orcid.org/0000-0002-5146-1371> ;
     acdh:hasContributor <https://orcid.org/0000-0002-5146-1371> .

@@ -11,6 +11,7 @@
                 or starts-with(@target,'#vat-gr-1422:')
                 or starts-with(@target,'#coislin-10:')
                 or starts-with(@target,'#coislin-12:')
+                or starts-with(@target,'#coislin-187:')
                 or starts-with(@target,'#ambr-b-106-sup:')
                 or starts-with(@target,'#ambr-m-47-sup:')
                 or starts-with(@target,'#bodl-auct-d-4-1:')
@@ -19,6 +20,9 @@
                 or starts-with(@target,'#par-gr-164')
                 or starts-with(@target,'#par-gr-166:')
                 or starts-with(@target,'#mosq-syn-194:')
+                or starts-with(@target,'#franzon-3:')
+                or starts-with(@target,'#laudon-gr-42:')
+                or starts-with(@target,'#plut-5-30')
                 or starts-with(@target,'#plut-6-3:')">Wrong prefix in ref/@target</assert>
         </rule>
     </pattern>
