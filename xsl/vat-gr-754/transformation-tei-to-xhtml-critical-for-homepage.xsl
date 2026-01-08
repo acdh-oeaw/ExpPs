@@ -2074,21 +2074,63 @@
     </xsl:template>
       
     <xsl:template match="tei:subst">
-        <xsl:value-of select="tei:add/text()"/>
+        <xsl:variable name="text-before-subst">
+            <xsl:variable name="text-before-subst-text-node" select="./preceding-sibling::text()[1]"/>
+            <xsl:if test="ends-with($text-before-subst-text-node,' ')">
+                <xsl:value-of select="''"/>
+            </xsl:if>
+            <xsl:if test="not(ends-with($text-before-subst-text-node,' '))">
+                <xsl:if test="contains($text-before-subst-text-node,' ')">
+                    <xsl:value-of select="tokenize($text-before-subst-text-node,' ')[last()]"/>
+                </xsl:if>
+                <xsl:if test="not(contains($text-before-subst-text-node,' '))">
+                    <xsl:value-of select="$text-before-subst-text-node"/>
+                </xsl:if>
+            </xsl:if>
+        </xsl:variable>
+        <xsl:if test="exists(tei:add/tei:unclear)">
+            <xsl:value-of select="tei:add/tei:unclear/text()"/>
+        </xsl:if>
+        <xsl:if test="not(exists(tei:add/tei:unclear))">
+            <xsl:value-of select="tei:add/text()"/>
+        </xsl:if>
         <xsl:text> [* </xsl:text>
-        <xsl:if test="exists(child::tei:del/child::tei:unclear)">
+        <xsl:if test="exists(tei:del/tei:gap)">
+            <xsl:value-of select="concat($text-before-subst,'...')"/>
+        </xsl:if>
+        <xsl:if test="not(exists(tei:del/tei:gap))">
+            <xsl:if test="exists(child::tei:del/child::tei:unclear)">
+                <xsl:element name="span">
+                    <xsl:attribute name="class" select="'unclear'"/>
+                    <xsl:value-of select="concat($text-before-subst,tei:del/tei:unclear/text())"/>
+               </xsl:element>
+            </xsl:if>
+            <xsl:if test="not(exists(child::tei:del/child::tei:unclear))">
+                <xsl:value-of select="concat($text-before-subst,tei:del/text())"/>
+            </xsl:if>
+        </xsl:if>
+        <xsl:text> </xsl:text>
+        <xsl:if test="exists(tei:add/@hand)">
+            <xsl:value-of select="tei:add/@hand"/>
+        </xsl:if>
+        <xsl:if test="not(exists(tei:add/@hand))">
+            <xsl:if test="exists(./@hand)">
+                <xsl:value-of select="./@hand"/>
+            </xsl:if>
+            <xsl:if test="not(exists(./@hand))">
+                <xsl:value-of select="'corr'"/>
+            </xsl:if>
+        </xsl:if>
+        <xsl:text> </xsl:text>
+        <xsl:if test="exists(tei:add/tei:unclear)">
             <xsl:element name="span">
                 <xsl:attribute name="class" select="'unclear'"/>
-                <xsl:value-of select="tei:del/tei:unclear/text()"/>
+                <xsl:value-of select="concat($text-before-subst,tei:add/tei:unclear/text())"/>
             </xsl:element>
         </xsl:if>
-        <xsl:if test="not(exists(child::tei:del/child::tei:unclear))">
-            <xsl:value-of select="tei:del/text()"/>
+        <xsl:if test="not(exists(tei:add/tei:unclear))">
+            <xsl:value-of select="concat($text-before-subst,tei:add/text())"/>
         </xsl:if>
-        <xsl:text> </xsl:text>
-        <xsl:value-of select="tei:add/@hand"/>
-        <xsl:text> </xsl:text>
-        <xsl:value-of select="tei:add/text()"/>
         <xsl:text>]</xsl:text>
     </xsl:template>
     
