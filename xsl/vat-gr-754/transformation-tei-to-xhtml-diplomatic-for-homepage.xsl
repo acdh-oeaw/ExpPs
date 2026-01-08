@@ -151,7 +151,7 @@
                                 </div>
                                 <div class="footer-widget col-md-3 col-lg-3">
                                     <p><a href="https://www.fwf.ac.at/"><img src="../fundament/images/fwf-logo.png" class="image" alt="FWF Logo" style="max-width: 100%; height: auto;" title="FWF Logo"></img></a></p>
-                                    <p>Funded by the Austrian Science Fund (FWF) under the project number P 32988</p>
+                                    <p>Funded by the Austrian Science Fund (FWF) under the project number <a href="https://www.fwf.ac.at/forschungsradar/10.55776/P32988" target="_blank">P 32988</a></p>
                                     <div class="textwidget custom-html-widget">
                                         <a href="https://www.univie.ac.at"><img src="../fundament/images/logo-uni-wien.png" class="image" alt="Logo Universität Wien" style="max-width: 100%; height:auto;" title="Logo Universität Wien"></img></a>
                                     </div>
@@ -173,7 +173,7 @@
                     </div>
                     <!-- #wrapper-footer-full -->
                     <div class="footer-imprint-bar" id="wrapper-footer-secondary" style="text-align:center; padding:0.4rem 0; font-size: 0.9rem;">
-                        © Copyright OEAW | <a href="../imprint.html">Impressum/Imprint</a>
+                        <a href="../imprint.html">Impressum/Imprint</a>
                     </div>
                     <!-- footer and imprint - end -->
                 </div>
