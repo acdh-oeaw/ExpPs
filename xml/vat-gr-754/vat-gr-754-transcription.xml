@@ -34894,7 +34894,7 @@
                   </seg>
                   
                   <note type="lemma">(Ps 40,1a; no linking signs)</note>
-                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-40-2"
+                  <seg type="hypothesis" xml:id="vat-gr-754-fr-40-2"
                      rendition="#middle-column" source="Theodoretus"
                      corresp="#vat-gr-754-ps-40-1-1a"><quote type="patristic" subtype="quotation"
                         xml:id="vat-gr-754-quot-40-2"
@@ -35487,11 +35487,8 @@
                         corresp="#person-24"/>
                      <note type="attribution" xml:lang="grc">Γρηγ(ορίου) Νύ(σης) ὑπόθ(εσις)</note>
                   </seg>
-                  
-               </ab>
+                </ab>
             </div>
-            
-            
             
             <!-- Psalm 41 bibletxt -->
             
@@ -35501,13 +35498,90 @@
                   <quote type="bibletext" n="Ps (LXX) 41,1" xml:lang="grc"
                      xml:id="vat-gr-754-ps-41-1-1">
                      <num>ΜΑ'</num>
-                     <anchor type="psalmtext" n="Ps (LXX) 41,1a" xml:id="vat-gr-754-ps-41-1-1a"/>Εἰς τὸ τέλος· εἰς σύνεσιν τοῖς υἱοῖς Κορε.
+                     <anchor type="psalmtext" n="Ps (LXX) 41,1a" xml:id="vat-gr-754-ps-41-1-1a"/>Εἰς τὸ τέλος· εἰς σύνεσιν τοῖς υἱοῖς Κορε ψαλμός (ψαλμός om. LXX Rahlfs).
                   </quote>
                   <quote type="bibletext" n="Ps (LXX) 41,2" xml:lang="grc" xml:id="vat-gr-754-ps-41-2">
                      <anchor type="psalmtext" n="Ps (LXX) 41,2a" xml:id="vat-gr-754-ps-41-2a"/>Ὃν τρόπον ἐπιποθεῖ ἡ ἔλαφος ἐπὶ τὰς πηγὰς τῶν ὑδάτων,
                      <anchor type="psalmtext" n="Ps (LXX) 41,2b" xml:id="vat-gr-754-ps-41-2b"/>οὕτως ἐπιποθεῖ ἡ ψυχή μου πρὸς σέ, ὁ θεός.
                   </quote>
-                  <quote type="bibletext" n="Ps (LXX) 41,3" xml:lang="grc" xml:id="vat-gr-754-ps-41-3">
+                </ab>
+            </div>
+            
+            <!-- Psalm 41 commentary -->
+            
+            <div type="hexaplaric" subtype="commentary" xml:id="vat-gr-754-41-2"
+               rendition="#left-column" rend="capital letters" change="commentaryfragments-only">
+               <ab xml:lang="grc">
+                  <note type="lemma">(Ps 41,2a? linking sign at the bibletext missing)</note>
+                  <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-41-1" rendition="#left-column"
+                     source="Symmachus (Ps 41,2a?)" corresp="#vat-gr-754-ps-41-2a">Ϲ ὡς σπεύδει ἔλαφος·
+                  </seg>
+                  <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-41-2" rendition="#left-column"
+                     source="Theodotion? (Ps 41,2a?)" corresp="#vat-gr-754-ps-41-2a">ὁμοίως τοῖς Ο´· (non habet Field)
+                     <note type="textual-commentary">Siglum for the author missing.</note>
+                  </seg>
+                  <note type="lemma">(Ps 41,2a? new linking sign; linking sign at the bibletext missing)</note>
+                  <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-41-3" rendition="#left-column"
+                     source="Sexta (Ps 41,2a?)" corresp="#vat-gr-754-ps-41-2a">ἡ S´ ὁμοίως·
+                  </seg>
+                  <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-41-4" rendition="#left-column"
+                     source="Quinta? (Ps 41,2a?)" corresp="#vat-gr-754-ps-41-2a">Η´ (Field: Ε´) ὃν τρόπον πεδίον πρασιαστῆ:
+                  </seg>
+                  <seg type="hexaplaric" xml:id="vat-gr-754-hexaplaric-41-5" rendition="#left-column"
+                     source="Aquila (Ps 41,2a?)" corresp="#vat-gr-754-ps-41-2a">Α ὡς αὐλὼν περασίαςται:
+                  </seg>
+                       </ab>
+            </div>            
+            
+            <div type="commentary" subtype="commentary" xml:id="vat-gr-754-41-3"
+               rendition="middle-column"  change="commentaryfragments-only">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 41,1a</note>
+                  <seg type="hypothesis" xml:id="vat-gr-754-fr-41-1" rendition="#middle-column"
+                     source="(Athanasius)" corresp="#vat-gr-754-ps-41-1-1a"
+                     copyOf="#edition-part-two:edition-26-30-41-1"><quote type="patristic"
+                        subtype="quotation" xml:id="vat-gr-754-quot-41-1"
+                        source="Athanasius, exp. in Ps 41,1a cf./= Cyrillus, fr. in Ps 41,1 (PG 69, 1000 D4–9.9–13)" corresp="#person-2 / #person-4">Ἱεροψάλται μὲν ἐγένοντο οἱ τοῦ Κορὲ υἱοὶ· ἄδουσι δὲ τὴν  ὠδὴν λαβόντες
+                        παρα τῶν συνθέ<add place="above">ν</add>των αὐτὴν. τοῦτέστι τοῦ Δαυῒδ τὰ ἐπ' εσχάτων σημαίνοντες
+                        τῶν καιρῶν· εἰσφέρουσι δὲ τοῦ αὐτοῦ Ἰσραὴλ πρόσωπον ἐξομολογούμενον Χριστῶ διὰ τῆς μεταγνώσεως.
+                        ἧς ποιήσονται ἐπι συντελεία τῶν αἰώνων: –</quote>
+                     <note type="attribution" xml:lang="grc">ΛΓ´</note>
+                     <note type="textual-commentary">This exposition is very similar to / (almost) identical with <quote type="patristic" source="Cyrillus, fr. in Ps 41,1 (PG 69, 1000 D4–9.9–13)"
+                        corresp="#person-4"/>.</note>
+                  </seg>
+                  
+                  <seg type="commentaryfragment" xml:id="vat-gr-754-fr-41-2" rendition="#bottom-of the-page"
+                     source="Gregorius Nyssenus" corresp="#vat-gr-754-ps-41-1-1a"><quote
+                        type="patristic" subtype="quotations" xml:id="vat-gr-754-quot-41-2"
+                        source="Gregorius Nyss., Ps. inscr. II 12 and I 5 (125,2–23 and 39,21 – 40,11 McDonough)"
+                        corresp="#person-24"/>
+                     <note type="attribution" xml:lang="grc">Γρηγ(ορίου) Νύ(σης)</note>
+                  </seg>
+               </ab>
+            </div>
+            
+            <pb n="117v"  facs="https://digi.vatlib.it/view/MSS_Vat.gr.754/117"/>
+            
+            <div type="commentary" subtype="commentary" xml:id="vat-gr-754-41-4"
+               rendition="top-of-the-page"  change="commentaryfragments-only">
+               <ab xml:lang="grc">
+                  <note type="lemma">Ps 41,1a</note>
+                  <seg type="hypothesis" xml:id="vat-gr-754-fr-41-3"
+                     rendition="#top-of-the-page-to-left column" source="Theodoretus"
+                     corresp="#vat-gr-754-ps-40-1-1a"><quote type="patristic" subtype="quotation"
+                        xml:id="vat-gr-754-quot-41-3"
+                        source="Theodoretus, comm. in Ps 41,1 (PG 80,1168 D2 – 1169 A14)"
+                        corresp="#person-16"/>
+                     <note type="attribution" xml:lang="grc">ὑποθ(εσις) Θεοδ(ωρήτου)</note>
+                  </seg>
+               </ab>
+            </div>
+            
+            <!-- Psalm 41 bibletxt -->
+            
+            <div type="bibletext" subtype="commented" xml:id="vat-gr-754-41-xy">
+               <ab xml:lang="grc">
+                                <quote type="bibletext" n="Ps (LXX) 41,3" xml:lang="grc" xml:id="vat-gr-754-ps-41-3">
                      <anchor type="psalmtext" n="Ps (LXX) 41,3a" xml:id="vat-gr-754-ps-41-3a"/>ἐδίψησεν ἡ ψυχή μου πρὸς τὸν θεὸν τὸν ζῶντα·
                      <anchor type="psalmtext" n="Ps (LXX) 41,3b" xml:id="vat-gr-754-ps-41-3b"/>πότε ἥξω καὶ ὀφθήσομαι τῷ προσώπῳ τοῦ θεοῦ;
                   </quote>
@@ -35528,7 +35602,7 @@
                   <quote type="bibletext" n="Ps (LXX) 41,7" xml:lang="grc" xml:id="vat-gr-754-ps-41-7">
                      <anchor type="psalmtext" n="Ps (LXX) 41,7a" xml:id="vat-gr-754-ps-41-7a"/>πρὸς ἐμαυτὸν ἡ ψυχή μου ἐταράχθη·
                      <anchor type="psalmtext" n="Ps (LXX) 41,7b" xml:id="vat-gr-754-ps-41-7b"/>διὰ τοῦτο μνησθήσομαί σου ἐκ γῆς Ιορδάνου καὶ Ερμωνιιμ, ἀπὸ ὄρους μικροῦ.
-                    </quote>
+                  </quote>
                   <quote type="bibletext" n="Ps (LXX) 41,8" xml:lang="grc" xml:id="vat-gr-754-ps-41-8">
                      <anchor type="psalmtext" n="Ps (LXX) 41,8a" xml:id="vat-gr-754-ps-41-8a"/>ἄβυσσος ἄβυσσον ἐπικαλεῖται εἰς φωνὴν τῶν καταρρακτῶν σου,
                      <anchor type="psalmtext" n="Ps (LXX) 41,8b" xml:id="vat-gr-754-ps-41-8b"/>πάντες οἱ μετεωρισμοί σου καὶ τὰ κύματά σου ἐπ᾽ ἐμὲ διῆλθον.
@@ -35551,13 +35625,12 @@
                      <anchor type="psalmtext" n="Ps (LXX) 41,12b" xml:id="vat-gr-754-ps-41-12b"/>ἔλπισον ἐπὶ τὸν θεόν, ὅτι ἐξομολογήσομαι αὐτῷ·
                      <anchor type="psalmtext" n="Ps (LXX) 41,12c" xml:id="vat-gr-754-ps-41-12c"/>ἡ σωτηρία τοῦ προσώπου μου ὁ θεός μου.
                   </quote>
-                </ab>
+               </ab>
             </div>
             
             <!-- Psalm 41 commentary -->
             
-            <pb n="00"/>
-            <div type="commentary" subtype="commentary" xml:id="vat-gr-754-41-2"
+             <div type="commentary" subtype="commentary" xml:id="vat-gr-754-41-xz"
                rendition="xxx"  change="commentaryfragments-only">
                <ab xml:lang="grc">
                   <note type="lemma">Ps 41,1a</note>
@@ -35565,7 +35638,7 @@
                </ab>
             </div>
             
-            
+       
             <!-- Psalm 42 bibletxt -->
             
             <div type="bibletext" subtype="commented" xml:id="vat-gr-754-42-1">
