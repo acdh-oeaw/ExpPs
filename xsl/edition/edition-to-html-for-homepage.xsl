@@ -157,8 +157,10 @@ version="2.0">
                 </p>
                 <p class="publisher">FWF Project 32988</p>
                 <p class="license">Available under the Creative Commons Attribution 4.0 International (CC BY 4.0)</p>
-                <p class="date">2025-10-02</p>
+                <p class="date">2026-02-14</p>
                 <p class="date">In Bearbeitung.</p>
+                <p style="margin-left: 40pt; margin-right: 40pt;">Die deutsche Übersetzung des Textes der Psalmen basiert mit Anpassungen auf der Septuaginta Deutsch (Septuaginta Deutsch. Das
+                    griechische Alte Testament in deutscher Übersetzung, hrsg. v. Wolfgang Kraus und Martin Karrer, Stuttgart 2010.)</p>
             </div>
             <div id="main-content-body">
                 <div class="header-centered">Text, Übersetzung, Kommentar</div>
