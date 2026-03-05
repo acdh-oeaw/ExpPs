@@ -157,18 +157,23 @@ version="2.0">
                 </p>
                 <p class="publisher">FWF Project 32988</p>
                 <p class="license">Available under the Creative Commons Attribution 4.0 International (CC BY 4.0)</p>
-                <p class="date">2026-02-14</p>
+                <p class="date">2026-03-05</p>
                 <p class="date">In Bearbeitung.</p>
-                <p style="margin-left: 40pt; margin-right: 40pt;">Die deutsche Übersetzung des Textes der Psalmen basiert mit Anpassungen auf der Septuaginta Deutsch (Septuaginta Deutsch. Das
-                    griechische Alte Testament in deutscher Übersetzung, hrsg. v. Wolfgang Kraus und Martin Karrer, Stuttgart 2010.)</p>
+                <p style="margin-left: 40pt; margin-right: 40pt;">Die deutsche Übersetzung des Textes der Psalmen basiert mit Anpassungen auf der Septuaginta Deutsch (Septuaginta Deutsch. Das griechische Alte Testament in deutscher Übersetzung, hg. v. Wolfgang Kraus und Martin Karrer, © 2008 Deutsche Bibelgesellschaft, Stuttgart.)</p>
             </div>
             <div id="main-content-body">
+                <xsl:if test="exists(child::tei:div[@type = 'introduction'])">
+                    <div class="header-centered">Einleitung</div>
+                </xsl:if>
+                <div class="introduction">
+                    <xsl:apply-templates select="tei:div[@type = 'introduction']"/>
+                </div>
                 <div class="header-centered">Text, Übersetzung, Kommentar</div>
                 <div class="list-of-witnesses">
                     <p>Liste der Textzeugen:</p>
                     <xsl:apply-templates select="root()/tei:TEI/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:listWit"/>
                 </div>
-                <xsl:apply-templates select="child::node()"/>
+                <xsl:apply-templates select="child::node()[not(self::tei:div[@type = 'introduction'])]"/>
                 <div class="around-biblical-index">
                     <xsl:apply-templates select="//tei:anchor[@type = 'biblical-quotation']" mode="biblical-index"/>
                 </div>
@@ -840,6 +845,72 @@ version="2.0">
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="tei:div[@type = 'introduction']">
+        <xsl:apply-templates select="child::node()"/>
+    </xsl:template>
+    
+    <xsl:template match="tei:div[@type = 'level-1'][parent::tei:div[@type = 'introduction']]">
+        <xsl:apply-templates select="child::node()"/>
+    </xsl:template>
+    
+    <xsl:template match="tei:head[parent::tei:div[@type = 'level-1']]">
+        <xsl:element name="div">
+            <xsl:attribute name="class" select="'heading-level-1'"/>
+            <xsl:apply-templates select="child::node()"/>
+        </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="tei:head[parent::tei:div[@type = 'level-2']]">
+        <xsl:element name="div">
+            <xsl:attribute name="class" select="'heading-level-2'"/>
+            <xsl:apply-templates select="child::node()"/>
+        </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="tei:head[parent::tei:div[@type = 'level-3']]">
+        <xsl:element name="div">
+            <xsl:attribute name="class" select="'heading-level-3'"/>
+            <xsl:apply-templates select="child::node()"/>
+        </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="tei:p[ancestor::tei:div[@type = 'introduction']]">
+        <xsl:element name="p">
+            <xsl:attribute name="class" select="'paragraph-introduction'"/>
+            <xsl:apply-templates select="child::node()"/>
+        </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="tei:list[ancestor::tei:div[@type = 'introduction']]">
+        <xsl:element name="ul">
+            <xsl:apply-templates select="child::node()"/>
+        </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="tei:item[ancestor::tei:div[@type = 'introduction']]">
+        <xsl:element name="li">
+            <xsl:apply-templates select="child::node()"/>
+        </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="tei:label">
+        <xsl:element name="b">
+            <xsl:apply-templates/>
+        </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="tei:emph">
+        <xsl:element name="i">
+            <xsl:apply-templates/>
+        </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="tei:hi[@rend = 'sub']">
+        <sub>
+            <xsl:value-of select="text()"/>
+        </sub>
     </xsl:template>
 
 </xsl:stylesheet>
