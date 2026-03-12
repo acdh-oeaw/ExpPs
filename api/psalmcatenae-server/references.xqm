@@ -3,7 +3,7 @@
  :)
 xquery version "3.1";
 
-module namespace references = 'https://psalmcatenae.acdh-dev.oeaw.ac.at/psalmcatenae-server/references';
+module namespace references = 'https://expps.acdh.oeaw.ac.at/psalmcatenae-server/references';
 
 import module namespace admin = "http://basex.org/modules/admin";
 import module namespace rest = "http://exquery.org/ns/restxq";

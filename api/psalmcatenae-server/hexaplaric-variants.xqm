@@ -3,7 +3,7 @@
  :)
 xquery version "3.1";
 
-module namespace hexaplaric-variants = 'https://psalmcatenae.acdh-dev.oeaw.ac.at/psalmcatenae-server/hexaplaric-variants';
+module namespace hexaplaric-variants = 'https://expps.acdh.oeaw.ac.at/psalmcatenae-server/hexaplaric-variants';
 
 import module namespace admin = "http://basex.org/modules/admin";
 import module namespace rest = "http://exquery.org/ns/restxq";
