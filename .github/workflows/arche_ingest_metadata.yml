@@ -1,0 +1,19 @@
+name: ARCHE-Metadata-Ingest
+
+on:
+  workflow_dispatch
+
+jobs:
+  ingest_md:
+    name: Ingest Metadata into ARCHE
+    runs-on: ubuntu-latest
+    env:
+      ARCHE_USER: pandorfer
+      ARCHE_PASSWORD: ${{secrets.ARCHE_PASSWORD}}
+      ARCHE: https://arche-curation.acdh-dev.oeaw.ac.at/api
+      TOPCOLID: https://id.acdh.oeaw.ac.at/athanasius-expositiones-in-psalmos
+    steps:
+    - name: Perform Checkout
+      uses: actions/checkout@v6 
+    - name: run metadata import
+      run: ./arche/arche__ingest_md.sh
