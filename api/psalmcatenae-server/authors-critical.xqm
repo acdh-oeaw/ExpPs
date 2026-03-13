@@ -3,7 +3,7 @@
  :)
 xquery version "3.1";
 
-module namespace authors-critical = 'https://psalmcatenae.acdh-dev.oeaw.ac.at/psalmcatenae-server/authors-critical';
+module namespace authors-critical = 'https://expps.acdh.oeaw.ac.at/psalmcatenae-server/authors-critical';
 
 import module namespace admin = "http://basex.org/modules/admin";
 import module namespace rest = "http://exquery.org/ns/restxq";

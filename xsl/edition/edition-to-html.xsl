@@ -148,67 +148,67 @@ version="2.0">
     <a class="link-to-witness">
         <xsl:attribute name="href">
             <xsl:if test="starts-with(./@target,'#vat-gr-754')">
-                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/vat-gr-754/commentaryfragments/</xsl:text>
+                <xsl:text>https://expps.acdh.oeaw.ac.at/psalmcatenae-server/manuscripts/vat-gr-754/commentaryfragments/</xsl:text>
                 <xsl:value-of select="substring-after(./@target,'#vat-gr-754:')"/>
             </xsl:if>
             <xsl:if test="starts-with(./@target,'#ambr-b-106-sup')">
-                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/ambr-b-106-sup/commentaryfragments/</xsl:text>
+                <xsl:text>https://expps.acdh.oeaw.ac.at/psalmcatenae-server/manuscripts/ambr-b-106-sup/commentaryfragments/</xsl:text>
                 <xsl:value-of select="substring-after(./@target,'#ambr-b-106-sup:')"/>
             </xsl:if>
             <xsl:if test="starts-with(./@target,'#ambr-m-47-sup')">
-                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/ambr-m-47-sup/commentaryfragments/</xsl:text>
+                <xsl:text>https://expps.acdh.oeaw.ac.at/psalmcatenae-server/manuscripts/ambr-m-47-sup/commentaryfragments/</xsl:text>
                 <xsl:value-of select="substring-after(./@target,'#ambr-m-47-sup:')"/>
             </xsl:if>
             <xsl:if test="starts-with(./@target,'#athen-b-n-8')">
-                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/athen-b-n-8/commentaryfragments/</xsl:text>
+                <xsl:text>https://expps.acdh.oeaw.ac.at/psalmcatenae-server/manuscripts/athen-b-n-8/commentaryfragments/</xsl:text>
                 <xsl:value-of select="substring-after(./@target,'#athen-b-n-8:')"/>
             </xsl:if>
             <xsl:if test="starts-with(./@target,'#bodl-auct-d-4-1')">
-                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/bodl-auct-d-4-1/commentaryfragments/</xsl:text>
+                <xsl:text>https://expps.acdh.oeaw.ac.at/psalmcatenae-server/manuscripts/bodl-auct-d-4-1/commentaryfragments/</xsl:text>
                 <xsl:value-of select="substring-after(./@target,'#bodl-auct-d-4-1:')"/>
             </xsl:if>
             <xsl:if test="starts-with(./@target,'#coislin-10')">
-                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/coislin-10/commentaryfragments/</xsl:text>
+                <xsl:text>https://expps.acdh.oeaw.ac.at/psalmcatenae-server/manuscripts/coislin-10/commentaryfragments/</xsl:text>
                 <xsl:value-of select="substring-after(./@target,'#coislin-10:')"/>
             </xsl:if>
             <xsl:if test="starts-with(./@target,'#coislin-12')">
-                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/coislin-12/commentaryfragments/</xsl:text>
+                <xsl:text>https://expps.acdh.oeaw.ac.at/psalmcatenae-server/manuscripts/coislin-12/commentaryfragments/</xsl:text>
                 <xsl:value-of select="substring-after(./@target,'#coislin-12:')"/>
             </xsl:if>
             <xsl:if test="starts-with(./@target,'#franzon-3')">
-                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/franzon-3/commentaryfragments/</xsl:text>
+                <xsl:text>https://expps.acdh.oeaw.ac.at/psalmcatenae-server/manuscripts/franzon-3/commentaryfragments/</xsl:text>
                 <xsl:value-of select="substring-after(./@target,'#franzon-3:')"/>
             </xsl:if>
             <xsl:if test="starts-with(./@target,'#mosq-syn-194')">
-                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/mosq-syn-194/commentaryfragments/</xsl:text>
+                <xsl:text>https://expps.acdh.oeaw.ac.at/psalmcatenae-server/manuscripts/mosq-syn-194/commentaryfragments/</xsl:text>
                 <xsl:value-of select="substring-after(./@target,'#mosq-syn-194:')"/>
             </xsl:if>
             <xsl:if test="starts-with(./@target,'#oxon-s-trin-78')">
-                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/oxon-s-trin-78/commentaryfragments/</xsl:text>
+                <xsl:text>https://expps.acdh.oeaw.ac.at/psalmcatenae-server/manuscripts/oxon-s-trin-78/commentaryfragments/</xsl:text>
                 <xsl:value-of select="substring-after(./@target,'#oxon-s-trin-78:')"/>
             </xsl:if>
             <xsl:if test="starts-with(./@target,'#par-gr-139')">
-                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/par-gr-139/commentaryfragments/</xsl:text>
+                <xsl:text>https://expps.acdh.oeaw.ac.at/psalmcatenae-server/manuscripts/par-gr-139/commentaryfragments/</xsl:text>
                 <xsl:value-of select="substring-after(./@target,'#par-gr-139:')"/>
             </xsl:if>
             <xsl:if test="starts-with(./@target,'#par-gr-164')">
-                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/par-gr-164/commentaryfragments/</xsl:text>
+                <xsl:text>https://expps.acdh.oeaw.ac.at/psalmcatenae-server/manuscripts/par-gr-164/commentaryfragments/</xsl:text>
                 <xsl:value-of select="substring-after(./@target,'#par-gr-164:')"/>
             </xsl:if>
             <xsl:if test="starts-with(./@target,'#par-gr-166')">
-                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/par-gr-166/commentaryfragments/</xsl:text>
+                <xsl:text>https://expps.acdh.oeaw.ac.at/psalmcatenae-server/manuscripts/par-gr-166/commentaryfragments/</xsl:text>
                 <xsl:value-of select="substring-after(./@target,'#par-gr-166:')"/>
             </xsl:if>
             <xsl:if test="starts-with(./@target,'#plut-5-30')">
-                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/plut-5-30/commentaryfragments/</xsl:text>
+                <xsl:text>https://expps.acdh.oeaw.ac.at/psalmcatenae-server/manuscripts/plut-5-30/commentaryfragments/</xsl:text>
                 <xsl:value-of select="substring-after(./@target,'#plut-5-30:')"/>
             </xsl:if>
             <xsl:if test="starts-with(./@target,'#plut-6-3')">
-                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/plut-6-3/commentaryfragments/</xsl:text>
+                <xsl:text>https://expps.acdh.oeaw.ac.at/psalmcatenae-server/manuscripts/plut-6-3/commentaryfragments/</xsl:text>
                 <xsl:value-of select="substring-after(./@target,'#plut-6-3:')"/>
             </xsl:if>
             <xsl:if test="starts-with(./@target,'#vat-gr-1422')">
-                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/vat-gr-1422/commentaryfragments/</xsl:text>
+                <xsl:text>https://expps.acdh.oeaw.ac.at/psalmcatenae-server/manuscripts/vat-gr-1422/commentaryfragments/</xsl:text>
                 <xsl:value-of select="substring-after(./@target,'#vat-gr-1422:')"/>
             </xsl:if>
         </xsl:attribute>

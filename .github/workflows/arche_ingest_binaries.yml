@@ -1,0 +1,22 @@
+name: ARCHE-Binary-Ingest
+
+on:
+  workflow_dispatch
+
+jobs:
+  ingest_binaries:
+    name: Ingest Binary Data into ARCHE
+    runs-on: ubuntu-latest
+    env:
+      ARCHE_USER: pandorfer
+      ARCHE_PASSWORD: ${{secrets.ARCHE_PASSWORD}}
+      ARCHE: https://arche-curation.acdh-dev.oeaw.ac.at/api
+      TOPCOLID: https://id.acdh.oeaw.ac.at/athanasius-expositiones-in-psalmos
+    steps:
+    - name: Perform Checkout
+      uses: actions/checkout@v6
+    - name: Install the latest version of uv and set the python version
+      uses: astral-sh/setup-uv@v7
+    - name: run binaries import
+      run: ./arche/arche__ingest_binaries.sh
+    

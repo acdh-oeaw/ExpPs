@@ -3,7 +3,7 @@
  :)
 xquery version "3.1";
 
-module namespace cts = 'https://psalmcatenae.acdh-dev.oeaw.ac.at/psalmcatenae-server/cts/';
+module namespace cts = 'https://expps.acdh.oeaw.ac.at/psalmcatenae-server/cts/';
 
 import module namespace admin = "http://basex.org/modules/admin";
 import module namespace rest = "http://exquery.org/ns/restxq";
@@ -109,7 +109,7 @@ function cts:canonical-text-service($request as xs:string,$urn as xs:string){
          element urn { concat('urn:cts:etf:psath.expps.',$language,':',$passage) },
          element passage { ``[`{$result-text}`]`` },
          element license { "Available under the Creative Commons Attribution 4.0 International (CC BY 4.0)" },
-         element source { "Heil, Uta; Panteghini, Sebastiano, (Ps.-)Athanasius, Expositiones in Psalmos. Fragment " || $passage || " - " || concat('urn:cts:etf:psath.expps.',$language,':',$passage) || " (https://expps.acdh-dev.oeaw.ac.at/expps/edition.html)."}
+         element source { "Heil, Uta; Panteghini, Sebastiano, (Ps.-)Athanasius, Expositiones in Psalmos. Fragment " || $passage || " - " || concat('urn:cts:etf:psath.expps.',$language,':',$passage) || " (https://expps.acdh.oeaw.ac.at/expps/edition.html)."}
        }
      }
      default return error(xs:QName('response-codes:_400'),'Bad Request')

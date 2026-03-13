@@ -157,18 +157,23 @@ version="2.0">
                 </p>
                 <p class="publisher">FWF Project 32988</p>
                 <p class="license">Available under the Creative Commons Attribution 4.0 International (CC BY 4.0)</p>
-                <p class="date">2026-02-14</p>
+                <p class="date">2026-03-05</p>
                 <p class="date">In Bearbeitung.</p>
-                <p style="margin-left: 40pt; margin-right: 40pt;">Die deutsche Übersetzung des Textes der Psalmen basiert mit Anpassungen auf der Septuaginta Deutsch (Septuaginta Deutsch. Das
-                    griechische Alte Testament in deutscher Übersetzung, hrsg. v. Wolfgang Kraus und Martin Karrer, Stuttgart 2010.)</p>
+                <p style="margin-left: 40pt; margin-right: 40pt;">Die deutsche Übersetzung des Textes der Psalmen basiert mit Anpassungen auf der Septuaginta Deutsch (Septuaginta Deutsch. Das griechische Alte Testament in deutscher Übersetzung, hg. v. Wolfgang Kraus und Martin Karrer, © 2008 Deutsche Bibelgesellschaft, Stuttgart.)</p>
             </div>
             <div id="main-content-body">
+                <xsl:if test="exists(child::tei:div[@type = 'introduction'])">
+                    <div class="header-centered">Einleitung</div>
+                </xsl:if>
+                <div class="introduction">
+                    <xsl:apply-templates select="tei:div[@type = 'introduction']"/>
+                </div>
                 <div class="header-centered">Text, Übersetzung, Kommentar</div>
                 <div class="list-of-witnesses">
                     <p>Liste der Textzeugen:</p>
                     <xsl:apply-templates select="root()/tei:TEI/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:listWit"/>
                 </div>
-                <xsl:apply-templates select="child::node()"/>
+                <xsl:apply-templates select="child::node()[not(self::tei:div[@type = 'introduction'])]"/>
                 <div class="around-biblical-index">
                     <xsl:apply-templates select="//tei:anchor[@type = 'biblical-quotation']" mode="biblical-index"/>
                 </div>
@@ -378,75 +383,75 @@ version="2.0">
     <a class="link-to-witness">
         <xsl:attribute name="href">
             <xsl:if test="starts-with(./@target,'#vat-gr-754')">
-                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/vat-gr-754/commentaryfragments/</xsl:text>
+                <xsl:text>https://expps.acdh.oeaw.ac.at/psalmcatenae-server/manuscripts/vat-gr-754/commentaryfragments/</xsl:text>
                 <xsl:value-of select="substring-after(./@target,'#vat-gr-754:')"/>
             </xsl:if>
             <xsl:if test="starts-with(./@target,'#ambr-b-106-sup')">
-                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/ambr-b-106-sup/commentaryfragments/</xsl:text>
+                <xsl:text>https://expps.acdh.oeaw.ac.at/psalmcatenae-server/manuscripts/ambr-b-106-sup/commentaryfragments/</xsl:text>
                 <xsl:value-of select="substring-after(./@target,'#ambr-b-106-sup:')"/>
             </xsl:if>
             <xsl:if test="starts-with(./@target,'#ambr-m-47-sup')">
-                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/ambr-m-47-sup/commentaryfragments/</xsl:text>
+                <xsl:text>https://expps.acdh.oeaw.ac.at/psalmcatenae-server/manuscripts/ambr-m-47-sup/commentaryfragments/</xsl:text>
                 <xsl:value-of select="substring-after(./@target,'#ambr-m-47-sup:')"/>
             </xsl:if>
             <xsl:if test="starts-with(./@target,'#athen-b-n-8')">
-                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/athen-b-n-8/commentaryfragments/</xsl:text>
+                <xsl:text>https://expps.acdh.oeaw.ac.at/psalmcatenae-server/manuscripts/athen-b-n-8/commentaryfragments/</xsl:text>
                 <xsl:value-of select="substring-after(./@target,'#athen-b-n-8:')"/>
             </xsl:if>
             <xsl:if test="starts-with(./@target,'#bodl-auct-d-4-1')">
-                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/bodl-auct-d-4-1/commentaryfragments/</xsl:text>
+                <xsl:text>https://expps.acdh.oeaw.ac.at/psalmcatenae-server/manuscripts/bodl-auct-d-4-1/commentaryfragments/</xsl:text>
                 <xsl:value-of select="substring-after(./@target,'#bodl-auct-d-4-1:')"/>
             </xsl:if>
             <xsl:if test="starts-with(./@target,'#coislin-10')">
-                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/coislin-10/commentaryfragments/</xsl:text>
+                <xsl:text>https://expps.acdh.oeaw.ac.at/psalmcatenae-server/manuscripts/coislin-10/commentaryfragments/</xsl:text>
                 <xsl:value-of select="substring-after(./@target,'#coislin-10:')"/>
             </xsl:if>
             <xsl:if test="starts-with(./@target,'#coislin-12')">
-                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/coislin-12/commentaryfragments/</xsl:text>
+                <xsl:text>https://expps.acdh.oeaw.ac.at/psalmcatenae-server/manuscripts/coislin-12/commentaryfragments/</xsl:text>
                 <xsl:value-of select="substring-after(./@target,'#coislin-12:')"/>
             </xsl:if>
             <xsl:if test="starts-with(./@target,'#coislin-187')">
-                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/coislin-187/commentaryfragments/</xsl:text>
+                <xsl:text>https://expps.acdh.oeaw.ac.at/psalmcatenae-server/manuscripts/coislin-187/commentaryfragments/</xsl:text>
                 <xsl:value-of select="substring-after(./@target,'#coislin-187:')"/>
             </xsl:if>
             <xsl:if test="starts-with(./@target,'#franzon-3')">
-                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/franzon-3/commentaryfragments/</xsl:text>
+                <xsl:text>https://expps.acdh.oeaw.ac.at/psalmcatenae-server/manuscripts/franzon-3/commentaryfragments/</xsl:text>
                 <xsl:value-of select="substring-after(./@target,'#franzon-3:')"/>
             </xsl:if>
             <xsl:if test="starts-with(./@target,'#mosq-syn-194')">
-                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/mosq-syn-194/commentaryfragments/</xsl:text>
+                <xsl:text>https://expps.acdh.oeaw.ac.at/psalmcatenae-server/manuscripts/mosq-syn-194/commentaryfragments/</xsl:text>
                 <xsl:value-of select="substring-after(./@target,'#mosq-syn-194:')"/>
             </xsl:if>
             <xsl:if test="starts-with(./@target,'#oxon-s-trin-78')">
-                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/oxon-s-trin-78/commentaryfragments/</xsl:text>
+                <xsl:text>https://expps.acdh.oeaw.ac.at/psalmcatenae-server/manuscripts/oxon-s-trin-78/commentaryfragments/</xsl:text>
                 <xsl:value-of select="substring-after(./@target,'#oxon-s-trin-78:')"/>
             </xsl:if>
             <xsl:if test="starts-with(./@target,'#par-gr-139')">
-                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/par-gr-139/commentaryfragments/</xsl:text>
+                <xsl:text>https://expps.acdh.oeaw.ac.at/psalmcatenae-server/manuscripts/par-gr-139/commentaryfragments/</xsl:text>
                 <xsl:value-of select="substring-after(./@target,'#par-gr-139:')"/>
             </xsl:if>
             <xsl:if test="starts-with(./@target,'#par-gr-164')">
-                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/par-gr-164/commentaryfragments/</xsl:text>
+                <xsl:text>https://expps.acdh.oeaw.ac.at/psalmcatenae-server/manuscripts/par-gr-164/commentaryfragments/</xsl:text>
                 <xsl:value-of select="substring-after(./@target,'#par-gr-164:')"/>
             </xsl:if>
             <xsl:if test="starts-with(./@target,'#par-gr-166')">
-                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/par-gr-166/commentaryfragments/</xsl:text>
+                <xsl:text>https://expps.acdh.oeaw.ac.at/psalmcatenae-server/manuscripts/par-gr-166/commentaryfragments/</xsl:text>
                 <xsl:value-of select="substring-after(./@target,'#par-gr-166:')"/>
             </xsl:if>
             <xsl:if test="starts-with(./@target,'#plut-5-30')">
-                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/plut-5-30/commentaryfragments/</xsl:text>
+                <xsl:text>https://expps.acdh.oeaw.ac.at/psalmcatenae-server/manuscripts/plut-5-30/commentaryfragments/</xsl:text>
                 <xsl:value-of select="substring-after(./@target,'#plut-5-30:')"/>
             </xsl:if>
             <xsl:if test="starts-with(./@target,'#plut-6-3')">
-                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/plut-6-3/commentaryfragments/</xsl:text>
+                <xsl:text>https://expps.acdh.oeaw.ac.at/psalmcatenae-server/manuscripts/plut-6-3/commentaryfragments/</xsl:text>
                 <xsl:value-of select="substring-after(./@target,'#plut-6-3:')"/>
             </xsl:if>
             <xsl:if test="starts-with(./@target,'#vat-gr-1422')">
-                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/vat-gr-1422/commentaryfragments/</xsl:text>
+                <xsl:text>https://expps.acdh.oeaw.ac.at/psalmcatenae-server/manuscripts/vat-gr-1422/commentaryfragments/</xsl:text>
                 <xsl:value-of select="substring-after(./@target,'#vat-gr-1422:')"/>
             </xsl:if>
             <xsl:if test="starts-with(./@target,'#laudon-gr-42')">
-                <xsl:text>https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/laudon-gr-42/commentaryfragments/</xsl:text>
+                <xsl:text>https://expps.acdh.oeaw.ac.at/psalmcatenae-server/manuscripts/laudon-gr-42/commentaryfragments/</xsl:text>
                 <xsl:value-of select="substring-after(./@target,'#laudon-gr-42:')"/>
             </xsl:if>
         </xsl:attribute>
@@ -840,6 +845,72 @@ version="2.0">
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="tei:div[@type = 'introduction']">
+        <xsl:apply-templates select="child::node()"/>
+    </xsl:template>
+    
+    <xsl:template match="tei:div[@type = 'level-1'][parent::tei:div[@type = 'introduction']]">
+        <xsl:apply-templates select="child::node()"/>
+    </xsl:template>
+    
+    <xsl:template match="tei:head[parent::tei:div[@type = 'level-1']]">
+        <xsl:element name="div">
+            <xsl:attribute name="class" select="'heading-level-1'"/>
+            <xsl:apply-templates select="child::node()"/>
+        </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="tei:head[parent::tei:div[@type = 'level-2']]">
+        <xsl:element name="div">
+            <xsl:attribute name="class" select="'heading-level-2'"/>
+            <xsl:apply-templates select="child::node()"/>
+        </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="tei:head[parent::tei:div[@type = 'level-3']]">
+        <xsl:element name="div">
+            <xsl:attribute name="class" select="'heading-level-3'"/>
+            <xsl:apply-templates select="child::node()"/>
+        </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="tei:p[ancestor::tei:div[@type = 'introduction']]">
+        <xsl:element name="p">
+            <xsl:attribute name="class" select="'paragraph-introduction'"/>
+            <xsl:apply-templates select="child::node()"/>
+        </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="tei:list[ancestor::tei:div[@type = 'introduction']]">
+        <xsl:element name="ul">
+            <xsl:apply-templates select="child::node()"/>
+        </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="tei:item[ancestor::tei:div[@type = 'introduction']]">
+        <xsl:element name="li">
+            <xsl:apply-templates select="child::node()"/>
+        </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="tei:label">
+        <xsl:element name="b">
+            <xsl:apply-templates/>
+        </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="tei:emph">
+        <xsl:element name="i">
+            <xsl:apply-templates/>
+        </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="tei:hi[@rend = 'sub']">
+        <sub>
+            <xsl:value-of select="text()"/>
+        </sub>
     </xsl:template>
 
 </xsl:stylesheet>

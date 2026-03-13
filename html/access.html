@@ -40,7 +40,7 @@
 				<h4>Endpoint</h4>
 					<p>The address for making CTS queries is:</p>
 					<pre><code style="font-size:120%">
-https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/cts/
+https://expps.acdh.oeaw.ac.at/psalmcatenae-server/cts/
 					</code></pre>
 				<h4>Structure of the URNs</h4>
 					<p>An identifier of an fragment of the edition looks like this:</p>
@@ -51,7 +51,7 @@ urn:cts:etf:psath.expps.{language}:{number of passage}
 					<p>The value for <kbd>number of passage</kbd> must be the running number of the fragments of the edition. The identifier can also be found in the online version of the <a href="edition.html" target="_blank">edition</a> at the end of each commentary fragment. A list of all URNs is delivered for the request <a href="#cts-further-requests">GetValidReff</a> (see below).</p>
 				<h4>Exemplaric Request</h4>
 					<pre><code class="http" style="font-size:120%">
-https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/cts/?request=GetPassage&urn=urn:cts:etf:psath.expps.grc:1
+https://expps.acdh.oeaw.ac.at/psalmcatenae-server/cts/?request=GetPassage&urn=urn:cts:etf:psath.expps.grc:1
 					</code></pre>
 					<p>This request delivers as result the first fragment of the edition in greek language.</p>
 			<h3 id="cts-response">Response</h3>
@@ -71,7 +71,7 @@ https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/cts/?request=GetPassage&ur
          Available under the Creative Commons Attribution 4.0 International (CC BY 4.0)
       &lt;/license&gt;
       &lt;source&gt;
-         Heil, Uta; Panteghini, Sebastiano, (Ps.)-Athanasius, Expositiones in Psalmos. Fragment 1 - urn:cts:etf:psath.expps.grc:1 (https://expps.acdh-dev.oeaw.ac.at/expps/edition.html).
+         Heil, Uta; Panteghini, Sebastiano, (Ps.)-Athanasius, Expositiones in Psalmos. Fragment 1 - urn:cts:etf:psath.expps.grc:1 (https://expps.acdh.oeaw.ac.at/expps/edition.html).
       &lt;/source&gt;
    &lt;/reply&gt;
 &lt;/GetPassage&gt;
@@ -80,17 +80,17 @@ https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/cts/?request=GetPassage&ur
 		<h4>GetValidReff</h4>
 				<p>To get a list of all available URNs the following request can be used.</p>
 		<pre><code class="http" style="font-size:120%">
-https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/cts/?request=GetValidReff
+https://expps.acdh.oeaw.ac.at/psalmcatenae-server/cts/?request=GetValidReff
 					</code></pre>
 		<h4>GetLabel</h4>
 				<p>To get a short label for a particular commentary fragment the following request can be used.</p>
 		<pre><code class="http" style="font-size:120%">
-https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/cts/?request=GetLabel&urn=urn:cts:etf:psath.expps.grc:1
+https://expps.acdh.oeaw.ac.at/psalmcatenae-server/cts/?request=GetLabel&urn=urn:cts:etf:psath.expps.grc:1
 	</code></pre>
 		<h2 id="rest">Accessing the Transcriptions - REST API</h2>
 		<p>The REST API has the following base URL:</p>
 		<pre><code class="http" style="font-size:120%">
-https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/
+https://expps.acdh.oeaw.ac.at/psalmcatenae-server/
 		</code></pre>
 		<p>All URL fragments of the endpoints are attached to this base URL</p>
 			<h3 id="rest-manuscripts">Manuscripts</h3>
@@ -115,13 +115,13 @@ https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/
 				<p>With this endpoint and the parameters it is possible to search for fragments of a particular author, for commentary fragments concerning a particular psalmverse, or for fragments commenting on a range of psalmverses.</p>
 				<p>Examples:</p>
 				<pre><code class="http" style="font-size:120%">
-https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/vat-gr-754/commentaryfragments/search?author=Athanasius
+https://expps.acdh.oeaw.ac.at/psalmcatenae-server/manuscripts/vat-gr-754/commentaryfragments/search?author=Athanasius
 				</code></pre>
 				<pre><code class="http" style="font-size:120%">
-https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/vat-gr-754/commentaryfragments/search?reference=Ps (LXX) 7,10
+https://expps.acdh.oeaw.ac.at/psalmcatenae-server/manuscripts/vat-gr-754/commentaryfragments/search?reference=Ps (LXX) 7,10
 				</code></pre>
 				<pre><code class="http" style="font-size:120%">
-https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/vat-gr-754/commentaryfragments/search?reference-from=Ps (LXX) 9,1&reference-to=Ps (LXX) 9,4
+https://expps.acdh.oeaw.ac.at/psalmcatenae-server/manuscripts/vat-gr-754/commentaryfragments/search?reference-from=Ps (LXX) 9,1&reference-to=Ps (LXX) 9,4
 				</code></pre>
 			<h3 id="rest-hexaplaric-variants">Hexaplaric Variants</h3>
 				<p style="font-family: monospace;color: black;">hexaplaric-variants</p>
@@ -140,7 +140,7 @@ https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/vat-gr-754/com
 				<p>With this endpoint and the parameters it is possible to get hexaplaric variants connected to a psalmverse or a range of psalmverses.</p>
 				<p>Example:</p>
 				<pre><code class="http" style="font-size:120%">
-https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/vat-gr-754/hexaplaric-variants/search?reference-from=Ps (LXX) 9,1&reference-to=Ps (LXX) 9,4
+https://expps.acdh.oeaw.ac.at/psalmcatenae-server/manuscripts/vat-gr-754/hexaplaric-variants/search?reference-from=Ps (LXX) 9,1&reference-to=Ps (LXX) 9,4
 				</code></pre>
 			<h3 id="rest-glosses">Glosses</h3>
 				<p style="font-family: monospace;color: black;">glosses</p>
@@ -161,7 +161,7 @@ https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/vat-gr-754/hex
 				<p>With this endpoint and the parameters it is possible to search for glosses by an author or for glosses connected to a psalmverse or a range of psalmverses.</p>
 				<p>Example:</p>
 				<pre><code class="http" style="font-size:120%">
-https://expps.acdh-dev.oeaw.ac.at/psalmcatenae-server/manuscripts/vat-gr-754/glosses/search?reference-from=Ps (LXX) 1,1&reference-to=Ps (LXX) 9,4
+https://expps.acdh.oeaw.ac.at/psalmcatenae-server/manuscripts/vat-gr-754/glosses/search?reference-from=Ps (LXX) 1,1&reference-to=Ps (LXX) 9,4
 				</code></pre>
 			<h3 id="rest-authors">Authors</h3>
 				<p style="font-family:monospace;color:black;">manuscripts/{manuscript-name}/authors</p>
