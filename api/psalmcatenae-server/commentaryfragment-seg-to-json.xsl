@@ -25,7 +25,7 @@
     </xsl:template>
     
      <xsl:template match="tei:choice">
-      <xsl:if test="ends-with(preceding-sibling::text()[1],' ')">
+      <xsl:if test="substring-after(preceding-sibling::text()[1],normalize-space(preceding-sibling::text()[1])) = ' '">
         <xsl:text> </xsl:text>
       </xsl:if>
       <xsl:apply-templates select="child::node()"/>
