@@ -67,7 +67,6 @@
          </sourceDesc>
       </fileDesc>
    </teiHeader>
-   <!-- Ps 1 commentary -->
    <!-- Typus XIX: V1(erledigt) C(lost) P1(erledigt) G (lost) -->
    <!-- Typus IV:  M(erledigt, f. 8r) O(erledigt; Ansicht nur der fr. um den Bibeltext) -->
    <!-- codices varii: B1(erledigt) P2(erledigt) B2(erledigt) N1(erledigt) P3(kein Athanasius) P4 (lost) A1(erledigt) P5(lost) L1(erledigt) -->
@@ -455,15 +454,17 @@
                         Α´</quote>
                      <!-- cave: Die erste Expositio ist wahrscheinlich keine Hypothesis – Ps 1 besitzt keinen Titulus –, vielmehr die Erklärung zu Ps 1,1. In diese Richtung weisen B1, B3 hin. B3 bezeichnet exp. 1 nicht als Hypothesis, im Gegensatz zur Hypothesis zur Ps 2. V1 wiedeholt die Zählung am Psalmtext nicht. Sollte einen Titulus Ψαλμὸς τῷ Δαυΐδ hinzugefügt werden (M)? V1 V5 A1 haben einen solchen nicht -->
                   </div>
-                  <!-- exp 1 -->
+                  <!-- exp 1 commentary -->
                   <div type="commentary">
                      <p xml:id="edition-1-0-1" n="1">Τὴν ἀρχὴν τῆς προφητείας, τῷ ἐξ αὐτοῦ <span
                            xml:id="edition-1-0-1-tc-1" type="text-critical">κατὰ σάρκα τεχθησομένῳ
                            Χριστῷ ἀνατίθησιν</span>
-                        <span xml:id="edition-1-0-1-tc-2" type="text-critical">ὁ Δαυΐδ</span>· διὸ
+                        <span xml:id="edition-1-0-1-tc-2" type="text-critical">ὁ Δαυΐδ</span><anchor
+                           type="biblical-quotation" subtype="indirect-quotation" n="Rom 1,3"/>· διὸ
                         ἐν πρώτοις μακαρίζει, τοὺς εἰς αὐτὸν <span type="text-critical"
-                           xml:id="edition-1-0-1-tc-3">ἠλπικότας· μακαρίους δὲ καλεῖ</span>, τοὺς
-                           <span type="text-critical" xml:id="edition-1-0-1-tc-4">μὴ
+                           xml:id="edition-1-0-1-tc-3">ἠλπικότας<anchor type="biblical-quotation"
+                              subtype="indirect-quotation" n="Ps 2,12d"/>· μακαρίους δὲ
+                        καλεῖ</span>, τοὺς <span type="text-critical" xml:id="edition-1-0-1-tc-4">μὴ
                            πορευθέντας</span> ἐν βουλῇ ἀσεβῶν<anchor type="biblical-quotation"
                            subtype="indirect-quotation" n="Ps 1,1a"/>· μήτε <span
                            type="text-critical" xml:id="edition-1-0-1-tc-5">μὴν</span> στάντας <span
@@ -480,7 +481,7 @@
                               ἰουδαίοις</span>, κατὰ τοῦ σωτῆρος ἐπαναστάντα· <span
                               type="text-critical" xml:id="edition-1-0-1-tc-12">γραμματεῖς,
                               φαρισαῖοι·</span> καὶ νομικοί<anchor type="biblical-quotation"
-                              subtype="indirect-quotation" n="Luc 11,52–53parr"/>· <span
+                              subtype="indirect-quotation" n="Mt 23,13–29; Luc 11,52–53"/>· <span
                               type="text-critical" xml:id="edition-1-0-1-tc-13">οἳ καὶ
                               κληθεῖεν</span>
                            <span type="text-critical" xml:id="edition-1-0-1-tc-14">εἰκότως</span>,
@@ -623,91 +624,97 @@
                         <wit>Vat. gr. 1422</wit>
                         <wit>Paris. gr. 146</wit>
                      </app>
-                     <note type="textual-commentary"><p>Die Expositio, die den Kommentar zu einem
-                           Psalm einleitet, dient als allgemeine Einführung (Hypothesis). Die
-                           Erläuterung einzelner Verse (oder Zeilen) des Psalms obliegt den
-                           darauffolgenden Expositiones. Bereits zu Beginn findet jedoch eine
-                           besondere Anwendung dieses Musters statt. Nach einer allgemeinen
-                           Betrachtung des ersten Psalms (<foreign xml:lang="grc">Τὴν
-                              ἀρχὴν</foreign> – <foreign xml:lang="grc">ἠλπικότας</foreign>), mündet
-                           exp. 1 in eine Erklärung von Ps 1,1. Zwei Handschriften scheinen von der
-                           Mehrdeutigkeit der ersten Expositio betroffen zu sein. Der Schreiber von
-                           V1 (Typus XIX) zählt im Rahmen der Zählung der Expositiones in Centurien
-                           exp. 1 als die allererste (<foreign xml:lang="grc">Α´</foreign>),
-                           wiederholt diese Zahl jedoch nicht neben dem Psalmtext, weder neben der
+                     <note type="textual-commentary"><p>Die einleitende Expositio zu einem Psalm
+                           fungiert als allgemeine Einführung (Hypothesis). Die darauffolgenden
+                           Expositiones sind als Hermeneiai, d. h. als auf einzelne Verszeilen oder
+                           Verse bezogene Erläuterungen, zu verstehen. Bereits zu Beginn liegt
+                           jedoch eine besondere Anwendung dieses Musters vor: Nach einer
+                           allgemeinen Betrachtung des ersten Psalms (<foreign xml:lang="grc">Τὴν
+                              ἀρχὴν</foreign> – <foreign xml:lang="grc">ἠλπικότας</foreign>) mündet
+                           exp. 1 in eine Erläuterung von Ps 1,1. Die Mehrdeutigkeit der ersten
+                           Expositio schlägt sich in zwei Handschriften auf charakteristische Weise
+                           nieder. Der Schreiber der <label>V1</label>-Randkatene (Typus XIX) zählt
+                           exp. 1 im Rahmen der zenturienweisen Zählung der Expositiones als die
+                           allererste (<foreign xml:lang="grc">Α´</foreign>), wiederholt die
+                           entsprechende Zahl jedoch nicht neben dem Psalmtext, weder neben der
                            Überschrift (<foreign xml:lang="grc">Ψαλτήριον ⁘ Ἀλληλούια ⁘</foreign>)
-                           noch neben Ps 1,1a. In der Randkatene B2 ist gar kein Zeichen vorhanden,
-                           das exp. 1 mit dem Psalmtext verknüpft. Darüber hinaus wurde sie in
-                           dieser Handschrift erst nach exp. 6 (zu Ps 1,3a) am unteren Rand
-                           ausgeschrieben und liegt somit außerhalb des Chors. Die anderen in dieser
+                           noch neben Ps 1,1a. In der Randkatene <label>B2</label> ist überhaupt
+                           kein Zeichen vorhanden, das exp. 1 mit dem Psalmtext verknüpft. Darüber
+                           hinaus wurde exp. 1 in dieser Handschrift erst nach exp. 6 (zu Ps 1,3a)
+                           am unteren Rand ausgeschrieben und liegt somit außerhalb des eigentlichen
+                           Chors der Expositiones und der übrigen Hermeneiai. Die anderen in dieser
                            Edition berücksichtigten Katenen beziehen exp. 1 auf Ps 1,1. In der
-                           Textkatene B1 (Typus I) steht sie zwar nach Ps 1,1c (= Lemma), jedoch
-                           vermerkte der Schreiber am inneren Rand, dass sie drei Zeilen (= Ps 1,1)
-                           erklärt: <foreign xml:lang="grc">[ἐρμηνεία τοῦ Ἀθανασίου(?)] [εἰς] τοὺς
-                              [τ]ρεῖς [σ]τίχους</foreign>. In dieser Katene stellt Ps 1,1 nämlich
-                           kein einheitliches Lemma dar, sondern jede der drei Zeilen, aus denen es
-                           sich zusammensetzt, wird separat kommentiert. Daher hat exp. 1 in diesem
-                           Überlieferungskontext nur Ps 1,1c als Lemma und nicht, wie ursprünglich
-                           vorgesehen, den gesamten ersten Vers. Auch in der exegetischen Anthologie
-                           B3, die hinsichtlich der Expositiones derselben Familie wie B1 angehört,
-                           wird exp. 1 auf Ps 1,1 bezogen (<foreign xml:lang="grc">'Μακάριος ἀνὴρ',
-                              ἕως 'οὐκ ἐκάθισεν'</foreign> = Lemma). Dabei wird der in dieser
-                           Handschrift anderswo für Expositiones angewandte Terminus 'Hypothesis'
-                           nicht verwendet. Des Weiteren wurde exp. 1 in den zur selben Familie
-                           gehörenden Randkatenen V5 P7 (Typus XV) und L2 A3 (Typus XVI) nicht als
-                           Hypothesis angesehen, da sie nicht im Abschnitt zu finden ist, in dem die
-                           Hypotheseis zu Ps 1 gesammelt sind. Stattdessen ist sie Teil des
-                           Kommentars und dort irrtümlich mit Ps 1,1b verknüpft. <!-- Textkritik: ist exp. 1 aus der Familie β der Expositiones? Siehe <foreign xml:lang="grc">κεκαθικότας
+                           Textkatene <label>B1</label> (Typus I) steht sie zwar nach Ps 1,1c (=
+                           Lemma), doch vermerkte der Schreiber am inneren Rand, dass sie drei
+                           Stichoi, d. h. den gesamten ersten Vers (= Ps 1,1) erläutert: <foreign
+                              xml:lang="grc">[ἐρμηνεία τοῦ Ἀθανασίου(?)] [εἰς] τοὺς [τ]ρεῖς
+                              [σ]τίχους</foreign>. In dieser Katene stellt Ps 1,1 nämlich kein
+                           einheitliches Lemma dar; vielmehr wird jede seiner drei Zeilen separat
+                           kommentiert. Daher hat exp. 1 in diesem Überlieferungskontext nur Ps 1,1c
+                           als Lemma und nicht, wie ursprünglich vorgesehen, den gesamten ersten
+                           Vers. Auch in der Anthologie von Psalmenexegesen <label>B3</label>, die
+                           hinsichtlich der Expositiones derselben Handschriftengruppe wie B1
+                           angehört (γ2), wird exp. 1 auf Ps 1,1 bezogen (<foreign xml:lang="grc"
+                              >'Μακάριος ἀνὴρ', ἕως 'οὐκ ἐκάθισεν'</foreign> = Lemma). Dabei wird
+                           der in dieser Handschrift anderswo für Expositiones angewandte Terminus
+                           'Hypothesis' nicht verwendet. Des Weiteren wurde exp. 1 in den
+                           Sammelkatenen <label>V5 P7</label> (Typus XV) und <label>L2 A3</label>
+                           (Typus XVI) nicht als Hypothesis eingestuft, da sie nicht im eröffnenden
+                           Abschnitt zu finden ist, in dem die Hypotheseis zu Ps 1 gesammelt werden.
+                           Stattdessen ist sie Teil des Kommentars und dort irrtümlich mit Ps 1,1b
+                           verknüpft. <!-- Textkritik: ist exp. 1 aus der Familie β der Expositiones? Siehe <foreign xml:lang="grc">κεκαθικότας
                               λοιμῶν</foreign>) -->
                            <!-- Katenen: V5 P7: exp. 3 geht exp. 1 voraus. exp. 3 ist falsch am
-                           Platz: V5 korrigiert mit einer ad hoc Verbindung -->L1:
-                           exp. 1 fehlt. Nach Ps 1,1c (= Lemma) wird an erster Stelle wie gewohnt
-                           das Scholion des Hesychius aufgeführt (nr. 3 in Ps 1,1c [Antonelli; PG
-                           27,652]). An zweiter Stelle folgt eine Erklärung, die Athanasius
-                           zugeschrieben wird. Es handelt sich dabei jedoch um zwei miteinander
+                           Platz: V5 korrigiert mit einer ad hoc Verbindung -->In
+                              <label>L1</label> fehlt exp. 1. Nach Ps 1,1c (= Lemma) wird an erster
+                           Stelle wie üblich das Scholion des Hesychius aufgeführt (nr. 3 in Ps 1,1c
+                           [Antonelli; PG 27,652]). An zweiter Stelle folgt eine Erklärung, die
+                           Athanasius zugeschrieben wird. Es handelt sich dabei um zwei miteinander
                            verbundene Glossen (<foreign xml:lang="grc">Τὴν τῶν κακῶν ἐργασίαν κατὰ
                               διάδοσιν γινομένην</foreign> [= Analecta sacra II 445,24–25] +<foreign
-                              xml:lang="grc"> ἀκαθάρτων κακῶν</foreign>). Dies kann ein Hinweis
-                           dafür sein, dass exp. 1 ursprünglich auch in der Tradition dieser
-                           Textkatene enthalten war, und zwar wie in B1 nach Ps 1,1c. P1: exp. 1
-                           fehlt. Am äußeren Rand finden sich jedoch drei Glossen, die
-                           möglicherweise ihren Ursprung in exp. 1 haben: <foreign xml:lang="grc"
-                              >ο[ἱ] γρα[μματείς], φαρ[ισαῖοι], νομικοί</foreign> (jeweils zu den
-                           Wörtern des Psalmtextes <foreign xml:lang="grc">ἀσεβῶν, ἁμαρτωλῶν,
-                              λοιμῶν</foreign>, die am äußeren Rand mit roter Tinte wiederholt
-                           werden). Syrische Version (Epitome): Eine inhaltliche Parallele ist
-                           vorhanden (<foreign xml:lang="grc">γραμματεὶς</foreign> – <foreign
-                              xml:lang="grc">λοιμοί</foreign>). Montfaucon: In seiner Erstausgabe
-                           der Expositiones konnte er nur <foreign xml:lang="grc">Τὴν
-                              ἀρχὴν</foreign> – <foreign xml:lang="grc">ἠλπικότας</foreign> edieren
-                           (wobei <foreign xml:lang="grc">κατὰ σάρκα</foreign> fehlt). Diese
-                           gekürzte Fassung findet sich in keiner der in der Präfatio seiner
-                           Erstausgabe genannten Handschriften (P1 [Typus XIX], P6 und Paris. gr.
-                           148 [Typus III], P7 [Typus XV]. Zwar ist exp. 1 in P7 vollständig
-                           bezeugt, aber anonym, sodass sie unbemerkt blieb. Es ist daher
-                           anzunehmen, dass Montfaucon ein Incipit verwendet hat, das er in der
-                           Präfatio zu einem Buch von A. Arnold aufgefunden hatte und das er
-                           ebenfalls in der Präfatio zu seiner Erstausgabe zitiert hat (siehe oben,
-                           p. XXX). Den fehlenden Teil von exp. 1 hat Montfaucon als Ergänzung zu
-                           seiner Erstausgabe aus der Sammlung von Colville veröffentlicht (siehe
-                           oben, p. XXX). Aus textkritischer Perspektive findet diese Ergänzung ihre
-                           Entsprechung im Typus XIX (V1 M O); sie unterscheidet sich von diesem
-                           lediglich durch die Variante <foreign xml:lang="grc">τὰ τάγματα</foreign>
-                           anstelle von <foreign xml:lang="grc">τάγματα</foreign> unterscheidet.
-                        </p></note>
+                              xml:lang="grc"> ἀκαθάρτων κακῶν</foreign>). Dieser Befund kann darauf
+                           hindeuten, dass exp. 1 ursprünglich auch in der Tradition dieser
+                           Textkatene enthalten war, und zwar – wie in B1 – nach Ps 1,1c. In
+                              <label>P1</label> fehlt exp. 1 ebenfalls. Am äußeren Rand finden sich
+                           allerdings drei Glossen, die möglicherweise ihren Ursprung in exp. 1
+                           haben: <foreign xml:lang="grc">ο[ἱ] γρα[μματείς], φαρ[ισαῖοι],
+                              νομικοί</foreign> (jeweils zu den Wörtern des Psalmtextes <foreign
+                              xml:lang="grc">ἀσεβῶν, ἁμαρτωλῶν, λοιμῶν</foreign>, die am äußeren
+                           Rand mit roter Tinte wiederholt werden). <label>Syrische Version</label>
+                           (Epitome): Eine inhaltliche Parallele ist vorhanden (<foreign
+                              xml:lang="grc">γραμματεὶς</foreign> – <foreign xml:lang="grc"
+                              >λοιμοί</foreign>). <label>Montfaucon</label>: In seiner Erstausgabe
+                           der Expositiones (1698) konnte er nur den Abschnitt <foreign
+                              xml:lang="grc">Τὴν ἀρχὴν</foreign> – <foreign xml:lang="grc"
+                              >ἠλπικότας</foreign> edieren (wobei <foreign xml:lang="grc">κατὰ
+                              σάρκα</foreign> fehlt). Diese gekürzte Fassung findet sich in keiner
+                           der in der Präfatio seiner Erstausgabe genannten Handschriften (P1 [Typus
+                           XIX], P6 und Paris. gr. 148 [Typus III], P7 [Typus XV]. Zwar ist exp. 1
+                           in P7 vollständig bezeugt, dort jedoch anonym, sodass sie unbemerkt
+                           blieb. Es ist daher mehr als wahrscheinlich, dass Montfaucon ein Incipit
+                           verwendet hat, das er in der Präfatio zu einem Buch von A. Arnold
+                           aufgefunden hatte und das er seinerseits in der Präfatio seiner
+                           Erstausgabe zitiert hat (siehe oben, p. XXX); den fehlenden Teil von exp.
+                           1 hat er sodann als Ergänzung zu seiner Erstausgabe aus der Sammlung
+                           Colvilles veröffentlicht (siehe oben, p. XXX). Aus textkritischer
+                           Perspektive findet diese Ergänzung ihre Entsprechung im Typus XIX (V1 M
+                           O); sie unterscheidet sich von diesem lediglich durch die Variante
+                              <foreign xml:lang="grc">τὰ τάγματα</foreign> anstelle von <foreign
+                              xml:lang="grc">τάγματα</foreign>. </p></note>
                   </div>
                </div>
                <div xml:lang="de" type="translation">
                   <quote corresp="#edition-ps-1-0" type="psalmtext" subtype="heading">Psalm
                      1</quote>
                   <p corresp="#edition-1-0-1" n="1">Den Anfang der Prophetie bringt David Christo
-                     dar, der dem Fleisch nach aus ihm geboren werden soll. Deshalb preist er zuerst
-                     die selig, die auf ihn hoffen. Er nennt selig jene, die weder im Rat der
-                     Gottlosen wandelten, [cf. Ps 1,1a] noch auf den Weg der Sünder traten [cf. Ps
-                     1,1b] und sich auch nicht auf den Stuhl der Verseuchten setzten. [cf. Ps 1,1c]
-                     Denn es gab bei den Juden drei Gruppen, die sich gegen den Erlöser erhoben:
-                     Schriftgelehrte, Pharisäer und Gesetzeskundige. [cf. Luc 11,52–53parr] Eben
-                     diese könnten zu Recht Gottlose, Sünder und Verseuchte genannt werden.</p>
+                     dar, der dem Fleisch nach aus ihm geboren werden soll [cf. Rom 1,3]. Deshalb
+                     preist er zuerst die selig, die auf ihn hoffen [cf. Ps 2,12c]. Er nennt selig
+                     jene, die weder im Rat der Gottlosen wandelten [cf. Ps 1,1a], noch auf den Weg
+                     der Sünder traten [cf. Ps 1,1b] und sich auch nicht auf den Stuhl der
+                     Verseuchten setzten [cf. Ps 1,1c]. Denn es gab bei den Juden drei Gruppen, die
+                     sich gegen den Erlöser erhoben: Schriftgelehrte, Pharisäer und Gesetzeskundige
+                     [Mt 23,13–29; Luc 11,52]. Eben diese könnten zu Recht Gottlose, Sünder und
+                     Verseuchte genannt werden.</p>
                </div>
             </div>
             <div n="1.1" type="psalmverse">
@@ -722,10 +729,10 @@
                         τὴν συνέλευσιν τῶν πονηρῶν· καὶ ἐπεὶ βλαβερὸν· τὸ τοῖς ἀθροίσμασι τῶν ἀσεβῶν
                         παραβάλλειν, μακαρίζει τὸν μὴ δὲ κατὰ ποσὸν εἰς αὐτὸν αὐτοῖς ἐρχόμενον·
                         τοιοῦτος ὑπῆρχεν, ὁ Ἰωσὴφ ὁ ἀπὸ Ἀριμαθαίας· ὁ τὸ σῶμα τοῦ κυρίου καὶ θεοῦ
-                           θάψας·<anchor type="biblical-quotation" subtype="indirect-quotation"
-                           n="Mt 27,57–60parr"/> εἴρηται γὰρ περὶ αὐτοῦ, ὡς οὐκ ἦν συγκατατιθέμενος
-                        τῇ βουλῇ τῶν Ἰησοῦ προδοτῶν: –<anchor type="biblical-quotation"
-                           subtype="indirect-quotation" n="Lc 23,51"/></p>
+                           θάψας<anchor type="biblical-quotation" subtype="indirect-quotation"
+                           n="Mt 27,57–60parr"/>· εἴρηται γὰρ περὶ αὐτοῦ, ὡς οὐκ ἦν συγκατατιθέμενος
+                        τῇ βουλῇ τῶν Ἰησοῦ προδοτῶν<anchor type="biblical-quotation"
+                           subtype="indirect-quotation" n="Lc 23,51"/>: –</p>
                      <div type="links">
                         <p>
                            <listRef>
@@ -762,16 +769,16 @@
                      Zusammenkunft, (das heißt) das Zusammentreffen der Bösen zu nennen. Und weil zu
                      den Versammlungen der Gottlosen dazuzustoßen schädlich ist, preist er selig
                      jenen, der nicht im Geringsten an denselben Ort wie diese geht. Ein solcher war
-                     Josef von Arimatäa, derjenige, der den Leib des Herrn und Gottes begraben
-                     hatte. [cf. Mt 27,57–60parr] Denn über ihn wurde gesagt, dass er dem Rat der
-                     Verräter Jesu nicht zustimmen wollte. [cf. Lc 23,51]</p>
+                     Josef von Arimatäa, derjenige, der den Leib des Herrn und Gottes begraben hatte
+                     [cf. Mt 27,57–60parr]. Denn über ihn wurde gesagt, dass er dem Rat der Verräter
+                     Jesu nicht zustimmen wollte [cf. Lc 23,51].</p>
                </div>
             </div>
             <div n="1.1" type="psalmverse">
                <div xml:lang="grc" type="text">
                   <div type="psalmtext">
                      <quote xml:id="edition-ps-1-1b" type="psalmtext" n="1b">καὶ ἐν ὁδῷ ἁμαρτωλῶν
-                        οὐκ ἔστη·</quote>
+                        οὐκ ἔστη·</quote>
                   </div>
                </div>
                <div type="translation" xml:lang="de">
@@ -783,14 +790,14 @@
                <div xml:lang="grc" type="text">
                   <div type="psalmtext">
                      <quote xml:id="edition-ps-1-1c" type="psalmtext" n="1c">καὶ ἐπὶ καθέδραν λοιμῶν
-                        οὐκ ἐκάθισεν: –</quote>
+                        οὐκ ἐκάθισεν·</quote>
                   </div>
                   <!-- exp 3 -->
                   <div type="commentary" subtype="dubium">
                      <p xml:id="edition-1-1-1c" n="3">Διὰ τῆς καθέδρας, τὴν διδασκαλίαν δηλοῖ· <span
                            type="text-critical" xml:id="edition-1-1-1c-tc-1">ὡς φησὶν</span> ἐπὶ τῆς
-                        Μωσέως καθέδρας·<anchor type="biblical-quotation"
-                           subtype="indirect-quotation" n="Mt 23,2"/> καθέδρα τοίνυν λοιμῶν, ἡ
+                        Μωσέως καθέδρας<anchor type="biblical-quotation"
+                           subtype="indirect-quotation" n="Mt 23,2"/>· καθέδρα τοίνυν λοιμῶν, ἡ
                         διδασκαλία τῶν παρανόμων: –</p>
                      <div type="links">
                         <p>
@@ -853,13 +860,13 @@
                      Zusammenkunft, (das heißt) das Zusammentreffen der Bösen zu nennen. Und weil zu
                      den Versammlungen der Gottlosen dazuzustoßen schädlich ist, preist er selig
                      jenen, der nicht im Geringsten an denselben Ort wie diese geht. Ein solcher war
-                     Josef von Arimatäa, derjenige, der den Leib des Herrn und Gottes begraben
-                     hatte. [cf. Mt 27,57–60parr] Denn über ihn wurde gesagt, dass er dem Rat der
-                     Verräter Jesu nicht zustimmen wollte. [cf. Lc 23,51]</p>
+                     Josef von Arimatäa, derjenige, der den Leib des Herrn und Gottes begraben hatte
+                     [cf. Mt 27,57–60parr]. Denn über ihn wurde gesagt, dass er dem Rat der Verräter
+                     Jesu nicht zustimmen wollte [cf. Lc 23,51].</p>
                   <quote corresp="#edition-ps-1-1c" type="psalmtext" n="1c">und auf den Stuhl der
                      Verseuchten sich nicht setzte,</quote>
                   <p corresp="#edition-1-1-1c" n="3">Durch 'Stuhl' deutet er auf die Lehre, wie er
-                     sagt 'auf den (Lehr)stuhl des Moses'. [cf. Mt 23,2] Der Stuhl der Verseuchten
+                     sagt 'auf den (Lehr)stuhl des Moses' [cf. Mt 23,2]. Der Stuhl der Verseuchten
                      ist also die Lehre der Gesetzwidrigen. </p>
                </div>
             </div>
@@ -867,7 +874,7 @@
                <div xml:lang="grc" type="text">
                   <div type="psalmtext">
                      <quote xml:id="edition-ps-1-2a" type="psalmtext" n="2a">ἀλλ᾽ ἢ ἐν τῷ νόμῳ
-                        κυρίου τὸ θέλημα αὐτοῦ·</quote>
+                        κυρίου τὸ θέλημα αὐτοῦ·</quote>
                   </div>
                   <!-- exp 4 -->
                   <div type="commentary">
@@ -914,7 +921,7 @@
                   </div>
                   <div type="psalmtext">
                      <quote xml:id="edition-ps-1-2b" type="psalmtext" n="2b">καὶ ἐν τῷ νόμῳ αὐτοῦ
-                        μελετήσει ἡμέρας καὶ νυκτός: –</quote>
+                        μελετήσει ἡμέρας καὶ νυκτός·</quote>
                   </div>
                   <!-- exp 5 -->
                   <div type="commentary">
@@ -1002,7 +1009,7 @@
                <div xml:lang="grc" type="text">
                   <div type="psalmtext">
                      <quote xml:id="edition-ps-1-3a" type="psalmtext" n="3a">καὶ ἔσται ὡς τὸ ξύλον
-                        τὸ πεφυτευμένον παρὰ τὰς διεξόδους τῶν ὑδάτων,</quote>
+                        τὸ πεφυτευμένον παρὰ τὰς διεξόδους τῶν ὑδάτων·</quote>
                   </div>
                   <!-- exp 6 -->
                   <div type="commentary">
@@ -1015,18 +1022,19 @@
                                  xml:id="edition-1-3-1-tc-5">ξύλον ζωῆς ἐστι</span>
                               <span type="text-critical" xml:id="edition-1-3-1-tc-6">πᾶσι τοῖς
                                  ἀντεχομένοις</span>
-                              <span type="text-critical" xml:id="edition-1-3-1-tc-7">αὐτῆς</span>·'
-                                 <anchor type="biblical-quotation" subtype="direct-quotation"
-                                 n="Prov 3,18a"/> λέγει οὖν ὅτι <span type="text-critical"
-                                 xml:id="edition-1-3-1-tc-8">οἱ πιστεύσαντες Χριστῷ</span>, σῶμα
-                              αὐτοῦ ἔσονται· <span type="text-critical" xml:id="edition-1-3-1-tc-9"
-                                 >μετασχηματίσει</span> γὰρ τὸ σῶμα τῆς ταπεινώσεως ἡμῶν, <span
-                                 type="text-critical" xml:id="edition-1-3-1-tc-10">σύμμορφον</span>
-                              τῷ σώματι τῆς δόξης αὐτοῦ· <anchor type="biblical-quotation"
-                                 subtype="indirect-quotation" n="Phil 3,21var"/>
-                              <span type="text-critical" xml:id="edition-1-3-1-tc-11">διεξόδους δὲ
-                                 ὑδάτων, τὰς θείας γραφάς· ἐν αἷς ἁπανταχοῦ ἔστιν εὑρεῖν, Χριστὸν
-                                 κηρυσσόμενον</span></span></span>: –</p>
+                              <span type="text-critical" xml:id="edition-1-3-1-tc-7"
+                                 >αὐτῆς</span><anchor type="biblical-quotation"
+                                 subtype="direct-quotation" n="Prov 3,18a"/>·' λέγει οὖν ὅτι <span
+                                 type="text-critical" xml:id="edition-1-3-1-tc-8">οἱ πιστεύσαντες
+                                 Χριστῷ</span>, σῶμα αὐτοῦ ἔσονται· <span type="text-critical"
+                                 xml:id="edition-1-3-1-tc-9">μετασχηματίσει</span> γὰρ τὸ σῶμα τῆς
+                              ταπεινώσεως ἡμῶν, <span type="text-critical"
+                                 xml:id="edition-1-3-1-tc-10">σύμμορφον</span> τῷ σώματι τῆς δόξης
+                                 αὐτοῦ<anchor type="biblical-quotation" subtype="indirect-quotation"
+                                 n="Phil 3,21var"/>· <span type="text-critical"
+                                 xml:id="edition-1-3-1-tc-11">διεξόδους δὲ ὑδάτων, τὰς θείας γραφάς·
+                                 ἐν αἷς ἁπανταχοῦ ἔστιν εὑρεῖν, Χριστὸν
+                           κηρυσσόμενον</span></span></span>: –</p>
                      <!-- Textkritik: om. πᾶσι V1 : (ἐστὶ) πᾶσιν Ο : om. πᾶσι P1 : ἐστιν πᾶσιν P6 : ἐστι πᾶσι Ζ : (ἐστὶ) πᾶ(σι) L2 -->
                      <!-- Textkritik: ζωῆς ἐστι Vat.gr.1209 -->
                      <!-- Textkritik: γραφὰς, Ο -->
@@ -1217,7 +1225,7 @@
                   </div>
                   <div type="psalmtext">
                      <quote xml:id="edition-ps-1-3b" type="psalmtext" n="3b">ὃ τὸν καρπὸν αὐτοῦ
-                        δώσει ἐν καιρῷ αὐτοῦ·</quote>
+                        δώσει ἐν καιρῷ αὐτοῦ·</quote>
                      <quote xml:id="edition-ps-1-3c" type="psalmtext" n="3c">καὶ τὸ φύλλον αὐτοῦ οὐκ
                         ἀπορρυήσεται·</quote>
                   </div>
@@ -1320,7 +1328,7 @@
                   </div>
                   <div type="psalmtext">
                      <quote xml:id="edition-ps-1-3d" type="psalmtext" n="3d">καὶ πάντα ὅσα ἂν ποιῇ,
-                        κατευοδωθήσεται: –</quote>
+                        κατευοδωθήσεται·</quote>
                   </div>
                   <!-- exp 8 -->
                   <div type="commentary">
@@ -1380,10 +1388,10 @@
                      sein, der an den Wasserbächen gepflanzt ist,</quote>
                   <p corresp="#edition-1-3-1" n="4">Als ein Baum wird Christus in der von Gott
                      inspirierten Schrift beschrieben, gemäß der Aussage: 'Ein Baum des Lebens ist
-                     sie allen, die sie festhalten.' [Prov 3,18a] Er sagt also, dass die, welche an
+                     sie allen, die sie festhalten' [Prov 3,18a]. Er sagt also, dass die, welche an
                      Christus glauben, sein Leib sein werden; denn er wird den Leib unserer
                      Niedrigkeit zu einer Gestalt umformen, die dem Leib seiner Herrlichkeit gleich
-                     ist. [cf. Phil 3,21var] Wasserbäche aber nennt er die göttlichen Schriften; in
+                     ist [cf. Phil 3,21var]. Wasserbäche aber nennt er die göttlichen Schriften; in
                      diesen kann der verkündigte Christus überall gefunden werden.</p>
                   <quote corresp="#edition-ps-1-3b" type="psalmtext" n="3b">der seine Frucht zu
                      seiner Zeit geben wird</quote>
@@ -1404,7 +1412,7 @@
                      <quote xml:id="edition-ps-1-4a" type="psalmtext" n="4a">οὐχ οὕτως οἱ ἀσεβεῖς,
                         οὐχ οὕτως·</quote>
                      <quote xml:id="edition-ps-1-4b" type="psalmtext" n="4b">ἀλλ᾽ ἢ ὡς ὁ χνοῦς, ὃν
-                        ἐκριπτεῖ ὁ ἄνεμος ἀπὸ προσώπου τῆς γῆς: –</quote>
+                        ἐκριπτεῖ ὁ ἄνεμος ἀπὸ προσώπου τῆς γῆς·</quote>
                   </div>
                   <!-- exp 9a1 -->
                   <div type="commentary" rend="parallel">
@@ -1413,8 +1421,9 @@
                         αὐτῶν ἐβουλεύσατο· τοῖς μὲν δικαίοις, τὴν βασιλείαν <span
                            type="text-critical" xml:id="edition-1-4-2-1-tc-2">ἀποδοῦναι</span>· τοῖς
                         δὲ ἁμαρτωλοῖς <span type="text-critical" xml:id="edition-1-4-2-1-tc-3"
-                           >ἐρεῖν</span>, 'ἀποστραφήτωσαν οἱ ἁμαρτωλοὶ εἰς τὸν ᾅδην': –<anchor
-                           type="biblical-quotation" subtype="direct-quotation" n="Ps 9,18a"/></p>
+                           >ἐρεῖν</span>, 'ἀποστραφήτωσαν οἱ ἁμαρτωλοὶ εἰς τὸν ᾅδην'<anchor
+                           type="biblical-quotation" subtype="direct-quotation" n="Ps 9,18a"/>:
+                        –</p>
                      <!-- βασιλείαν V1 : βασίλεαν Ο -->
                      <!-- ἀποδίδωσιν V1 : ἀποδίδωσι V5 P7 -->
                      <div type="links">
@@ -1484,8 +1493,8 @@
                         δικαίων· ἕτερα γὰρ <span type="text-critical" corresp="edition-1-4-2-1-1-1"
                            >περὶ ἑκατέρων</span> ἐβουλεύσατο· τοῖς μὲν γὰρ δικαίοις, τὴν βασιλείαν
                         ἀποδίδωσι· τοῖς δὲ ἁμαρτωλοῖς ἐρεῖ, 'ἀποστραφήτωσαν οἱ ἁμαρτωλοὶ εἰς τὸν
-                        ᾅδην': –<anchor type="biblical-quotation" subtype="direct-quotation"
-                           n="Ps 9,18a"/></p>
+                           ᾅδην'<anchor type="biblical-quotation" subtype="direct-quotation"
+                           n="Ps 9,18a"/>: –</p>
                      <div type="links">
                         <p>
                            <listRef>
@@ -1541,12 +1550,12 @@
                      Staub, den der Wind vom Angesicht der Erde wegreißen wird.</quote>
                   <p corresp="#edition-1-4-2-1" n="9a">Denn er hat etwas anderes über sie
                      beschloßen: den Gerechten das Reich zu übergeben, den Sündern zu sagen: 'Die
-                     Sünder sollen in die Unterwelt getrieben werden!' [Ps 9,18a]</p>
+                     Sünder sollen in die Unterwelt getrieben werden! [Ps 9,18a]'</p>
                   <p corresp="#edition-1-4-2-1-1" n="9a">Dies sollte im Sinne eines Ηyperbaton
                      betrachtet werden: Im Gericht, sagt er, werden die Gottlosen nicht aufstehen,
                      noch die Sünder im Rat der Gerechten. Denn er hat etwas anderes für jeden von
                      beiden beschlossen: Den Gerechten wird er das Reich übergeben; den Sündern wird
-                     er sagen: 'Die Sünder sollen in die Unterwelt getrieben werden!' [Ps 9,18a]</p>
+                     er sagen: 'Die Sünder sollen in die Unterwelt getrieben werden! [Ps 9,18a]'</p>
                   <p corresp="#edition-1-4-2-2" n="9b">Auch dieses ergibt sich aus einem Vergleich,
                      der zeigt, mit welcher Leichtigkeit die Gottlosen bewegt werden können.</p>
                </div>
@@ -1555,7 +1564,7 @@
                <div xml:lang="grc" type="text">
                   <div type="psalmtext">
                      <quote xml:id="edition-ps-1-5a" type="psalmtext" n="5a">διὰ τοῦτο οὐκ
-                        ἀναστήσονται ἀσεβεῖς ἐν κρίσει,</quote>
+                        ἀναστήσονται ἀσεβεῖς ἐν κρίσει·</quote>
                      <quote xml:id="edition-ps-1-5b" type="psalmtext" n="5b">οὐδὲ ἁμαρτωλοὶ ἐν βουλῇ
                         δικαίων: –</quote>
                   </div>
@@ -1569,12 +1578,12 @@
                            type="text-critical" xml:id="edition-1-5-2-tc-4">ἄνεμον δὲ
                         νοήσεις</span>, τὴν ἀπειλὴν τοῦ θεοῦ τὴν λέγουσαν· <span
                            type="text-critical" xml:id="edition-1-5-2-tc-5">πορεύεσθε</span> ἀπ᾿
-                        ἐμοῦ οἱ κατηραμένοι εἰς τὸ πῦρ τὸ αἰώνιον·<anchor type="biblical-quotation"
-                           subtype="direct-quotation" n="Mt 25,41"/>
-                        <span type="text-critical" xml:id="edition-1-5-2-tc-6"><span
-                              type="text-critical" xml:id="edition-1-5-2-tc-7">οἳ</span>· <span
-                              type="text-critical" xml:id="edition-1-5-2-tc-8">τὴν τοιαύτην</span>
-                           ἀκούσαντες φωνὴν, καταπεσοῦνται δικαίως· <span type="text-critical"
+                        ἐμοῦ οἱ κατηραμένοι εἰς τὸ πῦρ τὸ αἰώνιον<anchor type="biblical-quotation"
+                           subtype="direct-quotation" n="Mt 25,41"/>· <span type="text-critical"
+                           xml:id="edition-1-5-2-tc-6"><span type="text-critical"
+                              xml:id="edition-1-5-2-tc-7">οἳ</span>· <span type="text-critical"
+                              xml:id="edition-1-5-2-tc-8">τὴν τοιαύτην</span> ἀκούσαντες φωνὴν,
+                           καταπεσοῦνται δικαίως· <span type="text-critical"
                               xml:id="edition-1-5-2-tc-9">οὐ γὰρ ἐστήκασιν εἰς Χριστὸν</span>, ὅς
                            ἐστι <span type="text-critical" xml:id="edition-1-5-2-tc-10">τῶν
                               πιστευόντων στήριγμα</span> καὶ <span type="text-critical"
@@ -1748,7 +1757,7 @@
                   <p corresp="#edition-1-5-2" n="8">Deshalb nämlich, weil sie keine Wurzel haben,
                      sondern weil sie Erdenstaub ähnlich sind, der vom Wind aufgeweht wird. Unter
                      dem Wind wirst du die Drohung Gottes verstehen, welche sagt: 'Geht von mir, ihr
-                     Verfluchte, in das ewige Feuer!' [Mt 25,41] Die diese Stimme hören, werden mit
+                     Verfluchte, in das ewige Feuer! [Mt 25,41]' Die diese Stimme hören, werden mit
                      Recht niederfallen. Denn sie stehen nicht in Christus, welcher die Stütze und
                      das Fundament der Gläubigen ist.</p>
                </div>
@@ -1757,7 +1766,7 @@
                <div xml:lang="grc" type="text">
                   <div type="psalmtext">
                      <quote xml:id="edition-ps-1-6a" type="psalmtext" n="6a">ὅτι γινώσκει κύριος
-                        ὁδὸν δικαίων,</quote>
+                        ὁδὸν δικαίων·</quote>
                   </div>
                   <!-- exp 11 -->
                   <div type="commentary">
@@ -1770,8 +1779,8 @@
                            Μωϋσῆν</span>· <span type="text-critical" xml:id="edition-1-6-1-tc-6"
                               >γινώσκω</span> σε παρὰ πάντας, καὶ εὗρες χάριν <span
                               type="text-critical" xml:id="edition-1-6-1-tc-7">παρ᾿
-                           ἐμοί</span></span>: –<anchor type="biblical-quotation"
-                           subtype="direct-quotation" n="Ex 33,12.17"/></p>
+                           ἐμοί</span></span><anchor type="biblical-quotation"
+                           subtype="direct-quotation" n="Ex 33,12.17"/>: –</p>
                      <div type="links">
                         <p>
                            <listRef>
@@ -1884,7 +1893,7 @@
                      Weg der Gerechten,</quote>
                   <p corresp="#edition-1-6-1" n="9">'Kennt' steht für 'er ehrt', gemäß dem, was von
                      Gott zu Moses gesagt wurde: 'Ich kenne dich vor allen, und du hast Gnade vor
-                     mir gefunden.' [Ex 33,12.17]</p>
+                     mir gefunden [Ex 33,12.17].'</p>
                   <quote corresp="#edition-ps-1-6b" type="psalmtext" n="6b">und der Weg der
                      Gottlosen wird vergehen.</quote>
                   <p corresp="#edition-1-6-2" n="10">Denn es wird eine Vernichtung der bösen
@@ -1987,9 +1996,9 @@
                <div xml:lang="grc" type="text">
                   <div type="psalmtext">
                      <quote xml:id="edition-ps-2-1a" type="psalmtext" n="1a">῞Ινα τί ἐφρύαξαν
-                        ἔθνη</quote>
+                        ἔθνη·</quote>
                      <quote xml:id="edition-ps-2-1b" type="psalmtext" n="1b">καὶ λαοὶ ἐμελέτησαν
-                        κενά;</quote>
+                        κενά·</quote>
                   </div>
                   <!-- exp 14 -->
                   <div type="commentary">
@@ -2227,13 +2236,14 @@
                <div xml:lang="grc" type="text">
                   <div type="psalmtext">
                      <quote xml:id="edition-ps-2-2a" type="psalmtext" n="2a">παρέστησαν οἱ βασιλεῖς
-                        τῆς γῆς,</quote>
+                        τῆς γῆς·</quote>
                   </div>
                   <!-- exp 15 -->
                   <div type="commentary" rend="parallel">
                      <p xml:id="edition-2-2-1" n="15" next="#edition-2-2-1-1">Ἡρώδης <span
                            type="text-critical" xml:id="edition-2-2-1-tc-1">τε καὶ</span> Πόντιος
-                        Πιλᾶτος: –</p>
+                           Πιλᾶτος<anchor type="biblical-quotation" subtype="direct-quotation"
+                           n="Act 4,27"/>: –</p>
                      <div type="links">
                         <p>
                            <listRef>
@@ -2285,7 +2295,8 @@
                   </div>
                   <div type="commentary" rend="hide">
                      <p xml:id="edition-2-2-1-1" n="15">Βασιλεῖς δὲ τῆς γῆς παρεστάναι φησὶν, τόν τε
-                        Ἡρώδην καὶ τὸν Πιλάτον: –</p>
+                        Ἡρώδην καὶ τὸν Πιλάτον<anchor type="biblical-quotation"
+                           subtype="indirect-quotation" n="Act 4,27"/>: –</p>
                      <div type="links">
                         <p><listRef>
                               <ref target="#franzon-3:franzon-3-fr-2-2"/>
@@ -2300,7 +2311,7 @@
                   </div>
                   <div type="psalmtext">
                      <quote xml:id="edition-ps-2-2b" type="psalmtext" n="2b">καὶ οἱ ἄρχοντες
-                        συνήχθησαν ἐπὶ τὸ αὐτὸ</quote>
+                        συνήχθησαν ἐπὶ τὸ αὐτὸ·</quote>
                   </div>
                   <!-- exp 16 -->
                   <div type="commentary" rend="parallel">
@@ -2362,7 +2373,7 @@
                   </div>
                   <div type="psalmtext">
                      <quote xml:id="edition-ps-2-2c" type="psalmtext" n="2c">κατὰ τοῦ κυρίου καὶ
-                        κατὰ τοῦ χριστοῦ αὐτοῦ</quote>
+                        κατὰ τοῦ χριστοῦ αὐτοῦ·</quote>
                   </div>
                   <!-- exp 17 -->
                   <div type="commentary">
@@ -2374,8 +2385,10 @@
                            ἀνατρέχει τὸν πατέρα</span>· <span type="text-critical"
                            xml:id="edition-2-2-3-tc-6">εἰ γὰρ ὁ πατὴρ ἐν τῷ υἱῷ· <span
                               type="text-critical" xml:id="edition-2-2-3-tc-7">καὶ</span> ὁ υἱὸς ἐν
-                           τῷ πατρὶ</span>, <span type="text-critical" xml:id="edition-2-2-3-tc-8"
-                           >πῶς οὐκ ἂν μία τίς</span>
+                           τῷ πατρὶ</span><anchor type="biblical-quotation"
+                           subtype="indirect-quotation" n="Ioh 10,38 parr"/>, <span
+                           type="text-critical" xml:id="edition-2-2-3-tc-8">πῶς οὐκ ἂν μία
+                           τίς</span>
                         <span type="text-critical" xml:id="edition-2-2-3-tc-9"><span
                               type="text-critical" xml:id="edition-2-2-3-tc-10">ἡ</span> εἰς αὐτοὺς
                            ὕβρις</span>
@@ -2535,9 +2548,9 @@
                <div xml:lang="de" type="translation">
                   <quote corresp="#edition-ps-2-2a" type="psalmtext" n="2a">Aufgestellt haben sich
                      die Könige der Erde,</quote>
-                  <p corresp="#edition-2-2-1" n="13">Herodes und Pontius Pilatus.</p>
+                  <p corresp="#edition-2-2-1" n="13">Herodes und Pontius Pilatus [Act 4,27].</p>
                   <p corresp="#edition-2-2-1-1" n="13">Er sagt, dass sich die Könige der Erde
-                     aufgestellt haben, nämlich Herodes und Pontius Pilatus.</p>
+                     aufgestellt haben, nämlich Herodes und Pontius Pilatus [cf. Act 4,27].</p>
                   <quote corresp="#edition-ps-2-2b" type="psalmtext" n="2b">und die Herrscher haben
                      sich am selben Ort versammelt</quote>
                   <p corresp="#edition-2-2-2" n="14">Die schon angeführten Gruppen: Schriftgelehrte,
@@ -2549,8 +2562,8 @@
                   <p corresp="#edition-2-2-3" n="15"
                      ><!--Gegen den Herrn, das heißt gegen den Vater.-->Denn die Hinterlist gegen
                      den Gesalbten wendet sich auch gegen den Vater selbst. Denn wenn der Vater im
-                     Sohn ist, und der Sohn im Vater, wie wäre die ihnen zugefügte Schmach nicht ein
-                     und dieselbe?</p>
+                     Sohn ist, und der Sohn im Vater [cf. Ioh 10,38 parr], wie wäre die ihnen
+                     zugefügte Schmach nicht ein und dieselbe?</p>
                   <!-- alternative Übersetzung: steigt gegen den Vater auf -->
                   <quote corresp="#edition-ps-2-2d" type="psalmtext" n="2d">Zwischenspiel</quote>
                </div>
@@ -2558,8 +2571,8 @@
             <div n="2.3" type="psalmverse">
                <div xml:lang="grc" type="text">
                   <div type="psalmtext">
-                     <quote xml:id="edition-ps-2-3a" type="psalmtext" n="3a">Διαρρήξωμεν τοὺς
-                        δεσμοὺς αὐτῶν</quote>
+                     <quote xml:id="edition-ps-2-3a" type="psalmtext" n="3a">διαρρήξωμεν τοὺς
+                        δεσμοὺς αὐτῶν·</quote>
                   </div>
                   <!-- exp 18 -->
                   <div type="commentary">
@@ -2577,8 +2590,9 @@
                            <span type="text-critical" xml:id="edition-2-3-1-tc-9">περὶ ἧς γέγραπται·
                               '<span type="text-critical" xml:id="edition-2-3-1-tc-10">ὁμοία</span>
                            ἐστὶν ἡ βασιλεία τῶν οὐρανῶν <span type="text-critical"
-                              xml:id="edition-2-3-1-tc-11">σαγήνῃ</span></span>': – <anchor
-                           type="biblical-quotation" subtype="direct-quotation" n="Mt 13,47"/></p>
+                              xml:id="edition-2-3-1-tc-11">σαγήνῃ'</span></span><anchor
+                           type="biblical-quotation" subtype="direct-quotation" n="Mt 13,47"/>:
+                        –</p>
                      <div type="links">
                         <p>
                            <listRef>
@@ -2744,15 +2758,15 @@
                   </div>
                   <div type="psalmtext">
                      <quote xml:id="edition-ps-2-3b" type="psalmtext" n="3b">καὶ ἀπορρίψωμεν ἀφ᾽
-                        ἡμῶν τὸν ζυγὸν αὐτῶν.</quote>
+                        ἡμῶν τὸν ζυγὸν αὐτῶν·</quote>
                   </div>
                   <!-- exp 19 -->
                   <div type="commentary">
                      <p xml:id="edition-2-3-2" n="19"><span type="text-critical"
                            xml:id="edition-2-3-2-tc-1">Περὶ οὗ εἴρηκεν</span>· 'ὁ γὰρ ζυγός μου
                            <span type="text-critical" xml:id="edition-2-3-2-tc-2">χρηστός
-                           ἐστιν</span>': – <anchor type="biblical-quotation"
-                           subtype="direct-quotation" n="Mt 11,30"/></p>
+                           ἐστιν</span>'<anchor type="biblical-quotation" subtype="direct-quotation"
+                           n="Mt 11,30"/>: –</p>
                      <!-- εἴρηκε V1 : εἴρηκεν L1 -->
                      <div type="links">
                         <p>
@@ -2830,18 +2844,18 @@
                      Sinn ist: Sie versammelten sich gegen den Herrn und den Gesalbten, indem sie
                      sagten: Lasst uns seine Fesseln zerreißen. Denn sie wollten nicht im heiligen
                      Schleppnetz sein, von dem geschrieben steht: 'Gleich ist das Königtum der
-                     Himmel einem Schleppnetz'. [Mt 13,47]</p>
+                     Himmel einem Schleppnetz' [Mt 13,47].</p>
                   <quote corresp="#edition-ps-2-3b" type="psalmtext" n="3b">und ihr Joch von uns
                      werfen!</quote>
-                  <p corresp="#edition-2-3-2" n="17">Von dem er gesagt hat: 'Mein Joch ist
-                     erträglich.' [Mt 11,30]</p>
+                  <p corresp="#edition-2-3-2" n="17">Von dem er gesagt hat: 'Mein Joch ist sanft'
+                     [Mt 11,30]. </p>
                </div>
             </div>
             <div n="2.4" type="psalmverse">
                <div xml:lang="grc" type="text">
                   <div type="psalmtext">
                      <quote xml:id="edition-ps-2-4a" type="psalmtext" n="4a">ὁ κατοικῶν ἐν οὐρανοῖς
-                        ἐκγελάσεται αὐτούς,</quote>
+                        ἐκγελάσεται αὐτούς·</quote>
                   </div>
                   <!-- exp 20 -->
                   <div type="commentary">
@@ -2889,7 +2903,7 @@
                   </div>
                   <div type="psalmtext">
                      <quote xml:id="edition-ps-2-4b" type="psalmtext" n="4b">καὶ ὁ κύριος
-                        ἐκμυκτηριεῖ αὐτούς.</quote>
+                        ἐκμυκτηριεῖ αὐτούς·</quote>
                   </div>
                   <!-- exp 21 -->
                   <div type="commentary" rend="parallel">
@@ -2974,9 +2988,9 @@
                <div xml:lang="grc" type="text">
                   <div type="psalmtext">
                      <quote xml:id="edition-ps-2-5a" type="psalmtext" n="5a">τότε λαλήσει πρὸς
-                        αὐτοὺς ἐν ὀργῇ αὐτοῦ</quote>
+                        αὐτοὺς ἐν ὀργῇ αὐτοῦ·</quote>
                      <quote xml:id="edition-ps-2-5b" type="psalmtext" n="5b">καὶ ἐν τῷ θυμῷ αὐτοῦ
-                        ταράξει αὐτούς</quote>
+                        ταράξει αὐτούς·</quote>
                   </div>
                   <!-- exp 22 -->
                   <div type="commentary">
@@ -2988,16 +3002,16 @@
                            xml:id="edition-2-5-1-tc-3">παρ᾿ αὐτοῦ</span>
                         <span type="text-critical" xml:id="edition-2-5-1-tc-4">λαληθέντα</span>
                         <span type="text-critical" xml:id="edition-2-5-1-tc-5">ἢ τὸ, 'οὐαὶ ὑμῖν
-                           γραμματεῖς</span> καὶ φαρισαῖοι·'<anchor type="biblical-quotation"
-                           subtype="direct-quotation" n="Mt 23,13"/>
-                        <span type="text-critical" xml:id="edition-2-5-1-tc-6"><span
-                              type="text-critical" xml:id="edition-2-5-1-tc-7">'ὅτι ἀρθήσεται</span>
-                           ἀφ᾿ ὑμῶν ἡ βασιλεία <span type="text-critical"
-                              xml:id="edition-2-5-1-tc-8">τοῦ θεοῦ</span>·'<anchor
-                              type="biblical-quotation" subtype="direct-quotation" n="Mt 21,43"
-                              /><span type="text-critical" xml:id="edition-2-5-1-tc-9">'καὶ ὑμῖν
-                              τοῖς νομικοῖς, οὐαί</span></span>': – <anchor
-                           type="biblical-quotation" subtype="direct-quotation" n="Lc 11,46"/></p>
+                           γραμματεῖς</span> καὶ φαρισαῖοι'<anchor type="biblical-quotation"
+                           subtype="direct-quotation" n="Mt 23,13"/>· <span type="text-critical"
+                           xml:id="edition-2-5-1-tc-6"><span type="text-critical"
+                              xml:id="edition-2-5-1-tc-7">'ὅτι ἀρθήσεται</span> ἀφ᾿ ὑμῶν ἡ βασιλεία
+                              <span type="text-critical" xml:id="edition-2-5-1-tc-8">τοῦ
+                              θεοῦ</span>'<anchor type="biblical-quotation"
+                              subtype="direct-quotation" n="Mt 21,43"/>· <span type="text-critical"
+                              xml:id="edition-2-5-1-tc-9">'καὶ ὑμῖν τοῖς νομικοῖς,
+                           οὐαί</span></span>'<anchor type="biblical-quotation"
+                           subtype="direct-quotation" n="Lc 11,46"/>: – </p>
                      <!-- Textkritik: τί δέ ἐστι V1 : τί δε ἐστιν P6 : τί δέ ἐστι Z -->
                      <!-- Textkritik: ἢ ὅτε V1 : εἰ ὅτε B1 -->
                      <!-- Textkritik: τί δέ ἐστι V1 : τί δε ἐστιν B1 -->
@@ -3174,17 +3188,17 @@
                   <quote corresp="#edition-ps-2-5b" type="psalmtext" n="5b">und in seinem Grimm wird
                      er sie erschrecken.</quote>
                   <p corresp="#edition-2-5-1" n="20">'Dann' wann anders, als da sie sagten: 'Lasst
-                     uns ihre Fesseln zerreißen.' Was hat er denn im Zorn gesprochen, wenn nicht:
-                     'Weh euch, ihr Schriftgelehrten und Pharisäer!' [Mt 23,13 et seq.], 'Weil
-                     weggenommen werden wird von euch das Königtum Gottes' [Mt 21,43], und 'Wehe
-                     euch, ihr Gesetzeskundigen'. [Lc 11,46]</p>
+                     uns ihre Fesseln zerreißen'? Was hat er denn im Zorn gesprochen, wenn nicht:
+                     'Weh euch, ihr Schriftgelehrten und Pharisäer!' [Mt 23,13 et seq.], 'Weil von
+                     euch wird das Reich Gottes weggenommen werden' [Mt 21,43] und 'Wehe euch, ihr
+                     Gesetzeskundigen!' [Lc 11,46]?</p>
                </div>
             </div>
             <div n="2.6" type="psalmverse">
                <div xml:lang="grc" type="text">
                   <div type="psalmtext">
-                     <quote xml:id="edition-ps-2-6a" type="psalmtext" n="6a">Ἐγὼ δὲ κατεστάθην
-                        βασιλεὺς ὑπ᾽ αὐτοῦ</quote>
+                     <quote xml:id="edition-ps-2-6a" type="psalmtext" n="6a">ἐγὼ δὲ κατεστάθην
+                        βασιλεὺς ὑπ᾽ αὐτοῦ·</quote>
                   </div>
                   <!-- exp 23 -->
                   <div type="commentary">
@@ -3280,7 +3294,7 @@
                   </div>
                   <div type="psalmtext">
                      <quote xml:id="edition-ps-2-6b" type="psalmtext" n="6b">ἐπὶ σιὼν ὄρος τὸ ἅγιον
-                        αὐτοῦ</quote>
+                        αὐτοῦ·</quote>
                   </div>
                   <!-- exp 24 -->
                   <div type="commentary">
@@ -3338,7 +3352,7 @@
                <div xml:lang="grc" type="text">
                   <div type="psalmtext">
                      <quote xml:id="edition-ps-2-7a" type="psalmtext" n="7a">διαγγέλλων τὸ πρόσταγμα
-                        κυρίου</quote>
+                        κυρίου·</quote>
                   </div>
                   <!-- exp 25a -->
                   <div type="commentary" rend="parallel">
@@ -3414,7 +3428,8 @@
                   <!-- exp 25b -->
                   <div type="commentary" rend="hide">
                      <p xml:id="edition-2-7-1-2" n="25">Τουτέστιν, ἐξαγγέλλων τὴν γνῶσιν τοῦ μόνου
-                        θεοῦ· καὶ τοῦ ἀποσταλέντος Ἰησοῦ: –</p>
+                        θεοῦ· καὶ τοῦ ἀποσταλέντος Ἰησοῦ<anchor type="biblical-quotation"
+                           subtype="indirect-quotation" n="Ioh 17,3"/>: –</p>
                      <div type="links">
                         <p>
                            <listRef>
@@ -3430,8 +3445,8 @@
                      </app>
                   </div>
                   <div type="psalmtext">
-                     <quote xml:id="edition-ps-2-7b" type="psalmtext" n="7b">Κύριος εἶπεν πρός με
-                        Υἱός μου εἶ σύ,</quote>
+                     <quote xml:id="edition-ps-2-7b" type="psalmtext" n="7b">κύριος εἶπεν πρός με
+                        υἱός μου εἶ σύ·</quote>
                      <quote xml:id="edition-ps-2-7c" type="psalmtext" n="7c">ἐγὼ σήμερον γεγέννηκά
                         σε·</quote>
                   </div>
@@ -3568,7 +3583,7 @@
                   <p corresp="#edition-2-7-1-1" n="23a">Das Wissen um den einen Gott und das Gebot
                      des Herrn.</p>
                   <p corresp="#edition-2-7-1-2" n="23b">Das heißt, er verkündigt das Wissen um den
-                     einen Gott und den gesandten Jesus.</p>
+                     einen Gott und den gesandten Jesus [cf. Ioh 17,3].</p>
                   <quote corresp="#edition-ps-2-7b" type="psalmtext" n="7b">Der Herr sprach zu mir:
                      Mein Sohn bist du;</quote>
                   <quote corresp="#edition-ps-2-7c" type="psalmtext" n="7c">ich habe dich heute
@@ -3595,8 +3610,8 @@
             <div n="2.8" type="psalmverse">
                <div xml:lang="grc" type="text">
                   <div type="psalmtext">
-                     <quote xml:id="edition-ps-2-8a" type="psalmtext" n="8a">αἴτησαι παρ᾽ ἐμοῦ, καὶ
-                        δώσω σοι ἔθνη τὴν κληρονομίαν σου</quote>
+                     <quote xml:id="edition-ps-2-8a" type="psalmtext" n="8a">αἴτησαι παρ᾽ ἐμοῦ καὶ
+                        δώσω σοι ἔθνη τὴν κληρονομίαν σου·</quote>
                      <quote xml:id="edition-ps-2-8b" type="psalmtext" n="8b">καὶ τὴν κατάσχεσίν σου
                         τὰ πέρατα τῆς γῆς·</quote>
                      <!-- Trennungslinie zwischen Ps 2,8b und Ps 2,9a -->
@@ -3613,9 +3628,9 @@
                <div xml:lang="grc" type="text">
                   <div type="psalmtext">
                      <quote xml:id="edition-ps-2-9a" type="psalmtext" n="9a">ποιμανεῖς αὐτοὺς ἐν
-                        ῥάβδῳ σιδηρᾷ,</quote>
+                        ῥάβδῳ σιδηρᾷ·</quote>
                      <quote xml:id="edition-ps-2-9b" type="psalmtext" n="9b">ὡς σκεῦος κεραμέως
-                        συντρίψεις αὐτούς.</quote>
+                        συντρίψεις αὐτούς·</quote>
                   </div>
                   <!-- exp 27 -->
                   <div type="commentary">
@@ -3666,10 +3681,10 @@
             <div n="2.10" type="psalmverse">
                <div xml:lang="grc" type="text">
                   <div type="psalmtext">
-                     <quote xml:id="edition-ps-2-10a" type="psalmtext" n="10a">καὶ νῦν, βασιλεῖς,
+                     <quote xml:id="edition-ps-2-10a" type="psalmtext" n="10a">καὶ νῦν βασιλεῖς
                         σύνετε·</quote>
-                     <quote xml:id="edition-ps-2-10b" type="psalmtext" n="10b">παιδεύθητε, πάντες οἱ
-                        κρίνοντες τὴν γῆν.</quote>
+                     <quote xml:id="edition-ps-2-10b" type="psalmtext" n="10b">παιδεύθητε πάντες οἱ
+                        κρίνοντες τὴν γῆν·</quote>
                   </div>
                </div>
                <div xml:lang="de" type="translation">
@@ -3683,9 +3698,9 @@
                <div xml:lang="grc" type="text">
                   <div type="psalmtext">
                      <quote xml:id="edition-ps-2-11a" type="psalmtext" n="11a">δουλεύσατε τῷ κυρίῳ
-                        ἐν φόβῳ</quote>
+                        ἐν φόβῳ·</quote>
                      <quote xml:id="edition-ps-2-11b" type="psalmtext" n="11b">καὶ ἀγαλλιᾶσθε αὐτῷ
-                        ἐν τρόμῳ.</quote>
+                        ἐν τρόμῳ·</quote>
                   </div>
                   <!-- exp 28a -->
                   <div type="commentary" rend="parallel">
@@ -3761,9 +3776,9 @@
                      <p xml:id="edition-2-11-2" n="29">Καὶ γὰρ ὁ ἀρετῆς ἐπιμελούμενος, οὗτος
                         δουλεύει τῷ κυρίῳ ἐν φόβῳ· ποιῶν τὰς ἐντολὰς αὐτοῦ καὶ δεδοικὼς, μή τι
                         παραπέσῃ· ταύτας δὲ τελειώσας, ἀγαλλιᾶται ὡς ἤδη τελειώσας· ἀλλ᾿ ὅμως καὶ
-                        τότε τρέμει· ὁ γὰρ δοκῶν ἱστάναι, βλέπεται μὴ πέσῃ: – <anchor
-                           type="biblical-quotation" subtype="indirect-quotation" n="1Cor 10,12"
-                        /></p>
+                        τότε τρέμει· ὁ γὰρ δοκῶν ἱστάναι, βλέπεται μὴ πέσῃ<anchor
+                           type="biblical-quotation" subtype="indirect-quotation" n="1Cor 10,12"/>:
+                        –</p>
                      <div type="links">
                         <p>
                            <listRef>
@@ -3793,15 +3808,15 @@
                      und sich fürchtet, daneben zu fallen. Bei der Vollendung dieser Gebote freut er
                      sich, als hätte er sie schon vollendet. Nichtdestotrotz fürchtet er sich auch
                      in diesem Zustand: Derjenige, der meint zu stehen, schaue genau hin, dass er
-                     nicht falle. [cf. 1Cor 10,12]</p>
+                     nicht falle [cf. 1Cor 10,12].</p>
                   <!-- schaut genau hin = achtet darauf -->
                </div>
             </div>
             <div n="2.12" type="psalmverse">
                <div xml:lang="grc" type="text">
                   <div type="psalmtext">
-                     <quote xml:id="edition-ps-2-12a" type="psalmtext" n="12a">δράξασθε παιδείας,
-                        μήποτε ὀργισθῇ κύριος</quote>
+                     <quote xml:id="edition-ps-2-12a" type="psalmtext" n="12a">δράξασθε παιδείας
+                        μήποτε ὀργισθῇ κύριος·</quote>
                   </div>
                   <!-- exp 30 -->
                   <div type="commentary">
@@ -3864,15 +3879,14 @@
                   </div>
                   <div type="psalmtext">
                      <quote xml:id="edition-ps-2-12b" type="psalmtext" n="12b">καὶ ἀπολεῖσθε ἐξ ὁδοῦ
-                        δικαίας.</quote>
+                        δικαίας·</quote>
                   </div>
                   <!-- exp 31 -->
                   <div type="commentary">
                      <p xml:id="edition-2-12-2" n="31"><span type="text-critical"
                            xml:id="edition-2-12-2-tc-1">Τοῦ</span> εἰρηκότος, 'ἐγὼ εἰμὶ <span
-                           type="text-critical" xml:id="edition-2-12-2-tc-2">ἡ ὁδός'</span> : –
-                           <anchor type="biblical-quotation" subtype="direct-quotation" n="Ioh 14,6"
-                        /></p>
+                           type="text-critical" xml:id="edition-2-12-2-tc-2">ἡ ὁδός'</span><anchor
+                           type="biblical-quotation" subtype="direct-quotation" n="Ioh 14,6"/>: – </p>
                      <!-- P6 Z: eine Einheit mit der vorausgehenden exp. -->
                      <div type="links">
                         <p>
@@ -3913,8 +3927,9 @@
                   <!-- exp 30-31 -->
                   <div type="commentary">
                      <p xml:id="edition-2-12-1-2" n="30–31">Ἐπικρατήσατε φησὶ τῆς εὐαγγελικῆς
-                        παιδείας, ἵνα μὴ ἔξω τοῦ λέγοντος 'ἐγώ εἰμι ἡ ὁδὸς' γένησθε: – <anchor
-                           type="biblical-quotation" subtype="direct-quotation" n="Ioh 14,6"/></p>
+                        παιδείας, ἵνα μὴ ἔξω τοῦ λέγοντος 'ἐγώ εἰμι ἡ ὁδὸς' γένησθε<anchor
+                           type="biblical-quotation" subtype="direct-quotation" n="Ioh 14,6"/>:
+                        –</p>
                      <div type="links">
                         <p>
                            <listRef>
@@ -3933,7 +3948,7 @@
                      <quote xml:id="edition-ps-2-12c" type="psalmtext" n="12c">ὅταν ἐκκαυθῇ ἐν τάχει
                         ὁ θυμὸς αὐτοῦ·</quote>
                      <quote xml:id="edition-ps-2-12d" type="psalmtext" n="12d">μακάριοι πάντες οἱ
-                        πεποιθότες ἐπ᾽ αὐτῷ.</quote>
+                        πεποιθότες ἐπ᾽ αὐτῷ: –</quote>
                   </div>
                   <!-- exp 32 -->
                   <div type="commentary" subtype="dubium">
@@ -3960,11 +3975,11 @@
                   <p corresp="#edition-2-12-1" n="30">Die des Evangeliums nämlich.</p>
                   <quote corresp="#edition-ps-2-12b" type="psalmtext" n="12b">und ihr vom gerechten
                      Weg abkommt und zugrunde geht,</quote>
-                  <p corresp="#edition-2-12-2" n="29">Dessen, der gesagt hat: 'Ich bin der Weg.'
-                     [Ioh 14,6]</p>
+                  <p corresp="#edition-2-12-2" n="29">Dessen, der gesagt hat: 'Ich bin der Weg' [Ioh
+                     14,6].</p>
                   <p corresp="#edition-2-12-1-2" n="30–31">Er sagt: Ergreift die Unterweisung des
-                     Evangeliums, damit ihr nicht jenseits von dem seid, der sagt: 'Ich bin der
-                     Weg'. [Ιoh 14,6]</p>
+                     Evangeliums, damit ihr nicht jenseits von dem seid, der sagt: 'Ich bin der Weg'
+                     [Ioh 14,6].</p>
                   <quote corresp="#edition-ps-2-12c" type="psalmtext" n="12c">wenn sein Grimm
                      schnell aufflammt!</quote>
                   <quote corresp="#edition-ps-2-12d" type="psalmtext" n="12d">Selig alle, die auf
