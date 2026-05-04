@@ -534,6 +534,8 @@
             </div>
             <!-- <div type="commentary" subtype="commentary" xml:id="laudon-gr-42-XX-XX">
                <ab xml:lang="grc">
+               <head xml:lang="grc">ψ(αλ)μου XX´</head>
+               <head type="sub" xml:lang="grc">ὑπόθεσις τοῦ XX´ ψαλμοῦ:</head>
                   <note type="lemma">Ps XX,XX</note>
                   <seg type="commentaryfragment" xml:id="laudon-gr-42-fr-XX-XX" source="XXXX"
                      corresp="#laudon-gr-42-ps-XX-XX" copyOf="#edition:XXXX">
@@ -544,17 +546,17 @@
                </ab>
             </div> -->
             <!-- ps 1 commentary-->
+            <pb n="258r"/>
             <div type="commentary" subtype="commentary" xml:id="laudon-gr-42-1-1-1">
-               <note type="textual-commentary"><foreign xml:lang="grc">† τοῦ ἁγίου πατρὸς ἡμῶν
-                     Ἀθανασίου ἀρχιἐπισκὀπου Ἀλεξανδρείας· ἐκ τῆς ἑρμηνείας τῆς εἰς τὸ ψαλτήριον:
-                     –</foreign></note>
-               <head xml:lang="grc">ψ(αλ)μου Α´</head>
-               <head type="sub" xml:lang="grc"><foreign xml:lang="grc">Μακάριος ἀνὴρ. ἕως οὐκ᾿ ἐκάθ<subst>
-                        <del rend="erasure"><unclear>η</unclear></del>
-                        <add place="inline">ι</add>
-                     </subst>σεν:</foreign></head>
+               <head xml:lang="grc">† <foreign xml:lang="grc">τοῦ ἁγίου πατρὸς ἡμῶν Ἀθανασίου
+                     ἀρχιἐπισκὀπου Ἀλεξανδρείας· ἐκ τῆς ἑρμηνείας τῆς εἰς τὸ ψαλτήριον:
+                  –</foreign></head>
+               <head type="sub" xml:lang="grc"><foreign xml:lang="grc"/>ψ(αλ)μου Α´</head>
                <ab xml:lang="grc">
-                  <note type="lemma">Ps 1,1</note>
+                  <note type="lemma"><foreign xml:lang="grc">Μακάριος ἀνὴρ. ἕως οὐκ᾿ ἐκάθ<subst>
+                           <del rend="erasure"><unclear>η</unclear></del>
+                           <add place="inline">ι</add>
+                        </subst>σεν:</foreign> (= Ps 1,1)</note>
                   <seg type="commentaryfragment" xml:id="laudon-gr-42-fr-1-1" source="Athanasius"
                      corresp="#laudon-gr-42-ps-1-1a" copyOf="#edition:edition-1-0-1">
                      <quote type="patristic" subtype="quotation" xml:id="laudon-gr-42-quot-1-1"
@@ -675,15 +677,101 @@
             <!-- psalm 2 - commentary -->
             <div type="commentary" subtype="commentary" xml:id="laudon-gr-42-2-2">
                <head xml:lang="grc">ψ(αλ)μου Β´</head>
-               <head type="sub" xml:lang="grc">ὑπόθ(εσις) τοῦ B´ ψαλμοῦ:</head>
+               <head type="sub" xml:lang="grc">ὑπόθεσις τοῦ B´ ψαλμοῦ:</head>
                <ab xml:lang="grc">
                   <seg type="hypothesis" xml:id="laudon-gr-42-fr-2-1"
-                     corresp="#laudon-gr-42-ps-2-1a" source="Athanasius">
+                     corresp="#laudon-gr-42-ps-2-1a" source="Athanasius"
+                     copyOf="#edition:edition-2-0">
                      <quote type="patristic" source="Athanasius, exp. in Ps 2"
                         xml:id="laudon-gr-ps-quot-2-1" corresp="#person-2">Ἐν τῶ πρώτω ψαλμῶ ἀσεβεῖς
                         καὶ ἁμαρτωλοὺς καὶ λοιμοὺς ἀποφηνάμενος τοὺς ἄρχοντας τῶν ἰουδαίων. ἐν τούτω
                         πάλιν δείκνυσι τὰς πράξεις. δι᾿ ἃς τῶν τοιούτων ὀνομάτων γεγόνασι
                         μέτοχοι:</quote></seg>
+                  <note type="lemma"><foreign xml:lang="grc">Ἱνα τί ἐφρύαξαν ἔθνη ἕως
+                        κενὰ:</foreign> (= Ps 2,1)</note>
+                  <seg type="commentaryfragment" xml:id="laudon-gr-42-fr-2-2" source="(Athanasius)"
+                     corresp="#laudon-gr-42-ps-2-1a" copyOf="#edition:edition-2-1-1">
+                     <quote type="patristic" subtype="quotation" xml:id="laudon-gr-42-quot-2-2"
+                        source="Athanasius, exp. in Ps 2,1" corresp="#person-2">Φρύαγμα ἐστὶ. τὸ
+                        ἀλόγιστον φρόνημα· τὸ ἵνα τί. ἵνα ἢ· καὶ διὰ τί οἱ λαοὶ ἐμελέτησαν κενὰ· πῶς
+                        γὰρ οὐ κενὴ γέγονεν αὐτοῖς ἡ μελέτη. μὴ δεξαμένοις τὸν σωτῆρα τοῦ
+                        γένους·</quote>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-2-2" type="with-variants">Vat. gr.
+                        754</ref>
+                  </seg>
+                  <note type="lemma"><foreign xml:lang="grc">Παρέστησαν οἱ βασιλεῖς τῆς
+                        γῆς:</foreign> (= Ps 2,2a)</note>
+                  <seg type="commentaryfragment" xml:id="laudon-gr-42-fr-2-3" source="(Athanasius)"
+                     corresp="#laudon-gr-42-ps-2-2a" copyOf="#edition:edition-2-2-1">
+                     <quote type="patristic" subtype="quotation" xml:id="laudon-gr-42-quot-2-3"
+                        source="Athanasius, exp. in Ps 2,2a" corresp="#person-2">Ἡρώδης τε καὶ
+                        Πόντιος Πιλᾶτος:</quote>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-2-5" type="with-variant">Vat. gr.
+                        754</ref>
+                  </seg>
+                  <note type="lemma"><foreign xml:lang="grc">Καὶ οἱ ἄρχοντες ἕως ἐπὶ τὸ
+                        αὐτὸ:</foreign> (= Ps 2,2b)</note>
+                  <seg type="commentaryfragment" xml:id="laudon-gr-42-fr-2-4" source="(Athanasius)"
+                     corresp="#laudon-gr-42-ps-2-2b" copyOf="#edition:edition-2-2-2">
+                     <quote type="patristic" subtype="quotation" xml:id="laudon-gr-42-quot-2-4"
+                        source="Athanasius, exp. in Ps 2,2b" corresp="#person-2">Τὰ προλεχθέντα
+                        τάγματα· γραμματεῖς καὶ φαρισαίοι καὶ νομικοί:</quote>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-2-8" type="identical">Vat. gr. 754</ref>
+                  </seg>
+                  <note type="lemma"><foreign xml:lang="grc">Κατὰ τοῦ κυρίου καὶ κατὰ τοῦ χριστοῦ
+                        αὐτοῦ:</foreign>(= Ps 2,2c)</note>
+                  <seg type="commentaryfragment" xml:id="laudon-gr-42-fr-2-5" source="(Athanasius)"
+                     corresp="#laudon-gr-42-ps-2-3a" copyOf="#edition:edition-2-2-3">
+                     <quote type="patristic" subtype="quotation" xml:id="laudon-gr-42-quot-2-5"
+                        source="Athanasius, exp. in Ps 2,2c" corresp="#person-2">Ἡ γὰρ εἰς Χριστὸν
+                        ἐπιβουλὴ. καὶ εἰς αὐτὸν ἀνατρέχει τὸν πατέρα· εἰ γὰρ ἐν τῶ υἱῶ ὁ πατὴρ· καὶ
+                        ὁ υἱὸς ἐν τῶ πατρὶ, πῶς οὐχὶ μία τΐ<add place="above">ς</add> ἡ εἰς αὐτοὺς
+                        ὕβρις γένοιτ᾿ ἄν:</quote>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-2-12" type="with-variants">Vat. gr.
+                        754</ref>
+                  </seg>
+               </ab>
+            </div>
+            <pb n="258r–v"/>
+            <div type="commentary" subtype="commentary" xml:id="laudon-gr-42-2-3">
+               <ab xml:lang="grc">
+                  <note type="lemma"><foreign xml:lang="grc">Διαρρήξωμεν τοὺς δεσμοὺς
+                        αὐτῶν</foreign> (= Ps 2,3a)</note>
+                  <seg type="commentaryfragment" xml:id="laudon-gr-42-fr-2-6" source="(Athanasius)"
+                     corresp="#laudon-gr-42-ps-2-3a" copyOf="#edition:edition-2-3-1">
+                     <quote type="patristic" subtype="quotation" xml:id="laudon-gr-42-quot-2-6"
+                        source="Athanasius, exp. in Ps 2,3a" corresp="#person-2">Λείπει τὸ λέγοντες.
+                        ἵνα ἦ ἡ διάνοια αὕτη· συνῆσαν κατὰ || τοῦ κυρίου καὶ κατὰ Χριστοῦ λέγοντες.
+                        διαρρήξωμεν τοὺς δεσμοὺς αὐτῶν· οὐ γὰρ ἤθελον εἴσω τῆς ἱερᾶς γενέσθαι
+                        σαγήνης:</quote>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-2-13" type="abbreviated-with-variants"
+                        >Vat. gr. 754</ref>
+                  </seg>
+                  <note type="lemma">Ps 2,7b</note>
+                  <seg type="commentaryfragment" xml:id="laudon-gr-42-fr-2-7" source="(Athanasius)"
+                     corresp="#laudon-gr-42-ps-2-7b" copyOf="#edition:edition-2-7-2-1-1">
+                     <quote type="patristic" subtype="quotation" xml:id="laudon-gr-42-quot-2-7"
+                        source="Athanasius, exp. in Ps 2,7b–c" corresp="#person-2">Ὁρᾶς πῶς τὴν κατὰ
+                        σάρκα οἰκονομίαν τοῦ μονογενοῦς οἰκειοῦται ὁ πατὴρ· τὸ, γὰρ σήμερον. οὐχ᾿
+                           <sic>ἔτερον</sic> τινὰ καιρὸν· ἢ τὸν ἐνεστήκοτα σημαίνει· τοῦτέστι·
+                           τὸ<add place="above" hand="corr">ν</add> τῆς ἐπιδημίας· τὸν γὰρ ἀεί τε
+                        καὶ ὡσαὕτως ἔχοντα· καὶ συναΐδιον ἑαυτῶ λόγον τε καὶ υἱὸν· σήμερον εἰς υἱὸν
+                        γεγέννησαι φησὶν· οὐκ᾿ εἰς υἱὸν τότε δεχόμενος πρῶτο<unclear
+                           reason="inner-margin"/>ν· ὃν πρὸ παντὸς αἰῶνος γεγέννηκεν. ἀλλ᾿ ὡς
+                           το<subst hand="corr">
+                           <del rend="erasure">ῦ</del>
+                           <add place="inline">υ</add>
+                        </subst>τ<subst>
+                           <del rend="overwrite">ω</del>
+                           <add place="inline">ο</add>
+                        </subst> πεφηνότα καὶ μετὰ σαρκός· ἐφ᾿ ἧπερ ἂν λέγοιτο. καὶ τὸ. σήμερον
+                        εἰκότως· ἐν ἐσχάτοις γὰρ τοῦ αἰ<subst hand="corr">
+                           <del rend="erasure">ώ</del>
+                           <add place="above">ῶ</add>
+                        </subst>νος καιροῖς γ<add place="overstrike">έ</add>γονεν ἄνθρωπος:</quote>
+                     <ref target="#vat-gr-754:vat-gr-754-fr-2-31" type="expanded-with-variant">Vat.
+                        gr. 754</ref>
+                  </seg>
                </ab>
             </div>
             <div type="bibletext" subtype="commented" xml:id="laudon-gr-42-3-1">
