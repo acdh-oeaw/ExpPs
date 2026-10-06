@@ -1,7 +1,7 @@
 xquery version "3.1";
 module namespace _ = "http://acdh.oeaw.ac.at/expps/api/http";
 import module namespace request = "http://exquery.org/ns/request";
-import module namespace jobs = "http://basex.org/modules/jobs";
+import module namespace jobs = "http://basex.org/modules/job";
 import module namespace l = "http://basex.org/modules/admin";
 
 import module namespace rest = "http://exquery.org/ns/restxq";
