@@ -62,3 +62,5 @@ The transformations are:
 - ```xml/edition/edition-ps-26-30.xml``` - ```xsl/edition/edition-to-html-for-homepage.xsl``` - ```html/edition-part-two.html```
 
 The results of the transformation to LaTeX have to be processed with the XeLaTeX engine. The font file ```SBL_BLit.ttf``` is used and expected in the same directory as the LaTeX source file.
+
+## Update to BaseX 12.4
