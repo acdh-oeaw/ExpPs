@@ -15,7 +15,7 @@ jobs:
       environment: ${{ steps.get_environment_from_git_ref.outputs.environment }}
       image_tagged: expps
       registry_root: ghcr.io/acdh-oeaw/
-      default_port: "8984"
+      default_port: "8080"
       herokuish_base_image: ghcr.io/acdh-oeaw/herokuish-for-cypress/main:latest-22
       BUILDPACK_URL: https://github.com/simar0at/heroku-buildpack-basex
       APP_NAME: expps

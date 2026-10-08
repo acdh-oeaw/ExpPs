@@ -2,8 +2,8 @@
 
 if [ "${STACK}x" = "x" ]; then
 pushd ../../lib/custom
-curl -LO https://repo1.maven.org/maven2/net/sf/saxon/Saxon-HE/11.3/Saxon-HE-11.3.jar
-curl -LO https://repo1.maven.org/maven2/org/xmlresolver/xmlresolver/4.3.0/xmlresolver-4.3.0.jar
+curl -LO https://repo1.maven.org/maven2/net/sf/saxon/Saxon-HE/13.0/Saxon-HE-13.0.jar
+curl -LO https://repo1.maven.org/maven2/org/xmlresolver/xmlresolver/6.1.0/xmlresolver-6.1.0.jar
 popd
 if [ "$OSTYPE" == "msys" -o "$OSTYPE" == "win32" ]
 then
@@ -15,7 +15,7 @@ else
   ./basexhttp &
   popd
 fi
-curl --connect-timeout 5 --max-time 10 --retry 3 --retry-delay 0 --retry-max-time 40 --retry-connrefused 0 -s -D - "http://localhost:8984" -o /dev/null | head -n1 | grep -q '\([23]0[0-9]\)'
+curl --connect-timeout 5 --max-time 10 --retry 3 --retry-delay 0 --retry-max-time 40 --retry-connrefused 0 -s -D - "http://localhost:8080" -o /dev/null | head -n1 | grep -q '\([23]0[0-9]\)'
 else
   source ${1:-../..}/data/credentials
 fi
