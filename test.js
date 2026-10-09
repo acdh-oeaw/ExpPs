@@ -1,4 +1,4 @@
-var baseURI = 'http://localhost:8080/psalmcatenae-server'
+var baseURI = 'http://localhost:8984/psalmcatenae-server'
 
 require('./test/utilSetup')
 
